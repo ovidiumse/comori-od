@@ -3,6 +3,7 @@ import falcon
 import simplejson as json
 import logging
 import urllib
+from unidecode import unidecode
 from datetime import datetime
 from falcon.http_status import HTTPStatus
 
@@ -152,6 +153,7 @@ class Bible(object):
         callback = req.params['callback'] if 'callback' in req.params else None
         include_titles = req.get_param_as_bool('includeTitles')
 
+        reference = ' '.join([word.capitalize() for word in unidecode(reference).split()])
         match = REFERENCE_REGEX.match(reference)
         if not match:
             resp.status = falcon.HTTP_404
