@@ -153,7 +153,8 @@ class Bible(object):
         callback = req.params['callback'] if 'callback' in req.params else None
         include_titles = req.get_param_as_bool('includeTitles')
 
-        match = REFERENCE_REGEX.match(unidecode(reference))
+        reference = ' '.join([word.capitalize() for word in unidecode(reference).split()])
+        match = REFERENCE_REGEX.match(reference)
         if not match:
             resp.status = falcon.HTTP_404
             resp.body, resp.content_type = self.make_response(
