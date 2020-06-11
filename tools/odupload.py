@@ -8,7 +8,7 @@ PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 EXTERNAL_HOST = "vps-4864b0cc.vps.ovh.net:8000"
 LOCAL_HOST = "localhost:8000"
 
-COMORI_OD_API_HOST = EXTERNAL_HOST
+COMORI_OD_API_HOST = LOCAL_HOST
 COMORI_OD_TESTAPI_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
 
 
@@ -25,6 +25,7 @@ def parseArgs():
                          dest="delete_index",
                          action="store_true",
                          help="Delete existing index")
+    PARSER_.add_argument("-l", "--localhost", action="store_true", help="Upload to localhost")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -36,6 +37,8 @@ def parseArgs():
 
 def post(uri, data):
     response = requests.post("{}/{}".format(COMORI_OD_TESTAPI_BASEURL, uri), json=data)
+    if response.status_code != requests.codes.ok:
+        logging.error("Error: {}".format(json.dumps(response.json(), indent=2)))
     response.raise_for_status()
     return response.json()
 
@@ -51,7 +54,22 @@ def chunk(data, n):
 
 
 def create_index():
-    props = ['volume', 'book', 'author', 'title', 'verses']
+    props = [{
+        'name': 'volume',
+        'type': 'keyword'
+    }, {
+        'name': 'book',
+        'type': 'keyword'
+    }, {
+        'name': 'author',
+        'type': 'keyword'
+    }, {
+        'name': 'title',
+        'type': 'text'
+    }, {
+        'name': 'verses',
+        'type': 'text'
+    }]
 
     settings = {
         "settings": {
@@ -94,27 +112,30 @@ def create_index():
 
     mappings = {'properties': {}}
     for p in props:
-        mappings['properties'][p] = {
-            'type': 'text',
-            "term_vector": "with_positions_offsets",
-            'analyzer': 'standard',
-            'fields': {
+        fieldInfo = mappings['properties'][p['name']] = {
+            'type': p['type'],
+        }
+
+        if p['type'] == 'text':
+            fieldInfo['term_vector'] = 'with_positions_offsets'
+            fieldInfo['analyzer'] = 'standard'
+            fieldInfo['fields'] = {
                 'folded': {
-                    'type': 'text',
+                    'type': p['type'],
                     'analyzer': 'folding',
                     "term_vector": "with_positions_offsets"
                 }
             }
-        }
 
-    mappings['properties']['title']['boost'] = 2
-    mappings['properties']['title']['fields']['folded']['boost'] = 2
-    mappings['properties']['title']['fields']['completion'] = {
+    titleInfo = mappings['properties']['title']
+    titleInfo['boost'] = 2
+    titleInfo['fields']['folded']['boost'] = 2
+    titleInfo['fields']['completion'] = {
         'type': 'completion',
         'analyzer': 'folding'
     }
 
-    post("index/od", {'settings': settings, 'doc_type': 'articles', 'mappings': mappings})
+    post("od", {'settings': settings, 'doc_type': 'articles', 'mappings': mappings})
 
 
 def index_all(articles):
@@ -135,7 +156,7 @@ def index_all(articles):
 
 def delete_index():
     try:
-        delete("index/od")
+        delete("od")
     except Exception as ex:
         logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
@@ -146,6 +167,13 @@ def main():
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
 
+    global COMORI_OD_API_HOST
+
+    if args.localhost:
+        COMORI_OD_API_HOST = LOCAL_HOST
+    else:
+        COMORI_OD_API_HOST = EXTERNAL_HOST
+
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
 
@@ -154,16 +182,16 @@ def main():
         requests_log.propagate = True
 
     if args.delete_index:
-        logging.info("Deleting index...")
+        logging.info("Deleting index from {}...".format(COMORI_OD_API_HOST))
         delete_index()
-        logging.info("Creating index...")
+        logging.info("Creating index from {}...".format(COMORI_OD_API_HOST))
         create_index()
 
     with open(args.json_filepath, 'r') as json_file:
         articles = json.load(json_file)
-        logging.info("Indexing {} articles...".format(len(articles)))
+        logging.info("Indexing {} articles to {}...".format(len(articles), COMORI_OD_API_HOST))
         index_all(articles)
-        logging.info("Indexed {} articles!".format(len(articles)))
+        logging.info("Indexed {} articles to {}!".format(len(articles), COMORI_OD_API_HOST))
 
 
 if "__main__" == __name__:
