@@ -5,7 +5,7 @@ var HOST = LOCAL_HOST
 
 var EXTERNAL_BIBLE_API_HOST = "http://vps-4864b0cc.vps.ovh.net:8001/bible"
 var LOCAL_BIBLE_API_HOST = "http://localhost:8001/bible"
-var BIBLE_API_HOST = LOCAL_BIBLE_API_HOST
+var BIBLE_API_HOST = EXTERNAL_BIBLE_API_HOST
 
 var searchAPI = {
   searchByTitle: function(query, offset, limit) {

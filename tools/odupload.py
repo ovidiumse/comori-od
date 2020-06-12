@@ -183,12 +183,16 @@ def main():
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
 
-    global COMORI_OD_API_HOST
+    global COMORI_OD_API_HOST, COMORI_OD_API_BASEURL
 
     if args.localhost:
         COMORI_OD_API_HOST = LOCAL_HOST
     else:
         COMORI_OD_API_HOST = EXTERNAL_HOST
+
+    COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
+
+    print("API HOST: {}".format(COMORI_OD_API_HOST))
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
