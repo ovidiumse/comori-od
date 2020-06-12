@@ -67,11 +67,10 @@ def parseArgs():
                          default=False,
                          help="Print poem titles")
     PARSER_.add_argument("-e",
-                         "--extract",
-                         dest="extract",
-                         action="store_true",
-                         default=False,
-                         help="Extract all")
+                         "--extract-filename",
+                         dest="extract_filename",
+                         action="store",
+                         help="Extract filename")
 
     return PARSER_.parse_args()
 
@@ -136,7 +135,7 @@ def isPoemTitle(tag):
 
 def printElements(soup, predicate):
     for p in soup.find_all(predicate):
-        print(p.text.replace('\n', ' '))
+        print(sanitizeValue(p.text))
 
 
 def printTitles(soup):
@@ -160,13 +159,6 @@ def makeReplacement(word):
 
 
 wordReplacements = {
-    'Isus': makeReplacement('Iisus'),
-    'Isuse': makeReplacement('Iisuse'),
-    'Isusul': makeReplacement('Iisusul'),
-    'ISUS': makeReplacement('IISUS'),
-    'ISUSE': makeReplacement('IISUSE'),
-    'isus': makeReplacement('iisus'),
-    'isuşi': makeReplacement('iisuşi'),
     'sînt': makeReplacement('sunt'),
     'sîntem': makeReplacement('suntem'),
     'sînteţi': makeReplacement('sunteţi'),
@@ -179,6 +171,7 @@ wordReplacements = {
 def sanitizeValue(val):
     val = val.replace(u'\xa0', ' ');
     val = val.replace('\n', ' ').strip()
+    val = ' '.join(val.split())
     val = re.sub(r'^\d+ - ', '', val)
     words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
     words = set(words)
@@ -273,7 +266,7 @@ def main():
             printArticleTitles(soup)
         if args.print_poem_titles:
             printPoemTitles(soup)
-        if args.extract:
+        if args.extract_filename:
             print("Extracting all articles...")
             articles = extractArticles(soup, volume, args.author)
             extract_finish = datetime.now()
@@ -281,12 +274,11 @@ def main():
             print("Extracted {} articles in {}".
                   format(len(articles), durationString(extract_finish - parse_finish)))
 
-            articles_filepath = os.path.splitext(args.html_filepath)[0] + ".json"
-            print("Writing {} articles to {}...".format(len(articles), articles_filepath))
-            with open(articles_filepath, 'w') as articles_file:
+            print("Writing {} articles to {}...".format(len(articles), args.extract_filename))
+            with open(args.extract_filename, 'w') as articles_file:
                 json.dump(articles, articles_file, encoding=None, ensure_ascii=True, indent=2)
 
-            replacements_filepath = os.path.splitext(args.html_filepath)[0] + "_replacements.txt"
+            replacements_filepath = os.path.splitext(args.extract_filename)[0] + "_replacements.txt"
             replacements = OrderedDict(
                 sorted(wordReplacements.items(), key=lambda i: i[1]['count'], reverse=True))
 
