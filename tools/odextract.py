@@ -159,13 +159,6 @@ def makeReplacement(word):
 
 
 wordReplacements = {
-    'Isus': makeReplacement('Iisus'),
-    'Isuse': makeReplacement('Iisuse'),
-    'Isusul': makeReplacement('Iisusul'),
-    'ISUS': makeReplacement('IISUS'),
-    'ISUSE': makeReplacement('IISUSE'),
-    'isus': makeReplacement('iisus'),
-    'isuşi': makeReplacement('iisuşi'),
     'sînt': makeReplacement('sunt'),
     'sîntem': makeReplacement('suntem'),
     'sînteţi': makeReplacement('sunteţi'),
