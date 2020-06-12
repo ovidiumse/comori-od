@@ -135,7 +135,7 @@ def isPoemTitle(tag):
 
 def printElements(soup, predicate):
     for p in soup.find_all(predicate):
-        print(p.text.replace('\n', ' '))
+        print(sanitizeValue(p.text))
 
 
 def printTitles(soup):
@@ -178,6 +178,7 @@ wordReplacements = {
 def sanitizeValue(val):
     val = val.replace(u'\xa0', ' ');
     val = val.replace('\n', ' ').strip()
+    val = ' '.join(val.split())
     val = re.sub(r'^\d+ - ', '', val)
     words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
     words = set(words)
