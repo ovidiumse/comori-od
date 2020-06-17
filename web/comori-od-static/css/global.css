@@ -1,0 +1,80 @@
+ 
+@media (max-width: 768px) {
+	.card-body {
+		padding: 0;
+	}
+
+	.container
+	{
+		padding: 10px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  #contentDiv h1 {font-size:2.25rem;} /*1rem = 16px*/    
+  #contentDiv h2 {font-size:2.0rem;} /*1rem = 16px*/    
+  #contentDiv h3 {font-size:1.75rem; }
+  #contentDiv h4 {font-size:1.5rem; }
+  #contentDiv h5 {font-size:1.3rem; }
+  #contentDiv p {font-size:1.18rem;}
+}
+
+.tooltip-inner {
+   text-align:left;
+   max-width: 550px;
+ }
+
+em {
+	background-color: lemonchiffon;
+}
+
+.bg {
+  /* The image used */
+  /*background-image: url('../img/books-1590590214894-3183.jpg');*/
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container {
+	background: #fff;
+	opacity: 1;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    /*background:#222;
+    color: #f2f2f2;*/
+}
+
+input[type=search] {
+	background: #fafafa url(http://hp-proliant.co.uk/qual_images/mob-search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+}
+input[type=search]:focus {
+	width: 600px;
+	background-color: #eee;
+	border-color: #333;
+	border: solid 1px #fff;
+}
+
+body, html {
+	background: #eee;
+	height: 100%;
+}
+
+

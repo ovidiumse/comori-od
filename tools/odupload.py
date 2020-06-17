@@ -6,10 +6,10 @@ import logging
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
 EXTERNAL_HOST = "vps-4864b0cc.vps.ovh.net:8000"
-LOCAL_HOST = "localhost:8000"
+LOCAL_HOST = "localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
-COMORI_OD_TESTAPI_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
+COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
 
 
 def parseArgs():
@@ -36,7 +36,7 @@ def parseArgs():
 
 
 def post(uri, data):
-    response = requests.post("{}/{}".format(COMORI_OD_TESTAPI_BASEURL, uri), json=data)
+    response = requests.post("{}/{}".format(COMORI_OD_API_BASEURL, uri), json=data)
     if response.status_code != requests.codes.ok:
         logging.error("Error: {}".format(json.dumps(response.json(), indent=2)))
     response.raise_for_status()
@@ -44,7 +44,7 @@ def post(uri, data):
 
 
 def delete(uri):
-    response = requests.delete("{}/{}".format(COMORI_OD_TESTAPI_BASEURL, uri))
+    response = requests.delete("{}/{}".format(COMORI_OD_API_BASEURL, uri))
     response.raise_for_status()
 
 
@@ -88,22 +88,37 @@ def create_index():
                     "romanian_stemmer": {
                         "type": "stemmer",
                         "language": "romanian"
+                    },
+                    "od_shingle": {
+                        'type': 'shingle',
+                        "min_shingle_size": 2,
+                        "max_shingle_size": 4,
                     }
                 },
                 "analyzer": {
                     "romanian": {
-                        "tokenizer":
-                        "standard",
+                        'type': 'custom',
+                        "tokenizer": "standard",
                         "filter":
                         ["lowercase", "romanian_stop", "romanian_keywords", "romanian_stemmer"]
                     },
                     "folding": {
-                        "tokenizer":
-                        "standard",
+                        'type': 'custom',
+                        "tokenizer": "standard",
                         "filter": [
-                            "asciifolding", "lowercase", "romanian_stop", "romanian_keywords",
-                            "romanian_stemmer"
+                            "lowercase", "romanian_stop", "romanian_keywords", "romanian_stemmer",
+                            "asciifolding"
                         ]
+                    },
+                    "completion": {
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter": ["lowercase", "romanian_stemmer", "asciifolding"]
+                    },
+                    "suggesting": {
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter": ["lowercase", "romanian_stop", "asciifolding", "od_shingle"]
                     }
                 }
             }
@@ -130,10 +145,11 @@ def create_index():
     titleInfo = mappings['properties']['title']
     titleInfo['boost'] = 2
     titleInfo['fields']['folded']['boost'] = 2
-    titleInfo['fields']['completion'] = {
-        'type': 'completion',
-        'analyzer': 'folding'
-    }
+    titleInfo['fields']['completion'] = {'type': 'search_as_you_type', 'analyzer': 'completion'}
+    titleInfo['fields']['suggesting'] = {'type': 'text', 'analyzer': 'suggesting'}
+
+    versesInfo = mappings['properties']['verses']
+    versesInfo['fields']['suggesting'] = {'type': 'text', 'analyzer': 'suggesting'}
 
     post("od", {'settings': settings, 'doc_type': 'articles', 'mappings': mappings})
 
@@ -167,12 +183,16 @@ def main():
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
 
-    global COMORI_OD_API_HOST
+    global COMORI_OD_API_HOST, COMORI_OD_API_BASEURL
 
     if args.localhost:
         COMORI_OD_API_HOST = LOCAL_HOST
     else:
         COMORI_OD_API_HOST = EXTERNAL_HOST
+
+    COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
+
+    print("API HOST: {}".format(COMORI_OD_API_HOST))
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)

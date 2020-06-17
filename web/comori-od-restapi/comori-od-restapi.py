@@ -175,6 +175,79 @@ class Titles(object):
             resp.body = json.dumps({'exception': str(ex)})
 
 
+class TitlesCompletion(object):
+    def on_get(self, req, resp, idx_name):
+        try:
+            results = es.search(index=idx_name,
+                                body={
+                                    'query': {
+                                        'match_phrase_prefix': {
+                                            'title.completion': req.params['prefix']
+                                        }
+                                    },
+                                    '_source': {
+                                        'excludes': ['verses']
+                                    },
+                                })
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(results)
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+
+
+class Suggester(object):
+    def on_get(self, req, resp, idx_name):
+        try:
+            results = es.search(
+                index=idx_name,
+                body={
+                    'suggest': {
+                        'text': req.params['q'],
+                        'simple_phrase': {
+                            'phrase': {
+                                'field': 'verses.suggesting',
+                                'size': 1,
+                                'gram_size': 4,
+                                'max_errors': 4,
+                                'direct_generator': [{
+                                    'field': 'verses.suggesting',
+                                    'suggest_mode': 'popular',
+                                }],
+                                'highlight': {
+                                    'pre_tag': '<em>',
+                                    'post_tag': '</em>'
+                                },
+                                "collate": {
+                                    "query": {
+                                        "source": {
+                                            "match": {
+                                                "{{field_name}}": "{{suggestion}}"
+                                            }
+                                        }
+                                    },
+                                    "params": {
+                                        "field_name": "verses.folded"
+                                    },
+                                    "prune": True
+                                }
+                            }
+                        }
+                    }
+                })
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(results)
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+
+
 class Similar(object):
     def on_get(self, req, resp, idx_name, doc_type):
         try:
@@ -213,9 +286,13 @@ app = falcon.API(middleware=[HandleCORS()])
 index = Index()
 articles = Articles()
 titles = Titles()
+titlesCompletion = TitlesCompletion()
+suggester = Suggester()
 similar = Similar()
 
 app.add_route('/{idx_name}', index)
 app.add_route('/{idx_name}/{doc_type}', articles)
 app.add_route('/{idx_name}/titles', titles)
+app.add_route('/{idx_name}/titles/completion', titlesCompletion)
+app.add_route('/{idx_name}/suggest/', suggester)
 app.add_route('/{idx_name}/{doc_type}/similar', similar)
