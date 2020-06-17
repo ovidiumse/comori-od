@@ -25,7 +25,7 @@ def parseArgs():
                          dest="delete_index",
                          action="store_true",
                          help="Delete existing index")
-    PARSER_.add_argument("-l", "--localhost", action="store_true", help="Upload to localhost")
+    PARSER_.add_argument("-e", "--external-host", action="store_true", help="Upload to external host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -185,9 +185,7 @@ def main():
 
     global COMORI_OD_API_HOST, COMORI_OD_API_BASEURL
 
-    if args.localhost:
-        COMORI_OD_API_HOST = LOCAL_HOST
-    else:
+    if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
     COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)

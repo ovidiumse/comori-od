@@ -1,3 +1,4 @@
+#!/usr/bin/pypy3
 import sys
 import argparse
 import simplejson as json
@@ -14,8 +15,13 @@ COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
 
 
 def parseArgs():
-    PARSER_.add_argument("-i", "--index-name", action="store", dest="idx_name", help="Index name")
-    PARSER_.add_argument("-l", "--localhost", action="store_true", help="Query localhost")
+    PARSER_.add_argument("-i",
+                         "--index-name",
+                         action="store",
+                         dest="idx_name",
+                         default="od",
+                         help="Index name")
+    PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
     PARSER_.add_argument("query", action="store", help="Query")
 
     return PARSER_.parse_args()
@@ -46,9 +52,7 @@ def main():
 
     global COMORI_OD_API_HOST
 
-    if args.localhost:
-        COMORI_OD_API_HOST = LOCAL_HOST
-    else:
+    if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
     suggest(args.idx_name, args.query)
