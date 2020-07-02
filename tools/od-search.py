@@ -21,7 +21,7 @@ def parseArgs():
                          dest="idx_name",
                          default="od",
                          help="Index name")
-    PARSER_.add_argument("-t", "--doc-type", action="store", help="Document type")
+    PARSER_.add_argument("-t", "--doc-type", action="store", required=True, help="Document type")
     PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
     PARSER_.add_argument("query", action="store", help="Query")
 
@@ -49,18 +49,20 @@ def search(idx_name, doc_type, query):
         print("Type: {}".format(result['type']))
         print("Author: {}".format(result['author']))
         if 'highlight' in hit:
-            print("highlight: {}".format(hit['highlight']))
+            print("highlight: {}".format(json.dumps(hit['highlight'], indent=2)))
         print("")
 
 
 def main():
     args = parseArgs()
 
-    global COMORI_OD_API_HOST
+    global COMORI_OD_API_HOST, COMORI_OD_API_BASEURL
 
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
+        COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
 
+    print("Searching {} using {}...".format(args.query, COMORI_OD_API_BASEURL))
     search(args.idx_name, args.doc_type, args.query)
 
 

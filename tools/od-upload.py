@@ -1,3 +1,4 @@
+#!/usr/bin/pypy3
 import argparse
 import simplejson as json
 import requests
@@ -5,8 +6,8 @@ import logging
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
-EXTERNAL_HOST = "vps-4864b0cc.vps.ovh.net:8000"
-LOCAL_HOST = "localhost:9000"
+EXTERNAL_HOST = "comori-od.ro"
+LOCAL_HOST = "localhost"
 
 COMORI_OD_API_HOST = LOCAL_HOST
 COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
@@ -18,14 +19,27 @@ def parseArgs():
                          dest="json_filepath",
                          action="store",
                          type=str,
-                         required=True,
                          help="Input JSON file")
+    PARSER_.add_argument("--index",
+                         dest="idx_name",
+                         action="store",
+                         required=True,
+                         help="Index name")
     PARSER_.add_argument("-d",
                          "--delete-index",
                          dest="delete_index",
                          action="store_true",
                          help="Delete existing index")
-    PARSER_.add_argument("-e", "--external-host", action="store_true", help="Upload to external host")
+    PARSER_.add_argument("-c",
+                         "--create-index",
+                         dest="create_index",
+                         action="store_true",
+                         help="Create the index")
+    PARSER_.add_argument("-e",
+                         "--external-host",
+                         action="store_true",
+                         help="Upload to external host")
+    PARSER_.add_argument("-p", "--port", action="store", required=True)
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -53,24 +67,7 @@ def chunk(data, n):
         yield data[i:i + n]
 
 
-def create_index():
-    props = [{
-        'name': 'volume',
-        'type': 'keyword'
-    }, {
-        'name': 'book',
-        'type': 'keyword'
-    }, {
-        'name': 'author',
-        'type': 'keyword'
-    }, {
-        'name': 'title',
-        'type': 'text'
-    }, {
-        'name': 'verses',
-        'type': 'text'
-    }]
-
+def create_index(idx_name):
     settings = {
         "settings": {
             "number_of_shards": 1,
@@ -97,14 +94,18 @@ def create_index():
                 },
                 "analyzer": {
                     "romanian": {
-                        'type': 'custom',
-                        "tokenizer": "standard",
+                        'type':
+                        'custom',
+                        "tokenizer":
+                        "standard",
                         "filter":
                         ["lowercase", "romanian_stop", "romanian_keywords", "romanian_stemmer"]
                     },
                     "folding": {
-                        'type': 'custom',
-                        "tokenizer": "standard",
+                        'type':
+                        'custom',
+                        "tokenizer":
+                        "standard",
                         "filter": [
                             "lowercase", "romanian_stop", "romanian_keywords", "romanian_stemmer",
                             "asciifolding"
@@ -125,54 +126,82 @@ def create_index():
         }
     }
 
-    mappings = {'properties': {}}
-    for p in props:
-        fieldInfo = mappings['properties'][p['name']] = {
-            'type': p['type'],
-        }
-
-        if p['type'] == 'text':
-            fieldInfo['term_vector'] = 'with_positions_offsets'
-            fieldInfo['analyzer'] = 'standard'
-            fieldInfo['fields'] = {
-                'folded': {
-                    'type': p['type'],
-                    'analyzer': 'folding',
-                    "term_vector": "with_positions_offsets"
+    mappings = {
+        'dynamic': False,
+        'properties': {
+            'volume': {
+                'type': 'keyword',
+            },
+            'book': {
+                'type': 'keyword',
+            },
+            'author': {
+                'type': 'keyword',
+            },
+            'title': {
+                'type': 'text',
+                'term_vector': 'with_positions_offsets',
+                'analyzer': 'standard',
+                'fields': {
+                    'folded': {
+                        'type': 'text',
+                        'analyzer': 'folding',
+                        'term_vector': 'with_positions_offsets',
+                    },
+                    'completion': {
+                        'type': 'search_as_you_type',
+                        'analyzer': 'completion',
+                    },
+                    'suggesting': {
+                        'type': 'text',
+                        'analyzer': 'suggesting'
+                    }
+                }
+            },
+            'verses': {
+                "properties": {
+                    'type': {
+                        'type': 'keyword'
+                    },
+                    'text': {
+                        'type': 'text',
+                        'term_vector': 'with_positions_offsets',
+                        'analyzer': 'standard',
+                        'fields': {
+                            'folded': {
+                                'type': 'text',
+                                'analyzer': 'folding',
+                                'term_vector': 'with_positions_offsets',
+                            },
+                            'suggesting': {
+                                'type': 'text',
+                                'analyzer': 'suggesting'
+                            }
+                        }
+                    }
                 }
             }
+        }
+    }
 
-    titleInfo = mappings['properties']['title']
-    titleInfo['boost'] = 2
-    titleInfo['fields']['folded']['boost'] = 2
-    titleInfo['fields']['completion'] = {'type': 'search_as_you_type', 'analyzer': 'completion'}
-    titleInfo['fields']['suggesting'] = {'type': 'text', 'analyzer': 'suggesting'}
-
-    versesInfo = mappings['properties']['verses']
-    versesInfo['fields']['suggesting'] = {'type': 'text', 'analyzer': 'suggesting'}
-
-    post("od", {'settings': settings, 'doc_type': 'articles', 'mappings': mappings})
+    post(idx_name, {'settings': settings, 'doc_type': 'articles', 'mappings': mappings})
 
 
-def index_all(articles):
+def index_all(idx_name, articles):
+    failed = 0
+    indexed = 0
+    for bulk in chunk(articles, 100):
+        response = post("{}/articles".format(idx_name), bulk)
+        if response['total'] != response['indexed']:
+            failed += response['total'] - respose['indexed']
+            logging.warning("So far {} articles failed to index!".format(failed))
+        indexed += response['indexed']
+        logging.info("{} / {} indexed!".format(indexed, len(articles)))
+
+
+def delete_index(idx_name):
     try:
-        failed = 0
-        indexed = 0
-        for ch in chunk(articles, 100):
-            response = post("od/articles", ch)
-            if response['total'] != response['indexed']:
-                failed += response['total'] - respose['indexed']
-                logging.warning("So far {} articles failed to index!".format(failed))
-            indexed += response['indexed']
-            logging.info("{} / {} indexed!".format(indexed, len(articles)))
-
-    except Exception as ex:
-        logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
-
-
-def delete_index():
-    try:
-        delete("od")
+        delete(idx_name)
     except Exception as ex:
         logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
@@ -188,7 +217,7 @@ def main():
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
+    COMORI_OD_API_BASEURL = "http://{}:{}".format(COMORI_OD_API_HOST, args.port)
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
@@ -200,16 +229,23 @@ def main():
         requests_log.propagate = True
 
     if args.delete_index:
-        logging.info("Deleting index from {}...".format(COMORI_OD_API_HOST))
-        delete_index()
-        logging.info("Creating index from {}...".format(COMORI_OD_API_HOST))
-        create_index()
+        logging.info("Deleting index from {}...".format(COMORI_OD_API_BASEURL))
+        delete_index(args.idx_name)
 
-    with open(args.json_filepath, 'r') as json_file:
-        articles = json.load(json_file)
-        logging.info("Indexing {} articles to {}...".format(len(articles), COMORI_OD_API_HOST))
-        index_all(articles)
-        logging.info("Indexed {} articles to {}!".format(len(articles), COMORI_OD_API_HOST))
+    if args.create_index:
+        logging.info("Creating index from {}...".format(COMORI_OD_API_BASEURL))
+        create_index(args.idx_name)
+
+    if args.json_filepath:
+        with open(args.json_filepath, 'r') as json_file:
+            articles = json.load(json_file)
+
+        try:
+            logging.info("Indexing {} articles to {}...".format(len(articles), COMORI_OD_API_BASEURL))
+            index_all(args.idx_name, articles)
+            logging.info("Indexed {} articles to {}!".format(len(articles), COMORI_OD_API_BASEURL))
+        except Exception as ex:
+            logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
 
 if "__main__" == __name__:

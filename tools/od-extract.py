@@ -1,12 +1,9 @@
-#!pypy3
+#!/usr/bin/pypy3
 import sys
 import os
 import re
 import argparse
 import simplejson as json
-import unicodedata
-from prettytable import PrettyTable
-from collections import OrderedDict
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -135,7 +132,7 @@ def isPoemTitle(tag):
 
 def printElements(soup, predicate):
     for p in soup.find_all(predicate):
-        print(sanitizeValue(p.text))
+        print(p.text)
 
 
 def printTitles(soup):
@@ -153,60 +150,14 @@ def printArticleTitles(soup):
 def printPoemTitles(soup):
     printElements(soup, isPoemTitle)
 
-
-def makeReplacement(word):
-    return {'replacement': word, 'count': 0}
-
-
-wordReplacements = {
-    'sînt': makeReplacement('sunt'),
-    'sîntem': makeReplacement('suntem'),
-    'sînteţi': makeReplacement('sunteţi'),
-    'Sînt': makeReplacement('Sunt'),
-    'Sîntem': makeReplacement('Suntem'),
-    'Sînteţi': makeReplacement('Sunteţi')
-}
-
-
-def sanitizeValue(val):
-    val = val.replace(u'\xa0', ' ');
-    val = val.replace('\n', ' ').strip()
-    val = ' '.join(val.split())
-    val = re.sub(r'^\d+ - ', '', val)
-    words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
-    words = set(words)
-    if words:
-        for w in words:
-            if w in wordReplacements:
-                replacementInfo = wordReplacements[w]
-                r = replacementInfo['replacement']
-                replacementInfo['count'] += 1
-            else:
-                r = w
-                if 'î' in r:
-                    for index, c in enumerate(r):
-                        if index > 0 and index < len(r) - 1 and c == 'î' and not (
-                                r.startswith('reî') or r.startswith('neî')):
-                            r = r[:index] + 'â' + r[index + 1:]
-
-            if r != w:
-                val = val.replace(w, r)
-                if w not in wordReplacements:
-                    replacementInfo = makeReplacement(r)
-                    replacementInfo['count'] = 1
-                    wordReplacements[w] = replacementInfo
-
-    return val
-
-
 def extractArticles(soup, volume, author):
     articles = []
     book = volume
     for p in soup.find_all('p'):
         if isSubtitle(p):
-            book = sanitizeValue(p.text)
+            book = p.text
         elif isArticleTitle(p) or isPoemTitle(p):
-            title = sanitizeValue(p.text)
+            title = p.text
             type = "poezie" if isPoemTitle(p) else "articol"
             verses = []
             lastTag = ""
@@ -215,9 +166,9 @@ def extractArticles(soup, volume, author):
                 if v.name == 'p' and getFontSize(v) > 125:
                     break
                 elif v.name == 'p':
-                    verse = sanitizeValue(v.text)
+                    verse = v.text
                     if verse or lastValue:
-                        lastValue = sanitizeValue(v.text)
+                        lastValue = v.text
                         verses.append(lastValue)
                 elif v.name == 'br' and lastTag not in ['', 'br'] and lastValue:
                     lastValue = ""
@@ -240,10 +191,6 @@ def extractArticles(soup, volume, author):
     return articles
 
 
-def durationString(elapsed):
-    return "{}".format(elapsed)
-
-
 def main():
     args = parseArgs()
 
@@ -253,10 +200,10 @@ def main():
         soup = BeautifulSoup(html_file, 'html.parser')
         parse_finish = datetime.now()
 
-        print("Parsing done in {}".format(durationString(parse_finish - start)))
+        print("Parsing done in {}.".format(parse_finish - start))
 
         p = soup.find(isTitle)
-        volume = sanitizeValue(p.text)
+        volume = p.text
 
         if args.print_title:
             printTitles(soup)
@@ -271,28 +218,31 @@ def main():
             articles = extractArticles(soup, volume, args.author)
             extract_finish = datetime.now()
 
-            print("Extracted {} articles in {}".
-                  format(len(articles), durationString(extract_finish - parse_finish)))
+            print("Extracted {} articles in {}.".
+                  format(len(articles), extract_finish - parse_finish))
 
             print("Writing {} articles to {}...".format(len(articles), args.extract_filename))
             with open(args.extract_filename, 'w') as articles_file:
                 json.dump(articles, articles_file, encoding=None, ensure_ascii=True, indent=2)
 
-            replacements_filepath = os.path.splitext(args.extract_filename)[0] + "_replacements.txt"
-            replacements = OrderedDict(
-                sorted(wordReplacements.items(), key=lambda i: i[1]['count'], reverse=True))
+            text_filename = os.path.splitext(args.extract_filename)[0] + ".txt"
+            with open(text_filename, 'w', encoding='utf-8') as text_file:
+                for article in articles:
+                    print(article['title'], file=text_file)
+                    print("Author: {}".format(article['author']), file=text_file)
+                    print("Book: {}".format(article['book']), file=text_file)
+                    print("Volume: {}".format(article['volume']), file=text_file)
+                    print("Type: {}".format(article['type']), file=text_file)
+                    print("", file=text_file)
+                    for verse in article['verses']:
+                        print(verse, file=text_file)
 
-            print("Writing {} replacements to {}...".format(len(replacements),
-                                                            replacements_filepath))
-            tbl = PrettyTable()
-            tbl.field_names = ["Cuvânt inițial", "Cuvânt înlocuitor", "Număr apariții"]
-            with open(replacements_filepath, 'w', encoding='utf-8') as replacements_file:
-                for word, replacementInfo in replacements.items():
-                    tbl.add_row([word, replacementInfo['replacement'], replacementInfo['count']])
-                print(tbl, file=replacements_file)
+                    print("", file=text_file)
+
+
 
         finish = datetime.now()
-        print("All done in {}".format(durationString(finish - start)))
+        print("All done in {}.".format(finish - start))
 
 
 if "__main__" == __name__:
