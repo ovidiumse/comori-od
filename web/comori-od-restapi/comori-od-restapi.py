@@ -1,12 +1,15 @@
+#!/usr/bin/pypy3
+import re
 import falcon
 import simplejson as json
 import logging
 import urllib
+import yaml
+import requests
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
 
-es = Elasticsearch(hosts=[{'host': "localhost", 'port': 9200}])
-
+ES = None
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -23,71 +26,80 @@ class Index(object):
         resp.content_type = 'application/json'
 
         try:
-            es.indices.delete(index=idx_name)
+            ES.indices.delete(index=idx_name)
             resp.status = falcon.HTTP_200
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            logging.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            logging.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
 
     def on_get(self, req, resp, idx_name):
         try:
-            mapping = es.indices.get_mapping(index=idx_name)
-            settings = es.indices.get(index=idx_name)
+            mapping = ES.indices.get_mapping(index=idx_name)
+            settings = ES.indices.get(index=idx_name)
             resp.status = falcon.HTTP_200
             resp.body = json.dumps({'settings': settings, 'mapping': mapping})
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            logging.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            logging.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
 
     def on_post(self, req, resp, idx_name):
         data = json.loads(req.stream.read())
 
         try:
-            if es.indices.exists(idx_name):
-                es.indices.delete(index=idx_name)
+            if ES.indices.exists(idx_name):
+                ES.indices.delete(index=idx_name)
 
-            es.indices.create(index=idx_name, body=data['settings'])
-            es.indices.put_mapping(index=idx_name, body=data['mappings'])
+            ES.indices.create(index=idx_name, body=data['settings'])
+            ES.indices.put_mapping(index=idx_name, body=data['mappings'])
             resp.status = falcon.HTTP_200
             resp.body = json.dumps({})
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            logging.error("Creating index failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            logging.error("Creating index failed! Error: {}".format(ex), exc_info=True)
 
 
 class Articles(object):
     def index(self, idx_name, article):
         try:
-            es.index(index=idx_name, body=json.dumps(article))
+            ES.index(index=idx_name, body=json.dumps(article))
+            return True
         except Exception as ex:
             logging.error("Indexing {} failed!".format(article), exc_info=True)
             return False
-        return True
 
-    def query(self, idx_name, params):
-        limit = params['limit'] if 'limit' in params else 100
-        offset = params['offset'] if 'offset' in params else 0
+    def query(self, idx_name, req):
+        limit = req.params['limit'] if 'limit' in req.params else 100
+        offset = req.params['offset'] if 'offset' in req.params else 0
 
-        return es.search(index=idx_name,
+        return ES.search(index=idx_name,
                          body={
                              'query': {
                                  'simple_query_string': {
-                                     'query': urllib.parse.unquote(params['q']),
-                                     "fields": ['title', 'title.folded', 'verses', 'verses.folded'],
-                                     "default_operator": "and"
+                                     'query':
+                                     urllib.parse.unquote(req.params['q']),
+                                     "fields":
+                                     ['title', 'title.folded', 'verses.text', 'verses.text.folded'],
+                                     "default_operator":
+                                     "and"
                                  }
                              },
                              '_source': {
-                                 'excludes': ['verses']
+                                 'excludes': ['verses', 'bible-refs']
                              },
                              'highlight': {
                                  'fields': {
@@ -95,8 +107,8 @@ class Articles(object):
                                          'matched_fields': ['title', 'title_folded'],
                                          'type': 'fvh'
                                      },
-                                     'verses': {
-                                         'matched_fields': ['verses', 'verses.folded'],
+                                     'verses.text': {
+                                         'matched_fields': ['verses.text', 'verses.text.folded'],
                                          'type': 'fvh'
                                      },
                                  }
@@ -105,15 +117,16 @@ class Articles(object):
                              'from': offset
                          })
 
-    def getById(self, idx_name, params):
-        return es.get(index=idx_name, id=params['id'])
+
+    def getById(self, idx_name, req):
+        return ES.get(index=idx_name, id=req.params['id'])
 
     def on_get(self, req, resp, idx_name, doc_type):
         try:
             if 'q' in req.params:
-                results = self.query(idx_name, req.params)
+                results = self.query(idx_name, req)
             else:
-                results = self.getById(idx_name, req.params)
+                results = self.getById(idx_name, req)
 
             resp.status = falcon.HTTP_200
             resp.body = json.dumps(results)
@@ -131,7 +144,7 @@ class Articles(object):
         try:
             for a in articles:
                 a['_index'] = idx_name
-            indexed, _ = helpers.bulk(es, articles, stats_only=True)
+            indexed, _ = helpers.bulk(ES, articles, stats_only=True)
             resp.status = falcon.HTTP_200
             resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
         except TransportError as ex:
@@ -142,15 +155,17 @@ class Articles(object):
                 'exception': ex.error,
                 'info': ex.info
             })
+            logging.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            logging.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
 
 
 class Titles(object):
     def on_get(self, req, resp, idx_name):
         try:
-            results = es.search(index=idx_name,
+            results = ES.search(index=idx_name,
                                 body={
                                     'suggest': {
                                         'article-suggest': {
@@ -178,7 +193,7 @@ class Titles(object):
 class TitlesCompletion(object):
     def on_get(self, req, resp, idx_name):
         try:
-            results = es.search(index=idx_name,
+            results = ES.search(index=idx_name,
                                 body={
                                     'query': {
                                         'match_phrase_prefix': {
@@ -186,7 +201,7 @@ class TitlesCompletion(object):
                                         }
                                     },
                                     '_source': {
-                                        'excludes': ['verses']
+                                        'excludes': ['verses', 'bible-refs']
                                     },
                                 })
             resp.status = falcon.HTTP_200
@@ -202,42 +217,45 @@ class TitlesCompletion(object):
 class Suggester(object):
     def on_get(self, req, resp, idx_name):
         try:
-            results = es.search(
-                index=idx_name,
-                body={
-                    'suggest': {
-                        'text': req.params['q'],
-                        'simple_phrase': {
-                            'phrase': {
-                                'field': 'verses.suggesting',
-                                'size': 1,
-                                'gram_size': 4,
-                                'max_errors': 4,
-                                'direct_generator': [{
-                                    'field': 'verses.suggesting',
-                                    'suggest_mode': 'popular',
-                                }],
-                                'highlight': {
-                                    'pre_tag': '<em>',
-                                    'post_tag': '</em>'
-                                },
-                                "collate": {
-                                    "query": {
-                                        "source": {
-                                            "match": {
-                                                "{{field_name}}": "{{suggestion}}"
+            results = ES.search(index=idx_name,
+                                body={
+                                    'suggest': {
+                                        'text': req.params['q'],
+                                        'simple_phrase': {
+                                            'phrase': {
+                                                'field':
+                                                'verses.text.suggesting',
+                                                'size':
+                                                1,
+                                                'gram_size':
+                                                4,
+                                                'max_errors':
+                                                4,
+                                                'direct_generator': [{
+                                                    'field': 'verses.text.suggesting',
+                                                    'suggest_mode': 'popular',
+                                                }],
+                                                'highlight': {
+                                                    'pre_tag': '<em>',
+                                                    'post_tag': '</em>'
+                                                },
+                                                "collate": {
+                                                    "query": {
+                                                        "source": {
+                                                            "match": {
+                                                                "{{field_name}}": "{{suggestion}}"
+                                                            }
+                                                        }
+                                                    },
+                                                    "params": {
+                                                        "field_name": "verses.text.folded"
+                                                    },
+                                                    "prune": True
+                                                }
                                             }
                                         }
-                                    },
-                                    "params": {
-                                        "field_name": "verses.folded"
-                                    },
-                                    "prune": True
-                                }
-                            }
-                        }
-                    }
-                })
+                                    }
+                                })
             resp.status = falcon.HTTP_200
             resp.body = json.dumps(results)
         except TransportError as ex:
@@ -251,11 +269,11 @@ class Suggester(object):
 class Similar(object):
     def on_get(self, req, resp, idx_name, doc_type):
         try:
-            results = es.search(index=idx_name,
+            results = ES.search(index=idx_name,
                                 body={
                                     'query': {
                                         'more_like_this': {
-                                            'fields': ["verses", "verses.folded"],
+                                            'fields': ["verses.text", "verses.text.folded"],
                                             'like': [{
                                                 '_id': req.params['id']
                                             }],
@@ -265,7 +283,7 @@ class Similar(object):
                                         },
                                     },
                                     '_source': {
-                                        'excludes': ['verses']
+                                        'excludes': ['verses.text']
                                     },
                                     'size': 4
                                 })
@@ -279,20 +297,32 @@ class Similar(object):
             resp.body = json.dumps({'exception': str(ex)})
 
 
-logging.basicConfig(level=logging.INFO)
+def load_app(cfg_filepath):
+    logging.basicConfig(level=logging.INFO)
 
-app = falcon.API(middleware=[HandleCORS()])
+    cfg = {}
+    with open(cfg_filepath, 'r') as cfg_file:
+        cfg = yaml.full_load(cfg_file)
 
-index = Index()
-articles = Articles()
-titles = Titles()
-titlesCompletion = TitlesCompletion()
-suggester = Suggester()
-similar = Similar()
+    global ES
+    ES = Elasticsearch(hosts=[cfg['es']])
 
-app.add_route('/{idx_name}', index)
-app.add_route('/{idx_name}/{doc_type}', articles)
-app.add_route('/{idx_name}/titles', titles)
-app.add_route('/{idx_name}/titles/completion', titlesCompletion)
-app.add_route('/{idx_name}/suggest/', suggester)
-app.add_route('/{idx_name}/{doc_type}/similar', similar)
+    logging.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
+
+    app = falcon.API(middleware=[HandleCORS()])
+
+    index = Index()
+    articles = Articles()
+    titles = Titles()
+    titlesCompletion = TitlesCompletion()
+    suggester = Suggester()
+    similar = Similar()
+
+    app.add_route('/{idx_name}', index)
+    app.add_route('/{idx_name}/{doc_type}', articles)
+    app.add_route('/{idx_name}/titles', titles)
+    app.add_route('/{idx_name}/titles/completion', titlesCompletion)
+    app.add_route('/{idx_name}/suggest/', suggester)
+    app.add_route('/{idx_name}/{doc_type}/similar', similar)
+
+    return app
