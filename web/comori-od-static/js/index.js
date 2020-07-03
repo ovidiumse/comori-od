@@ -1,7 +1,7 @@
 // The searchAPI object contains methods for each kind of request we'll make
 var EXTERNAL_HOST = "vps-4864b0cc.vps.ovh.net:8000"
 var LOCAL_HOST = "localhost:9000"
-var HOST = LOCAL_HOST
+var HOST = EXTERNAL_HOST
 
 var EXTERNAL_BIBLE_API_HOST = "http://vps-4864b0cc.vps.ovh.net:8001/bible"
 var LOCAL_BIBLE_API_HOST = "http://localhost:8001/bible"
@@ -17,6 +17,15 @@ var searchAPI = {
 	  contentType: "application/json",
 	  dataType: "json"
 	});
+  },
+  suggestQuery: function(query) {
+  	return $.ajax({
+  		url: "http://" + HOST + "/od/suggest?q=" + encodeURIComponent(query),
+  		type: "GET",
+  		crossDomain: true,
+  		contentType: "application/json",
+  		dataType: "json"
+  	});
   },
   getById: function(id, callback) {
 		return $.ajax({
@@ -124,6 +133,8 @@ var loadBibleVerses = function(p) {
 	
 	return p;
 };
+
+var handleSubmit;
 
 var showItem = function(result) {
 	var source = result._source;
@@ -255,29 +266,8 @@ var search = function(searchTerm, offset, limit){
 	var hitsArray = resp.hits.hits;
 	totalHits = resp.hits.total.value;
 
-	if (offset == 0)
-	{
-		var heading;
-		if (totalHits == 1)
-		{
-			heading = $("<h5></h5").append("Am găsit un singur rezultat despre '" 
-				+ decodeURIComponent(searchTerm) + "' in " + resp.took + " milisecunde.");	
-		}
-		else if (totalHits > 0)
-		{
-			heading = $("<h5></h5").append("Am găsit " + totalHits + " rezultate despre '" 
-				+ decodeURIComponent(searchTerm) + "' in " + resp.took + " milisecunde.");
-		}
-		else
-		{
-			var heading = $("<h5></h5").append("Nu am găsit rezultate despre '" 
-				+ decodeURIComponent(searchTerm) + "'.");
-		}
-		
-		$("#results").append(heading);	
-	}	
-
-	hitsArray.forEach(function(eachArticle) {
+	var showHits = function(){
+		hitsArray.forEach(function(eachArticle) {
 		  var source = eachArticle._source;
 
 		  var title = source.title;
@@ -295,43 +285,86 @@ var search = function(searchTerm, offset, limit){
 			{
 			  content = highlight.verses;
 			} 
-	  }
+		  }
 
-	  var item = $('<div></div>').addClass('card mt-3');
-	  var itemBody = $('<div></div>').addClass('card-body p-2');
-	  var itemLink = $('<a></a>').prop('href', '#/articles/' + eachArticle._id).append(title);
-	  var itemBadge = $('<span></span>').addClass('badge badge-light ml-2').append(source['type']);
-	  var itemTitle = $('<h5></h5>').addClass('card-title').append(index + ". ")
-		.append(itemLink).append(itemBadge);
-	  var itemSubtitle = $('<h6></h6>').addClass('card-subtitle mb-2 text-muted')
-		.append("<i>" + source.book + "</i> - " + source.author);
+		  var item = $('<div></div>').addClass('card mt-3');
+		  var itemBody = $('<div></div>').addClass('card-body p-2');
+		  var itemLink = $('<a></a>').prop('href', '#/articles/' + eachArticle._id).append(title);
+		  var itemBadge = $('<span></span>').addClass('badge badge-light ml-2').append(source['type']);
+		  var itemTitle = $('<h5></h5>').addClass('card-title').append(index + ". ")
+			.append(itemLink).append(itemBadge);
+		  var itemSubtitle = $('<h6></h6>').addClass('card-subtitle mb-2 text-muted')
+			.append("<i>" + source.book + "</i> - " + source.author);
 
-	  itemBody.append(itemTitle).append(itemSubtitle);
+		  itemBody.append(itemTitle).append(itemSubtitle);
 
-	  content.forEach(function(verse){
-			itemBody.append($('<p></p>').addClass('mb-0').append(verse));
-	  });
+		  content.forEach(function(verse){
+				itemBody.append($('<p></p>').addClass('mb-0').append(verse));
+		  });
 
-	  item.append(itemBody);
-	  $("#results").append(item);
+		  item.append(itemBody);
+		  $("#results").append(item);
 
-	  index ++;
-	});
+		  index ++;
+		});
 
-	$("#submitBtn").prop('disabled', false);
-	$("#submitBtn").prop('value', 'Search');
+		$("#submitBtn").prop('disabled', false);
+		$("#submitBtn").prop('value', 'Search');
 
-	loading=false;
+		loading=false;
+	};
+
+	var suggestQuery = function(heading){
+		return searchAPI.suggestQuery(searchTerm).then(function(resp){
+				suggestions = resp['suggest']['simple_phrase'][0]['options'];
+				if (suggestions.length > 0)
+				{
+					suggestionLink = $("<a href='#/search/" + suggestions[0]['text'] + "'></a>").append(suggestions[0]['text']);
+					suggestionLink.click(function(event){
+						handleSubmit(suggestions[0]['text']);
+						$("#mainSearch").val(suggestions[0]['text']);
+					});
+					heading.append(" Vrei să cauți '").append(suggestionLink).append("'?");
+				}
+			});	
+	};
+
+	if (offset == 0)
+	{
+		if (totalHits == 1)
+		{
+			heading = $("<h5></h5").append("Am găsit un singur rezultat despre '" 
+				+ decodeURIComponent(searchTerm) + "' in " + resp.took + " milisecunde.");	
+			$("#results").append(heading);
+
+			suggestQuery(heading).then(showHits);
+		}
+		else if (totalHits > 0)
+		{
+			heading = $("<h5></h5").append("Am găsit " + totalHits + " rezultate despre '" 
+				+ decodeURIComponent(searchTerm) + "' in " + resp.took + " milisecunde.");
+			$("#results").append(heading);
+			showHits();
+		}
+		else
+		{
+			var heading = $("<h5></h5").append("Nu am găsit rezultate despre '" 
+				+ decodeURIComponent(searchTerm) + "'.");
+			$("#results").append(heading);
+
+			suggestQuery(heading).then(showHits);
+		}		
+	}	
   });
 };
 
-var handleSubmit =  function(term) {
+handleSubmit =  function(term) {
   searchTerm = term;
 
   $("#submitBtn").prop('disabled', true);
   $("#submitBtn").prop('value', 'Searching...');
 
-	$(".ui-menu-item").hide();
+  $(".ui-menu-item").hide();
   $("#contentDiv").hide();
   $("#results").show();
 
