@@ -96,14 +96,16 @@ export default {
         index: "od2",
         showSearch: false
     }),
-    mounted() {
+    created() {
       if (this.isMobile)
       {
         this.title = "Comori OD";
       }
 
-      this.showSearch = !this.isMobile;
       document.title = this.title;
+    },
+    mounted() {
+      this.showSearch = !this.isMobile;
     },
     methods: {
       filter(item, queryText, itemText) {

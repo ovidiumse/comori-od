@@ -2,7 +2,17 @@
     <div class="search">
         <v-list-item>
           <v-list-item-content class="mt-3">
-            <template v-if="total === 0">
+            <template v-if="loading">
+                <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                  <v-progress-circular indeterminate color="grey lighten-3"></v-progress-circular>
+                </v-layout>
+            </template>
+            <template v-else-if="!loading && total === 0">
                 <v-list-item-title class="text-subtitle-1 text-sm-h5 wrap-text">Nu am găsit rezultate despre '{{q}}'.</v-list-item-title>
                 <v-list-item-subtitle class="text-subtitle-1 text-sm-h5 wrap-text" v-if="suggest">
                     Vrei să cauți
@@ -12,7 +22,7 @@
                     ?
                 </v-list-item-subtitle>
             </template>
-            <template v-else-if="total === 1">
+            <template v-else-if="!loading && total === 1">
                 <v-list-item-title class="text-subtitle-1 text-sm-h5 wrap-text">Am găsit un singur rezultat despre '{{q}}' în {{took}} milisecunde.".</v-list-item-title>
                 <v-list-item-subtitle></v-list-item-subtitle>
             </template>
@@ -27,8 +37,19 @@
             outlined
           >
           <v-list-item class="py-1 py-sm-3 py-md-5 px-3 px-md-5">
-              <v-list-item-avatar size=50 v-if="hit._source.author === 'Traian Dorz'">
-                <img :src="require('../../src/assets/td.png')">
+              <v-list-item-avatar width="48" height="50" v-if="hit._source.author === 'Traian Dorz'">
+                <v-img :src="require('../../src/assets/td-50.jpg?vuetify-preload')">
+                    <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0
+                        >
+                      <v-progress-circular indeterminate color="grey lighten-3"></v-progress-circular>
+                    </v-layout>
+                  </template>
+                </v-img>
               </v-list-item-avatar>
               <v-list-item-content>
                 <router-link :to="{ name: 'Article', params: {id: hit._id}}">
@@ -51,6 +72,14 @@
             </v-card-text>
         </v-card>
     </transition-group>
+        <v-layout v-if="offset > 0 && loading"
+              fill-height
+              align-center
+              justify-center
+              ma-0
+            >
+          <v-progress-circular indeterminate color="grey lighten-3"></v-progress-circular>
+        </v-layout>
     </div>
 </template>
 <script>
@@ -61,6 +90,7 @@ export default {
     data() {
         return {
             q: null,
+            loading: false,
             suggest: null,
             total: 0,
             took: null,
@@ -72,6 +102,10 @@ export default {
         }
     },
     watch: {
+        q(to, from) {
+            from;
+            document.title = "Comori OD: Caută '" + to + "'";
+        },
         $route(to, from) {
             from;
             let q = to.params.q;
@@ -81,8 +115,6 @@ export default {
                 this.query(q, this.offset, this.limit);
             }
         }
-    },
-    created() {
     },
     mounted() {
         // need to use plain Javascript querySelector, as the element is outside this component
@@ -94,6 +126,8 @@ export default {
     },
     methods: {
         query(q, offset, limit) {
+            this.loading = true;
+
             let url = shared.base_url + this.index + '/articles?q=' + encodeURIComponent(q) + '&offset=' + offset + '&limit=' + limit;
 
             console.log('Searching ' + url);
@@ -126,7 +160,7 @@ export default {
                 this.offset = offset;
                 this.limit = limit;
 
-                document.title = "Comori OD: '" + this.q + "'";
+                this.loading = false;
               });          
         },
         suggestQuery(q) {

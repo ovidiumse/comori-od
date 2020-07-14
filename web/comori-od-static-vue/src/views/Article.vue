@@ -4,8 +4,19 @@
           <v-list-item-content>
             <v-layout row>
               <v-col class="d-none d-sm-flex" cols=3 md=2>
-                <v-list-item-avatar size="80" v-if="article._source.author === 'Traian Dorz'">
-                    <img :src="require('../../src/assets/td.png')">
+                <v-list-item-avatar width="75" height="80" v-if="article._source.author === 'Traian Dorz'">
+                    <v-img :src="require('../../src/assets/td.png?vuetify-loader')">
+                        <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0
+                        >
+                      <v-progress-circular indeterminate color="grey lighten-3"></v-progress-circular>
+                    </v-layout>
+                  </template>
+                    </v-img>
                   </v-list-item-avatar>
               </v-col>
               <v-col cols="auto">
@@ -98,6 +109,10 @@ export default {
         this.getSimilar(this.$route.params.id);
     },
     watch: {
+        article(to, from) {
+            from;
+            document.title = "Comori OD: " + to._source.title + ", " + to._source.book + " - " + to._source.author;
+        },
         $route(to, from) {
             from;
             let id = to.params.id;
@@ -136,7 +151,6 @@ export default {
                     }
 
                     this.article = response;
-                    document.title = this.article._source.title + ", " + this.article._source.book + " - " + this.article._source.author;
                 });
             this.id = id;
         }
