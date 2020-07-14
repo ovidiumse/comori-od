@@ -87,6 +87,15 @@
           </v-list-item-content>
         </v-list-item>
     </div>
+    <v-layout v-else
+          fill-height
+          align-center
+          justify-center
+          mt-5
+          mx-0
+        >
+      <v-progress-circular indeterminate color="grey lighten-3"></v-progress-circular>
+    </v-layout>
 </template>
 
 <script>
