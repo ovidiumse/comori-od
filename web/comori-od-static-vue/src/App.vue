@@ -3,7 +3,7 @@
         <v-main>
             <v-container mt-0 pt-0>
                 <v-row align="center" justify="center">
-                    <v-col cols="12" sm="12" md="12" lg="10" xl="8">
+                    <v-col cols="12" sm="12" md="12" lg="10" xl="8" class="pa-0 pa-sm-1">
                         <v-card color="grey lighten-5" >
                             <v-app-bar 
                               ref="appbar"
@@ -23,9 +23,16 @@
                                 @click="goHome">
                                 <v-icon>mdi-home</v-icon>
                               </v-btn>
-                              <v-toolbar-title class="ml-3">Comorile Oastei Domnului</v-toolbar-title>
+                              <v-toolbar-title v-show="!showSearch || !isMobile" class="ml-3">{{title}}</v-toolbar-title>
                               <v-spacer></v-spacer>
+                                <v-btn v-if="isMobile" v-show="!showSearch" icon @click="enableSearch">
+                                  <v-icon>mdi-magnify</v-icon>
+                                </v-btn>
+                                <transition name="expand">
                                 <v-autocomplete
+                                  ref="search"
+                                  v-show="showSearch"
+                                  v-on:blur="hideSearch"
                                   color="grey darken-3"
                                   v-model="autocomplete.selected"
                                   :loading="autocomplete.loading"
@@ -42,8 +49,6 @@
                                   dense
                                   flat
                                   hide-no-data
-                                  item-text="title"
-                                  item-value="id"
                                   label="Caută în Comorile Oastei Domnului"
                                   class="mt-7"
                                   append-icon="mdi-magnify">
@@ -57,9 +62,10 @@
                                     </v-list-item-content>
                                   </template>
                                 </v-autocomplete>
+                              </transition>
                             </v-app-bar>
                             <v-sheet id="content" ref="content" class="overflow-y-auto" :max-height="documentHeight">
-                            <v-card-text class="mt-10 height: 100%">
+                            <v-card-text class="mt-5 mt-sm-10 px-0 px-sm-1 height: 100%">
                               <router-view/>
                             </v-card-text>
                           </v-sheet>
@@ -86,10 +92,18 @@ export default {
             selected: null,
             items: []
         },
+        title: "Comorile Oastei Domnului",
         index: "od2",
+        showSearch: false
     }),
     mounted() {
-      console.log(shared)
+      if (this.isMobile)
+      {
+        this.title = "Comori OD";
+      }
+
+      this.showSearch = !this.isMobile;
+      document.title = this.title;
     },
     methods: {
       filter(item, queryText, itemText) {
@@ -98,8 +112,18 @@ export default {
         itemText;
         return true;
       },
+      enableSearch() {
+        this.showSearch = true;
+        this.$nextTick(() => {
+          this.$refs.search.focus();
+        });
+      },
+      hideSearch() {
+        this.showSearch = !this.isMobile || false;
+      },
       goHome() {
         this.$router.push({path: '/'});
+        document.title = this.title;
       },
       goBack() {
         this.$router.go(-1);
@@ -127,17 +151,24 @@ export default {
 
         this.autocomplete.prefix = "";
         this.autocomplete.items = [];
+
+        this.$nextTick(() => {
+          this.$refs.search.blur();          
+        });
       }
     },
     computed: {
       documentHeight: function() {
-        return window.innerHeight - 40;
+        return window.innerHeight - 20;
+      },
+      isMobile: function() {
+        return this.$vuetify.breakpoint.mobile;
       }
     },
     watch: {
-        "autocomplete.selected"(val) {
-          console.log("Selected: " + val);
-          this.$router.push({name: 'Article', params: {id: val}});
+        "autocomplete.selected"(article) {
+          console.log("Selected: " + JSON.stringify(article));
+          this.$router.push({name: 'Article', params: {id: article.id}});
           this.autocomplete.prefix = "";
           this.autocomplete.items = [];
         },
@@ -184,15 +215,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/scss/shared-styles.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-
-.notranslate {
-  transform: none!important;
 }
 
 </style>

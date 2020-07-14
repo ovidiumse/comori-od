@@ -1,18 +1,18 @@
 <template>
     <div v-if="article">
-        <v-list-item>
+        <v-list-item class="px-3 px-lg-5">
           <v-list-item-content>
             <v-layout row>
-              <v-col xl=1 md=2>
+              <v-col class="d-none d-sm-flex" cols=3 md=2>
                 <v-list-item-avatar size="80" v-if="article._source.author === 'Traian Dorz'">
                     <img :src="require('../../src/assets/td.png')">
                   </v-list-item-avatar>
               </v-col>
-              <v-col align-self="center">
-                <v-list-item-title class="text-h4">
+              <v-col cols="auto">
+                <v-list-item-title class="text-h5 text-md-h4 text-lg-h3 wrap-text">
                     {{article._source.title}}
                 </v-list-item-title>
-                <v-list-item-subtitle class="text-subtitle-1">
+                <v-list-item-subtitle class="text-subtitle-1 wrap-text">
                     {{article._source.book}} - {{article._source.author}}
                 </v-list-item-subtitle>
               </v-col>
@@ -55,7 +55,7 @@
                     </p> 
                 </template>
                 <div id="similars" class="mt-5" v-if="similars.length > 0">
-                    <h2 class="heading">Vezi pe aceeași temă:</h2>
+                    <h2 class="text-subtitle-1 text-sm-h5">Vezi pe aceeași temă:</h2>
                     <v-card v-for="similar in similars" :key="similar._id">
                         <v-list-item>
                           <v-list-item-avatar size=50 v-if="similar._source.author === 'Traian Dorz'">
@@ -63,11 +63,11 @@
                           </v-list-item-avatar>
                           <v-list-item-content>
                             <router-link :to="{ name: 'Article', params: {id: similar._id}}">
-                                <v-list-item-title class="headline">
+                                <v-list-item-title class="text-subtitle-1 text-sm-h5">
                                      {{similar._source.title}}
                                 </v-list-item-title>
                             </router-link>
-                            <v-list-item-subtitle>{{similar._source.book}} - {{similar._source.author}}</v-list-item-subtitle>
+                            <v-list-item-subtitle class="text-subtitle-1 text-sm-h5">{{similar._source.book}} - {{similar._source.author}}</v-list-item-subtitle>
                           </v-list-item-content>
                         </v-list-item>
                     </v-card>
@@ -136,9 +136,13 @@ export default {
                     }
 
                     this.article = response;
+                    document.title = this.article._source.title + ", " + this.article._source.book + " - " + this.article._source.author;
                 });
             this.id = id;
         }
     }
 }
 </script>
+<style lang="scss">
+ @import '@/scss/shared-styles.scss';
+</style>

@@ -1,10 +1,10 @@
 <template>
     <div class="search">
         <v-list-item>
-          <v-list-item-content>
+          <v-list-item-content class="mt-3">
             <template v-if="total === 0">
-                <v-list-item-title class="headline">Nu am găsit rezultate despre '{{q}}'.</v-list-item-title>
-                <v-list-item-subtitle class="subtitle-1" v-if="suggest">
+                <v-list-item-title class="text-subtitle-1 text-sm-h5 wrap-text">Nu am găsit rezultate despre '{{q}}'.</v-list-item-title>
+                <v-list-item-subtitle class="text-subtitle-1 text-sm-h5 wrap-text" v-if="suggest">
                     Vrei să cauți
                     <router-link :to="{ name: 'Search', params: {q: suggest}}">
                         {{suggest}}
@@ -13,20 +13,20 @@
                 </v-list-item-subtitle>
             </template>
             <template v-else-if="total === 1">
-                <v-list-item-title class="headline">Am găsit un singur rezultat despre '{{q}}' în {{took}} milisecunde.".</v-list-item-title>
+                <v-list-item-title class="text-subtitle-1 text-sm-h5 wrap-text">Am găsit un singur rezultat despre '{{q}}' în {{took}} milisecunde.".</v-list-item-title>
                 <v-list-item-subtitle></v-list-item-subtitle>
             </template>
             <template v-else>
-                <v-list-item-title class="headline">Am găsit {{total}} rezultate despre '{{q}}' în {{took}} milisecunde."</v-list-item-title>
+                <v-list-item-title class="text-subtitle-1 text-sm-h5 wrap-text">Am găsit {{total}} rezultate despre '{{q}}' în {{took}} milisecunde."</v-list-item-title>
             </template>            
           </v-list-item-content>
         </v-list-item>
         <transition-group name="slide-fade">
         <v-card v-for="(hit, index) in hits" :key="hit._id"
-            class="mx-auto mt-5"
+            class="ma-2 ma-sm-3 ma-md-5"
             outlined
           >
-          <v-list-item>
+          <v-list-item class="py-1 py-sm-3 py-md-5 px-3 px-md-5">
               <v-list-item-avatar size=50 v-if="hit._source.author === 'Traian Dorz'">
                 <img :src="require('../../src/assets/td.png')">
               </v-list-item-avatar>
@@ -34,17 +34,17 @@
                 <router-link :to="{ name: 'Article', params: {id: hit._id}}">
                     <v-list-item-title 
                         v-if="hit.highlight && hit.highlight.title"
-                        class="headline"
+                        class="text-subtitle-1 text-sm-h5 wrap-text"
                         v-html="index + 1 + '. ' + hit.highlight.title[0]">
                     </v-list-item-title>
-                    <v-list-item-title v-else class="headline">
+                    <v-list-item-title v-else class="text-subtitle-1 text-sm-h5 wrap-text">
                         {{index + 1}}. {{hit._source.title}}
                     </v-list-item-title>
                 </router-link>
-                <v-list-item-subtitle>{{hit._source.book}} - {{hit._source.author}}</v-list-item-subtitle>
+                <v-list-item-subtitle class="wrap-text">{{hit._source.book}} - {{hit._source.author}}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-card-text>
+            <v-card-text class="pt-0 pb-1 pb-sm-3 pb-md5 px-3 px-md-5">
                 <template v-if="hit.highlight && hit.highlight['verses.text']">
                   <p v-for="(line, index) in hit.highlight['verses.text']" :key="index" v-html="line" class="mb-2"/>
                 </template>
@@ -125,6 +125,8 @@ export default {
                 this.q = q;
                 this.offset = offset;
                 this.limit = limit;
+
+                document.title = "Comori OD: '" + this.q + "'";
               });          
         },
         suggestQuery(q) {
@@ -157,23 +159,5 @@ export default {
 }
 </script>
 <style lang="scss">
-em {
-    background-color: lemonchiffon;
-}
-
-.notranslate {
-  transform: none!important;
-}
-
-.slide-fade-enter-active {
-  transition: all .3s ease;
-}
-.slide-fade-leave-active {
-  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
-}
+ @import '@/scss/shared-styles.scss';
 </style>
