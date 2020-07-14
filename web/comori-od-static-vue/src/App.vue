@@ -53,8 +53,19 @@
                                   class="mt-7"
                                   append-icon="mdi-magnify">
                                   <template v-slot:item="{item}">
-                                    <v-list-item-avatar v-if="item.author === 'Traian Dorz'">
-                                      <img :src="require('../src/assets/td.png')">
+                                    <v-list-item-avatar height="50" v-if="item.author === 'Traian Dorz'">
+                                      <v-img :src="require('../src/assets/td-50.jpg?vuetify-preload')">
+                                        <template v-slot:placeholder>
+                                              <v-layout
+                                                fill-height
+                                                align-center
+                                                justify-center
+                                                ma-0
+                                              >
+                                            <v-progress-circular indeterminate color="grey lighten-3"></v-progress-circular>
+                                          </v-layout>
+                                        </template>
+                                      </v-img>
                                     </v-list-item-avatar>
                                     <v-list-item-content>
                                       <v-list-item-title v-text="item.title"></v-list-item-title>
