@@ -53,7 +53,7 @@
                                   class="mt-7"
                                   append-icon="mdi-magnify">
                                   <template v-slot:item="{item}">
-                                    <v-list-item-avatar height="50" v-if="item.author === 'Traian Dorz'">
+                                    <v-list-item-avatar width="48" height="50" v-if="item.author === 'Traian Dorz'">
                                       <v-img :src="require('../src/assets/td-50.jpg?vuetify-preload')">
                                         <template v-slot:placeholder>
                                               <v-layout

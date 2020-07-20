@@ -184,7 +184,7 @@ export default {
         handleScroll() {
             let scrollAtBottom = this.contentElement.scrollTop + this.contentElement.offsetHeight === this.contentElement.scrollHeight;
 
-            if(this.offset < this.total && this.q && scrollAtBottom ) {
+            if(this.offset < this.total && this.hits.length !== this.total && this.q && scrollAtBottom ) {
                 this.offset += this.limit;
                 this.query(this.q, this.offset, this.limit);
             }
