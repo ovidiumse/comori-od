@@ -1,0 +1,57 @@
+version: '3'
+services:
+  comori-od-static-vue:
+    build: ../comori-od-static-vue
+    container_name: comori-od-static-vue
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=comori-od.ro
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=comori-od.ro
+    networks:
+      - proxy
+    restart: unless-stopped
+
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - proxy
+    restart: unless-stopped
+
+  comori-od-restapi:
+    build: ../comori-od-restapi
+    container_name: comori-od-restapi
+    expose: 
+      - "9000"
+    environment:
+      - VIRTUAL_HOST=comori-od.ro
+      - VIRTUAL_PORT=9000
+      - LETSENCRYPT_HOST=comori-od.ro
+    depends_on:
+      - es
+    networks:
+      - proxy
+    restart: unless-stopped
+
+volumes:
+  data01:
+
+networks:
+  proxy:
+    external:
+      name: nginx-proxy
+
