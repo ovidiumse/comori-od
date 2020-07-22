@@ -77,7 +77,9 @@
                             </v-app-bar>
                             <v-sheet id="content" ref="content" class="overflow-y-auto" :max-height="documentHeight">
                             <v-card-text class="mt-5 mt-sm-10 px-0 px-sm-1 height: 100%">
-                              <router-view/>
+                              <keep-alive include="Search">
+                                <router-view></router-view>
+                              </keep-alive>
                             </v-card-text>
                           </v-sheet>
                         </v-card>
