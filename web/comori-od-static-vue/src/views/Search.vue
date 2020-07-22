@@ -89,6 +89,7 @@ export default {
     name: "Search",
     data() {
         return {
+            active: false,
             q: null,
             loading: false,
             suggest: null,
@@ -107,6 +108,16 @@ export default {
             document.title = "Comori OD: Caută '" + to + "'";
         },
         $route(to, from) {
+            if (to.name !== 'Search')
+            {
+                this.active = false;
+                return;
+            }
+            else
+            {
+                this.active = true;
+            }
+
             from;
             let q = to.params.q;
             if (q !== this.q)
@@ -122,6 +133,7 @@ export default {
         this.contentElement = document.querySelector('#content');
         this.contentElement.addEventListener('scroll', this.handleScroll);
 
+        this.active = true;
         this.query(this.$route.params.q, this.offset, this.limit);
     },
     methods: {
@@ -184,7 +196,8 @@ export default {
         handleScroll() {
             let scrollAtBottom = this.contentElement.scrollTop + this.contentElement.offsetHeight === this.contentElement.scrollHeight;
 
-            if(this.offset < this.total && this.hits.length !== this.total && this.q && scrollAtBottom ) {
+            if(this.active && this.offset < this.total && this.hits.length !== this.total && this.q && scrollAtBottom ) {
+                console.log("bottom reached!")
                 this.offset += this.limit;
                 this.query(this.q, this.offset, this.limit);
             }
