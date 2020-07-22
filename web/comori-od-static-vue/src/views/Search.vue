@@ -173,6 +173,12 @@ export default {
                 this.limit = limit;
 
                 this.loading = false;
+
+                if (this.offset === 0)
+                {
+                    console.log("Scrolling to 0 while searching for " + q + ", offset: " + offset + ", limit: " + limit);
+                    this.contentElement.scrollTop = 0;
+                }
               });          
         },
         suggestQuery(q) {
