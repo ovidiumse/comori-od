@@ -1,6 +1,6 @@
 <script>
 export default {
 	name: "shared",
-		base_url: 'http://localhost/api/',
+		base_url: 'https://comori-od.ro/api/',
 }
 </script>
