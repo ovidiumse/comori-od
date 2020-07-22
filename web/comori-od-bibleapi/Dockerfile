@@ -17,4 +17,4 @@ RUN pypy3 -m pip install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "-b", "0.0.0.0:8001", "comori-od-bibleapi:load_app('data/bible.json')"]
+CMD ["gunicorn", "-b", "0.0.0.0:9001", "comori-od-bibleapi:load_app('data/bible.json')"]
