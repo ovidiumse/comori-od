@@ -98,7 +98,6 @@ export default {
             hits: [],
             offset: 0,
             limit: 10,
-            index: "od2",
             contentElement: null
         }
     },
@@ -140,7 +139,7 @@ export default {
         query(q, offset, limit) {
             this.loading = true;
 
-            let url = shared.base_url + this.index + '/articles?q=' + encodeURIComponent(q) + '&offset=' + offset + '&limit=' + limit;
+            let url = shared.base_url + shared.index_name + '/articles?q=' + encodeURIComponent(q) + '&offset=' + offset + '&limit=' + limit;
 
             console.log('Searching ' + url);
             fetch(url)
@@ -182,7 +181,7 @@ export default {
               });          
         },
         suggestQuery(q) {
-            let url = shared.base_url + this.index + '/suggest?q=' + encodeURIComponent(q);
+            let url = shared.base_url + shared.index_name + '/suggest?q=' + encodeURIComponent(q);
             console.log('Suggesting ' + url); 
             fetch(url)
                 .then(response => response.json())

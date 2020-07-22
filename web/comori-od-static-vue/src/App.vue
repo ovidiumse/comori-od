@@ -195,7 +195,7 @@ export default {
 
             this.autocomplete.loading = true;
 
-            let url = shared.base_url + this.index + '/titles/completion?prefix=' + encodeURIComponent(val);
+            let url = shared.base_url + shared.index_name + '/titles/completion?prefix=' + encodeURIComponent(val);
             console.log("Completion: " + url);
 
             fetch(url)

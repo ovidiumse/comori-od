@@ -108,7 +108,6 @@ export default {
             id: null,
             article: null,
             show: {},
-            index: "od2",
             contentElement: null,
             similars: []
         }
@@ -133,7 +132,7 @@ export default {
     },
     methods: {
         getSimilar(id) {
-            let url = shared.base_url + this.index + '/article/similar?id=' + encodeURIComponent(id)
+            let url = shared.base_url + shared.index_name + '/article/similar?id=' + encodeURIComponent(id)
             console.log("Getting similars from " + url)
             fetch(url)
                 .then(response => response.json())
@@ -148,7 +147,7 @@ export default {
                 })
         },
         getById(id) {
-            let url = shared.base_url + this.index + '/article?id=' + encodeURIComponent(id)
+            let url = shared.base_url + shared.index_name + '/article?id=' + encodeURIComponent(id)
             console.log("Getting by id from " + url);
             fetch(url)
                 .then(response => response.json())
