@@ -10,7 +10,7 @@ EXTERNAL_HOST = "comori-od.ro"
 LOCAL_HOST = "localhost"
 
 COMORI_OD_API_HOST = LOCAL_HOST
-COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
+COMORI_OD_API_BASEURL = "http://{}/api".format(COMORI_OD_API_HOST)
 
 
 def parseArgs():
@@ -52,7 +52,7 @@ def parseArgs():
 def post(uri, data):
     response = requests.post("{}/{}".format(COMORI_OD_API_BASEURL, uri), json=data)
     if response.status_code != requests.codes.ok:
-        logging.error("Error: {}".format(json.dumps(response.json(), indent=2)))
+        logging.error("Error: {}".format(response, indent=2))
     response.raise_for_status()
     return response.json()
 
@@ -190,7 +190,7 @@ def create_index(idx_name):
 def index_all(idx_name, articles):
     failed = 0
     indexed = 0
-    for bulk in chunk(articles, 100):
+    for bulk in chunk(articles, 10):
         response = post("{}/articles".format(idx_name), bulk)
         if response['total'] != response['indexed']:
             failed += response['total'] - respose['indexed']
@@ -217,7 +217,7 @@ def main():
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    COMORI_OD_API_BASEURL = "http://{}:{}".format(COMORI_OD_API_HOST, args.port)
+    COMORI_OD_API_BASEURL = "http://{}:{}/api".format(COMORI_OD_API_HOST, args.port)
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
