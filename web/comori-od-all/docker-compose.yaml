@@ -11,6 +11,8 @@ services:
       - LETSENCRYPT_HOST=comori-od.ro
     networks:
       - proxy
+    depends_on:
+      - comori-od-restapi
     restart: unless-stopped
 
   es:
