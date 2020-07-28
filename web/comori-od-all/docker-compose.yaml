@@ -6,9 +6,11 @@ services:
     expose:
       - "80"
     environment:
-      - VIRTUAL_HOST=comori-od.ro
+      - VIRTUAL_HOST=comori-od.ro,www.comori-od.ro
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=comori-od.ro
+      - LETSENCRYPT_HOST=comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+      # - LETSENCRYPT_TEST=true
     networks:
       - proxy
     depends_on:
@@ -40,9 +42,11 @@ services:
     expose: 
       - "9000"
     environment:
-      - VIRTUAL_HOST=comori-od.ro
+      - VIRTUAL_HOST=comori-od.ro,www.comori-od.ro
       - VIRTUAL_PORT=9000
-      - LETSENCRYPT_HOST=comori-od.ro
+      - LETSENCRYPT_HOST=comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+      # - LETSENCRYPT_TEST=true
     depends_on:
       - es
     networks:
