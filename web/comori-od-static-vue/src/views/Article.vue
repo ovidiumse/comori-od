@@ -30,7 +30,7 @@
             </v-layout>
             <div id="content" class="mt-5">
                 <template v-for="(contents, index) in article._source.verses">
-                    <p v-if="contents.length !== 0" :key="index" class="text-body-1 mb-1">
+                    <p v-if="contents.length !== 0" :key="index" class="text-body-1 mb-0">
                         <template v-for="(content, index) in contents">
                             <span v-if="content.type == 'normal'" class="nomal" :key="index">
                                 {{content.text}}
@@ -114,7 +114,7 @@ export default {
     },
     mounted() {
         this.getById(this.$route.params.id);
-        this.getSimilar(this.$route.params.id);
+        //this.getSimilar(this.$route.params.id);
     },
     watch: {
         article(to, from) {
