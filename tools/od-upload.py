@@ -6,11 +6,11 @@ import logging
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
-EXTERNAL_HOST = "comori-od.ro"
-LOCAL_HOST = "localhost"
+EXTERNAL_HOST = "http://comori-od.ro"
+LOCAL_HOST = "http://localhost"
 
 COMORI_OD_API_HOST = LOCAL_HOST
-COMORI_OD_API_BASEURL = "http://{}/api".format(COMORI_OD_API_HOST)
+COMORI_OD_API_BASEURL = "{}/api".format(COMORI_OD_API_HOST)
 
 
 def parseArgs():
@@ -190,7 +190,7 @@ def create_index(idx_name):
 def index_all(idx_name, articles):
     failed = 0
     indexed = 0
-    for bulk in chunk(articles, 10):
+    for bulk in chunk(articles, 100):
         response = post("{}/articles".format(idx_name), bulk)
         if response['total'] != response['indexed']:
             failed += response['total'] - respose['indexed']
@@ -217,7 +217,7 @@ def main():
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    COMORI_OD_API_BASEURL = "http://{}:{}/api".format(COMORI_OD_API_HOST, args.port)
+    COMORI_OD_API_BASEURL = "{}:{}/api".format(COMORI_OD_API_HOST, args.port)
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
