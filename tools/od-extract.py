@@ -205,7 +205,7 @@ def extractArticles(soup, volume, book, author, cfg):
     articles = []
 
     for p in soup.find_all('p'):
-        if not book and isBookTitle(p, cfg):
+        if isBookTitle(p, cfg):
             book = p.text
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
             title = p.text
