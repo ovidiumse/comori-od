@@ -19,7 +19,7 @@
                     </v-img>
                   </v-list-item-avatar>
               </v-col>
-              <v-col cols="auto">
+              <v-col>
                 <v-list-item-title class="text-h5 text-md-h4 text-lg-h3 wrap-text">
                     {{article._source.title}}
                 </v-list-item-title>
@@ -31,10 +31,7 @@
             <div id="content" class="mt-5">
                 <template v-for="(contents, index) in article._source.verses">
                     <p v-if="contents.length !== 0" :key="index" class="text-body-1 mb-0">
-                        <template v-for="(content, index) in contents">
-                            <span v-if="content.type == 'normal'" class="nomal" :key="index">
-                                {{content.text}}
-                            </span>
+                        <template v-for="(content, index) in contents"><span v-if="content.type == 'normal'" class="normal" :key="index">{{content.text}}</span>
                             <v-tooltip 
                                 top 
                                 href='#' 
@@ -43,9 +40,7 @@
                                 class="bible-ref" 
                                 v-else :key="index">
                                 <template v-slot:activator="{on, attrs}">
-                                    <a href='#' @click.prevent="show[content.text + index] = true" v-bind="attrs" v-on="on">
-                                        {{content.text}}
-                                    </a>
+                                    <a href='#' @click.prevent="show[content.text + index] = true" v-bind="attrs" v-on="on">{{content.text}}</a>
                                 </template>
                                 <template v-if="article._source['bible-refs'][content.text]">
                                     <p v-for="verse in article._source['bible-refs'][content.text].verses" 
