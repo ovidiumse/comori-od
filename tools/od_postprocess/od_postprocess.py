@@ -5,6 +5,7 @@ import argparse
 import logging
 import requests
 import simplejson as json
+import time
 from datetime import datetime
 from prettytable import PrettyTable
 
@@ -91,11 +92,6 @@ def parseArgs():
                          action="store",
                          default=None,
                          help="Output JSON file [default <input>_processed.json]")
-    PARSER_.add_argument("-d",
-                         "--delete-index",
-                         dest="delete_index",
-                         action="store_true",
-                         help="Delete existing index")
     PARSER_.add_argument("-e",
                          "--external-host",
                          action="store_true",
@@ -178,6 +174,13 @@ def remove_verse_numbers(val, field):
     return newval
 
 
+def remove_invalid_verses(val, field):
+    invalid_verses = ['T-']
+    newval = '' if val in invalid_verses else val
+    process_replacement('remove_invalid_verses', val, newval, field)
+    return newval
+
+
 wordReplacements = {
     'sînt': 'sunt',
     'sîntem': 'suntem',
@@ -186,8 +189,10 @@ wordReplacements = {
     'Sîntem': 'Suntem',
     'Sînteţi': 'Sunteţi',
     'Facere': 'Facerea',
+    'Genesa': 'Geneza',
+    'Eşire': 'Exod',
     'Tesal': 'Tes',
-    'Eclesiast': 'Ecles'
+    'Eclesiast': 'Ecles',
 }
 
 
@@ -221,7 +226,7 @@ def normalize_diacritics(val, field):
                     for index, c in enumerate(r):
                         if index > 0 and index < len(r) - 1 and c.lower() == 'î' and not (
                                 r.lower().startswith('reî') or r.lower().startswith('neî')):
-                            rch = 'Â' if c == 'Î' else 'â';
+                            rch = 'Â' if c == 'Î' else 'â'
                             r = r[:index] + rch + r[index + 1:]
 
                     if r != w:
@@ -234,11 +239,11 @@ def normalize_diacritics(val, field):
     return val
 
 
-def post_process(val, field):
+def post_process(index, val, field, args):
     pipeline = [
         replace_nbsp, replace_newlines_with_spaces, strip_spaces,
-        replace_multiple_spaces_with_single_one, remove_verse_numbers, replace_words,
-        normalize_diacritics
+        replace_multiple_spaces_with_single_one, remove_verse_numbers, remove_invalid_verses,
+        replace_words, normalize_diacritics
     ]
 
     for p in pipeline:
@@ -247,15 +252,15 @@ def post_process(val, field):
     return val
 
 
-def post_process_articles(articles):
+def post_process_articles(articles, args):
     for article in articles:
-        article['title'] = post_process(article['title'], 'title')
-        article['author'] = post_process(article['author'], 'author')
-        article['book'] = post_process(article['book'], 'book')
-        article['volume'] = post_process(article['volume'], 'volume')
+        article['title'] = post_process(0, article['title'], 'title', args)
+        article['author'] = post_process(0, article['author'], 'author', args)
+        article['book'] = post_process(0, article['book'], 'book', args)
+        article['volume'] = post_process(0, article['volume'], 'volume', args)
         new_verses = []
-        for verse in article['verses']:
-            new_verses.append(post_process(verse, 'verses'))
+        for index, verse in enumerate(article['verses']):
+            new_verses.append(post_process(index, verse, 'verses', args))
         article['verses'] = new_verses
 
     return articles
@@ -265,6 +270,7 @@ def resolve_bible_refs(articles):
     bibleCache = {}
     errors = []
     matcher = BibleRefMatcher()
+    books = BIBLE.get_books()
 
     refCount = 0
     for article in articles:
@@ -296,7 +302,11 @@ def resolve_bible_refs(articles):
                     if match.group('verseEnd'):
                         bibleRef += "-{}".format(match.group('verseEnd'))
 
-                    new_verse.append({'type': 'bible-ref', 'text': bibleRef})
+                    if match.group('book') not in books:
+                        new_verse.append({'type': 'normal', 'text': match.string[match.start():match.end()]})
+                    else:
+                        new_verse.append({'type': 'bible-ref', 'text': bibleRef})
+
                     if bibleRef in bibleCache:
                         bibleRefs[bibleRef] = bibleCache[bibleRef]
                     else:
@@ -362,7 +372,7 @@ def main():
 
     print("Loaded {} articles in {}.".format(len(articles), loading_finish - start))
 
-    articles = post_process_articles(articles)
+    articles = post_process_articles(articles, args)
     processing_finish = datetime.now()
     print("Processed {} articles in {}.".format(len(articles), processing_finish - loading_finish))
 
