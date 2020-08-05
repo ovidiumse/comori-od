@@ -6,7 +6,7 @@ import logging
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
-EXTERNAL_HOST = "http://comori-od.ro"
+EXTERNAL_HOST = "https://comori-od.ro"
 LOCAL_HOST = "http://localhost"
 
 COMORI_OD_API_HOST = LOCAL_HOST
@@ -39,7 +39,6 @@ def parseArgs():
                          "--external-host",
                          action="store_true",
                          help="Upload to external host")
-    PARSER_.add_argument("-p", "--port", action="store", required=True)
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -217,7 +216,7 @@ def main():
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    COMORI_OD_API_BASEURL = "{}:{}/api".format(COMORI_OD_API_HOST, args.port)
+    COMORI_OD_API_BASEURL = "{}/api".format(COMORI_OD_API_HOST)
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
