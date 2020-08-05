@@ -76,6 +76,9 @@ class Bible(object):
     def get_books(self):
         return self.get("bible/books")
 
+    def get_aliases(self):
+        return self.get("bible/books/aliases")
+
     def get_verses(self, bibleRef):
         return self.get("bible/{}".format(bibleRef))
 
@@ -270,7 +273,6 @@ def resolve_bible_refs(articles):
     bibleCache = {}
     errors = []
     matcher = BibleRefMatcher()
-    books = BIBLE.get_books()
 
     refCount = 0
     for article in articles:
@@ -302,11 +304,6 @@ def resolve_bible_refs(articles):
                     if match.group('verseEnd'):
                         bibleRef += "-{}".format(match.group('verseEnd'))
 
-                    if match.group('book') not in books:
-                        new_verse.append({'type': 'normal', 'text': match.string[match.start():match.end()]})
-                    else:
-                        new_verse.append({'type': 'bible-ref', 'text': bibleRef})
-
                     if bibleRef in bibleCache:
                         bibleRefs[bibleRef] = bibleCache[bibleRef]
                     else:
@@ -327,6 +324,11 @@ def resolve_bible_refs(articles):
                                                     text=text))
                             else:
                                 pass
+
+                    if bibleRef not in bibleCache:
+                        new_verse.append({'type': 'normal', 'text': match.string[match.start():match.end()]})
+                    else:
+                        new_verse.append({'type': 'bible-ref', 'text': bibleRef})
 
                 # Add text after last match as normal text
                 text = lastMatch.string[lastMatch.end():]
