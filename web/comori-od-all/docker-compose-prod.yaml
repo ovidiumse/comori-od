@@ -1,7 +1,10 @@
 version: '3'
 services:
   comori-od-static-vue:
-    build: ../comori-od-static-vue
+    build: 
+      context: ../comori-od-static-vue
+      args:
+        - buildtype=prod_build
     container_name: comori-od-static-vue
     expose:
       - "80"

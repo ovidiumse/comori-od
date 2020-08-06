@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-npm run build
+npm run dev_build

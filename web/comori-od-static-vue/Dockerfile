@@ -1,9 +1,10 @@
 FROM node:latest as build-stage
+ARG buildtype
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY ./ .
-RUN npm run build
+RUN npm run $buildtype
 
 FROM nginx as production-stage
 RUN mkdir /app
