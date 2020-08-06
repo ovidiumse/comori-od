@@ -36,7 +36,6 @@
 |               'dintîi'              |               'dintâi'              |              replace_words              | verses |        50       |
 |               'cuvînt'              |               'cuvânt'              |              replace_words              | verses |        48       |
 |                'mîna'               |                'mâna'               |              replace_words              | verses |        48       |
-|                 'T-'                |                  ''                 |          remove_invalid_verses          |  book  |        45       |
 |             'sfîrşitul'             |             'sfârşitul'             |              replace_words              | verses |        43       |
 |               'atîtea'              |               'atâtea'              |              replace_words              | verses |        42       |
 |                'Pînă'               |                'Până'               |              replace_words              | verses |        39       |
@@ -409,8 +408,6 @@
 |             '     - Eu!'            |               '- Eu!'               |               strip_spaces              | verses |        2        |
 |         'Păr. Iosif Trifa. '        |         'Păr. Iosif Trifa.'         |               strip_spaces              | verses |        2        |
 | '     Slăvit să ...ie Domnul Isus.' |     'Slăvit să fie Domnul Isus.'    |               strip_spaces              | verses |        2        |
-|                'T- '                |                 'T-'                |               strip_spaces              |  book  |        2        |
-| '     Cea din st...l întrezărit.T-' | 'Cea din stînga,...l întrezărit.T-' |               strip_spaces              |  book  |        2        |
 |              'cîntării'             |              'cântării'             |              replace_words              | verses |        2        |
 |             'osîndeşte'             |             'osândeşte'             |              replace_words              | verses |        2        |
 |             'sfîrşească'            |             'sfârşească'            |              replace_words              | verses |        2        |
@@ -520,10 +517,6 @@
 |               'tînără'              |               'tânără'              |              replace_words              | verses |        2        |
 |               'Pîinea'              |               'Pâinea'              |              replace_words              | verses |        2        |
 |              'bătrîni'              |              'bătrâni'              |              replace_words              | verses |        2        |
-|                'pînă'               |                'până'               |              replace_words              |  book  |        2        |
-|              'hotărît'              |              'hotărât'              |              replace_words              |  book  |        2        |
-|               'cîţiva'              |               'câţiva'              |              replace_words              |  book  |        2        |
-|               'stînga'              |               'stânga'              |              replace_words              |  book  |        2        |
 | '     Lumea poat... (Ioan 16, 33).' | '     Lumea poat... (Ioan 16, 33).' |       replace_newlines_with_spaces      | verses |        2        |
 | '     Isus Birui... lua de la noi.' | '     Isus Birui... lua de la noi.' |       replace_newlines_with_spaces      | verses |        2        |
 | '     Cei ce lup...sus Biruitorul.' | '     Cei ce lup...sus Biruitorul.' |       replace_newlines_with_spaces      | verses |        2        |
@@ -537,8 +530,6 @@
 | '     S-a stins ...(Filip. 2, 16).' | '     S-a stins ...(Filip. 2, 16).' |       replace_newlines_with_spaces      | verses |        2        |
 |     '26 - Apostolele...mătate a     | '26 - Apostolele...mătate a anului' |       replace_newlines_with_spaces      | verses |        2        |
 |               anului'               |                                     |                                         |        |                 |
-|         '     Cea din st...l        | '     Cea din st...l întrezărit.T-' |       replace_newlines_with_spaces      |  book  |        2        |
-|            întrezărit.T-'           |                                     |                                         |        |                 |
 | '     - Puternic... în toată ţara.' | '     - Puternic... în toată ţara.' |               replace_nbsp              | verses |        2        |
 |    '     deci: înainte cu Isus!'    |    '     deci: înainte cu Isus!'    |               replace_nbsp              | verses |        2        |
 |   '     Cucernice părinte Trifa,'   |   '     Cucernice părinte Trifa,'   |               replace_nbsp              | verses |        2        |
@@ -560,9 +551,6 @@
 | '     S-a stins ...(Filip. 2, 16).' | '     S-a stins ...(Filip. 2, 16).' |               replace_nbsp              | verses |        2        |
 |             '     - Eu!'            |             '     - Eu!'            |               replace_nbsp              | verses |        2        |
 | '     Slăvit să ...ie Domnul Isus.' | '     Slăvit să ...ie Domnul Isus.' |               replace_nbsp              | verses |        2        |
-|                'T- '                |                'T- '                |               replace_nbsp              |  book  |        2        |
-|         '     Cea din st...l        |         '     Cea din st...l        |               replace_nbsp              |  book  |        2        |
-|            întrezărit.T-'           |            întrezărit.T-'           |                                         |        |                 |
 | '26 - Apostolele...mătate a anului' | 'Apostolele din ...mătate a anului' |           remove_verse_numbers          | verses |        2        |
 | '26 - Evanghelia...mătate a anului' | 'Evanghelia din ...mătate a anului' |           remove_verse_numbers          | verses |        2        |
 |   'prin toate ni-e Prezenţa Ta. '   |    'prin toate ni-e Prezenţa Ta.'   |               strip_spaces              | verses |        1        |

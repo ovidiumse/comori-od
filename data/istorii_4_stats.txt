@@ -48,7 +48,6 @@
 |              'legămînt'             |              'legământ'             |              replace_words              | verses |        38       |
 |               'atîţia'              |               'atâţia'              |              replace_words              | verses |        37       |
 |                'mînă'               |                'mână'               |              replace_words              | verses |        36       |
-|                 'T-'                |                  ''                 |          remove_invalid_verses          |  book  |        36       |
 |                'gînd'               |                'gând'               |              replace_words              | verses |        35       |
 |                'Pînă'               |                'Până'               |              replace_words              | verses |        35       |
 |                'Sînt'               |                'Sunt'               |              replace_words              | verses |        33       |
@@ -367,7 +366,6 @@
 |             'colaborînd'            |             'colaborând'            |              replace_words              | verses |        3        |
 |               'pînzei'              |               'pânzei'              |              replace_words              | verses |        3        |
 |             'fîntînile'             |             'fântânile'             |              replace_words              | verses |        3        |
-|                'atît'               |                'atât'               |              replace_words              |  book  |        3        |
 |             '     - Nu!'            |             '     - Nu!'            |               replace_nbsp              | verses |        3        |
 |            '     - Da! '            |            '     - Da! '            |               replace_nbsp              | verses |        3        |
 | '               ... să fie Domnul.' |       'Slăvit să fie Domnul.'       |               strip_spaces              | verses |        2        |
@@ -4250,11 +4248,6 @@
 | '     Dăruieşte-...re şi duioase. ' | 'Dăruieşte-mi Te...are şi duioase.' |               strip_spaces              | verses |        1        |
 | '     Iar celui ... şi al nostru. ' | 'Iar celui care ...u şi al nostru.' |               strip_spaces              | verses |        1        |
 |             'sosim... '             |              'sosim...'             |               strip_spaces              | verses |        1        |
-| '     Îndată dup...iciliul nostru.' | 'Îndată după ace...iciliul nostru.' |               strip_spaces              |  book  |        1        |
-| '     Încep să m...deiul şi scriu:' | 'Încep să mă gîn...deiul şi scriu:' |               strip_spaces              |  book  |        1        |
-| '     - În felul...inţei noastre. ' | '- În felul aces...dinţei noastre.' |               strip_spaces              |  book  |        1        |
-| 'T-         Voi ...r-adevăr ceva: ' | 'T-         Voi ...tr-adevăr ceva:' |               strip_spaces              |  book  |        1        |
-| '     Am făcut a...ui pentru noi. ' | 'Am făcut acest ...Lui pentru noi.' |               strip_spaces              |  book  |        1        |
 |             'strîngeţi'             |             'strângeţi'             |              replace_words              | verses |        1        |
 |             'Strîngeţi'             |             'Strângeţi'             |              replace_words              | verses |        1        |
 |               'strîmt'              |               'strâmt'              |              replace_words              | verses |        1        |
@@ -4478,19 +4471,6 @@
 |           'binecuvîntată'           |           'binecuvântată'           |              replace_words              | title  |        1        |
 |               'Cuvînt'              |               'Cuvânt'              |              replace_words              | title  |        1        |
 |            'mormîntului'            |            'mormântului'            |              replace_words              | title  |        1        |
-|               'sfînt'               |               'sfânt'               |              replace_words              |  book  |        1        |
-|               'sfîntă'              |               'sfântă'              |              replace_words              |  book  |        1        |
-|                'Cînd'               |                'Când'               |              replace_words              |  book  |        1        |
-|               'pîinea'              |               'pâinea'              |              replace_words              |  book  |        1        |
-|               'curînd'              |               'curând'              |              replace_words              |  book  |        1        |
-|             'mîntuirea'             |             'mântuirea'             |              replace_words              |  book  |        1        |
-|            'legămîntului'           |            'legământului'           |              replace_words              |  book  |        1        |
-|               'cîteva'              |               'câteva'              |              replace_words              |  book  |        1        |
-|                'rînd'               |                'rând'               |              replace_words              |  book  |        1        |
-|              'gîndesc'              |              'gândesc'              |              replace_words              |  book  |        1        |
-|              'sîngele'              |              'sângele'              |              replace_words              |  book  |        1        |
-|             'mîncaseră'             |             'mâncaseră'             |              replace_words              |  book  |        1        |
-|              'vînzării'             |              'vânzării'             |              replace_words              |  book  |        1        |
 |     '     Slăvit să ...l acestui    | '     Slăvit să ...l acestui ogor.' |       replace_newlines_with_spaces      | verses |        1        |
 |                ogor.'               |                                     |                                         |        |                 |
 | '     În patru p...ori şi lacrimi.' | '     În patru p...ori şi lacrimi.' |       replace_newlines_with_spaces      | verses |        1        |
@@ -8305,12 +8285,6 @@
 | '     Iar celui ... şi al nostru. ' | '     Iar celui ... şi al nostru. ' |       replace_newlines_with_spaces      | verses |        1        |
 |        'Cel mai necesar...cil       | 'Cel mai necesar...cil colaborator' |       replace_newlines_with_spaces      | title  |        1        |
 |             colaborator'            |                                     |                                         |        |                 |
-| '     Îndată dup...iciliul nostru.' | '     Îndată dup...iciliul nostru.' |       replace_newlines_with_spaces      |  book  |        1        |
-| '     Încep să m...deiul şi scriu:' | '     Încep să m...deiul şi scriu:' |       replace_newlines_with_spaces      |  book  |        1        |
-| '     - În felul...inţei noastre. ' | '     - În felul...inţei noastre. ' |       replace_newlines_with_spaces      |  book  |        1        |
-| 'T-         Voi ...r-adevăr ceva: ' | 'T-         Voi ...r-adevăr ceva: ' |       replace_newlines_with_spaces      |  book  |        1        |
-|        '     Am făcut a...ui        | '     Am făcut a...ui pentru noi. ' |       replace_newlines_with_spaces      |  book  |        1        |
-|            pentru noi. '            |                                     |                                         |        |                 |
 |     '     Slăvit să ...l acestui    |     '     Slăvit să ...l acestui    |               replace_nbsp              | verses |        1        |
 |                ogor.'               |                ogor.'               |                                         |        |                 |
 | '     În patru p...ori şi lacrimi.' | '     În patru p...ori şi lacrimi.' |               replace_nbsp              | verses |        1        |
@@ -12444,12 +12418,6 @@
 | '     Iar pe min... atît de mici. ' | '     Iar pe min... atît de mici. ' |               replace_nbsp              | verses |        1        |
 | '     Dăruieşte-...re şi duioase. ' | '     Dăruieşte-...re şi duioase. ' |               replace_nbsp              | verses |        1        |
 | '     Iar celui ... şi al nostru. ' | '     Iar celui ... şi al nostru. ' |               replace_nbsp              | verses |        1        |
-| '     Îndată dup...iciliul nostru.' | '     Îndată dup...iciliul nostru.' |               replace_nbsp              |  book  |        1        |
-| '     Încep să m...deiul şi scriu:' | '     Încep să m...deiul şi scriu:' |               replace_nbsp              |  book  |        1        |
-| '     - În felul...inţei noastre. ' | '     - În felul...inţei noastre. ' |               replace_nbsp              |  book  |        1        |
-| 'T-         Voi ...r-adevăr ceva: ' | 'T-         Voi ...r-adevăr ceva: ' |               replace_nbsp              |  book  |        1        |
-|        '     Am făcut a...ui        |        '     Am făcut a...ui        |               replace_nbsp              |  book  |        1        |
-|            pentru noi. '            |            pentru noi. '            |                                         |        |                 |
 | 'La Crăciunul an...  Traian  Dorz.' | 'La Crăciunul an...r. Traian Dorz.' | replace_multiple_spaces_with_single_one | verses |        1        |
 | '-   Eu eram sup...tări dureroase.' | '- Eu eram supra...tări dureroase.' | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Sibiu la 18 apr...erită supunere,' | 'Sibiu la 18 apr...erită supunere,' | replace_multiple_spaces_with_single_one | verses |        1        |
@@ -12507,7 +12475,6 @@
 | 'T-         Am s...die să greşesc.' | 'T- Am spus de l...die să greşesc.' | replace_multiple_spaces_with_single_one | verses |        1        |
 |           'ISUS   HRISTOS'          |            'ISUS HRISTOS'           | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Adevărurile  mo...ului  nemuritor' | 'Adevărurile mor...tului nemuritor' | replace_multiple_spaces_with_single_one | title  |        1        |
-| 'T-         Voi ...tr-adevăr ceva:' | 'T- Voi vedea po...tr-adevăr ceva:' | replace_multiple_spaces_with_single_one |  book  |        1        |
 | '1 - Duhul forma...iu şi lucrător.' | 'Duhul formalism...iu şi lucrător.' |           remove_verse_numbers          | verses |        1        |
 | '2 - Duhul îngîm...eli frăţeşti...' | 'Duhul îngîmfat,...eli frăţeşti...' |           remove_verse_numbers          | verses |        1        |
 | '3 - Duhul proze...retări biblice,' | 'Duhul prozeliti...retări biblice,' |           remove_verse_numbers          | verses |        1        |
