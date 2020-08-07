@@ -1,19 +1,51 @@
-volume-title:
-  nested-style:
-    color: "nothing"  # not used
+preprocessing:
+  - to:
+      style:
+        text-align: center
+      nested-style:
+        font-size: 333%
+        color: "#00ffff"
+    apply:
+      nested-style:
+        font-size: 291%
+  - to:
+      style:
+        text-align: center
+      nested-style:
+        font-size: 291%
+        color: "#ff0000"
+    apply:
+      nested-style:
+        font-size: 208%
 
-book-title:
+pre-article-title:
+  style:
+    text-align: center
   nested-style:
-    color: "nothing"  # not used
+    font-size: 291%
+    color: "#00ffff"
 
-article-title:
+pre-paragraph-first-letter:
+  style:
+    color: "#0080ff"
+  nested-style:
+    font-size: 525%
+
+pre-article-subtitle:
+  style:
+    text-align: center
   nested-style:
     font-size: 208%
     color: "#ff0000"
+
+article-title:
+  nested-style:
+    font-size: 166%
+    color: "#00ffff"
   style:
     text-align: center
   other:
-    capitalize: False
+    capitalized: False
 
 article-body:
   nested-style:
