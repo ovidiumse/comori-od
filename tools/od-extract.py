@@ -153,6 +153,9 @@ def checkProps(tag, cfg):
 
 
 def isVolumeTitle(tag, cfg):
+    if 'volume-title' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
@@ -160,6 +163,9 @@ def isVolumeTitle(tag, cfg):
 
 
 def isBookTitle(tag, cfg):
+    if 'book-title' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
@@ -167,6 +173,9 @@ def isBookTitle(tag, cfg):
 
 
 def isArticleTitle(tag, cfg):
+    if 'article-title' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
@@ -174,6 +183,9 @@ def isArticleTitle(tag, cfg):
 
 
 def isPoemTitle(tag, cfg):
+    if 'poem-title' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
