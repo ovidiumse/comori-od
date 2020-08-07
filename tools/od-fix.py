@@ -1,5 +1,6 @@
 #!/usr/bin/pypy3
 import os
+import re
 import argparse
 import yaml
 from datetime import datetime
@@ -42,16 +43,30 @@ def hasNestedStyleAttribute(tag, attr, value):
 
 def replaceNestedStyleAttribute(tag, attr, value):
     for d in tag.descendants:
-        if d.name == 'span' and d.has_attr('style') and attr in d['style']:
-            styles_text = d['style']
-            style_pairs = styles_text.split(';')
-            new_style = {}
-            for pair in style_pairs:
-                p, v = pair.split(':')
-                new_style[p] = value if attr == p else v
+        if d.name == 'span':
+            replaceStyleAttribute(d, attr, value)
 
-            d['style'] = ";".join(["{}: {}".format(k, v) for k, v in new_style.items()])
 
+def replaceStyleAttribute(tag, attr, value):
+    if tag.has_attr('style') and attr in tag['style']:
+        styles_text = tag['style']
+        style_pairs = styles_text.split(';')
+        new_style = {}
+        for pair in style_pairs:
+            p, v = pair.split(':')
+            new_style[p] = value if attr == p else v
+
+        tag['style'] = ";".join(["{}: {}".format(k, v) for k, v in new_style.items()])
+
+
+def replaceProps(tag, cfg):
+    if 'nested-style' in cfg:
+        for prop, val in cfg['nested-style'].items():
+            replaceNestedStyleAttribute(tag, prop, val)
+
+    if 'style' in cfg:
+        for prop, val in cfg['style'].items():
+            replaceStyleAttribute(tag, prop, val)
 
 def checkProps(tag, cfg):
     if 'nested-style' in cfg:
@@ -77,6 +92,9 @@ def checkProps(tag, cfg):
 
 
 def isBeforeArticleTitle(tag, cfg):
+    if 'pre-before-article-title' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
@@ -88,6 +106,9 @@ def isBeforeArticleTitle(tag, cfg):
 
 
 def isArticleTitle(tag, cfg):
+    if 'pre-article-title' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
@@ -95,6 +116,9 @@ def isArticleTitle(tag, cfg):
 
 
 def isArticleSubtitle(tag, cfg):
+    if 'pre-article-subtitle' not in cfg:
+        return False
+
     if tag.name != "p":
         return False
 
@@ -102,6 +126,9 @@ def isArticleSubtitle(tag, cfg):
 
 
 def isFirstParagraphFirstLetter(tag, cfg):
+    if 'pre-paragraph-first-letter' not in cfg:
+        return False
+
     if tag.name != "span":
         return False
 
@@ -122,7 +149,7 @@ def find_title(soup, cfg, last_title=None):
 
             title = pre_title.find_next(lambda tag: isArticleTitle(tag, cfg))
         else:
-            title = title.find_next(lambda tag: isArticleTitle(tag, cfg))
+            title = last_title.find_next(lambda tag: isArticleTitle(tag, cfg))
     else:
         if 'pre-before-article-title' in cfg:
             pre_title = soup.find(lambda tag: isBeforeArticleTitle(tag, cfg))
@@ -134,6 +161,12 @@ def find_title(soup, cfg, last_title=None):
             title = soup.find(lambda tag: isArticleTitle(tag, cfg))
 
     return title
+
+
+def sanitize_subtitle(val):
+    newval = re.sub(r'^ - ', '', val)
+    newval = re.sub(r' - $', '', newval)
+    return newval
 
 
 def merge_multiline_titles(soup, cfg):
@@ -158,7 +191,7 @@ def merge_titles_with_subtitles(soup, cfg):
         next_p = title.find_next("p")
         if isArticleSubtitle(next_p, cfg):
             print("Merging {} with {}...".format(title.text, next_p.text))
-            title.append(next_p.text)
+            title.append(" - {}".format(sanitize_subtitle(next_p.text)))
             next_p.decompose()
 
         title = find_title(soup, cfg, title)
@@ -189,6 +222,25 @@ def fix_first_paragraph_first_letters(soup, cfg):
         letter.decompose()
 
 
+def hasCfg(tag, elementCfg):
+    if tag.name != "p":
+        return False
+
+    return checkProps(tag, elementCfg)
+
+
+def preprocessApply(soup, elementCfg, applyCfg):
+    for p in soup.find_all(lambda tag: hasCfg(tag, elementCfg)):
+        print("Transforming {}...".format(p.text))
+        replaceProps(p, applyCfg)
+
+
+def preprocess(soup, cfg):
+    print("Preprocessing...")
+    for c in cfg['preprocessing']:
+        preprocessApply(soup, c['to'], c['apply'])
+
+
 def main():
     args = parseArgs()
 
@@ -201,6 +253,9 @@ def main():
         print("Parsing {}...".format(args.html_filepath))
         soup = BeautifulSoup(html_file, 'html.parser')
         parse_finish = datetime.now()
+
+        if 'preprocessing' in cfg:
+            preprocess(soup, cfg)
 
         merge_multiline_titles(soup, cfg)
 
