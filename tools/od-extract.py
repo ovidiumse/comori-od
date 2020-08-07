@@ -145,7 +145,7 @@ def checkProps(tag, cfg):
             if p == 'letter-spacing':
                 if not hasLetterSpacing(tag.text, v):
                     return False
-            elif p == 'capitalize':
+            elif p == 'capitalized':
                 if v != isCapitalized(tag.text):
                     return False
 
