@@ -182,7 +182,7 @@ def create_index(idx_name):
 def index_all(idx_name, articles):
     failed = 0
     indexed = 0
-    for bulk in chunk(articles, 100):
+    for bulk in chunk(articles, 10):
         response = post("{}/articles".format(idx_name), bulk)
         if response['total'] != response['indexed']:
             failed += response['total'] - respose['indexed']
