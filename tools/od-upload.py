@@ -93,22 +93,15 @@ def create_index(idx_name):
                 },
                 "analyzer": {
                     "romanian": {
-                        'type':
-                        'custom',
-                        "tokenizer":
-                        "standard",
-                        "filter":
-                        ["lowercase", "romanian_stop", "romanian_keywords", "romanian_stemmer"]
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter": ["lowercase", "romanian_keywords", "romanian_stemmer"]
                     },
                     "folding": {
-                        'type':
-                        'custom',
-                        "tokenizer":
-                        "standard",
-                        "filter": [
-                            "lowercase", "romanian_stop", "romanian_keywords", "romanian_stemmer",
-                            "asciifolding"
-                        ]
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter":
+                        ["lowercase", "romanian_keywords", "romanian_stemmer", "asciifolding"]
                     },
                     "completion": {
                         'type': 'custom',
@@ -118,7 +111,7 @@ def create_index(idx_name):
                     "suggesting": {
                         'type': 'custom',
                         "tokenizer": "standard",
-                        "filter": ["lowercase", "romanian_stop", "asciifolding", "od_shingle"]
+                        "filter": ["lowercase", "asciifolding", "od_shingle"]
                     }
                 }
             }
@@ -240,9 +233,12 @@ def main():
             articles = json.load(json_file)
 
         try:
-            logging.info("Indexing {} articles to {}...".format(len(articles), COMORI_OD_API_BASEURL))
+            logging.info("Indexing {} articles from {} to {}...".
+                         format(len(articles), args.json_filepath, COMORI_OD_API_BASEURL))
             index_all(args.idx_name, articles)
-            logging.info("Indexed {} articles to {}!".format(len(articles), COMORI_OD_API_BASEURL))
+            logging.info("Indexed {} articles from {} to {}!".format(len(articles),
+                                                                     args.json_filepath,
+                                                                     COMORI_OD_API_BASEURL))
         except Exception as ex:
             logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
