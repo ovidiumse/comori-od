@@ -135,6 +135,10 @@ def isFirstParagraphFirstLetter(tag, cfg):
     return checkProps(tag, cfg['pre-paragraph-first-letter'])
 
 
+def isWhiteText(tag, cfg):
+    return hasStyleAttribute(tag, 'color', '#ffffff') or hasStyleAttribute(tag, 'color', '#FFFFFF')
+
+
 def printElements(soup, predicate):
     for p in soup.find_all(predicate):
         print(p.text)
@@ -222,6 +226,14 @@ def fix_first_paragraph_first_letters(soup, cfg):
         letter.decompose()
 
 
+def remove_white_text(soup, cfg):
+    print("Removing white text...")
+    texts = soup.find_all(lambda tag: isWhiteText(tag, cfg))
+    for t in texts:
+        for d in t.find_all(string=True):
+            d.string.replace_with("")
+
+
 def hasCfg(tag, elementCfg):
     if tag.name != "p":
         return False
@@ -264,12 +276,13 @@ def main():
 
         increate_title_sizes(soup, cfg)
         fix_first_paragraph_first_letters(soup, cfg)
+        remove_white_text(soup, cfg)
 
         path, ext = os.path.splitext(args.html_filepath)
         fixed_filepath = "{}_fixed{}".format(path, ext)
         print("Saving results into {}...".format(fixed_filepath))
         with open(fixed_filepath, 'w', encoding='utf-8') as fixed_file:
-            print(soup.prettify(), file=fixed_file)
+            print(soup, file=fixed_file)
 
 
 if "__main__" == __name__:
