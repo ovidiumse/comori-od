@@ -104,6 +104,23 @@ def hasColor(tag, color):
     return hasNestedStyleAttribute(tag, 'color', color)
 
 
+def isBold(tag):
+    for p in tag.parents:
+        if p.name == "b" or hasStyleAttribute(p, 'font-weight', 'bold'):
+            return True
+
+    return False
+
+
+def isItalic(tag):
+    for p in tag.parents:
+        if p.name == "i" or hasStyleAttribute(p, 'font-style', 'italic') or hasStyleAttribute(
+                p, 'font-style', 'oblique'):
+            return True
+
+    return False
+
+
 def getFontSize(tag):
     attr = getNestedStyleAttribute(tag, 'font-size')
     match = re.findall('[0-9]+', attr)
@@ -213,6 +230,31 @@ def printPoemTitles(soup, cfg):
     printElements(soup, isPoemTitle, cfg)
 
 
+def extractVerse(tag):
+    verse = []
+    lastBlock = None
+    for s in tag.find_all(string=True):
+        style = []
+        if isBold(s) and isItalic(s):
+            style += ['bold', 'italic']
+        elif isBold(s):
+            style.append('bold')
+        elif isItalic(s):
+            style.append('italic')
+
+        if not lastBlock:
+            lastBlock = {'style': style, 'text': s.string }
+        elif style != lastBlock['style']:
+            verse.append(lastBlock)
+            # Prepend space if not the first block of the verse
+            lastBlock = {'style': style, 'text': s.string}
+        else:
+            lastBlock['text'] += s.string
+        
+    verse.append(lastBlock)
+
+    return verse
+
 def extractArticles(soup, volume, book, author, cfg):
     articles = []
 
@@ -229,9 +271,10 @@ def extractArticles(soup, volume, book, author, cfg):
                 if v.name == 'p' and getFontSize(v) > 125:
                     break
                 elif v.name == 'p':
-                    verse = v.text
+                    verse = extractVerse(v)                    
+
                     if verse or lastValue:
-                        lastValue = v.text
+                        lastValue = verse
                         verses.append(lastValue)
                 elif v.name == 'br' and lastTag not in ['', 'br'] and lastValue:
                     lastValue = ""
@@ -302,7 +345,7 @@ def main():
                     print("Type: {}".format(article['type']), file=text_file)
                     print("", file=text_file)
                     for verse in article['verses']:
-                        print(verse, file=text_file)
+                        print(''.join([block['text'] for block in verse]), file=text_file)
 
                     print("", file=text_file)
 
