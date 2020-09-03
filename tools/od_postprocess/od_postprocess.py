@@ -147,37 +147,43 @@ def process_replacement(rule_name, original, replacement, field):
                 field] = make_replacement_info(rule_name, original, replacement, field)
 
 
-def replace_nbsp(val, field):
+def replace_nbsp(val, field, isFirstBlock, isLastBlock):
     newval = val.replace(u'\xa0', ' ')
     process_replacement('replace_nbsp', val, newval, field)
     return newval
 
 
-def replace_newlines_with_spaces(val, field):
+def replace_newlines_with_spaces(val, field, isFirstBlock, isLastBlock):
     newval = val.replace('\n', ' ')
     process_replacement('replace_newlines_with_spaces', val, newval, field)
     return newval
 
 
-def strip_spaces(val, field):
-    newval = val.strip()
+def strip_spaces(val, field, isFirstBlock, isLastBlock):
+    if not isFirstBlock and not isLastBlock:
+        return val
+
+    newval = val.lstrip() if isFirstBlock else val.rstrip()
     process_replacement('strip_spaces', val, newval, field)
     return newval
 
 
-def replace_multiple_spaces_with_single_one(val, field):
-    newval = ' '.join(val.split())
+def replace_multiple_spaces_with_single_one(val, field, isFirstBlock, isLastBlock):
+    newval = re.sub('[ \t]+', ' ', val)
     process_replacement('replace_multiple_spaces_with_single_one', val, newval, field)
     return newval
 
 
-def remove_verse_numbers(val, field):
+def remove_verse_numbers(val, field, isFirstBlock, isLastBlock):
+    if not isLastBlock or field == 'verses':
+        return val
+
     newval = re.sub(r'^\d+ - ', '', val)
     process_replacement('remove_verse_numbers', val, newval, field)
     return newval
 
 
-def remove_invalid_verses(val, field):
+def remove_invalid_verses(val, field, isFirstBlock, isLastBlock):
     invalid_verses = ['T-']
     newval = '' if val in invalid_verses else val
     process_replacement('remove_invalid_verses', val, newval, field)
@@ -199,7 +205,7 @@ wordReplacements = {
 }
 
 
-def replace_words(val, field):
+def replace_words(val, field, isFirstBlock, isLastBlock):
     words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
     words = set(words)
     if words:
@@ -216,7 +222,7 @@ def replace_words(val, field):
     return val
 
 
-def normalize_diacritics(val, field):
+def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
     words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
     words = set(words)
     if words:
@@ -242,28 +248,36 @@ def normalize_diacritics(val, field):
     return val
 
 
-def post_process(index, val, field, args):
+def post_process(index, val, field, isFirstBlock, isLastBlock, args):
     pipeline = [
         replace_nbsp, replace_newlines_with_spaces, strip_spaces,
-        replace_multiple_spaces_with_single_one, remove_verse_numbers, remove_invalid_verses,
+        replace_multiple_spaces_with_single_one,
+        remove_verse_numbers, remove_invalid_verses,
         replace_words, normalize_diacritics
     ]
 
     for p in pipeline:
-        val = p(val, field)
+        val = p(val, field, isFirstBlock, isLastBlock)
 
     return val
 
 
 def post_process_articles(articles, args):
     for article in articles:
-        article['title'] = post_process(0, article['title'], 'title', args)
-        article['author'] = post_process(0, article['author'], 'author', args)
-        article['book'] = post_process(0, article['book'], 'book', args)
-        article['volume'] = post_process(0, article['volume'], 'volume', args)
+        article['title'] = post_process(0, article['title'], 'title', True, True, args)
+        article['author'] = post_process(0, article['author'], 'author', True, True, args)
+        article['book'] = post_process(0, article['book'], 'book', True, True, args)
+        article['volume'] = post_process(0, article['volume'], 'volume', True, True, args)
         new_verses = []
         for index, verse in enumerate(article['verses']):
-            new_verses.append(post_process(index, verse, 'verses', args))
+            new_verse = []
+            for blockIndex, block in enumerate(verse):
+                block['text'] = post_process(index, block['text'], 'verses', blockIndex == 0,
+                                             blockIndex == len(verse) - 1, args)
+                new_verse.append(block)
+
+            new_verses.append(new_verse)
+
         article['verses'] = new_verses
 
     return articles
@@ -281,71 +295,71 @@ def resolve_bible_refs(articles):
         lastVerses = []
         lastVersesMaxSize = 3
         for verse in article['verses']:
-            matches = matcher.find_all(verse)
-            if matches:
-                new_verse = []
-                lastMatch = None
-                for match in matches:
-                    if not lastMatch:
-                        # Add text before first match as normal text
-                        text = match.string[:match.start()]
-                        if text:
-                            new_verse.append({'type': 'normal', 'text': text})
-                    else:
-                        # Add text between last match and current match as normal text
-                        text = match.string[lastMatch.end():match.start()]
-                        if text:
-                            new_verse.append({'type': 'normal', 'text': text})
+            new_verse = []
+            for block in verse:
+                matches = matcher.find_all(block['text'])
+                if matches:
+                    lastMatch = None
+                    for match in matches:
+                        if not lastMatch:
+                            # Add text before first match as normal text
+                            text = match.string[:match.start()]
+                            if text:
+                                new_verse.append({'type': 'normal', 'style': block['style'], 'text': text})
+                        else:
+                            # Add text between last match and current match as normal text
+                            text = match.string[lastMatch.end():match.start()]
+                            if text:
+                                new_verse.append({'type': 'normal', 'style': block['style'], 'text': text})
 
-                    lastMatch = match
-                    bibleRef = "{} {}".format(match.group('book'), match.group('chapter'))
-                    if match.group('verse'):
-                        bibleRef += ":{}".format(match.group('verse'))
-                    if match.group('verseEnd'):
-                        bibleRef += "-{}".format(match.group('verseEnd'))
+                        lastMatch = match
+                        bibleRef = "{} {}".format(match.group('book'), match.group('chapter'))
+                        if match.group('verse'):
+                            bibleRef += ":{}".format(match.group('verse'))
+                        if match.group('verseEnd'):
+                            bibleRef += "-{}".format(match.group('verseEnd'))
 
-                    if bibleRef in bibleCache:
-                        bibleRefs[bibleRef] = bibleCache[bibleRef]
-                    else:
-                        try:
-                            bibleRefs[bibleRef] = bibleCache[bibleRef] = BIBLE.get_verses(bibleRef)
-                        except requests.HTTPError as e:
-                            if e.response.status_code == 404:
-                                logging.error("{} not found in the Bible!".format(bibleRef))
-                                text = '\n'.join(lastVerses + [verse])
+                        if bibleRef in bibleCache:
+                            bibleRefs[bibleRef] = bibleCache[bibleRef]
+                        else:
+                            try:
+                                bibleRefs[bibleRef] = bibleCache[bibleRef] = BIBLE.get_verses(bibleRef)
+                            except requests.HTTPError as e:
+                                if e.response.status_code == 404:
+                                    logging.error("{} not found in the Bible!".format(bibleRef))
+                                    for verse in lastVerses + [verse]:
+                                        text += "{}\n".format(' '.join([block['text'] for block in verse]))
 
-                                template = "{volume}\n{title}\n{book} - {author}\n'{bibleRef}' nu există în Biblie:\n'{text}'"
-                                errors.append(
-                                    template.format(bibleRef=bibleRef,
-                                                    volume=article['volume'],
-                                                    title=article['title'],
-                                                    book=article['book'],
-                                                    author=article['author'],
-                                                    text=text))
-                            else:
-                                pass
+                                    template = "{volume}\n{title}\n{book} - {author}\n'{bibleRef}' nu există în Biblie:\n'{text}'"
+                                    errors.append(
+                                        template.format(bibleRef=bibleRef,
+                                                        volume=article['volume'],
+                                                        title=article['title'],
+                                                        book=article['book'],
+                                                        author=article['author'],
+                                                        text=text))
+                                else:
+                                    pass
 
-                    if bibleRef not in bibleCache:
-                        new_verse.append({'type': 'normal', 'text': match.string[match.start():match.end()]})
-                    else:
-                        new_verse.append({'type': 'bible-ref', 'text': bibleRef})
+                        if bibleRef not in bibleCache:
+                            new_verse.append({'type': 'normal', 'style': block['style'], 'text': match.string[match.start():match.end()]})
+                        else:
+                            new_verse.append({'type': 'bible-ref', 'style': block['style'], 'text': bibleRef})
 
-                # Add text after last match as normal text
-                text = lastMatch.string[lastMatch.end():]
-                if text:
-                    new_verse.append({'type': 'normal', 'text': text})
+                    # Add text after last match as normal text
+                    text = lastMatch.string[lastMatch.end():]
+                    if text:
+                        new_verse.append({'type': 'normal', 'style': block['style'], 'text': text})
 
-                refCount += len(matches)
-            else:
-                if verse:
-                    new_verse = [{'type': 'normal', 'text': verse}]
+                    refCount += len(matches)
                 else:
-                    new_verse = []
+                    if block['text']:
+                        new_verse.append({'type': 'normal', 'style': block['style'], 'text': block['text']})
 
-                if verse:
-                    lastVerses.append(verse)
-                    if len(lastVerses) > lastVersesMaxSize:
-                        lastVerses = lastVerses[lastVersesMaxSize - len(lastVerses):]
+                    if verse:
+                        lastVerses.append(verse)
+                        if len(lastVerses) > lastVersesMaxSize:
+                            lastVerses = lastVerses[lastVersesMaxSize - len(lastVerses):]
 
             new_verses.append(new_verse)
 

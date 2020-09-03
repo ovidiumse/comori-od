@@ -67,6 +67,14 @@ class TestBibleRefDetection(unittest.TestCase):
                         self.assertIsNotNone(match, info)
                         self.assertEqual(match, ref, info)
 
+    def test_interestingCases_should_not_match(self):
+        refs = ["1 Ioan 2-19"]
+        for ref in refs:
+            matches = self.matcher_.find_all(ref)
+            info = "{} -> {}".format(
+                refSeries, json.dumps([(m.string[m.start():m.end()], m.groupdict()) for m in matches], indent=2))
+            self.assertEqual(len(matches), 0, info)
+
     def test_bookChapterVerseRangeSeries_should_match(self):
         refSeries = "(Colos. 2:13; Efes. 2, 1-5; 1 Tim. 5, 6; Apoc. 3, 1)."
         matches = self.matcher_.find_all(refSeries)
