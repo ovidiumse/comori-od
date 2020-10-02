@@ -150,6 +150,9 @@ def create_index(idx_name):
                     }
                 }
             },
+            'type': {
+                'type': 'keyword'
+            },
             'verses': {
                 "properties": {
                     'type': {
