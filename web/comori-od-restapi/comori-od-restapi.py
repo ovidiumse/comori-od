@@ -121,12 +121,29 @@ class Articles(object):
     def getById(self, idx_name, req):
         return ES.get(index=idx_name, id=req.params['id'])
 
+    def getRandomArticle(self, idx_name, req):
+        limit = req.params['limit'] if 'limit' in req.params else 1
+        offset = req.params['offset'] if 'offset' in req.params else 0
+
+        return ES.search(index=idx_name,
+                 body={
+                     'query': {
+                         'function_score': {
+                             'random_score': {}
+                         }
+                     },
+                     'size': limit,
+                     'from': offset
+                 })
+
     def on_get(self, req, resp, idx_name, doc_type):
         try:
             if 'q' in req.params:
                 results = self.query(idx_name, req)
-            else:
+            elif 'id' in req.params:
                 results = self.getById(idx_name, req)
+            else:
+                results = self.getRandomArticle(idx_name, req)
 
             resp.status = falcon.HTTP_200
             resp.body = json.dumps(results)
