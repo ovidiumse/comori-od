@@ -1,8 +1,5 @@
 #!/bin/sh
 
-echo "Starting Bible API..."
-$(cd ../web/comori-od-bibleapi && ./run_dev.sh) &
-
 # Cugetari Nemuritoare
 ./load_cugetari_total.sh -d -c $@
 
@@ -20,3 +17,4 @@ $(cd ../web/comori-od-bibleapi && ./run_dev.sh) &
 
 # Hristos - Puterea Apostoliei
 ./load_hristos_puterea.sh $@
+
