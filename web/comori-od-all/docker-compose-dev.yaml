@@ -73,6 +73,19 @@ services:
       - proxy
     restart: unless-stopped
 
+  comori-od-bibleapi:
+    build: ../comori-od-bibleapi
+    container_name: comori-od-bibleapi
+    ports:
+      - 9001:9001
+    environment:
+      - VIRTUAL_HOST=localhost
+      - VIRTUAL_PORT=9001
+      - HTTPS_METHOD=nohttps
+    networks:
+      - proxy
+    restart: unless-stopped
+
 volumes:
   es_data:
     driver: local
