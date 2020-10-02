@@ -4,4 +4,5 @@ COPY comori-od.conf /etc/nginx/vhost.d/localhost
 COPY comori-od.conf /etc/nginx/vhost.d/comori-od.ro
 COPY comori-od.conf /etc/nginx/vhost.d/www.comori-od.ro
 COPY proxy.conf /etc/nginx/conf.d/proxy.conf
-COPY apple-app-site-association /usr/share/nginx/html/apple-app-site-association
+RUN mkdir /usr/share/nginx/html/.well-known
+COPY apple-app-site-association /usr/share/nginx/html/.well-known/apple-app-site-association
