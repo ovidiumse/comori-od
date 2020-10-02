@@ -250,8 +250,9 @@ def extractVerse(tag):
             lastBlock = {'style': style, 'text': s.string}
         else:
             lastBlock['text'] += s.string
-        
-    verse.append(lastBlock)
+    
+    if lastBlock:
+        verse.append(lastBlock)
 
     return verse
 
@@ -285,14 +286,15 @@ def extractArticles(soup, volume, book, author, cfg):
             if verses and not verses[-1]:
                 verses = verses[:-1]
 
-            articles.append({
-                'volume': volume,
-                'book': book,
-                'author': author,
-                'title': title,
-                'verses': verses,
-                'type': type
-            })
+            if len(verses) > 1:
+                articles.append({
+                    'volume': volume,
+                    'book': book,
+                    'author': author,
+                    'title': title,
+                    'verses': verses,
+                    'type': type
+                })
 
     return articles
 
