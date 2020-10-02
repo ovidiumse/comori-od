@@ -233,8 +233,22 @@ def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
                 else:
                     r = w
                     for index, c in enumerate(r):
-                        if index > 0 and index < len(r) - 1 and c.lower() == 'î' and not (
-                                r.lower().startswith('reî') or r.lower().startswith('neî')):
+                        prefixes = [
+    "anti", "arhi", "atot", "auto", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
+    "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
+    "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
+    "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
+    "tri", "ultra", "uni", "vice"
+]
+                        prefixFormed = False
+                        skipPos = 0
+                        for p in prefixes:
+                            if r.lower().startswith("{}î".format(p)):
+                                prefixFormed = True
+                                skipPos = len(p)
+                                break
+
+                        if index > 0 and index < len(r) - 1 and c.lower() == 'î' and not (prefixFormed and index == skipPos):
                             rch = 'Â' if c == 'Î' else 'â'
                             r = r[:index] + rch + r[index + 1:]
 
