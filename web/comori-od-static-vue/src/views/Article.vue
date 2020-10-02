@@ -29,18 +29,18 @@
               </v-col>
             </v-layout>
             <div id="content" class="mt-5">
-                <template v-for="(contents, index) in article._source.verses">
-                    <p v-if="contents.length !== 0" :key="index" class="text-body-1 mb-0">
-                        <template v-for="(content, index) in contents"><span v-if="content.type == 'normal'" class="normal" :key="index">{{content.text}}</span>
+                <template v-for="(contents, verseIndex) in article._source.verses">
+                    <component v-bind:is="getTagName(verseIndex)" v-if="contents.length !== 0" :key="verseIndex" class="text-body-1 mb-0">
+                        <template v-for="(content, blockIndex) in contents"><span v-if="content.type == 'normal'" class="normal" v-bind:style="getBlockStyle(verseIndex, blockIndex)" :key="verseIndex + ':' + blockIndex">{{content.text}}</span>
                             <v-tooltip 
                                 top 
                                 href='#' 
-                                v-model="show[content.text + index]" 
+                                v-model="show[content.text + verseIndex]" 
                                 color="grey darken-3"
                                 class="bible-ref" 
-                                v-else :key="index">
+                                v-else-if="content.type == 'bible-ref'" :key="verseIndex + ':' + blockIndex">
                                 <template v-slot:activator="{on, attrs}">
-                                    <a href='#' @click.prevent="show[content.text + index] = true" v-bind="attrs" v-on="on">{{content.text}}</a>
+                                    <a href='#' @click.prevent="show[content.text + verseIndex] = true" v-bind="attrs" v-on="on">{{content.text}}</a>
                                 </template>
                                 <template v-if="article._source['bible-refs'][content.text]">
                                     <p v-for="verse in article._source['bible-refs'][content.text].verses" 
@@ -56,9 +56,8 @@
                                 </template>
                             </v-tooltip>
                         </template>
-                    </p>
-                    <p v-else :key="index" class="mt-5">
-                    </p> 
+                    </component>
+                    <br v-if="!isParagraph(verseIndex)" :key="verseIndex + '_break'"/>
                 </template>
                 <div id="similars" class="mt-5" v-if="similars.length > 0">
                     <h2 class="text-subtitle-1 text-sm-h5">Vezi pe aceeași temă:</h2>
@@ -126,6 +125,43 @@ export default {
         }
     },
     methods: {
+        getFontWeight(verseIndex, blockIndex) {
+            if (this.article._source.verses[verseIndex][blockIndex]['style'].includes('bold'))
+                return "bold"
+            else
+                return "normal"
+        },
+        getFontStyle(verseIndex, blockIndex) {
+            if (this.article._source.verses[verseIndex][blockIndex]['style'].includes('italic'))
+                return "italic"
+            else
+                return "normal"
+        },
+        getBlockStyle(verseIndex, blockIndex) {
+            return { 
+                'font-weight': this.getFontWeight(verseIndex, blockIndex), 
+                'font-style': this.getFontStyle(verseIndex, blockIndex) 
+            }
+        },
+        isParagraph(index) {
+            if (index === 0)
+            {
+                return true;
+            }
+
+            if (this.article._source.verses[index - 1].length === 0)
+            {
+                return true;
+            }
+
+            return false;
+        },
+        getTagName(index) {
+            if (this.isParagraph(index))
+                return "p";
+            else
+                return "span";
+        },
         getSimilar(id) {
             let url = shared.base_url + shared.index_name + '/article/similar?id=' + encodeURIComponent(id)
             console.log("Getting similars from " + url)

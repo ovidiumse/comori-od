@@ -106,7 +106,6 @@ export default {
             items: []
         },
         title: "Comorile Oastei Domnului",
-        index: "od2",
         showSearch: false
     }),
     created() {
