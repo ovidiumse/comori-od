@@ -3,7 +3,7 @@
 echo "Extracting Cantari Nemuritoare..."
 ./od-extract.py -i ../data/cantari/cantari_1.htm -c ../cfg/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 1" -e ../data/cantari/cantari_1.json
 ./od-extract.py -i ../data/cantari/cantari_2.htm -c ../cfg/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 2" -e ../data/cantari/cantari_2.json
-./od-extract.py -i ../data/cantari/cantari_3.htm -c ../cfg/cantari_3.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 3" -e ../data/cantari/cantari_3.json
+./od-extract.py -i ../data/cantari/cantari_3.htm -c ../cfg/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 3" -e ../data/cantari/cantari_3.json
 ./od-extract.py -i ../data/cantari/cantari_4.htm -c ../cfg/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 4" -e ../data/cantari/cantari_4.json
 ./od-extract.py -i ../data/cantari/cantari_6.htm -c ../cfg/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 6" -e ../data/cantari/cantari_6.json
 ./od-extract.py -i ../data/cantari/cantari_7.htm -c ../cfg/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -b "Cântări Nemuritoare vol. 7" -e ../data/cantari/cantari_7.json
