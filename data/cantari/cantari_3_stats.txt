@@ -1,94 +1,183 @@
-+-------------------------------------+-------------------------------------+----------------------+--------+-----------------+
-|            Cuvânt inițial           |          Cuvânt înlocuitor          |        Regulă        |  Câmp  | Număr procesări |
-+-------------------------------------+-------------------------------------+----------------------+--------+-----------------+
-|                'sînt'               |                'sunt'               |    replace_words     | verses |        8        |
-|               'sfînt'               |               'sfânt'               |    replace_words     | verses |        4        |
-|                'cînd'               |                'când'               |    replace_words     | verses |        4        |
-|               'rămîne'              |               'rămâne'              |    replace_words     | verses |        3        |
-|               'pămînt'              |               'pământ'              |    replace_words     | verses |        2        |
-|               'lăsînd'              |               'lăsând'              |    replace_words     | verses |        2        |
-|             'Sfîntului'             |             'Sfântului'             |    replace_words     | verses |        2        |
-|               'atîtea'              |               'atâtea'              |    replace_words     | verses |        1        |
-|               'stîlpi'              |               'stâlpi'              |    replace_words     | verses |        1        |
-|               'sîntem'              |               'suntem'              |    replace_words     | verses |        1        |
-|               'plînge'              |               'plânge'              |    replace_words     | verses |        1        |
-|               'sfînta'              |               'sfânta'              |    replace_words     | verses |        1        |
-|                'Cînd'               |                'Când'               |    replace_words     | verses |        1        |
-|               'tăcînd'              |               'tăcând'              |    replace_words     | verses |        1        |
-|               'urcînd'              |               'urcând'              |    replace_words     | verses |        1        |
-|              'nălţîndu'             |              'nălţându'             |    replace_words     | verses |        1        |
-|                'pînă'               |                'până'               |    replace_words     | verses |        1        |
-|                'brîu'               |                'brâu'               |    replace_words     | verses |        1        |
-|                'lînă'               |                'lână'               |    replace_words     | verses |        1        |
-|               'stînă'               |               'stână'               |    replace_words     | verses |        1        |
-|              'Legămînt'             |              'Legământ'             |    replace_words     | verses |        1        |
-|                'cîte'               |                'câte'               |    replace_words     | verses |        1        |
-|                'sînt'               |                'sunt'               |    replace_words     | title  |        1        |
-| 'durerea, - cînd...ai să mai fii! ' | 'durerea, - cînd...ai să mai fii! ' |     replace_nbsp     | verses |        1        |
-|               'pămînt'              |               'pământ'              | normalize_diacritics | verses |        1        |
-|               'atîtea'              |               'atâtea'              | normalize_diacritics | verses |        1        |
-|              'tîmplele'             |              'tâmplele'             | normalize_diacritics | verses |        1        |
-|               'rămîne'              |               'rămâne'              | normalize_diacritics | verses |        1        |
-|               'stîlpi'              |               'stâlpi'              | normalize_diacritics | verses |        1        |
-|               'sfîşie'              |               'sfâşie'              | normalize_diacritics | verses |        1        |
-|               'sfînt'               |               'sfânt'               | normalize_diacritics | verses |        1        |
-|             'sprînceană'            |             'sprânceană'            | normalize_diacritics | verses |        1        |
-|               'vîrful'              |               'vârful'              | normalize_diacritics | verses |        1        |
-|                'cînd'               |                'când'               | normalize_diacritics | verses |        1        |
-|               'plînge'              |               'plânge'              | normalize_diacritics | verses |        1        |
-|               'sfînta'              |               'sfânta'              | normalize_diacritics | verses |        1        |
-|               'frînt'               |               'frânt'               | normalize_diacritics | verses |        1        |
-|              'legămînt'             |              'legământ'             | normalize_diacritics | verses |        1        |
-|                'Cînd'               |                'Când'               | normalize_diacritics | verses |        1        |
-|               'mîine'               |               'mâine'               | normalize_diacritics | verses |        1        |
-|               'lăsînd'              |               'lăsând'              | normalize_diacritics | verses |        1        |
-|               'tăcînd'              |               'tăcând'              | normalize_diacritics | verses |        1        |
-|               'urcînd'              |               'urcând'              | normalize_diacritics | verses |        1        |
-|              'nălţîndu'             |              'nălţându'             | normalize_diacritics | verses |        1        |
-|              'Plîngînd'             |              'Plângând'             | normalize_diacritics | verses |        1        |
-|               'cîntăm'              |               'cântăm'              | normalize_diacritics | verses |        1        |
-|            'coborîtoare'            |            'coborâtoare'            | normalize_diacritics | verses |        1        |
-|              'rugîndu'              |              'rugându'              | normalize_diacritics | verses |        1        |
-|                'Vîrf'               |                'Vârf'               | normalize_diacritics | verses |        1        |
-|                'rîu'                |                'râu'                | normalize_diacritics | verses |        1        |
-|                'pînă'               |                'până'               | normalize_diacritics | verses |        1        |
-|                'brîu'               |                'brâu'               | normalize_diacritics | verses |        1        |
-|                'grîu'               |                'grâu'               | normalize_diacritics | verses |        1        |
-|                'lînă'               |                'lână'               | normalize_diacritics | verses |        1        |
-|               'mînat'               |               'mânat'               | normalize_diacritics | verses |        1        |
-|               'stînă'               |               'stână'               | normalize_diacritics | verses |        1        |
-|              'stăpînă'              |              'stăpână'              | normalize_diacritics | verses |        1        |
-|               'sunînd'              |               'sunând'              | normalize_diacritics | verses |        1        |
-|               'ţărînă'              |               'ţărână'              | normalize_diacritics | verses |        1        |
-|             'desăvîrşit'            |             'desăvârşit'            | normalize_diacritics | verses |        1        |
-|              'Legămînt'             |              'Legământ'             | normalize_diacritics | verses |        1        |
-|              'gustînd'              |              'gustând'              | normalize_diacritics | verses |        1        |
-|               'Pîine'               |               'Pâine'               | normalize_diacritics | verses |        1        |
-|               'cîntec'              |               'cântec'              | normalize_diacritics | verses |        1        |
-|             'nsîngerată'            |             'nsângerată'            | normalize_diacritics | verses |        1        |
-|             'nesfîrşită'            |             'nesfârşită'            | normalize_diacritics | verses |        1        |
-|             'veşmîntul'             |             'veşmântul'             | normalize_diacritics | verses |        1        |
-|             'nesfîrşit'             |             'nesfârşit'             | normalize_diacritics | verses |        1        |
-|                'dînd'               |                'dând'               | normalize_diacritics | verses |        1        |
-|                'cîte'               |                'câte'               | normalize_diacritics | verses |        1        |
-|             'sîngeraţi'             |             'sângeraţi'             | normalize_diacritics | verses |        1        |
-|                'pîn'                |                'pân'                | normalize_diacritics | verses |        1        |
-|              'trecînd'              |              'trecând'              | normalize_diacritics | verses |        1        |
-|              'legănînd'             |              'legănând'             | normalize_diacritics | verses |        1        |
-|             'nmormînte'             |             'nmormânte'             | normalize_diacritics | verses |        1        |
-|               'Sfînt'               |               'Sfânt'               | normalize_diacritics | verses |        1        |
-|               'pîraie'              |               'pâraie'              | normalize_diacritics | verses |        1        |
-|                'rînd'               |                'rând'               | normalize_diacritics | verses |        1        |
-|             'întrebînd'             |             'întrebând'             | normalize_diacritics | verses |        1        |
-|              'umplînd'              |              'umplând'              | normalize_diacritics | verses |        1        |
-|              'sfîntul'              |              'sfântul'              | normalize_diacritics | verses |        1        |
-|              'blîndeţe'             |              'blândeţe'             | normalize_diacritics | verses |        1        |
-|              'fîntîni'              |              'fântâni'              | normalize_diacritics | verses |        1        |
-|              'ntîmpini'             |              'ntâmpini'             | normalize_diacritics | verses |        1        |
-|              'bătrîni'              |              'bătrâni'              | normalize_diacritics | verses |        1        |
-|                'vînt'               |                'vânt'               | normalize_diacritics | verses |        1        |
-|               'plîngi'              |               'plângi'              | normalize_diacritics | verses |        1        |
-|                'atît'               |                'atât'               | normalize_diacritics | verses |        1        |
-|               'mîini'               |               'mâini'               | normalize_diacritics | verses |        1        |
-|             'Sfîntului'             |             'Sfântului'             | normalize_diacritics | title  |        1        |
-+-------------------------------------+-------------------------------------+----------------------+--------+-----------------+
+178 articles
++----------------------------+-------------+---------+---------------+---------------+
+| Titlu                      |    Autor    |   Tip   | Numar versuri | Numar cuvinte |
++----------------------------+-------------+---------+---------------+---------------+
+| Comori Nemuritoare         | Traian Dorz |  poezie |       29      |       83      |
+| Bisericuţă transilvană     | Traian Dorz |  poezie |       29      |      116      |
+| Despre adevăr              | Traian Dorz | articol |      1030     |      6130     |
+| Despre ajutorare           | Traian Dorz | articol |      528      |      3135     |
+| Despre alcool              | Traian Dorz | articol |      285      |      1742     |
+| Despre ascultare           | Traian Dorz | articol |      232      |      1396     |
+| Despre bine                | Traian Dorz | articol |      235      |      1387     |
+| Despre Biserică            | Traian Dorz | articol |       30      |      139      |
+| Despre blândeţe            | Traian Dorz | articol |       93      |      567      |
+| Despre bucurie             | Traian Dorz | articol |      167      |      983      |
+| Despre bunătate            | Traian Dorz | articol |      293      |      1828     |
+| Despre carte               | Traian Dorz | articol |      263      |      1461     |
+| Despre căsnicie            | Traian Dorz | articol |      505      |      3029     |
+| Despre ceartă              | Traian Dorz | articol |       41      |      226      |
+| Despre cinste              | Traian Dorz | articol |      368      |      2162     |
+| Despre clevetire           | Traian Dorz | articol |      248      |      1482     |
+| Despre conştiinţă          | Traian Dorz | articol |      105      |      582      |
+| Despre copii               | Traian Dorz | articol |       94      |      592      |
+| Despre credinţă            | Traian Dorz | articol |      372      |      2260     |
+| Despre cumpătare           | Traian Dorz | articol |      556      |      3202     |
+| Nemuritoarele Comori       | Traian Dorz |  poezie |       29      |      100      |
+| Coloana infinită           | Traian Dorz |  poezie |       26      |       90      |
+| Despre cumpătare           | Traian Dorz | articol |      189      |      1090     |
+| Despre cunoştinţă          | Traian Dorz | articol |      156      |      879      |
+| Despre curăţie             | Traian Dorz | articol |      226      |      1346     |
+| Despre cuviinţă            | Traian Dorz | articol |       53      |      291      |
+| Despre datorie             | Traian Dorz | articol |      109      |      593      |
+| Despre dărnicie            | Traian Dorz | articol |       96      |      569      |
+| Despre desăvârşire         | Traian Dorz | articol |      120      |      772      |
+| Despre deşertăciune        | Traian Dorz | articol |       49      |      263      |
+| Despre dorinţă             | Traian Dorz | articol |      116      |      650      |
+| Despre dreptate            | Traian Dorz | articol |      290      |      1724     |
+| Despre faptă               | Traian Dorz | articol |      150      |      812      |
+| Despre făgăduinţă          | Traian Dorz | articol |       39      |      225      |
+| Despre fericire            | Traian Dorz | articol |      248      |      1529     |
+| Despre flecărie            | Traian Dorz | articol |      100      |      510      |
+| Despre frumuseţe           | Traian Dorz | articol |       95      |      517      |
+| Despre gând                | Traian Dorz | articol |       53      |      298      |
+| Despre grabă               | Traian Dorz | articol |       52      |      303      |
+| Despre grijă               | Traian Dorz | articol |      103      |      558      |
+| Despre hărnicie            | Traian Dorz | articol |      164      |      917      |
+| Despre hotărâre            | Traian Dorz | articol |       49      |      296      |
+| Despre iertare             | Traian Dorz | articol |      121      |      711      |
+| Despre iubire              | Traian Dorz | articol |      648      |      3610     |
+| Despre încercare           | Traian Dorz | articol |       89      |      525      |
+| Despre îndrăzneală - curaj | Traian Dorz | articol |      299      |      1656     |
+| Despre înfrânare           | Traian Dorz | articol |      106      |      579      |
+| Despre înţelepciune        | Traian Dorz | articol |      551      |      3408     |
+| Nemurirea                  | Traian Dorz |  poezie |       31      |       97      |
+| La Masa Asta a Tăcerii     | Traian Dorz |  poezie |       29      |      109      |
+| Despre înţelepciune        | Traian Dorz | articol |      512      |      2868     |
+| Despre îndreptare          | Traian Dorz | articol |      180      |      1004     |
+| Despre judecată            | Traian Dorz | articol |      183      |      1010     |
+| Despre lăcomie             | Traian Dorz | articol |      433      |      2430     |
+| Despre lene                | Traian Dorz | articol |      161      |      833      |
+| Despre libertate           | Traian Dorz | articol |       51      |      253      |
+| Despre linguşire           | Traian Dorz | articol |      122      |      649      |
+| Despre milă                | Traian Dorz | articol |      179      |      1112     |
+| Despre minciună            | Traian Dorz | articol |      298      |      1622     |
+| Despre mândrie             | Traian Dorz | articol |      230      |      1274     |
+| Despre mânie               | Traian Dorz | articol |      164      |      928      |
+| Despre mulţumire           | Traian Dorz | articol |      181      |      1058     |
+| Despre muncă               | Traian Dorz | articol |      548      |      2893     |
+| Despre mustrare            | Traian Dorz | articol |       44      |      276      |
+| Despre nădejde             | Traian Dorz | articol |      203      |      1297     |
+| Despre nebunie             | Traian Dorz | articol |       94      |      576      |
+| Despre necaz               | Traian Dorz | articol |       41      |      255      |
+| Despre omenie              | Traian Dorz | articol |      256      |      1456     |
+| Despre pace                | Traian Dorz | articol |      134      |      839      |
+| Despre păcat               | Traian Dorz | articol |      358      |      2168     |
+| Comori Nemuritoare         | Traian Dorz |  poezie |       26      |       77      |
+| La Poarta Sfântului Sărut  | Traian Dorz |  poezie |       29      |      109      |
+| Despre prietenie           | Traian Dorz | articol |      507      |      3012     |
+| Despre răbdare             | Traian Dorz | articol |      311      |      1779     |
+| Despre răsplată            | Traian Dorz | articol |      112      |      582      |
+| Despre răspundere          | Traian Dorz | articol |       35      |      201      |
+| Despre rău                 | Traian Dorz | articol |      459      |      2591     |
+| Despre recunoştinţă        | Traian Dorz | articol |      104      |      598      |
+| Despre singurătate         | Traian Dorz | articol |       51      |      291      |
+| Despre slăbiciune          | Traian Dorz | articol |       32      |      206      |
+| Despre smerenie            | Traian Dorz | articol |      164      |      935      |
+| Despre statornicie         | Traian Dorz | articol |      224      |      1306     |
+| Despre stăruinţă           | Traian Dorz | articol |       37      |      204      |
+| Despre suferinţă           | Traian Dorz | articol |      120      |      652      |
+| Despre suflet              | Traian Dorz | articol |       55      |      293      |
+| Despre tăcere              | Traian Dorz | articol |      288      |      1537     |
+| Despre tărie               | Traian Dorz | articol |       54      |      317      |
+| Despre timp                | Traian Dorz | articol |      103      |      541      |
+| Despre ură                 | Traian Dorz | articol |      169      |      941      |
+| Despre viaţă               | Traian Dorz | articol |      232      |      1277     |
+| Despre virtute             | Traian Dorz | articol |      225      |      1275     |
+| Despre voinţă              | Traian Dorz | articol |       34      |      195      |
+| Despre vorbire             | Traian Dorz | articol |       95      |      542      |
+| Despre zgârcenie           | Traian Dorz | articol |       90      |      530      |
+| Din părţile Olteniei       | Traian Dorz | articol |      739      |      4092     |
+| Comori nemuritoare sunt    | Traian Dorz |  poezie |       26      |       92      |
+| Nemuritoarele Comori       | Traian Dorz |  poezie |       26      |      105      |
+| Din părţile Munteniei      | Traian Dorz | articol |      759      |      4166     |
+| Din părţile Dobrogei       | Traian Dorz | articol |      289      |      1589     |
+| Din părţile Moldovei       | Traian Dorz | articol |      663      |      3692     |
+| Din părţile Bucovinei      | Traian Dorz | articol |      840      |      4394     |
+| Din părţile Maramureşului  | Traian Dorz | articol |      715      |      3812     |
+| Din părţile Transilvaniei  | Traian Dorz | articol |      807      |      4724     |
+| Din Preistorie coboară     | Traian Dorz |  poezie |       26      |      107      |
+| Din părţile Transilvaniei  | Traian Dorz | articol |      852      |      4560     |
+| Din părţile Crişanei       | Traian Dorz | articol |      1007     |      4935     |
+| Din părţile Banatului      | Traian Dorz | articol |      1113     |      5687     |
+| Din alte diferite părţi    | Traian Dorz | articol |      1633     |      8069     |
+| Troiţă Maramureşeană       | Traian Dorz |  poezie |       30      |      127      |
+| Nemuritoarele comori       | Traian Dorz |  poezie |       26      |      100      |
+| Adevărul                   | Traian Dorz | articol |       73      |      464      |
+| Ascultarea                 | Traian Dorz | articol |       76      |      460      |
+| Avuţie                     | Traian Dorz | articol |       64      |      398      |
+| Binele                     | Traian Dorz | articol |       79      |      424      |
+| Blândeţea                  | Traian Dorz | articol |       62      |      366      |
+| Bucuria                    | Traian Dorz | articol |       64      |      351      |
+| Bunătatea                  | Traian Dorz | articol |       57      |      329      |
+| Cartea                     | Traian Dorz | articol |       71      |      359      |
+| Căsnicia                   | Traian Dorz | articol |       66      |      397      |
+| Cinstea                    | Traian Dorz | articol |       67      |      379      |
+| Cântarea                   | Traian Dorz | articol |       62      |      353      |
+| Clevetirea                 | Traian Dorz | articol |       65      |      433      |
+| Conştiinţa                 | Traian Dorz | articol |       62      |      372      |
+| Copiii                     | Traian Dorz | articol |       71      |      454      |
+| Credinţa                   | Traian Dorz | articol |       83      |      503      |
+| Cumpătarea                 | Traian Dorz | articol |       71      |      402      |
+| Curajul                    | Traian Dorz | articol |       72      |      424      |
+| Curăţia                    | Traian Dorz | articol |       48      |      264      |
+| Cuvântul                   | Traian Dorz | articol |       70      |      426      |
+| Datoria                    | Traian Dorz | articol |       63      |      422      |
+| Dragostea                  | Traian Dorz | articol |       87      |      532      |
+| Dreptatea                  | Traian Dorz | articol |       61      |      420      |
+| Economia                   | Traian Dorz | articol |       60      |      321      |
+| Evlavia                    | Traian Dorz | articol |       55      |      305      |
+| Familia                    | Traian Dorz | articol |       65      |      425      |
+| Fericirea                  | Traian Dorz | articol |       65      |      409      |
+| Frica                      | Traian Dorz | articol |       73      |      460      |
+| Frumuseţea                 | Traian Dorz | articol |       64      |      375      |
+| Grija                      | Traian Dorz | articol |       68      |      432      |
+| Hărnicia                   | Traian Dorz | articol |       73      |      412      |
+| Iertarea                   | Traian Dorz | articol |       65      |      409      |
+| Iubirea                    | Traian Dorz | articol |       72      |      361      |
+| Împlinirea                 | Traian Dorz | articol |       56      |      311      |
+| Încrederea                 | Traian Dorz | articol |       60      |      385      |
+| Îngâmfarea                 | Traian Dorz | articol |       65      |      416      |
+| Înţelepciunea              | Traian Dorz | articol |       72      |      463      |
+| Judecata                   | Traian Dorz | articol |       73      |      444      |
+| Lacrimile                  | Traian Dorz | articol |       63      |      418      |
+| Legământul                 | Traian Dorz | articol |       73      |      464      |
+| Lenea                      | Traian Dorz | articol |       70      |      434      |
+| Libertatea                 | Traian Dorz | articol |       73      |      425      |
+| Lumina                     | Traian Dorz | articol |       68      |      408      |
+| Mila                       | Traian Dorz | articol |       69      |      451      |
+| Minciuna                   | Traian Dorz | articol |       74      |      486      |
+| Mânia                      | Traian Dorz | articol |       65      |      420      |
+| Moartea                    | Traian Dorz | articol |       65      |      415      |
+| Munca                      | Traian Dorz | articol |       74      |      411      |
+| Nevinovăţia                | Traian Dorz | articol |       65      |      391      |
+| Omenia                     | Traian Dorz | articol |       71      |      412      |
+| Ordinea                    | Traian Dorz | articol |       61      |      341      |
+| Pacea                      | Traian Dorz | articol |       68      |      425      |
+| Păcatul                    | Traian Dorz | articol |       67      |      418      |
+| Părinţii                   | Traian Dorz | articol |       62      |      340      |
+| 54- Prietenia              | Traian Dorz | articol |       65      |      396      |
+| Răsplata                   | Traian Dorz | articol |       71      |      467      |
+| Recunoştinţa               | Traian Dorz | articol |       65      |      431      |
+| Risipa                     | Traian Dorz | articol |       53      |      301      |
+| Smerenia                   | Traian Dorz | articol |       66      |      389      |
+| Speranţa                   | Traian Dorz | articol |       68      |      436      |
+| Statornicia                | Traian Dorz | articol |       70      |      425      |
+| Suferinţa                  | Traian Dorz | articol |       67      |      416      |
+| Tinereţea                  | Traian Dorz | articol |       67      |      426      |
+| Ura                        | Traian Dorz | articol |       76      |      378      |
+| Veşnicia                   | Traian Dorz | articol |       69      |      427      |
+| Viaţa                      | Traian Dorz | articol |       74      |      442      |
+| Virtutea                   | Traian Dorz | articol |       65      |      388      |
+| Voinţa                     | Traian Dorz | articol |       75      |      438      |
+| Sfârşitul                  | Traian Dorz | articol |      100      |      511      |
++----------------------------+-------------+---------+---------------+---------------+
