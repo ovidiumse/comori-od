@@ -267,7 +267,7 @@ def extractArticles(soup, volume, book, author, cfg):
             type = "poezie" if isPoemTitle(p, cfg) else "articol"
             verses = []
             lastTag = ""
-            lastValue = ""
+            lastValue = []
             for v in p.next_elements:
                 if v.name == 'p' and getFontSize(v) > 125:
                     break
@@ -278,7 +278,7 @@ def extractArticles(soup, volume, book, author, cfg):
                         lastValue = verse
                         verses.append(lastValue)
                 elif v.name == 'br' and lastTag not in ['', 'br'] and lastValue:
-                    lastValue = ""
+                    lastValue = []
                     verses.append(lastValue)
 
                 lastTag = v.name
@@ -288,10 +288,10 @@ def extractArticles(soup, volume, book, author, cfg):
 
             if len(verses) > 1:
                 articles.append({
-                    'volume': volume,
-                    'book': book,
-                    'author': author,
-                    'title': title,
+                    'volume': volume.strip(),
+                    'book': book.strip(),
+                    'author': author.strip(),
+                    'title': title.strip(),
                     'verses': verses,
                     'type': type
                 })
