@@ -1,16 +1,18 @@
 #!/usr/bin/pypy3
+import os
 import argparse
 import simplejson as json
 import requests
 import logging
+from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
-EXTERNAL_HOST = "https://comori-od.ro"
-LOCAL_HOST = "http://localhost"
+EXTERNAL_HOST = "https://api.comori-od.ro"
+LOCAL_HOST = "http://localhost/api"
 
 COMORI_OD_API_HOST = LOCAL_HOST
-COMORI_OD_API_BASEURL = "{}/api".format(COMORI_OD_API_HOST)
+API_OTPKEY = ""
 
 
 def parseArgs():
@@ -49,7 +51,11 @@ def parseArgs():
 
 
 def post(uri, data):
-    response = requests.post("{}/{}".format(COMORI_OD_API_BASEURL, uri), json=data)
+    response = requests.post(
+        "{}/{}".format(COMORI_OD_API_HOST, uri),
+        headers={'Authorization': 'Token {}'.format(API_OTPKEY)},
+        json=data)
+
     if response.status_code != requests.codes.ok:
         logging.error("Error: {}".format(response, indent=2))
     response.raise_for_status()
@@ -57,7 +63,10 @@ def post(uri, data):
 
 
 def delete(uri):
-    response = requests.delete("{}/{}".format(COMORI_OD_API_BASEURL, uri))
+    response = requests.delete(
+        "{}/{}".format(COMORI_OD_API_HOST, uri),
+        headers={'Authorization': 'Token {}'.format(API_OTPKEY)})
+
     response.raise_for_status()
 
 
@@ -207,15 +216,20 @@ def main():
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
 
-    global COMORI_OD_API_HOST, COMORI_OD_API_BASEURL
+    global COMORI_OD_API_HOST
 
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    COMORI_OD_API_BASEURL = "{}/api".format(COMORI_OD_API_HOST)
-
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
+    global API_OTPKEY
+    if "API_TOTP_KEY" in os.environ:
+        API_OTPKEY = os.getenv("API_TOTP_KEY")
+    else:
+        API_OTPKEY = getpass("OTP code: ")
+        os.environ["API_TOTP_KEY"] = API_OTPKEY
+    
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
 
@@ -224,11 +238,11 @@ def main():
         requests_log.propagate = True
 
     if args.delete_index:
-        logging.info("Deleting index from {}...".format(COMORI_OD_API_BASEURL))
+        logging.info("Deleting index from {}...".format(COMORI_OD_API_HOST))
         delete_index(args.idx_name)
 
     if args.create_index:
-        logging.info("Creating index from {}...".format(COMORI_OD_API_BASEURL))
+        logging.info("Creating index from {}...".format(COMORI_OD_API_HOST))
         create_index(args.idx_name)
 
     if args.json_filepath:
@@ -237,11 +251,11 @@ def main():
 
         try:
             logging.info("Indexing {} articles from {} to {}...".
-                         format(len(articles), args.json_filepath, COMORI_OD_API_BASEURL))
+                         format(len(articles), args.json_filepath, COMORI_OD_API_HOST))
             index_all(args.idx_name, articles)
             logging.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
-                                                                     COMORI_OD_API_BASEURL))
+                                                                     COMORI_OD_API_HOST))
         except Exception as ex:
             logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
