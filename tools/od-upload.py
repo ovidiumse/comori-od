@@ -110,12 +110,12 @@ def create_index(idx_name):
                         'type': 'custom',
                         "tokenizer": "standard",
                         "filter":
-                        ["lowercase", "romanian_keywords", "romanian_stemmer", "asciifolding"]
+                        ["lowercase", "asciifolding", "romanian_keywords", "romanian_stemmer"]
                     },
                     "completion": {
                         'type': 'custom',
                         "tokenizer": "standard",
-                        "filter": ["lowercase", "romanian_stemmer", "asciifolding"]
+                        "filter": ["lowercase", "asciifolding", "romanian_stemmer"]
                     },
                     "suggesting": {
                         'type': 'custom',
