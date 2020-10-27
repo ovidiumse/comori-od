@@ -15,7 +15,7 @@ BIBLE_API_EXTERNAL = "http://comori-od:8001"
 BIBLE = None
 
 PARSER_ = argparse.ArgumentParser(description="OD content post-processing.")
-REPLACEMENTS_STATS_ = {}
+REPLACEMENTS_ = {}
 
 
 class BibleRefMatcher(object):
@@ -134,16 +134,16 @@ def process_replacement(rule_name, original, replacement, field):
         original = shorten(original)
         replacement = shorten(replacement)
 
-        if original in REPLACEMENTS_STATS_ and rule_name in REPLACEMENTS_STATS_[
-                original] and field in REPLACEMENTS_STATS_[original][rule_name]:
-            REPLACEMENTS_STATS_[original][rule_name][field]['count'] += 1
+        if original in REPLACEMENTS_ and rule_name in REPLACEMENTS_[
+                original] and field in REPLACEMENTS_[original][rule_name]:
+            REPLACEMENTS_[original][rule_name][field]['count'] += 1
         else:
-            if original not in REPLACEMENTS_STATS_:
-                REPLACEMENTS_STATS_[original] = {rule_name: {}}
-            elif rule_name not in REPLACEMENTS_STATS_[original]:
-                REPLACEMENTS_STATS_[original][rule_name] = {}
+            if original not in REPLACEMENTS_:
+                REPLACEMENTS_[original] = {rule_name: {}}
+            elif rule_name not in REPLACEMENTS_[original]:
+                REPLACEMENTS_[original][rule_name] = {}
 
-            REPLACEMENTS_STATS_[original][rule_name][
+            REPLACEMENTS_[original][rule_name][
                 field] = make_replacement_info(rule_name, original, replacement, field)
 
 
@@ -234,12 +234,12 @@ def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
                     r = w
                     for index, c in enumerate(r):
                         prefixes = [
-    "anti", "arhi", "atot", "auto", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
-    "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
-    "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
-    "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
-    "tri", "ultra", "uni", "vice"
-]
+                        "anti", "arhi", "atot", "auto", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
+                        "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
+                        "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
+                        "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
+                        "tri", "ultra", "uni", "vice"
+                        ]
                         prefixFormed = False
                         skipPos = 0
                         for p in prefixes:
@@ -437,26 +437,47 @@ def main():
 
             print("", file=text_file)
 
-    stats = []
-    for w, wordStats in REPLACEMENTS_STATS_.items():
-        for rule, ruleStats in wordStats.items():
-            for field, fieldStats in ruleStats.items():
-                stats.append(fieldStats)
+    replacements = []
+    for w, wordReplacements in REPLACEMENTS_.items():
+        for rule, ruleReplacements in wordReplacements.items():
+            for field, fieldReplacements in ruleReplacements.items():
+                replacements.append(fieldReplacements)
 
-    stats_filepath = os.path.splitext(args.input)[0] + "_stats.txt"
-    stats = sorted(stats,
+    replacements_filepath = os.path.splitext(args.input)[0] + "_replacements.txt"
+    replacements = sorted(replacements,
                    key=lambda item: (item['count'], item['rule'], item['field']),
                    reverse=True)
 
-    print("Writing {} replacements to {}...".format(len(REPLACEMENTS_STATS_), stats_filepath))
+    print("Writing {} replacements to {}...".format(len(REPLACEMENTS_), replacements_filepath))
     tbl = PrettyTable()
     tbl.field_names = ["Cuvânt inițial", "Cuvânt înlocuitor", "Regulă", "Câmp", "Număr procesări"]
-    with open(stats_filepath, 'w', encoding='utf-8') as stats_file:
-        for item in stats:
+    with open(replacements_filepath, 'w', encoding='utf-8') as replacements_file:
+        for item in replacements:
             tbl.add_row([
                 "'{}'".format(item['original']), "'{}'".format(item['replacement']), item['rule'],
                 item['field'], item['count']
             ])
+        print(tbl, file=replacements_file)
+
+    stats_filepath = os.path.splitext(args.input)[0] + "_stats.txt"
+    print("Calculating article stats...")
+    tbl = PrettyTable()
+    tbl.field_names = ["Titlu", "Autor", "Tip", "Numar versuri", "Numar cuvinte"]
+    tbl.align['Titlu'] = 'l'
+    for article in articles:
+        versesCount = len(article['verses'])
+        wordCount = 0
+        for verse in article['verses']:
+            verse = ''.join([v['text'] for v in verse])
+            wordCount += len(verse.split())
+        tbl.add_row([
+            article['title'], article['author'], article['type'], versesCount,
+            wordCount
+        ])
+
+    print("Writing stats to {}...".format(stats_filepath))
+    with open(stats_filepath, 'w', encoding='utf-8') as stats_file:
+        print("{} articles".format(len(articles)), file=stats_file)
         print(tbl, file=stats_file)
 
     finish = datetime.now()
