@@ -144,6 +144,9 @@ def create_index(idx_name):
                 'term_vector': 'with_positions_offsets',
                 'analyzer': 'standard',
                 'fields': {
+                    'keyword': {
+                        'type': 'keyword'
+                    },
                     'folded': {
                         'type': 'text',
                         'analyzer': 'folding',
