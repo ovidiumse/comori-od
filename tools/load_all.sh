@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+
+read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
+export API_TOTP_KEY=${API_TOTP_KEY}
 
 # Cugetari Nemuritoare
 ./load_cugetari_total.sh -d -c $@
@@ -17,4 +20,7 @@
 
 # Hristos - Puterea Apostoliei
 ./load_hristos_puterea.sh $@
+
+# Talcuiri
+# ./load_trifa_talcuiri.sh $@
 
