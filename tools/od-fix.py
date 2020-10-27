@@ -113,7 +113,6 @@ def removeProps(tag, cfg):
 
 
 def checkProps(tag, cfg):
-    fl = False
     if 'nested-style' in cfg:
         for p, v in cfg['nested-style'].items():
             if not hasNestedStyleAttribute(tag, p, v):
@@ -250,7 +249,7 @@ def merge_multiline_titles(soup, cfg):
     title = find_title(soup, cfg)
     while title:
         next_p = title.find_next("p")
-        if isPreArticleTitle(next_p, cfg):
+        if next_p and isPreArticleTitle(next_p, cfg):
             print("Merging {} with {}...".format(title.text, next_p.text))
             title.append(next_p.text)
             next_p.decompose()
