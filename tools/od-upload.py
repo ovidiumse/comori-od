@@ -187,6 +187,9 @@ def create_index(idx_name):
                         }
                     }
                 }
+            },
+            'bible-refs': {
+                'enabled': False
             }
         }
     }
