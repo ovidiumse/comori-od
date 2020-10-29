@@ -92,38 +92,84 @@ class Articles(object):
     def query(self, idx_name, req):
         limit = req.params['limit'] if 'limit' in req.params else 100
         offset = req.params['offset'] if 'offset' in req.params else 0
+        q = urllib.parse.unquote(req.params['q'])
 
-        return ES.search(index=idx_name,
-                         body={
-                             'query': {
-                                 'simple_query_string': {
-                                     'query':
-                                     urllib.parse.unquote(req.params['q']),
-                                     "fields":
-                                     ['title', 'title.folded', 'verses.text', 'verses.text.folded'],
-                                     "default_operator":
-                                     "and"
-                                 }
-                             },
-                             '_source': {
-                                 'excludes': ['verses', 'bible-refs']
-                             },
-                             'highlight': {
-                                 'fields': {
-                                     'title': {
-                                         'matched_fields': ['title', 'title_folded'],
-                                         'type': 'fvh'
-                                     },
-                                     'verses.text': {
-                                         'matched_fields': ['verses.text', 'verses.text.folded'],
-                                         'type': 'fvh'
-                                     },
-                                 }
-                             },
-                             'size': limit,
-                             'from': offset
-                         })
+        search_fields = ['title', 'title.folded', 'verses.text', 'verses.text.folded']
+        should_match_all = []
+        should_match = {}
+        for f in search_fields:
+            current_should_match = []
+            current_should_match.append({
+                "intervals": {
+                    f: {
+                        "match": {
+                            "query": q,
+                            "max_gaps": 2
+                        }
+                    }
+                }
+            })
+            span_near_clauses = []
+            for word in re.split(" |\,|\-|\!", q):
+                span_near_clauses.append({
+                    "span_multi": {
+                        "match": {
+                            "fuzzy": {
+                                f: {
+                                    "fuzziness": len(word) / 3,
+                                    "value": word
+                                }
+                            }
+                        }
+                    }
+                })
 
+            current_should_match.append({
+                "span_near": {
+                    "clauses": span_near_clauses,
+                    "slop": 2,
+                    "in_order": True,
+                    "boost": 0.001
+                }
+            })
+
+            should_match_all += current_should_match
+            should_match[f] = {
+                "span_near": {
+                    "clauses": span_near_clauses,
+                    "slop": 2,
+                    "in_order": True,
+                    "boost": 0.001
+                }
+            }
+
+        query_body = {
+            'query': {
+                'bool': {
+                    'should': should_match_all,
+                },
+            },
+            '_source': {
+                'excludes': ['verses', 'bible-refs']
+            },
+           'highlight': {
+                'require_field_match': False,
+                'fields': {
+                    'title': {
+                        "matched_fields": ["title", "title.folded"],
+                        'type': 'unified'
+                    },
+                    'verses.text': {
+                        "matched_fields": ["verses.text", "verses.text.folded"],
+                        'type': 'unified'
+                    }
+                }
+            },
+            'size': limit,
+            'from': offset
+        }
+
+        return ES.search(index=idx_name, body=query_body)
 
     def getById(self, idx_name, req):
         return ES.get(index=idx_name, id=req.params['id'])
