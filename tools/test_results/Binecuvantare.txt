@@ -1,702 +1,157 @@
-+------------------------------------------+-------------+-------------------------------------------------+-----------------------------------+---------+
-| Titlu                                    | Author      | Tip                                             | Carte                             | Volum   |
-+------------------------------------------+-------------+-------------------------------------------------+-----------------------------------+---------+
-| Binecuvântat să fie Domnul, binecuvântat | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântaţi părinţii                   | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântarea sfântă                    | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântate fie                        | Traian Dorz | Mărgăritarul Ascuns                             | CUGETĂRI NEMURITOARE              | poezie  |
-| Binecuvântate fie                        | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântăm Iubirea                     | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Binecuvântată Maica                      | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Binecuvântată Maica                      | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântarea Tatălui                   | Traian Dorz | Cântări Nemuritoare vol. 9                      | Cântări Nemuritoare               | poezie  |
-| Apostoli binecuvântaţi                   | Traian Dorz | Cântări Nemuritoare vol. 1                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare vouă                       | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântată-i nunta                    | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Fii Doamne binecuvântat                  | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântarea dreptăţii                 | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat e-acela                     | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4        | Meditații la Evanghelia după Ioan | poezie  |
-| Binecuvântat e-acela                     | Traian Dorz | Cântări Nemuritoare vol. 6                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare pentru Cristian            | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Să vă binecuvânteze                      | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fie                      | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fii                      | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântarea lui Iacov                 | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Fii binecuvântată ziua                   | Traian Dorz | Cântări Nemuritoare vol. 6                      | Cântări Nemuritoare               | poezie  |
-| Fii binecuvântată ziua                   | Traian Dorz | Meditații la Evanghelia după Ioan vol. 2        | Meditații la Evanghelia după Ioan | poezie  |
-| Binecuvântată fie Valerica               | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare pentru Daniel              | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare pentru Timotei             | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Fii binecuvântat Isuse                   | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Îmi binecuvântez urmaşul                 | Traian Dorz | Hristos - Marturia mea                          | Hristos - Marturia mea            | poezie  |
-| Îmi binecuvântez urmaşul                 | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Fii binecuvântată clipa                  | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare ţie                        | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Doamne, Te binecuvântăm                  | Traian Dorz | Cântări Nemuritoare vol. 6                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare ţie care vii               | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fie sufletul             | Traian Dorz | Cântări Nemuritoare vol. 4                      | Cântări Nemuritoare               | poezie  |
-| Să-l binecuvânteze Cerul                 | Traian Dorz | Cântări Nemuritoare vol. 6                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântată este pe vecie              | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Să-l binecuvânteze Cerul                 | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4        | Meditații la Evanghelia după Ioan | poezie  |
-| Binecuvântat în veci                     | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare şi zădărnicie              | Traian Dorz | Strălucirea Biruinţei                           | CUGETĂRI NEMURITOARE              | articol |
-| Binecuvântat să fie Dumnezeu - 2         | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare ţie cea mai                | Traian Dorz | Cântări Nemuritoare vol. 6                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântare ţie cea mai                | Traian Dorz | Meditații la Evanghelia după Ioan vol. 1        | Meditații la Evanghelia după Ioan | poezie  |
-| Binecuvântat să fie Domnul Dumnezeu      | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| O, binecuvântaţi genunchii               | Traian Dorz | Avuţia Sfântului Moştenitor                     | CUGETĂRI NEMURITOARE              | poezie  |
-| O, binecuvântaţi genunchii...            | Traian Dorz | Cântări Nemuritoare vol. 9                      | Cântări Nemuritoare               | poezie  |
-| Să-L binecuvântezi pe Domnul             | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Să te binecuvânteze Domnul, fiul         | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fie Dumnezeu - 1         | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fie Tatăl                | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Să te binecuvânteze Domnul din           | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fie omul care            | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântata muncă grea                 | Traian Dorz | Hristos - Marturia mea                          | Hristos - Marturia mea            | articol |
-| Binecuvântat să fie Domnul, Stânca       | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Să te binecuvânteze Domnul, să te        | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântat să fie Domnul care-a        | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Cap. 27 - Întristarea cea binecuvântată  | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989) | Istoria unei Jertfe               | articol |
-| Binecuvântarea şi blestemul              | Traian Dorz | Cununile Slăvite                                | CUGETĂRI NEMURITOARE              | articol |
-| Toată viaţa voastră                      | Traian Dorz | Poruncile Iubirii                               | CUGETĂRI NEMURITOARE              | poezie  |
-| Toată viaţa voastră                      | Traian Dorz | Cântări Nemuritoare vol. 9                      | Cântări Nemuritoare               | poezie  |
-| Iubite suflet dulce                      | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Pe dragii noştri tineri                  | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Maica Domnului Hristos                   | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Să mergi până la capăt                   | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Pentru c-ai avut chemarea                | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Pentru c-ai avut                         | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Maica Domnului Isus                      | Traian Dorz | Cântări Nemuritoare vol. 6                      | Cântări Nemuritoare               | poezie  |
-| Maica Domnului Isus                      | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7        | Meditații la Evanghelia după Ioan | poezie  |
-| La căsuţa voastră                        | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| La căsuţa care                           | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Pe drumul tău                            | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Mai întâi de toate                       | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Binecuvântează Doamne adunările          | Traian Dorz | Meditații la Evanghelia după Ioan vol. 5        | Meditații la Evanghelia după Ioan | poezie  |
-| Fericite inimi                           | Traian Dorz | Strălucirea Biruinţei                           | CUGETĂRI NEMURITOARE              | poezie  |
-| Fericite inimi...                        | Traian Dorz | Cântări Nemuritoare vol. 9                      | Cântări Nemuritoare               | poezie  |
-| La Cina Lui de Taină                     | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Binecuvântează Doamne adunările          | Traian Dorz | Cântări Nemuritoare vol. 9                      | Cântări Nemuritoare               | poezie  |
-| Mai întâi de toate                       | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7        | Meditații la Evanghelia după Ioan | poezie  |
-| Doamne, binecuvântează nunta             | Traian Dorz | Cântări Nemuritoare vol. 9                      | Cântări Nemuritoare               | poezie  |
-| Fericite inimi...                        | Traian Dorz | Meditații la Evanghelia după Ioan vol. 5        | Meditații la Evanghelia după Ioan | poezie  |
-| Dacă îngerul cel tare                    | Traian Dorz | Cântări Nemuritoare vol. 11                     | Cântări Nemuritoare               | poezie  |
-| Lacrimi, lacrimi coji amare              | Traian Dorz | Cântări Nemuritoare vol. 1                      | Cântări Nemuritoare               | poezie  |
-| Psalmul 134                              | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Doamne, binecuvântează nunta             | Traian Dorz | Meditații la Evanghelia după Ioan vol. 1        | Meditații la Evanghelia după Ioan | poezie  |
-| Fericită Piatră Scumpă                   | Traian Dorz | Piatra Scumpă                                   | CUGETĂRI NEMURITOARE              | poezie  |
-| Ziua nunţii voastre fie                  | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Slavă Ţie, slavă                         | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| În sărbătorirea voastră                  | Traian Dorz | Cântări Nemuritoare vol. 7                      | Cântări Nemuritoare               | poezie  |
-| Din tot sufletul Te laud                 | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Doamne, după-atâta vreme                 | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Duhul Sfânt e Porumbelul                 | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Doamne, cum să nu-Ţi dăm?                | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Eu ştiu că numai spre                    | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Tot ce-ai semănat                        | Traian Dorz | Cântări Nemuritoare vol. 10                     | Cântări Nemuritoare               | poezie  |
-| Osana, Isuse, Osana                      | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-| Fericirea-i ascultarea                   | Traian Dorz | Mărgăritarul Ascuns                             | CUGETĂRI NEMURITOARE              | poezie  |
-| Fericită-i ascultarea                    | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Tu n-ai lăsat să fim zdrobiţi            | Traian Dorz | Cântări Nemuritoare vol. 8                      | Cântări Nemuritoare               | poezie  |
-| Tot despre cârtitor                      | Traian Dorz | Numele Biruitorului                             | CUGETĂRI NEMURITOARE              | articol |
-| Binecuvântarea                           | Traian Dorz | Răsplata Ascultării                             | CUGETĂRI NEMURITOARE              | poezie  |
-| Binecuvântat să fie, binecuvântat        | Traian Dorz | Cântări Nemuritoare vol. 2                      | Cântări Nemuritoare               | poezie  |
-+------------------------------------------+-------------+-------------------------------------------------+-----------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------+-------------+-----------------------------------------------------+-----------------------------------+---------+
+| Titlu                                                                                                                             | Author      | Tip                                                 | Carte                             | Volum   |
++-----------------------------------------------------------------------------------------------------------------------------------+-------------+-----------------------------------------------------+-----------------------------------+---------+
+| Binecuvântat să fie Domnul, binecuvântat                                                                                          | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântată-i nunta                                                                                                             | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
+| Fii Doamne binecuvântat                                                                                                           | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat e-acela                                                                                                              | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | poezie  |
+| Binecuvântat e-acela                                                                                                              | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
+| Cap. 27 - Întristarea cea binecuvântată                                                                                           | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)     | Istoria unei Jertfe               | articol |
+| Binecuvântare ţie care vii                                                                                                        | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântare pentru Cristian                                                                                                     | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântare şi zădărnicie                                                                                                       | Traian Dorz | Strălucirea Biruinţei                               | CUGETĂRI NEMURITOARE              | articol |
+| Binecuvântat să fie, binecuvântat                                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântaţi părinţii                                                                                                            | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Să vă binecuvânteze                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie Dumnezeu - 2                                                                                                  | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fii                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântarea lui Iacov                                                                                                          | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântata muncă grea                                                                                                          | Traian Dorz | Hristos - Marturia mea                              | Hristos - Marturia mea            | articol |
+| Binecuvântate fie                                                                                                                 | Traian Dorz | Mărgăritarul Ascuns                                 | CUGETĂRI NEMURITOARE              | poezie  |
+| Fii binecuvântată ziua                                                                                                            | Traian Dorz | Meditații la Evanghelia după Ioan vol. 2            | Meditații la Evanghelia după Ioan | poezie  |
+| Să-l binecuvânteze Cerul                                                                                                          | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | poezie  |
+| Binecuvântarea dreptăţii                                                                                                          | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie sufletul                                                                                                      | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Fii binecuvântată ziua                                                                                                            | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
+| Să-l binecuvânteze Cerul                                                                                                          | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
+| Să-L binecuvântezi pe Domnul                                                                                                      | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântate fie                                                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
+| Să te binecuvânteze Domnul, fiul                                                                                                  | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
+| Binecuvântăm Iubirea                                                                                                              | Traian Dorz | Cântări Nemuritoare vol. 11                         | Cântări Nemuritoare               | poezie  |
+| Binecuvântare pentru Daniel                                                                                                       | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântare pentru Timotei                                                                                                      | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Îmi binecuvântez urmaşul                                                                                                          | Traian Dorz | Hristos - Marturia mea                              | Hristos - Marturia mea            | poezie  |
+| Binecuvântat să fie Domnul Dumnezeu                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântarea sfântă                                                                                                             | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântată este pe vecie                                                                                                       | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântată fie Valerica                                                                                                        | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Fii binecuvântat Isuse                                                                                                            | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântată Maica                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
+| Fii binecuvântată clipa                                                                                                           | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
+| Îmi binecuvântez urmaşul                                                                                                          | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
+| Binecuvântată Maica                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 11                         | Cântări Nemuritoare               | poezie  |
+| Binecuvântare vouă                                                                                                                | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântare ţie cea mai                                                                                                         | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântare ţie cea mai                                                                                                         | Traian Dorz | Meditații la Evanghelia după Ioan vol. 1            | Meditații la Evanghelia după Ioan | poezie  |
+| Binecuvântarea                                                                                                                    | Traian Dorz | Răsplata Ascultării                                 | CUGETĂRI NEMURITOARE              | poezie  |
+| Binecuvântarea Tatălui                                                                                                            | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
+| Apostoli binecuvântaţi                                                                                                            | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie Dumnezeu - 1                                                                                                  | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Doamne, Te binecuvântăm                                                                                                           | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântare ţie                                                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 11                         | Cântări Nemuritoare               | poezie  |
+| O, binecuvântaţi genunchii                                                                                                        | Traian Dorz | Avuţia Sfântului Moştenitor                         | CUGETĂRI NEMURITOARE              | poezie  |
+| Să te binecuvânteze Domnul, să te                                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie Domnul care-a                                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Să te binecuvânteze Domnul din                                                                                                    | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie omul care                                                                                                     | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie Tatăl                                                                                                         | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat în veci                                                                                                              | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
+| Binecuvântat să fie Domnul, Stânca                                                                                                | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
+| O, binecuvântaţi genunchii...                                                                                                     | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
+| La Apostolul din Duminica a 5-a după Paşti(a samaritencei) - - Faptele Apostolilor 11, 19-30                                      | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                                                              | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)     | Istoria unei Jertfe               | articol |
+| La Apostolul din Duminica a 13-a după Rusalii(Pilda lucrătorilor răi) - - 1 Cor. 16, 13-24                                        | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                                                                | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                                                            | Traian Dorz | Istoria unei Jertfe vol. 3, Rugul (1947 - 1977)     | Istoria unei Jertfe               | articol |
+| Iubite suflet dulce                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
+| Cap. 6 - Alte amare adevăruri                                                                                                     | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)     | Istoria unei Jertfe               | articol |
+| Tot despre cârtitor                                                                                                               | Traian Dorz | Numele Biruitorului                                 | CUGETĂRI NEMURITOARE              | articol |
+| Cap. 14 - Apostolia Femeilor                                                                                                      | Traian Dorz | Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935) | Istoria unei Jertfe               | articol |
+| Toată viaţa voastră                                                                                                               | Traian Dorz | Poruncile Iubirii                                   | CUGETĂRI NEMURITOARE              | poezie  |
+| Toată viaţa voastră                                                                                                               | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
+| Cap. 10 - Biserica cea vie şi cea care învie                                                                                      | Traian Dorz | Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935) | Istoria unei Jertfe               | articol |
+| La Apostolul din Duminica a 10-a după Rusalii(Vindecarea lunaticului) - - 1 Cor. 4, 9-16                                          | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Ochiul şi lauda Domnului                                                                                                          | Traian Dorz | Numele Biruitorului                                 | CUGETĂRI NEMURITOARE              | articol |
+| Cap. 25 - Istorie şi suferinţă                                                                                                    | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)     | Istoria unei Jertfe               | articol |
+| La Apostolul din Duminica a 3-a după Paşti(a Mironosiţelor) - - Faptele Apostolilor 6, 1-7 -                                      | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Cap. 11 - Răscrucea Isus                                                                                                          | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
+| Lucrul şi nelucrarea                                                                                                              | Traian Dorz | Avuţia Sfântului Moştenitor                         | CUGETĂRI NEMURITOARE              | articol |
+| Bunătatea şi înţelepciunea                                                                                                        | Traian Dorz | Alergarea Stăruitoare                               | CUGETĂRI NEMURITOARE              | articol |
+| Pe dragii noştri tineri                                                                                                           | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
+| La Apostolul din duminica a 2-a după Paşti(a Sf. Ap. Toma) - - Faptele Apostolilor cap. 5, 12-20                                  | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Curăţie şi vicleşug                                                                                                               | Traian Dorz | Săgeţile biruitoare                                 | CUGETĂRI NEMURITOARE              | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                                                                       | Traian Dorz | Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935) | Istoria unei Jertfe               | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                                                                          | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
+| Cap. 5 - Întâia judecată                                                                                                          | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
+| Cap. 7 - Printre leu şi printre urs                                                                                               | Traian Dorz | Istoria unei Jertfe vol. 3, Rugul (1947 - 1977)     | Istoria unei Jertfe               | articol |
+| Oriunde şi oricând                                                                                                                | Traian Dorz | Păşunile Dulci                                      | CUGETĂRI NEMURITOARE              | articol |
+| Păcatul şi frica                                                                                                                  | Traian Dorz | Crucea Mântuitoare                                  | CUGETĂRI NEMURITOARE              | articol |
+| Şi va fi o turmă şi un Păstor                                                                                                     | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | articol |
+| Marta slujea                                                                                                                      | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | articol |
+| Întâlnirile cu Dumnezeu                                                                                                           | Traian Dorz | Lupta cea Bună                                      | CUGETĂRI NEMURITOARE              | articol |
+| La Apostolul din Duminica a 6-a după Rusalii(Vindecarea slăbănogului din Capernaum) - - Romani 12, 6-14 -                         | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Cap. 21 - La 25 de ani...                                                                                                         | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
+| Cap. 15 - Un An Nou Fericit                                                                                                       | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)     | Istoria unei Jertfe               | articol |
+| Despre muncă                                                                                                                      | Traian Dorz | Cântări Nemuritoare vol. 3                          | Cântări Nemuritoare               | articol |
+| Slujire şi răsplată                                                                                                               | Traian Dorz | Păşunile Dulci                                      | CUGETĂRI NEMURITOARE              | articol |
+| Dragostea pentru înaintaşi                                                                                                        | Traian Dorz | Mărgăritarul Ascuns                                 | CUGETĂRI NEMURITOARE              | articol |
+| Cap. 26 - Fântânile certei noastre                                                                                                | Traian Dorz | Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)     | Istoria unei Jertfe               | articol |
+| Alte adevăruri noi                                                                                                                | Traian Dorz | Hristos - Marturia mea                              | Hristos - Marturia mea            | articol |
+| La Apostolul din Duminica a 7-a după Paşti(a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) - - Faptele Apostolilor 20, 16-18; 28-36 | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
+| Binefacerea şi recunoştinţa                                                                                                       | Traian Dorz | Păşunile Dulci                                      | CUGETĂRI NEMURITOARE              | articol |
+| Lumina şi întunericul                                                                                                             | Traian Dorz | Săgeţile biruitoare                                 | CUGETĂRI NEMURITOARE              | articol |
++-----------------------------------------------------------------------------------------------------------------------------------+-------------+-----------------------------------------------------+-----------------------------------+---------+
 Searching Binecuvantare using http://localhost/api...
-Got 1348 hits:
-Score: 10.348511
-Volume: CUGETĂRI NEMURITOARE
-Book: Răsplata Ascultării
-Title: Binecuvântarea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntarea</em>",
-"<em>Binecuv\u00e2ntare</em>"
-],
-"title": [
-"<em>Binecuv\u00e2ntarea</em>"
-]
-}
-
-Score: 10.108991
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat să fie, binecuvântat
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie, <em>binecuv\u00e2ntat</em> s\u0103 fie"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie, <em>binecuv\u00e2ntat</em>"
-]
-}
-
-Score: 9.933196
+Got 1453 hits:
+Score: 1.4666667
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Binecuvântat să fie Domnul, binecuvântat
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul, <em>binecuv\u00e2ntat</em>",
-"- <em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul, <em>binecuv\u00e2ntat</em>. "
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul, <em>binecuv\u00e2ntat</em>"
-]
-}
 
-Score: 9.805192
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântaţi părinţii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii",
-"<em>Binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii",
-"\u015fi voi <em>binecuv\u00e2nta\u0163i</em>. ",
-"<em>Binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii",
-"<em>Binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii"
-],
-"title": [
-"<em>Binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii"
-]
-}
-
-Score: 9.703725
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântarea sfântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntarea</em> sf\u00e2nt\u0103 de la Domnul Pream\u0103rit",
-"\u00een al Domnului Sf\u00e2nt Nume noi v\u0103 <em>binecuv\u00e2nt\u0103m</em>",
-"s\u0103 v\u0103 <em>binecuv\u00e2nteze</em> Domnul nostru... ne rug\u0103m. "
-],
-"title": [
-"<em>Binecuv\u00e2ntarea</em> sf\u00e2nt\u0103"
-]
-}
-
-Score: 9.689925
-Volume: CUGETĂRI NEMURITOARE
-Book: Mărgăritarul Ascuns
-Title: Binecuvântate fie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntate</em> fie focul \u015fi furtuna,",
-"<em>Binecuv\u00e2ntate</em> fie, lacrima \u015fi rana,",
-"<em>Binecuv\u00e2ntate</em> fie ruga \u015fi c\u00e2ntarea",
-"<em>Binecuv\u00e2ntate</em> fie pacea \u015fi iubirea,"
-],
-"title": [
-"<em>Binecuv\u00e2ntate</em> fie"
-]
-}
-
-Score: 9.689925
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Binecuvântate fie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntate</em> fie focul \u015fi furtuna, ",
-"<em>Binecuv\u00e2ntate</em> fie lacrima \u015fi rana, ",
-"<em>Binecuv\u00e2ntate</em> fie ruga \u015fi c\u00e2ntarea",
-"<em>Binecuv\u00e2ntate</em> fie pacea \u015fi iubirea, "
-],
-"title": [
-"<em>Binecuv\u00e2ntate</em> fie"
-]
-}
-
-Score: 9.65568
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Binecuvântăm Iubirea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2nt\u0103m</em> Iubirea",
-"<em>Binecuv\u00e2nt\u0103m</em> R\u0103bdarea",
-"<em>Binecuv\u00e2nt\u0103m</em> frumse\u0163ea",
-"<em>Binecuv\u00e2nt\u0103m</em> pe Tat\u0103l"
-],
-"title": [
-"<em>Binecuv\u00e2nt\u0103m</em> Iubirea"
-]
-}
-
-Score: 9.520129
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Binecuvântată Maica
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat\u0103</em> Maica",
-"noi te <em>binecuv\u00e2nt\u0103m</em>. ",
-"- noi te <em>binecuv\u00e2nt\u0103m</em>! "
-],
-"title": [
-"<em>Binecuv\u00e2ntat\u0103</em> Maica"
-]
-}
-
-Score: 9.506259
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Binecuvântată Maica
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat\u0103</em> Maica Celui care-L ador\u0103m",
-"pentru-a ta chemare sf\u00e2nt\u0103 noi te <em>binecuv\u00e2nt\u0103m</em>. ",
-"nimeni \u00eens\u0103-a\u015fa ca tine - noi te <em>binecuv\u00e2nt\u0103m</em>! "
-],
-"title": [
-"<em>Binecuv\u00e2ntat\u0103</em> Maica"
-]
-}
-
-Score: 9.399783
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Binecuvântarea Tatălui
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntarea</em>",
-"<em>Binecuv\u00e2ntare</em> (bis)"
-],
-"title": [
-"<em>Binecuv\u00e2ntarea</em> Tat\u0103lui"
-]
-}
-
-Score: 9.3901
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Apostoli binecuvântaţi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"apostoli <em>binecuv\u00e2nta\u0163i</em>",
-"apostoli <em>binecuv\u00e2nta\u0163i</em>! "
-],
-"title": [
-"Apostoli <em>binecuv\u00e2nta\u0163i</em>"
-]
-}
-
-Score: 9.3901
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântare vouă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntare</em> vou\u0103",
-"este <em>binecuv\u00e2ntare</em>"
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> vou\u0103"
-]
-}
-
-Score: 9.230976
+Score: 1.4230769
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Binecuvântată-i nunta
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat\u0103</em>-i nunta tinerilor credincio\u015fi",
-"<em>Binecuv\u00e2ntat\u0103</em>-i via\u0163a so\u0163ilor ascult\u0103tori",
-"<em>binecuv\u00e2ntat\u0103</em> fie via\u0163a voastr\u0103 tot a\u015fa",
-"<em>Binecuv\u00e2ntat\u0103</em>-i roada so\u0163ilor r\u0103ma\u015fi cura\u0163i",
-"<em>binecuv\u00e2ntat\u0103</em> fie roada voastr\u0103 tot a\u015fa"
-],
-"title": [
-"<em>Binecuv\u00e2ntat\u0103</em>-i nunta"
-]
-}
 
-Score: 9.2156515
+Score: 1.4090909
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Fii Doamne binecuvântat
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fii Doamne <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>, fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>. ",
-"fii <em>binecuv\u00e2ntat</em>, fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>. "
-],
-"title": [
-"Fii Doamne <em>binecuv\u00e2ntat</em>"
-]
-}
 
-Score: 9.169029
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântarea dreptăţii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"6-<em>Binecuv\u00e2ntarea</em> sf\u00e2nt\u0103 peste capul drept s\u0103 vie",
-"7-Pomenirea celui bun e ve\u015fnic <em>binecuv\u00e2ntat\u0103</em>",
-"21-Pururi <em>binecuv\u00e2ntarea</em> Domnului e-mbog\u0103\u0163ire",
-"dar cei r\u0103i nici n-au s\u0103 vad\u0103 \u0163ara <em>binecuv\u00e2ntat\u0103</em>. "
-],
-"title": [
-"<em>Binecuv\u00e2ntarea</em> drept\u0103\u0163ii"
-]
-}
-
-Score: 9.1671095
+Score: 1.3888888
 Volume: Meditații la Evanghelia după Ioan
 Book: Meditații la Evanghelia după Ioan vol. 4
 Title: Binecuvântat e-acela
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> e-acela care-ascult\u0103 de chemare",
-"<em>Binecuv\u00e2ntat</em> e-acela ce-are-o inim\u0103 umil\u0103",
-"<em>Binecuv\u00e2ntat</em> e-acela ce d\u0103-n veci \u015fi-n veac nu cere",
-"<em>Binecuv\u00e2ntat</em> e-acela care \u015ftie s\u0103 aline",
-"<em>Binecuv\u00e2ntat</em> e-acela care umbl\u0103-n p\u0103rt\u0103\u015fie"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> e-acela"
-]
-}
 
-Score: 9.1671095
+Score: 1.3888888
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Binecuvântat e-acela
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> e-acela care-ascult\u0103 de chemare",
-"<em>Binecuv\u00e2ntat</em> e-acela ce-are-o inim\u0103 umil\u0103",
-"<em>Binecuv\u00e2ntat</em> e-acela ce d\u0103-n veci \u015fi-n veac nu cere",
-"<em>Binecuv\u00e2ntat</em> e-acela care \u015ftie s\u0103 aline",
-"<em>Binecuv\u00e2ntat</em> e-acela care umbl\u0103-n p\u0103rt\u0103\u015fie"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> e-acela"
-]
-}
 
-Score: 9.101364
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântare pentru Cristian
-Type: poezie
+Score: 1.3761233
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
+Title: Cap. 27 - Întristarea cea binecuvântată
+Type: articol
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"<em>Binecuv\u00e2ntare</em>",
-"<em>Binecuv\u00e2ntarea</em>",
-"<em>Binecuv\u00e2ntarea</em>",
-"<em>Binecuv\u00e2ntarea</em>",
-"<em>Binecuv\u00e2ntarea</em>"
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> pentru Cristian"
+"S-a \u00eenceput, ca la obiceiurile noastre, cu rug\u0103ciune de mul\u0163umire \u015fi <em>binecuv\u00e2ntare</em> lui Dumnezeu pentru"
 ]
 }
 
-Score: 9.086596
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Să vă binecuvânteze
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103 v\u0103 <em>binecuv\u00e2nteze</em>, ",
-"v\u0103 <em>binecuv\u00e2nteze</em>",
-"S\u0103 v\u0103 <em>binecuv\u00e2nteze</em>, ",
-"S\u0103 v\u0103 <em>binecuv\u00e2nteze</em>, ",
-"S\u0103 v\u0103 <em>binecuv\u00e2nteze</em>, "
-],
-"title": [
-"S\u0103 v\u0103 <em>binecuv\u00e2nteze</em>"
-]
-}
-
-Score: 9.076817
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântat să fie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie",
-"fie <em>binecuv\u00e2ntat</em>",
-"<em>Binecuv\u00e2nta\u0163i</em> s\u0103 fie",
-"Fie <em>binecuv\u00e2ntat\u0103</em>",
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie"
-]
-}
-
-Score: 9.061829
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat să fii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"d\u0103m cu to\u0163ii <em>binecuv\u00e2ntarea</em> \u0162ie",
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Doamne",
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Doamne Numele T\u0103u Mare",
-"care-I mai presus de-a noastr\u0103 orice <em>binecuv\u00e2ntare</em>. "
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fii"
-]
-}
-
-Score: 9.052783
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântarea lui Iacov
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cens\u0103 <em>binecuv\u00e2ntarea</em>",
-"Totu\u015fi, <em>binecuv\u00e2ntarea</em>",
-"Caut\u0103 <em>binecuv\u00e2ntarea</em> tat\u0103lui t\u0103u credincios",
-"orice <em>binecuv\u00e2ntare</em> este numai \u00een Hristos"
-],
-"title": [
-"<em>Binecuv\u00e2ntarea</em> lui Iacov"
-]
-}
-
-Score: 9.02888
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Fii binecuvântată ziua
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua",
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua",
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua",
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua, "
-],
-"title": [
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua"
-]
-}
-
-Score: 8.999443
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 2
-Title: Fii binecuvântată ziua
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua",
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua",
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua",
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua, "
-],
-"title": [
-"Fii <em>binecuv\u00e2ntat\u0103</em> ziua"
-]
-}
-
-Score: 8.9142475
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântată fie Valerica
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat\u0103</em>",
-"<em>Binecuv\u00e2ntat\u0103</em>",
-"<em>Binecuv\u00e2ntat\u0103</em>"
-],
-"title": [
-"<em>Binecuv\u00e2ntat\u0103</em> fie Valerica"
-]
-}
-
-Score: 8.906847
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântare pentru Daniel
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntare</em> pentru Daniel: ",
-"<em>Binecuv\u00e2ntare</em> pentru Daniel: ",
-"<em>Binecuv\u00e2ntare</em> pentru Daniel: "
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> pentru Daniel"
-]
-}
-
-Score: 8.892138
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântare pentru Timotei
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntare</em>",
-"<em>Binecuv\u00e2ntare</em>",
-"<em>Binecuv\u00e2ntare</em>"
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> pentru Timotei"
-]
-}
-
-Score: 8.863092
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Fii binecuvântat Isuse
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fii <em>binecuv\u00e2ntat</em> Isuse",
-"\u00een veci fii <em>binecuv\u00e2ntat</em>",
-"- Isus fii <em>binecuv\u00e2ntat</em>! "
-],
-"title": [
-"Fii <em>binecuv\u00e2ntat</em> Isuse"
-]
-}
-
-Score: 8.848752
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Îmi binecuvântez urmaşul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cemi <em>binecuv\u00e2ntez</em> urma\u015ful ",
-"urma\u015ful <em>binecuv\u00e2ntat</em>, ",
-"- a\u015fa s\u0103-mi <em>binecuv\u00e2nteze</em>"
-],
-"title": [
-"\u00cemi <em>binecuv\u00e2ntez</em> urma\u015ful"
-]
-}
-
-Score: 8.848752
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Îmi binecuvântez urmaşul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cemi <em>binecuv\u00e2ntez</em> urma\u015ful",
-"urma\u015ful <em>binecuv\u00e2ntat</em>",
-"- a\u015fa s\u0103-mi <em>binecuv\u00e2nteze</em>"
-],
-"title": [
-"\u00cemi <em>binecuv\u00e2ntez</em> urma\u015ful"
-]
-}
-
-Score: 8.820429
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Fii binecuvântată clipa
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fii <em>binecuv\u00e2ntat\u0103</em> clipa",
-"Fii <em>binecuv\u00e2ntat\u0103</em> grija",
-"O, <em>binecuv\u00e2ntat\u0103</em> fie"
-],
-"title": [
-"Fii <em>binecuv\u00e2ntat\u0103</em> clipa"
-]
-}
-
-Score: 8.773879
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Binecuvântare ţie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntare</em> \u0163ie, "
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> \u0163ie"
-]
-}
-
-Score: 8.725416
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Doamne, Te binecuvântăm
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Te <em>binecuv\u00e2nt\u0103m</em> pe Tine",
-"Te <em>binecuv\u00e2nt\u0103m</em> pe Tine. "
-],
-"title": [
-"Doamne, Te <em>binecuv\u00e2nt\u0103m</em>"
-]
-}
-
-Score: 8.573317
+Score: 1.370773
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Binecuvântare ţie care vii
@@ -715,93 +170,22 @@ highlight: {
 ]
 }
 
-Score: 8.463513
+Score: 1.346065
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
-Title: Binecuvântat să fie sufletul
+Title: Binecuvântare pentru Cristian
 Type: poezie
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie",
-"fie <em>binecuv\u00e2ntat</em>",
-"<em>Binecuv\u00e2nta\u0163i</em> s\u0103 fie",
-"<em>Binecuv\u00e2ntate</em> fie"
+"<em>Binecuv\u00e2ntare</em>"
 ],
 "title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie sufletul"
+"<em>Binecuv\u00e2ntare</em> pentru Cristian"
 ]
 }
 
-Score: 8.445793
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Să-l binecuvânteze Cerul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103-l <em>binecuv\u00e2nteze</em> Cerul",
-"S\u0103 <em>binecuv\u00e2nteze</em> M\u0103rul",
-"s\u0103-l <em>binecuv\u00e2nteze</em> Cerul",
-"mai mult s\u0103-l <em>binecuv\u00e2nteze</em>"
-],
-"title": [
-"S\u0103-l <em>binecuv\u00e2nteze</em> Cerul"
-]
-}
-
-Score: 8.438276
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântată este pe vecie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat\u0103</em> este pe vecie",
-"<em>binecuv\u00e2ntat\u0103</em>-i Sf\u00e2nta-mp\u0103r\u0103\u0163ie",
-"<em>binecuv\u00e2ntat</em> e Domnul Pream\u0103rit. "
-],
-"title": [
-"<em>Binecuv\u00e2ntat\u0103</em> este pe vecie"
-]
-}
-
-Score: 8.376627
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 4
-Title: Să-l binecuvânteze Cerul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103-l <em>binecuv\u00e2nteze</em> Cerul",
-"S\u0103 <em>binecuv\u00e2nteze</em> M\u0103rul",
-"s\u0103-l <em>binecuv\u00e2nteze</em> Cerul",
-"mai mult s\u0103-l <em>binecuv\u00e2nteze</em>"
-],
-"title": [
-"S\u0103-l <em>binecuv\u00e2nteze</em> Cerul"
-]
-}
-
-Score: 8.287073
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat în veci
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, <em>binecuv\u00e2ntat</em> \u00een veci s\u0103 fie"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> \u00een veci"
-]
-}
-
-Score: 8.197014
+Score: 1.3451521
 Volume: CUGETĂRI NEMURITOARE
 Book: Strălucirea Biruinţei
 Title: Binecuvântare şi zădărnicie
@@ -811,209 +195,73 @@ highlight: {
 "verses.text": [
 "1 - Dac\u0103 nu \u00eencepi lucrul t\u0103u cu deplin\u0103 <em>binecuv\u00e2ntare</em> de la Dumnezeu, \u00een deplin\u0103 ascultare de voia Lui",
 "3 - Vei afla <em>binecuv\u00e2ntare</em>, dac\u0103 vei lucra cu Dumnezeu",
-"5 - Dar c\u00e2nd zide\u015fte Dumnezeu, - totul este <em>binecuv\u00e2ntat</em>, ",
-"\u00eenso\u0163irea lui Dumnezeu \u00eei va da sprijin \u015fi <em>binecuv\u00e2ntare</em>. ",
-"\u015fi scopul n-ar fi <em>binecuv\u00e2ntat</em>, "
+"fiindc\u0103 \u00eenso\u0163irea lui Dumnezeu \u00eei va da sprijin \u015fi <em>binecuv\u00e2ntare</em>."
 ],
 "title": [
 "<em>Binecuv\u00e2ntare</em> \u015fi z\u0103d\u0103rnicie"
 ]
 }
 
-Score: 8.072632
+Score: 1.3333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântat să fie, binecuvântat
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântaţi părinţii
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântat să fie
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Să vă binecuvânteze
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3056434
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Binecuvântat să fie Dumnezeu - 2
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Dumnezeu",
-"El ne-a <em>binecuv\u00e2ntat</em> de Sus",
-"<em>Binecuv\u00e2ntat</em>, <em>binecuv\u00e2ntat</em>"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Dumnezeu - 2"
-]
-}
 
-Score: 8.0173
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Binecuvântare ţie cea mai
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntare</em> \u0163ie",
-"- <em>Binecuv\u00e2ntare</em> \u0163ie"
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> \u0163ie cea mai"
-]
-}
-
-Score: 7.999199
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 1
-Title: Binecuvântare ţie cea mai
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntare</em> \u0163ie",
-"- <em>Binecuv\u00e2ntare</em> \u0163ie"
-],
-"title": [
-"<em>Binecuv\u00e2ntare</em> \u0163ie cea mai"
-]
-}
-
-Score: 7.989128
+Score: 1.3054183
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat să fie Domnul Dumnezeu
+Title: Binecuvântat să fii
 Type: poezie
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie",
-"<em>binecuv\u00e2ntat</em> s\u0103 fie",
-"<em>binecuv\u00e2ntat</em>, amin... "
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul Dumnezeu"
+"care-I mai presus de-a noastr\u0103 orice <em>binecuv\u00e2ntare</em>."
 ]
 }
 
-Score: 7.962725
-Volume: CUGETĂRI NEMURITOARE
-Book: Avuţia Sfântului Moştenitor
-Title: O, binecuvântaţi genunchii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, <em>binecuv\u00e2nta\u0163i</em> genunchii"
-],
-"title": [
-"O, <em>binecuv\u00e2nta\u0163i</em> genunchii"
-]
-}
-
-Score: 7.962725
+Score: 1.3053759
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: O, binecuvântaţi genunchii...
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântarea lui Iacov
 Type: poezie
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"O, <em>binecuv\u00e2nta\u0163i</em> genunchii"
-],
-"title": [
-"O, <em>binecuv\u00e2nta\u0163i</em> genunchii..."
+"orice <em>binecuv\u00e2ntare</em> este numai \u00een Hristos."
 ]
 }
 
-Score: 7.9519415
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Să-L binecuvântezi pe Domnul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103-L <em>binecuv\u00e2ntezi</em> pe Domnul",
-"S\u0103-L <em>binecuv\u00e2ntezi</em> pe Domnul",
-"S\u0103-L <em>binecuv\u00e2ntezi</em> pe Domnul",
-"S\u0103-L <em>binecuv\u00e2ntezi</em> pe Domnul"
-],
-"title": [
-"S\u0103-L <em>binecuv\u00e2ntezi</em> pe Domnul"
-]
-}
-
-Score: 7.9519415
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Să te binecuvânteze Domnul, fiul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103 te <em>binecuv\u00e2nteze</em>",
-"a\u015fa-\u0163i <em>binecuv\u00e2nteze</em>",
-"a\u015fa-\u0163i <em>binecuv\u00e2nteze</em>",
-"- a\u015fa-\u0163i <em>binecuv\u00e2nteze</em>"
-],
-"title": [
-"S\u0103 te <em>binecuv\u00e2nteze</em> Domnul, fiul"
-]
-}
-
-Score: 7.7516294
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat să fie Dumnezeu - 1
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Dumnezeul nostru Sf\u00e2nt",
-"O, <em>binecuv\u00e2ntat</em> s\u0103 fie"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Dumnezeu - 1"
-]
-}
-
-Score: 7.7291975
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat să fie Tatăl
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Tat\u0103l Domnului Isus"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Tat\u0103l"
-]
-}
-
-Score: 7.3199325
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Să te binecuvânteze Domnul din
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103 te <em>binecuv\u00e2nteze</em> Domnul din Cetatea Sa... "
-],
-"title": [
-"S\u0103 te <em>binecuv\u00e2nteze</em> Domnul din"
-]
-}
-
-Score: 7.255326
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Binecuvântat să fie omul care
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie omul care ori\u015fic\u00e2nd"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie omul care"
-]
-}
-
-Score: 7.114986
+Score: 1.3011637
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Binecuvântata muncă grea
@@ -1021,693 +269,437 @@ Type: articol
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"munca desigur este un dar de la Dumnezeu \u015fi o <em>binecuv\u00e2ntare</em>. Dar este \u015fi o datorie pe care dac\u0103 \u0163i-o faci",
-"Ce <em>binecuv\u00e2ntat\u0103</em> este munca omului c\u00e2nd ea este sfin\u0163it\u0103 prin",
-"rodul muncii tale, nu o po\u0163i avea dec\u00e2t prin <em>binecuv\u00e2ntarea</em> lui Dumnezeu. De aceea p\u00e2inea stomacului o",
-"O, ce frumoas\u0103 \u015fi ce fericit\u0103 era <em>binecuv\u00e2ntata</em> lor munc\u0103 grea, sfin\u0163it\u0103 de rug\u0103ciunea lor smerit\u0103"
-],
-"title": [
-"<em>Binecuv\u00e2ntata</em> munc\u0103 grea"
+"C\u00e2nd omul este s\u0103n\u0103tos \u015fi \u00een putere - munca desigur este un dar de la Dumnezeu \u015fi o <em>binecuv\u00e2ntare</em>."
 ]
 }
 
-Score: 7.08751
+Score: 1.3
+Volume: CUGETĂRI NEMURITOARE
+Book: Mărgăritarul Ascuns
+Title: Binecuvântate fie
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 2
+Title: Fii binecuvântată ziua
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 4
+Title: Să-l binecuvânteze Cerul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântarea dreptăţii
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântat să fie sufletul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Fii binecuvântată ziua
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Să-l binecuvânteze Cerul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
-Title: Binecuvântat să fie Domnul, Stânca
+Title: Să-L binecuvântezi pe Domnul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Binecuvântate fie
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Să te binecuvânteze Domnul, fiul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Binecuvântăm Iubirea
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.2640637
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântare pentru Daniel
 Type: poezie
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie"
+"<em>Binecuv\u00e2ntare</em> pentru Daniel:",
+"<em>Binecuv\u00e2ntare</em> pentru Daniel:",
+"<em>Binecuv\u00e2ntare</em> pentru Daniel:"
 ],
 "title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul, St\u00e2nca"
+"<em>Binecuv\u00e2ntare</em> pentru Daniel"
 ]
 }
 
-Score: 6.8903017
+Score: 1.2640357
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântare pentru Timotei
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em>",
+"<em>Binecuv\u00e2ntare</em>",
+"<em>Binecuv\u00e2ntare</em>"
+],
+"title": [
+"<em>Binecuv\u00e2ntare</em> pentru Timotei"
+]
+}
+
+Score: 1.25
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Îmi binecuvântez urmaşul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântat să fie Domnul Dumnezeu
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântarea sfântă
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântată este pe vecie
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântată fie Valerica
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Fii binecuvântat Isuse
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Binecuvântată Maica
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Fii binecuvântată clipa
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Îmi binecuvântez urmaşul
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Binecuvântată Maica
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.1812708
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Binecuvântare vouă
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em> vou\u0103",
+"este <em>binecuv\u00e2ntare</em>"
+],
+"title": [
+"<em>Binecuv\u00e2ntare</em> vou\u0103"
+]
+}
+
+Score: 1.1793374
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Binecuvântare ţie cea mai
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em> \u0163ie",
+"- <em>Binecuv\u00e2ntare</em> \u0163ie"
+],
+"title": [
+"<em>Binecuv\u00e2ntare</em> \u0163ie cea mai"
+]
+}
+
+Score: 1.1793029
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 1
+Title: Binecuvântare ţie cea mai
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em> \u0163ie",
+"- <em>Binecuv\u00e2ntare</em> \u0163ie"
+],
+"title": [
+"<em>Binecuv\u00e2ntare</em> \u0163ie cea mai"
+]
+}
+
+Score: 1.1719328
+Volume: CUGETĂRI NEMURITOARE
+Book: Răsplata Ascultării
+Title: Binecuvântarea
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em>"
+]
+}
+
+Score: 1.1718796
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Binecuvântarea Tatălui
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em> (bis)"
+]
+}
+
+Score: 1.1666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Apostoli binecuvântaţi
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.1666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântat să fie Dumnezeu - 1
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.1666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Doamne, Te binecuvântăm
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.0134312
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Binecuvântare ţie
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Binecuv\u00e2ntare</em> \u0163ie,"
+],
+"title": [
+"<em>Binecuv\u00e2ntare</em> \u0163ie"
+]
+}
+
+Score: 1.0
+Volume: CUGETĂRI NEMURITOARE
+Book: Avuţia Sfântului Moştenitor
+Title: O, binecuvântaţi genunchii
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Să te binecuvânteze Domnul, să te
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103 te <em>binecuv\u00e2nteze</em> Domnul, s\u0103 te p\u0103zeasc\u0103 Dumnezeu"
-],
-"title": [
-"S\u0103 te <em>binecuv\u00e2nteze</em> Domnul, s\u0103 te"
-]
-}
 
-Score: 6.774996
+Score: 1.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Binecuvântat să fie Domnul care-a
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul care-a odihnit"
-],
-"title": [
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie Domnul care-a"
-]
-}
 
-Score: 5.841275
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
-Title: Cap. 27 - Întristarea cea binecuvântată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"obiceiurile noastre, cu rug\u0103ciune de mul\u0163umire \u015fi <em>binecuv\u00e2ntare</em> lui Dumnezeu pentru acest nou prilej de har",
-"de fiecare dat\u0103 un program nou, o \u00een\u0163elegere <em>binecuv\u00e2ntat\u0103</em> \u015fi creatoare. S\u0103 ridic\u0103m \u015ftacheta tot mai sus",
-"O Dumnezeul nostru <em>binecuv\u00e2ntat</em>, c\u00e2t de minunat\u0103 este Lucrarea noastr\u0103 dat\u0103",
-"tot mai nou\u0103, mai proasp\u0103t\u0103, mai bogat\u0103. Fii <em>binecuv\u00e2ntat</em> Duhul harurilor divine, pentru tot harul ce",
-"\u00eendep\u0103rtate niciodat\u0103 de la acest curs frumos \u015fi <em>binecuv\u00e2ntat</em>. "
-],
-"title": [
-"Cap. 27 - \u00centristarea cea <em>binecuv\u00e2ntat\u0103</em>"
-]
-}
-
-Score: 5.44085
-Volume: CUGETĂRI NEMURITOARE
-Book: Cununile Slăvite
-Title: Binecuvântarea şi blestemul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"title": [
-"<em>Binecuv\u00e2ntarea</em> \u015fi blestemul"
-]
-}
-
-Score: 3.8391569
-Volume: CUGETĂRI NEMURITOARE
-Book: Poruncile Iubirii
-Title: Toată viaţa voastră
+Score: 1.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Să te binecuvânteze Domnul din
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntat\u0103</em> de la Dumnezeu",
-"<em>binecuv\u00e2ntat\u0103</em> de Isus Hristos",
-"<em>binecuv\u00e2ntare</em> cu ceresc folos",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fi\u0163i",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fi\u0163i"
-]
-}
 
-Score: 3.8391569
+Score: 1.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântat să fie omul care
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântat să fie Tatăl
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântat în veci
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Binecuvântat să fie Domnul, Stânca
+Type: poezie
+Author: Traian Dorz
+
+Score: 1.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
-Title: Toată viaţa voastră
+Title: O, binecuvântaţi genunchii...
 Type: poezie
+Author: Traian Dorz
+
+Score: 0.9550362
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a după Paşti(a samaritencei) - - Faptele Apostolilor 11, 19-30
+Type: articol
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"<em>binecuv\u00e2ntat\u0103</em> de la Dumnezeu",
-"<em>binecuv\u00e2ntat\u0103</em> de Isus Hristos",
-"<em>binecuv\u00e2ntare</em> cu ceresc folos",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fi\u0163i",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fi\u0163i"
+"fi\u0163i folosi\u0163i de Duhul Sf\u00e2nt pentru cea mai mare slav\u0103 a Domnului vostru Isus \u015fi pentru cea mai mare <em>binecuv\u00e2ntare</em>"
 ]
 }
 
-Score: 3.8318508
+Score: 0.953734
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
+Title: Cap. 18 - Frumoasele noastre Rusalii
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Tot ce putem da \u00een numele neprih\u0103nirii, va avea o ve\u015fnic\u0103 <em>binecuv\u00e2ntare</em> \u015fi pentru cine d\u0103, - \u015fi pentru",
+"Doresc s\u0103 \u00eenchei acest scurt cuv\u00e2nt al meu cu o rug\u0103ciune de <em>binecuv\u00e2ntare</em> a lui Dumnezeu Tat\u0103l, \u00een Numele",
+"S\u0103 \u00eencheiem acum cu o rug\u0103ciune de mul\u0163umire \u015fi <em>binecuv\u00e2ntare</em> pentru cei care s-au predat acum Domnului",
+"\u015fi toat\u0103 inspira\u0163ia Ta, pentru ca s\u0103rb\u0103toarea aceasta aniversar\u0103 s\u0103 fie \u00een toate privin\u0163ele o mare <em>binecuv\u00e2ntare</em>"
+]
+}
+
+Score: 0.93828094
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 13-a după Rusalii(Pilda lucrătorilor răi) - - 1 Cor. 16, 13-24
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9344304
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Cine ar putea \u00eensemna \u00een vreo carte toate numele <em>binecuv\u00e2ntare</em> sau triste, fericite sau nefericite, statornice",
+". - Bucurii \u015fi lacrimi <em>binecuv\u00e2ntare</em>."
+]
+}
+
+Score: 0.9339482
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3, Rugul (1947 - 1977)
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+
+Score: 0.93333334
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 10
 Title: Iubite suflet dulce
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>. "
-]
-}
 
-Score: 3.7643187
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Pe dragii noştri tineri
-Type: poezie
+Score: 0.92943436
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"s\u0103-i <em>binecuv\u00e2nteze</em> P\u0103rintele Ceresc",
-"- P\u0103rinte Bun din Ceruri s\u0103-i <em>binecuv\u00e2ntezi</em>",
-"S\u0103-i <em>binecuv\u00e2ntezi</em> - s\u0103-i <em>binecuv\u00e2ntezi</em>",
-"s-o <em>binecuv\u00e2nteze</em> P\u0103rintele Ceresc",
-"- P\u0103rinte Bun din Ceruri s\u0103-i <em>binecuv\u00e2ntezi</em>"
+"toat\u0103 nunta \u00een picioare, \u00een modul cel mai solemn \u015fi \u00eentr-un singur glas c\u00e2nt\u0103 c\u00e2ntarea de s\u0103rb\u0103toare \u015fi <em>binecuv\u00e2ntare</em>",
+"c\u00e2ntarea aceasta se face o rug\u0103ciune puternic\u0103 de mul\u0163umire \u015fi \u00eenc\u0103 o dat\u0103 o st\u0103ruitoare cerere de <em>binecuv\u00e2ntare</em>"
 ]
 }
 
-Score: 3.747025
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Maica Domnului Hristos
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntat\u0103</em> fii! ",
-"<em>binecuv\u00e2ntat\u0103</em> fii, ",
-"<em>binecuv\u00e2ntat\u0103</em> fii! ",
-"<em>binecuv\u00e2ntat\u0103</em> fii! ",
-"<em>binecuv\u00e2ntat\u0103</em> e\u015fti! "
-]
-}
-
-Score: 3.721307
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Să mergi până la capăt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- fii <em>binecuv\u00e2ntat</em>. ",
-"Fii <em>binecuv\u00e2ntat</em>, fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em> de Tat\u0103l",
-"fii <em>binecuv\u00e2ntat</em>. ",
-"s\u0103-\u0163i <em>binecuv\u00e2nteze</em>"
-]
-}
-
-Score: 3.6810963
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Pentru c-ai avut chemarea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntare</em> \u0163ie Maica Sf\u00e2ntului Cuv\u00e2nt. ",
-"<em>binecuv\u00e2ntare</em> \u0163ie cu un imn \u00een veci frumos. ",
-"<em>binecuv\u00e2ntare</em> \u0163ie \u00eentr-un fel des\u0103v\u00e2r\u015fit. ",
-"<em>binecuv\u00e2ntare</em> \u0163ie ca pe lume nim\u0103nui. ",
-"<em>binecuv\u00e2ntare</em> \u0163ie crinul cel mai preacurat. "
-]
-}
-
-Score: 3.6810963
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Pentru c-ai avut
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntare</em> \u0163ie, ",
-"<em>binecuv\u00e2ntare</em> \u0163ie, ",
-"<em>binecuv\u00e2ntare</em> \u0163ie, ",
-"<em>binecuv\u00e2ntare</em> \u0163ie, ",
-"<em>binecuv\u00e2ntare</em> \u0163ie, "
-]
-}
-
-Score: 3.680393
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Maica Domnului Isus
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- <em>binecuv\u00e2ntat\u0103</em> fii. ",
-"- <em>binecuv\u00e2ntat\u0103</em> e\u015fti. ",
-"- <em>binecuv\u00e2ntat\u0103</em> fii. ",
-"- <em>binecuv\u00e2ntat\u0103</em> e\u015fti. ",
-"- <em>binecuv\u00e2ntat\u0103</em> fii! "
-]
-}
-
-Score: 3.6457462
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 7
-Title: Maica Domnului Isus
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- <em>binecuv\u00e2ntat\u0103</em> fii. ",
-"- <em>binecuv\u00e2ntat\u0103</em> e\u015fti. ",
-"- <em>binecuv\u00e2ntat\u0103</em> fii. ",
-"- <em>binecuv\u00e2ntat\u0103</em> e\u015fti. ",
-"- <em>binecuv\u00e2ntat\u0103</em> fii! "
-]
-}
-
-Score: 3.6457462
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: La căsuţa voastră
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fiul s\u0103 v-aduc\u0103 <em>binecuv\u00e2ntare</em>. ",
-"<em>binecuv\u00e2ntarea</em> cea mai cu iubire",
-"<em>binecuv\u00e2ntarea</em> dulce ca o raz\u0103. ",
-"<em>binecuv\u00e2ntarea</em> cea mai minunat\u0103",
-"<em>binecuv\u00e2ntare</em> via\u0163a s\u0103 v\u0103 fie. "
-]
-}
-
-Score: 3.6359668
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: La căsuţa care
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"voi s\u0103 fie numai <em>binecuv\u00e2ntare</em>. ",
-"<em>binecuv\u00e2ntarea</em> ca o dulce raz\u0103",
-"<em>binecuv\u00e2ntarea</em> cea mai cu iubire. ",
-"<em>binecuv\u00e2ntarea</em> cea mai",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103 fie. "
-]
-}
-
-Score: 3.6262395
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Pe drumul tău
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fii <em>binecuv\u00e2ntat</em>! ",
-"Fii <em>binecuv\u00e2ntat</em> - fii <em>binecuv\u00e2ntat</em>",
-"fii <em>binecuv\u00e2ntat</em>. ",
-"fii <em>binecuv\u00e2ntat</em>! "
-]
-}
-
-Score: 3.6069403
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Mai întâi de toate
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui! "
-]
-}
-
-Score: 3.59443
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 5
-Title: Binecuvântează Doamne adunările
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i c\u00e2\u0163i cu iubire vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i c\u00e2\u0163i \u00cel vestesc \u015fi-L \u0163in",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i c\u00e2\u0163i s\u0103 se roage vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i cei ce s\u0103-\u0162i c\u00e2nte vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i cei ce la Tine vin"
-]
-}
-
-Score: 3.58803
-Volume: CUGETĂRI NEMURITOARE
-Book: Strălucirea Biruinţei
-Title: Fericite inimi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi pun\u0103",
-"<em>binecuv\u00e2ntarea</em> peste voi coboar\u0103",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi lase",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi pun\u0103"
-]
-}
-
-Score: 3.58803
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Fericite inimi...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi pun\u0103",
-"<em>binecuv\u00e2ntarea</em> peste voi coboare, ",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi lase",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi pun\u0103"
-]
-}
-
-Score: 3.5689518
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: La Cina Lui de Taină
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ce-ascul\u0163i chemarea - fi <em>binecuv\u00e2ntat</em>! ",
-"Fii <em>binecuv\u00e2ntat</em> - fii <em>binecuv\u00e2ntat</em>",
-"- tu cel ce te apropii - fii <em>binecuv\u00e2ntat</em>. ",
-"- tu cel ce crezi primindu-L - fii <em>binecuv\u00e2ntat</em>! "
-]
-}
-
-Score: 3.568047
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Binecuvântează Doamne adunările
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i c\u00e2\u0163i cu iubire vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i c\u00e2\u0163i \u00cel vestesc \u015fi-L \u0163in",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i c\u00e2\u0163i s\u0103 se roage vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i cei ce s\u0103-\u0162i c\u00e2nte vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie to\u0163i cei ce la Tine vin"
-]
-}
-
-Score: 3.550256
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 7
-Title: Mai întâi de toate
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui. ",
-"<em>binecuv\u00e2ntarea</em> Lui! "
-]
-}
-
-Score: 3.550256
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, binecuvântează nunta
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntat\u0103</em> fie de-azi unirea lor deplin",
-"<em>binecuv\u00e2ntat\u0103</em> fie casa unde merg \u015fi vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie pentru toate c\u00e2te vin",
-"<em>binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii \u015fi copiii lor deplin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie dragii no\u015ftri miri deplin"
-]
-}
-
-Score: 3.5469527
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 5
-Title: Fericite inimi...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi pun\u0103",
-"<em>binecuv\u00e2ntarea</em> peste voi coboare, ",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi lase",
-"<em>binecuv\u00e2ntarea</em> peste voi s\u0103-\u015fi pun\u0103"
-]
-}
-
-Score: 3.5353887
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Dacă îngerul cel tare
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Maic\u0103 <em>binecuv\u00e2ntat\u0103</em>",
-"\u015fi noi <em>binecuv\u00e2ntare</em>",
-"- <em>Binecuv\u00e2ntare</em> \u0163ie, ",
-"\u015fi noi <em>binecuv\u00e2ntare</em>"
-]
-}
-
-Score: 3.5222886
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Lacrimi, lacrimi coji amare
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"eu v\u0103 <em>binecuv\u00e2ntez</em>! ",
-"Darul <em>binecuv\u00e2ntat</em>. ",
-"eu v\u0103 <em>binecuv\u00e2ntez</em>! "
-]
-}
-
-Score: 3.5033226
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 134
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2nta\u0163i</em> pe Domnul",
-"nalt s\u0103-L <em>binecuv\u00e2nta\u0163i</em>. ",
-"3-S\u0103 te <em>binecuv\u00e2nteze</em>"
-]
-}
-
-Score: 3.4953258
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 1
-Title: Doamne, binecuvântează nunta
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntat\u0103</em> fie de-azi unirea lor deplin",
-"<em>binecuv\u00e2ntat\u0103</em> fie casa unde merg \u015fi vin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie pentru toate c\u00e2te vin",
-"<em>binecuv\u00e2nta\u0163i</em> p\u0103rin\u0163ii \u015fi copiii lor deplin",
-"<em>binecuv\u00e2nta\u0163i</em> s\u0103 fie dragii no\u015ftri miri deplin"
-]
-}
-
-Score: 3.436704
-Volume: CUGETĂRI NEMURITOARE
-Book: Piatra Scumpă
-Title: Fericită Piatră Scumpă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntat\u0103</em> fie",
-"<em>binecuv\u00e2ntat</em> s\u0103 fie",
-"ne-a fost <em>binecuv\u00e2ntat</em>. "
-]
-}
-
-Score: 3.436704
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ziua nunţii voastre fie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pasul <em>binecuv\u00e2ntat</em>",
-"pragul <em>binecuv\u00e2ntat</em>",
-"<em>binecuv\u00e2nta\u0163i</em> mereu... "
-]
-}
-
-Score: 3.407902
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Slavă Ţie, slavă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Numele T\u0103u fie <em>binecuv\u00e2ntat</em>",
-"<em>binecuv\u00e2ntat</em>, <em>binecuv\u00e2ntat</em>."
-]
-}
-
-Score: 3.407902
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: În sărbătorirea voastră
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noi v\u0103 <em>binecuv\u00e2nt\u0103m</em>. ",
-"<em>Binecuv\u00e2nta\u0163i</em> s\u0103 fi\u0163i",
-"noi v\u0103 <em>binecuv\u00e2nt\u0103m</em>"
-]
-}
-
-Score: 3.407902
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Din tot sufletul Te laud
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- <em>binecuv\u00e2ntat</em> fii ve\u015fnic",
-"<em>Binecuv\u00e2ntat</em> s\u0103 fie",
-"iar ne-ai <em>binecuv\u00e2ntat</em>. "
-]
-}
-
-Score: 3.407902
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Doamne, după-atâta vreme
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- dulcea-\u0162i <em>binecuv\u00e2ntare</em>",
-"c\u00e2nd ne-ai <em>binecuv\u00e2ntat</em>! ",
-"c\u00e2nd ne-ai <em>binecuv\u00e2ntat</em>. "
-]
-}
-
-Score: 3.407902
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Duhul Sfânt e Porumbelul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>binecuv\u00e2ntat</em> s\u0103 fie ceasu-acesta fra\u0163i iubi\u0163i",
-"<em>binecuv\u00e2nta\u0163i</em> cu to\u0163ii dragi surori \u015fi fra\u0163i s\u0103 fi\u0163i",
-"<em>binecuv\u00e2nta\u0163i</em> cu to\u0163ii tineri \u015fi copii s\u0103 fi\u0163i"
-]
-}
-
-Score: 3.3936813
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Doamne, cum să nu-Ţi dăm?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"numai <em>binecuv\u00e2ntare</em>! ",
-"numai <em>binecuv\u00e2ntare</em>. ",
-"numai <em>binecuv\u00e2ntare</em>... "
-]
-}
-
-Score: 3.3936813
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Eu ştiu că numai spre
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi toate-s <em>binecuv\u00e2ntate</em>",
-"Fii <em>binecuv\u00e2ntat</em> de toate, ",
-"c\u0103 toate-s <em>binecuv\u00e2ntate</em>"
-]
-}
-
-Score: 3.3936813
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Tot ce-ai semănat
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"e-n veci <em>binecuv\u00e2ntat</em>. ",
-"nu-i nici <em>binecuv\u00e2ntat</em>. ",
-"e-n veci <em>binecuv\u00e2ntat</em>. "
-]
-}
-
-Score: 3.366135
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Osana, Isuse, Osana
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o, <em>binecuv\u00e2ntat</em> e Cel ce vine",
-"Osana, <em>binecuv\u00e2ntare</em> Lui... "
-]
-}
-
-Score: 3.365593
-Volume: CUGETĂRI NEMURITOARE
-Book: Mărgăritarul Ascuns
-Title: Fericirea-i ascultarea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"to\u0163i, prin ea suntem \u00eentruna <em>binecuv\u00e2nta\u0163i</em>",
-"<em>binecuv\u00e2ntat</em> e-oriunde ceasul ei de har,",
-"<em>Binecuv\u00e2ntat</em> e pl\u00e2nsul"
-]
-}
-
-Score: 3.365593
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Fericită-i ascultarea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"to\u0163i, prin ea suntem \u00eentruna <em>binecuv\u00e2nta\u0163i</em>, ",
-"<em>binecuv\u00e2ntat</em> e-oriunde ceasul ei de har, ",
-"<em>Binecuv\u00e2ntat</em> e pl\u00e2nsul fiului aflat, "
-]
-}
-
-Score: 3.3517227
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Tu n-ai lăsat să fim zdrobiţi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Isuse <em>Binecuv\u00e2ntat</em>",
-"- fii <em>binecuv\u00e2ntat</em>! ",
-"- fii <em>binecuv\u00e2ntat</em>!"
-]
-}
-
-Score: 3.3049583
+Score: 0.9264769
 Volume: CUGETĂRI NEMURITOARE
 Book: Numele Biruitorului
 Title: Tot despre cârtitor
@@ -1715,11 +707,347 @@ Type: articol
 Author: Traian Dorz
 highlight: {
 "verses.text": [
-"9 - Ce <em>binecuv\u00e2ntat</em> este \u015fi prezentul \u015fi viitorul sufletului credincios",
-"Nu exist\u0103 pe p\u0103m\u00e2ntul acesta o <em>binecuv\u00e2ntare</em> mai mare! ",
-"Nu numai pentru via\u0163a ve\u015fnic\u0103 este <em>binecuv\u00e2ntat</em> sufletul credincios \u015fi alipit \u00eentru totul de",
-"11 - Sunt mul\u0163i p\u0103rin\u0163i care sunt <em>binecuv\u00e2nta\u0163i</em> din pricina fiilor lor credincio\u015fi, dup\u0103 cum",
-"Dar sunt \u015fi mai mul\u0163i fii <em>binecuv\u00e2nta\u0163i</em> din pricina p\u0103rin\u0163ilor lor credincio\u015fi. "
+"Nu exist\u0103 pe p\u0103m\u00e2ntul acesta o <em>binecuv\u00e2ntare</em> mai mare!",
+"16 - Suflete credincios \u015fi r\u0103bd\u0103tor, s\u0103rb\u0103toarea ta va fi \u00een cur\u00e2nd plin\u0103 de <em>binecuv\u00e2ntare</em> \u015fi masa ta"
 ]
 }
+
+Score: 0.9230769
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935)
+Title: Cap. 14 - Apostolia Femeilor
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9220426
+Volume: CUGETĂRI NEMURITOARE
+Book: Poruncile Iubirii
+Title: Toată viaţa voastră
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>binecuv\u00e2ntare</em> cu ceresc folos."
+]
+}
+
+Score: 0.9220426
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Toată viaţa voastră
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>binecuv\u00e2ntare</em> cu ceresc folos."
+]
+}
+
+Score: 0.918526
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935)
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"sub forma unei scrisori de <em>binecuv\u00e2ntare</em> trimis\u0103 de mitropolitul B\u0103lan redactorului foii L. S.",
+"O arhiereasc\u0103 <em>binecuv\u00e2ntare</em>",
+"Preasfin\u0163iei sale mitropolitului Nicolae am primit de Ziua \u00cenvierii Domnului arhiereasca <em>binecuv\u00e2ntare</em>",
+"De Praznicul cel luminat al \u00cenvierii Domnului \u00eemp\u0103rt\u0103\u015fim arhiereasca noastr\u0103 <em>binecuv\u00e2ntare</em> cucerniciei",
+"Cuv\u00e2ntul de <em>binecuv\u00e2ntare</em>"
+]
+}
+
+Score: 0.9174476
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 10-a după Rusalii(Vindecarea lunaticului) - - 1 Cor. 4, 9-16
+Type: articol
+Author: Traian Dorz
+
+Score: 0.91707736
+Volume: CUGETĂRI NEMURITOARE
+Book: Numele Biruitorului
+Title: Ochiul şi lauda Domnului
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u00eendurerate \u00ee\u015fi \u00eendreapt\u0103 inima puternic spre cer \u015fi numai uneori \u00ee\u015fi \u00eendreapt\u0103 fierbinte g\u00e2ndul cu <em>binecuv\u00e2ntare</em>",
+"\u015ei va fi <em>binecuv\u00e2ntare</em> pentru el dac\u0103 \u00een vremea ei, dreptul r\u0103m\u00e2ne drept \u015fi credinciosul credincios."
+]
+}
+
+Score: 0.91094136
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
+Title: Cap. 25 - Istorie şi suferinţă
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Sa episcopul roman-unit Iuliu Hossu de la Cluj a dat arhiereasca <em>binecuv\u00e2ntare</em> pentru lucrarea fra\u0163ilor",
+"Arhiereasca <em>binecuv\u00e2ntare</em> de la Cluj spune tuturor ce slujb\u0103 pl\u0103cut\u0103 face Oastea Domnului \u015fi lui Dumnezeu"
+]
+}
+
+Score: 0.90974617
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Paşti(a Mironosiţelor) - - Faptele Apostolilor 6, 1-7 -
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9092684
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Pentru toat\u0103 aceast\u0103 <em>binecuv\u00e2ntare</em>, sl\u0103vit s\u0103 fie Domnul..."
+]
+}
+
+Score: 0.9090909
+Volume: CUGETĂRI NEMURITOARE
+Book: Avuţia Sfântului Moştenitor
+Title: Lucrul şi nelucrarea
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9090909
+Volume: CUGETĂRI NEMURITOARE
+Book: Alergarea Stăruitoare
+Title: Bunătatea şi înţelepciunea
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9090909
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Pe dragii noştri tineri
+Type: poezie
+Author: Traian Dorz
+
+Score: 0.9090909
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti(a Sf. Ap. Toma) - - Faptele Apostolilor cap. 5, 12-20
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9059641
+Volume: CUGETĂRI NEMURITOARE
+Book: Săgeţile biruitoare
+Title: Curăţie şi vicleşug
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"9 - Pentru orice familie, tineretul este o mare <em>binecuv\u00e2ntare</em> \u015fi o mare bucurie.",
+"C\u0103ci dac\u0103 este a\u015fa, - atunci tineretul vine, \u00een familia aceasta, ca o <em>binecuv\u00e2ntare</em>."
+]
+}
+
+Score: 0.90192044
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935)
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"...Fra\u0163ilor din Hunedoara le dorim mult\u0103 <em>binecuv\u00e2ntare</em> \u00een frumoasa lucrare pe care o fac.",
+"Iar celor c\u0103s\u0103tori\u0163i le dorim mult\u0103 <em>binecuv\u00e2ntare</em> de la Domnul de Sus, cu ani mul\u0163i, trai fericit \u015fi"
+]
+}
+
+Score: 0.9006584
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Cu ochii plini de lacrimi \u00eemi cer iertare \u015fi <em>binecuv\u00e2ntare</em>.",
+"Spinii \u00eencerc\u0103rilor ne sunt o ap\u0103rare, un ad\u0103post, o <em>binecuv\u00e2ntare</em>."
+]
+}
+
+Score: 0.9004675
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"de a p\u0103r\u0103si Sibiul \u015fi dieceza Sibiului, cer\u00e2ndu-mi arhiereasca <em>binecuv\u00e2ntare</em> pentru a trece \u00eentr-o alt\u0103",
+"gata s\u0103 fac \u015fi jertfa aceasta, de a p\u0103r\u0103si Sibiul \u015fi arhidiecezana Sibiului cer\u00e2ndu-mi arhiereasca <em>binecuv\u00e2ntare</em>"
+]
+}
+
+Score: 0.90017927
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3, Rugul (1947 - 1977)
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9
+Volume: CUGETĂRI NEMURITOARE
+Book: Păşunile Dulci
+Title: Oriunde şi oricând
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9
+Volume: CUGETĂRI NEMURITOARE
+Book: Crucea Mântuitoare
+Title: Păcatul şi frica
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 4
+Title: Şi va fi o turmă şi un Păstor
+Type: articol
+Author: Traian Dorz
+
+Score: 0.9
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 4
+Title: Marta slujea
+Type: articol
+Author: Traian Dorz
+
+Score: 0.89301366
+Volume: CUGETĂRI NEMURITOARE
+Book: Lupta cea Bună
+Title: Întâlnirile cu Dumnezeu
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Sf\u00e2nt pentru cea mai mare slav\u0103 a lui Dumnezeu, a Domnului nostru Isus Hristos \u015fi pentru cea mai mare <em>binecuv\u00e2ntare</em>"
+]
+}
+
+Score: 0.8910794
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Rusalii(Vindecarea slăbănogului din Capernaum) - - Romani 12, 6-14 -
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Biserica cea vie \u015fi scump\u0103 a Domnului s\u0103 creasc\u0103 mereu \u00een num\u0103r, \u00een frumuse\u0163e, \u00een \u00eentindere \u015fi \u00een orice <em>binecuv\u00e2ntare</em>"
+]
+}
+
+Score: 0.89089835
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
+Title: Cap. 21 - La 25 de ani...
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Mii de oameni care ar fi devenit un blestem pentru societate, au fost schimba\u0163i \u00eentr-o <em>binecuv\u00e2ntare</em>,"
+]
+}
+
+Score: 0.88981885
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
+Title: Cap. 15 - Un An Nou Fericit
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"- un an nou, un \u00eenceput nou, cu o <em>binecuv\u00e2ntare</em> nou\u0103 de la Domnul \u015fi Dumnezeul nostru pentru El \u015fi pentru"
+]
+}
+
+Score: 0.878193
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre muncă
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"munca-i <em>binecuv\u00e2ntare</em> \u015fi har sf\u00e2nt -",
+"- dar cu <em>binecuv\u00e2ntare</em>-i orice munc\u0103 r\u0103spl\u0103tit\u0103."
+]
+}
+
+Score: 0.8771914
+Volume: CUGETĂRI NEMURITOARE
+Book: Păşunile Dulci
+Title: Slujire şi răsplată
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Tot ceea ce este binecuv\u00e2ntat de Dumnezeu este \u015fi pricin\u0103 de <em>binecuv\u00e2ntare</em> pentru El."
+]
+}
+
+Score: 0.8768388
+Volume: CUGETĂRI NEMURITOARE
+Book: Mărgăritarul Ascuns
+Title: Dragostea pentru înaintaşi
+Type: articol
+Author: Traian Dorz
+
+Score: 0.87671894
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4, Pârga (1977 - 1989)
+Title: Cap. 26 - Fântânile certei noastre
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Adunarea a fost prima <em>binecuv\u00e2ntare</em> pe care ne-a dat-o Domnul prin p\u0103rintele nostru."
+]
+}
+
+Score: 0.8754908
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Alte adevăruri noi
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Dumnezeu \u00eemi dase a\u015fa putere \u00eenc\u00e2t sim\u0163eam o mare <em>binecuv\u00e2ntare</em> \u00een orice suferin\u0163\u0103 pentru Domnul \u015fi pentru"
+]
+}
+
+Score: 0.8754192
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 7-a după Paşti(a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) - - Faptele Apostolilor 20, 16-18; 28-36
+Type: articol
+Author: Traian Dorz
+
+Score: 0.875
+Volume: CUGETĂRI NEMURITOARE
+Book: Păşunile Dulci
+Title: Binefacerea şi recunoştinţa
+Type: articol
+Author: Traian Dorz
+
+Score: 0.875
+Volume: CUGETĂRI NEMURITOARE
+Book: Săgeţile biruitoare
+Title: Lumina şi întunericul
+Type: articol
+Author: Traian Dorz
 
