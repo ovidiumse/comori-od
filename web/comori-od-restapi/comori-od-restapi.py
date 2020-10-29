@@ -1,15 +1,19 @@
 #!/usr/bin/pypy3
 import re
+import os
 import falcon
 import simplejson as json
 import logging
+import logging.config
 import urllib
 import yaml
 import requests
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
 
+LOGGER_ = None
 ES = None
+
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -31,11 +35,11 @@ class Index(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            logging.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
-            logging.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
 
     def on_get(self, req, resp, idx_name):
         try:
@@ -46,11 +50,11 @@ class Index(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            logging.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
-            logging.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
 
     def on_post(self, req, resp, idx_name):
         data = json.loads(req.stream.read())
@@ -66,11 +70,11 @@ class Index(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            logging.error("Creating index failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Creating index failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
-            logging.error("Creating index failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Creating index failed! Error: {}".format(ex), exc_info=True)
 
 
 class Articles(object):
@@ -79,7 +83,7 @@ class Articles(object):
             ES.index(index=idx_name, body=json.dumps(article))
             return True
         except Exception as ex:
-            logging.error("Indexing {} failed!".format(article), exc_info=True)
+            LOGGER_.error("Indexing {} failed!".format(article), exc_info=True)
             return False
 
     def query(self, idx_name, req):
@@ -126,15 +130,15 @@ class Articles(object):
         offset = req.params['offset'] if 'offset' in req.params else 0
 
         return ES.search(index=idx_name,
-                 body={
-                     'query': {
-                         'function_score': {
-                             'random_score': {}
-                         }
-                     },
-                     'size': limit,
-                     'from': offset
-                 })
+                         body={
+                             'query': {
+                                 'function_score': {
+                                     'random_score': {}
+                                 }
+                             },
+                             'size': limit,
+                             'from': offset
+                         })
 
     def on_get(self, req, resp, idx_name, doc_type):
         try:
@@ -150,9 +154,11 @@ class Articles(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
     def on_post(self, req, resp, idx_name, doc_type):
         articles = json.loads(req.stream.read())
@@ -202,9 +208,11 @@ class Titles(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 
 class TitlesCompletion(object):
@@ -226,9 +234,11 @@ class TitlesCompletion(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 
 class Suggester(object):
@@ -242,12 +252,9 @@ class Suggester(object):
                                             'phrase': {
                                                 'field':
                                                 'verses.text.suggesting',
-                                                'size':
-                                                1,
-                                                'gram_size':
-                                                4,
-                                                'max_errors':
-                                                4,
+                                                'size': 1,
+                                                'gram_size': 4,
+                                                'max_errors': 4,
                                                 'direct_generator': [{
                                                     'field': 'verses.text.suggesting',
                                                     'suggest_mode': 'popular',
@@ -278,9 +285,11 @@ class Suggester(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 
 class Similar(object):
@@ -309,13 +318,17 @@ class Similar(object):
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
 
 
 def load_app(cfg_filepath):
-    logging.basicConfig(level=logging.INFO)
+    logging.config.fileConfig('logging.conf')
+
+    global LOGGER_
+    LOGGER_ = logging.getLogger(__name__)
 
     cfg = {}
     with open(cfg_filepath, 'r') as cfg_file:
