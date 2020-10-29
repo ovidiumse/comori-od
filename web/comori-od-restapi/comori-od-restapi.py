@@ -2,12 +2,15 @@
 import re
 import os
 import falcon
+from falcon_auth import FalconAuthMiddleware
+from falcon_auth.backends import AuthBackend
 import simplejson as json
 import logging
 import logging.config
 import urllib
 import yaml
 import requests
+from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
 
@@ -322,6 +325,41 @@ class Similar(object):
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+
+class TotpAuthBackend(AuthBackend):
+    def __init__(self):
+        key = os.environ['API_TOTP_KEY'] if os.environ['API_TOTP_KEY'] else random_base32()
+        logging.info("TOTP key: {}".format(key))
+        self.totp = TOTP(key)
+        self.auth_header_prefix = "Token"
+
+    def _extract_credentials(self, req):
+        auth = req.get_header('Authorization')
+        return self.parse_auth_token_from_request(auth_header=auth)
+
+    def authenticate(self, req, resp, resource):
+        try:
+            token = self._extract_credentials(req)
+            if not token or not self.totp.verify(token, None, 120):
+                raise falcon.HTTPUnauthorized(title='401 Unauthorized',
+                                            description='Invalid Token',
+                                            challenges=None)
+        except Exception as ex:
+            LOGGER_.error("Authorization handling failed! Error: {}".format(ex), exc_info=True)
+            raise
+
+    def get_auth_token(self, user_payload):
+        """
+        Extracts token from the `user_payload`
+        """
+        token = user_payload.get('token') or None
+        if not token:
+            raise ValueError('`user_payload` must provide api token')
+
+        return '{auth_header_prefix} {token}'.format(
+            auth_header_prefix=self.auth_header_prefix, token=token)
 
 
 def load_app(cfg_filepath):
@@ -335,11 +373,15 @@ def load_app(cfg_filepath):
         cfg = yaml.full_load(cfg_file)
 
     global ES
-    ES = Elasticsearch(hosts=[cfg['es']])
+    ES = Elasticsearch(hosts=[cfg['es']],
+                       http_auth=(os.environ["ELASTIC_USER"],
+                                  os.environ["ELASTIC_PASSWORD"]))
 
     logging.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 
-    app = falcon.API(middleware=[HandleCORS()])
+    totpAuth = TotpAuthBackend()
+    authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
+    app = falcon.API(middleware=[HandleCORS(), authMiddleware])
 
     index = Index()
     articles = Articles()
