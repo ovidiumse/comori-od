@@ -1,0 +1,7 @@
+filebeat.modules:
+  - module: nginx
+
+setup.kibana.host: "http://comori-od-kibana:5601"
+
+output.logstash:
+  hosts: ["comori-od-logstash:5044"]
