@@ -1,6 +1,16 @@
 server.name: comori-od-kibana
 server.host: 0.0.0.0
 elasticsearch.hosts: http://comori-od-es:9200
+elasticsearch.username: "${KIBANA_USER}"
+elasticsearch.password: "${KIBANA_PASSWORD}"
+
+xpack.security.enabled: true
+
+xpack.security.authc:
+   providers:
+     basic.basic1: 
+      order: 0
+
 # logging.dest: /usr/share/kibana/logs/kibana.log
 # logging.rotate:
    # enabled: true
