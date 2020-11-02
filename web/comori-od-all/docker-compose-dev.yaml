@@ -1,4 +1,4 @@
-version: '3'
+version: '2.3'
 services:
   comori-od-static-vue:
     build: 
@@ -24,12 +24,10 @@ services:
     container_name: comori-od-es
     environment:
       - discovery.type=single-node
-      - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
+    mem_limit: 1G
     volumes:
       - es_data:/usr/share/elasticsearch/data
       - es_config:/usr/share/elasticsearch/config
@@ -47,6 +45,10 @@ services:
       - VIRTUAL_HOST=localhost
       - VIRTUAL_PORT=5601
       - HTTPS_METHOD=nohttps
+      - KIBANA_USER=${ELASTIC_USER}
+      - KIBANA_PASSWORD=${ELASTIC_PASSWORD}
+      - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
+    mem_limit: 1g
     volumes:
       - kib_config:/usr/share/kibana/config
       - kib_logs:/usr/share/kibana/logs
@@ -57,16 +59,50 @@ services:
     depends_on:
       - comori-od-es
     restart: unless-stopped
+    
+  comori-od-filebeat:
+    build: ../comori-od-filebeat
+    container_name: comori-od-filebeat
+    environment: 
+      - "ES_JAVA_OPTS=-Xms100m -Xmx500m"
+    mem_limit: 500m
+    volumes:
+      - /var/log:/var/log:ro
+    networks: 
+      - proxy
+    depends_on: 
+      - comori-od-logstash
+    restart: unless-stopped
+  
+  comori-od-logstash:
+    build: ../comori-od-logstash
+    container_name: comori-od-logstash
+    environment: 
+      - LOGSTASH_USER=${ELASTIC_USER}
+      - LOGSTASH_PASSWORD=${ELASTIC_PASSWORD}
+      - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
+    mem_limit: 1g
+    ports:
+      - 5044:5044
+    networks:
+      - proxy
+    depends_on: 
+      - comori-od-es
+    restart: unless-stopped
 
   comori-od-restapi:
     build: ../comori-od-restapi
     container_name: comori-od-restapi
+    tty: true
     ports: 
       - 9000:9000
     environment:
       - VIRTUAL_HOST=localhost
       - VIRTUAL_PORT=9000
       - HTTPS_METHOD=nohttps
+      - API_TOTP_KEY=${API_TOTP_KEY}
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     depends_on:
       - comori-od-es
     networks:
@@ -102,4 +138,3 @@ networks:
   proxy:
     external:
       name: nginx-proxy
-
