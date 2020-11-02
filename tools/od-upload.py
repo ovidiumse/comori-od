@@ -1,9 +1,11 @@
 #!/usr/bin/pypy3
 import os
+import re
 import argparse
 import simplejson as json
 import requests
 import logging
+from unidecode import unidecode
 from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
@@ -112,6 +114,12 @@ def create_index(idx_name):
                         "filter":
                         ["lowercase", "asciifolding", "romanian_keywords", "romanian_stemmer"]
                     },
+                    "folding_stop": {
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter":
+                        ["lowercase", "romanian_stop", "asciifolding", "romanian_keywords", "romanian_stemmer"]
+                    },
                     "completion": {
                         'type': 'custom',
                         "tokenizer": "standard",
@@ -149,8 +157,8 @@ def create_index(idx_name):
                     },
                     'folded': {
                         'type': 'text',
-                        'analyzer': 'folding',
                         'term_vector': 'with_positions_offsets',
+                        'analyzer': 'folding',
                     },
                     'completion': {
                         'type': 'search_as_you_type',
@@ -177,8 +185,8 @@ def create_index(idx_name):
                         'fields': {
                             'folded': {
                                 'type': 'text',
-                                'analyzer': 'folding',
                                 'term_vector': 'with_positions_offsets',
+                                'analyzer': 'folding',
                             },
                             'suggesting': {
                                 'type': 'text',
@@ -200,6 +208,15 @@ def create_index(idx_name):
 def index_all(idx_name, articles):
     failed = 0
     indexed = 0
+
+    for article in articles:
+        id = "{} {} {}".format(article['title'], article['book'], article['author'])
+        id = unidecode(id).lower()
+        id = re.sub('[\.\,\!\(\)\[\] ]+', '-', id)
+        id = re.sub('(\-)+', '-', id)
+        article['_id'] = id
+        article['_index'] = idx_name
+
     for bulk in chunk(articles, 10):
         response = post("{}/articles".format(idx_name), bulk)
         if response['total'] != response['indexed']:
