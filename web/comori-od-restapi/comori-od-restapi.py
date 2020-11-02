@@ -94,76 +94,60 @@ class Articles(object):
         offset = req.params['offset'] if 'offset' in req.params else 0
         q = urllib.parse.unquote(req.params['q'])
 
-        search_fields = ['title', 'title.folded', 'verses.text', 'verses.text.folded']
-        should_match_all = []
-        should_match = {}
-        for f in search_fields:
-            current_should_match = []
-            current_should_match.append({
-                "intervals": {
-                    f: {
-                        "match": {
-                            "query": q,
-                            "max_gaps": 2
-                        }
+        search_fields = {
+            'title': 2, 
+            'title.folded': 2, 
+            'verses.text': 1, 
+            'verses.text.folded': 1
+        }
+
+        should_match = []
+        for field, boost in search_fields.items():
+            should_match.append({
+                "match_phrase": {
+                    field: {
+                        "query": q,
+                        "slop": 4,
+                        "boost": boost
                     }
                 }
             })
-            span_near_clauses = []
-            for word in re.split(" |\,|\-|\!", q):
-                span_near_clauses.append({
-                    "span_multi": {
-                        "match": {
-                            "fuzzy": {
-                                f: {
-                                    "fuzziness": len(word) / 3,
-                                    "value": word
-                                }
-                            }
-                        }
-                    }
-                })
 
-            current_should_match.append({
-                "span_near": {
-                    "clauses": span_near_clauses,
-                    "slop": 2,
-                    "in_order": True,
-                    "boost": 0.001
-                }
-            })
+        fuzzy_query = []
+        for w in re.split('[ \|\,\.\!]', q):
+            fuzzy_query.append("{}~{}".format(w, int(min(3, len(w) / 4))))
 
-            should_match_all += current_should_match
-            should_match[f] = {
-                "span_near": {
-                    "clauses": span_near_clauses,
-                    "slop": 2,
-                    "in_order": True,
-                    "boost": 0.001
-                }
+        should_match.append({
+            "simple_query_string": {
+                "query": " ".join(fuzzy_query),
+                "fields": ["title^2", "title.folded^2", "verses.text", "verses.text.folded"],
+                "default_operator": "AND",
+                "analyzer": "folding_stop",
+                "boost": 0.001
             }
+        })
 
         query_body = {
             'query': {
                 'bool': {
-                    'should': should_match_all,
+                    'should': should_match,
                 },
             },
             '_source': {
                 'excludes': ['verses', 'bible-refs']
             },
            'highlight': {
-                'require_field_match': False,
                 'fields': {
                     'title': {
                         "matched_fields": ["title", "title.folded"],
-                        'type': 'unified'
+                        'type': 'fvh'
                     },
                     'verses.text': {
                         "matched_fields": ["verses.text", "verses.text.folded"],
-                        'type': 'unified'
+                        'type': 'fvh'
                     }
-                }
+                },
+                "order": "score"
             },
             'size': limit,
             'from': offset
