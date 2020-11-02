@@ -1,806 +1,1489 @@
-+---------------------------------------------------------------------------------------------+-------------+-----------------------------------------------------+-----------------------------------+---------+
-| Titlu                                                                                       | Author      | Tip                                                 | Carte                             | Volum   |
-+---------------------------------------------------------------------------------------------+-------------+-----------------------------------------------------+-----------------------------------+---------+
-| Ce mult ai plâns!...                                                                        | Traian Dorz | Dorim să fim                                        | CUGETĂRI NEMURITOARE              | poezie  |
-| Ce mult ai plâns                                                                            | Traian Dorz | Cântări Nemuritoare vol. 11                         | Cântări Nemuritoare               | poezie  |
-| De când n-ai plâns tu oare, de când?                                                        | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| De când n-ai plâns tu oare singur?                                                          | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| E plânsul meu                                                                               | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Mare plâns şi tânguieli                                                                     | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Din locul unde-am plâns                                                                     | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Cap. 12 - Dovada supremei iubiri                                                            | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
-| Domnul meu...                                                                               | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7            | Meditații la Evanghelia după Ioan | articol |
-| Din părţile Transilvaniei                                                                   | Traian Dorz | Cântări Nemuritoare vol. 3                          | Cântări Nemuritoare               | articol |
-| Cum aş putea să mai plâng?                                                                  | Traian Dorz | Prietenul Tinereţii mele                            | CUGETĂRI NEMURITOARE              | articol |
-| Despre îndreptare                                                                           | Traian Dorz | Cântări Nemuritoare vol. 3                          | Cântări Nemuritoare               | articol |
-| Fiecare existenţă este o taină                                                              | Traian Dorz | Hristos - Marturia mea                              | Hristos - Marturia mea            | articol |
-| Cap. 15 - Călătoria la Ierusalim                                                            | Traian Dorz | Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935) | Istoria unei Jertfe               | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | Traian Dorz | Istoria unei Jertfe vol. 3, Rugul (1947 - 1977)     | Istoria unei Jertfe               | articol |
-| Cu ce-ai venit?                                                                             | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| O, fraţii mei vi-i greu                                                                     | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| O, fraţii mei vi-i greu                                                                     | Traian Dorz | Meditații la Evanghelia după Ioan vol. 5            | Meditații la Evanghelia după Ioan | poezie  |
-| Aş vrea să plâng                                                                            | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Amară e lumina                                                                              | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| Mă apasă ca o piatră                                                                        | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Cu ascultarea cea mai dulce                                                                 | Traian Dorz | Prietenul Tinereţii mele                            | CUGETĂRI NEMURITOARE              | articol |
-| Isus plângea                                                                                | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | articol |
-| Preţul şi timpul                                                                            | Traian Dorz | Poruncile Iubirii                                   | CUGETĂRI NEMURITOARE              | articol |
-| Morţii şi lacrimile                                                                         | Traian Dorz | Poruncile Iubirii                                   | CUGETĂRI NEMURITOARE              | articol |
-| Strălucita sărbătoare de Rusalii                                                            | Traian Dorz | Hristos - Marturia mea                              | Hristos - Marturia mea            | articol |
-| Cap. 15 - Al doilea foc                                                                     | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
-| Câţi plâng...                                                                               | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
-| Ce trist eşti Tu Isuse                                                                      | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| Când ne-ai trimis                                                                           | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Cum aş putea eu spune?                                                                      | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | poezie  |
-| O, Sfinte Răni                                                                              | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7            | Meditații la Evanghelia după Ioan | poezie  |
-| Străină-a fost viaţa mea                                                                    | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Cum aş putea eu spune?                                                                      | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
-| De când la Cină                                                                             | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Se lasă înserarea                                                                           | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Iar îmi scrii măicuţă...                                                                    | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Psalmul 79                                                                                  | Traian Dorz | Cântări Nemuritoare vol. 2                          | Cântări Nemuritoare               | poezie  |
-| În faţa Porţii Îndurării                                                                    | Traian Dorz | Prietenul Tinereţii mele                            | CUGETĂRI NEMURITOARE              | articol |
-| Demult, odată undeva...                                                                     | Traian Dorz | Cântări Nemuritoare vol. 4                          | Cântări Nemuritoare               | poezie  |
-| Stând singur câteodată...                                                                   | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Suflete binefăcătoare                                                                       | Traian Dorz | Lupta cea Bună                                      | CUGETĂRI NEMURITOARE              | articol |
-| Cap. 4 - Spre altarul său                                                                   | Traian Dorz | Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935) | Istoria unei Jertfe               | articol |
-| Cap. 14 - Apostolia Femeilor                                                                | Traian Dorz | Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935) | Istoria unei Jertfe               | articol |
-| La Apostolul din Duminica a 4-a după Paşti(a slăbănogului) - - Faptele Apostolilor 9, 32-42 | Traian Dorz | Hristos - Puterea Apostoliei                        | Hristos - Puterea Apostoliei      | articol |
-| Cap. 9 - În vremea aceea...                                                                 | Traian Dorz | Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)  | Istoria unei Jertfe               | articol |
-| Într-un colţ de colivie                                                                     | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Din zbuciumul iubirii                                                                       | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| Cât de Bun ai fost                                                                          | Traian Dorz | Păşunile Dulci                                      | CUGETĂRI NEMURITOARE              | poezie  |
-| Ce minunaţi sunt ochii...                                                                   | Traian Dorz | Eterna Iubire                                       | CUGETĂRI NEMURITOARE              | poezie  |
-| Cale-ngustă, cale-ngustă                                                                    | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| O, cerească melodie                                                                         | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Să nu cârteşti!                                                                             | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Ce minunaţi sunt ochii...                                                                   | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Atâta sfântă curăţie                                                                        | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Cât de Bun ai fost                                                                          | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Sărută Maică Fruntea                                                                        | Traian Dorz | Cântări Nemuritoare vol. 11                         | Cântări Nemuritoare               | poezie  |
-| Doamne, iară-mi plec genunchii                                                              | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Atunci când vei veni Mesia                                                                  | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Am biruit                                                                                   | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| Sunt trandafirul Tău                                                                        | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| Tu mi-ai umplut                                                                             | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Ştie Domnul                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Ce-aveţi voi oare?                                                                          | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Pentru Cine-mi pun?                                                                         | Traian Dorz | Săgeţile biruitoare                                 | CUGETĂRI NEMURITOARE              | poezie  |
-| Copil eram cândva...                                                                        | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Pentru Cine-mi pun?                                                                         | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Lacrimi - vă cunoaşte                                                                       | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Suim plângând adesea...                                                                     | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Lacrimi... - 2                                                                              | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Aştepţi să vină Domnul?                                                                     | Traian Dorz | Meditații la Evanghelia după Ioan vol. 3            | Meditații la Evanghelia după Ioan | poezie  |
-| Aştepţi să vină Domnul?                                                                     | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | poezie  |
-| Cale-ngustă, cale-ngustă                                                                    | Traian Dorz | Meditații la Evanghelia după Ioan vol. 6            | Meditații la Evanghelia după Ioan | poezie  |
-| E noapte grea                                                                               | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Aştepţi să vină Domnul?                                                                     | Traian Dorz | Cântări Nemuritoare vol. 6                          | Cântări Nemuritoare               | poezie  |
-| O, locul Tău                                                                                | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Numai Tu rămâi                                                                              | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| Rugă pentru cei osteniţi                                                                    | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Frumoase dorurile mele                                                                      | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| Am fost aleşi                                                                               | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| În clipa morţii vede omul                                                                   | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| Eu am aflat iubirea!                                                                        | Traian Dorz | Cântări Nemuritoare vol. 8                          | Cântări Nemuritoare               | poezie  |
-| Am cu Hristos un legământ                                                                   | Traian Dorz | Meditații la Evanghelia după Ioan vol. 6            | Meditații la Evanghelia după Ioan | poezie  |
-| În clipa morţii vede omul                                                                   | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7            | Meditații la Evanghelia după Ioan | poezie  |
-| Toamnă - a căzut murind                                                                     | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Am cu Hristos un legământ                                                                   | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| A căzut murind o frunză                                                                     | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Am fost aleşi                                                                               | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Mai poţi să crezi Isuse?                                                                    | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| Vom trece râul morţii                                                                       | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| Mai poţi să crezi?                                                                          | Traian Dorz | Lupta cea Bună                                      | CUGETĂRI NEMURITOARE              | poezie  |
-| Atâtea stele...                                                                             | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Şi anii m-au străpuns                                                                       | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Ce mult te-aştept                                                                           | Traian Dorz | Cântări Nemuritoare vol. 10                         | Cântări Nemuritoare               | poezie  |
-| O, Isuse Dulce, Dulcele                                                                     | Traian Dorz | Cântări Nemuritoare vol. 7                          | Cântări Nemuritoare               | poezie  |
-| La moartea unui prieten                                                                     | Traian Dorz | Cântări Nemuritoare vol. 9                          | Cântări Nemuritoare               | poezie  |
-| Am fost aleşi                                                                               | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4            | Meditații la Evanghelia după Ioan | poezie  |
-| Întunecarea                                                                                 | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-| Rugăciunea                                                                                  | Traian Dorz | Cântări Nemuritoare vol. 1                          | Cântări Nemuritoare               | poezie  |
-+---------------------------------------------------------------------------------------------+-------------+-----------------------------------------------------+-----------------------------------+---------+
++--------------------------------------+-------------+------------------------------------------+-----------------------------------+---------+
+| Titlu                                | Author      | Tip                                      | Carte                             | Volum   |
++--------------------------------------+-------------+------------------------------------------+-----------------------------------+---------+
+| E plânsul meu                        | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Ce mult ai plâns                     | Traian Dorz | Cântări Nemuritoare vol. 11              | Cântări Nemuritoare               | poezie  |
+| Ce mult ai plâns!...                 | Traian Dorz | Dorim să fim                             | CUGETĂRI NEMURITOARE              | poezie  |
+| Mare plâns şi tânguieli              | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Din locul unde-am plâns              | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| De când n-ai plâns tu oare singur?   | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| De când n-ai plâns tu oare, de când? | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| Cu ce-ai venit?                      | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| O, fraţii mei vi-i greu              | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| O, fraţii mei vi-i greu              | Traian Dorz | Meditații la Evanghelia după Ioan vol. 5 | Meditații la Evanghelia după Ioan | poezie  |
+| Aş vrea să plâng                     | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Amară e lumina                       | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| Câţi plâng...                        | Traian Dorz | Cântări Nemuritoare vol. 6               | Cântări Nemuritoare               | poezie  |
+| Ce trist eşti Tu Isuse               | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Când ne-ai trimis                    | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Mă apasă ca o piatră                 | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Cum aş putea eu spune?               | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4 | Meditații la Evanghelia după Ioan | poezie  |
+| Cum aş putea eu spune?               | Traian Dorz | Cântări Nemuritoare vol. 6               | Cântări Nemuritoare               | poezie  |
+| Străină-a fost viaţa mea             | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| O, Sfinte Răni                       | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7 | Meditații la Evanghelia după Ioan | poezie  |
+| De când la Cină                      | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Într-un colţ de colivie              | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Din zbuciumul iubirii                | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Cale-ngustă, cale-ngustă             | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| O, cerească melodie                  | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Să nu cârteşti!                      | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Ce minunaţi sunt ochii...            | Traian Dorz | Eterna Iubire                            | CUGETĂRI NEMURITOARE              | poezie  |
+| Cât de Bun ai fost                   | Traian Dorz | Păşunile Dulci                           | CUGETĂRI NEMURITOARE              | poezie  |
+| Ce minunaţi sunt ochii...            | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Sărută Maică Fruntea                 | Traian Dorz | Cântări Nemuritoare vol. 11              | Cântări Nemuritoare               | poezie  |
+| Atâta sfântă curăţie                 | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Cât de Bun ai fost                   | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Ce-aveţi voi oare?                   | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Sunt trandafirul Tău                 | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Ştie Domnul                          | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Atunci când vei veni Mesia           | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Am biruit                            | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Tu mi-ai umplut                      | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Doamne, iară-mi plec genunchii       | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Se lasă înserarea                    | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Pentru Cine-mi pun?                  | Traian Dorz | Săgeţile biruitoare                      | CUGETĂRI NEMURITOARE              | poezie  |
+| Copil eram cândva...                 | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Pentru Cine-mi pun?                  | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Lacrimi - vă cunoaşte                | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Suim plângând adesea...              | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Lacrimi... - 2                       | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Cum aş putea să mai plâng?           | Traian Dorz | Prietenul Tinereţii mele                 | CUGETĂRI NEMURITOARE              | articol |
+| E noapte grea                        | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| O, locul Tău                         | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Aştepţi să vină Domnul?              | Traian Dorz | Meditații la Evanghelia după Ioan vol. 3 | Meditații la Evanghelia după Ioan | poezie  |
+| Aştepţi să vină Domnul?              | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4 | Meditații la Evanghelia după Ioan | poezie  |
+| Cale-ngustă, cale-ngustă             | Traian Dorz | Meditații la Evanghelia după Ioan vol. 6 | Meditații la Evanghelia după Ioan | poezie  |
+| Aştepţi să vină Domnul?              | Traian Dorz | Cântări Nemuritoare vol. 6               | Cântări Nemuritoare               | poezie  |
+| Numai Tu rămâi                       | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| Domnul meu...                        | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7 | Meditații la Evanghelia după Ioan | articol |
+| Frumoase dorurile mele               | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Am fost aleşi                        | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| În clipa morţii vede omul            | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Eu am aflat iubirea!                 | Traian Dorz | Cântări Nemuritoare vol. 8               | Cântări Nemuritoare               | poezie  |
+| Rugă pentru cei osteniţi             | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Cu ascultarea cea mai dulce          | Traian Dorz | Prietenul Tinereţii mele                 | CUGETĂRI NEMURITOARE              | articol |
+| Am cu Hristos un legământ            | Traian Dorz | Meditații la Evanghelia după Ioan vol. 6 | Meditații la Evanghelia după Ioan | poezie  |
+| În clipa morţii vede omul            | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7 | Meditații la Evanghelia după Ioan | poezie  |
+| Am cu Hristos un legământ            | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Am fost aleşi                        | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Vom trece râul morţii                | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| Toamnă - a căzut murind              | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| A căzut murind o frunză              | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Mai poţi să crezi Isuse?             | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| Iar îmi scrii măicuţă...             | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Şi anii m-au străpuns                | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Atâtea stele...                      | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Ce mult te-aştept                    | Traian Dorz | Cântări Nemuritoare vol. 10              | Cântări Nemuritoare               | poezie  |
+| Mai poţi să crezi?                   | Traian Dorz | Lupta cea Bună                           | CUGETĂRI NEMURITOARE              | poezie  |
+| La moartea unui prieten              | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| O, Isuse Dulce, Dulcele              | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Am fost aleşi                        | Traian Dorz | Meditații la Evanghelia după Ioan vol. 4 | Meditații la Evanghelia după Ioan | poezie  |
+| Întunecarea                          | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Rugăciunea                           | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Psalmul 30                           | Traian Dorz | Cântări Nemuritoare vol. 2               | Cântări Nemuritoare               | poezie  |
+| Psalmul 79                           | Traian Dorz | Cântări Nemuritoare vol. 2               | Cântări Nemuritoare               | poezie  |
+| Aceasta-i Golgota                    | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| O, ce curat e cerul                  | Traian Dorz | Meditații la Evanghelia după Ioan vol. 7 | Meditații la Evanghelia după Ioan | poezie  |
+| Samaritene!...                       | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Surori de cruce şi răsplată          | Traian Dorz | Cântări Nemuritoare vol. 7               | Cântări Nemuritoare               | poezie  |
+| Din Tine este-mpărtăşirea            | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Depărtare...                         | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Cântarea Roadelor                    | Traian Dorz | Cântări Nemuritoare vol. 6               | Cântări Nemuritoare               | poezie  |
+| În faţa Porţii Îndurării             | Traian Dorz | Prietenul Tinereţii mele                 | CUGETĂRI NEMURITOARE              | articol |
+| Isuse Pâinea Vieţii                  | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Frumoase amintiri                    | Traian Dorz | Cântări Nemuritoare vol. 6               | Cântări Nemuritoare               | poezie  |
+| Ghimpe de durere mută                | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Ce ochi mi-ai dăruit...              | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Despre îndreptare                    | Traian Dorz | Cântări Nemuritoare vol. 3               | Cântări Nemuritoare               | articol |
+| Bucuraţi-vă suspine                  | Traian Dorz | Eterna Iubire                            | CUGETĂRI NEMURITOARE              | poezie  |
+| Cum să nu vrei?                      | Traian Dorz | Cântări Nemuritoare vol. 1               | Cântări Nemuritoare               | poezie  |
+| Bucuraţi-vă suspine                  | Traian Dorz | Cântări Nemuritoare vol. 9               | Cântări Nemuritoare               | poezie  |
+| Pacea care-o ai                      | Traian Dorz | Meditații la Evanghelia după Ioan vol. 2 | Meditații la Evanghelia după Ioan | poezie  |
+| Făclie pentru paşii mei              | Traian Dorz | Meditații la Evanghelia după Ioan vol. 2 | Meditații la Evanghelia după Ioan | poezie  |
+| Isuse, o Doamne Isuse                | Traian Dorz | Meditații la Evanghelia după Ioan vol. 1 | Meditații la Evanghelia după Ioan | poezie  |
++--------------------------------------+-------------+------------------------------------------+-----------------------------------+---------+
 Searching Plans using http://localhost/api...
-Got 719 hits:
-Score: 1.3611928
-Volume: CUGETĂRI NEMURITOARE
-Book: Dorim să fim
-Title: Ce mult ai plâns!...
-Type: poezie
-Author: Traian Dorz
-
-Score: 1.3611928
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Ce mult ai plâns
-Type: poezie
-Author: Traian Dorz
-
-Score: 1.358715
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: De când n-ai plâns tu oare, de când?
-Type: poezie
-Author: Traian Dorz
-
-Score: 1.274159
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: De când n-ai plâns tu oare singur?
-Type: poezie
-Author: Traian Dorz
-
-Score: 1.1923654
+Got 1608 hits:
+Score: 58.84135
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: E plânsul meu
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"e copt \u00een <em>pl\u00e2ns</em> fierbinte, e-n foc amar s\u0103rat",
+"E <em>pl\u00e2nsul</em> meu Isuse, - acela ce-l auzi \u00een",
+"- Isuse, pentru vina iubirii mele <em>pl\u00e2ng</em>.  E"
+],
+"title": [
+"E <em>pl\u00e2nsul</em> meu"
+]
+}
 
-Score: 1.1917696
+Score: 56.092148
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Ce mult ai plâns
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Ai <em>pl\u00e2ns</em>, - \u015fi c\u00e2t mai <em>pl\u00e2ngi</em> \u015fi-acuma",
+"Ce mult ai <em>pl\u00e2ns</em> at\u00e2ta via\u0163\u0103 ud\u00e2nd",
+"ce mult ai <em>pl\u00e2ns</em> - \u015fi ce zadarnic -",
+"Ce greu ai <em>pl\u00e2ns</em> iubiri de\u015farte \u015fi",
+"Dar dac-ai <em>pl\u00e2ns</em> c\u00e2ndva spre Domnul"
+],
+"title": [
+"Ce mult ai <em>pl\u00e2ns</em>"
+]
+}
+
+Score: 56.09209
+Volume: CUGETĂRI NEMURITOARE
+Book: Dorim să fim
+Title: Ce mult ai plâns!...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015ei-ai <em>pl\u00e2ns</em>... \u015fi c\u00e2t mai <em>pl\u00e2ngi</em> \u015fi-acuma",
+"Ce mult ai <em>pl\u00e2ns</em> at\u00e2ta via\u0163\u0103 urm\u00e2nd",
+"ce mult ai <em>pl\u00e2ns</em> - \u015fi ce zadarnic -",
+"Ce greu ai <em>pl\u00e2ns</em> iubiri de\u015farte \u015fi",
+"Dar dac-ai <em>pl\u00e2ns</em> c\u00e2ndva-nspre Domnul"
+],
+"title": [
+"Ce mult ai <em>pl\u00e2ns</em>!..."
+]
+}
+
+Score: 54.176136
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Mare plâns şi tânguieli
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Mare <em>pl\u00e2ns</em> \u015fi t\u00e2nguieli",
+"dac\u0103 mergi \u00een chin \u015fi-n <em>pl\u00e2ns</em>?"
+],
+"title": [
+"Mare <em>pl\u00e2ns</em> \u015fi t\u00e2nguieli"
+]
+}
 
-Score: 1.0204221
+Score: 47.46839
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Din locul unde-am plâns
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Din locul unde-am <em>pl\u00e2ns</em> cu Tine"
+],
+"title": [
+"Din locul unde-am <em>pl\u00e2ns</em>"
+]
+}
 
-Score: 0.9139243
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8930474
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 7
-Title: Domnul meu...
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8665352
+Score: 42.730495
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
+Book: Cântări Nemuritoare vol. 10
+Title: De când n-ai plâns tu oare singur?
+Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare singur medit\u00e2nd",
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare nici un p\u0103cat f\u0103cut",
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare st\u00e2nd singur \u00een genunchi",
+"O, stai acum \u015fi <em>pl\u00e2nge</em> \u00een seara asta grea"
+],
+"title": [
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare singur?"
+]
+}
 
-Score: 0.8514349
-Volume: CUGETĂRI NEMURITOARE
-Book: Prietenul Tinereţii mele
-Title: Cum aş putea să mai plâng?
-Type: articol
-Author: Traian Dorz
-
-Score: 0.84937364
+Score: 41.800804
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre îndreptare
-Type: articol
+Book: Cântări Nemuritoare vol. 10
+Title: De când n-ai plâns tu oare, de când?
+Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare, de c\u00e2nd n-ai <em>pl\u00e2ns</em> cu-amar",
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> \u00een tain\u0103 pe-o rug\u0103ciune-arz\u00e2nd",
+"- de c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare - \u015fi oare p\u00e2n\u0103 c\u00e2nd",
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> de dorul de fra\u0163i \u015fi de Cuv\u00e2nt"
+],
+"title": [
+"De c\u00e2nd n-ai <em>pl\u00e2ns</em> tu oare, de c\u00e2nd?"
+]
+}
 
-Score: 0.84486973
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Fiecare existenţă este o taină
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8385375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935)
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8366041
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3, Rugul (1947 - 1977)
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8206426
+Score: 14.317275
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Cu ce-ai venit?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"- cu <em>pl\u00e2nsul</em>, doar cu <em>pl\u00e2nsul</em>, ",
+"- cu <em>pl\u00e2nsul</em>, doar cu <em>pl\u00e2nsul</em>, "
+]
+}
 
-Score: 0.8205084
+Score: 14.228346
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: O, fraţii mei vi-i greu
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ve\u0163i fi uitat c-a\u0163i <em>pl\u00e2ns</em> pe drum",
+"ve\u0163i fi uitat c-a\u0163i <em>pl\u00e2ns</em> c\u00e2ndva. ",
+"c-a <em>pl\u00e2ns</em> o clip\u0103 pe p\u0103m\u00e2nt? ",
+"iar ochii vo\u015ftri <em>pl\u00e2n\u015fi</em> \u015fi grei vedea-vor"
+]
+}
 
-Score: 0.8203104
+Score: 14.090959
 Volume: Meditații la Evanghelia după Ioan
 Book: Meditații la Evanghelia după Ioan vol. 5
 Title: O, fraţii mei vi-i greu
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ve\u0163i fi uitat c-a\u0163i <em>pl\u00e2ns</em> pe drum",
+"ve\u0163i fi uitat c-a\u0163i <em>pl\u00e2ns</em> c\u00e2ndva. ",
+"c-a <em>pl\u00e2ns</em> o clip\u0103 pe p\u0103m\u00e2nt? ",
+"iar ochii vo\u015ftri <em>pl\u00e2n\u015fi</em> \u015fi grei vedea-vor"
+]
+}
 
-Score: 0.82011616
+Score: 13.968115
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Aş vrea să plâng
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"- A\u015fa un <em>pl\u00e2ns</em> de jale grea, ",
+"\u015ei-a\u015fa un <em>pl\u00e2ns</em> de jale grea",
+"- \u015ei-a\u015fa un <em>pl\u00e2ns</em> de jale grea",
+"nu-i <em>pl\u00e2ns</em> s-o poat\u0103 spune-a\u015fa! ",
+"A\u015f vrea s\u0103 <em>pl\u00e2ng</em> un c\u00e2ntec trist plin"
+],
+"title": [
+"A\u015f vrea s\u0103 <em>pl\u00e2ng</em>"
+]
+}
 
-Score: 0.82011616
+Score: 13.955888
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 10
 Title: Amară e lumina
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"greu <em>pl\u00e2ns</em> e cel ce-a\u015fteapt\u0103 pe r\u00e2sul cel u\u015for",
+"nebun e cel ce-a\u015fteapt\u0103 un <em>pl\u00e2ns</em> p\u00e2n-la sicriu! ",
+"c\u0103ci \u00een zadar e <em>pl\u00e2nsul</em> c\u00e2nd timpul a trecut nici",
+"c\u0103ci \u00een zadar vei merge cu <em>pl\u00e2nsul</em> la sicriu c\u00e2t"
+]
+}
 
-Score: 0.8198629
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Mă apasă ca o piatră
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.8179428
-Volume: CUGETĂRI NEMURITOARE
-Book: Prietenul Tinereţii mele
-Title: Cu ascultarea cea mai dulce
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8154784
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 4
-Title: Isus plângea
-Type: articol
-Author: Traian Dorz
-
-Score: 0.81518054
-Volume: CUGETĂRI NEMURITOARE
-Book: Poruncile Iubirii
-Title: Preţul şi timpul
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8148939
-Volume: CUGETĂRI NEMURITOARE
-Book: Poruncile Iubirii
-Title: Morţii şi lacrimile
-Type: articol
-Author: Traian Dorz
-
-Score: 0.80928445
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Strălucita sărbătoare de Rusalii
-Type: articol
-Author: Traian Dorz
-
-Score: 0.80435914
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-
-Score: 0.8020281
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-
-Score: 0.7700858
+Score: 13.945562
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Câţi plâng...
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"C\u00e2\u0163i <em>pl\u00e2ng</em> dup\u0103 s\u0103n\u0103tate, <em>pl\u00e2ng</em> adesea \u00een zadar",
+"numai <em>pl\u00e2nsul</em> rug\u0103ciunii, ",
+"<em>pl\u00e2nsul</em> milei",
+"<em>pl\u00e2nsul</em> pentru m\u00e2ntuire, ",
+"c\u00e2\u0163i <em>pl\u00e2ng</em> dragostea pierdut\u0103, ades r\u0103m\u00e2n nem\u00e2ng\u00e2ia\u0163i"
+],
+"title": [
+"C\u00e2\u0163i <em>pl\u00e2ng</em>..."
+]
+}
 
-Score: 0.77000093
+Score: 13.875534
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Ce trist eşti Tu Isuse
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Tu, <em>pl\u00e2ns</em> avut-ai Doamne",
+"- dar <em>pl\u00e2nsul</em> niciodat\u0103.  Ce-ndurerat",
+"- dar <em>pl\u00e2nsul</em> niciodat\u0103.  Ce"
+]
+}
 
-Score: 0.7699168
+Score: 13.820627
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Când ne-ai trimis
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"e-mpreunat cu <em>pl\u00e2ns</em>? ",
+"e numai <em>pl\u00e2ns</em> \u00een noi. ",
+"\u015fi-a <em>pl\u00e2ns</em> \u015fi el str\u0103in",
+"\u015fi ne s\u0103ru\u0163i - \u015fi <em>pl\u00e2ngi</em>... "
+]
+}
 
-Score: 0.7694263
+Score: 13.782794
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Mă apasă ca o piatră
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Oare c\u00e2t mi-ai <em>pl\u00e2ns</em> al\u0103turi pentru starea mea Isus, ",
+"De ce oare-ai <em>pl\u00e2ns</em> la mine \u015fi-ai t\u0103cut \u015fi m-ai l\u0103sat",
+"oare Te mai po\u0163i \u00eentoarce unde-a <em>pl\u00e2ns</em> iubirea Ta, ",
+"numai <em>pl\u00e2nsul</em> nevegherii nu-l \u015ftiu c\u00e2nd va fi sf\u00e2r\u015fit.  Oare",
+"c\u00e2nd Tu suspinai Isuse \u015fi-mi <em>pl\u00e2ngeai</em> napoia mea!  Alergasem"
+]
+}
+
+Score: 13.477757
 Volume: Meditații la Evanghelia după Ioan
 Book: Meditații la Evanghelia după Ioan vol. 4
 Title: Cum aş putea eu spune?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"le-am <em>pl\u00e2ns</em> sau \u015fters, ",
+"\u015fi inimi l\u00e2ng\u0103 care n-am <em>pl\u00e2ns</em> sau n-am",
+"\u015fi lep\u0103d\u0103ri ne\u015fterse de-aprinsul <em>pl\u00e2ns</em> amar"
+]
+}
 
-Score: 0.7694263
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 7
-Title: O, Sfinte Răni
+Score: 13.477757
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Cum aş putea eu spune?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"le-am <em>pl\u00e2ns</em> sau \u015fters, ",
+"\u015fi inimi l\u00e2ng\u0103 care n-am <em>pl\u00e2ns</em> sau n-am",
+"\u015fi lep\u0103d\u0103ri ne\u015fterse de-aprinsul <em>pl\u00e2ns</em> amar"
+]
+}
 
-Score: 0.7694263
+Score: 13.477453
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Străină-a fost viaţa mea
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"am <em>pl\u00e2ns</em> la umbra Crucii Lui. ",
+"Am <em>pl\u00e2ns</em> mereu pierdut \u015fi dus",
+"\u015fi <em>pl\u00e2nsul</em> m-a-nso\u0163it \u00een ea a"
+]
+}
 
-Score: 0.7694263
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Cum aş putea eu spune?
+Score: 13.476766
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 7
+Title: O, Sfinte Răni
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"c\u0103ci vai ce <em>pl\u00e2ns</em> \u015fi ce strigare",
+"<em>Pl\u00e2nsul</em> rev\u0103rsat c\u0103it, usc\u0103 r\u0103ul",
+"<em>pl\u00e2nsul</em> \u00eennoit mereu, pacea d\u0103 cu Dumnezeu. "
+]
+}
 
-Score: 0.76926816
+Score: 13.368023
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: De când la Cină
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ce dezn\u0103dejde \u015fi c\u00e2t <em>pl\u00e2ns</em>, ",
+"cu <em>pl\u00e2ns</em> p\u0103catul \u015fi-au stropit",
+"c\u0103indu-se cu <em>pl\u00e2ns</em> amar"
+]
+}
 
-Score: 0.7683707
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Se lasă înserarea
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.76768434
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Iar îmi scrii măicuţă...
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.7671711
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 79
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.76645476
-Volume: CUGETĂRI NEMURITOARE
-Book: Prietenul Tinereţii mele
-Title: În faţa Porţii Îndurării
-Type: articol
-Author: Traian Dorz
-
-Score: 0.76579577
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Demult, odată undeva...
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.7639355
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Stând singur câteodată...
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.76220995
-Volume: CUGETĂRI NEMURITOARE
-Book: Lupta cea Bună
-Title: Suflete binefăcătoare
-Type: articol
-Author: Traian Dorz
-
-Score: 0.76012117
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935)
-Title: Cap. 4 - Spre altarul său
-Type: articol
-Author: Traian Dorz
-
-Score: 0.75545514
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1, Grăuntele (1923 - 1935)
-Title: Cap. 14 - Apostolia Femeilor
-Type: articol
-Author: Traian Dorz
-
-Score: 0.7550804
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti(a slăbănogului) - - Faptele Apostolilor 9, 32-42
-Type: articol
-Author: Traian Dorz
-
-Score: 0.75289375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2, Cernerea (1935 - 1947)
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-
-Score: 0.6855533
+Score: 13.102767
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Într-un colţ de colivie
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>pl\u00e2ns</em> nest\u0103p\u00e2nit fr\u0103m\u00e2n\u0163i",
+"<em>pl\u00e2nsul</em> unora e pre\u0163ul"
+]
+}
 
-Score: 0.685497
+Score: 13.0636635
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Din zbuciumul iubirii
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"mereu cu alte lacrimi chem\u0103m acela\u015fi <em>pl\u00e2ns</em>. ",
+"Din <em>pl\u00e2nsul</em> \u015fi lumina acelui sf\u00e2nt fior"
+]
+}
 
-Score: 0.6852749
-Volume: CUGETĂRI NEMURITOARE
-Book: Păşunile Dulci
-Title: Cât de Bun ai fost
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.6852749
-Volume: CUGETĂRI NEMURITOARE
-Book: Eterna Iubire
-Title: Ce minunaţi sunt ochii...
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.6852749
+Score: 12.910197
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Cale-ngustă, cale-ngustă
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"c\u00e2t de rar am <em>pl\u00e2ns</em> spre tine",
+"c\u00e2t de rar am <em>pl\u00e2ns</em> mustrat"
+]
+}
 
-Score: 0.6852749
+Score: 12.910197
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: O, cerească melodie
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"pe-acei ce te-au <em>pl\u00e2ns</em>, - amin",
+"celor care-au <em>pl\u00e2ns</em> - amin! "
+]
+}
 
-Score: 0.6852749
+Score: 12.909557
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Să nu cârteşti!
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"au <em>pl\u00e2ns</em>, - dar n-au c\u00e2rtit! ",
+"S\u0103 nu c\u00e2rte\u015fti c\u00e2nd <em>pl\u00e2nsul</em> \u00ee\u0163i"
+]
+}
 
-Score: 0.6852749
+Score: 12.906312
+Volume: CUGETĂRI NEMURITOARE
+Book: Eterna Iubire
+Title: Ce minunaţi sunt ochii...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ce str\u0103lucit e <em>pl\u00e2nsul</em> din anii cei mai grei",
+"\u015fi <em>pl\u00e2nsul</em> \u015fi c\u00e2ntarea ne sunt adev\u0103rate... "
+]
+}
+
+Score: 12.906312
+Volume: CUGETĂRI NEMURITOARE
+Book: Păşunile Dulci
+Title: Cât de Bun ai fost
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"nimeni <em>pl\u00e2nsul</em> lor",
+"Tu din <em>pl\u00e2nsul</em> vie\u0163ii mele"
+]
+}
+
+Score: 12.906312
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Ce minunaţi sunt ochii...
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ce str\u0103lucit e <em>pl\u00e2nsul</em> din anii cei mai grei",
+"\u015fi <em>pl\u00e2nsul</em> \u015fi c\u00e2ntarea ne sunt adev\u0103rate... "
+]
+}
 
-Score: 0.68516576
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Atâta sfântă curăţie
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68516576
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Cât de Bun ai fost
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68516576
+Score: 12.83386
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 11
 Title: Sărută Maică Fruntea
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"greu <em>pl\u00e2ns</em> li se va cere. ",
+"\u00een <em>pl\u00e2nsul</em> Lui I-aduce"
+]
+}
 
-Score: 0.68505794
+Score: 12.8306465
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Doamne, iară-mi plec genunchii
+Book: Cântări Nemuritoare vol. 9
+Title: Atâta sfântă curăţie
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi <em>pl\u00e2nsul</em> pentru via\u0163a mea! ",
+"C\u0103ci <em>pl\u00e2nsul</em> poc\u0103in\u0163ei poate"
+]
+}
 
-Score: 0.68505794
+Score: 12.8306465
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Atunci când vei veni Mesia
+Book: Cântări Nemuritoare vol. 9
+Title: Cât de Bun ai fost
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"nimeni <em>pl\u00e2nsul</em> lor",
+"Tu din <em>pl\u00e2nsul</em> vie\u0163ii mele"
+]
+}
 
-Score: 0.68505794
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Am biruit
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68505794
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Sunt trandafirul Tău
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68505794
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Tu mi-ai umplut
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68505794
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ştie Domnul
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68505794
+Score: 12.762239
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Ce-aveţi voi oare?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Ce goi sunt ochii f\u0103r\u0103 <em>pl\u00e2ns</em>",
+"- \u00eenmoaie-mi-le <em>pl\u00e2ns</em> amar",
+"de nu-mi pute\u0163i mai <em>pl\u00e2nge</em>,  \u015fi"
+]
+}
 
-Score: 0.68495136
+Score: 12.759703
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Sunt trandafirul Tău
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ce-n lume ei le-au <em>pl\u00e2ns</em> str\u0103ini",
+"ce-au <em>pl\u00e2ns</em> \u015fi-au suferit mai mult. "
+]
+}
+
+Score: 12.759703
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Ştie Domnul
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"am <em>pl\u00e2ns</em> chinu-n care-am stat",
+"cel prin care-am <em>pl\u00e2ns</em> amar, "
+]
+}
+
+Score: 12.759046
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Atunci când vei veni Mesia
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"cu <em>pl\u00e2ns</em> de bucurii \u015fi c\u00e2nt",
+"vei pune <em>pl\u00e2nsului</em> sf\u00e2r\u015fitul"
+]
+}
+
+Score: 12.759046
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Am biruit
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"N-am <em>pl\u00e2ns</em> \u00een lupta crunt\u0103 cu sute de zdrobiri",
+"\u015fi rana r\u0103zbun\u0103rii \u015fi-a <em>pl\u00e2nsului</em> povar\u0103,  dar"
+]
+}
+
+Score: 12.758923
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Tu mi-ai umplut
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi <em>pl\u00e2nsul</em> \u015firoind t\u0103cut. ",
+"\u015fi <em>pl\u00e2nsul</em> \u015firoind t\u0103cut. ",
+"zdrobit \u015fi-ns\u00e2ngerat <em>pl\u00e2ngeam</em>.  Ce",
+"<em>pl\u00e2ngea</em> de sus \u015fi p\u00e2n\u0103 jos.  Murise"
+]
+}
+
+Score: 12.758399
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Doamne, iară-mi plec genunchii
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"eu Te rog ascult\u0103 <em>pl\u00e2nsul</em>",
+"<em>pl\u00e2nsul</em> altei magdalene. ",
+"las\u0103-mi ochii iar s\u0103 <em>pl\u00e2ng\u0103</em>.  \u015ei"
+]
+}
+
+Score: 12.747042
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Se lasă înserarea
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"a-mele r\u0103ni din suflet \u015fi <em>pl\u00e2ns</em> de pe obraz. ",
+"\u00cen fumul de t\u0103m\u00e2ie, \u00een <em>pl\u00e2nsul</em> de lumini at\u00e2t",
+"... Ascult\u0103 Doamne <em>pl\u00e2nsul</em> umilului T\u0103u sclav,  mi-e",
+"s\u0103 merg s\u0103-mi plec genunchii s\u0103 <em>pl\u00e2ng</em> l\u00e2ng\u0103 altar.  S\u0103",
+"cu lacrimi calde pururi, la Crucea Ta s\u0103 <em>pl\u00e2ng</em> \u015fi-ngenuncheat"
+]
+}
+
+Score: 12.681946
 Volume: CUGETĂRI NEMURITOARE
 Book: Săgeţile biruitoare
 Title: Pentru Cine-mi pun?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"g\u00e2nduri <em>pl\u00e2nsa</em> mea t\u0103cere? ",
+"De ce seara vine <em>pl\u00e2nsul</em> nelipsit"
+]
+}
 
-Score: 0.68495136
+Score: 12.681946
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Copil eram cândva...
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi numai <em>pl\u00e2nsul</em> mi-a r\u0103mas. ",
+"Cu <em>pl\u00e2nsul</em> doar mai vin spre Tine"
+]
+}
 
-Score: 0.68495136
+Score: 12.681946
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Pentru Cine-mi pun?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"g\u00e2nduri <em>pl\u00e2nsa</em> mea t\u0103cere? ",
+"De ce seara vine <em>pl\u00e2nsul</em> nelipsit"
+]
+}
 
-Score: 0.68484604
+Score: 12.615702
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Lacrimi - vă cunoaşte
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"V-a <em>pl\u00e2ns</em> lacrima de jale",
+"cel ce-a <em>pl\u00e2ns</em> la u\u015fi str\u0103ine",
+"fr\u00e2nta inim\u0103 ce <em>pl\u00e2nge</em> \u00een",
+"cei ce <em>pl\u00e2ng</em> pribegi prin lume f\u0103r\u0103-o"
+]
+}
 
-Score: 0.68484604
+Score: 12.614491
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Suim plângând adesea...
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi tot \u0163inutul parc\u0103 e-un <em>pl\u00e2ns</em> de mare jale, ",
+"Azi curge-n tain\u0103 <em>pl\u00e2nsul</em> acelor ce sunt mu\u0163i",
+"Noi <em>pl\u00e2ngem</em> dup\u0103 Domnul - dar \u015fi El dup\u0103 noi"
+]
+}
 
-Score: 0.68484604
+Score: 12.612677
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Lacrimi... - 2
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi v-am <em>pl\u00e2ns</em> \u00een suferin\u0163\u0103",
+"poate c\u00e2t n-a <em>pl\u00e2ns</em> pe lume"
+]
+}
 
-Score: 0.6847419
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 3
-Title: Aştepţi să vină Domnul?
-Type: poezie
+Score: 12.568445
+Volume: CUGETĂRI NEMURITOARE
+Book: Prietenul Tinereţii mele
+Title: Cum aş putea să mai plâng?
+Type: articol
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Prieten al <em>pl\u00e2nsului</em> meu ascuns, nu-mi l\u0103sa inima prea cople\u015fit\u0103 de singur\u0103tatea ei - s\u0103 <em>pl\u00e2ng\u0103</em> prea mult",
+"17 - Nu \u015ftiam eu oare c\u00e2t de mult au <em>pl\u00e2ns</em> ace\u015fti ochi preaiubi\u0163i, pentru mine, \u00een dep\u0103rtarea",
+"mult m\u0103 doare acum inima mea, c\u0103 <em>pl\u00e2nsul</em> meu Te-a f\u0103cut adeseori s\u0103 <em>pl\u00e2ngi</em> at\u00e2t de dureros l\u00e2ng\u0103 mine! ",
+"mult, \u00eendur\u0103-Te de mine \u015fi alin\u0103-mi acest vinovat <em>pl\u00e2ns</em> f\u0103r\u0103 lacrimi, nespus mai amar dec\u00e2t cel\u0103lalt. ",
+"24 - \u00cendep\u0103rteaz\u0103 de pe altarul T\u0103u acest <em>pl\u00e2ns</em> prea mult, \u00eempreun\u0103 cu tot ce am f\u0103cut s\u0103 Te doar\u0103. "
+],
+"title": [
+"Cum a\u015f putea s\u0103 mai <em>pl\u00e2ng</em>?"
+]
+}
 
-Score: 0.6847419
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 4
-Title: Aştepţi să vină Domnul?
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.6847419
-Volume: Meditații la Evanghelia după Ioan
-Book: Meditații la Evanghelia după Ioan vol. 6
-Title: Cale-ngustă, cale-ngustă
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.6847419
+Score: 12.542892
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: E noapte grea
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"- ascult\u0103 Doamne-un <em>pl\u00e2ns</em> durut",
+"cu <em>pl\u00e2ns</em> \u00eemi ud n\u0103frama, ",
+"<em>pl\u00e2ng</em> eu de-o s\u0103pt\u0103m\u00e2n\u0103.  C\u0103ci"
+]
+}
 
-Score: 0.6847419
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Aştepţi să vină Domnul?
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.6847419
+Score: 12.542212
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: O, locul Tău
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"- Isuse, cum \u00eemi arde-n <em>pl\u00e2ns</em>! ",
+"Isuse-n <em>pl\u00e2nsul</em> cel amar",
+"\u015fi <em>pl\u00e2nsu</em>-mpreunat prelins \u015fi"
+]
+}
 
-Score: 0.6847419
+Score: 12.540427
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 3
+Title: Aştepţi să vină Domnul?
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"iar <em>pl\u00e2ns</em> \u015fi poc\u0103in\u0163\u0103",
+"iar <em>pl\u00e2ns</em> \u015fi poc\u0103in\u0163\u0103"
+]
+}
+
+Score: 12.540427
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 4
+Title: Aştepţi să vină Domnul?
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"iar <em>pl\u00e2ns</em> \u015fi poc\u0103in\u0163\u0103",
+"iar <em>pl\u00e2ns</em> \u015fi poc\u0103in\u0163\u0103"
+]
+}
+
+Score: 12.540427
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 6
+Title: Cale-ngustă, cale-ngustă
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"c\u00e2t de rar am <em>pl\u00e2ns</em> spre tine",
+"c\u00e2t de rar am <em>pl\u00e2ns</em> mustrat"
+]
+}
+
+Score: 12.540427
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Aştepţi să vină Domnul?
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"iar <em>pl\u00e2ns</em> \u015fi poc\u0103in\u0163\u0103",
+"iar <em>pl\u00e2ns</em> \u015fi poc\u0103in\u0163\u0103"
+]
+}
+
+Score: 12.540427
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 10
 Title: Numai Tu rămâi
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi din ori \u015fi din orice <em>pl\u00e2ns</em> trecut",
+"cu un bob de <em>pl\u00e2ns</em> udat"
+]
+}
 
-Score: 0.684639
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Rugă pentru cei osteniţi
-Type: poezie
+Score: 12.523722
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 7
+Title: Domnul meu...
+Type: articol
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"De multe ori ai <em>pl\u00e2ns</em> \u015fi tu suflete al meu, dar oare pentru ce ai <em>pl\u00e2ns</em>? ",
+"atunci \u00eencepi s\u0103 <em>pl\u00e2ngi</em> bine. \u015ei s\u0103 <em>pl\u00e2ngi</em> folositor. Dac\u0103 pentru asta <em>pl\u00e2ngi</em>, atunci <em>pl\u00e2nge</em>. Nu te opri.",
+"Dac\u0103 <em>pl\u00e2ngi</em> pentru lucruri p\u0103m\u00e2nte\u015fti, drag\u0103 suflete nu mai <em>pl\u00e2nge</em>. Nu merit\u0103 s\u0103 <em>pl\u00e2ngi</em> pentru ele",
+"Ce fericit a devenit acum acel <em>pl\u00e2ns</em> amar \u015fi \u00eendelungat, afl\u00e2ndu-le pe toate acestea",
+"Atunci <em>pl\u00e2ngi</em> cum \u00ee\u015fi <em>pl\u00e2nge</em> cineva cea mai negr\u0103it\u0103 pierdere, cea mai"
+]
+}
 
-Score: 0.684639
+Score: 12.469
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Frumoase dorurile mele
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"a lini\u015ftit at\u00e2ta <em>pl\u00e2ns</em>",
+"a <em>pl\u00e2ns</em>-o c\u00e2ndva de demult. "
+]
+}
 
-Score: 0.684639
+Score: 12.469
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Am fost aleşi
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"azi voi c\u00e2nta\u0163i cu bucurie, fiindc\u0103 noi am <em>pl\u00e2ns</em> atunci. ",
+"poate n-a\u0163i c\u00e2nta nicic\u00e2nd, dac-a\u0163i cunoa\u015fte c\u00e2t am <em>pl\u00e2ns</em>. "
+]
+}
 
-Score: 0.684639
+Score: 12.469
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: În clipa morţii vede omul
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"schimb\u00e2nd-o cu un ve\u015fnic <em>pl\u00e2ns</em>. ",
+"cu <em>pl\u00e2ns</em> prea ve\u015fnic \u015fi pustiu! "
+]
+}
 
-Score: 0.684639
+Score: 12.469
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Eu am aflat iubirea!
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"iubirea dup\u0103 care au <em>pl\u00e2ns</em> c\u0103ut\u00e2nd-o mii, ",
+"\u015fi neg\u0103sind-o-n lume, au <em>pl\u00e2ns</em> zdrobi\u0163i c\u0103 nu e, "
+]
+}
 
-Score: 0.68443656
+Score: 12.468312
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Rugă pentru cei osteniţi
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"cu <em>pl\u00e2ns</em>, ",
+"\u015fi-n taina <em>pl\u00e2nsului</em> ascuns noi"
+]
+}
+
+Score: 12.44477
+Volume: CUGETĂRI NEMURITOARE
+Book: Prietenul Tinereţii mele
+Title: Cu ascultarea cea mai dulce
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+" chiar \u015fi din <em>pl\u00e2nsul</em> cel mai \u00eendrept\u0103\u0163it.",
+"<em>Pl\u00e2nsul</em> \u00ee\u015fi are \u015fi el vremea lui, \u00eendrept\u0103\u0163irea",
+"25 - E minunat <em>pl\u00e2nsul</em>, e binef\u0103c\u0103tor, e necesar, e sf\u00e2nt - c\u00e2nd este",
+"26 - Dar este nesuferit \u015fi chinuitor <em>pl\u00e2nsul</em>, "
+]
+}
+
+Score: 12.328561
 Volume: Meditații la Evanghelia după Ioan
 Book: Meditații la Evanghelia după Ioan vol. 6
 Title: Am cu Hristos un legământ
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"n\u0103scut din <em>pl\u00e2ns</em>, crescut \u00een c\u00e2nt",
+"nici <em>pl\u00e2ns</em>, ori c\u00e2nt"
+]
+}
 
-Score: 0.68443656
+Score: 12.328561
 Volume: Meditații la Evanghelia după Ioan
 Book: Meditații la Evanghelia după Ioan vol. 7
 Title: În clipa morţii vede omul
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"schimb\u00e2nd-o cu un ve\u015fnic <em>pl\u00e2ns</em>. ",
+"cu <em>pl\u00e2ns</em> prea ve\u015fnic \u015fi pustiu! "
+]
+}
 
-Score: 0.68443656
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Toamnă - a căzut murind
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68443656
+Score: 12.328561
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Am cu Hristos un legământ
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"n\u0103scut din <em>pl\u00e2ns</em>, crescut \u00een c\u00e2nt",
+"nici <em>pl\u00e2ns</em>, ori c\u00e2nt"
+]
+}
 
-Score: 0.68443656
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: A căzut murind o frunză
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68443656
+Score: 12.328561
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Am fost aleşi
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"fiindc\u0103 noi am <em>pl\u00e2ns</em> atunci. ",
+"dac-a\u0163i afla c\u00e2t am mai <em>pl\u00e2ns</em>. "
+]
+}
 
-Score: 0.68443656
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Mai poţi să crezi Isuse?
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.68443656
+Score: 12.328561
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 10
 Title: Vom trece râul morţii
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"dar nu-i la fel a-l trece \u00een <em>pl\u00e2ns</em> - ori \u00een c\u00e2ntare",
+"\u015fi dup\u0103 r\u00e2s \u015fi glume - \u015fi dup\u0103 <em>pl\u00e2ns</em> \u015fi s\u00e2nge"
+]
+}
 
-Score: 0.6842386
-Volume: CUGETĂRI NEMURITOARE
-Book: Lupta cea Bună
-Title: Mai poţi să crezi?
-Type: poezie
-Author: Traian Dorz
-
-Score: 0.6842386
+Score: 12.32485
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
-Title: Atâtea stele...
+Title: Toamnă - a căzut murind
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>pl\u00e2nsul</em> vr\u00e2nd s\u0103 \u015fi-l ascunz\u0103",
+"<em>Pl\u00e2nsul</em> inimii ce geme"
+]
+}
 
-Score: 0.6842386
+Score: 12.32485
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: A căzut murind o frunză
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>pl\u00e2nsul</em> vr\u00e2nd s\u0103 \u015fi-l ascunz\u0103",
+"<em>Pl\u00e2nsul</em> inimii ce geme"
+]
+}
+
+Score: 12.32485
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Mai poţi să crezi Isuse?
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi <em>pl\u00e2nsul</em> poc\u0103in\u0163ei s\u0103 simt c\u0103 mi-e de-ajuns? ",
+"sau voi muri \u00een <em>pl\u00e2nsul</em> prea greu \u015fi prea t\u00e2rziu? "
+]
+}
+
+Score: 12.27067
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Iar îmi scrii măicuţă...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"C\u00e2t n-a <em>pl\u00e2ns</em> \u00een tain\u0103 Mama lui Isus",
+"c\u00e2t n-a <em>pl\u00e2ns</em> v\u0103z\u00e2ndu-I r\u0103nile de cui",
+"\u015fi-\u0163i ascult durerea, <em>pl\u00e2nsul</em> \u0163i-l ascult \u00eel",
+"Pentru \u00eemplinirea <em>Planului</em> M\u0103re\u0163"
+]
+}
+
+Score: 12.193603
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Şi anii m-au străpuns
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"mi-a <em>pl\u00e2ns</em> al suferin\u0163ei c\u00e2nt. ",
+"dar n-am mai <em>pl\u00e2ns</em> a mea durere",
+"c\u00e2nd inima-mi <em>pl\u00e2ngea</em> nespus, "
+]
+}
 
-Score: 0.6842386
+Score: 12.191248
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Atâtea stele...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ce-am <em>pl\u00e2ns</em> n\u0103dejdile-n\u015felate",
+"al dezn\u0103dejdii <em>pl\u00e2ns</em> zdrobit -"
+]
+}
+
+Score: 12.191248
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 10
 Title: Ce mult te-aştept
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"c-odat\u0103-n <em>pl\u00e2ns</em> ai s\u0103 M\u0103 chemi",
+"Ce mult \u0163i-am <em>pl\u00e2ns</em> - \u015fi n-ai sim\u0163it"
+]
+}
 
-Score: 0.6840451
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: O, Isuse Dulce, Dulcele
+Score: 12.187579
+Volume: CUGETĂRI NEMURITOARE
+Book: Lupta cea Bună
+Title: Mai poţi să crezi?
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi <em>pl\u00e2nsul</em> poc\u0103in\u0163ei s\u0103 simt c\u0103 mi-e de-ajuns? ",
+"sau voi muri \u00een <em>pl\u00e2nsul</em> prea greu \u015fi prea t\u00e2rziu? "
+]
+}
 
-Score: 0.6840451
+Score: 12.058549
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: La moartea unui prieten
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"M-a durut, l-am <em>pl\u00e2ns</em> din suflet \u015fi via\u0163a lui sf\u00e2r\u015fit\u0103",
+"\u015ei \u00een ochii-am\u00e2ndurora, tainic izvor\u00e2se <em>pl\u00e2nsul</em> c\u00e2nd",
+"Ochii-mi <em>pl\u00e2ng</em> \u015fi-acum \u00een lacrimi, arde inima-n b\u0103taie"
+]
+}
 
-Score: 0.6838557
+Score: 12.056235
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: O, Isuse Dulce, Dulcele
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"nu ajunge oare <em>pl\u00e2nsul</em> c\u00e2t am <em>pl\u00e2ns</em>"
+]
+}
+
+Score: 11.925601
 Volume: Meditații la Evanghelia după Ioan
 Book: Meditații la Evanghelia după Ioan vol. 4
 Title: Am fost aleşi
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"azi voi c\u00e2nta\u0163i cu bucurie, fiindc\u0103 noi am <em>pl\u00e2ns</em> atunci. ",
+"poate n-a\u0163i c\u00e2nta nicic\u00e2nd, dac-a\u0163i cunoa\u015fte c\u00e2t am <em>pl\u00e2ns</em>. "
+]
+}
 
-Score: 0.6838557
+Score: 11.924864
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Întunecarea
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"azi curge numai s\u00e2nge \u015fi <em>pl\u00e2ns</em> din rana grea",
+"s-aude numai <em>pl\u00e2nsul</em> mai tainic sau mai tare cu"
+]
+}
 
-Score: 0.6838557
+Score: 11.922011
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Rugăciunea
 Type: poezie
 Author: Traian Dorz
+highlight: {
+"verses.text": [
+"nu-i <em>pl\u00e2nsul</em> dezn\u0103d\u0103jduit",
+"\u015fi c\u00e2ntecul \u015fi <em>pl\u00e2nsul</em> scos"
+]
+}
+
+Score: 11.922011
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 30
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"seara vine <em>pl\u00e2nsul</em> chinului amar",
+"11-Iar Tu-n veselie <em>pl\u00e2nsul</em> mi-ai schimbat"
+]
+}
+
+Score: 11.912691
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 79
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"f\u0103rdelegea noastr\u0103, \u015fterge-al nostru <em>pl\u00e2ns</em> obraz",
+"Doamne-al nostru <em>pl\u00e2ns</em> obraz. ",
+"11-S\u0103 ajung\u0103 p\u00e2n-la Tine <em>pl\u00e2nsul</em> robilor ce-\u0162i cer"
+]
+}
+
+Score: 11.799306
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Aceasta-i Golgota
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"\u015fi <em>pl\u00e2ns</em> nem\u00e2ng\u00e2iat",
+"de <em>pl\u00e2ns</em> nest\u0103vilit",
+"m\u0103-nchin \u015fi <em>pl\u00e2ng</em> "
+]
+}
+
+Score: 11.671285
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 7
+Title: O, ce curat e cerul
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"cu fa\u0163a de-o lumin\u0103 \u015fi-un <em>pl\u00e2ns</em> ceresc sc\u0103ldat\u0103. ",
+"de vrei s\u0103 nu se-ntoarc\u0103 mai jalnic vechiul <em>pl\u00e2ns</em>. "
+]
+}
+
+Score: 11.671285
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Samaritene!...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"am <em>pl\u00e2ns</em> apoi departe, ",
+"\u00eenviorat Isuse-am <em>pl\u00e2ns</em>: "
+]
+}
+
+Score: 11.671285
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Surori de cruce şi răsplată
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Surori de cruce \u015fi r\u0103splat\u0103 \u00eenso\u0163itoare-n <em>pl\u00e2ns</em> \u015fi-n har",
+"- ci-a\u0163i <em>pl\u00e2ns</em> cu suflet plin de jale \u00een ceasul grelelor loviri"
+]
+}
+
+Score: 11.583453
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Din Tine este-mpărtăşirea
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"cu <em>pl\u00e2ns</em>, cu s\u00e2nge \u015fi rodire"
+]
+}
+
+Score: 11.548149
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Depărtare...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"leag\u0103n trist de <em>pl\u00e2ns</em> \u015fi jale",
+"C\u00e2nd am <em>pl\u00e2ns</em> \u015fi eu odat\u0103 singur, singurel \u00een tine"
+]
+}
+
+Score: 11.548149
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Cântarea Roadelor
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"de plug \u015fi <em>pl\u00e2ns</em>",
+" a <em>pl\u00e2ns</em> \u015fi-a suferit ca nimeni"
+]
+}
+
+Score: 11.414847
+Volume: CUGETĂRI NEMURITOARE
+Book: Prietenul Tinereţii mele
+Title: În faţa Porţii Îndurării
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"17 - Schimb\u0103-mi <em>pl\u00e2nsul</em> de durere \u00een <em>pl\u00e2ns</em> de bucurie. ",
+"s\u0103-\u0162i aud dulcele-\u0162i glas spun\u00e2ndu-mi \u00een mijlocul <em>pl\u00e2nsului</em> meu: "
+]
+}
+
+Score: 11.2849
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Isuse Pâinea Vieţii
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"ce-n <em>pl\u00e2ns</em> \u015fi-n foame pier. "
+]
+}
+
+Score: 11.2849
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Frumoase amintiri
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"Cu-at\u00e2ta <em>pl\u00e2ns</em>, de-at\u00e2\u0163ia ani udate"
+]
+}
+
+Score: 11.230198
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Ghimpe de durere mută
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"<em>Pl\u00e2ns</em> nest\u0103p\u00e2nit \u00eemi cere",
+"oare voi mai <em>pl\u00e2nge</em>",
+"sufletelor care <em>pl\u00e2ng</em>, "
+]
+}
+
+Score: 11.230198
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Ce ochi mi-ai dăruit...
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"c\u0103 dup\u0103-at\u00e2ta <em>pl\u00e2ns</em> fierbinte",
+"- F\u0103-mi ochii c\u00e2t mai <em>pl\u00e2ng</em>, a <em>pl\u00e2nge</em>"
+]
+}
+
+Score: 11.127084
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre îndreptare
+Type: articol
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"- doar <em>pl\u00e2nsul</em> scap\u0103 de gre\u015feli",
+"- numai <em>pl\u00e2nsul</em> \u00eendrept\u0103rii spal\u0103 sufletul de vin\u0103. ",
+"fericit e <em>pl\u00e2nsul</em> c\u00e2nd",
+"40 - <em>Pl\u00e2nsul</em> rev\u0103rsat c\u0103it",
+"<em>pl\u00e2nsul</em> \u00eennoit"
+]
+}
+
+Score: 11.113042
+Volume: CUGETĂRI NEMURITOARE
+Book: Eterna Iubire
+Title: Bucuraţi-vă suspine
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"vars\u0103 <em>pl\u00e2ns</em> fierbinte"
+]
+}
+
+Score: 11.113042
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Cum să nu vrei?
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"n-a <em>pl\u00e2ns</em> nici unul \u00een zadar! "
+]
+}
+
+Score: 11.113042
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Bucuraţi-vă suspine
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"vars\u0103 <em>pl\u00e2ns</em> fierbinte"
+]
+}
+
+Score: 11.056913
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 2
+Title: Pacea care-o ai
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"dup-un <em>pl\u00e2ns</em> ad\u00e2nc \u015fi-amar. "
+]
+}
+
+Score: 11.056913
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 2
+Title: Făclie pentru paşii mei
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"alinu-n <em>pl\u00e2ns</em> fierbinte"
+]
+}
+
+Score: 11.056913
+Volume: Meditații la Evanghelia după Ioan
+Book: Meditații la Evanghelia după Ioan vol. 1
+Title: Isuse, o Doamne Isuse
+Type: poezie
+Author: Traian Dorz
+highlight: {
+"verses.text": [
+"de patimi, de <em>pl\u00e2ns</em> \u015fi pieire. "
+]
+}
 
