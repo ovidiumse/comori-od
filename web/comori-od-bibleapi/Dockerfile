@@ -6,7 +6,7 @@ RUN apt-get update && \
 	apt-get -y install apt-utils software-properties-common
 RUN add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
-	apt-get -y install pypy3 virtualenv wget
+	apt-get -y install pypy3 virtualenv wget curl less
 
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN pypy3 get-pip.py
