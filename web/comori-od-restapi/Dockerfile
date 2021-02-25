@@ -6,10 +6,11 @@ RUN apt-get update && \
 	apt-get -y install apt-utils software-properties-common
 RUN add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
-	apt-get -y install pypy3 virtualenv wget less curl
+	apt-get -y install pypy3 virtualenv wget less curl build-essential pypy3-dev libssl-dev
 
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN pypy3 get-pip.py
+RUN pypy3 -m pip install --upgrade pip
 
 RUN virtualenv -p pypy3 ve
 RUN . ve/bin/activate
