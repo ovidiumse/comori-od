@@ -1,5 +1,4 @@
 #!/usr/bin/pypy3
-import re
 import os
 import falcon
 from falcon_auth import FalconAuthMiddleware
@@ -9,14 +8,40 @@ import logging
 import logging.config
 import urllib
 import yaml
-import requests
+import jwt
+import pymongo
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
+from pymongo import MongoClient
 
 LOGGER_ = None
 ES = None
 
+def parseFilters(req):
+    authors = urllib.parse.unquote(req.params['authors']) if 'authors' in req.params else ""
+    types = urllib.parse.unquote(req.params['types']) if 'types' in req.params else ""
+    volumes = urllib.parse.unquote(req.params['volumes']) if 'volumes' in req.params else ""
+    books = urllib.parse.unquote(req.params['books']) if 'books' in req.params else ""
+
+    filters = []
+    for author in authors.split(','):
+        if author:
+            filters.append({'term': {'author': author}})
+
+    for t in types.split(','):
+        if t:
+            filters.append({'term': {'type': t}})
+
+    for volume in volumes.split(','):
+        if volume:
+            filters.append({'term': {'volume': volume}})
+
+    for book in books.split(','):
+        if book:
+            filters.append({'term': {'book': book}})
+
+    return filters
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -33,6 +58,8 @@ class Index(object):
         resp.content_type = 'application/json'
 
         try:
+            LOGGER_.info(f"Deleting index {idx_name}...")
+
             ES.indices.delete(index=idx_name)
             resp.status = falcon.HTTP_200
         except TransportError as ex:
@@ -46,6 +73,8 @@ class Index(object):
 
     def on_get(self, req, resp, idx_name):
         try:
+            LOGGER_.info(f"Getting data for index {idx_name}...")
+
             mapping = ES.indices.get_mapping(index=idx_name)
             settings = ES.indices.get(index=idx_name)
             resp.status = falcon.HTTP_200
@@ -63,6 +92,8 @@ class Index(object):
         data = json.loads(req.stream.read())
 
         try:
+            LOGGER_.info(f"Creating index {idx_name} with data {json.dumps(data, ident=1)}")
+
             if ES.indices.exists(idx_name):
                 ES.indices.delete(index=idx_name)
 
@@ -83,6 +114,8 @@ class Index(object):
 class Articles(object):
     def index(self, idx_name, article):
         try:
+            LOGGER_.info(f"Indexing article {article['title']} from {article['book']} into {idx_name}...")
+
             ES.index(index=idx_name, body=json.dumps(article))
             return True
         except Exception as ex:
@@ -94,36 +127,53 @@ class Articles(object):
         offset = req.params['offset'] if 'offset' in req.params else 0
         q = urllib.parse.unquote(req.params['q'])
 
-        search_fields = {
-            'title': 2, 
-            'title.folded': 2, 
-            'verses.text': 1, 
-            'verses.text.folded': 1
-        }
+        filters = parseFilters(req)
+        LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
 
         should_match = []
-        for field, boost in search_fields.items():
+
+        fields = ["title", "title.folded", "verses.text", "verses.text.folded"]
+        for f in fields:
             should_match.append({
-                "match_phrase": {
-                    field: {
-                        "query": q,
-                        "slop": 4,
-                        "boost": boost
+                "intervals": {
+                    f: {
+                        "match": {
+                            "query": q,
+                            "max_gaps": 4,
+                            "ordered": True
+                        }
                     }
                 }
             })
 
-        fuzzy_query = []
-        for w in re.split('[ \|\,\.\!]', q):
-            fuzzy_query.append("{}~{}".format(w, int(min(3, len(w) / 4))))
+            should_match.append({
+                "intervals": {
+                    f: {
+                        "match": {
+                            "query": q,
+                            "max_gaps": 4,
+                            "ordered": True,
+                            "analyzer": "folding_synonym"
+                        }
+                    }
+                }
+            })
 
-        should_match.append({
+        should_match_highlight = []
+        should_match_highlight.append({
             "simple_query_string": {
-                "query": " ".join(fuzzy_query),
+                "query": "\"{}\"~{}".format(q, 4),
+                "fields": ["title^2", "title.folded^2", "verses.text", "verses.text.folded"],
+                "default_operator": "AND"
+            }
+        })
+
+        should_match_highlight.append({
+            "simple_query_string": {
+                "query": "\"{}\"~{}".format(q, 4),
                 "fields": ["title^2", "title.folded^2", "verses.text", "verses.text.folded"],
                 "default_operator": "AND",
-                "analyzer": "folding_stop",
-                "boost": 0.001
+                "analyzer": "folding_synonym"
             }
         })
 
@@ -131,12 +181,19 @@ class Articles(object):
             'query': {
                 'bool': {
                     'should': should_match,
+                    'filter': filters,
+                    'minimum_should_match': 1
                 },
             },
             '_source': {
                 'excludes': ['verses', 'bible-refs']
             },
            'highlight': {
+                'highlight_query': {
+                    'bool': {
+                        'should': should_match_highlight
+                    }
+                },
                 'fields': {
                     'title': {
                         "matched_fields": ["title", "title.folded"],
@@ -150,15 +207,45 @@ class Articles(object):
                 "order": "score"
             },
             'size': limit,
-            'from': offset
+            'from': offset,
+            'aggs': {
+                'authors': {
+                    'terms': {
+                        'field': 'author',
+                        'size': 1000000
+                    }
+                },
+                'types': {
+                    'terms': {
+                        'field': 'type',
+                        'size': 1000000
+                    }
+                },
+                'volumes': {
+                    'terms': {
+                        'field': 'volume',
+                        'size': 1000000
+                    }
+                },
+                'books': {
+                    'terms': {
+                        'field': 'book',
+                        'size': 1000000
+                    }
+                }
+            }
         }
 
         return ES.search(index=idx_name, body=query_body)
 
     def getById(self, idx_name, req):
+        LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
+
         return ES.get(index=idx_name, id=req.params['id'])
 
     def getRandomArticle(self, idx_name, req):
+        LOGGER_.info(f"Getting random article from {idx_name} with request {json.dumps(req.params, indent=2)}")
+
         limit = req.params['limit'] if 'limit' in req.params else 1
         offset = req.params['offset'] if 'offset' in req.params else 0
 
@@ -198,6 +285,8 @@ class Articles(object):
         indexed = 0
 
         try:
+            LOGGER_.info(f"Indexing {len(articles)} into {idx_name}...")
+
             for a in articles:
                 a['_index'] = idx_name
             indexed, _ = helpers.bulk(ES, articles, stats_only=True)
@@ -211,16 +300,82 @@ class Articles(object):
                 'exception': ex.error,
                 'info': ex.info
             })
-            logging.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
-            logging.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
+
+class FieldHandler(object):
+    def __init__(self, fieldName):
+        self.fieldName = fieldName
+
+    def getValues(self, idx_name, req):
+        LOGGER_.info(f"Getting {self.fieldName}s from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+        query_body = {
+            'query': {
+                'match_all': {}
+            },
+            'size': 0,
+            'aggs': {
+                f'{self.fieldName}s': {
+                    'terms': {
+                        'field': self.fieldName,
+                        'size': 1000000
+                    }
+                }
+            }
+        }
+
+        response = ES.search(index=idx_name, body=query_body)
+        return [{
+            'name': bucket['key'],
+            'doc_count': bucket['doc_count']
+        } for bucket in response['aggregations'][f'{self.fieldName}s']['buckets']]
+
+    def on_get(self, req, resp, idx_name):
+        try:
+            results = self.getValues(idx_name, req)
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(results)
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+    
+    def on_delete(self, req, resp, idx_name, value):
+        try:
+            query = {
+                'query': { 
+                    'match': {
+                        self.fieldName: {
+                            'query': value
+                        }
+                    }
+                }
+            }
+
+            ES.delete_by_query(idx_name, body=query)
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 
 class Titles(object):
     def on_get(self, req, resp, idx_name):
         try:
+            LOGGER_.info(f"Getting titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
             results = ES.search(index=idx_name,
                                 body={
                                     'suggest': {
@@ -232,7 +387,7 @@ class Titles(object):
                                         }
                                     },
                                     '_source': {
-                                        'excludes': ['verses']
+                                        'excludes': ['verses', 'bible-refs'],
                                     },
                                     'size': 10
                                 })
@@ -251,6 +406,8 @@ class Titles(object):
 class TitlesCompletion(object):
     def on_get(self, req, resp, idx_name):
         try:
+            LOGGER_.info(f"Getting title completion from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
             results = ES.search(index=idx_name,
                                 body={
                                     'query': {
@@ -277,6 +434,10 @@ class TitlesCompletion(object):
 class Suggester(object):
     def on_get(self, req, resp, idx_name):
         try:
+            LOGGER_.info(
+                f"Getting search suggestions from {idx_name} with req {json.dumps(req.params, indent=2)}"
+            )
+
             results = ES.search(index=idx_name,
                                 body={
                                     'suggest': {
@@ -328,6 +489,8 @@ class Suggester(object):
 class Similar(object):
     def on_get(self, req, resp, idx_name, doc_type):
         try:
+            LOGGER_.info(f"Getting similar documents from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
             results = ES.search(index=idx_name,
                                 body={
                                     'query': {
@@ -342,7 +505,7 @@ class Similar(object):
                                         },
                                     },
                                     '_source': {
-                                        'excludes': ['verses.text']
+                                        'excludes': ['verses', 'bible-refs']
                                     },
                                     'size': 4
                                 })
@@ -358,9 +521,110 @@ class Similar(object):
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 
+class Favorites(object):
+    auth = {
+        'auth_disabled': True
+    }
+
+    dbsByIndexName = {}
+
+    def __init__(self):
+        self.public_key = os.environ.get("APPLE_APP_PKEY")
+
+    def getClient(self, idx_name):
+        LOGGER_.info(f"Creating Mongo db connection for {idx_name}...")
+        return MongoClient('comori-od-mongo',
+                            username=os.environ.get("MONGO_USERNAME"),
+                            password=os.environ.get("MONGO_PASSWORD"))
+
+    def getDb(self, idx_name):
+        if idx_name not in self.dbsByIndexName:
+            db = self.dbsByIndexName[idx_name] = self.getClient(idx_name)[f"comori_{idx_name}"]
+            self.createIndexes(idx_name, db)
+            return db
+
+        return self.dbsByIndexName[idx_name]
+
+    def getCollection(self, idx_name, name):
+        return self.getDb(idx_name)[name]
+
+    def on_get(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Getting favorites from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = jwt.decode(req.get_header("Authorization"), self.public_key, algorithms='RS256')
+            favs = [fav for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(favs)
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+    def on_delete(self, req, resp, idx_name, article_id):
+        try:
+            LOGGER_.info(
+                f"Removing favorite from {idx_name} with id {article_id} and req {json.dumps(req.params, indent=2)}"
+            )
+
+            auth = jwt.decode(req.get_header("Authorization"), self.public_key, algorithms='RS256')
+            favid = self.getDocumentId(auth, article_id)
+
+            LOGGER_.info(f"Attempting to remove favorite {favid} from {idx_name}...")
+            self.getCollection(idx_name, 'favorites').delete_one({'_id': favid})
+
+            resp.status = falcon.HTTP_200
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+    def on_post(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Adding favorite to {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = jwt.decode(req.get_header("Authorization"), self.public_key, algorithms='RS256')
+            data = json.loads(req.stream.read())
+
+            data['_id'] = self.getDocumentId(auth, data['id'])
+            data['uid'] = self.getUserId(auth)
+
+            self.getCollection(idx_name, 'favorites').insert_one(data)
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps({"message": "You have saved the article '{}'!".format(data['title'])})
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+    def createIndexes(self, idx_name, db):
+        LOGGER_.info(f"Creating favorites indexes for {idx_name}...")
+
+        db['favorites'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+
+    def getUserId(self, auth):
+        return "{}.{}".format(auth['sub'], auth['iss'])
+
+    def getDocumentId(self, auth, article_id):
+        return "{}.{}.{}".format(auth['sub'], auth['iss'], article_id)
+
 class TotpAuthBackend(AuthBackend):
     def __init__(self):
-        key = os.environ['API_TOTP_KEY'] if os.environ['API_TOTP_KEY'] else random_base32()
+        key = os.environ['API_TOTP_KEY'] if os.environ.get('API_TOTP_KEY') else random_base32()
         logging.info("TOTP key: {}".format(key))
         self.totp = TOTP(key)
         self.auth_header_prefix = "Token"
@@ -404,8 +668,8 @@ def load_app(cfg_filepath):
 
     global ES
     ES = Elasticsearch(hosts=[cfg['es']],
-                       http_auth=(os.environ["ELASTIC_USER"],
-                                  os.environ["ELASTIC_PASSWORD"]))
+                       http_auth=(os.getenv("ELASTIC_USER", "elastic"),
+                                  os.getenv("ELASTIC_PASSWORD", "")))
 
     logging.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 
@@ -415,16 +679,31 @@ def load_app(cfg_filepath):
 
     index = Index()
     articles = Articles()
+    authors = FieldHandler('author')
+    types = FieldHandler('type')
+    volumes = FieldHandler('volume')
+    books = FieldHandler('book')    
     titles = Titles()
     titlesCompletion = TitlesCompletion()
     suggester = Suggester()
     similar = Similar()
+    favorites = Favorites()
 
     app.add_route('/{idx_name}', index)
     app.add_route('/{idx_name}/{doc_type}', articles)
+    app.add_route('/{idx_name}/authors', authors)
+    app.add_route('/{idx_name}/authors/{value}', authors)
+    app.add_route('/{idx_name}/types', types)
+    app.add_route('/{idx_name}/types/{value}', types)
+    app.add_route('/{idx_name}/volumes', volumes)
+    app.add_route('/{idx_name}/volumes/{value}', volumes)
+    app.add_route('/{idx_name}/books', books)
+    app.add_route('/{idx_name}/books/{value}', books)
     app.add_route('/{idx_name}/titles', titles)
     app.add_route('/{idx_name}/titles/completion', titlesCompletion)
     app.add_route('/{idx_name}/suggest/', suggester)
     app.add_route('/{idx_name}/{doc_type}/similar', similar)
+    app.add_route('/{idx_name}/favorites', favorites)
+    app.add_route('/{idx_name}/favorites/{article_id}', favorites)
 
     return app
