@@ -18,6 +18,23 @@ from pymongo import MongoClient
 LOGGER_ = None
 ES = None
 
+def buildTermFilter(field, values):
+    fieldFilters = []
+
+    for value in values.split(','):
+        if value:
+            fieldFilters.append({'term': {field: value}})
+
+    if fieldFilters:
+        fieldFilters = {
+            'bool': {
+                'should': fieldFilters,
+                'minimum_should_match': 1
+            }
+        }
+
+    return fieldFilters
+
 def parseFilters(req):
     authors = urllib.parse.unquote(req.params['authors']) if 'authors' in req.params else ""
     types = urllib.parse.unquote(req.params['types']) if 'types' in req.params else ""
@@ -25,23 +42,23 @@ def parseFilters(req):
     books = urllib.parse.unquote(req.params['books']) if 'books' in req.params else ""
 
     filters = []
-    for author in authors.split(','):
-        if author:
-            filters.append({'term': {'author': author}})
 
-    for t in types.split(','):
-        if t:
-            filters.append({'term': {'type': t}})
+    fieldFilters = [
+        buildTermFilter('author', authors),
+        buildTermFilter('type', types),
+        buildTermFilter('volume', volumes),
+        buildTermFilter('book', books)
+    ]
 
-    for volume in volumes.split(','):
-        if volume:
-            filters.append({'term': {'volume': volume}})
+    for fieldFilter in fieldFilters:
+        if fieldFilter:
+            filters.append(fieldFilter)
 
-    for book in books.split(','):
-        if book:
-            filters.append({'term': {'book': book}})
-
-    return filters
+    return {
+        'bool': {
+            'must': filters
+        }
+    }
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -188,7 +205,7 @@ class Articles(object):
             '_source': {
                 'excludes': ['verses', 'bible-refs']
             },
-           'highlight': {
+            'highlight': {
                 'highlight_query': {
                     'bool': {
                         'should': should_match_highlight
@@ -200,7 +217,8 @@ class Articles(object):
                         'type': 'fvh'
                     },
                     'verses.text': {
-                        "matched_fields": ["verses.text", "verses.text.folded"],
+                        "matched_fields":
+                        ["verses.text", "verses.text.folded"],
                         'type': 'fvh'
                     }
                 },
@@ -347,11 +365,11 @@ class FieldHandler(object):
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-    
+
     def on_delete(self, req, resp, idx_name, value):
         try:
             query = {
-                'query': { 
+                'query': {
                     'match': {
                         self.fieldName: {
                             'query': value
@@ -682,7 +700,7 @@ def load_app(cfg_filepath):
     authors = FieldHandler('author')
     types = FieldHandler('type')
     volumes = FieldHandler('volume')
-    books = FieldHandler('book')    
+    books = FieldHandler('book')
     titles = Titles()
     titlesCompletion = TitlesCompletion()
     suggester = Suggester()
