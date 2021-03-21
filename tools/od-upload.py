@@ -5,13 +5,14 @@ import argparse
 import simplejson as json
 import requests
 import logging
+from datetime import datetime
 from unidecode import unidecode
 from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
-LOCAL_HOST = "http://localhost/api"
+LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
 API_OTPKEY = ""
@@ -100,6 +101,18 @@ def create_index(idx_name):
                         'type': 'shingle',
                         "min_shingle_size": 2,
                         "max_shingle_size": 4,
+                    },
+                    "synonyms": {
+                        "type": "synonym_graph",
+                        "lenient": True,
+                        "synonyms": [
+                            "vremurile => vremile",
+                            "vremile => vremurile",
+                            "predestinare => predestinație",
+                            "predestinație => predestinare",
+                            "trimis => trimes",
+                            "trimes => trimis"
+                        ]
                     }
                 },
                 "analyzer": {
@@ -113,6 +126,12 @@ def create_index(idx_name):
                         "tokenizer": "standard",
                         "filter":
                         ["lowercase", "asciifolding", "romanian_keywords", "romanian_stemmer"]
+                    },
+                    "folding_synonym": {
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter":
+                        ["lowercase", "synonyms", "asciifolding", "romanian_keywords", "romanian_stemmer"]
                     },
                     "folding_stop": {
                         'type': 'custom',
@@ -150,7 +169,7 @@ def create_index(idx_name):
             'title': {
                 'type': 'text',
                 'term_vector': 'with_positions_offsets',
-                'analyzer': 'standard',
+                'analyzer': 'romanian',
                 'fields': {
                     'keyword': {
                         'type': 'keyword'
@@ -181,7 +200,7 @@ def create_index(idx_name):
                     'text': {
                         'type': 'text',
                         'term_vector': 'with_positions_offsets',
-                        'analyzer': 'standard',
+                        'analyzer': 'romanian',
                         'fields': {
                             'folded': {
                                 'type': 'text',
@@ -196,6 +215,12 @@ def create_index(idx_name):
                     }
                 }
             },
+            '_insert_idx': {
+                'type': 'integer'
+            },
+            '_insert_ts': {
+                'type': 'date'
+            },
             'bible-refs': {
                 'enabled': False
             }
@@ -209,13 +234,15 @@ def index_all(idx_name, articles):
     failed = 0
     indexed = 0
 
-    for article in articles:
+    for idx, article in enumerate(articles):
         id = "{} {} {}".format(article['title'], article['book'], article['author'])
         id = unidecode(id).lower()
         id = re.sub('[\.\,\!\(\)\[\] ]+', '-', id)
         id = re.sub('(\-)+', '-', id)
         article['_id'] = id
         article['_index'] = idx_name
+        article['_insert_idx'] = idx
+        article['_insert_ts'] = datetime.now().isoformat()
 
     for bulk in chunk(articles, 10):
         response = post("{}/articles".format(idx_name), bulk)

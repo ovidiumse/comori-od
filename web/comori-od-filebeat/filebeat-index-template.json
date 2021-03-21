@@ -1,49 +1,35 @@
 {
-    "mappings": {
-      "_default_": {
-        "_all": {
-          "enabled": true,
-          "norms": {
-            "enabled": false
-          }
-        },
-        "dynamic_templates": [
-          {
-            "template1": {
-              "mapping": {
-                "doc_values": true,
-                "ignore_above": 1024,
-                "index": "not_analyzed",
-                "type": "{dynamic_type}"
-              },
-              "match": "*"
-            }
-          }
-        ],
-        "properties": {
-          "@timestamp": {
-            "type": "date"
-          },
-          "message": {
-            "type": "string",
-            "index": "analyzed"
-          },
-          "offset": {
-            "type": "long",
-            "doc_values": "true"
-          },
-          "geoip"  : {
-            "type" : "object",
-            "dynamic": true,
-            "properties" : {
-              "location" : { "type" : "geo_point" }
-            }
-          }
+  "mappings": {
+    "dynamic": true,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "time_local": {
+        "type": "date",
+        "format": "dd/MMM/yyyy:HH:mm:ss xxxx"
+      },
+      "message": {
+        "type": "text"
+      },
+      "offset": {
+        "type": "long",
+        "doc_values": true
+      },
+      "bytes_sent": {
+        "type": "long"
+      },
+      "geoip"  : {
+        "type" : "object",
+        "dynamic": true,
+        "properties" : {
+          "location" : { "type" : "geo_point" }
         }
       }
-    },
-    "settings": {
-      "index.refresh_interval": "5s"
-    },
-    "template": "filebeat-*"
-  }
+    }
+  },
+  "settings": {
+    "index.refresh_interval": "5s"
+  },
+  "template": "filebeat-*"
+}

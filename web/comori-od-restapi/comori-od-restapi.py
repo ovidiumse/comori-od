@@ -25,14 +25,6 @@ def buildTermFilter(field, values):
         if value:
             fieldFilters.append({'term': {field: value}})
 
-    if fieldFilters:
-        fieldFilters = {
-            'bool': {
-                'should': fieldFilters,
-                'minimum_should_match': 1
-            }
-        }
-
     return fieldFilters
 
 def parseFilters(req):
@@ -52,13 +44,9 @@ def parseFilters(req):
 
     for fieldFilter in fieldFilters:
         if fieldFilter:
-            filters.append(fieldFilter)
+            filters += fieldFilter
 
-    return {
-        'bool': {
-            'must': filters
-        }
-    }
+    return filters
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -109,7 +97,7 @@ class Index(object):
         data = json.loads(req.stream.read())
 
         try:
-            LOGGER_.info(f"Creating index {idx_name} with data {json.dumps(data, ident=1)}")
+            LOGGER_.info(f"Creating index {idx_name} with data {json.dumps(data, indent=1)}")
 
             if ES.indices.exists(idx_name):
                 ES.indices.delete(index=idx_name)
@@ -139,14 +127,10 @@ class Articles(object):
             LOGGER_.error("Indexing {} failed!".format(article), exc_info=True)
             return False
 
-    def query(self, idx_name, req):
-        limit = req.params['limit'] if 'limit' in req.params else 100
-        offset = req.params['offset'] if 'offset' in req.params else 0
-        q = urllib.parse.unquote(req.params['q'])
-
-        filters = parseFilters(req)
-        LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
-
+    def buildShouldMatch(self, q):
+        if not q:
+            return []
+            
         should_match = []
 
         fields = ["title", "title.folded", "verses.text", "verses.text.folded"]
@@ -175,7 +159,10 @@ class Articles(object):
                     }
                 }
             })
+        
+        return should_match
 
+    def buildShouldMatchHighlight(self, q):
         should_match_highlight = []
         should_match_highlight.append({
             "simple_query_string": {
@@ -194,14 +181,30 @@ class Articles(object):
             }
         })
 
+        return should_match_highlight
+
+    def buildQuery(self, should_match, filters):
+        return {
+            'bool': {
+                'should': should_match,
+                'filter': filters,
+                'minimum_should_match': min(1, len(should_match))
+            }
+        }
+
+    def query(self, idx_name, req):
+        limit = req.params['limit'] if 'limit' in req.params else 100
+        offset = req.params['offset'] if 'offset' in req.params else 0
+        q = urllib.parse.unquote(req.params['q'])
+
+        filters = parseFilters(req)
+        LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+        should_match = self.buildShouldMatch(q)
+        should_match_highlight = self.buildShouldMatchHighlight(q)
+
         query_body = {
-            'query': {
-                'bool': {
-                    'should': should_match,
-                    'filter': filters,
-                    'minimum_should_match': 1
-                },
-            },
+            'query': self.buildQuery(should_match, filters),
             '_source': {
                 'excludes': ['verses', 'bible-refs']
             },
@@ -225,33 +228,7 @@ class Articles(object):
                 "order": "score"
             },
             'size': limit,
-            'from': offset,
-            'aggs': {
-                'authors': {
-                    'terms': {
-                        'field': 'author',
-                        'size': 1000000
-                    }
-                },
-                'types': {
-                    'terms': {
-                        'field': 'type',
-                        'size': 1000000
-                    }
-                },
-                'volumes': {
-                    'terms': {
-                        'field': 'volume',
-                        'size': 1000000
-                    }
-                },
-                'books': {
-                    'terms': {
-                        'field': 'book',
-                        'size': 1000000
-                    }
-                }
-            }
+            'from': offset
         }
 
         return ES.search(index=idx_name, body=query_body)
@@ -299,10 +276,10 @@ class Articles(object):
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
     def on_post(self, req, resp, idx_name, doc_type):
-        articles = json.loads(req.stream.read())
-        indexed = 0
-
         try:
+            articles = json.loads(req.stream.read())
+            indexed = 0
+
             LOGGER_.info(f"Indexing {len(articles)} into {idx_name}...")
 
             for a in articles:
@@ -324,23 +301,65 @@ class Articles(object):
             resp.body = json.dumps({'exception': str(ex)})
             LOGGER_.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
 
-class FieldHandler(object):
+
+class ContentHandler(object):
+    def on_get(self, req, resp, idx_name):
+
+        try:
+            filters = parseFilters(req)
+            LOGGER_.info(f"Quering contents from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            limit = req.params['limit'] if 'limit' in req.params else 10
+            offset = req.params['offset'] if 'offset' in req.params else 0
+
+            query_body = {
+                'query': {
+                    'bool': {
+                        'filter': filters
+                    }
+                },
+                'size': limit,
+                'from': offset,
+                'sort': [{'_insert_ts': {'order': 'asc'}}]
+            }
+
+            response = ES.search(index=idx_name, body=query_body)
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(response)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error(f"Querying contents from {idx_name} failed! Error: {ex}", exc_info=True)
+
+class FieldAggregator(Articles):
     def __init__(self, fieldName):
         self.fieldName = fieldName
 
     def getValues(self, idx_name, req):
         LOGGER_.info(f"Getting {self.fieldName}s from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
+        include_unmatched = 'include_unmatched' in req.params
+
+        q = urllib.parse.unquote(req.params['q']) if 'q' in req.params else None
+        filters = parseFilters(req)
+
         query_body = {
-            'query': {
-                'match_all': {}
-            },
+            'query': self.buildQuery(self.buildShouldMatch(q), filters),
             'size': 0,
             'aggs': {
                 f'{self.fieldName}s': {
                     'terms': {
                         'field': self.fieldName,
-                        'size': 1000000
+                        'size': 1000000,
+                        'min_doc_count': 0 if include_unmatched else 1,
+                        'order': {'min_insert_ts': 'asc'}
+                    },
+                    'aggs': {
+                        'min_insert_ts': {
+                            'min': {
+                                'field': '_insert_ts'
+                            }
+                        }
                     }
                 }
             }
@@ -349,7 +368,8 @@ class FieldHandler(object):
         response = ES.search(index=idx_name, body=query_body)
         return [{
             'name': bucket['key'],
-            'doc_count': bucket['doc_count']
+            'doc_count': bucket['doc_count'],
+            'insert_ts': bucket['min_insert_ts']
         } for bucket in response['aggregations'][f'{self.fieldName}s']['buckets']]
 
     def on_get(self, req, resp, idx_name):
@@ -392,33 +412,33 @@ class FieldHandler(object):
 class Titles(object):
     def on_get(self, req, resp, idx_name):
         try:
-            LOGGER_.info(f"Getting titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+            filters = parseFilters(req)
+            LOGGER_.info(f"Quering titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            results = ES.search(index=idx_name,
-                                body={
-                                    'suggest': {
-                                        'article-suggest': {
-                                            'prefix': req.params['prefix'],
-                                            'completion': {
-                                                'field': 'title.completion'
-                                            }
-                                        }
-                                    },
-                                    '_source': {
-                                        'excludes': ['verses', 'bible-refs'],
-                                    },
-                                    'size': 10
-                                })
+            limit = req.params['limit'] if 'limit' in req.params else 10
+            offset = req.params['offset'] if 'offset' in req.params else 0
+
+            query_body = {
+                'query': {
+                    'bool': {
+                        'filter': filters
+                    }
+                },
+                '_source': {
+                    'excludes': ['verses', 'bible-refs'],
+                },
+                'size': limit,
+                'from': offset,
+                'sort': [{'_insert_ts': {'order': 'asc'}}]
+            }
+
+            response = ES.search(index=idx_name, body=query_body)
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            resp.body = json.dumps(response)
         except Exception as ex:
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            LOGGER_.error(f"Querying titles from {idx_name} failed! Error: {ex}", exc_info=True)
 
 
 class TitlesCompletion(object):
@@ -697,10 +717,11 @@ def load_app(cfg_filepath):
 
     index = Index()
     articles = Articles()
-    authors = FieldHandler('author')
-    types = FieldHandler('type')
-    volumes = FieldHandler('volume')
-    books = FieldHandler('book')
+    content = ContentHandler()
+    authors = FieldAggregator('author')
+    types = FieldAggregator('type')
+    volumes = FieldAggregator('volume')
+    books = FieldAggregator('book')
     titles = Titles()
     titlesCompletion = TitlesCompletion()
     suggester = Suggester()
@@ -717,6 +738,7 @@ def load_app(cfg_filepath):
     app.add_route('/{idx_name}/volumes/{value}', volumes)
     app.add_route('/{idx_name}/books', books)
     app.add_route('/{idx_name}/books/{value}', books)
+    app.add_route('/{idx_name}/content', content)
     app.add_route('/{idx_name}/titles', titles)
     app.add_route('/{idx_name}/titles/completion', titlesCompletion)
     app.add_route('/{idx_name}/suggest/', suggester)

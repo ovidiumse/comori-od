@@ -101,8 +101,9 @@ class HandleCORS(object):
 
 
 class Bible(object):
-    def makeChapter(self, chapter, verse=None, verse_end=None, include_titles=False):
+    def makeChapter(self, bookName, chapter, verse=None, verse_end=None, include_titles=False):
         return {
+            'book': bookName,
             'name': chapter['name'],
             'link': chapter['link'],
             'chapter': chapter['chapter'],
@@ -195,7 +196,7 @@ class Bible(object):
                 {'message': 'Invalid verse range: {}-{}'.format(verse_nr, verse_end)}, callback)
             return
 
-        response = self.makeChapter(chapter, verse_nr, verse_end, include_titles)
+        response = self.makeChapter(book['name'], chapter, verse_nr, verse_end, include_titles)
         if not response['verses']:
             resp.status = falcon.HTTP_404
             resp.body, resp.content_type = self.make_response(

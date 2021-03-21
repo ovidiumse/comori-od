@@ -6,11 +6,30 @@ services:
       args:
         - buildtype=dev_build
     container_name: comori-od-static-vue
-    expose:
-      - "80"
+    ports:
+      - "80:80"
     environment:
       - VIRTUAL_HOST=localhost
       - VIRTUAL_PORT=80
+      - HTTPS_METHOD=nohttps
+      - NETWORK_ACCESS=internal
+    networks:
+      - proxy
+    depends_on:
+      - comori-od-restapi
+    restart: unless-stopped
+
+  comori-od-static-nuxt:
+    build: 
+      context: ../comori-od-static-nuxt
+      args:
+        - buildtype=build_dev
+    container_name: comori-od-static-nuxt
+    ports:
+      - "3000:3000"
+    environment:
+      - VIRTUAL_HOST=localhost
+      - VIRTUAL_PORT=3000
       - HTTPS_METHOD=nohttps
       - NETWORK_ACCESS=internal
     networks:
@@ -26,8 +45,7 @@ services:
       - discovery.type=single-node
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
-    mem_limit: 1G
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     volumes:
       - es_data:/usr/share/elasticsearch/data
       - es_config:/usr/share/elasticsearch/config
@@ -47,8 +65,7 @@ services:
       - HTTPS_METHOD=nohttps
       - KIBANA_USER=${ELASTIC_USER}
       - KIBANA_PASSWORD=${ELASTIC_PASSWORD}
-      - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
-    mem_limit: 1g
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     volumes:
       - kib_config:/usr/share/kibana/config
       - kib_logs:/usr/share/kibana/logs
@@ -64,14 +81,16 @@ services:
     build: ../comori-od-filebeat
     container_name: comori-od-filebeat
     environment: 
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - "ES_JAVA_OPTS=-Xms100m -Xmx500m"
-    mem_limit: 500m
     volumes:
       - /var/log:/var/log:ro
     networks: 
       - proxy
     depends_on: 
       - comori-od-logstash
+      - comori-od-kibana
     restart: unless-stopped
   
   comori-od-logstash:
@@ -80,14 +99,91 @@ services:
     environment: 
       - LOGSTASH_USER=${ELASTIC_USER}
       - LOGSTASH_PASSWORD=${ELASTIC_PASSWORD}
+      - GEOIP_ACCOUNTID=${GEOIP_ACCOUNTID}
+      - GEOIP_LICENSEKEY=${GEOIP_LICENSEKEY}
       - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
-    mem_limit: 1g
     ports:
       - 5044:5044
     networks:
       - proxy
     depends_on: 
       - comori-od-es
+    restart: unless-stopped
+  
+  comori-od-metricbeat:
+    build: ../comori-od-metricbeat
+    user: root
+    container_name: comori-od-metricbeat
+    environment: 
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - ENABLE_DASHBOARDS=True
+      - "ES_JAVA_OPTS=-Xms100m -Xmx500m"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro    
+      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+      - /proc:/hostfs/proc:ro
+      - /:/hostfs:ro
+    networks: 
+      - proxy
+    depends_on: 
+      - comori-od-es
+    restart: unless-stopped
+  
+  comori-od-mongo:
+    build: ../comori-od-mongo
+    container_name: comori-od-mongo
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - 27017:27017
+    networks:
+      - proxy
+    command: ['--auth']
+    restart: unless-stopped
+  
+  comori-od-mongoexpress:
+    build: ../comori-od-mongoexpress
+    container_name: comori-od-mongoexpress
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=comori-od-mongo
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_ROOT_USERNAME}
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
+      - ME_CONFIG_BASICAUTH_USERNAME=${MONGO_ADMIN_USERNAME}
+      - ME_CONFIG_BASICAUTH_PASSWORD=${MONGO_ADMIN_PASSWORD}
+    ports:
+      - 8081:8081
+    networks: 
+      - proxy
+    depends_on: 
+      - comori-od-mongo
+    restart: unless-stopped
+  
+  comori-od-redis:
+    build: ../comori-od-redis
+    environment: 
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    container_name: comori-od-redis
+    ports:
+      - 6379:6379
+    networks:
+      - proxy
+    restart: unless-stopped
+  
+  comori-od-jupyter:
+    build: ../comori-od-jupyter
+    container_name: comori-od-jupyter
+    environment:
+      - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
+    ports:
+      - 8088:8088
+    networks:
+      - proxy
     restart: unless-stopped
 
   comori-od-restapi:
@@ -103,8 +199,13 @@ services:
       - API_TOTP_KEY=${API_TOTP_KEY}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - APPLE_APP_PKEY=${APPLE_APP_PKEY}
     depends_on:
       - comori-od-es
+      - comori-od-mongo
+      - comori-od-redis
     networks:
       - proxy
     restart: unless-stopped
@@ -113,10 +214,10 @@ services:
     build: ../comori-od-bibleapi
     container_name: comori-od-bibleapi
     ports:
-      - 9001:9001
+      - 9002:9002
     environment:
       - VIRTUAL_HOST=localhost
-      - VIRTUAL_PORT=9001
+      - VIRTUAL_PORT=9002
       - HTTPS_METHOD=nohttps
     networks:
       - proxy
@@ -132,6 +233,8 @@ volumes:
   kib_config:
     driver: local
   kib_logs:
+    driver: local
+  mongo_data:
     driver: local
 
 networks:

@@ -8,7 +8,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 PARSER_ = argparse.ArgumentParser(
-    description="OD content fixer script for Hristos Puterea Apostoliei.")
+    description="OD content fixer script")
 
 
 def parseArgs():
@@ -181,14 +181,14 @@ def isPrePoemTitle(tag, cfg):
     return checkProps(tag, cfg['poem-title'])
 
 
-def isPreArticleSubtitle(tag, cfg):
-    if 'pre-article-subtitle' not in cfg:
+def isArticleSubtitle(tag, cfg):
+    if 'article-subtitle' not in cfg:
         return False
 
     if tag.name != "p":
         return False
 
-    return checkProps(tag, cfg['pre-article-subtitle'])
+    return checkProps(tag, cfg['article-subtitle'])
 
 
 def isFirstParagraphFirstLetter(tag, cfg):
@@ -251,24 +251,24 @@ def merge_multiline_titles(soup, cfg):
         next_p = title.find_next("p")
         if next_p and isPreArticleTitle(next_p, cfg):
             print("Merging {} with {}...".format(title.text, next_p.text))
-            title.append(next_p.text)
+            title.append(" - " + next_p.text)
             next_p.decompose()
 
         title = find_title(soup, cfg, title)
 
+def merge_multiline_subtitles(soup, cfg):
+    print("Merging multiline subtitles...")
 
-def merge_titles_with_subtitles(soup, cfg):
-    print("Merging titles with subtitles...")
-
-    title = find_title(soup, cfg)
-    while title:
-        next_p = title.find_next("p")
-        if isPreArticleSubtitle(next_p, cfg):
-            print("Merging {} with {}...".format(title.text, next_p.text))
-            title.append(" - {}".format(sanitize_subtitle(next_p.text)))
+    subtitle = soup.find(lambda tag: isArticleSubtitle(tag, cfg))
+    while subtitle:
+        print("Processing {}...".format(subtitle.text))
+        next_p = subtitle.find_next("p")
+        if next_p and isArticleSubtitle(next_p, cfg):
+            print("Mering {} with {}...".format(subtitle.text, next_p.text))
+            subtitle.append(" - " + next_p.text)
             next_p.decompose()
-
-        title = find_title(soup, cfg, title)
+        
+        subtitle = subtitle.find_next(lambda tag: isArticleSubtitle(tag, cfg))
 
 
 def normalize_title_sizes(soup, cfg):
@@ -362,10 +362,8 @@ def main():
         cfg = yaml.full_load(cfg_file)
 
     with open(args.html_filepath, 'r', encoding='utf-8') as html_file:
-        start = datetime.now()
         print("Parsing {}...".format(args.html_filepath))
         soup = BeautifulSoup(html_file, 'html.parser')
-        parse_finish = datetime.now()
 
         sanitize_adjacent_titles(soup, cfg)
 
@@ -373,9 +371,8 @@ def main():
             preprocess(soup, cfg)
 
         merge_multiline_titles(soup, cfg)
-
-        if 'pre-article-subtitle' in cfg:
-            merge_titles_with_subtitles(soup, cfg)
+        if 'article-subtitle' in cfg:
+            merge_multiline_subtitles(soup, cfg)
 
         normalize_title_sizes(soup, cfg)
         fix_first_paragraph_first_letters(soup, cfg)

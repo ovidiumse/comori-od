@@ -7,5 +7,4 @@ until curl http://localhost:9200; do
     sleep 3
 done
 
-curl -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" -XPOST http://localhost:9200/_security/user/${KIBANA_USER}/_password -H "Content-Type: application/json" -d '{"password": "${KIBANA_PASSWORD}"}'
 curl -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" -XPOST http://localhost:9200/_security/user/${LOGSTASH_USER}/_password -H "Content-Type: application/json" -d '{"password": "${KIBANA_PASSWORD}"}'

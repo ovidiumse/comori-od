@@ -1,25 +1,25 @@
 +-------------------------------------+-------------------------------------+-----------------------------------------+--------+-----------------+
 |            Cuvânt inițial           |          Cuvânt înlocuitor          |                  Regulă                 |  Câmp  | Număr procesări |
 +-------------------------------------+-------------------------------------+-----------------------------------------+--------+-----------------+
-|                'cînd'               |                'când'               |              replace_words              | verses |       627       |
-|                'pînă'               |                'până'               |              replace_words              | verses |       522       |
-|                'atît'               |                'atât'               |              replace_words              | verses |       502       |
-|                'cît'                |                'cât'                |              replace_words              | verses |       461       |
+|                'cînd'               |                'când'               |              replace_words              | verses |       629       |
+|                'pînă'               |                'până'               |              replace_words              | verses |       525       |
+|                'atît'               |                'atât'               |              replace_words              | verses |       503       |
+|                'cît'                |                'cât'                |              replace_words              | verses |       462       |
 |                'sînt'               |                'sunt'               |              replace_words              | verses |       412       |
 |               'decît'               |               'decât'               |              replace_words              | verses |       210       |
 |               'Sfînt'               |               'Sfânt'               |              replace_words              | verses |       144       |
+|               'sfîntă'              |               'sfântă'              |              replace_words              | verses |       126       |
 |               'sfînt'               |               'sfânt'               |              replace_words              | verses |       125       |
-|               'sfîntă'              |               'sfântă'              |              replace_words              | verses |       125       |
 |               'lîngă'               |               'lângă'               |              replace_words              | verses |       125       |
 |               'cîteva'              |               'câteva'              |              replace_words              | verses |       125       |
 |                'cîte'               |                'câte'               |              replace_words              | verses |       124       |
+|                 ' '                 |                  ''                 |               strip_spaces              | verses |       120       |
 |               'sîntem'              |               'suntem'              |              replace_words              | verses |       118       |
 |                'Cînd'               |                'Când'               |              replace_words              | verses |       113       |
+|                 ' '                 |                 ' '                 |               replace_nbsp              | verses |       113       |
 |               'cuvînt'              |               'cuvânt'              |              replace_words              | verses |       106       |
-|              'Cuvîntul'             |              'Cuvântul'             |              replace_words              | verses |        90       |
-|                 ' '                 |                  ''                 |               strip_spaces              | verses |        85       |
+|              'Cuvîntul'             |              'Cuvântul'             |              replace_words              | verses |        91       |
 |                'rînd'               |                'rând'               |              replace_words              | verses |        84       |
-|                 ' '                 |                 ' '                 |               replace_nbsp              | verses |        79       |
 |              'sfîrşit'              |              'sfârşit'              |              replace_words              | verses |        78       |
 |               'atîta'               |               'atâta'               |              replace_words              | verses |        76       |
 |              'cîntări'              |              'cântări'              |              replace_words              | verses |        72       |
@@ -29,13 +29,13 @@
 |               '     '               |               '     '               |               replace_nbsp              | verses |        60       |
 |               'curînd'              |               'curând'              |              replace_words              | verses |        57       |
 |               'întîi'               |               'întâi'               |              replace_words              | verses |        57       |
+|               'pămînt'              |               'pământ'              |              replace_words              | verses |        55       |
 |             'mormîntul'             |             'mormântul'             |              replace_words              | verses |        55       |
-|               'pămînt'              |               'pământ'              |              replace_words              | verses |        54       |
 |               'adînc'               |               'adânc'               |              replace_words              | verses |        54       |
 |               'încît'               |               'încât'               |              replace_words              | verses |        50       |
+|               'dintîi'              |               'dintâi'              |              replace_words              | verses |        49       |
 |               'rămîne'              |               'rămâne'              |              replace_words              | verses |        49       |
 |              'mîinile'              |              'mâinile'              |              replace_words              | verses |        46       |
-|               'dintîi'              |               'dintâi'              |              replace_words              | verses |        46       |
 |                'mîna'               |                'mâna'               |              replace_words              | verses |        45       |
 |               'atîtea'              |               'atâtea'              |              replace_words              | verses |        44       |
 |              'cîntarea'             |              'cântarea'             |              replace_words              | verses |        44       |
@@ -43,34 +43,34 @@
 |             'sfîrşitul'             |             'sfârşitul'             |              replace_words              | verses |        42       |
 |              'cuvîntul'             |              'cuvântul'             |              replace_words              | verses |        42       |
 |              'hotărît'              |              'hotărât'              |              replace_words              | verses |        42       |
+|              'legămînt'             |              'legământ'             |              replace_words              | verses |        39       |
 |               'gîndul'              |               'gândul'              |              replace_words              | verses |        39       |
 |               'cîţiva'              |               'câţiva'              |              replace_words              | verses |        39       |
 |              'rînduri'              |              'rânduri'              |              replace_words              | verses |        38       |
-|              'legămînt'             |              'legământ'             |              replace_words              | verses |        38       |
 |               'atîţia'              |               'atâţia'              |              replace_words              | verses |        37       |
 |                'mînă'               |                'mână'               |              replace_words              | verses |        36       |
+|             'legămîntul'            |             'legământul'            |              replace_words              | verses |        35       |
 |                'gînd'               |                'gând'               |              replace_words              | verses |        35       |
 |                'Pînă'               |                'Până'               |              replace_words              | verses |        35       |
-|             'legămîntul'            |             'legământul'            |              replace_words              | verses |        34       |
 |              'mormînt'              |              'mormânt'              |              replace_words              | verses |        34       |
 |                'Sînt'               |                'Sunt'               |              replace_words              | verses |        33       |
 |                'cîtă'               |                'câtă'               |              replace_words              | verses |        33       |
 |              'sînteţi'              |              'sunteţi'              |              replace_words              | verses |        31       |
 |              'cîntare'              |              'cântare'              |              replace_words              | verses |        31       |
+|              'spunînd'              |              'spunând'              |              replace_words              | verses |        30       |
+|            'binecuvîntat'           |            'binecuvântat'           |              replace_words              | verses |        30       |
 |              'gînduri'              |              'gânduri'              |              replace_words              | verses |        30       |
 |                'Cît'                |                'Cât'                |              replace_words              | verses |        29       |
 |               'tînăr'               |               'tânăr'               |              replace_words              | verses |        29       |
 |             'cîntările'             |             'cântările'             |              replace_words              | verses |        29       |
-|            'binecuvîntat'           |            'binecuvântat'           |              replace_words              | verses |        29       |
 |               'rămînă'              |               'rămână'              |              replace_words              | verses |        28       |
-|              'spunînd'              |              'spunând'              |              replace_words              | verses |        28       |
-|               'cîndva'              |               'cândva'              |              replace_words              | verses |        26       |
+|             'Sfîntului'             |             'Sfântului'             |              replace_words              | verses |        26       |
 |           'Mîntuitorului'           |           'Mântuitorului'           |              replace_words              | verses |        26       |
 |              'rugîndu'              |              'rugându'              |              replace_words              | verses |        26       |
 |            'Mîntuitorul'            |            'Mântuitorul'            |              replace_words              | verses |        26       |
 |              'amîndoi'              |              'amândoi'              |              replace_words              | verses |        26       |
+|               'cîndva'              |               'cândva'              |              replace_words              | verses |        25       |
 |                'cîţi'               |                'câţi'               |              replace_words              | verses |        25       |
-|             'Sfîntului'             |             'Sfântului'             |              replace_words              | verses |        25       |
 |               'Cuvînt'              |               'Cuvânt'              |              replace_words              | verses |        25       |
 |              'bătrîni'              |              'bătrâni'              |              replace_words              | verses |        24       |
 |              'oricînd'              |              'oricând'              |              replace_words              | verses |        24       |
@@ -85,6 +85,7 @@
 |              'pămîntul'             |              'pământul'             |              replace_words              | verses |        21       |
 |               'avînd'               |               'având'               |              replace_words              | verses |        21       |
 |               'oricît'              |               'oricât'              |              replace_words              | verses |        21       |
+|             'Mîntuitor'             |             'Mântuitor'             |              replace_words              | verses |        20       |
 |              'rînduit'              |              'rânduit'              |              replace_words              | verses |        20       |
 |               'rîndul'              |               'rândul'              |              replace_words              | verses |        20       |
 |               'făcînd'              |               'făcând'              |              replace_words              | verses |        20       |
@@ -93,7 +94,6 @@
 |              'întîlnit'             |              'întâlnit'             |              replace_words              | verses |        19       |
 |             'săptămînă'             |             'săptămână'             |              replace_words              | verses |        18       |
 |              'Cîntări'              |              'Cântări'              |              replace_words              | verses |        18       |
-|             'Mîntuitor'             |             'Mântuitor'             |              replace_words              | verses |        18       |
 |              'fîntîni'              |              'fântâni'              |              replace_words              | verses |        18       |
 |             'Cuvîntului'            |             'Cuvântului'            |              replace_words              | verses |        17       |
 |             'aşteptînd'             |             'aşteptând'             |              replace_words              | verses |        17       |
@@ -106,9 +106,11 @@
 |             'mîntuirii'             |             'mântuirii'             |              replace_words              | verses |        16       |
 |             'săptămîni'             |             'săptămâni'             |              replace_words              | verses |        16       |
 |              'sîmbătă'              |              'sâmbătă'              |              replace_words              | verses |        16       |
+|             'cuprinzînd'            |             'cuprinzând'            |              replace_words              | verses |        15       |
 |              'întîmpla'             |              'întâmpla'             |              replace_words              | verses |        15       |
 |           'binecuvîntată'           |           'binecuvântată'           |              replace_words              | verses |        15       |
 |                 '. '                |                 '.'                 |               strip_spaces              | verses |        14       |
+|                'Mîna'               |                'Mâna'               |              replace_words              | verses |        14       |
 |              'amîndouă'             |              'amândouă'             |              replace_words              | verses |        14       |
 |              'plîngînd'             |              'plângând'             |              replace_words              | verses |        14       |
 |              'căutînd'              |              'căutând'              |              replace_words              | verses |        14       |
@@ -128,7 +130,6 @@
 |               'mîine'               |               'mâine'               |              replace_words              | verses |        13       |
 |              'rămînem'              |              'rămânem'              |              replace_words              | verses |        13       |
 |              'gîndesc'              |              'gândesc'              |              replace_words              | verses |        13       |
-|                'Mîna'               |                'Mâna'               |              replace_words              | verses |        13       |
 |             'întîmplări'            |             'întâmplări'            |              replace_words              | verses |        13       |
 |               'cîntă'               |               'cântă'               |              replace_words              | verses |        13       |
 |               'gîndi'               |               'gândi'               |              replace_words              | verses |        13       |
@@ -150,7 +151,6 @@
 |               'zicînd'              |               'zicând'              |              replace_words              | verses |        11       |
 |               'Sfînta'              |               'Sfânta'              |              replace_words              | verses |        11       |
 |              'întîmple'             |              'întâmple'             |              replace_words              | verses |        11       |
-|             'cuprinzînd'            |             'cuprinzând'            |              replace_words              | verses |        11       |
 |               'tînără'              |               'tânără'              |              replace_words              | verses |        11       |
 |               'Sîntem'              |               'Suntem'              |              replace_words              | verses |        11       |
 |               'cîntat'              |               'cântat'              |              replace_words              | verses |        11       |
@@ -206,6 +206,8 @@
 |           'înmormîntării'           |           'înmormântării'           |              replace_words              | verses |        7        |
 |             'sfîntului'             |             'sfântului'             |              replace_words              | verses |        7        |
 |              'fîntînă'              |              'fântână'              |              replace_words              | verses |        7        |
+|              'Sîngele'              |              'Sângele'              |              replace_words              | verses |        6        |
+|           'Binecuvîntează'          |           'Binecuvântează'          |              replace_words              | verses |        6        |
 |              'strînge'              |              'strânge'              |              replace_words              | verses |        6        |
 |               'plîngă'              |               'plângă'              |              replace_words              | verses |        6        |
 |            'legămîntului'           |            'legământului'           |              replace_words              | verses |        6        |
@@ -239,7 +241,6 @@
 |              'bătrînul'             |              'bătrânul'             |              replace_words              | verses |        5        |
 |             'continuînd'            |             'continuând'            |              replace_words              | verses |        5        |
 |              'bătrînii'             |              'bătrânii'             |              replace_words              | verses |        5        |
-|              'Sîngele'              |              'Sângele'              |              replace_words              | verses |        5        |
 |             'hotărîsem'             |             'hotărâsem'             |              replace_words              | verses |        5        |
 |              'sîngele'              |              'sângele'              |              replace_words              | verses |        5        |
 |             'răspîndit'             |             'răspândit'             |              replace_words              | verses |        5        |
@@ -254,9 +255,9 @@
 |              'coborît'              |              'coborât'              |              replace_words              | verses |        5        |
 |               'vrînd'               |               'vrând'               |              replace_words              | verses |        5        |
 |            'hotărîtoare'            |            'hotărâtoare'            |              replace_words              | verses |        5        |
-|           'Binecuvîntează'          |           'Binecuvântează'          |              replace_words              | verses |        5        |
 |             '     Amin.'            |             '     Amin.'            |               replace_nbsp              | verses |        5        |
 | '     - Şi d-ta ...astea Domnului?' | '- Şi d-ta faci ...astea Domnului?' |               strip_spaces              | verses |        4        |
+|              'Stăpînul'             |              'Stăpânul'             |              replace_words              | verses |        4        |
 |              'Stăpîne'              |              'Stăpâne'              |              replace_words              | verses |        4        |
 |              'flămînzi'             |              'flămânzi'             |              replace_words              | verses |        4        |
 |               'urîţi'               |               'urâţi'               |              replace_words              | verses |        4        |
@@ -337,7 +338,6 @@
 |              'mîngîiat'             |              'mângâiat'             |              replace_words              | verses |        3        |
 |              'zîmbetul'             |              'zâmbetul'             |              replace_words              | verses |        3        |
 |              'luptînd'              |              'luptând'              |              replace_words              | verses |        3        |
-|              'Stăpînul'             |              'Stăpânul'             |              replace_words              | verses |        3        |
 |             'strîngere'             |             'strângere'             |              replace_words              | verses |        3        |
 |              'izbîndă'              |              'izbândă'              |              replace_words              | verses |        3        |
 |             'bătrîneţea'            |             'bătrâneţea'            |              replace_words              | verses |        3        |
@@ -373,6 +373,7 @@
 |             Biruitorul'             |                                     |                                         |        |                 |
 |             '     - Nu!'            |             '     - Nu!'            |               replace_nbsp              | verses |        3        |
 |            '     - Da! '            |            '     - Da! '            |               replace_nbsp              | verses |        3        |
+| '               ... să fie Domnul.' |       'Slăvit să fie Domnul.'       |               strip_spaces              | verses |        2        |
 |       '     - Nu, nici una. '       |          '- Nu, nici una. '         |               strip_spaces              | verses |        2        |
 |           '     - Cinci. '          |             '- Cinci. '             |               strip_spaces              | verses |        2        |
 |       '     - Eşti iehovist?'       |          '- Eşti iehovist?'         |               strip_spaces              | verses |        2        |
@@ -382,6 +383,7 @@
 | '     - Vă mulţu...rutăm dreapta. ' | '- Vă mulţumim î...rutăm dreapta. ' |               strip_spaces              | verses |        2        |
 | '               ...iarhul României' |        'Patriarhul României'        |               strip_spaces              | verses |        2        |
 | '     Adică exac...e de conflict. ' | 'Adică exact cum...e de conflict. ' |               strip_spaces              | verses |        2        |
+|              'cîştigat'             |              'câştigat'             |              replace_words              | verses |        2        |
 |               'Stăpîn'              |               'Stăpân'              |              replace_words              | verses |        2        |
 |               'cîmpul'              |               'câmpul'              |              replace_words              | verses |        2        |
 |                'grîu'               |                'grâu'               |              replace_words              | verses |        2        |
@@ -493,6 +495,7 @@
 |              'plîngere'             |              'plângere'             |              replace_words              | verses |        2        |
 |               'Lumina               |           'Lumina Satelor'          |       replace_newlines_with_spaces      | verses |        2        |
 |               Satelor'              |                                     |                                         |        |                 |
+| '               ... să fie Domnul.' | '               ... să fie Domnul.' |               replace_nbsp              | verses |        2        |
 |       '     - Nu, nici una. '       |       '     - Nu, nici una. '       |               replace_nbsp              | verses |        2        |
 |           '     - Cinci. '          |           '     - Cinci. '          |               replace_nbsp              | verses |        2        |
 |       '     - Eşti iehovist?'       |       '     - Eşti iehovist?'       |               replace_nbsp              | verses |        2        |
@@ -501,6 +504,13 @@
 | '     - Vă mulţu...rutăm dreapta. ' | '     - Vă mulţu...rutăm dreapta. ' |               replace_nbsp              | verses |        2        |
 | '               ...    Traian Dorz' | '               ...    Traian Dorz' |               replace_nbsp              | verses |        2        |
 | '     Adică exac...e de conflict. ' | '     Adică exac...e de conflict. ' |               replace_nbsp              | verses |        2        |
+|           'Isus  Hristos'           |            'Isus Hristos'           | replace_multiple_spaces_with_single_one | verses |        2        |
+|        'Slavă  veşnică  Ţie'        |         'Slavă veşnică Ţie'         | replace_multiple_spaces_with_single_one | verses |        2        |
+|        '                    '       |                  ''                 |               strip_spaces              | verses |        1        |
+| '     Pentru că ... şi pînă la cel' | 'Pentru că de la... şi pînă la cel' |               strip_spaces              | verses |        1        |
+| '            din...i (Matei 28,20)' | 'din urmă, ai sp...i (Matei 28,20)' |               strip_spaces              | verses |        1        |
+| '            şi ...cununa noastră,' | 'şi ne vei duce ...cununa noastră,' |               strip_spaces              | verses |        1        |
+|     '            - şi ai fost!'     |           '- şi ai fost!'           |               strip_spaces              | verses |        1        |
 | '     Slăvit să ...l acestui ogor.' | 'Slăvit să fie D...l acestui ogor.' |               strip_spaces              | verses |        1        |
 | '     În patru p...ori şi lacrimi.' | 'În patru parcel...ori şi lacrimi.' |               strip_spaces              | verses |        1        |
 | '     Astăzi iat...Psalm 125,5-6).' | 'Astăzi iată-mă ...Psalm 125,5-6).' |               strip_spaces              | verses |        1        |
@@ -2164,7 +2174,6 @@
 | '     Valurile s... culeg acum!...' | 'Valurile s-au s... culeg acum!...' |               strip_spaces              | verses |        1        |
 | '     O, cît de ...a să Ţi-l fac. ' | 'O, cît de darni...a să Ţi-l fac. ' |               strip_spaces              | verses |        1        |
 | '     De pe aces...ai nici cu El. ' | 'De pe acest mun...ai nici cu El. ' |               strip_spaces              | verses |        1        |
-| '               ... să fie Domnul.' |       'Slăvit să fie Domnul.'       |               strip_spaces              | verses |        1        |
 | ' În nopţile Dom...cuvîntat fel...' | 'În nopţile Domn...cuvîntat fel...' |               strip_spaces              | verses |        1        |
 | '     Adunările ...duhovnicească. ' | 'Adunările noast...duhovnicească. ' |               strip_spaces              | verses |        1        |
 | '     În multe l...oare cerească. ' | 'În multe locuri...oare cerească. ' |               strip_spaces              | verses |        1        |
@@ -4145,7 +4154,6 @@
 |             'trimiţînd'             |             'trimiţând'             |              replace_words              | verses |        1        |
 |               'Cîteva'              |               'Câteva'              |              replace_words              | verses |        1        |
 |              'aflîndu'              |              'aflându'              |              replace_words              | verses |        1        |
-|              'cîştigat'             |              'câştigat'             |              replace_words              | verses |        1        |
 |              'Rămînea'              |              'Rămânea'              |              replace_words              | verses |        1        |
 |              'izvorît'              |              'izvorât'              |              replace_words              | verses |        1        |
 |             'realizîndu'            |             'realizându'            |              replace_words              | verses |        1        |
@@ -4315,6 +4323,10 @@
 |           'binecuvîntată'           |           'binecuvântată'           |              replace_words              | title  |        1        |
 |               'Cuvînt'              |               'Cuvânt'              |              replace_words              | title  |        1        |
 |            'mormîntului'            |            'mormântului'            |              replace_words              | title  |        1        |
+|      '            şi ...cununa      | '            şi ...cununa noastră,' |       replace_newlines_with_spaces      | verses |        1        |
+|              noastră,'              |                                     |                                         |        |                 |
+|     'spunînd că nimi...ţi (Ioan     | 'spunînd că nimi...ţi (Ioan 10,28)' |       replace_newlines_with_spaces      | verses |        1        |
+|               10,28)'               |                                     |                                         |        |                 |
 |     '     Slăvit să ...l acestui    | '     Slăvit să ...l acestui ogor.' |       replace_newlines_with_spaces      | verses |        1        |
 |                ogor.'               |                                     |                                         |        |                 |
 | '     În patru p...ori şi lacrimi.' | '     În patru p...ori şi lacrimi.' |       replace_newlines_with_spaces      | verses |        1        |
@@ -8428,8 +8440,14 @@
 | '     Iar pe min... atît de mici. ' | '     Iar pe min... atît de mici. ' |       replace_newlines_with_spaces      | verses |        1        |
 | '     Dăruieşte-...re şi duioase. ' | '     Dăruieşte-...re şi duioase. ' |       replace_newlines_with_spaces      | verses |        1        |
 | '     Iar celui ... şi al nostru. ' | '     Iar celui ... şi al nostru. ' |       replace_newlines_with_spaces      | verses |        1        |
-|        'Cap. 10 - Cel m...cil       | 'Cap. 10 - Cel m...cil colaborator' |       replace_newlines_with_spaces      | title  |        1        |
+|        'Cel mai necesar...cil       | 'Cel mai necesar...cil colaborator' |       replace_newlines_with_spaces      | title  |        1        |
 |             colaborator'            |                                     |                                         |        |                 |
+|        '                    '       |        '                    '       |               replace_nbsp              | verses |        1        |
+| '     Pentru că ... şi pînă la cel' | '     Pentru că ... şi pînă la cel' |               replace_nbsp              | verses |        1        |
+| '            din...i (Matei 28,20)' | '            din...i (Matei 28,20)' |               replace_nbsp              | verses |        1        |
+|      '            şi ...cununa      |      '            şi ...cununa      |               replace_nbsp              | verses |        1        |
+|              noastră,'              |              noastră,'              |                                         |        |                 |
+|     '            - şi ai fost!'     |     '            - şi ai fost!'     |               replace_nbsp              | verses |        1        |
 |     '     Slăvit să ...l acestui    |     '     Slăvit să ...l acestui    |               replace_nbsp              | verses |        1        |
 |                ogor.'               |                ogor.'               |                                         |        |                 |
 | '     În patru p...ori şi lacrimi.' | '     În patru p...ori şi lacrimi.' |               replace_nbsp              | verses |        1        |
@@ -10342,7 +10360,6 @@
 | '     Valurile s... culeg acum!...' | '     Valurile s... culeg acum!...' |               replace_nbsp              | verses |        1        |
 | '     O, cît de ...a să Ţi-l fac. ' | '     O, cît de ...a să Ţi-l fac. ' |               replace_nbsp              | verses |        1        |
 | '     De pe aces...ai nici cu El. ' | '     De pe aces...ai nici cu El. ' |               replace_nbsp              | verses |        1        |
-| '               ... să fie Domnul.' | '               ... să fie Domnul.' |               replace_nbsp              | verses |        1        |
 |                  '                  |                  '                  |               replace_nbsp              | verses |        1        |
 |      În nopţile Dom...cuvîntat      |      În nopţile Dom...cuvîntat      |                                         |        |                 |
 |               fel...'               |               fel...'               |                                         |        |                 |
@@ -12506,6 +12523,22 @@
 | '     Iar pe min... atît de mici. ' | '     Iar pe min... atît de mici. ' |               replace_nbsp              | verses |        1        |
 | '     Dăruieşte-...re şi duioase. ' | '     Dăruieşte-...re şi duioase. ' |               replace_nbsp              | verses |        1        |
 | '     Iar celui ... şi al nostru. ' | '     Iar celui ... şi al nostru. ' |               replace_nbsp              | verses |        1        |
+|       '-   ultimul  volum   -'      |         '- ultimul volum -'         | replace_multiple_spaces_with_single_one | verses |        1        |
+|           '1976  -  1988'           |            '1976 - 1988'            | replace_multiple_spaces_with_single_one | verses |        1        |
+|         'Depun  şi  doresc'         |          'Depun şi doresc'          | replace_multiple_spaces_with_single_one | verses |        1        |
+|          'aceste  mărturii'         |          'aceste mărturii'          | replace_multiple_spaces_with_single_one | verses |        1        |
+|           'În  amintirea'           |            'În amintirea'           | replace_multiple_spaces_with_single_one | verses |        1        |
+|        'sfîntă  şi  veşnică'        |         'sfîntă şi veşnică'         | replace_multiple_spaces_with_single_one | verses |        1        |
+|   'a  marilor  noştri  înaintaşi'   |     'a marilor noştri înaintaşi'    | replace_multiple_spaces_with_single_one | verses |        1        |
+|       'Şi  pentru  îndrumarea'      |        'Şi pentru îndrumarea'       | replace_multiple_spaces_with_single_one | verses |        1        |
+|      'frumoasă  şi  biruitoare'     |       'frumoasă şi biruitoare'      | replace_multiple_spaces_with_single_one | verses |        1        |
+|     'a  unor  urmaşi  vrednici'     |       'a unor urmaşi vrednici'      | replace_multiple_spaces_with_single_one | verses |        1        |
+|      'să  fiu  şi  eu  vrednic'     |        'să fiu şi eu vrednic'       | replace_multiple_spaces_with_single_one | verses |        1        |
+|     'la  Sărbătoarea  Victoriei'    |      'la Sărbătoarea Victoriei'     | replace_multiple_spaces_with_single_one | verses |        1        |
+|         'Marelui  Biruitor'         |          'Marelui Biruitor'         | replace_multiple_spaces_with_single_one | verses |        1        |
+|       'atît  de  cei  dintîi'       |         'atît de cei dintîi'        | replace_multiple_spaces_with_single_one | verses |        1        |
+|    'cît  şi  de  cei  din  urmă.'   |      'cît şi de cei din urmă.'      | replace_multiple_spaces_with_single_one | verses |        1        |
+|          'Ultima  parcelă'          |           'Ultima parcelă'          | replace_multiple_spaces_with_single_one | verses |        1        |
 |    '.                          '    |                 '. '                | replace_multiple_spaces_with_single_one | verses |        1        |
 |         'Fr.  Traian  Dorz'         |          'Fr. Traian Dorz'          | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Sibiu la 18 apr...erită supunere,' | 'Sibiu la 18 apr...erită supunere,' | replace_multiple_spaces_with_single_one | verses |        1        |
@@ -12514,11 +12547,14 @@
 |       'preot Iosif Trifa.    '      |        'preot Iosif Trifa. '        | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Sibiu la 9 mai ...ot Iosif Trifa.' | 'Sibiu la 9 mai ...ot Iosif Trifa.' | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Poate că cele t...a noi la Beiuş.' | 'Poate că cele t...a noi la Beiuş.' | replace_multiple_spaces_with_single_one | verses |        1        |
+|              'Cap.  3'              |               'Cap. 3'              | replace_multiple_spaces_with_single_one | verses |        1        |
+|              'Cap.  4'              |               'Cap. 4'              | replace_multiple_spaces_with_single_one | verses |        1        |
 | '. Şi nu-i tot u...pierdut-o tu...' | '. Şi nu-i tot u...pierdut-o tu...' | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Doamne şi Dumne...or Tale scumpe.' | 'Doamne şi Dumne...or Tale scumpe.' | replace_multiple_spaces_with_single_one | verses |        1        |
 |      'Slăvit  să  fie  Domnul.'     |       'Slăvit să fie Domnul.'       | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'La 30 octombrie...               ' |       'La 30 octombrie 1981. '      | replace_multiple_spaces_with_single_one | verses |        1        |
 |          'Fr.  Traian Dorz'         |          'Fr. Traian Dorz'          | replace_multiple_spaces_with_single_one | verses |        1        |
+|              'Cap.  6'              |               'Cap. 6'              | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'ca Adevărul nic...rea tulbur, -  ' | 'ca Adevărul nic...prea tulbur, - ' | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Mi se încrîncen...şi ameninţător:' | 'Mi se încrîncen...şi ameninţător:' | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'La scurt timp, ... nesocotească. ' | 'La scurt timp, ... nesocotească. ' | replace_multiple_spaces_with_single_one | verses |        1        |
@@ -12566,13 +12602,37 @@
 | 'Livada Beiuşulu...    Traian Dorz' |    'Livada Beiuşului Traian Dorz'   | replace_multiple_spaces_with_single_one | verses |        1        |
 | 'Şi cu aceasta i...ău cel Ceresc. ' | 'Şi cu aceasta i...ău cel Ceresc. ' | replace_multiple_spaces_with_single_one | verses |        1        |
 |           'ISUS   HRISTOS'          |            'ISUS HRISTOS'           | replace_multiple_spaces_with_single_one | verses |        1        |
-| 'Cap.  3 - Cumpl...eiertatul păcat' | 'Cap. 3 - Cumpli...eiertatul păcat' | replace_multiple_spaces_with_single_one | title  |        1        |
-|       'Cap.  4 - Anul următor'      |       'Cap. 4 - Anul următor'       | replace_multiple_spaces_with_single_one | title  |        1        |
-|   'Cap.  6 - Alte amare adevăruri'  |   'Cap. 6 - Alte amare adevăruri'   | replace_multiple_spaces_with_single_one | title  |        1        |
-| 'Cap. 9 - Adevăr...ului  nemuritor' | 'Cap. 9 - Adevăr...tului nemuritor' | replace_multiple_spaces_with_single_one | title  |        1        |
+|        '25  Decembrie  1988'        |         '25 Decembrie 1988'         | replace_multiple_spaces_with_single_one | verses |        1        |
+|      'ISTORIA   UNEI   JERTFE'      |        'ISTORIA UNEI JERTFE'        | replace_multiple_spaces_with_single_one | title  |        1        |
+|             'V O L.  4'             |              'V O L. 4'             | replace_multiple_spaces_with_single_one | title  |        1        |
+| 'Adevărurile  mo...ului  nemuritor' | 'Adevărurile mor...tului nemuritor' | replace_multiple_spaces_with_single_one | title  |        1        |
+|             'cuprinzînd'            |             'cuprinzând'            |           normalize_diacritics          | verses |        1        |
+|               'Pîrga'               |               'Pârga'               |           normalize_diacritics          | verses |        1        |
+|               'sfîntă'              |               'sfântă'              |           normalize_diacritics          | verses |        1        |
+|              'Rugîndu'              |              'Rugându'              |           normalize_diacritics          | verses |        1        |
+|                'atît'               |                'atât'               |           normalize_diacritics          | verses |        1        |
+|               'dintîi'              |               'dintâi'              |           normalize_diacritics          | verses |        1        |
+|                'cît'                |                'cât'                |           normalize_diacritics          | verses |        1        |
+|             'Sfîntului'             |             'Sfântului'             |           normalize_diacritics          | verses |        1        |
+|             'Mîntuitor'             |             'Mântuitor'             |           normalize_diacritics          | verses |        1        |
+|                'pînă'               |                'până'               |           normalize_diacritics          | verses |        1        |
+|              'legămînt'             |              'legământ'             |           normalize_diacritics          | verses |        1        |
+|             'legămîntul'            |             'legământul'            |           normalize_diacritics          | verses |        1        |
+|              'spunînd'              |              'spunând'              |           normalize_diacritics          | verses |        1        |
+|              'Sîngele'              |              'Sângele'              |           normalize_diacritics          | verses |        1        |
+|                'cînd'               |                'când'               |           normalize_diacritics          | verses |        1        |
+|              'adîncuri'             |              'adâncuri'             |           normalize_diacritics          | verses |        1        |
+|               'fărîmă'              |               'fărâmă'              |           normalize_diacritics          | verses |        1        |
+|              'Cuvîntul'             |              'Cuvântul'             |           normalize_diacritics          | verses |        1        |
+|              'Stîlpul'              |              'Stâlpul'              |           normalize_diacritics          | verses |        1        |
+|              'Stăpînul'             |              'Stăpânul'             |           normalize_diacritics          | verses |        1        |
+|              'cîştigat'             |              'câştigat'             |           normalize_diacritics          | verses |        1        |
+|           'Binecuvîntează'          |           'Binecuvântează'          |           normalize_diacritics          | verses |        1        |
+|               'pămînt'              |               'pământ'              |           normalize_diacritics          | verses |        1        |
+|            'binecuvîntat'           |            'binecuvântat'           |           normalize_diacritics          | verses |        1        |
+|                'Mîna'               |                'Mâna'               |           normalize_diacritics          | verses |        1        |
 |               'Stăpîn'              |               'Stăpân'              |           normalize_diacritics          | verses |        1        |
 |               'cîmpul'              |               'câmpul'              |           normalize_diacritics          | verses |        1        |
-|                'pînă'               |                'până'               |           normalize_diacritics          | verses |        1        |
 |               'strîns'              |               'strâns'              |           normalize_diacritics          | verses |        1        |
 |               'atîtea'              |               'atâtea'              |           normalize_diacritics          | verses |        1        |
 |              'pîrjolit'             |              'pârjolit'             |           normalize_diacritics          | verses |        1        |
@@ -12587,17 +12647,11 @@
 |             'strîngeţi'             |             'strângeţi'             |           normalize_diacritics          | verses |        1        |
 |             'Strîngeţi'             |             'Strângeţi'             |           normalize_diacritics          | verses |        1        |
 |               'mîini'               |               'mâini'               |           normalize_diacritics          | verses |        1        |
-|               'pămînt'              |               'pământ'              |           normalize_diacritics          | verses |        1        |
 |               'urîţi'               |               'urâţi'               |           normalize_diacritics          | verses |        1        |
 |              'sfîrşit'              |              'sfârşit'              |           normalize_diacritics          | verses |        1        |
 |              'mîntuit'              |              'mântuit'              |           normalize_diacritics          | verses |        1        |
-|                'atît'               |                'atât'               |           normalize_diacritics          | verses |        1        |
-|                'cît'                |                'cât'                |           normalize_diacritics          | verses |        1        |
 |              'pămîntul'             |              'pământul'             |           normalize_diacritics          | verses |        1        |
-|                'cînd'               |                'când'               |           normalize_diacritics          | verses |        1        |
-|               'cîndva'              |               'cândva'              |           normalize_diacritics          | verses |        1        |
 |               'Sfînt'               |               'Sfânt'               |           normalize_diacritics          | verses |        1        |
-|               'sfîntă'              |               'sfântă'              |           normalize_diacritics          | verses |        1        |
 |                'cîte'               |                'câte'               |           normalize_diacritics          | verses |        1        |
 |              'rînduri'              |              'rânduri'              |           normalize_diacritics          | verses |        1        |
 |               'rîndul'              |               'rândul'              |           normalize_diacritics          | verses |        1        |
@@ -12646,7 +12700,6 @@
 |              'strîngea'             |              'strângea'             |           normalize_diacritics          | verses |        1        |
 |              'văzîndu'              |              'văzându'              |           normalize_diacritics          | verses |        1        |
 |              'pîrîşii'              |              'pârâşii'              |           normalize_diacritics          | verses |        1        |
-|               'dintîi'              |               'dintâi'              |           normalize_diacritics          | verses |        1        |
 |              'neputînd'             |              'neputând'             |           normalize_diacritics          | verses |        1        |
 |               'avînd'               |               'având'               |           normalize_diacritics          | verses |        1        |
 |               'rîvnă'               |               'râvnă'               |           normalize_diacritics          | verses |        1        |
@@ -12662,7 +12715,6 @@
 |              'cîştiga'              |              'câştiga'              |           normalize_diacritics          | verses |        1        |
 |                'mînă'               |                'mână'               |           normalize_diacritics          | verses |        1        |
 |              'lăsîndu'              |              'lăsându'              |           normalize_diacritics          | verses |        1        |
-|             'legămîntul'            |             'legământul'            |           normalize_diacritics          | verses |        1        |
 |             'continuînd'            |             'continuând'            |           normalize_diacritics          | verses |        1        |
 |                'gînd'               |                'gând'               |           normalize_diacritics          | verses |        1        |
 |               'sfîşia'              |               'sfâşia'              |           normalize_diacritics          | verses |        1        |
@@ -12675,19 +12727,18 @@
 |              'pîndeau'              |              'pândeau'              |           normalize_diacritics          | verses |        1        |
 |             'frămîntări'            |             'frământări'            |           normalize_diacritics          | verses |        1        |
 |             'rîndurile'             |             'rândurile'             |           normalize_diacritics          | verses |        1        |
-|              'Cuvîntul'             |              'Cuvântul'             |           normalize_diacritics          | verses |        1        |
 |                'cîtă'               |                'câtă'               |           normalize_diacritics          | verses |        1        |
 |              'începînd'             |              'începând'             |           normalize_diacritics          | verses |        1        |
 |            'pîrîtorilor'            |            'pârâtorilor'            |           normalize_diacritics          | verses |        1        |
 |               'cerînd'              |               'cerând'              |           normalize_diacritics          | verses |        1        |
 |            'legămîntului'           |            'legământului'           |           normalize_diacritics          | verses |        1        |
 |              'mîrşăvie'             |              'mârşăvie'             |           normalize_diacritics          | verses |        1        |
-|              'legămînt'             |              'legământ'             |           normalize_diacritics          | verses |        1        |
 |               'dărîme'              |               'dărâme'              |           normalize_diacritics          | verses |        1        |
 |              'făcîndu'              |              'făcându'              |           normalize_diacritics          | verses |        1        |
 |               'mîrşav'              |               'mârşav'              |           normalize_diacritics          | verses |        1        |
 |               'osînda'              |               'osânda'              |           normalize_diacritics          | verses |        1        |
 |             'ameninţînd'            |             'ameninţând'            |           normalize_diacritics          | verses |        1        |
+|               'cîndva'              |               'cândva'              |           normalize_diacritics          | verses |        1        |
 |             'vînzătorii'            |             'vânzătorii'            |           normalize_diacritics          | verses |        1        |
 |             'strîngeau'             |             'strângeau'             |           normalize_diacritics          | verses |        1        |
 |              'strîngă'              |              'strângă'              |           normalize_diacritics          | verses |        1        |
@@ -12848,11 +12899,9 @@
 |              'hotărîţi'             |              'hotărâţi'             |           normalize_diacritics          | verses |        1        |
 |              'gîndesc'              |              'gândesc'              |           normalize_diacritics          | verses |        1        |
 |             'rînduială'             |             'rânduială'             |           normalize_diacritics          | verses |        1        |
-|              'Sîngele'              |              'Sângele'              |           normalize_diacritics          | verses |        1        |
 |              'Făcîndu'              |              'Făcându'              |           normalize_diacritics          | verses |        1        |
 |              'vînzător'             |              'vânzător'             |           normalize_diacritics          | verses |        1        |
 |             'hotărîsem'             |             'hotărâsem'             |           normalize_diacritics          | verses |        1        |
-|             'Sfîntului'             |             'Sfântului'             |           normalize_diacritics          | verses |        1        |
 |              'hotărîm'              |              'hotărâm'              |           normalize_diacritics          | verses |        1        |
 |              'mănîncă'              |              'mănâncă'              |           normalize_diacritics          | verses |        1        |
 |               'hîrtii'              |               'hârtii'              |           normalize_diacritics          | verses |        1        |
@@ -12873,7 +12922,6 @@
 |              'gîndind'              |              'gândind'              |           normalize_diacritics          | verses |        1        |
 |              'aducînd'              |              'aducând'              |           normalize_diacritics          | verses |        1        |
 |             'tremurînd'             |             'tremurând'             |           normalize_diacritics          | verses |        1        |
-|                'Mîna'               |                'Mâna'               |           normalize_diacritics          | verses |        1        |
 |                'cînt'               |                'cânt'               |           normalize_diacritics          | verses |        1        |
 |               'blînd'               |               'blând'               |           normalize_diacritics          | verses |        1        |
 |            'Întîmplarea'            |            'Întâmplarea'            |           normalize_diacritics          | verses |        1        |
@@ -12947,13 +12995,11 @@
 |               'hîrtia'              |               'hârtia'              |           normalize_diacritics          | verses |        1        |
 |             'întîmplau'             |             'întâmplau'             |           normalize_diacritics          | verses |        1        |
 |             'completînd'            |             'completând'            |           normalize_diacritics          | verses |        1        |
-|             'cuprinzînd'            |             'cuprinzând'            |           normalize_diacritics          | verses |        1        |
 |            'Fărîmiturile'           |            'Fărâmiturile'           |           normalize_diacritics          | verses |        1        |
 |              'cîntece'              |              'cântece'              |           normalize_diacritics          | verses |        1        |
 |              'plîngeri'             |              'plângeri'             |           normalize_diacritics          | verses |        1        |
 |              'Cîntări'              |              'Cântări'              |           normalize_diacritics          | verses |        1        |
 |            'întîmplător'            |            'întâmplător'            |           normalize_diacritics          | verses |        1        |
-|              'spunînd'              |              'spunând'              |           normalize_diacritics          | verses |        1        |
 |               'oricît'              |               'oricât'              |           normalize_diacritics          | verses |        1        |
 |             'strîngînd'             |             'strângând'             |           normalize_diacritics          | verses |        1        |
 |               'cîntă'               |               'cântă'               |           normalize_diacritics          | verses |        1        |
@@ -12964,9 +13010,7 @@
 |              'sămînţă'              |              'sămânţă'              |           normalize_diacritics          | verses |        1        |
 |              'gustînd'              |              'gustând'              |           normalize_diacritics          | verses |        1        |
 |             'Cîntările'             |             'Cântările'             |           normalize_diacritics          | verses |        1        |
-|            'binecuvîntat'           |            'binecuvântat'           |           normalize_diacritics          | verses |        1        |
 |               'gîndea'              |               'gândea'              |           normalize_diacritics          | verses |        1        |
-|             'Mîntuitor'             |             'Mântuitor'             |           normalize_diacritics          | verses |        1        |
 |            'întîmplările'           |            'întâmplările'           |           normalize_diacritics          | verses |        1        |
 |              'îndemînă'             |              'îndemână'             |           normalize_diacritics          | verses |        1        |
 |             'cîntărilor'            |             'cântărilor'            |           normalize_diacritics          | verses |        1        |
@@ -12984,7 +13028,6 @@
 |              'atîrnată'             |              'atârnată'             |           normalize_diacritics          | verses |        1        |
 |              'trecînd'              |              'trecând'              |           normalize_diacritics          | verses |        1        |
 |              'aflîndu'              |              'aflându'              |           normalize_diacritics          | verses |        1        |
-|              'cîştigat'             |              'câştigat'             |           normalize_diacritics          | verses |        1        |
 |              'răspîndi'             |              'răspândi'             |           normalize_diacritics          | verses |        1        |
 |             'răspîndit'             |             'răspândit'             |           normalize_diacritics          | verses |        1        |
 |                'Cîtă'               |                'Câtă'               |           normalize_diacritics          | verses |        1        |
@@ -13052,7 +13095,6 @@
 |               'furînd'              |               'furând'              |           normalize_diacritics          | verses |        1        |
 |               'dîndu'               |               'dându'               |           normalize_diacritics          | verses |        1        |
 |               'Dîndu'               |               'Dându'               |           normalize_diacritics          | verses |        1        |
-|              'Stăpînul'             |              'Stăpânul'             |           normalize_diacritics          | verses |        1        |
 |              'osîndite'             |              'osândite'             |           normalize_diacritics          | verses |        1        |
 |             'strîngere'             |             'strângere'             |           normalize_diacritics          | verses |        1        |
 |              'sfîrşim'              |              'sfârşim'              |           normalize_diacritics          | verses |        1        |
@@ -13623,7 +13665,6 @@
 |           'binecuvântîndu'          |           'binecuvântându'          |           normalize_diacritics          | verses |        1        |
 |              'amînaţi'              |              'amânaţi'              |           normalize_diacritics          | verses |        1        |
 |               'Pîinea'              |               'Pâinea'              |           normalize_diacritics          | verses |        1        |
-|           'Binecuvîntează'          |           'Binecuvântează'          |           normalize_diacritics          | verses |        1        |
 |              'oarecînd'             |              'oarecând'             |           normalize_diacritics          | verses |        1        |
 |             'mîntuieşte'            |             'mântuieşte'            |           normalize_diacritics          | verses |        1        |
 |            'pîinişoarele'           |            'pâinişoarele'           |           normalize_diacritics          | verses |        1        |

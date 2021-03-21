@@ -9,8 +9,8 @@ import time
 from datetime import datetime
 from prettytable import PrettyTable
 
-BIBLE_API_LOCAL = "http://localhost:9001"
-BIBLE_API_EXTERNAL = "http://comori-od:8001"
+BIBLE_API_LOCAL = "http://localhost:9002"
+BIBLE_API_EXTERNAL = "http://bibleapi.comori-od.ro"
 
 BIBLE = None
 
@@ -281,7 +281,9 @@ def post_process_articles(articles, args):
         article['title'] = post_process(0, article['title'], 'title', True, True, args)
         article['author'] = post_process(0, article['author'], 'author', True, True, args)
         article['book'] = post_process(0, article['book'], 'book', True, True, args)
-        article['volume'] = post_process(0, article['volume'], 'volume', True, True, args)
+        article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True, args)
+        if 'volume' in article:
+            article['volume'] = post_process(0, article['volume'], 'volume', True, True, args)
         new_verses = []
         for index, verse in enumerate(article['verses']):
             new_verse = []
@@ -341,17 +343,21 @@ def resolve_bible_refs(articles):
                             except requests.HTTPError as e:
                                 if e.response.status_code == 404:
                                     logging.error("{} not found in the Bible!".format(bibleRef))
-                                    for verse in lastVerses + [verse]:
-                                        text += "{}\n".format(' '.join([block['text'] for block in verse]))
+                                    t = ""
+                                    for v in lastVerses + [verse]:
+                                        if v:
+                                            t += "{}\n".format(' '.join([block['text'] for block in v]))
+                                        else:
+                                            t += "\n"
 
                                     template = "{volume}\n{title}\n{book} - {author}\n'{bibleRef}' nu există în Biblie:\n'{text}'"
                                     errors.append(
                                         template.format(bibleRef=bibleRef,
-                                                        volume=article['volume'],
+                                                        volume=article['volume'] if 'volume' in article else '-',
                                                         title=article['title'],
                                                         book=article['book'],
                                                         author=article['author'],
-                                                        text=text))
+                                                        text=t))
                                 else:
                                     pass
 
@@ -373,7 +379,7 @@ def resolve_bible_refs(articles):
                     if verse:
                         lastVerses.append(verse)
                         if len(lastVerses) > lastVersesMaxSize:
-                            lastVerses = lastVerses[lastVersesMaxSize - len(lastVerses):]
+                            lastVerses = lastVerses[-lastVersesMaxSize:]
 
             new_verses.append(new_verse)
 
@@ -422,13 +428,17 @@ def main():
                 print(error, file=errors_file)
                 print("", file=errors_file)
 
-    text_filename = os.path.splitext(args.output)[0] + ".txt"
-    with open(text_filename, 'w', encoding='utf-8') as text_file:
+    text_filepath = os.path.splitext(args.output)[0] + ".txt"
+    with open(text_filepath, 'w', encoding='utf-8') as text_file:
         for article in articles:
             print(article['title'], file=text_file)
+            if 'subtitle' in article:
+                print("Subtitle: {}".format(article['subtitle']), file=text_file)
             print("Author: {}".format(article['author']), file=text_file)
             print("Book: {}".format(article['book']), file=text_file)
-            print("Volume: {}".format(article['volume']), file=text_file)
+            print("Full book: {}".format(article['full_book']), file=text_file)
+            if 'volume' in article:
+                print("Volume: {}".format(article['volume']), file=text_file)
             print("Type: {}".format(article['type']), file=text_file)
             print("", file=text_file)
             for verse in article['verses']:

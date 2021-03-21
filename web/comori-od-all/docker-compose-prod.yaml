@@ -1,4 +1,4 @@
-version: '3'
+version: '2.3'
 services:
   comori-od-static-vue:
     build: 
@@ -12,6 +12,25 @@ services:
       - VIRTUAL_HOST=comori-od.ro,www.comori-od.ro
       - VIRTUAL_PORT=80
       - LETSENCRYPT_HOST=comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+    networks:
+      - proxy
+    depends_on:
+      - comori-od-restapi
+    restart: unless-stopped
+
+  comori-od-static-nuxt:
+    build: 
+      context: ../comori-od-static-nuxt
+      args:
+        - buildtype=build_prod
+    container_name: comori-od-static-nuxt
+    expose:
+      - "3000"
+    environment:
+      - VIRTUAL_HOST=beta.comori-od.ro
+      - VIRTUAL_PORT=3000
+      - LETSENCRYPT_HOST=beta.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     networks:
       - proxy
@@ -46,9 +65,9 @@ services:
     build: ../comori-od-kibana
     container_name: comori-od-kibana
     environment:
-      - VIRTUAL_HOST=kibana.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - VIRTUAL_HOST=kibana.comori-od.ro
       - VIRTUAL_PORT=5601
-      - LETSENCRYPT_HOST=kibana.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_HOST=kibana.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - KIBANA_USER=${ELASTIC_USER}
       - KIBANA_PASSWORD=${ELASTIC_PASSWORD}
@@ -66,12 +85,16 @@ services:
   comori-od-filebeat:
     build: ../comori-od-filebeat
     container_name: comori-od-filebeat
+    environment: 
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     volumes:
       - /var/log:/var/log:ro
     networks: 
       - proxy
     depends_on: 
       - comori-od-logstash
+      - comori-od-kibana
     restart: unless-stopped
   
   comori-od-logstash:
@@ -80,6 +103,8 @@ services:
     environment: 
       - LOGSTASH_USER=${ELASTIC_USER}
       - LOGSTASH_PASSWORD=${ELASTIC_PASSWORD}
+      - GEOIP_ACCOUNTID=${GEOIP_ACCOUNTID}
+      - GEOIP_LICENSEKEY=${GEOIP_LICENSEKEY}
     expose:
       - 5044
     networks:
@@ -88,19 +113,107 @@ services:
       - comori-od-es
     restart: unless-stopped
 
+  comori-od-metricbeat:
+    build: ../comori-od-metricbeat
+    user: root
+    container_name: comori-od-metricbeat
+    environment: 
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - ENABLE_DASHBOARDS=False
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro    
+      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+      - /proc:/hostfs/proc:ro
+      - /:/hostfs:ro
+    networks: 
+      - proxy
+    depends_on: 
+      - comori-od-es
+    restart: unless-stopped
+
+  comori-od-mongo:
+    build: ../comori-od-mongo
+    container_name: comori-od-mongo
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+    expose:
+      - 27017
+    networks:
+      - proxy
+    command: ['--auth']
+    restart: unless-stopped
+  
+  comori-od-mongoexpress:
+    build: ../comori-od-mongoexpress
+    container_name: comori-od-mongoexpress
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=comori-od-mongo
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_ROOT_USERNAME}
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
+      - ME_CONFIG_BASICAUTH_USERNAME=${MONGO_ADMIN_USERNAME}
+      - ME_CONFIG_BASICAUTH_PASSWORD=${MONGO_ADMIN_PASSWORD}
+      - VIRTUAL_HOST=mongo.comori-od.ro
+      - VIRTUAL_PORT=8081
+      - LETSENCRYPT_HOST=mongo.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+    expose:
+      - 8081
+    networks: 
+      - proxy
+    depends_on: 
+      - comori-od-mongo
+    restart: unless-stopped
+
+  comori-od-redis:
+    build: ../comori-od-redis
+    environment: 
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    container_name: comori-od-redis
+    expose:
+      - 6379
+    networks:
+      - proxy
+    restart: unless-stopped
+  
+  comori-od-jupyter:
+    build: ../comori-od-jupyter
+    container_name: comori-od-jupyter
+    environment:
+      - VIRTUAL_HOST=jupyter.comori-od.ro
+      - VIRTUAL_PORT=8088
+      - LETSENCRYPT_HOST=jupyter.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+      - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    expose:
+      - 8088
+    networks:
+      - proxy
+    restart: unless-stopped
+
   comori-od-restapi:
     build: ../comori-od-restapi
     container_name: comori-od-restapi
     expose: 
       - "9000"
     environment:
-      - VIRTUAL_HOST=api.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - VIRTUAL_HOST=api.comori-od.ro
       - VIRTUAL_PORT=9000
-      - LETSENCRYPT_HOST=api.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_HOST=api.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - API_TOTP_KEY=${API_TOTP_KEY}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - APPLE_APP_PKEY=${APPLE_APP_PKEY}
     depends_on:
       - comori-od-es
     networks:
@@ -111,11 +224,11 @@ services:
     build: ../comori-od-bibleapi
     container_name: comori-od-bibleapi
     expose:
-      - "9001"
+      - "9002"
     environment:
-      - VIRTUAL_HOST=bible-api.comori-od.ro,comori-od.ro,www.comori-od.ro
-      - VIRTUAL_PORT=9001
-      - LETSENCRYPT_HOST=bible-api.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - VIRTUAL_HOST=bible-api.comori-od.ro
+      - VIRTUAL_PORT=9002
+      - LETSENCRYPT_HOST=bible-api.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.comori-od-restapi
     networks:
       - proxy
@@ -131,6 +244,8 @@ volumes:
   kib_config:
     driver: local
   kib_logs:
+    driver: local
+  mongo_data:
     driver: local
 
 networks:

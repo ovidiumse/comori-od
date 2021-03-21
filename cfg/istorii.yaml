@@ -1,47 +1,7 @@
-preprocessing:
-  - to:
-      style:
-        text-align: center
-      nested-style:
-        font-size: 333%
-        color: "#00ffff"
-    apply:
-      nested-style:
-        font-size: 291%
-  - to:
-      style:
-        text-align: center
-      nested-style:
-        font-size: 291%
-        color: "#ff0000"
-    apply:
-      nested-style:
-        font-size: 208%
-  - to:
-      style:
-        text-align: justify
-        margin-left: '*'
-      nested-style: 
-        font-size: 166%
-        font-weight: bold
-        color: "#ff00ff"
-    apply:
-      nested-style:
-        font-size: 125%
-
-pre-article-title:
-  style:
-    text-align: center
-  nested-style:
-    font-size: 291%
-    color: "#00ffff"
-
 pre-paragraph-first-letter:
   class: WPDropcap
 
-pre-article-subtitle:
-  style:
-    text-align: center
+pre-article-title:
   nested-style:
     font-size: 208%
     color: "#ff0000"
@@ -49,11 +9,7 @@ pre-article-subtitle:
 article-title:
   nested-style:
     font-size: 166%
-    color: "#00ffff"
-  style:
-    text-align: center
-  other:
-    capitalized: False
+    color: "#ff0000"
 
 article-body:
   nested-style:
