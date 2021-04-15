@@ -6,7 +6,7 @@ RUN apt-get update && \
 	apt-get -y install apt-utils software-properties-common
 RUN add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
-	apt-get -y install pypy3 virtualenv wget less curl build-essential pypy3-dev libssl-dev
+	apt-get -y install pypy3 virtualenv wget less curl build-essential pypy3-dev libssl-dev libev-dev
 
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN pypy3 get-pip.py
@@ -20,4 +20,4 @@ COPY comori-od-restapi.py .
 COPY prod_cfg.yaml .
 COPY logging.conf .
 
-CMD ["gunicorn", "-b", "0.0.0.0:9000", "comori-od-restapi:load_app('prod_cfg.yaml')"]
+CMD gunicorn -b 0.0.0.0:9000 --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('prod_cfg.yaml')"
