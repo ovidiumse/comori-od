@@ -25,6 +25,16 @@ def buildTermFilter(field, values):
         if value:
             fieldFilters.append({'term': {field: value}})
 
+    # need to simulate a boolean or over the filters
+    # of the same field
+    if fieldFilters:
+        fieldFilters = {
+            'bool': {
+                'should': fieldFilters,
+                'minimum_should_match': 1
+            }
+        }
+
     return fieldFilters
 
 def parseFilters(req):
@@ -44,9 +54,13 @@ def parseFilters(req):
 
     for fieldFilter in fieldFilters:
         if fieldFilter:
-            filters += fieldFilter
+            filters.append(fieldFilter)
 
-    return filters
+    return {
+        'bool': {
+            'must': filters
+        }
+    }
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -130,7 +144,7 @@ class Articles(object):
     def buildShouldMatch(self, q):
         if not q:
             return []
-            
+
         should_match = []
 
         fields = ["title", "title.folded", "verses.text", "verses.text.folded"]
@@ -159,7 +173,7 @@ class Articles(object):
                     }
                 }
             })
-        
+
         return should_match
 
     def buildShouldMatchHighlight(self, q):
@@ -197,6 +211,9 @@ class Articles(object):
         offset = req.params['offset'] if 'offset' in req.params else 0
         q = urllib.parse.unquote(req.params['q'])
 
+        include_aggs = 'include_aggs' in req.params
+        include_unmatched = 'include_unmatched' in req.params
+
         filters = parseFilters(req)
         LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
 
@@ -231,7 +248,28 @@ class Articles(object):
             'from': offset
         }
 
-        return ES.search(index=idx_name, body=query_body)
+        if include_aggs:
+            for fieldName in ['author', 'type', 'volume', 'book']:
+                if 'aggs' not in query_body:
+                    query_body['aggs'] = {}
+
+                query_body['aggs'][f'{fieldName}s'] =  {
+                    'terms': {
+                        'field': fieldName,
+                        'size': 1000000,
+                        'min_doc_count': 0 if include_unmatched else 1,
+                        'order': {'min_insert_ts': 'asc'}
+                    },
+                    'aggs': {
+                        'min_insert_ts': {
+                            'min': {
+                                'field': '_insert_ts'
+                            }
+                        }
+                    }
+                }
+
+        return ES.search(index=idx_name, body=query_body, timeout="1m")
 
     def getById(self, idx_name, req):
         LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
@@ -255,7 +293,7 @@ class Articles(object):
                              'from': offset
                          })
 
-    def on_get(self, req, resp, idx_name, doc_type):
+    def on_get(self, req, resp, idx_name):
         try:
             if 'q' in req.params:
                 results = self.query(idx_name, req)
@@ -275,7 +313,7 @@ class Articles(object):
             resp.body = json.dumps({'exception': str(ex)})
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
-    def on_post(self, req, resp, idx_name, doc_type):
+    def on_post(self, req, resp, idx_name):
         try:
             articles = json.loads(req.stream.read())
             indexed = 0
@@ -309,7 +347,7 @@ class ContentHandler(object):
             filters = parseFilters(req)
             LOGGER_.info(f"Quering contents from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            limit = req.params['limit'] if 'limit' in req.params else 10
+            limit = req.params['limit'] if 'limit' in req.params else 10000
             offset = req.params['offset'] if 'offset' in req.params else 0
 
             query_body = {
@@ -332,8 +370,9 @@ class ContentHandler(object):
             LOGGER_.error(f"Querying contents from {idx_name} failed! Error: {ex}", exc_info=True)
 
 class FieldAggregator(Articles):
-    def __init__(self, fieldName):
+    def __init__(self, fieldName, aggs):
         self.fieldName = fieldName
+        self.aggs = aggs
 
     def getValues(self, idx_name, req):
         LOGGER_.info(f"Getting {self.fieldName}s from {idx_name} with req {json.dumps(req.params, indent=2)}")
@@ -365,12 +404,11 @@ class FieldAggregator(Articles):
             }
         }
 
-        response = ES.search(index=idx_name, body=query_body)
-        return [{
-            'name': bucket['key'],
-            'doc_count': bucket['doc_count'],
-            'insert_ts': bucket['min_insert_ts']
-        } for bucket in response['aggregations'][f'{self.fieldName}s']['buckets']]
+        for agg in self.aggs:
+            aggs_body = query_body['aggs'][f'{self.fieldName}s']['aggs']
+            aggs_body[f'{agg}s'] = {'terms': {'field': agg, 'size': 100}}
+
+        return ES.search(index=idx_name, body=query_body, timeout="1m")
 
     def on_get(self, req, resp, idx_name):
         try:
@@ -415,7 +453,7 @@ class Titles(object):
             filters = parseFilters(req)
             LOGGER_.info(f"Quering titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            limit = req.params['limit'] if 'limit' in req.params else 10
+            limit = req.params['limit'] if 'limit' in req.params else 10000
             offset = req.params['offset'] if 'offset' in req.params else 0
 
             query_body = {
@@ -525,7 +563,7 @@ class Suggester(object):
 
 
 class Similar(object):
-    def on_get(self, req, resp, idx_name, doc_type):
+    def on_get(self, req, resp, idx_name):
         try:
             LOGGER_.info(f"Getting similar documents from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
@@ -718,10 +756,10 @@ def load_app(cfg_filepath):
     index = Index()
     articles = Articles()
     content = ContentHandler()
-    authors = FieldAggregator('author')
-    types = FieldAggregator('type')
-    volumes = FieldAggregator('volume')
-    books = FieldAggregator('book')
+    authors = FieldAggregator('author', [])
+    types = FieldAggregator('type', [])
+    volumes = FieldAggregator('volume', ['author'])
+    books = FieldAggregator('book', ['author', 'volume'])
     titles = Titles()
     titlesCompletion = TitlesCompletion()
     suggester = Suggester()
@@ -729,7 +767,7 @@ def load_app(cfg_filepath):
     favorites = Favorites()
 
     app.add_route('/{idx_name}', index)
-    app.add_route('/{idx_name}/{doc_type}', articles)
+    app.add_route('/{idx_name}/articles', articles)
     app.add_route('/{idx_name}/authors', authors)
     app.add_route('/{idx_name}/authors/{value}', authors)
     app.add_route('/{idx_name}/types', types)
@@ -742,7 +780,7 @@ def load_app(cfg_filepath):
     app.add_route('/{idx_name}/titles', titles)
     app.add_route('/{idx_name}/titles/completion', titlesCompletion)
     app.add_route('/{idx_name}/suggest/', suggester)
-    app.add_route('/{idx_name}/{doc_type}/similar', similar)
+    app.add_route('/{idx_name}/articles/similar', similar)
     app.add_route('/{idx_name}/favorites', favorites)
     app.add_route('/{idx_name}/favorites/{article_id}', favorites)
 
