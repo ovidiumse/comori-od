@@ -179,7 +179,11 @@ services:
     build: ../comori-od-jupyter
     container_name: comori-od-jupyter
     environment:
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
+    volumes:
+      - jupyter_data:/home/jupyter
     ports:
       - 8088:8088
     networks:
@@ -189,10 +193,10 @@ services:
   comori-od-restapi:
     build: ../comori-od-restapi
     container_name: comori-od-restapi
-    tty: true
     ports: 
       - 9000:9000
     environment:
+      - GEVENT_RESOLVER=ares
       - VIRTUAL_HOST=localhost
       - VIRTUAL_PORT=9000
       - HTTPS_METHOD=nohttps
@@ -235,6 +239,8 @@ volumes:
   kib_logs:
     driver: local
   mongo_data:
+    driver: local
+  jupyter_data:
     driver: local
 
 networks:

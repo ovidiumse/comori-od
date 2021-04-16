@@ -192,6 +192,8 @@ services:
       - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    volumes:
+      - jupyter_data:/home/jupyter
     expose:
       - 8088
     networks:
@@ -204,6 +206,7 @@ services:
     expose: 
       - "9000"
     environment:
+      - GEVENT_RESOLVER=ares
       - VIRTUAL_HOST=api.comori-od.ro
       - VIRTUAL_PORT=9000
       - LETSENCRYPT_HOST=api.comori-od.ro
@@ -246,6 +249,8 @@ volumes:
   kib_logs:
     driver: local
   mongo_data:
+    driver: local
+  jupyter_data:
     driver: local
 
 networks:
