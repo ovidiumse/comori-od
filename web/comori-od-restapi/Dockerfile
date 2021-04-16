@@ -17,7 +17,7 @@ RUN . ve/bin/activate
 RUN pypy3 -m pip install -r requirements.txt
 
 COPY comori-od-restapi.py .
-COPY prod_cfg.yaml .
+COPY cfg.yaml .
 COPY logging.conf .
 
-CMD gunicorn -b 0.0.0.0:9000 --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('prod_cfg.yaml')"
+CMD gunicorn -b 0.0.0.0:9000 --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('cfg.yaml')"

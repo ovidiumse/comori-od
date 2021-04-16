@@ -9,7 +9,6 @@ import logging.config
 import urllib
 import yaml
 import jwt
-import pymongo
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
