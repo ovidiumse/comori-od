@@ -7,7 +7,7 @@
 |                'atît'               |                'atât'               |              replace_words              | verses |       403       |
 |                'cît'                |                'cât'                |              replace_words              | verses |       402       |
 |               'decît'               |               'decât'               |              replace_words              | verses |       351       |
-|                'Cînd'               |                'Când'               |              replace_words              | verses |       222       |
+|                'Cînd'               |                'Când'               |              replace_words              | verses |       223       |
 |                'cîte'               |                'câte'               |              replace_words              | verses |       193       |
 |               'lîngă'               |               'lângă'               |              replace_words              | verses |       184       |
 |               'Sfînt'               |               'Sfânt'               |              replace_words              | verses |       118       |
@@ -39,10 +39,10 @@
 |               'cîndva'              |               'cândva'              |              replace_words              | verses |        49       |
 |                'Sînt'               |                'Sunt'               |              replace_words              | verses |        48       |
 |               'gîndul'              |               'gândul'              |              replace_words              | verses |        46       |
+|                 ' '                 |                  ''                 |               strip_spaces              | verses |        45       |
 |                'mînă'               |                'mână'               |              replace_words              | verses |        45       |
-|                 ' '                 |                  ''                 |               strip_spaces              | verses |        44       |
 |             'sfîrşitul'             |             'sfârşitul'             |              replace_words              | verses |        43       |
-|                 ' '                 |                 ' '                 |               replace_nbsp              | verses |        41       |
+|                 ' '                 |                 ' '                 |               replace_nbsp              | verses |        42       |
 |              'rînduri'              |              'rânduri'              |              replace_words              | verses |        40       |
 |               'rămîne'              |               'rămâne'              |              replace_words              | verses |        39       |
 |                'Cît'                |                'Cât'                |              replace_words              | verses |        38       |
@@ -416,7 +416,6 @@
 |              'purtînd'              |              'purtând'              |              replace_words              | verses |        3        |
 |              'tîlhari'              |              'tâlhari'              |              replace_words              | verses |        3        |
 |              'bîrfesc'              |              'bârfesc'              |              replace_words              | verses |        3        |
-|                'Cînd'               |                'Când'               |              replace_words              | title  |        3        |
 |         '      - Pentru ce?'        |         '      - Pentru ce?'        |               replace_nbsp              | verses |        3        |
 |        '      - Voi încerca!'       |           '- Voi încerca!'          |               strip_spaces              | verses |        2        |
 |    '      - Liber! Mergi acase!'    |       '- Liber! Mergi acase!'       |               strip_spaces              | verses |        2        |
@@ -574,6 +573,7 @@
 |             'căpătîiul'             |             'căpătâiul'             |              replace_words              | verses |        2        |
 |              'ntîrzie'              |              'ntârzie'              |              replace_words              | verses |        2        |
 |               'cuvînt'              |               'cuvânt'              |              replace_words              | title  |        2        |
+|                'Cînd'               |                'Când'               |              replace_words              | title  |        2        |
 |               'Oastea               |          'Oastea Domnului'          |       replace_newlines_with_spaces      | verses |        2        |
 |              Domnului'              |                                     |                                         |        |                 |
 |        '      - Voi încerca!'       |        '      - Voi încerca!'       |               replace_nbsp              | verses |        2        |
@@ -1309,7 +1309,7 @@
 | '      Un astfel...şi da roadele. ' | 'Un astfel de mi...şi da roadele. ' |               strip_spaces              | verses |        1        |
 | '      Sibiul, c...mai nouă sectă.' | 'Sibiul, care al...mai nouă sectă.' |               strip_spaces              | verses |        1        |
 | '      Omul nu p... Zidu şi alţii.' | 'Omul nu poate t... Zidu şi alţii.' |               strip_spaces              | verses |        1        |
-| '      A încerca...s (Gal. 1, 89).' | 'A încercat într...s (Gal. 1, 89).' |               strip_spaces              | verses |        1        |
+| '      A încerca... (Gal. 1, 8-9).' | 'A încercat într... (Gal. 1, 8-9).' |               strip_spaces              | verses |        1        |
 | '      Prin “căl...pede peste tot.' | 'Prin “călătorii...pede peste tot.' |               strip_spaces              | verses |        1        |
 | '      Atunci că...tele şi altele.' | 'Atunci căzură c...tele şi altele.' |               strip_spaces              | verses |        1        |
 | '      Pretutind...oară de la noi.' | 'Pretutindeni du...oară de la noi.' |               strip_spaces              | verses |        1        |
@@ -8401,7 +8401,7 @@
 | 'Cu funiile inte...at robiţi încă.' | 'Cu funiile inte...at robiţi încă.' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Sibiul, c...mai nouă sectă.' | '      Sibiul, c...mai nouă sectă.' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Omul nu p... Zidu şi alţii.' | '      Omul nu p... Zidu şi alţii.' |       replace_newlines_with_spaces      | verses |        1        |
-| '      A încerca...s (Gal. 1, 89).' | '      A încerca...s (Gal. 1, 89).' |       replace_newlines_with_spaces      | verses |        1        |
+| '      A încerca... (Gal. 1, 8-9).' | '      A încerca... (Gal. 1, 8-9).' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Prin “căl...pede peste tot.' | '      Prin “căl...pede peste tot.' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Atunci că...tele şi altele.' | '      Atunci că...tele şi altele.' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Pretutind...oară de la noi.' | '      Pretutind...oară de la noi.' |       replace_newlines_with_spaces      | verses |        1        |
@@ -14338,7 +14338,7 @@
 | '      Un astfel...şi da roadele. ' | '      Un astfel...şi da roadele. ' |               replace_nbsp              | verses |        1        |
 | '      Sibiul, c...mai nouă sectă.' | '      Sibiul, c...mai nouă sectă.' |               replace_nbsp              | verses |        1        |
 | '      Omul nu p... Zidu şi alţii.' | '      Omul nu p... Zidu şi alţii.' |               replace_nbsp              | verses |        1        |
-| '      A încerca...s (Gal. 1, 89).' | '      A încerca...s (Gal. 1, 89).' |               replace_nbsp              | verses |        1        |
+| '      A încerca... (Gal. 1, 8-9).' | '      A încerca... (Gal. 1, 8-9).' |               replace_nbsp              | verses |        1        |
 | '      Prin “căl...pede peste tot.' | '      Prin “căl...pede peste tot.' |               replace_nbsp              | verses |        1        |
 | '      Atunci că...tele şi altele.' | '      Atunci că...tele şi altele.' |               replace_nbsp              | verses |        1        |
 | '      Pretutind...oară de la noi.' | '      Pretutind...oară de la noi.' |               replace_nbsp              | verses |        1        |

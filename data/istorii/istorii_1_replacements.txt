@@ -8,8 +8,8 @@
 |               'Sfînt'               |               'Sfânt'               |              replace_words              | verses |       179       |
 |                'cît'                |                'cât'                |              replace_words              | verses |       167       |
 |               'decît'               |               'decât'               |              replace_words              | verses |       164       |
-|                 '. '                |                 '.'                 |               strip_spaces              | verses |       161       |
-|                 ' '                 |                  ''                 |               strip_spaces              | verses |       122       |
+|                 '. '                |                 '.'                 |               strip_spaces              | verses |       160       |
+|                 ' '                 |                  ''                 |               strip_spaces              | verses |       124       |
 |               'lîngă'               |               'lângă'               |              replace_words              | verses |       114       |
 |              'Cuvîntul'             |              'Cuvântul'             |              replace_words              | verses |       102       |
 |                'cîte'               |                'câte'               |              replace_words              | verses |        90       |
@@ -25,8 +25,8 @@
 |              '      “'              |                 '“'                 |               strip_spaces              | verses |        57       |
 |              '      “'              |              '      “'              |               replace_nbsp              | verses |        57       |
 |               'dintîi'              |               'dintâi'              |              replace_words              | verses |        56       |
+|                 ' '                 |                 ' '                 |               replace_nbsp              | verses |        54       |
 |               'atîta'               |               'atâta'               |              replace_words              | verses |        53       |
-|                 ' '                 |                 ' '                 |               replace_nbsp              | verses |        51       |
 |              'sfîrşit'              |              'sfârşit'              |              replace_words              | verses |        47       |
 |             'Mîntuitor'             |             'Mântuitor'             |              replace_words              | verses |        46       |
 |               'cîteva'              |               'câteva'              |              replace_words              | verses |        45       |
@@ -1002,7 +1002,7 @@
 | '      Dacă un o...ia lui Dumnezeu' | 'Dacă un om nu s...ia lui Dumnezeu' |               strip_spaces              | verses |        1        |
 | '      Sf. Iacov...ui ne-a născut ' | 'Sf. Iacov în ca...ui ne-a născut ' |               strip_spaces              | verses |        1        |
 | '      Sf. Petru...1 Petru 1, 23: ' |    'Sf. Petru în 1 Petru 1, 23: '   |               strip_spaces              | verses |        1        |
-| '      Sf. Ioan ...ăcătui fiindcă ' | 'Sf. Ioan în Ep....ăcătui fiindcă ' |               strip_spaces              | verses |        1        |
+| '      Sf. Ioan ...ăcătui fiindcă ' | 'Sf. Ioan în 1 I...ăcătui fiindcă ' |               strip_spaces              | verses |        1        |
 | '      Deci este...i se întoarce, ' | 'Deci este vorba...i se întoarce, ' |               strip_spaces              | verses |        1        |
 | '      Această L...ntuitorul: ... ' | 'Această Lucrare...ntuitorul: ... ' |               strip_spaces              | verses |        1        |
 | '      Această s... facă prin el. ' | 'Această schimba... facă prin el. ' |               strip_spaces              | verses |        1        |
@@ -1876,7 +1876,7 @@
 | '      Sela! Opr...lor îngereşti. ' | 'Sela! Opriţi-vă...lor îngereşti. ' |               strip_spaces              | verses |        1        |
 | '      Începeţi ...ptele voastre. ' | 'Începeţi citire...ptele voastre. ' |               strip_spaces              | verses |        1        |
 | '      Ferice de... casa voastră. ' | 'Ferice de tine ... casa voastră. ' |               strip_spaces              | verses |        1        |
-| '      Fie ca pi...alm 118, 105). ' | 'Fie ca pilda vo...alm 118, 105). ' |               strip_spaces              | verses |        1        |
+| '      Fie ca pi...alm 119, 105). ' | 'Fie ca pilda vo...alm 119, 105). ' |               strip_spaces              | verses |        1        |
 | '      ...Eu, sp... scap de rele. ' | '...Eu, spunea s... scap de rele. ' |               strip_spaces              | verses |        1        |
 | '      În cartea...erile noastre. ' | 'În cartea misiu...erile noastre. ' |               strip_spaces              | verses |        1        |
 | '      Unele din...e credincioşi. ' | 'Unele din acest...e credincioşi. ' |               strip_spaces              | verses |        1        |
@@ -2103,7 +2103,7 @@
 | '      “Prea cuc...nici ai crucii ' | '“Prea cucernice...nici ai crucii ' |               strip_spaces              | verses |        1        |
 | '      Urîtă ves...dureros lucru. ' |    'Urîtă veste, dureros lucru. '   |               strip_spaces              | verses |        1        |
 |           '      Frumoase'          |              'Frumoase'             |               strip_spaces              | verses |        1        |
-| ' cuvinte la o s...Jud. cap. 24). ' | ' cuvinte la o s...(Jud. cap. 24).' |               strip_spaces              | verses |        1        |
+| ' cuvinte la o s...(Jud. 11, 10). ' | ' cuvinte la o s... (Jud. 11, 10).' |               strip_spaces              | verses |        1        |
 | '      Oastea Do...s (Psalm 133). ' | 'Oastea Domnului...s (Psalm 133). ' |               strip_spaces              | verses |        1        |
 | '      Dar păsto...erului de Sus. ' | 'Dar păstorii......erului de Sus. ' |               strip_spaces              | verses |        1        |
 | '      Iubiţilor... fărădelegea”. ' | 'Iubiţilor fraţi... fărădelegea”. ' |               strip_spaces              | verses |        1        |
@@ -5703,7 +5703,7 @@
 | '      Sela! Opr...lor îngereşti. ' | '      Sela! Opr...lor îngereşti. ' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Începeţi ...ptele voastre. ' | '      Începeţi ...ptele voastre. ' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Ferice de... casa voastră. ' | '      Ferice de... casa voastră. ' |       replace_newlines_with_spaces      | verses |        1        |
-| '      Fie ca pi...alm 118, 105). ' | '      Fie ca pi...alm 118, 105). ' |       replace_newlines_with_spaces      | verses |        1        |
+| '      Fie ca pi...alm 119, 105). ' | '      Fie ca pi...alm 119, 105). ' |       replace_newlines_with_spaces      | verses |        1        |
 | '      ...Eu, sp... scap de rele. ' | '      ...Eu, sp... scap de rele. ' |       replace_newlines_with_spaces      | verses |        1        |
 | '      În cartea...erile noastre. ' | '      În cartea...erile noastre. ' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Unele din...e credincioşi. ' | '      Unele din...e credincioşi. ' |       replace_newlines_with_spaces      | verses |        1        |
@@ -5965,7 +5965,7 @@
 | ', cu crucea pe ...Mîntuitorului: ' | ', cu crucea pe ...Mîntuitorului: ' |       replace_newlines_with_spaces      | verses |        1        |
 |     'fericiţi veţi f...atjocori     | 'fericiţi veţi f...atjocori pe voi' |       replace_newlines_with_spaces      | verses |        1        |
 |               pe voi'               |                                     |                                         |        |                 |
-| ' cuvinte la o s...Jud. cap. 24). ' | ' cuvinte la o s...Jud. cap. 24). ' |       replace_newlines_with_spaces      | verses |        1        |
+| ' cuvinte la o s...(Jud. 11, 10). ' | ' cuvinte la o s...(Jud. 11, 10). ' |       replace_newlines_with_spaces      | verses |        1        |
 | '      Oastea Do...s (Psalm 133). ' | '      Oastea Do...s (Psalm 133). ' |       replace_newlines_with_spaces      | verses |        1        |
 |      '      Dar păsto...erului      | '      Dar păsto...erului de Sus. ' |       replace_newlines_with_spaces      | verses |        1        |
 |              de Sus. '              |                                     |                                         |        |                 |
@@ -7015,7 +7015,7 @@
 |                  '                  |                                     |                                         |        |                 |
 |           'Toţi fraţii vă           |   'Toţi fraţii vă trimit sănătate'  |       replace_newlines_with_spaces      | verses |        1        |
 |           trimit sănătate'          |                                     |                                         |        |                 |
-| ' (1 Cor. 16, 75...grăirea lor de ' | ' (1 Cor. 16, 75...grăirea lor de ' |       replace_newlines_with_spaces      | verses |        1        |
+| ' (1 Cor. 16, 11...grăirea lor de ' | ' (1 Cor. 16, 11...grăirea lor de ' |       replace_newlines_with_spaces      | verses |        1        |
 |                  '                  |                ' şi '               |       replace_newlines_with_spaces      | verses |        1        |
 |                 şi '                |                                     |                                         |        |                 |
 | ' era firească. ...nd pe un altul ' | ' era firească. ...nd pe un altul ' |       replace_newlines_with_spaces      | verses |        1        |
@@ -9219,7 +9219,7 @@
 | '      Sela! Opr...lor îngereşti. ' | '      Sela! Opr...lor îngereşti. ' |               replace_nbsp              | verses |        1        |
 | '      Începeţi ...ptele voastre. ' | '      Începeţi ...ptele voastre. ' |               replace_nbsp              | verses |        1        |
 | '      Ferice de... casa voastră. ' | '      Ferice de... casa voastră. ' |               replace_nbsp              | verses |        1        |
-| '      Fie ca pi...alm 118, 105). ' | '      Fie ca pi...alm 118, 105). ' |               replace_nbsp              | verses |        1        |
+| '      Fie ca pi...alm 119, 105). ' | '      Fie ca pi...alm 119, 105). ' |               replace_nbsp              | verses |        1        |
 | '      ...Eu, sp... scap de rele. ' | '      ...Eu, sp... scap de rele. ' |               replace_nbsp              | verses |        1        |
 | '      În cartea...erile noastre. ' | '      În cartea...erile noastre. ' |               replace_nbsp              | verses |        1        |
 | '      Unele din...e credincioşi. ' | '      Unele din...e credincioşi. ' |               replace_nbsp              | verses |        1        |
