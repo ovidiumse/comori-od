@@ -6,6 +6,8 @@ import logging
 import requests
 import simplejson as json
 import time
+import Levenshtein
+from unidecode import unidecode
 from datetime import datetime
 from prettytable import PrettyTable
 
@@ -16,71 +18,6 @@ BIBLE = None
 
 PARSER_ = argparse.ArgumentParser(description="OD content post-processing.")
 REPLACEMENTS_ = {}
-
-
-class BibleRefMatcher(object):
-    def __init__(self):
-        self.regxGroups = {
-            'book': r'(?P<book>(\d+\s*)?[A-Z]\w+\.?((\s*)[A-Z]\w+\.?){0,2})',
-            'chapter': r'\s*(cap\.)?\s*(?P<chapter>\d+)',
-            'verse': r'(\s*(,|:)\s*(?P<verse>\d+))?',
-            'verseEnd': r'(\s*-\s*(?P<verseEnd>\d+))?',
-            'chapter2': r'((\s*(;|şi)\s*(cap\.)?(?P<chapter2>\d+))?',
-            'verse2': r'(\s*(,|:)\s*(?P<verse2>\d+))',
-            'verse2End': r'(-(?P<verse2End>\d+))?)?'
-        }
-
-    def compile(self):
-        return re.compile(''.join([v for k, v in self.regxGroups.items()]))
-
-    def compile_group(self, group):
-        return re.compile(self.regxGroups[group])
-
-    def compile_groups(self, groups):
-        return re.compile(''.join(self.regxGroups[g] for g in groups))
-
-    def match(self, regex, text):
-        return regex.match(text)
-
-    def match_group(self, text, group):
-        return self.match(self.compile_group(group), text)
-
-    def match_groups(self, text, groups):
-        return self.match(self.compile_groups(groups), text)
-
-    def match_all(self, text):
-        return self.match(self.compile(), text)
-
-    def find(self, regex, text):
-        return [m for m in regex.finditer(text)]
-
-    def find_group(self, text, group):
-        return self.find(self.compile_group(group), text)
-
-    def find_groups(self, text, groups):
-        return self.find(self.compile_groups(groups), text)
-
-    def find_all(self, text):
-        return self.find(self.compile(), text)
-
-
-class Bible(object):
-    def __init__(self, base_url):
-        self.base_url = base_url
-
-    def get(self, uri):
-        resp = requests.get("{}/{}".format(self.base_url, uri))
-        resp.raise_for_status()
-        return resp.json()
-
-    def get_books(self):
-        return self.get("bible/books")
-
-    def get_aliases(self):
-        return self.get("bible/books/aliases")
-
-    def get_verses(self, bibleRef):
-        return self.get("bible/{}".format(bibleRef))
 
 
 def parseArgs():
@@ -299,95 +236,281 @@ def post_process_articles(articles, args):
     return articles
 
 
-def resolve_bible_refs(articles):
-    bibleCache = {}
-    errors = []
-    matcher = BibleRefMatcher()
+def isIgnoredBook(book):
+    ignoredBooks = ['in', 'am', 'fac']
+    return unidecode(book).lower() in ignoredBooks
 
-    refCount = 0
-    for article in articles:
-        new_verses = []
+
+def getMostSimilarLookingBibleBook(book, books):
+    if isIgnoredBook(book):
+        return None, len(book)
+
+    minDistance = len(book)
+    mostSimilar = None
+    for b in books:
+        if len(b.split()) != len(book.split()):
+            continue
+
+        distance = Levenshtein.distance(unidecode(book).lower(), b.lower())
+        if distance < minDistance:
+            minDistance = distance
+            mostSimilar = b
+
+    return mostSimilar, minDistance
+
+
+def isSimilar(book, distance):
+    return distance <= len(book) / 3
+
+
+class Bible(object):
+    def __init__(self, base_url):
+        self.base_url = base_url
+
+    def get(self, uri):
+        resp = requests.get("{}/{}".format(self.base_url, uri))
+        resp.raise_for_status()
+        return resp.json()
+
+    def get_books(self):
+        return self.get("bible/books")
+
+    def get_aliases(self):
+        return self.get("bible/books/aliases")
+
+    def get_verses(self, bibleRef):
+        return self.get("bible/{}".format(bibleRef))
+
+
+class BibleRefResolver(object):
+    def __init__(self):
+        self.regxGroups = {
+            'book_name': r'(?P<book_name>((\d+\s+)?[^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)',
+            'chapter': r'(cap\.\s*)?(?P<chapter>\d+)\s*',
+            'verse_start': r'(\s*(:|,)?\s*((v.)|(vers.)|(versetul))?\s*(?P<verse_start>\d+))?',
+            'verse_end': r'(\s*-\s*(?P<verse_end>\d+)\s*,?)?',
+            'verses': r'(\s*(:|,)?\s*(?P<verses>\s*((\s*,\s*)?\d+)+))?'
+        }
+
+        self.regex = re.compile(''.join([v for _, v in self.regxGroups.items()]))
+        self.continuationRegex = re.compile(''.join(
+            [r'(?P<prefix>(\s*(;|(şi))\s*))'] +
+            [v for k, v in self.regxGroups.items() if k != 'book_name'] +
+            [r'(?P<sufix>(\s*(;|\)|(,\s*etc\.?)|(şi))))']))
+        self.bibleBooks = set([book.lower() for book in BIBLE.get_books()])
+
+        self.bibleCache = {}
+        self.errors = []
+        self.resolvedRefCnt = 0
+
+    def extract_book_name(self, bookName):
+        return re.sub(r'^\d+\s*', '', bookName)
+
+    def blocks_to_text(self, blocks):
+        return ' '.join([block['text'] for block in blocks])
+
+    def verses_to_text(self, verses):
+        text = ""
+        for v in verses:
+            text += self.blocks_to_text(v)
+            text += "\n"
+
+        return text
+
+    def resolve_bible_refs(self, articles):
+        for article in articles:
+            self.process_article(article)
+
+        return articles
+
+    def process_article(self, article):
         bibleRefs = {}
+        new_verses = []
         lastVerses = []
-        lastVersesMaxSize = 3
         for verse in article['verses']:
-            new_verse = []
-            for block in verse:
-                matches = matcher.find_all(block['text'])
-                if matches:
-                    lastMatch = None
-                    for match in matches:
-                        if not lastMatch:
-                            # Add text before first match as normal text
-                            text = match.string[:match.start()]
-                            if text:
-                                new_verse.append({'type': 'normal', 'style': block['style'], 'text': text})
-                        else:
-                            # Add text between last match and current match as normal text
-                            text = match.string[lastMatch.end():match.start()]
-                            if text:
-                                new_verse.append({'type': 'normal', 'style': block['style'], 'text': text})
-
-                        lastMatch = match
-                        bibleRef = "{} {}".format(match.group('book'), match.group('chapter'))
-                        if match.group('verse'):
-                            bibleRef += ":{}".format(match.group('verse'))
-                        if match.group('verseEnd'):
-                            bibleRef += "-{}".format(match.group('verseEnd'))
-
-                        if bibleRef in bibleCache:
-                            bibleRefs[bibleRef] = bibleCache[bibleRef]
-                        else:
-                            try:
-                                bibleRefs[bibleRef] = bibleCache[bibleRef] = BIBLE.get_verses(bibleRef)
-                            except requests.HTTPError as e:
-                                if e.response.status_code == 404:
-                                    logging.error("{} not found in the Bible!".format(bibleRef))
-                                    t = ""
-                                    for v in lastVerses + [verse]:
-                                        if v:
-                                            t += "{}\n".format(' '.join([block['text'] for block in v]))
-                                        else:
-                                            t += "\n"
-
-                                    template = "{volume}\n{title}\n{book} - {author}\n'{bibleRef}' nu există în Biblie:\n'{text}'"
-                                    errors.append(
-                                        template.format(bibleRef=bibleRef,
-                                                        volume=article['volume'] if 'volume' in article else '-',
-                                                        title=article['title'],
-                                                        book=article['book'],
-                                                        author=article['author'],
-                                                        text=t))
-                                else:
-                                    pass
-
-                        if bibleRef not in bibleCache:
-                            new_verse.append({'type': 'normal', 'style': block['style'], 'text': match.string[match.start():match.end()]})
-                        else:
-                            new_verse.append({'type': 'bible-ref', 'style': block['style'], 'text': bibleRef})
-
-                    # Add text after last match as normal text
-                    text = lastMatch.string[lastMatch.end():]
-                    if text:
-                        new_verse.append({'type': 'normal', 'style': block['style'], 'text': text})
-
-                    refCount += len(matches)
-                else:
-                    if block['text']:
-                        new_verse.append({'type': 'normal', 'style': block['style'], 'text': block['text']})
-
-                    if verse:
-                        lastVerses.append(verse)
-                        if len(lastVerses) > lastVersesMaxSize:
-                            lastVerses = lastVerses[-lastVersesMaxSize:]
-
+            new_verse = self.process_verse(verse, article, bibleRefs, lastVerses)
             new_verses.append(new_verse)
+
+            # add to lastVerses all verses since the last empty line
+            if not new_verse:
+                lastVerses = []
+            else:
+                lastVerses.append(new_verse)
 
         article['verses'] = new_verses
         article['bible-refs'] = bibleRefs
 
-    return articles, refCount, errors
+    def process_verse(self, verse, article, bibleRefs, lastVerses):
+        new_verse = []
+        for block in verse:
+            new_blocks = self.process_block(block['style'], block['text'], article, bibleRefs, lastVerses + [verse])
+            new_verse += new_blocks
 
+        return new_verse
+
+    def process_block(self, style, text, article, bibleRefs, lastVerses):
+        if not text:
+            return text
+
+        resolvedRefs = self.lookup_ref_candidates(text, lambda match: self.evaluate_ref_candidate(match, article, bibleRefs, lastVerses))
+        if not resolvedRefs:
+            return [{'type': 'normal', 'style': style, 'text': text}]
+
+        lastPos = 0
+        blocks = []
+        for match in resolvedRefs:
+            # Add text between last match and current match as normal text
+            textBefore = text[lastPos:match['start']]
+            if textBefore:
+                blocks.append({'type': 'normal', 'style': style, 'text': textBefore})
+
+            blocks.append({'type': 'bible-ref', 'style': style, 'ref': match['ref'], 'text': match['text']})
+            lastPos = match['end']
+
+        # Add text after last match as normal text
+        textAfter = text[lastPos:]
+        if textAfter:
+            blocks.append({'type': 'normal', 'style': style, 'text': textAfter})
+
+        return blocks
+
+    def evaluate_ref_candidate(self, match, article, bibleRefs, lastVerses):
+        resolvedRef = self.resolve_bible_ref(match, article, lastVerses)
+        if resolvedRef:
+            bibleRefs[match['ref']] = resolvedRef
+            return match['ref']
+
+        return None
+
+    def build_ref(self, matchEntry):
+        ref = f"{matchEntry['book_name'].rstrip()} {matchEntry['chapter']}"
+        if matchEntry['verse_start']:
+            ref += f":{matchEntry['verse_start']}"
+        if matchEntry['verse_end']:
+            ref += f"-{matchEntry['verse_end']}"
+        if matchEntry['verses']:
+            if not matchEntry['verse_start']:
+                ref += ":"
+            else:
+                ref += ", "
+            ref += matchEntry['verses']
+
+        return ref
+
+    def build_match(self, match, lastPos):
+        matchEntry = match.groupdict()
+        matchEntry['text'] = match.string[match.start():match.end()]
+        matchEntry['start'] = match.start() + lastPos
+        matchEntry['end'] = match.end() + lastPos
+        while matchEntry['text'].endswith(' '):
+            matchEntry['end'] -= 1
+            matchEntry['text'] = matchEntry['text'][:-1]
+
+        return matchEntry
+
+    def build_continuation_match(self, match, lastPos, parentEntry):
+        contMatch = self.build_match(match, lastPos)
+        contMatch['book_name'] = parentEntry['book_name']
+        contMatch['ref'] = self.build_ref(contMatch)
+
+        prefixLen = len(contMatch['prefix'])
+        suffixLen = len(contMatch['sufix'])
+
+        contMatch['start'] += prefixLen
+        contMatch['end'] -= suffixLen
+
+        contMatch['text'] = contMatch['text'][prefixLen:-suffixLen]
+        while contMatch['text'].endswith(' '):
+            contMatch['end'] -= 1
+            contMatch['text'] = contMatch['text'][:-1]
+
+        if (contMatch['start'] - lastPos) > prefixLen:
+            return None
+
+        return contMatch
+
+    def lookup_ref_candidates(self, text, processMatch):
+        lastPos = 0
+        resolvedRefs = []
+        while True:
+            chunk = text[lastPos:]
+            match = self.regex.search(chunk)
+            if not match:
+                break
+
+            matchEntry = self.build_match(match, lastPos)
+            matchEntry['ref'] = self.build_ref(matchEntry)
+
+            bibleRef = processMatch(matchEntry)
+            if bibleRef:
+                matchEntry['ref'] = bibleRef
+                lastPos = matchEntry['end']
+                resolvedRefs.append(matchEntry)
+
+                # Lookup continuation refs, like '1 Cor. 14, 3' followed by '; 7, 24;'
+                while True:
+                    chunk = text[lastPos:]
+                    cMatch = self.continuationRegex.search(chunk)
+                    if not cMatch:
+                        break
+
+                    contMatch = self.build_continuation_match(cMatch, lastPos, matchEntry)
+                    if not contMatch:
+                        break
+
+                    bibleRef = processMatch(contMatch)
+                    if bibleRef:
+                        contMatch['ref'] = bibleRef
+                        resolvedRefs.append(contMatch)
+                        lastPos = contMatch['end']
+            else:
+                lastPos = text.find(' ', matchEntry['start'])
+
+        return resolvedRefs
+
+    def resolve_bible_ref(self, match, article, lastVerses):
+        resolvedRef = self.bibleCache.get(match['ref'])
+        if resolvedRef is not None:
+            return resolvedRef
+
+        book = match['book_name'].strip()
+        lookup = False
+        if unidecode(book).lower() in self.bibleBooks and not isIgnoredBook(self.extract_book_name(book)):
+            lookup = True
+        elif False:
+            mostSimilar, distance = getMostSimilarLookingBibleBook(bookName, self.bibleBookNames)
+            if isSimilar(bookName, distance):
+                lookup = True
+
+                logging.info(f"'{match['ref']}' should instead be '{match['ref'].replace(bookName, mostSimilar)}'!")
+                match['ref'] = match['ref'].replace(bookName, mostSimilar)
+
+        try:
+            if lookup:
+                resolvedRef = BIBLE.get_verses(match['ref'])
+                self.bibleCache[match['ref']] = resolvedRef
+                self.resolvedRefCnt += 1
+                return resolvedRef
+        except requests.HTTPError as e:
+            if e.response.status_code >= 400:
+                logging.error("{} not found in the Bible!".format(match['ref']))
+
+                volume = article['volume'] if 'volume' in article else '-'
+                book = article['book']
+                title = article['title']
+                author = article['author']
+                text = self.verses_to_text(lastVerses)
+
+                error = f"Volum: {volume}\nCarte: {book}\nTitlu: {title}\nAutor: {author}\n'{match['ref']}' nu există în Biblie!\n{text}"
+                self.errors.append(error)
+
+        return None
+
+
+def resolve_bible_refs(articles):
+    resolver = BibleRefResolver()
+    articles = resolver.resolve_bible_refs(articles)
+    return articles, resolver.resolvedRefCnt, resolver.errors
 
 def main():
     args = parseArgs()
@@ -420,13 +543,12 @@ def main():
     with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(articles, f, indent=2)
 
-    if errors:
-        errors_filename = os.path.splitext(args.output)[0] + "_errors.txt"
-        with open(errors_filename, 'w', encoding='utf-8') as errors_file:
-            print("{} erori:\n".format(len(errors)), file=errors_file)
-            for error in errors:
-                print(error, file=errors_file)
-                print("", file=errors_file)
+    errors_filename = os.path.splitext(args.output)[0] + "_errors.txt"
+    with open(errors_filename, 'w', encoding='utf-8') as errors_file:
+        print("{} erori:\n".format(len(errors)), file=errors_file)
+        for error in errors:
+            print(error, file=errors_file)
+            print("", file=errors_file)
 
     text_filepath = os.path.splitext(args.output)[0] + ".txt"
     with open(text_filepath, 'w', encoding='utf-8') as text_file:
