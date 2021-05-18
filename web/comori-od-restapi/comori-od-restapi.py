@@ -270,10 +270,86 @@ class Articles(object):
 
         return ES.search(index=idx_name, body=query_body, timeout="1m")
 
+    def getHighlightedById(self, idx_name, req):
+        LOGGER_.info(f"Getting highlighted article from {idx_name} with request {json.dumps(req.params, indent=2)}")
+
+        highlight = req.params["highlight"]
+        should_match_highlight = self.buildShouldMatchHighlight(highlight)
+        query_body = {
+            "query": {
+                "bool": {
+                    "must": [{
+                        "term": {
+                            "_id": req.params["id"]
+                        }
+                    }]
+                }
+            },
+            'highlight': {
+                'highlight_query': {
+                    'bool': {
+                        'should': should_match_highlight
+                    }
+                },
+                'fields': {
+                    'title': {
+                        "matched_fields": ["title", "title.folded"],
+                        'type': 'fvh'
+                    },
+                    'verses.text': {
+                        "matched_fields":
+                        ["verses.text", "verses.text.folded"],
+                        'type': 'fvh'
+                    }
+                },
+                "number_of_fragments": 1000,
+                "fragment_size": 10000,
+            },
+        }
+
+        get_response = self.getById(idx_name, req)
+        search_response = ES.search(index=idx_name, body=query_body, timeout="1m")
+        if search_response["hits"]["total"]["value"] != 1:
+            return get_response
+
+        hit = search_response["hits"]["hits"][0]
+        if "highlight" not in hit:
+            return get_response
+
+        highlight = hit["highlight"]
+        if "verses.text" not in highlight:
+            return get_response
+
+        highlighted_verses = highlight["verses.text"]
+
+        source = get_response["_source"]
+        source_verses = source["verses"]
+
+        lastIndex = 0
+        for highlightIndex in range(0, len(highlighted_verses)):
+            for verseIndex in range(lastIndex, len(source_verses)):
+                highlighted_verse = highlighted_verses[highlightIndex]
+                verse = source_verses[verseIndex]
+                for chunkIndex in range(0, len(verse)):
+                    chunk = verse[chunkIndex]
+
+                    if highlighted_verse.replace("<em>", "").replace("</em>", "") == chunk['text']:
+                        lastIndex = verseIndex
+                        verse[chunkIndex]['text'] = highlighted_verse
+                        break
+
+        return get_response
+
     def getById(self, idx_name, req):
         LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
         return ES.get(index=idx_name, id=req.params['id'])
+
+    def getArticle(self, idx_name, req):
+        if "highlight" in req.params:
+            return self.getHighlightedById(idx_name, req)
+        else:
+            return self.getById(idx_name, req)
 
     def getRandomArticle(self, idx_name, req):
         LOGGER_.info(f"Getting random article from {idx_name} with request {json.dumps(req.params, indent=2)}")
@@ -297,7 +373,7 @@ class Articles(object):
             if 'q' in req.params:
                 results = self.query(idx_name, req)
             elif 'id' in req.params:
-                results = self.getById(idx_name, req)
+                results = self.getArticle(idx_name, req)
             else:
                 results = self.getRandomArticle(idx_name, req)
 
