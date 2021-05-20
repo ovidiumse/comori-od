@@ -8,7 +8,7 @@ import logging
 PARSER_ = argparse.ArgumentParser(description="OD content suggester.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
-LOCAL_HOST = "http://localhost/api"
+LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
 
@@ -19,7 +19,6 @@ def parseArgs():
                          dest="idx_name",
                          default="od",
                          help="Index name")
-    PARSER_.add_argument("-t", "--doc-type", action="store", default="articles", help="Document type")
     PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
     PARSER_.add_argument("-f",
                          "--fields",
@@ -42,8 +41,8 @@ def get(uri):
     return response.json()
 
 
-def search(idx_name, doc_type, query, fields):
-    results = get("{}/{}?q={}".format(idx_name, doc_type, query))
+def search(idx_name, query, fields):
+    results = get("{}/articles?q={}".format(idx_name, query))
     if "hits" in fields:
         print("Got {} hits:".format(results['hits']['total']['value']))
 
@@ -85,7 +84,7 @@ def main():
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
     print("Searching {} using {}...".format(args.query, COMORI_OD_API_HOST))
-    search(args.idx_name, args.doc_type, args.query, args.fields)
+    search(args.idx_name, args.query, args.fields)
 
 
 if "__main__" == __name__:

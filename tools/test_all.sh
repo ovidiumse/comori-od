@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./od-search-test.py -o "test_results"
+./od-search-test.py -o "../data/test_results" $@

@@ -8,6 +8,13 @@ from prettytable import PrettyTable
 PARSER_ = argparse.ArgumentParser(description="OD search test.")
 
 def parseArgs():
+    PARSER_.add_argument("-i",
+                         "--index-name",
+                         action="store",
+                         dest="idx_name",
+                         default="od",
+                         help="Index name")
+
     PARSER_.add_argument("-o",
                          "--output",
                          dest="outdir",
@@ -15,53 +22,49 @@ def parseArgs():
                          type=str,
                          required=True,
                          help="Results folder")
+    PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
 
     return PARSER_.parse_args()
 
 
-def run_searches(outdir):
+def run_searches(outdir, external_host):
     queries = [
-        "Dumnezeu", "Ajutor", "Iertare", "Smerenie", "Indurare", "Îndurare",
-        "Suferinta", "Suferință", "Vindecare", "Lumina", "Lumină", "Minune",
-        "Jertfa", "Jertfă", "Adevar", "Adevăr", "Alinare", "Cuvant", "Cuvânt",
-        "Paine", "Pâine", "Hristos", "Legamant", "Legământ", "Binefacere",
-        "Invatatura", "Învățătură", "Prieten", "Botez", "Sfant", "Sfânt",
-        "Duh", "Cununie", "Sfarsit", "Sfârșit", "Inceput", "Început", "Potir",
-        "Biserica", "Biserică", "Bogatie", "Bogăție", "Sarac", "Sărac",
-        "Popor", "Taina", "Taină", "Mangaiere", "Mângâiere", "Parinte",
-        "Părinte", "Vestire", "Aflare", "Viata", "Viață", "Moarte", "Nastere",
-        "Naștere", "nasterea din nou", "preinchipuit", "nesfarsit", "Frate",
+        "Dumnezeu", "Ajutor", "Iertare", "Smerenie", "Indurare", "Suferinta",
+        "Vindecare", "Lumina", "Minune", "Jertfa", "Adevar", "Alinare",
+        "Cuvant", "Paine", "Hristos", "Legamant", "Binefacere", "Invatatura",
+        "Prieten", "Botez", "Sfant", "Duh", "Cununie", "Sfarsit", "Inceput",
+        "Potir", "Biserica", "Bogatie", "Sarac", "Popor", "Taina", "Mangaiere",
+        "Parinte", "Vestire", "Aflare", "Viata", "Moarte", "Nastere", "Frate",
         "Mama", "Tata", "Sora", "Pagan", "Credincios", "Cruce", "Golgota",
-        "l-au adus la Isus", "Asternut", "Roua", "Cina", "Apa", "Pamant",
-        "Sange", "Dragoste", "Iubire", "Rabdare", "Pustiu", "Inger",
-        "Mantuitor", "Isus", "Ocara", "Argint", "Aur", "Lemn", "Bucurie",
-        "Nadejde", "Mandrie", "Minciuna", "Batran", "Tanar", "Har", "Bun",
-        "Rau", "Lacrimi", "Vesnic", "Judecata", "Nou", "Vechi", "Ascultare",
-        "Maica", "Domnul", "Mire", "Mireasa", "Logodna", "Viu", "Rece",
-        "Fierbinte", "Genunchi", "Curat", "Intinat", "Cer", "Intelept",
-        "Intelepciune", "Ura", "Dar", "Biruinta", "Infrangere", "Neam",
-        "Vrajmas", "Legat", "Legatura", "Cunostinta", "Ingamfa", "Vorbire",
-        "Tacere", "Mult", "Putin", "Inchinare", "Rugaciune", "Fericit",
-        "Fericire", "Aproape", "Departe", "Intuneric", "Sus", "Jos", "Sarut",
-        "Inima", "Valoare", "Rasplata", "Odihna", "Inviere", "Om", "Invatator",
-        "Invatatura", "Lupta", "Infrant", "Infranare", "Post", "Plans",
-        "Stralucire", "Intinare", "Cantare", "Cerere", "Etern", "Legat",
-        "Legatura", "Slobod", "Slobozenie", "Clocot", "Constiinta", "Cuget",
-        "Gand", "Suflet", "Pace", "Razboi", "Chemare", "Vremea", "Timpul",
-        "Ales", "Alegere", "Lauda", "Rusinea", "Mort", "Nor", "Soare",
-        "Martor", "Marturisitor", "Lepadat", "Lepadare", "Cuviinta", "Evlavie",
-        "Evlavios", "Crestin", "Ostas", "Zadarnic", "Zadarnicie", "Pierdere",
-        "Pierdut", "Vina", "Vinovat", "Osanda", "Blestem", "Binecuvantare",
-        "Inselat", "Inselaciune", "Dulce", "Amar", "Copil", "Slab", "Tare",
-        "Slabiciune", "Unitate", "Dezbinare", "Unire", "Frica", "Despartire",
-        "Curaj", "Fuga", "Flamand", "Desfranare", "Imbuibare", "Cazut",
-        "Intors", "Intoarcere", "Hotarat", "Hotarare", "Meditare", "Meditatie",
-        "Poezie", "Citire", "Trezire", "Rod", "Cules", "Adunare", "Altar",
-        "Apus", "Rasarit", "Ridicat", "Bland", "Blandete", "Afara", "Inauntru",
-        "Gol", "Acoperit", "Bolnav", "Sanatos", "Lacom", "Lacomie",
-        "Predestinare", "Prooroci", "Prorocii", "Chin", "Cautare", "Ajuns",
-        "Ajungere", "Plin", "Murdar", "nu esti tu la rand",
-        "nu ești tu la rând"
+        "Asternut", "Roua", "Cina", "Apa", "Pamant", "Sange", "Dragoste",
+        "Iubire", "Rabdare", "Pustiu", "Inger", "Mantuitor", "Isus", "Ocara",
+        "Argint", "Aur", "Lemn", "Bucurie", "Nadejde", "Mandrie", "Minciuna",
+        "Batran", "Tanar", "Har", "Bun", "Rau", "Lacrimi", "Vesnic",
+        "Judecata", "Nou", "Vechi", "Ascultare", "Maica", "Domnul", "Mire",
+        "Mireasa", "Logodna", "Viu", "Rece", "Fierbinte", "Genunchi", "Curat",
+        "Intinat", "Cer", "Intelept", "Intelepciune", "Ura", "Dar", "Biruinta",
+        "Infrangere", "Neam", "Vrajmas", "Legat", "Legatura", "Cunostinta",
+        "Ingamfa", "Vorbire", "Tacere", "Mult", "Putin", "Inchinare",
+        "Rugaciune", "Fericit", "Fericire", "Aproape", "Departe", "Intuneric",
+        "Sus", "Jos", "Sarut", "Inima", "Valoare", "Rasplata", "Odihna",
+        "Inviere", "Omul", "Invatator", "Invatatura", "Lupta", "Infrant",
+        "Infranare", "Post", "Plans", "Stralucire", "Intinare", "Cantare",
+        "Cerere", "Etern", "Legat", "Legatura", "Slobod", "Slobozenie",
+        "Clocot", "Constiinta", "Cuget", "Gand", "Suflet", "Pace", "Razboi",
+        "Chemare", "Vremea", "Timpul", "Ales", "Alegere", "Lauda", "Rusinea",
+        "Mort", "Nor", "Soare", "Martor", "Marturisitor", "Lepadat",
+        "Lepadare", "Cuviinta", "Evlavie", "Evlavios", "Crestin", "Ostas",
+        "Zadarnic", "Zadarnicie", "Pierdere", "Pierdut", "Vina", "Vinovat",
+        "Osanda", "Blestem", "Binecuvantare", "Inselat", "Inselaciune",
+        "Dulce", "Amar", "Copil", "Slab", "Tare", "Slabiciune", "Unitate",
+        "Dezbinare", "Unire", "Frica", "Despartire", "Curaj", "Fuga",
+        "Flamand", "Desfranare", "Imbuibare", "Cazut", "Intors", "Intoarcere",
+        "Hotarat", "Hotarare", "Meditare", "Meditatie", "Poezie", "Citire",
+        "Trezire", "Rod", "Cules", "Adunare", "Altar", "Apus", "Rasarit",
+        "Ridicat", "Bland", "Blandete", "Afara", "Inauntru", "Gol", "Acoperit",
+        "Bolnav", "Sanatos", "Lacom", "Lacomie", "Predestinare", "Prooroci",
+        "Prorocii", "Chin", "Cautare", "Ajuns", "Ajungere", "Plin", "Murdar",
+        "Supus", "Supunere", "femeie de ce plangi", "nu esti tu la rand", "nu ești tu la rând"
     ]
 
     if not os.path.exists(outdir):
@@ -73,10 +76,16 @@ def run_searches(outdir):
         lines = []
         articles = []
         article = {}
-        args = [
-            "./od-search.py", q, "-f", "hits", "score", "volume", "book",
-            "title", "type", "author", "highlight"
+        args = ["./od-search.py", q]
+
+        if external_host:
+            args.append("-e")
+
+        args += [
+            "-f", "hits", "score", "volume", "book", "title", "type", "author",
+            "highlight"
         ]
+
         with subprocess.Popen(args,
                               stdout=subprocess.PIPE,
                               universal_newlines=True) as proc:
@@ -122,7 +131,7 @@ def run_searches(outdir):
 def main():
     args = parseArgs()
 
-    run_searches(args.outdir)
+    run_searches(args.outdir, args.external_host)
 
 if __name__ == "__main__":
     main()
