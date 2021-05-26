@@ -1,1394 +1,992 @@
-+-----------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                       | Author          | Tip                              | Carte                        | Volum   |
-+-----------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Am cu păcatul un război                                                     | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
-| Am cu păcatul un război                                                     | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Încep luptele Canaanului                                                    | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                       | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                                    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 23 - La zece ani de Oaste                                              | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Cel mai bun misionar                                              | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                         | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Grăuntele de muştar                                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 16 - Există un echilibru                                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 28 - Alte întristări binefăcătoare                                     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Între două judecăţi                                                | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Începutul Lucrării Domnului                                                 | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove) | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 10 - Pe drumul Crucii                                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Fiecare existenţă este o taină                                     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Fricoşii să plece acasă                                                     | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Cap. 5 - Apele adânci se limpezesc greu                                     | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                           | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Te vrea poporul Tău...                                                      | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Cap. 20 - Şi iertarea trebuie plătită!                                      | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                     | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                                      | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Toate lucrează spre bine                                          | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 25 - Istorie şi suferinţă                                              | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                 | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Vrăjmaşul îţi întinde mreji                                                 | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | poezie  |
-| Moise şi Aaron în faţa lui Faraon                                           | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Rămâi cu noi                                                                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Adevărata credinţă                                                          | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Vremurile de Har                                                            | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Vrăjmaşul îţi întinde mreji                                                 | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                        | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                         | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                          | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - A treia Judecată                                                   | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Mai este-o Judecată!                                                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
-| Cap. 11 - Răscrucea Isus                                                    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 16 - Din cetate în cetate...                                           | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                        | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                              | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 29 - Anul jubiliar 1988                                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 30 - Şi acum ultimul cuvânt                                            | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Ostaşi ai Domnului                                                          | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | poezie  |
-| Cap. 3 - Marea cernere                                                      | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Vreţi zile liniştite?                                                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
-| Ostaşi ai Domnului                                                          | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Apostolul Pavel în luptă cu litera legii                                    | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Răscoala de la Numeri cap. 14                                               | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Cei ce au iscodit Canaanul                                                  | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Cap. 28 - Necazurile din lungul drumului                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 30 - Alte adevăruri noi                                                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Promisiunile şi împlinirea                                                  | Traian Dorz     | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
-| Când vin marile încercări                                                   | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Firea noastră pământească                                                   | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| Vorba şi împlinirea                                                         | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
-| Ce mare taină este Lucrarea Domnului                                        | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Îndrăzneala ispititorului                                                   | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Simon Petru mergea după Isus...                                             | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Mai este-o Judecată!                                                        | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Cap. 3 - Începutul chemării                                                 | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                      | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Când m-am născut...                                                         | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Trupu-i forma                                                               | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Adevăratele lupte                                                           | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Isus, Tu iar cobori                                                         | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Cântarea Deborei                                                            | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Când m-am născut...                                                         | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Noi n-avem aur                                                              | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Ostaşi ai Domnului                                                          | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Vreţi zile liniştite voi?                                                   | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Psalmul 27                                                                  | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 60                                                                  | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 68                                                                  | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 76                                                                  | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 102                                                                 | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 120                                                                 | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-+-----------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
++---------------------------------------------------------------------------------------------+-------------+-----------------+------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences | Author          | Tip                          | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+-------------+-----------------+------------------------------+------------------------------+---------+
+| Am cu păcatul un război                                                                     | {'război'}  | Traian Dorz     | Hristos - Pacea noastră      | Meditații la Ev. după Ioan   | poezie  |
+| Am cu păcatul un război                                                                     | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 7   | Cântări Nemuritoare          | poezie  |
+| Cap. 7 - Primii paşi spre o rânduială                                                       | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Încep luptele Canaanului                                                                    | {'război'}  | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
+| Cap. 5 - Întâia judecată                                                                    | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Cel mai bun misionar                                                              | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                                            | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 23 - La zece ani de Oaste                                                              | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 1 - Grăuntele de muştar                                                                | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                            | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 16 - Există un echilibru                                                               | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 28 - Alte întristări binefăcătoare                                                     | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 6 - Între două judecăţi                                                                | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)                 | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Pe drumul Crucii                                                                  | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                                  | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 18 - Un vânt rău                                                                       | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 2 - Fiecare existenţă este o taină                                                     | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 5 - Apele adânci se limpezesc greu                                                     | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 9 - Înţelepciunea şi puterea                                                           | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Fricoşii să plece acasă                                                                     | {'război'}  | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
+| Te vrea poporul Tău...                                                                      | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 9   | Cântări Nemuritoare          | poezie  |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                                                      | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 12 - Toate lucrează spre bine                                                          | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 14 - Strâmta cărare mântuitoare                                                        | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 15 - Al doilea foc                                                                     | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                             | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                                      | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 21 - După cei 50 de ani                                                                | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 25 - Istorie şi suferinţă                                                              | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                                    | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 5 - Necazuri şi speranţe                                                               | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Moise şi Aaron în faţa lui Faraon                                                           | {'război'}  | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
+| Rămâi cu noi                                                                                | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
+| Vrăjmaşul îţi întinde mreji                                                                 | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | poezie  |
+| Vrăjmaşul îţi întinde mreji                                                                 | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
+| Adevăratele lupte                                                                           | {'război'}  | Traian Dorz     | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
+| Apostolul Pavel în luptă cu litera legii                                                    | {'război'}  | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
+| Bucuria                                                                                     | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                                | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                                    | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                            | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                                      | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                      | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                        | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                                            | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 16 - Din cetate în cetate...                                                           | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                        | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                                                  | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                          | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 20 - După alţi 30 de ani                                                               | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                              | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                                | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                                    | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                                    | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 29 - Anul jubiliar 1988                                                                | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                                               | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 3 - Marea cernere                                                                      | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 3 - Orice lucru îşi are                                                                | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Cap. 3 - Începutul chemării                                                                 | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 30 - Alte adevăruri noi                                                                | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 30 - Şi acum ultimul cuvânt                                                            | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                                     | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                                    | {'război'}  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 6 - Alte amare adevăruri                                                               | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                                     | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                                                   | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cei ce au iscodit Canaanul                                                                  | {'război'}  | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
+| Când m-am născut...                                                                         | {'război'}  | Traian Dorz     | Hristos - Învăţătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Când m-am născut...                                                                         | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 6   | Cântări Nemuritoare          | poezie  |
+| Cântarea Deborei                                                                            | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Despre pace                                                                                 | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Despre încercare                                                                            | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Frica                                                                                       | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Isus, Tu iar cobori                                                                         | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)             | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)    | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 28-a după Rusalii                                               | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                         | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                                    | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'război'}  | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| Mai este-o Judecată!                                                                        | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
+| Mai este-o Judecată!                                                                        | {'război'}  | Traian Dorz     | Hristos - Luminătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Mai este-o Judecată!                                                                        | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 9   | Cântări Nemuritoare          | poezie  |
+| Noi n-avem aur                                                                              | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 7   | Cântări Nemuritoare          | poezie  |
+| Ostaşi ai Domnului                                                                          | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
+| Ostaşi ai Domnului                                                                          | {'război'}  | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | poezie  |
+| Ostaşi ai Domnului                                                                          | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
+| Pentru sfânta biruinţă                                                                      | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 9   | Cântări Nemuritoare          | poezie  |
+| Psalmul 102                                                                                 | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Psalmul 120                                                                                 | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Psalmul 126                                                                                 | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Psalmul 27                                                                                  | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Psalmul 60                                                                                  | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
+| Psalmul 68                                                                                  | {'război'}  | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
++---------------------------------------------------------------------------------------------+-------------+-----------------+------------------------------+------------------------------+---------+
 Searching Razboi using http://localhost:9000...
-Got 119 hits:
-Score: 2.0
+Got 107 hits:
+Score: 15.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pacea noastră
 Title: Am cu păcatul un război
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am cu p\u0103catul un <em>r\u0103zboi</em>"
-],
-"title": [
-"Am cu p\u0103catul un <em>r\u0103zboi</em>"
-]
-}
+Highlight: Am cu păcatul un <em>război</em>
+Highlight: Am cu păcatul un <em>război</em>
 
-Score: 2.0
+Score: 15.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Am cu păcatul un război
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am cu p\u0103catul un <em>r\u0103zboi</em>"
-],
-"title": [
-"Am cu p\u0103catul un <em>r\u0103zboi</em>"
-]
-}
+Highlight: Am cu păcatul un <em>război</em>
+Highlight: Am cu păcatul un <em>război</em>
 
-Score: 1.7777778
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Încep luptele Canaanului
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"din nou - ai intrat \u00een <em>r\u0103zboi</em> cu Amalec, cu firea cea veche \u015fi \u00een acest <em>r\u0103zboi</em> vei sta p\u00e2n\u0103 la sf\u00e2r\u015fitul",
-"cucerirea Canaanului, israelienii trebuiau s\u0103 poarte <em>r\u0103zboi</em>. Ei, de altcum, erau \u015fi preg\u0103ti\u0163i pentru acest",
-"Dumnezeu face de cunoscut c\u0103 va purta totdeauna <em>r\u0103zboi</em> \u00eempotriva lui Amalec ( Deut",
-"din st\u00e2nc\u0103, s\u0103 \u015ftii drag\u0103 cititorule, c\u0103 e\u015fti \u00een <em>r\u0103zboi</em> cu Amalec! ",
-"cei ce petrec cu lumea \u015fi p\u0103catele, n-au acest <em>r\u0103zboi</em>. Ei petrec "
-]
-}
-
-Score: 1.7777778
+Score: 8.0
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 7 - Primii paşi spre o rânduială
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dac\u0103 un <em>r\u0103zboi</em> de un fel se terminase \u00een afar\u0103 cu dezrobirea noastr\u0103 na\u0163ional\u0103, un nou <em>r\u0103zboi</em> de un alt",
-"nou\u0103: \u00een Oastea lui Isus, ca s\u0103 putem \u00eencepe un <em>r\u0103zboi</em> nou, pe cel \u00eempotriva p\u0103catelor. Chemarea ne-a",
-"vr\u0103jma\u015fii \u00eend\u00e2rji\u0163i \u015fi puternici. Va trebui dus un <em>r\u0103zboi</em> necru\u0163\u0103tor \u015fi lung, cu arme noi \u015fi sigure, cu voin\u0163\u0103",
-"hot\u0103r\u00e2re. Oric\u00e2t va fi de lung \u015fi de mare acest <em>r\u0103zboi</em>, el va trebui s\u0103 se \u00eencheie numai atunci c\u00e2nd se",
-"Odat\u0103 \u00eens\u0103 cu tulbur\u0103rile aduse de <em>r\u0103zboi</em>, c\u00e2nd au venit tot felul de greut\u0103\u0163i, - din pricina"
-]
-}
+Highlight: Dacă un <em>război</em> de un fel se terminase în afară cu dezrobirea noastră naţională, un nou <em>război</em> de un alt
+Highlight: nouă: în Oastea lui Isus, ca să putem începe un <em>război</em> nou, pe cel împotriva păcatelor. Chemarea ne-a
+Highlight: vrăjmaşii îndârjiţi şi puternici. Va trebui dus un <em>război</em> necruţător şi lung, cu arme noi şi sigure, cu voinţă
+Highlight: hotărâre. Oricât va fi de lung şi de mare acest <em>război</em>, el va trebui să se încheie numai atunci când se
+Highlight: Odată însă cu tulburările aduse de <em>război</em>, când au venit tot felul de greutăţi, - din pricina
+Highlight: Am mai spus că îndată după primul <em>război</em> mondial care ne-a adus independenţa şi întregirea
 
-Score: 1.75
+Score: 7.888889
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Încep luptele Canaanului
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: din nou - ai intrat în <em>război</em> cu Amalec, cu firea cea veche şi în acest <em>război</em> vei sta până la sfârşitul
+Highlight: cucerirea Canaanului, israelienii trebuiau să poarte <em>război</em>. Ei, de altcum, erau şi pregătiţi pentru acest
+Highlight: Dumnezeu face de cunoscut că va purta totdeauna <em>război</em> împotriva lui Amalec ( Deut
+Highlight: din stâncă, să ştii dragă cititorule, că eşti în <em>război</em> cu Amalec!
+Highlight: cei ce petrec cu lumea şi păcatele, n-au acest <em>război</em>. Ei petrec
+Highlight: şi unde s-a mai pomenit o oaste fără de luptă şi <em>război</em>?
+
+Score: 7.875
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 5 - Întâia judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"credincios, \u00eensp\u0103im\u00e2ntat de valul de necredin\u0163\u0103 de dup\u0103 <em>r\u0103zboi</em> a f\u0103cut ca apelul de Anul Nou s\u0103 fie primit \u00een",
-"\u00eempotriva superiorilor s\u0103i o lupt\u0103 pe fa\u0163\u0103, un <em>r\u0103zboi</em> f\u0103\u0163i\u015f. \u00cen articolul ",
-"chip simbolic ca pe prigonitorii acelora. Este un <em>r\u0103zboi</em> \u00eempotriva autorit\u0103\u0163ii consacrate a bisericii \u015fi",
-"a declarat <em>r\u0103zboi</em> bisericii",
-"arhiere\u015fti, regula \u015fi disciplina bisericii, declar\u0103 <em>r\u0103zboi</em>. Comite delictul disciplinar de al. 3 lit. w \u015fi"
-]
-}
+Highlight: credincios, înspăimântat de valul de necredinţă de după <em>război</em> a făcut ca apelul de Anul Nou să fie primit în
+Highlight: împotriva superiorilor săi o luptă pe faţă, un <em>război</em> făţiş. În articolul
+Highlight: chip simbolic ca pe prigonitorii acelora. Este un <em>război</em> împotriva autorităţii consacrate a bisericii şi
+Highlight: a declarat <em>război</em> bisericii
+Highlight: arhiereşti, regula şi disciplina bisericii, declară <em>război</em>. Comite delictul disciplinar de al. 3 lit. w şi
+Highlight: tocmai împotrivă, desfidând pe chiriarh şi declarând <em>război</em> bisericii,
 
-Score: 1.7142857
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"De-a lungul anilor de <em>r\u0103zboi</em>, st\u0103p\u00e2nirea \u0163\u0103rii \u00een\u0103sprea din ce \u00een ce tot mai",
-"nespus mai grele ca oric\u00e2nd. Popula\u0163ia r\u0103v\u0103\u015fit\u0103 de <em>r\u0103zboi</em>, iar r\u00e2ndurile fra\u0163ilor lucr\u0103tori \u00eempu\u0163inate de",
-"aceasta c\u00e2nd piedicile de tot felul r\u0103mase dup\u0103 <em>r\u0103zboi</em> ap\u0103sau asupra tuturor. ",
-"Dar ce pr\u0103p\u0103d mare f\u0103cuse lungul <em>r\u0103zboi</em> \u015fi dureroasa \u00eenstr\u0103inare care trecuse pe aici.",
-"s\u0103 \u00eencepem \u015fi munca de tip\u0103rire. Anii lungi de <em>r\u0103zboi</em>, refugiul \u015fi mut\u0103rile celor mai mul\u0163i f\u0103cuser\u0103"
-]
-}
-
-Score: 1.7142857
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"avut. \u015ei vom mai avea, c\u0103ci nu este oaste f\u0103r\u0103 <em>r\u0103zboi</em> \u015fi nici biruin\u0163\u0103 f\u0103r\u0103 lupt\u0103. Noi \u00eens\u0103 vom p\u0103\u015fi",
-"din nou - ai intrat \u00een <em>r\u0103zboi</em> cu ",
-", cu firea cea veche \u015fi \u00een acest <em>r\u0103zboi</em> vei sta p\u00e2n\u0103 la sf\u00e2r\u015fitul",
-"sf\u00e2r\u015fitul vie\u0163ii. Oamenii cei lume\u015fti n-au acest <em>r\u0103zboi</em>. Ei petrec ",
-", care a f\u0103cut mult bine mai ales \u00eenainte de <em>r\u0103zboi</em>; apoi la Bucure\u015fti "
-]
-}
-
-Score: 1.7142857
+Score: 7.714286
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 11 - Cel mai bun misionar
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen lumea de dup\u0103 primul <em>r\u0103zboi</em> o cauz\u0103 care a gr\u0103bit marile schimb\u0103ri a fost \u015fi scrisul: gazetele \u015fi",
-"Marile mi\u015fc\u0103ri de oameni aduse de <em>r\u0103zboi</em> au avut \u015fi o urmare bun\u0103: c\u0103l\u0103torind, au v\u0103zut",
-"eliberarea \u015fi independen\u0163a noastr\u0103 de dup\u0103 primul mare <em>r\u0103zboi</em>. ",
-"\u00cencepuser\u0103 dup\u0103 <em>r\u0103zboi</em> s\u0103 apar\u0103 pe la t\u00e2rguri doar ni\u015fte mici bro\u015furi",
-"cea mare a poporului care purtase greul lungului <em>r\u0103zboi</em> \u015fi pentru care st\u0103p\u00e2nirea nu f\u0103cea aproape nimic"
-]
-}
+Highlight: În lumea de după primul <em>război</em> o cauză care a grăbit marile schimbări a fost şi scrisul: gazetele şi
+Highlight: Marile mişcări de oameni aduse de <em>război</em> au avut şi o urmare bună: călătorind, au văzut
+Highlight: eliberarea şi independenţa noastră de după primul mare <em>război</em>.
+Highlight: Începuseră după <em>război</em> să apară pe la târguri doar nişte mici broşuri
+Highlight: cea mare a poporului care purtase greul lungului <em>război</em> şi pentru care stăpânirea nu făcea aproape nimic
+Highlight: Zaharie Cudlic din Pojorâta. “...fiind eu invalid de <em>război</em> - scrie el - mi-am făcut hotărârea că decât să
 
-Score: 1.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
+Score: 7.714286
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 17 - Mereu prin ape tulburi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dintr-un sat unguresc \u00eenainte cu mult de primul <em>r\u0103zboi</em> mondial, c\u00e2nd noi eram sub unguri.",
-"\u00cenc\u0103 dinainte de <em>r\u0103zboi</em> cunoscusem la Beiu\u015f o familie de evrei. Tat\u0103l lor",
-"n\u0103z\u0103rea c\u0103 este <em>r\u0103zboi</em>. \u015ei \u00eencepea s\u0103 tremure \u015fi s\u0103 se v\u0103ic\u0103reasc\u0103 tare:",
-"- E <em>r\u0103zboi</em> frate Traian, n-auzi",
-"- Ba eu \u00ee\u0163i spun c\u0103-i <em>r\u0103zboi</em>. \u0102\u015ftia ne omoar\u0103 aici!"
-]
-}
+Highlight: De-a lungul anilor de <em>război</em>, stăpânirea ţării înăsprea din ce în ce tot mai
+Highlight: nespus mai grele ca oricând. Populaţia răvăşită de <em>război</em>, iar rândurile fraţilor lucrători împuţinate de
+Highlight: aceasta când piedicile de tot felul rămase după <em>război</em> apăsau asupra tuturor.
+Highlight: Dar ce prăpăd mare făcuse lungul <em>război</em> şi dureroasa înstrăinare care trecuse pe aici.
+Highlight: să începem şi munca de tipărire. Anii lungi de <em>război</em>, refugiul şi mutările celor mai mulţi făcuseră
+Highlight: - Iată, am trecut cu toţii printr-un <em>război</em> cumplit. Am avut de suferit mult atât unii cât
 
-Score: 1.6666666
+Score: 7.714286
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
-Title: Cap. 22 - Statutele - marea şi permanenta primejdie
+Title: Cap. 23 - La zece ani de Oaste
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trebuie s\u0103-\u0163i dai seama c\u0103 ai declarat <em>r\u0103zboi</em> diavolului \u015fi e\u015fti \u00een <em>r\u0103zboi</em> cu patimile \u015fi poftele acestei lumi",
-"\u00eensemn\u0103tate este leg\u0103tura telefonic\u0103 \u00een vreme de <em>r\u0103zboi</em>. Telefonul \u0163ine leg\u0103tura \u00eentre comandamentul luptei",
-"care de bun\u0103 voie s-au hot\u0103r\u00e2t s\u0103 intre \u00eentr-un <em>r\u0103zboi</em> duhovnicesc. Crea\u0163ia Oastei a fost de la \u00eenceput",
-"purtat de ochi, cel purtat de felurite pofte. Acest <em>r\u0103zboi</em> trebuie s\u0103-l cucerim. "
-]
-}
+Highlight: avut. Şi vom mai avea, căci nu este oaste fără <em>război</em> şi nici biruinţă fără luptă. Noi însă vom păşi
+Highlight: din nou - ai intrat în <em>război</em> cu
+Highlight: , cu firea cea veche şi în acest <em>război</em> vei sta până la sfârşitul
+Highlight: sfârşitul vieţii. Oamenii cei lumeşti n-au acest <em>război</em>. Ei petrec
+Highlight: , care a făcut mult bine mai ales înainte de <em>război</em>; apoi la Bucureşti
+Highlight: După <em>război</em> a venit un potop de nelegiuiri, stricăciunea a
 
-Score: 1.6666666
+Score: 7.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 1 - Grăuntele de muştar
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Era \u00een zilele de dup\u0103 primul mare <em>r\u0103zboi</em>, \u00eenceput \u00een 1914 \u015fi terminat, de peste tot, abia",
-"Fiecare a adus un r\u0103u tot mai cumplit. Ultimul mare <em>r\u0103zboi</em>, ar putea aduce nimicirea total\u0103. ",
-"dup\u0103 primul mare, \u00eendelungat \u015fi cr\u00e2ncen <em>r\u0103zboi</em>. At\u00e2t peste popoarele \u00eenvinse c\u00e2t \u015fi peste cele \u00eenving\u0103toare",
-"ne\u00een\u0163elegerile confesionale - care, \u00eenainte de <em>r\u0103zboi</em>, c\u00e2nd Ardealul era sub st\u0103p\u00e2nirea ungureasc\u0103, din",
-"frumoasa \u015fi pa\u015fnica lor convie\u0163uire de dinainte de <em>r\u0103zboi</em>, cele dou\u0103 comunit\u0103\u0163i rom\u00e2ne\u015fti se pomeniser\u0103 acum"
-]
-}
+Highlight: Era în zilele de după primul mare <em>război</em>, început în 1914 şi terminat, de peste tot, abia
+Highlight: Fiecare a adus un rău tot mai cumplit. Ultimul mare <em>război</em>, ar putea aduce nimicirea totală.
+Highlight: după primul mare, îndelungat şi crâncen <em>război</em>. Atât peste popoarele învinse cât şi peste cele învingătoare
+Highlight: neînţelegerile confesionale - care, înainte de <em>război</em>, când Ardealul era sub stăpânirea ungurească, din
+Highlight: frumoasa şi paşnica lor convieţuire de dinainte de <em>război</em>, cele două comunităţi româneşti se pomeniseră acum
 
-Score: 1.6
+Score: 7.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
+Type: articol
+Author: Traian Dorz
+Highlight: trebuie să-ţi dai seama că ai declarat <em>război</em> diavolului şi eşti în <em>război</em> cu patimile şi poftele acestei lumi
+Highlight: însemnătate este legătura telefonică în vreme de <em>război</em>. Telefonul ţine legătura între comandamentul luptei
+Highlight: care de bună voie s-au hotărât să intre într-un <em>război</em> duhovnicesc. Creaţia Oastei a fost de la început
+Highlight: purtat de ochi, cel purtat de felurite pofte. Acest <em>război</em> trebuie să-l cucerim.
+
+Score: 7.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: dintr-un sat unguresc înainte cu mult de primul <em>război</em> mondial, când noi eram sub unguri.
+Highlight: Încă dinainte de <em>război</em> cunoscusem la Beiuş o familie de evrei. Tatăl lor
+Highlight: năzărea că este <em>război</em>. Şi începea să tremure şi să se văicărească tare:
+Highlight: - E <em>război</em> frate Traian, n-auzi
+Highlight: - Ba eu îţi spun că-i <em>război</em>. Ăştia ne omoară aici!
+
+Score: 7.2000003
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 16 - Există un echilibru
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen anii aceia de dinaintea celui de-al doilea <em>r\u0103zboi</em> mondial, p\u0103catul se \u00eentinsese \u015fi se \u00eenmul\u0163ise pretutindeni",
-"f\u0103ceau mari mi\u015fc\u0103ri de trupe \u015fi intense preg\u0103tiri de <em>r\u0103zboi</em>. Conduc\u0103torii popoarelor rosteau cuv\u00e2nt\u0103ri r\u0103zboinice",
-"cuprinsese toate \u0163\u0103rile. \u0162ara noastr\u0103 intrase \u015fi ea \u00een <em>r\u0103zboi</em> din luna iunie 1941. Unitatea de motorizate \u015fi",
-"p\u00e2n\u0103 \u00een martie 1943, prin toate groz\u0103viile acestui <em>r\u0103zboi</em>... "
-]
-}
+Highlight: În anii aceia de dinaintea celui de-al doilea <em>război</em> mondial, păcatul se întinsese şi se înmulţise pretutindeni
+Highlight: făceau mari mişcări de trupe şi intense pregătiri de <em>război</em>. Conducătorii popoarelor rosteau cuvântări războinice
+Highlight: cuprinsese toate ţările. Ţara noastră intrase şi ea în <em>război</em> din luna iunie 1941. Unitatea de motorizate şi
+Highlight: până în martie 1943, prin toate grozăviile acestui <em>război</em>...
 
-Score: 1.6
+Score: 7.2000003
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 28 - Alte întristări binefăcătoare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenainte de <em>r\u0103zboi</em> de prin 1938, pe c\u00e2nd eram la Cluj cu fr. Marini... Apoi \u00eendat\u0103 dup\u0103 <em>r\u0103zboi</em>, dup\u0103 revenirea",
-"pentru ca cei care totdeauna au fost gata numai de <em>r\u0103zboi</em>, s\u0103 se sature odat\u0103 de el \u015fi s\u0103 se \u00eentoarc\u0103 spre",
-"preg\u0103tit\u0103 mult mai dinainte c\u00e2nd se a\u015fteptau la <em>r\u0103zboi</em> \u015fi nu la pace. "
-]
-}
+Highlight: înainte de <em>război</em> de prin 1938, pe când eram la Cluj cu fr. Marini... Apoi îndată după <em>război</em>, după revenirea
+Highlight: pentru ca cei care totdeauna au fost gata numai de <em>război</em>, să se sature odată de el şi să se întoarcă spre
+Highlight: pregătită mult mai dinainte când se aşteptau la <em>război</em> şi nu la pace.
 
-Score: 1.6
+Score: 7.2000003
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 6 - Între două judecăţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"declarat <em>r\u0103zboi</em> bisericii\u201d...",
-"am declarat <em>r\u0103zboi</em> bisericii",
-" - cu graiul \u015fi \u00een scris, - nu se afl\u0103 nici un <em>r\u0103zboi</em> contra bisericii \u015fi nici un \u00eendemn contra bisericii",
-"dup\u0103 un r\u0103zvr\u0103tit, ca dup\u0103 unul ce vreau s\u0103 fac <em>r\u0103zboi</em> contra bisericii"
-]
-}
+Highlight: declarat <em>război</em> bisericii”...
+Highlight: am declarat <em>război</em> bisericii
+Highlight:  - cu graiul şi în scris, - nu se află nici un <em>război</em> contra bisericii şi nici un îndemn contra bisericii
+Highlight: după un răzvrătit, ca după unul ce vreau să fac <em>război</em> contra bisericii
 
-Score: 1.6
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Începutul Lucrării Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dac\u0103 un <em>r\u0103zboi</em> de un fel se terminase \u00een afar\u0103 cu dezrobirea noastr\u0103 na\u0163ional\u0103 - un nou <em>r\u0103zboi</em> de un alt",
-"acest <em>r\u0103zboi</em> trebuie purtat cu \u015fi mai mare hot\u0103r\u00e2re. ",
-"Oric\u00e2t va fi de lung \u015fi de mare acest <em>r\u0103zboi</em>, el"
-]
-}
-
-Score: 1.6
+Score: 7.2000003
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een <em>r\u0103zboi</em> cu satana, vechiul nostru asupritor. ",
-"Din aceast\u0103 clip\u0103, c\u00e2nd noi i-am declarat <em>r\u0103zboi</em> total",
-"lui, ne-a declarat \u015fi el nou\u0103 tot un astfel de <em>r\u0103zboi</em>. ",
-"Avem de-a face cu un vr\u0103jma\u015f total \u015fi cu un <em>r\u0103zboi</em> total \u015fi nemilos. De aceea lupta va fi lung\u0103 \u015fi"
-]
-}
+Highlight: în <em>război</em> cu satana, vechiul nostru asupritor.
+Highlight: Din această clipă, când noi i-am declarat <em>război</em> total
+Highlight: lui, ne-a declarat şi el nouă tot un astfel de <em>război</em>.
+Highlight: Avem de-a face cu un vrăjmaş total şi cu un <em>război</em> total şi nemilos. De aceea lupta va fi lungă şi
 
-Score: 1.5
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 10 - Pe drumul Crucii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"...Am intrat \u00eentr-un <em>r\u0103zboi</em> aprig \u015fi necru\u0163\u0103tor cu p\u0103catele \u015fi datinile cele",
-"pentru tr\u0103irea deplin\u0103 a Evangheliei. \u00cen acest <em>r\u0103zboi</em>, Emanuel, Domnul, a fost cu noi. ",
-"Nu doresc altceva dec\u00e2t o Oaste care s\u0103 se poat\u0103 <em>r\u0103zboi</em> cu p\u0103catul. S\u0103 se lase Oastei, sub strictul control"
-]
-}
+Highlight: ...Am intrat într-un <em>război</em> aprig şi necruţător cu păcatele şi datinile cele
+Highlight: pentru trăirea deplină a Evangheliei. În acest <em>război</em>, Emanuel, Domnul, a fost cu noi.
+Highlight: Nu doresc altceva decât o Oaste care să se poată <em>război</em> cu păcatul. Să se lase Oastei, sub strictul control
 
-Score: 1.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 18 - Un vânt rău
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"n\u0103v\u0103lirea str\u0103inilor \u015fi prin groz\u0103viile aduse de <em>r\u0103zboi</em>, - ajunsesem \u00eentr-o mare primejdie.",
-"f\u0103cut ziua a doua, adic\u0103 atunci c\u00e2nd dup\u0103 al doilea <em>r\u0103zboi</em> a venit \u00een sf\u00e2r\u015fit perioada de pace dup\u0103 care t\u00e2njisem",
-"venit \u00een cur\u00e2nd peste \u0163ara noastr\u0103 abia sc\u0103pat\u0103 de <em>r\u0103zboi</em>: Nimicitoarea secet\u0103 din Moldova a anului 1946"
-]
-}
-
-Score: 1.5
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"omenirii odat\u0103 tot cu primul mare <em>r\u0103zboi</em>. ",
-"Fr\u0103m\u00e2nt\u0103rile aduse de marele <em>r\u0103zboi</em> au schimbat nu numai st\u0103rile",
-"...\u015ei dac\u0103 \u00een acest <em>r\u0103zboi</em> ceresc ni se cer \u015fi jertfe, dac\u0103 suntem prigoni\u0163i"
-]
-}
+Highlight: omenirii odată tot cu primul mare <em>război</em>.
+Highlight: Frământările aduse de marele <em>război</em> au schimbat nu numai stările
+Highlight: ...Şi dacă în acest <em>război</em> ceresc ni se cer şi jertfe, dacă suntem prigoniţi
 
-Score: 1.5
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 18 - Un vânt rău
+Type: articol
+Author: Traian Dorz
+Highlight: năvălirea străinilor şi prin grozăviile aduse de <em>război</em>, - ajunsesem într-o mare primejdie.
+Highlight: făcut ziua a doua, adică atunci când după al doilea <em>război</em> a venit în sfârşit perioada de pace după care tânjisem
+Highlight: venit în curând peste ţara noastră abia scăpată de <em>război</em>: Nimicitoarea secetă din Moldova a anului 1946
+
+Score: 6.75
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 2 - Fiecare existenţă este o taină
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"era \u015fi nor \u015fi noapte \u015fi iarn\u0103 \u015fi <em>r\u0103zboi</em>...",
-"februarie 1914. \u00cen luna August \u00eencepuse primul mare <em>r\u0103zboi</em> \u00een care au fost du\u015fi \u00eendat\u0103 to\u0163i tinerii \u00een stare",
-"prim\u0103vara anului 1919, dup\u0103 terminarea primului mare <em>r\u0103zboi</em>, c\u00e2nd cei care mai sc\u0103paser\u0103 din prizonieratul"
-]
-}
+Highlight: era şi nor şi noapte şi iarnă şi <em>război</em>...
+Highlight: februarie 1914. În luna August începuse primul mare <em>război</em> în care au fost duşi îndată toţi tinerii în stare
+Highlight: primăvara anului 1919, după terminarea primului mare <em>război</em>, când cei care mai scăpaseră din prizonieratul
 
-Score: 1.5
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Fricoşii să plece acasă
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"un fel de sfaturi de armat\u0103. C\u00e2nd vei merge la <em>r\u0103zboi</em> contra vr\u0103jma\u015filor t\u0103i - gr\u0103ia Domnul c\u0103tre Moise",
-"r\u0103zboiul lui Dumnezeu. Dumnezeu poart\u0103 prin noi acest <em>r\u0103zboi</em>. \u015ei osta\u015fii Lui trebuie s\u0103 \u00eentruneasc\u0103 condi\u0163iile",
-"frico\u015fi. Cu ei nu se poate face nici un fel de <em>r\u0103zboi</em>. Cum spune Biblia, frico\u015fii numai moaie inima fra\u0163ilor"
-]
-}
-
-Score: 1.5
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 5 - Apele adânci se limpezesc greu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dintre \u0163\u0103ri nu era pace. Cei ie\u015fi\u0163i \u00eenfr\u00e2n\u0163i din <em>r\u0103zboi</em> se agitau \u015fi \u00eenafar\u0103 \u015fi \u00een\u0103untru, neput\u00e2ndu-se",
-"\u0162\u0103r\u0103nimea era s\u0103rac\u0103 \u015fi ruinat\u0103 de <em>r\u0103zboi</em>. Marea parte a p\u0103m\u00e2nturilor \u0163\u0103rii era \u00een m\u00e2na c\u00e2torva",
-"\u015fi armonioasei munci cre\u015ftine\u015fti de dinainte de <em>r\u0103zboi</em>, \u00eel luar\u0103 cur\u00e2nd certurile confesionale, interesele"
-]
-}
+Highlight: dintre ţări nu era pace. Cei ieşiţi înfrânţi din <em>război</em> se agitau şi înafară şi înăuntru, neputându-se
+Highlight: Ţărănimea era săracă şi ruinată de <em>război</em>. Marea parte a pământurilor ţării era în mâna câtorva
+Highlight: şi armonioasei munci creştineşti de dinainte de <em>război</em>, îl luară curând certurile confesionale, interesele
 
-Score: 1.5
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 9 - Înţelepciunea şi puterea
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Eu m\u0103 g\u00e2ndesc la altfel de invalizi r\u0103ma\u015fi dup\u0103 <em>r\u0103zboi</em>. M\u0103 g\u00e2ndesc la cei mul\u0163i pe care i-a orbit, i-a",
-"\u015fi de ororile \u015fi nenorocirile celui de al doilea <em>r\u0103zboi</em> care a trecut \u015fi peste noi at\u00e2t de cumplit, - ca",
-"morale care am v\u0103zut-o cum era \u00eendat\u0103 dup\u0103 primul <em>r\u0103zboi</em> mondial, - dar \u015fi la ridicarea nivelului cultural"
-]
-}
+Highlight: Eu mă gândesc la altfel de invalizi rămaşi după <em>război</em>. Mă gândesc la cei mulţi pe care i-a orbit, i-a
+Highlight: şi de ororile şi nenorocirile celui de al doilea <em>război</em> care a trecut şi peste noi atât de cumplit, - ca
+Highlight: morale care am văzut-o cum era îndată după primul <em>război</em> mondial, - dar şi la ridicarea nivelului cultural
 
-Score: 1.5
+Score: 6.75
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Fricoşii să plece acasă
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: un fel de sfaturi de armată. Când vei merge la <em>război</em> contra vrăjmaşilor tăi - grăia Domnul către Moise
+Highlight: războiul lui Dumnezeu. Dumnezeu poartă prin noi acest <em>război</em>. Şi ostaşii Lui trebuie să întrunească condiţiile
+Highlight: fricoşi. Cu ei nu se poate face nici un fel de <em>război</em>. Cum spune Biblia, fricoşii numai moaie inima fraţilor
+
+Score: 6.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Te vrea poporul Tău...
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Te cheam\u0103-n cerescul <em>r\u0103zboi</em>, ",
-"poporul T\u0103u piere-n <em>r\u0103zboi</em>, ",
-"r\u0103nit \u00een al T\u0103u sf\u00e2nt <em>r\u0103zboi</em>, "
-]
-}
+Highlight: Te cheamă-n cerescul <em>război</em>,
+Highlight: poporul Tău piere-n <em>război</em>,
+Highlight: rănit în al Tău sfânt <em>război</em>,
 
-Score: 1.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen situa\u0163ia de atunci, \u00eendat\u0103 dup\u0103 <em>r\u0103zboi</em> c\u00e2nd lucrurile erau at\u00e2t de r\u0103scolite de furtuna",
-"dou\u0103 le cunoscusem \u00eenc\u0103 de la Cluj dinainte de <em>r\u0103zboi</em> c\u00e2nd ne vizitaser\u0103 la "
-]
-}
-
-Score: 1.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"to\u0163i rom\u00e2nii \u00eempr\u0103\u015ftia\u0163i dinainte \u015fi din primul <em>r\u0103zboi</em> mondial prin toate aceste p\u0103r\u0163i. ",
-"\u015fi a bisericii noastre de la terminarea primului <em>r\u0103zboi</em> mondial. "
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 14 - Strâmta cărare mântuitoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenceputul marilor dureri ale celui de al doilea <em>r\u0103zboi</em> mondial care avea s\u0103 treac\u0103 at\u00e2t de nimicitor \u015fi",
-"petrecerea noastr\u0103 din acel \u00eenceput de septembrie \u015fi de <em>r\u0103zboi</em>, a anului 1939."
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din Bucure\u015fti. \u00cen cur\u00e2nd intr\u0103 \u015fi \u0163ara noastr\u0103 \u00een <em>r\u0103zboi</em>, iar unitatea mea trebui s\u0103 plece imediat spre",
-"Dup\u0103 \u015fapte luni de <em>r\u0103zboi</em>, unitatea cu care fusesem \u015fi eu pe front, distrus\u0103"
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"demult s-au pr\u0103p\u0103dit \u015fi odat\u0103 ce au luat-o prad\u0103 de <em>r\u0103zboi</em> pe frumoasa \u015fi harnica noastr\u0103 ma\u015fin\u0103 t\u00e2n\u0103r\u0103, nu",
-"O, Doamne adu \u00eenapoi pe prin\u015fii no\u015ftri de <em>r\u0103zboi</em>, ca pe ni\u015fte r\u00e2uri din partea de miaz\u0103zi."
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ce vorbesc eu, - ei sunt pentru <em>r\u0103zboi</em>\u201d.",
-"numele unor astfel de grup\u0103ri ini\u0163iate dup\u0103 primul <em>r\u0103zboi</em> mondial \u00een s\u00e2nul bisericii, le os\u00e2nde\u015fte global"
-]
-}
+Highlight: ce vorbesc eu, - ei sunt pentru <em>război</em>”.
+Highlight: numele unor astfel de grupări iniţiate după primul <em>război</em> mondial în sânul bisericii, le osândeşte global
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 11 - Ce minunat lucrează Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"scufund\u0103 mai ad\u00e2nc. Erau \u015fi pe aici, \u00eenainte de <em>r\u0103zboi</em>, sute de adun\u0103ri \u015fi mii de suflete vii \u015fi calde",
-"aici ca peste tot o puternic\u0103 lucrare. Dar dup\u0103 <em>r\u0103zboi</em>, parc\u0103 a trecut peste toat\u0103 partea aceasta cel"
-]
-}
+Highlight: scufundă mai adânc. Erau şi pe aici, înainte de <em>război</em>, sute de adunări şi mii de suflete vii şi calde
+Highlight: aici ca peste tot o puternică lucrare. Dar după <em>război</em>, parcă a trecut peste toată partea aceasta cel
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 12 - Toate lucrează spre bine
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Oastea Domnului a fost constituit\u0103 dup\u0103 primul <em>r\u0103zboi</em> mondial \u00een cadrul Bisericii Ortodoxe Rom\u00e2ne cu",
-"bisericii ortodoxe pun\u00e2ndu-se \u00eenainte de al doilea <em>r\u0103zboi</em> mondial la dispozi\u0163ia organiza\u0163iei fasciste Garda"
-]
-}
+Highlight: Oastea Domnului a fost constituită după primul <em>război</em> mondial în cadrul Bisericii Ortodoxe Române cu
+Highlight: bisericii ortodoxe punându-se înainte de al doilea <em>război</em> mondial la dispoziţia organizaţiei fasciste Garda
 
-Score: 1.3333333
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 14 - Strâmta cărare mântuitoare
+Type: articol
+Author: Traian Dorz
+Highlight: începutul marilor dureri ale celui de al doilea <em>război</em> mondial care avea să treacă atât de nimicitor şi
+Highlight: petrecerea noastră din acel început de septembrie şi de <em>război</em>, a anului 1939.
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 15 - Al doilea foc
+Type: articol
+Author: Traian Dorz
+Highlight: din Bucureşti. În curând intră şi ţara noastră în <em>război</em>, iar unitatea mea trebui să plece imediat spre
+Highlight: După şapte luni de <em>război</em>, unitatea cu care fusesem şi eu pe front, distrusă
+
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"confesiunea \u015fi na\u0163iunea noastr\u0103 atunci, dup\u0103 primul mare <em>r\u0103zboi</em> mondial, c\u00e2nd Dumnezeu ne d\u0103ruise \u00eenvierea na\u0163ional\u0103",
-"sufleteasc\u0103! Totul era \u00eenainte de cel de-al doilea mare <em>r\u0103zboi</em> din care poate am fi sc\u0103pat altfel. Dar pentru"
-]
-}
+Highlight: confesiunea şi naţiunea noastră atunci, după primul mare <em>război</em> mondial, când Dumnezeu ne dăruise învierea naţională
+Highlight: sufletească! Totul era înainte de cel de-al doilea mare <em>război</em> din care poate am fi scăpat altfel. Dar pentru
 
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 21 - După cei 50 de ani
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cendat\u0103 dup\u0103 terminarea primului mare \u015fi lung <em>r\u0103zboi</em> mondial, 1914-1918, - c\u00e2nd Domnul Dumnezeu a adus",
-"repeziciune marea mas\u0103 a poporului s\u0103r\u0103cit\u0103 de <em>r\u0103zboi</em> \u015fi r\u0103v\u0103\u015fit\u0103 de tot felul de p\u0103cate. B\u0103t\u0103ile, procesele"
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 25 - Istorie şi suferinţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2\u015ftigul lor. C\u00e2nd am revenit \u00eenapoi la Cluj dup\u0103 <em>r\u0103zboi</em>, n-am mai aflat nimic.",
-"de la Blaj care lucrase \u00eenc\u0103 \u00eenainte de primul <em>r\u0103zboi</em> \u00eempreun\u0103 cu Co\u015fbuc \u015fi cu Goga... Cu maica fost\u0103"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"brazd\u0103. Fratele nostru este un biet invalid de <em>r\u0103zboi</em>. Ne putem \u00eenchipui pierderea lui. Noi fra\u0163ii lui",
-"nop\u0163i - s\u0103 ie\u015fim cu Duhul Domnului, cu un fel de <em>r\u0103zboi</em> duhovnicesc... "
-]
-}
+Highlight: brazdă. Fratele nostru este un biet invalid de <em>război</em>. Ne putem închipui pierderea lui. Noi fraţii lui
+Highlight: nopţi - să ieşim cu Duhul Domnului, cu un fel de <em>război</em> duhovnicesc...
 
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Vrăjmaşul îţi întinde mreji
-Type: poezie
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>r\u0103zboi</em> cu el s\u0103 nu mai faci",
-"c\u00e2t por\u0163i al Domnului <em>r\u0103zboi</em>"
-]
-}
+Highlight: În situaţia de atunci, îndată după <em>război</em> când lucrurile erau atât de răscolite de furtuna
+Highlight: două le cunoscusem încă de la Cluj dinainte de <em>război</em> când ne vizitaseră la
 
-Score: 1.3333333
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 21 - După cei 50 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: Îndată după terminarea primului mare şi lung <em>război</em> mondial, 1914-1918, - când Domnul Dumnezeu a adus
+Highlight: repeziciune marea masă a poporului sărăcită de <em>război</em> şi răvăşită de tot felul de păcate. Bătăile, procesele
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 25 - Istorie şi suferinţă
+Type: articol
+Author: Traian Dorz
+Highlight: câştigul lor. Când am revenit înapoi la Cluj după <em>război</em>, n-am mai aflat nimic.
+Highlight: de la Blaj care lucrase încă înainte de primul <em>război</em> împreună cu Coşbuc şi cu Goga... Cu maica fostă
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: toţi românii împrăştiaţi dinainte şi din primul <em>război</em> mondial prin toate aceste părţi.
+Highlight: şi a bisericii noastre de la terminarea primului <em>război</em> mondial.
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: demult s-au prăpădit şi odată ce au luat-o pradă de <em>război</em> pe frumoasa şi harnica noastră maşină tânără, nu
+Highlight: O, Doamne adu înapoi pe prinşii noştri de <em>război</em>, ca pe nişte râuri din partea de miazăzi.
+
+Score: 5.9999995
 Volume: Spre Canaan
 Book: Spre Canaan
 Title: Moise şi Aaron în faţa lui Faraon
 Type: articol
 Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"tabere seam\u0103n\u0103 de la \u00eenceput cu un ultimatum de <em>r\u0103zboi</em>. Moise \u015fi Aaron \u00eei aduc lui Faraon un ultimatum",
-"Puterilor \u015fi Faraon. Precum era de prev\u0103zut, acest <em>r\u0103zboi</em> se gat\u0103 cu pr\u0103bu\u015firea lui Faraon. "
-]
-}
+Highlight: tabere seamănă de la început cu un ultimatum de <em>război</em>. Moise şi Aaron îi aduc lui Faraon un ultimatum
+Highlight: Puterilor şi Faraon. Precum era de prevăzut, acest <em>război</em> se gată cu prăbuşirea lui Faraon.
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Rămâi cu noi
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din cerescul T\u0103u <em>r\u0103zboi</em>",
-"\u015fi-n al T\u0103u ceresc <em>r\u0103zboi</em>"
-]
-}
+Highlight: din cerescul Tău <em>război</em>
+Highlight: şi-n al Tău ceresc <em>război</em>
 
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Adevărata credinţă
-Type: articol
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Vrăjmaşul îţi întinde mreji
+Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"team\u0103 de un alt \u015fi mai cumplit blestem, al unui alt <em>r\u0103zboi</em> ce s-ar putea iar\u0103\u015fi s\u0103 vin\u0103, - ca acum! ",
-"fi \u00eempiedicat\u0103 \u015fi dep\u0103rtat\u0103 primejdia unui nou <em>r\u0103zboi</em>, "
-]
-}
+Highlight: <em>război</em> cu el să nu mai faci
+Highlight: cât porţi al Domnului <em>război</em>
 
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Vremurile de Har
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"9 - Marile mi\u015fc\u0103ri de oameni aduse de <em>r\u0103zboi</em>, au avut \u015fi o urmare bun\u0103: c\u0103l\u0103torind, oamenii",
-"eliberarea \u015fi independen\u0163a noastr\u0103 de dup\u0103 primul mare <em>r\u0103zboi</em>. "
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Vrăjmaşul îţi întinde mreji
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>r\u0103zboi</em> cu ele s\u0103 nu mai faci",
-"c\u00e2t por\u0163i al Domnului <em>r\u0103zboi</em>"
-]
-}
+Highlight: <em>război</em> cu ele să nu mai faci
+Highlight: cât porţi al Domnului <em>război</em>
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"alte p\u0103r\u0163i ale \u0163\u0103rii, care fuseser\u0103 r\u0103v\u0103\u015fite de <em>r\u0103zboi</em> sau de st\u0103rile de dup\u0103 el."
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sabin de la S\u00e2npetru - \u015fi at\u00e2\u0163ia al\u0163ii c\u0103zu\u0163i \u00een <em>r\u0103zboi</em> pe front, dar al c\u0103ror chip va r\u0103m\u00e2nea plin de"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"na\u0163iunea noastr\u0103 r\u0103mas\u0103 grav atins\u0103 dup\u0103 cel dint\u00e2i <em>r\u0103zboi</em> mondial, abia terminat,"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sf\u00e2nt care ardea \u015fi acolo at\u00e2t de frumos \u00eenainte de <em>r\u0103zboi</em>. Dar de fiecare dat\u0103 urm\u0103rirea a fost necru\u0163\u0103toare"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 19 - Şi binele trebuie plătit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lume nou\u0103... Sim\u0163eam ceva ca atunci c\u00e2nd \u00eentr-un <em>r\u0103zboi</em> la care mergeam silit, am trecut hotarul apei ce"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 24 - Înaintea mai-marilor norodului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"el o c\u0103su\u0163\u0103 d\u0103r\u00e2mat\u0103 pe jum\u0103tate, de o bomb\u0103 de <em>r\u0103zboi</em>. Era acoperit\u0103 cu coceni de porumb. Locuise acolo"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cenainte de <em>r\u0103zboi</em> - 1914 - la noi \u00een Ardeal, din cauza persecu\u0163iei"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Mai este-o Judecată!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noi i-ndrept\u0103m \u00eenspre <em>r\u0103zboi</em> sau pace"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Comunismul \u015fi Fascismul. Sf\u00e2r\u015fitul primului mare <em>r\u0103zboi</em> a f\u0103cut s\u0103 se vorbeasc\u0103 prima dat\u0103 \u00een lume despre"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mai mare, l-a cump\u0103nit pe Urie s\u0103 fie omor\u00e2t \u00een <em>r\u0103zboi</em>, pentru ca s\u0103 poat\u0103 avea pe so\u0163ia lui \u00eentre femeile"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 16 - Din cetate în cetate...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tip\u0103rire, cenzura ne respingea tot. Eram \u00een plin <em>r\u0103zboi</em>, frontul mergea tot mai prost, fiarele care ne"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Oastea Domnului a \u00eenceput \u015fi a dus un necru\u0163\u0103tor <em>r\u0103zboi</em> de dezrobire na\u0163ional\u0103 \u015fi personal\u0103 de sub tirania"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 vin\u0103 peste omenire din zi \u00een zi nu numai prin <em>r\u0103zboi</em> ci \u015fi prin pace."
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mereu s\u0103 omoare duhul adev\u0103ratei credin\u0163e. Acest <em>r\u0103zboi</em> duhovnicesc se d\u0103 mereu \u015fi de aceea cei ce tr\u0103iesc"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2t por\u0163i al Domnului <em>r\u0103zboi</em>"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 22 - Peregrinările soliei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eel cuno\u015fteam \u015fi mai demult, \u00eenc\u0103 de dinainte de <em>r\u0103zboi</em>, din 1939 c\u00e2nd tip\u0103ream cu fr. Marini "
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici unul nic\u0103ieri. Unde era\u0163i dv. c\u00e2nd \u00eenainte de <em>r\u0103zboi</em> din 1939-1940 era aici o lucrare nespus mai mare"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 29 - Anul jubiliar 1988
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi vom mai avea \u00eenc\u0103, fiindc\u0103 nu este Oaste f\u0103r\u0103 <em>r\u0103zboi</em> \u015fi nici biruin\u0163\u0103 f\u0103r\u0103 lupt\u0103, noi \u00eens\u0103 vom p\u0103\u015fi"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 30 - Şi acum ultimul cuvânt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0163\u0103rii, \u00eentregite am\u00e2ndou\u0103 la sf\u00e2r\u015fitul primului <em>r\u0103zboi</em> mondial. Condi\u0163iile deosebit de grele sociale,"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1925. \u00cen acea vreme, \u00een lumea nou\u0103 de dup\u0103 marele <em>r\u0103zboi</em>, lucrurile \u00eenc\u0103 nu se putuser\u0103 limpezi. A\u015fezarea"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"44 - Icoane Cre\u0163a \u015fi v\u0103duvele de <em>r\u0103zboi</em>"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Ostaşi ai Domnului
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"purta\u0163i un lung \u015fi greu <em>r\u0103zboi</em>"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>r\u0103zboi</em>"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Vreţi zile liniştite?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu cel r\u0103u pace, nu <em>r\u0103zboi</em>?"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Ostaşi ai Domnului
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"purta\u0163i un lung \u015fi greu <em>r\u0103zboi</em>:"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vara de care vorbesc fiind \u00eenc\u0103 \u00eendat\u0103 dup\u0103 primul <em>r\u0103zboi</em>, aceste lupte erau \u00eenc\u0103 \u00een toi. Ungurii nu se puteau"
-]
-}
-
-Score: 1.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Apostolul Pavel în luptă cu litera legii
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"aten\u0163ie epistolele ap. Pavel, eu v\u0103d \u00een ele un <em>r\u0103zboi</em> nev\u0103zut. De o parte, \u00eel v\u0103d pe satana \u00eencerc\u00e2nd"
-]
-}
-
-Score: 1.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Răscoala de la Numeri cap. 14
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"avem lini\u015fte \u015fi c\u00e2nd colo iat\u0103, acum suntem \u00een <em>r\u0103zboi</em> cu toat\u0103 lumea... s\u0103 ne alegem o alt\u0103 c\u0103petenie"
-]
-}
-
-Score: 1.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Cei ce au iscodit Canaanul
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"erau \u015fi al\u0163i iscoditori care \u00eenfrico\u015fau poporul de <em>r\u0103zboi</em>, \u015fi spuneau c\u0103 e mai bine s\u0103-\u015fi aleag\u0103 o alt\u0103 c\u0103petenie"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"anii de mari primejdii \u015fi lipsuri a primului mare <em>r\u0103zboi</em> - \u015fi p\u00e2n\u0103 la rugul s\u0103u de martir de pe altarul"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, Doamne, adu \u00eenapoi pe to\u0163i prin\u015fii no\u015ftri de <em>r\u0103zboi</em> ca pe ni\u015fte r\u00e2uri din partea de miaz\u0103zi. F\u0103 Doamne"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 30 - Alte adevăruri noi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pornit Oastea Domnului de la \u00eenceput un necru\u0163\u0103tor <em>r\u0103zboi</em> de dezrobire na\u0163ional\u0103 \u015fi personal\u0103. \u015ei \u00een neb\u0103nuit"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Promisiunile şi împlinirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am v\u0103zut \u00eenainte de <em>r\u0103zboi</em> l\u0103ud\u00e2ndu-se mul\u0163i viteji. "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Când vin marile încercări
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu ne \u00eemp\u0103c\u0103m niciodat\u0103. Cu acestea dou\u0103 s\u0103 ne <em>r\u0103zboim</em> cu toat\u0103 puterea vie\u0163ii, cu toate armele pe care"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Firea noastră pământească
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"alungat din inima ta patimile cele rele, declar\u00e2nd <em>r\u0103zboi</em> ispititorului \u015fi ispitelor cu care mai \u00eenainte"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Vorba şi împlinirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Un vechi proverb spune a\u015fa: C\u00e2nd mergi la <em>r\u0103zboi</em> f\u0103 o rug\u0103ciune. C\u00e2nd mergi \u00eentr-o c\u0103l\u0103torie, f\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Ce mare taină este Lucrarea Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi de ororile \u015fi nenorocirile celui de al doilea <em>r\u0103zboi</em> care a trecut \u015fi peste noi at\u00e2t de cumplit, - ca"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Îndrăzneala ispititorului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"abat\u0103 asupra omenirii odat\u0103 tot cu primul mare <em>r\u0103zboi</em>. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Simon Petru mergea după Isus...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am v\u0103zut \u00eenainte de <em>r\u0103zboi</em> l\u0103ud\u00e2ndu-se mul\u0163i viteji, sau am fost chiar noi"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Mai este-o Judecată!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noi i-ndrept\u0103m \u00eenspre <em>r\u0103zboi</em> sau pace"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 3 - Începutul chemării
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Era cu vreo doi ani \u00eenainte de primul mare <em>r\u0103zboi</em>, c\u00e2nd proasp\u0103tul teolog primi chemarea pentru slujba"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"acela de acum 40 sau 50 de ani. Mai ales acum dup\u0103 <em>r\u0103zboi</em> s-a trezit o mare sete \u015fi \u00eenseto\u015fare religioas\u0103"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 12 - Naşterea imnului duhovnicesc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"la glasul Lui ce cheam\u0103 la <em>r\u0103zboi</em>"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Când m-am născut...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"era \u015fi nor \u015fi noapte \u015fi iarn\u0103 \u015fi <em>r\u0103zboi</em>... "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Trupu-i forma
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pild\u0103 r\u0103zboiul cel purtat de felurite pofte. Acest <em>r\u0103zboi</em> trebuie s\u0103-l cucerim. "
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Adevăratele lupte
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cuvintelor, este numai str\u00e2ngerea pr\u0103zii acestui <em>r\u0103zboi</em> necru\u0163\u0103tor, dintre puterile ochilor. "
-]
-}
+Highlight: cuvintelor, este numai strângerea prăzii acestui <em>război</em> necruţător, dintre puterile ochilor.
 
-Score: 1.0
+Score: 4.5
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Apostolul Pavel în luptă cu litera legii
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: atenţie epistolele ap. Pavel, eu văd în ele un <em>război</em> nevăzut. De o parte, îl văd pe satana încercând
+
+Score: 4.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Isus, Tu iar cobori
-Type: poezie
+Book: Cântări Nemuritoare vol. 3
+Title: Bucuria
+Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dori\u0163i nu pace, vre\u0163i <em>r\u0103zboi</em>"
-]
-}
+Highlight: 4 - Caută pacea înainte de-a ajunge la <em>război</em>
 
-Score: 1.0
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: acela de acum 40 sau 50 de ani. Mai ales acum după <em>război</em> s-a trezit o mare sete şi însetoşare religioasă
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Comunismul şi Fascismul. Sfârşitul primului mare <em>război</em> a făcut să se vorbească prima dată în lume despre
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: mai mare, l-a cumpănit pe Urie să fie omorât în <em>război</em>, pentru ca să poată avea pe soţia lui între femeile
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 12 - Naşterea imnului duhovnicesc
+Type: articol
+Author: Traian Dorz
+Highlight: la glasul Lui ce cheamă la <em>război</em>
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: Sabin de la Sânpetru - şi atâţia alţii căzuţi în <em>război</em> pe front, dar al căror chip va rămânea plin de
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: naţiunea noastră rămasă grav atinsă după cel dintâi <em>război</em> mondial, abia terminat,
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: sfânt care ardea şi acolo atât de frumos înainte de <em>război</em>. Dar de fiecare dată urmărirea a fost necruţătoare
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: 1925. În acea vreme, în lumea nouă de după marele <em>război</em>, lucrurile încă nu se putuseră limpezi. Aşezarea
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 16 - Din cetate în cetate...
+Type: articol
+Author: Traian Dorz
+Highlight: tipărire, cenzura ne respingea tot. Eram în plin <em>război</em>, frontul mergea tot mai prost, fiarele care ne
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 18 - Frumoasele noastre Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: mereu să omoare duhul adevăratei credinţe. Acest <em>război</em> duhovnicesc se dă mereu şi de aceea cei ce trăiesc
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 18 - Frumosul an 1930
+Type: articol
+Author: Traian Dorz
+Highlight: 44 - Icoane Creţa şi văduvele de <em>război</em>
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 19 - Şi binele trebuie plătit
+Type: articol
+Author: Traian Dorz
+Highlight: lume nouă... Simţeam ceva ca atunci când într-un <em>război</em> la care mergeam silit, am trecut hotarul apei ce
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 20 - După alţi 30 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: cât porţi al Domnului <em>război</em>
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 22 - Peregrinările soliei
+Type: articol
+Author: Traian Dorz
+Highlight: îl cunoşteam şi mai demult, încă de dinainte de <em>război</em>, din 1939 când tipăream cu fr. Marini
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight: nici unul nicăieri. Unde eraţi dv. când înainte de <em>război</em> din 1939-1940 era aici o lucrare nespus mai mare
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 24 - Înaintea mai-marilor norodului
+Type: articol
+Author: Traian Dorz
+Highlight: el o căsuţă dărâmată pe jumătate, de o bombă de <em>război</em>. Era acoperită cu coceni de porumb. Locuise acolo
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: anii de mari primejdii şi lipsuri a primului mare <em>război</em> - şi până la rugul său de martir de pe altarul
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 29 - Anul jubiliar 1988
+Type: articol
+Author: Traian Dorz
+Highlight: şi vom mai avea încă, fiindcă nu este Oaste fără <em>război</em> şi nici biruinţă fără luptă, noi însă vom păşi
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: O, Doamne, adu înapoi pe toţi prinşii noştri de <em>război</em> ca pe nişte râuri din partea de miazăzi. Fă Doamne
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 3 - Marea cernere
+Type: articol
+Author: Traian Dorz
+Highlight: <em>război</em>
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
-Title: Cântarea Deborei
+Title: Cap. 3 - Orice lucru îşi are
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd de <em>r\u0103zboi</em> erau cuprin\u015fi"
-]
-}
+Highlight: şi <em>război</em> şi pace, sunt
 
-Score: 1.0
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 3 - Începutul chemării
+Type: articol
+Author: Traian Dorz
+Highlight: Era cu vreo doi ani înainte de primul mare <em>război</em>, când proaspătul teolog primi chemarea pentru slujba
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 30 - Alte adevăruri noi
+Type: articol
+Author: Traian Dorz
+Highlight: pornit Oastea Domnului de la început un necruţător <em>război</em> de dezrobire naţională şi personală. Şi în nebănuit
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 30 - Şi acum ultimul cuvânt
+Type: articol
+Author: Traian Dorz
+Highlight: ţării, întregite amândouă la sfârşitul primului <em>război</em> mondial. Condiţiile deosebit de grele sociale,
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: să vină peste omenire din zi în zi nu numai prin <em>război</em> ci şi prin pace.
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
+Type: articol
+Author: Traian Dorz
+Highlight: vara de care vorbesc fiind încă îndată după primul <em>război</em>, aceste lupte erau încă în toi. Ungurii nu se puteau
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: Oastea Domnului a început şi a dus un necruţător <em>război</em> de dezrobire naţională şi personală de sub tirania
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Type: articol
+Author: Traian Dorz
+Highlight: alte părţi ale ţării, care fuseseră răvăşite de <em>război</em> sau de stările de după el.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Înainte de <em>război</em> - 1914 - la noi în Ardeal, din cauza persecuţiei
+
+Score: 4.5
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Cei ce au iscodit Canaanul
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: erau şi alţi iscoditori care înfricoşau poporul de <em>război</em>, şi spuneau că e mai bine să-şi aleagă o altă căpetenie
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Când m-am născut...
+Type: poezie
+Author: Traian Dorz
+Highlight: era şi nor şi noapte şi iarnă şi <em>război</em>...
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Când m-am născut...
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"era \u015fi nor \u015fi noapte \u015fi iarn\u0103 \u015fi <em>r\u0103zboi</em>... "
-]
-}
+Highlight: era şi nor şi noapte şi iarnă şi <em>război</em>...
 
-Score: 1.0
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cântarea Deborei
+Type: poezie
+Author: Traian Dorz
+Highlight: când de <em>război</em> erau cuprinşi
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre pace
+Type: articol
+Author: Traian Dorz
+Highlight: e <em>război</em> cu cel greşit.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre încercare
+Type: articol
+Author: Traian Dorz
+Highlight: 21 - Numai la <em>război</em> se vede cine e viteaz şi cum,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Frica
+Type: articol
+Author: Traian Dorz
+Highlight: vai de cel care porneşte la <em>război</em> cu un fricos
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Isus, Tu iar cobori
+Type: poezie
+Author: Traian Dorz
+Highlight: doriţi nu pace, vreţi <em>război</em>
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
+Type: articol
+Author: Traian Dorz
+Highlight: 7. Cine merge la <em>război</em> pe cheltuiala sa? Cine sădeşte o vie, şi nu mănâncă
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)
+Type: articol
+Author: Traian Dorz
+Highlight: degrabă bombe, mijloace de distrugere, maşini de <em>război</em>, - şi nu unelte de pace!
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 28-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Creaţii a lui Hristos diavolul a pornit un alt <em>război</em>, cu atât mai nimicitor cu cât scopul lui Dumnezeu
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
+Type: articol
+Author: Traian Dorz
+Highlight: dus şi ei la păcat. Asta era ceva mai înainte de <em>război</em>.
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
+Type: articol
+Author: Traian Dorz
+Highlight: Se vorbeşte foarte mult despre un nou <em>război</em>, ce ar putea veni peste lumea întreagă, de data
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
+Type: articol
+Author: Traian Dorz
+Highlight: Un vechi proverb spune aşa: Când mergi la <em>război</em>, fă o rugăciune. Când mergi într-o călătorie, fă
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
+Type: articol
+Author: Traian Dorz
+Highlight: stările de nici zi, nici noapte, nici pace, nici <em>război</em>, nici rece nici clocot.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Mai este-o Judecată!
+Type: poezie
+Author: Traian Dorz
+Highlight: noi i-ndreptăm înspre <em>război</em> sau pace
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Mai este-o Judecată!
+Type: poezie
+Author: Traian Dorz
+Highlight: noi i-ndreptăm înspre <em>război</em> sau pace
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Mai este-o Judecată!
+Type: poezie
+Author: Traian Dorz
+Highlight: noi i-ndreptăm înspre <em>război</em> sau pace
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Noi n-avem aur
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Noi n-avem s\u0103bii de <em>r\u0103zboi</em>"
-]
-}
+Highlight: Noi n-avem săbii de <em>război</em>
 
-Score: 1.0
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Ostaşi ai Domnului
+Type: poezie
+Author: Traian Dorz
+Highlight: purtaţi un lung şi greu <em>război</em>:
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Ostaşi ai Domnului
+Type: poezie
+Author: Traian Dorz
+Highlight: purtaţi un lung şi greu <em>război</em>
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Ostaşi ai Domnului
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"purta\u0163i un lung \u015fi greu <em>r\u0103zboi</em>"
-]
-}
+Highlight: purtaţi un lung şi greu <em>război</em>
 
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Vreţi zile liniştite voi?
+Book: Cântări Nemuritoare vol. 9
+Title: Pentru sfânta biruinţă
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu cel r\u0103u pace, nu <em>r\u0103zboi</em>? "
-]
-}
+Highlight: în al Domnului <em>război</em>
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 27
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici <em>r\u0103zboi</em> de vine"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 60
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nt\u0103 ca \u015fi \u201cCrinii m\u0103rturiei\u201d. F\u0103cut\u0103 c\u00e2nd purta <em>r\u0103zboi</em> cu sirienii din Mesopotamia \u015fi cu sirienii din"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 68
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi s-ar <em>r\u0103zboi</em> mereu... "
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 76
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"scuturi, s\u0103bii \u015fi-arme multe de <em>r\u0103zboi</em>. "
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 102
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"20-Ca s-aud\u0103 cum gem prin\u015fii de <em>r\u0103zboi</em>"
-]
-}
+Highlight: 20-Ca s-audă cum gem prinşii de <em>război</em>
 
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 120
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de <em>r\u0103zboi</em> se preg\u0103tesc. "
-]
-}
+Highlight: de <em>război</em> se pregătesc.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 126
+Type: poezie
+Author: Traian Dorz
+Highlight: pe prinşii noştri de <em>război</em>,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 27
+Type: poezie
+Author: Traian Dorz
+Highlight: nici <em>război</em> de vine
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 60
+Type: poezie
+Author: Traian Dorz
+Highlight: cântă ca şi “Crinii mărturiei”. Făcută când purta <em>război</em> cu sirienii din Mesopotamia şi cu sirienii din
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 68
+Type: poezie
+Author: Traian Dorz
+Highlight: şi s-ar <em>război</em> mereu...
 

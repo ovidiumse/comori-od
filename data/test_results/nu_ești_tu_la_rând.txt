@@ -1,45 +1,33 @@
-+--------------------------------+-------------+-------------------------------+----------------------------+---------+
-| Titlu                          | Author      | Tip                           | Carte                      | Volum   |
-+--------------------------------+-------------+-------------------------------+----------------------------+---------+
-| El a scăpat din mâinile lor... | Traian Dorz | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan | articol |
-| Nu te teme, crede!             | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan | poezie  |
-| Despre îndrăzneală - curaj     | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare        | articol |
-+--------------------------------+-------------+-------------------------------+----------------------------+---------+
++--------------------------------+------------------------+-------------+-------------------------------+----------------------------+---------+
+| Titlu                          | Occurrences            | Author      | Tip                           | Carte                      | Volum   |
++--------------------------------+------------------------+-------------+-------------------------------+----------------------------+---------+
+| Despre îndrăzneală - curaj     | {'nu eşti tu la rând'} | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare        | articol |
+| El a scăpat din mâinile lor... | {'nu eşti tu la rând'} | Traian Dorz | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan | articol |
+| Nu te teme, crede!             | {'nu eşti tu la rând'} | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan | poezie  |
++--------------------------------+------------------------+-------------+-------------------------------+----------------------------+---------+
 Searching nu ești tu la rând using http://localhost:9000...
 Got 3 hits:
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: El a scăpat din mâinile lor...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu-i moarte s\u0103 te-ajung\u0103, c\u00e2nd <em>nu e\u015fti tu la r\u00e2nd</em>"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Nu te teme, crede!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu-i moarte s\u0103 te-ajung\u0103 c\u00e2nd <em>nu e\u015fti tu la r\u00e2nd</em>"
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre îndrăzneală - curaj
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu-i moarte s\u0103 te-ajung\u0103 c\u00e2nd <em>nu e\u015fti tu la r\u00e2nd</em>, "
-]
-}
+Highlight: nu-i moarte să te-ajungă când <em>nu eşti tu la rând</em>,
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: El a scăpat din mâinile lor...
+Type: articol
+Author: Traian Dorz
+Highlight: nu-i moarte să te-ajungă, când <em>nu eşti tu la rând</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Nu te teme, crede!
+Type: poezie
+Author: Traian Dorz
+Highlight: nu-i moarte să te-ajungă când <em>nu eşti tu la rând</em>
 

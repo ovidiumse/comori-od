@@ -1,1586 +1,1100 @@
-+------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                  | Author          | Tip                              | Carte                        | Volum   |
-+------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| ... Să nu pierd nimic...                                               | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Cine-şi pierde...                                                      | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | poezie  |
-| Cine-şi pierde...                                                      | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
-| Cine-şi pierde                                                         | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | poezie  |
-| Nu-ţi pierde niciodată                                                 | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
-| De ce-mi pierd uneori...                                               | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Să nu pierdem legătura                                                 | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Păstrarea şi pierderea                                                 | Traian Dorz     | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Profeţiile şi împlinirea lor                                           | Traian Dorz     | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Dar vine pentru ca să cunoască lumea                                   | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Din părţile Crişanei                                                   | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din alte diferite părţi                                                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                        | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Cel mai frumos Isus                                           | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Lumină şi întuneric                                                    | Traian Dorz     | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Cap. 11 - Răscrucea Isus                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Căderea şi ridicarea                                                   | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| Despre credinţă                                                        | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Transilvaniei                                              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 16-a după Rusalii                          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                    | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                       | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Puterea şi primirea ei                                                 | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Silinţa şi ajungerea                                                   | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Datorii şi plăţi                                                       | Traian Dorz     | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
-| Numai ca s-o faci mai frumoasă                                         | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cred Doamne                                                            | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Despre lăcomie                                                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre păcat                                                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Moldovei                                                   | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                     | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                   | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 8 - A treia Judecată                                              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                           | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                           | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                             | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Îngăduinţa cu cei care ne învaţă                                       | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Nu v-am ales Eu pe voi?                                                | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Moise iese din desfătările Egiptului                                   | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Împlinirea Planului Dumnezeiesc                                        | Traian Dorz     | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
-| Laudă şi mustrare                                                      | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Să nu pot izgoni din mine                                              | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Nu-mi mai lua Isuse                                                    | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Despre nădejde                                                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                 | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Înfricoşata lepădare                                          | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Isus a zis: strângeţi fărâmiturile                                     | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Despre iubire                                                          | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi) | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - Al şaptelea foc                                               | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Semnele Oastei Domnului                                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                 | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 26 - Limpezirea apelor adânci                                     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 17 - Vin rândurile noi                                            | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                         | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Încredinţarea suferinţei                                               | Traian Dorz     | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Norul cel luminos şi stâlpul de foc                                    | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Pe Mine nu Mă aveţi totdeauna                                          | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| În locul unde fusese Isus                                              | Traian Dorz     | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Domnul meu...                                                          | Traian Dorz     | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Isus a zis: Marie!                                                     | Traian Dorz     | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Aveţi ceva de mâncare?                                                 | Traian Dorz     | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
-| Pe urmele Domnului                                                     | Traian Dorz     | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Trufia şi plata ei                                                     | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Grija şi îngrijorarea                                                  | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Statornicie şi abatere                                                 | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Condiţia mântuirii                                                     | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Nevinovăţia şi timiditatea                                             | Traian Dorz     | Dorim să fim                     | Cugetări Nemuritoare         | articol |
-| Singura Speranţă                                                       | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Iubirea nemuritoare                                                    | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Boală şi vindecare                                                     | Traian Dorz     | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
-| Capul şi mădularele                                                    | Traian Dorz     | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
-| Permis şi nepermis                                                     | Traian Dorz     | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
-| Bănuiala şi încredinţarea                                              | Traian Dorz     | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
-| Nu-mi mai lua Isuse                                                    | Traian Dorz     | Poruncile Iubirii                | Cugetări Nemuritoare         | poezie  |
-| A face voia lui Dumnezeu                                               | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Garanţia Veşnică                                                       | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| Lucrarea şi mulţumirea                                                 | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| Nebunia locuitorilor pământului                                        | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| Chemarea şi venirea                                                    | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Ce mare taină este Lucrarea Domnului                                   | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Dar şi acuma ştiu...                                                   | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                      | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                           | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| ... Mielul lui Dumnezeu                                                | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Liniştire şi vindecare                                                 | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| ... Şi l-au dat afară                                                  | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Dalila                                                                 | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Mereu prin lupte                                                       | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Despre îndrăzneală - curaj                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre muncă                                                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre nebunie                                                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-+------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
++----------------------------------------------------------------------+------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                | Occurrences                                                | Author          | Tip                              | Carte                        | Volum   |
++----------------------------------------------------------------------+------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Cap. 1 - Cel mai frumos Isus                                         | {'pierdere', 'pierdea', 'pierde', 'pierderea'}             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                  | {'pierdere', 'Pierdere', 'pierdem', 'pierde'}              | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 1 - Înfricoşata lepădare                                        | {'pierdere', 'pierde'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Pe Mine nu Mă aveţi totdeauna                                        | {'pierdere', 'pierderea'}                                  | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                      | {'pierdere', 'pierde', 'pierderea'}                        | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                     | {'pierdere', 'pierderea', 'Pierdusem', 'pierd', 'pierdea'} | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                     | {'pierdere', 'pierdeau', 'pierde', 'pierderea'}            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 13 - E poate ultima-ncercare...                                 | {'pierdere', 'pierde'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                          | {'pierdere', 'pierderea', 'pierd'}                         | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                             | {'pierdere', 'pierdem', 'pierde', 'pierdeau'}              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)  | {'pierde', 'pierdere'}                                     | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor) | {'pierde', 'pierdere'}                                     | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Moise iese din desfătările Egiptului                                 | {'pierdere', 'pierde', 'pierdem'}                          | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Cap. 11 - Semnele Oastei Domnului                                    | {'pierdere', 'pierde'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Despre iubire                                                        | {'Pierdere', 'pierde'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată) | {'pierdere', 'pierde'}                                     | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Liniştire şi vindecare                                               | {'pierdere', 'pierderea', 'pierde'}                        | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Mereu prin lupte                                                     | {'pierdere', 'pierd'}                                      | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| ... Fiindcă voi aveţi obicei...                                      | {'pierdere', 'pierde'}                                     | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Cap. 11 - Cel mai bun misionar                                       | {'pierdere', 'pierdea'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                     | {'pierdere', 'pierd'}                                      | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                | {'pierdere', 'pierde'}                                     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - Marele necaz salvator                                       | {'pierdere', 'pierd'}                                      | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Când te-or covârşi                                                   | {'pierdere', 'pierde'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Când te-or covârşi ispitele                                          | {'pierdere', 'pierde'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
+| Despre lene                                                          | {'pierdere', 'pierde'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Munteniei                                                | {'pierdere', 'pierd'}                                      | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Era o zi de sabat                                                    | {'pierdere', 'pierde'}                                     | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Nu te muşcă niciodată                                                | {'pierdere', 'pierderea'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Petru iar s-a lepădat                                                | {'pierdere', 'pierde'}                                     | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Setea şi izvorul                                                     | {'pierdere', 'pierderea'}                                  | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Taina şi înţelesul                                                   | {'pierdere', 'pierde'}                                     | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Vedeţi că nu câştigaţi nimic                                         | {'pierdere', 'pierderea'}                                  | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Asprime şi bunătate                                                  | {'pierdere'}                                               | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Cap. 4 - Spre altarul său                                            | {'pierdere'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Despre hotărâre                                                      | {'pierdere'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Doamne, văd...                                                       | {'pierdere'}                                               | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| După aceea Isus S-a dus...                                           | {'pierdere'}                                               | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Eu sunt Pâinea vieţii                                                | {'pierdere'}                                               | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Iată că acum ne vorbeşti desluşit                                    | {'pierdere'}                                               | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Isus plângea                                                         | {'pierdere'}                                               | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Mare plâns şi tânguieli                                              | {'pierdere'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Moise, alesul Domnului, a petrecut                                   | {'pierdere'}                                               | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Nimic nu-i o-nşelare                                                 | {'pierdere'}                                               | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | poezie  |
+| Nimic nu-i o-nşelare                                                 | {'pierdere'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Nu priviţi la suferinţa                                              | {'pierdere'}                                               | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | poezie  |
+| Nu priviţi la suferinţa                                              | {'pierdere'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Nu priviţi la suferinţa...                                           | {'pierdere'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
+| O, paşii Tăi apropiindu-se                                           | {'pierdere'}                                               | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Peste puţină vreme                                                   | {'pierdere'}                                               | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| Prezenţa Ta                                                          | {'pierdere'}                                               | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | poezie  |
+| Prezenţa Ta                                                          | {'pierdere'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Să aibă în ei bucuria Mea                                            | {'pierdere'}                                               | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Însetarea şi Apa Vieţii                                              | {'pierdere'}                                               | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Întristarea voastră se va preface în bucurie                         | {'pierdere'}                                               | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| ... Să nu pierd nimic...                                             | {'pierde', 'pierd'}                                        | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Cine-şi pierde                                                       | {'pierde'}                                                 | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | poezie  |
+| De ce-mi pierd uneori...                                             | {'pierd'}                                                  | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Dar vine pentru ca să cunoască lumea                                 | {'pierde'}                                                 | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| Din părţile Crişanei                                                 | {'pierde', 'Pierderea'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                              | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cap. 11 - Răscrucea Isus                                             | {'pierderea', 'pierdem', 'pierd'}                          | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                  | {'pierderea', 'pierde', 'pierdem'}                         | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Despre credinţă                                                      | {'pierd', 'pierde'}                                        | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Transilvaniei                                            | {'pierd', 'pierde'}                                        | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 16-a după Rusalii                        | {'pierde', 'pierderea', 'pierdem'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cred Doamne                                                          | {'pierde', 'pierdem'}                                      | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Despre lăcomie                                                       | {'pierde', 'Pierderea'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre păcat                                                         | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Moldovei                                                 | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                        | {'pierde', 'pierd', 'pierdem'}                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Numai ca s-o faci mai frumoasă                                       | {'pierde'}                                                 | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                           | {'pierde', 'pierdem'}                                      | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                         | {'pierd', 'pierde', 'pierdem'}                             | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                         | {'pierdem', 'pierdeam', 'pierderea'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                            | {'pierde', 'pierduse'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Despre nădejde                                                       | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Laudă şi mustrare                                                    | {'pierde'}                                                 | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Nu v-am ales Eu pe voi?                                              | {'pierde', 'pierdem', 'pierd'}                             | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Nu-mi mai lua Isuse                                                  | {'pierd', 'pierde'}                                        | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
+| Să nu pot izgoni din mine                                            | {'pierde', 'pierd'}                                        | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Îngăduinţa cu cei care ne învaţă                                     | {'pierde', 'pierdem', 'pierdusem'}                         | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| ... Mielul lui Dumnezeu                                              | {'pierdem'}                                                | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| ... Şi l-au dat afară                                                | {'pierde', 'pierd', 'pierdem'}                             | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| A face voia lui Dumnezeu                                             | {'pierderea', 'pierd'}                                     | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                         | {'pierdem'}                                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                               | {'pierdeau', 'pierderea'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                                   | {'pierde', 'pierdusem'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Vin rândurile noi                                          | {'pierde', 'pierdem'}                                      | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                               | {'pierderea', 'Pierdusem', 'pierde'}                       | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 23 - La zece ani de Oaste                                       | {'pierdem'}                                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 26 - Limpezirea apelor adânci                                   | {'pierde', 'pierd'}                                        | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - Vrăjmaşul caută viaţa pruncului                             | {'pierd', 'pierdusem', 'pierdem'}                          | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - Al şaptelea foc                                             | {'pierdem', 'pierduse', 'pierde'}                          | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Înţelepciunea şi puterea                                    | {'pierderea'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Dalila                                                               | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Dar şi acuma ştiu...                                                 | {'pierd', 'pierde'}                                        | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Despre muncă                                                         | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre nebunie                                                       | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre prietenie                                                     | {'pierde'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
++----------------------------------------------------------------------+------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
 Searching Pierdere using http://localhost:9000...
-Got 804 hits:
-Score: 5.714286
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: ... Să nu pierd nimic...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"se va <em>pierde</em> tineretul, se vor <em>pierde</em> sufletele",
-"sufletele, se va <em>pierde</em> adunarea \u015fi p\u00e2n\u0103 la urm\u0103 se poate <em>pierde</em> \u015fi m\u00e2ntuirea ve\u015fnic\u0103 a multora. Dac\u0103 nu a tuturor",
-"\u015ei voia Celui ce M-a trimis, este s\u0103 nu <em>pierd</em> nimic din tot ce Mi-a dat El, ci",
-"sufletele care vin la Isus, acolo u\u015for se poate <em>pierde</em> totul.  Unde",
-"acolo mereu se va tot <em>pierde</em>...  \u015ei"
-],
-"title": [
-"... S\u0103 nu <em>pierd</em> nimic..."
-]
-}
-
-Score: 5.666667
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Cine-şi pierde...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cine-\u015fi <em>pierde</em> m\u00e2na dreapt\u0103",
-"cine-\u015fi <em>pierde</em> so\u0163ul vie\u0163ii",
-"cine-\u015fi <em>pierde</em> ochiul oare",
-"cine-\u015fi <em>pierde</em> leg\u0103m\u00e2ntul",
-"<em>pierderea</em> cea grea"
-],
-"title": [
-"Cine-\u015fi <em>pierde</em>..."
-]
-}
-
-Score: 5.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Cine-şi pierde...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cine-\u015fi <em>pierde</em> m\u00e2na dreapt\u0103",
-"cine-\u015fi <em>pierde</em> so\u0163ul vie\u0163ii",
-"cine-\u015fi <em>pierde</em> ochiul oare",
-"cine-\u015fi <em>pierde</em> leg\u0103m\u00e2ntul",
-"<em>pierderea</em> cea grea"
-],
-"title": [
-"Cine-\u015fi <em>pierde</em>..."
-]
-}
-
-Score: 5.6363635
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cine-şi pierde
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cine-\u015fi <em>pierde</em> m\u00e2na dreapt\u0103",
-"cine-\u015fi <em>pierde</em> so\u0163ul vie\u0163ii",
-"Cine-\u015fi <em>pierde</em> ochiul oare",
-"cine-\u015fi <em>pierde</em> leg\u0103m\u00e2ntul",
-"\u015fi-l <em>pierde</em>"
-],
-"title": [
-"Cine-\u015fi <em>pierde</em>"
-]
-}
-
-Score: 5.333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Nu-ţi pierde niciodată
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-\u0163i <em>pierde</em> niciodat\u0103 vreo clip\u0103 \u00een zadar",
-"Nu-\u0163i <em>pierde</em>-acum prilejul, ci vino la Isus",
-"Nu-\u0163i <em>pierde</em> \u00eendr\u0103zneala c\u00e2nd e\u015fti amenin\u0163at",
-"Nu-\u0163i <em>pierde</em> cur\u0103\u0163ia c\u00e2nd anii se mul\u0163esc",
-"Nu-\u0163i <em>pierde</em> premiul ve\u015fnic pentru acest gunoi"
-],
-"title": [
-"Nu-\u0163i <em>pierde</em> niciodat\u0103"
-]
-}
-
-Score: 5.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: De ce-mi pierd uneori...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"De ce-mi <em>pierd</em> uneori iubirea",
-"De ce-mi <em>pierd</em> uneori credin\u0163a",
-"De ce-mi <em>pierd</em> uneori seninul"
-],
-"title": [
-"De ce-mi <em>pierd</em> uneori..."
-]
-}
-
-Score: 4.333333
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Să nu pierdem legătura
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ea, - atunci mai bine nu o mai scriu. De ce s\u0103 <em>pierd</em> \u00een zadar \u015fi timpul lor \u015fi al meu?",
-"7 - S\u0103 nu <em>pierde\u0163i</em> leg\u0103tura cu coloana care vine dup\u0103 voi. Fi\u0163i \u00een"
-],
-"title": [
-"S\u0103 nu <em>pierdem</em> leg\u0103tura"
-]
-}
-
-Score: 4.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Păstrarea şi pierderea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd \u015fi fiii Lui sunt at\u00e2t de minuna\u0163i. Ei \u00ee\u015fi <em>pierd</em> voio\u015fi via\u0163a asta, ca s-o c\u00e2\u015ftige pe cea ve\u015fnic\u0103"
-],
-"title": [
-"P\u0103strarea \u015fi <em>pierderea</em>"
-]
-}
-
-Score: 3.6923077
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Profeţiile şi împlinirea lor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00ee\u015fi <em>pierde</em> puterea, \u00ee\u015fi <em>pierde</em> lacrimile",
-"Biserica \u00ee\u015fi <em>pierde</em> cur\u0103\u0163ia \u00ee\u015fi",
-"\u00ee\u015fi <em>pierde</em> unitatea,  \u00ee\u015fi",
-"\u00ee\u015fi <em>pierde</em> sfin\u0163enia,  \u00ee\u015fi",
-"lacrimile, \u00ee\u015fi <em>pierde</em> rug\u0103ciunea"
-]
-}
-
-Score: 3.6363635
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Dar vine pentru ca să cunoască lumea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00ee\u015fi <em>pierde</em> cur\u0103\u0163ia, ",
-"\u00ee\u015fi <em>pierde</em> unitatea, ",
-"\u00ee\u015fi <em>pierde</em> sfin\u0163enia, ",
-"\u00ee\u015fi <em>pierde</em> puterea, ",
-"\u00ee\u015fi <em>pierde</em> roadele"
-]
-}
-
-Score: 3.6363635
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Crişanei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu-\u0163i <em>pierde</em> tinere\u0163ea",
-"\u00ee\u0163i vei <em>pierde</em> fericirea - c-astea umbl\u0103 \u00eempreun\u0103. ",
-"65 - <em>Pierderea</em> averii-ncearc\u0103 cinstea celor pre\u0163ui\u0163i",
-"nu doar pe el se <em>pierde</em>-un tat\u0103, ",
-"ci-\u015fi <em>pierde</em>-ntregul viitor"
-]
-}
-
-Score: 3.5555556
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- cine-i cade-n \u00eenchisoare, <em>pierde</em> cerul fericirii. ",
-"se consum\u0103 \u015fi se <em>pierde</em>, el pe sine, omul r\u0103u. ",
-"106 - Pacea ta \u0163i-o <em>pierde</em> flec\u0103reala ta",
-"- deseori acel ce-o <em>pierde</em> \u00een zadar o mai ofteaz\u0103. ",
-"altfel tot ce-i bun se <em>pierde</em> \u00een p\u0103cat \u015fi-n del\u0103sare. "
-]
-}
-
-Score: 3.5277777
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 fie mereu sporit sau \u00eenlocuit, spre a nu se <em>pierde</em> niciodat\u0103. Chiar dac\u0103 prin uneltirile celui r\u0103u",
-"Am spus mai sus c\u0103 <em>pierderea</em> cea \u00eentr-adev\u0103r mare, nu vine pentru Lucrarea",
-"repet\u0103m, pentru c\u0103 \u015ftiu c\u00e2t de repede se poate <em>pierde</em> firul adev\u0103rului printre toate feluritele urzeli",
-"acestui fir scump \u015fi sf\u00e2nt, pentru a-l acoperi \u015fi <em>pierde</em>.",
-"totdeauna sc\u0103derea num\u0103rului, c\u0103derea sufletelor, <em>pierderea</em> binecuv\u00e2nt\u0103rilor, plecarea Duhului Sf\u00e2nt - \u015fi"
-]
-}
-
-Score: 3.5
+Got 550 hits:
+Score: 12.874999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ca s\u0103 ne \u00eenc\u0103lzim, dar toat\u0103 c\u0103ldura din noi se <em>pierdea</em> odat\u0103 cu aburul care se ridica spre bec.",
-"\u00een sufletele tuturor fra\u0163ilor no\u015ftri, spre a le <em>pierde</em> sau schimba at\u00e2t de u\u015for. A venit \u015fi aceasta tot",
-"mijlocul de care s-a folosit nimicitorul spre a-i <em>pierde</em>. ",
-"fiecare v\u0103z\u00e2ndu-\u015fi \u00eemplinindu-se planurile sale. De <em>pierderea</em> unor at\u00e2t de multe suflete, de nimicirea at\u00e2tor",
-"\u201cmijlocul\u201d se \u00eempu\u0163ina \u015fi sl\u0103bea. \u00cen\u0163elesul adev\u0103rat se <em>pierdea</em> aproape de tot. Vr\u0103jma\u015ful p\u0103rea c\u0103 reu\u015fise s\u0103 arunce"
-]
-}
+Highlight: desigur o <em>pierdere</em> - dar
+Highlight: ... Pe când dacă Lucrarea Oastei s-ar abate, atunci ar fi o <em>pierdere</em> cu neputinţă
+Highlight: ca să ne încălzim, dar toată căldura din noi se <em>pierdea</em> odată cu aburul care se ridica spre bec. Singura
+Highlight: în sufletele tuturor fraţilor noştri, spre a le <em>pierde</em> sau schimba atât de uşor. A venit şi aceasta tot
+Highlight: mijlocul de care s-a folosit nimicitorul spre a-i <em>pierde</em>.  Un
+Highlight: fiecare văzându-şi împlinindu-se planurile sale. De <em>pierderea</em> unor atât de multe suflete, de nimicirea atâtor
 
-Score: 3.5
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Lumină şi întuneric
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fiindc\u0103 \u00een fiecare clip\u0103 se <em>pierd</em> mii de suflete, se <em>pierd</em> mii de ocazii, se <em>pierd</em> mii de valori, care nu",
-"cunoa\u015fte nimic desigur este nefericit - \u015fi se <em>pierde</em>, dac\u0103 se <em>pierde</em>, numai pe el singur, sau pe \u00eenc\u0103 unul sau",
-"ori mai nefericit - \u015fi nu se <em>pierde</em> numai pe el singur ci mai poate <em>pierde</em> pe mul\u0163i. 7"
-]
-}
-
-Score: 3.4285715
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00centristat \u015fi am\u0103r\u00e2t de <em>pierderea</em> acestui suflet pe care \u00eel crescuse ca pe copilul",
-"Odat\u0103 cu <em>pierderea</em> oric\u0103rei speran\u0163e de mo\u015ftenire - se pr\u0103bu\u015fi \u015fi",
-"Suntem mustra\u0163i c\u0103 ne <em>pierdem</em> ziua \u015fi noaptea \u00een nesf\u00e2r\u015fite rug\u0103ciuni... Iar",
-"social\u0103, care \u00eengroa\u015f\u0103 num\u0103rul \u015fomerilor care \u00ee\u015fi <em>pierd</em> ziua \u015fi noaptea \u00een rug\u0103ciuni nesf\u00e2r\u015fite... apoi",
-"Auzi\u0163i, un preot doctor \u00een teologie ne acuz\u0103 c\u0103 ne <em>pierdem</em> ziua \u015fi noaptea \u00een nesf\u00e2r\u015fite rug\u0103ciuni... Dar"
-]
-}
-
-Score: 3.4285715
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mai necesar dintre to\u0163i lucr\u0103torii Domnului. C\u0103 <em>pierderea</em> lui ar \u00eensemna un adev\u0103rat dezastru pentru Lucrarea",
-"\u00een cea mai mare primejdie. \u015ei prin asta, o mare <em>pierdere</em> \u015fi ocar\u0103 ar putea veni peste toat\u0103 Lucrarea lui",
-"C\u0103zui zdrobit pe priciul rece, cu fa\u0163a \u00een palme. <em>Pierdusem</em> toat\u0103 avu\u0163ia mea de c\u0103r\u0163i, pe care le str\u00e2nsesem",
-"ca s\u0103-mi nimiceasc\u0103 credin\u0163a, s\u0103 m\u0103 fac\u0103 s\u0103-mi <em>pierd</em> r\u0103bdarea - \u015fi s\u0103 c\u00e2rtesc \u00eempotriva Dumnezeului meu",
-"- atunci ce am pierdut! \u015ei cum voi repara eu <em>pierderea</em> asta vreodat\u0103? C\u0103ci dac\u0103 nu cred, fac tot felul"
-]
-}
-
-Score: 3.4285715
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 22 - Statutele - marea şi permanenta primejdie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ascuns\u0103 \u00een aceasta, pentru nimicirea Duhului - \u015fi <em>pierderea</em> puterii ei.",
-"Dar primejdia cea mare de a-L <em>pierde</em> pe Isus Cel R\u0103stignit \u00eenc\u0103 nu este asta cea care",
-"\u00eens\u0103 o primejdie \u015fi mai mare dec\u00e2t aceea de a-L <em>pierde</em> pe Isus Cel R\u0103stignit din\u0103untrul Oastei, din adunarea",
-"Este primejdia de a-L <em>pierde</em> pe Isus Cel R\u0103stignit din\u0103untrul nostru, din inima noastr\u0103",
-"s\u0103 nu-L <em>pierdem</em> pe Isus Cel R\u0103stignit din inima noastr\u0103, din via\u0163a"
-]
-}
-
-Score: 3.4285715
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Căderea şi ridicarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nefericite sunt acele zile c\u00e2nd Oastea Domnului \u00ee\u015fi <em>pierde</em>, \u00ee\u015fi uit\u0103 \u015fi \u00ee\u015fi p\u0103r\u0103se\u015fte buna r\u00e2nduial\u0103 a ascult\u0103rii",
-"Vai de acei prin care se <em>pierde</em> ordinea \u015fi vine dezordinea, ",
-"prin care se <em>pierde</em> ascultarea \u015fi se ive\u015fte",
-"\u015fi se <em>pierde</em> p\u0103rt\u0103\u015fia \u015fi se a\u015feaz\u0103 dezbinarea ",
-"\u015fi se <em>pierde</em> armonia \u015fi"
-]
-}
-
-Score: 3.4285715
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre credinţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"20 - Fiii mei, p\u0103stra\u0163i credin\u0163a, c\u0103ci acei ce-o <em>pierd</em>, decad",
-"dac\u0103 sufletul \u015fi-l <em>pierde</em>, ",
-"82 - C\u00e2nd omul <em>pierde</em>-averea, r\u0103m\u00e2ne cu \u015ftiin\u0163a, ",
-"c\u00e2nd <em>pierde</em> libertatea, r\u0103m\u00e2ne cu credin\u0163a;",
-"\u015fi-o m\u00e2n\u0103 c\u00e2nd \u015fi-o <em>pierde</em> \u00eei mai r\u0103m\u00e2ne-o m\u00e2n\u0103 -"
-]
-}
-
-Score: 3.4285715
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>pierd</em> seninele puteri",
-"- \u015fi c\u00e2te-am \u00eenc\u0103 s\u0103 mai <em>pierd</em>",
-"i se scurge lumii slava \u015fi se <em>pierde</em> lumii chipul",
-"154 - S\u0103-\u0163i par\u0103 r\u0103u de tot ce-n via\u0163\u0103 putut-ai <em>pierde</em>",
-"157 - Nu-\u0163i <em>pierde</em> timpul scump pe care"
-]
-}
-
-Score: 3.4285715
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 16-a după Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cine le <em>pierde</em> va vedea la fel c\u0103 toat\u0103 nefericirea \u015fi pierzarea sa de aici \u00eencepe. Cu <em>pierderea</em> cur\u0103\u0163iei",
-"atrac\u0163iile p\u0103m\u00e2nte\u015fti, puterea cuv\u00e2ntului s\u0103u se <em>pierde</em>, c\u0103ldura dragostei lui scade, frumuse\u0163ea cur\u0103\u0163iei",
-" ori g\u00e2nduri ce ne-ar \u00eentina \u015fi ne-ar face s\u0103 <em>pierdem</em> cur\u0103\u0163ia lui Hristos, cur\u0103\u0163ia neprih\u0103nirii noastre",
-"dob\u00e2ndirea m\u00e2ntuirii ca \u015fi primejdiile pentru <em>pierderea</em> ei sunt tot acelea\u015fi care au fost de la \u00eenceput",
-"dec\u00e2t grija \u015fi \u00eengrijorarea permanent\u0103 de a nu <em>pierde</em> aceast\u0103 nemaipomenit\u0103 bog\u0103\u0163ie \u015fi s-o fructific\u0103m"
-]
-}
-
-Score: 3.3333333
+Score: 12.833332
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Dar asta nu-i <em>pierdere</em> ci este cel mai mare c\u00e2\u015ftig. <em>Pierdere</em> este ceea ce",
-"Domnul s\u0103 nu <em>pierdem</em> nimic? -",
-"cel bun pe care l-a\u0163i p\u0103r\u0103sit, \u00eenainte de a v\u0103 <em>pierde</em> de tot.",
-"- P\u0103cat de timpul pe care \u00eel <em>pierdem</em> cu vorbe de astea, - s\u0103ri sup\u0103rat\u0103 femeia de credin\u0163\u0103"
-]
-}
+Highlight: - Dar asta nu-i <em>pierdere</em> ci este cel mai mare câştig. <em>Pierdere</em> este ceea ce
+Highlight: Domnul să nu <em>pierdem</em> nimic? -
+Highlight: cel bun pe care l-aţi părăsit, înainte de a vă <em>pierde</em> de tot.
+Highlight: - Păcat de timpul pe care îl <em>pierdem</em> cu vorbe de astea, - sări supărată femeia de credinţă
 
-Score: 3.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"greu, tiparul era foarte scump - iar banii \u00ee\u015fi <em>pierdeau</em> valoarea de la o zi la alta. ",
-" dac\u0103 din vin\u0103 noastr\u0103 acest prilej unic se va <em>pierde</em> \u015fi noi vom continua iar\u0103\u015fi luptele sectare \u015fi confesionaliste",
-"confesionaliste dintre noi, Lucrarea Domnului va suferi o <em>pierdere</em> de ne\u00eenlocuit, iar noi vom fi tra\u015fi odat\u0103 la r\u0103spundere",
-"r\u0103uf\u0103c\u0103tori ai Evangheliei \u015fi ca ni\u015fte vinova\u0163i pentru <em>pierderea</em> multor suflete. ",
-"\u015fi \u00een leg\u0103tur\u0103 cu asta. Ce dovad\u0103 c\u0103 nimic nu se <em>pierde</em>!). "
-]
-}
-
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Puterea şi primirea ei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dou\u0103 \u00eensu\u015firi se pot \u015fi \u00eembog\u0103\u0163i, - dar se pot \u015fi <em>pierde</em>... \u00cembog\u0103\u0163irea lor se face prin puterea lui Dumnezeu",
-"Iar <em>pierderea</em> lor vine prin lipsa rug\u0103ciunii \u015fi prin lenevirea",
-"\u015fi \u00eemprejur\u0103ri, c\u00e2nd suntem \u00een primejdie s\u0103 ne <em>pierdem</em> aceast\u0103 comoar\u0103 \u015fi aceast\u0103 putere a lacrimilor",
-"ascund\u0103 o mare ispit\u0103. Acestea ne pot face s\u0103 <em>pierdem</em> puterea lacrimilor - \u015fi s\u0103 r\u0103m\u00e2nem cu goliciunea",
-"grij\u0103 s\u0103 ne ferim cu toat\u0103 teama, u\u015for putem s\u0103 ne <em>pierdem</em> direc\u0163ia frumoas\u0103 a specificului nostru prin h\u0103\u0163i\u015furile"
-]
-}
-
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Silinţa şi ajungerea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"3 - Nenorocirea de a-L <em>pierde</em> pe Isus se \u00eent\u00e2mpl\u0103 de multe ori \u015fi multor credincio\u015fi",
-"de primejdii urzite de el, ca s\u0103 ne fac\u0103 s\u0103-L <em>pierdem</em> pe Hristos. ",
-"Ea nu-L <em>pierduse</em> pe Hristos nici o clip\u0103, de aceea ea putea a\u015ftepta",
-"El s\u0103 sim\u0163i c\u0103 ar fi mai \u00eengrozitor dec\u00e2t orice <em>pierdere</em>, ",
-"pl\u00e2ngi cum \u00ee\u015fi pl\u00e2nge cineva, cea mai negr\u0103it\u0103 <em>pierdere</em>, cea mai scump\u0103 iubire, cea mai unic\u0103 datorie"
-]
-}
-
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Datorii şi plăţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- acela se \u00een\u015fal\u0103 \u015fi se <em>pierde</em> singur, f\u0103r\u0103 nici o salvare. ",
-"- dar el se va <em>pierde</em>. ",
-"sau p\u0103rintele nevrednic \u015fi nestatornic - se va <em>pierde</em>. ",
-"Iar <em>pierderea</em> noastr\u0103 este ca \u015fi sosit\u0103. ",
-"c\u0103ci \u00een clipa aceea po\u0163i <em>pierde</em> totul. "
-]
-}
-
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Numai ca s-o faci mai frumoasă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"2 - C\u00e2nd este fericit\u0103 se <em>pierde</em> cu totul \u00een bucuria ei - \u015fi \u00ee\u015fi uit\u0103 c\u0103 mai este",
-"5 - C\u00e2nd este m\u00e2hnit\u0103, iar\u0103\u015fi se <em>pierde</em> cu totul \u00een durerea \u015fi \u00een lacrimile ei, uit\u00e2ndu-\u015fi",
-"6 - C\u00e2nd \u00eei vine un oaspete nou, se <em>pierde</em> cu totul \u00een \u00eencrederea ei uit\u00e2ndu-\u015fi de to\u0163i cei",
-"9 - C\u00e2nd face cuiva o f\u0103g\u0103duin\u0163\u0103 se <em>pierde</em> cu totul \u00een grija de a \u015fi-o \u00eemplini mai devreme",
-"11 - C\u00e2nd nu i se r\u0103spunde, se <em>pierde</em> cu totul \u00een a-\u015fi g\u0103si numai ei vreo vin\u0103 pentru"
-]
-}
-
-Score: 3.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Cred Doamne
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iar cine <em>pierde</em> acest cuget curat \u00ee\u015fi <em>pierde</em> cu el credin\u0163a, dup\u0103 cum se <em>pierde</em> un mir scump, c\u00e2nd",
-"atunci credin\u0163a lui moare, se <em>pierde</em>, se stric\u0103 (",
-"Iar dac\u0103 ne-ai d\u0103ruit-o, nu ne l\u0103sa s\u0103 ne-o mai <em>pierdem</em> prin vreo \u00eentinare a cugetului, prin vreo nepl\u0103cere"
-]
-}
-
-Score: 3.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre lăcomie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>pierde</em> \u015fi pu\u0163in c\u00e2t are, ",
-"<em>pierde</em> \u015fi ce mai avea. ",
-"c\u0103ci cu mult mai mult vei <em>pierde</em>",
-"pentru-un leu nedat la vreme <em>pierde</em>, cel zg\u00e2rcit, o sut\u0103. ",
-"88 - <em>Pierderea</em> averii lumii unora li-e spre folos, "
-]
-}
-
-Score: 3.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre păcat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"31 - Prin p\u0103cat se <em>pierde</em> harul - f\u0103r\u0103 har omu-i c\u0103zut",
-"60 - Pu\u0163in <em>pierde</em>-acela care lumea asta p\u0103r\u0103se\u015fte, ",
-"pe-orice credincios \u00eel <em>pierde</em> numai un p\u0103cat ascuns. ",
-"tot ce-i bun \u00een el se <em>pierde</em> ca dintr-un burduf str\u0103puns. ",
-"84 - O sp\u0103rtur\u0103 mic\u0103 <em>pierde</em> luntrea mare, "
-]
-}
-
-Score: 3.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Moldovei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Omul \u00een\u0163elept nu-\u015fi <em>pierde</em> pentru-o glum\u0103-un prieten bun",
-"- dar mai bine-\u015fi <em>pierde</em>-un prieten ca o glum\u0103",
-"- meritul oricui se <em>pierde</em> c\u00e2nd \u015fi-l spune gura lui. ",
-"c\u0103ci pe mul\u0163i \u00eei m\u00e2ntuie\u015fte ori \u00eei <em>pierde</em>-n urma sa. ",
-"cel lipsit degrab \u00ee\u015fi <em>pierde</em> orice prieten \u015fi-orice neam. "
-]
-}
-
-Score: 3.3333333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care v-a\u0163i putea <em>pierde</em> m\u00e2ntuirea. Cum \u015fi-au pierdut-o cei mai mul\u0163i. \u015ei \u015fi-o <em>pierd</em> \u015fi ast\u0103zi c\u00e2nd \u00een",
-"Nimic nu poate fi nepl\u0103tit, c\u0103ci nimic nu se <em>pierde</em> f\u0103r\u0103 o r\u0103scump\u0103rare. Nimic, dar chiar nimic. Un",
-"sf\u0103tuiesc \u015fi caut\u0103 s\u0103 ne \u00eendrume. Ca s\u0103 nu ne <em>pierdem</em> \u015fi noi sufletul, lu\u00e2ndu-ne dup\u0103 ispitele sau \u00eenv\u0103\u0163\u0103turile",
-"ajut\u0103-ne s\u0103 le urm\u0103m pilda, spre a nu ajunge s\u0103 ne <em>pierdem</em>. Pentru c\u0103 ei sunt un\u015fii T\u0103i \u015fi trime\u015fii de care"
-]
-}
-
-Score: 3.2666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Domnului, era un c\u00e2\u015ftig ce-\u0163i aducea o groaznic\u0103 <em>pierdere</em>: pieirea sufletului t\u0103u... \u00cen locul pagubei din",
-"un biet invalid de r\u0103zboi. Ne putem \u00eenchipui <em>pierderea</em> lui. Noi fra\u0163ii lui osta\u015fi, trebuie s\u0103-i s\u0103rim",
-"s\u0103-i aducem la Hristos, aceste comori zac \u015fi se <em>pierd</em> \u00een acel \u00eentuneric de care sunt acoperite acum. Iat\u0103",
-"sf\u00e2r\u015fitul vie\u0163ii lor - \u015fi tot ce n-au dat Domnului <em>pierd</em> pe totdeauna. Ori vine prigoana peste Lucrarea Domnului",
-"fost mul\u0163i care \u015fi-au r\u0103scump\u0103rat \u00eenapoi ceea ce <em>pierduser\u0103</em> \u00eenainte prin be\u0163ii \u015fi p\u0103cate. Dar prea pu\u0163ini"
-]
-}
-
-Score: 3.2666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"), \u00eempotriva lui satan. Asta s\u0103 n-o <em>pierdem</em> din vedere.",
-"cel ce-\u015fi va <em>pierde</em> via\u0163a pentru Mine, o va c\u00e2\u015ftiga ",
-"Liturghie. Era un singur steag, pu\u0163inii osta\u015fi se <em>pierdeau</em> printre or\u0103\u015feni. S-a slujit Liturghia arhiereasc\u0103",
-"ortodox\u0103 rom\u00e2n\u0103 cu un om plin de m\u00e2nie, p\u00e2n\u0103 la o <em>pierdere</em> elementar\u0103 logic\u0103 a cuvintelor \u015fi ac\u0163iunilor,",
-"S\u0103 nu v\u0103 <em>pierde\u0163i</em> cump\u0103tul din pricina necazurilor mele "
-]
-}
-
-Score: 3.2142859
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"apropia\u0163i-v\u0103 mereu \u015fi griji\u0163i s\u0103 nu-L <em>pierde\u0163i</em> \u015fi s\u0103 nu v\u0103 <em>pierde\u0163i</em> de Isus Cel R\u0103stignit.",
-"\u00een via\u0163\u0103. Darul nu se poate lua. Se poate doar <em>pierde</em> dac\u0103 nu este aprins...",
-"l-a aprins - \u015fi cine l-a sim\u0163it, nu-l mai poate <em>pierde</em>. \u015ei nimeni nu-l mai poate lua de la el.",
-"Cum noi <em>pierdusem</em> orice garan\u0163ie de continuitate a scrisului din",
-"Deci veghea\u0163i fra\u0163ii mei s\u0103 nu-L <em>pierde\u0163i</em> pe Isus Cel R\u0103stignit, s\u0103-L ave\u0163i mereu \u00een mijlocul"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"recidivist a\u015fa incorigibil pentru ei cum eram eu - nu se <em>pierde</em> prea mult\u0103 vreme cu cercet\u0103rile \u015fi cu motivarea",
-"- Dumnezeu nu <em>pierde</em> dac\u0103-L ve\u0163i l\u0103sa",
-"b\u0103gat \u00een lume c\u0103 numai c\u00e2nd aude omul despre dv. se <em>pierde</em> de tot. - \u015ei nu \u015ftie nici ce s\u0103 vorbeasc\u0103.",
-"doar o rutin\u0103 acum insuficient\u0103 - suntem mereu \u00een <em>pierdere</em>."
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"procesul c\u0103ci a\u015fa este judecata lumeasc\u0103. \u00cens\u0103 dac\u0103 <em>pierde</em> procesul va \u00eensemna c\u0103 nu a avut dreptate. \u00cen ce",
-"acesta, sub lovitura de la \u015ecoala Normal\u0103 \u00ee\u015fi <em>pierduse</em> \u00een ultimul timp cu totul cump\u0103tul religios. Mai",
-"Prin caterisire preotul <em>pierde</em> dreptul de a s\u0103v\u00e2r\u015fi sf. taine, deci nu mai are",
-"\u00ce\u015fi <em>pierde</em> numele de preot \u015fi vrednicia cu care a fost \u00eembr\u0103cat"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"oare s\u0103 ne <em>pierdem</em> via\u0163a asta trec\u0103toare dec\u00e2t cea ve\u015fnic\u0103? Nu-i mai bine oare s\u0103 ne <em>pierdem</em> trupul dec\u00e2t",
-"\u00een\u0103l\u0163a ca un cor frumos acompaniat de to\u0163i. Ne <em>pierdeam</em> \u00een c\u00e2ntare p\u00e2n\u0103 c\u00e2nd cineva mai atent, v\u0103z\u00e2nd",
-"alt ton. M-au amenin\u0163at doar cu carcer\u0103 - \u015fi cu <em>pierderea</em> dreptului la vorbitor \u015fi pachet..."
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eendrumare, dezordona\u0163i \u015fi lume\u015fti, nu numai c\u0103 \u00ee\u015fi <em>pierd</em> ei \u00een\u015fi\u015fi sufletele lor, dar vor mai atrage cu ei",
-"care nu trebuie s\u0103 avem nici de acum. Altfel ne-am <em>pierde</em> identitatea - \u015fi am putea deveni apoi orice. ",
-"s\u0103-i aducem cu noi \u015fi dup\u0103 noi Acolo, f\u0103r\u0103 s\u0103 <em>pierdem</em> nimic, nici din Adev\u0103r, nici din suflete. ",
-"autoritatea de stat \u015fi cea bisericeasc\u0103, - dar putem <em>pierde</em> totul chiar acum, dac\u0103 nu lucr\u0103m cu hot\u0103r\u00e2re \u015fi"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de acest Izvor al m\u00e2ntuirii \u00eenseamn\u0103 a <em>pierde</em> vremea \u015fi a <em>pierde</em> m\u00e2ntuirea... A c\u0103uta m\u00e2ntuirea f\u0103r\u0103 Isus",
-"nu ne fure satan pe Isus Cel R\u0103stignit. S\u0103 nu-L <em>pierdem</em> pe Isus Cel R\u0103stignit... ",
-"Vremea noastr\u0103 este at\u00e2t de scump\u0103 - \u015fi n-o putem <em>pierde</em> f\u0103r\u0103 folos cu astfel de discu\u0163ii. "
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Îngăduinţa cu cei care ne învaţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pot ajuta pe nimeni spre m\u00e2ntuire ci numai \u00eei pot <em>pierde</em>.",
-"Domnul nu ne \u00eenso\u0163e\u015fte este acela \u00een care noi <em>pierdem</em> urma pa\u015filor Lui \u015fi o lu\u0103m pe alte urme \u00een\u015fel\u0103toare",
-"repede \u015fi mai smeri\u0163i calea Lui pe care noi o <em>pierdusem</em>.",
-"S\u0103 nu ne \u00eengrijor\u0103m: Dumnezeu nu va \u00eeng\u0103dui s\u0103 <em>pierdem</em> dec\u00e2t ceea ce este r\u0103u."
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Nu v-am ales Eu pe voi?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu Domnul <em>pierde</em> prin desp\u0103r\u0163irea noastr\u0103 de El, ci noi <em>pierdem</em>. ",
-"Din pricina acestora se smintesc \u015fi se <em>pierd</em> sufletele curate ale multor copii ai lui Dumnezeu",
-"\u015fi din pricina faptelor lor apoi, ace\u015ftia \u00ee\u015fi <em>pierd</em> calitatea de fii ai lui Dumnezeu, ajung\u00e2nd nu numai"
-]
-}
-
-Score: 3.2
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Moise iese din desfătările Egiptului
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"s\u0103 nu uit\u0103m un lucru. A ie\u015fi din lume \u00eenseamn\u0103 a <em>pierde</em> multe, multe. S\u0103 ne g\u00e2ndim c\u00e2te cele a pierdut",
-"<em>pierdere</em>",
-"m\u0103car pe acesta nu vrem s\u0103-l <em>pierdem</em>? ",
-"Un cre\u015ftin care nu poate <em>pierde</em> totul ca s\u0103-L dob\u00e2ndeasc\u0103 pe Hristos"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Împlinirea Planului Dumnezeiesc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ne\u00eencetat cu grija \u015fi r\u0103spunderea cea mai mare de a nu <em>pierde</em> nimic \u015fi pe nimeni. ",
-"C\u0103ci Voia Celui ce M-a trimes este s\u0103 nu <em>pierd</em> nimic din ceea ce Mi-a dat El (",
-"p\u0103ze\u015fte-ne s\u0103 nu <em>pierdem</em> nimic din tot ce este al T\u0103u \u015fi al nostru, ",
-"ca s\u0103 nu ne <em>pierdem</em> pe noi \u00een\u015fine."
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Laudă şi mustrare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iar cine \u00ee\u015fi <em>pierde</em> acest cuget curat \u00ee\u015fi <em>pierde</em> odat\u0103 cu el \u015fi credin\u0163a. Dup\u0103 cum se <em>pierde</em> un mir scump",
-"atunci credin\u0163a lui moare, se <em>pierde</em> \u015fi se stric\u0103 "
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Să nu pot izgoni din mine
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd <em>pierde</em>-n\u0163elepciunea, mai <em>pierde</em> \u00eenc-o mie. ",
-"s\u0103 nu-i <em>pierd</em> nici un strop din har s\u0103",
-"C\u00e2nd omul <em>pierde</em> drumul, nici calea n-o mai \u015ftie c\u00e2nd"
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Nu-mi mai lua Isuse
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 nu mai <em>pierd</em> c\u0103rarea",
-"s\u0103 nu m\u0103 <em>pierd</em> de Tine",
-"c\u0103 de le-a\u015f <em>pierde</em>-acestea",
-"toat\u0103 bucuria vie\u0163ii ni s-ar <em>pierde</em> \u015fi s-ar duce. "
-]
-}
-
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre nădejde
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu \u0163i-o <em>pierde</em> niciodat\u0103; ",
-"- omul disperat se <em>pierde</em> chiar \u015fi-n locul lini\u015ftit. ",
-"- chiar dac\u0103 \u0163i-ai <em>pierde</em> totul, sufletul s\u0103 nu \u0163i-l la\u015fi. ",
-"- de aceasta a i-o <em>pierde</em> este cel mai greu p\u0103cat. "
-]
-}
-
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"orice avu\u0163ie ai avea pe p\u0103m\u00e2nt! C\u0103 orice ai <em>pierde</em> nu-i o <em>pierdere</em> adev\u0103rat\u0103. Dar dac\u0103 \u0163i-ai pierdut cur\u0103\u0163ia",
-"dragostea cea dint\u00e2i se <em>pierde</em> - cum spune la  Apocalipsa",
-" - c\u00e2nd se <em>pierde</em> cur\u0103\u0163ia ei, c\u00e2nd sl\u0103be\u015fte"
-]
-}
-
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei \u00eendat\u0103 ce inima \u00ee\u015fi <em>pierde</em> cur\u0103\u0163ia fa\u0163\u0103 de dragoste, ea prin aceast\u0103 <em>pierdere</em> a \u015fi c\u0103zut. ",
-"totdeauna spre cer, plin de frica \u015fi dorin\u0163a de a nu <em>pierde</em> \u00eencrederea \u015fi darurile lui Dumnezeu; iar cel de-al",
-"spre oameni, plin de frica \u015fi dorin\u0163a de a nu le <em>pierde</em> \u00eencrederea \u015fi darurile lor!... "
-]
-}
-
-Score: 3.1
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Tot timpul, toate ocaziile \u015fi toat\u0103 puterea se <em>pierdeau</em> numai \u00een luptele \u015fi certurile de vorbe asupra",
-"asupra acestor noi \u00eenv\u0103\u0163\u0103turi. A\u015fa apoi se <em>pierdeau</em> \u015fi sufletele \u015fi adun\u0103rile, dezbinate de aceste partide",
-"\u015fi ad\u00e2nc\u0103 durere ne-a \u00eencercat pe to\u0163i, prin <em>pierderea</em> lui. Fusese un frate de o mare credin\u0163\u0103, de o",
-"care tr\u0103iser\u0103 de c\u00e2\u0163iva ani. \u015ei \u00eentr-at\u00e2ta \u00ee\u015fi <em>pierduser\u0103</em> orientarea s\u0103n\u0103toas\u0103 \u015fi identitatea lor de osta\u015fi"
-]
-}
-
-Score: 3.1
+Score: 12.749999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 1 - Înfricoşata lepădare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u201c...Dac\u0103 sarea \u00ee\u015fi <em>pierde</em> gustul ei de sare,",
-"\u00eentreprinderile dintr-o \u0163ar\u0103 lucreaz\u0103 adesea \u00een <em>pierdere</em>, ori cunosc felurite lipsuri, curent ori periodic",
-"rodul muncii ei chinuite ca dup\u0103 cea mai dureroas\u0103 <em>pierdere</em> a vie\u0163ii sale...",
-"\u00eempotriva Oastei Domnului. Ace\u015fti fra\u0163i care \u00ee\u015fi <em>pierduser\u0103</em> r\u0103bdarea \u015fi care nu mai aveau nici un fel de"
-]
-}
+Highlight: întreprinderile dintr-o ţară lucrează adesea în <em>pierdere</em>, ori cunosc felurite lipsuri, curent ori periodic
+Highlight: rodul muncii ei chinuite ca după cea mai dureroasă <em>pierdere</em> a vieţii sale...
+Highlight: “...Dacă sarea îşi <em>pierde</em> gustul ei de sare, atunci
 
-Score: 3.1
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Isus a zis: strângeţi fărâmiturile
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"str\u00e2ngi \u015fi s\u0103 p\u0103strezi f\u0103r\u00e2mitura, spre a nu se <em>pierde</em> nimic. ",
-"poruncit s\u0103 nu uit\u0103m nimic din ce ne-ai spus \u015fi s\u0103 nu <em>pierdem</em> nimic din ce ne-ai dat, ",
-"Ca s\u0103 nu <em>pierdem</em> nimic \u015fi s\u0103 adun\u0103m mereu tot ceea ce ne va fi de",
-"Ave\u0163i grij\u0103 s\u0103 nu <em>pierde\u0163i</em> nimic.  L\u0103sa\u0163i"
-]
-}
-
-Score: 3.1
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre iubire
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"45 - <em>Pierdere</em>, pentru iubire, nu-i nimic \u015fi nici povar\u0103: ",
-"dac\u0103-a\u015f <em>pierde</em> ce mi-e drag? ",
-"c\u00e2nd se <em>pierde</em>-un suflet mare; ",
-"de le <em>pierde\u0163i</em>, niciodat\u0103 altele nu mai g\u0103si\u0163i;  \u015fi-apoi"
-]
-}
-
-Score: 3.1
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ci bietul om care umbl\u0103 astfel se \u00een\u015fal\u0103 \u015fi se <em>pierde</em> singur pe sine, prin \u00een\u015fel\u0103ciunea p\u0103catului s\u0103u",
-"Iar noi care le-am spus acelora, se poate s\u0103 ne <em>pierdem</em> sufletul pentru totdeauna, fiindc\u0103 nu cel ce zice",
-"\u015ei iat\u0103 \u015fi un mijloc sigur spre a ne <em>pierde</em>: S\u0103 citim sau s\u0103 vorbim mereu numai ",
-"Vre\u0163i voi s\u0103 v\u0103 <em>pierde\u0163i</em> m\u00e2ntuirea ve\u015fnic\u0103 pentru o ispit\u0103 a diavolului"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi pas cu pas ne <em>pierdem</em> puterile sub ele.",
-"fuseser\u0103 sco\u015fi \u015fi elibera\u0163i. Unul fiindc\u0103 \u00ee\u015fi <em>pierduse</em> acolo vederea, iar altul pentru c\u0103 nu i se g\u0103sise",
-"\u00eei ia aceluia mintea s\u0103n\u0103toas\u0103. Apoi acela se va <em>pierde</em> singur. \u015ei sigur."
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"el c\u0103 ne va putea desfiin\u0163a \u015fi pe noi. Cine \u00ee\u015fi <em>pierde</em> identitatea sa, - u\u015for poate fi f\u0103cut s\u0103 primeasc\u0103",
-"\u00eengroze\u015fti g\u00e2ndindu-te c\u00e2te mijloace are diavolul de a-i <em>pierde</em> pe oameni.",
-"s-au pierdut pentru totdeauna... Ce p\u0103cat \u015fi ce <em>pierdere</em>. Nimeni \u015fi niciodat\u0103 nu va mai putea crea poate"
-]
-}
-
-Score: 3.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"des lua\u0163i la anchete \u015fi tot mai amenin\u0163a\u0163i cu <em>pierderea</em> libert\u0103\u0163ii. Mul\u0163i jandarmi sunt pu\u015fi pe urmele",
-"<em>Pierdusem</em> toat\u0103 avu\u0163ia mea de c\u0103r\u0163i pe care le str\u00e2nsesem",
-"priveli\u015fti \u015fi g\u00e2nduri spre a-mi sl\u0103bi credin\u0163a \u015fi a-mi <em>pierde</em> r\u0103bdarea ca s\u0103 c\u00e2rtesc \u00eempotriva Domnului \u015fi Dumnezeului"
-]
-}
-
-Score: 3.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vinovate. C\u00e2nd cineva \u00ee\u015fi <em>pierde</em> cur\u0103\u0163ia inimii \u015fi echilibrul min\u0163ii - acela se <em>pierde</em> \u00een cur\u00e2nd singur \u015fi",
-"din orbia \u00eeng\u00e2mfat\u0103 \u015fi primejdioas\u0103 prin care se <em>pierd</em> pe ei \u00een\u015fi\u015fi \u015fi pe cei care \u00eei mai urmeaz\u0103. "
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care \u00cei leap\u0103d\u0103 m\u0103rturia Lui. Dar El \u00censu\u015fi nu <em>pierde</em>. ",
-" \u015ei acolo \u00een El le reg\u0103sim ori de c\u00e2te ori le <em>pierdem</em> \u015fi le c\u0103ut\u0103m iar\u0103\u015fi. ",
-", noi trebuie s\u0103 nu <em>pierdem</em> nici o secund\u0103 \u00een ce prive\u015fte munca \u015fi izb\u00e2nda"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mereu \u00een acest punct: s\u0103 nu-L <em>pierdem</em> pe Isus Cel R\u0103stignit. S\u0103 nu <em>pierdem</em> ",
-"; s\u0103 nu <em>pierdem</em> "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Încredinţarea suferinţei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Altfel Lucrarea s-ar <em>pierde</em>. ",
-"jertfeasc\u0103 \u015fi c\u00e2t n-ar putea. Altfel totul s-ar <em>pierde</em>. ",
-"C\u00e2nd biruie p\u0103catul se <em>pierde</em> harul. C\u00e2nd biruie harul este nimicit p\u0103catul."
-]
-}
-
-Score: 3.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 cad acolo cu burta sau cu ochii. Ca s\u0103 nu m\u0103 <em>pierd</em> de tot. Adev\u0103rul acesta n-aveam cum s\u0103-l \u015ftiu eu",
-"c\u0103 se rupe \u00een inima mea c\u00e2nd am \u00een\u0163eles c\u0103-l <em>pierdusem</em> pentru totdeauna. \u015ei c\u0103 tot ce mai avea el s\u0103-mi",
-"fi folosit lor de la noi, sau nou\u0103 de la ei, le <em>pierdem</em> pentru totdeauna \u015fi noi \u015fi ei. "
-]
-}
-
-Score: 3.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Norul cel luminos şi stâlpul de foc
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"punct: s\u0103 nu-L <em>pierd</em> pe Domnul, s\u0103 nu <em>pierd</em> leg\u0103tura ce mi-am f\u0103cut-o cu El... s\u0103 nu <em>pierd</em> lumina Lui \u015fi"
-]
-}
-
-Score: 3.0
+Score: 12.749999
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Împăratul nostru
 Title: Pe Mine nu Mă aveţi totdeauna
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- inima mi se rupe de durere, iar <em>pierderea</em> aceasta abia acuma v\u0103d c\u0103 n-o mai pot \u00eenlocui",
-"Acum n-a f\u0103cut-o, spre ve\u015fnica ei <em>pierdere</em> \u015fi uitare. ",
-"abia atunci, ne vom trezi \u015fi ne vom da seama ce <em>pierdere</em> avem, cu adev\u0103rat. "
-]
-}
+Highlight: Acum n-a făcut-o, spre veşnica ei <em>pierdere</em> şi uitare.
+Highlight: abia atunci, ne vom trezi şi ne vom da seama ce <em>pierdere</em> avem, cu adevărat.
+Highlight: - inima mi se rupe de durere, iar <em>pierderea</em> aceasta abia acuma văd că n-o mai pot înlocui
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: În locul unde fusese Isus
+Score: 9.875
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nenorocirea de a-L <em>pierde</em> se \u00eent\u00e2mpl\u0103 de multe ori \u015fi multor credincio\u015fi",
-"de primejdii urzite de el, ca s\u0103 ne fac\u0103 s\u0103-L <em>pierdem</em> pe Hristos. ",
-"Ea nu-L <em>pierduse</em> pe Hristos nici o clip\u0103. "
-]
-}
+Highlight: multe alte părţi din ţară erau ani de secetă şi de <em>pierdere</em>, pentru aceste părţi erau ani de multă înviorare
+Highlight: să fie mereu sporit sau înlocuit, spre a nu se <em>pierde</em> niciodată. Chiar dacă prin uneltirile celui rău
+Highlight: Am spus mai sus că <em>pierderea</em> cea într-adevăr mare, nu vine pentru Lucrarea
+Highlight: repetăm, pentru că ştiu cât de repede se poate <em>pierde</em> firul adevărului printre toate feluritele urzeli
+Highlight: acestui fir scump şi sfânt, pentru a-l acoperi şi <em>pierde</em>. Deci
+Highlight: totdeauna scăderea numărului, căderea sufletelor, <em>pierderea</em> binecuvântărilor, plecarea Duhului Sfânt - şi
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: Domnul meu...
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de El sim\u0163i c\u0103 ar fi mai \u00eengrozitor dec\u00e2t orice <em>pierdere</em>, dec\u00e2t orice moarte, dec\u00e2t orice iad. ",
-"pl\u00e2ngi cum \u00ee\u015fi pl\u00e2nge cineva cea mai negr\u0103it\u0103 <em>pierdere</em>, cea mai scump\u0103 iubire, cea mai nebun\u0103 datorie",
-"str\u0103lucire, durerea \u00een c\u00e2ntare, pl\u00e2nsul \u00een bucurie, <em>pierderea</em> trec\u0103toare \u00eentr-un c\u00e2\u015ftig ve\u015fnic. "
-]
-}
+Highlight: în cea mai mare primejdie. Şi prin asta, o mare <em>pierdere</em> şi ocară ar putea veni peste toată Lucrarea lui
+Highlight: mai necesar dintre toţi lucrătorii Domnului. Că <em>pierderea</em> lui ar însemna un adevărat dezastru pentru Lucrarea
+Highlight: Căzui zdrobit pe priciul rece, cu faţa în palme. <em>Pierdusem</em> toată avuţia mea de cărţi, pe care le strânsesem
+Highlight: ca să-mi nimicească credinţa, să mă facă să-mi <em>pierd</em> răbdarea - şi să cârtesc împotriva Dumnezeului meu
+Highlight: - atunci ce am pierdut! Şi cum voi repara eu <em>pierderea</em> asta vreodată? Căci dacă nu cred, fac tot felul
+Highlight: ciomagul lui, ca un cioban grijuliu care nu-şi <em>pierdea</em> din ochi turma.
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: Isus a zis: Marie!
+Score: 9.833333
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 17 - Mereu prin ape tulburi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi cu o iubire at\u00e2t de puternic\u0103 pe c\u00e2t fusese <em>pierderea</em> dup\u0103 care pl\u00e2ngea, ",
-"oameni ai lui Dumnezeu, iat\u0103 c\u0103 \u015fi ei \u015fi le-au putut <em>pierde</em>. ",
-"sau s\u0103 \u00eenduri vreo <em>pierdere</em> zdrobitoare, "
-]
-}
+Highlight: confesionaliste dintre noi, Lucrarea Domnului va suferi o <em>pierdere</em> de neînlocuit, iar noi vom fi traşi odată la răspundere
+Highlight: greu, tiparul era foarte scump - iar banii îşi <em>pierdeau</em> valoarea de la o zi la alta.  Am
+Highlight:  dacă din vină noastră acest prilej unic se va <em>pierde</em> şi noi vom continua iarăşi luptele sectare şi confesionaliste
+Highlight: răufăcători ai Evangheliei şi ca nişte vinovaţi pentru <em>pierderea</em> multor suflete.
+Highlight: şi în legătură cu asta. Ce dovadă că nimic nu se <em>pierde</em>!).
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Aveţi ceva de mâncare?
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0163i-e sete, trupul \u00ee\u015fi <em>pierde</em> pofta de ap\u0103 \u015fi se stinge, se tope\u015fte, se usc\u0103, se <em>pierde</em>. ",
-"O, c\u00e2t\u0103 <em>pierdere</em> au cei care fac o munc\u0103 f\u0103r\u0103 rug\u0103ciune. Cur\u00e2nd"
-]
-}
+Highlight: doar o rutină acum insuficientă - suntem mereu în <em>pierdere</em>.
+Highlight: recidivist aşa incorigibil pentru ei cum eram eu - nu se <em>pierde</em> prea multă vreme cu cercetările şi cu motivarea
+Highlight: - Dumnezeu nu <em>pierde</em> dacă-L veţi lăsa are
+Highlight: băgat în lume că numai când aude omul despre dv. se <em>pierde</em> de tot. - Şi nu ştie nici ce să vorbească. Atunci
 
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Pe urmele Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei to\u0163i cei ce se vor <em>pierde</em>, vor fi din vina m\u0103rturisitorului nevrednic. ",
-"Cel pu\u0163in atunci te-ai <em>pierde</em> numai pe tine singur ",
-"sau le-ar provoca cumva la vreo <em>pierdere</em> \u00een planurile pe care le au. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Trufia şi plata ei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- nu-\u0163i <em>pierde</em> speran\u0163a! ",
-"\u00een f\u0103g\u0103duin\u0163ele ocrotirii lui Dumnezeu \u015fi nu-\u0163i <em>pierde</em> firea nici \u00een mijlocul celor mai cr\u00e2ncene rafale",
-"Dar nu-\u0163i <em>pierde</em> r\u0103bdarea p\u00e2n\u0103 c\u00e2nd va veni El \u00een ajutorul t\u0103u."
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Grija şi îngrijorarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cine \u00ee\u015fi <em>pierde</em> speran\u0163a - \u00ee\u015fi <em>pierde</em> via\u0163a. ",
-"L\u0103sa\u0163i singuri timp mai \u00eendelungat, \u00ee\u015fi <em>pierd</em> mintea. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Statornicie şi abatere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"7 - Nimic nu se <em>pierde</em> ci totul se transform\u0103. ",
-"- \u015fi care nu se <em>pierde</em> de undeva niciodat\u0103. ",
-"Frumosul chip al lui Dumnezeu se <em>pierde</em> de peste om - \u015fi \u00een locul lui p\u0103catul contureaz\u0103"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Condiţia mântuirii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"m\u00e2ntuie\u015fte omul de multe ori este singur. Dar c\u00e2nd se <em>pierde</em> atrage pe mai mul\u0163i.",
-"\u00eentristeze ei pentru at\u00e2\u0163ia credincio\u015fi care se <em>pierd</em>!...",
-"treia copie dup\u0103 vreuna, - le degradeaz\u0103 \u015fi le <em>pierde</em> pe toate."
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Nevinovăţia şi timiditatea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"str\u00e2ngere noi trebuie s\u0103 o facem. Altfel totul se <em>pierde</em> f\u0103r\u0103 folos. ",
-"aceast\u0103 memorie. \u00cens\u0103 dac\u0103 noi nu o folosim ea se <em>pierde</em>, se rugine\u015fte, se leneve\u015fte, se usc\u0103. ",
-"O astfel de poezie, c\u00e2t de frumoas\u0103 ar fi, \u00ee\u015fi <em>pierde</em> orice valoare, din cauza lenei celui care ar putea"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Singura Speranţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi cu o iubire at\u00e2t de puternic\u0103, pe c\u00e2t este <em>pierderea</em> dup\u0103 care pl\u00e2ngem. ",
-"oameni ai lui Dumnezeu, iat\u0103 c\u0103 \u015fi ei \u015fi le-au putut <em>pierde</em>. ",
-"sau s\u0103 \u00eenduri vreo <em>pierdere</em> zdrobitoare, cum ai mai \u00eendurat"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Iubirea nemuritoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, ce durere zdrobitoare \u015fi ce <em>pierdere</em> de ne\u00eenlocuit, r\u0103m\u00e2ne apoi \u00een locul ei pe totdeauna",
-"dup\u0103 cum sfin\u0163enia este lumin\u0103, pentru a nu m\u0103 <em>pierde</em> niciodat\u0103. ",
-"Nu-\u0163i <em>pierde</em> \u00eencrederea. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Boală şi vindecare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi uneltele vr\u0103jma\u015fului se vor uza \u015fi se vor <em>pierde</em>, ",
-"Vor obosi \u015fi se vor <em>pierde</em> d\u0103r\u00e2m\u0103torii, ",
-"ele niciodat\u0103, fiindc\u0103 at\u00e2tea nenorociri ni le-ar <em>pierde</em>. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Capul şi mădularele
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sete, trupul \u00ee\u015fi <em>pierde</em> pofta de ap\u0103 \u015fi se stinge, se tope\u015fte, se usuc\u0103, se <em>pierde</em>. ",
-"9 - O, c\u00e2t\u0103 <em>pierdere</em> au acei care fac o munc\u0103 f\u0103r\u0103 rug\u0103ciune.  Cur\u00e2nd"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Cununile Slăvite
-Title: Permis şi nepermis
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Lupt\u0103 contra lui Dumnezeu numai c\u00e2nd \u00ee\u015fi <em>pierde</em> dreptarul \u015fi controlul unei min\u0163i s\u0103n\u0103toase. ",
-"\u00cen toate cazurile \u00eens\u0103, aceast\u0103 <em>pierdere</em> a min\u0163ii are la temelie unul din p\u0103catele de moarte",
-"\u00een care cei mai mul\u0163i \u00ee\u015fi <em>pierd</em> mintea, "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Bănuiala şi încredinţarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ivesc, nu-l dezorienteaz\u0103, nu-l z\u0103p\u0103cesc, nu-l <em>pierd</em>. ",
-"lini\u015ftite omul duhovnicesc \u015ftie cum s\u0103 lucreze - \u015fi nu <em>pierde</em> nici prilejul nici vremea. ",
-"nenorocire, \u015ftie c\u0103 totul este trec\u0103tor, \u015fi nu-\u015fi <em>pierde</em> nici senin\u0103tatea, nici bun\u0103tatea, nici iubirea"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Nu-mi mai lua Isuse
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 nu mai <em>pierd</em> c\u0103rarea",
-"s\u0103 nu m\u0103 <em>pierd</em> de Tine",
-"c\u0103 de le-a\u015f <em>pierde</em>-acestea"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: A face voia lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"grij\u0103 s\u0103 nu te faci niciodat\u0103 cu nimic vinovat de <em>pierderea</em> nim\u0103nui. ",
-"poate c\u00e2\u015ftiga ceva. Vai de acela prin care vine <em>pierderea</em> cuiva. ",
-"Sufletele c\u00e2rtitoare <em>pierd</em> tot mai mult binecuv\u00e2nt\u0103rile Domnului, fiindc\u0103 sunt"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Garanţia Veşnică
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"adesea s\u0103 ne <em>pierdem</em> credin\u0163a \u015fi \u00eencrederea \u00een toat\u0103 \u00eemplinirea f\u0103g\u0103duin\u0163elor Sale",
-"\u015fi s\u0103 ne <em>pierdem</em> n\u0103dejdea",
-"\u015fi s\u0103 ne <em>pierdem</em> dragostea de tot Cuv\u00e2ntul Sf\u00e2nt"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Lucrarea şi mulţumirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cele ce ni se poate r\u0103pi de c\u0103tre al\u0163ii sau putem <em>pierde</em> noi \u00een via\u0163a aceasta. S\u0103 nu ni se lege sufletul",
-"sufletul de nimic din ceea ce ne poate pe noi r\u0103pi \u015fi <em>pierde</em>, desp\u0103r\u0163indu-ne de Domnul Isus \u015fi de fra\u0163i. ",
-"\u015fi de cele ce nu se pot <em>pierde</em>. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Nebunia locuitorilor pământului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- sau <em>pierderea</em> ei total\u0103. ",
-"dar <em>pierderea</em> ei total\u0103 vine din tr\u0103irea pr\u0103bu\u015fit\u0103 \u00een mai multe",
-"ieri s\u0103n\u0103tos \u015fi se orienta drept \u00een toate, \u00ee\u015fi <em>pierde</em> acum cump\u0103na dreapt\u0103 \u015fi nu mai cunoa\u015fte calea bunelor"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Chemarea şi venirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- puterea Cuv\u00e2ntului s\u0103u se <em>pierde</em>, c\u0103ldura dragostei lui scade, frumuse\u0163ea cur\u0103\u0163iei",
-"g\u00e2nduri, ce ne-ar putea \u00eentina \u015fi ne-ar face s\u0103 <em>pierdem</em> cur\u0103\u0163ia lui Hristos, cur\u0103\u0163ia neprih\u0103nirii noastre",
-"dob\u00e2ndirea m\u00e2ntuirii ca \u015fi prilejurile pentru <em>pierderea</em> ei sunt tot acelea\u015fi care au fost de la \u00eenceput"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Ce mare taină este Lucrarea Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici <em>pierderea</em> bunurilor materiale, poate nici <em>pierderea</em> multor vie\u0163i \u015fi prilejuri, c\u00e2t <em>pierderea</em> din"
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Dar şi acuma ştiu...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ivesc, nu-l dezorienteaz\u0103, nu-l z\u0103p\u0103cesc, nu-l <em>pierd</em>. Dup\u0103 fiecare \u00eent\u00e2mplare chiar neprev\u0103zut\u0103, el se",
-" cum s\u0103 lucreze - \u015fi nu <em>pierde</em> nici prilejul nici vremea.",
-" c\u0103 totul este trec\u0103tor, \u015fi nu-\u015fi <em>pierde</em> nici senin\u0103tatea, nici bun\u0103tatea, nici iubirea"
-]
-}
-
-Score: 3.0
+Score: 9.8
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
-Title: Cap. 9 - Înţelepciunea şi puterea
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici <em>pierderea</em> bunurilor materiale, poate nici <em>pierderea</em> multor vie\u0163i \u015fi prilejuri, c\u00e2t ",
-"<em>pierderea</em> din"
-]
-}
+Highlight: Domnului, era un câştig ce-ţi aducea o groaznică <em>pierdere</em>: pieirea sufletului tău... În locul pagubei din
+Highlight: un biet invalid de război. Ne putem închipui <em>pierderea</em> lui. Noi fraţii lui ostaşi, trebuie să-i sărim
+Highlight: să-i aducem la Hristos, aceste comori zac şi se <em>pierd</em> în acel întuneric de care sunt acoperite acum. Iată
+Highlight: sfârşitul vieţii lor - şi tot ce n-au dat Domnului <em>pierd</em> pe totdeauna. Ori vine prigoana peste Lucrarea Domnului
 
-Score: 3.0
+Score: 9.8
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu-L <em>pierdem</em> pe Isus Cel R\u0103stignit. S\u0103 nu <em>pierdem</em> miezul ca s\u0103 r\u0103m\u00e2nem cu ",
-". S\u0103 nu <em>pierdem</em> duhul"
-]
-}
+Highlight: ortodoxă română cu un om plin de mânie, până la o <em>pierdere</em> elementară logică a cuvintelor şi acţiunilor,
+Highlight: ), împotriva lui satan. Asta să n-o <em>pierdem</em> din vedere. Deci
+Highlight: cel ce-şi va <em>pierde</em> viaţa pentru Mine, o va câştiga  (
+Highlight: Liturghie. Era un singur steag, puţinii ostaşi se <em>pierdeau</em> printre orăşeni. S-a slujit Liturghia arhierească
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: ... Mielul lui Dumnezeu
+Score: 9.8
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"priveghem necurmat ca s\u0103 nu <em>pierdem</em> harul pe care ni l-ai adus Tu, s\u0103 nu <em>pierdem</em> darul iert\u0103rii \u015fi p\u0103rt\u0103\u015fiei",
-"p\u0103rt\u0103\u015fiei Tale. \u015ei s\u0103 nu <em>pierdem</em> roada ascult\u0103rii de Tine. "
-]
-}
+Highlight: Şi îndată ce inima îşi <em>pierde</em> curăţia faţă de dragoste, ea prin această <em>pierdere</em> a şi căzut.
+Highlight: totdeauna spre cer, plin de frica şi dorinţa de a nu <em>pierde</em> încrederea şi darurile lui Dumnezeu; iar cel de-al
+Highlight: spre oameni, plin de frica şi dorinţa de a nu le <em>pierde</em> încrederea şi darurile lor!...
 
-Score: 3.0
+Score: 9.8
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
+Type: articol
+Author: Traian Dorz
+Highlight: orice avuţie ai avea pe pământ! Că orice ai <em>pierde</em> nu-i o <em>pierdere</em> adevărată. Dar dacă ţi-ai pierdut curăţia
+Highlight: dragostea cea dintâi se <em>pierde</em> - cum spune la  Apocalipsa
+Highlight:  - când se <em>pierde</em> curăţia ei, când slăbeşte
+
+Score: 9.8
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Moise iese din desfătările Egiptului
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: <em>pierdere</em>
+Highlight: să nu uităm un lucru. A ieşi din lume înseamnă a <em>pierde</em> multe, multe. Să ne gândim câte cele a pierdut
+Highlight: măcar pe acesta nu vrem să-l <em>pierdem</em>?
+Highlight: Un creştin care nu poate <em>pierde</em> totul ca să-L dobândească pe Hristos
+
+Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 11 - Semnele Oastei Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: s-au pierdut pentru totdeauna... Ce păcat şi ce <em>pierdere</em>. Nimeni şi niciodată nu va mai putea crea poate
+Highlight: el că ne va putea desfiinţa şi pe noi. Cine îşi <em>pierde</em> identitatea sa, - uşor poate fi făcut să primească
+Highlight: îngrozeşti gândindu-te câte mijloace are diavolul de a-i <em>pierde</em> pe oameni. Acolo
+
+Score: 9.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre iubire
+Type: articol
+Author: Traian Dorz
+Highlight: 45 - <em>Pierdere</em>, pentru iubire, nu-i nimic şi nici povară:
+Highlight: dacă-aş <em>pierde</em> ce mi-e drag?
+Highlight: când se <em>pierde</em>-un suflet mare;
+
+Score: 9.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
+Type: articol
+Author: Traian Dorz
+Highlight: Şi vai, ce pagubă şi ce <em>pierdere</em> mare este aceasta!
+Highlight: Dar ce câştigă sau ce <em>pierde</em> El dacă noi ne ţinem cuvântul dat? Sau ce <em>pierde</em> El dacă nu ni-l ţinem?
+
+Score: 9.75
 Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
 Title: Liniştire şi vindecare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi singura <em>pierdere</em> adev\u0103rat\u0103 este numai <em>pierderea</em> sufletului, fiindc\u0103 toate celelalte",
-"merge nic\u0103ieri \u015fi cine nu \u015ftie nimic - acela nu se <em>pierde</em> totdeauna, dar cine are un prieten r\u0103u, cine apuc\u0103"
-]
-}
+Highlight: şi singura <em>pierdere</em> adevărată este numai <em>pierderea</em> sufletului, fiindcă toate celelalte
+Highlight: merge nicăieri şi cine nu ştie nimic - acela nu se <em>pierde</em> totdeauna, dar cine are un prieten rău, cine apucă
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: ... Şi l-au dat afară
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-". Dar nici ru\u015finea nu li se va mai <em>pierde</em> \u015fi nici cugetul nu li se va mai lini\u015fti \u00een veci",
-"Dar c\u00e2nd din pricina ta \u00ee\u015fi mai <em>pierd</em> \u015fi al\u0163ii sufletele \u015fi m\u00e2ntuirea lor, nu exist\u0103 nici",
-"nici nu ne l\u0103sa s\u0103 ne <em>pierdem</em> prin neascultarea de adev\u0103ra\u0163ii no\u015ftri \u00eendrum\u0103tori"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Dalila
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de cel ce-\u015fi <em>pierde</em> mintea",
-"\u015fi le <em>pierde</em> pedepsit. ",
-"\u00cen desfr\u00e2u se <em>pierde</em> omul"
-]
-}
-
-Score: 3.0
+Score: 9.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Mereu prin lupte
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a lor <em>pierdere</em> ne doare, ale lor s\u0103ge\u0163i sunt grele",
-"s\u0103-i \u00eentoarc\u0103 iar \u00een lume de-\u015fi <em>pierd</em> via\u0163a \u015fi iertarea",
-"ce se <em>pierd</em> ne\u015ftiutoare \u015fi-am\u0103gite-n neguri grele"
-]
-}
+Highlight: a lor <em>pierdere</em> ne doare, ale lor săgeţi sunt grele
+Highlight: să-i întoarcă iar în lume de-şi <em>pierd</em> viaţa şi iertarea
+Highlight: ce se <em>pierd</em> neştiutoare şi-amăgite-n neguri grele
 
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre îndrăzneală - curaj
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: ... Fiindcă voi aveţi obicei...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2t de scump pl\u0103tesc cununa \u015fi \u015fi-o <em>pierd</em> a\u015fa cur\u00e2nd! ",
-"21 - Cei ce prea se tem de moarte <em>pierd</em> via\u0163a mai degrab, ",
-"63 - Cine nu-\u015fi <em>pierde</em> r\u0103bdarea \u015fi nici cump\u0103tul lupt\u00e2nd, "
-]
-}
+Highlight: obiceiuri puse în slujba lui de înşelare şi de <em>pierdere</em> a sufletelor.
+Highlight: unui om neprihănit, adevărat că spun că nu-şi va <em>pierde</em> răsplata - a zis Domnul (
 
-Score: 3.0
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 11 - Cel mai bun misionar
+Type: articol
+Author: Traian Dorz
+Highlight: Ce mare <em>pierdere</em> este însă pentru noi şi pentru tot viitorul poporului
+Highlight: rătăceau - şi scrisul cu continuare se întrerupea, se <em>pierdea</em>. Trebuia neapărat strângerea acestui scris în cărţi
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: nu e <em>pierdere</em>-n viaţă
+Highlight: Însă vai, cei mai mulţi oameni îşi <em>pierd</em> această moştenire cerească pentru că nu cred şi
+
+Score: 9.666667
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: răul. Să ne fie spre câştig total - iar nu spre <em>pierdere</em>...
+Highlight: - scapă la ceilalţi. Dar dacă e la un loc - se <em>pierde</em> tot.  Aşa
+
+Score: 9.666667
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 8 - Marele necaz salvator
+Type: articol
+Author: Traian Dorz
+Highlight: căldură şi de simţire. Şi totuşi ce mirare şi ce <em>pierdere</em> mare este faptul că noi românii nu avem o cântare
+Highlight: nu mai ajung trenul? - le-am zis îndurerat. Şi <em>pierd</em> biletul. Acasă nu mai pot întoarce.
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Când te-or covârşi
+Type: poezie
+Author: Traian Dorz
+Highlight: Când vei suferi o <em>pierdere</em>-n viaţă
+Highlight: tu nu-ţi <em>pierde</em> firea,  mai
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Când te-or covârşi ispitele
+Type: poezie
+Author: Traian Dorz
+Highlight: Când vei suferi o <em>pierdere</em>-n viaţă
+Highlight: tu nu-ţi <em>pierde</em> firea, mai
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre lene
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Lenea este cea mai mare <em>pierdere</em> de vreme,
+Highlight: 28 - Lenea-ţi <em>pierde</em> vara toată
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 183 - De-ai o <em>pierdere</em>, gândeşte: alţii <em>pierd</em> mai mult de-aşa
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Era o zi de sabat
+Type: articol
+Author: Traian Dorz
+Highlight: interesele trupeşti ale casei sale, acela va avea <em>pierdere</em> şi nu câştig.
+Highlight: Cine <em>pierde</em> vremea de sărbătoare în poveşti şi lenevie, va
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Nu te muşcă niciodată
+Type: poezie
+Author: Traian Dorz
+Highlight: Şi nu-i <em>pierdere</em> pe lume fără-nlocuire
+Highlight: ca şi <em>pierderea</em> vieţii fără mântuire!
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Petru iar s-a lepădat
+Type: articol
+Author: Traian Dorz
+Highlight: Desigur este foarte dureroasă orice <em>pierdere</em> a luminii.
+Highlight: slab se întunecă, de peste întinderile lui se <em>pierde</em> şi puţina lumină pe care o dădea el şi totul devine
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Setea şi izvorul
+Type: articol
+Author: Traian Dorz
+Highlight: adevărat de această <em>pierdere</em>.
+Highlight: Prea puţini îşi dau cu adevărat seama de <em>pierderea</em> cea mare pe care o lasă
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Taina şi înţelesul
+Type: articol
+Author: Traian Dorz
+Highlight: acela va avea <em>pierdere</em> şi nu câştig.
+Highlight: Cine <em>pierde</em> vremea de sărbătoare în poveşti şi lenevie, va
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Vedeţi că nu câştigaţi nimic
+Type: articol
+Author: Traian Dorz
+Highlight: sau le-ar provoca cumva lor vreo <em>pierdere</em> în planurile pe care şi le aveau.
+Highlight: Dumnezeu şi nici nimic altceva, decât câştigul sau <em>pierderea</em> lor personală pe care le au din acestea.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Asprime şi bunătate
+Type: articol
+Author: Traian Dorz
+Highlight: rană - şi un râu de lacrimi nu pot despăgubi o <em>pierdere</em>.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 4 - Spre altarul său
+Type: articol
+Author: Traian Dorz
+Highlight: sunete pline de sfâşiere şi de lacrimi ca după o <em>pierdere</em> de neînlocuit.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre hotărâre
+Type: articol
+Author: Traian Dorz
+Highlight: nu-i nici un câştig pe lume făr-o <em>pierdere</em> silită.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Doamne, văd...
+Type: articol
+Author: Traian Dorz
+Highlight: Câtă <em>pierdere</em> a avut şi are Evanghelia Domnului din pricina
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: După aceea Isus S-a dus...
+Type: articol
+Author: Traian Dorz
+Highlight: Şi încă o <em>pierdere</em> pentru Lucrarea lui Dumnezeu.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Eu sunt Pâinea vieţii
+Type: articol
+Author: Traian Dorz
+Highlight: Ce nefericire şi ce <em>pierdere</em> veşnică.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Iată că acum ne vorbeşti desluşit
+Type: articol
+Author: Traian Dorz
+Highlight: pentru slobozirea tuturor celor care mai zac în <em>pierdere</em> şi în întuneric.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Isus plângea
+Type: articol
+Author: Traian Dorz
+Highlight: fierbinte şi sinceră când familia sa suferă o grea <em>pierdere</em>, nu are o inimă de om, ci de fiară.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Mare plâns şi tânguieli
+Type: poezie
+Author: Traian Dorz
+Highlight: Iad şi <em>pierdere</em> e viaţa
+
+Score: 9.5
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Moise, alesul Domnului, a petrecut
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: Ietro. Omul ar fi putut zice îndată şi aici: O <em>pierdere</em> de vreme neînţeleasă este aceasta. Poporul geme
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Nimic nu-i o-nşelare
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-o <em>pierdere</em> mai mare
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Nimic nu-i o-nşelare
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-o <em>pierdere</em> mai mare
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Nu priviţi la suferinţa
+Type: poezie
+Author: Traian Dorz
+Highlight: nu e <em>pierdere</em>-n viaţă
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Nu priviţi la suferinţa
+Type: poezie
+Author: Traian Dorz
+Highlight: nu e <em>pierdere</em>-n viaţă
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Nu priviţi la suferinţa...
+Type: poezie
+Author: Traian Dorz
+Highlight: nu e <em>pierdere</em>-n viaţă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: O, paşii Tăi apropiindu-se
+Type: articol
+Author: Traian Dorz
+Highlight: şi totală uitare de mine, ca într-o desăvârşită <em>pierdere</em> în răpirea nu ştiu cărui cer.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Calea vieţii noastre
+Title: Peste puţină vreme
+Type: articol
+Author: Traian Dorz
+Highlight: se bocească şi să plângă ca după cea mai scumpă <em>pierdere</em>
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Prezenţa Ta
+Type: poezie
+Author: Traian Dorz
+Highlight: de orice <em>pierdere</em>-ndurată
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Prezenţa Ta
+Type: poezie
+Author: Traian Dorz
+Highlight: de orice <em>pierdere</em>-ndurată
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Să aibă în ei bucuria Mea
+Type: articol
+Author: Traian Dorz
+Highlight: ci şi răsplată nebănuită pentru orice jertfă şi <em>pierdere</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Însetarea şi Apa Vieţii
+Type: articol
+Author: Traian Dorz
+Highlight: Câtă <em>pierdere</em> a avut şi are Evanghelia Domnului din pricina
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Întristarea voastră se va preface în bucurie
+Type: articol
+Author: Traian Dorz
+Highlight: şi orice <em>pierdere</em> în câştig,
+
+Score: 2.9285715
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: ... Să nu pierd nimic...
+Type: articol
+Author: Traian Dorz
+Highlight: se va <em>pierde</em> tineretul, se vor <em>pierde</em> sufletele
+Highlight: sufletele, se va <em>pierde</em> adunarea şi până la urmă se poate <em>pierde</em> şi mântuirea veşnică a multora. Dacă nu a tuturor
+Highlight: Şi voia Celui ce M-a trimis, este să nu <em>pierd</em> nimic din tot ce Mi-a dat El, ci
+Highlight: sufletele care vin la Isus, acolo uşor se poate <em>pierde</em> totul.  Unde
+Highlight: acolo mereu se va tot <em>pierde</em>...  Şi
+Highlight: Se va <em>pierde</em> întâi dulceaţa şi bucuria
+Highlight: ... Să nu <em>pierd</em> nimic...
+
+Score: 2.909091
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cine-şi pierde
+Type: poezie
+Author: Traian Dorz
+Highlight: Cine-şi <em>pierde</em> mâna dreaptă
+Highlight: cine-şi <em>pierde</em> soţul vieţii
+Highlight: Cine-şi <em>pierde</em> ochiul oare
+Highlight: cine-şi <em>pierde</em> legământul
+Highlight: şi-l <em>pierde</em>
+Highlight: cine-şi <em>pierde</em> calea sfântă
+Highlight: Cine-şi <em>pierde</em>
+
+Score: 2.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: De ce-mi pierd uneori...
+Type: poezie
+Author: Traian Dorz
+Highlight: De ce-mi <em>pierd</em> uneori iubirea
+Highlight: De ce-mi <em>pierd</em> uneori credinţa
+Highlight: De ce-mi <em>pierd</em> uneori seninul
+Highlight: De ce-mi <em>pierd</em> uneori...
+
+Score: 0.9090909
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Calea vieţii noastre
+Title: Dar vine pentru ca să cunoască lumea
+Type: articol
+Author: Traian Dorz
+Highlight: îşi <em>pierde</em> curăţia,
+Highlight: îşi <em>pierde</em> unitatea,
+Highlight: îşi <em>pierde</em> sfinţenia,
+Highlight: îşi <em>pierde</em> puterea,
+Highlight: îşi <em>pierde</em> roadele
+Highlight: îşi <em>pierde</em> tineretul,
+
+Score: 0.9090909
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Crişanei
+Type: articol
+Author: Traian Dorz
+Highlight: nu-ţi <em>pierde</em> tinereţea
+Highlight: îţi vei <em>pierde</em> fericirea - c-astea umblă împreună.
+Highlight: 65 - <em>Pierderea</em> averii-ncearcă cinstea celor preţuiţi
+Highlight: nu doar pe el se <em>pierde</em>-un tată,
+Highlight: ci-şi <em>pierde</em>-ntregul viitor
+Highlight: e satanic, căci păcatul <em>pierde</em> tot ce ai curat.
+
+Score: 0.8888889
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din alte diferite părţi
+Type: articol
+Author: Traian Dorz
+Highlight: - cine-i cade-n închisoare, <em>pierde</em> cerul fericirii.
+Highlight: se consumă şi se <em>pierde</em>, el pe sine, omul rău.
+Highlight: 106 - Pacea ta ţi-o <em>pierde</em> flecăreala ta
+Highlight: - deseori acel ce-o <em>pierde</em> în zadar o mai oftează.
+Highlight: altfel tot ce-i bun se <em>pierde</em> în păcat şi-n delăsare.
+Highlight: lenea stă şi <em>pierde</em> vară,
+
+Score: 0.85714287
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Întristat şi amărât de <em>pierderea</em> acestui suflet pe care îl crescuse ca pe copilul
+Highlight: Odată cu <em>pierderea</em> oricărei speranţe de moştenire - se prăbuşi şi
+Highlight: Suntem mustraţi că ne <em>pierdem</em> ziua şi noaptea în nesfârşite rugăciuni... Iar
+Highlight: socială, care îngroaşă numărul şomerilor care îşi <em>pierd</em> ziua şi noaptea în rugăciuni nesfârşite... apoi
+Highlight: Auziţi, un preot doctor în teologie ne acuză că ne <em>pierdem</em> ziua şi noaptea în nesfârşite rugăciuni... Dar
+Highlight: şi atunci reuşesc, sau mi-l fac duşman şi atunci <em>pierd</em> orice speranţă. Mi-a răspuns cu multă bunăvoinţă
+
+Score: 0.85714287
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
+Type: articol
+Author: Traian Dorz
+Highlight: ascunsă în aceasta, pentru nimicirea Duhului - şi <em>pierderea</em> puterii ei.
+Highlight: Dar primejdia cea mare de a-L <em>pierde</em> pe Isus Cel Răstignit încă nu este asta cea care
+Highlight: însă o primejdie şi mai mare decât aceea de a-L <em>pierde</em> pe Isus Cel Răstignit dinăuntrul Oastei, din adunarea
+Highlight: Este primejdia de a-L <em>pierde</em> pe Isus Cel Răstignit dinăuntrul nostru, din inima noastră
+Highlight: să nu-L <em>pierdem</em> pe Isus Cel Răstignit din inima noastră, din viaţa
+Highlight: Strajă pentru Isus Cel Răstignit! Strajă să nu-L <em>pierdem</em> pe Isus Cel Răstignit dinăuntrul nostru şi dinăuntrul
+
+Score: 0.85714287
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre credinţă
+Type: articol
+Author: Traian Dorz
+Highlight: 20 - Fiii mei, păstraţi credinţa, căci acei ce-o <em>pierd</em>, decad
+Highlight: dacă sufletul şi-l <em>pierde</em>,
+Highlight: 82 - Când omul <em>pierde</em>-averea, rămâne cu ştiinţa,
+Highlight: când <em>pierde</em> libertatea, rămâne cu credinţa;
+Highlight: şi-o mână când şi-o <em>pierde</em> îi mai rămâne-o mână -
+Highlight: când <em>pierde</em> mântuirea cu ce-o să mai rămână
+
+Score: 0.85714287
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Transilvaniei
+Type: articol
+Author: Traian Dorz
+Highlight: <em>pierd</em> seninele puteri
+Highlight: - şi câte-am încă să mai <em>pierd</em>
+Highlight: i se scurge lumii slava şi se <em>pierde</em> lumii chipul
+Highlight: 154 - Să-ţi pară rău de tot ce-n viaţă putut-ai <em>pierde</em>
+Highlight: 157 - Nu-ţi <em>pierde</em> timpul scump pe care
+Highlight: nu ţi-l <em>pierde</em>-n lucruri mici.
+
+Score: 0.85714287
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 16-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: cine le <em>pierde</em> va vedea la fel că toată nefericirea şi pierzarea sa de aici începe. Cu <em>pierderea</em> curăţiei
+Highlight: atracţiile pământeşti, puterea cuvântului său se <em>pierde</em>, căldura dragostei lui scade, frumuseţea curăţiei
+Highlight:  ori gânduri ce ne-ar întina şi ne-ar face să <em>pierdem</em> curăţia lui Hristos, curăţia neprihănirii noastre
+Highlight: dobândirea mântuirii ca şi primejdiile pentru <em>pierderea</em> ei sunt tot aceleaşi care au fost de la început
+Highlight: decât grija şi îngrijorarea permanentă de a nu <em>pierde</em> această nemaipomenită bogăţie şi s-o fructificăm
+
+Score: 0.8333333
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Cred Doamne
+Type: articol
+Author: Traian Dorz
+Highlight: Iar cine <em>pierde</em> acest cuget curat îşi <em>pierde</em> cu el credinţa, după cum se <em>pierde</em> un mir scump, când
+Highlight: atunci credinţa lui moare, se <em>pierde</em>, se strică (
+Highlight: Iar dacă ne-ai dăruit-o, nu ne lăsa să ne-o mai <em>pierdem</em> prin vreo întinare a cugetului, prin vreo neplăcere
+
+Score: 0.8333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre lăcomie
+Type: articol
+Author: Traian Dorz
+Highlight: <em>pierde</em> şi puţin cât are,
+Highlight: <em>pierde</em> şi ce mai avea.
+Highlight: căci cu mult mai mult vei <em>pierde</em>
+Highlight: pentru-un leu nedat la vreme <em>pierde</em>, cel zgârcit, o sută.
+Highlight: 88 - <em>Pierderea</em> averii lumii unora li-e spre folos,
+
+Score: 0.8333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre păcat
+Type: articol
+Author: Traian Dorz
+Highlight: 31 - Prin păcat se <em>pierde</em> harul - fără har omu-i căzut
+Highlight: 60 - Puţin <em>pierde</em>-acela care lumea asta părăseşte,
+Highlight: pe-orice credincios îl <em>pierde</em> numai un păcat ascuns.
+Highlight: tot ce-i bun în el se <em>pierde</em> ca dintr-un burduf străpuns.
+Highlight: 84 - O spărtură mică <em>pierde</em> luntrea mare,
+
+Score: 0.8333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Moldovei
+Type: articol
+Author: Traian Dorz
+Highlight: Omul înţelept nu-şi <em>pierde</em> pentru-o glumă-un prieten bun
+Highlight: - dar mai bine-şi <em>pierde</em>-un prieten ca o glumă
+Highlight: - meritul oricui se <em>pierde</em> când şi-l spune gura lui.
+Highlight: căci pe mulţi îi mântuieşte ori îi <em>pierde</em>-n urma sa.
+Highlight: cel lipsit degrab îşi <em>pierde</em> orice prieten şi-orice neam.
+
+Score: 0.8333333
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 14-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: care v-aţi putea <em>pierde</em> mântuirea. Cum şi-au pierdut-o cei mai mulţi. Şi şi-o <em>pierd</em> şi astăzi când în
+Highlight: Nimic nu poate fi neplătit, căci nimic nu se <em>pierde</em> fără o răscumpărare. Nimic, dar chiar nimic. Un
+Highlight: sfătuiesc şi caută să ne îndrume. Ca să nu ne <em>pierdem</em> şi noi sufletul, luându-ne după ispitele sau învăţăturile
+Highlight: ajută-ne să le urmăm pilda, spre a nu ajunge să ne <em>pierdem</em>. Pentru că ei sunt unşii Tăi şi trimeşii de care
+
+Score: 0.8333333
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Numai ca s-o faci mai frumoasă
+Type: articol
+Author: Traian Dorz
+Highlight: 2 - Când este fericită se <em>pierde</em> cu totul în bucuria ei - şi îşi uită că mai este
+Highlight: 5 - Când este mâhnită, iarăşi se <em>pierde</em> cu totul în durerea şi în lacrimile ei, uitându-şi
+Highlight: 6 - Când îi vine un oaspete nou, se <em>pierde</em> cu totul în încrederea ei uitându-şi de toţi cei
+Highlight: 9 - Când face cuiva o făgăduinţă se <em>pierde</em> cu totul în grija de a şi-o împlini mai devreme
+Highlight: 11 - Când nu i se răspunde, se <em>pierde</em> cu totul în a-şi găsi numai ei vreo vină pentru
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
+Type: articol
+Author: Traian Dorz
+Highlight: de acest Izvor al mântuirii înseamnă a <em>pierde</em> vremea şi a <em>pierde</em> mântuirea... A căuta mântuirea fără Isus
+Highlight: nu ne fure satan pe Isus Cel Răstignit. Să nu-L <em>pierdem</em> pe Isus Cel Răstignit...
+Highlight: Vremea noastră este atât de scumpă - şi n-o putem <em>pierde</em> fără folos cu astfel de discuţii.
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight: îndrumare, dezordonaţi şi lumeşti, nu numai că îşi <em>pierd</em> ei înşişi sufletele lor, dar vor mai atrage cu ei
+Highlight: care nu trebuie să avem nici de acum. Altfel ne-am <em>pierde</em> identitatea - şi am putea deveni apoi orice.
+Highlight: să-i aducem cu noi şi după noi Acolo, fără să <em>pierdem</em> nimic, nici din Adevăr, nici din suflete.
+Highlight: autoritatea de stat şi cea bisericească, - dar putem <em>pierde</em> totul chiar acum, dacă nu lucrăm cu hotărâre şi
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: oare să ne <em>pierdem</em> viaţa asta trecătoare decât cea veşnică? Nu-i mai bine oare să ne <em>pierdem</em> trupul decât
+Highlight: înălţa ca un cor frumos acompaniat de toţi. Ne <em>pierdeam</em> în cântare până când cineva mai atent, văzând
+Highlight: alt ton. M-au ameninţat doar cu carceră - şi cu <em>pierderea</em> dreptului la vorbitor şi pachet...
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: procesul căci aşa este judecata lumească. Însă dacă <em>pierde</em> procesul va însemna că nu a avut dreptate. În ce
+Highlight: acesta, sub lovitura de la Şcoala Normală îşi <em>pierduse</em> în ultimul timp cu totul cumpătul religios. Mai
+Highlight: Prin caterisire preotul <em>pierde</em> dreptul de a săvârşi sf. taine, deci nu mai are
+Highlight: Îşi <em>pierde</em> numele de preot şi vrednicia cu care a fost îmbrăcat
+
+Score: 0.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre nădejde
+Type: articol
+Author: Traian Dorz
+Highlight: nu ţi-o <em>pierde</em> niciodată;
+Highlight: - omul disperat se <em>pierde</em> chiar şi-n locul liniştit.
+Highlight: - chiar dacă ţi-ai <em>pierde</em> totul, sufletul să nu ţi-l laşi.
+Highlight: - de aceasta a i-o <em>pierde</em> este cel mai greu păcat.
+
+Score: 0.8
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Laudă şi mustrare
+Type: articol
+Author: Traian Dorz
+Highlight: Iar cine îşi <em>pierde</em> acest cuget curat îşi <em>pierde</em> odată cu el şi credinţa. După cum se <em>pierde</em> un mir scump
+Highlight: atunci credinţa lui moare, se <em>pierde</em> şi se strică
+
+Score: 0.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Nu v-am ales Eu pe voi?
+Type: articol
+Author: Traian Dorz
+Highlight: Nu Domnul <em>pierde</em> prin despărţirea noastră de El, ci noi <em>pierdem</em>.
+Highlight: Din pricina acestora se smintesc şi se <em>pierd</em> sufletele curate ale multor copii ai lui Dumnezeu
+Highlight: şi din pricina faptelor lor apoi, aceştia îşi <em>pierd</em> calitatea de fii ai lui Dumnezeu, ajungând nu numai
+
+Score: 0.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Nu-mi mai lua Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: să nu mai <em>pierd</em> cărarea
+Highlight: să nu mă <em>pierd</em> de Tine
+Highlight: că de le-aş <em>pierde</em>-acestea
+Highlight: toată bucuria vieţii ni s-ar <em>pierde</em> şi s-ar duce.
+
+Score: 0.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Să nu pot izgoni din mine
+Type: poezie
+Author: Traian Dorz
+Highlight: când <em>pierde</em>-nţelepciunea, mai <em>pierde</em> înc-o mie.
+Highlight: să nu-i <em>pierd</em> nici un strop din har să
+Highlight: Când omul <em>pierde</em> drumul, nici calea n-o mai ştie când
+
+Score: 0.8
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Îngăduinţa cu cei care ne învaţă
+Type: articol
+Author: Traian Dorz
+Highlight: pot ajuta pe nimeni spre mântuire ci numai îi pot <em>pierde</em>.
+Highlight: Domnul nu ne însoţeşte este acela în care noi <em>pierdem</em> urma paşilor Lui şi o luăm pe alte urme înşelătoare
+Highlight: repede şi mai smeriţi calea Lui pe care noi o <em>pierdusem</em>.
+Highlight: Să nu ne îngrijorăm: Dumnezeu nu va îngădui să <em>pierdem</em> decât ceea ce este rău.
+
+Score: 0.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: ... Mielul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: priveghem necurmat ca să nu <em>pierdem</em> harul pe care ni l-ai adus Tu, să nu <em>pierdem</em> darul iertării şi părtăşiei
+Highlight: părtăşiei Tale. Şi să nu <em>pierdem</em> roada ascultării de Tine.
+
+Score: 0.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: ... Şi l-au dat afară
+Type: articol
+Author: Traian Dorz
+Highlight: . Dar nici ruşinea nu li se va mai <em>pierde</em> şi nici cugetul nu li se va mai linişti în veci
+Highlight: Dar când din pricina ta îşi mai <em>pierd</em> şi alţii sufletele şi mântuirea lor, nu există nici
+Highlight: nici nu ne lăsa să ne <em>pierdem</em> prin neascultarea de adevăraţii noştri îndrumători
+
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: A face voia lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: grijă să nu te faci niciodată cu nimic vinovat de <em>pierderea</em> nimănui.
+Highlight: poate câştiga ceva. Vai de acela prin care vine <em>pierderea</em> cuiva.
+Highlight: Sufletele cârtitoare <em>pierd</em> tot mai mult binecuvântările Domnului, fiindcă sunt
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: nu-L <em>pierdem</em> pe Isus Cel Răstignit. Să nu <em>pierdem</em> miezul ca să rămânem cu
+Highlight: . Să nu <em>pierdem</em> duhul
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: Tot timpul, toate ocaziile şi toată puterea se <em>pierdeau</em> numai în luptele şi certurile de vorbe asupra
+Highlight: asupra acestor noi învăţături. Aşa apoi se <em>pierdeau</em> şi sufletele şi adunările, dezbinate de aceste partide
+Highlight: şi adâncă durere ne-a încercat pe toţi, prin <em>pierderea</em> lui. Fusese un frate de o mare credinţă, de o
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: în viaţă. Darul nu se poate lua. Se poate doar <em>pierde</em> dacă nu este aprins...
+Highlight: l-a aprins - şi cine l-a simţit, nu-l mai poate <em>pierde</em>. Şi nimeni nu-l mai poate lua de la el.
+Highlight: Cum noi <em>pierdusem</em> orice garanţie de continuitate a scrisului din
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 17 - Vin rândurile noi
+Type: articol
+Author: Traian Dorz
+Highlight: care Îi leapădă mărturia Lui. Dar El Însuşi nu <em>pierde</em>.
+Highlight:  Şi acolo în El le regăsim ori de câte ori le <em>pierdem</em> şi le căutăm iarăşi.
+Highlight: , noi trebuie să nu <em>pierdem</em> nici o secundă în ce priveşte munca şi izbânda
+
+Score: 0.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: des luaţi la anchete şi tot mai ameninţaţi cu <em>pierderea</em> libertăţii. Mulţi jandarmi sunt puşi pe urmele
+Highlight: <em>Pierdusem</em> toată avuţia mea de cărţi pe care le strânsesem
+Highlight: privelişti şi gânduri spre a-mi slăbi credinţa şi a-mi <em>pierde</em> răbdarea ca să cârtesc împotriva Domnului şi Dumnezeului
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: mereu în acest punct: să nu-L <em>pierdem</em> pe Isus Cel Răstignit. Să nu <em>pierdem</em>
+Highlight: ; să nu <em>pierdem</em>
+
+Score: 0.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 26 - Limpezirea apelor adânci
+Type: articol
+Author: Traian Dorz
+Highlight: vinovate. Când cineva îşi <em>pierde</em> curăţia inimii şi echilibrul minţii - acela se <em>pierde</em> în curând singur şi
+Highlight: din orbia îngâmfată şi primejdioasă prin care se <em>pierd</em> pe ei înşişi şi pe cei care îi mai urmează.
+
+Score: 0.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
+Type: articol
+Author: Traian Dorz
+Highlight: să cad acolo cu burta sau cu ochii. Ca să nu mă <em>pierd</em> de tot. Adevărul acesta n-aveam cum să-l ştiu eu
+Highlight: că se rupe în inima mea când am înţeles că-l <em>pierdusem</em> pentru totdeauna. Şi că tot ce mai avea el să-mi
+Highlight: fi folosit lor de la noi, sau nouă de la ei, le <em>pierdem</em> pentru totdeauna şi noi şi ei.
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: şi pas cu pas ne <em>pierdem</em> puterile sub ele.
+Highlight: fuseseră scoşi şi eliberaţi. Unul fiindcă îşi <em>pierduse</em> acolo vederea, iar altul pentru că nu i se găsise
+Highlight: îi ia aceluia mintea sănătoasă. Apoi acela se va <em>pierde</em> singur. Şi sigur.
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 9 - Înţelepciunea şi puterea
+Type: articol
+Author: Traian Dorz
+Highlight: nici <em>pierderea</em> bunurilor materiale, poate nici <em>pierderea</em> multor vieţi şi prilejuri, cât
+Highlight: <em>pierderea</em> din
+
+Score: 0.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Dalila
+Type: poezie
+Author: Traian Dorz
+Highlight: de cel ce-şi <em>pierde</em> mintea
+Highlight: şi le <em>pierde</em> pedepsit.
+Highlight: În desfrâu se <em>pierde</em> omul
+
+Score: 0.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Dar şi acuma ştiu...
+Type: articol
+Author: Traian Dorz
+Highlight: ivesc, nu-l dezorientează, nu-l zăpăcesc, nu-l <em>pierd</em>. După fiecare întâmplare chiar neprevăzută, el se
+Highlight:  cum să lucreze - şi nu <em>pierde</em> nici prilejul nici vremea.
+Highlight:  că totul este trecător, şi nu-şi <em>pierde</em> nici seninătatea, nici bunătatea, nici iubirea
+
+Score: 0.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre muncă
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vremea cald\u0103, vremea rece, el n-o <em>pierde</em> \u00een zadar. ",
-"c\u00e2t de-avut s\u0103 fie omul, <em>pierde</em> dac\u0103 nu lucreaz\u0103. ",
-"omul cel cinstit nu <em>pierde</em> c\u0103 nu-l las\u0103 Dumnezeu. "
-]
-}
+Highlight: vremea caldă, vremea rece, el n-o <em>pierde</em> în zadar.
+Highlight: cât de-avut să fie omul, <em>pierde</em> dacă nu lucrează.
+Highlight: omul cel cinstit nu <em>pierde</em> că nu-l lasă Dumnezeu.
 
-Score: 3.0
+Score: 0.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre nebunie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"po\u0163i <em>pierde</em> o potcoav\u0103 mare, ",
-"pentru-un cal se poate <em>pierde</em>-un c\u0103l\u0103re\u0163",
-"\u00ee\u015fi va risipi \u015fi p\u00e2inea \u015fi s\u0103m\u00e2n\u0163a-\u015fi <em>pierde</em>, "
-]
-}
+Highlight: poţi <em>pierde</em> o potcoavă mare,
+Highlight: pentru-un cal se poate <em>pierde</em>-un călăreţ
+Highlight: îşi va risipi şi pâinea şi sămânţa-şi <em>pierde</em>,
+
+Score: 0.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre prietenie
+Type: articol
+Author: Traian Dorz
+Highlight: pe lângă prietenul stricat, copilul bun se <em>pierde</em>.
+Highlight: 31 - Când omul <em>pierde</em> drumul apucă orice căi,
+Highlight:  îl vei <em>pierde</em> negreşit.
 

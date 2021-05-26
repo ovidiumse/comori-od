@@ -1,1422 +1,1025 @@
-+---------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                         | Author          | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Ce lacomi ne sunt                                             | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | poezie  |
-| Ce lacomi ne sunt                                             | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Despre lăcomie                                                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Nu fii lacom!                                                 | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Din alte diferite părţi                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Vedeţi că nu câştigaţi nimic                                  | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Pe urmele Domnului                                            | Traian Dorz     | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Din părţile Munteniei                                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Mana din ziua a 7-a;                                          | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Fraţii şi vrăjmaşii                                           | Traian Dorz     | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Din părţile Crişanei                                          | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 19 - Şi binele trebuie plătit                            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Din părţile Banatului                                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 12 - Dovada supremei iubiri                              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Şi Caiafa era                                                 | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 28 - Proverbe                                            | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Din părţile Dobrogei                                          | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Păcatul uitării datoriilor                                    | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Cap. 11 - Semnele Oastei Domnului                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Loviţi am fost                                                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
-| Intrusul şi moştenirea                                        | Traian Dorz     | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Părinţii noştri au mâncat                                     | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Cap. 31 - O altă judecată                                     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cămaşa lui Isus                                               | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Să mulţumim pentru toate                                      | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Ţinta tuturor năzuinţelor mele!                               | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Loviţi am fost                                                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Despre zgârcenie                                              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Luca 12, 16                                                   | Traian Dorz     | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma) | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 16-a după Rusalii                 | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Prepeliţele                                                   | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Cap. 1 - Cel mai frumos Isus                                  | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Din părţile Maramureşului                                     | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 8 - Al şaptelea foc                                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                         | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 21 - Tipografia - un minunat şi dureros ideal            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| De ce nu s-a vândut?                                          | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Dezvinovăţiri învinuitoare                                    | Traian Dorz     | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Binefacerea şi recunoştinţa                                   | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Facerea de bine                                               | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Deşertăciune şi slavă                                         | Traian Dorz     | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
-| Inima şi lupta                                                | Traian Dorz     | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
-| Îl ai tu oare pe Dumnezeu?                                    | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| M-au urât fără temei                                          | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Scoateţi acum!                                                | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Esau şi Iacov                                                 | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Ferirea de ispite                                             | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Despre mulţumire                                              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 7 - Printre leu şi printre urs                           | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Pe patul morţii mele                                          | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
-| Cap. 14 - Să ne apropiem de sfârşit                           | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                 | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 24 - Pânza care se ţese                                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Pustia şi izvorul                                             | Traian Dorz     | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Mărturisitori cere Domnul                                     | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Un semănat neîntrerupt                                        | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Mulţi au crezut din pricina mărturiei                         | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Isus le-a zis: nu cârtiţi!                                    | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| ... Fiindcă voi aveţi obicei...                               | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Iată, vi-L aduc, ca să ştiţi                                  | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Profeţiile şi împlinirea lor                                  | Traian Dorz     | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Viitorul întristărilor noastre                                | Traian Dorz     | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
-| A fi în Hristos                                               | Traian Dorz     | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
-| Rugăciuni vinovate                                            | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Uneltele lui Dumnezeu                                         | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Ochiul şi lauda Domnului                                      | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Urechile şi ochii                                             | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Porunca şi ascultarea                                         | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Adevărul şi inimile                                           | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Aşteptarea şi sosirea                                         | Traian Dorz     | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
-| Venirea şi plecarea                                           | Traian Dorz     | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
-| Greutatea şi frumuseţea psalmilor                             | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Vinovăţia şi Răsplata                                         | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Mărturisirea Adevărului                                       | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Boală şi vindecare                                            | Traian Dorz     | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
-| Păcatul şi moartea                                            | Traian Dorz     | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
-| Primirea lui Hristos                                          | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Mai bun este sfârşitul                                        | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Într-o clipă fericită                                         | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| O, cât de Bun este Domnul!                                    | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Un singur Adevăr                                              | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
-| Dovada primirii Duhului                                       | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
-| Răufăcătorii Lucrării Domnului                                | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
-| Călăuzirea Duhului Sfânt                                      | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
-| Chemarea şi venirea                                           | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Dragostea cu care M-ai iubit Tu...                            | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Iuda                                                          | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Orice mărire ai avea                                          | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Nu poate omul mândru                                          | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Noi suntem sămânţa lui...                                     | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Faptele tatălui vostru                                        | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cât este ziuă, trebuie să lucrezi                             | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-+---------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
++------------------------------------------------------------------------------------------+---------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                    | Occurrences                                             | Author          | Tip                              | Carte                        | Volum   |
++------------------------------------------------------------------------------------------+---------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Despre lăcomie                                                                           | {'lăcomie', 'lacom'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cap. 11 - Semnele Oastei Domnului                                                        | {'lăcomie', 'lăcomiei', 'lacomii'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Vedeţi că nu câştigaţi nimic                                                             | {'lăcomie', 'lacom', 'lacomă', 'lacomi', 'lăcomia'}     | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                          | {'lăcomie', 'lăcomia'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Între două judecăţi                                                             | {'lăcomie', 'lăcomiei'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Din alte diferite părţi                                                                  | {'lăcomie', 'lacomi', 'lăcomia', 'lăcomind', 'Lacomul'} | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Crişanei                                                                     | {'lăcomie', 'lăcomia', 'lacomul', 'lacom'}              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                       | {'lăcomie', 'lacom', 'Lăcomia', 'lacomi'}               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                   | {'lăcomie', 'lăcomia', 'lăcomiei'}                      | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 1 - Cel mai frumos Isus                                                             | {'lăcomie', 'lacom', 'lăcomia'}                         | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                          | {'lăcomie', 'lăcomia', 'lacomi'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                               | {'lăcomie', 'lacom'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                                               | {'lăcomie', 'lacom'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Ce pâră aduceţi împotriva Omului - Acestuia?                                             | {'lăcomie', 'lăcomia'}                                  | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Din părţile Moldovei                                                                     | {'lăcomie', 'lăcomia'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Libertate                                                                                | {'lăcomie', 'lăcomia'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| M-au urât fără temei                                                                     | {'lăcomie', 'lacom'}                                    | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Trebuia să treacă prin Samaria                                                           | {'lăcomie', 'lăcomia'}                                  | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| ... În odaia de judecată                                                                 | {'lăcomie'}                                             | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Auzirea şi ascultarea                                                                    | {'lăcomie'}                                             | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Cap. 11 - Cel mai bun misionar                                                           | {'lăcomie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                                 | {'lăcomie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                                    | {'lăcomie'}                                             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 13 - După luarea lui Moisi...                                                       | {'lăcomie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                             | {'lăcomie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                           | {'lăcomie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                                             | {'lăcomie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Strălucita sărbătoare de Rusalii                                                | {'lăcomie'}                                             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Chinul pocăinţei tale                                                                    | {'lăcomie'}                                             | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
+| Chinul pocăinţei tale                                                                    | {'lăcomie'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Despre curăţie                                                                           | {'lăcomie'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre deşertăciune                                                                      | {'lăcomie'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Doamne, cine este?                                                                       | {'lăcomie'}                                             | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| După cum a fost înălţat şarpele                                                          | {'lăcomie'}                                             | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| El care a deschis... nu putea?                                                           | {'lăcomie'}                                             | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Hărnicia                                                                                 | {'lăcomie'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Iarăşi în sala de judecată                                                               | {'lăcomie'}                                             | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Iuda a luat ceata... şi a venit                                                          | {'lăcomie'}                                             | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                    | {'lăcomie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                          | {'lăcomie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)                        | {'lăcomie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)             | {'lăcomie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Nicodim, cel care venise la Isus...                                                      | {'lăcomie'}                                             | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| O gloată mare mergea... văzând semnele                                                   | {'lăcomie'}                                             | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Omul nu poate avea                                                                       | {'lăcomie'}                                             | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Roadele Adevărului şi Dragostei                                                          | {'lăcomie'}                                             | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Rugăciune şi mărturisire                                                                 | {'lăcomie'}                                             | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Unul dintre aprozii care stăteau - acolo...                                              | {'lăcomie'}                                             | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Va veni vremea când...                                                                   | {'lăcomie'}                                             | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| În mâinile lor...                                                                        | {'lăcomie'}                                             | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Ce lacomi ne sunt                                                                        | {'lacomi'}                                              | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | poezie  |
+| Ce lacomi ne sunt                                                                        | {'lacomi'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Nu fii lacom!                                                                            | {'lacom'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 12 - Dovada supremei iubiri                                                         | {'lăcomia', 'Lăcomia', 'lacom'}                         | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                          | {'lacom', 'lăcomia', 'lăcomiei'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Mana din ziua a 7-a;                                                                     | {'lăcomiei', 'lacomilor', 'lacomii'}                    | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Din părţile Munteniei                                                                    | {'lăcomia', 'lacom', 'Lacomul', 'lacomul'}              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                      | {'lăcomia', 'lăcomiei'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Din părţile Banatului                                                                    | {'lacom', 'lacomul', 'Lăcomia', 'lăcomia'}              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Prepeliţele                                                                              | {'lăcomia', 'lăcomiei', 'lacom'}                        | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Grăuntele de muştar                                                             | {'lăcomia'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 28 - Proverbe                                                                       | {'lăcomia', 'lacom', 'Lacomul'}                         | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Din părţile Dobrogei                                                                     | {'Lacomul', 'lăcomia'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Maramureşului                                                                | {'lăcomia', 'Lăcomia', 'lacomului'}                     | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Şi Caiafa era                                                                            | {'lacome', 'lăcomia', 'Lacome'}                         | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Cap. 18 - Un vânt rău                                                                    | {'lacomă', 'lăcomia'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Tipografia - un minunat şi dureros ideal                                       | {'lăcomii', 'lacom'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                                                | {'lacomi'}                                              | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                                  | {'lacomă', 'lăcomia'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                                 | {'Lăcomia', 'lacom'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cămaşa lui Isus                                                                          | {'lacome'}                                              | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| De ce nu s-a vândut?                                                                     | {'Lăcomia', 'lacomul'}                                  | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Despre mulţumire                                                                         | {'lăcomiei', 'lacom'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre zgârcenie                                                                         | {'Lacomul', 'lacom'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Esau şi Iacov                                                                            | {'lacom', 'lăcomia'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Ferirea de ispite                                                                        | {'lacomi', 'lăcomia'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 16-a după Rusalii                                            | {'lacomă', 'lacome'}                                    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)                     | {'lăcomiei', 'lăcomia'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'lăcomia'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                            | {'lacomi'}                                              | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Loviţi am fost                                                                           | {'lacomi'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
+| Loviţi am fost                                                                           | {'lacomi'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Nunul a gustat...                                                                        | {'lăcomiei', 'lăcomia'}                                 | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Părinţii noştri au mâncat                                                                | {'lacomă', 'lacom'}                                     | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Scoateţi acum!                                                                           | {'lăcomiile', 'lacom'}                                  | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Vânzătorul ştia şi el locul acesta                                                       | {'lăcomiei', 'lăcomia'}                                 | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Ţinta tuturor năzuinţelor mele!                                                          | {'lacom', 'lacomul'}                                    | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| ... Căci nimeni nu poate...                                                              | {'lăcomiei'}                                            | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| ... Du-te şi să nu mai păcătuieşti                                                       | {'lăcomiei'}                                            | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Este mincinos şi tatăl minciunii                                                     | {'lăcomiei'}                                            | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Fiindcă voi aveţi obicei...                                                          | {'lacomi'}                                              | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| ... Folosul                                                                              | {'lăcomiei'}                                            | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| ... Noi L-am găsit pe Domnul...                                                          | {'lacomi'}                                              | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| ... Vorbesc după cum M-a învăţat Tatăl                                                   | {'lăcomiei'}                                            | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Acela despre care vorbea Isus                                                            | {'lăcomia'}                                             | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Adevărul şi datoria                                                                      | {'lăcomia'}                                             | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Adevărul şi inimile                                                                      | {'lacomi'}                                              | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Avraam şi Eliezer                                                                        | {'lăcomiţi'}                                            | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Bogăţie, lanţ al morţii                                                                  | {'lacom'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Înfricoşata lepădare                                                            | {'lăcomia'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
++------------------------------------------------------------------------------------------+---------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
 Searching Lacomie using http://localhost:9000...
-Got 310 hits:
-Score: 5.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Ce lacomi ne sunt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce <em>lacomi</em> ne sunt ochii spre tot ce nu-i al lor",
-"Ce <em>lacomi</em> ne",
-"Ce <em>lacomi</em> ne sunt ochii spre tot ce v\u0103d pe jos",
-"Ce <em>lacomi</em> ne sunt ochii spre mult \u015fi spre \u00eentins",
-"Ce <em>lacomi</em> ne sunt ochii spre tot ce-i lucitor"
-],
-"title": [
-"Ce <em>lacomi</em> ne sunt"
-]
-}
-
-Score: 5.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Ce lacomi ne sunt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce <em>lacomi</em> ne sunt ochii spre tot ce nu-i al lor",
-"Ce <em>lacomi</em> ne",
-"Ce <em>lacomi</em> ne sunt ochii spre tot ce v\u0103d pe jos",
-"Ce <em>lacomi</em> ne sunt ochii spre mult \u015fi spre \u00eentins",
-"Ce <em>lacomi</em> ne sunt ochii spre tot ce-i lucitor"
-],
-"title": [
-"Ce <em>lacomi</em> ne sunt"
-]
-}
-
-Score: 4.834835
+Got 221 hits:
+Score: 18.639639
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre lăcomie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"72 - Nu fi <em>lacom</em> dup\u0103-avere, nu fi <em>lacom</em> dup\u0103 bani, ",
-"nu fii <em>lacom</em> niciodat\u0103, nu tr\u0103i din fur\u0103tur\u0103 c\u0103",
-"6 - Nu fi <em>lacom</em>, cu-n\u015felarea n-aduna averi str\u0103ine c\u0103ci",
-"dec\u00e2t <em>lacomul</em> ce are",
-"21 - Nu fii <em>lacom</em> niciodat\u0103 dup\u0103 bani, c\u0103ci ei ascund la\u0163ul"
-],
-"title": [
-"Despre <em>l\u0103comie</em>"
-]
-}
+Highlight: 2 - N-asculta de <em>lăcomie</em> când în inimă te-mpunge
+Highlight: 16 - Prietene, de <em>lăcomie</em> şi de furt să te fereşti
+Highlight: 23 - Mintea omului orbeşte mai ales prin <em>lăcomie</em>,
+Highlight: ce-ţi întrece-i <em>lăcomie</em>.
+Highlight: 95 - Şi înţelepciunea-i prinsă uneori de <em>lăcomie</em>,
+Highlight: 72 - Nu fi <em>lacom</em> după-avere, nu fi <em>lacom</em> după bani,  lăcomia
+Highlight: Despre <em>lăcomie</em>
 
-Score: 4.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Nu fii lacom!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>lacom</em> la m\u00e2ncare"
-],
-"title": [
-"Nu fii <em>lacom</em>!"
-]
-}
-
-Score: 3.5128205
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ci vicleni \u015fi <em>lacomi</em> sunt, mul\u0163i pe l\u00e2ng\u0103 tine. ",
-"284 - <em>Lacomul</em> neru\u015finat",
-"285 - <em>Lacomul</em> f\u0103r\u0103 ru\u015fine",
-"287 - Omul <em>lacom</em>, el, \u00ee\u015fi sap\u0103 groapa lui cu din\u0163ii s\u0103i",
-"291 - <em>Lacomul</em>, de foame moare, "
-]
-}
-
-Score: 3.3777778
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Vedeţi că nu câştigaţi nimic
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"satanic\u0103 <em>l\u0103comie</em>, au privit totdeauna la orice lucru oric\u00e2t de sf\u00e2nt ar fi fost numai cu g\u00e2ndul <em>lacom</em> al c\u00e2\u015ftigului",
-"V\u00e2narea <em>lacom\u0103</em> numai de c\u00e2\u015ftig, este o apuc\u0103tur\u0103 ur\u00e2t\u0103 \u015fi josnic\u0103",
-"totdeauna cu sc\u00e2rb\u0103 de acel om pe care-l vezi at\u00e2t de <em>lacom</em> \u015fi de hr\u0103p\u0103re\u0163, \u00eenc\u00e2t nu-l mai intereseaz\u0103 nimic",
-"celor smeri\u0163i \u015fi cura\u0163i cu inima, i-au f\u0103cut ni\u015fte <em>lacomi</em> \u015fi hr\u0103p\u0103re\u0163i. ",
-"\u015fi fere\u015fte-te de <em>l\u0103comia</em> de bani, "
-]
-}
-
-Score: 3.2666667
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Pe urmele Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103n\u0103toas\u0103 <em>l\u0103comie</em> privesc totdeauna la orice lucru oric\u00e2t de sf\u00e2nt ar fi numai cu g\u00e2ndul <em>lacom</em> al c\u00e2\u015ftigului",
-"\u015fi cu durere de acel om pe care \u00eel vezi at\u00e2t de <em>lacom</em> \u015fi de hr\u0103p\u0103re\u0163, \u00eenc\u00e2t nu-l mai intereseaz\u0103 nimic",
-"inima, i-au f\u0103cut ni\u015fte <em>lacomi</em> \u015fi ni\u015fte hr\u0103p\u0103re\u0163i. ",
-"19 - Dintre oamenii cei <em>lacomi</em> \u015fi hr\u0103p\u0103re\u0163i satana recruteaz\u0103"
-]
-}
-
-Score: 3.2666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"89 - Blestemat\u0103-i <em>l\u0103comia</em> \u015fi cel <em>lacom</em> p\u00e2n\u0103-n veac",
-"7 - Omul <em>lacom</em> este-asemeni unui \u015farpe care-ar vrea s\u0103",
-"9 - <em>Lacomul</em> \u015fi egoistul nu \u0163i-s prieteni buni nicic\u00e2nd dac-au",
-"<em>lacomul</em> oric\u00e2t s\u0103 aib\u0103, e tot r\u0103u \u015fi tot"
-]
-}
-
-Score: 3.2142859
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Mana din ziua a 7-a;
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"Dumnezeu tr\u0103sese darul din calea <em>lacomilor</em>. ",
-"Exact \u00een chipul acesta sunt \u015fi <em>lacomii</em> de azi care nu cru\u0163\u0103 de lucr\u0103ri",
-"trec\u0103toare. Dar exact a\u015fa p\u0103\u0163esc \u015fi ace\u015ftia ca \u015fi <em>lacomii</em> cei din Biblie. Dumnezeu \u00ce\u015fi trage darul \u015fi binecuv\u00e2ntarea",
-"Dar p\u0103catul <em>l\u0103comiei</em> i-a scos pe unii s\u0103 str\u00e2ng\u0103 man\u0103 \u015fi \u00een ziua Domnului",
-"de odihn\u0103 \u015fi de \u00eenchinare Domnului, dar p\u0103catul <em>l\u0103comiei</em> \u00eel pleac\u0103 pe om la lucru, la hotar, la drumul"
-]
-}
-
-Score: 3.2142859
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Fraţii şi vrăjmaşii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>L\u0103comia</em> viclean\u0103 \u015fi vicle\u015fugul <em>lacom</em> \u00cel ucid totdeauna pe Hristos din",
-"7 - Cei <em>lacomi</em> de bani au ajuns v\u00e2nz\u0103tori de fra\u0163i, obraznici",
-"<em>lacomul</em> despre c\u00e2\u015ftiguri,  be\u0163ivul",
-"6 - <em>L\u0103comia</em> de bani este r\u0103d\u0103cina tuturor relelor - acesta",
-"inima noastr\u0103 de acel satanic p\u0103cat al Iudei: <em>l\u0103comia</em> \u015fi pref\u0103c\u0103toria.  \u015ei"
-]
-}
-
-Score: 3.2142859
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Crişanei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>lacomul</em> \u00ee\u015fi m\u00e2nc\u0103-oric\u00e2nd",
-"dac\u0103 e\u015fti prea <em>lacom</em>, tu te pedepse\u015fti. ",
-"201 - Omul <em>lacom</em> are pururi nas de porc",
-"143 - Josnic\u0103 e <em>l\u0103comia</em> la oricine \u015fi oric\u00e2t\u0103 dar",
-"144 - Cump\u0103teaz\u0103-\u0163i <em>l\u0103comia</em> ca"
-]
-}
-
-Score: 2.9333334
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 19 - Şi binele trebuie plătit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Grozav, c\u00e2t de <em>lacom</em> \u015fi mult m\u0103n\u00e2nc\u0103 omul c\u00e2nd nu are",
-"Dar paiele erau pu\u0163ine. \u015ei dup\u0103 ce luar\u0103 primii <em>lacomi</em>, pentru ceilal\u0163i nu mai r\u0103m\u0103sese nimic. ",
-"cel ce o primea la poart\u0103 era mai binevoitor. <em>L\u0103comia</em> la m\u00e2ncare au pl\u0103tit-o atunci mul\u0163i cu multe chinuri",
-" Aici au venit cei mai mul\u0163i adu\u015fi de ur\u0103, de <em>l\u0103comie</em>, de r\u0103zbunare, de cruzimi... Dar c\u00e2\u0163i oare vor"
-]
-}
-
-Score: 2.9333334
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- cu omul r\u0103u \u015fi <em>lacom</em>",
-"numai <em>lacomul</em> nu doarme \u015fi c\u0103 ",
-"153 - <em>L\u0103comia</em> dup\u0103 bani",
-"- st\u0103p\u00e2ne\u015fte-\u0163i <em>l\u0103comia</em>. "
-]
-}
-
-Score: 2.8888888
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103racului pot rezista \u00een vecin\u0103tatea bogatului <em>lacom</em>. <em>L\u0103comia</em> bogatului, folosind toate mijloacele, mai cur\u00e2nd",
-"De orice natur\u0103 ar fi <em>l\u0103comia</em>, ea este un p\u0103cat greu, \u00eendeosebi \u00eens\u0103 <em>l\u0103comia</em> omului avut",
-"avut, adic\u0103 <em>l\u0103comia</em> care \u00eei prinde pe unii oameni avu\u0163i, este ceva sc\u00e2rbos... <em>L\u0103comia</em> omului avut, este",
-"ur\u00e2t\u0103 este <em>l\u0103comia</em>. De",
-"c\u0103ror chirie scotea anual milioane - \u015fi totu\u015fi <em>l\u0103comia</em> l-a dus s\u0103 r\u0103peasc\u0103 oi\u0163a, singura oi\u0163\u0103 a unui biet"
-]
-}
-
-Score: 2.8333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Şi Caiafa era
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Plini de acelea\u015fi porniri desfr\u00e2nate, <em>lacome</em>, hr\u0103p\u0103re\u0163e \u015fi f\u0103\u0163arnice, am\u00e2ndoi erau \u00een stare",
-"m\u00e2inile lui Caiafa erau hr\u0103p\u0103re\u0163e, ca ale lui Ana. <em>Lacome</em> ca ale lui Iuda. Nedrepte ca ale aprozilor. Nelegiuite",
-"Dragul meu, dac\u0103 <em>l\u0103comia</em> din tine nu \u0163i-o vei \u015fti st\u0103p\u00e2ni,  dac\u0103"
-]
-}
-
-Score: 2.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 28 - Proverbe
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dar cel <em>lacom</em> de-avu\u0163ie nu va fi nepedepsit. ",
-"25-<em>Lacomul</em> st\u00e2rne\u015fte certuri c\u0103ci e-un om nelegiuit",
-"cel ce-ur\u0103\u015fte <em>l\u0103comia</em> zilele-\u015fi le va lungi.  17-Omul"
-]
-}
-
-Score: 2.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Dobrogei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"26 - <em>Lacomul</em> dorind s-apuce de oriunde al oricui, ",
-"27 - <em>Lacomul</em> - \u015fi azi \u015fi m\u00e2ine, ",
-"- <em>l\u0103comia</em> de avere"
-]
-}
-
-Score: 2.7142859
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de ani, pentru c\u0103 el se gr\u0103be\u015fte, pentru c\u0103 el e <em>lacom</em>, pentru c\u0103 el n-are r\u0103bdare, pentru c\u0103 el are \u00een",
-"slujitorului de la altarul sf\u00e2nt. Iar odat\u0103 cu <em>l\u0103comia</em> au n\u0103p\u0103dit \u00een inima \u015fi \u00een via\u0163a lui toate p\u0103catele",
-"Aceast\u0103 ispit\u0103 a <em>l\u0103comiei</em> a nimicit de multe ori apoi \u015fi \u00een mul\u0163i - tot",
-"\u00eenfr\u00e2n\u0103rii!... \u015ei la aceasta cred c\u0103 a ajuns el din <em>l\u0103comia</em> nest\u0103p\u00e2nit\u0103 dup\u0103 daruri care \u00eel fac pe om totdeauna",
-"fa\u0163\u0103 de adev\u0103rata sa datorie. C\u0103zut \u00een p\u0103catul <em>l\u0103comiei</em> \u015fi desfr\u00e2ului, acest duh a prigonit mereu pe cel\u0103lalt"
-]
-}
-
-Score: 2.7142859
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Păcatul uitării datoriilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"orice suflet <em>lacom</em> \u00ee\u015fi apleac\u0103 toat\u0103 fiin\u0163a lui p\u00e2n\u0103 jos, uit\u00e2ndu-se numai la obiectul <em>l\u0103comiei</em> sale, iar",
-"sau ale nun\u0163ilor noastre, - suntem \u015fi noi robii <em>l\u0103comiei</em> \u015fi ne facem vinova\u0163i fa\u0163\u0103 de \u00eenfr\u00e2narea pe care",
-"care s-au aplecat numai la pofta gurii, robi\u0163i <em>l\u0103comiei</em> stomacului lor. ",
-"Dumnezeul Sfin\u0163eniei nu ne l\u0103sa robi\u0163i \u015fi st\u0103p\u00e2ni\u0163i de <em>l\u0103comie</em>, pentru a nu fi \u015fi noi lep\u0103da\u0163i, ca cei birui\u0163i",
-"birui\u0163i de p\u0103catul vremilor acestora care este <em>l\u0103comia</em> \u015fi ne\u00eenfr\u00e2narea. "
-]
-}
-
-Score: 2.6666665
+Score: 6.8333335
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 11 - Semnele Oastei Domnului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"exemplul acesta o lec\u0163ie ve\u015fnic\u0103 pentru to\u0163i <em>lacomii</em> \u015fi zg\u00e2rci\u0163ii care \u00ee\u015fi adun\u0103 \u015fi st\u0103p\u00e2nesc avu\u0163ii acum pe",
-"viitorul lui satana, care r\u0103m\u00e2ne \u00een veac st\u0103p\u00e2nit de <em>l\u0103comie</em> \u015fi de r\u0103utate, nemaid\u00e2nd nim\u0103nui niciodat\u0103 nimic",
-"C\u00e2nd cineva ajunge st\u0103p\u00e2nit de o astfel de <em>l\u0103comie</em>, de o astfel de zg\u00e2rcenie, de o astfel de r\u0103utate",
-"c\u00e2nd vine ceasul scaden\u0163elor, robul p\u0103catului <em>l\u0103comiei</em> pl\u0103te\u015fte cu v\u00e2rf \u015fi \u00eendesat. S\u0103",
-"pe p\u0103m\u00e2nt parc\u0103 mai \u00eennebuni\u0163i de <em>l\u0103comie</em> \u015fi zg\u00e2rcenie - \u015fi mai robi\u0163i \u015fi orbi\u0163i de ban, ca oric\u00e2nd."
-]
-}
+Highlight: viitorul lui satana, care rămâne în veac stăpânit de <em>lăcomie</em> şi de răutate, nemaidând nimănui niciodată nimic
+Highlight: Când cineva ajunge stăpânit de o astfel de <em>lăcomie</em>, de o astfel de zgârcenie, de o astfel de răutate
+Highlight: pe pământ parcă mai înnebuniţi de <em>lăcomie</em> şi zgârcenie - şi mai robiţi şi orbiţi de ban, ca oricând.
+Highlight: când vine ceasul scadenţelor, robul păcatului <em>lăcomiei</em> plăteşte cu vârf şi îndesat. Să
+Highlight: exemplul acesta o lecţie veşnică pentru toţi <em>lacomii</em> şi zgârciţii care îşi adună şi stăpânesc avuţii acum pe
 
-Score: 2.6666665
+Score: 6.222222
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Vedeţi că nu câştigaţi nimic
+Type: articol
+Author: Traian Dorz
+Highlight: satanică <em>lăcomie</em>, au privit totdeauna la orice lucru oricât de sfânt ar fi fost numai cu gândul <em>lacom</em> al câştigului
+Highlight: şi apoi orbit de <em>lăcomie</em>.
+Highlight: Vânarea <em>lacomă</em> numai de câştig, este o apucătură urâtă şi josnică
+Highlight: totdeauna cu scârbă de acel om pe care-l vezi atât de <em>lacom</em> şi de hrăpăreţ, încât nu-l mai interesează nimic
+Highlight: celor smeriţi şi curaţi cu inima, i-au făcut nişte <em>lacomi</em> şi hrăpăreţi.  Dintre
+Highlight: şi fereşte-te de <em>lăcomia</em> de bani,  şi
+
+Score: 6.1666665
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Loviţi am fost
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentrecut de <em>lacomi</em> nedrept a v-aduna,",
-"c\u00e2t ne-a\u0163i c\u0103lcat de <em>lacomi</em>, de cruzi"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Intrusul şi moştenirea
+Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00ee\u015fi pune oul \u00een cuibul altora. Apoi puiul str\u0103in, <em>lacom</em> \u015fi hr\u0103p\u0103re\u0163, ia toat\u0103 hrana puilor adev\u0103ra\u0163i. \u015ei",
-"18 - Nelegiuit este acela care din dorin\u0163a <em>lacom\u0103</em> pentru el sau pentru ai lui, dispre\u0163uie\u015fte dreptul"
-]
-}
+Highlight: Oastei, acei lucrători care fie din frică fie din <em>lăcomie</em> trecuseră la secte. Apoi umblau să-i atragă şi
+Highlight: nu ne-am năpustit niciodată cu judecăţi sau cu <em>lăcomie</em> asupra nici unei credinţe, asupra nici unor adunări
+Highlight: totdeauna una singură: dorinţa să devină şefi, <em>lăcomia</em> ambiţioasă după întâietate, satanica sete după
+Highlight: duhul dezbinării se folosea acum de ambiţia şi <em>lăcomia</em> de care acesta se lăsase stăpânit şi purtat. Astfel
+Highlight: sau bunurile duhovniceşti ale altor adunări, - <em>lăcomia</em> hrăpăreaţă şi uneltitoare, spre acapararea lor
 
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Părinţii noştri au mâncat
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"unii la al\u0163ii cum m\u0103n\u00e2nc\u0103 \u015fi totdeauna inima lor <em>lacom\u0103</em> \u015fi nes\u0103\u0163ioas\u0103, este nemul\u0163umit\u0103 \u015fi c\u00e2rtitoare.",
-"\u015ei m\u0103n\u00e2nc\u0103, m\u0103n\u00e2nc\u0103, omul <em>lacom</em> \u015fi hr\u0103p\u0103re\u0163, p\u00e2n\u0103 plesne\u015fte. "
-]
-}
+Highlight: vinde cu 180 de lei) mă acuză de îmbogăţire şi <em>lăcomie</em>. Şi e de mirat că împreună cu ei cântă şi păr.
+Highlight: faţa acuzelor şi insinuărilor că sunt stăpânit de <em>lăcomie</em> şi că am făcut milioane - ridic mâinile spre cer
+Highlight: Şi cică sunt stăpânit de duhul <em>lăcomiei</em> de bani... Ciudat
 
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 31 - O altă judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"h\u0103mesi\u0163i por\u0163ia lor, se a\u015fezau 3-4 \u00een fa\u0163a ta privind <em>lacomi</em> la castronul t\u0103u \u00een care \u00eenc\u0103 mai este ceva, urm\u0103rindu-\u0163i",
-"20 de guri \u00eenfometate \u015fi 20 de perechi de ochi <em>lacomi</em>. Ce fericit sunt c\u00e2nd am ce le \u00eemparte, m\u0103car c\u00e2t"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Cămaşa lui Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"erau cele ce fuseser\u0103 ale lui Isus. Dar s\u0103r\u0103ciei <em>lacome</em> a solda\u0163ilor, obi\u015fnui\u0163i cu astfel de poman\u0103, nu-i",
-"din jurul Crucii lui Hristos. Cetele dezbinate \u015fi <em>lacome</em> ale celor mai tri\u015fti pom\u0103nari, sf\u00e2\u015fie f\u0103r\u0103 mil\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Să mulţumim pentru toate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"un popor c\u00e2t de mare, dac\u0103 nu-i cinstit, dac\u0103 e <em>lacom</em> \u015fi hr\u0103p\u0103re\u0163, b\u0103t\u0103u\u015f \u015fi nedrept, este un popor blestemat",
-"\u015fi pentru oricare popor. C\u0103ci omul sau poporul <em>lacom</em>, cu c\u00e2t va avea mai mult, cu at\u00e2t va fi mai nes\u0103tul"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Ţinta tuturor năzuinţelor mele!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"18 - \u015ei cel puternic este <em>lacom</em>",
-"\u015fi <em>lacomul</em> este tiran"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Loviţi am fost
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentrecut de <em>lacomi</em> nedrept a v-aduna",
-"c\u00e2t ne-a\u0163i c\u0103lcat de <em>lacomi</em>, de cruzi"
-]
-}
-
-Score: 2.6666665
+Score: 4.923077
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
-Title: Despre zgârcenie
+Title: Din alte diferite părţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"3 - <em>Lacomul</em> de bani e robul celui mai vr\u0103jma\u015f tiran",
-"de robia-n care piere cel ce-i <em>lacom</em> \u015fi zg\u00e2rcit. "
-]
-}
+Highlight: 220 - Dacă umbli-n <em>lăcomie</em> cuiva munca a-i lua
+Highlight: căci vicleni şi <em>lacomi</em> sunt, mulţi pe lângă tine.  89
+Highlight: 96 - Unde-n ţară <em>lăcomia</em> pe
+Highlight: va fi şi-altul ca să umble <em>lăcomind</em> la munca ta.
+Highlight: 284 - <em>Lacomul</em> neruşinat
+Highlight: 285 - <em>Lacomul</em> fără ruşine
 
-Score: 2.6666665
+Score: 4.857143
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Luca 12, 16
-Type: poezie
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Crişanei
+Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Vai de <em>lacomii</em> ce umbl\u0103",
-"<em>Lacomii</em> cei care tot adun \u015fi-adun"
-]
-}
+Highlight: - peste <em>lăcomie</em>,
+Highlight: 143 - Josnică e <em>lăcomia</em> la oricine şi oricâtă dar
+Highlight: 144 - Cumpătează-ţi <em>lăcomia</em> ca
+Highlight: <em>lacomul</em> îşi mâncă-oricând cinstea
+Highlight: dacă eşti prea <em>lacom</em>, tu te pedepseşti.  180
+Highlight: 201 - Omul <em>lacom</em> are pururi nas de porc şi
 
-Score: 2.6666665
+Score: 4.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 19 - Şi binele trebuie plătit
+Type: articol
+Author: Traian Dorz
+Highlight:  Aici au venit cei mai mulţi aduşi de ură, de <em>lăcomie</em>, de răzbunare, de cruzimi... Dar câţi oare vor
+Highlight: Grozav, cât de <em>lacom</em> şi mult mănâncă omul când nu are
+Highlight: cel ce o primea la poartă era mai binevoitor. <em>Lăcomia</em> la mâncare au plătit-o atunci mulţi cu multe chinuri
+Highlight: Dar paiele erau puţine. Şi după ce luară primii <em>lacomi</em>, pentru ceilalţi nu mai rămăsese nimic.  -
+
+Score: 4.8
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu sunt <em>lacomi</em>, nu fur\u0103, nu mint, nu clevetesc, nu se \u00eembat\u0103,",
-"dar ei sunt mincino\u015fi, v\u00e2nz\u0103tori, preacurvari, <em>lacomi</em> \u015fi hr\u0103p\u0103re\u0163i, \u015fi cu o \u015firetenie bine ascuns\u0103 sub"
-]
-}
+Highlight: cuvântul le dispreţuiesc, dar cu inima sunt plini de <em>lăcomie</em> după ele?
+Highlight: pământ: curvia, necurăţia, patima, pofta rea şi <em>lăcomia</em>, care este o închinare la idoli. 6
+Highlight: desfrânării, necurăţiei, patimii, poftei rele şi <em>lăcomiei</em>. Acestea sunt viaţa omului firesc.
+Highlight: jocurilor lumeşti, cu al plăcerilor vinovate, cu al <em>lăcomiei</em>, al zgârceniei, al desfrânării - o, nu mai sta
 
-Score: 2.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 16-a după Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"poruncitoare \u015fi aspr\u0103, inima neprimitoare, m\u00e2na <em>lacom\u0103</em>, via\u0163a cu ascunzi\u015furi, cuvintele cu dou\u0103 \u00een\u0163elesuri",
-"locuri ur\u00e2te, sau cu gesturi vinovate, desfr\u00e2nate, <em>lacome</em>, viclene, pref\u0103cute \u015fi mincinoase?... "
-]
-}
-
-Score: 2.6
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Prepeliţele
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu fii <em>lacom</em> niciodat\u0103",
-"<em>l\u0103comia</em> dup\u0103 carne l-a",
-"din cauza <em>l\u0103comiei</em> Dumnezeu",
-"<em>l\u0103comia</em> totdeauna e-un"
-]
-}
-
-Score: 2.5
+Score: 4.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mai binevoitor. Iar fl\u0103m\u00e2nzitul \u00eenchis, era mai <em>lacom</em> la m\u00e2ncare. Atunci s-au petrecut \u015fi lucruri pe care",
-"au venit at\u00e2t de mul\u0163i, adu\u015fi de ur\u0103, al\u0163ii de <em>l\u0103comie</em>, al\u0163ii de r\u0103zbunare, al\u0163ii de cruzime... Dar c\u00e2\u0163i",
-"Al\u0163ii lucrau din duh de ceart\u0103, sau din <em>l\u0103comia</em> dup\u0103 vreun c\u00e2\u015ftig. Sau numai dintr-o ambi\u0163ie de"
-]
-}
+Highlight: au venit atât de mulţi, aduşi de ură, alţii de <em>lăcomie</em>, alţii de răzbunare, alţii de cruzime... Dar câţi
+Highlight: mai binevoitor. Iar flămânzitul închis, era mai <em>lacom</em> la mâncare. Atunci s-au petrecut şi lucruri pe care
+Highlight: Alţii lucrau din duh de ceartă, sau din <em>lăcomia</em> după vreun câştig. Sau numai dintr-o ambiţie de
 
-Score: 2.5
+Score: 4.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 2 - Istoria unei Jertfe...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sunte\u0163i ni\u015fte <em>lacomi</em> - strig\u0103 Partenie a Pali, - dup\u0103 ce a muncit at\u00e2ta",
-"\u00een lucru. Nici gelozia, nici <em>l\u0103comia</em>, nici ambi\u0163ia, - toate devenite viclene \u015fi ner\u0103bd\u0103toare",
-"pofte de <em>l\u0103comie</em> \u015fi domina\u0163ie"
-]
-}
+Highlight: pofte de <em>lăcomie</em> şi dominaţie
+Highlight: în lucru. Nici gelozia, nici <em>lăcomia</em>, nici ambiţia, - toate devenite viclene şi nerăbdătoare
+Highlight: Sunteţi nişte <em>lacomi</em> - strigă Partenie a Pali, - după ce a muncit atâta
 
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Maramureşului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"166 - Sacul <em>lacomului</em> poate s\u0103 se umple mai degrab",
-"138 - Rea-i nu numai <em>l\u0103comia</em> dup\u0103 bani \u015fi dup\u0103-avere ci",
-"139 - <em>L\u0103comia</em> a fr\u00e2nt via\u0163a multor oameni \u00eensemna\u0163i c\u0103ci"
-]
-}
-
-Score: 2.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>L\u0103comia</em> r\u0103m\u00e2ne p\u0103cat, dar c\u00e2nd un <em>lacom</em> se desparte de ea - el poate fi"
-]
-}
-
-Score: 2.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 18 - Un vânt rău
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eempotrivirea preo\u0163ilor prigonitori, care ne urm\u0103reau cu o <em>lacom\u0103</em> r\u0103utate ca s\u0103 ne dea pe m\u00e2na autorit\u0103\u0163ilor. Aceast\u0103",
-"Chiar \u00een acela\u015fi timp, <em>l\u0103comia</em> prozelitismului neoprotestant care demult p\u00e2ndea"
-]
-}
-
-Score: 2.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"este mai lipsit \u015fi nu-i ajunge al lui. Sau mai <em>lacom</em> \u015fi r\u00e2vne\u015fte \u015fi la al meu. ",
-"por\u0163ia lor, se a\u015fezau 3-4 \u00een fa\u0163a ta privind cu <em>l\u0103comie</em> lupeasc\u0103 \u00een castronul t\u0103u ori la m\u00e2n\u0103 ta \u00een care"
-]
-}
-
-Score: 2.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dumnezeu, dar so\u0163ia lui avea o inim\u0103 \u00eend\u0103r\u0103tnic\u0103 \u015fi <em>lacom\u0103</em>. La st\u0103ruin\u0163ele fratelui Ilarie care spunea c\u0103",
-"Nu necinsti\u0163i slujbele sfinte cu <em>l\u0103comia</em> de bani!"
-]
-}
-
-Score: 2.3333333
+Score: 4.6666665
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sectar care s-au furi\u015fat mereu ca un urs pref\u0103cut \u015fi <em>lacom</em> spre fagurii acestei sfinte Lucr\u0103ri - va trebui",
-"dormeau. Dormeau \u00een lene \u015fi \u00een ispite, dormeau \u00een <em>l\u0103comie</em> \u015fi \u00een afaceri lume\u015fti, dormeau \u00een politic\u0103, dormeau"
-]
-}
+Highlight: dormeau. Dormeau în lene şi în ispite, dormeau în <em>lăcomie</em> şi în afaceri lumeşti, dormeau în politică, dormeau
+Highlight: sectar care s-au furişat mereu ca un urs prefăcut şi <em>lacom</em> spre fagurii acestei sfinte Lucrări - va trebui
 
-Score: 2.3333333
+Score: 4.6666665
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 21 - Tipografia - un minunat şi dureros ideal
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de a \u00eenghi\u0163i totul, inima geloas\u0103 \u015fi p\u00e2ntecele <em>lacom</em> f\u0103ceau la planuri \u015fi p\u00e2ndeau doar momentul prielnic",
-"devenit \u00eendat\u0103 o \u0163int\u0103 pentru pofta nes\u0103turatei <em>l\u0103comii</em> omene\u015fti. Foamea dup\u0103 avu\u0163iile acestei lumi, n-a"
-]
-}
+Highlight: porţia lor, se aşezau 3-4 în faţa ta privind cu <em>lăcomie</em> lupească în castronul tău ori la mână ta în care
+Highlight: este mai lipsit şi nu-i ajunge al lui. Sau mai <em>lacom</em> şi râvneşte şi la al meu.  Pentru
 
-Score: 2.3333333
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: De ce nu s-a vândut?
+Book: Hristos - Răscumpărătorul nostru
+Title: Ce pâră aduceţi împotriva Omului - Acestuia?
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>lacomul</em> despre c\u00e2\u015ftiguri, ",
-"<em>L\u0103comia</em> de bani este r\u0103d\u0103cina tuturor relelor, - acesta"
-]
-}
+Highlight: Pilat a fost un om legat. Legat mai dinainte prin <em>lăcomie</em>, prin mită luată, prin cuget întinat.
+Highlight: ochii ca să nu te uiţi la faţa celor judecaţi. Dar <em>lăcomia</em> îţi leagă mâinile ca să nu poţi împărţi drept.
 
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Dezvinovăţiri învinuitoare
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Moldovei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vr\u0103jma\u015ful care face pe om <em>lacom</em> de bunul altuia, ",
-"C\u0103ci din <em>l\u0103comia</em> dup\u0103 bunurile altuia ies tot felul de p\u0103cate, cu"
-]
-}
+Highlight: 107 - Trăim ca peştii cei din ape, - de <em>lăcomie</em> chinuiţi -
+Highlight: 87 - Banii cei cu <em>lăcomia</em> şi necinstea dobândiţi în
 
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Binefacerea şi recunoştinţa
-Type: articol
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Libertate
+Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"apropia de lucrurile sfinte cu g\u00e2ndul necinstit, sau <em>lacom</em>, sau necurat (murdar), desfr\u00e2nat, necur\u0103\u0163it! ",
-"pentru ereziile nebuniei tale \u015fi temeiuri pentru <em>l\u0103comia</em> \u015fi interesul t\u0103u?  12"
-]
-}
+Highlight: când suflete-s dezrobite din <em>lăcomie</em> şi păcat,
+Highlight: şi <em>lăcomia</em> şi
 
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Facerea de bine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u0103ci dac\u0103 este <em>lacom</em> p\u0103\u0163e\u015fte \u015fi ru\u015fine \u015fi r\u0103m\u00e2ne \u015fi de pagub\u0103. ",
-"- c\u00e2nd un astfel de suflet cade \u00een <em>l\u0103comia</em> lumii, este de o mie de ori mai r\u0103u. "
-]
-}
-
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Deşertăciune şi slavă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sau a unui grup de nebuni, ambi\u0163io\u015fi \u015fi <em>lacomi</em>, ",
-"10 - <em>L\u0103comia</em> sau lipsa celor ce nu le are, nu-i dau omului pace"
-]
-}
-
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Inima şi lupta
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"u\u015for vei putea cunoa\u015fte sufletul desfr\u00e2nat, sau <em>lacom</em>, sau hr\u0103p\u0103re\u0163, sau invidios, sau zg\u00e2rcit, sau v\u00e2nz\u0103tor",
-"jum\u0103tate a ei este mereu \u00een minciun\u0103, vicle\u015fug, <em>l\u0103comie</em>, interes \u015fi pref\u0103c\u0103torie...  Nici"
-]
-}
-
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Îl ai tu oare pe Dumnezeu?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nes\u0103tul <em>lacomul</em>, ",
-"prin \u00eentunericul tuturor p\u0103catelor c\u0103ut\u00e2nd cu <em>l\u0103comie</em> s\u0103turarea de prin pl\u0103ceri vinovate, - ajunge la"
-]
-}
-
-Score: 2.3333333
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: M-au urât fără temei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vr\u0103jma\u015ful care \u00eel face pe om <em>lacom</em> de bunul altui om, ",
-"C\u0103ci din aceast\u0103 <em>l\u0103comie</em> dup\u0103 bunurile altuia, ies tot felul de p\u0103cate cu"
-]
-}
+Highlight: Căci din această <em>lăcomie</em> după bunurile altuia, ies tot felul de păcate cu
+Highlight: vrăjmaşul care îl face pe om <em>lacom</em> de bunul altui om,  de
 
-Score: 2.3333333
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Scoateţi acum!
+Book: Hristos - Izvorul nostru
+Title: Trebuia să treacă prin Samaria
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sau cel clevetitor ori mincinos, ori m\u00e2nios, ori <em>lacom</em>, zg\u00e2rcitul, suduitorul \u015fi porcosul! ",
-"spurc\u0103ciunile, desfr\u00e2n\u0103rile, uciderile, furti\u015fagurile, <em>l\u0103comiile</em>, vicle\u015fugurile, \u00een\u015fel\u0103ciunea, ochiul r\u0103u, trufia"
-]
-}
+Highlight: Trebuia să desfiinţeze orice <em>lăcomie</em> şi orice ură, fie naţională, fie religioasă, fie
+Highlight: nimicească credinţele greşite, interesele sectare, <em>lăcomia</em> de bani, dorinţa de întâietate, îngâmfarea religioasă
 
-Score: 2.3333333
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: ... În odaia de judecată
+Type: articol
+Author: Traian Dorz
+Highlight: călcarea unei datini omeneşti, dar săvârşeau cu <em>lăcomie</em> nelegiuirea împotriva lui Dumnezeu.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Auzirea şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: Astfel omul are plăcere de păcat şi săvârşeşte cu <em>lăcomie</em> şi cu bucurie păcatul fiind de aceeaşi fire cu
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 11 - Cel mai bun misionar
+Type: articol
+Author: Traian Dorz
+Highlight: înzestrat om al lui Dumnezeu, numai pentru că satanica <em>lăcomie</em> de bani a unora din jurul lui, l-au împiedicat
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Cel cu spini, - adică cei care au în inima lor <em>lăcomie</em>, egoism, răutate, pizmă, neîngăduinţă pentru alţii
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: satana l-a acaparat pe nedrept, atrăgându-l cu <em>lăcomie</em> şi cu grabă în totul numai în slujba lui.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: atâta sânge şi lacrimi sfinte. Încă odată ucigaşa <em>lăcomie</em> îşi atinsese scopul ei cel blestemat. Una dintre
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight: de dictatură personală ca a lui Diotref, ori de <em>lăcomie</em> de câştiguri murdare - ci o slujbă sfântă şi plină
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: răpite printr-o judecată nedreaptă de către o <em>lăcomie</em> hrăpăreaţă pe care n-o va sătura decât focul veşnic
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: cele opt perechi de ochi flămânzi, se uitau cu <em>lăcomie</em>, cântărind-o, la fiecare bucăţică.
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 6 - Strălucita sărbătoare de Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: ce-mi vorbeau despre Dumnezeu. Am privit apoi cu <em>lăcomie</em> la mâna celui ce-mi dăduse cartea căci mai avea
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Chinul pocăinţei tale
+Type: poezie
+Author: Traian Dorz
+Highlight: decât orice <em>lăcomie</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Chinul pocăinţei tale
+Type: poezie
+Author: Traian Dorz
+Highlight: decât orice <em>lăcomie</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre curăţie
+Type: articol
+Author: Traian Dorz
+Highlight: faptele de <em>lăcomie</em>, de minciună - orice rău -
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre deşertăciune
+Type: articol
+Author: Traian Dorz
+Highlight: 12 - Nu privi cu <em>lăcomie</em> la nimic ce nu ţi-e drept;
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Doamne, cine este?
+Type: articol
+Author: Traian Dorz
+Highlight:  în buzunar, şi pe care îi pipăia cu tăinuită <em>lăcomie</em> şi dragoste, ca preţ al vânzării lui vinovate!
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: După cum a fost înălţat şarpele
+Type: articol
+Author: Traian Dorz
+Highlight: de păcate. Înconjurat de: minciună, desfrânare, <em>lăcomie</em>, lene, zgârcenie, pizmă, trufie şi celelalte pofte
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: El care a deschis... nu putea?
+Type: articol
+Author: Traian Dorz
+Highlight: sau în desfrânare şi <em>lăcomie</em>,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Hărnicia
+Type: articol
+Author: Traian Dorz
+Highlight: dar ea nu-i nici <em>lăcomie</em>,
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Iarăşi în sala de judecată
+Type: articol
+Author: Traian Dorz
+Highlight: că dacă n-ai grijă să te păzeşti curat de orice <em>lăcomie</em> de bani şi de orice plăcere păcătoasă, chiar dacă
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Iuda a luat ceata... şi a venit
+Type: articol
+Author: Traian Dorz
+Highlight: păcatului lui Absalom, izvorâse tot din mândrie şi din <em>lăcomie</em>.
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
+Type: articol
+Author: Traian Dorz
+Highlight: Îl propovăduiesc altora - şi eu totuşi umblu în <em>lăcomie</em> şi în minciună, trăiesc în ceartă şi în ură cu
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
+Type: articol
+Author: Traian Dorz
+Highlight: Fiind chinuiţi mereu de <em>lăcomie</em>, oamenii acestui veac nu mai au mulţumirea sufletească
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)
+Type: articol
+Author: Traian Dorz
+Highlight: A trecut ea cu înfrânare şi renunţare prin <em>lăcomie</em>?
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
+Type: articol
+Author: Traian Dorz
+Highlight: lucruri şi până la cel din urmă, alergarea cu <em>lăcomie</em> după acestea şi lupta de a le aduna şi păstra cu
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Nicodim, cel care venise la Isus...
+Type: articol
+Author: Traian Dorz
+Highlight: de a se opri, se adâncesc tot mai mult cu multă <em>lăcomie</em> în făptuirea nelegiuirilor şi a nedreptăţii.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: O gloată mare mergea... văzând semnele
+Type: articol
+Author: Traian Dorz
+Highlight: curiozitate, de foame, de ură, de răzbunare sau de <em>lăcomie</em>.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Omul nu poate avea
+Type: articol
+Author: Traian Dorz
+Highlight: erau date din cer, dar pe care noi le râvnim cu <em>lăcomie</em>, le putem câştiga prin lupta noastră,
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Roadele Adevărului şi Dragostei
+Type: articol
+Author: Traian Dorz
+Highlight: Cel trimis de <em>lăcomie</em> va vorbi linguşitor.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Rugăciune şi mărturisire
+Type: articol
+Author: Traian Dorz
+Highlight: dar noi le râvnim cu <em>lăcomie</em>,
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Unul dintre aprozii care stăteau - acolo...
+Type: articol
+Author: Traian Dorz
+Highlight: faptele de <em>lăcomie</em>, de minciună, orice rău -
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Va veni vremea când...
+Type: articol
+Author: Traian Dorz
+Highlight: în numele vieţii viitoare, urmăresc cu satanică <em>lăcomie</em> foloasele blestemate ale vieţii acesteia
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: În mâinile lor...
+Type: articol
+Author: Traian Dorz
+Highlight: Când sunt închircite de <em>lăcomie</em> şi încleştate de pradă. Când sunt strânse de zgârcenie
+
+Score: 2.875
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Ce lacomi ne sunt
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce nu-i al lor
+Highlight: Ce <em>lacomi</em> ne
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce văd pe jos
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre mult şi spre întins
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce-i lucitor
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce nu-i permis
+Highlight: Ce <em>lacomi</em> ne sunt
+
+Score: 2.875
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Ce lacomi ne sunt
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce nu-i al lor
+Highlight: Ce <em>lacomi</em> ne
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce văd pe jos
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre mult şi spre întins
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce-i lucitor
+Highlight: Ce <em>lacomi</em> ne sunt ochii spre tot ce nu-i permis
+Highlight: Ce <em>lacomi</em> ne sunt
+
+Score: 2.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
-Title: Esau şi Iacov
+Title: Nu fii lacom!
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iat\u0103-l pe Esau cel <em>lacom</em>",
-"Lenea \u015fi cu <em>l\u0103comia</em> sunt p\u0103catul cel mai greu"
-]
-}
+Highlight: <em>lacom</em> la mâncare
+Highlight: Nu fii <em>lacom</em>!
 
-Score: 2.3333333
+Score: 0.9444444
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: De orice natură ar fi <em>lăcomia</em>, ea este un păcat greu, îndeosebi însă <em>lăcomia</em> omului avut
+Highlight: avut, adică <em>lăcomia</em> care îi prinde pe unii oameni avuţi, este ceva scârbos... <em>Lăcomia</em> omului avut, este
+Highlight: săracului pot rezista în vecinătatea bogatului <em>lacom</em>. <em>Lăcomia</em> bogatului, folosind toate mijloacele, mai curând
+Highlight: urâtă este <em>lăcomia</em>. De
+Highlight: căror chirie scotea anual milioane - şi totuşi <em>lăcomia</em> l-a dus să răpească oiţa, singura oiţă a unui biet
+Highlight: Domnului, avea o casă plină de femei, şi totuşi <em>lăcomia</em> l-a făcut să râvnească la o mireasă nouă; la unica
+
+Score: 0.85714287
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: de ani, pentru că el se grăbeşte, pentru că el e <em>lacom</em>, pentru că el n-are răbdare, pentru că el are în
+Highlight: slujitorului de la altarul sfânt. Iar odată cu <em>lăcomia</em> au năpădit în inima şi în viaţa lui toate păcatele
+Highlight: Această ispită a <em>lăcomiei</em> a nimicit de multe ori apoi şi în mulţi - tot
+Highlight: înfrânării!... Şi la aceasta cred că a ajuns el din <em>lăcomia</em> nestăpânită după daruri care îl fac pe om totdeauna
+Highlight: faţă de adevărata sa datorie. Căzut în păcatul <em>lăcomiei</em> şi desfrâului, acest duh a prigonit mereu pe celălalt
+Highlight: bucuria inimii. - Şi vin în locul lor gelozia, <em>lăcomia</em>, egoismul, ura...
+
+Score: 0.85714287
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Mana din ziua a 7-a;
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: Dar păcatul <em>lăcomiei</em> i-a scos pe unii să strângă mană şi în ziua Domnului
+Highlight: Dumnezeu trăsese darul din calea <em>lacomilor</em>.
+Highlight: Exact în chipul acesta sunt şi <em>lacomii</em> de azi care nu cruţă de lucrări
+Highlight: de odihnă şi de închinare Domnului, dar păcatul <em>lăcomiei</em> îl pleacă pe om la lucru, la hotar, la drumul
+Highlight: trecătoare. Dar exact aşa păţesc şi aceştia ca şi <em>lacomii</em> cei din Biblie. Dumnezeu Îşi trage darul şi binecuvântarea
+Highlight: în stare foarte bună, care - îndemnat de ispita <em>lăcomiei</em> - a furat din avutul vecinului său. Prins fiind
+
+Score: 0.8333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 89 - Blestemată-i <em>lăcomia</em> şi cel <em>lacom</em> până-n veac
+Highlight: 7 - Omul <em>lacom</em> este-asemeni unui şarpe care-ar vrea să
+Highlight: 9 - <em>Lacomul</em> şi egoistul nu ţi-s prieteni buni nicicând dac-au
+Highlight: <em>lacomul</em> oricât să aibă, e tot rău şi tot
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
+Type: articol
+Author: Traian Dorz
+Highlight: trufia, desfrânarea, pizma, <em>lăcomia</em> (între care e şi beţia), mânia, zgârcenia, lenea
+Highlight: mânia nu este şi ea tot un fel de beţie? Şi oare <em>lăcomia</em>, zgârcenia, pizma, nu sunt şi ele tot un fel de
+Highlight: trufia, desfrânarea, pizma, <em>lăcomia</em> - între care e şi beţia, hoţia, iubirea de argint
+Highlight: pretindea la dreptul asupra Oastei şi din pricina <em>lăcomiei</em> de a înghiţi tot ce se strânsese acolo, - pregătea
+
+Score: 0.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Banatului
+Type: articol
+Author: Traian Dorz
+Highlight: - cu omul rău şi <em>lacom</em>
+Highlight: numai <em>lacomul</em> nu doarme şi că
+Highlight: 153 - <em>Lăcomia</em> după bani
+Highlight: - stăpâneşte-ţi <em>lăcomia</em>.
+
+Score: 0.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Prepeliţele
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>lăcomia</em> după carne
+Highlight: din cauza <em>lăcomiei</em>
+Highlight: <em>lăcomia</em> totdeauna
+Highlight: Nu fii <em>lacom</em> niciodată
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 1 - Grăuntele de muştar
+Type: articol
+Author: Traian Dorz
+Highlight: Desfrâul, alcoolismul, ura, <em>lăcomia</em>, vorbirea scârboasă şi neruşinată - erau unele
+Highlight: partide politice, răsărite din ambiţiile şi din <em>lăcomia</em> unor oameni care mai totdeauna erau nişte mincinoşi
+Highlight: îi cuprinsese pe cei de sus. Harnică era numai <em>lăcomia</em>, numai ura, numai păcatul.
+
+Score: 0.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
-Title: Ferirea de ispite
+Title: Cap. 28 - Proverbe
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"19-Asta-i soarta celor <em>lacomi</em> de c\u00e2\u015ftig, c\u0103ci pofta rea",
-"<em>l\u0103comia</em> d\u0103 pierzarea la c\u00e2\u0163i se dedau"
-]
-}
+Highlight: cel ce-urăşte <em>lăcomia</em> zilele-şi le va lungi.
+Highlight: dar cel <em>lacom</em> de-avuţie nu va fi nepedepsit.
+Highlight: 25-<em>Lacomul</em> stârneşte certuri căci e-un om nelegiuit
 
-Score: 2.3333333
+Score: 0.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Dobrogei
+Type: articol
+Author: Traian Dorz
+Highlight: 26 - <em>Lacomul</em> dorind s-apuce de oriunde al oricui,
+Highlight: 27 - <em>Lacomul</em> - şi azi şi mâine,
+Highlight: - <em>lăcomia</em> de avere
+
+Score: 0.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Maramureşului
+Type: articol
+Author: Traian Dorz
+Highlight: 138 - Rea-i nu numai <em>lăcomia</em> după bani şi după-avere
+Highlight: 139 - <em>Lăcomia</em> a frânt viaţa multor oameni însemnaţi
+Highlight: 166 - Sacul <em>lacomului</em> poate să se umple mai degrab
+
+Score: 0.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Şi Caiafa era
+Type: articol
+Author: Traian Dorz
+Highlight: Plini de aceleaşi porniri desfrânate, <em>lacome</em>, hrăpăreţe şi făţarnice, amândoi erau în stare
+Highlight: Dragul meu, dacă <em>lăcomia</em> din tine nu ţi-o vei şti stăpâni,
+Highlight: mâinile lui Caiafa erau hrăpăreţe, ca ale lui Ana. <em>Lacome</em> ca ale lui Iuda. Nedrepte ca ale aprozilor. Nelegiuite
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 18 - Un vânt rău
+Type: articol
+Author: Traian Dorz
+Highlight: împotrivirea preoţilor prigonitori, care ne urmăreau cu o <em>lacomă</em> răutate ca să ne dea pe mâna autorităţilor. Această
+Highlight: Chiar în acelaşi timp, <em>lăcomia</em> prozelitismului neoprotestant care demult pândea
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 21 - Tipografia - un minunat şi dureros ideal
+Type: articol
+Author: Traian Dorz
+Highlight: devenit îndată o ţintă pentru pofta nesăturatei <em>lăcomii</em> omeneşti. Foamea după avuţiile acestei lumi, n-a
+Highlight: de a înghiţi totul, inima geloasă şi pântecele <em>lacom</em> făceau la planuri şi pândeau doar momentul prielnic
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: hămesiţi porţia lor, se aşezau 3-4 în faţa ta privind <em>lacomi</em> la castronul tău în care încă mai este ceva, urmărindu-ţi
+Highlight: 20 de guri înfometate şi 20 de perechi de ochi <em>lacomi</em>. Ce fericit sunt când am ce le împarte, măcar cât
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeu, dar soţia lui avea o inimă îndărătnică şi <em>lacomă</em>. La stăruinţele fratelui Ilarie care spunea că
+Highlight: Nu necinstiţi slujbele sfinte cu <em>lăcomia</em> de bani!
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Lăcomia</em> rămâne păcat, dar când un <em>lacom</em> se desparte de ea - el poate fi
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Cămaşa lui Isus
+Type: articol
+Author: Traian Dorz
+Highlight: erau cele ce fuseseră ale lui Isus. Dar sărăciei <em>lacome</em> a soldaţilor, obişnuiţi cu astfel de pomană, nu-i
+Highlight: din jurul Crucii lui Hristos. Cetele dezbinate şi <em>lacome</em> ale celor mai trişti pomănari, sfâşie fără milă
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: De ce nu s-a vândut?
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Lăcomia</em> de bani este rădăcina tuturor relelor, - acesta
+Highlight: <em>lacomul</em> despre câştiguri,
+
+Score: 0.6666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre mulţumire
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"unul n-are, altu-i <em>lacom</em> de pl\u0103cerile de\u015farte... ",
-"cade-n pofta <em>l\u0103comiei</em> care-l duce la pierzare.  11"
-]
-}
+Highlight: cade-n pofta <em>lăcomiei</em> care-l duce la pierzare.
+Highlight: unul n-are, altu-i <em>lacom</em> de plăcerile deşarte...
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre zgârcenie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"credincios \u015fi r\u0103bd\u0103tor, dar b\u0103tr\u00e2na era o femeie <em>lacom\u0103</em>, nemul\u0163umit\u0103, c\u00e2rtitoare. Ne spunea c\u0103 nu-i de-ajuns"
-]
-}
+Highlight: 3 - <em>Lacomul</em> de bani e robul celui mai vrăjmaş tiran
+Highlight: de robia-n care piere cel ce-i <em>lacom</em> şi zgârcit.
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Pe patul morţii mele
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Esau şi Iacov
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu-o <em>lacom\u0103</em> trufie \u00ee\u015fi caut\u0103 bunul plac."
-]
-}
+Highlight: Iată-l pe Esau cel <em>lacom</em>
+Highlight: Lenea şi cu <em>lăcomia</em> sunt păcatul cel mai greu
 
-Score: 2.0
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Ferirea de ispite
+Type: poezie
+Author: Traian Dorz
+Highlight: 19-Asta-i soarta celor <em>lacomi</em> de câştig, căci pofta rea
+Highlight: <em>lăcomia</em> dă pierzarea la câţi se dedau
+
+Score: 0.6666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 16-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: poruncitoare şi aspră, inima neprimitoare, mâna <em>lacomă</em>, viaţa cu ascunzişuri, cuvintele cu două înţelesuri
+Highlight: locuri urâte, sau cu gesturi vinovate, desfrânate, <em>lacome</em>, viclene, prefăcute şi mincinoase?...
+
+Score: 0.6666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
+Type: articol
+Author: Traian Dorz
+Highlight: pentru că prea mulţi sunt cei stăpâniţi de pofta <em>lăcomiei</em> şi de a tot lua mereu. Şi atunci au tot interesul
+Highlight: Ci înşela cu <em>lăcomia</em> şi zgârcenia sa atât pe Dumnezeu, cât şi pe părinţi
+
+Score: 0.6666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)
+Type: articol
+Author: Traian Dorz
+Highlight: Zgârcenia, <em>lăcomia</em>, vorbirea de rău, certurile, dezbinările, tulburările
+Highlight: Cuvântul lui Dumnezeu pentru faptele lui rele, şi nu <em>lăcomia</em> şi patima sa, care îl duc în iad!
+
+Score: 0.6666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Type: articol
+Author: Traian Dorz
+Highlight: Nu sunt <em>lacomi</em>, nu fură, nu mint, nu clevetesc, nu se îmbată,
+Highlight: dar ei sunt mincinoşi, vânzători, preacurvari, <em>lacomi</em> şi hrăpăreţi, şi cu o şiretenie bine ascunsă sub
+
+Score: 0.6666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
+Title: Loviţi am fost
+Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din cruzi \u015fi mai cruzi, din ni\u015fte f\u0103\u0163arnici \u015fi <em>lacomi</em>, - ni\u015fte tirani \u015fi ur\u00e2tori. Aceasta nu este Evanghelia"
-]
-}
+Highlight: întrecut de <em>lacomi</em> nedrept a v-aduna,
+Highlight: cât ne-aţi călcat de <em>lacomi</em>, de cruzi
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Loviţi am fost
+Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"orice publicitate zgomotoas\u0103, cu scopul ur\u00e2t \u015fi <em>lacom</em> a stoarcerii de c\u00e2t mai mul\u0163i bani. La ie\u015firea din"
-]
-}
+Highlight: întrecut de <em>lacomi</em> nedrept a v-aduna
+Highlight: cât ne-aţi călcat de <em>lacomi</em>, de cruzi
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 24 - Pânza care se ţese
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ni\u015fte lucr\u0103tori r\u0103i, nechibzui\u0163i, murdari, lene\u015fi, <em>lacomi</em> ori nebuni care dorm, sau lenevesc, sau fac altceva"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"m\u00e2inile \u015fi tot sufletul \u00een sus \u015fi a\u015fa m\u0103 rugam, <em>lacom</em> dup\u0103 rug\u0103ciune ca un copil dup\u0103 miere. A\u015fa m\u0103 \u00eenfruptam"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care au o pl\u0103cere bolnav\u0103 de a scuipa cu at\u00e2t mai <em>lacome</em> cu c\u00e2t obrazul binef\u0103c\u0103torului lor este mai curat"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Pustia şi izvorul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ferice de cei fl\u0103m\u00e2nzi... Cei s\u0103tui sunt totdeauna <em>lacomi</em>. Cei avu\u0163i sunt totdeauna zg\u00e2rci\u0163i. Cei \u00eembuiba\u0163i"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Mărturisitori cere Domnul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-L privi \u00een cei lep\u0103da\u0163i, mincino\u015fi, <em>lacomi</em> \u015fi desfr\u00e2na\u0163i, ace\u015ftia s-au lep\u0103dat de El, "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Un semănat neîntrerupt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"be\u0163iv, un fum\u0103tor, un stricat, o mincinoas\u0103, o <em>lacom\u0103</em>, o femeie lumeasc\u0103 \u015fi rea, - iar acum este un om"
-]
-}
-
-Score: 2.0
+Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Mulţi au crezut din pricina mărturiei
+Book: Hristos - Sfinţitorul nostru
+Title: Nunul a gustat...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"be\u0163iv, un fum\u0103tor, un stricat, o mincinoas\u0103, o <em>lacom\u0103</em>, o femeie lumeasc\u0103 \u015fi rea, "
-]
-}
+Highlight: ei, prin nevegherea lor, o ispită a trufiei, a <em>lăcomiei</em>, a ambiţiei, a slavei deşarte, ori alte ispite
+Highlight: sau trufia, sau încăpăţânarea, sau <em>lăcomia</em>,
 
-Score: 2.0
+Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pâinea noastră
-Title: Isus le-a zis: nu cârtiţi!
+Title: Părinţii noştri au mâncat
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"atunci nu voi fi nici gelos, nici invidios, nici <em>lacom</em>, nici nefericit. "
-]
-}
+Highlight: unii la alţii cum mănâncă şi totdeauna inima lor <em>lacomă</em> şi nesăţioasă, este nemulţumită şi cârtitoare.
+Highlight: Şi mănâncă, mănâncă, omul <em>lacom</em> şi hrăpăreţ, până plesneşte.
 
-Score: 2.0
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: Scoateţi acum!
+Type: articol
+Author: Traian Dorz
+Highlight: spurcăciunile, desfrânările, uciderile, furtişagurile, <em>lăcomiile</em>, vicleşugurile, înşelăciunea, ochiul rău, trufia
+Highlight: sau cel clevetitor ori mincinos, ori mânios, ori <em>lacom</em>, zgârcitul, suduitorul şi porcosul!
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Vânzătorul ştia şi el locul acesta
+Type: articol
+Author: Traian Dorz
+Highlight: Diavolul mândriei şi al <em>lăcomiei</em>.
+Highlight: Mândria are păcatul sufletului lui Iuda. Şi <em>lăcomia</em> are păcatul trupului său. Acestea l-au dus la săvârşirea
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Ţinta tuturor năzuinţelor mele!
+Type: articol
+Author: Traian Dorz
+Highlight: 18 - Şi cel puternic este <em>lacom</em>
+Highlight: şi <em>lacomul</em> este tiran
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: ... Căci nimeni nu poate...
+Type: articol
+Author: Traian Dorz
+Highlight: scapi din ghearele beţiei, fumatului, desfrânării, <em>lăcomiei</em>, înjurăturilor, vorbelor uşuratice şi clevetirii
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... Du-te şi să nu mai păcătuieşti
+Type: articol
+Author: Traian Dorz
+Highlight: patima fumatului, a jocurilor destrăbălate, a <em>lăcomiei</em>, a furtului, a vorbăriilor goale şi uşuratice
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... Este mincinos şi tatăl minciunii
+Type: articol
+Author: Traian Dorz
+Highlight: diavolul desfrânării, nici pe al mâniei, nici pe al <em>lăcomiei</em>, nici pe al răzbunării, nici pe al beţiei, nici
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Răscumpărătorul nostru
 Title: ... Fiindcă voi aveţi obicei...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vremea ni\u015fte mijloace prin care oamenii r\u0103i sau <em>lacomi</em>, sau vicleni - \u015fi-au urm\u0103rit numai scopurile lor"
-]
-}
+Highlight: vremea nişte mijloace prin care oamenii răi sau <em>lacomi</em>, sau vicleni - şi-au urmărit numai scopurile lor
 
-Score: 2.0
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Iată, vi-L aduc, ca să ştiţi
+Book: Hristos - Învierea noastră
+Title: ... Folosul
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ei acela\u015fi fel de via\u0163\u0103 f\u0103\u0163arnic\u0103, desfr\u00e2nat\u0103, <em>lacom\u0103</em> \u015fi supersti\u0163ioas\u0103. "
-]
-}
+Highlight: contra Ta, Te rugăm scapă-i de ghearele diavolului <em>lăcomiei</em> şi al răutăţii, înainte de a fi prea târziu,
 
-Score: 2.0
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: ... Noi L-am găsit pe Domnul...
+Type: articol
+Author: Traian Dorz
+Highlight: sunt nesupuşi, certăreţi, beţivi, clevetitori, <em>lacomi</em> şi lumeşti, sunt o necinste pentru Domnul,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... Vorbesc după cum M-a învăţat Tatăl
+Type: articol
+Author: Traian Dorz
+Highlight: altele de boala <em>lăcomiei</em>,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Acela despre care vorbea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: - dar vai, cât de puţini mai pot întoarce când <em>lăcomia</em> a intrat mai dinainte în inima lor. Când ambiţia
+
+Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Profeţiile şi împlinirea lor
+Book: Calea Bunului Urmaş
+Title: Adevărul şi datoria
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pierde numai pe cei <em>lacomi</em> de foloase lume\u015fti"
-]
-}
+Highlight: soare şi de ploaie şi nu te nelinişteşte niciodată <em>lăcomia</em>.
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Viitorul întristărilor noastre
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Inima egoist\u0103 \u015fi <em>lacom\u0103</em> de p\u00e2n\u0103 atunci, se transform\u0103 \u00eentr-o inim\u0103 iubitoare"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: A fi în Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi cu o <em>lacom\u0103</em> bucurie te-ai cufunda tot mai ad\u00e2nc \u015fi te-ai sui"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Rugăciuni vinovate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici cu un duh <em>lacom</em> sau sectar, "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Uneltele lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eembietoare, c\u0103ci \u00eendat\u0103 e gata s-o ia razna ca un cal <em>lacom</em>, r\u0103sturn\u00e2nd c\u0103ru\u0163a, pentru o gur\u0103 de trifoi. "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Ochiul şi lauda Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a hr\u0103p\u0103re\u0163ilor <em>lacomi</em> pe p\u00e2inea lui, "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Urechile şi ochii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce fiar\u0103 hr\u0103p\u0103rea\u0163\u0103 devine omul <em>lacom</em>! "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Porunca şi ascultarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ftiau \u00eenainte be\u0163iv, ho\u0163, mincinos, desfr\u00e2nat, <em>lacom</em>, r\u0103u... "
-]
-}
-
-Score: 2.0
+Score: 0.5
 Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Adevărul şi inimile
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sunt ei oare \u00een\u015fel\u0103tori, sunt ho\u0163i, sunt <em>lacomi</em>, mincino\u015fi, r\u0103zbun\u0103tori \u015fi nedrep\u0163i? "
-]
-}
+Highlight: Sunt ei oare înşelători, sunt hoţi, sunt <em>lacomi</em>, mincinoşi, răzbunători şi nedrepţi?
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Aşteptarea şi sosirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, cum schilode\u015fte p\u0103catul sufletul bietului om <em>lacom</em>. "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Venirea şi plecarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"M\u00e2ntuitorului, s\u0103 priveasc\u0103 la averea lui cu o <em>lacom\u0103</em> bucurie \u00eeng\u00e2mfat\u0103 zic\u00e2nd: "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Greutatea şi frumuseţea psalmilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nevinova\u0163i care erau sf\u00e2\u015fia\u0163i de cei tari, de cei mai <em>lacomi</em>, de cei hr\u0103p\u0103re\u0163i, l-au f\u0103cut s\u0103 iubeasc\u0103 cel mai"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Vinovăţia şi Răsplata
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cunoa\u015ftem pe fiii <em>lacomi</em>, pe fiii minciunii, pe fiii \u00eentunericului, pe fiii"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Mărturisirea Adevărului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cetele dezbinate \u015fi <em>lacome</em> ale celor mai tri\u015fti pom\u0103nari, sf\u00e2\u015fie f\u0103r\u0103 mil\u0103"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Boală şi vindecare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"numai de ochi <em>lacomi</em>, "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Păcatul şi moartea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"se cufund\u0103 din ce \u00een ce mai mult, be\u0163ivul sau <em>lacomul</em> sau desfr\u00e2natul sau pizma\u015ful, orice p\u0103c\u0103tos. "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Primirea lui Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"criminalii, desfr\u00e2na\u0163ii, clevetitorii, invidio\u015fii, <em>lacomii</em>, mincino\u015fii - \u015fi toate celelalte nefericite astfel"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Mai bun este sfârşitul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"unii la al\u0163ii cum m\u0103n\u00e2nc\u0103 \u015fi totdeauna inima lor <em>lacom\u0103</em> \u015fi nes\u0103\u0163ioas\u0103, este nemul\u0163umit\u0103 \u015fi c\u00e2rtitoare."
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Într-o clipă fericită
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lucruri potrivnice voii Sale, at\u00e2\u0163ia pref\u0103cu\u0163i \u015fi <em>lacomi</em>, r\u0103uf\u0103c\u0103tori \u015fi strica\u0163i, "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: O, cât de Bun este Domnul!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"jefuit\u0103 de c\u0103tre ni\u015fte nelegiui\u0163i l\u0103ud\u0103ro\u015fi \u015fi <em>lacomi</em>, pentru foloasele lor vinovate! "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Un singur Adevăr
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vremea ni\u015fte mijloace prin care oamenii r\u0103i sau <em>lacomi</em> sau vicleni - \u015fi-au urm\u0103rit numai scopurile lor"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Dovada primirii Duhului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dar ei sunt mincino\u015fi, v\u00e2nz\u0103tori, preacurvari, <em>lacomi</em> \u015fi hr\u0103p\u0103re\u0163i - \u015fi cu o \u015firetenie bine ascuns\u0103 sub"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Răufăcătorii Lucrării Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi amestecat\u0103, murdar\u0103 \u015fi pref\u0103cut\u0103, viclean\u0103 \u015fi <em>lacom\u0103</em>, \u00eeng\u00e2mfat\u0103 \u015fi ambi\u0163ioas\u0103. "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Călăuzirea Duhului Sfânt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"suduitori, ho\u0163i, clevetitori, cert\u0103re\u0163i, fum\u0103tori, <em>lacomi</em>, uciga\u015fi - l-am auzit \u015fi noi fiecare, vorbindu-ne"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Chemarea şi venirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sau cu gesturi vinovate, desfr\u00e2nate, <em>lacome</em>, viclene, pref\u0103cute \u015fi mincinoase?... "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Dragostea cu care M-ai iubit Tu...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi cu o <em>lacom\u0103</em> bucurie te-ai cufunda tot mai ad\u00e2nc. "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Iuda
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Avraam şi Eliezer
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u00e2ntece f\u0103\u0163arnic <em>lacom</em> \u015fi avar -"
-]
-}
+Highlight: nu vă <em>lăcomiţi</em> la aur şi la case şi averi
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Orice mărire ai avea
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Bogăţie, lanţ al morţii
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu <em>lacom\u0103</em> pl\u0103cere"
-]
-}
+Highlight: - De-o păstrezi zgârcit şi <em>lacom</em>
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Nu poate omul mândru
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-\u015fi poate omul <em>lacom</em>"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Noi suntem sămânţa lui...
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 1 - Înfricoşata lepădare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- iar voi sunte\u0163i ni\u015fte intrigan\u0163i <em>lacomi</em>, ni\u015fte p\u0103tima\u015fi desfr\u00e2na\u0163i, ni\u015fte \u00een\u015fel\u0103tori vicleni"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Faptele tatălui vostru
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi al m\u00e2ndriei lui <em>lacome</em> dup\u0103 \u00eent\u00e2ietate \u015fi dup\u0103 laude nemeritate "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Cât este ziuă, trebuie să lucrezi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fiindc\u0103 diavolul, de la \u00eenceput, este ho\u0163, <em>lacom</em>, \u00eeng\u00e2mfat, dezbin\u0103tor, mincinos, nestatornic, nervos"
-]
-}
+Highlight: ei nu cunosc decât ura, cruzimea, brutalitatea, <em>lăcomia</em>, egoismul şi răutatea.
 

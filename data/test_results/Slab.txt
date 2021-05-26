@@ -1,1543 +1,1108 @@
-+---------------------------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Author          | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Ce slab te-araţi                                                                            | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
-| Vrăjmaşul este slab                                                                         | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Ce slab e glasul meu                                                                        | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
-| Ce slab e glasul meu                                                                        | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                                    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Pe drumul crucii mele                                                              | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                           | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Dar cel vindecat nu ştia cine este...                                                       | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                              | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)                    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 1 - Cel mai frumos Isus                                                                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                      | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                                       | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 9 - În vremea aceea...                                                                 | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                                     | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                                      | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Şi-a lăsat găleata şi s-a dus                                                               | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Moise şi Aaron în faţa lui Faraon                                                           | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Plenitudinea puterii                                                                        | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Asuprirea este o ruşine                                                                     | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Vrăjmaşii şi prietenii Domnului                                                             | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
-| Arată ce am spus!                                                                           | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| O mie de taine...                                                                           | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Despre bunătate                                                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Prin lupte                                                                                  | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Din părţile Moldovei                                                                        | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din alte diferite părţi                                                                     | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Atacul împotriva steagului                                                        | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 1 - Înfricoşata lepădare                                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                          | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Minunile şi credinţa                                                                        | Traian Dorz     | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Frământările scăpării din robie                                                             | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Moise un pedagog spre Hristos                                                               | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Cei ce au iscodit Canaanul                                                                  | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Lăudătorii micimii                                                                          | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Vremea răsplătirii tuturor                                                                  | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Înţelepţii şi nebunii                                                                       | Traian Dorz     | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Amintirile noastre neuitate                                                                 | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Aur şi zgură                                                                                | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Căile lui Dumnezeu                                                                          | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Curăţia şi creaţia                                                                          | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Întâmplările şi inima                                                                       | Traian Dorz     | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
-| Slobozenia şi robia lui Isus                                                                | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
-| Petru stătea şi el cu ei...                                                                 | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Petru iar s-a lepădat                                                                       | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                                      | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| ... Tu, te vei chema Petru...                                                               | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Vinul cel bun                                                                               | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Nimeni decât Tu                                                                             | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cine intră pe uşă este păstorul...                                                          | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Despre căsnicie                                                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre îndrăzneală - curaj                                                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre mulţumire                                                                            | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre tăcere                                                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Banatului                                                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                                       | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 9 - A doua judecată                                                                    | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                                    | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 10 - Pe drumul Crucii                                                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Bunul slujitor al Domnului                                                                  | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
-| Din părţile Munteniei                                                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                         | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Uşor e jugul lui Hristos                                                          | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 15 - Micii contemporani ai marilor oameni                                              | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 23 - Şi ultimul 2                                                                      | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 26 - Limpezirea apelor adânci                                                          | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - A treia Judecată                                                                   | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Cumplitul şi neiertatul păcat                                                      | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Un An Nou Fericit                                                                 | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                          | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Vin rândurile noi                                                                 | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 27 - Întristarea cea binecuvântată                                                     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 31 - Şi acum încheierea                                                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                                          | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-+---------------------------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
++------------------------------------------------------------------------------------+----------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                              | Occurrences                                        | Author          | Tip                              | Carte                        | Volum   |
++------------------------------------------------------------------------------------+----------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Ce slab e glasul meu                                                               | {'slab'}                                           | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
+| Ce slab e glasul meu                                                               | {'slab'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Cap. 19 - Omul trimes de Dumnezeu                                                  | {'slab', 'slabă', 'slăbim'}                        | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                           | {'slab', 'slabi', 'slabă'}                         | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Dar cel vindecat nu ştia cine este...                                              | {'slab', 'slabe', 'slabi'}                         | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                | {'slab', 'slabi', 'slabe', 'slabă'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                           | {'slab', 'slabă', 'slabi', 'slabe'}                | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Pe drumul crucii mele                                                     | {'slab', 'slabi', 'slabe'}                         | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)       | {'slab', 'slabi', 'slabe'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Arată ce am spus!                                                                  | {'slab', 'slabii'}                                 | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                    | {'slab', 'slabe'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                             | {'slab', 'slabe'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Din părţile Moldovei                                                               | {'slab', 'slabe'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Nimeni decât Tu                                                                    | {'slab'}                                           | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cap. 7 - Aşa ne-au judecat                                                         | {'slab', 'slabe', 'slăbise', 'slabă', 'slabele'}   | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                | {'slab', 'slabă', 'slabi', 'slabe'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                     | {'slab', 'slabe', 'slabă'}                         | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)           | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 15 - Al doilea foc                                                            | {'slab', 'slabi', 'slabe'}                         | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Despre bunătate                                                                    | {'slab', 'slabi', 'slabă'}                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)               | {'slab', 'slabe', 'slabi'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai) | {'slab', 'slabă', 'slabe'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Moise şi Aaron în faţa lui Faraon                                                  | {'slab', 'slabă'}                                  | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| ... Tu, te vei chema Petru...                                                      | {'slab', 'slabă'}                                  | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Aur şi zgură                                                                       | {'slab', 'slabi'}                                  | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cap. 13 - După luarea lui Moisi...                                                 | {'slab', 'slabele'}                                | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                           | {'slab', 'Slab', 'Slăbisem'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Despre îndrăzneală - curaj                                                         | {'slab', 'slabul'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Munteniei                                                              | {'slab', 'slăbi'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Frământările scăpării din robie                                                    | {'slab', 'slabă'}                                  | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)    | {'slab', 'slăbim'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 17 - Mereu prin ape tulburi                                                   | {'slab'}                                           | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 6 - Între două judecăţi                                                       | {'slab'}                                           | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                                          | {'slab'}                                           | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Despre dreptate                                                                    | {'slab'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Crişanei                                                               | {'slab'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Maramureşului                                                          | {'slab'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Dumnezeul Îndrăznelii                                                              | {'slab'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Frica                                                                              | {'slab'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Isus ştia de la început...                                                         | {'slab'}                                           | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 15-a după Rusalii                                      | {'slab'}                                           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 1 - Cel mai frumos Isus                                                       | {'slab', 'slabă', 'slabe', 'slăbesc', 'slăbea'}    | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'slab', 'slăbisem', 'slăbi', 'slabă'}             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                           | {'slab', 'slabi', 'slabe', 'slabă'}                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                   | {'slab', 'slăbisem', 'Slăbisem', 'slabă', 'slabe'} | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                           | {'slab', 'slăbi', 'slaba', 'slabă', 'slabi'}       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                       | {'slab', 'slabă', 'slăbesc', 'slabi', 'slăbim'}    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                                       | {'slab', 'slabi', 'slabă'}                         | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                              | {'slab', 'slabi', 'slabă', 'slabe'}                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                              | {'slab', 'slabă', 'slăbi', 'Slăbisem'}             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Din alte diferite părţi                                                            | {'slab', 'slabe', 'slabă', 'slabul'}               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 19-a după Rusalii                                      | {'slab', 'slabe', 'slabă', 'slabi'}                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Pe drumul Crucii                                                         | {'slab', 'slăbind', 'slabi'}                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                         | {'slab', 'slăbirea', 'slabe'}                      | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                                      | {'slab', 'slabă', 'slabi'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cine intră pe uşă este păstorul...                                                 | {'slab', 'slabe', 'slabi'}                         | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Despre căsnicie                                                                    | {'slab', 'slabi'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre mulţumire                                                                   | {'slab', 'slabi'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Banatului                                                              | {'slab', 'slabă'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Moise un pedagog spre Hristos                                                      | {'slab', 'slabi'}                                  | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Petru iar s-a lepădat                                                              | {'slab', 'slabă', 'slabe'}                         | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Petru stătea şi el cu ei...                                                        | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Vinul cel bun                                                                      | {'slab', 'slabe'}                                  | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Crezi tu?                                                                      | {'slab', 'slabă'}                                  | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... I-au adus o femeie prinsă                                                      | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Acum nu le puteţi purta                                                            | {'slab', 'slabe'}                                  | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Adevărul şi mărturisirea                                                           | {'slab', 'slabe'}                                  | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cap. 13 - Frumosul tineret creştin                                                 | {'slab', 'slabă'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Un An Nou Fericit                                                        | {'slab', 'slabi'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 16 - Leacul dureroasei sfâşieri                                               | {'slab', 'slabi'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                                         | {'slab', 'slabe'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Grâul cel care moare                                                      | {'slăbise', 'slab'}                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                 | {'slab', 'slabi'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Şi ultimul 2                                                             | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 3 - Cumplitul şi neiertatul păcat                                             | {'slab', 'slabă'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 3 - Începutul chemării                                                        | {'slab', 'slabi'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| De ce mai am nevoie?                                                               | {'slab', 'slabe'}                                  | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Despre păcat                                                                       | {'slab', 'slabă'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre rău                                                                         | {'slab', 'slabă'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre virtute                                                                     | {'slab', 'slabe'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Diavolul pusese în inima lui Iuda gândul                                           | {'slab', 'slabă'}                                  | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Doar n-aţi vrea şi voi...                                                          | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Fricoşii să plece acasă                                                            | {'slab', 'slăbire'}                                | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                    | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)           | {'slab', 'slăbim'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)   | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mie nu-mi vorbeşti?                                                                | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Mărginire şi nemărginire                                                           | {'slab', 'slăbirea'}                               | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Nu pe braţul meu                                                                   | {'slab', 'slabă'}                                  | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | poezie  |
+| Nu pe braţul meu                                                                   | {'slab', 'slabă'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Nu s-a mai auzit                                                                   | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Psalmul 82                                                                         | {'slab', 'slabi'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Să vii să lupţi                                                                    | {'slab', 'slabă'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Vânt puternic şi marea întărâtată                                                  | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Văd pe Isus umblând pe mare                                                        | {'slab', 'slabi'}                                  | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| În ceasul când ispita-i                                                            | {'slab', 'slabii'}                                 | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| În ceasul când ispita-i                                                            | {'slab', 'slabii'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| În faţa Mării Roşii                                                                | {'slab', 'slabul'}                                 | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Învăţătură şi deprinderi                                                           | {'slab', 'slabi'}                                  | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
++------------------------------------------------------------------------------------+----------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
 Searching Slab using http://localhost:9000...
-Got 721 hits:
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Ce slab te-araţi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce <em>slab</em> te-ara\u0163i spre Dumnezeu atunci c\u00e2nd nu-I po\u0163i duce",
-"ce <em>slab</em> te-ara\u0163i spre Dumnezeu c\u00e2nd cau\u0163i c\u0103r\u0103ri u\u015foare"
-],
-"title": [
-"Ce <em>slab</em> te-ara\u0163i"
-]
-}
-
-Score: 4.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Vrăjmaşul este slab
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Te vei ru\u015fina c\u00e2t ai putut fi de <em>slab</em> \u015fi de fricos tem\u00e2ndu-te de at\u00e2ta lucru. "
-],
-"title": [
-"Vr\u0103jma\u015ful este <em>slab</em>"
-]
-}
-
-Score: 4.0
+Got 529 hits:
+Score: 30.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pacea noastră
 Title: Ce slab e glasul meu
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce <em>slab</em> e glasul meu Isuse, "
-],
-"title": [
-"Ce <em>slab</em> e glasul meu"
-]
-}
+Highlight: Ce <em>slab</em> e glasul meu Isuse,
+Highlight: Ce <em>slab</em> e glasul meu
 
-Score: 4.0
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Ce slab e glasul meu
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce <em>slab</em> e glasul meu Isuse, "
-],
-"title": [
-"Ce <em>slab</em> e glasul meu"
-]
-}
+Highlight: Ce <em>slab</em> e glasul meu Isuse,
+Highlight: Ce <em>slab</em> e glasul meu
 
-Score: 3.5555556
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Oamenii <em>slabi</em> trupe\u015fte sunt de obicei ni\u015fte frico\u015fi \u015fi retra\u015fi, ca animalele <em>slabe</em>. \u00cen fa\u0163a primejdiei",
-"orice porti\u0163\u0103 l\u0103sat\u0103 deschis\u0103, orice strung\u0103 mai <em>slab\u0103</em> pe unde s-ar putea strecura s\u0103 prade. Am",
-"dec\u00e2t p\u0103catul care nu era al ei ci al oamenilor <em>slabi</em> din ea. Primului",
-"ve\u0163i mai fi nici puternic, nici sus. Ve\u0163i ajunge <em>slab</em>, bolnav \u015fi jos. Atunci c\u00e2nd ve\u0163i a\u015ftepta moartea",
-"al\u0163ii s-au compromis, - el a g\u0103sit alte unelte <em>slabe</em>, pe care s\u0103 le foloseasc\u0103 \u00een slujba lui. - \u015ei alte"
-]
-}
-
-Score: 3.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"intelectuali osta\u015fi. Glasul lor s-a auzit tot mai <em>slab</em>, fe\u0163ele lor au fost v\u0103zute tot mai rar, numele lor",
-"Vocea mea era prea <em>slab\u0103</em>",
-"nemiloas\u0103 judecata lumii: - De la mine un biet de vas <em>slab</em> a pretins lumea s\u0103 fac singur foaia ",
-"ceea ce a v\u0103zut \u00een al treilea cer. Vasul nostru cel <em>slab</em> de lut nu poate cuprinde marea bucuriilor din Patria",
-"\u00een tot ceasul \u015fi \u00een toat\u0103 vremea. Ca ni\u015fte copii <em>slabi</em> \u015fi neajutora\u0163i, s\u0103 alerg\u0103m cu rug\u0103ciune la Tat\u0103l"
-]
-}
-
-Score: 3.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 9 - Pe drumul crucii mele
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Era \u00eens\u0103 foarte <em>slab</em> \u015fi mai tot timpul z\u0103cea pe pat. Munca lui era s\u0103",
-"Nicolae Vonica, un b\u0103iat tot a\u015fa de \u00eenalt \u015fi de <em>slab</em> ca fratele Marini. Acesta fusese student teolog",
-"copii <em>slabi</em> \u015fi nepreg\u0103ti\u0163i at\u00e2t trupe\u015fte c\u00e2t \u015fi suflete\u015fte. ",
-"Eram ca David cel singur \u015fi <em>slab</em> \u00een fa\u0163a",
-"mici El face de ru\u015fine pe cele mari. \u015ei prin cele <em>slabe</em> doboar\u0103 pe cele puternice. "
-]
-}
-
-Score: 3.4642859
+Score: 15.275
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 19 - Omul trimes de Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mic \u015fi <em>slab</em> pe care Domnul m-a ales spre slujba \u015fi slujirea Lui. Eu - o fiin\u0163\u0103 mic\u0103 \u015fi <em>slab\u0103</em> - nu m\u0103",
-"\u00een sl\u0103biciunile mele se adevere\u015fte... c\u00e2nd sunt <em>slab</em> atunci sunt tare\u201d (",
-"Un glas <em>slab</em> \u015fi cald care dac\u0103 ar fi avut \u015fi el o culoare cred",
-"acum at\u00e2t de r\u0103u. Memoria mea, \u015fi a\u015fa destul de <em>slab\u0103</em> \u015fi pu\u0163in\u0103 cum era, prin prea multele \u00eencerc\u0103ri mi",
-"n-am fost \u00een aceast\u0103 mi\u015fcare dec\u00e2t un vas umil \u015fi <em>slab</em> de care S-a folosit Domnul \u00een Lucrarea Sa. "
-]
-}
+Highlight: mic şi <em>slab</em> pe care Domnul m-a ales spre slujba şi slujirea Lui. Eu - o fiinţă mică şi <em>slabă</em> - nu mă
+Highlight: în slăbiciunile mele se adevereşte... când sunt <em>slab</em> atunci sunt tare” (
+Highlight: Un glas <em>slab</em> şi cald care dacă ar fi avut şi el o culoare cred
+Highlight: n-am fost în această mişcare decât un vas umil şi <em>slab</em> de care S-a folosit Domnul în Lucrarea Sa.
+Highlight: ceea ce spunea ap. Pavel: “pentru aceea noi nu <em>slăbim</em> ci chiar de s-ar strica omul nostru dinafară..
+Highlight: acum atât de rău. Memoria mea, şi aşa destul de <em>slabă</em> şi puţină cum era, prin prea multele încercări mi
 
-Score: 3.4285715
+Score: 15.257143
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentoarce\u0163i-v\u0103 \u00eenapoi! Ce vom face? - \u00ee\u015fi zic cei <em>slabi</em>. Mul\u0163i sunt \u00een \u00eencurc\u0103tur\u0103, iar vr\u0103jma\u015ful cel neadormit",
-"rev\u0103rsarea Duhului Sf\u00e2nt. Eu am fost numai un vas umil \u015fi <em>slab</em> de care Domnul S-a folosit \u00een sf\u00e2nta Sa Lucrare",
-"Fra\u0163ilor, m\u0103 vede\u0163i at\u00e2t de <em>slab</em> \u015fi pl\u00e2nge\u0163i. Dar nu pl\u00e2nge\u0163i. Oastea Domnului nu",
-"mul\u0163umesc lui Dumnezeu c\u0103 pe mine, un vas umil \u015fi <em>slab</em> m-a \u00eenvrednicit s\u0103 strig \u015fi pe al\u0163ii s\u0103 se uite",
-"El \u015ftia asta foarte bine. Dar fiind un caracter <em>slab</em> a cedat nevestei cic\u0103litoare \u015fi a f\u0103cut primele"
-]
-}
+Highlight: revărsarea Duhului Sfânt. Eu am fost numai un vas umil şi <em>slab</em> de care Domnul S-a folosit în sfânta Sa Lucrare
+Highlight: Fraţilor, mă vedeţi atât de <em>slab</em> şi plângeţi. Dar nu plângeţi. Oastea Domnului nu
+Highlight: mulţumesc lui Dumnezeu că pe mine, un vas umil şi <em>slab</em> m-a învrednicit să strig şi pe alţii să se uite
+Highlight: El ştia asta foarte bine. Dar fiind un caracter <em>slab</em> a cedat nevestei cicălitoare şi a făcut primele
+Highlight: întoarceţi-vă înapoi! Ce vom face? - îşi zic cei <em>slabi</em>. Mulţi sunt în încurcătură, iar vrăjmaşul cel neadormit
+Highlight: - Am spus asta Niculiţă într-o clipă <em>slabă</em> poate
 
-Score: 3.4285715
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Oamenii <em>slabi</em> trupe\u015fte - sunt de obicei ni\u015fte frico\u015fi \u015fi retra\u015fi ca \u015fi animalele <em>slabe</em>. ",
-"al oamenilor cei <em>slabi</em> ",
-"cinci ani abia reu\u015fisem s\u0103 ne cump\u0103r\u0103m o capr\u0103 <em>slab\u0103</em> care s\u0103 ne dea c\u00e2te pu\u0163in lapte \u00een cas\u0103, neav\u00e2nd",
-"iar\u0103\u015fi ne-a ajutat \u015fi dup\u0103 cei c\u00e2\u0163iva ani de capre <em>slabe</em>, au venit \u015fi anii s\u0103 avem o vac\u0103 alb\u0103 \u015fi frumoas\u0103",
-"ve\u0163i mai fi nici puternic, nici sus. Ve\u0163i ajunge <em>slab</em>, bolnav \u015fi jos. \u015ei atunci c\u00e2nd ve\u0163i a\u015ftepta moartea"
-]
-}
-
-Score: 3.4285715
+Score: 15.257143
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Dar cel vindecat nu ştia cine este...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de vinovat este oricine se folose\u015fte de un suflet <em>slab</em> \u015fi fricos, ca s\u0103-l sileasc\u0103 a face lucruri care",
-"vinovat este acela care se folose\u015fte de un suflet <em>slab</em> \u015fi fricos, ca s\u0103-l sileasc\u0103 s\u0103 fac\u0103 lucruri care",
-"c\u0103ruia \u0163i-a c\u0103zut \u00een m\u00e2n\u0103 un astfel de suflet de om <em>slab</em>, simte-\u0163i r\u0103spunderea cea mare pe care o ai \u015fi nu-l",
-"ai mil\u0103 de sufletele <em>slabe</em> care ajung \u00een la\u0163ul v\u00e2nz\u0103torului (",
-"Fiul meu, fii totdeauna bun cu cei mai <em>slabi</em> \u015fi mici"
-]
-}
+Highlight: de vinovat este oricine se foloseşte de un suflet <em>slab</em> şi fricos, ca să-l silească a face lucruri care
+Highlight: vinovat este acela care se foloseşte de un suflet <em>slab</em> şi fricos, ca să-l silească să facă lucruri care
+Highlight: căruia ţi-a căzut în mână un astfel de suflet de om <em>slab</em>, simte-ţi răspunderea cea mare pe care o ai şi nu-l
+Highlight: cine se arată tare faţă de cel <em>slab</em> şi mic
+Highlight: ai milă de sufletele <em>slabe</em> care ajung în laţul vânzătorului ( Psalm
+Highlight: Fiul meu, fii totdeauna bun cu cei mai <em>slabi</em> şi mici la
 
-Score: 3.3809524
+Score: 14.388889
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
+Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dureroase, despre unii fra\u0163i de ai no\u015ftri, despre <em>slaba</em> sau nevrednica m\u0103rturie adus\u0103 de ei pentru Domnul",
-"Dar c\u00e2nd a v\u0103zut purtarea <em>slab\u0103</em> \u015fi vorbele de nimic, - ori purtarea \u015fi vorbele sectare",
-"Dar este harul cu parc\u0103 cea mai <em>slab\u0103</em> n\u0103dejde, cu parc\u0103 cea mai amar\u0103 experien\u0163\u0103, cu parc\u0103",
-"C\u00e2nd erau pu\u0163ini \u015fi <em>slabi</em>, \u00eentrebuin\u0163au vicle\u015fugul \u015fi pref\u0103c\u0103toria.",
-"Este \u00een stare s\u0103 se prefac\u0103 ani de zile (c\u00e2nd este <em>slab</em>) p\u00e2n\u0103 c\u00e2nd i se pare c\u0103 a ajuns destul de tare."
-]
-}
+Highlight: veţi mai fi nici puternic, nici sus. Veţi ajunge <em>slab</em>, bolnav şi jos. Atunci când veţi aştepta moartea
+Highlight: Domnului a avut milă de mine fiindcă m-a văzut cât de <em>slab</em> eram. Şi S-a îndurat să-mi arate acestea spre a
+Highlight: folosit poate numai faţă de mine care eram atunci mai <em>slab</em> ca toţi şi ca oricând.
+Highlight: Oamenii <em>slabi</em> trupeşte sunt de obicei nişte fricoşi şi retraşi, ca animalele <em>slabe</em>. În faţa primejdiei
+Highlight: orice portiţă lăsată deschisă, orice strungă mai <em>slabă</em> pe unde s-ar putea strecura să prade. Am
+Highlight: decât păcatul care nu era al ei ci al oamenilor <em>slabi</em> din ea. Primului
 
-Score: 3.3809524
+Score: 14.375
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentre timp, p\u0103lmuindu-l, a\u015fa din senin \u015fi pe altul <em>slab</em> \u015fi bolnav - \u00eenaintea tuturor - f\u0103r\u0103 s\u0103 se sinchiseasc\u0103",
-"mereu un echilibru. Dac\u0103 unele m\u0103dulare sunt mai <em>slabe</em>, altele neap\u0103rat trebuie s\u0103 fie mai tari. Dac\u0103 unele",
-"nu-i ajunge nim\u0103nui niciodat\u0103. Hrana este pu\u0163in\u0103, <em>slab\u0103</em> \u015fi mai totdeauna aceea\u015fi. E cu neputin\u0163\u0103 ca un om",
-"- dar era ceva totu\u015fi. \u00cen lungile pauze dintre <em>slabele</em> mese, mai rodeai un biscuit \u015fi \u00ee\u0163i \u00een\u015felai foamea",
-"mi-l sim\u0163eam mereu tare. Niciodat\u0103 nu l-am sim\u0163it <em>slab</em>, dar trupul sim\u0163eam cum se sf\u00e2r\u015fe\u015fte gr\u0103bit. Unii"
-]
-}
+Highlight: intelectuali ostaşi. Glasul lor s-a auzit tot mai <em>slab</em>, feţele lor au fost văzute tot mai rar, numele lor
+Highlight: nemiloasă judecata lumii: - De la mine un biet de vas <em>slab</em> a pretins lumea să fac singur foaia
+Highlight: ceea ce a văzut în al treilea cer. Vasul nostru cel <em>slab</em> de lut nu poate cuprinde marea bucuriilor din Patria
+Highlight: Vocea mea era prea <em>slabă</em>
+Highlight: în tot ceasul şi în toată vremea. Ca nişte copii <em>slabi</em> şi neajutoraţi, să alergăm cu rugăciune la Tatăl
+Highlight: Ei sunt un adăpost pentru păsările cele mici şi <em>slabe</em>. Spinii sunt plini de cuiburi. Aici îşi află adăpost
 
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
+Score: 14.375
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 9 - Pe drumul crucii mele
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prin uneltirile celui r\u0103u \u015fi prin c\u0103derile celor <em>slabi</em>, starea lor nu poate r\u0103m\u00e2nea totdeauna la fel. \u015ei",
-"ispititori. Diavolul va g\u0103si mereu printre fra\u0163ii <em>slabi</em>, lucr\u0103tori care s\u0103 se lase am\u0103gi\u0163i de c\u00e2\u015ftigul m\u00e2r\u015fav",
-"conduc\u0103tor al poporului Israel. Ni\u015fte \u00eendrum\u0103tori <em>slabi</em> veni\u0163i dup\u0103 el, au \u00eeng\u0103duit iar\u0103\u015fi s\u0103 se amestece",
-"propaganda sectar\u0103 printre fra\u0163i. Doar c\u00e2teva suflete <em>slabe</em> s-au l\u0103sat atrase de \u00eenv\u0103\u0163\u0103turile str\u0103ine, de\u015fi",
-"Oastei fusese primit\u0103 prea t\u00e2rziu. \u015ei era prea <em>slab\u0103</em>. "
-]
-}
+Highlight: Era însă foarte <em>slab</em> şi mai tot timpul zăcea pe pat. Munca lui era să
+Highlight: Nicolae Vonica, un băiat tot aşa de înalt şi de <em>slab</em> ca fratele Marini. Acesta fusese student teolog
+Highlight: Eram ca David cel singur şi <em>slab</em> în faţa
+Highlight: copii <em>slabi</em> şi nepregătiţi atât trupeşte cât şi sufleteşte.  Eram
+Highlight: mici El face de ruşine pe cele mari. Şi prin cele <em>slabe</em> doboară pe cele puternice.
+Highlight: niciodată nimici dreptatea, oricât de fragile şi <em>slabe</em> ar fi mijloacele de luptă şi de apărare ale acesteia
 
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vestim pe Tine Isuse Doamne - dar noi suntem at\u00e2t de <em>slabi</em> \u015fi at\u00e2t de pu\u0163ini. Ai mil\u0103 de noi de to\u0163i \u015fi lucreaz\u0103",
-"Hrana era \u015fi mai <em>slab\u0103</em> \u015fi mai pu\u0163in\u0103. Dar pe l\u00e2ng\u0103 garduri \u00eencepu s\u0103 \u00eenverzeasc\u0103",
-"inimile chinuite ale multora credin\u0163a frumoas\u0103 dar <em>slab\u0103</em>, se pref\u0103cu \u00een cur\u00e2nd \u00een descurajare \u015fi \u00een \u00eendoial\u0103",
-"mai revedea niciodat\u0103 pe p\u0103m\u00e2nt. El era at\u00e2t de <em>slab</em>, eu at\u00e2t de bolnav cu inima...",
-"ele? \u015ei aici se d\u0103 m\u00e2ncare tot foarte pu\u0163in\u0103 \u015fi <em>slab\u0103</em>, fa\u0163\u0103 de muncile care se fac \u015fi de normele care"
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 22 - Statutele - marea şi permanenta primejdie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"). Cea mai <em>slab\u0103</em> predic\u0103 este aceea care \u00eentruna tot spune: ",
-"). Noi suntem <em>slabi</em> fiindc\u0103 nu postim \u015fi nu ne rug\u0103m. Nu ne \u015ftim ruga",
-"\u00ce\u0163i mul\u0163umesc c\u0103 pe mine, un vas <em>slab</em> \u015fi nevrednic m-ai ales s\u0103-i chem \u015fi pe al\u0163ii la",
-"Sus. \u00cen crea\u0163ia aceasta Domnul a folosit un vas <em>slab</em>: a pus tr\u00e2mbi\u0163a \u00een gura unui umil preot care a chemat",
-"lume harul lui Dumnezeu folosind vase umile \u015fi <em>slabe</em>."
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ni\u015fte vase <em>slabe</em> \u015fi netrebnice, ai pornit \u00een lume r\u0103zboiul cel sf\u00e2nt. \u00cen m\u00e2na noastr\u0103 cea <em>slab\u0103</em> ai pus steag",
-"se apleac\u0103 \u00een fa\u0163a Crucii Tale... un vas mic \u015fi <em>slab</em> pe care l-ai folosit \u00eentr-o Lucrare at\u00e2t de mare",
-"\u00eentoarcerea la acele \u00eenv\u0103\u0163\u0103turi \u00eencep\u0103toare, <em>slabe</em> \u015fi s\u0103r\u0103c\u0103cioase",
-" cu un \u015fcolar mic \u015fi <em>slab</em>. Oastea este rodul acestor lec\u0163ii."
-]
-}
-
-Score: 3.3333333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru Hristos: voi, \u00een\u0163elep\u0163i \u00een Hristos! Noi, <em>slabi</em>: voi, tari! Voi, pu\u015fi \u00een cinste: noi, dispre\u0163ui\u0163i",
-"Nebuni... <em>slabi</em>... \u015fi dispre\u0163ui\u0163i",
-"Noi suntem nebuni pentru Hristos, voi \u00een\u0163elep\u0163i... Noi <em>slabi</em>, voi tari",
-"Acum ei ajunseser\u0103 tari, iar el r\u0103m\u0103sese tot <em>slab</em>... ",
-"C\u00e2t de <em>slab</em> ai fi \u015fi c\u00e2t de ne\u015ftiutor, dac\u0103 ai pe cineva merg\u00e2nd"
-]
-}
-
-Score: 3.3333333
+Score: 14.333333
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"voastr\u0103 s\u0103 ajung\u0103 o piatr\u0103 de poticnire pentru cei <em>slabi</em>.",
-"\u00eentr-un templu de idoli, cugetul lui, care este <em>slab</em>, nu-l va \u00eempinge pe el s\u0103 m\u0103n\u00e2nce din lucrurile",
-"11. \u015ei astfel, el, care este <em>slab</em>, va pieri din pricina acestei cuno\u015ftin\u0163e a ta: el",
-"astfel \u00eempotriva fra\u0163ilor, \u015fi le r\u0103ni\u0163i cugetul lor <em>slab</em>, p\u0103c\u0103tui\u0163i \u00eempotriva lui Hristos.",
-"acolo printr-o binefacere f\u0103cut\u0103 unor suflete mai <em>slabe</em>, a ajuns s\u0103 aib\u0103 o familie \u015fi s\u0103 pasc\u0103 o turm\u0103."
-]
-}
+Highlight: într-un templu de idoli, cugetul lui, care este <em>slab</em>, nu-l va împinge pe el să mănânce din lucrurile
+Highlight: 11. Şi astfel, el, care este <em>slab</em>, va pieri din pricina acestei cunoştinţe a ta: el
+Highlight: astfel împotriva fraţilor, şi le răniţi cugetul lor <em>slab</em>, păcătuiţi împotriva lui Hristos.
+Highlight: voastră să ajungă o piatră de poticnire pentru cei <em>slabi</em>. 10
+Highlight: acolo printr-o binefacere făcută unor suflete mai <em>slabe</em>, a ajuns să aibă o familie şi să pască o turmă.
 
-Score: 3.3142858
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"leg\u0103tura cu omul \u015fi omul cu El. Muncind din greu, omul <em>slab</em> s\u0103 cear\u0103 ajutorul lui Dumnezeu, - iar primindu-l",
-"grija unui frate mai mare. Avea \u015fi o vedere mai <em>slab\u0103</em>. Dar avea o minte ascu\u0163it\u0103 - \u015fi \u00eenv\u0103\u0163a bine. Dup\u0103",
-"vedea fa\u0163a, fiindc\u0103 nu era luminat\u0103 dec\u00e2t de o raz\u0103 <em>slab\u0103</em> care venea pe un geam de sus dintr-o alt\u0103 camer\u0103",
-"abaterile au \u00eenceput a se \u00eenmul\u0163i - \u015fi sufletele mai <em>slabe</em> s\u0103 se clatine.",
-"\u00cen urma acestor st\u0103ri de lucruri adun\u0103rile <em>sl\u0103besc</em> duhovnice\u015fte, multe suflete cad \u00eenapoi \u00een lume"
-]
-}
-
-Score: 3.3142858
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tot ce \u00eemi aduseser\u0103. Se mirau cum de sunt at\u00e2t de <em>slab</em> c\u00e2nd ei mi-au adus zilnic at\u00e2ta m\u00e2ncare... aproape",
-"\u015fi de p\u0103ianjeni prin care abia str\u0103b\u0103tea o zare <em>slab\u0103</em> \u015fi obosit\u0103 de la un bec am\u0103r\u00e2t de pe coridor.",
-"\u015fi aici. M\u00e2ncarea era at\u00e2t de pu\u0163in\u0103 \u015fi at\u00e2t de <em>slab\u0103</em> \u00eenc\u00e2t cu to\u0163ii devenisem ca ni\u015fte schelete.",
-"Atunci au \u015fi trecut din Oastea Domnului dou\u0103 suflete <em>slabe</em> \u015fi bolnave. Unul Cre\u0163u Ioan la penticostali \u015fi altul",
-"Dar acum <em>sl\u0103bisem</em>. M-am sim\u0163it c\u0103 nu mai sunt \u00een stare s\u0103 mai rabd"
-]
-}
-
-Score: 3.2142859
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Domnul \u00een cale un vecin care v\u0103z\u00e2ndu-m\u0103 at\u00e2t de <em>slab</em> \u015fi neras, abia putu s\u0103 m\u0103 recunoasc\u0103. ",
-"\u015fi de p\u0103ianjeni, prin care abia p\u0103trundea o zare <em>slab\u0103</em> \u015fi obosit\u0103 de la un bec am\u0103r\u00e2t de pe coridor. ",
-"\u015fi aici. M\u00e2ncarea se d\u0103dea at\u00e2t de pu\u0163in\u0103 \u015fi de <em>slab\u0103</em> \u00eenc\u00e2t cu to\u0163ii devenisem ni\u015fte schelete. ",
-"Dar acum <em>sl\u0103bisem</em> \u015fi sim\u0163eam c\u0103 nu mai sunt \u00een stare s\u0103 mai rabd",
-"repetat. \u00cen schimb au fost altele. \u00cen aprilie <em>sl\u0103bisem</em> at\u00e2t de mult de foame \u015fi de frig, \u00eenc\u00e2t cred c\u0103"
-]
-}
-
-Score: 3.2
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de el, umbl\u0103 ca s\u0103-l piard\u0103. \u015ei pe cei pu\u0163ini \u015fi <em>slabi</em> care mai lucreaz\u0103 pentru Hristos, - s\u0103-i nimiceasc\u0103",
-"S\u0103 fie \u015fi aceast\u0103 <em>slab\u0103</em>, dar cutremur\u0103toare m\u0103rturie pe care o depun ",
-"tot mai tare pe sufletul dar \u015fi pe trupul cel mai <em>slab</em> dintre noi. P\u0103rintele sc\u0103dea mereu de unde putea",
-"Iat\u0103 chiar \u015fi noi, eu \u015fi voi, ce vase pu\u0163ine, <em>slabe</em> \u015fi neputincioase suntem, pe l\u00e2ng\u0103 ei cei mul\u0163i,"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Avram Iancu, unde eram noi. Erau am\u00e2ndoi at\u00e2t de <em>slabi</em> \u00eenc\u00e2t veneau \u0163in\u00e2ndu-se de m\u00e2n\u0103. \u00cen pia\u0163\u0103 era s\u0103-i",
-"citind. Avea a\u015fa un dar de a citi \u00eenc\u00e2t \u015fi cea mai <em>slab\u0103</em> poezie ap\u0103rea nespus de frumoas\u0103 dup\u0103 ce o citea",
-"trei secte ce erau a r\u0103mas numai una \u015fi asta-i <em>slab\u0103</em>.",
-"duhovniceasc\u0103 \u015fi mai ales spre \u00eent\u0103rirea celor mai <em>slabi</em> de credin\u0163\u0103, care tulbura\u0163i de conflictul ce transpirase"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"du\u015fi \u00een ea... Ca nu cumva, fiind noi nespus de <em>slabi</em>, mai bine nici s\u0103 nu d\u0103m fa\u0163\u0103 cu vr\u0103jma\u015ful, dec\u00e2t",
-"...c\u00e2nd s-au terminat vorbirile <em>slabe</em> ale celor doi dinaintea lui, fratele Marini s-a",
-"m-am recunoscut \u00een privin\u0163a asta, ca un \u00eencep\u0103tor <em>slab</em>, pe l\u00e2ng\u0103 el.",
-"s\u0103-i fac foc. Este a\u015fa de frig aici iar el este <em>slab</em> \u015fi bolnav. "
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a\u015fa ceva... tu nu po\u0163i \u0163inea a\u015fa ceva... e\u015fti prea <em>slab</em> s\u0103 intri \u00een Oaste.",
-"\u00een furtun\u0103, fie c\u0103 e\u015fti s\u0103rac ori bogat, tare ori <em>slab</em>, s\u0103n\u0103tos ori bolnav - prive\u015fte clip\u0103 de clip\u0103 \u0163int\u0103",
-"Vai inimilor celor fricoase! \u015ei m\u00e2inilor celor <em>slabe</em> \u015fi p\u0103c\u0103tosului, care umbl\u0103 spre dou\u0103 c\u0103r\u0103ri",
-"val mare de \u00eempotrivire \u015fi r\u0103utate contra vasului <em>slab</em> \u015fi ales al Domnului, prigonind Oastea Sf\u00e2nt\u0103, \u00een"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"12 ani de c\u00e2nd folose\u015fti \u00een Lucrarea Ta acest vas <em>slab</em> \u015fi nevrednic. De multe ori eu credeam c\u0103 Tu ai ispr\u0103vit",
-"C\u00e2nd cei tari \u015fi mari se n\u0103pustesc asupra celui <em>slab</em> \u015fi nenorocit, c\u00e2nd asuprirea \u015fi nedreptatea stau",
-"minunate daruri m-ai \u00eenvrednicit pe mine vasul acesta <em>slab</em>!",
-"Sunt aceste clipe <em>slabe</em>, clipe de ispit\u0103, peste care un adev\u0103rat lupt\u0103tor"
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Şi-a lăsat găleata şi s-a dus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"De\u015fi a\u0163i fost mai <em>slabe</em> \u015fi inima voastr\u0103 mai ad\u00e2nc se lipse\u015fte de lucrurile",
-"Dintr-o femeie <em>slab\u0103</em>, plin\u0103 de fric\u0103 \u015fi de ru\u015fine, ",
-"\u00cen Ziua Judec\u0103\u0163ii femeia <em>slab\u0103</em> din Samaria \u015fi oamenii necunosc\u0103tori din Sihem,",
-"la Hristos pe o singur\u0103 dovad\u0103 a unei m\u0103rturii <em>slabe</em>, dar tu nici dup\u0103 at\u00e2tea mii de dovezi \u015fi de m\u0103rturii"
-]
-}
-
-Score: 3.2
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Moise şi Aaron în faţa lui Faraon
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"\u015fcolar <em>slab</em> era Moise! El \u00eenchipuia pe M\u00e2ntuitorul, dar iat\u0103 ce umbr\u0103 <em>slab\u0103</em>, ce icoan\u0103 <em>slab\u0103</em> este fa\u0163\u0103",
-"Frumoas\u0103 chemare, dar vai, ce r\u0103spuns <em>slab</em> d\u0103du Moise! Cine sunt eu s\u0103 merg la Faraon, \u00eemp\u0103ratul"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Plenitudinea puterii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"16 - Oamenii <em>slabi</em>, sufletele <em>slabe</em>, talentele mici, nu pot face, \u00een mod normal",
-"celui mai <em>slab</em> vas omenesc, unui slujitor al S\u0103u(",
-"Pentru c\u0103 cu c\u00e2t este mai <em>slab</em> un instrument"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Asuprirea este o ruşine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"f\u0103le\u015fte cum a b\u0103gat groaza \u00een ni\u015fte oameni bl\u00e2nzi, <em>slabi</em> \u015fi pa\u015fnici, s\u0103raci \u015fi credincio\u015fi! ",
-"p\u0103m\u00e2nt le calc\u0103 \u00een picioare, el asupritorul celor <em>slabi</em>. ",
-"at\u00e2t mai mult atunci c\u00e2nd e\u015fti tare, fa\u0163\u0103 de cei <em>slabi</em>. ",
-"c\u0103ci \u00een urma m\u00e2inilor lor b\u0103t\u0103torite \u015fi <em>slabe</em>, ai crescut \u015fi te-ai ridicat tu. "
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Vrăjmaşii şi prietenii Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"poate fi acum obligat s\u0103 r\u0103spund\u0103 celui <em>slab</em>, fiindc\u0103 cel <em>slab</em> n-are cu ce s\u0103-l constr\u00e2ng\u0103 ca s\u0103 r\u0103spund\u0103",
-"Dar cel tare are cum s\u0103-l oblige pe cel <em>slab</em>. ",
-"puternicii \u015fi <em>slabii</em>, "
-]
-}
-
-Score: 3.2
+Score: 14.3
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Răscumpărătorul nostru
 Title: Arată ce am spus!
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"poate fi acum obligat s\u0103 r\u0103spund\u0103 celui <em>slab</em>, fiindc\u0103 cel <em>slab</em> n-are cu ce s\u0103-l constr\u00e2ng\u0103 ca s\u0103 r\u0103spund\u0103",
-"r\u0103spund\u0103. Dar cel tare are cum s\u0103-l oblige pe cel <em>slab</em>. ",
-"puternicii \u015fi <em>slabii</em>, "
-]
-}
+Highlight: poate fi acum obligat să răspundă celui <em>slab</em>, fiindcă cel <em>slab</em> n-are cu ce să-l constrângă ca să răspundă
+Highlight: răspundă. Dar cel tare are cum să-l oblige pe cel <em>slab</em>.
+Highlight: puternicii şi <em>slabii</em>,
 
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: O mie de taine...
+Score: 14.3
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Adev\u0103rului m\u00e2ntuitor nu i-au mai r\u0103mas dec\u00e2t cele mai <em>slabe</em> \u015fi mai pu\u0163ine suflete \u015fi mijloace de pe p\u0103m\u00e2nt.",
-"de\u015fi pare at\u00e2t de puternic\u0103. \u015ei este totdeauna <em>slab\u0103</em>, de\u015fi este at\u00e2t de \u00eenarmat\u0103. ",
-"slujba sa dec\u00e2t tot mai pu\u0163ine mijloace \u015fi tot mai <em>slabe</em> unelte. ",
-"21 - \u015fi se teme ne\u00eencetat de acele pu\u0163ine \u015fi <em>slabe</em> mijloace prin care mai lucreaz\u0103 \u015fi se ap\u0103r\u0103 Adev\u0103rul"
-]
-}
+Highlight: aşa ceva... tu nu poţi ţinea aşa ceva... eşti prea <em>slab</em> să intri în Oaste.
+Highlight: în furtună, fie că eşti sărac ori bogat, tare ori <em>slab</em>, sănătos ori bolnav - priveşte clipă de clipă ţintă
+Highlight: val mare de împotrivire şi răutate contra vasului <em>slab</em> şi ales al Domnului, prigonind Oastea Sfântă, în
+Highlight: Vai inimilor celor fricoase! Şi mâinilor celor <em>slabe</em> şi păcătosului, care umblă spre două cărări
 
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bunătate
+Score: 14.3
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 3 - Marea cernere
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"27 - Fiul meu, fii totdeauna bun cu cei mai <em>slabi</em> \u015fi mici, ",
-"cine se arat\u0103 tare fa\u0163\u0103 de cel <em>slab</em> \u015fi mic",
-"de omul r\u0103u \u015fi vremea <em>slab\u0103</em>",
-"59 - Omul e mai <em>slab</em> ca oul \u015fi mai tare ca o\u0163elul, "
-]
-}
+Highlight: 12 ani de când foloseşti în Lucrarea Ta acest vas <em>slab</em> şi nevrednic. De multe ori eu credeam că Tu ai isprăvit
+Highlight: Când cei tari şi mari se năpustesc asupra celui <em>slab</em> şi nenorocit, când asuprirea şi nedreptatea stau
+Highlight: minunate daruri m-ai învrednicit pe mine vasul acesta <em>slab</em>!
+Highlight: Sunt aceste clipe <em>slabe</em>, clipe de ispită, peste care un adevărat luptător
 
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Prin lupte
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ci Te-ai folosit de-at\u00e2tea <em>slabe</em> m\u00e2ini \u015fi <em>slabe</em> vase",
-"nu puterea noastr\u0103 <em>slab\u0103</em> - ci Tu biruie\u015fti Preasfinte. ",
-"Celor <em>slabi</em> ce-\u0162i poart\u0103-n lupte printre spini \u015fi printre rane"
-]
-}
-
-Score: 3.2
+Score: 14.3
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Moldovei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- chiar cel mai <em>slab</em> va fi-nt\u0103rit",
-"nici cu marea ta putere c\u0103tre cel bolnav \u015fi <em>slab</em>",
-"- chiar credin\u0163ei <em>slabe</em> cerul i se-arat\u0103. ",
-"183 - Nu-\u0163i nec\u0103ji so\u0163ia c\u0103ci ea-i un suflet <em>slab</em>"
-]
-}
+Highlight: - chiar cel mai <em>slab</em> va fi-ntărit
+Highlight: nici cu marea ta putere către cel bolnav şi <em>slab</em>
+Highlight: 183 - Nu-ţi necăji soţia căci ea-i un suflet <em>slab</em>
+Highlight: - chiar credinţei <em>slabe</em> cerul i se-arată.  138
 
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi iert\u00e2ndu-i cele <em>slabe</em>, ",
-"dar ce-\u0163i poate omul p\u0103c\u0103tos \u015fi <em>slab</em>? ",
-"188 - Unde-i con\u015ftiin\u0163a <em>slab\u0103</em> trebuie-o dreptate tare",
-"\u015fi \u00eeng\u00e2mfatul cel puternic la <em>slabul</em> cel smerit mereu"
-]
-}
-
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dumnezeu alege \u015fi ast\u0103zi, ca totdeauna, lucrurile <em>slabe</em> ale lumii, ca s\u0103 fac\u0103 de ru\u015fine pe cele tari...",
-"Pe cel mai <em>slab</em>, p\u00e2n\u0103 ce se \u00eent\u0103re\u015fte \u015fi el. ",
-"Oricine lupt\u0103 <em>slab</em> s-ar putea s\u0103 nu cucereasc\u0103 niciodat\u0103",
-" Cei ne\u015ftiutori s\u0103 aib\u0103 de la cine \u00eenv\u0103\u0163a. Cei <em>slabi</em> s\u0103 aib\u0103 de la cine se \u00eent\u0103ri. \u015ei astfel \u015fi Viitorul"
-]
-}
-
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 19-a după Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"importan\u0163a care li se d\u0103 \u015fi dac\u0103 sunt caractere mai <em>slabe</em>, \u00eencep s\u0103 se \u00eeng\u00e2mfe, \u015fi \u00een cur\u00e2nd nu numai c\u0103 nu",
-"\u015ftie mai bine dec\u00e2t oricine c\u00e2t de tare sau c\u00e2t de <em>slab</em> este \u00een ce prive\u015fte virtutea sau p\u0103catul, binele",
-"Dar c\u00e2t de <em>slab\u0103</em> este firea noastr\u0103 omeneasc\u0103 \u00een privin\u0163a asta, arat\u0103",
-"putere deajuns, spre a avea \u00eendeajuns pentru cei <em>slabi</em> pe care trebuie s\u0103-i ridice \u015fi s\u0103-i ajute. S\u0103 i"
-]
-}
-
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1. Primi\u0163i bine pe cel <em>slab</em> \u00een credin\u0163\u0103, \u015fi nu v\u0103 apuca\u0163i la vorb\u0103 asupra p\u0103rerilor",
-"poate s\u0103 m\u0103n\u00e2nce de toate, pe c\u00e2nd altul, care este <em>slab</em>, nu m\u0103n\u00e2nc\u0103 dec\u00e2t verde\u0163uri.",
-"Isus \u00eei \u0163ine pe ei, ci ei \u00cel \u0163in pe El, m\u00e2na lor <em>slab\u0103</em> se desface - \u015fi ei cad! Uneori, chiar \u0163in\u00e2ndu-se",
-"P\u0103rerile \u00eendoielnice sunt dovada unei credin\u0163e <em>slabe</em>, a unei iubiri nestatornice, a unei vie\u0163i nepredate"
-]
-}
-
-Score: 3.1666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi acum plugul de lemn ar fi <em>slab</em> agricultor \u015fi ar avea o \u015fi mai <em>slab\u0103</em> recolt\u0103, tot asemenea succes va",
-"Domnului. Noi ne ap\u0103r\u0103m numai ca s\u0103 \u00eent\u0103rim pe cei <em>slabi</em>, pe cei ce se clatin\u0103 \u00een fa\u0163a atacurilor... \u00cen",
-"cumplitele vicii (patimi, cum e \u015fi alcoolul) care <em>sl\u0103besc</em> \u015fi storc vlaga trupeasc\u0103 \u015fi sufleteasc\u0103 a poporului",
-"ce l-am f\u0103cut... S\u0103 ne str\u00e2ngem r\u00e2ndurile, s\u0103 nu <em>sl\u0103bim</em> cu r\u00e2vna \u015fi lupta, pentru ca s\u0103 putem ar\u0103ta c\u0103"
-]
-}
-
-Score: 3.1
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 14 - Atacul împotriva steagului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"oameni ai lui Hristos, care se dovedesc atunci <em>slabi</em>, - sunt de-a dreptul colaboratori cu satana la \u00eemplinirea",
-"Aprinsei lumina <em>slab\u0103</em> de pe noptier\u0103 - \u015fi m\u0103 uitai la el. ",
-"M\u0103 uitai la fa\u0163a p\u0103rintelui care era mai <em>slab\u0103</em> \u015fi mai uscat\u0103 ca oric\u00e2nd. \u00centr-o s\u0103pt\u0103m\u00e2n\u0103 s-a topit",
-"din lumea aceasta se apropia grabnic. Trupe\u015fte <em>sl\u0103bise</em> at\u00e2t de mult \u00eenc\u00e2t devenise numai un schelet, numai"
-]
-}
-
-Score: 3.1
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 1 - Înfricoşata lepădare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mai mare parte a acestor fra\u0163i \u015fi surori fiind de <em>slab\u0103</em> stare material\u0103 - v\u0103z\u00e2ndu-se obliga\u0163i s\u0103 pl\u0103teasc\u0103",
-"nenorocite care s-au n\u0103pustit asupra acelor suflete <em>slabe</em>, cu at\u00e2t cei ce lucreaz\u0103 \u00een acest mod murdar \u015fi",
-"bisericilor lui Dumnezeu prin dezbinarea acelor suflete <em>slabe</em> care \u00eei ascult\u0103 \u015fi se iau dup\u0103 ei. Pentru c\u0103 nu",
-"spus \u015fi mai sus. Mai r\u0103bdam, mai treceau, mai <em>sl\u0103beau</em>, mai \u00eencetau, - \u00eencet-\u00eencet mai l\u0103murindu-se \u015fi"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei pe deasupra tuturor acestora, grija de fra\u0163ii <em>slabi</em>, de continuarea adun\u0103rilor, de \u00eemb\u0103rb\u0103tarea celor",
-"Ce facem noi aici ni\u015fte femei <em>slabe</em>, copiii sunt mici iar Arcadie n-a mai venit!...",
-"i-a f\u0103cut pe mul\u0163i din cei mai \u00eencep\u0103tori sau mai <em>slabi</em> - chiar s\u0103 caute ad\u0103post \u015fi m\u00e2ng\u00e2iere sufleteasc\u0103"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tot ce a \u00eencercat s\u0103 fac\u0103, n-a fost dec\u00e2t un gest <em>slab</em> de ap\u0103rare \u00eempotriva unei lovituri nedrepte \u015fi neomene\u015fti",
-"Ca un <em>slab</em> \u00eenlocuitor al acelei minunate Istorii care ar fi",
-"\u00een acest timp c\u0103 pe c\u00e2nd noi luptam din toate <em>slabele</em> noastre puteri s\u0103 supravie\u0163uim - mitropolia lupta"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 2 - A treia zi istorică
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce <em>slabi</em> erau to\u0163i acei bie\u0163i copii ai lui Dumnezeu amenin\u0163a\u0163i",
-"Dumnezeu \u015fi la r\u0103splata Lui. Iar noi cei pu\u0163ini \u015fi <em>slabi</em> \u015fi f\u0103r\u0103 nume atunci am ajuns o mare o\u015ftire care",
-"alte lucr\u0103ri religioase, ele s-au dovedit a fi <em>slabe</em> \u015fi s\u0103r\u0103c\u0103cioase, cu un mesaj \u00eencurcat \u015fi inferior"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tare, tot sus. Va veni vremea s\u0103 fi\u0163i \u015fi bolnav \u015fi <em>slab</em> \u015fi jos. Ve\u0163i vedea atunci c\u00e2t\u0103 nevoie o s\u0103 ave\u0163i",
-"erau ei greoi \u015fi neobi\u015fnui\u0163i cu de astea, u\u015fi\u0163a <em>slab\u0103</em> s-a rupt iar pragul putred s-a sf\u0103r\u00e2mat sub picioarele",
-"m\u00e2ncare sc\u0103zut\u0103, dup\u0103 care cei mai obosi\u0163i \u015fi mai <em>slabi</em> merg la culcare pentru o odihn\u0103 de 3-4 ore p\u00e2n\u0103"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Minunile şi credinţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care au fost smulse \u015fi r\u0103sucite ca ni\u015fte nuiele <em>slabe</em>... Bolovani c\u00e2t masa, st\u00e2nci c\u00e2t casele luate ca",
-"peste care s\u0103 nu treac\u0103. \u015ei acel hotar este cel mai <em>slab</em> \u015fi mai mi\u015fc\u0103tor obstacol: nisipul. Dar marile lor",
-"bog\u0103\u0163iei sale este datornic. Acela \u015fi c\u00e2nd va fi <em>slab</em> nu se va t\u00e2r\u00ee, c\u00e2nd va fi \u00eenjosit, nu se va descuraja"
-]
-}
-
-Score: 3.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Frământările scăpării din robie
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"israelienilor. Sicria\u015ful de papur\u0103 era un lucru mic \u015fi <em>slab</em>. El era \u00eens\u0103 tare \u00een planurile lui Dumnezeu. Sicria\u015ful",
-"lips\u0103 de lucruri mari \u015fi tari. Numai credin\u0163a cea <em>slab\u0103</em> caut\u0103 lucruri mari. Un om necredincios ar fi r\u00e2s",
-"cum \u00eencearc\u0103 s\u0103-\u015fi scape copilul printr-un sicria\u015f <em>slab</em>. "
-]
-}
-
-Score: 3.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Moise un pedagog spre Hristos
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"prea <em>slabi</em> s\u0103 li se vorbeasc\u0103 despre bucuriile \u015fi comorile vie\u0163ii celei ve\u015fnice. Erau prea <em>slabi</em> ca s\u0103",
-"averile. Dimpotriv\u0103, Domnul Isus arat\u0103 pre\u0163ul cel <em>slab</em> ce-l au averile pe care le rod moliile \u015fi le fur\u0103"
-]
-}
-
-Score: 3.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Cei ce au iscodit Canaanul
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"Domnul \u015ftia c\u0103 copiii Lui sunt \u00eenc\u0103 <em>slabi</em>... c\u0103 \u00eei biruie pustia. De aceea a hot\u0103r\u00e2t s\u0103 le",
-"Domnului. El \u015ftie c\u0103 noi, copiii Lui, suntem a\u015fa de <em>slabi</em>. El \u015ftie c\u0103 pustia acestei vie\u0163i, acestei c\u0103l\u0103torii",
-"Canaanul - sunt datori s\u0103 \u00eent\u0103reasc\u0103 pe cei mai <em>slabi</em>, pe care ispita \u00eei cheam\u0103 \u00eenapoi, \u00een Egiptul p\u0103catelor"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Lăudătorii micimii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate acestea \u00een fa\u0163a Timpului, care este cea mai <em>slab\u0103</em> arm\u0103 \u00een M\u00e2na Puterii Ve\u015fnice a lui Dumnezeu. ",
-"12 - Sufletului <em>slab</em>, c\u00e2nd vede at\u00e2tea c\u0103petenii, domni \u015fi st\u0103p\u00e2nitori",
-"C\u0103ci tu cel <em>slab</em> vei birui pe cel r\u0103u c\u00e2nt\u00e2nd cu sf\u00e2ntul Ioan Botez\u0103torul"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Vremea răsplătirii tuturor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"apoi privind la josnicele noastre neputin\u0163e \u015fi la <em>slabele</em> noastre realiz\u0103ri, chiar \u015fi atunci c\u00e2nd ne str\u0103duim",
-"- C\u0103ci fiecare dintre fiii oamenilor este <em>slab</em> \u015fi netrebnic! ",
-"- omul cu c\u00e2t se simte mai <em>slab</em> cu at\u00e2ta caut\u0103 mai cu grij\u0103 \u015fi mai cu grab\u0103 un ad\u0103post"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Înţelepţii şi nebunii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"8 - O, om <em>slab</em>, mai <em>slab</em> ca o p\u0103rere",
-"dar el se dovede\u015fte fricos, \u00eendoielnic \u015fi <em>slab</em>, "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Amintirile noastre neuitate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103 ne rug\u0103m prea <em>slab</em>, ",
-"Ele vor \u00eemb\u0103rb\u0103ta pe cei <em>slabi</em>, ",
-"19 - C\u00e2nd \u00eencape omul cel <em>slab</em> \u015fi cinstit, pe m\u00e2na unor oameni nedrep\u0163i \u015fi nemilo\u015fi"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Aur şi zgură
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi te face puternic oric\u00e2t ai fi de <em>slab</em>. ",
-"lui n-au alt mijloc de r\u0103zbunare fa\u0163\u0103 de unul mai <em>slab</em>. ",
-"iat\u0103 c\u0103 Dumnezeu a dat Harul S\u0103u altora, celor mai <em>slabi</em> \u015fi mai smeri\u0163i ("
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Căile lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce r\u0103u este s\u0103 fii fricos \u015fi <em>slab</em>! ",
-"merge\u0163i spre el, totdeauna f\u0103r\u0103 team\u0103 - va fi mai <em>slab</em> dec\u00e2t voi. \u015ei p\u00e2n\u0103 la urm\u0103 \u00eel ve\u0163i birui. ",
-"Pe cel <em>slab</em> sc\u0103p\u00e2nd din m\u00e2na celui tare. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Curăţia şi creaţia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iar c\u00e2nd vii \u00eenapoi sim\u0163i c\u0103 \u00een vasul t\u0103u mic \u015fi <em>slab</em> n-ai putut aduce mai nimic din imensitatea cople\u015fitoare",
-"prin atingere divin\u0103, poate fi de o calitate mai <em>slab\u0103</em>, sau de o durat\u0103 mai scurt\u0103, - potrivit\u0103 cu modul",
-"nu putem primi un lucru scump, \u015fi cu o credin\u0163\u0103 <em>slab\u0103</em> nu putem vedea o minune puternic\u0103."
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Întâmplările şi inima
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"omeneasc\u0103 \u00een mod obi\u015fnuit este foarte <em>slab\u0103</em>, ",
-"c\u0103 de multe ori cea mai <em>slab\u0103</em> adiere prigonitoare o face s\u0103 tremure",
-"18 - Pe credincio\u015fii <em>slabi</em>, \u00eencep\u0103tori \u015fi nestatornici, chiar \u015fi ni\u015fte oameni"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Slobozenia şi robia lui Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cre\u015fteri. Cu multe am\u0103giri \u015fi cu multe umbre. Lumin\u0103 <em>slab\u0103</em>, neputincioas\u0103 \u015fi moart\u0103. ",
-"Chiar c\u00e2nd lumin\u0103torul cel mai <em>slab</em> se \u00eentunec\u0103, de peste \u00eentinderile lui se pierde",
-"ce \u015fi-a pierdut \u015fi pu\u0163ina lumin\u0103 a unei credin\u0163e <em>slabe</em>. "
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Petru stătea şi el cu ei...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Binecuv\u00e2ntat s\u0103 fii Tu care de\u015fi am fost <em>slabi</em> \u015fi ne-am uitat uneori, \u00een ceasurile grelelor ispite",
-"nevinovatului T\u0103u cel mai <em>slab</em>. ",
-"Ajut\u0103-ne Doamne Isuse s\u0103 nu mai fim <em>slabi</em>. "
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Petru iar s-a lepădat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cre\u015fteri. Cu multe am\u0103giri \u015fi cu multe umbre. Lumin\u0103 <em>slab\u0103</em>, \u015fi neputincioas\u0103, moart\u0103, ",
-"Chiar c\u00e2nd lumin\u0103torul cel mai <em>slab</em> se \u00eentunec\u0103, de peste \u00eentinderile lui se pierde",
-"ce \u015fi-a pierdut \u015fi pu\u0163ina lumin\u0103 a unei credin\u0163e <em>slabe</em>! "
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 12 - Naşterea imnului duhovnicesc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"poeziei religioase \u00een popor erau doar mici \u00eencerc\u0103ri <em>slabe</em> care multe au r\u0103mas \u00een fa\u015f\u0103. ",
-"ea, au \u00eenceput \u015fi ei s\u0103-\u015fi \u00eenlocuiasc\u0103 treptat <em>slabele</em> traduceri de care se foloseau - pline de tot felul",
-"Dumnezeu Se folose\u015fte mai cu pl\u0103cere de vasele cele <em>slabe</em> dar smerite, ca s\u0103 arate cu at\u00e2t mai v\u0103dit c\u0103 "
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: ... Tu, te vei chema Petru...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"omul este <em>slab</em>, ",
-" care, ca orice om, totdeauna poate fi <em>slab</em> \u015fi schimb\u0103tor.",
-"- sau una <em>slab\u0103</em>, fricoas\u0103 \u015fi u\u015foar\u0103, cu care fiecare poate face"
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Vinul cel bun
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-" <em>slab</em> al lucr\u0103rilor <em>slabe</em>, \u00eencep\u0103toare \u015fi lipsite",
-"omenirea cu \u00eenv\u0103\u0163\u0103turile <em>slabe</em> \u015fi s\u0103r\u0103c\u0103cioase,  cu"
-]
-}
-
-Score: 3.0
+Score: 14.25
 Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Nimeni decât Tu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru sufletul f\u0103r\u0103 so\u0163, pentru sufletul cel mai <em>slab</em>. ",
-"pentru foc: pe cel tare \u00eel face mai puternic, pe cel <em>slab</em> \u00eel \u00eempr\u0103\u015ftie de tot. ",
-"5 - Nu m\u0103 p\u0103r\u0103si c\u00e2nd sunt mai <em>slab</em>, c\u0103ci \u015farpele numai atunci \u00eendr\u0103zne\u015fte s\u0103 se apropie"
-]
-}
+Highlight: pentru sufletul fără soţ, pentru sufletul cel mai <em>slab</em>.
+Highlight: pentru foc: pe cel tare îl face mai puternic, pe cel <em>slab</em> îl împrăştie de tot.
+Highlight: 5 - Nu mă părăsi când sunt mai <em>slab</em>, căci şarpele numai atunci îndrăzneşte să se apropie
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Cine intră pe uşă este păstorul...
+Score: 12.8571415
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sluji Domnului cu grij\u0103 devotat\u0103 fa\u0163\u0103 de cele mai <em>slabe</em> oi \u015fi gata s\u0103 faci tot ce po\u0163i pentru ele, ",
-"Fiul meu, fii totdeauna bun cu cei mai <em>slabi</em> \u015fi mici",
-"cine se arat\u0103 tare, fa\u0163\u0103 de cel <em>slab</em> \u015fi mic"
-]
-}
+Highlight: între timp, pălmuindu-l, aşa din senin şi pe altul <em>slab</em> şi bolnav - înaintea tuturor - fără să se sinchisească
+Highlight: mi-l simţeam mereu tare. Niciodată nu l-am simţit <em>slab</em>, dar trupul simţeam cum se sfârşeşte grăbit. Unii
+Highlight: mereu un echilibru. Dacă unele mădulare sunt mai <em>slabe</em>, altele neapărat trebuie să fie mai tari. Dacă unele
+Highlight: zi - şi aproape totdeauna şi noaptea. Inima îmi <em>slăbise</em> de tot, aveam sufocări, ameţeli, palpitaţii din
+Highlight: nu-i ajunge nimănui niciodată. Hrana este puţină, <em>slabă</em> şi mai totdeauna aceeaşi. E cu neputinţă ca un om
+Highlight: - dar era ceva totuşi. În lungile pauze dintre <em>slabele</em> mese, mai rodeai un biscuit şi îţi înşelai foamea
 
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre căsnicie
+Score: 12.833332
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"chiar \u015fi cei <em>slabi</em>, uni\u0163i r\u0103zbat! ",
-"doi <em>slabi</em>, uni\u0163i, pot fi mai tari ca unul singur tare; ",
-"111 - Ajut\u0103-\u0163i so\u0163ul <em>slab</em>, ca-n urm\u0103 s\u0103 nu ajungi"
-]
-}
+Highlight: Îţi mulţumesc că pe mine, un vas <em>slab</em> şi nevrednic m-ai ales să-i chem şi pe alţii la
+Highlight: Sus. În creaţia aceasta Domnul a folosit un vas <em>slab</em>: a pus trâmbiţa în gura unui umil preot care a chemat
+Highlight: ). Cea mai <em>slabă</em> predică este aceea care întruna tot spune:  fă
+Highlight: ). Noi suntem <em>slabi</em> fiindcă nu postim şi nu ne rugăm. Nu ne ştim ruga
+Highlight: lume harul lui Dumnezeu folosind vase umile şi <em>slabe</em>.
 
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre îndrăzneală - curaj
+Score: 12.833332
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"frica-l face miel pe taur \u015fi din tare face <em>slab</em>.",
-"atunci <em>slabul</em> ce-o s\u0103 fac\u0103? ",
-"cine-ajut\u0103-un <em>slab</em> la greu, "
-]
-}
+Highlight: se apleacă în faţa Crucii Tale... un vas mic şi <em>slab</em> pe care l-ai folosit într-o Lucrare atât de mare
+Highlight:  cu un şcolar mic şi <em>slab</em>. Oastea este rodul acestor lecţii.
+Highlight: nişte vase <em>slabe</em> şi netrebnice, ai pornit în lume războiul cel sfânt. În mâna noastră cea <em>slabă</em> ai pus steag
+Highlight: întoarcerea la acele învăţături începătoare, <em>slabe</em> şi sărăcăcioase
 
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre mulţumire
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care-l ap\u0103r\u0103 pe <em>slab</em>, ",
-"to\u0163i cei buni \u015fi <em>slabi</em> din \u0163ar\u0103",
-"Voi cei <em>slabi</em> \u015fi buni din"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre tăcere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dup\u0103 vorb\u0103 <em>slab\u0103</em> des pl\u0103te\u015fti ponoase. ",
-"- ce ascunzi \u00een gura <em>slab\u0103</em>, afl\u0103 lumea toat\u0103. ",
-"<em>slab\u0103</em> cinste dovede\u015fte. "
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"des gre\u015fe\u015fte - mintea <em>slab\u0103</em>. ",
-"146 - Vaca <em>slab\u0103</em> toat\u0103 cioarda de ru\u015fine-o las\u0103",
-"175 - Cine se \u00eenva\u0163\u0103 singur are-un <em>slab</em> \u00eenv\u0103\u0163\u0103tor"
-]
-}
-
-Score: 3.0
+Score: 12.833332
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
+Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ar\u0103tat c\u0103, lucr\u00e2nd astfel, trebuie s\u0103 ajuta\u0163i pe cei <em>slabi</em>, \u015fi s\u0103 v\u0103 aduce\u0163i aminte de cuvintele Domnului Isus",
-"era el cu voi, \u0163inea\u0163i \u00eenv\u0103\u0163\u0103turile cu o inim\u0103 <em>slab\u0103</em>, dup\u0103 plecarea lui, \u0163ine\u0163i-le cu \u015fapte inimi puternice",
-"Dup\u0103 fiecare vorb\u0103 <em>slab\u0103</em>, \u00eengenuncheaz\u0103 cu poc\u0103in\u0163\u0103 s\u0103 te \u00eendrep\u0163i. "
-]
-}
+Highlight: Acum ei ajunseseră tari, iar el rămăsese tot <em>slab</em>...
+Highlight: Cât de <em>slab</em> ai fi şi cât de neştiutor, dacă ai pe cineva mergând
+Highlight: pentru Hristos: voi, înţelepţi în Hristos! Noi, <em>slabi</em>: voi, tari! Voi, puşi în cinste: noi, dispreţuiţi
+Highlight: Nebuni... <em>slabi</em>... şi dispreţuiţi Noi
+Highlight: Noi suntem nebuni pentru Hristos, voi înţelepţi... Noi <em>slabi</em>, voi tari
 
-Score: 2.9333334
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
+Score: 12.799999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 15 - Al doilea foc
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cuv\u00e2nt al lui Dumnezeu - chiar \u015fi asta ne arat\u0103 ce <em>slab</em> nivel duhovnicesc avem. \u00cen loc s\u0103 fim p\u0103trun\u015fi cu",
-"au durat astfel. M\u00e2ncarea era foarte pu\u0163in\u0103 \u015fi <em>slab\u0103</em>. Numai celelalte erau tot a\u015fa de multe \u015fi de grele",
-"\u00eempu\u0163inaser\u0103 efectivul lag\u0103rului, iar m\u00e2ncarea <em>sl\u0103bi</em> \u015fi mai mult. Acum crescuse iarba pe l\u00e2ng\u0103 garduri",
-"pu\u0163in \u015fi s\u0103-\u015fi poat\u0103 umplea stomacul cu ceva. <em>Sl\u0103bisem</em>, \u00eenc\u00e2t c\u00e2nd era soare \u015fi st\u0103team propti\u0163i pe pere\u0163ii"
-]
-}
+Highlight: m-am recunoscut în privinţa asta, ca un începător <em>slab</em>, pe lângă el.
+Highlight: să-i fac foc. Este aşa de frig aici iar el este <em>slab</em> şi bolnav.
+Highlight: duşi în ea... Ca nu cumva, fiind noi nespus de <em>slabi</em>, mai bine nici să nu dăm faţă cu vrăjmaşul, decât
+Highlight: ...când s-au terminat vorbirile <em>slabe</em> ale celor doi dinaintea lui, fratele Marini s-a
 
-Score: 2.8333333
+Score: 12.799999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre bunătate
+Type: articol
+Author: Traian Dorz
+Highlight: cine se arată tare faţă de cel <em>slab</em> şi mic
+Highlight: 59 - Omul e mai <em>slab</em> ca oul şi mai tare ca oţelul,
+Highlight: 27 - Fiul meu, fii totdeauna bun cu cei mai <em>slabi</em> şi mici,  la
+Highlight: de omul rău şi vremea <em>slabă</em> n-ai
+
+Score: 12.799999
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
+Type: articol
+Author: Traian Dorz
+Highlight: Pe cel mai <em>slab</em>, până ce se întăreşte şi el.
+Highlight: Oricine luptă <em>slab</em> s-ar putea să nu cucerească niciodată
+Highlight: Dumnezeu alege şi astăzi, ca totdeauna, lucrurile <em>slabe</em> ale lumii, ca să facă de ruşine pe cele tari...
+Highlight:  Cei neştiutori să aibă de la cine învăţa. Cei <em>slabi</em> să aibă de la cine se întări. Şi astfel şi Viitorul
+
+Score: 12.799999
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
+Type: articol
+Author: Traian Dorz
+Highlight: 1. Primiţi bine pe cel <em>slab</em> în credinţă, şi nu vă apucaţi la vorbă asupra părerilor
+Highlight: poate să mănânce de toate, pe când altul, care este <em>slab</em>, nu mănâncă decât verdeţuri.
+Highlight: Isus îi ţine pe ei, ci ei Îl ţin pe El, mâna lor <em>slabă</em> se desface - şi ei cad! Uneori, chiar ţinându-se
+Highlight: Părerile îndoielnice sunt dovada unei credinţe <em>slabe</em>, a unei iubiri nestatornice, a unei vieţi nepredate
+
+Score: 12.799999
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Moise şi Aaron în faţa lui Faraon
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: şcolar <em>slab</em> era Moise! El închipuia pe Mântuitorul, dar iată ce umbră <em>slabă</em>, ce icoană <em>slabă</em> este faţă
+Highlight: Frumoasă chemare, dar vai, ce răspuns <em>slab</em> dădu Moise! Cine sunt eu să merg la Faraon, împăratul
+
+Score: 12.749999
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: ... Tu, te vei chema Petru...
+Type: articol
+Author: Traian Dorz
+Highlight: omul este <em>slab</em>,
+Highlight:  care, ca orice om, totdeauna poate fi <em>slab</em> şi schimbător.
+Highlight: - sau una <em>slabă</em>, fricoasă şi uşoară, cu care fiecare poate face
+
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Aur şi zgură
+Type: articol
+Author: Traian Dorz
+Highlight: şi te face puternic oricât ai fi de <em>slab</em>.
+Highlight: lui n-au alt mijloc de răzbunare faţă de unul mai <em>slab</em>.
+Highlight: iată că Dumnezeu a dat Harul Său altora, celor mai <em>slabi</em> şi mai smeriţi (
+
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: tot ce a încercat să facă, n-a fost decât un gest <em>slab</em> de apărare împotriva unei lovituri nedrepte şi neomeneşti
+Highlight: Ca un <em>slab</em> înlocuitor al acelei minunate Istorii care ar fi
+Highlight: în acest timp că pe când noi luptam din toate <em>slabele</em> noastre puteri să supravieţuim - mitropolia lupta
+
+Score: 12.749999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 9 - A doua judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Arad, <em>slab</em> \u015fi paralizat. Apoi Ilie Marini total distrus at\u00e2t trupe\u015fte c\u00e2t \u015fi suflete\u015fte. <em>Slab</em> ca un schelet",
-"vlag\u0103. Eram cu to\u0163ii ca ni\u015fte jum\u0103tate mor\u0163i. <em>Sl\u0103bisem</em> din nou p\u00e2n\u0103 la marginea de jos a puterii."
-]
-}
+Highlight: Arad, <em>slab</em> şi paralizat. Apoi Ilie Marini total distrus atât trupeşte cât şi sufleteşte. <em>Slab</em> ca un schelet
+Highlight: vlagă. Eram cu toţii ca nişte jumătate morţi. <em>Slăbisem</em> din nou până la marginea de jos a puterii.
 
-Score: 2.8333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 24 - Înaintea mai-marilor norodului
+Score: 12.749999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre îndrăzneală - curaj
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lucrurile pe c\u00e2t puteau, dar chiar \u015fi o c\u00e2t de <em>slab\u0103</em> ap\u0103rare a osta\u015filor din partea vreunui preot, \u00eei",
-"\u015fi am spus, - \u015ftie \u015fi cunoa\u015fte c\u0103 dup\u0103 puterile <em>slabe</em> pe care le-am avut \u015fi cu talentul pu\u0163in pe care",
-"din partea lor a unei rezolv\u0103ri adev\u0103rate, \u00eemi <em>sl\u0103bea</em> tot mai mult.  Spre"
-]
-}
+Highlight: frica-l face miel pe taur şi din tare face <em>slab</em>.
+Highlight: cine-ajută-un <em>slab</em> la greu,
+Highlight: atunci <em>slabul</em> ce-o să facă?  44
 
-Score: 2.8333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru cei r\u0103ma\u015fi, pentru cei bolnavi, pentru cei <em>slabi</em>, pentru cei ispiti\u0163i... \u015ei asta a \u0163inut p\u00e2n\u0103 ce",
-"Cu <em>slabele</em> noastre puteri, cu pu\u0163inul nostru talent \u015fi modestele",
-"fiecare clip\u0103. Durerile de cap, crizele de inim\u0103, <em>sl\u0103birea</em> nervilor - m\u0103 f\u0103ceau s\u0103 nu-mi mai doresc dec\u00e2t"
-]
-}
-
-Score: 2.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-". Un tinerel \u00eenalt \u015fi <em>slab</em>, despre care am aflat c\u0103 este din Poiana Sibiului",
-"Ce ne facem apoi cu acei p\u0103stori <em>slabi</em>, care cu sc\u0103deri v\u0103zute, vor fi pu\u015fi \u00een fruntea",
-"Alte dou\u0103 opera\u0163ii s-au ad\u0103ugat celorlalte <em>sl\u0103bind</em> \u015fi mai mult pu\u0163inul trup \u00een care \u00ee\u015fi purta marele"
-]
-}
-
-Score: 2.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am avut de la cine \u00eenv\u0103\u0163a, dar am fost prea <em>slabi</em> ucenici.",
-"Aprinsei lumina <em>slab\u0103</em> de pe noptier\u0103. - \u015ei m\u0103 uitai la el: m\u0103 privea cu",
-"s\u0103u, care ajunsese ca o umbr\u0103... Ciudat ce tare <em>sl\u0103bea</em> din zi \u00een zi. \u00cen"
-]
-}
-
-Score: 2.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenceputuri <em>slabe</em> \u015fi s\u0103r\u0103c\u0103cioase",
-"mei, eu mul\u0163umesc lui Dumnezeu c\u0103 pe mine un vas <em>slab</em> \u015fi nevrednic, m-a folosit Domnul \u00een lupta aceasta",
-"din urm\u0103, spun Sfintele Scripturi c\u0103 vor fi at\u00e2t <em>sl\u0103birea</em> credin\u0163ei adev\u0103rate c\u00e2t \u015fi \u00eenmul\u0163irea credin\u0163elor"
-]
-}
-
-Score: 2.8333333
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Bunul slujitor al Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cei ce ucideau pe nevinova\u0163i \u015fi jefuiau pe cei <em>slabi</em>, ",
-"p\u0103m\u00e2ntul altora \u015fi a le \u00eenc\u0103lca dreptul celor mai <em>slabi</em>. ",
-"cercetarea de sine nu o va <em>sl\u0103bi</em>,  iar"
-]
-}
-
-Score: 2.8333333
+Score: 12.749999
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Munteniei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dar \u015fi mai <em>slab</em> e ca o floare; ",
-"- omu-i <em>slab</em>, iar vorba scap\u0103 \u015fi prin zidul cel p\u0103zit. ",
-"\u015fi nu-\u0163i <em>sl\u0103bi</em>-alergarea c\u00e2t n-ai ajuns la \u0163el -"
-]
-}
+Highlight: dar şi mai <em>slab</em> e ca o floare;
+Highlight: - omu-i <em>slab</em>, iar vorba scapă şi prin zidul cel păzit.
+Highlight: şi nu-ţi <em>slăbi</em>-alergarea cât n-ai ajuns la ţel -
 
-Score: 2.8333333
+Score: 12.749999
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Frământările scăpării din robie
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: israelienilor. Sicriaşul de papură era un lucru mic şi <em>slab</em>. El era însă tare în planurile lui Dumnezeu. Sicriaşul
+Highlight: cum încearcă să-şi scape copilul printr-un sicriaş <em>slab</em>.
+Highlight: lipsă de lucruri mari şi tari. Numai credinţa cea <em>slabă</em> caută lucruri mari. Un om necredincios ar fi râs
+
+Score: 12.749999
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"am venit \u00een mijlocul vostru - le spune el - eram <em>slab</em>, fricos \u015fi plin de cutremur (cum este orice \u00eencep\u0103tor)",
-"\u00eentr-o biseric\u0103 \u00een care slujise mai \u00eenainte un preot <em>slab</em>. ",
-"S\u0103 nu \u00eempu\u0163in\u0103m, s\u0103 nu <em>sl\u0103bim</em>, s\u0103 nu dezbin\u0103m cumva vreunul din sufletele sau"
-]
-}
+Highlight: am venit în mijlocul vostru - le spune el - eram <em>slab</em>, fricos şi plin de cutremur (cum este orice începător)
+Highlight: într-o biserică în care slujise mai înainte un preot <em>slab</em>.
+Highlight: Să nu împuţinăm, să nu <em>slăbim</em>, să nu dezbinăm cumva vreunul din sufletele sau
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cineva dintre noi c\u0103 m\u00e2ncarea e prea pu\u0163in\u0103 \u015fi prea <em>slab\u0103</em>. - Asta \u00eenc\u0103 este prea bun\u0103 pentru voi. Nici asta",
-"M\u00e2ncarea parc\u0103 devenise tot mai pu\u0163in\u0103, mai <em>slab\u0103</em> \u015fi mai proast\u0103. Peste zi numai arpaca\u015f, diminea\u0163a"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iar pe de alt\u0103 parte - al\u0163ii mai <em>slabi</em>, vor fi atra\u015fi de libertatea \u015fi propaganda sectar\u0103",
-"dus - privesc \u00een pace \u00eenapoia mea. Cu puterile <em>slabe</em> pe care le-am avut \u015fi cu talentul pu\u0163in care mi"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 10 - Uşor e jugul lui Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"puternic\u0103 dar s\u0103rac\u0103, nici memoria mea atent\u0103 dar <em>slab\u0103</em> nu-mi puteau fi de-ajuns pentru tot ce trebuia s\u0103",
-"Pentru pu\u0163ina noastr\u0103 r\u00e2vn\u0103 fa\u0163\u0103 de Domnul \u015fi pentru <em>slaba</em> noastr\u0103 dragoste fa\u0163\u0103 de fra\u0163i. "
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 15 - Micii contemporani ai marilor oameni
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu cuno\u015ftea iertarea, s-a ab\u0103tut asupra noastr\u0103, <em>slabii</em>, pu\u0163inii \u015fi neputincio\u015fii urma\u015fi ai p\u0103rintelui",
-"Titus se ascund de noi \u015fi fac tot felul de fapte <em>slabe</em>, compromi\u0163\u00e2nd numele Oastei \u015fi al p\u0103rintelui. "
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 17 - Mereu prin ape tulburi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noaptea... Era tot mai frig \u015fi el striga tot mai <em>slab</em>. ",
-"aceea \u015fi ata\u015famentul fra\u0163ilor din Sibiu era mult mai <em>slab</em> fa\u0163\u0103 de p\u0103rintele Iosif dec\u00e2t al celorlal\u0163i din"
-]
-}
+Highlight: noaptea... Era tot mai frig şi el striga tot mai <em>slab</em>.
+Highlight: aceea şi ataşamentul fraţilor din Sibiu era mult mai <em>slab</em> faţă de părintele Iosif decât al celorlalţi din
 
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"plugului \u0163inea baba. Avea peste 50 de ani dar nu era <em>slab</em>. Toat\u0103 vara umbla f\u0103r\u0103 c\u0103ma\u015f\u0103 \u015fi descul\u0163. Avea o",
-"ca noi, soarele cald, p\u0103m\u00e2ntul uscat, noi to\u0163i <em>slabi</em> \u015fi bolnavi, de-abia \u0163in\u00e2ndu-ne pe picioare. Am \u00eentrebat"
-]
-}
+Highlight: oare merge după mine, după un om mic şi <em>slab</em>, o armată întreagă de 100 de mii de oameni?
+Highlight: ca în schimb să pot avea aer pentru pieptul meu <em>slab</em> şi bolnav.
 
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Hrana era foarte <em>slab\u0103</em> \u015fi aici. R\u0103bdam cumplit de foame ca \u015fi la Gherla",
-"A\u015fa au dorit de la \u00eenceput. Dar c\u00e2t\u0103 vreme erau <em>slabi</em>, erau nevoi\u0163i s\u0103 se supun\u0103, fiindc\u0103 n-aveau cum"
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 8 - A treia Judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cu lips\u0103 de un pl\u0103m\u00e2n \u015fi cu pieptul <em>slab</em> \u015fi bolnav, de 2 luni urc mereu 85 de trepte, a\u015fa",
-"despre Lucrarea Ta \u00een care ai folosit un vas umil \u015fi <em>slab</em>. F\u0103 Doamne ce vei \u015fti \u015fi vei afla Tu de bine pentru"
-]
-}
+Highlight: Cu lipsă de un plămân şi cu pieptul <em>slab</em> şi bolnav, de 2 luni urc mereu 85 de trepte, aşa
+Highlight: despre Lucrarea Ta în care ai folosit un vas umil şi <em>slab</em>. Fă Doamne ce vei şti şi vei afla Tu de bine pentru
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 3 - Cumplitul şi neiertatul păcat
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre dreptate
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"puternice ale oceanelor ni\u015fte stavile din cel mai <em>slab</em> \u015fi mai mi\u015fc\u0103tor material care este nisipul. Dar",
-"dealului din fa\u0163\u0103, unde nu se mai vedea nimic dec\u00e2t o <em>slab\u0103</em> zare de drum ie\u015find din ape. Soarele apusese de"
-]
-}
+Highlight: cât de mic şi <em>slab</em> eşti, nu vei fi învins.
+Highlight: şi la nici un <em>slab</em> de minte tu nu-i face nedreptate -
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Crişanei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"n-ar fi fratele S\u0103nducu, \u015fi el s\u0103rmanul at\u00e2t de <em>slab</em> \u015fi bolnav, nu \u015ftiu ce a\u015f face. ",
-"de simpli pe at\u00e2t de ambi\u0163io\u015fi... \u015fi pe c\u00e2t de <em>slabi</em> duhovnice\u015fte, pe at\u00e2t de \u00eend\u0103r\u0103tnici fire\u015fte. \u00centr-un"
-]
-}
+Highlight: va fi-nvins, căci totdeauna omu-acesta este <em>slab</em>.
+Highlight: om <em>slab</em> - o muncă bună
 
-Score: 2.6666665
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Maramureşului
+Type: articol
+Author: Traian Dorz
+Highlight: 63 - Când eşti <em>slab</em>, întotdeauna de duşman să te fereşti
+Highlight: dar se rupe cel mai iute căci e putrezit şi <em>slab</em>.
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Dumnezeul Îndrăznelii
+Type: poezie
+Author: Traian Dorz
+Highlight: când mi-nfrânge duhul <em>slab</em>.
+Highlight: Doamne, duhul meu cel <em>slab</em>.
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Frica
+Type: articol
+Author: Traian Dorz
+Highlight: orice suflet ce se lasă înfricat, e-atât de <em>slab</em>
+Highlight: 10 - Dacă cel <em>slab</em> îndrăzneşte şi s-arată curajos
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Isus ştia de la început...
+Type: articol
+Author: Traian Dorz
+Highlight: Ştia care fir va fi <em>slab</em> şi care va fi bun,
+Highlight: şi ţipătul <em>slab</em> al nevrednicei noastre rugăciuni, cerem şi aşteptăm
+
+Score: 12.666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 15-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: ajunge să fie folosit la ceva, lutul este cel mai <em>slab</em> şi cere cea mai multă îngrijire pentru a putea fi
+Highlight: trupesc, acest rău nu numai că este trecător, mult mai <em>slab</em> şi mai trecător decum vă închipuiţi voi şi decât
+
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: legătura cu omul şi omul cu El. Muncind din greu, omul <em>slab</em> să ceară ajutorul lui Dumnezeu, - iar primindu-l
+Highlight: grija unui frate mai mare. Avea şi o vedere mai <em>slabă</em>. Dar avea o minte ascuţită - şi învăţa bine. După
+Highlight: vedea faţa, fiindcă nu era luminată decât de o rază <em>slabă</em> care venea pe un geam de sus dintr-o altă cameră
+Highlight: abaterile au început a se înmulţi - şi sufletele mai <em>slabe</em> să se clatine.
+Highlight: În urma acestor stări de lucruri adunările <em>slăbesc</em> duhovniceşte, multe suflete cad înapoi în lume
+Highlight: se luptau între ele, - “mijlocul” se împuţina şi <em>slăbea</em>. Înţelesul adevărat se pierdea aproape de tot.
+
+Score: 9.857142
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul în cale un vecin care văzându-mă atât de <em>slab</em> şi neras, abia putu să mă recunoască.
+Highlight: Dar acum <em>slăbisem</em> şi simţeam că nu mai sunt în stare să mai rabd
+Highlight: repetat. În schimb au fost altele. În aprilie <em>slăbisem</em> atât de mult de foame şi de frig, încât cred că
+Highlight: cu tot felul de privelişti şi gânduri spre a-mi <em>slăbi</em> credinţa şi a-mi pierde răbdarea ca să cârtesc împotriva
+Highlight: şi de păianjeni, prin care abia pătrundea o zare <em>slabă</em> şi obosită de la un bec amărât de pe coridor.
+Highlight: şi aici. Mâncarea se dădea atât de puţină şi de <em>slabă</em> încât cu toţii devenisem nişte schelete.
+
+Score: 9.857142
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: veţi mai fi nici puternic, nici sus. Veţi ajunge <em>slab</em>, bolnav şi jos. Şi atunci când veţi aştepta moartea
+Highlight: Oamenii <em>slabi</em> trupeşte - sunt de obicei nişte fricoşi şi retraşi ca şi animalele <em>slabe</em>.  În
+Highlight: al oamenilor cei <em>slabi</em>
+Highlight: cinci ani abia reuşisem să ne cumpărăm o capră <em>slabă</em> care să ne dea câte puţin lapte în casă, neavând
+Highlight: iarăşi ne-a ajutat şi după cei câţiva ani de capre <em>slabe</em>, au venit şi anii să avem o vacă albă şi frumoasă
+
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: tot ce îmi aduseseră. Se mirau cum de sunt atât de <em>slab</em> când ei mi-au adus zilnic atâta mâncare... aproape
+Highlight: Dar acum <em>slăbisem</em>. M-am simţit că nu mai sunt în stare să mai rabd
+Highlight: cu lipsa de mâncare, frigul era şi el la fel. <em>Slăbisem</em> în aşa măsură încât în aprilie eram de nerecunoscut
+Highlight: şi de păianjeni prin care abia străbătea o zare <em>slabă</em> şi obosită de la un bec amărât de pe coridor.
+Highlight: şi aici. Mâncarea era atât de puţină şi atât de <em>slabă</em> încât cu toţii devenisem ca nişte schelete.
+Highlight: Atunci au şi trecut din Oastea Domnului două suflete <em>slabe</em> şi bolnave. Unul Creţu Ioan la penticostali şi altul
+
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: Este în stare să se prefacă ani de zile (când este <em>slab</em>) până când i se pare că a ajuns destul de tare.
+Highlight: mâinile cu care merg înaintea Lui! Dar teama de a nu <em>slăbi</em> în faţa anchetei şi a nu spune cumva într-un moment
+Highlight: dureroase, despre unii fraţi de ai noştri, despre <em>slaba</em> sau nevrednica mărturie adusă de ei pentru Domnul
+Highlight: Dar când a văzut purtarea <em>slabă</em> şi vorbele de nimic, - ori purtarea şi vorbele sectare
+Highlight: Dar este harul cu parcă cea mai <em>slabă</em> nădejde, cu parcă cea mai amară experienţă, cu parcă
+Highlight: Când erau puţini şi <em>slabi</em>, întrebuinţau vicleşugul şi prefăcătoria. Când
+
+Score: 9.833333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: şi acum plugul de lemn ar fi <em>slab</em> agricultor şi ar avea o şi mai <em>slabă</em> recoltă, tot asemenea succes va
+Highlight: cumplitele vicii (patimi, cum e şi alcoolul) care <em>slăbesc</em> şi storc vlaga trupească şi sufletească a poporului
+Highlight: Domnului. Noi ne apărăm numai ca să întărim pe cei <em>slabi</em>, pe cei ce se clatină în faţa atacurilor... În
+Highlight: ce l-am făcut... Să ne strângem rândurile, să nu <em>slăbim</em> cu râvna şi lupta, pentru ca să putem arăta că
+
+Score: 9.833333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: mai revedea niciodată pe pământ. El era atât de <em>slab</em>, eu atât de bolnav cu inima...
+Highlight: vestim pe Tine Isuse Doamne - dar noi suntem atât de <em>slabi</em> şi atât de puţini. Ai milă de noi de toţi şi lucrează
+Highlight: Hrana era şi mai <em>slabă</em> şi mai puţină. Dar pe lângă garduri începu să înverzească
+Highlight: inimile chinuite ale multora credinţa frumoasă dar <em>slabă</em>, se prefăcu în curând în descurajare şi în îndoială
+Highlight: ele? Şi aici se dă mâncare tot foarte puţină şi <em>slabă</em>, faţă de muncile care se fac şi de normele care
+
+Score: 9.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: tot mai tare pe sufletul dar şi pe trupul cel mai <em>slab</em> dintre noi. Părintele scădea mereu de unde putea
+Highlight: de el, umblă ca să-l piardă. Şi pe cei puţini şi <em>slabi</em> care mai lucrează pentru Hristos, - să-i nimicească
+Highlight: Să fie şi această <em>slabă</em>, dar cutremurătoare mărturie pe care o depun  acum
+Highlight: Iată chiar şi noi, eu şi voi, ce vase puţine, <em>slabe</em> şi neputincioase suntem, pe lângă ei cei mulţi,
+
+Score: 9.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: Cuvânt al lui Dumnezeu - chiar şi asta ne arată ce <em>slab</em> nivel duhovnicesc avem. În loc să fim pătrunşi cu
+Highlight: au durat astfel. Mâncarea era foarte puţină şi <em>slabă</em>. Numai celelalte erau tot aşa de multe şi de grele
+Highlight: împuţinaseră efectivul lagărului, iar mâncarea <em>slăbi</em> şi mai mult. Acum crescuse iarba pe lângă garduri
+Highlight: puţin şi să-şi poată umplea stomacul cu ceva. <em>Slăbisem</em>, încât când era soare şi stăteam proptiţi pe pereţii
+
+Score: 9.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din alte diferite părţi
+Type: articol
+Author: Traian Dorz
+Highlight: dar ce-ţi poate omul păcătos şi <em>slab</em>?
+Highlight: şi iertându-i cele <em>slabe</em>,  mai
+Highlight: 188 - Unde-i conştiinţa <em>slabă</em> trebuie-o dreptate tare
+Highlight: şi îngâmfatul cel puternic la <em>slabul</em> cel smerit mereu
+
+Score: 9.8
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 19-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: ştie mai bine decât oricine cât de tare sau cât de <em>slab</em> este în ce priveşte virtutea sau păcatul, binele
+Highlight: importanţa care li se dă şi dacă sunt caractere mai <em>slabe</em>, încep să se îngâmfe, şi în curând nu numai că nu
+Highlight: Dar cât de <em>slabă</em> este firea noastră omenească în privinţa asta, arată
+Highlight: putere deajuns, spre a avea îndeajuns pentru cei <em>slabi</em> pe care trebuie să-i ridice şi să-i ajute. Să i
+
+Score: 9.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
+Title: Cap. 10 - Pe drumul Crucii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru ea. La sf\u00e2r\u015fitul c\u0103l\u0103toriei ei, p\u0103s\u0103rica cea <em>slab\u0103</em> care a n\u0103d\u0103jduit \u00een ea f\u0103r\u0103 s\u0103 o cunoasc\u0103 \u015fi a crezut",
-"Nici eu nu l-am putut dec\u00e2t \u00eentr-o a\u015fa de <em>slab\u0103</em> m\u0103sur\u0103, de\u015fi cugetul meu m\u0103rturise\u015fte c\u0103 am dorit"
-]
-}
+Highlight: . Un tinerel înalt şi <em>slab</em>, despre care am aflat că este din Poiana Sibiului
+Highlight: Alte două operaţii s-au adăugat celorlalte <em>slăbind</em> şi mai mult puţinul trup în care îşi purta marele
+Highlight: Ce ne facem apoi cu acei păstori <em>slabi</em>, care cu scăderi văzute, vor fi puşi în fruntea
 
-Score: 2.6666665
+Score: 9.75
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" a c\u0103utat a-i fi un <em>slab</em> \u00eenlocuitor, duc\u00e2nd mai departe, a\u015fa cum s-a putut",
-"\u00eengrozi pe fra\u0163i \u015fi pentru ca nu cumva cei mai <em>slabi</em> s\u0103 se lepede..."
-]
-}
+Highlight: mei, eu mulţumesc lui Dumnezeu că pe mine un vas <em>slab</em> şi nevrednic, m-a folosit Domnul în lupta aceasta
+Highlight: din urmă, spun Sfintele Scripturi că vor fi atât <em>slăbirea</em> credinţei adevărate cât şi înmulţirea credinţelor
+Highlight: începuturi <em>slabe</em> şi sărăcăcioase
 
-Score: 2.6666665
+Score: 9.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
+Title: Cap. 6 - Alte amare adevăruri
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vor citi poeziile din carte. Aceasta este o not\u0103 <em>slab\u0103</em> pentru cel ce le recit\u0103. Chiar nici at\u00e2ta dragoste",
-"astfel de fiecare dat\u0103 rostesc aceea\u015fi predicu\u0163\u0103 <em>slab\u0103</em>, pe care la unii am auzit-o de ani de zile. Ace\u015ftia"
-]
-}
+Highlight: tare, tot sus. Va veni vremea să fiţi şi bolnav şi <em>slab</em> şi jos. Veţi vedea atunci câtă nevoie o să aveţi
+Highlight: erau ei greoi şi neobişnuiţi cu de astea, uşiţa <em>slabă</em> s-a rupt iar pragul putred s-a sfărâmat sub picioarele
+Highlight: mâncare scăzută, după care cei mai obosiţi şi mai <em>slabi</em> merg la culcare pentru o odihnă de 3-4 ore până
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 27 - Întristarea cea binecuvântată
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Cine intră pe uşă este păstorul...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"r\u00e2nduial\u0103. Mai sunt \u00eenc\u0103 \u00eentre tineri \u015fi elemente mai <em>slabe</em> \u015fi uneori se mai petrec \u015fi lucruri fire\u015fti, lume\u015fti",
-"at\u00e2t de mult timp \u015fi starea lor s\u0103 fie at\u00e2t de <em>slab\u0103</em>. Moise de la Arad, Neculai de la Gala\u0163i, Viorel"
-]
-}
+Highlight: cine se arată tare, faţă de cel <em>slab</em> şi mic
+Highlight: sluji Domnului cu grijă devotată faţă de cele mai <em>slabe</em> oi şi gata să faci tot ce poţi pentru ele,  vei
+Highlight: Fiul meu, fii totdeauna bun cu cei mai <em>slabi</em> şi mici la
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 31 - Şi acum încheierea
+Score: 9.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre căsnicie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici un fel. Merg lini\u015ftit \u00een ve\u015fnicie c\u0103 dup\u0103 <em>slabele</em> mele puteri am tras \u015fi eu ca bietul Vasile Roait\u0103",
-"puterilor mele iat\u0103, \u00een loc de o apropiere c\u00e2t mai <em>slab\u0103</em> a acestor eforturi at\u00e2t de dezinteresate din partea"
-]
-}
+Highlight: 111 - Ajută-ţi soţul <em>slab</em>, ca-n urmă să nu ajungi
+Highlight: chiar şi cei <em>slabi</em>, uniţi răzbat!  -
+Highlight: doi <em>slabi</em>, uniţi, pot fi mai tari ca unul singur tare;  de-aceea
 
-Score: 2.6666665
+Score: 9.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre mulţumire
+Type: articol
+Author: Traian Dorz
+Highlight: care-l apără pe <em>slab</em>,
+Highlight: toţi cei buni şi <em>slabi</em> din ţară
+Highlight: Voi cei <em>slabi</em> şi buni din
+
+Score: 9.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Banatului
+Type: articol
+Author: Traian Dorz
+Highlight: 175 - Cine se învaţă singur are-un <em>slab</em> învăţător
+Highlight: des greşeşte - mintea <em>slabă</em>.  105
+Highlight: 146 - Vaca <em>slabă</em> toată cioarda de ruşine-o lasă -
+
+Score: 9.75
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Moise un pedagog spre Hristos
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: averile. Dimpotrivă, Domnul Isus arată preţul cel <em>slab</em> ce-l au averile pe care le rod moliile şi le fură
+Highlight: prea <em>slabi</em> să li se vorbească despre bucuriile şi comorile vieţii celei veşnice. Erau prea <em>slabi</em> ca să
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Petru iar s-a lepădat
+Type: articol
+Author: Traian Dorz
+Highlight: Chiar când luminătorul cel mai <em>slab</em> se întunecă, de peste întinderile lui se pierde
+Highlight: creşteri. Cu multe amăgiri şi cu multe umbre. Lumină <em>slabă</em>, şi neputincioasă, moartă,  -
+Highlight: ce şi-a pierdut şi puţina lumină a unei credinţe <em>slabe</em>!
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Petru stătea şi el cu ei...
+Type: articol
+Author: Traian Dorz
+Highlight: nevinovatului Tău cel mai <em>slab</em>.
+Highlight: Binecuvântat să fii Tu care deşi am fost <em>slabi</em> şi ne-am uitat uneori, în ceasurile grelelor ispite
+Highlight: Ajută-ne Doamne Isuse să nu mai fim <em>slabi</em>.
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: Vinul cel bun
+Type: articol
+Author: Traian Dorz
+Highlight:  <em>slab</em> al lucrărilor <em>slabe</em>, începătoare şi lipsite
+Highlight: omenirea cu învăţăturile <em>slabe</em> şi sărăcăcioase,  cu
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: ... Crezi tu?
+Type: articol
+Author: Traian Dorz
+Highlight: când cel mai <em>slab</em> vrăjmaş te face aşa de uşor să te lepezi,
+Highlight: pe tine însuţi, atunci ai vedea ce puţină şi ce <em>slabă</em> îţi este credinţa ta, dovada faptelor tale (
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... I-au adus o femeie prinsă
+Type: articol
+Author: Traian Dorz
+Highlight: şi în sfârşit, reuşiseră să prindă pe cel mai <em>slab</em> dintre cei doi.
+Highlight: neuitând niciodată să-i aperi pe cei căzuţi şi <em>slabi</em>, Tu eşti gata să răspunzi oricând celui trufaş şi
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Acum nu le puteţi purta
+Type: articol
+Author: Traian Dorz
+Highlight: Nici un părinte înţelept nu-şi încearcă pe fiul <em>slab</em> cu poveri sub care s-ar prăbuşi.
+Highlight: şi pun peste umerii şi peste inimile <em>slabe</em> poveri sub care cad, sau pe care le aruncă cu dispreţ
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Adevărul şi mărturisirea
+Type: articol
+Author: Traian Dorz
+Highlight: sau dacă acela este încă tot copil în purtări, tot <em>slab</em> în credinţă şi schimbător în hotărâri şi în atitudini
+Highlight: părinţii şi fraţii lui nu pot da decât mărturii <em>slabe</em> şi triste că a fost şi el cândva cu ei, dar acum
+
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 13 - Frumosul tineret creştin
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care m\u0103 mir \u015fi acum, c\u0103ci numai eu m\u0103 \u015ftiu ce fire <em>slab\u0103</em> aveam \u00een mine. ",
-"pia\u0163\u0103, \u00een care \u00eel suiam aproape pe sus. Era at\u00e2t de <em>slab</em> \u015fi de pu\u0163intel la trup \u00eenc\u00e2t cu u\u015furin\u0163\u0103 \u00eel puteam"
-]
-}
+Highlight: piaţă, în care îl suiam aproape pe sus. Era atât de <em>slab</em> şi de puţintel la trup încât cu uşurinţă îl puteam
+Highlight: care mă mir şi acum, căci numai eu mă ştiu ce fire <em>slabă</em> aveam în mine.  Întors
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 15 - Un An Nou Fericit
+Type: articol
+Author: Traian Dorz
+Highlight: n-ar fi fratele Sănducu, şi el sărmanul atât de <em>slab</em> şi bolnav, nu ştiu ce aş face.
+Highlight: de simpli pe atât de ambiţioşi... şi pe cât de <em>slabi</em> duhovniceşte, pe atât de îndărătnici fireşte. Într-un
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 16 - Leacul dureroasei sfâşieri
+Type: articol
+Author: Traian Dorz
+Highlight: face o dezbinare a fost de-ajuns un singur suflet <em>slab</em> care să se lase ispitit, - dar pentru a reface ceea
+Highlight: de Răsărit. Au fost de-ajuns doar doi episcopi <em>slabi</em> care să se lase biruiţi de ispită, cel de la Roma
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 18 - Frumosul an 1930
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul va voi să Se mai folosească de mine - un vas <em>slab</em> şi păcătos - voi putea trăi numai pentru lucrul
+Highlight: ...şi dacă s-au găsit multe suflete <em>slabe</em> care s-au grăbit să se lepede de binefăcătorul lor
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 2 - Grâul cel care moare
+Type: articol
+Author: Traian Dorz
+Highlight: în timpul bolii tânărul <em>slăbise</em> mult. Nepoata preotului Cotişel văzându-l <em>slab</em> şi bolnăvicios, s-a răzgândit
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight:  a căutat a-i fi un <em>slab</em> înlocuitor, ducând mai departe, aşa cum s-a putut
+Highlight: îngrozi pe fraţi şi pentru ca nu cumva cei mai <em>slabi</em> să se lepede...
+
+Score: 9.666667
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 23 - Şi ultimul 2
+Type: articol
+Author: Traian Dorz
+Highlight: plugului ţinea baba. Avea peste 50 de ani dar nu era <em>slab</em>. Toată vara umbla fără cămaşă şi desculţ. Avea o
+Highlight: ca noi, soarele cald, pământul uscat, noi toţi <em>slabi</em> şi bolnavi, de-abia ţinându-ne pe picioare. Am întrebat
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 3 - Cumplitul şi neiertatul păcat
+Type: articol
+Author: Traian Dorz
+Highlight: puternice ale oceanelor nişte stavile din cel mai <em>slab</em> şi mai mişcător material care este nisipul. Dar
+Highlight: dealului din faţă, unde nu se mai vedea nimic decât o <em>slabă</em> zare de drum ieşind din ape. Soarele apusese de
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 3 - Începutul chemării
+Type: articol
+Author: Traian Dorz
+Highlight: rezemat pe prieteni, dar curând am aflat cât de <em>slab</em> şi de nestatornic este şi acest reazem.
+Highlight: de neîndurat. Cei care îl iubeau erau mulţi dar <em>slabi</em>, pe când cei care îl urau deşi erau puţini, erau
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: De ce mai am nevoie?
+Type: articol
+Author: Traian Dorz
+Highlight: Ori este acum scutul credinţei mele mai <em>slab</em>?
+Highlight: 13 - Prin două locuri <em>slabe</em> îţi poate fi străpuns sufletul tău: prin cel al
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre păcat
+Type: articol
+Author: Traian Dorz
+Highlight: c-amândouă sunt dovada unui cuget rău şi <em>slab</em>,
+Highlight: ştiută-i orice faptă - şi cea mai <em>slabă</em> chiar!
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre rău
+Type: articol
+Author: Traian Dorz
+Highlight: omul cade în ispita pentru care e mai <em>slab</em>.
+Highlight: 43 - Vulpea cât de <em>slabă</em>-o vezi pocăită
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre virtute
+Type: articol
+Author: Traian Dorz
+Highlight: numai bunele ei sfaturi - încă au un <em>slab</em> temei,
+Highlight: şi nou - din toate cele ce vechi şi <em>slabe</em> sunt.  Acela
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Diavolul pusese în inima lui Iuda gândul
+Type: articol
+Author: Traian Dorz
+Highlight: prin partea aceasta, omul este totdeauna cel mai <em>slab</em>. Şi aci cedează cel mai uşor.
+Highlight: Numai Tu ştii Doamne cât de <em>slabă</em> este inima noastră, pentru că Tu ai făcut-o să fie
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Doar n-aţi vrea şi voi...
+Type: articol
+Author: Traian Dorz
+Highlight: şi te face puternic oricât ai fi de <em>slab</em>.
+Highlight: oricât de <em>slabi</em> şi de dispreţuiţi vor fi fost ei înainte de a fi
+
+Score: 9.666667
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Fricoşii să plece acasă
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: plece şi el acasă. Şi mai ales: Cine este fricos şi <em>slab</em> la inimă, să plece şi să se întoarcă acasă, ca să
+Highlight: căuta nici în luptele cele duhovniceşti! Ei sunt o <em>slăbire</em> şi o primejdie pentru luptele Domnului. Din cei
+
+Score: 9.666667
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
+Type: articol
+Author: Traian Dorz
+Highlight: cărei ape le-a adunat El între nişte hotare de nisip <em>slab</em> şi mişcător.
+Highlight: rabde prostia celor proşti, slăbiciunile celor <em>slabi</em>, neputinţele celor neputincioşi,
+
+Score: 9.666667
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
+Type: articol
+Author: Traian Dorz
+Highlight: Dar când ajungi nenorocit, când ajungi bătrân şi <em>slab</em>, când eşti nefericit şi pe pragul pierzării, nimeni
+Highlight: care ne poţi face să fim tari în credinţă şi să nu <em>slăbim</em> în ea niciodată. Ajută-ne ca tot ce facem să fie
+
+Score: 9.666667
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
+Type: articol
+Author: Traian Dorz
+Highlight: preotul - totdeauna satisfăcut. Profetul - totdeauna <em>slab</em>, preotul - totdeauna gras, fiindcă primul privea
+Highlight: dar în acelaşi timp el n-ar avea milă de cei mai <em>slabi</em> ca el, atunci ar fi de o mie de ori mai vinovat
+
+Score: 9.666667
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)
+Type: articol
+Author: Traian Dorz
+Highlight: folosul celuilalt. Mai ales când acela este mai <em>slab</em> sau mai înapoiat...
+Highlight: tari, suntem datori să răbdăm slăbiciunile celor <em>slabi</em>, şi să nu ne plăcem nouă înşine. 2
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Mie nu-mi vorbeşti?
+Type: articol
+Author: Traian Dorz
+Highlight: către cel nefericit. Şi cu puterea sa către cel <em>slab</em>.
+Highlight: neputincioşi se laudă cu talentele lor. Şi numai cei <em>slabi</em> se laudă cu puterea lor. Cei înţelepţi n-au nevoie
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Mărginire şi nemărginire
+Type: articol
+Author: Traian Dorz
+Highlight: şi trecător, este nespus de puţin, de mic şi de <em>slab</em>.
+Highlight: vine din comoditate. Din liniştea lumească vine <em>slăbirea</em> râvnei.
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Nu pe braţul meu
+Type: poezie
+Author: Traian Dorz
+Highlight: braţul meu e-aşa de <em>slab</em>
+Highlight: Nici pe firea mea cea <em>slabă</em>
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Nu pe braţul meu
+Type: poezie
+Author: Traian Dorz
+Highlight: braţul meu e-aşa de <em>slab</em>
+Highlight: Nici pe firea mea cea <em>slabă</em>
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Nu s-a mai auzit
+Type: articol
+Author: Traian Dorz
+Highlight: Cine oare i-ar mai fi putut da unui om atât de <em>slab</em>, o aşa putere? Şi cine l-ar fi putut înălţa atât
+Highlight: pentru ca el fiind biruit tocmai de noi, cei atât de <em>slabi</em>, pe care el adesea ne-a învins atât de uşor şi a
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 82
+Type: poezie
+Author: Traian Dorz
+Highlight: 3-Faceţi celui <em>slab</em> dreptate,
+Highlight: oameni <em>slabi</em> de pe pământ.
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Să vii să lupţi
+Type: poezie
+Author: Traian Dorz
+Highlight: când firea-i tare iar eu <em>slab</em>.
+Highlight: dar de puterea mea cea <em>slabă</em>
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Vânt puternic şi marea întărâtată
+Type: articol
+Author: Traian Dorz
+Highlight: căci atunci şi eu sunt mai <em>slab</em>.
+Highlight: Şi noi suntem mai <em>slabi</em>.  Şi
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Văd pe Isus umblând pe mare
+Type: articol
+Author: Traian Dorz
+Highlight: biruitor, niciodată n-a fost biruit chiar dacă a părut <em>slab</em>.
+Highlight: iar noi mai <em>slabi</em>.
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: În ceasul când ispita-i
+Type: poezie
+Author: Traian Dorz
+Highlight: iar eu sunt <em>slab</em> şi stau cu
+Highlight: ci-ndreaptă-mi <em>slabii</em> paşi pe
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: În ceasul când ispita-i
+Type: poezie
+Author: Traian Dorz
+Highlight: iar eu sunt <em>slab</em> şi stau cu
+Highlight: ci-ndreaptă-mi <em>slabii</em> paşi pe
+
+Score: 9.666667
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: În faţa Mării Roşii
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: operaţiei noi nu putem garanta fiindcă eşti prea <em>slab</em>!...
+Highlight: De altcum, <em>slabul</em> examen de credinţă al israelienilor de la Marea
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Învăţătură şi deprinderi
+Type: articol
+Author: Traian Dorz
+Highlight: o lucrare puternică, Îşi va alege vasul cel mai <em>slab</em>.
+Highlight: despre ei înşişi, că sunt cei mai mici şi cei mai <em>slabi</em>.
 

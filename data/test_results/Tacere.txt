@@ -1,1465 +1,988 @@
-+---------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                               | Author      | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Despre tăcere                                                       | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cinstim în tăcere                                                   | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
-| Vorbirea şi tăcerea                                                 | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Peste Golgota-i tăcere...                                           | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | poezie  |
-| Tăcerea şi cuvintele mele...                                        | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| La Masa Asta a Tăcerii                                              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | poezie  |
-| Peste Golgota-i tăcere...                                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Cap. 13 - După luarea lui Moisi...                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Libertatea Cuvântului Sfânt                                         | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
-| Singur - în a lui carte-a                                           | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Din părţile Munteniei                                               | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 11 - Răscrucea Isus                                            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Mama lui Isus a zis                                                 | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Din părţile Transilvaniei                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica Sfintei Învieri                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - Al şaptelea foc                                            | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 8 - A treia Judecată                                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                     | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Darurile lui Dumnezeu                                               | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
-| Ascultarea-i Răsăritul                                              | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | poezie  |
-| Unitatea şi înţelepciunea Duhului                                   | Traian Dorz | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
-| Isus le-a spus pe faţă!                                             | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| Ce veţi cere în Numele Meu...                                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Când au auzit aceste cuvinte...                                     | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Aşa Isuse-aş vrea aşa - 1                                           | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Nemurirea                                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | poezie  |
-| Din părţile Dobrogei                                                | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Bucovinei                                               | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Maramureşului                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Banatului                                               | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Ascultarea                                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 10 - Va veni un altul...                                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Al doilea 2-4-2                                           | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                            | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 10 - Pe drumul Crucii                                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                       | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Toate lucrează spre bine                                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Meditaţie despre Jertfă                                             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Cap. 19 - Omul trimes de Dumnezeu                                   | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                     | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Mă doare-adânc                                                      | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
-| Isuse izbăveşte-mi                                                  | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
-| În clipele de aur                                                   | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
-| S-au dus demult                                                     | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
-| E ceasul sfânt                                                      | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Înţelegeţi voi ce v-am făcut Eu?                                    | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... Nici un răspuns                                                 | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Mormântul meu...                                                    | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Iubirea înţelegătoare                                               | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
-| Răspunsurile Domnului                                               | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
-| Isuse, izbăveşte-mi                                                 | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | poezie  |
-| În clipele de aur                                                   | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | poezie  |
-| Legea lui Hristos                                                   | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
-| Înşelătorii şi câştigul                                             | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
-| Cuvântul şi Duhul                                                   | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Învinuirea şi nevinovăţia                                           | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
-| Păcatul uitării datoriilor                                          | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
-| Tu ai văzut!                                                        | Traian Dorz | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | poezie  |
-| Când eşti dat în mâna...                                            | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
-| Şi Ioan a zis: nu sunt                                              | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Pentru că te-am văzut crezi?                                        | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| O, paşii Tăi prin ceruri                                            | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| Iudeii Îl căutau în timpul Praznicului                              | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Chemaţi cântările                                                   | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Clopoţelul cel tainic de aur                                        | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Atunci vom fi fericiţi amândoi                                      | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Fericirea de a fi cu Domnul                                         | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Ei l-au ocărât                                                      | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Când eşti dat în mâna...                                            | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Ce suntem noi Doamne?                                               | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Tată, ce-am putea?                                                  | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Adevăr                                                              | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Noi fericim acum                                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| S-au dus demult                                                     | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Chemaţi cântările                                                   | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Şi nimeni din voi nu Mă întreabă...                                 | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| Nu ştim ce vrea să spună                                            | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| E ceasul sfânt                                                      | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Aşa Isuse-aş vrea aşa - 2                                           | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Tu ai văzut!                                                        | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Scrisoare despre jertfă...                                          | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Acolo unde-afla-voi odihnire...                                     | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Despre răbdare                                                      | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Olteniei                                                | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din alte diferite părţi                                             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cântarea                                                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Ce suntem noi Doamne?                                               | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Când eşti dat în mâna...                                            | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Mâine când va fi                                                    | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
-| Va fi-un amurg                                                      | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
-| Mă doare-adânc                                                      | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
-| Isuse izbăveşte-mi                                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
-| În clipele de aur                                                   | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români) | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-+---------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
++----------------------------------------------------------------------+---------------------------------------------+-------------+-------------------------------+------------------------------+---------+
+| Titlu                                                                | Occurrences                                 | Author      | Tip                           | Carte                        | Volum   |
++----------------------------------------------------------------------+---------------------------------------------+-------------+-------------------------------+------------------------------+---------+
+| Despre tăcere                                                        | {'tăcere', 'tăceri', 'Tăcerea'}             | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Vorbirea şi tăcerea                                                  | {'tăcere', 'tăcerea'}                       | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
+| Cap. 5 - În noaptea aceea...                                         | {'tăcere', 'tăcerea'}                       | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Singur - în a lui carte-a                                            | {'tăcere', 'Tăcere', 'tăcerea'}             | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Cap. 11 - Răscrucea Isus                                             | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                                   | {'tăcere', 'Tăcerea', 'tăcerii', 'tăcerea'} | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Mama lui Isus a zis                                                  | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Sfinţitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Cap. 8 - A treia Judecată                                            | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                        | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 5 - Întâia judecată                                             | {'tăcere', 'tăcerii'}                       | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                             | {'tăcere', 'tăcerii'}                       | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Din părţile Banatului                                                | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Cap. 10 - Pe drumul Crucii                                           | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                 | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                    | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 22 - Al doilea 2-4-2                                            | {'tăcere'}                                  | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Ce suntem noi Doamne?                                                | {'tăcere'}                                  | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Ce suntem noi Doamne?                                                | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Despre răbdare                                                       | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Fericirea de a fi cu Domnul                                          | {'tăcere'}                                  | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată) | {'tăcere'}                                  | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)  | {'tăcere'}                                  | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Meditaţie despre Jertfă                                              | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
+| Scrisoare despre jertfă...                                           | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Tată, ce-am putea?                                                   | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| Înţelegeţi voi ce v-am făcut Eu?                                     | {'tăcere'}                                  | Traian Dorz | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
+| Şi Ioan a zis: nu sunt                                               | {'tăcere'}                                  | Traian Dorz | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| Din părţile Munteniei                                                | {'tăcere', 'tăcerea', 'Tăcerea'}            | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica Sfintei Învieri                            | {'tăcerea', 'tăcere'}                       | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Din părţile Maramureşului                                            | {'tăcere', 'Tăcerea', 'tăcerea'}            | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| ... Nici un răspuns                                                  | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| Acolo unde-afla-voi odihnire...                                      | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Aşa Isuse-aş vrea aşa - 2                                            | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Cap. 10 - Va veni un altul...                                        | {'tăcere', 'Tăcerea'}                       | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Toate lucrează spre bine                                   | {'tăcere', 'tăcerea'}                       | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                      | {'tăcere', 'tăcerii'}                       | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                             | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 5 - Necazuri şi speranţe                                        | {'tăcere', 'tăcerea'}                       | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Când eşti dat în mâna...                                             | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Când eşti dat în mâna...                                             | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
+| Când eşti dat în mâna...                                             | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Cântarea                                                             | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Din părţile Olteniei                                                 | {'tăcere', 'tăcerii'}                       | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| E ceasul sfânt                                                       | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Iudeii Îl căutau în timpul Praznicului                               | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                        | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)        | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Nu ştim ce vrea să spună                                             | {'tăcere', 'tăcerile'}                      | Traian Dorz | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
+| O, paşii Tăi prin ceruri                                             | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| S-au dus demult                                                      | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | poezie  |
+| S-au dus demult                                                      | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Tu ai văzut!                                                         | {'tăcere', 'tăcerea'}                       | Traian Dorz | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Tu ai văzut!                                                         | {'tăcere', 'tăcerea'}                       | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| ... Au rămas la Isus                                                 | {'tăcere'}                                  | Traian Dorz | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Căci iudeii hotărâseră                                           | {'tăcere'}                                  | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | articol |
+| ... Din inima lui vor curge...                                       | {'tăcere'}                                  | Traian Dorz | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| ... Doamne, Tu să-mi speli picioarele?                               | {'tăcere'}                                  | Traian Dorz | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
+| ... Tu dar ce zici?                                                  | {'tăcere'}                                  | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| A venit o femeie după apă...                                         | {'tăcere'}                                  | Traian Dorz | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Acum credeţi?                                                        | {'tăcere'}                                  | Traian Dorz | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
+| Adevăr şi înşelare                                                   | {'tăcere'}                                  | Traian Dorz | Avuţia Sfântului Moştenitor   | Cugetări Nemuritoare         | articol |
+| Adevăratul trimes                                                    | {'tăcere'}                                  | Traian Dorz | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
+| Adevărul                                                             | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Adevărul şi inimile                                                  | {'tăcere'}                                  | Traian Dorz | Avuţia Sfântului Moştenitor   | Cugetări Nemuritoare         | articol |
+| Binecuvântarea dreptăţii                                             | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Binecuvântat e-acela                                                 | {'tăcere'}                                  | Traian Dorz | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Binecuvântat e-acela                                                 | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Bucuria                                                              | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Calea şi urmaşul                                                     | {'tăcere'}                                  | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator             | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                     | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                               | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 13 - Pe urmele profetului                                       | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Atacul împotriva steagului                                 | {'tăcere'}                                  | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 15 - Al doilea foc                                              | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 17 - Ziua a doua                                                | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                         | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                   | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 21 - După cei 50 de ani                                         | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                | {'tăcere'}                                  | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 24 - Pânza care se ţese                                         | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 27 - Întristarea cea binecuvântată                              | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                     | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                               | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                              | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 4 - În virtutea frumosului avânt...                             | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                        | {'tăcere'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 9 - Ecles                                                       | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cap. 9 - Pe drumul crucii mele                                       | {'tăcere'}                                  | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Ce nepătrunsă Milă                                                   | {'tăcere'}                                  | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Ce nepătrunsă Milă                                                   | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Ce vuiete-au fost!                                                   | {'Tăcere'}                                  | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Ce vuiete-au fost!                                                   | {'Tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Cel care îmi ceri şi îmi dai totul                                   | {'tăcere'}                                  | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Când Chip Tu vei lua                                                 | {'tăcere'}                                  | Traian Dorz | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
+| Când Chip Tu vei lua                                                 | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Când glasul de fiorul                                                | {'Tăcere'}                                  | Traian Dorz | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Când glasul de fiorul                                                | {'Tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Când te-ai înălţat                                                   | {'tăcere'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Când trecea, Isus a văzut pe un orb                                  | {'tăcere'}                                  | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | articol |
++----------------------------------------------------------------------+---------------------------------------------+-------------+-------------------------------+------------------------------+---------+
 Searching Tacere using http://localhost:9000...
-Got 506 hits:
-Score: 2.8461537
+Got 386 hits:
+Score: 18.323076
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre tăcere
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"15 - Unde nu g\u0103se\u015fti <em>t\u0103cere</em> nici \u00een\u0163elepciune nu-i, ",
-"\u015fi <em>t\u0103ceri</em> sunt c\u00e2teodat\u0103 care-a\u015fa de-ad\u00e2nc gr\u0103iesc",
-"20 - <em>T\u0103cerea</em> e din frumuse\u0163e, iar frumuse\u0163ea din iubire",
-"<em>t\u0103cerea</em> dac\u0103 nu vei \u015ftie-o \u00een veci nu \u015fti nici s\u0103 vorbe\u015fti",
-"iar <em>t\u0103cerea</em>"
-],
-"title": [
-"Despre <em>t\u0103cere</em>"
-]
-}
+Highlight: 15 - Unde nu găseşti <em>tăcere</em> nici înţelepciune nu-i,
+Highlight: că-n <em>tăcere</em> şi-n răbdare singur tu suspini sub ea.
+Highlight: ca-n <em>tăcere</em>
+Highlight: 59 - Cine n-a-ndurat vreodată suferinţa în <em>tăcere</em>
+Highlight: şi <em>tăceri</em> sunt câteodată care-aşa de-adânc grăiesc cum
+Highlight: 20 - <em>Tăcerea</em> e din frumuseţe, iar frumuseţea din iubire iubirea-i
+Highlight: Despre <em>tăcere</em>
 
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cinstim în tăcere
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cinstim \u00een <em>t\u0103cere</em> Minunea \u015fi Taina",
-"Privim \u00een <em>t\u0103cere</em> uimirea \u015fi teama",
-"Sim\u0163im \u00een <em>t\u0103cere</em> cum magii \u015fi-apleac\u0103",
-"G\u00e2ndim \u00een <em>t\u0103cere</em> cum neamuri \u015fi neamuri",
-"Sl\u0103vim \u00een <em>t\u0103cere</em> Eterna Minune"
-],
-"title": [
-"Cinstim \u00een <em>t\u0103cere</em>"
-]
-}
-
-Score: 2.5
+Score: 8.083333
 Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Vorbirea şi tăcerea
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Prin fiecare cuv\u00e2nt - \u015fi prin fiecare <em>t\u0103cere</em> a ta, prin fiecare gest sau fapt\u0103 a ta, - tot timpul",
-"Dar pe urmele fiec\u0103ruia Se suie El. Dup\u0103 <em>t\u0103cerea</em> fiec\u0103ruia va vorbi El. \u015ei dup\u0103 lucrarea fiec\u0103ruia",
-"ci \u00ce\u015fi desf\u0103\u015fura lucrarea Sa \u00een <em>t\u0103cere</em> \u015fi \u00een lini\u015fte, mai \u00een ascunzi\u015f \u015fi mai retras. "
-],
-"title": [
-"Vorbirea \u015fi <em>t\u0103cerea</em>"
-]
-}
+Highlight: Prin fiecare cuvânt - şi prin fiecare <em>tăcere</em> a ta, prin fiecare gest sau faptă a ta, - tot timpul
+Highlight: ci Îşi desfăşura lucrarea Sa în <em>tăcere</em> şi în linişte, mai în ascunziş şi mai retras.
+Highlight: Dar pe urmele fiecăruia Se suie El. După <em>tăcerea</em> fiecăruia va vorbi El. Şi după lucrarea fiecăruia
+Highlight: Vorbirea şi <em>tăcerea</em>
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Peste Golgota-i tăcere...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Peste Golgota-i <em>t\u0103cere</em>, vaierele-au \u00eencetat, "
-],
-"title": [
-"Peste Golgota-i <em>t\u0103cere</em>..."
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Tăcerea şi cuvintele mele...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"12 - Iart\u0103-mi <em>t\u0103cerea</em> care \u00ce\u0163i spune at\u00e2t de mult din inima mea"
-],
-"title": [
-"<em>T\u0103cerea</em> \u015fi cuvintele mele..."
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: La Masa Asta a Tăcerii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"La Masa Asta a <em>T\u0103cerii</em>"
-],
-"title": [
-"La Masa Asta a <em>T\u0103cerii</em>"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Peste Golgota-i tăcere...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Peste Golgota-i <em>t\u0103cere</em>, vaierele-au \u00eencetat, "
-],
-"title": [
-"Peste Golgota-i <em>t\u0103cere</em>..."
-]
-}
-
-Score: 1.7142857
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"i-au ajutat la aceasta, fie \u015fi numai prin simpla <em>t\u0103cere</em> \u015fi prezen\u0163\u0103 din partea lor. Ci \u015fi \u00eempotriva tuturor",
-"<em>T\u0103cerea</em>, atunci era o consim\u0163ire. O unire \u00eempreun\u0103 cu cei",
-"pus \u00een g\u00e2nd \u015fi am vrut s\u0103 m\u0103 \u00eencui \u00een cas\u0103 \u015fi \u00een <em>t\u0103cere</em> \u00eenc\u00e2t nimeni s\u0103 nu-mi mai aud\u0103 glasul meu afar\u0103",
-"afar\u0103 din biseric\u0103 \u015fi din slujbe. Dar \u00een casa <em>t\u0103cerii</em> \u00eencuiat sim\u0163eam cum strig\u0103 dup\u0103 mine con\u015ftiin\u0163a \u015fi",
-"Am ie\u015fit dar afar\u0103 din casa \u015fi din <em>t\u0103cerea</em> mea. V-am str\u00e2ns duminicile, pe voi, oile mele"
-]
-}
-
-Score: 1.7142857
+Score: 7.257143
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 5 - În noaptea aceea...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cum mi-a vorbit <em>t\u0103cerea</em> ta!",
-"cum mi-a vorbit <em>t\u0103cerea</em> ta.",
-"- \u015fi voi suferi-n <em>t\u0103cere</em>",
-"Pretutindeni era <em>t\u0103cere</em> \u015fi numai singur\u0103tatea nop\u0163ii \u00eemi \u0163iuia \u00een urechi",
-"L-am aflat, undeva, ascuns \u00een <em>t\u0103cere</em> \u015fi \u00een singur\u0103tate pe dup\u0103 al\u0163ii, cu care nu voia"
-]
-}
+Highlight: - şi voi suferi-n <em>tăcere</em>
+Highlight: Pretutindeni era <em>tăcere</em> şi numai singurătatea nopţii îmi ţiuia în urechi
+Highlight: L-am aflat, undeva, ascuns în <em>tăcere</em> şi în singurătate pe după alţii, cu care nu voia
+Highlight: Cum trece, parcă-i moartea ce numără-n <em>tăcere</em>
+Highlight: cum mi-a vorbit <em>tăcerea</em> ta! În
+Highlight: cum mi-a vorbit <em>tăcerea</em> ta. Dar
 
-Score: 1.6666666
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Libertatea Cuvântului Sfânt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"10 - A t\u0103cea, a \u015fti s\u0103 taci c\u00e2nd este vremea <em>t\u0103cerii</em> ",
-"buzele tale, c\u00e2nd e de o mie de ori mai nevoie de <em>t\u0103cere</em> dec\u00e2t de vorbire, - este o mare chibzuin\u0163\u0103 \u015fi pricepere",
-"11 - A \u015fti \u00eentrebuin\u0163a bine <em>t\u0103cerea</em>, mai ales atunci c\u00e2nd cel r\u0103u st\u0103 chiar \u00eenaintea ta (",
-"<em>T\u0103cerea</em> \u00een astfel de cazuri, este dovada unei mari puteri",
-"fel la s\u0103v\u00e2r\u015firea nelegiuirii nici chiar prin <em>t\u0103cerea</em> ta, "
-]
-}
-
-Score: 1.6666666
+Score: 7.2333336
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Singur - în a lui carte-a
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Fug sufletele azi de rug\u0103, singur\u0103tate \u015fi <em>t\u0103cere</em>, ",
-"<em>t\u0103cere</em>",
-"doar sufletele-acestea gust\u0103 singur\u0103tatea \u015fi <em>t\u0103cerea</em>",
-"C\u0103ci numai \u00een Singur\u0103tate \u015fi \u00een <em>T\u0103cere</em>, ",
-"c\u0103ci sufletele fug de rug\u0103, singur\u0103tate \u015fi <em>t\u0103cere</em>"
-]
-}
+Highlight: - Fug sufletele azi de rugă, singurătate şi <em>tăcere</em>,
+Highlight: <em>tăcere</em>
+Highlight: Căci numai în Singurătate şi în <em>Tăcere</em>,
+Highlight: căci sufletele fug de rugă, singurătate şi <em>tăcere</em>
+Highlight: doar sufletele-acestea gustă singurătatea şi <em>tăcerea</em> cu
 
-Score: 1.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"113 - Argint este cuv\u00e2ntul, dar aur e <em>t\u0103cerea</em>",
-"153 - Cu r\u0103bdare \u015fi <em>t\u0103cere</em>",
-"165 - <em>T\u0103cerea</em> e ca mierea",
-"167 - <em>T\u0103cerea</em> e ca mierea - de-aceea cei t\u0103cu\u0163i",
-"169 - <em>T\u0103cerea</em> e ca mierea - de-aceea dac\u0103 taci"
-]
-}
-
-Score: 1.6
+Score: 7.2000003
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"f\u0103cut dec\u00e2t s\u0103 intru \u00een <em>t\u0103cere</em> spun\u00e2ndu-mi c\u0103 el nu m\u0103 mai poate urma dec\u00e2t \u00een <em>t\u0103cere</em>. Dar printr-o scrisoare",
-"conflictul, fr. Opri\u015fan s-a retras \u00eentr-o lung\u0103 <em>t\u0103cere</em> \u00eenc\u00e2t toate fronturile se \u00eentrebau mirate: unde",
-"l\u0103sat iar singur \u00een drum \u015fi a intrat iar\u0103\u015fi \u00een <em>t\u0103cere</em>."
-]
-}
+Highlight: făcut decât să intru în <em>tăcere</em> spunându-mi că el nu mă mai poate urma decât în <em>tăcere</em>. Dar printr-o scrisoare
+Highlight: conflictul, fr. Oprişan s-a retras într-o lungă <em>tăcere</em> încât toate fronturile se întrebau mirate: unde
+Highlight: lăsat iar singur în drum şi a intrat iarăşi în <em>tăcere</em>.
 
-Score: 1.6
+Score: 6.857143
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: i-au ajutat la aceasta, fie şi numai prin simpla <em>tăcere</em> şi prezenţă din partea lor. Ci şi împotriva tuturor
+Highlight: pus în gând şi am vrut să mă încui în casă şi în <em>tăcere</em> încât nimeni să nu-mi mai audă glasul meu afară
+Highlight: fr. Marini, am păstrat împreună câteva clipe de <em>tăcere</em> lângă mormântul înconjurat de fraţi, cum înconjuram
+Highlight: <em>Tăcerea</em>, atunci era o consimţire. O unire împreună cu cei
+Highlight: afară din biserică şi din slujbe. Dar în casa <em>tăcerii</em> încuiat simţeam cum strigă după mine conştiinţa şi
+Highlight: Am ieşit dar afară din casa şi din <em>tăcerea</em> mea. V-am strâns duminicile, pe voi, oile mele
+
+Score: 6.8
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
 Title: Mama lui Isus a zis
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"A avut o smerenie \u015fi o <em>t\u0103cere</em> at\u00e2t de mare, cum numai \u00een\u0103l\u0163imile iubirii \u015fi durerii",
-"pe p\u0103m\u00e2nt cu o smerenie plin\u0103 de m\u0103re\u0163ie \u015fi cu o <em>t\u0103cere</em> at\u00e2t de ad\u00e2nc gr\u0103itoare, aduc\u00e2ndu-\u015fi \u00eempreun\u0103 cu",
-"iubirea \u015fi <em>t\u0103cerea</em> cur\u0103\u0163iei \u015fi r\u0103bd\u0103rii ei, ",
-"c\u0103 a fost cel mai fericit. S\u0103 cinstim totul cu o <em>t\u0103cere</em> \u015fi un respect sf\u00e2nt."
-]
-}
+Highlight: A avut o smerenie şi o <em>tăcere</em> atât de mare, cum numai înălţimile iubirii şi durerii
+Highlight: pe pământ cu o smerenie plină de măreţie şi cu o <em>tăcere</em> atât de adânc grăitoare, aducându-şi împreună cu
+Highlight: că a fost cel mai fericit. Să cinstim totul cu o <em>tăcere</em> şi un respect sfânt.
+Highlight: iubirea şi <em>tăcerea</em> curăţiei şi răbdării ei,  rămân
 
-Score: 1.6
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cuv\u00e2ntul \u015fi <em>t\u0103cerea</em> c\u00e2nd nu spun r\u0103u de tine",
-"66 - Cu c\u00e2t <em>t\u0103cerea</em>-i mai ad\u00e2nc\u0103, cu-at\u00e2t cuv\u00e2ntul e mai clar",
-"c\u0103 \u00een lume mai comod\u0103 e <em>t\u0103cerea</em> l\u0103s\u0103toare? ",
-"\u015fi cuvintele-nv\u0103\u0163ate dup\u0103 ani de lungi <em>t\u0103ceri</em>. "
-]
-}
-
-Score: 1.6
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica Sfintei Învieri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen\u0163elepciunea va iubi <em>t\u0103cerea</em>, fiindc\u0103 \u00een <em>t\u0103cere</em> se afl\u0103 cel mai mult har \u015fi cea mai pu\u0163in\u0103",
-"Le va iubi pe acestea trei: <em>t\u0103cerea</em>, rug\u0103ciunea \u015fi ascultarea, fiindc\u0103 \u00een ele a tr\u0103it",
-"Iar ei nu vorbesc mai puternic cu gura, ci cu <em>t\u0103cerea</em> lor. "
-]
-}
-
-Score: 1.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"voi veni\u0163i aici, \u00een \u015fcoala suferin\u0163ei, \u00een locul <em>t\u0103cerii</em>, \u00een focul \u00eencerc\u0103rii, - spre a avea \u015fi voi vreme",
-"noi unii l\u00e2ng\u0103 al\u0163ii st\u0103m mu\u0163i \u00een grea <em>t\u0103cere</em>",
-"auzi dinafar\u0103. Fiindc\u0103 pe sal\u0103 totdeauna era o <em>t\u0103cere</em> absolut\u0103, a\u015fa c\u0103 se putea auzi orice zgomot..."
-]
-}
-
-Score: 1.5
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 8 - A treia Judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Aceast\u0103 inexplicabil\u0103 <em>t\u0103cere</em> nu are, nu poate avea alt\u0103 explica\u0163ie dec\u00e2t aceea",
-"Neexist\u00e2nd alt\u0103 cale, am fost l\u0103sat liber prin <em>t\u0103cere</em> s\u0103 comand tipografia \u015fi am fost \u00eendemnat prin aceast\u0103",
-"O <em>t\u0103cere</em> lung\u0103 a urmat..."
-]
-}
+Highlight: Această inexplicabilă <em>tăcere</em> nu are, nu poate avea altă explicaţie decât aceea
+Highlight: Neexistând altă cale, am fost lăsat liber prin <em>tăcere</em> să comand tipografia şi am fost îndemnat prin această
+Highlight: O <em>tăcere</em> lungă a urmat...
 
-Score: 1.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care s\u0103 se apere. El n-are dec\u00e2t nevinov\u0103\u0163ia, <em>t\u0103cerea</em> \u015fi r\u0103bdarea. Iar acestea nu sunt privite acum dec\u00e2t",
-" Neav\u00e2nd nici ei alte arme dec\u00e2t nevinov\u0103\u0163ia, <em>t\u0103cerea</em> \u015fi r\u0103bdarea Lui - se pare c\u0103 \u015fi soarta lor este",
-"C\u0103 nevinov\u0103\u0163ia este mai ne\u00eenvins\u0103? C\u0103 <em>t\u0103cerea</em> mai gr\u0103itoare? C\u0103 r\u0103bdarea este mai tare? "
-]
-}
-
-Score: 1.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103 prima condi\u0163ie a p\u0103cii este reducerea mea la <em>t\u0103cere</em>. S\u0103 \u00eencetez imediat foaia ",
-"La m\u00e2n\u0103stire - \u00een exilul <em>t\u0103cerii</em>",
-"de la Sibiu, dinainte de Cr\u0103ciun, am suferit \u00een <em>t\u0103cere</em>. De data aceasta, a trebuit s\u0103 vorbesc, pentru"
-]
-}
-
-Score: 1.5
+Score: 6.083333
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 29 - Ne apropiem de Ţărm
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din cas\u0103 le \u00eendura cu <em>t\u0103cere</em> \u015fi cu z\u00e2mbet. Nimic nu-l putea clinti din <em>t\u0103cerea</em> \u015fi din z\u00e2mbetul lui senin",
-"S\u0103 \u00eencheiem aici, cu o rug\u0103ciune... \u015ei apoi cu o <em>t\u0103cere</em>. "
-]
-}
+Highlight: din casă le îndura cu <em>tăcere</em> şi cu zâmbet. Nimic nu-l putea clinti din <em>tăcerea</em> şi din zâmbetul lui senin
+Highlight: Să încheiem aici, cu o rugăciune... Şi apoi cu o <em>tăcere</em>.
 
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Darurile lui Dumnezeu
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 st\u0103m cu to\u0163ii \u00eentr-o evlavioas\u0103 ascultare \u015fi <em>t\u0103cere</em>. ",
-"\u015fi anotimpurile cu toate ale lor se apleac\u0103 \u00een <em>t\u0103cere</em> cu o deplin\u0103 ascultare de r\u00e2nduiala pe care Dumnezeu",
-"Domnului, tot timpul c\u00e2t va fi slujba sf\u00e2nt\u0103 stai \u00een <em>t\u0103cere</em> \u015fi evlavie s\u0103 nu tulburi slujba Domnului. "
-]
-}
+Highlight: că prima condiţie a păcii este reducerea mea la <em>tăcere</em>. Să încetez imediat foaia
+Highlight: de la Sibiu, dinainte de Crăciun, am suferit în <em>tăcere</em>. De data aceasta, a trebuit să vorbesc, pentru
+Highlight: La mânăstire - în exilul <em>tăcerii</em> Am
 
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Ascultarea-i Răsăritul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ascultarea \u015fi <em>t\u0103cerea</em>",
-"ci <em>t\u0103cerea</em> \u015fi r\u0103bdarea",
-"c\u0103ci <em>t\u0103cerea</em> \u015fi-ascultarea"
-]
-}
-
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Unitatea şi înţelepciunea Duhului
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen\u0163elepciunea va iubi <em>t\u0103cerea</em>, fiindc\u0103 \u00een <em>t\u0103cere</em> este cel mai mult har \u015fi cea mai pu\u0163in\u0103",
-"Le va iubi pe aceste trei: <em>t\u0103cerea</em>, rug\u0103ciunea \u015fi ascultarea, fiindc\u0103 \u00een ele a tr\u0103it"
-]
-}
+Highlight: noi unii lângă alţii stăm muţi în grea <em>tăcere</em>
+Highlight: auzi dinafară. Fiindcă pe sală totdeauna era o <em>tăcere</em> absolută, aşa că se putea auzi orice zgomot...
+Highlight: voi veniţi aici, în şcoala suferinţei, în locul <em>tăcerii</em>, în focul încercării, - spre a avea şi voi vreme
 
-Score: 1.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Isus le-a spus pe faţă!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een\u0163elepciunea vorbirii, ci mai ales \u00een\u0163elepciunea <em>t\u0103cerii</em>.",
-"purt\u0103rile nepotrivite \u015fi ru\u015finoase, ci \u015fi prin <em>t\u0103cerea</em> Ta \u015fi prin tot felul T\u0103u de umblare. C\u0103ci Tu \u00een",
-"\u015ei d\u0103-ne \u00een\u0163elepciunea <em>t\u0103cerii</em>, pentru tot "
-]
-}
-
-Score: 1.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Ce veţi cere în Numele Meu...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi <em>t\u0103ceri</em> ce mai puternic dec\u00e2t orice grai vorbesc. ",
-"Dac\u0103 n-ai s\u0103-nve\u0163i <em>t\u0103cerea</em>, n-ai s\u0103 \u015ftii",
-"cele mai ad\u00e2nci cuvinte, cu <em>t\u0103cerea</em> le roste\u015fti. "
-]
-}
-
-Score: 1.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Când au auzit aceste cuvinte...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pre\u0163uiesc cuv\u00e2ntul, de aceea nu pre\u0163uiesc nici <em>t\u0103cerea</em>. ",
-"vorbirea Cuv\u00e2ntului T\u0103u \u015fi ne smerim \u00eenaintea <em>T\u0103cerii</em> Tale. ",
-"pentru noi bucurie Cuv\u00e2ntul T\u0103u, va fi bucurie \u015fi <em>T\u0103cerea</em> Ta. "
-]
-}
-
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Aşa Isuse-aş vrea aşa - 1
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>t\u0103cerea</em> mea s\u0103 fie",
-"precum a fost <em>T\u0103cerea</em> Ta",
-"<em>t\u0103cerea</em> mea s\u0103 fie. "
-]
-}
-
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Nemurirea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cuv\u00e2ntului \u015fi <em>T\u0103cerii</em> divine \u015fi umane, ",
-"la Masa Tainic\u0103 a <em>T\u0103cerii</em>",
-"<em>T\u0103cerii</em> \u015fi Cuv\u00e2ntului"
-]
-}
-
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Dobrogei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"33 - Unde nu este <em>t\u0103cerea</em>, nici \u00een\u0163elepciunea nu-i",
-"34 - Cuv\u00e2ntul este frunz\u0103, <em>t\u0103cerea</em> este rod, ",
-"- Cump\u0103tarea \u015fi <em>t\u0103cerea</em>"
-]
-}
-
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Bucovinei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi <em>t\u0103ceri</em> ce mai puternic dec\u00e2t orice grai vorbesc. ",
-"146 - Dac\u0103 n-ai s\u0103-nve\u0163i <em>t\u0103cerea</em>",
-"cu <em>t\u0103cerea</em> le roste\u015fti. "
-]
-}
-
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Maramureşului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"82 - <em>T\u0103cerea</em> \u015fi ne-mpodobirea sunt cele dou\u0103 frumuse\u0163i... ",
-"c\u0103ci <em>t\u0103cerea</em>-i semnul rar",
-"\u00een <em>t\u0103cere</em> \u015fi-n vorbire, \u00een umblare ca \u015fi-n fapt\u0103"
-]
-}
-
-Score: 1.5
+Score: 6.083333
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Banatului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pe <em>t\u0103cere</em>",
-"a avea urechi nu gur\u0103, - ascultare \u015fi <em>t\u0103cere</em>. ",
-"204 - C\u00e2\u015ftig bun este <em>t\u0103cerea</em>"
-]
-}
+Highlight: pe <em>tăcere</em>
+Highlight: a avea urechi nu gură, - ascultare şi <em>tăcere</em>.
+Highlight: 204 - Câştig bun este <em>tăcerea</em>
 
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Ascultarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ascultarea \u015fi <em>t\u0103cerea</em> \u00ee\u0163i d\u0103 lini\u015ftea frumoas\u0103",
-"ci <em>t\u0103cerea</em> \u015fi r\u0103bdarea \u00eei d\u0103-n\u0163elepciune mult\u0103",
-"c\u0103ci <em>t\u0103cerea</em> \u015fi-ascultarea l-au umplut de-n\u0163elepciune. "
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103 inima lui nu primea nimic din toate acestea. <em>T\u0103cerea</em> lui, privirea lui, nep\u0103sarea lui ar\u0103tau c\u0103 el nu",
-"\u00eencetau orice discu\u0163ii - \u015fi cu to\u0163ii p\u0103strau o <em>t\u0103cere</em> respectuoas\u0103."
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen februarie 1967, mi-am petrecut \u00een <em>t\u0103cere</em> \u015fi lacrimi spre odihna ve\u015fnic\u0103 pe bunul meu tat\u0103",
-"vorbeasc\u0103 la nunt\u0103 - ci doar s\u0103 stea la mas\u0103 \u00een <em>t\u0103cere</em> \u015fi at\u00e2t."
-]
-}
-
-Score: 1.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 22 - Al doilea 2-4-2
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cele cinci minute \u00eeng\u0103duite trecuser\u0103 mai mult \u00een <em>t\u0103cere</em> \u015fi \u00een lacrimi, ni se c\u00e2nt\u0103reau foarte precis cele",
-"de serviciu cu o nou\u0103 list\u0103 \u00een m\u00e2n\u0103. Se f\u0103cu o <em>t\u0103cere</em> plin\u0103 de \u00eenfiorarea a\u015ftept\u0103rii unei noi minuni"
-]
-}
-
-Score: 1.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"te chinuie zi \u015fi noapte, cu gura, cu ochii, cu <em>t\u0103cerea</em>, cu prezen\u0163a lui, cu tot ce are \u015fi ce poate el",
-"\u00cen februarie 1967 \u00eemi petrecusem \u00een <em>t\u0103cere</em> \u015fi \u00een lacrimi spre odihna ve\u015fnic\u0103, pe bunul meu"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 10 - Pe drumul Crucii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o cerere de iertare (gra\u0163iere). A urmat o lung\u0103 <em>t\u0103cere</em> de c\u00e2teva luni, dup\u0103 care am primit documentul",
-"chip destul de potrivit, a urmat iar\u0103\u015fi o lung\u0103 <em>t\u0103cere</em> (\u00een acest r\u0103stimp eu am c\u0103zut bolnav la Bra\u015fov)"
-]
-}
+Highlight: o cerere de iertare (graţiere). A urmat o lungă <em>tăcere</em> de câteva luni, după care am primit documentul
+Highlight: chip destul de potrivit, a urmat iarăşi o lungă <em>tăcere</em> (în acest răstimp eu am căzut bolnav la Braşov)
 
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fra\u0163i. Dar le \u00eendura cu <em>t\u0103cere</em> \u015fi z\u00e2mbet. Nimic nu-l putea clinti din <em>t\u0103cerea</em> lui sf\u00e2nt\u0103 \u015fi din z\u00e2mbetul"
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 12 - Toate lucrează spre bine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"merge tot mai spre agravarea acestora. Se vede c\u0103 <em>t\u0103cerea</em> \u015fi a\u015fteptarea nu numai c\u0103 nu rezolv\u0103 nimic, dar",
-"dar nimic. N-a publicat nici rectificarea mea. O <em>t\u0103cere</em> total\u0103 s-a l\u0103sat peste toat\u0103 problema ridicat\u0103"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Meditaţie despre Jertfă
-Type: poezie
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2\u0163i pot suporta-n <em>t\u0103cere</em>, demn \u015fi nalt sacrificarea",
-"s\u0103 se d\u0103ruie-n total\u0103 resemnare \u015fi <em>t\u0103cere</em>!"
-]
-}
+Highlight: În februarie 1967, mi-am petrecut în <em>tăcere</em> şi lacrimi spre odihna veşnică pe bunul meu tată
+Highlight: vorbească la nuntă - ci doar să stea la masă în <em>tăcere</em> şi atât.
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 19 - Omul trimes de Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fierbinte \u015fi pentru acest suflet care a f\u0103cut \u00een <em>t\u0103cere</em> \u015fi \u00een ascuns at\u00e2t de mult pentru Domnul \u015fi pentru",
-"Eu mergeam \u00een <em>t\u0103cere</em> al\u0103turi de p\u0103rintele care p\u0103\u015fea \u00eencet sprijinindu-se"
-]
-}
+Highlight: fierbinte şi pentru acest suflet care a făcut în <em>tăcere</em> şi în ascuns atât de mult pentru Domnul şi pentru
+Highlight: Eu mergeam în <em>tăcere</em> alături de părintele care păşea încet sprijinindu-se
 
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 22 - Al doilea 2-4-2
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103 iar\u0103\u015fi s-a sup\u0103rat. \u015ei a urmat iar\u0103\u015fi o lung\u0103 <em>t\u0103cere</em>. Eram cu sufletul mereu m\u00e2hnit. Aici voi spune",
-"A trecut o lun\u0103 de c\u00e2nd stau \u00eenchis \u00een temni\u0163a <em>t\u0103cerii</em>. Sunt oprit cu for\u0163a public\u0103 s\u0103 mai gr\u0103iesc despre"
-]
-}
+Highlight: cele cinci minute îngăduite trecuseră mai mult în <em>tăcere</em> şi în lacrimi, ni se cântăreau foarte precis cele
+Highlight: de serviciu cu o nouă listă în mână. Se făcu o <em>tăcere</em> plină de înfiorarea aşteptării unei noi minuni
 
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: Mă doare-adânc
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"M\u0103 doare-ad\u00e2nc orice <em>t\u0103cere</em>",
-"ce-n veci <em>t\u0103cere</em> le-a\u015f fi vrut"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: Isuse izbăveşte-mi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"R\u0103scump\u0103r\u0103-mi Isuse <em>t\u0103cerea</em> mea v\u00e2ndut\u0103",
-"\u015fi-a\u015fterne-mi peste toate <em>t\u0103cerea</em> vindecat\u0103"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: În clipele de aur
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 c\u00e2nte leg\u0103nat\u0103 pe-a inimii <em>t\u0103ceri</em>.",
-"L\u0103sa\u0163i <em>t\u0103ceri</em> de aur edenicul ecou"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: S-au dus demult
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S-au dus... \u015fi ce <em>t\u0103cere</em> solemn\u0103 a r\u0103mas",
-"O, nu regret <em>t\u0103cerea</em> de azi, c\u0103ci f\u0103r\u0103 ea"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: E ceasul sfânt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"E ceasul sf\u00e2nt, apleac\u0103-\u0163i <em>t\u0103cerea</em>-n rug\u0103ciune",
-"pe care n-o po\u0163i spune cu grai sau cu <em>t\u0103cere</em>. "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Înţelegeţi voi ce v-am făcut Eu?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi s\u0103 se smereasc\u0103 mai prejos ca to\u0163i fra\u0163ii, \u00een <em>t\u0103cere</em> \u015fi \u00een iubire, f\u0103r\u0103 a se socoti pe sine \u00eensu\u015fi niciodat\u0103",
-"sf\u00e2nt \u015fi smerit nu-i va fi greu a face totul \u00een <em>t\u0103cere</em> \u015fi cu cea mai discret\u0103 duio\u015fie. Greu \u00eei este numai"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: ... Nici un răspuns
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sunt st\u0103ri \u00een care cel mai \u00een\u0163elept lucru este <em>t\u0103cerea</em> \u015fi sunt unii oameni c\u0103rora nu le mai po\u0163i spune",
-"Atunci este fiu al lui Dumnezeu care rabd\u0103 \u00een <em>t\u0103cere</em>. R\u0103spunde cu lini\u015fte, prive\u015fte cu senin\u0103tate, tace"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Mormântul meu...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cum mi-a vorbit <em>t\u0103cerea</em> ta! ",
-"cum mi-a vorbit <em>t\u0103cerea</em> ta! "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Iubirea înţelegătoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"To\u0163i ceilal\u0163i se culcaser\u0103 \u015fi dormeau ad\u00e2nc. Ce <em>t\u0103cere</em> era peste tot! ",
-"6 - C\u00e2te ne spuneau <em>t\u0103cerile</em> grele ale p\u0103rintelui \u015fi \u00eenv\u0103\u0163\u0103torului nostru,"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Răspunsurile Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-" - nu se \u00eendoie\u015fte \u00eentru nimic. Ci \u015ftie c\u0103 \u00een <em>t\u0103cerea</em> Lui, este r\u0103spunsul cel mai potrivit tocmai pentru",
-"ori glasul <em>t\u0103cerilor</em> de sear\u0103 pe v\u00e2rful p\u0103durilor, "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Isuse, izbăveşte-mi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"R\u0103scump\u0103r\u0103-mi Isuse <em>t\u0103cerea</em> mea v\u00e2ndut\u0103",
-"a\u015feaz\u0103-mi peste toate <em>t\u0103cerea</em> vindecat\u0103"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: În clipele de aur
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 c\u00e2nte leg\u0103nat\u0103 pe-a inimii <em>t\u0103ceri</em>. ",
-"L\u0103sa\u0163i <em>t\u0103ceri</em> de aur edenicul ecou"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Legea lui Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"multe st\u0103ri \u00een care cel mai \u00een\u0163elept lucru este <em>t\u0103cerea</em>",
-"17 - Este fiul lui Dumnezeu acela care rabd\u0103 \u00een <em>t\u0103cere</em>. "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Înşelătorii şi câştigul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"m\u0103rturisit adev\u0103rul, fie prin cuv\u00e2ntul lor, fie prin <em>t\u0103cerea</em> lor, ",
-"ca \u015fi vorbirea \u015fi <em>t\u0103cerea</em> ta"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Cuvântul şi Duhul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pre\u0163uiesc cuv\u00e2ntul, de aceea nu-\u015fi pre\u0163uiesc nici <em>t\u0103cerea</em>. \u015ei \u00eencep din nou cu altceva. ",
-"4 - Cuv\u00e2ntul lui Dumnezeu are \u015fi <em>t\u0103cerea</em> Lui. "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Învinuirea şi nevinovăţia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"13 - <em>T\u0103cerea</em> celor care \u015ftiu nevinov\u0103\u0163ia celui \u00eenvinuit este",
-"martorii criminali, care \u00eeng\u0103duind nelegiuirea prin <em>t\u0103cerea</em> lor, se fac p\u0103rta\u015fi cu f\u0103pta\u015ful la os\u00e2nda lui."
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Păcatul uitării datoriilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dup\u0103 ce l-a f\u0103cut s\u0103 r\u0103m\u00e2n\u0103 \u00een <em>t\u0103cere</em>, \u00een smerenie \u015fi \u00een ascuns. ",
-"Prin <em>t\u0103cere</em> \u015fi smerenie, binefacerea \u00een"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Tu ai văzut!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Tu ai v\u0103zut <em>t\u0103cerea</em> mea",
-"\u015fi rug\u0103ciunea din <em>t\u0103cere</em>"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Când eşti dat în mâna...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tu n-alege-atunci al drum dec\u00e2t <em>t\u0103cerea</em>",
-"prin <em>t\u0103cere</em> mai presus fii de-orice r\u0103u"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Şi Ioan a zis: nu sunt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Adev\u0103rata smerenie este aceea care \u00een <em>t\u0103cere</em> \u015fi r\u0103bdare dore\u015fte ",
-"Roadele smereniei lucrate \u00een <em>t\u0103cere</em> \u015fi \u00een cinste, sunt curate \u015fi s\u0103n\u0103toase, totdeauna"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Pentru că te-am văzut crezi?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Unii L-au os\u00e2ndit cu cuv\u00e2ntul lor, iar al\u0163ii cu <em>t\u0103cerea</em> lor. ",
-"Iar <em>t\u0103cerea</em> lor e o complicitate cu t\u00e2lharul la s\u0103v\u00e2r\u015firea"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: O, paşii Tăi prin ceruri
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prin ape: ad\u00e2ncime, <em>t\u0103cere</em> \u015fi minune",
-"comoara celor ce iubesc <em>t\u0103cerea</em>, "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Iudeii Îl căutau în timpul Praznicului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ci \u00ce\u015fi desf\u0103\u015foar\u0103 Lucrarea Sa \u00een <em>t\u0103cere</em> \u015fi \u00een lini\u015fte, mai \u00een ascunzi\u015f \u015fi mai retras. ",
-"n-a \u015ftiut ca Tine nici cum s\u0103 tac\u0103, atunci c\u00e2nd <em>t\u0103cerea</em> era mai \u00een\u0163eleapt\u0103 dec\u00e2t orice vorbire. "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Chemaţi cântările
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentre vorbiri \u015fi-ntre <em>t\u0103ceri</em>",
-"de vorba sau <em>t\u0103cerea</em> grea"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Clopoţelul cel tainic de aur
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"graiul <em>t\u0103cerii</em> mele, ",
-"19 - \u015ei l\u00e2ng\u0103 cine am mai auzit eu <em>t\u0103ceri</em> l\u00e2ng\u0103 care iubirea nu le mai poate rosti nic\u0103ieri"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Atunci vom fi fericiţi amândoi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cendrum\u0103tor al meu, iat\u0103 se apropie iar\u0103\u015fi vremea <em>t\u0103cerii</em>. ",
-"Atunci cuv\u00e2ntul t\u0103u va putea fi plin de miez, iar <em>t\u0103cerea</em> ta plin\u0103 de \u00een\u0163elepciune. "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Fericirea de a fi cu Domnul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Doamne, ajut\u0103 dragostei noastre s\u0103 primeasc\u0103 \u00een <em>t\u0103cere</em> \u015fi f\u0103r\u0103 murmur, tot ce bun\u0103tatea grijii Tale, a",
-"Ajutorul Lui s\u0103-l a\u015ftept\u0103m \u00een <em>t\u0103cere</em>."
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Ei l-au ocărât
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u0103ci <em>t\u0103cerea</em> aceasta a nevinovatului T\u0103u vorbe\u015fte mai str\u0103lucit",
-"str\u0103lucit ca orice cuv\u00e2nt tot a\u015fa cum a vorbit <em>T\u0103cerea</em> Ta de pe Cruce. "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Când eşti dat în mâna...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tu n-alege-atunci al drum dec\u00e2t <em>t\u0103cerea</em>",
-"prin <em>t\u0103cere</em> mai presus fii de-orice r\u0103u"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
 Title: Ce suntem noi Doamne?
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"un suspin de-o clip\u0103 iar apoi <em>t\u0103cere</em>",
-"doar dulcea <em>t\u0103cere</em> sfin\u0163it\u0103-n suspine"
-]
-}
+Highlight: un suspin de-o clipă iar apoi <em>tăcere</em>
+Highlight: doar dulcea <em>tăcere</em> sfinţită-n suspine
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Tată, ce-am putea?
+Book: Cântări Nemuritoare vol. 9
+Title: Ce suntem noi Doamne?
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"totul \u00een <em>t\u0103cere</em>",
-"totul \u00een <em>t\u0103cere</em>? "
-]
-}
+Highlight: un suspin de-o clipă iar apoi <em>tăcere</em>
+Highlight: doar dulcea <em>tăcere</em> sfinţită-n suspine
 
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Adevăr
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"iar c\u0103-a doua e <em>t\u0103cerea</em>, tot a\u015fa-i de-adev\u0103rat. ",
-"c\u0103-ntre oameni mai comod\u0103 \u015fi-n\u0163eleapt\u0103 e <em>t\u0103cerea</em>? "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Noi fericim acum
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu-i tunet mai puternic dec\u00e2t <em>t\u0103cerea</em> lor",
-"\u015fi <em>t\u0103cerii</em>. "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: S-au dus demult
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S-au dus... \u015fi ce <em>t\u0103cere</em> solemn\u0103 a r\u0103mas",
-"O, nu regret <em>t\u0103cerea</em> de azi, c\u0103ci f\u0103r\u0103 ea"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Chemaţi cântările
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentre vorbiri \u015fi-ntre <em>t\u0103ceri</em>",
-"de vorba sau <em>t\u0103cerea</em> grea"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Şi nimeni din voi nu Mă întreabă...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dar c\u00e2nd se a\u015fterne \u00eentre ei <em>t\u0103cerea</em>, atunci e un semn dureros c\u0103 adev\u0103rata dragoste",
-"\u015fi \u00eentreba... \u015ei va pl\u00e2nge aceasta cu amar \u00een <em>t\u0103cerea</em> \u00eenchisorii lui plin\u0103 de ghea\u0163\u0103, din casa cald\u0103"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Nu ştim ce vrea să spună
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"To\u0163i ceilal\u0163i se culcaser\u0103 \u015fi dormeau ad\u00e2nc. Ce <em>t\u0103cere</em> era peste tot. ",
-"C\u00e2te ne spuneau <em>t\u0103cerile</em> lui grele, privirile lui pline de mil\u0103 \u015fi de dragoste"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: E ceasul sfânt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"E ceasul sf\u00e2nt, apleac\u0103-\u0163i <em>t\u0103cerea</em>-n rug\u0103ciune",
-"pe care n-o po\u0163i spune cu grai sau cu <em>t\u0103cere</em>. "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Aşa Isuse-aş vrea aşa - 2
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103-mi fie-a mea <em>t\u0103cere</em> lini\u015ftit\u0103",
-"<em>t\u0103cerea</em> mea sfin\u0163it\u0103. "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Tu ai văzut!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Tu ai v\u0103zut <em>t\u0103cerea</em> mea",
-"\u015fi rug\u0103ciunea din <em>t\u0103cere</em>"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Scrisoare despre jertfă...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2\u0163i pot suporta-n <em>t\u0103cere</em>, demn \u015fi nalt sacrificarea",
-"s\u0103 se d\u0103ruie-n total\u0103 resemnare \u015fi <em>t\u0103cere</em>! "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Acolo unde-afla-voi odihnire...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ci va gr\u0103i <em>t\u0103cerea</em>-i necurmat\u0103, ",
-"G\u00e2ndind acolo singur \u00een <em>t\u0103cere</em>"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre răbdare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cel ce sufere-n <em>t\u0103cere</em> \u015fi-are pururea r\u0103bdare",
-"32 - Rabd\u0103-\u0163i chinul \u00een <em>t\u0103cere</em>, du-\u0163i cu lini\u015fte-a ta cruce"
-]
-}
+Highlight: cel ce sufere-n <em>tăcere</em> şi-are pururea răbdare
+Highlight: 32 - Rabdă-ţi chinul în <em>tăcere</em>, du-ţi cu linişte-a ta cruce
 
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Olteniei
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Fericirea de a fi cu Domnul
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cea mai bun\u0103 m\u00e2ng\u00e2iere-i lacrima <em>t\u0103cerii</em> tale. ",
-"ori \u00een grai, ori \u00een <em>t\u0103cere</em>, poart\u0103-n el ceva-n\u0163elept. "
-]
-}
+Highlight: Doamne, ajută dragostei noastre să primească în <em>tăcere</em> şi fără murmur, tot ce bunătatea grijii Tale, a
+Highlight: Ajutorul Lui să-l aşteptăm în <em>tăcere</em>.
 
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"rar <em>t\u0103cerea</em> - ori\u015ficui. ",
-"344 - <em>T\u0103cerea</em> nu te obose\u015fte"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Cântarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>t\u0103cerea</em> \u015fi ad\u00e2ncul a ceea ce iubim. ",
-"10 - C\u00e2ntarea e <em>t\u0103cere</em> ad\u00e2nc gl\u0103suitoare"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Ce suntem noi Doamne?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"un suspin de-o clip\u0103 iar apoi <em>t\u0103cere</em>",
-"doar dulcea <em>t\u0103cere</em> sfin\u0163it\u0103-n suspine"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Când eşti dat în mâna...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tu n-alege-atunci al drum dec\u00e2t <em>t\u0103cerea</em>",
-"prin <em>t\u0103cere</em> mai presus fii de-orice r\u0103u"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Mâine când va fi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"unde trebuie <em>t\u0103cere</em>, unde trebuie <em>t\u0103cere</em>"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Va fi-un amurg
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"gr\u0103ie\u015fte \u015fi <em>t\u0103cerea</em>, adesea mai presus",
-"din grai \u015fi din <em>t\u0103cere</em> se-ncheag\u0103-al t\u0103u cuv\u00e2nt"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Mă doare-adânc
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"M\u0103 doare-ad\u00e2nc orice <em>t\u0103cere</em>",
-"ce-n veci <em>t\u0103cere</em> le-a\u015f fi vrut"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Isuse izbăveşte-mi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"R\u0103scump\u0103r\u0103-mi Isuse <em>t\u0103cerea</em> mea v\u00e2ndut\u0103",
-"\u015fi-a\u015fterne-mi peste toate <em>t\u0103cerea</em> vindecat\u0103"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: În clipele de aur
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 c\u00e2nte leg\u0103nat\u0103 pe-a inimii <em>t\u0103ceri</em>.",
-"L\u0103sa\u0163i <em>t\u0103ceri</em> de aur edenicul ecou"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
+Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"puterea Duhului Sf\u00e2nt, acela nu poate sta nici \u00een <em>t\u0103cere</em> \u015fi nici \u00een nelucrare. El trebuie s\u0103 mearg\u0103, el",
-"obliga\u0163ii, care cuprinde \u00een ea \u00eens\u0103\u015fi, respectul \u015fi <em>t\u0103cerea</em> mai ales \u00een fa\u0163a acestor lucr\u0103ri ale lui Dumnezeu"
-]
-}
+Highlight: ce l-a făcut, să rămână în <em>tăcere</em>, în smerenie şi în ascuns.
+Highlight: Prin <em>tăcere</em> şi smerenie, binefacerea în
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pu\u0163ini care \u00eemplinind r\u0103bd\u0103tori \u015fi smeri\u0163i, \u00een <em>t\u0103cere</em> \u015fi \u00een cur\u0103\u0163ie cuv\u00e2ntul f\u0103ptuirii binelui, s\u0103 auzim",
-"s-a smerit, a iertat \u015fi a iubit. Acela care \u00een <em>t\u0103cere</em> \u015fi \u00een ascuns a unit o virtute cu alta, o binefacere"
-]
-}
+Highlight: puţini care împlinind răbdători şi smeriţi, în <em>tăcere</em> şi în curăţie cuvântul făptuirii binelui, să auzim
+Highlight: s-a smerit, a iertat şi a iubit. Acela care în <em>tăcere</em> şi în ascuns a unit o virtute cu alta, o binefacere
 
-Score: 1.3333333
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Meditaţie despre Jertfă
+Type: poezie
+Author: Traian Dorz
+Highlight: Câţi pot suporta-n <em>tăcere</em>, demn şi nalt sacrificarea
+Highlight: să se dăruie-n totală resemnare şi <em>tăcere</em>!
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Scrisoare despre jertfă...
+Type: poezie
+Author: Traian Dorz
+Highlight: Câţi pot suporta-n <em>tăcere</em>, demn şi nalt sacrificarea
+Highlight: să se dăruie-n totală resemnare şi <em>tăcere</em>!
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Tată, ce-am putea?
+Type: poezie
+Author: Traian Dorz
+Highlight: totul în <em>tăcere</em>
+Highlight: totul în <em>tăcere</em>?
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Înţelegeţi voi ce v-am făcut Eu?
+Type: articol
+Author: Traian Dorz
+Highlight: şi să se smerească mai prejos ca toţi fraţii, în <em>tăcere</em> şi în iubire, fără a se socoti pe sine însuşi niciodată
+Highlight: sfânt şi smerit nu-i va fi greu a face totul în <em>tăcere</em> şi cu cea mai discretă duioşie. Greu îi este numai
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Şi Ioan a zis: nu sunt
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărata smerenie este aceea care în <em>tăcere</em> şi răbdare doreşte
+Highlight: Roadele smereniei lucrate în <em>tăcere</em> şi în cinste, sunt curate şi sănătoase, totdeauna
+
+Score: 4.8333335
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 153 - Cu răbdare şi <em>tăcere</em>
+Highlight: 113 - Argint este cuvântul, dar aur e <em>tăcerea</em> -
+Highlight: 165 - <em>Tăcerea</em> e ca mierea
+Highlight: 167 - <em>Tăcerea</em> e ca mierea - de-aceea cei tăcuţi
+Highlight: 169 - <em>Tăcerea</em> e ca mierea - de-aceea dacă taci
+
+Score: 4.8
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica Sfintei Învieri
+Type: articol
+Author: Traian Dorz
+Highlight: Înţelepciunea va iubi <em>tăcerea</em>, fiindcă în <em>tăcere</em> se află cel mai mult har şi cea mai puţină
+Highlight: Le va iubi pe acestea trei: <em>tăcerea</em>, rugăciunea şi ascultarea, fiindcă în ele a trăit
+Highlight: Iar ei nu vorbesc mai puternic cu gura, ci cu <em>tăcerea</em> lor.
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Maramureşului
+Type: articol
+Author: Traian Dorz
+Highlight: în <em>tăcere</em> şi-n vorbire, în umblare ca şi-n faptă
+Highlight: 82 - <em>Tăcerea</em> şi ne-mpodobirea sunt cele două frumuseţi...  -
+Highlight: căci <em>tăcerea</em>-i semnul rar că-i
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: ... Nici un răspuns
+Type: articol
+Author: Traian Dorz
+Highlight: Atunci este fiu al lui Dumnezeu care rabdă în <em>tăcere</em>. Răspunde cu linişte, priveşte cu seninătate, tace
+Highlight: Sunt stări în care cel mai înţelept lucru este <em>tăcerea</em> şi sunt unii oameni cărora nu le mai poţi spune
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Acolo unde-afla-voi odihnire...
+Type: poezie
+Author: Traian Dorz
+Highlight: Gândind acolo singur în <em>tăcere</em>
+Highlight: căci va grăi <em>tăcerea</em>-i necurmată,  de
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Aşa Isuse-aş vrea aşa - 2
+Type: poezie
+Author: Traian Dorz
+Highlight: să-mi fie-a mea <em>tăcere</em> liniştită
+Highlight: <em>tăcerea</em> mea sfinţită.
+
+Score: 4.6666665
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 10 - Va veni un altul...
+Type: articol
+Author: Traian Dorz
+Highlight: încetau orice discuţii - şi cu toţii păstrau o <em>tăcere</em> respectuoasă.
+Highlight: că inima lui nu primea nimic din toate acestea. <em>Tăcerea</em> lui, privirea lui, nepăsarea lui arătau că el nu
+
+Score: 4.6666665
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 12 - Toate lucrează spre bine
+Type: articol
+Author: Traian Dorz
+Highlight: dar nimic. N-a publicat nici rectificarea mea. O <em>tăcere</em> totală s-a lăsat peste toată problema ridicată
+Highlight: merge tot mai spre agravarea acestora. Se vede că <em>tăcerea</em> şi aşteptarea nu numai că nu rezolvă nimic, dar
+
+Score: 4.6666665
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: că iarăşi s-a supărat. Şi a urmat iarăşi o lungă <em>tăcere</em>. Eram cu sufletul mereu mâhnit. Aici voi spune
+Highlight: A trecut o lună de când stau închis în temniţa <em>tăcerii</em>. Sunt oprit cu forţa publică să mai grăiesc despre
+
+Score: 4.6666665
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: În februarie 1967 îmi petrecusem în <em>tăcere</em> şi în lacrimi spre odihna veşnică, pe bunul meu
+Highlight: te chinuie zi şi noapte, cu gura, cu ochii, cu <em>tăcerea</em>, cu prezenţa lui, cu tot ce are şi ce poate el
+
+Score: 4.6666665
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: fraţi. Dar le îndura cu <em>tăcere</em> şi zâmbet. Nimic nu-l putea clinti din <em>tăcerea</em> lui sfântă şi din zâmbetul
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Când eşti dat în mâna...
+Type: poezie
+Author: Traian Dorz
+Highlight: prin <em>tăcere</em> mai presus fii de-orice rău
+Highlight: tu n-alege-atunci al drum decât <em>tăcerea</em> ce-a
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Când eşti dat în mâna...
+Type: poezie
+Author: Traian Dorz
+Highlight: prin <em>tăcere</em> mai presus fii de-orice rău
+Highlight: tu n-alege-atunci al drum decât <em>tăcerea</em> ce-a
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Când eşti dat în mâna...
+Type: poezie
+Author: Traian Dorz
+Highlight: prin <em>tăcere</em> mai presus fii de-orice rău
+Highlight: tu n-alege-atunci al drum decât <em>tăcerea</em> ce-a
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Cântarea
+Type: articol
+Author: Traian Dorz
+Highlight: 10 - Cântarea e <em>tăcere</em> adânc glăsuitoare
+Highlight: <em>tăcerea</em> şi adâncul a ceea ce iubim.  5
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Olteniei
+Type: articol
+Author: Traian Dorz
+Highlight: ori în grai, ori în <em>tăcere</em>, poartă-n el ceva-nţelept.
+Highlight: cea mai bună mângâiere-i lacrima <em>tăcerii</em> tale.  74
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: E ceasul sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: pe care n-o poţi spune cu grai sau cu <em>tăcere</em>.
+Highlight: E ceasul sfânt, apleacă-ţi <em>tăcerea</em>-n rugăciune şi
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Iudeii Îl căutau în timpul Praznicului
+Type: articol
+Author: Traian Dorz
+Highlight: ci Îşi desfăşoară Lucrarea Sa în <em>tăcere</em> şi în linişte, mai în ascunziş şi mai retras.
+Highlight: n-a ştiut ca Tine nici cum să tacă, atunci când <em>tăcerea</em> era mai înţeleaptă decât orice vorbire.
+
+Score: 4.6666665
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 14-a după Rusalii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"r\u00e2ndui\u0163i s\u0103 isp\u0103\u015feasc\u0103 ei, cei care pot r\u0103bda \u00een <em>t\u0103cere</em>, care pot pl\u00e2nge f\u0103r\u0103 s\u0103 c\u00e2rteasc\u0103 \u015fi pot suferi",
-"martorii criminali, care \u00eeng\u0103duind nelegiuirea prin <em>t\u0103cerea</em> lor, se fac p\u0103rta\u015fi cu f\u0103pta\u015ful ei la os\u00e2nda lui"
-]
-}
+Highlight: rânduiţi să ispăşească ei, cei care pot răbda în <em>tăcere</em>, care pot plânge fără să cârtească şi pot suferi
+Highlight: martorii criminali, care îngăduind nelegiuirea prin <em>tăcerea</em> lor, se fac părtaşi cu făptaşul ei la osânda lui
+
+Score: 4.6666665
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
+Type: articol
+Author: Traian Dorz
+Highlight: puterea Duhului Sfânt, acela nu poate sta nici în <em>tăcere</em> şi nici în nelucrare. El trebuie să meargă, el
+Highlight: obligaţii, care cuprinde în ea însăşi, respectul şi <em>tăcerea</em> mai ales în faţa acestor lucrări ale lui Dumnezeu
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Nu ştim ce vrea să spună
+Type: articol
+Author: Traian Dorz
+Highlight: Toţi ceilalţi se culcaseră şi dormeau adânc. Ce <em>tăcere</em> era peste tot.
+Highlight: Câte ne spuneau <em>tăcerile</em> lui grele, privirile lui pline de milă şi de dragoste
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: O, paşii Tăi prin ceruri
+Type: poezie
+Author: Traian Dorz
+Highlight: prin ape: adâncime, <em>tăcere</em> şi minune
+Highlight: comoara celor ce iubesc <em>tăcerea</em>,
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: S-au dus demult
+Type: poezie
+Author: Traian Dorz
+Highlight: S-au dus... şi ce <em>tăcere</em> solemnă a rămas
+Highlight: O, nu regret <em>tăcerea</em> de azi, căci fără ea
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: S-au dus demult
+Type: poezie
+Author: Traian Dorz
+Highlight: S-au dus... şi ce <em>tăcere</em> solemnă a rămas
+Highlight: O, nu regret <em>tăcerea</em> de azi, căci fără ea
+
+Score: 4.6666665
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Tu ai văzut!
+Type: poezie
+Author: Traian Dorz
+Highlight: şi rugăciunea din <em>tăcere</em>
+Highlight: Tu ai văzut <em>tăcerea</em> mea atunci
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Tu ai văzut!
+Type: poezie
+Author: Traian Dorz
+Highlight: şi rugăciunea din <em>tăcere</em>
+Highlight: Tu ai văzut <em>tăcerea</em> mea atunci
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: ... Au rămas la Isus
+Type: articol
+Author: Traian Dorz
+Highlight: nici a le face nici a nu le face. Respectă-le în <em>tăcere</em> şi în smerenie.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: ... Căci iudeii hotărâseră
+Type: articol
+Author: Traian Dorz
+Highlight: cel ce sufere-n <em>tăcere</em> şi-are pururea răbdare
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: ... Din inima lui vor curge...
+Type: articol
+Author: Traian Dorz
+Highlight: scoate din lacrimi, din jertfe, din iubire, din <em>tăcere</em>, din străfundurile ei curate, totul.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: ... Doamne, Tu să-mi speli picioarele?
+Type: articol
+Author: Traian Dorz
+Highlight: Zece dintre ucenici se supuneau în <em>tăcere</em> la toate, plini de smerenie şi de cutremur.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... Tu dar ce zici?
+Type: articol
+Author: Traian Dorz
+Highlight: Dar ce puternic grai a avut această <em>tăcere</em> a lui Isus!
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: A venit o femeie după apă...
+Type: articol
+Author: Traian Dorz
+Highlight: şi ducându-şi în <em>tăcere</em> şi singurătate propriul trup, cu silă şi greutate
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Acum credeţi?
+Type: articol
+Author: Traian Dorz
+Highlight: aştearnă după această întrebare între ei o clipă de <em>tăcere</em> grea...
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Adevăr şi înşelare
+Type: articol
+Author: Traian Dorz
+Highlight: crede fiindcă stau departe de minune, de cer, de <em>tăcere</em> şi de Lumină...
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Adevăratul trimes
+Type: articol
+Author: Traian Dorz
+Highlight: 10 - Roadele smereniei lucrate în <em>tăcere</em> şi în cinste, sunt curate şi sănătoase, totdeauna
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Adevărul
+Type: articol
+Author: Traian Dorz
+Highlight: dar în cele rele plânge şi-n <em>tăcere</em> se-nveşmântă.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Adevărul şi inimile
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărul, inimile smerite se pleacă înaintea lui în <em>tăcere</em> şi în respect, recunoscându-L.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Binecuvântarea dreptăţii
+Type: poezie
+Author: Traian Dorz
+Highlight: dar iubirea orice greşuri le acopere-n <em>tăcere</em>.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Binecuvântat e-acela
+Type: poezie
+Author: Traian Dorz
+Highlight: în <em>tăcere</em> şi-n răbdare nestrigatele suspine.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Binecuvântat e-acela
+Type: poezie
+Author: Traian Dorz
+Highlight: în <em>tăcere</em> şi-n răbdare nestrigatele suspine.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Bucuria
+Type: articol
+Author: Traian Dorz
+Highlight: şi-n <em>tăcere</em> şi-n cuvinte.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Calea şi urmaşul
+Type: articol
+Author: Traian Dorz
+Highlight: Răbdaţi cu Domnul Isus şi voi, cu înţelegere şi cu <em>tăcere</em>, pe cei din familia voastră care vă batjocoresc
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
+Type: articol
+Author: Traian Dorz
+Highlight: mi-a mai răspuns nimic. Şi s-a aşezat între noi o <em>tăcere</em> plină de mâhnire.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: ... Era târziu... Şi era peste tot o <em>tăcere</em> desăvârşită.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: departe, la fraţii noştri adevăraţi, împrăştiaţi în <em>tăcere</em> şi în ascultare pe frumosul ogor al bisericii noastre
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 13 - Pe urmele profetului
+Type: articol
+Author: Traian Dorz
+Highlight: pline de lumină, de raze, de culori, de cruci, de <em>tăcere</em> şi de lacrimi, - dar nu le-am putut. Ele au venit
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 14 - Atacul împotriva steagului
+Type: articol
+Author: Traian Dorz
+Highlight: Era târziu şi era peste tot o <em>tăcere</em> desăvârşită.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 15 - Al doilea foc
+Type: articol
+Author: Traian Dorz
+Highlight: L-a iubit şi el pe Domnul Isus în <em>tăcere</em> şi în răbdare, cu multă smerenie şi cu multe lacrimi
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 17 - Ziua a doua
+Type: articol
+Author: Traian Dorz
+Highlight: O, seara pe <em>tăcere</em> cum cad cereşti cântări
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 19 - Mereu morminte noi
+Type: articol
+Author: Traian Dorz
+Highlight: veni ei. Atunci noi ne vom retrage pe margini în <em>tăcere</em> şi îi vom lăsa să-şi facă nestingheriţi partea
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight: Oastei, păr. Trifa, - după lungi vremi de apăsare şi <em>tăcere</em>, a apărut din nou. Mulţumim adânc Bunului nostru
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 21 - După cei 50 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: să mă cuprinzi ca pe-o <em>tăcere</em>
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: - cum trece parcă-i moartea ce numără-n <em>tăcere</em>
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 24 - Pânza care se ţese
+Type: articol
+Author: Traian Dorz
+Highlight: arătare tot binele ce l-a făcut ea în ascuns şi în <em>tăcere</em>. Nu numai cât a trăit bunul ei soţ Eftimie, ci
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 27 - Întristarea cea binecuvântată
+Type: articol
+Author: Traian Dorz
+Highlight: pământului se înalţă ca un fluviu uriaş spre cer... Ce <em>tăcere</em> trebuie să fie în cer în acest ceas când se înalţă
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: După câteva minute de <em>tăcere</em> zise privindu-mă liniştit:
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 3 - Marea cernere
+Type: articol
+Author: Traian Dorz
+Highlight: În primul atac al foilor mitropoliei şi de <em>tăcere</em> a păr. Iosif, unii din ostaşii din ţară au fost
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: comuniune sau în singurătate, în împărtăşire sau în <em>tăcere</em> - când acestea sunt înalt adevărate şi când sunt
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: mântuirea sufletului lor, prin retragerea lor în <em>tăcere</em> şi în ascunziş, - au renunţat la frumuseţea luptei
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: acest coş, la ieşire fiecare pune cu mâna sa în <em>tăcere</em> şi în ascuns atâta cât este puterea sa şi cât a
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 9 - Ecles
+Type: poezie
+Author: Traian Dorz
+Highlight: 17-Mai de preţ e-nţelepciunea ascultată în <em>tăcere</em>
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 9 - Pe drumul crucii mele
+Type: articol
+Author: Traian Dorz
+Highlight: alătură de prigonitor, fie prin cuvânt fie prin <em>tăcere</em>, făcându-se astfel părtaşi şi la crima tiranului
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Ce nepătrunsă Milă
+Type: poezie
+Author: Traian Dorz
+Highlight: nici grai şi nici <em>tăcere</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Ce nepătrunsă Milă
+Type: poezie
+Author: Traian Dorz
+Highlight: nici grai şi nici <em>tăcere</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Ce vuiete-au fost!
+Type: poezie
+Author: Traian Dorz
+Highlight: O, seara pe <em>Tăcere</em> cum cad cereşti cântări
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Ce vuiete-au fost!
+Type: poezie
+Author: Traian Dorz
+Highlight: O, seara pe <em>Tăcere</em> cum cad cereşti cântări
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Cel care îmi ceri şi îmi dai totul
+Type: articol
+Author: Traian Dorz
+Highlight: - În locul unui grai cald, mi-a rămas atunci o <em>tăcere</em> rece.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Când Chip Tu vei lua
+Type: poezie
+Author: Traian Dorz
+Highlight: ca şi-n <em>tăcere</em> şi-n răspuns
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Când Chip Tu vei lua
+Type: poezie
+Author: Traian Dorz
+Highlight: ca şi-n <em>tăcere</em> şi-n răspuns
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Când glasul de fiorul
+Type: poezie
+Author: Traian Dorz
+Highlight: o, iartă-mi-o <em>Tăcere</em> şi-mbracă-mi-o în fum.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Când glasul de fiorul
+Type: poezie
+Author: Traian Dorz
+Highlight: o, iartă-mi-o <em>Tăcere</em> şi-mbracă-mi-o în fum.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Când te-ai înălţat
+Type: poezie
+Author: Traian Dorz
+Highlight: Când te-ai nălţat pân-la <em>tăcere</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Când trecea, Isus a văzut pe un orb
+Type: articol
+Author: Traian Dorz
+Highlight: Suflete sărmane care suferiţi adânc şi în <em>tăcere</em>,
 

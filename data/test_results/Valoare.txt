@@ -1,1435 +1,989 @@
-+---------------------------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Author      | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Durata şi valoarea                                                                          | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
-| Cap. 9 - A doua judecată                                                                    | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| N-ai nici cincizeci de ani...                                                               | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 15 - Un An Nou Fericit                                                                 | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Înaintaşii şi urmaşii                                                                       | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cap. 12 - Dovada supremei iubiri                                                            | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                                  | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 17 - Vin rândurile noi                                                                 | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Talentele şi aflarea lor                                                                    | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Bucuria aflării Adevărului                                                                  | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
-| Semănat şi seceriş                                                                          | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| A zice şi a face                                                                            | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| În mijlocul vostru stă Unul...                                                              | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)       | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 1 - Înfricoşata lepădare                                                               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 27 - Întristarea cea binecuvântată                                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Nu descuraja niciodată                                                                      | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| În alt loc, singur                                                                          | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Mulţi au citit                                                                              | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Porţile Veşniciei                                                                           | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Vrednicia şi nevrednicia                                                                    | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Profeţii şi Contemporanii lor                                                               | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
-| Alegerea şi mărturia                                                                        | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Iubirea nemuritoare                                                                         | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Credinţa şi statornicia                                                                     | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
-| Iată că acum ne vorbeşti desluşit                                                           | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Cel dintâi - fratele tău                                                                    | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                     | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 25 - Al şaptelea foc                                                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                                    | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 13 - După luarea lui Moisi...                                                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Cel mai frumos Isus                                                                | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                              | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 29 - Anul jubiliar 1988                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Mâna lui Dumnezeu                                                                           | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| S-a aplecat şi s-a uitat                                                                    | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| S-a dus şi a vestit                                                                         | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Pentru ca voi să credeţi                                                                    | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Ce este Adevărul?                                                                           | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Să n-o sfâşiem!...                                                                          | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Scopul - şi mijloacele lui                                                                  | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Totul în Hristos                                                                            | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Nevinovăţia şi timiditatea                                                                  | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
-| Naşterea din nou                                                                            | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Graba şi primirea                                                                           | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Alergarea şi ajungerea                                                                      | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Vorba şi scrierea                                                                           | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-| Primirea lui Hristos                                                                        | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Moartea şi Viaţa                                                                            | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Un singur Adevăr                                                                            | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
-| Înfricarea de cutremure                                                                     | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
-| Ce mare taină este Lucrarea Domnului                                                        | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Cuvântul Tău este Adevărul                                                                  | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cum ziceţi voi că hulesc?                                                                   | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Tot ce a spus Ioan                                                                          | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Pentru ca voi să credeţi!                                                                   | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Altul mărturiseşte...                                                                       | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Peste puţină vreme                                                                          | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                                           | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| El este Acela despre care ziceam                                                            | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Despre cinste                                                                               | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cuvântul                                                                                    | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                    | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Semnele Oastei Domnului                                                           | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Uşor e jugul lui Hristos                                                          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 14 - Atacul împotriva steagului                                                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 15 - Micii contemporani ai marilor oameni                                              | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                            | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                                       | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 22 - Al doilea 2-4-2                                                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - A doua Judecată                                                                    | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 16 - Din cetate în cetate...                                                           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 4 - Anul următor                                                                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                                               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                                  | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                                                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                                | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 25 - Istorie şi suferinţă                                                              | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Apostolia Femeilor                                                                | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                                            | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-+---------------------------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
++---------------------------------------------------------------------------------------+-------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                 | Occurrences                         | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------------------+-------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Cap. 9 - A doua judecată                                                              | {'valoarea', 'valoare'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Un An Nou Fericit                                                           | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                      | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                                | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                                            | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Vin rândurile noi                                                           | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 27 - Întristarea cea binecuvântată                                               | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| N-ai nici cincizeci de ani...                                                         | {'valoare', 'valoarea', 'Valoarea'} | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| În mijlocul vostru stă Unul...                                                        | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Înfricoşata lepădare                                                         | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Iată că acum ne vorbeşti desluşit                                                     | {'valoare', 'Valoarea'}             | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Cel mai frumos Isus                                                          | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                  | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                              | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 29 - Anul jubiliar 1988                                                          | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                               | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Înţelepciunea şi puterea                                                     | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cuvântul Tău este Adevărul                                                            | {'Valoare'}                         | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| El este Acela despre care ziceam                                                      | {'valoare'}                         | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Moartea şi Viaţa                                                                      | {'valoare'}                         | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Pentru ca voi să credeţi!                                                             | {'valoare'}                         | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Primirea lui Hristos                                                                  | {'valoare'}                         | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Tot ce a spus Ioan                                                                    | {'valoare'}                         | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Înaintaşii şi urmaşii                                                                 | {'valoare', 'valoarea', 'Valoarea'} | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)                     | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                       | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                                         | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                        | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cel dintâi - fratele tău                                                              | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)         | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mulţi au citit                                                                        | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Vrednicia şi nevrednicia                                                              | {'valoare', 'valoarea'}             | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Altul mărturiseşte...                                                                 | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 13 - După luarea lui Moisi...                                                    | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                    | {'valoare', 'Valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                        | {'valoare', 'valoarea'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 25 - Al şaptelea foc                                                             | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Ce este Adevărul?                                                                     | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Despre cinste                                                                         | {'valoare', 'valoarea'}             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)              | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                  | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Peste puţină vreme                                                                    | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| Să n-o sfâşiem!...                                                                    | {'valoare', 'valoarea'}             | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| ... Crezi tu?                                                                         | {'valoare'}                         | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Va trăi prin Mine                                                                 | {'valoare'}                         | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Acum credeţi?                                                                         | {'valoare'}                         | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Adevărata Lumină                                                                      | {'valoare'}                         | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Adevăratul trimes                                                                     | {'valoare'}                         | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                                                | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                              | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Semnele Oastei Domnului                                                     | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                  | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                                                    | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Apostolia Femeilor                                                          | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Al doilea foc                                                               | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                                      | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Micii contemporani ai marilor oameni                                        | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 18 - Frumosul an 1930                                                            | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Al treilea februarie                                                        | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                           | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                                 | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Al doilea 2-4-2                                                             | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                              | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                      | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                                             | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 32 - Şi alte lupte                                                               | {'valoare'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - Anul următor                                                                 | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Necazuri şi speranţe                                                         | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                                          | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                                            | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Primii paşi spre o rânduială                                                 | {'valoare'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cel Unul şi Unicul                                                                    | {'valoare'}                         | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Chemarea şi venirea                                                                   | {'valoare'}                         | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Cine Te crezi Tu că eşti?                                                             | {'valoare'}                         | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cine crede în Fiul are...                                                             | {'valoare'}                         | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Conştiinţa                                                                            | {'valoare'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cum poate... să ne dea Trupul Lui?                                                    | {'valoare'}                         | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Cuvântul şi Duhul                                                                     | {'valoare'}                         | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Când au auzit aceste cuvinte...                                                       | {'valoare'}                         | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Când toată viaţa...                                                                   | {'valoare'}                         | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
+| Când toată viaţa...                                                                   | {'valoare'}                         | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Cărarea şi urmele                                                                     | {'valoare'}                         | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Dacă vă urăşte lumea...                                                               | {'valoare'}                         | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Despre credinţă                                                                       | {'valoare'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din pricina lui mulţi credeau                                                         | {'valoare'}                         | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Din părţile Munteniei                                                                 | {'valoare'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Eu nu sunt vrednic...                                                                 | {'valoare'}                         | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Eu sunt Învierea şi Viaţa                                                             | {'valoare'}                         | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Fariseii I-au zis: Tu mărturiseşti - despre Tine Însuţi...                            | {'valoare'}                         | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Frumuseţea                                                                            | {'valoare'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Isus plângea                                                                          | {'valoare'}                         | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica 1-a a Postului Mare                                         | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)       | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 16-a după Rusalii                                         | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)                   | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)           | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                        | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                           | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)          | {'valoare'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
++---------------------------------------------------------------------------------------+-------------------------------------+-------------+----------------------------------+------------------------------+---------+
 Searching Valoare using http://localhost:9000...
-Got 257 hits:
-Score: 5.6363635
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Durata şi valoarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een\u0163elepciune este s\u0103 cuno\u015fti omul de <em>valoare</em>, crea\u0163ia de <em>valoare</em> \u015fi timpul de <em>valoare</em>. ",
-"<em>Valoarea</em> nu st\u0103 \u00een durat\u0103, dar durata st\u0103 \u00een <em>valoare</em>.  5",
-"1 - Creatorii de <em>valoare</em> au durat pu\u0163in\u0103 vreme pe p\u0103m\u00e2nt. Dup\u0103 cum crea\u0163iile de durat\u0103 s-au realizat",
-"durata vie\u0163ii unui creator, cu at\u00e2ta are o mai mare <em>valoare</em> crea\u0163ia sa. Pentru c\u0103 uria\u015fa cantitate de energie",
-"hot\u0103r\u00e2m pentru o munc\u0103 de <em>valoare</em>. \u015ei pentru o lupt\u0103 de durat\u0103. "
-],
-"title": [
-"Durata \u015fi <em>valoarea</em>"
-]
-}
-
-Score: 3.6
+Got 166 hits:
+Score: 16.9
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 9 - A doua judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din ei doar dup\u0103 <em>valoarea</em> duhovniceasc\u0103 a lor personal. Cel pu\u0163in dup\u0103 acea <em>valoare</em> pe care au dovedit-o",
-"alt drum. Formele \u00een care am tr\u0103it n-au nici o <em>valoare</em> - ci numai duhul. Cei care au \u0163inut \u015fi la forme",
-"Sale. Iar Crucea v\u0103zut\u0103 zice\u0163i c\u0103 nu are nici o <em>valoare</em>. \u015ei cu toate celelalte semne v\u0103zute ale \u00eenchin\u0103rii",
-"Silagy. Forma, oricare ar fi ea, n-are nici o <em>valoare</em>, ba dimpotriv\u0103, este un r\u0103u, fiindc\u0103 ea \u00eempiedic\u0103",
-"(forma)? Fiindc\u0103 nici \u201cforma\u201d aceasta n-are nici o <em>valoare</em>! Iat\u0103"
-]
-}
+Highlight: din ei doar după <em>valoarea</em> duhovnicească a lor personal. Cel puţin după acea <em>valoare</em> pe care au dovedit-o
+Highlight: alt drum. Formele în care am trăit n-au nici o <em>valoare</em> - ci numai duhul. Cei care au ţinut şi la forme
+Highlight: Sale. Iar Crucea văzută ziceţi că nu are nici o <em>valoare</em>. Şi cu toate celelalte semne văzute ale închinării
+Highlight: Silagy. Forma, oricare ar fi ea, n-are nici o <em>valoare</em>, ba dimpotrivă, este un rău, fiindcă ea împiedică
+Highlight: (forma)? Fiindcă nici “forma” aceasta n-are nici o <em>valoare</em>! Iată
+Highlight: văzută! Are forma asta <em>valoare</em> domnule Silagy sau nu are? -
 
-Score: 3.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: N-ai nici cincizeci de ani...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cutremur\u0103tor, nu numai de <em>valoarea</em> adev\u0103rului pe care \u00eel auzi, ci \u015fi de <em>valoarea</em> omului pe care \u00eel vezi",
-"<em>Valoarea</em> unui om nu se m\u0103soar\u0103 totdeauna dup\u0103 anii lui",
-"dup\u0103 cum nici <em>valoarea</em> unui sfat bun, sau a unei \u00eenv\u0103\u0163\u0103turi s\u0103n\u0103toase",
-"mare <em>valoare</em>.  V\u00e2rsta",
-"V\u00e2rsta cuiva, adic\u0103 via\u0163a \u015fi experien\u0163a unui om credincios, d\u0103 o \u015fi mai mare <em>valoare</em> cuvintelor"
-]
-}
-
-Score: 3.4285715
+Score: 15.857142
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 15 - Un An Nou Fericit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"f\u0103cea la noi un \u00eenceput de o \u00eensemn\u0103tate \u015fi de o <em>valoare</em> neb\u0103nuit\u0103. Planul cel minunat al Domnului prindea",
-" lucr\u0103ri de durat\u0103 \u015fi de <em>valoare</em> spre slava Lui \u015fi fericirea semenilor no\u015ftri.",
-"apoi mereu cresc\u00e2nd at\u00e2t \u00een frumuse\u0163e c\u00e2t \u015fi \u00een <em>valoare</em>, culmin\u00e2nd cu Psalmii, cu C\u00e2ntarea C\u00e2nt\u0103rilor,",
-"Despre <em>valoarea</em> cea mare a Psalmilor \u015fi a celorlalte c\u00e2nt\u0103ri Biblice",
-"de care nu vom putea crea nimic cu adev\u0103rat de <em>valoare</em> \u015fi de durat\u0103. "
-]
-}
+Highlight: făcea la noi un început de o însemnătate şi de o <em>valoare</em> nebănuită. Planul cel minunat al Domnului prindea
+Highlight:  lucrări de durată şi de <em>valoare</em> spre slava Lui şi fericirea semenilor noştri.
+Highlight: apoi mereu crescând atât în frumuseţe cât şi în <em>valoare</em>, culminând cu Psalmii, cu Cântarea Cântărilor,
+Highlight: de care nu vom putea crea nimic cu adevărat de <em>valoare</em> şi de durată.
+Highlight: - Dacă vrem într-adevăr să creăm ceva de <em>valoare</em> şi de durată în slujba lui Dumnezeu şi a semenilor
+Highlight: Despre <em>valoarea</em> cea mare a Psalmilor şi a celorlalte cântări Biblice
 
-Score: 3.4285715
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Înaintaşii şi urmaşii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cutremur\u0103tor, nu numai de <em>valoarea</em> adev\u0103rului pe care \u00eel auzi, ci de <em>valoarea</em> omului pe care \u00eel vezi, ",
-"3 - <em>Valoarea</em> unui om nu se m\u0103soar\u0103 \u00eentotdeauna dup\u0103 anii lui",
-"dup\u0103 cum nici <em>valoarea</em> unui sfat bun, sau a unei \u00eenv\u0103\u0163\u0103turi s\u0103n\u0103toase",
-"experien\u0163a unui om credincios, d\u0103 o \u015fi mai mare <em>valoare</em> cuvintelor sale s\u0103n\u0103toase \u015fi pline de seriozitate",
-"Ci s\u0103-l primim crez\u00e2nd, at\u00e2t <em>valoarea</em> adev\u0103rului - c\u00e2t \u015fi a celui care l-a spus. "
-]
-}
-
-Score: 3.3333333
+Score: 15.233334
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 12 - Dovada supremei iubiri
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tipografiei \u00een greutate total\u0103 de 7.839 de kg. \u015fi \u00een <em>valoare</em> total\u0103 de 20.042 m\u0103rci germane.",
-"\u015fi tipografia cu \u00eentreg inventarul acesteia \u00een <em>valoare</em> de 1.654.970 de lei.",
-"dreptului de proprietate asupra acestui inventar \u00een <em>valoare</em> de 1.654.970 de lei - ori la plata acestei sume",
-"v\u00e2nzarea averii de la \u0163ar\u0103 a p\u0103rintelui Iosif \u015fi <em>valoarea</em> acestei averi pe care d\u00e2nsul o investise \u00een costul",
-"admirator al p\u0103rintelui Iosif, a vorbit despre marea <em>valoare</em> pe care a avut-o el pentru biseric\u0103 \u015fi Evanghelie"
-]
-}
+Highlight: tipografiei în greutate totală de 7.839 de kg. şi în <em>valoare</em> totală de 20.042 mărci germane.
+Highlight: şi tipografia cu întreg inventarul acesteia în <em>valoare</em> de 1.654.970 de lei.
+Highlight: dreptului de proprietate asupra acestui inventar în <em>valoare</em> de 1.654.970 de lei - ori la plata acestei sume
+Highlight: admirator al părintelui Iosif, a vorbit despre marea <em>valoare</em> pe care a avut-o el pentru biserică şi Evanghelie
+Highlight: vânzarea averii de la ţară a părintelui Iosif şi <em>valoarea</em> acestei averi pe care dânsul o investise în costul
 
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 9 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"multiple dar un rol deosebit \u00eel joac\u0103 faptul c\u0103 <em>valoarea</em> artei \u015fi culturii noastre clasice \u015fi contemporane",
-"a\u015fa-zise \u201cvalori\u201d, de fapt obscure f\u0103r\u0103 nici o <em>valoare</em>, eman\u00e2nd de la indivizi de cea mai joas\u0103 \u015fi dubioas\u0103",
-"A\u015fadar asta era! L\u0103s\u00e2nd la o parte inexistenta \u201c<em>valoare</em> a operei poetice a lui T.D. (\u00een aceast\u0103 pagin\u0103",
-"tu poezie, nici tu poet. Nu \u015ftiu \u00een ce const\u0103 <em>valoarea</em> propriu-zis\u0103 a premiului, dar \u015ftim c\u0103 \u00een loc s\u0103",
-"avansate \u0163\u0103ri \u015fi culturi, le consider\u0103 opere de <em>valoare</em> deosebit\u0103, - chiar acest fapt ar trebui s\u0103-l bucure"
-]
-}
-
-Score: 3.3333333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cifra bancnotei este <em>valoarea</em> ei. Dup\u0103 cum sunetul instrumentului este <em>valoarea</em> lui. ",
-"fapte de paie, f\u0103r\u0103 nici o dulcea\u0163\u0103, f\u0103r\u0103 nici o <em>valoare</em>, f\u0103r\u0103 nici o greutate.  La",
-"v\u0103zut\u0103. Lucrarea mea este <em>valoarea</em> mea declarat\u0103.  Dup\u0103",
-"Dup\u0103 cum rodul este <em>valoarea</em> pomului. Dup\u0103 cum cifra"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"inspirate, cu lucr\u0103ri din ce \u00een ce tot mai de <em>valoare</em>. E un strat \u00een care \u00eencep s\u0103 \u00eenfloreasc\u0103 din ce",
-"f\u0103r\u0103 nici un sens, f\u0103r\u0103 nici o noim\u0103, f\u0103r\u0103 nici o <em>valoare</em>. Dac\u0103 cel ce le-a compus nu le-ar citi din carte",
-"\u00eencurajeze vreun p\u0103cat. S\u0103 nu scad\u0103 \u00eentru nimic, nici <em>valoarea</em>, nici nivelul, nici efortul lucr\u0103rilor noastre",
-"sigur, corect \u015fi cursiv, ceea ce d\u0103 cea mai \u00eenalt\u0103 <em>valoare</em> at\u00e2t lucr\u0103rii c\u00e2t \u015fi lucr\u0103torului. "
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sa munc\u0103 - sunt \u00eencredin\u0163at c\u0103 va aprecia drept <em>valoarea</em> acestei lucr\u0103ri. \u015ei \u00eemi va da competente \u00eendrum\u0103ri",
-"Maicii Domnului. Nu poate s\u0103 nu-i fie recunoscut\u0103 <em>valoarea</em> \u015fi importan\u0163a, mai ales \u00een vremile de acum c\u00e2nd",
-"Un astfel de om \u00een\u0163elept va \u015fti c\u00e2nt\u0103ri drept <em>valoarea</em> unui argument, importan\u0163a unui adev\u0103r \u015fi vremea",
-"\u00eentr-adev\u0103r ar fi \u00een toate privin\u0163ele o lucrare de <em>valoare</em>. "
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care solul devine jertf\u0103, adevere\u015fte definitiv <em>valoarea</em> m\u0103rturiei lui \u015fi semnul trimiterii sale cere\u015fti",
-"\u00eent\u00e2i s\u0103 moar\u0103 el \u00eensu\u015fi, n-are nici un fel de <em>valoare</em> pentru nimeni.",
-"respectat cu o sf\u00e2nt\u0103 temere de Dumnezeu locul \u015fi <em>valoarea</em> fiec\u0103ruia: \u00eent\u00e2i duhul apoi litera. \u00cent\u00e2i cele",
-"poruncit \u015fi a\u015fezat ca dogm\u0103 \u00een biseric\u0103. Ne\u00eenlocuind <em>valoarea</em> dogmelor cu nimic ea nu s-a \u00eendep\u0103rtat niciodat\u0103"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Talentele şi aflarea lor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"), de o durat\u0103 \u015fi <em>valoare</em> ve\u015fnic\u0103. ",
-"12 - Ce greu se g\u0103se\u015fte un muncitor bun - \u015fi ce <em>valoare</em> mare are el pentru lucrul Domnului!... Ferice de",
-"Este desigur un mare merit s\u0103 creezi o poezie de <em>valoare</em>, o c\u00e2ntare inspirat\u0103, o carte de talent... Dar",
-"Dar este nespus mai mult s\u0103 formezi un poet de <em>valoare</em>, un c\u00e2nt\u0103re\u0163 inspirat, un scriitor de talent... "
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Bucuria aflării Adevărului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"str\u0103lucirea dorit\u0103 m\u0103rg\u0103ritarului care p\u0103rea f\u0103r\u0103 nici o <em>valoare</em> pentru to\u0163i. ",
-"<em>Valoarea</em> lor era nem\u0103rginit de mare. ",
-"Era \u015fi el o <em>valoare</em> de aceea\u015fi m\u0103rime la \u00eenceput. ",
-"este cel mult pentru tine \u00eensu\u0163i. Sau pentru o <em>valoare</em> pu\u0163in\u0103. "
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Semănat şi seceriş
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sem\u0103natul are <em>valoare</em> numai \u00een m\u0103sura \u00een care i-o dovede\u015fte seceri\u015ful. Un efort are <em>valoare</em> numai \u00een m\u0103sura",
-"13 - S\u0103 ne str\u0103duim s\u0103 d\u0103m <em>valoare</em> cuv\u00e2ntului \u015fi respect ascult\u0103torilor ridic\u00e2ndu-ne",
-"O poezie sau o c\u00e2ntare, sau o vorbire au <em>valoare</em> numai \u00een m\u0103sura \u00een care acestea las\u0103 un rod, trezesc"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Cununile Slăvite
-Title: A zice şi a face
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu adev\u0103rat <em>valoarea</em> unei inimi, ",
-"<em>valoarea</em> unei prietenii, ",
-"<em>valoarea</em> unui cuv\u00e2nt, ",
-"<em>valoarea</em> unei idei."
-]
-}
-
-Score: 3.2
+Score: 15.2
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 12 - Naşterea imnului duhovnicesc
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"bucur\u0103m de reu\u015fit\u0103. Poezia de al\u0103turi e de o mare <em>valoare</em> nu numai cre\u015ftineasc\u0103 ci \u015fi literar\u0103. \u00cendemn\u0103m",
-"interpretare - cu lucr\u0103ri originale, unele chiar de <em>valoare</em>. Lucr\u0103rile acestea sunt \u00een cea mai mare parte datorit\u0103",
-"printre lucr\u0103rile lor undele chiar de o frumoas\u0103 <em>valoare</em> duhovniceasc\u0103. Dar numai vreo doi au supravie\u0163uit",
-"spre poezia \u015fi c\u00e2ntarea mai profund\u0103 \u015fi mai de <em>valoare</em> care \u00eenc\u0103 \u00eent\u00e2rzie, \u00eent\u00e2rzie. De ex. L. S. nr."
-]
-}
+Highlight: bucurăm de reuşită. Poezia de alături e de o mare <em>valoare</em> nu numai creştinească ci şi literară. Îndemnăm
+Highlight: interpretare - cu lucrări originale, unele chiar de <em>valoare</em>. Lucrările acestea sunt în cea mai mare parte datorită
+Highlight: printre lucrările lor undele chiar de o frumoasă <em>valoare</em> duhovnicească. Dar numai vreo doi au supravieţuit
+Highlight: spre poezia şi cântarea mai profundă şi mai de <em>valoare</em> care încă întârzie, întârzie. De ex. L. S. nr.
 
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: În mijlocul vostru stă Unul...
+Score: 14.333333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 9 - Adevărurile mormântului nemuritor
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Infinit fiind \u015fi prin <em>valoarea</em> Sa \u015fi prin posibilit\u0103\u0163ile Sale, ",
-"a\u015fezate \u00een urma Lui, vor ar\u0103ta tot mai puternic <em>valoarea</em> cea necuprins\u0103 a aceluia\u015fi 1, prin care au \u00eenceput",
-"Dup\u0103 cum \u015fi noi \u00een\u015fine, nici noi n-am avea nici o <em>valoare</em>, ci suntem c\u00e2te un zero fiecare, ",
-"este Hristos, El Cel 1, atunci fiecare c\u0103p\u0103t\u0103m <em>valoare</em>. Cu at\u00e2t mai mare, cu c\u00e2t suntem mai mul\u0163i \u00een urma"
-]
-}
+Highlight: aşa-zise “valori”, de fapt obscure fără nici o <em>valoare</em>, emanând de la indivizi de cea mai joasă şi dubioasă
+Highlight: Aşadar asta era! Lăsând la o parte inexistenta “<em>valoare</em> a operei poetice a lui T.D. (în această pagină
+Highlight: avansate ţări şi culturi, le consideră opere de <em>valoare</em> deosebită, - chiar acest fapt ar trebui să-l bucure
+Highlight: multiple dar un rol deosebit îl joacă faptul că <em>valoarea</em> artei şi culturii noastre clasice şi contemporane
+Highlight: tu poezie, nici tu poet. Nu ştiu în ce constă <em>valoarea</em> propriu-zisă a premiului, dar ştim că în loc să
 
-Score: 3.2
+Score: 14.3
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 17 - Vin rândurile noi
+Type: articol
+Author: Traian Dorz
+Highlight: inspirate, cu lucrări din ce în ce tot mai de <em>valoare</em>. E un strat în care încep să înflorească din ce
+Highlight: fără nici un sens, fără nici o noimă, fără nici o <em>valoare</em>. Dacă cel ce le-a compus nu le-ar citi din carte
+Highlight: sigur, corect şi cursiv, ceea ce dă cea mai înaltă <em>valoare</em> atât lucrării cât şi lucrătorului.
+Highlight: încurajeze vreun păcat. Să nu scadă întru nimic, nici <em>valoarea</em>, nici nivelul, nici efortul lucrărilor noastre
+
+Score: 14.3
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"El a avut o mare <em>valoare</em> \u00eenaintea Domnului, fiindc\u0103 dac\u0103 n-ar fi avut aceast\u0103 <em>valoare</em>, Cuv\u00e2ntul Domnului",
-"Dumnezeu sunt de o m\u0103rime, de o str\u0103lucire, de o <em>valoare</em> ve\u015fnic\u0103. Pentru orice suflet, pentru orice neam",
-"acestea, le-a imprimat pecetea ei nemuritoare. Iar <em>valoarea</em>, m\u0103rimea \u015fi frumuse\u0163ea lor, vor merge mereu cresc\u00e2nd"
-]
-}
+Highlight: El a avut o mare <em>valoare</em> înaintea Domnului, fiindcă dacă n-ar fi avut această <em>valoare</em>, Cuvântul Domnului
+Highlight: Dumnezeu sunt de o mărime, de o strălucire, de o <em>valoare</em> veşnică. Pentru orice suflet, pentru orice neam
+Highlight: acestea, le-a imprimat pecetea ei nemuritoare. Iar <em>valoarea</em>, mărimea şi frumuseţea lor, vor merge mereu crescând
 
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"avu\u0163ii, fiindc\u0103 \u00een ele st\u0103 <em>valoarea</em> ta \u015fi m\u00e2ntuirea ta. \u00cen cuv\u00e2ntul t\u0103u st\u0103 <em>valoarea</em> ta, \u015fi \u00een Cuv\u00e2ntul lui",
-"lume: \u00een ce fel jalnic s-a degradat \u015fi s-a pierdut <em>valoarea</em> cuv\u00e2ntului omenesc! \u00cen loc s\u0103 fie numai adev\u0103r",
-"O, fiul meu \u015fi fratele meu, iat\u0103 cea mai mare <em>valoare</em> pe care o ai de la Dumnezeu: cuv\u00e2ntul t\u0103u \u015fi Cuv\u00e2ntul"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 1 - Înfricoşata lepădare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceasta care administreaz\u0103 bunuri \u015fi suflete de <em>valoare</em> etern\u0103, nu cunoa\u015fte nici o s\u0103r\u0103cie \u015fi nici o lips\u0103",
-"civil\u0103, obiectele de cult \u015fi de inventar, orice <em>valoare</em> sau obiect care poate constitui un patrimoniu na\u0163ional",
-"acestui neam... Cine va mai pune vreodat\u0103 ceva de <em>valoarea</em> \u015fi de frumuse\u0163ea acestora \u00een locul ei, - dac\u0103"
-]
-}
-
-Score: 3.0
+Score: 14.25
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 27 - Întristarea cea binecuvântată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" ceva de <em>valoare</em> \u015fi de durat\u0103 dac\u0103 mai \u00eent\u00e2i nu \u015fi-a dat silin\u0163a",
-" pe sine \u00eensu\u015fi, suflete\u015fte \u00eentr-o <em>valoare</em> \u015fi de durat\u0103.",
-"lui Dumnezeu \u015fi cur\u0103\u0163ia con\u015ftiin\u0163ei noastre. Ce <em>valoare</em> mai poate avea \u015fi \u00eenaintea oamenilor, dar \u015fi \u00eenaintea"
-]
-}
+Highlight:  ceva de <em>valoare</em> şi de durată dacă mai întâi nu şi-a dat silinţa
+Highlight:  pe sine însuşi, sufleteşte într-o <em>valoare</em> şi de durată.
+Highlight: lui Dumnezeu şi curăţia conştiinţei noastre. Ce <em>valoare</em> mai poate avea şi înaintea oamenilor, dar şi înaintea
 
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Nu descuraja niciodată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pe care \u00eel afli, este totdeauna mai mare dec\u00e2t <em>valoarea</em> lui. ",
-"Domnului Isus nu poate fi niciodat\u0103 at\u00e2t de mare c\u00e2t <em>valoarea</em> harului pe care l-ai aflat. ",
-"O, de-am \u015fti noi s\u0103 pre\u0163uim cu adev\u0103rat <em>valoarea</em> marilor oameni ale\u015fi \u015fi scumpi \u00eenaintea lui Dumnezeu"
-]
-}
-
-Score: 3.0
+Score: 12.874999
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: În alt loc, singur
+Book: Hristos - Luminătorul nostru
+Title: N-ai nici cincizeci de ani...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Hristos este singura putere care d\u0103 \u015fi tr\u0103inicia \u015fi <em>valoarea</em> ve\u015fnic\u0103, oricui s-a p\u0103truns de el. ",
-"lui Isus \u0163i-a dat \u015fi \u0163ie frumuse\u0163e, durat\u0103 \u015fi <em>valoare</em> ve\u015fnic\u0103, tocmai pentru ca \u015fi tu s\u0103 fii o permanent\u0103",
-"ca s\u0103 ai \u015fi tu frumuse\u0163ea \u015fi <em>valoarea</em> lor, \u00een fa\u0163a lui Dumnezeu \u015fi a oamenilor. "
-]
-}
+Highlight: mare <em>valoare</em>.
+Highlight: Vârsta cuiva, adică viaţa şi experienţa unui om credincios, dă o şi mai mare <em>valoare</em> cuvintelor
+Highlight: cutremurător, nu numai de <em>valoarea</em> adevărului pe care îl auzi, ci şi de <em>valoarea</em> omului pe care îl vezi
+Highlight: <em>Valoarea</em> unui om nu se măsoară totdeauna după anii lui
+Highlight: după cum nici <em>valoarea</em> unui sfat bun, sau a unei învăţături sănătoase
+Highlight: numărului de ani, ci să-l primim crezând, atât <em>valoarea</em> adevărului cât şi în a celui care l-a spus.
 
-Score: 3.0
+Score: 12.799999
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Mulţi au citit
+Book: Hristos - Dumnezeul nostru
+Title: În mijlocul vostru stă Unul...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Toate cap\u0103t\u0103 <em>valoare</em> \u015fi putere numai c\u00e2nd le sus\u0163ine Hristos. El este <em>valoarea</em> \u015fi puterea oric\u0103ror",
-"oric\u0103ror cuvinte. Hristos este \u015fi <em>valoarea</em> Scripturii. "
-]
-}
+Highlight: După cum şi noi înşine, nici noi n-am avea nici o <em>valoare</em>, ci suntem câte un zero fiecare,
+Highlight: este Hristos, El Cel 1, atunci fiecare căpătăm <em>valoare</em>. Cu atât mai mare, cu cât suntem mai mulţi în urma
+Highlight: Infinit fiind şi prin <em>valoarea</em> Sa şi prin posibilităţile Sale,  iar
+Highlight: aşezate în urma Lui, vor arăta tot mai puternic <em>valoarea</em> cea necuprinsă a aceluiaşi 1, prin care au început
 
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Porţile Veşniciei
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 1 - Înfricoşata lepădare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"credincios se vorbe\u015fte personal, ca despre o mare <em>valoare</em>. ",
-"gr\u0103mad\u0103 \u00een care nimeni nu are personalitate \u015fi <em>valoare</em>. ",
-"morman de f\u0103pturi, f\u0103r\u0103 merit personal, \u015fi f\u0103r\u0103 <em>valoare</em> individual\u0103. "
-]
-}
+Highlight: aceasta care administrează bunuri şi suflete de <em>valoare</em> eternă, nu cunoaşte nici o sărăcie şi nici o lipsă
+Highlight: civilă, obiectele de cult şi de inventar, orice <em>valoare</em> sau obiect care poate constitui un patrimoniu naţional
+Highlight: acestui neam... Cine va mai pune vreodată ceva de <em>valoarea</em> şi de frumuseţea acestora în locul ei, - dacă
 
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Vrednicia şi nevrednicia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceea, nu numele nostru cap\u0103t\u0103 <em>valoarea</em> tr\u0103irii noastre, ci <em>valoarea</em> cinstei noastre, a faptelor noastre",
-"lui Dumnezeu \u015fi \u00een aceea a oamenilor, cu aceast\u0103 <em>valoare</em>. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Profeţii şi Contemporanii lor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Uria\u015fa lui <em>valoare</em> \u00eens\u0103 era acoperit\u0103 de un trup at\u00e2t de mic, at\u00e2t",
-"cunoscut <em>valoarea</em> acestui diamant unic \u015fi rar. ",
-"Pentru c\u0103 oamenii c\u00e2nt\u0103resc dimensiunea nu <em>valoarea</em>. Muntele"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Alegerea şi mărturia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Toate cap\u0103t\u0103 <em>valoare</em> \u015fi putere, numai c\u00e2nd le sus\u0163ine Jertfa lui Hristos. ",
-"El este <em>valoarea</em> \u015fi puterea",
-"4 - Hristos este \u015fi <em>valoarea</em> Scripturii. "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Iubirea nemuritoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Valoarea</em> ei s-a pierdut. ",
-"pentru \u00eenv\u0103\u0163\u0103tura Lui, M\u00e2ntuitorul a ar\u0103tat toat\u0103 <em>valoarea</em> Adev\u0103rului Evangheliei Sale. ",
-"tuturor celor m\u0103rturisite \u015fi lucrate de Isus, <em>valoarea</em> suprem\u0103 de unic adev\u0103r, "
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Credinţa şi statornicia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate celelalte virtu\u0163i, care dau frumuse\u0163e \u015fi <em>valoare</em> cuiva, ",
-"mai face oamenii, f\u0103r\u0103 credin\u0163\u0103 n-a avut nici o <em>valoare</em> \u015fi nici o durat\u0103. ",
-"mai mult, c\u0103ci acolo se nimice\u015fte un suflet cu o <em>valoare</em> ve\u015fnic\u0103. "
-]
-}
-
-Score: 3.0
+Score: 12.749999
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pacea noastră
 Title: Iată că acum ne vorbeşti desluşit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"str\u0103lucirea dorit\u0103 m\u0103rg\u0103ritarului care p\u0103rea f\u0103r\u0103 nici o <em>valoare</em> pentru to\u0163i. ",
-"<em>Valoarea</em> lor era nem\u0103rginit de mare, lumea \u00eentreag\u0103 o vede",
-"Iuda, M\u00e2ntuitorul nu Se \u00een\u015felase. Era \u015fi el o <em>valoare</em> de aceea\u015fi m\u0103rime la \u00eenceput. "
-]
-}
+Highlight: strălucirea dorită mărgăritarului care părea fără nici o <em>valoare</em> pentru toţi.
+Highlight: Iuda, Mântuitorul nu Se înşelase. Era şi el o <em>valoare</em> de aceeaşi mărime la început.
+Highlight: <em>Valoarea</em> lor era nemărginit de mare, lumea întreagă o vede
 
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Cel dintâi - fratele tău
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pe care \u00eel afli, este totdeauna mai mare dec\u00e2t <em>valoarea</em> lui. ",
-"Domnului Isus nu poate fi niciodat\u0103 at\u00e2t de mare c\u00e2t <em>valoarea</em> harului pe care l-ai aflat. ",
-"tot nu v\u0103 pute\u0163i cu adev\u0103rat da seama de marea <em>valoare</em> a acestui fapt. "
-]
-}
-
-Score: 3.0
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dragostei. De ce a\u015fa? Pentru c\u0103 de <em>valoarea</em> \u00eenv\u0103\u0163\u0103turii depinde <em>valoarea</em> tuturor celorlalte. Dreapta \u00eenv\u0103\u0163\u0103tur\u0103",
-"fi \u00een\u0163eleas\u0103 \u015fi pre\u0163uit\u0103 deplin aceast\u0103 prim\u0103 <em>valoare</em> a vie\u0163ii, \u00eenv\u0103\u0163\u0103tura, apoi urmeaz\u0103 importan\u0163a tuturor"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aici toate aceste lucruri mici c\u0103p\u0103tau o mare <em>valoare</em>. Situa\u0163ia \u00een care ne aflam ne f\u0103cea s\u0103 vedem ce",
-"deosebit\u0103 cu fratele Sergiu. Acolo am cunoscut marea <em>valoare</em> \u015fi sinceritate a sufletului s\u0103u hot\u0103r\u00e2t \u015fi statornic"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 25 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"acele adev\u0103ruri de credin\u0163\u0103 la acele lucruri de <em>valoare</em> sf\u00e2nt\u0103 \u015fi durabil\u0103 cu care zidiser\u0103 \u00eenainta\u015fii",
-"- \u00cemi e indiferent. Eu nu caut aici s\u0103-mi ar\u0103t <em>valoarea</em> persoanei mele. Vreau s\u0103 se vad\u0103 faptele \u015fi scopurile"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate \u0163intind \u00een final la nimicirea noastr\u0103 \u015fi ca <em>valoare</em> \u015fi ca fiin\u0163\u0103 dec\u00e2t pe Dumnezeu? ",
-"\u015fi eventual\u0103 tip\u0103rire, convins fiind de o real\u0103 <em>valoare</em> a lor literar\u0103, istoric\u0103, religioas\u0103, educativ\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een stare, dintre to\u0163i cei care i-au contestat <em>valoarea</em> \u015fi harul - s\u0103 se a\u015feze \u00een fa\u0163a unei mul\u0163imi care",
-"Le-a convenit atunci c\u00e2nd banii erau at\u00e2t de f\u0103r\u0103 <em>valoare</em> \u00eenc\u00e2t bietul Titus nu s-a ales aproape cu nimic"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Astfel c\u0103, practic, aceste hot\u0103r\u00e2ri n-aveau nici o <em>valoare</em> \u015fi ele nici nu m\u0103reau nici nu sc\u0103deau num\u0103rul celor",
-"<em>Valoarea</em> banilor sc\u0103dea at\u00e2t de repede \u00eenc\u00e2t fiecare num\u0103r"
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"botezat de p\u0103r. Fanu din Petrila - un preot de mare <em>valoare</em> duhovniceasc\u0103, un adev\u0103rat p\u0103rinte duhovnicesc",
-"nimic de a face cu ea \u015fi cu el. De lucr\u0103rile f\u0103r\u0103 <em>valoare</em> nu se intereseaz\u0103 nici satan \u015fi nici lumea."
-]
-}
+Highlight: botezat de păr. Fanu din Petrila - un preot de mare <em>valoare</em> duhovnicească, un adevărat părinte duhovnicesc
+Highlight: nimic de a face cu ea şi cu el. De lucrările fără <em>valoare</em> nu se interesează nici satan şi nici lumea.
 
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trimes \u015fi apostol al lui Hristos, a c\u0103rui m\u0103rire \u015fi <em>valoare</em> fiind \u00eenc\u0103 prea aproape de noi, pu\u0163ini o v\u0103d la",
-"trebuit s\u0103 treac\u0103 veacuri ca lumea s\u0103 vad\u0103 adev\u0103rata <em>valoare</em> a sf. Pavel, sau Ioan, sau Vasile, sau a celorlal\u0163i"
-]
-}
+Highlight: trimes şi apostol al lui Hristos, a cărui mărire şi <em>valoare</em> fiind încă prea aproape de noi, puţini o văd la
+Highlight: trebuit să treacă veacuri ca lumea să vadă adevărata <em>valoare</em> a sf. Pavel, sau Ioan, sau Vasile, sau a celorlalţi
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 21 - După cei 50 de ani
+Score: 12.666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103 ierarhul s\u0103u \u00een\u0163elege \u015fi apreciaz\u0103 pe deplin <em>valoarea</em> \u015fi greutatea muncii sale, nici nu s-a g\u00e2ndit la",
-"integreze total \u015fi s\u0103-\u015fi \u00eensu\u015feasc\u0103 pozitiv opera \u015fi <em>valoarea</em> sa, ca pe un patrimoniu sf\u00e2nt al bisericii \u015fi"
-]
-}
+Highlight: toate ţintind în final la nimicirea noastră şi ca <em>valoare</em> şi ca fiinţă decât pe Dumnezeu?
+Highlight: şi eventuală tipărire, convins fiind de o reală <em>valoare</em> a lor literară, istorică, religioasă, educativă
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 22 - Peregrinările soliei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Alte curente artistice au <em>valoarea</em> lor de varia\u0163ie \u00een art\u0103, iar \u00een credin\u0163\u0103, \u00een tr\u0103irea",
-"compensa\u0163ii de aceea\u015fi natur\u0103, dar \u015fi de aceea\u015fi <em>valoare</em> prin trimiterea unora din modestele mele scrieri"
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 29 - Anul jubiliar 1988
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care pentru noi \u015fi pentru Istoria Oastei au o <em>valoare</em> unic\u0103. S-ar putea cu timpul aranja aici o cas\u0103",
-"sufleteasc\u0103 a neamului nostru, este de durat\u0103 \u015fi de o <em>valoare</em> etern\u0103, pentru c\u0103 este a sufletului nostru nemuritor"
-]
-}
+Highlight: care pentru noi şi pentru Istoria Oastei au o <em>valoare</em> unică. S-ar putea cu timpul aranja aici o casă
+Highlight: sufletească a neamului nostru, este de durată şi de o <em>valoare</em> eternă, pentru că este a sufletului nostru nemuritor
 
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Mâna lui Dumnezeu
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dragoste \u015fi s\u0103-i pre\u0163uim nespus de mult pentru <em>valoarea</em> \u015fi m\u0103iestria lor. ",
-"lui Dumnezeu scriitori inspira\u0163i \u015fi de o \u00eenalt\u0103 <em>valoare</em> sf\u00e2nt\u0103. Opera pe care o fac ei este incomparabil"
-]
-}
+Highlight: aici toate aceste lucruri mici căpătau o mare <em>valoare</em>. Situaţia în care ne aflam ne făcea să vedem ce
+Highlight: deosebită cu fratele Sergiu. Acolo am cunoscut marea <em>valoare</em> şi sinceritate a sufletului său hotărât şi statornic
 
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: S-a aplecat şi s-a uitat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lumii, atra\u015fi de <em>valoarea</em> neobi\u015fnuit\u0103 a acestei cruci. ",
-"Iar marea \u015fi tainica ei <em>valoare</em> n-o po\u0163i afla dec\u00e2t"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: S-a dus şi a vestit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru \u00eenv\u0103\u0163\u0103tura Lui, M\u00e2ntuitorul a ar\u0103tat toat\u0103 <em>valoarea</em> Adev\u0103rului Evangheliei Sale. ",
-"tuturor celor m\u0103rturisite \u015fi lucrate de Isus, <em>valoarea</em> suprem\u0103 de unic adev\u0103r, de unic\u0103 Autoritate, de"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: Pentru ca voi să credeţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Domnului, i-a p\u0103strat \u015fi El pe ei, pe fiecare dup\u0103 <em>valoarea</em> lui. ",
-"din ea sau despre ea, cu o credin\u0163\u0103 de aceea\u015fi <em>valoare</em> cu a lor "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Ce este Adevărul?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Etern prin <em>valoarea</em> \u015fi sensul Lui: Adev\u0103rul sunt Eu, Cel din fa\u0163a",
-"Hristos, le-a dat tuturora \u015fi le va da aceast\u0103 <em>valoare</em>. "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Să n-o sfâşiem!...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ma\u015fa curat\u0103 \u015fi alb\u0103, frumoas\u0103 \u015fi \u00eentreag\u0103 - ea d\u0103 <em>valoare</em> \u015fi c\u0103ldur\u0103 tuturor celorlalte. ",
-"nici \u00een fa\u0163a fiin\u0163elor duhovnice\u015fti nu po\u0163i avea <em>valoarea</em> care se cere. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Scopul - şi mijloacele lui
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1 - Un pom are numai <em>valoarea</em> de a fi un mijloc prin care Dumnezeu d\u0103 roade, umbr\u0103 sau c\u0103ldur\u0103 cuiva",
-"Un cuv\u00e2nt are numai <em>valoarea</em> de a mijloci lumin\u0103, m\u00e2ng\u00e2iere, fericire pentru cineva. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Totul în Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru a \u015fti aduce lui Dumnezeu lucr\u0103ri mai de <em>valoare</em>, \u015fi mai alese. Am avut numai \u015fcoala Duhului Sf\u00e2nt",
-"s\u0103 creeze ni\u015fte lucr\u0103ri de o a\u015fa frumuse\u0163e \u015fi <em>valoare</em> ca acelea create de oamenii lui Dumnezeu prin Duhul"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Nevinovăţia şi timiditatea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"profund\u0103, nu va avea niciodat\u0103 ceva de durat\u0103 \u015fi de <em>valoare</em>. ",
-"poezie, c\u00e2t de frumoas\u0103 ar fi, \u00ee\u015fi pierde orice <em>valoare</em>, din cauza lenei celui care ar putea s-o \u00eenve\u0163e"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Naşterea din nou
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ma\u015fa curat\u0103 \u015fi alb\u0103, frumoas\u0103 \u015fi \u00eentreag\u0103 - ea d\u0103 <em>valoare</em> \u015fi c\u0103ldur\u0103 tuturor celorlalte haine. ",
-"\u00een fa\u0163a fiin\u0163elor duhovnice\u015fti tu nu po\u0163i avea <em>valoarea</em> care se cere. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Graba şi primirea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cine ar putea m\u0103sura <em>valoarea</em> lui Iov, ",
-"<em>Valoarea</em> sfin\u0163ilor Pavel, Ioan Gur\u0103 de Aur - \u015fi chiar dintre"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Alergarea şi ajungerea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lui Isus \u0163i-a dat \u015fi \u0163ie frumuse\u0163e, durat\u0103 \u015fi <em>valoare</em> ve\u015fnic\u0103, ",
-"\u00cenvieze pentru c\u0103 abia \u00cenvierea lui Hristos putea da <em>valoarea</em> ve\u015fnic\u0103 Lucr\u0103rii Sale, Patimilor Sale, Mor\u0163ii"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Vorba şi scrierea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Domnului i-a p\u0103strat \u015fi El pe ei, pe fiecare, dup\u0103 <em>valoarea</em> lui. ",
-"Biblie, sau despre ea, - cu o credin\u0163\u0103 de aceea\u015fi <em>valoare</em> ca a lor ("
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Primirea lui Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ce m\u0103rturise\u015fti tu despre tine are cu adev\u0103rat <em>valoare</em>. Nimeni nu poate fi un judec\u0103tor drept \u00een propria",
-"adev\u0103rata m\u0103rturie despre tine. \u015ei singura care are <em>valoare</em>. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Moartea şi Viaţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"totdeauna \u015fi cu toat\u0103 nem\u0103rginita ei putere \u015fi <em>valoare</em>, f\u0103r\u0103 a fi \u00eempiedicat\u0103 nici de omul nevrednic,",
-"t\u0103u, lucr\u0103rile pe care le faci s\u0103 aib\u0103 via\u0163\u0103 \u015fi <em>valoare</em> etern\u0103? "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Un singur Adevăr
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Etern prin <em>valoarea</em> \u015fi sensul Lui. ",
-"Hristos, le-a dat tuturora \u015fi le va da aceast\u0103 <em>valoare</em>. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Înfricarea de cutremure
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"este mare <em>valoarea</em> unor tineri credincio\u015fi \u00een Lucrarea lui Dumnezeu, este nespus mai mare <em>valoarea</em> acelora"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Ce mare taină este Lucrarea Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"credin\u0163a \u015fi tr\u0103irea lui, era de o cur\u0103\u0163ie \u015fi de o <em>valoare</em> ca aceea a sfin\u0163ilor Apostoli, a sfin\u0163ilor P\u0103rin\u0163i",
-"putere \u00een \u0163ar\u0103 \u015fi \u00een biseric\u0103, ar fi \u00een\u0163eles marea <em>valoare</em> \u015fi sl\u0103vitul scop al acestei Lucr\u0103ri duhovnice\u015fti"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Cuvântul Tău este Adevărul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Singura <em>Valoare</em> Etern\u0103: Adev\u0103rul. ",
-"Este ceea ce e <em>Valoare</em> Etern\u0103. \u015ei \u00een m\u0103rime. \u015ei \u00een durat\u0103. \u015ei \u00een pre\u0163"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Cum ziceţi voi că hulesc?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"rari, nici nu-i contrazice. C\u0103ci ei cunosc \u015fi <em>valoarea</em> cuv\u00e2ntului dar \u015ftiu \u015fi m\u0103sura lui. ",
-"lor, cur\u0103\u0163ia lor, demnitatea lor sf\u00e2nt\u0103 \u015fi toat\u0103 <em>valoarea</em> lor, trebuie pus\u0103 mai presus de orice \u00eendoial\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Tot ce a spus Ioan
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei ce mare <em>valoare</em> au vorbele trime\u015filor lui Dumnezeu \u015fi c\u00e2t de mult",
-"\u00eencredin\u0163\u00e2ndu-se, \u00eencep abia atunci, s\u0103-\u015fi dea seama ce <em>valoare</em> mare avea el, acela pe care ei l-au cunoscut \u015fi"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Pentru ca voi să credeţi!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate celelalte virtu\u0163i, care dau frumuse\u0163e \u015fi <em>valoare</em> cuiva, ",
-"mai face oamenii, f\u0103r\u0103 credin\u0163\u0103 n-a avut nici <em>valoare</em> nici durat\u0103. "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Altul mărturiseşte...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu ce m\u0103rturise\u015fti tu despre tine are <em>valoare</em>. Nimeni nu poate fi judec\u0103tor \u00een propria lui cauz\u0103",
-"Ceea ce spune Dumnezeu despre tine, aceea are <em>valoarea</em> adev\u0103rului. "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Peste puţină vreme
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"secund\u0103 care a trecut, c\u0103ci dup\u0103 ce a trecut, ce <em>valoare</em> mai au? ",
-"privind din Ve\u015fnicie spre Timp, ne d\u0103m seama de <em>valoarea</em> \u015fi scurtimea adev\u0103rat\u0103 a Timpului acestuia. "
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 9 - Înţelepciunea şi puterea
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"credin\u0163a \u015fi tr\u0103irea lui, era de o cur\u0103\u0163ie \u015fi de o <em>valoare</em> ca aceea a sfin\u0163ilor apostoli, a sfin\u0163ilor P\u0103rin\u0163i",
-"puterea \u00een \u0163ar\u0103 \u015fi \u00een biseric\u0103, ar fi \u00een\u0163eles marea <em>valoare</em> \u015fi sl\u0103vitul scop al acestei Lucr\u0103ri duhovnice\u015fti"
-]
-}
+Highlight: credinţa şi trăirea lui, era de o curăţie şi de o <em>valoare</em> ca aceea a sfinţilor apostoli, a sfinţilor Părinţi
+Highlight: puterea în ţară şi în biserică, ar fi înţeles marea <em>valoare</em> şi slăvitul scop al acestei Lucrări duhovniceşti
 
-Score: 2.6666665
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Cuvântul Tău este Adevărul
+Type: articol
+Author: Traian Dorz
+Highlight: Singura <em>Valoare</em> Eternă: Adevărul.
+Highlight: Este ceea ce e <em>Valoare</em> Eternă. Şi în mărime. Şi în durată. Şi în preţ
+
+Score: 12.666666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: El este Acela despre care ziceam
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"D\u0103 <em>valoare</em> \u015fi crez\u0103m\u00e2nt m\u0103rturisirii tale, prin statornicia",
-"\u015fi auzi, \u00eencredin\u0163area c\u0103 e\u015fti un slujitor de <em>valoare</em> al lui Dumnezeu. "
-]
-}
+Highlight: Dă <em>valoare</em> şi crezământ mărturisirii tale, prin statornicia
+Highlight: şi auzi, încredinţarea că eşti un slujitor de <em>valoare</em> al lui Dumnezeu.
 
-Score: 2.6666665
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Moartea şi Viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: totdeauna şi cu toată nemărginita ei putere şi <em>valoare</em>, fără a fi împiedicată nici de omul nevrednic,
+Highlight: tău, lucrările pe care le faci să aibă viaţă şi <em>valoare</em> eternă?
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Pentru ca voi să credeţi!
+Type: articol
+Author: Traian Dorz
+Highlight: toate celelalte virtuţi, care dau frumuseţe şi <em>valoare</em> cuiva,
+Highlight: mai face oamenii, fără credinţă n-a avut nici <em>valoare</em> nici durată.
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Primirea lui Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: ce mărturiseşti tu despre tine are cu adevărat <em>valoare</em>. Nimeni nu poate fi un judecător drept în propria
+Highlight: adevărata mărturie despre tine. Şi singura care are <em>valoare</em>.
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Tot ce a spus Ioan
+Type: articol
+Author: Traian Dorz
+Highlight: Şi ce mare <em>valoare</em> au vorbele trimeşilor lui Dumnezeu şi cât de mult
+Highlight: încredinţându-se, încep abia atunci, să-şi dea seama ce <em>valoare</em> mare avea el, acela pe care ei l-au cunoscut şi
+
+Score: 9.857142
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Înaintaşii şi urmaşii
+Type: articol
+Author: Traian Dorz
+Highlight: experienţa unui om credincios, dă o şi mai mare <em>valoare</em> cuvintelor sale sănătoase şi pline de seriozitate
+Highlight: cutremurător, nu numai de <em>valoarea</em> adevărului pe care îl auzi, ci de <em>valoarea</em> omului pe care îl vezi,
+Highlight: 3 - <em>Valoarea</em> unui om nu se măsoară întotdeauna după anii lui
+Highlight: după cum nici <em>valoarea</em> unui sfat bun, sau a unei învăţături sănătoase
+Highlight: Ci să-l primim crezând, atât <em>valoarea</em> adevărului - cât şi a celui care l-a spus.
+
+Score: 9.833333
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)
+Type: articol
+Author: Traian Dorz
+Highlight: fapte de paie, fără nici o dulceaţă, fără nici o <em>valoare</em>, fără nici o greutate.
+Highlight: cifra bancnotei este <em>valoarea</em> ei. După cum sunetul instrumentului este <em>valoarea</em> lui.
+Highlight: văzută. Lucrarea mea este <em>valoarea</em> mea declarată.  După
+Highlight: După cum rodul este <em>valoarea</em> pomului. După cum cifra
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: întâi să moară el însuşi, n-are nici un fel de <em>valoare</em> pentru nimeni.
+Highlight: care solul devine jertfă, adevereşte definitiv <em>valoarea</em> mărturiei lui şi semnul trimiterii sale cereşti
+Highlight: respectat cu o sfântă temere de Dumnezeu locul şi <em>valoarea</em> fiecăruia: întâi duhul apoi litera. Întâi cele
+Highlight: poruncit şi aşezat ca dogmă în biserică. Neînlocuind <em>valoarea</em> dogmelor cu nimic ea nu s-a îndepărtat niciodată
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 20 - După alţi 30 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: într-adevăr ar fi în toate privinţele o lucrare de <em>valoare</em>.
+Highlight: sa muncă - sunt încredinţat că va aprecia drept <em>valoarea</em> acestei lucrări. Şi îmi va da competente îndrumări
+Highlight: Maicii Domnului. Nu poate să nu-i fie recunoscută <em>valoarea</em> şi importanţa, mai ales în vremile de acum când
+Highlight: Un astfel de om înţelept va şti cântări drept <em>valoarea</em> unui argument, importanţa unui adevăr şi vremea
+
+Score: 9.8
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Type: articol
+Author: Traian Dorz
+Highlight: O, fiul meu şi fratele meu, iată cea mai mare <em>valoare</em> pe care o ai de la Dumnezeu: cuvântul tău şi Cuvântul
+Highlight: avuţii, fiindcă în ele stă <em>valoarea</em> ta şi mântuirea ta. În cuvântul tău stă <em>valoarea</em> ta, şi în Cuvântul lui
+Highlight: lume: în ce fel jalnic s-a degradat şi s-a pierdut <em>valoarea</em> cuvântului omenesc! În loc să fie numai adevăr
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Cel dintâi - fratele tău
+Type: articol
+Author: Traian Dorz
+Highlight: tot nu vă puteţi cu adevărat da seama de marea <em>valoare</em> a acestui fapt.
+Highlight: pe care îl afli, este totdeauna mai mare decât <em>valoarea</em> lui.  Uneori
+Highlight: Domnului Isus nu poate fi niciodată atât de mare cât <em>valoarea</em> harului pe care l-ai aflat.  Pe
+
+Score: 9.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
+Type: articol
+Author: Traian Dorz
+Highlight: fi înţeleasă şi preţuită deplin această primă <em>valoare</em> a vieţii, învăţătura, apoi urmează importanţa tuturor
+Highlight: dragostei. De ce aşa? Pentru că de <em>valoarea</em> învăţăturii depinde <em>valoarea</em> tuturor celorlalte. Dreapta învăţătură
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Mulţi au citit
+Type: articol
+Author: Traian Dorz
+Highlight: Toate capătă <em>valoare</em> şi putere numai când le susţine Hristos. El este <em>valoarea</em> şi puterea oricăror
+Highlight: oricăror cuvinte. Hristos este şi <em>valoarea</em> Scripturii.
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Vrednicia şi nevrednicia
+Type: articol
+Author: Traian Dorz
+Highlight: lui Dumnezeu şi în aceea a oamenilor, cu această <em>valoare</em>.
+Highlight: aceea, nu numele nostru capătă <em>valoarea</em> trăirii noastre, ci <em>valoarea</em> cinstei noastre, a faptelor noastre
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Altul mărturiseşte...
+Type: articol
+Author: Traian Dorz
+Highlight: Nu ce mărturiseşti tu despre tine are <em>valoare</em>. Nimeni nu poate fi judecător în propria lui cauză
+Highlight: Ceea ce spune Dumnezeu despre tine, aceea are <em>valoarea</em> adevărului.
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: Le-a convenit atunci când banii erau atât de fără <em>valoare</em> încât bietul Titus nu s-a ales aproape cu nimic
+Highlight: în stare, dintre toţi cei care i-au contestat <em>valoarea</em> şi harul - să se aşeze în faţa unei mulţimi care
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight: Astfel că, practic, aceste hotărâri n-aveau nici o <em>valoare</em> şi ele nici nu măreau nici nu scădeau numărul celor
+Highlight: <em>Valoarea</em> banilor scădea atât de repede încât fiecare număr
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 22 - Peregrinările soliei
+Type: articol
+Author: Traian Dorz
+Highlight: compensaţii de aceeaşi natură, dar şi de aceeaşi <em>valoare</em> prin trimiterea unora din modestele mele scrieri
+Highlight: Alte curente artistice au <em>valoarea</em> lor de variaţie în artă, iar în credinţă, în trăirea
+
+Score: 9.666667
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 25 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: acele adevăruri de credinţă la acele lucruri de <em>valoare</em> sfântă şi durabilă cu care zidiseră înaintaşii
+Highlight: - Îmi e indiferent. Eu nu caut aici să-mi arăt <em>valoarea</em> persoanei mele. Vreau să se vadă faptele şi scopurile
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Ce este Adevărul?
+Type: articol
+Author: Traian Dorz
+Highlight: Hristos, le-a dat tuturora şi le va da această <em>valoare</em>.
+Highlight: Etern prin <em>valoarea</em> şi sensul Lui: Adevărul sunt Eu, Cel din faţa
+
+Score: 9.666667
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre cinste
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"33 - Pentru-o via\u0163\u0103 de <em>valoare</em> haina simpl\u0103 nu-i ru\u015fine",
-"nu \u00een titlurile cuiva st\u0103 pe drept <em>valoarea</em> sa; "
-]
-}
+Highlight: 33 - Pentru-o viaţă de <em>valoare</em> haina simplă nu-i ruşine
+Highlight: nu în titlurile cuiva stă pe drept <em>valoarea</em> sa;
 
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Cuvântul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"4 - Cuv\u00e2ntul e <em>valoarea</em> oric\u0103rui \u00eel roste\u015fte",
-"8 - Cuv\u00e2ntul e <em>valoarea</em> fiin\u0163ei tale-ntregi"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Pe urm\u0103, c\u00e2nd <em>valoarea</em> cea mare a lui Saul a fost cunoscut\u0103 de fra\u0163i",
-"(atunci suma asta era <em>valoarea</em> a 12-16 salarii foarte bune)"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"este mare <em>valoarea</em> unor tineri credincio\u015fi \u00een Lucrarea lui Dumnezeu, este nespus mai mare <em>valoarea</em> acelora"
-]
-}
-
-Score: 2.6666665
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei pe m\u0103sur\u0103 ce <em>valoarea</em> lor este mai nesocotit\u0103 \u015fi \u00eendrumarea lor mai",
-"Am\u00e2ndou\u0103 erau de aceea\u015fi <em>valoare</em> \u015fi am\u00e2ndou\u0103 mergeau \u00eempreun\u0103. Nu se putea una f\u0103r\u0103"
-]
-}
+Highlight: Amândouă erau de aceeaşi <em>valoare</em> şi amândouă mergeau împreună. Nu se putea una fără
+Highlight: Şi pe măsură ce <em>valoarea</em> lor este mai nesocotită şi îndrumarea lor mai
 
-Score: 2.6666665
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dumnezeul t\u0103u, ai pierdut sufletul t\u0103u, \u0163i-ai pierdut <em>valoarea</em> ta \u015fi ve\u015fnicia ta. ",
-"fiindc\u0103 noi n-am fost \u00eenc\u0103 acolo, ca s\u0103 \u015ftim ce <em>valoare</em> au cele de acolo. "
-]
-}
+Highlight: fiindcă noi n-am fost încă acolo, ca să ştim ce <em>valoare</em> au cele de acolo.
+Highlight: Dumnezeul tău, ai pierdut sufletul tău, ţi-ai pierdut <em>valoarea</em> ta şi veşnicia ta.  Nu
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Calea vieţii noastre
+Title: Peste puţină vreme
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Mi-e indiferent! Eu nu caut aici s\u0103-mi arat <em>valoarea</em> persoanei mele, ci vreau s\u0103 se vad\u0103 \u00eenf\u0103\u0163i\u015farea"
-]
-}
+Highlight: secundă care a trecut, căci după ce a trecut, ce <em>valoare</em> mai au?
+Highlight: privind din Veşnicie spre Timp, ne dăm seama de <em>valoarea</em> şi scurtimea adevărată a Timpului acestuia.
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Să n-o sfâşiem!...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"alt\u0103 identitate. Dar atunci el nu mai poate fi o <em>valoare</em> ci numai un manechin, care poate fi \u00eembr\u0103cat oricum"
-]
-}
+Highlight: cămaşa curată şi albă, frumoasă şi întreagă - ea dă <em>valoare</em> şi căldură tuturor celorlalte.
+Highlight: nici în faţa fiinţelor duhovniceşti nu poţi avea <em>valoarea</em> care se cere.
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: ... Crezi tu?
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Domnului este o for\u0163\u0103 duhovniceasc\u0103 de cea mai mare <em>valoare</em> \u015fi importan\u0163\u0103. Biserica ar putea-o folosi nu numai"
-]
-}
+Highlight: Cuvântul fie spus, fie scris, are o <em>valoare</em> veşnică şi este un argument sfânt faţă de Dumnezeu
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 10 - Uşor e jugul lui Hristos
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: ... Va trăi prin Mine
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici un \u00eenchipuit dintre cei care \u00ee\u015fi au toat\u0103 <em>valoarea</em> lor \u00een h\u00e2rtie sau \u00een hain\u0103. Ci dintre cei ce-o"
-]
-}
+Highlight: tău, lucrurile pe care le faci să aibă viaţă şi <em>valoare</em> eternă?
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 14 - Atacul împotriva steagului
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Acum credeţi?
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dup\u0103 s\u0103v\u00e2r\u015firea ei o pedeaps\u0103 propor\u0163ional\u0103 cu <em>valoarea</em> vie\u0163ii pe care a distrus-o \u015fi cu \u00eensemn\u0103tatea"
-]
-}
+Highlight: este cel mult pentru tine însuţi. Sau pentru o <em>valoare</em> puţină.
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 15 - Micii contemporani ai marilor oameni
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Adevărata Lumină
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mul\u0163i oameni lumina\u0163i de o mare corectitudine \u015fi <em>valoare</em> moral\u0103 - care vedeau \u00een perspectiv\u0103 marele rost"
-]
-}
+Highlight: ştii că toate luminile pe care le ai n-au nici o <em>valoare</em>, dacă tu n-ai adevărata lumină. Dacă n-ai felul
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Adevăratul trimes
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tiparul era foarte scump - iar banii \u00ee\u015fi pierdeau <em>valoarea</em> de la o zi la alta. "
-]
-}
+Highlight: Aurul dă <em>valoare</em> şi pungii în care este ţinut.
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi \u00een fa\u0163a oamenilor \u015fi-au pierdut orice fel de <em>valoare</em> (Matei 19, 33; "
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 22 - Al doilea 2-4-2
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aici \u015fi cele mai ne\u00eensemnate lucruri c\u0103p\u0103tau o <em>valoare</em> nespus de mare. "
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 7 - A doua Judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nevinovat el crede la izb\u00e2nda cauzei sale drepte \u015fi \u00een <em>valoarea</em> argumentelor lui. Nici nu se poate g\u00e2ndi c\u0103 aceste"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"altcum se duce pe g\u00e2rl\u0103 prestigiul preotului. Ce <em>valoare</em> mai poate avea, spre pild\u0103, scrisul preotului Muntmarg"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"maturiz\u0103m, spre a putea da c\u00e2ndva lucr\u0103ri mai de <em>valoare</em>."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 16 - Din cetate în cetate...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fiecare ridica pe scara spre cer, - se \u00een\u015firuie <em>valoarea</em> credincio\u015filor adev\u0103ra\u0163i."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 4 - Anul următor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"realizezi cu munci istovitoare subproduc\u0163ii f\u0103r\u0103 <em>valoare</em> \u015fi f\u0103r\u0103 durat\u0103. Dec\u00e2t a\u015fa, \u00eentr-adev\u0103r mai bine"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate f\u0103r\u0103 nici o originalitate \u015fi f\u0103r\u0103 nici o <em>valoare</em>."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"poate \u00eentuneca, orbi chiar, tot ce ar avea mai de <em>valoare</em> \u015fi mai nobil \u00een el, un om!"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 11 - Ce minunat lucrează Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"compuse din ambi\u0163ie \u015fi nu din har nu mai au nici o <em>valoare</em>."
-]
-}
+Highlight: compuse din ambiţie şi nu din har nu mai au nici o <em>valoare</em>.
 
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
+Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lui n-a \u015ftiut-o pre\u0163ui nimeni \u00een adev\u0103rata ei <em>valoare</em>. Doar \u00een Ziua Cea Mare a R\u0103spl\u0103ti\u0163ilor, atunci"
-]
-}
+Highlight: altcum se duce pe gârlă prestigiul preotului. Ce <em>valoare</em> mai poate avea, spre pildă, scrisul preotului Muntmarg
 
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
+Title: Cap. 11 - Semnele Oastei Domnului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trupe\u015fte, cap\u0103t\u0103 pentru acest credincios acum <em>valoarea</em> unui \u00een\u0163eles mult mai \u00eenalt \u015fi mai frumos dec\u00e2t"
-]
-}
+Highlight: altă identitate. Dar atunci el nu mai poate fi o <em>valoare</em> ci numai un manechin, care poate fi îmbrăcat oricum
 
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
+Title: Cap. 13 - E poate ultima-ncercare...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"duble \u015fi \u00eendoielnice. Fiind un om f\u0103r\u0103 nici o <em>valoare</em> duhovniceasc\u0103 n-a fost crezut \u015fi primit dec\u00e2t de"
-]
-}
+Highlight: Domnului este o forţă duhovnicească de cea mai mare <em>valoare</em> şi importanţă. Biserica ar putea-o folosi nu numai
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pre\u0163 mai putem avea noi? Dac\u0103 ne-am pierdut orice <em>valoare</em> sufleteasc\u0103, - ce pre\u0163 mai poate avea fiin\u0163a noastr\u0103"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 25 - Istorie şi suferinţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Despre m\u0103rinimia \u015fi <em>valoarea</em> sufleteasc\u0103 a acestui mare ierarh al bisericii"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 13 - Frumosul tineret creştin
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"articol scris de el \u00een 1926, pentru marea lui <em>valoare</em> \u015fi azi: "
-]
-}
+Highlight: articol scris de el în 1926, pentru marea lui <em>valoare</em> şi azi:
 
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 14 - Apostolia Femeilor
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"f\u0103cut multe din ele pentru Numele T\u0103u, este de o <em>valoare</em> \u015fi de o frumuse\u0163e ve\u015fnic\u0103. Amin. "
-]
-}
+Highlight: făcut multe din ele pentru Numele Tău, este de o <em>valoare</em> şi de o frumuseţe veşnică. Amin.
 
-Score: 2.0
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 15 - Al doilea foc
+Type: articol
+Author: Traian Dorz
+Highlight: maturizăm, spre a putea da cândva lucrări mai de <em>valoare</em>.
+
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 15 - Călătoria la Ierusalim
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"numai \u00een\u0163elesul lor cel nev\u0103zut este ceea ce le d\u0103 <em>valoare</em> \u015fi rost. "
-]
-}
+Highlight: numai înţelesul lor cel nevăzut este ceea ce le dă <em>valoare</em> şi rost.
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 15 - Micii contemporani ai marilor oameni
+Type: articol
+Author: Traian Dorz
+Highlight: mulţi oameni luminaţi de o mare corectitudine şi <em>valoare</em> morală - care vedeau în perspectivă marele rost
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 18 - Frumosul an 1930
+Type: articol
+Author: Traian Dorz
+Highlight: Scriban, un nume cinstit şi cunoscut ca o mare <em>valoare</em>. Preotul Toma Chiricuţă cu revista lui
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 19 - Al treilea februarie
+Type: articol
+Author: Traian Dorz
+Highlight: lui n-a ştiut-o preţui nimeni în adevărata ei <em>valoare</em>. Doar în Ziua Cea Mare a Răsplătiţilor, atunci
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Type: articol
+Author: Traian Dorz
+Highlight: peste care ei vor să-şi imprime chipul. Hristos dă <em>valoare</em> fiecărui om şi fiecărei iniţiative în parte. Lumea
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: şi în faţa oamenilor şi-au pierdut orice fel de <em>valoare</em> (Matei 19, 33;
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 22 - Al doilea 2-4-2
+Type: articol
+Author: Traian Dorz
+Highlight: aici şi cele mai neînsemnate lucruri căpătau o <em>valoare</em> nespus de mare.
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: răului. Ea este o forţă spirituală de cea mai mare <em>valoare</em> şi importanţă... Dar biserica a abandonat-o şi
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: duble şi îndoielnice. Fiind un om fără nici o <em>valoare</em> duhovnicească n-a fost crezut şi primit decât de
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: cui îi mai păsa că aceste făpturi fără nici o <em>valoare</em> pentru ţară se băteau între ei şi se mâncau ca
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 32 - Şi alte lupte
+Type: articol
+Author: Traian Dorz
+Highlight: dacă muncea aici, să-şi cumpere lunar alimente în <em>valoare</em> de 100 de lei, pentru a-şi îmbunătăţi hrana puţină
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 4 - Anul următor
+Type: articol
+Author: Traian Dorz
+Highlight: realizezi cu munci istovitoare subproducţii fără <em>valoare</em> şi fără durată. Decât aşa, într-adevăr mai bine
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: toate fără nici o originalitate şi fără nici o <em>valoare</em>.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: preţ mai putem avea noi? Dacă ne-am pierdut orice <em>valoare</em> sufletească, - ce preţ mai poate avea fiinţa noastră
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
+Type: articol
+Author: Traian Dorz
+Highlight: poate întuneca, orbi chiar, tot ce ar avea mai de <em>valoare</em> şi mai nobil în el, un om!
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 7 - Primii paşi spre o rânduială
+Type: articol
+Author: Traian Dorz
+Highlight: porunci pentru Oastea Domnului. Ele sunt de o <em>valoare</em> neschimbată până la sfârşit. Şi e nevoie să le
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Cel Unul şi Unicul
+Type: articol
+Author: Traian Dorz
+Highlight: 6 - Cu cât cineva poartă un conţinut mai de <em>valoare</em>, cu atât va fi mai modest şi mai tăcut,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Chemarea şi venirea
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărul este singurul aur cu o <em>valoare</em> veşnică.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Cine Te crezi Tu că eşti?
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul, la vremea Lui, vă va înălţa, arătând marea <em>valoare</em> a mărgăritarului vostru necunoscut şi ascuns.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Cine crede în Fiul are...
+Type: articol
+Author: Traian Dorz
+Highlight: seriozitate, orientare sănătoasă, conţinut şi <em>valoare</em> duhovnicească vieţii tale,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Conştiinţa
+Type: articol
+Author: Traian Dorz
+Highlight: 10 - Conştiinţa dă <em>valoare</em> oricăror virtuţi şi stări
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Cum poate... să ne dea Trupul Lui?
+Type: articol
+Author: Traian Dorz
+Highlight: totdeauna şi cu toată nemărginita ei putere şi <em>valoare</em>,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Cuvântul şi Duhul
+Type: articol
+Author: Traian Dorz
+Highlight: Ei înşişi ştiind cât de fără <em>valoare</em> este cuvântul, nu şi-l respectă, nu şi-l ţin.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Când au auzit aceste cuvinte...
+Type: articol
+Author: Traian Dorz
+Highlight: Ei înşişi ştiind cât de fără <em>valoare</em> le este cuvântul, nu şi-l respectă, nu şi-l ţin
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Când toată viaţa...
+Type: poezie
+Author: Traian Dorz
+Highlight: tot ce ne pare-aici <em>valoare</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Când toată viaţa...
+Type: poezie
+Author: Traian Dorz
+Highlight: tot ce ne pare-aici <em>valoare</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Cărarea şi urmele
+Type: articol
+Author: Traian Dorz
+Highlight: 12 - Nici un om nu poate avea o <em>valoare</em> mai mare decât acela care prin felul lui de viaţă
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Dacă vă urăşte lumea...
+Type: articol
+Author: Traian Dorz
+Highlight: cutremurătoare, prin ascultarea căreia, omul devine o <em>valoare</em> fără egal pe pământ,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre credinţă
+Type: articol
+Author: Traian Dorz
+Highlight: alte lucruri să mai aibă vreo <em>valoare</em> pe pământ.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Din pricina lui mulţi credeau
+Type: articol
+Author: Traian Dorz
+Highlight: Ca dovadă că sunt mulţi tineri de mare <em>valoare</em> şi seriozitate, în care Domnul Isus pune mari nădejdi
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: - când e dovedit odată, a rămas fără <em>valoare</em>.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Eu nu sunt vrednic...
+Type: articol
+Author: Traian Dorz
+Highlight: nevrednicia. Cu cât cineva poartă un conţinut mai de <em>valoare</em>, cu atâta va fi mai modest şi mai tăcut.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Eu sunt Învierea şi Viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: personalitate va exista apoi, de sine stătătoare căpătând <em>valoare</em> prin meritele câştigate prin luptă, cu muncă şi
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Fariseii I-au zis: Tu mărturiseşti - despre Tine Însuţi...
+Type: articol
+Author: Traian Dorz
+Highlight: mărturisire n-ar mai putea fi, şi n-ar mai avea nici o <em>valoare</em> fără aceasta.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Frumuseţea
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Bunătatea dă <em>valoare</em> la oricare frumuseţe
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Isus plângea
+Type: articol
+Author: Traian Dorz
+Highlight: Sau ce <em>valoare</em> poate să aibă o propovăduire fără de lacrimi?
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica 1-a a Postului Mare
+Type: articol
+Author: Traian Dorz
+Highlight: - te arată într-adevăr că eşti mare, că eşti o <em>valoare</em>, că ai o credinţă.
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
+Type: articol
+Author: Traian Dorz
+Highlight: pentru ca şi ei să înveţe mai presus de toate, câtă <em>valoare</em> are statornicia în credinţă. Întemeierea neclintită
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 16-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Ce <em>valoare</em> mai poate avea în faţa cui te-a văzut păcătuind
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)
+Type: articol
+Author: Traian Dorz
+Highlight: Ce <em>valoare</em> va mai avea atunci credinţa fără fapte?
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)
+Type: articol
+Author: Traian Dorz
+Highlight: curaţi, urechile sănătoase şi gura cumpătată dau <em>valoare</em> şi frumuseţe tuturor celorlalte virtuţi ale omului
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)
+Type: articol
+Author: Traian Dorz
+Highlight: sufletească şi ogorul lui duhovnicesc, se vedea ce <em>valoare</em> are slujitorul ales şi ce preţuire merită să i
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
+Type: articol
+Author: Traian Dorz
+Highlight: se duce, ce folos? Solia lui nu va avea nici o <em>valoare</em>, munca lui nici un rod. El va fi un străin pentru
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
+Type: articol
+Author: Traian Dorz
+Highlight: curăţiei şi pecetea Duhului Sfânt, nu are nici o <em>valoare</em>. Şi fără semnătura aceasta şi fără această ştampilă
 

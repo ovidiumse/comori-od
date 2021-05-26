@@ -1,1343 +1,930 @@
-+----------------------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                  | Author      | Tip                              | Carte                        | Volum   |
-+----------------------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Fereşte-te de desfrânare                                                               | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                    | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Rugăciuni vinovate                                                                     | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Păcatul şi osânda                                                                      | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Şi Caiafa era                                                                          | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Din părţile Moldovei                                                                   | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| A ajuns şi a intrat                                                                    | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Fiul lui Simon Iscarioteanul                                                           | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Suferinţa ispăşitoare                                                                  | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
-| Nevinovaţii lui Dumnezeu                                                               | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Dumnezeu şi Casa Lui                                                                   | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Vorbirea şi tăcerea                                                                    | Traian Dorz | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
-| Încrederea şi biruinţa                                                                 | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
-| Liniştea vieţii curate                                                                 | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Poruncile lui Dumnezeu                                                                 | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
-| Voi aveţi de tată pe diavolul                                                          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| De patru zile... în mormânt                                                            | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Nu puteţi... dacă nu rămâneţi în Mine                                                  | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Privea pe Isus umblând                                                                 | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| I-a scos pe toţi afară                                                                 | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Oamenii veneau să fie botezaţi                                                         | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Ispita desfrânării                                                                     | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 29 - Proverbe                                                                     | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Despre înfrânare                                                                       | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Maramureşului                                                              | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum) | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 7 - Printre leu şi printre urs                                                    | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                    | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Al doilea 2-4-2                                                              | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 26 - Limpezirea apelor adânci                                                     | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                               | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - A treia Judecată                                                              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Înfricoşata lepădare                                                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| De ce-aţi uitat?                                                                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
-| Cap. 20 - Rugul care nu se mistuie                                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                                | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Apostolia Femeilor                                                           | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                        | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Mâinile lui Dumnezeu                                                                   | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Încredinţarea suferinţei                                                               | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
-| Mărturisitori cere Domnul                                                              | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Bucuria aflării Domnului                                                               | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Însetarea şi Apa Vieţii                                                                | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Cum, Tu iudeu, bei?                                                                    | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Oricui bea din apa aceasta                                                             | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Pâinea lui Dumnezeu... dă viaţă                                                        | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Isus le-a zis: nu cârtiţi!                                                             | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Când inima-i sătulă                                                                    | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| El care a deschis... nu putea?                                                         | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Daţi piatra la o parte!                                                                | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Mortul a ieşit afară...                                                                | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| De ce nu s-a vândut?                                                                   | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cine îşi iubeşte viaţa                                                                 | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... Ştia că la Dumnezeu Se duce                                                        | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Se duce-n toată lumea vântul                                                           | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Pe sânul lui Isus                                                                      | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Ce vrei să faci, fă repede                                                             | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| După ce a ieşit Iuda...                                                                | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Pilat a pus să-L bată                                                                  | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Iată, vi-L aduc, ca să ştiţi                                                           | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Şi mai frică...                                                                        | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| ... Nici un răspuns                                                                    | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Dacă dai drumul lui Isus...                                                            | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| În mâinile lor...                                                                      | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Părinte-Atotputernic...                                                                | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Copleşit de frumuseţea                                                                 | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| De-aş ajunge cea mai mare                                                              | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | poezie  |
-| Rostul şi viaţa noastră                                                                | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Fraţii şi vrăjmaşii                                                                    | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Păstrarea şi pierderea                                                                 | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
-| Iubirea şi nădejdea                                                                    | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Cutremuraţi-vă şi nu păcătuiţi                                                         | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Un gând rău                                                                            | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Purtătorul Cuvântului                                                                  | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Supunerea în Lucrare                                                                   | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
-| Biserica şi Biblia                                                                     | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Fărădelegile şi Dreptatea                                                              | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Teama de păcat                                                                         | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Lumina şi lipsa ei                                                                     | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
-| Numele biruitorului                                                                    | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Când vom iubi pe Dumnezeu                                                              | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Binefacerea şi recunoştinţa                                                            | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Amintirile noastre neuitate                                                            | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Urechile şi ochii                                                                      | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Adevăratele avuţii                                                                     | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
-| Porunca şi ascultarea                                                                  | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Faţa şi făţărnicia                                                                     | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Încrederea şi siguranţa                                                                | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Setea şi izvorul                                                                       | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Statornicie şi abatere                                                                 | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Calea dreaptă - şi căi amăgitoare                                                      | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
-| Să mulţumim pentru toate                                                               | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
-| Cercetarea de sine                                                                     | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
-| Unul şi toţi                                                                           | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
-| Vinovăţia şi Răsplata                                                                  | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
-+----------------------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
++----------------------------------------------------------------------------------------+---------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                  | Occurrences                                             | Author      | Tip                              | Carte                        | Volum   |
++----------------------------------------------------------------------------------------+---------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Fereşte-te de desfrânare                                                               | {'desfrânată', 'desfrânare'}                            | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 5 - Fereşte-te de desfrânare                                                      | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                   | {'desfrânare', 'desfrânate', 'desfrânaţi', 'desfrânat'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                    | {'desfrânare', 'desfrânarea'}                           | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Din părţile Maramureşului                                                              | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum) | {'desfrânare'}                                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Din părţile Moldovei                                                                   | {'desfrânare', 'desfrânat', 'desfrânarea'}              | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cap. 29 - Proverbe                                                                     | {'desfrânare', 'desfrânat'}                             | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Despre înfrânare                                                                       | {'desfrânare', 'desfrânarea'}                           | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Dumnezeu şi Casa Lui                                                                   | {'desfrânare', 'desfrânată'}                            | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| ... Vorbesc după cum M-a învăţat Tatăl                                                 | {'desfrânare'}                                          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| A face voia lui Dumnezeu                                                               | {'desfrânare'}                                          | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                        | {'desfrânare'}                                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Apostolia Femeilor                                                           | {'desfrânare'}                                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                                              | {'desfrânare'}                                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Ce vrei să faci, fă repede                                                             | {'desfrânare'}                                          | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Cine trăieşte şi crede, nu va muri! Crezi tu?                                          | {'desfrânare'}                                          | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Cum, Tu iudeu, bei?                                                                    | {'desfrânare'}                                          | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Dacă rămâneţi în Cuvântul Meu                                                          | {'desfrânare'}                                          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Despre bunătate                                                                        | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre cinste                                                                          | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre dorinţă                                                                         | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre ură                                                                             | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| După cum a fost înălţat şarpele                                                        | {'desfrânare'}                                          | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| El care a deschis... nu putea?                                                         | {'desfrânare'}                                          | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Fiu pierdut                                                                            | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Isus S-a dus iarăşi dincolo                                                            | {'desfrânare'}                                          | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 17-a după Rusalii                                          | {'desfrânare'}                                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                          | {'desfrânare'}                                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)         | {'desfrânare'}                                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Pe sânul lui Isus                                                                      | {'desfrânare'}                                          | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Pentru o hulă...                                                                       | {'desfrânare'}                                          | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Psalmul 17                                                                             | {'desfrânare'}                                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Pâinea lui Dumnezeu... dă viaţă                                                        | {'desfrânare'}                                          | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Setea şi izvorul                                                                       | {'desfrânare'}                                          | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| În mâinile lor...                                                                      | {'desfrânare'}                                          | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Încrederea şi siguranţa                                                                | {'desfrânare'}                                          | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Şi Caiafa era                                                                          | {'desfrânate', 'desfrânat'}                             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| De patru zile... în mormânt                                                            | {'desfrânatul', 'desfrânate'}                           | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Fiul lui Simon Iscarioteanul                                                           | {'desfrânată'}                                          | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| I-a scos pe toţi afară                                                                 | {'desfrânarea', 'desfrânaţii'}                          | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Ispita desfrânării                                                                     | {'desfrânata', 'desfrânarea'}                           | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Nu puteţi... dacă nu rămâneţi în Mine                                                  | {'desfrânat'}                                           | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Oamenii veneau să fie botezaţi                                                         | {'Desfrânat', 'desfrânat'}                              | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Privea pe Isus umblând                                                                 | {'desfrânaţi'}                                          | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Voi aveţi de tată pe diavolul                                                          | {'desfrânate', 'desfrâneze'}                            | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Nici un răspuns                                                                    | {'desfrânatele'}                                        | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| ... Un iudeu fără vicleşug                                                             | {'desfrânat'}                                           | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| ... Şi v-am rânduit să... aduceţi roadă                                                | {'desfrânate'}                                          | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| ... Ştia că la Dumnezeu Se duce                                                        | {'desfrânaţi'}                                          | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| A lumii avuţii le caută...                                                             | {'desfrânate'}                                          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| A lumii avuţii le caută...                                                             | {'desfrânate'}                                          | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Acum vedem bine...                                                                     | {'desfrânaţi'}                                          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Afară vor fi câinii                                                                    | {'desfrânaţii'}                                         | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Astăzi nu mai sunt                                                                     | {'desfrânarea'}                                         | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Atunci cărturarii şi fariseii I-au adus...                                             | {'desfrânate'}                                          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Auzirea şi ascultarea                                                                  | {'desfrâneze'}                                          | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Bucuria aflării Domnului                                                               | {'desfrânat'}                                           | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Înfricoşata lepădare                                                          | {'desfrânate'}                                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                       | {'desfrânatul'}                                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                                                     | {'desfrânarea'}                                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                    | {'desfrânat'}                                           | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                                          | {'desfrânaţi'}                                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                     | {'Desfrânarea'}                                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Al doilea 2-4-2                                                              | {'desfrânată'}                                          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Proverbe                                                                     | {'desfrânate'}                                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 23 - Proverbe                                                                     | {'Desfrânata'}                                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 26 - Limpezirea apelor adânci                                                     | {'desfrânarea'}                                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 27 - Pe drumul ales                                                               | {'desfrânat'}                                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 28 - Proverbe                                                                     | {'desfrânat'}                                           | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 30 - Proverbe                                                                     | {'desfrânata'}                                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 4 - Aur lămurit, trestii clătinate                                                | {'desfrânarea'}                                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                                          | {'desfrânate'}                                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                                    | {'desfrânaţi'}                                          | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Ce pâră aduceţi împotriva Omului - Acestuia?                                           | {'Desfrânarea'}                                         | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Cine îşi iubeşte viaţa                                                                 | {'desfrânat'}                                           | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Copleşit de frumuseţea                                                                 | {'desfrânaţi'}                                          | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Crin iubit                                                                             | {'Desfrânatul'}                                         | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Cum ţi s-au deschis ochii?                                                             | {'desfrânat'}                                           | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Când inima-i sătulă                                                                    | {'desfrânate'}                                          | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
+| Dacă Eu mărturisesc despre Mine...                                                     | {'desfrânaţii'}                                         | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Dacă dai drumul lui Isus...                                                            | {'desfrânat'}                                           | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Dacă n-aş fi făcut...                                                                  | {'desfrânat'}                                           | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Dacă nu fac... să nu Mă credeţi                                                        | {'desfrânat'}                                           | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Daţi piatra la o parte!                                                                | {'desfrânate'}                                          | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| De ce nu s-a vândut?                                                                   | {'desfrânatul'}                                         | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| De ce-aţi uitat?                                                                       | {'desfrânarea'}                                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
+| De ce-aţi uitat?                                                                       | {'desfrânarea'}                                         | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| De-aş ajunge cea mai mare                                                              | {'desfrânată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Despre ascultare                                                                       | {'desfrânata'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre căsnicie                                                                        | {'desfrânate'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre minciună                                                                        | {'desfrânarea'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre muncă                                                                           | {'desfrânarea'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre păcat                                                                           | {'desfrânaţi'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                                                | {'Desfrânarea'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Banatului                                                                  | {'desfrâneze'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Crişanei                                                                   | {'desfrânat'}                                           | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Munteniei                                                                  | {'desfrânată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Olteniei                                                                   | {'desfrânarea'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Doamne, dacă erai aici!                                                                | {'desfrânarea'}                                         | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
++----------------------------------------------------------------------------------------+---------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
 Searching Desfranare using http://localhost:9000...
-Got 206 hits:
-Score: 2.0
+Got 148 hits:
+Score: 11.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Fereşte-te de desfrânare
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"26-C\u0103ci femeia <em>desfr\u00e2nat\u0103</em> las\u0103 omul f\u0103r\u0103 p\u00e2ine"
-],
-"title": [
-"Fere\u015fte-te de <em>desfr\u00e2nare</em>"
-]
-}
+Highlight: 26-Căci femeia <em>desfrânată</em> lasă omul fără pâine
+Highlight: Fereşte-te de <em>desfrânare</em>
 
-Score: 1.6666666
+Score: 11.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 5 - Fereşte-te de desfrânare
+Type: poezie
+Author: Traian Dorz
+Highlight: Cap. 5 - Fereşte-te de <em>desfrânare</em>
+
+Score: 6.1666665
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru oricine ajunge \u00een ele. Dar scufundarea \u00een <em>desfr\u00e2nare</em>, pr\u0103bu\u015firea \u00een robia celui mai murdar \u015fi mai",
-"fiu al t\u0103u care \u0163i-a m\u00e2ncat averea cu femeile <em>desfr\u00e2nate</em>... ",
-"Trupul nu este pentru <em>desfr\u00e2nare</em>, trupul este pentru Domnul, ca \u015fi sufletul. De",
-"Duce\u0163i-v\u0103 \u00een casele de nebuni, \u00een familiile celor <em>desfr\u00e2na\u0163i</em>, vede\u0163i copiii lor, vede\u0163i pr\u0103bu\u015firea lor trupeasc\u0103",
-"\u00een\u015ftiin\u0163area poruncii Dumnezeie\u015fti: S\u0103 nu fii <em>desfr\u00e2nat</em> ("
-]
-}
+Highlight: pentru oricine ajunge în ele. Dar scufundarea în <em>desfrânare</em>, prăbuşirea în robia celui mai murdar şi mai
+Highlight: Trupul nu este pentru <em>desfrânare</em>, trupul este pentru Domnul, ca şi sufletul. De
+Highlight: fiu al tău care ţi-a mâncat averea cu femeile <em>desfrânate</em>...  Da
+Highlight: Duceţi-vă în casele de nebuni, în familiile celor <em>desfrânaţi</em>, vedeţi copiii lor, vedeţi prăbuşirea lor trupească
+Highlight: înştiinţarea poruncii Dumnezeieşti: Să nu fii <em>desfrânat</em> (
 
-Score: 1.6
+Score: 6.133333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 22 - Statutele - marea şi permanenta primejdie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trufia, <em>desfr\u00e2narea</em>, pizma, l\u0103comia (\u00eentre care e \u015fi be\u0163ia), m\u00e2nia",
-"trufia, <em>desfr\u00e2narea</em>, pizma, l\u0103comia - \u00eentre care e \u015fi be\u0163ia, ho\u0163ia",
-"Nu be\u0163i vin \u00een care este <em>desfr\u00e2nare</em>",
-"Pavel care zice: \u201c...nu be\u0163i vin \u00eentru care este <em>desfr\u00e2nare</em> ci v\u0103 umple\u0163i de Duhul Sf\u00e2nt vorbind \u00eentre voi"
-]
-}
+Highlight: Nu beţi vin în care este <em>desfrânare</em>
+Highlight: Pavel care zice: “...nu beţi vin întru care este <em>desfrânare</em> ci vă umpleţi de Duhul Sfânt vorbind între voi
+Highlight: trufia, <em>desfrânarea</em>, pizma, lăcomia (între care e şi beţia), mânia
+Highlight: trufia, <em>desfrânarea</em>, pizma, lăcomia - între care e şi beţia, hoţia
 
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Rugăciuni vinovate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ori se roag\u0103 s\u0103 nu fie prins, ca s\u0103 poat\u0103 fura, <em>desfr\u00e2na</em> sau am\u0103gi pe altul, ",
-"De tov\u0103r\u0103\u015fiile pierz\u0103toare ale celor <em>desfr\u00e2na\u0163i</em>",
-"care \u00een orice loc \u015fi cu orice ocazie se dedau la <em>desfr\u00e2nare</em>. "
-]
-}
-
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Păcatul şi osânda
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"4 - Cat\u00e2rul este lene\u015f, \u00eend\u0103r\u0103tnic, nesupus, <em>desfr\u00e2nat</em>, r\u0103zbun\u0103tor, nesim\u0163it \u015fi neascult\u0103tor... ",
-"Cu porniri <em>desfr\u00e2nate</em> \u015fi cu c\u0103r\u0103ri neascult\u0103toare, ",
-"<em>desfr\u00e2nat</em> \u00een pornirile sale, "
-]
-}
-
-Score: 1.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Şi Caiafa era
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Plini de acelea\u015fi porniri <em>desfr\u00e2nate</em>, lacome, hr\u0103p\u0103re\u0163e \u015fi f\u0103\u0163arnice, am\u00e2ndoi erau",
-"Pentru un folos <em>desfr\u00e2nat</em> a fost aruncat \u00een \u00eenchisoare Iosif cel curat.",
-"dac\u0103 nu-\u0163i vei \u00eenfr\u00e2na pornirile <em>desfr\u00e2nate</em>, "
-]
-}
-
-Score: 1.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Moldovei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dar ce greu miroase-un suflet <em>desfr\u00e2nat</em> \u015fi p\u0103c\u0103tos. ",
-"\u015fi de frica gurii lumii umbl\u0103 r\u0103u \u015fi-n <em>desfr\u00e2nare</em>",
-"101 - Invidia, <em>desfr\u00e2narea</em> \u015fi dorin\u0163a de m\u0103rire"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: A ajuns şi a intrat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cemp\u0103r\u0103\u0163ia Cerurilor: adev\u0103rat v\u0103 spun c\u0103 vame\u015fii \u015fi <em>desfr\u00e2natele</em> vor ajunge \u00eenaintea voastr\u0103 \u00een \u00cemp\u0103r\u0103\u0163ia lui",
-"Dar vame\u015fii \u015fi <em>desfr\u00e2natele</em> l-au crezut. "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Fiul lui Simon Iscarioteanul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sau so\u0163ia unui astfel de fiu be\u0163iv sau de fiic\u0103 <em>desfr\u00e2nat\u0103</em>? ",
-"Iar dac\u0103 fiul vostru tic\u0103los sau fiica voastr\u0103 <em>desfr\u00e2nat\u0103</em>, chinuie pe so\u0163ul sau pe so\u0163ia sa - nu ap\u0103ra\u0163i"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Suferinţa ispăşitoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Pentru un folos <em>desfr\u00e2nat</em> a fost aruncat \u00een \u00eenchisoare Iosif cel curat.",
-"Dac\u0103 nu-\u0163i vei \u015fti \u015fi tu \u00eenfr\u00e2na pornirile tale <em>desfr\u00e2nate</em>, "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Nevinovaţii lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O <em>desfr\u00e2nare</em> tot a\u015fa. ",
-"Cinstea \u00eentinat\u0103 de <em>desfr\u00e2nare</em> \u015fi destr\u0103b\u0103lare strig\u0103 "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Dumnezeu şi Casa Lui
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prin firea lor hr\u0103p\u0103rea\u0163\u0103 \u015fi necredincioas\u0103, <em>desfr\u00e2nat\u0103</em> \u015fi trufa\u015f\u0103, - vor fi mul\u0163i oameni \u015fi multe popoare",
-"numai unii ci chiar mul\u0163imea toat\u0103 se ded\u0103 la <em>desfr\u00e2nare</em>, "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Vorbirea şi tăcerea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ca o herghelie de cai <em>desfr\u00e2na\u0163i</em> umbl\u0103 gurile slobode ale celor mai mul\u0163i oameni",
-"2 - C\u00e2nd \u00eencep gurile nestr\u0103juite \u015fi buzele <em>desfr\u00e2nate</em> "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Cununile Slăvite
-Title: Încrederea şi biruinţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Desfr\u00e2natul</em>, la fel. ",
-"La a c\u00e2ta <em>desfr\u00e2nare</em> e\u015fti? "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Liniştea vieţii curate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd dragostea devine numai o <em>desfr\u00e2nat\u0103</em> trebuin\u0163\u0103 trupeasc\u0103 lipsit\u0103 de orice fior dulce",
-"prietenia este subjugat\u0103 numai interesului egoist \u015fi <em>desfr\u00e2nat</em> al stomacului, "
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Poruncile lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"8 - Dac\u0103 pentru o <em>desfr\u00e2nare</em> trupeasc\u0103, - judecata fra\u0163ilor trebuie s\u0103 fie",
-"necru\u0163\u0103toare trebuie s\u0103 fie aceast\u0103 judecat\u0103 fa\u0163\u0103 de o <em>desfr\u00e2nare</em> sufleteasc\u0103! "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Voi aveţi de tată pe diavolul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tu care spui pove\u015fti porcoase \u015fi c\u00e2n\u0163i c\u00e2ntece <em>desfr\u00e2nate</em>, care \u00eendeamn\u0103 la omor vinovat \u015fi st\u00e2rne\u015fte \u00een",
-" ca s\u0103 a\u0163\u00e2\u0163i la p\u0103cat pe al\u0163ii, f\u0103c\u00e2ndu-i s\u0103 <em>desfr\u00e2neze</em> \u00een inimile lor, "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: De patru zile... în mormânt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din ce \u00een ce mai mult, be\u0163ivul sau lacomul sau <em>desfr\u00e2natul</em> sau pizma\u015ful... ",
-"\u015fi ur\u00e2\u0163enia gesturilor tale <em>desfr\u00e2nate</em>, "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Nu puteţi... dacă nu rămâneţi în Mine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prin ei \u00een inima lui \u00eenc\u0103 mai dinainte, duhul <em>desfr\u00e2nat</em> care sclipea \u015ferpe\u015fte \u00een firea lui c\u0103rneasc\u0103,",
-"Ce duh <em>desfr\u00e2nat</em>, lacom \u015fi pref\u0103cut vorbea din el! "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Privea pe Isus umblând
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-L privi \u00een cei lep\u0103da\u0163i, mincino\u015fi, lacomi, <em>desfr\u00e2na\u0163i</em> - ace\u015ftia s-au lep\u0103dat de El chiar dac\u0103 se mai",
-"p\u0103m\u00e2nt, nu \u00een cei r\u0103i, trufa\u015fi \u015fi cert\u0103re\u0163i sau <em>desfr\u00e2na\u0163i</em>, care sunt ai diavolului ("
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: I-a scos pe toţi afară
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dac\u0103 n-a scos pofta rea, <em>desfr\u00e2narea</em>, be\u0163ia \u015fi lenea, ",
-"\u00een fa\u0163a c\u0103rora tremurau lichelele, ho\u0163ii \u015fi <em>desfr\u00e2na\u0163ii</em> Templului. "
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Oamenii veneau să fie botezaţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Desfr\u00e2nat</em> \u00eenainte, <em>desfr\u00e2nat</em> \u015fi apoi... "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Ispita desfrânării
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-ndr\u0103znea\u0163\u0103 <em>desfr\u00e2nata</em> i-a gr\u0103it neru\u015finat\u0103: ",
-"<em>desfr\u00e2narea</em> s\u0103 ne-ajung\u0103. "
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 29 - Proverbe
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cine umbl\u0103-n <em>desfr\u00e2nare</em> tot ce are-\u015fi va sf\u00e2r\u015fi. ",
-"18-C\u00e2nd nu-i Vestea Sf\u00e2nt\u0103-n \u0163ar\u0103 tot poporul-i <em>desfr\u00e2nat</em>"
-]
-}
-
-Score: 1.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre înfrânare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dar ai grij\u0103 s\u0103 nu-l fure <em>desfr\u00e2narea</em> \u015fi minciuna. ",
-"14 - Toate relele din lume doar din <em>desfr\u00e2nare</em> vin -"
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Maramureşului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cealalt\u0103 <em>desfr\u00e2nare</em>. ",
-"c-acestea doar \u00een <em>desfr\u00e2nare</em> te vor \u00eempinge neap\u0103rat: "
-]
-}
+Highlight: cealaltă <em>desfrânare</em>.
+Highlight: c-acestea doar în <em>desfrânare</em> te vor împinge neapărat:
 
-Score: 1.3333333
+Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u0103ci dac\u0103 pentru o <em>desfr\u00e2nare</em> trupeasc\u0103 judecata fra\u0163ilor trebuie s\u0103 fie grabnic\u0103",
-"necru\u0163\u0103toare trebuie s\u0103 fie aceast\u0103 judecat\u0103 fa\u0163\u0103 de o <em>desfr\u00e2nare</em> sufleteasc\u0103? Fa\u0163\u0103 de concubinajul duhovnicesc"
-]
-}
+Highlight: Căci dacă pentru o <em>desfrânare</em> trupească judecata fraţilor trebuie să fie grabnică
+Highlight: necruţătoare trebuie să fie această judecată faţă de o <em>desfrânare</em> sufletească? Faţă de concubinajul duhovnicesc
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Moldovei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nimeni nu d\u0103 afar\u0103 din ea pe preo\u0163ii be\u0163ivi, <em>desfr\u00e2na\u0163i</em>, politicieni, afaceri\u015fti \u015fi compromi\u015fi cu tot"
-]
-}
+Highlight: şi de frica gurii lumii umblă rău şi-n <em>desfrânare</em>
+Highlight: dar ce greu miroase-un suflet <em>desfrânat</em> şi păcătos.  16
+Highlight: 101 - Invidia, <em>desfrânarea</em> şi dorinţa de mărire
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, cum s\u0103-nt\u00e2rzie pedeapsa acestui secol <em>desfr\u00e2nat</em>"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 22 - Al doilea 2-4-2
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceea\u015fi mam\u0103 blestemat\u0103: Maria Tereza, \u00eemp\u0103r\u0103teasa <em>desfr\u00e2nat\u0103</em> a Austro-Ungariei de acum 2-3 sute de ani \u00een"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"opreli\u015fte. Ei propov\u0103duiesc libertatea, adic\u0103 <em>desfr\u00e2narea</em>, fiindc\u0103 nu le mai convine s\u0103 se supun\u0103 nim\u0103nui"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pl\u0103cut\u0103 firii lui - \u015fi a spiritului modern, adic\u0103 <em>desfr\u00e2nat</em>, de care spune\u0163i. Dar cu acest tineret se va \u00eent\u00e2mpla"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pline de fel de fel de lucruri sc\u00e2rboase., de <em>desfr\u00e2nare</em>, etc. (S-a ocupat \u015fi ziarul "
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"desfr\u00e2n\u00e2nd \u015fi Absalom ucide pe fratele s\u0103u, Amon, - <em>desfr\u00e2natul</em>. A doua oaie s-a dus. "
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fura\u0163i \u015fi folosi\u0163i de ei spre desf\u0103tarea \u015fi <em>desfr\u00e2narea</em> lor lumeasc\u0103, \u00een loc s\u0103 fie folosi\u0163i \u00een slujba"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 1 - Înfricoşata lepădare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"bestiale... Sunt acolo so\u0163i b\u0103ga\u0163i de so\u0163iile lor <em>desfr\u00e2nate</em>... Sunt acolo so\u0163ii nenorocite b\u0103gate de so\u0163i"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"alcoolice, nici un fel de petreceri \u015fi cuvinte <em>desfr\u00e2nate</em>. Nici o nemul\u0163umire sau ceart\u0103. Totul de la \u00eenceput"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: De ce-aţi uitat?
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 29 - Proverbe
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Nu numai <em>desfr\u00e2narea</em> \u015fi necredin\u0163a sunt"
-]
-}
+Highlight: cine umblă-n <em>desfrânare</em> tot ce are-şi va sfârşi.
+Highlight: 18-Când nu-i Vestea Sfântă-n ţară tot poporul-i <em>desfrânat</em>
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre înfrânare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"P\u0103cate mai r\u0103sp\u00e2ndite. Be\u0163ia, Jocurile, <em>Desfr\u00e2narea</em>, Lenea, etc., de fr. Opri\u015f, Magdici, N. Marini"
-]
-}
+Highlight: 14 - Toate relele din lume doar din <em>desfrânare</em> vin -
+Highlight: dar ai grijă să nu-l fure <em>desfrânarea</em> şi minciuna.  10
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
+Score: 4.6666665
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Dumnezeu şi Casa Lui
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care sunt de-a dreptul diavole\u015fti. Be\u0163iile \u015fi <em>desfr\u00e2narea</em> nu trebuiesc unite cu slujbele, cu momentele"
-]
-}
+Highlight: numai unii ci chiar mulţimea toată se dedă la <em>desfrânare</em>,
+Highlight: prin firea lor hrăpăreaţă şi necredincioasă, <em>desfrânată</em> şi trufaşă, - vor fi mulţi oameni şi multe popoare
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... Vorbesc după cum M-a învăţat Tatăl
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenso\u0163itori de drum ispititor de g\u0103l\u0103gio\u015fi \u015fi <em>desfr\u00e2na\u0163i</em>. Aproape n-am putut \u00eenchide un ochi p\u00e2n\u0103 diminea\u0163a"
-]
-}
+Highlight: altele de <em>desfrânare</em>, de amestecătură, de tot felul de rătăciri, aşa
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 14 - Apostolia Femeilor
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: A face voia lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"destr\u0103b\u0103lare, de vicii, de nop\u0163i pierdute, de <em>desfr\u00e2nare</em>. Era violent \u015fi brutal cu so\u0163ia sa Elisabeta"
-]
-}
+Highlight: Ci voi înşivă v-aţi făcut-o. Prin păcat, prin <em>desfrânare</em> şi neascultarea voastră(
 
-Score: 1.0
+Score: 4.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cinste Numele \u015fi voia lui Dumnezeu, \u00eenjosite de <em>desfr\u00e2nare</em> \u015fi de p\u0103cat. \u015ei readuce pe oameni iar\u0103\u015fi \u00een leg\u0103tur\u0103"
-]
-}
+Highlight: cinste Numele şi voia lui Dumnezeu, înjosite de <em>desfrânare</em> şi de păcat. Şi readuce pe oameni iarăşi în legătură
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Mâinile lui Dumnezeu
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 14 - Apostolia Femeilor
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prin purtarea ta ur\u00e2t\u0103 \u015fi prin p\u0103catele tale \u015fi <em>desfr\u00e2narea</em> ta. Teme-te de M\u00e2na lui Dumnezeu care este atent\u0103"
-]
-}
+Highlight: destrăbălare, de vicii, de nopţi pierdute, de <em>desfrânare</em>. Era violent şi brutal cu soţia sa Elisabeta
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Încredinţarea suferinţei
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2\u0163iva \u00eenfr\u00e2na\u0163i, mai este o n\u0103dejde \u015fi pentru cei <em>desfr\u00e2na\u0163i</em>. "
-]
-}
+Highlight: pline de fel de fel de lucruri scârboase., de <em>desfrânare</em>, etc. (S-a ocupat şi ziarul
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Mărturisitori cere Domnul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-L privi \u00een cei lep\u0103da\u0163i, mincino\u015fi, lacomi \u015fi <em>desfr\u00e2na\u0163i</em>, ace\u015ftia s-au lep\u0103dat de El, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Bucuria aflării Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu po\u0163i fi un <em>desfr\u00e2nat</em> sau ho\u0163 sau p\u00e2r\u00e2tor \u00een ascuns, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Însetarea şi Apa Vieţii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"distrac\u0163ii, dup\u0103 petreceri lume\u015fti, dup\u0103 aventuri <em>desfr\u00e2nate</em>? "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Cum, Tu iudeu, bei?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-", \u00een care este <em>desfr\u00e2nare</em>?"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Oricui bea din apa aceasta
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"distrac\u0163ii, dup\u0103 petreceri lume\u015fti, dup\u0103 aventuri <em>desfr\u00e2nate</em>? "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Pâinea lui Dumnezeu... dă viaţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dac\u0103 \u00een familia ta este ceart\u0103, <em>desfr\u00e2nare</em> \u015fi nesupunere, "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Isus le-a zis: nu cârtiţi!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ci voi \u00een\u015fiv\u0103 v-a\u0163i f\u0103cut-o. Prin p\u0103cat, prin <em>desfr\u00e2narea</em> \u015fi neascultarea voastr\u0103 ("
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Când inima-i sătulă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd duhuri <em>desfr\u00e2nate</em> prin toate au p\u0103truns"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: El care a deschis... nu putea?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sau \u00een <em>desfr\u00e2nare</em> \u015fi l\u0103comie, "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Daţi piatra la o parte!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de \u00eenc\u0103p\u0103\u0163\u00e2nare, sau de nep\u0103sare \u015fi de porniri <em>desfr\u00e2nate</em>, trupe\u015fte sau suflete\u015fte, "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Mortul a ieşit afară...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a se preda lui Hristos, be\u0163ivul, hr\u0103p\u0103re\u0163ul, <em>desfr\u00e2natul</em>, omul lumesc, - se transform\u0103 total, ridic\u00e2ndu-se"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: De ce nu s-a vândut?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>desfr\u00e2natul</em> despre petreceri, "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Cine îşi iubeşte viaţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"unui fel de trai dezm\u0103\u0163at, risipitor, u\u015furatic, <em>desfr\u00e2nat</em>, violent \u015fi lene\u015f."
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: ... Ştia că la Dumnezeu Se duce
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"St\u0103p\u00e2nului \u015fi al Mirelui s\u0103u - iar nu pentru ochii cei <em>desfr\u00e2na\u0163i</em> ai lumii \u015fi ai p\u0103catului. Numai atunci \u00eembr\u0103c\u0103mintea"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Se duce-n toată lumea vântul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- dar ce greu miroase-un suflet <em>desfr\u00e2nat</em> \u015fi p\u0103c\u0103tos. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Pe sânul lui Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi de frica gurii lumii umbl\u0103 r\u0103u \u015fi-n <em>desfr\u00e2nare</em>"
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: Ce vrei să faci, fă repede
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"G\u00e2ndul de <em>desfr\u00e2nare</em>, de furt, de v\u00e2nzare, de r\u0103zbunare, pe care \u015fi"
-]
-}
+Highlight: Gândul de <em>desfrânare</em>, de furt, de vânzare, de răzbunare, pe care şi
 
-Score: 1.0
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Cine trăieşte şi crede, nu va muri! Crezi tu?
+Type: articol
+Author: Traian Dorz
+Highlight: acestora, adică prefăcătorie, de lenevie, de <em>desfrânare</em>,
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Cum, Tu iudeu, bei?
+Type: articol
+Author: Traian Dorz
+Highlight: , în care este <em>desfrânare</em>?
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Dacă rămâneţi în Cuvântul Meu
+Type: articol
+Author: Traian Dorz
+Highlight: în nesupunere, în certuri şi neascultare, în <em>desfrânare</em> şi dezbinări,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre bunătate
+Type: articol
+Author: Traian Dorz
+Highlight: nici cu pântecele-n posturi şi cu <em>desfrânare</em>-n gură,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre cinste
+Type: articol
+Author: Traian Dorz
+Highlight: 53 - Belşugu-aduce <em>desfrânare</em>, căci îmbuibatul, orişicând
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre dorinţă
+Type: articol
+Author: Traian Dorz
+Highlight: la păcat şi <em>desfrânare</em> - şi la moarte pe vecie.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre ură
+Type: articol
+Author: Traian Dorz
+Highlight: - fugi de orice <em>desfrânare</em>.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: După cum a fost înălţat şarpele
+Type: articol
+Author: Traian Dorz
+Highlight: familiei sale de păcate. Înconjurat de: minciună, <em>desfrânare</em>, lăcomie, lene, zgârcenie, pizmă, trufie şi celelalte
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: El care a deschis... nu putea?
+Type: articol
+Author: Traian Dorz
+Highlight: sau în <em>desfrânare</em> şi lăcomie,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Fiu pierdut
+Type: poezie
+Author: Traian Dorz
+Highlight: ţi-ai prădat întreg avutul în beţii şi <em>desfrânare</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Isus S-a dus iarăşi dincolo
+Type: articol
+Author: Traian Dorz
+Highlight: luptă contra înfrânării, acela ajunge bântuit de <em>desfrânare</em>.
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 17-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: împacă propovăduirea sfinţeniei cu trăirea în <em>desfrânare</em>?
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
+Type: articol
+Author: Traian Dorz
+Highlight: Toate vin din <em>desfrânare</em>, din neascultare, din necurăţie.
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
+Type: articol
+Author: Traian Dorz
+Highlight: să te mai botezi... Aşa fac numai copiii din <em>desfrânare</em> duhovnicească, iar nu cei născuţi în chip curat
+
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
-Title: După ce a ieşit Iuda...
+Title: Pe sânul lui Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Invidia, <em>desfr\u00e2narea</em> \u015fi ambi\u0163ia - scurteaz\u0103"
-]
-}
+Highlight: şi de frica gurii lumii umblă rău şi-n <em>desfrânare</em>
 
-Score: 1.0
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Pilat a pus să-L bată
+Book: Hristos - Păstorul nostru
+Title: Pentru o hulă...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru fra\u0163i? C\u00e2nd faptele tale sunt u\u015furatice \u015fi <em>desfr\u00e2nate</em>, nedrepte sau nesupuse, c\u00e2nd purt\u0103rile tale sunt"
-]
-}
+Highlight: care le împing spre <em>desfrânare</em>, şi sufletele şi trupurile, bietelor fiinţe căzute
 
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Iată, vi-L aduc, ca să ştiţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"duceau \u015fi ei acela\u015fi fel de via\u0163\u0103 f\u0103\u0163arnic\u0103, <em>desfr\u00e2nat\u0103</em>, lacom\u0103 \u015fi supersti\u0163ioas\u0103. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Şi mai frică...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nesocotesc orice \u00eendemn sf\u00e2nt, vorbesc orice cuvinte <em>desfr\u00e2nate</em> \u015fi satanice, dar \u00een subcon\u015ftientul lor, \u00een ad\u00e2ncul"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: ... Nici un răspuns
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nimeni nimic? Nu cumva umbli cu be\u0163ivii, cu <em>desfr\u00e2natele</em>, cu v\u00e2nz\u0103torii, cu fiarele - \u015fi nimeni nu-\u0163i"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Dacă dai drumul lui Isus...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de o gur\u0103 nesocotit\u0103, deprins\u0103 cu acest obicei <em>desfr\u00e2nat</em>. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: În mâinile lor...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de be\u0163ie. P\u0103tate de v\u00e2nzare \u015fi tic\u0103lo\u015fite de <em>desfr\u00e2nare</em>, - m\u00e2inile acestea, ur\u00e2\u0163ite de satana! "
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Părinte-Atotputernic...
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 17
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de-acei ce-n lumea asta cu-at\u00e2\u0163ia <em>desfr\u00e2na\u0163i</em>"
-]
-}
+Highlight: parte au în viaţa asta de belşug şi <em>desfrânare</em>
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Copleşit de frumuseţea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mincino\u015fi \u015fi <em>desfr\u00e2na\u0163i</em>? "
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: De-aş ajunge cea mai mare
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een zadar, dac\u0103 m\u0103-nfr\u00e2nge pofta <em>desfr\u00e2nat\u0103</em>"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Rostul şi viaţa noastră
+Book: Hristos - Pâinea noastră
+Title: Pâinea lui Dumnezeu... dă viaţă
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a se preda lui Hristos, be\u0163ivul, hr\u0103p\u0103re\u0163ul, <em>desfr\u00e2natul</em>, omul lumesc, - se transform\u0103 total, "
-]
-}
+Highlight: dacă în familia ta este ceartă, <em>desfrânare</em> şi nesupunere,
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Fraţii şi vrăjmaşii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>desfr\u00e2natul</em> despre petreceri, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Păstrarea şi pierderea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"unui fel de trai risipitor, u\u015furatic, viclean, <em>desfr\u00e2nat</em> \u015fi lene\u015f. "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Iubirea şi nădejdea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi Mirelui s\u0103u Isus - iar nu pentru ochii cei <em>desfr\u00e2na\u0163i</em> ai lumii \u015fi ai p\u0103catului. "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Cutremuraţi-vă şi nu păcătuiţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Dac\u0103 fiul vostru tic\u0103los, sau fiica voastr\u0103 <em>desfr\u00e2nat\u0103</em>, chinuie pe so\u0163ul s\u0103u ori pe so\u0163ia sa - nu ap\u0103ra\u0163i"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Un gând rău
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"G\u00e2ndul de <em>desfr\u00e2nare</em>, de furt, de v\u00e2nzare, de r\u0103zbunare, pe care \u015fi"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Purtătorul Cuvântului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prin ei \u00een inima lui \u00eenc\u0103 mai dinainte, duhul <em>desfr\u00e2nat</em> care sticlea \u015ferpe\u015fte \u00een firea lui c\u0103rneasc\u0103,"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Supunerea în Lucrare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lingu\u015firea o numesc dragoste, <em>desfr\u00e2narea</em> - distrac\u0163ie. "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Biserica şi Biblia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ferirea de dorin\u0163e <em>desfr\u00e2nate</em>, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Fărădelegile şi Dreptatea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu mai \u00eenjura, nu mai fura, nu mai fuma, nu mai <em>desfr\u00e2na</em>, nu mai face nici una din aceste f\u0103r\u0103delegi! "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Teama de păcat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei c\u00e2t de multe din acestea sunt \u00eentinate cu <em>desfr\u00e2nare</em>, cu l\u0103comie, cu minciun\u0103, cu pref\u0103c\u0103torie..."
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Porţile Veşniciei
-Title: Lumina şi lipsa ei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mincinosul <em>desfr\u00e2nat</em>, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Numele biruitorului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi nu face nedreptate \u015fi nici asuprire, nici <em>desfr\u00e2nare</em> \u015fi nici tiranie, nici crime \u015fi nici nelegiuiri"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Când vom iubi pe Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ie\u015fi dec\u00e2t necredin\u0163\u0103, de\u015fert\u0103ciuni, a\u0163\u00e2\u0163\u0103ri <em>desfr\u00e2nate</em>, blasfemii, tr\u0103d\u0103ri, trufii \u015fi m\u00e2r\u015f\u0103vii. "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Binefacerea şi recunoştinţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"g\u00e2ndul necinstit, sau lacom, sau necurat (murdar), <em>desfr\u00e2nat</em>, necur\u0103\u0163it! "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Amintirile noastre neuitate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ci dorin\u0163ele vinovate, <em>desfr\u00e2nate</em> \u015fi ur\u00e2te, chiar \u015fi ne\u00eemplinite, \u00eentineaz\u0103 \u015fi"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Urechile şi ochii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2\u0163i <em>desfr\u00e2na\u0163i</em> de Sodoma? "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Adevăratele avuţii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u00e2n\u0103 \u015fi numai chipul \u015fi numele acelor tirani \u015fi <em>desfr\u00e2na\u0163i</em>? "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Porunca şi ascultarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"To\u0163i \u00eel \u015ftiau \u00eenainte be\u0163iv, ho\u0163, mincinos, <em>desfr\u00e2nat</em>, lacom, r\u0103u... "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Faţa şi făţărnicia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"t\u0103u despre \u00eenfr\u00e2nare, c\u00e2nd v\u0103d c\u0103 tu e\u015fti un <em>desfr\u00e2nat</em> - \u00een m\u00e2ncare, \u00een b\u0103utur\u0103 \u015fi \u00een celelalte? "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Încrederea şi siguranţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lupt\u0103 contra \u00eenfr\u00e2n\u0103rii, acela ajunge biruit de <em>desfr\u00e2nare</em>. "
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Setea şi izvorul
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de <em>desfr\u00e2nare</em> \u015fi de crime, "
-]
-}
+Highlight: de <em>desfrânare</em> şi de crime,
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Statornicie şi abatere
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: În mâinile lor...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"13 - Dar voi suflete <em>desfr\u00e2nate</em> care umbla\u0163i \u00een \u00eentuneric, \u00een stric\u0103ciune, \u00een"
-]
-}
+Highlight: de beţie. Pătate de vânzare şi ticăloşite de <em>desfrânare</em>, - mâinile acestea, urâţite de satana!
 
-Score: 1.0
+Score: 4.5
 Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Calea dreaptă - şi căi amăgitoare
+Book: Avuţia Sfântului Moştenitor
+Title: Încrederea şi siguranţa
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"primeasc\u0103, f\u0103r\u0103 s\u0103 judece, orice \u00eendemn spre <em>desfr\u00e2nare</em> sau r\u0103t\u0103ciri. "
-]
-}
+Highlight: luptă contra înfrânării, acela ajunge biruit de <em>desfrânare</em>.
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Să mulţumim pentru toate
+Score: 0.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Şi Caiafa era
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"avea mai mult, cu at\u00e2t va fi mai nes\u0103tul \u015fi mai <em>desfr\u00e2nat</em>. "
-]
-}
+Highlight: Plini de aceleaşi porniri <em>desfrânate</em>, lacome, hrăpăreţe şi făţarnice, amândoi erau
+Highlight: Pentru un folos <em>desfrânat</em> a fost aruncat în închisoare Iosif cel curat.
+Highlight: dacă nu-ţi vei înfrâna pornirile <em>desfrânate</em>,
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Cercetarea de sine
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: De patru zile... în mormânt
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi \u00een priviri, ca \u00een cuvinte, numai cele mai <em>desfr\u00e2nate</em> \u015fi ur\u00e2te porniri \u015fi inten\u0163ii..."
-]
-}
+Highlight: din ce în ce mai mult, beţivul sau lacomul sau <em>desfrânatul</em> sau pizmaşul...
+Highlight: şi urâţenia gesturilor tale <em>desfrânate</em>,
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Unul şi toţi
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Fiul lui Simon Iscarioteanul
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-". <em>Desfr\u00e2narea</em> la fel este o lepr\u0103 a sufletului. \u015ei ce leac"
-]
-}
+Highlight: sau soţia unui astfel de fiu beţiv sau de fiică <em>desfrânată</em>?
+Highlight: Iar dacă fiul vostru ticălos sau fiica voastră <em>desfrânată</em>, chinuie pe soţul sau pe soţia sa - nu apăraţi
 
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Vinovăţia şi Răsplata
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: I-a scos pe toţi afară
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd faptele tale sunt u\u015furatice \u015fi <em>desfr\u00e2nate</em>, nedrepte sau nesupuse, "
-]
-}
+Highlight: dacă n-a scos pofta rea, <em>desfrânarea</em>, beţia şi lenea,
+Highlight: în faţa cărora tremurau lichelele, hoţii şi <em>desfrânaţii</em> Templului.
+
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Ispita desfrânării
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-ndrăzneaţă <em>desfrânata</em> i-a grăit neruşinată:
+Highlight: <em>desfrânarea</em> să ne-ajungă.
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Nu puteţi... dacă nu rămâneţi în Mine
+Type: articol
+Author: Traian Dorz
+Highlight: prin ei în inima lui încă mai dinainte, duhul <em>desfrânat</em> care sclipea şerpeşte în firea lui cărnească,
+Highlight: Ce duh <em>desfrânat</em>, lacom şi prefăcut vorbea din el!
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Oamenii veneau să fie botezaţi
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Desfrânat</em> înainte, <em>desfrânat</em> şi apoi...
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Privea pe Isus umblând
+Type: articol
+Author: Traian Dorz
+Highlight: Nu-L privi în cei lepădaţi, mincinoşi, lacomi, <em>desfrânaţi</em> - aceştia s-au lepădat de El chiar dacă se mai
+Highlight: pământ, nu în cei răi, trufaşi şi certăreţi sau <em>desfrânaţi</em>, care sunt ai diavolului (
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Voi aveţi de tată pe diavolul
+Type: articol
+Author: Traian Dorz
+Highlight: tu care spui poveşti porcoase şi cânţi cântece <em>desfrânate</em>, care îndeamnă la omor vinovat şi stârneşte în
+Highlight:  ca să aţâţi la păcat pe alţii, făcându-i să <em>desfrâneze</em> în inimile lor,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: ... Nici un răspuns
+Type: articol
+Author: Traian Dorz
+Highlight: nimeni nimic? Nu cumva umbli cu beţivii, cu <em>desfrânatele</em>, cu vânzătorii, cu fiarele - şi nimeni nu-ţi
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: ... Un iudeu fără vicleşug
+Type: articol
+Author: Traian Dorz
+Highlight: Nu poţi să fii un <em>desfrânat</em>, sau hoţ, sau pârâtor în ascuns, iar în faţa lumii
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: ... Şi v-am rânduit să... aduceţi roadă
+Type: articol
+Author: Traian Dorz
+Highlight: mârşav al trupului, al poftelor şi al cărnii lor <em>desfrânate</em> (
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: ... Ştia că la Dumnezeu Se duce
+Type: articol
+Author: Traian Dorz
+Highlight: Stăpânului şi al Mirelui său - iar nu pentru ochii cei <em>desfrânaţi</em> ai lumii şi ai păcatului. Numai atunci îmbrăcămintea
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: A lumii avuţii le caută...
+Type: poezie
+Author: Traian Dorz
+Highlight: căci voia lumii <em>desfrânate</em> e nimicire şi venin
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: A lumii avuţii le caută...
+Type: poezie
+Author: Traian Dorz
+Highlight: căci voia lumii <em>desfrânate</em> e nimicire şi venin
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Acum vedem bine...
+Type: articol
+Author: Traian Dorz
+Highlight: răzbunători împotriva fraţilor, vânzători de fraţi şi <em>desfrânaţi</em> care se împotrivesc oricărui cuvânt bun
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Afară vor fi câinii
+Type: poezie
+Author: Traian Dorz
+Highlight: Afară-s <em>desfrânaţii</em>, arzând sub vina grea
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Astăzi nu mai sunt
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>desfrânarea</em> mai întinsă,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Atunci cărturarii şi fariseii I-au adus...
+Type: articol
+Author: Traian Dorz
+Highlight: Îl urau pe Hristos, umblau căutând după femei <em>desfrânate</em> prin locuri murdare şi stricate, ca sufletele
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Auzirea şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: bată, sau să pârască, să fumeze, să urască, să <em>desfrâneze</em>... Şi altele de felul acestora.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Bucuria aflării Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: Nu poţi fi un <em>desfrânat</em> sau hoţ sau pârâtor în ascuns,
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 1 - Înfricoşata lepădare
+Type: articol
+Author: Traian Dorz
+Highlight: bestiale... Sunt acolo soţi băgaţi de soţiile lor <em>desfrânate</em>... Sunt acolo soţii nenorocite băgate de soţi
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: desfrânând şi Absalom ucide pe fratele său, Amon, - <em>desfrânatul</em>. A doua oaie s-a dus.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: furaţi şi folosiţi de ei spre desfătarea şi <em>desfrânarea</em> lor lumească, în loc să fie folosiţi în slujba
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: O, cum să-ntârzie pedeapsa acestui secol <em>desfrânat</em>
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 20 - După alţi 30 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: însoţitori de drum ispititor de gălăgioşi şi <em>desfrânaţi</em>. Aproape n-am putut închide un ochi până dimineaţa
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight: Păcate mai răspândite. Beţia, Jocurile, <em>Desfrânarea</em>, Lenea, etc., de fr. Opriş, Magdici, N. Marini
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 22 - Al doilea 2-4-2
+Type: articol
+Author: Traian Dorz
+Highlight: aceeaşi mamă blestemată: Maria Tereza, împărăteasa <em>desfrânată</em> a Austro-Ungariei de acum 2-3 sute de ani în
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 22 - Proverbe
+Type: poezie
+Author: Traian Dorz
+Highlight: 14-Gura celor <em>desfrânate</em> este-o groapă-ngrozitoare
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 23 - Proverbe
+Type: poezie
+Author: Traian Dorz
+Highlight: 27-<em>Desfrânata</em>-i groapă-adâncă şi-i pierzarea cea deplină
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 26 - Limpezirea apelor adânci
+Type: articol
+Author: Traian Dorz
+Highlight: oprelişte. Ei propovăduiesc libertatea, adică <em>desfrânarea</em>, fiindcă nu le mai convine să se supună nimănui
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: plăcută firii lui - şi a spiritului modern, adică <em>desfrânat</em>, de care spuneţi. Dar cu acest tineret se va întâmpla
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 28 - Proverbe
+Type: poezie
+Author: Traian Dorz
+Highlight: dar cel <em>desfrânat</em>, e-ocara tatălui ce l-a făcut.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 30 - Proverbe
+Type: poezie
+Author: Traian Dorz
+Highlight: 20-Tot aşa-i şi <em>desfrânata</em>, tot aşa-i şi drumul său
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: care sunt de-a dreptul diavoleşti. Beţiile şi <em>desfrânarea</em> nu trebuiesc unite cu slujbele, cu momentele
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: alcoolice, nici un fel de petreceri şi cuvinte <em>desfrânate</em>. Nici o nemulţumire sau ceartă. Totul de la început
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: nimeni nu dă afară din ea pe preoţii beţivi, <em>desfrânaţi</em>, politicieni, afacerişti şi compromişi cu tot
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Ce pâră aduceţi împotriva Omului - Acestuia?
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Desfrânarea</em> şi trufia sunt cele două fiice ale diavolului
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Cine îşi iubeşte viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: unui fel de trai dezmăţat, risipitor, uşuratic, <em>desfrânat</em>, violent şi leneş.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Copleşit de frumuseţea
+Type: poezie
+Author: Traian Dorz
+Highlight: mincinoşi şi <em>desfrânaţi</em>?
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Crin iubit
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Desfrânatul</em> duh al lumii
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Cum ţi s-au deschis ochii?
+Type: articol
+Author: Traian Dorz
+Highlight: Toţi îl ştiau înainte beţiv, hoţ, mincinos, <em>desfrânat</em>, lacom, rău... şi dintr-o dată îl văd schimbat
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Când inima-i sătulă
+Type: poezie
+Author: Traian Dorz
+Highlight: Când duhuri <em>desfrânate</em> prin toate au pătruns
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Dacă Eu mărturisesc despre Mine...
+Type: articol
+Author: Traian Dorz
+Highlight: diavolului sunt beţivii, hoţii, criminalii, <em>desfrânaţii</em>, clevetitorii, invidioşii, lacomii, mincinoşii
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Dacă dai drumul lui Isus...
+Type: articol
+Author: Traian Dorz
+Highlight: de o gură nesocotită, deprinsă cu acest obicei <em>desfrânat</em>.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Dacă n-aş fi făcut...
+Type: articol
+Author: Traian Dorz
+Highlight: ei umblă în chip nevrednic şi trăiesc în chip <em>desfrânat</em>
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Dacă nu fac... să nu Mă credeţi
+Type: articol
+Author: Traian Dorz
+Highlight: tău despre înfrânare, când văd că tu eşti un <em>desfrânat</em> în mâncare, în băutură şi în celelalte?
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Daţi piatra la o parte!
+Type: articol
+Author: Traian Dorz
+Highlight: de încăpăţânare, sau de nepăsare şi de porniri <em>desfrânate</em>, trupeşte sau sufleteşte,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: De ce nu s-a vândut?
+Type: articol
+Author: Traian Dorz
+Highlight: <em>desfrânatul</em> despre petreceri,
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: De ce-aţi uitat?
+Type: poezie
+Author: Traian Dorz
+Highlight: - Nu numai <em>desfrânarea</em> şi necredinţa sunt
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: De ce-aţi uitat?
+Type: poezie
+Author: Traian Dorz
+Highlight: - Nu numai <em>desfrânarea</em> şi necredinţa sunt
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: De-aş ajunge cea mai mare
+Type: poezie
+Author: Traian Dorz
+Highlight: în zadar, dacă mă-nfrânge pofta <em>desfrânată</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre ascultare
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - E-atâta lipsă de-nfrânare în <em>desfrânata</em> lumii gloată
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre căsnicie
+Type: articol
+Author: Traian Dorz
+Highlight: - apoi cele <em>desfrânate</em> ce s-agaţă de oricine
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre minciună
+Type: articol
+Author: Traian Dorz
+Highlight: cine-ajută <em>desfrânarea</em> nimiceşte curăţia,
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre muncă
+Type: articol
+Author: Traian Dorz
+Highlight: înlesneşte <em>desfrânarea</em>,
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre păcat
+Type: articol
+Author: Traian Dorz
+Highlight: 14 - Fugi de ochii <em>desfrânaţi</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din alte diferite părţi
+Type: articol
+Author: Traian Dorz
+Highlight: 74 - <em>Desfrânarea</em> nimiceşte mai întâi iubirea ta
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Banatului
+Type: articol
+Author: Traian Dorz
+Highlight: ce nefericeşte pe-alţii ca să <em>desfrâneze</em> el.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Crişanei
+Type: articol
+Author: Traian Dorz
+Highlight: de minciuni, de viclenie şi de duhul <em>desfrânat</em>.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: - în ruină se sfârşeşte cel cu viaţa <em>desfrânată</em>.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Olteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 75 - Invidia, <em>desfrânarea</em> şi ambiţia scurtează
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Doamne, dacă erai aici!
+Type: articol
+Author: Traian Dorz
+Highlight: izbuteşte mândria, neascultarea sau interesul sau <em>desfrânarea</em> şi dezbină lucrări curate, iar părtăşia smereniei
 

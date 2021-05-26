@@ -1,1432 +1,1003 @@
-+----------------------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
-| Titlu                                                                | Author          | Tip                          | Carte                        | Volum   |
-+----------------------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
-| El a venit ca martor...                                              | Traian Dorz     | Hristos - Dumnezeul nostru   | Meditații la Ev. după Ioan   | articol |
-| Noi suntem martori!                                                  | Traian Dorz     | Hristos - Înnoitorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Noi suntem martori!                                                  | Traian Dorz     | Cântări Nemuritoare vol. 6   | Cântări Nemuritoare          | poezie  |
-| ... Martorul acestor lucruri                                         | Traian Dorz     | Hristos - Înnoitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Martor credincios                                                    | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica Sfintei Învieri                            | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
-| Cap. 12 - Dovada supremei iubiri                                     | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                        | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
-| În alt loc, singur                                                   | Traian Dorz     | Hristos - Mântuitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Vrăjmaşii şi necazurile                                              | Traian Dorz     | Numele Biruitorului          | Cugetări Nemuritoare         | articol |
-| Învinuirea şi nevinovăţia                                            | Traian Dorz     | Alergarea Stăruitoare        | Cugetări Nemuritoare         | articol |
-| Cap. 19 - Al treilea februarie                                       | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                    | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Ucenicul lui Hristos                                                 | Traian Dorz     | Lupta cea Bună               | Cugetări Nemuritoare         | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                           | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Rugăciune şi mărturisire                                             | Traian Dorz     | Piatra Scumpă                | Cugetări Nemuritoare         | articol |
-| Ucenicul pe care îl iubea Isus                                       | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | articol |
-| Ucenicul acesta este...                                              | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | articol |
-| Trimis înaintea lui Hristos                                          | Traian Dorz     | Hristos - Înnoitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Cap. 7 - Printre leu şi printre urs                                  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                             | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                             | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                             | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator             | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 12 - Toate lucrează spre bine                                   | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 21 - Tipografia - un minunat şi dureros ideal                   | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 31 - O altă judecată                                            | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Eliberare şi binefacere                                              | Traian Dorz     | Săgeţile biruitoare          | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor) | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
-| Spun cel mai greu cuvânt                                             | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | poezie  |
-| Cap. 12 - Voi nu puteţi veni cu noi...                               | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                             | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 13 - Pe urmele profetului                                       | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                      | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Rugăciune                                                            | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                             | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Roadele Adevărului şi Dragostei                                      | Traian Dorz     | Piatra Scumpă                | Cugetări Nemuritoare         | articol |
-| Rugăciune                                                            | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Faptul acesta, adeverit                                              | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| Aceasta era a treia oară                                             | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | articol |
-| Cu ce fel de moarte...                                               | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | articol |
-| Acum şi atunci                                                       | Traian Dorz     | Răsplata Ascultării          | Cugetări Nemuritoare         | articol |
-| Alergarea şi ajungerea                                               | Traian Dorz     | Răsplata Ascultării          | Cugetări Nemuritoare         | articol |
-| Căutarea şi aflarea                                                  | Traian Dorz     | Calea Bunului Urmaş          | Cugetări Nemuritoare         | articol |
-| Zvonurile dezbinătoare                                               | Traian Dorz     | Lupta cea Bună               | Cugetări Nemuritoare         | articol |
-| Unitatea şi înţelepciunea Duhului                                    | Traian Dorz     | Lupta cea Bună               | Cugetări Nemuritoare         | articol |
-| Isus a spus acestea... în locul...                                   | Traian Dorz     | Hristos - Luminătorul nostru | Meditații la Ev. după Ioan   | articol |
-| O mărturisire, la început                                            | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cine primeşte... adevereşte                                          | Traian Dorz     | Hristos - Înnoitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Cel mai greu cuvânt                                                  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Cap. 14 - Proverbe                                                   | Traian Dorz     | Cântări Nemuritoare vol. 2   | Cântări Nemuritoare          | poezie  |
-| Cap. 11 - Semnele Oastei Domnului                                    | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                 | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Ce cununie strălucită                                                | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | poezie  |
-| Cap. 14 - Atacul împotriva steagului                                 | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 9 - În vremea aceea...                                          | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 10 - Pe drumul Crucii                                           | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| În Vinerea Patimilor                                                 | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
-| Neuitat părinte Iosif                                                | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
-| Cap. 13 - După luarea lui Moisi...                                   | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                 | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                         | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 8 - Şi laţul s-a rupt                                           | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 15 - Un An Nou Fericit                                          | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                     | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                 | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 28 - Alte întristări binefăcătoare                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                     | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                           | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                           | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                          | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                       | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                      | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                      | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                             | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 6 - Între două judecăţi                                         | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Intrusul şi moştenirea                                               | Traian Dorz     | Şi acum să facem             | Cugetări Nemuritoare         | articol |
-| Evenimentele şi istoria noastră                                      | Traian Dorz     | Semănaţi Cuvântul Sfânt      | Cugetări Nemuritoare         | articol |
-| Hristos - Dumnezeul nostru                                           | Traian Dorz     | Piatra Scumpă                | Cugetări Nemuritoare         | articol |
-| Sfinţii din mijlocul nostru                                          | Traian Dorz     | Lumina Iubitului Fiu         | Cugetări Nemuritoare         | articol |
-| Înainte de început                                                   | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 1 - Ce puţine adevăruri putem spune                             | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Domnul a aflat                                                       | Traian Dorz     | Hristos - Izvorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Isus ostenit                                                         | Traian Dorz     | Hristos - Izvorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Poruncile şi legămintele                                             | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| O Doamne, depărtează-mi...                                           | Traian Dorz     | Hristos - Dumnezeul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Să mărturisească                                                     | Traian Dorz     | Hristos - Dumnezeul nostru   | Meditații la Ev. după Ioan   | articol |
-| Toţi cei ce fuseseră cu Isus, - mărturiseau                          | Traian Dorz     | Hristos - Împăratul nostru   | Meditații la Ev. după Ioan   | articol |
-| Norodul a ieşit... pentru că aflase - semnul                         | Traian Dorz     | Hristos - Împăratul nostru   | Meditații la Ev. după Ioan   | articol |
-| Are cine să-l osândească...                                          | Traian Dorz     | Hristos - Împăratul nostru   | Meditații la Ev. după Ioan   | articol |
-| Când a văzut Isus pe Mama Sa...                                      | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| Isus care ştia că acum totul s-a sfârşit                             | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| A intrat, a văzut, a crezut                                          | Traian Dorz     | Hristos - Mântuitorul nostru | Meditații la Ev. după Ioan   | articol |
-| S-a dus şi a vestit                                                  | Traian Dorz     | Hristos - Mântuitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Mâinile şi coasta Lui                                                | Traian Dorz     | Hristos - Mântuitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Multe alte semne...                                                  | Traian Dorz     | Hristos - Mântuitorul nostru | Meditații la Ev. după Ioan   | articol |
-+----------------------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
++---------------------------------------------------------------------------------+-------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                           | Occurrences                                     | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------------+-------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Martor credincios                                                               | {'Martor', 'martor'}                            | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| El a venit ca martor...                                                         | {'martor', 'martori', 'Martorului', 'martorul'} | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 19 - Al treilea februarie                                                  | {'Martor', 'martor'}                            | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                                   | {'martor', 'martorii'}                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica Sfintei Învieri                                       | {'martor', 'martori'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                               | {'martor', 'martorul'}                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Tipografia - un minunat şi dureros ideal                              | {'Martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                | {'martor', 'martori'}                           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                         | {'martor', 'martori', 'martorii'}               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                             | {'martor', 'Martorii'}                          | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cel mai greu cuvânt                                                             | {'martor'}                                      | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| O mărturisire, la început                                                       | {'martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Spun cel mai greu cuvânt                                                        | {'Martor', 'martor'}                            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
+| ... Martorul acestor lucruri                                                    | {'martor', 'Martorul', 'martorii'}              | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                             | {'martor', 'martori', 'martorii'}               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                                      | {'martor', 'martoră', 'martora'}                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Rugăciune şi mărturisire                                                        | {'martor', 'martori'}                           | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                        | {'martor', 'martorii', 'martori'}               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                        | {'martor', 'martori', 'martorul'}               | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Proverbe                                                              | {'martor', 'Martorul'}                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 27 - Pe drumul ales                                                        | {'martor', 'martori'}                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                        | {'martor', 'martorul'}                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| ... În odaia de judecată                                                        | {'martor'}                                      | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| ...Nu va vedea moartea                                                          | {'martor'}                                      | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Altul mărturiseşte...                                                           | {'martor'}                                      | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Buna-cuviinţă şi evlavia                                                        | {'martor'}                                      | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Ce puţine adevăruri putem spune                                        | {'martor'}                                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 10 - Pe drumul Crucii                                                      | {'martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Proverbe                                                              | {'martor'}                                      | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 15 - Călătoria la Ierusalim                                                | {'martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                      | {'martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                                      | {'martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                 | {'Martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                     | {'Martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                        | {'Martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Între două judecăţi                                                    | {'Martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                     | {'martor'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cu Domnul spre Golgota - 3                                                      | {'martor'}                                      | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Da, numai fericirea şi îndurarea                                                | {'martor'}                                      | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Despre dreptate                                                                 | {'martor'}                                      | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Eu nu sunt vrednic...                                                           | {'martor'}                                      | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Isus care ştia că acum totul s-a sfârşit                                        | {'martor'}                                      | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi) | {'martor'}                                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)  | {'martor'}                                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Pe cine căutaţi?                                                                | {'martor'}                                      | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Tot ce-am cântat Isuse                                                          | {'martor'}                                      | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Tot ce-am cântat cândva                                                         | {'martor'}                                      | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Toţi cei ce fuseseră cu Isus, - mărturiseau                                     | {'martor'}                                      | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Înainte de început                                                              | {'Martor'}                                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Noi suntem martori!                                                             | {'martori'}                                     | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | poezie  |
+| Noi suntem martori!                                                             | {'martori'}                                     | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Trimis înaintea lui Hristos                                                     | {'martori'}                                     | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Cap. 12 - Toate lucrează spre bine                                              | {'Martorii', 'Martorilor', 'martori'}           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                                       | {'martoră', 'Martora', 'martora'}               | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - Al şaptelea foc                                                        | {'martorii', 'martorul', 'martori'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                        | {'martori', 'martorul'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)            | {'martori'}                                     | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                           | {'martorul', 'martorii'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                          | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Pe urmele profetului                                                  | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                 | {'martoră', 'martorilor'}                       | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cine primeşte... adevereşte                                                     | {'martorii'}                                    | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Căutarea şi aflarea                                                             | {'martore'}                                     | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Isus a spus acestea... în locul...                                              | {'martore'}                                     | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Roadele Adevărului şi Dragostei                                                 | {'martorii', 'martori'}                         | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Rugăciune                                                                       | {'Martorul'}                                    | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Rugăciune                                                                       | {'Martorul'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| ... El este Acela...                                                            | {'martorilor'}                                  | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| ... Este mincinos şi tatăl minciunii                                            | {'martori'}                                     | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Slava de dinainte de a fi lumea                                             | {'martorii'}                                    | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Întreabă pe cei care M-au auzit                                             | {'martori'}                                     | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Binefacerea şi recunoştinţa                                                     | {'martoră'}                                     | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                 | {'martorul'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                    | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Semnele Oastei Domnului                                               | {'martora'}                                     | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                                              | {'martore'}                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                            | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Atacul împotriva steagului                                            | {'martori'}                                     | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 14 - Strâmta cărare mântuitoare                                            | {'martorilor'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Un An Nou Fericit                                                     | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                            | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Proverbe                                                              | {'Martorul'}                                    | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 2 - A treia zi istorică                                                    | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                           | {'martori'}                                     | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 23 - La zece ani de Oaste                                                  | {'martorii'}                                    | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 28 - Alte întristări binefăcătoare                                         | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 28 - Necazurile din lungul drumului                                        | {'martori'}                                     | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 8 - Şi laţul s-a rupt                                                      | {'martori'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Ce cununie strălucită                                                           | {'martori'}                                     | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | poezie  |
+| Când a văzut Isus pe Mama Sa...                                                 | {'martori'}                                     | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Cântările Învierii                                                              | {'martorii'}                                    | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Din părţile Olteniei                                                            | {'martore'}                                     | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Domnul a aflat                                                                  | {'martoră'}                                     | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Dragostea pentru înaintaşi                                                      | {'Martorul'}                                    | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Fereşte-te de răutate                                                           | {'martorul'}                                    | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Fericirea de a fi cu Domnul                                                     | {'Martorul'}                                    | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Hristos - Dumnezeul nostru                                                      | {'martori'}                                     | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Ioan încă nu fusese întemniţat                                                  | {'martori'}                                     | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Isus le-a răspuns...                                                            | {'martorul'}                                    | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
++---------------------------------------------------------------------------------+-------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
 Searching Martor using http://localhost:9000...
-Got 188 hits:
-Score: 5.5555553
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: El a venit ca martor...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fel au fost \u015fi vor fi sfin\u0163ii apostoli, <em>martori</em> ai <em>Martorului</em> Celui Credincios \u015fi Adev\u0103rat, adic\u0103 a lui",
-"El a venit ca <em>martor</em>, ca s\u0103 m\u0103rturiseasc\u0103 despre Lumin\u0103, pentru ca to\u0163i s\u0103 cread\u0103 prin el. Ioan",
-"propov\u0103duitor al voii lui Dumnezeu, ci a fost un <em>martor</em>!  Un",
-"Un <em>martor</em> al lui Dumnezeu \u00eenaintea oamenilor, adeverind",
-"\u00cen Ziua Judec\u0103\u0163ii el va fi <em>martorul</em> lui Dumnezeu, \u00eempotriva oamenilor care n-au primit"
-],
-"title": [
-"El a venit ca <em>martor</em>..."
-]
-}
-
-Score: 5.333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Noi suntem martori!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Noi suntem <em>martori</em> c\u0103 Hristos",
-"sunt <em>martori</em> vrednici de crezut",
-"Noi suntem <em>martori</em> c-am trecut",
-"Noi suntem <em>martori</em>, c\u0103ci am fost",
-"Noi suntem <em>martori</em> pentru voi"
-],
-"title": [
-"Noi suntem <em>martori</em>!"
-]
-}
-
-Score: 5.333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Noi suntem martori!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Noi suntem <em>martori</em> c\u0103 Hristos",
-"sunt <em>martori</em> vrednici de crezut",
-"Noi suntem <em>martori</em> c-am trecut",
-"Noi suntem <em>martori</em>, c\u0103ci am fost",
-"Noi suntem <em>martori</em> pentru voi"
-],
-"title": [
-"Noi suntem <em>martori</em>!"
-]
-}
-
-Score: 5.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: ... Martorul acestor lucruri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martorul</em> S\u0103u credincios ni L-a f\u0103cut cunoscut ca nimeni",
-"Fii binecuv\u00e2ntat <em>martor</em> credincios al Dragostei \u015fi Jertfei Dumnezeie\u015fti",
-"Fi\u0163i binecuv\u00e2nta\u0163i \u015fi voi to\u0163i <em>martorii</em> credincio\u015fi ai Domnului nostru Isus Hristos, ucenicii",
-"to\u0163i slujitorii T\u0103i credincio\u015fi, - dar pentru <em>martorii</em> ale\u015fi, fii binecuv\u00e2ntat nespus de mult. "
-],
-"title": [
-"... <em>Martorul</em> acestor lucruri"
-]
-}
-
-Score: 5.2
+Got 136 hits:
+Score: 36.2
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Martor credincios
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martor</em> credincios al Jertfei lui Hristos",
-"<em>martor</em> sf\u00e2nt al Oastei Domnului Isus. ",
-"<em>Martor</em> credincios al harului Sl\u0103vit",
-"s\u0103-l sf\u00e2r\u015fim cu bine, <em>martor</em> credincios. "
-],
-"title": [
-"<em>Martor</em> credincios"
-]
-}
+Highlight: <em>Martor</em> credincios al Jertfei lui Hristos
+Highlight: <em>martor</em> sfânt al Oastei Domnului Isus.
+Highlight: <em>Martor</em> credincios al harului Slăvit
+Highlight: să-l sfârşim cu bine, <em>martor</em> credincios.
+Highlight: <em>Martor</em> credincios
 
-Score: 3.7142856
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica Sfintei Învieri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"va cobor\u00ee Duhul Sf\u00e2nt peste voi \u015fi-Mi ve\u0163i fi <em>martori</em> \u00een Ierusalim, \u00een toat\u0103 Iudeea, \u00een Samaria, \u015fi p\u00e2n\u0103",
-"8 - \u00cemi ve\u0163i fi <em>martori</em>",
-"fie ni\u015fte <em>martori</em> credincio\u015fi \u015fi adev\u0103ra\u0163i despre toate faptele \u015fi \u00eenv\u0103\u0163\u0103turile Lui. ",
-"<em>Martorul</em> Credincios",
-"<em>Martorii</em> lui Hristos, cei credincio\u015fi \u015fi adev\u0103ra\u0163i, au"
-]
-}
-
-Score: 3.6923077
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"proba cu <em>martori</em> fiind admis\u0103 numai \u00een acela\u015fi termen \u00een care reclamanta va \u00eenainta lista de <em>martori</em> pentru",
-"lei, c\u0103 ea este a iubi\u0163ilor s\u0103i fra\u0163i osta\u015fi - <em>martor</em> este Domnul - c\u0103, \u00eencep\u00e2nd cu Anul Nou va preda",
-"actelor ce s-au cerut pentru anun\u0163area listei de <em>martori</em> \u015fi a \u00eentreb\u0103rilor de care \u00een\u0163elege s\u0103 se serveasc\u0103",
-"a se pronun\u0163a asupra admisibilit\u0103\u0163ii probei cu <em>martori</em> sau expertizei, tribunalul fixeaz\u0103 la 1 oct. 1937",
-"partea-mi am cerut \u00een \u00eent\u00e2mpinarea mea, ascultare de <em>martori</em> care \u00eentregi\u0163i eventual de ascultarea p\u0103r\u0163ilor"
-]
-}
-
-Score: 3.6363635
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ace\u015ftia sunt <em>martorii</em> nep\u0103s\u0103tori, <em>martorii</em> vinova\u0163i, <em>martorii</em> criminali, care \u00eeng\u0103duind",
-"23. Iau pe Dumnezeu <em>martor</em> fa\u0163\u0103 de sufletul meu c\u0103 n-am mai venit p\u00e2n\u0103 acum",
-"asculta sfaturile celor care-\u0163i zic: Noi suntem <em>martorii</em> care putem dovedi c\u0103 ei fac f\u0103r\u0103delege contra",
-"23 - Iau pe Dumnezeu <em>martor</em> \u00cen",
-"Iau <em>martor</em> pe Dumnezeu... Numai El mai vrea s\u0103-l apere..."
-]
-}
-
-Score: 3.5555556
+Score: 35.38889
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: În alt loc, singur
+Book: Hristos - Dumnezeul nostru
+Title: El a venit ca martor...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Domnului, dovada care a r\u0103mas p\u00e2n\u0103 ast\u0103zi, ca un <em>martor</em> al Sfintelor Sale Patimi pentru m\u00e2ntuirea noastr\u0103",
-"Anume ca el s\u0103 fie luat \u015fi p\u0103strat pentru noi ca un <em>martor</em> sf\u00e2nt \u015fi cutremur\u0103tor al Patimilor Sale. S\u00e2ngele",
-"din partea lui Dumnezeu, ca el s\u0103 r\u0103m\u00e2n\u0103 ca un <em>martor</em> nespus de gr\u0103itor, ca o dovad\u0103 nespus de puternic\u0103",
-"Un alt <em>martor</em> al Patimilor Dumnezeie\u015fti, este Cuv\u00e2ntul Evangheliilor",
-"l\u0103s\u00e2ndu-ni-L nou\u0103 p\u00e2n\u0103 la sf\u00e2r\u015fitul veacurilor, ca un <em>martor</em> al Patimilor, ca o dovad\u0103 a Iubirii Lui. "
-]
-}
+Highlight: El a venit ca <em>martor</em>, ca să mărturisească despre Lumină, pentru ca toţi să creadă prin el.
+Highlight: propovăduitor al voii lui Dumnezeu, ci a fost un <em>martor</em>!
+Highlight: Un <em>martor</em> al lui Dumnezeu înaintea oamenilor, adeverind
+Highlight: fel au fost şi vor fi sfinţii apostoli, <em>martori</em> ai <em>Martorului</em> Celui Credincios şi Adevărat, adică a lui
+Highlight: În Ziua Judecăţii el va fi <em>martorul</em> lui Dumnezeu, împotriva oamenilor care n-au primit
+Highlight: încredinţându-i de Învierea Sa, i-a trimes să fie <em>martori</em> despre toate cele ce au văzut şi auzit (
+Highlight: El a venit ca <em>martor</em>...
 
-Score: 3.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Ave\u0163i <em>martori</em> care s\u0103 dovedeasc\u0103 cele ce le spune\u0163i?",
-"\u015ei fra\u0163ii au pus <em>martori</em> tot pe fra\u0163i",
-"fra\u0163i. Printre cei pu\u015fi ca <em>martori</em> a fost \u015fi fr. Moroz Ioan. Procesul s-a am\u00e2nat pentru un nou termen.",
-"\u00cen ziua judec\u0103\u0163ii, c\u00e2nd fratele Moroz, ca <em>martor</em> a fost \u00eentrebat ce \u015ftie despre oamenii ace\u015ftia, - el",
-"- S\u0103 chem alt <em>martor</em>?"
-]
-}
-
-Score: 3.5
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Vrăjmaşii şi necazurile
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- atunci suntem ni\u015fte <em>martori</em> credincio\u015fi \u015fi adev\u0103ra\u0163i ai Domnului nostru Isus",
-"7 - S\u0103 fim ni\u015fte <em>martori</em> adev\u0103ra\u0163i care s\u0103 ajut\u0103m s\u0103 biruie \u00een lume Adev\u0103rul",
-"8 - O, c\u00e2t de mul\u0163i <em>martori</em> mincino\u015fi se nasc din \u00eenv\u0103\u0163\u0103turile false \u015fi r\u0103t\u0103cite",
-"<em>martori</em>",
-"de r\u0103t\u0103ciri \u015fi de r\u0103ut\u0103\u0163i - cei r\u0103i sunt ni\u015fte <em>martori</em> mincino\u015fi, at\u00e2t prin fapte c\u00e2t \u015fi prin \u00eenv\u0103\u0163\u0103tur\u0103"
-]
-}
-
-Score: 3.4285715
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Învinuirea şi nevinovăţia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cei ce g\u00e2ndesc a\u015fa sunt <em>martorii</em> nep\u0103s\u0103tori, <em>martorii</em> vinova\u0163i, <em>martorii</em> criminali, care \u00eeng\u0103duind",
-"To\u0163i ace\u015fti <em>martori</em> mincino\u015fi \u015fi murdari spun neadev\u0103ruri. Omul Acesta",
-"- Dumnezeul Acela Viu \u015fi Prezent, este <em>Martorul</em> s\u0103u Adev\u0103rat \u015fi Credincios. ",
-"Dumnezeule Adev\u0103rat \u015fi Viu Te iau \u015fi eu Singurul meu <em>Martor</em> fa\u0163\u0103 de toate insultele \u015fi batjocurile pe care"
-]
-}
-
-Score: 3.3333333
+Score: 15.833333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 19 - Al treilea februarie
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceea de 2 februarie, l\u00e2ng\u0103 sicriul lui am scris <em>Martor</em> credincios - cum scrisesem \u00eenainte cu 9 ani, \u00een",
-"<em>Martor</em> credincios al Jertfei lui Hristos",
-"<em>martor</em> sf\u00e2nt al Oastei Domnului Isus.",
-"<em>Martor</em> credincios al Harului Sl\u0103vit",
-"s\u0103-l sf\u00e2r\u015fim cu bine, - <em>martor</em> credincios."
-]
-}
+Highlight: aceea de 2 februarie, lângă sicriul lui am scris <em>Martor</em> credincios - cum scrisesem înainte cu 9 ani, în
+Highlight: <em>Martor</em> credincios al Jertfei lui Hristos
+Highlight: <em>martor</em> sfânt al Oastei Domnului Isus.
+Highlight: <em>Martor</em> credincios al Harului Slăvit
+Highlight: să-l sfârşim cu bine, - <em>martor</em> credincios.
 
-Score: 3.3333333
+Score: 15.309091
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 14-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: 23. Iau pe Dumnezeu <em>martor</em> faţă de sufletul meu că n-am mai venit până acum
+Highlight: 23 - Iau pe Dumnezeu <em>martor</em>
+Highlight: Iau <em>martor</em> pe Dumnezeu... Numai El mai vrea să-l apere...
+Highlight: Dumnezeule Adevărat şi Viu Te iau şi eu Singurul meu <em>martor</em> faţă de toate insultele şi batjocurile pe care
+Highlight: Aceştia sunt <em>martorii</em> nepăsători, <em>martorii</em> vinovaţi, <em>martorii</em> criminali, care îngăduind
+Highlight: asculta sfaturile celor care-ţi zic: Noi suntem <em>martorii</em> care putem dovedi că ei fac fărădelege contra
+
+Score: 14.428572
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica Sfintei Învieri
+Type: articol
+Author: Traian Dorz
+Highlight: Sfântul Petru a spus: eu sunt un <em>martor</em> al Patimilor lui Hristos şi un părtaş al slavei
+Highlight:  - şi un <em>martor</em> al Lui!
+Highlight: numai un scriitor cu condeiul său, ci ne-a fost un <em>martor</em> viu, cu o trăire asemenea cu trăirea Ta, în mijlocul
+Highlight: va coborî Duhul Sfânt peste voi şi-Mi veţi fi <em>martori</em> în Ierusalim, în toată Iudeea, în Samaria, şi până
+Highlight: 8 - Îmi veţi fi <em>martori</em> Solia
+Highlight: fie nişte <em>martori</em> credincioşi şi adevăraţi despre toate faptele şi învăţăturile Lui.  Martorul
+
+Score: 14.333333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 19 - Omul trimes de Dumnezeu
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am fost <em>martor</em> la multe din cele mai intime \u015fi mai omene\u015fti momente",
-"m-a impresionat totdeauna \u015fi m-a uimit. Am fost <em>martor</em> la priveli\u015fti pe care nu le pot descrie aici. Mai",
-"despre cele petrecute \u00een anii aceia \u015fi a c\u0103ror <em>martor</em> ocular am fost - erau consemnate \u00een filele acestui",
-"trebui s\u0103 se spun\u0103 despre p\u0103rintele Iosif. Am fost <em>martorul</em> nedesp\u0103r\u0163it al muncii \u015fi suferin\u0163elor lui \u00een cei",
-"Despre el putem spune \u00eentocmai ca despre <em>martorul</em> credincios \u015fi adev\u0103rat: \u201cCe era de la \u00eenceput"
-]
-}
+Highlight: Am fost <em>martor</em> la multe din cele mai intime şi mai omeneşti momente
+Highlight: m-a impresionat totdeauna şi m-a uimit. Am fost <em>martor</em> la privelişti pe care nu le pot descrie aici. Mai
+Highlight: despre cele petrecute în anii aceia şi a căror <em>martor</em> ocular am fost - erau consemnate în filele acestui
+Highlight: trebui să se spună despre părintele Iosif. Am fost <em>martorul</em> nedespărţit al muncii şi suferinţelor lui în cei
+Highlight: Despre el putem spune întocmai ca despre <em>martorul</em> credincios şi adevărat: “Ce era de la început
 
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Ucenicul lui Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"14 - <em>Martorul</em> c\u0103derii tale trebuie s\u0103 fie neap\u0103rat \u015fi <em>martorul</em> ridic\u0103rii tale. ",
-"4 - <em>Martorii</em> vie\u0163ii \u015fi ai mor\u0163ii lui Hristos, - au declarat",
-"<em>Martorii</em> vie\u0163ii \u015fi mor\u0163ii tale, ce crezi c\u0103 vor putea spune",
-"ucenicul statornic \u00een iubirea fa\u0163\u0103 de Hristos a fost <em>martorul</em> multor c\u0103deri ur\u00e2te - dar \u015fi a multor ridic\u0103ri"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tuturor \u00eent\u00e2mpl\u0103rilor la care am fost am\u00e2ndoi <em>martori</em>, at\u00e2t cu privire la via\u0163a p\u0103rintelui Iosif \u015fi a",
-"ajute s\u0103-\u015fi \u0163in\u0103 leg\u0103m\u00e2ntul cutremur\u0103tor al c\u0103rui <em>martor</em> am fost atunci pe 8 ianuarie 1976 - \u015fi care va",
-"tr\u0103iesc \u00eenc\u0103 \u015fi ast\u0103zi mul\u0163i dintre cei care au fost <em>martori</em> la aceste evenimente. Dac\u0103 ar vrea s\u0103 adevereasc\u0103",
-"Ace\u015ftia sunt <em>martorii</em> mei. De aceea pute\u0163i s\u0103 crede\u0163i ceea ce v-am spus"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"am\u0103nunte. La sora Marta care fusese citat\u0103 ca <em>martor\u0103</em> s-a renun\u0163at \u00een fug\u0103 \u201cca s\u0103 nu mai am\u00e2n\u0103m procesul",
-"- Bine. Semneaz\u0103! Urm\u0103torul: <em>martora</em> Pop Firu\u0163a. ",
-"- D-ta <em>martora</em> Pop Firu\u0163a, trebuie s\u0103 depui jur\u0103m\u00e2nt",
-"c\u0103 voi muri, eu sunt al Lui \u015fi vreau s\u0103-I fiu un <em>martor</em> credincios \u015fi adev\u0103rat p\u00e2n\u0103 la sf\u00e2r\u015fit... traista"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Rugăciune şi mărturisire
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Voi sunte\u0163i <em>martori</em>, a zis el - c\u0103 am spus: nu eu - ci El, ",
-"\u015fi voi sunte\u0163i <em>martori</em> c\u0103 eu tot a\u015fa zic",
-"\u015fi ce <em>martor</em> vrednic",
-"7 - To\u0163i cei ce te-au auzit, vor fi <em>martori</em> \u00eempotriva ta"
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Ucenicul pe care îl iubea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martorul</em> c\u0103derii tale, trebuie s\u0103 fie neap\u0103rat \u015fi <em>martorul</em> ridic\u0103rii tale. ",
-"Ucenicul statornic \u00een iubirea fa\u0163\u0103 de Hristos a fost <em>martorul</em> multelor c\u0103deri ur\u00e2te, dar \u015fi a multor ridic\u0103ri",
-"ai nici un secret, dar chiar dore\u015fti s\u0103 \u0163i-l iei <em>martor</em> la tot ce faci. O, ce dulce este \u00eencrederea dragostei"
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Ucenicul acesta este...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103i din apostolie, la venirea c\u0103rora, el a fost <em>martor</em>. Ce duios \u015fi limpede ar\u0103ta el aceste \u00eent\u00e2mpl\u0103ri",
-"vreodat\u0103 ochilor omene\u015fti, - autoritatea sfin\u0163ilor <em>martori</em> ai Patimilor \u015fi \u00cenvierii Sale - este vrednic\u0103 de",
-"Dintre to\u0163i ace\u015fti <em>martori</em> Dumnezeie\u015fti, cel mai vrednic de crezare este acela",
-"adevereasc\u0103 tuturor con\u015ftiin\u0163elor c\u0103 tu ai fost un <em>martor</em> credincios \u015fi vrednic de crezare \u015fi de urmat? "
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Trimis înaintea lui Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Voi \u00een\u015fiv\u0103 \u00eemi sunte\u0163i <em>martori</em> c\u0103 am zis: ",
-"Voi sunte\u0163i <em>martori</em> - a spus el - c\u0103 am zis: ",
-"Voi sunte\u0163i <em>martori</em> c\u0103 a\u015fa am spus de",
-"To\u0163i cei care te-au auzit vor fi <em>martori</em> \u00eempotriva ta dac\u0103 "
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pred\u0103rii mele lui Hristos. \u015ei vreau ca singurul <em>martor</em> al acestui moment crucial din via\u0163a mea, s\u0103 fie",
-"zguduitoare \u015fi mai frumoase leg\u0103minte al c\u0103ror <em>martor</em> am fost \u00een via\u0163a mea.",
-"Iar ei au devenit p\u0103rta\u015fii \u015fi \u00eencurajatorii mei. <em>Martorii</em> tuturor chinurilor \u015fi fr\u0103m\u00e2nt\u0103rilor mele de atunci"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de moarte \u00eempotriva Lui era \u015fi dat\u0103. Nevoie de <em>martorii</em> noi, nu mai aveau. Prin urmare nu mai aveau nevoie",
-"Am fost <em>martorul</em> fericit al hot\u0103r\u00e2rilor neuitate pe care le-au",
-"precum i-am v\u0103zut pe cei ce se numesc mileni\u015fti sau <em>martori</em> ai lui Iehova."
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"To\u0163i cei \u015fase adventi\u015fti care erau <em>martori</em> la acestea, - st\u0103teau acolo privind uimi\u0163i, ascult\u00e2nd",
-"De fapt oamenii aceia care au fost <em>martori</em> la acest proces amar, chiar a\u015fa cum erau ei, \u015fi-au",
-"ani de zile al\u0103turi de p\u0103rintele Iosif. A fost <em>martorul</em> celor mai zguduitoare momente din Istoria Oastei"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dovedit de Sf. Scriptur\u0103. Dar r\u0103utatea acestor <em>martori</em> mincino\u015fi scornea mereu alte \u00eenvinuiri. \u015ei cine",
-"mai era \u00een vremea aceea l\u00e2ng\u0103 p\u0103rintele. El era <em>martorul</em> \u015fi p\u0103rta\u015ful acelei arderi \u015fi fr\u0103m\u00e2nt\u0103ri \u00een c\u0103utarea",
-"Un <em>martor</em>."
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu i s-a dat voie la nici un <em>martor</em>. Totu\u015fi la prima instan\u0163\u0103, <em>martorii</em> acuz\u0103rii l-au ap\u0103rat - \u015fi astfel",
-"tenden\u0163ioase, de acuze nedrepte. Au fost pu\u015fi 8 preo\u0163i ca <em>martori</em> ai acuz\u0103rii. Nu i s-a permis nici un cuv\u00e2nt de"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 12 - Toate lucrează spre bine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martorii</em> lui Iehova",
-"din r\u00e2ndul acestor secte, dar mai ales din al <em>Martorilor</em> lui Iehova \u015fi a Oastei Domnului, elemente declasate",
-"s\u0103 prezinte dovezi concrete, documente scrise, <em>martori</em> oculari, m\u0103rturii demne de \u00eencredere \u015fi serioase"
-]
-}
-
-Score: 3.0
+Score: 14.25
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 21 - Tipografia - un minunat şi dureros ideal
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care o am pe la b\u0103ncile \u015fi particularii din Sibiu. <em>Martor</em> \u00eemi este Dumnezeu c\u0103 nu mint (",
-"starea mea sufleteasc\u0103 \u00eentre astfel de \u00eemprejur\u0103ri. <em>Martor</em> \u00eemi este Domnul despre durerile prin care am trecut",
-". <em>Martor</em> \u00eemi este Domnul c\u0103 eu am f\u0103cut tot ce am putut"
-]
-}
+Highlight: care o am pe la băncile şi particularii din Sibiu. <em>Martor</em> îmi este Dumnezeu că nu mint (
+Highlight: starea mea sufletească între astfel de împrejurări. <em>Martor</em> îmi este Domnul despre durerile prin care am trecut
+Highlight: . <em>Martor</em> îmi este Domnul că eu am făcut tot ce am putut
 
-Score: 3.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 31 - O altă judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lipse\u015fte. La sora Marta care fusese citat\u0103 ca <em>martor\u0103</em> s-a renun\u0163at \u00een fug\u0103... \u201cca s\u0103 nu mai am\u00e2n\u0103m procesul",
-"- <em>Martora</em> Pop Firu\u0163a. ",
-"- D-ta <em>martora</em> Pop Firu\u0163a trebuie s\u0103 depui jur\u0103m\u00e2nt"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Eliberare şi binefacere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"9 - Iubirea e <em>martor\u0103</em>. Adev\u0103rul e <em>martor</em>. Con\u015ftiin\u0163a noastr\u0103 e <em>martor\u0103</em> la fel, c\u0103 nimeni altul"
-]
-}
-
-Score: 3.0
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fiindc\u0103 suntem \u00eenconjura\u0163i cu un nor a\u015fa de mare de <em>martori</em>, s\u0103 d\u0103m la o parte orice piedic\u0103, \u015fi p\u0103catul care",
-"mare de <em>martori</em>",
-"La orice act al nostru noi nu suntem singuri niciodat\u0103. O mul\u0163ime de <em>martori</em> nev\u0103zu\u0163i"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Spun cel mai greu cuvânt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"N-am vrut \u00eent\u00e2ietate, mi-e <em>Martor</em> Dumnezeu",
-"c\u0103ci <em>martor</em> mi-este Domnul c\u0103 \u015fi-ast\u0103zi pas cu pas"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am dovedit apoi cu fapte \u015fi <em>martori</em> toate aceste abateri - \u015fi l-am rugat \u00een fa\u0163a tuturor",
-"acest om s\u0103 se roage cer\u00e2nd lui Dumnezeu, \u00eentre <em>martori</em>, acest lucru!"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am fost <em>martorul</em> care am v\u0103zut cu ochii mei, am auzit cu urechile",
-"Lucr\u00e2nd al\u0103turi de p\u0103rintele, noi am fost mereu <em>martorii</em> tuturor fr\u0103m\u00e2nt\u0103rilor \u015fi zbuciumului s\u0103u. Am v\u0103zut"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care le-am auzit sau le-am v\u0103zut. Dar am fost prea <em>martor</em> eu \u00eensumi la cele legate de acestea. \u015ei am vrut",
-"- Trebuie s\u0103 mai chem\u0103m doi <em>martori</em>... "
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 13 - Pe urmele profetului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ce <em>martori</em> am v\u0103zut c\u00e2nt\u00e2nd, ",
-"ceva despre aceste comori care dispar. \u015ei a c\u0103ror <em>martori</em> n-au murit, - dar s-au dus. "
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iat\u0103, istoria este <em>martor\u0103</em> c\u0103 to\u0163i prigonitorii Mielului Hristos - au fost",
-"primejdioas\u0103 ca toate celelalte la un loc \u015fi anume secta <em>martorilor</em> lui Iehova. Duhul vr\u0103jma\u015f \u015fi agresiv care lucreaz\u0103"
-]
-}
-
-Score: 2.6666665
+Score: 12.923076
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Rugăciune
+Title: Cap. 12 - Dovada supremei iubiri
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martorul</em> Credincios \u015fi Dumnezeul Adev\u0103rat",
-"Dumnezeul Adev\u0103rat \u015fi <em>Martorul</em> Credincios"
-]
-}
+Highlight: lei, că ea este a iubiţilor săi fraţi ostaşi - <em>martor</em> este Domnul - că, începând cu Anul Nou va preda
+Highlight: desăvârşita lor împlinire! Adevăratul şi credinciosul <em>martor</em> şi martir al lui Hristos, adusese suprema dovadă
+Highlight: proba cu <em>martori</em> fiind admisă numai în acelaşi termen în care reclamanta va înainta lista de <em>martori</em> pentru
+Highlight: actelor ce s-au cerut pentru anunţarea listei de <em>martori</em> şi a întrebărilor de care înţelege să se servească
+Highlight: a se pronunţa asupra admisibilităţii probei cu <em>martori</em> sau expertizei, tribunalul fixează la 1 oct. 1937
+Highlight: partea-mi am cerut în întâmpinarea mea, ascultare de <em>martori</em> care întregiţi eventual de ascultarea părţilor
 
-Score: 2.6666665
+Score: 12.874999
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Oastei, mai ales c\u0103 el era cel care fusese nu numai <em>martorul</em> cel mai apropiat \u015fi cel mai prezent la toate fr\u0103m\u00e2nt\u0103rile",
-"din nou! Ce minunat ne descrie aceasta singurul <em>martor</em> al acestor lucr\u0103ri \u015fi \u00eent\u00e2mpl\u0103ri - Ioan - care"
-]
-}
+Highlight: În ziua judecăţii, când fratele Moroz, ca <em>martor</em> a fost întrebat ce ştie despre oamenii aceştia, - el
+Highlight: - Să chem alt <em>martor</em>?
+Highlight: - Aveţi <em>martori</em> care să dovedească cele ce le spuneţi? -
+Highlight: Şi fraţii au pus <em>martori</em> tot pe fraţi
+Highlight: fraţi. Printre cei puşi ca <em>martori</em> a fost şi fr. Moroz Ioan. Procesul s-a amânat pentru un nou termen. În
+Highlight: - Nu-i nevoie - zise preşedintele, - de vreme ce şi <em>martorii</em> sunt la fel cu inculpaţii
 
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Roadele Adevărului şi Dragostei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iar cei credincio\u015fi sunt <em>martorii</em> lui Hristos, \u00een judecata aceasta de acum, - \u015fi",
-"- atunci cei credincio\u015fi vor fi tot <em>martori</em> ai Lui. "
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Rugăciune
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dumnezeul Adev\u0103rat \u015fi <em>Martorul</em> Credincios",
-"<em>Martorul</em> Credincios \u015fi Dumnezeul Adev\u0103rat"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Faptul acesta, adeverit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Astfel de <em>martori</em> sunt <em>martorii</em> Patimilor. "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Aceasta era a treia oară
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Noi suntem <em>martori</em> a tot ce a f\u0103cut El \u00een \u0163ara iudeilor \u015fi \u00een Ierusalim",
-", <em>martorilor</em> ale\u015fi mai dinainte de Dumnezeu, nou\u0103 care am"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Cu ce fel de moarte...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martorii</em> vie\u0163ii \u015fi mor\u0163ii lui Hristos, au declarat cu to\u0163ii:",
-"<em>Martorii</em> vie\u0163ii \u015fi mor\u0163ii tale, ce crezi c\u0103 vor spune \u00eendat\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Acum şi atunci
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ce adev\u0103ra\u0163i <em>martori</em> sunt <em>martorii</em> Patimilor"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Alergarea şi ajungerea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"2 - Un <em>martor</em> al Patimilor lui Hristos, trebuie s\u0103 fi \u015fi tu suflet",
-"- tocmai pentru a te dovedi un <em>martor</em> viu \u015fi adev\u0103rat al dragostei lui Dumnezeu"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Căutarea şi aflarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"puternic ne vorbesc \u00eenc\u0103 locurile care au fost <em>martore</em> celor ce s-au petrecut \u00een ele c\u00e2ndva. ",
-"sfinte nou\u0103, bucuriile \u015fi cuvintele sfinte, vor fi <em>martore</em> pentru noi sau \u00eempotriva noastr\u0103, "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Zvonurile dezbinătoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- autoritatea sfin\u0163ilor <em>martori</em> ai Patimilor \u015fi \u00cenvierii Sale - este vrednicia",
-"17 - Dintre to\u0163i ace\u015fti <em>martori</em> Dumnezeie\u015fti, cel mai vrednic de crezare este acela"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Unitatea şi înţelepciunea Duhului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"17 - <em>Martorul</em> Credincios \u015fi Adev\u0103rat Isus Hristos, a venit \u00een",
-"<em>Martorii</em> lui Hristos, cei credincio\u015fi \u015fi adev\u0103ra\u0163i, - au"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Isus a spus acestea... în locul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"puternic ne vorbesc \u00eenc\u0103 locurile care au fost <em>martore</em> celor ce s-au petrecut \u00een ele c\u00e2ndva. \u015ei c\u00e2t de",
-"acelea, bucuriile \u015fi cuvintele acelea, vor fi <em>martore</em>, "
-]
-}
-
-Score: 2.6666665
+Score: 12.749999
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: O mărturisire, la început
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" - am fost \u00eendemnat \u015fi eu s\u0103 fac aceasta ca un <em>martor</em> viu al acestei istorii din \u00eenceputurile ei.",
-"Dar sunt un <em>martor</em> ocular! Sunt unul care am luat parte fierbinte"
-]
-}
+Highlight: predării mele lui Hristos. Şi vreau ca singurul <em>martor</em> al acestui moment crucial din viaţa mea, să fie
+Highlight: zguduitoare şi mai frumoase legăminte al căror <em>martor</em> am fost în viaţa mea.
+Highlight: Iar ei au devenit părtaşii şi încurajatorii mei. <em>Martorii</em> tuturor chinurilor şi frământărilor mele de atunci
 
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Cine primeşte... adevereşte
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iar cei credincio\u015fi sunt <em>martorii</em> ",
-"judeca lumea, cei credincio\u015fi vor fi \u015fi atunci tot <em>martorii</em> S\u0103i. "
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Cel mai greu cuvânt
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"N-am vrut \u00eent\u00e2ietate, mi-e <em>martor</em> Dumnezeu",
-"c\u0103ci <em>martor</em> mi-este Domnul c\u0103 \u015fi-ast\u0103zi pas cu pas"
-]
-}
+Highlight: N-am vrut întâietate, mi-e <em>martor</em> Dumnezeu
+Highlight: căci <em>martor</em> mi-este Domnul că şi-astăzi pas cu pas
 
-Score: 2.6666665
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: O mărturisire, la început
+Type: articol
+Author: Traian Dorz
+Highlight:  - am fost îndemnat şi eu să fac aceasta ca un <em>martor</em> viu al acestei istorii din începuturile ei.
+Highlight: Dar sunt un <em>martor</em> ocular! Sunt unul care am luat parte fierbinte
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Spun cel mai greu cuvânt
+Type: poezie
+Author: Traian Dorz
+Highlight: N-am vrut întâietate, mi-e <em>Martor</em> Dumnezeu
+Highlight: căci <em>martor</em> mi-este Domnul că şi-astăzi pas cu pas
+
+Score: 11.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: ... Martorul acestor lucruri
+Type: articol
+Author: Traian Dorz
+Highlight: Fii binecuvântat <em>martor</em> credincios al Dragostei şi Jertfei Dumnezeieşti
+Highlight: <em>Martorul</em> Său credincios ni L-a făcut cunoscut ca nimeni
+Highlight: Fiţi binecuvântaţi şi voi toţi <em>martorii</em> credincioşi ai Domnului nostru Isus Hristos, ucenicii
+Highlight: toţi slujitorii Tăi credincioşi, - dar pentru <em>martorii</em> aleşi, fii binecuvântat nespus de mult.
+Highlight: ... <em>Martorul</em> acestor lucruri
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: ajute să-şi ţină legământul cutremurător al cărui <em>martor</em> am fost atunci pe 8 ianuarie 1976 - şi care va
+Highlight: tuturor întâmplărilor la care am fost amândoi <em>martori</em>, atât cu privire la viaţa părintelui Iosif şi a
+Highlight: trăiesc încă şi astăzi mulţi dintre cei care au fost <em>martori</em> la aceste evenimente. Dacă ar vrea să adeverească
+Highlight: Aceştia sunt <em>martorii</em> mei. De aceea puteţi să credeţi ceea ce v-am spus
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
+Type: articol
+Author: Traian Dorz
+Highlight: că voi muri, eu sunt al Lui şi vreau să-I fiu un <em>martor</em> credincios şi adevărat până la sfârşit... traista
+Highlight: amănunte. La sora Marta care fusese citată ca <em>martoră</em> s-a renunţat în fugă “ca să nu mai amânăm procesul
+Highlight: - Bine. Semnează! Următorul: <em>martora</em> Pop Firuţa.  -
+Highlight: - D-ta <em>martora</em> Pop Firuţa, trebuie să depui jurământ
+
+Score: 9.8
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Rugăciune şi mărturisire
+Type: articol
+Author: Traian Dorz
+Highlight: şi ce <em>martor</em> vrednic
+Highlight: Voi sunteţi <em>martori</em>, a zis el - că am spus: nu eu - ci El,  şi
+Highlight: şi voi sunteţi <em>martori</em> că eu tot aşa zic
+Highlight: 7 - Toţi cei ce te-au auzit, vor fi <em>martori</em> împotriva ta
+
+Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
+Type: articol
+Author: Traian Dorz
+Highlight: nu i s-a dat voie la nici un <em>martor</em>. Totuşi la prima instanţă, <em>martorii</em> acuzării l-au apărat - şi astfel
+Highlight: tendenţioase, de acuze nedrepte. Au fost puşi 8 preoţi ca <em>martori</em> ai acuzării. Nu i s-a permis nici un cuvânt de
+
+Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Un <em>martor</em>.
+Highlight: dovedit de Sf. Scriptură. Dar răutatea acestor <em>martori</em> mincinoşi scornea mereu alte învinuiri. Şi cine
+Highlight: mai era în vremea aceea lângă părintele. El era <em>martorul</em> şi părtaşul acelei arderi şi frământări în căutarea
+
+Score: 9.666667
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 14 - Proverbe
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dar la mincinosul <em>martor</em> orice vorb\u0103-i o minciun\u0103. ",
-"25-<em>Martorul</em> drept\u0103\u0163ii scap\u0103 sufletele de la moarte"
-]
-}
+Highlight: dar la mincinosul <em>martor</em> orice vorbă-i o minciună.
+Highlight: 25-<em>Martorul</em> dreptăţii scapă sufletele de la moarte
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Ea a fost <em>martora</em> at\u00e2tor rug\u0103ciuni pe care nimeni altcineva dec\u00e2t"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Trebuie s\u0103 mai chem\u0103m doi <em>martori</em>."
-]
-}
-
-Score: 2.0
+Score: 9.666667
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Ce cununie strălucită
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ce <em>martori</em> mi-am v\u0103zut c\u00e2nt\u00e2nd"
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 14 - Atacul împotriva steagului
+Title: Cap. 27 - Pe drumul ales
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een Istoria Oastei, partea a doua, adeverind cu <em>martori</em> \u015fi cu documente tot adev\u0103rul dureros despre \u00eent\u00e2mpl\u0103rile"
-]
-}
+Highlight: care le-am auzit sau le-am văzut. Dar am fost prea <em>martor</em> eu însumi la cele legate de acestea. Şi am vrut
+Highlight: - Trebuie să mai chemăm doi <em>martori</em>...
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de ve\u015fnic\u0103 \u00eenv\u0103\u0163\u0103tur\u0103 tuturor celor care vor fi <em>martori</em> vreodat\u0103 la suferin\u0163ele vreunei Lucr\u0103ri a lui Dumnezeu"
-]
-}
-
-Score: 2.0
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
+Title: Cap. 4 - În virtutea frumosului avânt...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi adev\u0103rat - nu min\u0163im - Domnul \u015ftie \u015fi ne este <em>martor</em>, c\u0103ci dac\u0103 nu se ivea \u015fi \u00een satul nostru Oastea"
-]
-}
+Highlight: din nou! Ce minunat ne descrie aceasta singurul <em>martor</em> al acestor lucrări şi întâmplări - Ioan - care
+Highlight: Oastei, mai ales că el era cel care fusese nu numai <em>martorul</em> cel mai apropiat şi cel mai prezent la toate frământările
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: ... În odaia de judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103 n-am f\u0103cut aceast\u0103 afirma\u0163ie. \u015ei Domnul mi-e <em>martor</em> c\u0103 nu mint ("
-]
-}
+Highlight: Aşa că fiecare acuzator, fiecare <em>martor</em> şi fiecare apărător al lui Hristos îşi alege acum
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: În Vinerea Patimilor
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"iar\u0103\u015fi \u0162i se caut\u0103 vin\u0103, <em>martori</em> mincino\u015fi \u00ce\u0163i cat\u0103"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Neuitat părinte Iosif
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>martorii</em> lucr\u0103rii Tale \u015fi-a r\u0103bd\u0103rii neg\u00e2ndite,"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ...Nu va vedea moartea
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate faptele ci \u015fi toate lucrurile care au fost <em>martore</em> la crima \u015fi nelegiuirea care s-a s\u0103v\u00e2r\u015fit atunci"
-]
-}
+Highlight: Cine a fost <em>martor</em> în astfel de clipe la moartea chiar a celor mai
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 14 - Strâmta cărare mântuitoare
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Altul mărturiseşte...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"la ni\u015fte \u00eenv\u0103\u0163\u0103turi de ale mileni\u015ftilor \u015fi ale <em>martorilor</em> lui Iehova privitoare ba la una ba la alta din"
-]
-}
+Highlight: mărturia aceasta a ta te arată pe tine că eşti <em>martor</em> al Lui. Atunci Isus Hristos mărturiseşte despre
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 2 - A treia zi istorică
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Neemia. To\u0163i cei care sunte\u0163i acum aici sunte\u0163i <em>martori</em> \u015fi \u015fti\u0163i c\u0103 nu mint."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 8 - Şi laţul s-a rupt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vede \u015fi cele ce nu se v\u0103d. Dar cei care au fost <em>martori</em> at\u00e2t la una c\u00e2t \u015fi la alta le-au pus \u00eentr-o str\u00e2ns\u0103"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eencredin\u0163a\u0163i pentru acest lucru \u015fi de cei doi <em>martori</em> care le \u015ftiu toate acestea. Domnul Dumnezeul nostru"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Statului. Au urmat cercet\u0103ri \u015fi s-a dovedit cu <em>martori</em> c\u0103 n-a fost adev\u0103rat. Dar p\u00e2n\u0103 atunci fra\u0163ii au"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ce ai v\u0103zut \u015fi auzit de la mine \u00een fa\u0163a multor <em>martori</em>, \u00eencredin\u0163eaz\u0103 la oameni de \u00eencredere, \u00een stare"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 28 - Alte întristări binefăcătoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ei singuri \u015fi pe viu, la fa\u0163a locului. S\u0103 fie <em>martori</em> la gravitatea devierii celor despre care aveau"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cel mai b\u0103tr\u00e2n dintre ei se spune c\u0103 ar fi fost <em>martor</em> la cele ce s-au petrecut \u00een fioroasa noapte de"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am fost <em>martor</em> odat\u0103 la o discu\u0163ie a p\u0103rintelui cu un astfel de"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenso\u0163it pe M\u00e2ntuitorul \u00een toat\u0103 suferin\u0163a Lui, ca un <em>martor</em> adev\u0103rat al Patimilor Sale ("
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u00e2n\u0103 acum r\u0103gaz s\u0103 lucr\u0103m \u015fi \u00een direc\u0163ia asta. <em>Martor</em> mi-e Domnul c\u0103 a trebuit s\u0103 st\u0103m apleca\u0163i zi \u015fi"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"drag\u0103 inim\u0103 \u00een jurul trimesului ceresc. Ei au fost <em>martorii</em> patimilor \u015fi ai bucuriilor din primii ani. Ei"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vrednic numai duhul profetului, numai solul \u015fi <em>martorul</em> trimis \u00een chip deosebit "
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"clarificare, o punere la punct a anumitor lucruri. <em>Martor</em> \u00eemi e Domnul de Sus c\u0103 am \u00eencercat necontenit acest"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martor</em> \u00eemi este Domnul \u015fi p\u0103rintele Nanu, c\u0103 m-am bucurat"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 6 - Între două judecăţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fost dat afar\u0103, - a\u015fa zic\u00e2nd, - din ascultare. <em>Martor</em> "
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Intrusul şi moştenirea
+Book: Avuţia Sfântului Moştenitor
+Title: Buna-cuviinţă şi evlavia
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"se na\u015fte \u00een familie, are o dat\u0103 a na\u015fterii, are <em>martori</em> ai na\u015fterii \u015fi are un act de na\u015ftere. "
-]
-}
+Highlight: Cine a fost <em>martor</em> în astfel de clipe la moartea chiar a celor mai
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Evenimentele şi istoria noastră
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fac\u0103 vreun r\u0103u, nu este obligat s\u0103 aduc\u0103 nici <em>martori</em>, nici dovezi. \u00cen aceste condi\u0163ii singur\u0103 adorarea"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Hristos - Dumnezeul nostru
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Noi suntem - \u015fi nu putem s\u0103 nu fim <em>martori</em>, ori pentru Hristos, ori \u00eempotriva Lui. "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Sfinţii din mijlocul nostru
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"A\u015fa s-au purtat cu sfin\u0163ii \u015fi <em>martorii</em> Bisericii, p\u00e2n\u0103 azi "
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Înainte de început
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martor</em> \u00eemi este Viul Dumnezeu care ne \u015ftie sufletul fiec\u0103ruia"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 1 - Ce puţine adevăruri putem spune
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"timpului \u015fi neamului nostru c\u0103rora le-am fost \u015fi eu <em>martor</em> - s\u0103 aib\u0103 nu numai solia \u015fi jertfa profetului lor"
-]
-}
+Highlight: timpului şi neamului nostru cărora le-am fost şi eu <em>martor</em> - să aibă nu numai solia şi jertfa profetului lor
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Domnul a aflat
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 10 - Pe drumul Crucii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Toat\u0103 istoria e <em>martor\u0103</em> de acest lucru! "
-]
-}
+Highlight: că n-am făcut această afirmaţie. Şi Domnul mi-e <em>martor</em> că nu mint (
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Isus ostenit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u0103ci <em>martorul</em> care avea s\u0103 adevereasc\u0103 despre Hristos, trebuie"
-]
-}
-
-Score: 2.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Poruncile şi legămintele
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"Hristos r\u0103stignit, Sf\u00e2ntul Duh \u00eentristat, sunt <em>martori</em> despre aceasta. "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: O Doamne, depărtează-mi...
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 12 - Proverbe
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi <em>martorii</em> la judecat\u0103. "
-]
-}
+Highlight: însă mincinosul <em>martor</em> vrea să-nşele orice faptă.
 
-Score: 2.0
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: cel mai bătrân dintre ei se spune că ar fi fost <em>martor</em> la cele ce s-au petrecut în fioroasa noapte de
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
+Type: articol
+Author: Traian Dorz
+Highlight: Am fost <em>martor</em> odată la o discuţie a părintelui cu un astfel de
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 18 - Frumosul an 1930
+Type: articol
+Author: Traian Dorz
+Highlight: însoţit pe Mântuitorul în toată suferinţa Lui, ca un <em>martor</em> adevărat al Patimilor Sale (
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: clarificare, o punere la punct a anumitor lucruri. <em>Martor</em> îmi e Domnul de Sus că am încercat necontenit acest
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Type: articol
+Author: Traian Dorz
+Highlight: până acum răgaz să lucrăm şi în direcţia asta. <em>Martor</em> mi-e Domnul că a trebuit să stăm aplecaţi zi şi
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Martor</em> îmi este Domnul şi părintele Nanu, că m-am bucurat
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
+Type: articol
+Author: Traian Dorz
+Highlight: fost dat afară, - aşa zicând, - din ascultare. <em>Martor</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 9 - În vremea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: şi adevărat - nu minţim - Domnul ştie şi ne este <em>martor</em>, căci dacă nu se ivea şi în satul nostru Oastea
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Cu Domnul spre Golgota - 3
+Type: poezie
+Author: Traian Dorz
+Highlight: o dovadă a iubirii şi un <em>martor</em> spre osândă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Da, numai fericirea şi îndurarea
+Type: articol
+Author: Traian Dorz
+Highlight: ca să-Ţi fiu <em>martor</em> şi mai adevărat.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre dreptate
+Type: articol
+Author: Traian Dorz
+Highlight: fă-te <em>martor</em> între doi împricinaţi
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
-Title: Să mărturisească
+Title: Eu nu sunt vrednic...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noi suntem - \u015fi nu putem s\u0103 nu fim <em>martori</em>, ori pentru Hristos, ori \u00eempotriva Lui! "
-]
-}
+Highlight: Cu cât un <em>martor</em> al lui Hristos va purta o solie mai aleasă şi mai
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Toţi cei ce fuseseră cu Isus, - mărturiseau
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"un <em>martor</em> al patimilor lui Hristos"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Norodul a ieşit... pentru că aflase - semnul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Preasl\u0103vite Doamne Isuse, <em>Martorul</em> Credincios \u015fi Adev\u0103rat ("
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Are cine să-l osândească...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0162i-o trimit \u00eempodobit\u0103 Biblia mea, ca ap\u0103r\u0103tor \u015fi <em>martor</em> al meu pentru Judecata Ta. "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Când a văzut Isus pe Mama Sa...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceea - Fiul Dulce o ia de acolo \u00een fa\u0163a a doi <em>martori</em> - cele dou\u0103 Marii, Maria Magdalena \u015fi Maria lui"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
 Title: Isus care ştia că acum totul s-a sfârşit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fii binecuv\u00e2ntat tu, <em>martor</em> credincios \u015fi adev\u0103rat care l-ai tr\u0103it \u015fi care"
-]
-}
+Highlight: Fii binecuvântat tu, <em>martor</em> credincios şi adevărat care l-ai trăit şi care
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: A intrat, a văzut, a crezut
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"str\u0103jerilor care v\u0103zuser\u0103 minunea \u00cenvierii, singurii <em>martori</em> ai Sl\u0103vitei Minuni, - le ziser\u0103: "
-]
-}
+Highlight: în duhul meu, în Evanghelia Fiului Său, îmi este <em>martor</em> că vă pomenesc neîncetat în rugăciunile mele,
 
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: S-a dus şi a vestit
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"marele merit \u015fi marea credin\u0163\u0103 a celor dint\u00e2i <em>martori</em> \u015fi vestitori ai \u00cenvierii. "
-]
-}
+Highlight: cine a fost <em>martor</em> la legământul lor;
 
-Score: 2.0
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: Mâinile şi coasta Lui
+Book: Hristos - Răscumpărătorul nostru
+Title: Pe cine căutaţi?
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Martorii</em> adev\u0103ratei jertfe, sunt ranele ei. "
-]
-}
+Highlight: Decât un <em>martor</em> al minciunii, mai bine un condamnat al adevărului
 
-Score: 2.0
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Tot ce-am cântat Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: Tot ce-a fost <em>martor</em> stării
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Tot ce-am cântat cândva
+Type: poezie
+Author: Traian Dorz
+Highlight: Tot ce-a fost <em>martor</em> fericirii
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: Multe alte semne...
+Book: Hristos - Împăratul nostru
+Title: Toţi cei ce fuseseră cu Isus, - mărturiseau
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u0103 dac\u0103 un ucenic \u015fi <em>martor</em> al \u00cenvierii Sale, ajunge pe deplin convins de aceasta"
-]
-}
+Highlight: un <em>martor</em> al patimilor lui Hristos
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Înainte de început
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Martor</em> îmi este Viul Dumnezeu care ne ştie sufletul fiecăruia
+
+Score: 2.8333333
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Noi suntem martori!
+Type: poezie
+Author: Traian Dorz
+Highlight: Noi suntem <em>martori</em> că Hristos
+Highlight: sunt <em>martori</em> vrednici de crezut
+Highlight: Noi suntem <em>martori</em> c-am trecut
+Highlight: Noi suntem <em>martori</em>, căci am fost
+Highlight: Noi suntem <em>martori</em> pentru voi
+Highlight: Noi suntem <em>martori</em>!
+
+Score: 2.8333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Noi suntem martori!
+Type: poezie
+Author: Traian Dorz
+Highlight: Noi suntem <em>martori</em> că Hristos
+Highlight: sunt <em>martori</em> vrednici de crezut
+Highlight: Noi suntem <em>martori</em> c-am trecut
+Highlight: Noi suntem <em>martori</em>, căci am fost
+Highlight: Noi suntem <em>martori</em> pentru voi
+Highlight: Noi suntem <em>martori</em>!
+
+Score: 0.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Trimis înaintea lui Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: Voi înşivă îmi sunteţi <em>martori</em> că am zis:
+Highlight: Voi sunteţi <em>martori</em> - a spus el - că am zis:
+Highlight: Voi sunteţi <em>martori</em> că aşa am spus de
+Highlight: Toţi cei care te-au auzit vor fi <em>martori</em> împotriva ta dacă
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 12 - Toate lucrează spre bine
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Martorii</em> lui Iehova
+Highlight: din rândul acestor secte, dar mai ales din al <em>Martorilor</em> lui Iehova şi a Oastei Domnului, elemente declasate
+Highlight: să prezinte dovezi concrete, documente scrise, <em>martori</em> oculari, mărturii demne de încredere şi serioase
+
+Score: 0.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: lipseşte. La sora Marta care fusese citată ca <em>martoră</em> s-a renunţat în fugă... “ca să nu mai amânăm procesul
+Highlight: - <em>Martora</em> Pop Firuţa.
+Highlight: - D-ta <em>martora</em> Pop Firuţa trebuie să depui jurământ
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: de moarte împotriva Lui era şi dată. Nevoie de <em>martorii</em> noi, nu mai aveau. Prin urmare nu mai aveau nevoie
+Highlight: Am fost <em>martorul</em> fericit al hotărârilor neuitate pe care le-au
+Highlight: precum i-am văzut pe cei ce se numesc milenişti sau <em>martori</em> ai lui Iehova.
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Toţi cei şase adventişti care erau <em>martori</em> la acestea, - stăteau acolo privind uimiţi, ascultând
+Highlight: De fapt oamenii aceia care au fost <em>martori</em> la acest proces amar, chiar aşa cum erau ei, şi-au
+Highlight: ani de zile alături de părintele Iosif. A fost <em>martorul</em> celor mai zguduitoare momente din Istoria Oastei
+
+Score: 0.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
+Type: articol
+Author: Traian Dorz
+Highlight: fiindcă suntem înconjuraţi cu un nor aşa de mare de <em>martori</em>, să dăm la o parte orice piedică, şi păcatul care
+Highlight: mare de <em>martori</em>
+Highlight: La orice act al nostru noi nu suntem singuri niciodată. O mulţime de <em>martori</em> nevăzuţi
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: Am fost <em>martorul</em> care am văzut cu ochii mei, am auzit cu urechile
+Highlight: Lucrând alături de părintele, noi am fost mereu <em>martorii</em> tuturor frământărilor şi zbuciumului său. Am văzut
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: Am dovedit apoi cu fapte şi <em>martori</em> toate aceste abateri - şi l-am rugat în faţa tuturor
+Highlight: acest om să se roage cerând lui Dumnezeu, între <em>martori</em>, acest lucru!
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 13 - Pe urmele profetului
+Type: articol
+Author: Traian Dorz
+Highlight: ce <em>martori</em> am văzut cântând,
+Highlight: ceva despre aceste comori care dispar. Şi a căror <em>martori</em> n-au murit, - dar s-au dus.
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 2 - O taină a lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Iată, istoria este <em>martoră</em> că toţi prigonitorii Mielului Hristos - au fost
+Highlight: primejdioasă ca toate celelalte la un loc şi anume secta <em>martorilor</em> lui Iehova. Duhul vrăjmaş şi agresiv care lucrează
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Cine primeşte... adevereşte
+Type: articol
+Author: Traian Dorz
+Highlight: Iar cei credincioşi sunt <em>martorii</em>
+Highlight: judeca lumea, cei credincioşi vor fi şi atunci tot <em>martorii</em> Săi.
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Căutarea şi aflarea
+Type: articol
+Author: Traian Dorz
+Highlight: puternic ne vorbesc încă locurile care au fost <em>martore</em> celor ce s-au petrecut în ele cândva.
+Highlight: sfinte nouă, bucuriile şi cuvintele sfinte, vor fi <em>martore</em> pentru noi sau împotriva noastră,
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Isus a spus acestea... în locul...
+Type: articol
+Author: Traian Dorz
+Highlight: puternic ne vorbesc încă locurile care au fost <em>martore</em> celor ce s-au petrecut în ele cândva. Şi cât de
+Highlight: acelea, bucuriile şi cuvintele acelea, vor fi <em>martore</em>,
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Roadele Adevărului şi Dragostei
+Type: articol
+Author: Traian Dorz
+Highlight: Iar cei credincioşi sunt <em>martorii</em> lui Hristos, în judecata aceasta de acum, - şi
+Highlight: - atunci cei credincioşi vor fi tot <em>martori</em> ai Lui.
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Rugăciune
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeul Adevărat şi <em>Martorul</em> Credincios
+Highlight: <em>Martorul</em> Credincios şi Dumnezeul Adevărat
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Rugăciune
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Martorul</em> Credincios şi Dumnezeul Adevărat
+Highlight: Dumnezeul Adevărat şi <em>Martorul</em> Credincios
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: ... El este Acela...
+Type: articol
+Author: Traian Dorz
+Highlight: Ochii <em>martorilor</em> Săi s-au închis privind cu bucurie spre El şi
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: ... Este mincinos şi tatăl minciunii
+Type: articol
+Author: Traian Dorz
+Highlight: cei doi <em>martori</em> pentru care nu-i nimic de nepătruns;
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: ... Slava de dinainte de a fi lumea
+Type: articol
+Author: Traian Dorz
+Highlight: Apostolii Săi, care au văzut cu ochii lor şi au fost <em>martorii</em> tuturor acestor lucruri profeţite despre Hristos
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: ... Întreabă pe cei care M-au auzit
+Type: articol
+Author: Traian Dorz
+Highlight: convine şi mai bine. Vom avea noi grijă să-Ţi adunăm <em>martori</em> şi declaraţii din care să nu Te mai poţi descurca
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Binefacerea şi recunoştinţa
+Type: articol
+Author: Traian Dorz
+Highlight: 20 - Umbra noastră ne însoţeşte oriunde şi este <em>martoră</em> tăcută la toate faptele noastre, la toate căile
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: vrednic numai duhul profetului, numai solul şi <em>martorul</em> trimis în chip deosebit
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: Ouatu de la Bucureşti a repetat în faţa multor <em>martori</em> doar cu un an înainte de propria sa moarte într-un
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 11 - Semnele Oastei Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: - Ea a fost <em>martora</em> atâtor rugăciuni pe care nimeni altcineva decât
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: toate faptele ci şi toate lucrurile care au fost <em>martore</em> la crima şi nelegiuirea care s-a săvârşit atunci
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: - Trebuie să mai chemăm doi <em>martori</em>.
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 14 - Atacul împotriva steagului
+Type: articol
+Author: Traian Dorz
+Highlight: în Istoria Oastei, partea a doua, adeverind cu <em>martori</em> şi cu documente tot adevărul dureros despre întâmplările
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 14 - Strâmta cărare mântuitoare
+Type: articol
+Author: Traian Dorz
+Highlight: la nişte învăţături de ale mileniştilor şi ale <em>martorilor</em> lui Iehova privitoare ba la una ba la alta din
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 15 - Un An Nou Fericit
+Type: articol
+Author: Traian Dorz
+Highlight: încredinţaţi pentru acest lucru şi de cei doi <em>martori</em> care le ştiu toate acestea. Domnul Dumnezeul nostru
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 18 - Frumoasele noastre Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: ce ai văzut şi auzit de la mine în faţa multor <em>martori</em>, încredinţează la oameni de încredere, în stare
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 19 - Proverbe
+Type: poezie
+Author: Traian Dorz
+Highlight: 28-<em>Martorul</em> stricat îşi bate joc de orişice dreptate,
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 2 - A treia zi istorică
+Type: articol
+Author: Traian Dorz
+Highlight: Neemia. Toţi cei care sunteţi acum aici sunteţi <em>martori</em> şi ştiţi că nu mint.
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: de veşnică învăţătură tuturor celor care vor fi <em>martori</em> vreodată la suferinţele vreunei Lucrări a lui Dumnezeu
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: dragă inimă în jurul trimesului ceresc. Ei au fost <em>martorii</em> patimilor şi ai bucuriilor din primii ani. Ei
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 28 - Alte întristări binefăcătoare
+Type: articol
+Author: Traian Dorz
+Highlight: ei singuri şi pe viu, la faţa locului. Să fie <em>martori</em> la gravitatea devierii celor despre care aveau
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: tuturor întâmplărilor la care noi amândoi fusesem <em>martori</em> din copilăria noastră, atât cu privire la viaţa
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: Statului. Au urmat cercetări şi s-a dovedit cu <em>martori</em> că n-a fost adevărat. Dar până atunci fraţii au
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 8 - Şi laţul s-a rupt
+Type: articol
+Author: Traian Dorz
+Highlight: vede şi cele ce nu se văd. Dar cei care au fost <em>martori</em> atât la una cât şi la alta le-au pus într-o strânsă
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Ce cununie strălucită
+Type: poezie
+Author: Traian Dorz
+Highlight: ce <em>martori</em> mi-am văzut cântând
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Când a văzut Isus pe Mama Sa...
+Type: articol
+Author: Traian Dorz
+Highlight: aceea - Fiul Dulce o ia de acolo în faţa a doi <em>martori</em> - cele două Marii, Maria Magdalena şi Maria lui
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Cântările Învierii
+Type: poezie
+Author: Traian Dorz
+Highlight: să-Ţi meargă <em>martorii</em>-nvierii
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Olteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 200 - Chiar şi pietrele sfinţite <em>martore</em> la cununie
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Domnul a aflat
+Type: articol
+Author: Traian Dorz
+Highlight: Toată istoria e <em>martoră</em> de acest lucru!
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Dragostea pentru înaintaşi
+Type: articol
+Author: Traian Dorz
+Highlight: Isuse, <em>Martorul</em> Credincios al legămintelor noastre.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Fereşte-te de răutate
+Type: poezie
+Author: Traian Dorz
+Highlight: 19-Apoi <em>martorul</em> minciunii care neadevăr grăieşte
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Fericirea de a fi cu Domnul
+Type: articol
+Author: Traian Dorz
+Highlight: Binefăcător şi Dumnezeu, Preaiubitul sufletului nostru, <em>Martorul</em> Credincios şi Ocrotitor al legămintelor noastre
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Hristos - Dumnezeul nostru
+Type: articol
+Author: Traian Dorz
+Highlight: Noi suntem - şi nu putem să nu fim <em>martori</em>, ori pentru Hristos, ori împotriva Lui.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Ioan încă nu fusese întemniţat
+Type: articol
+Author: Traian Dorz
+Highlight: - aceşti <em>martori</em> credincioşi ai lui Hristos, prin chiar prezenţa
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Isus le-a răspuns...
+Type: articol
+Author: Traian Dorz
+Highlight: Iar <em>martorul</em> credincios - ucenicul iubit - auzind aceste scumpe
 

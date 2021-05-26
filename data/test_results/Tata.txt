@@ -1,1552 +1,1085 @@
-+----------------------------------------------------------------------+-------------+-------------------------------+------------------------------+---------+
-| Titlu                                                                | Author      | Tip                           | Carte                        | Volum   |
-+----------------------------------------------------------------------+-------------+-------------------------------+------------------------------+---------+
-| Tată Bun din ceruri                                                  | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Tată Sfânt mulţumiri...                                              | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
-| Tată Sfânt mulţumiri                                                 | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Cântă-i tată la copil                                                | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Voi aveţi de tată pe diavolul                                        | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Iubitul nostru tată                                                  | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Tată, unde te-ai aflat?                                              | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Tată, a sosit ceasul...                                              | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Bunul nostru Tată...                                                 | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Din Tată fără Mamă                                                   | Traian Dorz | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| Ştii tu tată                                                         | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Din Tată fără Mamă                                                   | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| O, Tată Sfânt, - eu Ţi-am fost                                       | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Tată, sfintele Cuvinte                                               | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Sfinte Tată Bun                                                      | Traian Dorz | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | poezie  |
-| O Tată Sfânt al Zilei                                                | Traian Dorz | Hristos - Sfinţitorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Tată, la nălţare                                                     | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Fiul tatii, ia aminte                                                | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Tată, ce-am putea?                                                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Bun e tata, bun...                                                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Ca tata altădată                                                     | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Sfinte Tată Bun                                                      | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| O Tată Sfânt al Zilei                                                | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Îţi cântăm Tată Sfânt                                                | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| La Tronul Tău de har                                                 | Traian Dorz | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| La Tronul Tău de har                                                 | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 17-a după Rusalii                        | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 2 - Fiecare existenţă este o taină                              | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Rugăciunea Domnului Isus Hristos - 4                                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Rugăciunea Domnului Isus Hristos - 5                                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Dormi cu mama îngeraş                                                | Traian Dorz | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
-| Rugăciunea Domnului Isus Hristos - 6                                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Dulce-i lumea din poveste                                            | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Cap. 13 - Frumosul tineret creştin                                   | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                             | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 7 - Furtunile care încep de dimineaţă                           | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Noaptea-n linişte coboară                                            | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Dormi cu mama                                                        | Traian Dorz | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare          | poezie  |
-| Cap. 5 - Binecuvântata muncă grea                                    | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Bunătatea Tatălui Ceresc                                             | Traian Dorz | Credinţa Încununată           | Cugetări Nemuritoare         | articol |
-| Pentru harul Tău                                                     | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Rugăciunea Domnului Isus Hristos - 3                                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Despre iubire                                                        | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)        | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor) | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 10 - Uşor e jugul lui Hristos                                   | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 15 - Al doilea foc                                              | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                       | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                             | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Voi Mă numiţi... şi bine ziceţi                                      | Traian Dorz | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
-| Te rog nu pentru lume                                                | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Mamă, Domnul spune                                                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Rugăciunea Domnului Isus Hristos - 2                                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Din părţile Transilvaniei                                            | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Cap. 11 - Semnele Oastei Domnului                                    | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 16 - Există un echilibru                                        | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                             | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 11 - Răscrucea Isus                                             | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                     | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                 | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                             | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Oare nu este Acesta Fiul lui?...                                     | Traian Dorz | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| L-am proslăvit şi-L voi mai proslăvi                                 | Traian Dorz | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                        | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Mai sunt puţin cu voi                                                | Traian Dorz | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
-| Eu n-am avut nici mamă                                               | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Părinte-Atotputernic...                                              | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Suprema cântare Iubirii                                              | Traian Dorz | Hristos - Slava noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Proslăvirea lui Dumnezeu                                             | Traian Dorz | Crucea Mântuitoare            | Cugetări Nemuritoare         | articol |
-| A crede Adevărul                                                     | Traian Dorz | Eterna Iubire                 | Cugetări Nemuritoare         | articol |
-| Auzirea şi ascultarea                                                | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
-| Liniştea vieţii curate                                               | Traian Dorz | Numele Biruitorului           | Cugetări Nemuritoare         | articol |
-| Răul şi binele                                                       | Traian Dorz | Credinţa Încununată           | Cugetări Nemuritoare         | articol |
-| Acum las lumea şi Mă duc la Tatăl                                    | Traian Dorz | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
-| ... Slava de dinainte de a fi lumea                                  | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Pentru ca ei să fie una...                                           | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| ... Pentru ca lumea să creadă                                        | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Să fie împreună cu Mine                                              | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Lumea nu Te-a cunoscut                                               | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Faptele tatălui vostru                                               | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Un credincios nu poate                                               | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Cap. 2 - Grâul cel care moare                                        | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 3 - Începutul chemării                                          | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Părinte-Atotputernic...                                              | Traian Dorz | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| O, când privesc spre cerul                                           | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Iată masa ni s-a pus                                                 | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Despre căsnicie                                                      | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Copii rămaşi                                                         | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Nani, frăţiorul meu                                                  | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Vino tatăl meu cu mine                                               | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Ştii tu mamă                                                         | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| O, cum să-Ţi mulţumim?                                               | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Tot ce are Tatăl este al Meu                                         | Traian Dorz | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
-| Suprema cântare Iubirii                                              | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Cain                                                                 | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Despre virtute                                                       | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Privesc cum crinii                                                   | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| O, negrăită Bunătate                                                 | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-+----------------------------------------------------------------------+-------------+-------------------------------+------------------------------+---------+
++---------------------------------------------------------------------------+---------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                     | Occurrences               | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------+---------------------------+-------------+----------------------------------+------------------------------+---------+
+| Bun e tata, bun...                                                        | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Ca tata altădată                                                          | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Tată Bun din ceruri                                                       | {'Tată', 'tată'}          | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Tată Sfânt mulţumiri                                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Tată Sfânt mulţumiri...                                                   | {'Tată'}                  | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
+| Voi aveţi de tată pe diavolul                                             | {'tată', 'Tată'}          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Iubitul nostru tată                                                       | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Tată, unde te-ai aflat?                                                   | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Bunul nostru Tată...                                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Tată, a sosit ceasul...                                                   | {'Tată'}                  | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Din Tată fără Mamă                                                        | {'Tată', 'tată'}          | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Din Tată fără Mamă                                                        | {'Tată', 'tată'}          | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| O, Tată Sfânt, - eu Ţi-am fost                                            | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Ştii tu tată                                                              | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 2 - Fiecare existenţă este o taină                                   | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cântă-i tată la copil                                                     | {'tată', 'tatii'}         | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 7 - Furtunile care încep de dimineaţă                                | {'Tata', 'tata'}          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Tată, sfintele Cuvinte                                                    | {'Tată', 'taţi'}          | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                  | {'tata', 'tată'}          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| O Tată Sfânt al Zilei                                                     | {'Tată'}                  | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| O Tată Sfânt al Zilei                                                     | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Sfinte Tată Bun                                                           | {'Tată'}                  | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | poezie  |
+| Sfinte Tată Bun                                                           | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Tată, ce-am putea?                                                        | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Tată, la nălţare                                                          | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Îţi cântăm Tată Sfânt                                                     | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cap. 5 - Binecuvântata muncă grea                                         | {'tata', 'Tata'}          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)      | {'tata'}                  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 13 - Frumosul tineret creştin                                        | {'tata', 'tată', 'taţi'}  | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Uşor e jugul lui Hristos                                        | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 15 - Al doilea foc                                                   | {'tata'}                  | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)             | {'tata', 'Tată', 'tată'}  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 11 - Semnele Oastei Domnului                                         | {'tata'}                  | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 16 - Există un echilibru                                             | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 2 - Grâul cel care moare                                             | {'tata', 'Tata'}          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                    | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                             | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                  | {'tata'}                  | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Copii rămaşi                                                              | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Nani, frăţiorul meu                                                       | {'Tata', 'tata'}          | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Despre iubire                                                             | {'tata', 'Tată', 'tată'}  | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                       | {'Tata', 'Tată', 'tată'}  | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 28 - Necazurile din lungul drumului                                  | {'Tata', 'tată'}          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                      | {'tata', 'tată'}          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 3 - Începutul chemării                                               | {'tata', 'tată'}          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Un tată amărât                                                            | {'tată'}                  | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Zi de toamnă dureroasă...                                                 | {'tata', 'tată'}          | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Anicuţa                                                                   | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Cel mai frumos Isus                                              | {'tata'}                  | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 18 - La 25 de ani                                                    | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 19 - Mereu morminte noi                                              | {'tata'}                  | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                  | {'tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 5 - Necazuri şi speranţe                                             | {'tata'}                  | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Strălucita sărbătoare de Rusalii                                 | {'Tata'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| E noapte grea                                                             | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Familia sufletului nostru                                                 | {'tata'}                  | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Isus a zis: strângeţi fărâmiturile                                        | {'tata'}                  | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Mamă, iată Domnul                                                         | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Mamă, iată cum călăii                                                     | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Mamă, iată cum soldaţii                                                   | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| N-am pierdut pe nici unul                                                 | {'tata'}                  | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Paştele erau aproape...                                                   | {'tata'}                  | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Părinţii                                                                  | {'Tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Scumpa mamă                                                               | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Somnul dulce-dulce                                                        | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Stând singur câteodată...                                                 | {'tata'}                  | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| La Tronul Tău de har                                                      | {'Tată'}                  | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| La Tronul Tău de har                                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 17-a după Rusalii                             | {'Tată', 'tată'}          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Rugăciunea Domnului Isus Hristos - 4                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Rugăciunea Domnului Isus Hristos - 5                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Rugăciunea Domnului Isus Hristos - 6                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Noaptea-n linişte coboară                                                 | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Pentru harul Tău                                                          | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Rugăciunea Domnului Isus Hristos - 3                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 19 - Al treilea februarie                                            | {'Tată', 'tată'}          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Din părţile Transilvaniei                                                 | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Rugăciunea Domnului Isus Hristos - 2                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Te rog nu pentru lume                                                     | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Voi Mă numiţi... şi bine ziceţi                                           | {'tată'}                  | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Mamă, Domnul spune                                                        | {'Tată', 'tată', 'tatii'} | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| ... Pentru ca lumea să creadă                                             | {'Tată'}                  | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Slava de dinainte de a fi lumea                                       | {'Tată'}                  | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Acum las lumea şi Mă duc la Tatăl                                         | {'tată', 'Tată'}          | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Auzirea şi ascultarea                                                     | {'tată'}                  | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Cain                                                                      | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cap. 11 - Răscrucea Isus                                                  | {'tată'}                  | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                  | {'tată'}                  | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                          | {'Tată', 'tată'}          | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Despre căsnicie                                                           | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre virtute                                                            | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Eu n-am avut nici mamă                                                    | {'tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Faptele tatălui vostru                                                    | {'Tată', 'tată'}          | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Iată masa ni s-a pus                                                      | {'Tată'}                  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| L-am proslăvit şi-L voi mai proslăvi                                      | {'Tată'}                  | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 16-a după Rusalii                             | {'Tată'}                  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului) | {'tată', 'Tată'}          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)           | {'tată'}                  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Lumea nu Te-a cunoscut                                                    | {'Tată'}                  | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Mai sunt puţin cu voi                                                     | {'tată'}                  | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
++---------------------------------------------------------------------------+---------------------------+-------------+----------------------------------+------------------------------+---------+
 Searching Tata using http://localhost:9000...
-Got 292 hits:
-Score: 5.5555553
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Tată Bun din ceruri
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> Bun, <em>Tat\u0103</em> Bun, <em>Tat\u0103</em> Bun...",
-"<em>Tat\u0103</em> Bun din ceruri iat\u0103",
-"f\u0103r\u0103 <em>tat\u0103</em>, f\u0103r\u0103 mam\u0103 Doamne",
-"<em>Tat\u0103</em> Bun Tu ne e\u015fti,  Tu",
-"<em>Tat\u0103</em> Bun, oriunde"
-],
-"title": [
-"<em>Tat\u0103</em> Bun din ceruri"
-]
-}
-
-Score: 5.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Tată Sfânt mulţumiri...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> Sf\u00e2nt mul\u0163umiri ne-ncetat",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt!",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt!",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt!",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt!"
-],
-"title": [
-"<em>Tat\u0103</em> Sf\u00e2nt mul\u0163umiri..."
-]
-}
-
-Score: 5.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Tată Sfânt mulţumiri
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> Sf\u00e2nt mul\u0163umiri ne-ncetate",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt! ",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt! ",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt! ",
-"mul\u0163umim, mul\u0163umim <em>Tat\u0103</em> Sf\u00e2nt! "
-],
-"title": [
-"<em>Tat\u0103</em> Sf\u00e2nt mul\u0163umiri"
-]
-}
-
-Score: 5.4285717
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-i tată la copil
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Puiul <em>tatii</em> pui, puiul <em>tatii</em> pui",
-"C\u00e2nt\u0103-i <em>tat\u0103</em> la copil seara",
-"puiul <em>tatii</em> pui, puiul",
-"puiul <em>tatii</em> pui",
-"puiul <em>tatii</em> pui..."
-],
-"title": [
-"C\u00e2nt\u0103-i <em>tat\u0103</em> la copil"
-]
-}
-
-Score: 5.333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Voi aveţi de tată pe diavolul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care ei \u015fi l-au ales de <em>tat\u0103</em>, pe care ei l-au iubit \u015fi l-au ascultat, ca pe un <em>tat\u0103</em>, iar el i-a schimonosit",
-"Voi ave\u0163i de <em>tat\u0103</em> pe diavolul; \u015fi vre\u0163i s\u0103 \u00eemplini\u0163i poftele tat\u0103lui vostru. El de la \u00eenceput a fost",
-"fi \u015fi astfel de oameni, care s\u0103 nu-L mai aib\u0103 de <em>Tat\u0103</em> pe Dumnezeu, ci pe diavolul,  -",
-"O Sfinte <em>Tat\u0103</em> Bun din Ceruri, "
-],
-"title": [
-"Voi ave\u0163i de <em>tat\u0103</em> pe diavolul"
-]
-}
-
-Score: 5.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Iubitul nostru tată
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iubitul nostru <em>tat\u0103</em>",
-"<em>tat\u0103</em> preaiubit",
-"iubite <em>tat\u0103</em> drag. ",
-"s\u0103 fim cu tine <em>tat\u0103</em>"
-],
-"title": [
-"Iubitul nostru <em>tat\u0103</em>"
-]
-}
-
-Score: 5.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Tată, unde te-ai aflat?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, unde te-ai aflat",
-"<em>Tat\u0103</em>, ce f\u0103ceai atunci",
-"<em>Tat\u0103</em>, dar acum ce faci",
-"<em>Tat\u0103</em>, roag\u0103-te c\u0103it"
-],
-"title": [
-"<em>Tat\u0103</em>, unde te-ai aflat?"
-]
-}
-
-Score: 5.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Tată, a sosit ceasul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"astfel, Isus a ridicat ochii spre cer, \u015fi a zis: <em>Tat\u0103</em>, a sosit ceasul! Prosl\u0103ve\u015fte pe Fiul T\u0103u, ca \u015fi",
-"astfel Isus, a ridicat ochii spre cer \u015fi a zis: <em>Tat\u0103</em>, a sosit ceasul! Prosl\u0103ve\u015fte pe Fiul T\u0103u, ca \u015fi",
-"Slav\u0103 ve\u015fnic\u0103 \u0162ie Neprih\u0103nitul \u015fi Bunul nostru <em>Tat\u0103</em> Ceresc. "
-],
-"title": [
-"<em>Tat\u0103</em>, a sosit ceasul..."
-]
-}
-
-Score: 5.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Bunul nostru Tată...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Bunul nostru <em>Tat\u0103</em> Sf\u00e2nt",
-"Bunul nostru <em>Tat\u0103</em> Bun, ",
-"Bunul nostru <em>Tat\u0103</em>, vin"
-],
-"title": [
-"Bunul nostru <em>Tat\u0103</em>..."
-]
-}
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Din Tată fără Mamă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Din <em>Tat\u0103</em>, f\u0103r\u0103 Mam\u0103, n\u0103scut ca Dumnezeu",
-"din Mam\u0103 f\u0103r\u0103 <em>tat\u0103</em>, n\u0103scut"
-],
-"title": [
-"Din <em>Tat\u0103</em> f\u0103r\u0103 Mam\u0103"
-]
-}
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Ştii tu tată
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015etii tu <em>tat\u0103</em>, \u015ftii tu mam\u0103",
-"Vino <em>tat\u0103</em> s\u0103-mplinim"
-],
-"title": [
-"\u015etii tu <em>tat\u0103</em>"
-]
-}
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Din Tată fără Mamă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Din <em>Tat\u0103</em>, f\u0103r\u0103 Mam\u0103, n\u0103scut ca Dumnezeu",
-"din Mam\u0103 f\u0103r\u0103 <em>tat\u0103</em>, n\u0103scut"
-],
-"title": [
-"Din <em>Tat\u0103</em> f\u0103r\u0103 Mam\u0103"
-]
-}
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: O, Tată Sfânt, - eu Ţi-am fost
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, <em>Tat\u0103</em> Sf\u00e2nt, - eu \u0162i-am fost fiul",
-"o, <em>Tat\u0103</em> Sf\u00e2nt. "
-],
-"title": [
-"O, <em>Tat\u0103</em> Sf\u00e2nt, - eu \u0162i-am fost"
-]
-}
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Tată, sfintele Cuvinte
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, sfintele Cuvinte",
-"<em>ta\u0163i</em> \u015fi mame eu v\u0103 zic",
-"<em>ta\u0163i</em> \u015fi mame eu v\u0103 zic"
-],
-"title": [
-"<em>Tat\u0103</em>, sfintele Cuvinte"
-]
-}
-
-Score: 4.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Sfinte Tată Bun
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sfinte <em>Tat\u0103</em> Bun \u015fi Bl\u00e2nd"
-],
-"title": [
-"Sfinte <em>Tat\u0103</em> Bun"
-]
-}
-
-Score: 4.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: O Tată Sfânt al Zilei
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O <em>Tat\u0103</em> Sf\u00e2nt al Zilei \u015fi-al Nop\u0163ii F\u0103c\u0103tor"
-],
-"title": [
-"O <em>Tat\u0103</em> Sf\u00e2nt al Zilei"
-]
-}
-
-Score: 4.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Tată, la nălţare
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, la n\u0103l\u0163are"
-],
-"title": [
-"<em>Tat\u0103</em>, la n\u0103l\u0163are"
-]
-}
-
-Score: 4.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Fiul tatii, ia aminte
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fiul <em>tatii</em>, ia aminte"
-],
-"title": [
-"Fiul <em>tatii</em>, ia aminte"
-]
-}
-
-Score: 4.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Tată, ce-am putea?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, ce-am putea noi face"
-],
-"title": [
-"<em>Tat\u0103</em>, ce-am putea?"
-]
-}
-
-Score: 4.0
+Got 252 hits:
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Bun e tata, bun...
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Bun e <em>tata</em>, bun"
-],
-"title": [
-"Bun e <em>tata</em>, bun..."
-]
-}
+Highlight: Bun e <em>tata</em>, bun
+Highlight: Bun e <em>tata</em>, bun...
 
-Score: 4.0
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Ca tata altădată
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ca <em>tata</em> alt\u0103dat\u0103 oprit \u00een poarta grea"
-],
-"title": [
-"Ca <em>tata</em> alt\u0103dat\u0103"
-]
-}
+Highlight: Ca <em>tata</em> altădată oprit în poarta grea
+Highlight: Ca <em>tata</em> altădată
 
-Score: 4.0
+Score: 19.0
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Sfinte Tată Bun
+Book: Cântări Nemuritoare vol. 4
+Title: Tată Bun din ceruri
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sfinte <em>Tat\u0103</em> Bun \u015fi Bl\u00e2nd"
-],
-"title": [
-"Sfinte <em>Tat\u0103</em> Bun"
-]
-}
+Highlight: <em>Tată</em> Bun, <em>Tată</em> Bun, <em>Tată</em> Bun...
+Highlight: <em>Tată</em> Bun din ceruri iată
+Highlight: fără <em>tată</em>, fără mamă Doamne
+Highlight: <em>Tată</em> Bun Tu ne eşti,  Tu
+Highlight: <em>Tată</em> Bun, oriunde
+Highlight: scut de <em>tată</em>, sân de mamă
+Highlight: <em>Tată</em> Bun din ceruri
 
-Score: 4.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: O Tată Sfânt al Zilei
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O <em>Tat\u0103</em> Sf\u00e2nt al Zilei \u015fi-al Nop\u0163ii F\u0103c\u0103tor"
-],
-"title": [
-"O <em>Tat\u0103</em> Sf\u00e2nt al Zilei"
-]
-}
-
-Score: 4.0
+Score: 18.875
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
-Title: Îţi cântăm Tată Sfânt
+Title: Tată Sfânt mulţumiri
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00ce\u0163i c\u00e2nt\u0103 <em>Tat\u0103</em> Sf\u00e2nt cu iubire"
-],
-"title": [
-"\u00ce\u0163i c\u00e2nt\u0103m <em>Tat\u0103</em> Sf\u00e2nt"
-]
-}
+Highlight: <em>Tată</em> Sfânt mulţumiri ne-ncetate
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: <em>Tată</em> Sfânt mulţumiri
 
-Score: 3.84
+Score: 18.875
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Tată Sfânt mulţumiri...
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em> Sfânt mulţumiri ne-ncetat
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: mulţumim, mulţumim <em>Tată</em> Sfânt!
+Highlight: <em>Tată</em> Sfânt mulţumiri...
+
+Score: 18.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: La Tronul Tău de har
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt. ",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt... ",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt!... ",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt."
-]
-}
-
-Score: 3.84
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: La Tronul Tău de har
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt. ",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt... ",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt!... ",
-"o <em>Tat\u0103</em>, <em>Tat\u0103</em> Sf\u00e2nt."
-]
-}
-
-Score: 3.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 17-a după Rusalii
+Book: Hristos - Luminătorul nostru
+Title: Voi aveţi de tată pe diavolul
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Eu v\u0103 voi fi <em>Tat\u0103</em> - spune El. <em>Tat\u0103</em>, nu st\u0103p\u00e2n. <em>Tat\u0103</em>, nu \u00eemp\u0103rat. <em>Tat\u0103</em>, nu judec\u0103tor",
-"judec\u0103tor... <em>Tat\u0103</em> dulce, <em>Tat\u0103</em> iubitor, <em>Tat\u0103</em> scump... ",
-"Ua <em>tat\u0103</em> adev\u0103rat r\u0103m\u00e2ne <em>tat\u0103</em> pentru fiii \u015fi fiicele sale \u00een orice vreme",
-"18. Eu v\u0103 voi fi <em>Tat\u0103</em>, \u015fi voi \u00cemi ve\u0163i fi fii \u015fi fiice, zice Domnul Cel",
-"18 - Eu v\u0103 voi fi <em>Tat\u0103</em> Scumpi"
-]
-}
+Highlight: care ei şi l-au ales de <em>tată</em>, pe care ei l-au iubit şi l-au ascultat, ca pe un <em>tată</em>, iar el i-a schimonosit
+Highlight: Voi aveţi de <em>tată</em> pe diavolul; şi vreţi să împliniţi poftele tatălui vostru. El de la început a fost
+Highlight: fi şi astfel de oameni, care să nu-L mai aibă de <em>Tată</em> pe Dumnezeu, ci pe diavolul,  -
+Highlight: O Sfinte <em>Tată</em> Bun din Ceruri,
+Highlight: Voi aveţi de <em>tată</em> pe diavolul
 
-Score: 3.6363635
+Score: 18.2
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Iubitul nostru tată
+Type: poezie
+Author: Traian Dorz
+Highlight: Iubitul nostru <em>tată</em>
+Highlight: <em>tată</em> preaiubit
+Highlight: iubite <em>tată</em> drag.
+Highlight: să fim cu tine <em>tată</em>
+Highlight: Iubitul nostru <em>tată</em>
+
+Score: 18.2
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Tată, unde te-ai aflat?
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em>, unde te-ai aflat
+Highlight: <em>Tată</em>, ce făceai atunci
+Highlight: <em>Tată</em>, dar acum ce faci
+Highlight: <em>Tată</em>, roagă-te căit
+Highlight: <em>Tată</em>, unde te-ai aflat?
+
+Score: 17.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Bunul nostru Tată...
+Type: poezie
+Author: Traian Dorz
+Highlight: Bunul nostru <em>Tată</em> Sfânt
+Highlight: Bunul nostru <em>Tată</em> Bun,
+Highlight: Bunul nostru <em>Tată</em>, vin
+Highlight: Bunul nostru <em>Tată</em>...
+
+Score: 17.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Tată, a sosit ceasul...
+Type: articol
+Author: Traian Dorz
+Highlight: astfel, Isus a ridicat ochii spre cer, şi a zis: <em>Tată</em>, a sosit ceasul! Proslăveşte pe Fiul Tău, ca şi
+Highlight: astfel Isus, a ridicat ochii spre cer şi a zis: <em>Tată</em>, a sosit ceasul! Proslăveşte pe Fiul Tău, ca şi
+Highlight: Slavă veşnică Ţie Neprihănitul şi Bunul nostru <em>Tată</em> Ceresc.
+Highlight: <em>Tată</em>, a sosit ceasul...
+
+Score: 17.0
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Din Tată fără Mamă
+Type: poezie
+Author: Traian Dorz
+Highlight: Din <em>Tată</em>, fără Mamă, născut ca Dumnezeu
+Highlight: din Mamă fără <em>tată</em>, născut
+Highlight: Din <em>Tată</em> fără Mamă
+
+Score: 17.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Din Tată fără Mamă
+Type: poezie
+Author: Traian Dorz
+Highlight: Din <em>Tată</em>, fără Mamă, născut ca Dumnezeu
+Highlight: din Mamă fără <em>tată</em>, născut
+Highlight: Din <em>Tată</em> fără Mamă
+
+Score: 17.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: O, Tată Sfânt, - eu Ţi-am fost
+Type: poezie
+Author: Traian Dorz
+Highlight: O, <em>Tată</em> Sfânt, - eu Ţi-am fost fiul
+Highlight: o, <em>Tată</em> Sfânt.
+Highlight: O, <em>Tată</em> Sfânt, - eu Ţi-am fost
+
+Score: 17.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Ştii tu tată
+Type: poezie
+Author: Traian Dorz
+Highlight: Ştii tu <em>tată</em>, ştii tu mamă
+Highlight: Vino <em>tată</em> să-mplinim
+Highlight: Ştii tu <em>tată</em>
+
+Score: 16.85909
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 2 - Fiecare existenţă este o taină
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dragul <em>tatii</em>",
-"vino la <em>tata</em>",
-"<em>tata</em>",
-"De ce \u00eei zici a\u015fa? De ce nu-i zici <em>tat\u0103</em>, c\u0103ci doar e tat\u0103l t\u0103u?",
-"Iar mie nu-mi spunea altfel c\u00e2nd vorbeam despre <em>tata</em> dec\u00e2t "
-]
-}
+Highlight: vino la <em>tata</em>
+Highlight: <em>tata</em>
+Highlight: Iar mie nu-mi spunea altfel când vorbeam despre <em>tata</em> decât
+Highlight: sau chiar când mă aud eu singur - strigându-l pe <em>tata</em> pe nume. Ca un străin pe un alt străin.
+Highlight: Astfel <em>tata</em> s-a dus cu prietenii lui, iar mama cu ai ei. - Şi
+Highlight: Cu <em>tata</em> la plug sau la pădure, pe zi sau noapte - eu trebuia
 
-Score: 3.6363635
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea Domnului Isus Hristos - 4
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Iat\u0103 ceasul... prosl\u0103ve\u015fte-\u0162i <em>Tat\u0103</em> Fiul T\u0103u Divin",
-"\u015fi-acum <em>Tat\u0103</em> d\u0103-Mi iar slava ce la Tine-aveam din veac. ",
-"\u015fi cunosc c-a Mele toate de la Tine, <em>Tat\u0103</em>, vin",
-"din Tine <em>Tat\u0103</em>, ies",
-"pentru ei M\u0103 rog Eu <em>Tat\u0103</em>, nu M\u0103 rog"
-]
-}
-
-Score: 3.6363635
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea Domnului Isus Hristos - 5
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, Sfinte <em>Tat\u0103</em>",
-"<em>Tat\u0103</em>, Sfinte <em>Tat\u0103</em>",
-"<em>Tat\u0103</em>, de la",
-"dep\u0103rteaz\u0103-l, dep\u0103rteaz\u0103-l <em>Tat\u0103</em> de la Mine.  Tat\u0103",
-"<em>Tat\u0103</em> Sfinte, numai dac\u0103-i"
-]
-}
-
-Score: 3.6363635
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Dormi cu mama îngeraş
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sfinte <em>Tat\u0103</em>, Sfinte <em>Tat\u0103</em> Dumnezeu",
-"Sfinte <em>Tat\u0103</em>, Sfinte <em>Tat\u0103</em> Dumnezeu",
-"Sfinte <em>Tat\u0103</em>, Sfinte <em>Tat\u0103</em> Dumnezeu",
-"Sfinte <em>Tat\u0103</em>, Sfinte <em>Tat\u0103</em> Dumnezeu",
-"Sfinte <em>Tat\u0103</em> Dumnezeu d\u0103-ne"
-]
-}
-
-Score: 3.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea Domnului Isus Hristos - 6
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> iart\u0103-i",
-"<em>Tat\u0103</em> iart\u0103-i",
-"<em>Tat\u0103</em> iart\u0103-i",
-"<em>Tat\u0103</em> iart\u0103-i",
-"<em>Tat\u0103</em> iart\u0103-i"
-]
-}
-
-Score: 3.4285715
+Score: 15.857142
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
-Title: Dulce-i lumea din poveste
+Title: Cântă-i tată la copil
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"puiul <em>tatii</em>, pui! ",
-"puiul <em>tatii</em>, pui! ",
-"puiul <em>tatii</em>, pui! ",
-"puiul <em>tatii</em>, pui! ",
-"puiul <em>tatii</em>, pui! "
-]
-}
+Highlight: Cântă-i <em>tată</em> la copil
+Highlight: Puiul <em>tatii</em> pui, puiul <em>tatii</em> pui
+Highlight: puiul <em>tatii</em> pui, puiul
+Highlight: puiul <em>tatii</em> pui
+Highlight: puiul <em>tatii</em> pui...
+Highlight: Cântă-i <em>tată</em> la copil
 
-Score: 3.3809524
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trei elevi, un grup de tineri, o clas\u0103 de fete, un <em>tat\u0103</em> cu mama \u015fi copila\u015fii lor... O mam\u0103 cu fiica ei de",
-"\u015fi cu m\u00e2n\u0103 de fier. \u00cen vremea b\u0103tr\u00e2nilor no\u015ftri, <em>tata</em> din cas\u0103 era acela care mi\u015fca toate - \u015fi f\u0103r\u0103 voia",
-"La asta, <em>tata</em> r\u0103spundea cu \u00eenjur\u0103turi \u015fi amenin\u0163\u0103ri. \u00cen vremea",
-"\u00cen casa ta, tu <em>tat\u0103</em> \u015fi tu mam\u0103, trebuie s\u0103 fi\u0163i ceea ce este preotul",
-"Domnului. Unde e bunica, unde mama, unde mo\u015ful \u015fi <em>tata</em> care cu credin\u0163\u0103 fierbinte \u00eenv\u0103\u0163au alt\u0103dat\u0103 de mici"
-]
-}
-
-Score: 3.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi m\u0103 temeam s\u0103 m\u0103 duc c\u00e2t\u0103 vreme <em>tata</em> era pe aproape c\u0103 nici <em>tata</em> \u015fi nici mama nu m\u0103 l\u0103sau s\u0103 merg pe",
-"c\u0103ci era vremea sem\u0103natului de gr\u00e2u. Bunicul \u015fi <em>tata</em> \u00eenjugaser\u0103 boii la plug \u015fi o luar\u0103 la arat ie\u015find",
-"\u00cen toamna urm\u0103torului an murea bunicul meu dup\u0103 <em>tat\u0103</em>. Bunicul care \u00eemi povestise mie acele neuitate povestiri",
-"Cealalt\u0103 sor\u0103 a lui <em>tata</em>, Cati\u0163a, era harnic\u0103 \u015fi credincioas\u0103. O fire lini\u015ftit\u0103"
-]
-}
-
-Score: 3.3333333
+Score: 15.833333
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 7 - Furtunile care încep de dimineaţă
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eent\u00e2i cu vorbele aspre, apoi cu amenin\u0163\u0103rile grele. <em>Tata</em> a ridicat odat\u0103 \u00eempotriva mea nu numai glasul ci",
-"de mecanic, c\u00e2nd la poarta \u015fcolii l-am v\u0103zut pe <em>tata</em>. M\u0103 c\u0103utase peste tot - \u015fi afl\u00e2nd c\u0103 sunt acolo",
-"o gaur\u0103 prin care probabil c\u0103 ie\u015fea c\u00e2inele. \u015ei <em>tata</em> mi-a zis: ",
-"c\u00e2ine b\u0103tut. \u015ei am mers tot drumul \u00eenaintea lui <em>tata</em> cu ochii \u015firoind de lacrimi \u015fi cu capul \u00een jos de",
-"\u015fi chemarea s\u0103 m\u0103 prezint, - po\u015fta\u015ful a dat-o lui <em>tata</em> crez\u00e2nd c\u0103-i face o mare bucurie. "
-]
-}
+Highlight: întâi cu vorbele aspre, apoi cu ameninţările grele. <em>Tata</em> a ridicat odată împotriva mea nu numai glasul ci
+Highlight: de mecanic, când la poarta şcolii l-am văzut pe <em>tata</em>. Mă căutase peste tot - şi aflând că sunt acolo
+Highlight: o gaură prin care probabil că ieşea câinele. Şi <em>tata</em> mi-a zis:
+Highlight: câine bătut. Şi am mers tot drumul înaintea lui <em>tata</em> cu ochii şiroind de lacrimi şi cu capul în jos de
+Highlight: şi chemarea să mă prezint, - poştaşul a dat-o lui <em>tata</em> crezând că-i face o mare bucurie.
 
-Score: 3.3333333
+Score: 15.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
-Title: Noaptea-n linişte coboară
+Title: Tată, sfintele Cuvinte
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sfinte <em>Tat\u0103</em>-\u0162i mul\u0163umim. ",
-"Sfinte <em>Tat\u0103</em>-\u0162i mul\u0163umim. ",
-"Sfinte <em>Tat\u0103</em>-\u0162i mul\u0163umim. ",
-"Sfinte <em>Tat\u0103</em>-\u0162i mul\u0163umim. ",
-"Sfinte <em>Tat\u0103</em>-\u0162i mul\u0163umim. "
-]
-}
+Highlight: <em>Tată</em>, sfintele Cuvinte
+Highlight: <em>taţi</em> şi mame eu vă zic
+Highlight: <em>taţi</em> şi mame eu vă zic
+Highlight: <em>Tată</em>, sfintele Cuvinte
 
-Score: 3.3333333
+Score: 15.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
+Type: articol
+Author: Traian Dorz
+Highlight: şi mă temeam să mă duc câtă vreme <em>tata</em> era pe aproape că nici <em>tata</em> şi nici mama nu mă lăsau să merg pe
+Highlight: căci era vremea semănatului de grâu. Bunicul şi <em>tata</em> înjugaseră boii la plug şi o luară la arat ieşind
+Highlight: Cealaltă soră a lui <em>tata</em>, Catiţa, era harnică şi credincioasă. O fire liniştită
+Highlight: În toamna următorului an murea bunicul meu după <em>tată</em>. Bunicul care îmi povestise mie acele neuitate povestiri
+
+Score: 15.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: O Tată Sfânt al Zilei
+Type: poezie
+Author: Traian Dorz
+Highlight: O <em>Tată</em> Sfânt al Zilei şi-al Nopţii Făcător
+Highlight: O <em>Tată</em> Sfânt al Zilei
+
+Score: 15.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Dormi cu mama
+Book: Cântări Nemuritoare vol. 6
+Title: O Tată Sfânt al Zilei
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sfinte <em>Tat\u0103</em> Dumnezeu, d\u0103-ne pacea Ta mereu",
-"Sfinte <em>Tat\u0103</em> Dumnezeu, d\u0103-ne pacea",
-"Sfinte <em>Tat\u0103</em> Dumnezeu, f\u0103-mi-l \u015fi pe fiul meu",
-"Sfinte <em>Tat\u0103</em> Dumnezeu, ap\u0103r\u0103-mi pe fiul meu",
-"Sfinte <em>Tat\u0103</em> Dumnezeu, f\u0103 \u015fi pe fiu\u0163ul meu"
-]
-}
+Highlight: O <em>Tată</em> Sfânt al Zilei şi-al Nopţii Făcător
+Highlight: O <em>Tată</em> Sfânt al Zilei
 
-Score: 3.2
+Score: 15.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Sfinte Tată Bun
+Type: poezie
+Author: Traian Dorz
+Highlight: Sfinte <em>Tată</em> Bun şi Blând
+Highlight: Sfinte <em>Tată</em> Bun
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Sfinte Tată Bun
+Type: poezie
+Author: Traian Dorz
+Highlight: Sfinte <em>Tată</em> Bun şi Blând
+Highlight: Sfinte <em>Tată</em> Bun
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Tată, ce-am putea?
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em>, ce-am putea noi face
+Highlight: <em>Tată</em>, ce-am putea?
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Tată, la nălţare
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em>, la nălţare
+Highlight: <em>Tată</em>, la nălţare
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Îţi cântăm Tată Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Îţi cântă <em>Tată</em> Sfânt cu iubire
+Highlight: Îţi cântăm <em>Tată</em> Sfânt
+
+Score: 15.2
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 5 - Binecuvântata muncă grea
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Toamna la culesul lor, <em>tata</em> umplea sacii cu mere \u015fi cu pere, iar apoi cu sacii",
-"Am c\u0103l\u0103torit cu <em>tata</em> \u015fi eu la Oradea de vreo dou\u0103 ori, culcat sus pe",
-"Vedeam pe <em>tata</em> \u015fi v\u0103zusem pe bunicul la fel. De multe ori picioarele",
-"f\u0103r\u0103 greutate. A\u015f putea spune c\u0103 r\u0103bdau cu bucurie. <em>Tata</em> se ducea p\u00e2n\u0103 la munte la boi, cale de o zi dus"
-]
-}
+Highlight: Toamna la culesul lor, <em>tata</em> umplea sacii cu mere şi cu pere, iar apoi cu sacii
+Highlight: Am călătorit cu <em>tata</em> şi eu la Oradea de vreo două ori, culcat sus pe
+Highlight: Vedeam pe <em>tata</em> şi văzusem pe bunicul la fel. De multe ori picioarele
+Highlight: fără greutate. Aş putea spune că răbdau cu bucurie. <em>Tata</em> se ducea până la munte la boi, cale de o zi dus
 
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Bunătatea Tatălui Ceresc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1 - Un <em>tat\u0103</em> adev\u0103rat, r\u0103m\u00e2ne <em>tat\u0103</em> pentru fiii \u015fi fiicele sale \u00een orice vreme. ",
-"2 - Fiii unui <em>tat\u0103</em> nu \u00eentotdeauna se iubesc \u015fi se \u00een\u0163eleg \u00eentre ei",
-"adev\u0103ra\u0163i fii \u015fi fiice, cum ne este El nou\u0103 un adev\u0103rat <em>Tat\u0103</em> \u015fi P\u0103rinte. "
-]
-}
-
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Pentru harul Tău
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> Sf\u00e2nt ne-nchin\u0103m",
-"<em>Tat\u0103</em> Sf\u00e2nt",
-"Mul\u0163umim, <em>Tat\u0103</em> Sf\u00e2nt, ",
-"<em>Tat\u0103</em> Sf\u00e2nt ne-nchin\u0103m"
-]
-}
-
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea Domnului Isus Hristos - 3
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o <em>Tat\u0103</em> Sf\u00e2nt",
-"\u00ce\u0163i mul\u0163umesc, \u00ce\u0163i mul\u0163umesc o <em>Tat\u0103</em> Sf\u00e2nt. ",
-"o <em>Tat\u0103</em> Sf\u00e2nt",
-"\u00ce\u0163i mul\u0163umesc, \u00ce\u0163i mul\u0163umesc o <em>Tat\u0103</em> Sf\u00e2nt. "
-]
-}
-
-Score: 3.2
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre iubire
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"omenia \u00eel nume\u015fte fiul Ve\u015fnicului <em>Tat\u0103</em>. ",
-"77 - Mama, <em>tata</em> \u015fi-un prieten",
-"<em>tat\u0103</em>, mam\u0103, ",
-"117 - O inim\u0103 de <em>tat\u0103</em> e-un dar at\u00e2t de sf\u00e2nt, "
-]
-}
-
-Score: 3.2
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- <em>Tat\u0103</em>, am zis eu pl\u00e2ng\u00e2nd, se usc\u0103 p\u0103ru\u0163ul nostru. Iat\u0103",
-"- Un vierme face asta, a zis cu durere <em>tata</em>, uit\u00e2ndu-se la p\u0103ru\u0163ul nostru bolnav. Hai s\u0103 \u00eencerc\u0103m",
-"sc\u0103p\u0103m, <em>tat\u0103</em>? - am strigat eu, \u015fi bucuros \u015fi \u00eengrijorat. ",
-"Am v\u0103zut atunci cum <em>tata</em> a luat"
-]
-}
-
-Score: 3.2
+Score: 15.2
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd eram copil, \u00eentr-o toamn\u0103 eram cu <em>tata</em> la sem\u0103nat de gr\u00e2u. Mirat cum r\u0103sare gr\u00e2ul dup\u0103",
-"st\u0103 o vreme \u00eengropat \u00een p\u0103m\u00e2nt, l-am \u00eentrebat pe <em>tata</em>: ",
-"- Adu-mi un bog de gr\u00e2u, s\u0103-\u0163i ar\u0103t, zise <em>tata</em>. ",
-"- Vezi, mi-a zis atunci <em>tata</em>, pentru c\u0103 are chipul lui Hristos pe el, gr\u00e2ul este"
-]
-}
+Highlight: Când eram copil, într-o toamnă eram cu <em>tata</em> la semănat de grâu. Mirat cum răsare grâul după
+Highlight: stă o vreme îngropat în pământ, l-am întrebat pe <em>tata</em>:
+Highlight: - Adu-mi un bog de grâu, să-ţi arăt, zise <em>tata</em>.
+Highlight: - Vezi, mi-a zis atunci <em>tata</em>, pentru că are chipul lui Hristos pe el, grâul este
 
-Score: 3.0
+Score: 15.023809
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"istorie se apropie de sf\u00e2r\u015fitul ei. Mul\u0163umesc Bunului <em>Tat\u0103</em> ceresc pentru tot ajutorul pe care mi l-a dat \u00eent\u00e2i",
-"<em>Tata</em> mort. \u00cenmorm\u00e2ntarea mar\u0163i. Lia",
-"Odihni\u0163i \u00een pace <em>tat\u0103</em> \u015fi fiu, suflete neuitate l\u00e2ng\u0103 S\u00e2nul dulce al Domnului"
-]
-}
+Highlight: şi cu mână de fier. În vremea bătrânilor noştri, <em>tata</em> din casă era acela care mişca toate - şi fără voia
+Highlight: La asta, <em>tata</em> răspundea cu înjurături şi ameninţări. În vremea
+Highlight: Domnului. Unde e bunica, unde mama, unde moşul şi <em>tata</em> care cu credinţă fierbinte învăţau altădată de mici
+Highlight: trei elevi, un grup de tineri, o clasă de fete, un <em>tată</em> cu mama şi copilaşii lor... O mamă cu fiica ei de
+Highlight: În casa ta, tu <em>tată</em> şi tu mamă, trebuie să fiţi ceea ce este preotul
+Highlight: Azi însă, mulţi <em>taţi</em> şi multe mame dorm liniştiţi de seara până dimineaţa
 
-Score: 3.0
+Score: 14.25
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 10 - Uşor e jugul lui Hristos
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"la iesle, ori la iarb\u0103 pe c\u00e2mp, - era de-ajuns ca <em>tata</em> s\u0103-i arate jugul \u015fi s\u0103-l cheme: \u201cIambor hai la jugul",
-"lui puternic \u00een jugul ridicat de <em>tata</em> p\u00e2n\u0103 \u00een dreptul lui. ",
-"Apoi <em>tata</em> pun\u00e2ndu-i resteul, Iambor r\u0103m\u00e2nea"
-]
-}
+Highlight: la iesle, ori la iarbă pe câmp, - era de-ajuns ca <em>tata</em> să-i arate jugul şi să-l cheme: “Iambor hai la jugul
+Highlight: lui puternic în jugul ridicat de <em>tata</em> până în dreptul lui.
+Highlight: Apoi <em>tata</em> punându-i resteul, Iambor rămânea
 
-Score: 3.0
+Score: 14.25
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 15 - Al doilea foc
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd ne-a v\u0103zut mama, <em>tata</em> \u015fi fr\u0103\u0163iorii mei, nu mai puteau nici ei de bucurie",
-"Ce fericit era <em>tata</em> c\u00e2nd mergea \u00eenaintea boilor duc\u00e2nd reviste \u015fi Biblii",
-"lucru ar fi fost la c\u00e2mp, la sem\u0103nat sau seceri\u015f, - <em>tata</em> l\u0103sa totul pentru Cuv\u00e2ntul Domnului \u015fi pentru fra\u0163i"
-]
-}
+Highlight: Când ne-a văzut mama, <em>tata</em> şi frăţiorii mei, nu mai puteau nici ei de bucurie
+Highlight: Ce fericit era <em>tata</em> când mergea înaintea boilor ducând reviste şi Biblii
+Highlight: lucru ar fi fost la câmp, la semănat sau seceriş, - <em>tata</em> lăsa totul pentru Cuvântul Domnului şi pentru fraţi
 
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
+Score: 13.866666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Fac\u0103-se <em>Tat\u0103</em>, fac\u0103-se deplin voia Ta.",
-"La revedere mam\u0103, la revedere <em>tat\u0103</em>, la revedere scumpul nostru frate, \u00een Patria Cereasc\u0103",
-"\u00eencercat\u0103, locurile cele mai scumpe r\u0103m\u00e2n goale... Tu <em>tat\u0103</em> care ne-ai dat via\u0163\u0103 trupeasc\u0103 \u015fi care te-ai fr\u0103m\u00e2ntat"
-]
-}
+Highlight: - Un vierme face asta, a zis cu durere <em>tata</em>, uitându-se la păruţul nostru bolnav. Hai să încercăm
+Highlight: Am văzut atunci cum <em>tata</em> a luat
+Highlight: - <em>Tată</em>, am zis eu plângând, se uscă păruţul nostru. Iată
+Highlight: scăpăm, <em>tată</em>? - am strigat eu, şi bucuros şi îngrijorat.  -
 
-Score: 3.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tata</em> mort. \u00cenmorm\u00e2ntarea mar\u0163i. Lia",
-"Odihni\u0163i \u00een pace <em>tat\u0103</em> \u015fi fiu, suflete neuitate \u015fi scumpe l\u00e2ng\u0103 S\u00e2nul Dulce",
-"primii lui ani\u015fori. Orfani atunci am\u00e2ndoi, at\u00e2t <em>tat\u0103</em> c\u00e2t \u015fi fiu. "
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Voi Mă numiţi... şi bine ziceţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>tat\u0103</em>",
-"<em>tat\u0103</em>",
-"<em>tat\u0103</em>"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Te rog nu pentru lume
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Te rog nu pentru lume <em>Tat\u0103</em>",
-"de-a pururi <em>Tat\u0103</em> s\u0103-i p\u0103ze\u015fti, ",
-"\u015ei-ajut\u0103-i <em>Tat\u0103</em> s\u0103 tr\u0103iasc\u0103"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Mamă, Domnul spune
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, Domnul spune",
-"- bine fiul <em>tatii</em>",
-"Mama mea \u015fi <em>tat\u0103</em>"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea Domnului Isus Hristos - 2
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Te laud <em>Tat\u0103</em> Doamne",
-"Ta laud <em>Tat\u0103</em> Sf\u00e2nt",
-"Da, <em>Tat\u0103</em> Sf\u00e2nt Te laud"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"126 - Un <em>tat\u0103</em> ce-\u015fi iube\u015fte fiii nu-i poate desp\u0103r\u0163i de cer",
-"sau dac\u0103 poate nu e <em>tat\u0103</em> ci-i un c\u0103l\u0103u",
-"un <em>tat\u0103</em> \u015fi-un p\u0103stor \u015fi-o mam\u0103, au \u00eens\u0103 vina \u00eenmiit. "
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 11 - Semnele Oastei Domnului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"bunicul \u015fi <em>tata</em>,",
-"bunicul \u015fi <em>tata</em>,"
-]
-}
+Highlight: bunicul şi <em>tata</em>,
+Highlight: bunicul şi <em>tata</em>,
 
-Score: 2.6666665
+Score: 12.666666
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 16 - Există un echilibru
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eent\u00e2mple nimic r\u0103u. Acum, prin harul lui Dumnezeu \u015fi <em>tata</em> devenise credincios \u015fi lucra pentru Domnul cu drag\u0103",
-"\u00eenc\u0103rcate \u00een carul cu cei doi boi - \u00eenaintea c\u0103rora <em>tata</em> mergea \u015fi mai cu grij\u0103. Fratele Marini sus \u00een car"
-]
-}
+Highlight: întâmple nimic rău. Acum, prin harul lui Dumnezeu şi <em>tata</em> devenise credincios şi lucra pentru Domnul cu dragă
+Highlight: încărcate în carul cu cei doi boi - înaintea cărora <em>tata</em> mergea şi mai cu grijă. Fratele Marini sus în car
 
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"g\u00e2ndeam cum le va fi preg\u0103tit mama \u015fi le va fi adus <em>tata</em> pentru mine. \u015ei acum le m\u0103n\u00e2nc\u0103 \u00een sil\u0103 acest c\u00e2ine",
-"cu c\u0103ru\u0163a de pachete confiscate \u00eel luaser\u0103 \u015fi pe <em>tata</em>. L-au \u0163inut \u015fi pe el \u00een alt\u0103 parte o noapte \u00een care"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de mult n-am cui fi <em>tat\u0103</em> nici fiu n-am cui, nici so\u0163... ",
-"\u015fi \u00een lacrimi spre odihna ve\u015fnic\u0103, pe bunul meu <em>tat\u0103</em> Constantin. Atmosfera \u00eemprejurul meu era at\u00e2t de"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tr\u0103iau din familia p\u0103rintelui Iosif doar b\u0103tr\u00e2nul s\u0103u <em>tat\u0103</em>, Dumitru Trifa, care locuia pe vechea vatr\u0103 b\u0103tr\u00e2neasc\u0103",
-"L-am \u00eembr\u0103\u0163i\u015fat ca pe un <em>tat\u0103</em> al meu, \u015fi am povestit multe..."
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, sl\u0103vit s\u0103 fii Doamne, Bunule <em>Tat\u0103</em> Bun.",
-"baci, ziceau ei r\u00e2z\u00e2nd, c\u0103 unde mai afl\u0103m noi un <em>tat\u0103</em> a\u015fa bun ca pe d-ta \u015fi un servici a\u015fa de bun ca \u0103sta"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici o presiune \u015fi obliga\u0163ie din afar\u0103, vei fi un <em>tat\u0103</em> adev\u0103rat, vei fi o mam\u0103 adev\u0103rat\u0103, un copil adev\u0103rat",
-"tremur\u00e2nd de fric\u0103 s\u0103 nu ni-l aduc\u0103 Dumnezeu pe <em>tata</em> beat. C\u0103ci numai noi \u015ftiam ce nenorocire era atunci"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"las c\u0103 v\u0103 spun la <em>tata</em>",
-"... \u015ei alergam pl\u00e2ng\u00e2nd s\u0103-i spun lui <em>tata</em>."
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Oare nu este Acesta Fiul lui?...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nu este acesta Isus, fiul lui Iosif, pe al c\u0103rui <em>tat\u0103</em> \u015fi mam\u0103 \u00eei cunoa\u015ftem? Cum dar zice El: Eu M-am cobor\u00e2t",
-"spuneau: Nu este Acesta Fiul lui Iosif, pe al c\u0103rui <em>tat\u0103</em> \u015fi mam\u0103 \u00eei cunoa\u015ftem?... "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: L-am proslăvit şi-L voi mai proslăvi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, prosl\u0103ve\u015fte Numele T\u0103u! \u015ei din cer, s-a auzit un glas, care zicea:",
-"- <em>Tat\u0103</em>, prosl\u0103ve\u015fte Numele T\u0103u! "
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sufletul scumpei mele mame, l\u00e2ng\u0103 Tine \u015fi l\u00e2ng\u0103 <em>tata</em> care a a\u015fteptat-o acolo \u00een p\u0103m\u00e2nt \u015fi \u00een cer - aproape",
-"frumoase pilde \u015fi cei mai mari binef\u0103c\u0103tori. S-a dus la <em>tata</em>, cu care erau din acela\u015fi an, cu care f\u0103cuse \u015fi"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Mai sunt puţin cu voi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Drag\u0103 tinere \u015fi t\u00e2n\u0103r\u0103, care mai ave\u0163i \u00eenc\u0103 un <em>tat\u0103</em> \u015fi o mam\u0103 l\u00e2ng\u0103 voi... ",
-"\u015ei nici <em>tat\u0103</em> adev\u0103rat, nu mai po\u0163i avea pe altul, dec\u00e2t unul"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Eu n-am avut nici mamă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Eu n-am avut nici <em>tat\u0103</em>",
-"de <em>tat\u0103</em>"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Părinte-Atotputernic...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o <em>Tat\u0103</em> Sf\u00e2nt de Sus! ",
-"Dar \u015fi mai mult ai mil\u0103, o <em>Tat\u0103</em> Preaiubit, "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Suprema cântare Iubirii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103rutul Cerescului <em>Tat\u0103</em>. ",
-"s\u0103rutul Cerescului <em>Tat\u0103</em>. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Proslăvirea lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi scopul venirii Sale pe p\u0103m\u00e2nt, c\u00e2nd zice: <em>Tat\u0103</em>, prosl\u0103ve\u015fte Numele T\u0103u. ",
-"fericit\u0103, a \u00eentregului lan\u0163 de oameni, de la cel dint\u00e2i <em>tat\u0103</em>, p\u00e2n\u0103 la cel din urm\u0103 fiu. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: A crede Adevărul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Drag\u0103 tinere \u015fi t\u00e2n\u0103r\u0103, care mai ave\u0163i \u00eenc\u0103 un <em>tat\u0103</em> \u015fi o mam\u0103 l\u00e2ng\u0103 voi... ",
-"\u015ei nici <em>tat\u0103</em> adev\u0103rat, nu po\u0163i avea un altul, dec\u00e2t unul. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Auzirea şi ascultarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"spun\u00e2ndu-le: voi ave\u0163i da <em>tat\u0103</em> pe diavolul (",
-"total\u0103 a lui Lucifer, pe care \u015fi ei \u015fi l-au luat ca <em>tat\u0103</em>, fiindc\u0103 \u00eel iubesc, \u00eel ascult\u0103 \u015fi fac voia lui,"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Liniştea vieţii curate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"r\u00e2nduieli s\u0103n\u0103toase \u015fi morale sunt p\u0103zite \u00een familie din <em>tat\u0103</em> \u00een fiu. ",
-"A\u015fa a fost via\u0163a mo\u015ftenit\u0103 \u00een credin\u0163\u0103, din <em>tat\u0103</em> \u00een fiu de veacuri \u015fi veacuri. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Răul şi binele
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"17 - Ce Bun este cu noi Bogatul nostru <em>Tat\u0103</em> Ceresc, c\u0103 nu ne-a dat greutatea grijilor bog\u0103\u0163iei",
-"ar putea fi oare un fericit ca noi care avem un <em>Tat\u0103</em> at\u00e2t de Bogat \u015fi de Iubitor? "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Acum las lumea şi Mă duc la Tatăl
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Da, <em>tat\u0103</em>, a zis fiul ascult\u0103tor. ",
-"Slav\u0103 \u0162ie Iubitorul nostru <em>Tat\u0103</em> Ceresc pentru dragostea cea mare cu care ne-ai iubit"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: ... Slava de dinainte de a fi lumea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei acum, <em>Tat\u0103</em>, prosl\u0103ve\u015fte-M\u0103 la Tine \u00censu\u0163i cu slava pe care o aveam la Tine,",
-"- \u015ei acum <em>Tat\u0103</em>, prosl\u0103ve\u015fte-M\u0103 la Tine \u00censu\u0163i, cu slava pe care"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Pentru ca ei să fie una...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-" dar ei sunt \u00een lume, \u015fi Eu vin la Tine. Sfinte <em>Tat\u0103</em>, p\u0103ze\u015fte, \u00een Numele T\u0103u pe aceia pe care Mi i-ai",
-"lume, dar ei sunt \u00een lume \u015fi Eu vin la Tine. Sfinte <em>Tat\u0103</em> p\u0103ze\u015fte \u00een Numele T\u0103u pe aceia pe care Mi i-ai dat"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: ... Pentru ca lumea să creadă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"M\u0103 rog ca to\u0163i s\u0103 fie una, cum Tu, <em>Tat\u0103</em>, e\u015fti \u00een Mine, \u015fi Eu \u00een Tine, ca \u015fi ei s\u0103 fie una \u00een Noi, pentru",
-"- M\u0103 rog ca to\u0163i s\u0103 fie una, cum Tu <em>Tat\u0103</em> e\u015fti \u00een Mine \u015fi Eu \u00een Tine, ca \u015fi ei s\u0103 fie una"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Să fie împreună cu Mine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em>, vreau ca acolo unde sunt Eu, s\u0103 fie \u00eempreun\u0103 cu Mine \u015fi aceia",
-"- <em>Tat\u0103</em> "
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Lumea nu Te-a cunoscut
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Neprih\u0103nitule <em>Tat\u0103</em>, lumea nu Te-a cunoscut, dar Eu Te-am cunoscut,",
-"- Neprih\u0103nitule <em>Tat\u0103</em>, lumea nu Te-a cunoscut, dar Eu Te-am cunoscut,"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Faptele tatălui vostru
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"avem un singur <em>Tat\u0103</em>: pe Dumnezeu.",
-"al cui fiu este, \u00eel po\u0163i u\u015for vedea cine \u00eei este <em>tat\u0103</em> sufletesc, dup\u0103 umbletele sale, dup\u0103 roadele sale"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Un credincios nu poate
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Un <em>tat\u0103</em> ce-\u015fi iube\u015fte fiii",
-"sau dac\u0103 poate, nu e <em>tat\u0103</em>"
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 2 - Grâul cel care moare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eencepu s\u0103 strige \u015fi s\u0103 pl\u00e2ng\u0103. Dar p\u00e2n\u0103 s\u0103 vin\u0103 <em>tata</em> \u015fi al\u0163i oameni spre a-l alunga pe taurul \u00eennebunit",
-"<em>Tata</em> \u0163inea s\u0103-l fac\u0103 pe Iosif nu preot ci avocat. Mama"
-]
-}
+Highlight: începu să strige şi să plângă. Dar până să vină <em>tata</em> şi alţi oameni spre a-l alunga pe taurul înnebunit
+Highlight: <em>Tata</em> ţinea să-l facă pe Iosif nu preot ci avocat. Mama
 
-Score: 2.6666665
+Score: 12.666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: gândeam cum le va fi pregătit mama şi le va fi adus <em>tata</em> pentru mine. Şi acum le mănâncă în silă acest câine
+Highlight: cu căruţa de pachete confiscate îl luaseră şi pe <em>tata</em>. L-au ţinut şi pe el în altă parte o noapte în care
+
+Score: 12.666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: sufletul scumpei mele mame, lângă Tine şi lângă <em>tata</em> care a aşteptat-o acolo în pământ şi în cer - aproape
+Highlight: frumoase pilde şi cei mai mari binefăcători. S-a dus la <em>tata</em>, cu care erau din acelaşi an, cu care făcuse şi
+
+Score: 12.666666
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 3 - Începutul chemării
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nunt\u0103 peste dealuri \u015fi v\u0103i, c\u0103lare pe calul lui <em>tata</em>. ",
-"<em>tat\u0103</em> drag\u0103"
-]
-}
+Highlight: las că vă spun la <em>tata</em>
+Highlight: ... Şi alergam plângând să-i spun lui <em>tata</em>.
 
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Părinte-Atotputernic...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o <em>Tat\u0103</em> Sf\u00e2nt de Sus! ",
-"Dar \u015fi mai mult ai mil\u0103, o <em>Tat\u0103</em> Preaiubit, "
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: O, când privesc spre cerul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> Str\u0103lucit",
-"sl\u0103vit fii <em>Tat\u0103</em> Sf\u00e2nt! "
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Iată masa ni s-a pus
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tat\u0103</em> Sf\u00e2nt",
-"Satur\u0103-ne <em>Tat\u0103</em> Sf\u00e2nt"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre căsnicie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"90 - Un <em>tat\u0103</em> poate zece fii s\u0103-i \u0163in\u0103 \u015fi s\u0103-i creasc\u0103, ",
-"dar zece fii, ades nu pot pe-un <em>tat\u0103</em> s\u0103-l hr\u0103neasc\u0103"
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Copii rămaşi
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- nani, <em>tata</em> nu-i",
-"\u015ftii cum <em>tata</em> ne spunea: "
-]
-}
+Highlight: - nani, <em>tata</em> nu-i
+Highlight: ştii cum <em>tata</em> ne spunea:
 
-Score: 2.6666665
+Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Nani, frăţiorul meu
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Tata</em>!-nani, <em>tata</em> nu-i, inima \u015fi-n mine"
-]
-}
+Highlight: <em>Tata</em>!-nani, <em>tata</em> nu-i, inima şi-n mine
 
-Score: 2.6666665
+Score: 12.2
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Vino tatăl meu cu mine
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vino <em>tat\u0103</em> las\u0103 teama",
-"Iat\u0103 cum ne cheam\u0103 <em>tat\u0103</em>"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Ştii tu mamă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"vino <em>tat\u0103</em>",
-"- de ce <em>tat\u0103</em> noi nu facem"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: O, cum să-Ţi mulţumim?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, cum s\u0103-\u0162i mul\u0163umim noi, <em>Tat\u0103</em>",
-"s\u0103 fim ai T\u0103i Preasfinte <em>Tat\u0103</em>"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Tot ce are Tatăl este al Meu
+Book: Cântări Nemuritoare vol. 3
+Title: Despre iubire
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Slav\u0103 ve\u015fnic\u0103 \u0162ie Nesf\u00e2r\u015fit de Bunul nostru <em>Tat\u0103</em> Ceresc pentru Fiul T\u0103u care Te-a iubit \u015fi Te-a ascultat",
-"<em>Tat\u0103</em>"
-]
-}
+Highlight: 77 - Mama, <em>tata</em> şi-un prieten
+Highlight: omenia îl numeşte fiul Veşnicului <em>Tată</em>.  6
+Highlight: <em>tată</em>, mamă,
+Highlight: 117 - O inimă de <em>tată</em> e-un dar atât de sfânt,
 
-Score: 2.6666665
+Score: 11.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Tata</em> mort. Înmormântarea marţi. Lia
+Highlight: istorie se apropie de sfârşitul ei. Mulţumesc Bunului <em>Tată</em> ceresc pentru tot ajutorul pe care mi l-a dat întâi
+Highlight: Odihniţi în pace <em>tată</em> şi fiu, suflete neuitate lângă Sânul dulce al Domnului
+
+Score: 11.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Tata</em> mort. Înmormântarea marţi. Lia
+Highlight: Odihniţi în pace <em>tată</em> şi fiu, suflete neuitate şi scumpe lângă Sânul Dulce
+Highlight: primii lui anişori. Orfani atunci amândoi, atât <em>tată</em> cât şi fiu.
+
+Score: 11.0
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 18 - Frumoasele noastre Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: tremurând de frică să nu ni-l aducă Dumnezeu pe <em>tata</em> beat. Căci numai noi ştiam ce nenorocire era atunci
+Highlight: nici o presiune şi obligaţie din afară, vei fi un <em>tată</em> adevărat, vei fi o mamă adevărată, un copil adevărat
+
+Score: 11.0
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 3 - Începutul chemării
+Type: articol
+Author: Traian Dorz
+Highlight: nuntă peste dealuri şi văi, călare pe calul lui <em>tata</em>.
+Highlight: <em>tată</em> dragă
+
+Score: 11.0
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Un tată amărât
+Type: articol
+Author: Traian Dorz
+Highlight: Un <em>tată</em> amărât
+
+Score: 11.0
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Suprema cântare Iubirii
+Book: Cântări Nemuritoare vol. 9
+Title: Zi de toamnă dureroasă...
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103rutul Cerescului <em>Tat\u0103</em>. ",
-"s\u0103rutul Cerescului <em>Tat\u0103</em>. "
-]
-}
+Highlight: <em>tata</em>-i cine ştie unde, dus la muncă prin noroaie,
+Highlight: ai simţit tu mângâierea iubitoarei mâini de <em>tată</em>?
 
-Score: 2.6666665
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Anicuţa
+Type: poezie
+Author: Traian Dorz
+Highlight: Iar când <em>tata</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Încerc să aflu de la el cine este la poartă, mama, <em>tata</em>, vreun frate?
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 18 - La 25 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: şi a spus lui <em>tata</em>:
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 19 - Mereu morminte noi
+Type: articol
+Author: Traian Dorz
+Highlight: Iosif, după fratele Marini, Titus, Spiridon... după <em>tata</em>, după fratele Maliţa, Florea, Sava Nicolae, Teodor
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 24 - Înaintea mai-marilor norodului
+Type: articol
+Author: Traian Dorz
+Highlight: altul - şi tot aşa. Eu amestecam materialul, iar <em>tata</em> aducea apă cu două găleţi, până ce am terminat astfel
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: Tău, sufletul scumpei mele mame lângă sufletul lui <em>tata</em>, care a aşteptat-o acolo aproape patrusprezece ani
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 6 - Strălucita sărbătoare de Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Tata</em> era şi el întocmai cum fusese bunicul, tatăl lui
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: E noapte grea
+Type: poezie
+Author: Traian Dorz
+Highlight: Îl văd pe <em>tata</em> supărat
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Familia sufletului nostru
+Type: articol
+Author: Traian Dorz
+Highlight: 5 - Adesea mama noastră sau <em>tata</em>,
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Isus a zis: strângeţi fărâmiturile
+Type: articol
+Author: Traian Dorz
+Highlight: Când i-am zis lui <em>tata</em> că mi-e foame mi-a zis: caută în traistă şi ia-ţi
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Mamă, iată Domnul
+Type: poezie
+Author: Traian Dorz
+Highlight: - unde-i <em>tata</em> mamă
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Mamă, iată cum călăii
+Type: poezie
+Author: Traian Dorz
+Highlight: Mamă, unde-i oare <em>tata</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Mamă, iată cum soldaţii
+Type: poezie
+Author: Traian Dorz
+Highlight: Mamă, unde-i oare <em>tata</em>
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: N-am pierdut pe nici unul
+Type: articol
+Author: Traian Dorz
+Highlight: În sfârşit trebuind să semneze, <em>tata</em> a zis: ne iscălim numai unul ca să coste mai puţin
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Paştele erau aproape...
+Type: articol
+Author: Traian Dorz
+Highlight: Adesea mama noastră sau <em>tata</em>,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Părinţii
+Type: articol
+Author: Traian Dorz
+Highlight: 4 - <em>Tata</em> are o iubire, - mama are zece
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Scumpa mamă
+Type: poezie
+Author: Traian Dorz
+Highlight: Iată <em>tata</em> a sosit
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Somnul dulce-dulce
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>tata</em> vrea să-l culce
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Stând singur câteodată...
+Type: poezie
+Author: Traian Dorz
+Highlight: Eram de-o palmă numai - şi <em>tata</em> când ara,
+
+Score: 8.639999
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: La Tronul Tău de har
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt.
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt...
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt!...
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt.
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt!
+
+Score: 8.639999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: La Tronul Tău de har
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt.
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt...
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt!...
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt.
+Highlight: o <em>Tată</em>, <em>Tată</em> Sfânt!
+
+Score: 8.55
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 17-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Eu vă voi fi <em>Tată</em> - spune El. <em>Tată</em>, nu stăpân. <em>Tată</em>, nu împărat. <em>Tată</em>, nu judecător
+Highlight: judecător... <em>Tată</em> dulce, <em>Tată</em> iubitor, <em>Tată</em> scump...
+Highlight: Ua <em>tată</em> adevărat rămâne <em>tată</em> pentru fiii şi fiicele sale în orice vreme
+Highlight: 18. Eu vă voi fi <em>Tată</em>, şi voi Îmi veţi fi fii şi fiice, zice Domnul Cel
+Highlight: 18 - Eu vă voi fi <em>Tată</em> Scumpi
+Highlight: Eu vă voi fi <em>Tată</em>, iar voi Îmi veţi fi fii şi fiice - zice Domnul
+
+Score: 8.181818
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Rugăciunea Domnului Isus Hristos - 4
+Type: poezie
+Author: Traian Dorz
+Highlight: Iată ceasul... proslăveşte-Ţi <em>Tată</em> Fiul Tău Divin
+Highlight: şi-acum <em>Tată</em> dă-Mi iar slava ce la Tine-aveam din veac.
+Highlight: şi cunosc c-a Mele toate de la Tine, <em>Tată</em>, vin
+Highlight: din Tine <em>Tată</em>, ies
+Highlight: pentru ei Mă rog Eu <em>Tată</em>, nu Mă rog
+Highlight: şi ce-i al Tău, al Meu e <em>Tată</em>
+
+Score: 8.181818
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Rugăciunea Domnului Isus Hristos - 5
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em>, Sfinte <em>Tată</em>
+Highlight: <em>Tată</em>, Sfinte <em>Tată</em>
+Highlight: <em>Tată</em>, de la
+Highlight: depărtează-l, depărtează-l <em>Tată</em> de la Mine.  Tată
+Highlight: <em>Tată</em> Sfinte, numai dacă-i
+Highlight: vreau Eu <em>Tată</em> ci
+
+Score: 7.875
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Rugăciunea Domnului Isus Hristos - 6
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em> iartă-i
+Highlight: <em>Tată</em> iartă-i
+Highlight: <em>Tată</em> iartă-i
+Highlight: <em>Tată</em> iartă-i
+Highlight: <em>Tată</em> iartă-i
+Highlight: <em>Tată</em> iartă-i
+
+Score: 7.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Noaptea-n linişte coboară
+Type: poezie
+Author: Traian Dorz
+Highlight: Sfinte <em>Tată</em>-Ţi mulţumim.
+Highlight: Sfinte <em>Tată</em>-Ţi mulţumim.
+Highlight: Sfinte <em>Tată</em>-Ţi mulţumim.
+Highlight: Sfinte <em>Tată</em>-Ţi mulţumim.
+Highlight: Sfinte <em>Tată</em>-Ţi mulţumim.
+
+Score: 7.2000003
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Pentru harul Tău
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em> Sfânt ne-nchinăm
+Highlight: <em>Tată</em> Sfânt
+Highlight: Mulţumim, <em>Tată</em> Sfânt,
+Highlight: <em>Tată</em> Sfânt ne-nchinăm
+
+Score: 7.2000003
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Rugăciunea Domnului Isus Hristos - 3
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>Tată</em> Sfânt
+Highlight: Îţi mulţumesc, Îţi mulţumesc o <em>Tată</em> Sfânt.
+Highlight: o <em>Tată</em> Sfânt
+Highlight: Îţi mulţumesc, Îţi mulţumesc o <em>Tată</em> Sfânt.
+
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 19 - Al treilea februarie
+Type: articol
+Author: Traian Dorz
+Highlight: Facă-se <em>Tată</em>, facă-se deplin voia Ta.
+Highlight: La revedere mamă, la revedere <em>tată</em>, la revedere scumpul nostru frate, în Patria Cerească
+Highlight: încercată, locurile cele mai scumpe rămân goale... Tu <em>tată</em> care ne-ai dat viaţă trupească şi care te-ai frământat
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Transilvaniei
+Type: articol
+Author: Traian Dorz
+Highlight: 126 - Un <em>tată</em> ce-şi iubeşte fiii nu-i poate despărţi de cer
+Highlight: sau dacă poate nu e <em>tată</em> ci-i un călău
+Highlight: un <em>tată</em> şi-un păstor şi-o mamă, au însă vina înmiit.
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Rugăciunea Domnului Isus Hristos - 2
+Type: poezie
+Author: Traian Dorz
+Highlight: Te laud <em>Tată</em> Doamne
+Highlight: Ta laud <em>Tată</em> Sfânt
+Highlight: Da, <em>Tată</em> Sfânt Te laud
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Te rog nu pentru lume
+Type: poezie
+Author: Traian Dorz
+Highlight: Te rog nu pentru lume <em>Tată</em>
+Highlight: de-a pururi <em>Tată</em> să-i păzeşti,
+Highlight: Şi-ajută-i <em>Tată</em> să trăiască
+
+Score: 6.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Voi Mă numiţi... şi bine ziceţi
+Type: articol
+Author: Traian Dorz
+Highlight: <em>tată</em>
+Highlight: <em>tată</em>
+Highlight: <em>tată</em>
+
+Score: 6.083333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Mamă, Domnul spune
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Tată</em>, Domnul spune
+Highlight: Mama mea şi <em>tată</em>
+Highlight: - bine fiul <em>tatii</em> tu
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: ... Pentru ca lumea să creadă
+Type: articol
+Author: Traian Dorz
+Highlight: Mă rog ca toţi să fie una, cum Tu, <em>Tată</em>, eşti în Mine, şi Eu în Tine, ca şi ei să fie una în Noi, pentru
+Highlight: - Mă rog ca toţi să fie una, cum Tu <em>Tată</em> eşti în Mine şi Eu în Tine, ca şi ei să fie una
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: ... Slava de dinainte de a fi lumea
+Type: articol
+Author: Traian Dorz
+Highlight: Şi acum, <em>Tată</em>, proslăveşte-Mă la Tine Însuţi cu slava pe care o aveam la Tine,
+Highlight: - Şi acum <em>Tată</em>, proslăveşte-Mă la Tine Însuţi, cu slava pe care
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Acum las lumea şi Mă duc la Tatăl
+Type: articol
+Author: Traian Dorz
+Highlight: - Da, <em>tată</em>, a zis fiul ascultător.
+Highlight: Slavă Ţie Iubitorul nostru <em>Tată</em> Ceresc pentru dragostea cea mare cu care ne-ai iubit
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Auzirea şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: spunându-le: voi aveţi da <em>tată</em> pe diavolul (
+Highlight: totală a lui Lucifer, pe care şi ei şi l-au luat ca <em>tată</em>, fiindcă îl iubesc, îl ascultă şi fac voia lui,
+
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Cain
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>tat\u0103</em>, fiu, ori frate - uciga\u015f r\u0103m\u00e2i. ",
-"de e\u015fti <em>tat\u0103</em> m\u00e2r\u015fav"
-]
-}
+Highlight: <em>tată</em>, fiu, ori frate - ucigaş rămâi.
+Highlight: de eşti <em>tată</em> mârşav
 
-Score: 2.6666665
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: trăiau din familia părintelui Iosif doar bătrânul său <em>tată</em>, Dumitru Trifa, care locuia pe vechea vatră bătrânească
+Highlight: L-am îmbrăţişat ca pe un <em>tată</em> al meu, şi am povestit multe...
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: de mult n-am cui fi <em>tată</em> nici fiu n-am cui, nici soţ...
+Highlight: şi în lacrimi spre odihna veşnică, pe bunul meu <em>tată</em> Constantin. Atmosfera împrejurul meu era atât de
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: O, slăvit să fii Doamne, Bunule <em>Tată</em> Bun.
+Highlight: baci, ziceau ei râzând, că unde mai aflăm noi un <em>tată</em> aşa bun ca pe d-ta şi un servici aşa de bun ca ăsta
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre căsnicie
+Type: articol
+Author: Traian Dorz
+Highlight: 90 - Un <em>tată</em> poate zece fii să-i ţină şi să-i crească,
+Highlight: dar zece fii, ades nu pot pe-un <em>tată</em> să-l hrănească
+
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre virtute
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Duhul unui <em>tat\u0103</em> vrednic va tr\u0103i \u00een fiul s\u0103u",
-"va tr\u0103i un <em>tat\u0103</em> r\u0103u. "
-]
-}
+Highlight: Duhul unui <em>tată</em> vrednic va trăi în fiul său
+Highlight: va trăi un <em>tată</em> rău.
 
-Score: 2.6666665
+Score: 5.9999995
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Privesc cum crinii
+Book: Cântări Nemuritoare vol. 1
+Title: Eu n-am avut nici mamă
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"totu\u015fi Tu <em>Tat\u0103</em>, ",
-"totu\u015fi Tu <em>Tat\u0103</em>, "
-]
-}
+Highlight: Eu n-am avut nici <em>tată</em>
+Highlight: de <em>tată</em>
 
-Score: 2.6666665
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Faptele tatălui vostru
+Type: articol
+Author: Traian Dorz
+Highlight: avem un singur <em>Tată</em>: pe Dumnezeu.
+Highlight: al cui fiu este, îl poţi uşor vedea cine îi este <em>tată</em> sufletesc, după umbletele sale, după roadele sale
+
+Score: 5.9999995
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: O, negrăită Bunătate
+Book: Cântări Nemuritoare vol. 4
+Title: Iată masa ni s-a pus
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a Unicului nostru <em>Tat\u0103</em>, ",
-"Cerescul, Bunul nostru <em>Tat\u0103</em>... "
-]
-}
+Highlight: <em>Tată</em> Sfânt
+Highlight: Satură-ne <em>Tată</em> Sfânt
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: L-am proslăvit şi-L voi mai proslăvi
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Tată</em>, proslăveşte Numele Tău! Şi din cer, s-a auzit un glas, care zicea:
+Highlight: - <em>Tată</em>, proslăveşte Numele Tău!
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 16-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Ce bun este cu noi Bogatul nostru <em>Tată</em> Ceresc, că nu ne-a dat greutatea grijilor bogăţiei
+Highlight: ar putea oare fi mai fericit ca noi, care avem un <em>Tată</em> atât de bogat şi iubitor?
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului)
+Type: articol
+Author: Traian Dorz
+Highlight: Cunosc un <em>tată</em> care are un fiu nu prea departe de casa părintească
+Highlight: Slavă veşnică Ţie, Marele nostru Ziditor şi <em>Tată</em> ceresc, care ne-ai zidit în Hristos tocmai spre
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
+Type: articol
+Author: Traian Dorz
+Highlight: a venit jertfa aceasta cerută de Dumnezeu, acest <em>tată</em> era zdrobit peste măsură de mult.
+Highlight: închipui şi cât de mare trebuie să fie credinţa unui <em>tată</em> în Dumnezeul lui care îi cerea această jertfă. Şi
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Lumea nu Te-a cunoscut
+Type: articol
+Author: Traian Dorz
+Highlight: Neprihănitule <em>Tată</em>, lumea nu Te-a cunoscut, dar Eu Te-am cunoscut,
+Highlight: - Neprihănitule <em>Tată</em>, lumea nu Te-a cunoscut, dar Eu Te-am cunoscut,
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Mai sunt puţin cu voi
+Type: articol
+Author: Traian Dorz
+Highlight: Dragă tinere şi tânără, care mai aveţi încă un <em>tată</em> şi o mamă lângă voi...
+Highlight: Şi nici <em>tată</em> adevărat, nu mai poţi avea pe altul, decât unul
 

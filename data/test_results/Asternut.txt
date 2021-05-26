@@ -1,1319 +1,836 @@
-+-----------------------------------------------------------------------+-------------+-------------------------------+------------------------------+---------+
-| Titlu                                                                 | Author      | Tip                           | Carte                        | Volum   |
-+-----------------------------------------------------------------------+-------------+-------------------------------+------------------------------+---------+
-| Dulcea mea nedespărţire                                               | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Unire şi suferinţă                                                    | Traian Dorz | Săgeţile biruitoare           | Cugetări Nemuritoare         | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator              | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                          | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| În faţa Porţii Îndurării                                              | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Dulcea Ta Frumuseţe...                                                | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Dacă aduceţi multă roadă                                              | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Şi nimeni din voi nu Mă întreabă...                                   | Traian Dorz | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului) | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 7 - Printre leu şi printre urs                                   | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| De ce, de ce, de ce?                                                  | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
-| Cap. 9 - A doua judecată                                              | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                      | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 16 - Din cetate în cetate...                                     | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                         | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                    | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 1 - Cel mai frumos Isus                                          | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                       | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                  | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 24 - Pânza care se ţese                                          | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                     | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Tu ne-araţi Isuse Calea                                               | Traian Dorz | Eternele Poeme                | Cugetări Nemuritoare         | poezie  |
-| Isuse izbăveşte-mi                                                    | Traian Dorz | Eternele Poeme                | Cugetări Nemuritoare         | poezie  |
-| Încercări şi răsplătiri                                               | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Cuvintele Celui Scump                                                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Frumuseţea amintirilor mele!                                          | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Marta slujea                                                          | Traian Dorz | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
-| Nu te teme, iată Împăratul tău                                        | Traian Dorz | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cine crede... să nu rămână în întuneric                               | Traian Dorz | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
-| Nu vă-nchideţi încă                                                   | Traian Dorz | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Cu fiecare noapte                                                     | Traian Dorz | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | poezie  |
-| ... Şi Îi dădeau palme                                                | Traian Dorz | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| E noapte grea                                                         | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Plânge datornicul                                                     | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Minunată şi frumoasă                                                  | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| O, îngeri preaiubiţi...                                               | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Ce duşmănit eşti Tu acum                                              | Traian Dorz | Hristos - Slava noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Păcatul şi frica                                                      | Traian Dorz | Crucea Mântuitoare            | Cugetări Nemuritoare         | articol |
-| Cunoaşterea şi recunoştinţa                                           | Traian Dorz | Mărturisirea Strălucită       | Cugetări Nemuritoare         | articol |
-| Dulcea părtăşie cu Domnul                                             | Traian Dorz | Mărturisirea Strălucită       | Cugetări Nemuritoare         | articol |
-| Când vom iubi pe Dumnezeu                                             | Traian Dorz | Numele Biruitorului           | Cugetări Nemuritoare         | articol |
-| Tu ne-araţi Isuse...                                                  | Traian Dorz | Întâi să fim                  | Cugetări Nemuritoare         | poezie  |
-| Vinovăţia şi nevinovăţia                                              | Traian Dorz | Strălucirea Biruinţei         | Cugetări Nemuritoare         | articol |
-| Deşertăciune şi slavă                                                 | Traian Dorz | Strălucirea Biruinţei         | Cugetări Nemuritoare         | articol |
-| Numărat şi împărţit                                                   | Traian Dorz | Cununile Slăvite              | Cugetări Nemuritoare         | articol |
-| Zilele şi Cartea                                                      | Traian Dorz | Poruncile Iubirii             | Cugetări Nemuritoare         | articol |
-| La picioarele Domnului                                                | Traian Dorz | Poruncile Iubirii             | Cugetări Nemuritoare         | articol |
-| Adevărul şi datoria                                                   | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
-| Lupta contra păcatului                                                | Traian Dorz | Alergarea Stăruitoare         | Cugetări Nemuritoare         | articol |
-| Doamne binecuvântează                                                 | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Când harfa mea                                                        | Traian Dorz | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Prietenul nostru doarme!                                              | Traian Dorz | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
-| De Tine sunt legat Isus                                               | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
-| Cap. 2 - Grâul cel care moare                                         | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| O, Duhul Mângâierii                                                   | Traian Dorz | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Isus S-a dus la Muntele Măslinilor                                    | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Dulcea Ta dărnicie                                                    | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Clopoţelul cel tainic de aur                                          | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Puntea de aur divin                                                   | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Noaptea cea din urmă                                                  | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Cum voi mai putea trăi?                                               | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Singurul Templu Etern                                                 | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Aceea ce nu se poate ascunde                                          | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Broaştele                                                             | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Doamne binecuvântează                                                 | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Demult, odată undeva...                                               | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Dormi copilul mamei                                                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Cine vine, cine?                                                      | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Cu Domnul spre Golgota - 1                                            | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Când zăceam în grea durere                                            | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Dorinţă                                                               | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Uşa                                                                   | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| O, Duhul Mângâierii                                                   | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Ce duşmănit eşti Tu acum                                              | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Cu fiecare noapte                                                     | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Nu vă-nchideţi încă                                                   | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Doamne binecuvântează                                                 | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Când harfa mea                                                        | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Vin Paştile                                                           | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Isuse, azi e praznic                                                  | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| De ce, de ce, de ce, de ce?                                           | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Psalmul 6                                                             | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Psalmul 36                                                            | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Psalmul 132                                                           | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Ispita desfrânării                                                    | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cap. 1 - Cânt. Cântărilor                                             | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cap. 3 - Cânt. Cântărilor                                             | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Despre iubire                                                         | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Despre milă                                                           | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                 | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Din părţile Banatului                                                 | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Iubire fii-mi dascăl                                                  | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Din câte rugăciuni, Isuse                                             | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Cu Tine vreau...                                                      | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Cine vine, cine?                                                      | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Din locul unde-am plâns                                               | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| O, cer iubit, ce-albastru                                             | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-+-----------------------------------------------------------------------+-------------+-------------------------------+------------------------------+---------+
++-----------------------------------------------------------------------+--------------------------------+-------------+-------------------------------+------------------------------+---------+
+| Titlu                                                                 | Occurrences                    | Author      | Tip                           | Carte                        | Volum   |
++-----------------------------------------------------------------------+--------------------------------+-------------+-------------------------------+------------------------------+---------+
+| Cap. 4 - Aur lămurit, trestii clătinate                               | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului) | {'aşternut'}                   | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator              | {'aşternut', 'aşternutul'}     | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                          | {'aşternut', 'aşternea'}       | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                               | {'aşternut', 'aşterne'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Dacă aduceţi multă roadă                                              | {'aşternut', 'aşterneau'}      | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Şi nimeni din voi nu Mă întreabă...                                   | {'aşternut', 'aşterne'}        | Traian Dorz | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
+| ... Şi Îi dădeau palme                                                | {'aşternut'}                   | Traian Dorz | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| Broaştele                                                             | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Cânt. Cântărilor                                             | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cap. 16 - Din cetate în cetate...                                     | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                      | {'aşternut'}                   | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 2 - Grâul cel care moare                                         | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                       | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                    | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                | {'aşternut'}                   | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 3 - Cânt. Cântărilor                                             | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cap. 5 - Necazuri şi speranţe                                         | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                   | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Ce duşmănit eşti Tu acum                                              | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Cine vine, cine?                                                      | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| Cine vine, cine?                                                      | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Cu fiecare noapte                                                     | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Când zăceam în grea durere                                            | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| De ce, de ce, de ce, de ce?                                           | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| De ce, de ce, de ce?                                                  | {'aşternut'}                   | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
+| Despre milă                                                           | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Din locul unde-am plâns                                               | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Doamne binecuvântează                                                 | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| Doamne binecuvântează                                                 | {'aşternut'}                   | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Doamne binecuvântează                                                 | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Dorinţă                                                               | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Dormi copilul mamei                                                   | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| E noapte grea                                                         | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Isuse, azi e praznic                                                  | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 2-a a Postului Mare                       | {'aşternut'}                   | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)         | {'aşternut'}                   | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Lăcrimele, lăcrimioare                                                | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Marta slujea                                                          | {'aşternut'}                   | Traian Dorz | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
+| Nu te teme, iată Împăratul tău                                        | {'aşternut'}                   | Traian Dorz | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
+| Psalmul 132                                                           | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Psalmul 6                                                             | {'aşternut'}                   | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Dulcea mea nedespărţire                                               | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Dulcea Ta Frumuseţe...                                                | {'aşternutului', 'aşternutul'} | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| În faţa Porţii Îndurării                                              | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Aceea ce nu se poate ascunde                                          | {'aşternutul'}                 | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
+| Adevărul şi datoria                                                   | {'aşternutul'}                 | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
+| Binecuvântează Doamne, razele                                         | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Cel mai frumos Isus                                          | {'aşternem'}                   | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                  | {'aşterne'}                    | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                     | {'aşternutului'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 24 - Pânza care se ţese                                          | {'aştern'}                     | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                              | {'aşternutul'}                 | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Clopoţelul cel tainic de aur                                          | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Cu Domnul spre Golgota - 1                                            | {'aştern'}                     | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Cu Tine vreau...                                                      | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Cum voi mai putea trăi?                                               | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Cuvintele Celui Scump                                                 | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Când harfa mea                                                        | {'aşterne'}                    | Traian Dorz | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Când harfa mea                                                        | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Cânturile mele...                                                     | {'aştern'}                     | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| De Tine sunt legat Isus                                               | {'aşternutul'}                 | Traian Dorz | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
+| De Tine sunt legat Isus                                               | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Demult, odată undeva...                                               | {'aşternea'}                   | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| Despre iubire                                                         | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Din câte rugăciuni, Isuse                                             | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Din părţile Banatului                                                 | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Din părţile Munteniei                                                 | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Doamne-n fiecare slovă                                                | {'aştern'}                     | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Dulcea Ta dărnicie                                                    | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| E Duminică...                                                         | {'aştern'}                     | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Frumuseţea amintirilor mele!                                          | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Ispita desfrânării                                                    | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Isus S-a dus la Muntele Măslinilor                                    | {'aşternutul'}                 | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Iubire fii-mi dascăl                                                  | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)              | {'aşternutul'}                 | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Minunată şi frumoasă                                                  | {'aştern'}                     | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Noaptea cea din urmă                                                  | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Nu vă-nchideţi încă                                                   | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| O, Duhul Mângâierii                                                   | {'aşterne'}                    | Traian Dorz | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| O, Duhul Mângâierii                                                   | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| O, cer iubit, ce-albastru                                             | {'aşterni'}                    | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| O, îngeri preaiubiţi...                                               | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Plânge datornicul                                                     | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Prietenul nostru doarme!                                              | {'aşterne'}                    | Traian Dorz | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
+| Psalmul 36                                                            | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Puntea de aur divin                                                   | {'aşternutul'}                 | Traian Dorz | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Singurul Templu Etern                                                 | {'aşternutul'}                 | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
+| Uşa                                                                   | {'aşternutul'}                 | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Vin Paştile                                                           | {'aşterne'}                    | Traian Dorz | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Încercări şi răsplătiri                                               | {'aşternutul'}                 | Traian Dorz | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
++-----------------------------------------------------------------------+--------------------------------+-------------+-------------------------------+------------------------------+---------+
 Searching Asternut using http://localhost:9000...
-Got 113 hits:
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Dulcea mea nedespărţire
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de cele de s\u0103rb\u0103toare aici at\u00e2t de aproape de <em>a\u015fternutul</em> meu \u00eenc\u00e2t oricine s\u0103 le afle u\u015for, atunci c\u00e2nd",
-"3 - Le-am pus aici foarte aproape de <em>a\u015fternutul</em> meu c\u0103ci dragostea este pomenit\u0103 mereu \u00eempreun\u0103",
-"12 - Iat\u0103-mi <em>a\u015fternutul</em> alb, \u00eempodobit cu cus\u0103turi scumpe \u015fi alese pe"
-]
-}
-
-Score: 1.5
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Unire şi suferinţă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"T\u00e2njeam dup\u0103 Adev\u0103r, - dar cum s\u0103-l afl\u0103m \u00een <em>a\u015fternutul</em> mizerabil unde z\u0103ceam? ",
-"10 - \u00cen <em>a\u015fternutul</em> meu era atunci noaptea mea, noaptea din mine",
-"- Ridic\u0103-te \u015fi tu degrab din <em>a\u015fternutul</em> p\u0103catului \u00een care zaci, "
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00centinde\u0163i ceata care-<em>a\u015fterne</em>",
-"c\u00e2teva zile \u015fi-au s\u0103pat \u015fi ei doar un beci. Apoi au <em>a\u015fternut</em> gr\u00e2u cosit - \u015fi st\u0103teau acolo cu copiii. Vaca"
-]
-}
-
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd m\u0103 \u00eembiu spre-un <em>a\u015fternut</em>",
-"acum s\u0103 dormi, s\u0103 m\u0103n\u00e2nci \u015fi s\u0103 te tol\u0103ne\u015fti pe <em>a\u015fternutul</em> moale, p\u00e2n\u0103 ce vine dreptul cosa\u015f - moartea,"
-]
-}
-
-Score: 1.3333333
+Got 91 hits:
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 4 - Aur lămurit, trestii clătinate
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu ciocanul \u00een buc\u0103\u0163ele mici, potrivit\u0103 pentru <em>a\u015fternut</em> la calea ferat\u0103.",
-"la ei cu toat\u0103 dragostea \u015fi mi-au f\u0103cut loc \u015fi <em>a\u015fternut</em> pe o banc\u0103 \u00een c\u0103su\u0163a lor mic\u0103. Eram at\u00e2t de obosit"
-]
-}
+Highlight: cu ciocanul în bucăţele mici, potrivită pentru <em>aşternut</em> la calea ferată.
+Highlight: la ei cu toată dragostea şi mi-au făcut loc şi <em>aşternut</em> pe o bancă în căsuţa lor mică. Eram atât de obosit
 
-Score: 1.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ani, acest palton mi-a fost apoi hain\u0103, p\u0103tur\u0103, <em>a\u015fternut</em>, saltea - de toate, p\u00e2n\u0103 c\u00e2nd aveam s\u0103 \u00eentorc",
-"Acela <em>a\u015fternea</em> pe pat \u015ftergarul s\u0103u cel mai curat, sau batista"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: În faţa Porţii Îndurării
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"2 - \u00cen <em>a\u015fternutul</em> unde am z\u0103cut pl\u00e2ng\u00e2ndu-mi durerea, mi-am primit",
-"\u00cen <em>a\u015fternutul</em> singur\u0103t\u0103\u0163ii \u00een care zac, vindec\u0103-mi sufletul"
-]
-}
-
-Score: 1.3333333
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Dulcea Ta Frumuseţe...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eemb\u0103ls\u0103mat al Casei Tale, f\u0103r\u0103 odihna dulce a <em>a\u015fternutului</em> T\u0103u, f\u0103r\u0103 florile dragi ale g\u00e2ndurilor Tale",
-"5 - Le voi a\u015feza atunci pe inima mea, \u00een <em>a\u015fternutul</em> meu. \u015ei deasupra u\u015fii mele unde sunt roadele"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Dacă aduceţi multă roadă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen calea Domnului se <em>a\u015fterneau</em> atunci at\u00e2tea covoare \u015fi se aruncau at\u00e2tea flori",
-"de primire - \u015fi c\u0103 pentru picioarele lui s-au <em>a\u015fternut</em> covoarele \u015fi florile, - iar nu pentru Acela pe"
-]
-}
-
-Score: 1.3333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Şi nimeni din voi nu Mă întreabă...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dar c\u00e2nd se <em>a\u015fterne</em> \u00eentre ei t\u0103cerea, atunci e un semn dureros c\u0103 adev\u0103rata",
-"Sau poate s\u0103 le dea o hain\u0103 c\u00e2t de groas\u0103 \u015fi un <em>a\u015fternut</em> c\u00e2t de moale, "
-]
-}
-
-Score: 1.3333333
+Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tu vin vechi, iar el vin nou, s\u0103 nu dormi tu pe <em>a\u015fternut</em> moale, iar el pe tare... ",
-"milostiv este El cu robii Lui! Aici El doarme pe <em>a\u015fternut</em> tare \u015fi noi pe moale. El rabd\u0103 \u015fi noi profit\u0103m"
-]
-}
+Highlight: tu vin vechi, iar el vin nou, să nu dormi tu pe <em>aşternut</em> moale, iar el pe tare...
+Highlight: milostiv este El cu robii Lui! Aici El doarme pe <em>aşternut</em> tare şi noi pe moale. El rabdă şi noi profităm
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd m\u0103 \u00eembiu spre-un <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: De ce, de ce, de ce?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de ce s\u0103 fim p\u00e2ndi\u0163i \u00eentruna \u015fi-n munc\u0103 \u015fi \u00een <em>a\u015fternut</em>,"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Voi care v\u0103 pute\u0163i \u00een voie culca \u00een <em>a\u015fternutul</em> vostru"
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dar bruma s-a <em>a\u015fternut</em> cur\u00e2nd \u015fi peste aceste flori. "
-]
-}
-
-Score: 1.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mereu de lucru printre cei cu care z\u0103ceam pe un <em>a\u015fternut</em>. Meseria asta mi-a folosit apoi mul\u0163i ani, pe"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 16 - Din cetate în cetate...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"o familie s\u0103rac\u0103 cu opt copii, au \u00eengrijit de <em>a\u015fternut</em> de pat \u015fi de \u00eembr\u0103c\u0103minte pentru o fat\u0103 oarb\u0103"
-]
-}
-
-Score: 1.0
+Score: 4.6666665
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eendrepta \u015fi recupera din tot ce s-a f\u0103cut r\u0103u \u015fi s-a <em>a\u015fternut</em> pe totdeauna \u00een ace\u015fti r\u0103zvr\u0103ti\u0163i ani. Nu numai"
-]
-}
+Highlight: Când mă îmbiu spre-un <em>aşternut</em>
+Highlight: acum să dormi, să mănânci şi să te tolăneşti pe <em>aşternutul</em> moale, până ce vine dreptul cosaş - moartea,
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"repede, au venit anii cernerii - \u015fi peste toate s-a <em>a\u015fternut</em> iar\u0103\u015fi \u00eentunericul. Atunci mul\u0163i s-au ascuns de"
-]
-}
-
-Score: 1.0
+Score: 4.6666665
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
+Title: Cap. 5 - În noaptea aceea...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de la atelierul de fr\u00e2nghii, pentru ca s\u0103 ni-i <em>a\u015fternem</em> peste fierul de la paturi, ca s\u0103 putem dormi pe"
-]
-}
+Highlight: ani, acest palton mi-a fost apoi haină, pătură, <em>aşternut</em>, saltea - de toate, până când aveam să întorc
+Highlight: Acela <em>aşternea</em> pe pat ştergarul său cel mai curat, sau batista
 
-Score: 1.0
+Score: 4.6666665
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u00e2n\u0103 c\u00e2nd \u00ce\u015fi va supune pe to\u0163i vr\u0103jma\u015fii S\u0103i <em>a\u015fternut</em> picioarelor Sale ("
-]
-}
+Highlight: câteva zile şi-au săpat şi ei doar un beci. Apoi au <em>aşternut</em> grâu cosit - şi stăteau acolo cu copiii. Vaca
+Highlight: Întindeţi ceata care-<em>aşterne</em> pe
 
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Amor\u0163eala \u015fi letargia nelucr\u0103rii spirituale, care se <em>a\u015fterne</em> tot mai grea peste lumea de ast\u0103zi, reprezint\u0103"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 24 - Pânza care se ţese
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mereu. Pe l\u00e2ng\u0103 dungile negre de doliu care se <em>a\u015ftern</em> \u015fi r\u0103m\u00e2n neuitate pe fa\u0163a alb\u0103 \u015fi curat\u0103 a amintirilor"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eempreun\u0103 cu cartea leg\u0103m\u00e2ntului meu, sub perna <em>a\u015fternutului</em> \u00een care de seara p\u00e2n\u0103 diminea\u0163a \u00eemi chinuiam"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: Tu ne-araţi Isuse Calea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei covoare moi de rou\u0103 \u015fi de raze ni se-<em>a\u015ftern</em>"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: Isuse izbăveşte-mi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-<em>a\u015fterne</em>-mi peste toate t\u0103cerea vindecat\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Încercări şi răsplătiri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sabia Lui. Cerul este tronul S\u0103u, iar p\u0103m\u00e2ntul <em>a\u015fternutul</em> picioarelor Lui."
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Cuvintele Celui Scump
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"14 - Lacrimile \u00eens\u00e2nger\u0103rii ei se preling pe <em>a\u015fternutul</em> unde zac, pr\u0103bu\u015fit dintr-o dat\u0103 ca \u00eentr-o pr\u0103pastie"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Frumuseţea amintirilor mele!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- nimic nu m\u0103 mai putea \u0163inea \u00een <em>a\u015fternutul</em> meu. \u015ei nimic nu m\u0103 mai putea opri s\u0103 nu alerg"
-]
-}
-
-Score: 1.0
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Marta slujea
+Book: Hristos - Viţa vieţii noastre
+Title: Dacă aduceţi multă roadă
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici la <em>a\u015fternut</em> c\u00e2nd culci pe cel s\u0103rac, "
-]
-}
+Highlight: de primire - şi că pentru picioarele lui s-au <em>aşternut</em> covoarele şi florile, - iar nu pentru Acela pe
+Highlight: În calea Domnului se <em>aşterneau</em> atunci atâtea covoare şi se aruncau atâtea flori
 
-Score: 1.0
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Nu te teme, iată Împăratul tău
+Book: Hristos - Pacea noastră
+Title: Şi nimeni din voi nu Mă întreabă...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"R\u00e2nd pe r\u00e2nd Tu supui pe to\u0163i vr\u0103jma\u015fii T\u0103i, <em>a\u015fternut</em> picioarelor Tale, "
-]
-}
+Highlight: Sau poate să le dea o haină cât de groasă şi un <em>aşternut</em> cât de moale,
+Highlight: Dar când se <em>aşterne</em> între ei tăcerea, atunci e un semn dureros că adevărata
 
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Cine crede... să nu rămână în întuneric
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u00e2n\u0103 ce \u00ce\u0163i vei supune pe to\u0163i vr\u0103jma\u015fii T\u0103i, <em>a\u015fternut</em> picioarelor Tale \u015fi a picioarelor noastre. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Nu vă-nchideţi încă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dup\u0103 voi uitarea ve\u015fnic\u0103 s-<em>a\u015fterne</em>"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Cu fiecare noapte
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ca-ntr-un sicriu ne-ntindem \u00een orice <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
 Title: ... Şi Îi dădeau palme
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Vino s\u0103 ne \u00eenchin\u0103m <em>a\u015fternut</em> picioarelor Lui \u015fi s\u0103 s\u0103rut\u0103m \u00een praful p\u0103m\u00e2ntului"
-]
-}
+Highlight: Vino să ne închinăm <em>aşternut</em> picioarelor Lui şi să sărutăm în praful pământului
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: E noapte grea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"E noapte grea \u015fi-n <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Plânge datornicul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-<em>a\u015fternutul</em> meu cu lacrimi"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Minunată şi frumoasă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0162i se-<em>a\u015ftern</em> Isuse-n cale chiar \u015fi ast\u0103zi m\u0103r\u0163i\u015fori"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: O, îngeri preaiubiţi...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00centinde\u0163i cea\u0163a care-<em>a\u015fterne</em>"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Ce duşmănit eşti Tu acum
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd m\u0103 \u00eembiu spre-un <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Păcatul şi frica
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nici la <em>a\u015fternutul</em> t\u0103u c\u00e2nd culci \u00een el pe cel s\u0103rac, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Cunoaşterea şi recunoştinţa
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dar c\u00e2nd se <em>a\u015fterne</em> \u00eentre ei t\u0103cerea, atunci e un semn dureros, c\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Dulcea părtăşie cu Domnul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sau poate s\u0103 le dea o hain\u0103 c\u00e2t de groas\u0103 \u015fi un <em>a\u015fternut</em> c\u00e2t de moale, "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Când vom iubi pe Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cei prime\u015fti cu masa ta \u015fi cu <em>a\u015fternutul</em> t\u0103u, sau cu batjocurile, cu sil\u0103 \u015fi cu u\u015file"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Tu ne-araţi Isuse...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi de raze ni s-<em>a\u015ftern</em>"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Vinovăţia şi nevinovăţia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"credincios petrece ceasuri \u00eentregi de noapte \u00een <em>a\u015fternutul</em> s\u0103u medit\u00e2nd... "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Deşertăciune şi slavă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenchis\u0103 - \u015fi noaptea se zv\u00e2rcole\u015fte fl\u0103m\u00e2nd \u00een <em>a\u015fternut</em>. "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Cununile Slăvite
-Title: Numărat şi împărţit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noapte lini\u015ftit\u0103 pe care am petrecut-o odihnind \u00een <em>a\u015fternutul</em> nostru pa\u015fnic"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: Zilele şi Cartea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O stare de somnolen\u0163\u0103 duhovniceasc\u0103 se <em>a\u015fterne</em> ca o cea\u0163\u0103 din ce \u00een ce mai deas\u0103 \u015fi \u00eentunecoas\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Poruncile Iubirii
-Title: La picioarele Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Acolo s\u0103 m\u0103 <em>a\u015ftern</em> implor\u00e2nd mila Lui, pentru familia mea \u015fi pentru"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Adevărul şi datoria
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care \u00eentrece orice pricepere omeneasc\u0103, \u00ee\u0163i d\u0103 <em>a\u015fternutul</em> care te odihne\u015fte mai pl\u0103cut ca orice palat \u00eemp\u0103r\u0103tesc"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Lupta contra păcatului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"treze\u015fti noaptea sau c\u00e2nd nu po\u0163i s\u0103 dormi \u00een <em>a\u015fternutul</em> t\u0103u, - \u00een vremea c\u00e2nd fra\u0163ii t\u0103i trec prin \u00eencerc\u0103ri"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Doamne binecuvântează
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"somnul nostru-n <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Când harfa mea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>a\u015fterne</em>-o peste ei. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Prietenul nostru doarme!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O stare de somnolen\u0163\u0103 duhovniceasc\u0103 se <em>a\u015fterne</em> ca o cea\u0163\u0103 din ce \u00een ce mai deas\u0103 \u015fi \u00eentunecoas\u0103"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: De Tine sunt legat Isus
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi pe-<em>a\u015fternutul</em> T\u0103u smerit"
-]
-}
-
-Score: 1.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 2 - Grâul cel care moare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"celei mai mari dureri \u015fi aplec\u00e2ndu-\u015fi capul pe <em>a\u015fternut</em> l\u00e2ng\u0103 s\u00e2nul ei. "
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: O, Duhul Mângâierii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>a\u015fterne</em> alinarea iert\u0103rii iubitor"
-]
-}
-
-Score: 1.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Isus S-a dus la Muntele Măslinilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care \u00eentrece orice pricepere omeneasc\u0103, \u00ee\u0163i d\u0103 <em>a\u015fternutul</em> care te \u00eenc\u0103lze\u015fte mai pl\u0103cut ca oricine... "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Dulcea Ta dărnicie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een care m\u0103 \u00eenchid \u015fi m\u0103 simt \u00een siguran\u0163\u0103, \u015fi <em>a\u015fternutul</em> T\u0103u \u00een care m\u0103 odihnesc noaptea sau oboseala"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Clopoţelul cel tainic de aur
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"7 - Cum vi s-a odihnit sufletul \u00een <em>a\u015fternutul</em> celei mai bucuroase dintre primiri? "
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Puntea de aur divin
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"25 - De\u015fi casa \u00eemi este goal\u0103, curtea pustie, <em>a\u015fternutul</em> rece, masa lipsit\u0103, vasul uscat, gr\u0103dina dezgr\u0103dit\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Noaptea cea din urmă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"6 - \u015ei <em>a\u015fternutul</em> bucuriilor noastre, era acum mult mai moale \u015fi"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Cum voi mai putea trăi?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi murdar \u00eemi lipise m\u00e2inile \u015fi picioarele de <em>a\u015fternutul</em> meu putred \u00een care p\u0103rea c\u0103 m\u0103 cufund ca \u00eentr-o"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Singurul Templu Etern
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Apoi acopere-ne \u015fi \u00eenconjoar\u0103-ne <em>a\u015fternutul</em> nostru cu to\u0163i crinii lumii ca s\u0103 ne adoarm\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Aceea ce nu se poate ascunde
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pe <em>a\u015fternutul</em> moale al medita\u0163iei, ca pe o iarb\u0103 proasp\u0103t\u0103"
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Broaştele
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toat\u0103 \u0163ara, \u015fi prin case la cei mari \u00een <em>a\u015fternut</em>. "
-]
-}
+Highlight: toată ţara, şi prin case la cei mari în <em>aşternut</em>.
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Doamne binecuvântează
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"somnul nostru-n <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Demult, odată undeva...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"peste morminte s-<em>a\u015fternea</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Dormi copilul mamei
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-un cald <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cine vine, cine?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>a\u015fternut</em> micu\u0163"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cu Domnul spre Golgota - 1
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi pece\u0163ile de piatr\u0103 le <em>a\u015ftern</em> cu-ngrijorare "
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Când zăceam în grea durere
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"suspin\u00e2nd \u00een <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Dorinţă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ei s\u0103 pot primi-n lini\u015fte orice cas\u0103 \u015fi-<em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Uşa
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Voi care v\u0103 pute\u0163i \u00een voie culca \u00een <em>a\u015fternutul</em> vostru"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: O, Duhul Mângâierii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>a\u015fterne</em> alinarea iert\u0103rii iubitor"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Ce duşmănit eşti Tu acum
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd m\u0103 \u00eembiu spre-un <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Cu fiecare noapte
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ca-ntr-un sicriu ne-ntindem \u00een orice <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Nu vă-nchideţi încă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dup\u0103 voi uitarea ve\u015fnic\u0103 s-<em>a\u015fterne</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Doamne binecuvântează
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"somnul nostru-n <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Când harfa mea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>a\u015fterne</em>-o peste ei. "
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Vin Paştile
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi bra\u0163ul plin de crinii luminii-n drum \u0162i-<em>a\u015fterne</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Isuse, azi e praznic
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0162i-am <em>a\u015fternut</em> \u00een cale nu f\u00e2n ca alt\u0103dat\u0103"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: De ce, de ce, de ce, de ce?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de ce s\u0103 fim p\u00e2ndi\u0163i \u00eentruna \u015fi-n munc\u0103 \u015fi \u00een <em>a\u015fternut</em>, "
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 6
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pl\u00e2ng mereu \u00een <em>a\u015fternut</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 36
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"4-\u00cen <em>a\u015fternutul</em> lui cel r\u0103u"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 132
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"spre-al picioarelor Lui sfinte <em>a\u015fternut</em>, s\u0103 ne-aplec\u0103m! "
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Ispita desfrânării
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"16-\u015ei stropit mi-e <em>a\u015fternutul</em>"
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 1 - Cânt. Cântărilor
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi ce-<em>a\u015fternut</em> curat avem verdea\u0163a din C\u00e2mpie! "
-]
-}
+Highlight: şi ce-<em>aşternut</em> curat avem verdeaţa din Câmpie!
 
-Score: 1.0
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 16 - Din cetate în cetate...
+Type: articol
+Author: Traian Dorz
+Highlight: o familie săracă cu opt copii, au îngrijit de <em>aşternut</em> de pat şi de îmbrăcăminte pentru o fată oarbă
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 17 - Mereu prin ape tulburi
+Type: articol
+Author: Traian Dorz
+Highlight: Dar bruma s-a <em>aşternut</em> curând şi peste aceste flori.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 2 - Grâul cel care moare
+Type: articol
+Author: Traian Dorz
+Highlight: celei mai mari dureri şi aplecându-şi capul pe <em>aşternut</em> lângă sânul ei.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 2 - O taină a lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: până când Îşi va supune pe toţi vrăjmaşii Săi <em>aşternut</em> picioarelor Sale (
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight: repede, au venit anii cernerii - şi peste toate s-a <em>aşternut</em> iarăşi întunericul. Atunci mulţi s-au ascuns de
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: mereu de lucru printre cei cu care zăceam pe un <em>aşternut</em>. Meseria asta mi-a folosit apoi mulţi ani, pe
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 3 - Cânt. Cântărilor
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1-C\u0103utat-am noaptea-n <em>a\u015fternut</em> pe Dragul vie\u0163ii mele"
-]
-}
+Highlight: 1-Căutat-am noaptea-n <em>aşternut</em> pe Dragul vieţii mele
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre iubire
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dormi cu drag \u00een <em>a\u015fternutul</em> moale-al bucuriei, "
-]
-}
+Highlight: îndrepta şi recupera din tot ce s-a făcut rău şi s-a <em>aşternut</em> pe totdeauna în aceşti răzvrătiţi ani. Nu numai
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre milă
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 g\u00e2nde\u015fti \u015fi la s\u0103rmanii care gem \u00een <em>a\u015fternut</em>, "
-]
-}
+Highlight: Când mă îmbiu spre-un <em>aşternut</em>
 
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- se fr\u0103m\u00e2nt\u0103 noaptea-ntreag\u0103, cine nu-\u015fi <em>a\u015fterne</em>, "
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"151 - C\u00e2nd pui munca de-\u0163i <em>a\u015fterne</em>"
-]
-}
-
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Iubire fii-mi dascăl
+Book: Cântări Nemuritoare vol. 7
+Title: Ce duşmănit eşti Tu acum
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mi-e \u015fi-<em>a\u015fternutul</em> moale"
-]
-}
+Highlight: Când mă îmbiu spre-un <em>aşternut</em>
 
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Din câte rugăciuni, Isuse
+Book: Cântări Nemuritoare vol. 4
+Title: Cine vine, cine?
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- prime\u015fte-ni-le \u015fi le-<em>a\u015fterne</em>"
-]
-}
+Highlight: <em>aşternut</em> micuţ
 
-Score: 1.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cu Tine vreau...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een <em>a\u015fternutul</em> rece"
-]
-}
-
-Score: 1.0
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Cine vine, cine?
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>a\u015fternut</em> micu\u0163"
-]
-}
+Highlight: <em>aşternut</em> micuţ
 
-Score: 1.0
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Cu fiecare noapte
+Type: poezie
+Author: Traian Dorz
+Highlight: Ca-ntr-un sicriu ne-ntindem în orice <em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Când zăceam în grea durere
+Type: poezie
+Author: Traian Dorz
+Highlight: suspinând în <em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: De ce, de ce, de ce, de ce?
+Type: poezie
+Author: Traian Dorz
+Highlight: de ce să fim pândiţi întruna şi-n muncă şi în <em>aşternut</em>,
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: De ce, de ce, de ce?
+Type: poezie
+Author: Traian Dorz
+Highlight: de ce să fim pândiţi întruna şi-n muncă şi în <em>aşternut</em>,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre milă
+Type: articol
+Author: Traian Dorz
+Highlight: să gândeşti şi la sărmanii care gem în <em>aşternut</em>,
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Din locul unde-am plâns
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-n cel mai moale <em>a\u015fternut</em>"
-]
-}
+Highlight: şi-n cel mai moale <em>aşternut</em>
 
-Score: 1.0
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Doamne binecuvântează
+Type: poezie
+Author: Traian Dorz
+Highlight: somnul nostru-n <em>aşternut</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Doamne binecuvântează
+Type: poezie
+Author: Traian Dorz
+Highlight: somnul nostru-n <em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Doamne binecuvântează
+Type: poezie
+Author: Traian Dorz
+Highlight: somnul nostru-n <em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Dorinţă
+Type: poezie
+Author: Traian Dorz
+Highlight: Şi să pot primi-n linişte orice casă şi-<em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Dormi copilul mamei
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-un cald <em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: E noapte grea
+Type: poezie
+Author: Traian Dorz
+Highlight: E noapte grea şi-n <em>aşternut</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Isuse, azi e praznic
+Type: poezie
+Author: Traian Dorz
+Highlight: Ţi-am <em>aşternut</em> în cale nu fân ca altădată
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 2-a a Postului Mare
+Type: articol
+Author: Traian Dorz
+Highlight: la dreapta Mea, până voi pune pe vrăjmaşii Tăi <em>aşternut</em> al picioarelor Tale?”
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Type: articol
+Author: Traian Dorz
+Highlight: de curăţat, focul a încetat... Ce minunat s-a <em>aşternut</em> acolo pacea, unitatea, dragostea şi ascultarea
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Lăcrimele, lăcrimioare
+Type: poezie
+Author: Traian Dorz
+Highlight: şi iubirea <em>aşternut</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Marta slujea
+Type: articol
+Author: Traian Dorz
+Highlight: nici la <em>aşternut</em> când culci pe cel sărac,
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Nu te teme, iată Împăratul tău
+Type: articol
+Author: Traian Dorz
+Highlight: Rând pe rând Tu supui pe toţi vrăjmaşii Tăi, <em>aşternut</em> picioarelor Tale,
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 132
+Type: poezie
+Author: Traian Dorz
+Highlight: spre-al picioarelor Lui sfinte <em>aşternut</em>, să ne-aplecăm!
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 6
+Type: poezie
+Author: Traian Dorz
+Highlight: plâng mereu în <em>aşternut</em>
+
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Dulcea mea nedespărţire
+Type: articol
+Author: Traian Dorz
+Highlight: de cele de sărbătoare aici atât de aproape de <em>aşternutul</em> meu încât oricine să le afle uşor, atunci când
+Highlight: 3 - Le-am pus aici foarte aproape de <em>aşternutul</em> meu căci dragostea este pomenită mereu împreună
+Highlight: 12 - Iată-mi <em>aşternutul</em> alb, împodobit cu cusături scumpe şi alese pe
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Dulcea Ta Frumuseţe...
+Type: articol
+Author: Traian Dorz
+Highlight: îmbălsămat al Casei Tale, fără odihna dulce a <em>aşternutului</em> Tău, fără florile dragi ale gândurilor Tale
+Highlight: 5 - Le voi aşeza atunci pe inima mea, în <em>aşternutul</em> meu. Şi deasupra uşii mele unde sunt roadele
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: În faţa Porţii Îndurării
+Type: articol
+Author: Traian Dorz
+Highlight: 2 - În <em>aşternutul</em> unde am zăcut plângându-mi durerea, mi-am primit
+Highlight: În <em>aşternutul</em> singurătăţii în care zac, vindecă-mi sufletul
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Aceea ce nu se poate ascunde
+Type: articol
+Author: Traian Dorz
+Highlight: pe <em>aşternutul</em> moale al meditaţiei, ca pe o iarbă proaspătă
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Adevărul şi datoria
+Type: articol
+Author: Traian Dorz
+Highlight: care întrece orice pricepere omenească, îţi dă <em>aşternutul</em> care te odihneşte mai plăcut ca orice palat împărătesc
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Binecuvântează Doamne, razele
+Type: poezie
+Author: Traian Dorz
+Highlight: iarba care ni s-<em>aşterne</em>
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: de la atelierul de frânghii, pentru ca să ni-i <em>aşternem</em> peste fierul de la paturi, ca să putem dormi pe
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 18 - Frumoasele noastre Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Amorţeala şi letargia nelucrării spirituale, care se <em>aşterne</em> tot mai grea peste lumea de astăzi, reprezintă
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 19 - Omul trimes de Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: împreună cu cartea legământului meu, sub perna <em>aşternutului</em> în care de seara până dimineaţa îmi chinuiam
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 24 - Pânza care se ţese
+Type: articol
+Author: Traian Dorz
+Highlight: mereu. Pe lângă dungile negre de doliu care se <em>aştern</em> şi rămân neuitate pe faţa albă şi curată a amintirilor
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: - Voi care vă puteţi în voie culca în <em>aşternutul</em> vostru
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Clopoţelul cel tainic de aur
+Type: articol
+Author: Traian Dorz
+Highlight: 7 - Cum vi s-a odihnit sufletul în <em>aşternutul</em> celei mai bucuroase dintre primiri?
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Cu Domnul spre Golgota - 1
+Type: poezie
+Author: Traian Dorz
+Highlight: şi peceţile de piatră le <em>aştern</em> cu-ngrijorare
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Cu Tine vreau...
+Type: poezie
+Author: Traian Dorz
+Highlight: în <em>aşternutul</em> rece
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Cum voi mai putea trăi?
+Type: articol
+Author: Traian Dorz
+Highlight: şi murdar îmi lipise mâinile şi picioarele de <em>aşternutul</em> meu putred în care părea că mă cufund ca într-o
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Cuvintele Celui Scump
+Type: articol
+Author: Traian Dorz
+Highlight: 14 - Lacrimile însângerării ei se preling pe <em>aşternutul</em> unde zac, prăbuşit dintr-o dată ca într-o prăpastie
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Când harfa mea
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>aşterne</em>-o peste ei.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Când harfa mea
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>aşterne</em>-o peste ei.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Cânturile mele...
+Type: poezie
+Author: Traian Dorz
+Highlight: I le-<em>aştern</em> lângă altar.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: De Tine sunt legat Isus
+Type: poezie
+Author: Traian Dorz
+Highlight: şi pe-<em>aşternutul</em> Tău smerit
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: De Tine sunt legat Isus
+Type: poezie
+Author: Traian Dorz
+Highlight: şi pe-<em>aşternutul</em> Tău smerit
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Demult, odată undeva...
+Type: poezie
+Author: Traian Dorz
+Highlight: peste morminte s-<em>aşternea</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre iubire
+Type: articol
+Author: Traian Dorz
+Highlight: dormi cu drag în <em>aşternutul</em> moale-al bucuriei,
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Din câte rugăciuni, Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: - primeşte-ni-le şi le-<em>aşterne</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Banatului
+Type: articol
+Author: Traian Dorz
+Highlight: 151 - Când pui munca de-ţi <em>aşterne</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: - se frământă noaptea-ntreagă, cine nu-şi <em>aşterne</em>,
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Doamne-n fiecare slovă
+Type: poezie
+Author: Traian Dorz
+Highlight: toată viaţa mi-o <em>aştern</em>
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Dulcea Ta dărnicie
+Type: articol
+Author: Traian Dorz
+Highlight: în care mă închid şi mă simt în siguranţă, şi <em>aşternutul</em> Tău în care mă odihnesc noaptea sau oboseala
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: E Duminică...
+Type: poezie
+Author: Traian Dorz
+Highlight: I se-<em>aştern</em> în cale iarăşi
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Frumuseţea amintirilor mele!
+Type: articol
+Author: Traian Dorz
+Highlight: - nimic nu mă mai putea ţinea în <em>aşternutul</em> meu. Şi nimic nu mă mai putea opri să nu alerg
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Ispita desfrânării
+Type: poezie
+Author: Traian Dorz
+Highlight: 16-Şi stropit mi-e <em>aşternutul</em>
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Isus S-a dus la Muntele Măslinilor
+Type: articol
+Author: Traian Dorz
+Highlight: care întrece orice pricepere omenească, îţi dă <em>aşternutul</em> care te încălzeşte mai plăcut ca oricine...
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Iubire fii-mi dascăl
+Type: poezie
+Author: Traian Dorz
+Highlight: mi-e şi-<em>aşternutul</em> moale
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
+Type: articol
+Author: Traian Dorz
+Highlight: noaptea când te trezeşti, sau nu poţi să dormi în <em>aşternutul</em> tău, când fraţii tăi trec prin încercări, ori
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Minunată şi frumoasă
+Type: poezie
+Author: Traian Dorz
+Highlight: Ţi se-<em>aştern</em> Isuse-n cale chiar şi astăzi mărţişori
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Noaptea cea din urmă
+Type: articol
+Author: Traian Dorz
+Highlight: 6 - Şi <em>aşternutul</em> bucuriilor noastre, era acum mult mai moale şi
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Nu vă-nchideţi încă
+Type: poezie
+Author: Traian Dorz
+Highlight: după voi uitarea veşnică s-<em>aşterne</em>
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: O, Duhul Mângâierii
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>aşterne</em> alinarea iertării iubitor
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: O, Duhul Mângâierii
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>aşterne</em> alinarea iertării iubitor
+
+Score: 0.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: O, cer iubit, ce-albastru
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pe care ni-l <em>a\u015fterni</em> frumos, "
-]
-}
+Highlight: pe care ni-l <em>aşterni</em> frumos,
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: O, îngeri preaiubiţi...
+Type: poezie
+Author: Traian Dorz
+Highlight: Întindeţi ceaţa care-<em>aşterne</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Plânge datornicul
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-<em>aşternutul</em> meu cu lacrimi
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Prietenul nostru doarme!
+Type: articol
+Author: Traian Dorz
+Highlight: O stare de somnolenţă duhovnicească se <em>aşterne</em> ca o ceaţă din ce în ce mai deasă şi întunecoasă
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 36
+Type: poezie
+Author: Traian Dorz
+Highlight: 4-În <em>aşternutul</em> lui cel rău
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Puntea de aur divin
+Type: articol
+Author: Traian Dorz
+Highlight: 25 - Deşi casa îmi este goală, curtea pustie, <em>aşternutul</em> rece, masa lipsită, vasul uscat, grădina dezgrădită
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Singurul Templu Etern
+Type: articol
+Author: Traian Dorz
+Highlight: Apoi acopere-ne şi înconjoară-ne <em>aşternutul</em> nostru cu toţi crinii lumii ca să ne adoarmă
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Uşa
+Type: poezie
+Author: Traian Dorz
+Highlight: - Voi care vă puteţi în voie culca în <em>aşternutul</em> vostru
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Vin Paştile
+Type: poezie
+Author: Traian Dorz
+Highlight: şi braţul plin de crinii luminii-n drum Ţi-<em>aşterne</em>
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Încercări şi răsplătiri
+Type: articol
+Author: Traian Dorz
+Highlight: sabia Lui. Cerul este tronul Său, iar pământul <em>aşternutul</em> picioarelor Lui.
 

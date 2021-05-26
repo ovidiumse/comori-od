@@ -1,117 +1,45 @@
-+--------------------------------------------------------------------------+-------------+------------------------------+------------------------------+---------+
-| Titlu                                                                    | Author      | Tip                          | Carte                        | Volum   |
-+--------------------------------------------------------------------------+-------------+------------------------------+------------------------------+---------+
-| Un Mire şi un Model                                                      | Traian Dorz | Întâi să fim                 | Cugetări Nemuritoare         | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                    | Traian Dorz | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 5 - În noaptea aceea...                                             | Traian Dorz | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Întâi să fim                                                             | Traian Dorz | Eternele Poeme               | Cugetări Nemuritoare         | poezie  |
-| Numele Domnului Isus                                                     | Traian Dorz | Numele Biruitorului          | Cugetări Nemuritoare         | articol |
-| Norodul băgase de seamă...                                               | Traian Dorz | Hristos - Pâinea noastră     | Meditații la Ev. după Ioan   | articol |
-| Întâi să fim                                                             | Traian Dorz | Cântări Nemuritoare vol. 11  | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului) | Traian Dorz | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
-+--------------------------------------------------------------------------+-------------+------------------------------+------------------------------+---------+
++--------------------------------------------------------------------------+----------------------------+-------------+------------------------------+------------------------------+---------+
+| Titlu                                                                    | Occurrences                | Author      | Tip                          | Carte                        | Volum   |
++--------------------------------------------------------------------------+----------------------------+-------------+------------------------------+------------------------------+---------+
+| Cap. 21 - Şi mărturia trebuie plătită                                    | {'logodnica', 'logodnică'} | Traian Dorz | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 5 - În noaptea aceea...                                             | {'logodnica', 'logodnică'} | Traian Dorz | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului) | {'Logodnic'}               | Traian Dorz | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| Norodul băgase de seamă...                                               | {'logodnic'}               | Traian Dorz | Hristos - Pâinea noastră     | Meditații la Ev. după Ioan   | articol |
++--------------------------------------------------------------------------+----------------------------+-------------+------------------------------+------------------------------+---------+
 Searching Logodna using http://localhost:9000...
-Got 8 hits:
-Score: 3.5555556
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Un Mire şi un Model
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dintre <em>logodna</em> leg\u0103m\u00e2ntului p\u00e2n\u0103 la cununia nun\u0163ii.",
-"2 - Este \u015fi \u00een via\u0163a asta obiceiul ca <em>logodna</em> s\u0103 se",
-"se fac\u0103 cu un timp \u00eenaintea nun\u0163ii. <em>Logodna</em> este primul pas spre \u00eenso\u0163irea ve\u015fnic\u0103, iar cununia este al",
-"Timpul dintre <em>logodn\u0103</em> \u015fi cununie este perioada de verificare, \u00een care se va dovedi dac\u0103",
-"pe care I-am promis-o \u00een leg\u0103m\u00e2ntul nostru la <em>logodna</em> noastr\u0103 cu El."
-]
-}
-
-Score: 3.0
+Got 4 hits:
+Score: 0.75
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 21 - Şi mărturia trebuie plătită
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"copilul de doi ani - el nemaip\u0103s\u00e2ndu-i nici de <em>logodnica</em> lui nici de Lucrarea lui Dumnezeu. \u00cen cur\u00e2nd pe",
-"acesta numai mama \u00eemi f\u0103cea c\u00e2nd eram bolnav. \u015ei <em>logodnica</em> mea c\u00e2nd eram descurajat. Acum sunt \u015fi mai bolnav",
-"oric\u00e2nd. \u015ei nu mai am nici mam\u0103. \u015ei nu mai am nici <em>logodnic\u0103</em>. Sunt aproape \u015fase ani de c\u00e2nd am fost rupt de"
-]
-}
+Highlight: copilul de doi ani - el nemaipăsându-i nici de <em>logodnica</em> lui nici de Lucrarea lui Dumnezeu. În curând pe
+Highlight: acesta numai mama îmi făcea când eram bolnav. Şi <em>logodnica</em> mea când eram descurajat. Acum sunt şi mai bolnav
+Highlight: oricând. Şi nu mai am nici mamă. Şi nu mai am nici <em>logodnică</em>. Sunt aproape şase ani de când am fost rupt de
 
-Score: 2.6666665
+Score: 0.6666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 5 - În noaptea aceea...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"numai mama mea \u00eemi f\u0103cea c\u00e2nd eram bolnav... Sau <em>logodnica</em> mea, c\u00e2nd eram descurajat...",
-"\u00een via\u0163a mea... \u015ei nu mai am nici mam\u0103 - nici <em>logodnic\u0103</em>."
-]
-}
+Highlight: numai mama mea îmi făcea când eram bolnav... Sau <em>logodnica</em> mea, când eram descurajat...
+Highlight: în viaţa mea... Şi nu mai am nici mamă - nici <em>logodnică</em>.
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: Întâi să fim
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Logodna</em> noastr\u0103-n Duhul Sf\u00e2nt"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Numele Biruitorului
-Title: Numele Domnului Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Al\u0163ii fa\u0163\u0103 de <em>logodnic\u0103</em>, de so\u0163ie, de mam\u0103... "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Norodul băgase de seamă...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cine se g\u00e2nde\u015fte la so\u0163ie, la <em>logodnic</em>, la porci sau la ceas, "
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Întâi să fim
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Logodna</em> noastr\u0103-n Duhul Sf\u00e2nt"
-]
-}
-
-Score: 2.0
+Score: 0.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenf\u0103\u0163i\u015fa lui Isus ca pe o fecioar\u0103 curat\u0103 unui <em>Logodnic</em> Ceresc... "
-]
-}
+Highlight: înfăţişa lui Isus ca pe o fecioară curată unui <em>Logodnic</em> Ceresc...
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Norodul băgase de seamă...
+Type: articol
+Author: Traian Dorz
+Highlight: cine se gândeşte la soţie, la <em>logodnic</em>, la porci sau la ceas,
 

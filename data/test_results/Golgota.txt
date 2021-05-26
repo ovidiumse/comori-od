@@ -1,1402 +1,971 @@
-+------------------------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
-| Titlu                                                                  | Author          | Tip                          | Carte                        | Volum   |
-+------------------------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
-| Golgota...                                                             | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| Mâinile şi Golgota                                                     | Traian Dorz     | Răsplata Ascultării          | Cugetări Nemuritoare         | articol |
-| Aceasta-i Golgota                                                      | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Peste Golgota-i tăcere...                                              | Traian Dorz     | Eterna Iubire                | Cugetări Nemuritoare         | poezie  |
-| Cu Domnul spre Golgota - 1                                             | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Peste Golgota-i tăcere...                                              | Traian Dorz     | Cântări Nemuritoare vol. 9   | Cântări Nemuritoare          | poezie  |
-| Minunea cea mare: Golgota                                              | Traian Dorz     | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
-| Mamă, pe Golgota iată                                                  | Traian Dorz     | Cântări Nemuritoare vol. 4   | Cântări Nemuritoare          | poezie  |
-| Spre Golgota                                                           | Traian Dorz     | Cântări Nemuritoare vol. 6   | Cântări Nemuritoare          | poezie  |
-| Mamă, pe Golgota iată                                                  | Traian Dorz     | Cântări Nemuritoare vol. 11  | Cântări Nemuritoare          | poezie  |
-| Cap. 4 - În virtutea frumosului avânt...                               | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 7 - A doua Judecată                                               | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                       | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Poruncile şi legămintele                                               | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| Prin multe ţări frumoase                                               | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Cap. 11 - Cel mai bun misionar                                         | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                 | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Începutul semnelor Lui                                                 | Traian Dorz     | Hristos - Sfinţitorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 6 - Între două judecăţi                                           | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Preaiubit Isus, Jertfa noastră Sfântă                                  | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| Prin vremi vedem                                                       | Traian Dorz     | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
-| Va fi-n curând Isuse                                                   | Traian Dorz     | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii) | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - Al şaptelea foc                                               | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                   | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                         | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Seriozitatea şi lipsa ei                                               | Traian Dorz     | Semănaţi Cuvântul Sfânt      | Cugetări Nemuritoare         | articol |
-| Marile noastre răspunderi                                              | Traian Dorz     | Piatra Scumpă                | Cugetări Nemuritoare         | articol |
-| A intra în Oaste înseamnă a ieşi din lume                              | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| O, Dragostea Ta, Dragostea Ta...                                       | Traian Dorz     | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
-| Sămânţa şi rodul                                                       | Traian Dorz     | Alergarea Stăruitoare        | Cugetări Nemuritoare         | articol |
-| O, Betleem, o, Betleem...                                              | Traian Dorz     | Hristos - Dumnezeul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| O, Betleem, o, Betleem...                                              | Traian Dorz     | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
-| Toate căile iubirii                                                    | Traian Dorz     | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
-| De la Nunta cea din Cana                                               | Traian Dorz     | Cântări Nemuritoare vol. 9   | Cântări Nemuritoare          | poezie  |
-| Ce minunată este Ţinta                                                 | Traian Dorz     | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)   | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
-| Cap. 10 - Va veni un altul...                                          | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| O, lacrimile-acestea                                                   | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | poezie  |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                 | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                               | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| În Vinerea Patimilor                                                   | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
-| Cap. 13 - După luarea lui Moisi...                                     | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cât puteţi bucuraţi-vă iară!                                           | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
-| Cap. 19 - Al treilea februarie                                         | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                     | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Rugăciune                                                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Meditaţie despre Jertfă                                                | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | poezie  |
-| Cap. 3 - La scadenţa ispăşirilor                                       | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                           | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
-| Tineri fraţi                                                           | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | poezie  |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                             | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                    | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                        | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                        | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                 | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Domnul ne-a chemat                                                     | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | poezie  |
-| Cap. 5 - Întâia judecată                                               | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
-| Eu n-aş mai vrea                                                       | Traian Dorz     | Dorim să fim                 | Cugetări Nemuritoare         | poezie  |
-| Pace şi adevăr                                                         | Traian Dorz     | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
-| Sfinţenie şi pedeapsă                                                  | Traian Dorz     | Piatra Scumpă                | Cugetări Nemuritoare         | articol |
-| Cap. 6 - Strălucita sărbătoare de Rusalii                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
-| Abia vă văd de lacrimi                                                 | Traian Dorz     | Hristos - Izvorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Apa din stâncă                                                         | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| Încep luptele Canaanului                                               | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| Sub Muntele Sinai                                                      | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| Şarpele în pustie                                                      | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
-| O, mila Ta nemărginită...                                              | Traian Dorz     | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
-| Singură flacăra suferinţei                                             | Traian Dorz     | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
-| Cât îl iubea de mult!                                                  | Traian Dorz     | Hristos - Învierea noastră   | Meditații la Ev. după Ioan   | articol |
-| Voi atrage la Mine pe toţi oamenii                                     | Traian Dorz     | Hristos - Împăratul nostru   | Meditații la Ev. după Ioan   | articol |
-| Ţine-ne Isuse Doamne                                                   | Traian Dorz     | Hristos - Împăratul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| S-a isprăvit                                                           | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| Sânge şi apă...                                                        | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| Mărire veşnică Învierii Tale Isuse Doamne                              | Traian Dorz     | Hristos - Mântuitorul nostru | Meditații la Ev. după Ioan   | articol |
-| O, moarte strălucită                                                   | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Legat de Tine sunt Isus                                                | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Rugăciune                                                              | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | articol |
-| M-apropiu de-orice muncă                                               | Traian Dorz     | Hristos - Jertfa noastră     | Meditații la Ev. după Ioan   | poezie  |
-| Plânge datornicul                                                      | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Cânta o pasăre măiastră                                                | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Stânca Vieţii                                                          | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Tu eşti şi azi Isuse                                                   | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Cu Domnul spre Golgota - 2                                             | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Cu Domnul spre Golgota - 3                                             | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| O, păcătoşilor iubiţi                                                  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Cât puteţi, bucuraţi-vă!                                               | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
-| Când suprema suferinţă                                                 | Traian Dorz     | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Crucea Mântuitoare                                                     | Traian Dorz     | Crucea Mântuitoare           | Cugetări Nemuritoare         | articol |
-| Aşteptarea învierii noastre                                            | Traian Dorz     | Mărturisirea Strălucită      | Cugetări Nemuritoare         | articol |
-| Facerea şi Început                                                     | Traian Dorz     | Păşunile Dulci               | Cugetări Nemuritoare         | articol |
-| Înţelepciunea şi nebunia                                               | Traian Dorz     | Păşunile Dulci               | Cugetări Nemuritoare         | articol |
-| Învăţători şi ucenici                                                  | Traian Dorz     | Păşunile Dulci               | Cugetări Nemuritoare         | articol |
-| Unire şi suferinţă                                                     | Traian Dorz     | Săgeţile biruitoare          | Cugetări Nemuritoare         | articol |
-| Răsplătirea şi pedeapsa                                                | Traian Dorz     | Credinţa Încununată          | Cugetări Nemuritoare         | articol |
-| Lumina primită şi dată                                                 | Traian Dorz     | Dorim să fim                 | Cugetări Nemuritoare         | articol |
-| Acum şi atunci                                                         | Traian Dorz     | Răsplata Ascultării          | Cugetări Nemuritoare         | articol |
-| Semnele şi minunile                                                    | Traian Dorz     | Răsplata Ascultării          | Cugetări Nemuritoare         | articol |
-+------------------------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
++------------------------------------------------------------------------------------+------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                              | Occurrences            | Author          | Tip                              | Carte                        | Volum   |
++------------------------------------------------------------------------------------+------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Golgota...                                                                         | {'Golgota'}            | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Aceasta-i Golgota                                                                  | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cu Domnul spre Golgota - 1                                                         | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Mamă, pe Golgota iată                                                              | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Minunea cea mare: Golgota                                                          | {'Golgota'}            | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Spre Golgota                                                                       | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Cu Domnul spre Golgota - 2                                                         | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cu Domnul spre Golgota - 3                                                         | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cap. 4 - În virtutea frumosului avânt...                                           | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 7 - A doua Judecată                                                           | {'golgota', 'Golgota'} | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                                   | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Poruncile şi legămintele                                                           | {'Golgota'}            | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Prin multe ţări frumoase                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cap. 11 - Cel mai bun misionar                                                     | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                             | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Începutul semnelor Lui                                                             | {'Golgota'}            | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 6 - Între două judecăţi                                                       | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)             | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Prin vremi vedem                                                                   | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Va fi-n curând Isuse                                                               | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| A intra în Oaste înseamnă a ieşi din lume                                          | {'Golgota'}            | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                               | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                     | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| De la Nunta cea din Cana                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)               | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Marile noastre răspunderi                                                          | {'Golgota'}            | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| O, Betleem, o, Betleem...                                                          | {'Golgota'}            | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| O, Betleem, o, Betleem...                                                          | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| O, Dragostea Ta, Dragostea Ta...                                                   | {'Golgota'}            | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cap. 8 - Al şaptelea foc                                                           | {'Golgota', 'golgote'} | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Abia vă văd de lacrimi                                                             | {'Golgota'}            | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | poezie  |
+| Abia vă văd de lacrimi                                                             | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Acum din nou...                                                                    | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Acum las lumea şi Mă duc la Tatăl                                                  | {'Golgota'}            | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Apa din stâncă                                                                     | {'Golgota'}            | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Bine e când noaptea trece                                                          | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                    | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Va veni un altul...                                                      | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                              | {'Golgota'}            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 13 - După luarea lui Moisi...                                                 | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                         | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Al treilea februarie                                                     | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                    | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                 | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'Golgota'}            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                              | {'Golgota'}            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                           | {'Golgota'}            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                   | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                             | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 4 - Spre altarul său                                                          | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                           | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Strălucita sărbătoare de Rusalii                                          | {'Golgota'}            | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - Aşezarea temeliilor veşnice                                               | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Ce minunat era atunci...                                                           | {'Golgota'}            | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cea mai frumoasă Jertfă                                                            | {'Golgota'}            | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cutează şi priveşte                                                                | {'Golgota'}            | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Cutează şi priveşte                                                                | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Cuvintele pe care Mi le-ai dat Tu                                                  | {'Golgota'}            | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Când eşti dat în mâna...                                                           | {'Golgota'}            | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | poezie  |
+| Când eşti dat în mâna...                                                           | {'Golgota'}            | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
+| Când eşti dat în mâna...                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Când faţa eu mi-o-ntorc                                                            | {'Golgota'}            | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
+| Când suprema suferinţă                                                             | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Cânta o pasăre măiastră                                                            | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cânturile mele...                                                                  | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Cântările Dintâi                                                                   | {'GOLGOTA'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cât puteţi bucuraţi-vă iară!                                                       | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
+| Cât puteţi, bucuraţi-vă!                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cât îl iubea de mult!                                                              | {'Golgota'}            | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Căutând mereu                                                                      | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| De Sus, din dragostea Golgotei                                                     | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| De hotarele Luminii                                                                | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| De la nunta cea din Cana                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| De-atunci, de când...                                                              | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Doamne-n Săptămâna asta...                                                         | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Două mii de ani Isuse...                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Drumul Crucii                                                                      | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Eu eram copil Isuse...                                                             | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Facerea şi Început                                                                 | {'Golgota'}            | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Frumos eşti Drag Isuse                                                             | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Iar îmi scrii măicuţă...                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Isus... a mers spre ei                                                             | {'Golgota'}            | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Isuse, când Te-am ascultat                                                         | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Izbânda duhului luminii                                                            | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain) | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)        | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 28-a după Rusalii                                      | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)            | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)               | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare                                    | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                        | {'Golgota'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Liniştea răbdării noastre                                                          | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Liniştire şi vindecare                                                             | {'Golgota'}            | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| M-apropiu de-orice muncă                                                           | {'Golgota'}            | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | poezie  |
+| M-apropiu de-orice muncă                                                           | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Mamă, unde-L duc?                                                                  | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Meditaţie despre Jertfă                                                            | {'Golgota'}            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
+| Măreţia şi cuprinderea                                                             | {'Golgota'}            | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Noi ştim o Jertfă...                                                               | {'Golgota'}            | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
++------------------------------------------------------------------------------------+------------------------+-----------------+----------------------------------+------------------------------+---------+
 Searching Golgota using http://localhost:9000...
-Got 189 hits:
-Score: 5.7777777
+Got 145 hits:
+Score: 38.944443
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
 Title: Golgota...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em>, o, <em>Golgota</em>, recuno\u015ftin\u0163a mea - \u015fi adora\u0163ia mea; \u015fi slava",
-"care \u00een evreie\u015fte se cheam\u0103 <em>Golgota</em>. Aici",
-"O, <em>Golgota</em>, loc unic, care ne gr\u0103ie\u015fte nem\u0103rginit mai cutremur\u0103tor dec\u00e2t Sinai.  O",
-"O, <em>Golgota</em>, munte",
-"O, <em>Golgota</em>, singurul loc ceresc pe acest p\u0103m\u00e2nt, unde Dumnezeu"
-],
-"title": [
-"<em>Golgota</em>..."
-]
-}
+Highlight: <em>Golgota</em>, o, <em>Golgota</em>, recunoştinţa mea - şi adoraţia mea; şi slava
+Highlight: care în evreieşte se cheamă <em>Golgota</em>. Aici
+Highlight: O, <em>Golgota</em>, loc unic, care ne grăieşte nemărginit mai cutremurător decât Sinai.  O
+Highlight: O, <em>Golgota</em>, munte
+Highlight: O, <em>Golgota</em>, singurul loc ceresc pe acest pământ, unde Dumnezeu
+Highlight: O, <em>Golgota</em>, pe tine Îl putem vedea toţi oamenii pe Dumnezeul
+Highlight: <em>Golgota</em>...
 
-Score: 5.7647057
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Mâinile şi Golgota
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em>, o <em>Golgota</em>, recuno\u015ftin\u0163a mea \u015fi adora\u0163ia mea, ",
-"7 - Despre <em>Golgota</em> nu se poate scrie \u015fi citi dec\u00e2t \u00een genunchi.  Nu",
-"- O, <em>Golgota</em> loc unic, care ne gr\u0103ie\u015fti mai nem\u0103rginit \u015fi mai cutremur\u0103tor dec\u00e2t Sionul,  Golgota",
-"<em>Golgota</em>, munte",
-"9 - Lumina ta <em>Golgota</em> nu era cea a fulgerelor \u00eensp\u0103im\u00e2nt\u0103toare ca pe"
-],
-"title": [
-"M\u00e2inile \u015fi <em>Golgota</em>"
-]
-}
-
-Score: 5.5555553
+Score: 37.88889
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Aceasta-i Golgota
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em> st\u0103 \u015fi az, ",
-"aceasta-i <em>Golgota</em>. ",
-"aceasta-i <em>Golgota</em>. ",
-"aceasta-i <em>Golgota</em>. ",
-"aceasta-i <em>Golgota</em>. "
-],
-"title": [
-"Aceasta-i <em>Golgota</em>"
-]
-}
+Highlight: <em>Golgota</em> stă şi az,
+Highlight: aceasta-i <em>Golgota</em>.
+Highlight: aceasta-i <em>Golgota</em>.
+Highlight: aceasta-i <em>Golgota</em>.
+Highlight: aceasta-i <em>Golgota</em>.
+Highlight: aceasta-i <em>Golgota</em>.
+Highlight: Aceasta-i <em>Golgota</em>
 
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Eterna Iubire
-Title: Peste Golgota-i tăcere...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Peste <em>Golgota</em>-i t\u0103cere, vaierele-au \u00eencetat, ",
-"\u015fi uita\u0163i c\u0103 v-amenin\u0163\u0103 Crucea de pe <em>Golgota</em>! "
-],
-"title": [
-"Peste <em>Golgota</em>-i t\u0103cere..."
-]
-}
-
-Score: 4.6666665
+Score: 33.666664
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Cu Domnul spre Golgota - 1
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Miez de zi... <em>Golgota</em> geme azi sub cea mai grea povar\u0103",
-"Pe <em>Golgota</em> cu t\u00e2lharii Dumnezeu pe Cruce moare. "
-],
-"title": [
-"Cu Domnul spre <em>Golgota</em> - 1"
-]
-}
+Highlight: Miez de zi... <em>Golgota</em> geme azi sub cea mai grea povară
+Highlight: Pe <em>Golgota</em> cu tâlharii Dumnezeu pe Cruce moare.
+Highlight: Cu Domnul spre <em>Golgota</em> - 1
 
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Peste Golgota-i tăcere...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Peste <em>Golgota</em>-i t\u0103cere, vaierele-au \u00eencetat, ",
-"\u015fi uita\u0163i c\u0103 v-amenin\u0163\u0103 Crucea de pe <em>Golgota</em>! "
-],
-"title": [
-"Peste <em>Golgota</em>-i t\u0103cere..."
-]
-}
-
-Score: 4.0
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Minunea cea mare: Golgota
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Marea Minune a tuturor veacurilor S-a petrecut pe <em>Golgota</em> - Ea va str\u0103luci pentru toate veacurile \u015fi ve\u015fnicia"
-],
-"title": [
-"Minunea cea mare: <em>Golgota</em>"
-]
-}
-
-Score: 4.0
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Mamă, pe Golgota iată
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Mam\u0103, pe <em>Golgota</em> iat\u0103"
-],
-"title": [
-"Mam\u0103, pe <em>Golgota</em> iat\u0103"
-]
-}
+Highlight: Mamă, pe <em>Golgota</em> iată
+Highlight: Mamă, pe <em>Golgota</em> iată
 
-Score: 4.0
+Score: 30.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Minunea cea mare: Golgota
+Type: articol
+Author: Traian Dorz
+Highlight: Marea Minune a tuturor veacurilor S-a petrecut pe <em>Golgota</em> - Ea va străluci pentru toate veacurile şi veşnicia
+Highlight: Minunea cea mare: <em>Golgota</em>
+
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Spre Golgota
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Spre <em>Golgota</em> r\u0103stignirii"
-],
-"title": [
-"Spre <em>Golgota</em>"
-]
-}
+Highlight: Spre <em>Golgota</em> răstignirii
+Highlight: Spre <em>Golgota</em>
 
-Score: 4.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Mamă, pe Golgota iată
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Mam\u0103, pe <em>Golgota</em> iat\u0103, "
-],
-"title": [
-"Mam\u0103, pe <em>Golgota</em> iat\u0103"
-]
-}
-
-Score: 3.6923077
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"E timpul Postului Mare. Se apropie <em>Golgota</em>. Vine judecarea \u015fi Patimile Domnului. O, cu c\u00e2te",
-"pe care Scumpul nostru M\u00e2ntuitor l-a urcat spre <em>Golgota</em>.",
-"<em>Golgota</em> era afar\u0103 din tab\u0103r\u0103, afar\u0103 din cetate. Drumul",
-"<em>Golgota</em> st\u0103 \u015fi azi tot acolo: afar\u0103 din lume. \u015ei to\u0163i cei",
-"mearg\u0103 dup\u0103 Domnul, to\u0163i cei ce vreau s\u0103 mearg\u0103 la <em>Golgota</em> - trebuie s\u0103 iese din "
-]
-}
-
-Score: 3.5555556
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 7 - A doua Judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-a luat crucea \u015fi \u015fi-a \u00eendreptat fa\u0163a c\u0103tre <em>golgota</em> sa, hot\u0103r\u00e2t s\u0103-\u015fi urmeze soarta.",
-"... Era \u015fi aceasta o predic\u0103 vie c\u0103 la <em>Golgota</em> po\u0163i ajunge numai ie\u015find afar\u0103 din ",
-"c\u0103 pot lua cu ei \u015fi <em>Golgota</em>. Au crezut c\u0103 pot muta cu ei, \u00een ",
-" \u015fi <em>Golgota</em> \u015fi praznicele \u015fi cre\u015ftin\u0103tatea",
-"lume, asta nu-i mai place... Lui \u00eei trebuie o <em>Golgot\u0103</em>, o m\u00e2ntuire care s\u0103 stea cu el \u00een "
-]
-}
-
-Score: 3.4285715
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trimesul S\u0103u, pe mul\u0163i oameni pe drumul Crucii spre <em>Golgota</em> la picioarele lui Isus Cel R\u0103stignit, era nevoie",
-"neamurile \u015fi toate confesiunile din lume str\u00e2nse de <em>Golgota</em> \u015fi de morm\u00e2ntul M\u00e2ntuitorului... Suspinul \u015fi graiul",
-"urma \u00eenso\u0163indu-L din S\u00e2mb\u0103ta Floriilor \u015fi p\u00e2n\u0103 la <em>Golgota</em>. Vom duce suflete\u015fte pe cititorii no\u015ftri pe urmele",
-"pentru ca s\u0103 sf\u00e2r\u015fim cu Jertfa Lui cea Sf\u00e2nt\u0103 de pe <em>Golgota</em>..",
-" Dup\u0103 ce suise calvarul M\u00e2ntuitorului p\u00e2n\u0103 la <em>Golgota</em> gust\u00e2nd din plin \u015fi p\u0103trunz\u00e2ndu-se profund de adev\u0103rul"
-]
-}
-
-Score: 3.3333333
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Poruncile şi legămintele
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"darul ce ni s-a dat prin S\u00e2ngele Crucii de pe <em>Golgota</em>. ",
-"legii. Numai prin darul \u015fi harul Crucii de pe <em>Golgota</em> pot rodi poruncile \u015fi leg\u0103mintele. ",
-"leg\u0103mintele pot rodi numai prin Jertfa Crucii de pe <em>Golgota</em>. ",
-"c\u00e2t\u0103 vreme nu e stropit cu S\u00e2ngele Crucii de pe <em>Golgota</em>. N-are nici o putere c\u00e2t\u0103 vreme nu e sigilat cu",
-"leg\u0103mintele pot rodi numai prin Jertfa Crucii de pe <em>Golgota</em>. "
-]
-}
-
-Score: 3.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Prin multe ţări frumoase
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ca-acel al c\u0103rui nume se cheam\u0103 <em>Golgota</em>. ",
-"de Dumnezeu aproape, ca sus, pe <em>Golgota</em>. ",
-"ne-a d\u0103ruit via\u0163a, - aceasta-i <em>Golgota</em>! ",
-"acolo-i har \u015fi pace, - aceasta-i <em>Golgota</em>! ",
-"acolo-i fericirea... aceasta-i <em>Golgota</em>! "
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 11 - Cel mai bun misionar
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em>",
-"<em>Golgota</em>",
-"<em>Golgota</em>",
-"<em>Golgota</em>"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 12 - Naşterea imnului duhovnicesc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen drum spre <em>Golgota</em>",
-"\u00cen drum spre <em>Golgota</em>",
-"\u00cen drum spre <em>Golgota</em>",
-"\u00cen drum spre <em>Golgota</em> pleac\u0103 Fiul Durerii"
-]
-}
-
-Score: 3.2
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Începutul semnelor Lui
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Minune de pe <em>Golgota</em>, \u00een Marele Semn al Crucii \u015fi Jertfei lui Hristos!",
-"Toate vin de pe <em>Golgota</em> \u015fi duc tot",
-"cunoa\u015fterea \u015fi dob\u00e2ndirea foloaselor Minunii de pe <em>Golgota</em>, care zilnic face minuni \u00een fa\u0163a celor care o primesc",
-"numai cei c\u00e2\u0163iva din Betania, de pe Tabor, de pe <em>Golgota</em>, adic\u0103 minunea Adev\u0103rului \u015fi Iubirii Dumnezeie\u015fti"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 6 - Între două judecăţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dou\u0103 amvoane, de la unul s\u0103 se vorbeasc\u0103 despre <em>Golgota</em> \u015fi Isus Cel R\u0103stignit; de la cel\u0103lalt despre boii",
-"\u201cLa <em>Golgota</em>\u201d",
-"de la Maglavit, c\u00e2nd s-a vestit minunea de la <em>Golgota</em>, un om s-a apropiat de noi \u015fi ne-a rugat s\u0103-l cercet\u0103m"
-]
-}
-
-Score: 3.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Preaiubit Isus, Jertfa noastră Sfântă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0162ie, Isuse Doamne, pentru Crucea Ta \u015fi pentru <em>Golgota</em> Ta. Pentru Semnul \u015fi pentru Locul care vor fi dovada",
-"Prin <em>Golgota</em> Ta ne-am m\u00e2ntuit noi. ",
-"Din orice parte ne-am sui, s\u0103 privim numai la <em>Golgota</em>. \u015ei s\u0103 r\u0103m\u00e2nem numai la Tine. "
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Prin vremi vedem
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Prin vremi vedem cum urc\u0103 spre <em>Golgota</em> Trecutul",
-"Prin vremi vedem cum urc\u0103 spre <em>Golgota</em> furtuna",
-"... Prin vremi vedem urc\u00e2ndu-\u015fi spre <em>Golgota</em> - fecioare"
-]
-}
-
-Score: 3.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Va fi-n curând Isuse
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"va str\u0103luci <em>Golgota</em>, ca Soare \u015fi Izvor, ",
-"O, de n-ar fi <em>Golgota</em>, - din toate p\u00e2n-acum",
-"Sl\u0103vit\u0103 fii <em>Golgota</em>, etern Izvor divin, "
-]
-}
-
-Score: 3.0
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fiecare furtun\u0103 un nou senin - cum a adus dup\u0103 <em>Golgota</em> cea cr\u00e2ncen\u0103, cu luptele, cu chinurile \u015fi cu moartea",
-"<em>Golgota</em> \u00eenchipuia potopul care nimicise o lume a p\u0103catului",
-"m\u00e2nia trecuse \u015fi c\u0103 pacea \u00eencepea, - tot a\u015fa dup\u0103 <em>Golgota</em> S-a pogor\u00e2t Porumbelul Cincizecimii, Duhul Sf\u00e2nt"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cumplitul calvar al celei mai grele \u015fi mai lungi <em>golgote</em> din via\u0163a mea de p\u00e2n\u0103 atunci. Fiindc\u0103, dac\u0103 p\u00e2n\u0103",
-"at\u00e2t de Mare \u015fi Sf\u00e2nt al S\u00e2ngelui Crucii de pe <em>Golgota</em>, al S\u00e2ngelui Scump \u015fi m\u00e2ntuitor al Fiului S\u0103u Isus"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ultimul ceas al biruin\u0163ei Sale asupra r\u0103ului, pe <em>Golgota</em>. Dar tocmai acel ceas a fost ultimul din zv\u00e2rcolirile",
-"privirile \u015fi inimile noastre ale tuturor spre <em>Golgota</em>, spre vie\u0163uirea \u00een Hristos \u015fi pentru El... "
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd e p\u0103m\u00e2ntul acesta \u015fi p\u00e2n\u0103 va fi - n-a avut <em>Golgota</em> un paznic at\u00e2t de vigilent \u015fi at\u00e2t de viteaz ca",
-"diavol. E lupta ce s-a g\u0103tat cu biruin\u0163a de pe <em>Golgota</em>. \u00cen lupta aceasta noi nu lu\u0103m parte. E o lupt\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Seriozitatea şi lipsa ei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"12 - M\u00e2ntuitorul la biruit pe <em>Golgota</em>, dar satana este \u00eenc\u0103 pe p\u0103m\u00e2nt. \u015ei de\u015fi \u015ftie c\u0103",
-"Domnul ucenicilor S\u0103i \u00een marea zi a luptei de pe <em>Golgota</em>... el nu are nimica \u00een Mine, - dar va avea \u00eenc\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Marile noastre răspunderi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Minune de la <em>Golgota</em>! ",
-"Toate vin de pe <em>Golgota</em>, \u015fi duc tot"
-]
-}
-
-Score: 2.6666665
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: A intra în Oaste înseamnă a ieşi din lume
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"tab\u0103r\u0103... Era \u015fi aceasta o predic\u0103 vie, c\u0103 la <em>Golgota</em> po\u0163i ajunge numai ie\u015find afar\u0103 din tab\u0103r\u0103, afar\u0103",
-"ascult\u00e2nd \u00eendemnul ap. Pavel, noi am ie\u015fit la <em>Golgota</em>, afar\u0103 din tab\u0103r\u0103. Ni s-au deschis ochii \u015fi ni"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: O, Dragostea Ta, Dragostea Ta...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"5 - Ci mi-ai ar\u0103tat <em>Golgota</em>. Mi-ai ar\u0103tat Crucea Golgotei Tale, pe care Tu",
-"22 - Ceea ce ai cucerit Tu pentru mine pe <em>Golgota</em>, "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Alergarea Stăruitoare
-Title: Sămânţa şi rodul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- Cum a adus dup\u0103 <em>Golgota</em> cea cr\u00e2ncen\u0103, cu luptele, cu chinurile \u015fi cu moartea",
-"9 - <em>Golgota</em> \u00eenchipuia potopul care nimicise o lume a p\u0103catului"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: O, Betleem, o, Betleem...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O <em>Golgota</em>, o, <em>Golgota</em>, - n\u0103l\u0163ime-nfrico\u015fat\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: O, Betleem, o, Betleem...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O <em>Golgota</em>, o, <em>Golgota</em>, - n\u0103l\u0163ime-nfrico\u015fat\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Toate căile iubirii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"e <em>Golgot\u0103</em> \u015fi Tabor, ",
-"\u015fi <em>Golgot\u0103</em> \u015fi Tabor... "
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: De la Nunta cea din Cana
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u00e2n-la <em>Golgota</em> Isuse, ",
-"... Dar pe <em>Golgota</em>, la Cruce, "
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Ce minunată este Ţinta
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- dar Crucea spre <em>Golgota</em> noastr\u0103",
-"cu crucea spre <em>Golgota</em> noastr\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Pe <em>Golgota</em>, c\u00e2\u0163i n-au v\u0103zut lucrurile cutremur\u0103toare, \u00eentunericul",
-"Domnul Isus, spre Crucea Lui r\u0103scump\u0103r\u0103toare, spre <em>Golgota</em> Lui isp\u0103\u015fitoare a p\u0103catului nostru, spre Jertfa"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eencle\u015ftare uria\u015f\u0103 care urma s\u0103 se decid\u0103 m\u00e2ine pe <em>Golgota</em> pentru Hristos. "
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: O, lacrimile-acestea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pe urmele Domnului Isus spre <em>Golgota</em>."
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"La <em>Golgota</em>"
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dumnezeu nu iart\u0103 p\u0103catul ci-l pedepse\u015fte. La <em>Golgota</em> \u00een Crucea \u015fi Jertfa Fiului S\u0103u, M\u00e2ntuitorul nostru"
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"urcu\u015fului cumplit pe calvarul sc\u0103rilor ca \u00eenspre <em>Golgota</em> mea. "
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"La <em>Golgota</em>"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: În Vinerea Patimilor
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Pe Crucea Domnului de pe <em>Golgota</em> s-a \u00eent\u00e2lnit cea mai ur\u00e2t\u0103 fapt\u0103 a p\u0103catului nostru"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"adev\u0103rat\u0103 \u015fi bun\u0103 pentru Jertfa M\u0103rea\u0163\u0103 a Crucii de pe <em>Golgota</em>, at\u00e2t de pu\u0163in cunoscut\u0103 \u015fi pre\u0163uit\u0103 la noi. Batjocoritorii"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cât puteţi bucuraţi-vă iară!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi <em>Golgota</em> va cere vie\u0163i,"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cu El \u00een mijloc \u015fi Mama Lui urm\u00e2ndu-L suia spre <em>Golgota</em> - cred c\u0103 mul\u0163i privitori de pe margini vor fi"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cencep\u00e2nd cu Jertfa Singurului S\u0103u Fiu, jertfit pe <em>Golgota</em> mai \u00eenaintea lui Abel chiar (pentru c\u0103 \u00een clipa"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Rugăciune
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0162ie, care ai ales <em>Golgota</em> ca locul cel mai \u00eenalt"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Meditaţie despre Jertfă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"...N-a fost niciodat\u0103 altfel... Pe <em>Golgota</em>-ns\u00e2ngerat\u0103"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"isp\u0103\u015firi s-au v\u0103zut din Ziua Marii Isp\u0103\u015firi de pe <em>Golgota</em> - \u015fi p\u00e2n\u0103 ast\u0103zi! P\u0103rin\u0163i care au isp\u0103\u015fit p\u0103catele"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cumplit, pe calvarul sc\u0103rilor ca \u00eenspre o alt\u0103 grea <em>Golgot\u0103</em> a mea."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Tineri fraţi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u0162elul nostru e <em>Golgota</em>"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"omenesc Cincizecimea este un hotar de via\u0163\u0103 nou\u0103. <em>Golgota</em> a isc\u0103lit zapisul \u00eemp\u0103c\u0103rii noastre cu Dumnezeu"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 22 - Statutele - marea şi permanenta primejdie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"privirile noastre trebuie s\u0103 se ridice sus spre <em>Golgota</em>, spre Jertfa cea mare a Crucii. Isus a suferit"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Jertf\u0103 pe Sine \u00censu\u015fi, pe altarul Crucii de pe <em>Golgota</em>, pentru isp\u0103\u015firea tuturor p\u0103catelor \u00eentregii lumi"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"capitolul din urm\u0103, capitolul cel mai greu: peste <em>Golgota</em>, la m\u00e2ntuire... \u015ei peste calvar la biruin\u0163\u0103."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lor calea Crucii cu toate popasurile ei p\u00e2n\u0103 la <em>Golgota</em>... Iar dincolo de ea, str\u0103lucirea neb\u0103nuit\u0103 a unei"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Domnul ne-a chemat
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ghe\u0163imani, <em>Golgote</em> sunt,"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"acolo unde spuneam c\u0103 \u00eemi a\u015ftept urcu\u015ful spre <em>Golgota</em>, spre Calvar... A\u015ftept s\u0103 fiu chemat la judecat\u0103"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Eu n-aş mai vrea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi p\u00e2n\u0103 Sus pe <em>Golgota</em>"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Pace şi adevăr
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"4 - De ce este mai \u00eenalt\u0103 <em>Golgota</em> dec\u00e2t Sinai?"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Sfinţenie şi pedeapsă
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eencep\u00e2nd de la Templu \u015fi p\u00e2n\u0103 la <em>Golgota</em>. "
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 6 - Strălucita sărbătoare de Rusalii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din lumea aceasta. Mi se p\u0103rea c\u0103 sunt aievea pe <em>Golgota</em>, acolo la picioarele Crucii M\u00e2ntuitorului meu Isus"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Abia vă văd de lacrimi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cum sta\u0163i privind <em>Golgota</em> de ziduri \u015fi de groaz\u0103"
-]
-}
-
-Score: 2.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Apa din stâncă
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"\u00cen clipa c\u00e2nd sus pe <em>Golgota</em>, a r\u0103sunat cuv\u00e2ntul: "
-]
-}
-
-Score: 2.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Încep luptele Canaanului
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"diavol. E lupta ce s-a g\u0103tat cu biruin\u0163a de pe <em>Golgota</em>. \u00cen lupta aceasta noi nu lu\u0103m parte. E o lupt\u0103"
-]
-}
-
-Score: 2.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Sub Muntele Sinai
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"cel n\u0103scut a doua oar\u0103 prin S\u00e2ngele Crucii de pe <em>Golgota</em>. "
-]
-}
-
-Score: 2.0
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Şarpele în pustie
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"\u00eenchipuit cu mii de ani \u00eenainte, Jertfa Crucii de pe <em>Golgota</em>. Precum Moise a \u00een\u0103l\u0163at \u015farpele \u00een pustie, a\u015fa"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: O, mila Ta nemărginită...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"18 - Acolo pe Taborul \u015fi pe <em>Golgota</em> mea, firea mea cea veche r\u0103stignit\u0103, va sl\u0103bi pe"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Singură flacăra suferinţei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"7 - Acest punct este <em>Golgota</em>, este Crucea \u015fi Jertfa Ta. "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Cât îl iubea de mult!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"prive\u015fte la Crucea Domnului t\u0103u Isus Hristos, de pe <em>Golgota</em> p\u0103timirii Lui, "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Voi atrage la Mine pe toţi oamenii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eentregind-o pe cea de pe <em>Golgota</em>"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Ţine-ne Isuse Doamne
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"una to\u0163i la <em>Golgota</em>! "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: S-a isprăvit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2t de \u00eencet s-a mers spre Ghe\u0163imani \u015fi p\u00e2n\u0103 la <em>Golgota</em>, din cea dint\u00e2i durere \u015fi p\u00e2n\u0103 \u00een cea din urm\u0103"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Sânge şi apă...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em> este cu at\u00e2t mai \u00eenalt\u0103 dec\u00e2t Sinai, cu c\u00e2t harul"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: Mărire veşnică Învierii Tale Isuse Doamne
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em> este \u00een\u0103l\u0163imea de unde privim \u015fi vedem toate \u00eentr-o"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: O, moarte strălucită
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"At\u00e2tor suferin\u0163e <em>golgotic</em> \u00eendurate"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Legat de Tine sunt Isus
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"numai aceea care vorbe\u015fte prin Jertfa Crucii de pe <em>Golgota</em> prin Duhul Sf\u00e2nt, acest minunat "
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Rugăciune
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Pentru <em>Golgota</em> Ta, locul unde ai \u00een\u0103l\u0163at"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: M-apropiu de-orice muncă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"asemeni ca de Crucea pe <em>Golgota</em> n\u0103l\u0163at\u0103"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Plânge datornicul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd pe <em>Golgota</em>, via\u0163a"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cânta o pasăre măiastră
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de <em>Golgota</em> duios c\u00e2nta"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Stânca Vieţii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"St\u00e2nca Vie\u0163ii e <em>Golgota</em>"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Tu eşti şi azi Isuse
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Pe calea spre <em>Golgota</em>, pe drumul spre Damasc"
-]
-}
-
-Score: 2.0
+Score: 21.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Cu Domnul spre Golgota - 2
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"title": [
-"Cu Domnul spre <em>Golgota</em> - 2"
-]
-}
+Highlight: Cu Domnul spre <em>Golgota</em> - 2
 
-Score: 2.0
+Score: 21.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Cu Domnul spre Golgota - 3
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"title": [
-"Cu Domnul spre <em>Golgota</em> - 3"
-]
-}
+Highlight: Cu Domnul spre <em>Golgota</em> - 3
 
-Score: 2.0
+Score: 17.538462
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: E timpul Postului Mare. Se apropie <em>Golgota</em>. Vine judecarea şi Patimile Domnului. O, cu câte
+Highlight: pe care Scumpul nostru Mântuitor l-a urcat spre <em>Golgota</em>.
+Highlight: <em>Golgota</em> era afară din tabără, afară din cetate. Drumul
+Highlight: <em>Golgota</em> stă şi azi tot acolo: afară din lume. Şi toţi cei
+Highlight: meargă după Domnul, toţi cei ce vreau să meargă la <em>Golgota</em> - trebuie să iese din
+Highlight: ). La <em>Golgota</em> nu poţi merge şi nu poţi ajunge decât ieşind afară
+
+Score: 16.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 7 - A doua Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: şi-a luat crucea şi şi-a îndreptat faţa către <em>golgota</em> sa, hotărât să-şi urmeze soarta.
+Highlight: ... Era şi aceasta o predică vie că la <em>Golgota</em> poţi ajunge numai ieşind afară din
+Highlight: că pot lua cu ei şi <em>Golgota</em>. Au crezut că pot muta cu ei, în
+Highlight:  şi <em>Golgota</em> şi praznicele şi creştinătatea
+Highlight: îndemnul ap. Pavel, noi ostaşii Domnului am ieşit la <em>Golgota</em>, afară din
+Highlight: doar numai atât că noi vedem acum biserica, vedem <em>Golgota</em>, vedem praznicele, vedem mântuirea, acolo unde
+
+Score: 16.285713
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: trimesul Său, pe mulţi oameni pe drumul Crucii spre <em>Golgota</em> la picioarele lui Isus Cel Răstignit, era nevoie
+Highlight: neamurile şi toate confesiunile din lume strânse de <em>Golgota</em> şi de mormântul Mântuitorului... Suspinul şi graiul
+Highlight: urma însoţindu-L din Sâmbăta Floriilor şi până la <em>Golgota</em>. Vom duce sufleteşte pe cititorii noştri pe urmele
+Highlight: pentru ca să sfârşim cu Jertfa Lui cea Sfântă de pe <em>Golgota</em>..
+Highlight:  După ce suise calvarul Mântuitorului până la <em>Golgota</em> gustând din plin şi pătrunzându-se profund de adevărul
+Highlight: totală şi conştientă dăruire pe care a văzut-o pe <em>Golgota</em>.
+
+Score: 15.833333
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Poruncile şi legămintele
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: darul ce ni s-a dat prin Sângele Crucii de pe <em>Golgota</em>.
+Highlight: legii. Numai prin darul şi harul Crucii de pe <em>Golgota</em> pot rodi poruncile şi legămintele.
+Highlight: legămintele pot rodi numai prin Jertfa Crucii de pe <em>Golgota</em>.
+Highlight: câtă vreme nu e stropit cu Sângele Crucii de pe <em>Golgota</em>. N-are nici o putere câtă vreme nu e sigilat cu
+Highlight: legămintele pot rodi numai prin Jertfa Crucii de pe <em>Golgota</em>.
+
+Score: 15.833333
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
-Title: O, păcătoşilor iubiţi
+Title: Prin multe ţări frumoase
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em>-ns\u00e2ngerat\u0103"
-]
-}
+Highlight: ca-acel al cărui nume se cheamă <em>Golgota</em>.
+Highlight: de Dumnezeu aproape, ca sus, pe <em>Golgota</em>.
+Highlight: ne-a dăruit viaţa, - aceasta-i <em>Golgota</em>!
+Highlight: acolo-i har şi pace, - aceasta-i <em>Golgota</em>!
+Highlight: acolo-i fericirea... aceasta-i <em>Golgota</em>!
 
-Score: 2.0
+Score: 15.2
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 11 - Cel mai bun misionar
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Golgota</em>
+Highlight: <em>Golgota</em>
+Highlight: <em>Golgota</em>
+Highlight: <em>Golgota</em>
+
+Score: 15.2
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 12 - Naşterea imnului duhovnicesc
+Type: articol
+Author: Traian Dorz
+Highlight: În drum spre <em>Golgota</em>
+Highlight: În drum spre <em>Golgota</em>
+Highlight: În drum spre <em>Golgota</em>
+Highlight: În drum spre <em>Golgota</em> pleacă Fiul Durerii
+
+Score: 15.2
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: Începutul semnelor Lui
+Type: articol
+Author: Traian Dorz
+Highlight: Minune de pe <em>Golgota</em>, în Marele Semn al Crucii şi Jertfei lui Hristos!
+Highlight: Toate vin de pe <em>Golgota</em> şi duc tot
+Highlight: cunoaşterea şi dobândirea foloaselor Minunii de pe <em>Golgota</em>, care zilnic face minuni în faţa celor care o primesc
+Highlight: numai cei câţiva din Betania, de pe Tabor, de pe <em>Golgota</em>, adică minunea Adevărului şi Iubirii Dumnezeieşti
+
+Score: 14.25
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
+Type: articol
+Author: Traian Dorz
+Highlight: două amvoane, de la unul să se vorbească despre <em>Golgota</em> şi Isus Cel Răstignit; de la celălalt despre boii
+Highlight: “La <em>Golgota</em>”
+Highlight: de la Maglavit, când s-a vestit minunea de la <em>Golgota</em>, un om s-a apropiat de noi şi ne-a rugat să-l cercetăm
+
+Score: 14.25
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
+Type: articol
+Author: Traian Dorz
+Highlight: fiecare furtună un nou senin - cum a adus după <em>Golgota</em> cea crâncenă, cu luptele, cu chinurile şi cu moartea
+Highlight: <em>Golgota</em> închipuia potopul care nimicise o lume a păcatului
+Highlight: mânia trecuse şi că pacea începea, - tot aşa după <em>Golgota</em> S-a pogorât Porumbelul Cincizecimii, Duhul Sfânt
+
+Score: 14.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Prin vremi vedem
+Type: poezie
+Author: Traian Dorz
+Highlight: Prin vremi vedem cum urcă spre <em>Golgota</em> Trecutul
+Highlight: Prin vremi vedem cum urcă spre <em>Golgota</em> furtuna
+Highlight: ... Prin vremi vedem urcându-şi spre <em>Golgota</em> - fecioare
+
+Score: 14.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Va fi-n curând Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: va străluci <em>Golgota</em>, ca Soare şi Izvor,
+Highlight: O, de n-ar fi <em>Golgota</em>, - din toate pân-acum
+Highlight: Slăvită fii <em>Golgota</em>, etern Izvor divin,
+
+Score: 12.666666
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: A intra în Oaste înseamnă a ieşi din lume
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: tabără... Era şi aceasta o predică vie, că la <em>Golgota</em> poţi ajunge numai ieşind afară din tabără, afară
+Highlight: ascultând îndemnul ap. Pavel, noi am ieşit la <em>Golgota</em>, afară din tabără. Ni s-au deschis ochii şi ni
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 18 - Frumoasele noastre Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: ultimul ceas al biruinţei Sale asupra răului, pe <em>Golgota</em>. Dar tocmai acel ceas a fost ultimul din zvârcolirile
+Highlight: privirile şi inimile noastre ale tuturor spre <em>Golgota</em>, spre vieţuirea în Hristos şi pentru El...
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: când e pământul acesta şi până va fi - n-a avut <em>Golgota</em> un paznic atât de vigilent şi atât de viteaz ca
+Highlight: diavol. E lupta ce s-a gătat cu biruinţa de pe <em>Golgota</em>. În lupta aceasta noi nu luăm parte. E o luptă
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: De la Nunta cea din Cana
+Type: poezie
+Author: Traian Dorz
+Highlight: pân-la <em>Golgota</em> Isuse,
+Highlight: ... Dar pe <em>Golgota</em>, la Cruce,
+
+Score: 12.666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
+Type: articol
+Author: Traian Dorz
+Highlight: Pe <em>Golgota</em>, câţi n-au văzut lucrurile cutremurătoare, întunericul
+Highlight: Domnul Isus, spre Crucea Lui răscumpărătoare, spre <em>Golgota</em> Lui ispăşitoare a păcatului nostru, spre Jertfa
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Marile noastre răspunderi
+Type: articol
+Author: Traian Dorz
+Highlight: Minune de la <em>Golgota</em>!
+Highlight: Toate vin de pe <em>Golgota</em>, şi duc tot
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: O, Betleem, o, Betleem...
+Type: poezie
+Author: Traian Dorz
+Highlight: O <em>Golgota</em>, o, <em>Golgota</em>, - nălţime-nfricoşată
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: O, Betleem, o, Betleem...
+Type: poezie
+Author: Traian Dorz
+Highlight: O <em>Golgota</em>, o, <em>Golgota</em>, - nălţime-nfricoşată
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: O, Dragostea Ta, Dragostea Ta...
+Type: articol
+Author: Traian Dorz
+Highlight: 5 - Ci mi-ai arătat <em>Golgota</em>. Mi-ai arătat Crucea Golgotei Tale, pe care Tu
+Highlight: 22 - Ceea ce ai cucerit Tu pentru mine pe <em>Golgota</em>,
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: atât de Mare şi Sfânt al Sângelui Crucii de pe <em>Golgota</em>, al Sângelui Scump şi mântuitor al Fiului Său Isus
+Highlight: cumplitul calvar al celei mai grele şi mai lungi <em>golgote</em> din viaţa mea de până atunci. Fiindcă, dacă până
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Abia vă văd de lacrimi
+Type: poezie
+Author: Traian Dorz
+Highlight: Cum staţi privind <em>Golgota</em> de ziduri şi de groază
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Abia vă văd de lacrimi
+Type: poezie
+Author: Traian Dorz
+Highlight: Cum staţi privind <em>Golgota</em> de ziduri şi de groază
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Acum din nou...
+Type: poezie
+Author: Traian Dorz
+Highlight: pe <em>Golgota</em>, - şi-acolo, cu Sânge le-a spălat...
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Acum las lumea şi Mă duc la Tatăl
+Type: articol
+Author: Traian Dorz
+Highlight: Încheierea de pe <em>Golgota</em> fiind cunoscută şi acceptată mai dinainte de a
+
+Score: 9.5
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Apa din stâncă
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: În clipa când sus pe <em>Golgota</em>, a răsunat cuvântul:
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Bine e când noaptea trece
+Type: poezie
+Author: Traian Dorz
+Highlight: Numai Cel străpuns pe <em>Golgota</em>!
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: Jertfă pe Sine Însuşi, pe altarul Crucii de pe <em>Golgota</em>, pentru ispăşirea tuturor păcatelor întregii lumi
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 10 - Va veni un altul...
+Type: articol
+Author: Traian Dorz
+Highlight: încleştare uriaşă care urma să se decidă mâine pe <em>Golgota</em> pentru Hristos.
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: La <em>Golgota</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: adevărată şi bună pentru Jertfa Măreaţă a Crucii de pe <em>Golgota</em>, atât de puţin cunoscută şi preţuită la noi. Batjocoritorii
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
+Type: articol
+Author: Traian Dorz
+Highlight: omenesc Cincizecimea este un hotar de viaţă nouă. <em>Golgota</em> a iscălit zapisul împăcării noastre cu Dumnezeu
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 19 - Al treilea februarie
+Type: articol
+Author: Traian Dorz
+Highlight: cu El în mijloc şi Mama Lui urmându-L suia spre <em>Golgota</em> - cred că mulţi privitori de pe margini vor fi
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: capitolul din urmă, capitolul cel mai greu: peste <em>Golgota</em>, la mântuire... Şi peste calvar la biruinţă.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight: Începând cu Jertfa Singurului Său Fiu, jertfit pe <em>Golgota</em> mai înaintea lui Abel chiar (pentru că în clipa
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeu nu iartă păcatul ci-l pedepseşte. La <em>Golgota</em> în Crucea şi Jertfa Fiului Său, Mântuitorul nostru
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: urcuşului cumplit pe calvarul scărilor ca înspre <em>Golgota</em> mea.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
+Type: articol
+Author: Traian Dorz
+Highlight: privirile noastre trebuie să se ridice sus spre <em>Golgota</em>, spre Jertfa cea mare a Crucii. Isus a suferit
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: La <em>Golgota</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: ispăşiri s-au văzut din Ziua Marii Ispăşiri de pe <em>Golgota</em> - şi până astăzi! Părinţi care au ispăşit păcatele
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 3 - Marea cernere
+Type: articol
+Author: Traian Dorz
+Highlight: lor calea Crucii cu toate popasurile ei până la <em>Golgota</em>... Iar dincolo de ea, strălucirea nebănuită a unei
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 4 - Spre altarul său
+Type: articol
+Author: Traian Dorz
+Highlight: hotărât spre Ierusalimul către care suia - şi înspre <em>Golgota</em> care îl aştepta acolo.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight: acolo unde spuneam că îmi aştept urcuşul spre <em>Golgota</em>, spre Calvar... Aştept să fiu chemat la judecată
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 6 - Strălucita sărbătoare de Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: din lumea aceasta. Mi se părea că sunt aievea pe <em>Golgota</em>, acolo la picioarele Crucii Mântuitorului meu Isus
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 8 - Aşezarea temeliilor veşnice
+Type: articol
+Author: Traian Dorz
+Highlight: Jertfa Lui Isus Cel Răstignit. Crucea Lui de pe <em>Golgota</em> a făcut - şi va face - lucrarea mântuirii noastre
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Ce minunat era atunci...
+Type: articol
+Author: Traian Dorz
+Highlight: 24 - <em>Golgota</em> te va dezbrăca de carne,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Cea mai frumoasă Jertfă
+Type: articol
+Author: Traian Dorz
+Highlight: nu le-am fi ştiut dacă n-ar fi fost Patima şi <em>Golgota</em> Ta.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: Cutează şi priveşte
+Type: poezie
+Author: Traian Dorz
+Highlight: spre <em>Golgota</em>, la Preţul Iertării, Răstignit!
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Cutează şi priveşte
+Type: poezie
+Author: Traian Dorz
+Highlight: spre <em>Golgota</em>, la Preţul Iertării, Răstignit!
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Cuvintele pe care Mi le-ai dat Tu
+Type: articol
+Author: Traian Dorz
+Highlight: pe urmele Domnului Isus spre <em>Golgota</em>.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Când eşti dat în mâna...
+Type: poezie
+Author: Traian Dorz
+Highlight: ce-a ales-o pe <em>Golgota</em> Domnul tău.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Când eşti dat în mâna...
+Type: poezie
+Author: Traian Dorz
+Highlight: ce-a ales-o pe <em>Golgota</em> Domnul tău.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Când eşti dat în mâna...
+Type: poezie
+Author: Traian Dorz
+Highlight: ce-a ales-o pe <em>Golgota</em> Domnul tău.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Când faţa eu mi-o-ntorc
+Type: poezie
+Author: Traian Dorz
+Highlight: Datorită Crucii lui Hristos de pe <em>Golgota</em>, nu ne mai temem de lupul-satana, căci Îl avem
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Când suprema suferinţă
+Type: poezie
+Author: Traian Dorz
+Highlight: când Taborul şi <em>Golgota</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Cânta o pasăre măiastră
+Type: poezie
+Author: Traian Dorz
+Highlight: de <em>Golgota</em> duios cânta
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Cânturile mele...
+Type: poezie
+Author: Traian Dorz
+Highlight: pân-la <em>Golgota</em> Durerii
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Cântările Dintâi
+Type: poezie
+Author: Traian Dorz
+Highlight: LA <em>GOLGOTA</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cât puteţi bucuraţi-vă iară!
+Type: poezie
+Author: Traian Dorz
+Highlight: şi <em>Golgota</em> va cere vieţi,
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Cât puteţi, bucuraţi-vă!
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi <em>Golgota</em> va cere vie\u0163i, "
-]
-}
+Highlight: şi <em>Golgota</em> va cere vieţi,
 
-Score: 2.0
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Când suprema suferinţă
+Book: Hristos - Învierea noastră
+Title: Cât îl iubea de mult!
+Type: articol
+Author: Traian Dorz
+Highlight: priveşte la Crucea Domnului tău Isus Hristos, de pe <em>Golgota</em> pătimirii Lui,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Căutând mereu
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nd Taborul \u015fi <em>Golgota</em>"
-]
-}
+Highlight: lui Moria şi <em>Golgota</em>,
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Crucea Mântuitoare
-Title: Crucea Mântuitoare
-Type: articol
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: De Sus, din dragostea Golgotei
+Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"M\u00e2ntuitoare a Domnului t\u0103u Isus Hristos, de pe <em>Golgota</em> p\u0103timirii Lui, "
-]
-}
+Highlight: şi dac-avem <em>Golgota</em> Ţel
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Mărturisirea Strălucită
-Title: Aşteptarea învierii noastre
-Type: articol
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: De hotarele Luminii
+Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cencheierea de la <em>Golgota</em> fiind cunoscut\u0103 \u015fi acceptat\u0103 mai dinainte de a"
-]
-}
+Highlight: Mi-am dus crucea cu credinţă, pân-la <em>Golgota</em> suind
 
-Score: 2.0
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: De la nunta cea din Cana
+Type: poezie
+Author: Traian Dorz
+Highlight: pân-la <em>Golgota</em> Isuse
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: De-atunci, de când...
+Type: poezie
+Author: Traian Dorz
+Highlight: sub Crucea de pe <em>Golgota</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Doamne-n Săptămâna asta...
+Type: poezie
+Author: Traian Dorz
+Highlight: Sus, pe <em>Golgota</em> Isuse, când pe Crucea-au să Te-ntindă,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Două mii de ani Isuse...
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-ar fi astăzi pe <em>Golgota</em> mult mai trist
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Drumul Crucii
+Type: poezie
+Author: Traian Dorz
+Highlight: Iată drumul spre <em>Golgota</em>, ducând Crucea chinuit
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Eu eram copil Isuse...
+Type: poezie
+Author: Traian Dorz
+Highlight: Tu mi-ai arătat <em>Golgota</em>
+
+Score: 9.5
 Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Facerea şi Început
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nou, prin r\u0103scump\u0103rarea Jertfei Crucii, ca prin <em>Golgota</em> noastr\u0103 - \u00een via\u0163a noastr\u0103 - \u00een via\u0163a noastr\u0103 a"
-]
-}
+Highlight: nou, prin răscumpărarea Jertfei Crucii, ca prin <em>Golgota</em> noastră - în viaţa noastră - în viaţa noastră a
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Înţelepciunea şi nebunia
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Frumos eşti Drag Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: când străluceşti pe <em>Golgota</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Iar îmi scrii măicuţă...
+Type: poezie
+Author: Traian Dorz
+Highlight: De la Betleem şi pân-la <em>Golgota</em>
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Isus... a mers spre ei
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Seara slavei \u00eencepe de la <em>Golgota</em>. "
-]
-}
+Highlight: Mântuitorul nostru şi până la moartea Sa de pe <em>Golgota</em>, urmărindu-L pe El pas cu pas, vom mai avea de
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Învăţători şi ucenici
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Isuse, când Te-am ascultat
+Type: poezie
+Author: Traian Dorz
+Highlight: la <em>Golgota</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Izbânda duhului luminii
+Type: poezie
+Author: Traian Dorz
+Highlight: cu-ntreagă-ţi <em>Golgota</em> suită
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"acceptarea isp\u0103\u015firii din Ghe\u0163imani \u015fi \u00eemplinirea ei pe <em>Golgota</em>. "
-]
-}
+Highlight: fost un adânc credincios. În acest tablou de pe <em>Golgota</em>, se văd o mare mulţime de oameni în jurul Crucii
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Unire şi suferinţă
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"alearg\u0103 la <em>Golgota</em> \u015fi cazi sub Crucea R\u0103scump\u0103r\u0103toare a lui Hristos"
-]
-}
+Highlight: Adică în puterea Crucii şi a Jertfei Sale de pe <em>Golgota</em> prin care El a câştigat marea şi definitiva Lui
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Răsplătirea şi pedeapsa
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 28-a după Rusalii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O, dac\u0103 \u00eenc\u0103 nu L-ai aflat, prive\u015fte acum spre <em>Golgota</em> la Crucea Lui \u00eens\u00e2ngerat\u0103 pe care a murit El ca"
-]
-}
+Highlight: Din clipa biruinţei de pe <em>Golgota</em>, Crucea lui Hristos are o putere şi o strălucire
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Lumina primită şi dată
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" unde Legea s-a \u00eent\u00e2lnit cu Harul \u015fi Sinai cu <em>Golgota</em>, - toate acestea s-au \u00eemplinit \u00een Hristos. "
-]
-}
+Highlight: oamenilor prin Jertfa Ispăşitoare a Crucii de pe <em>Golgota</em>? Jertfa pe care a adus-o în locul nostru al tuturor
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Acum şi atunci
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Golgota</em> este cu at\u00e2t mai \u00eenalt\u0103 dec\u00e2t Sinai, cu c\u00e2t Harul"
-]
-}
+Highlight: Şi n-am fost nici în Gheţimani, nici pe <em>Golgota</em>, nici pe Cruce în cuie, cu cunună de spini pe cap
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Răsplata Ascultării
-Title: Semnele şi minunile
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a a Postului Mare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"un alt semn. \u015ei de nici o alt\u0103 minune afar\u0103 de <em>Golgota</em>. "
-]
-}
+Highlight: la Sinai, Muntele jertfei lui Moise, şi până la <em>Golgota</em>, Muntele Jertfei lui Hristos, - lanţul Munţilor
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
+Type: articol
+Author: Traian Dorz
+Highlight: Sus, pe Sinai, Sus pe Tabor, Sus pe <em>Golgota</em>, Sus în Ierusalim, în Odaia de Sus.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Liniştea răbdării noastre
+Type: poezie
+Author: Traian Dorz
+Highlight: când ai străbătut <em>Golgota</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Liniştire şi vindecare
+Type: articol
+Author: Traian Dorz
+Highlight: sufletul omului se află numai într-un singur loc: la <em>Golgota</em>, la picioarele Crucii Mântuitorului nostru Isus
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: M-apropiu de-orice muncă
+Type: poezie
+Author: Traian Dorz
+Highlight: asemeni ca de Crucea pe <em>Golgota</em> nălţată
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: M-apropiu de-orice muncă
+Type: poezie
+Author: Traian Dorz
+Highlight: asemeni ca de Crucea pe <em>Golgota</em> nălţată
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Mamă, unde-L duc?
+Type: poezie
+Author: Traian Dorz
+Highlight: - fiul meu, către <em>Golgota</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Meditaţie despre Jertfă
+Type: poezie
+Author: Traian Dorz
+Highlight: ...N-a fost niciodată altfel... Pe <em>Golgota</em>-nsângerată
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Măreţia şi cuprinderea
+Type: articol
+Author: Traian Dorz
+Highlight: După ce L-au înălţat pe <em>Golgota</em> au recunoscut iudeii că El este Trimesul lui Dumnezeu
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Noi ştim o Jertfă...
+Type: poezie
+Author: Traian Dorz
+Highlight: Prin Jertfa Crucii pe <em>Golgota</em>,
 

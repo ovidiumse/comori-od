@@ -1,1481 +1,922 @@
-+----------------------------------------------------------+-----------------+----------------------------+----------------------------+---------+
-| Titlu                                                    | Author          | Tip                        | Carte                      | Volum   |
-+----------------------------------------------------------+-----------------+----------------------------+----------------------------+---------+
-| Unde este poezia?                                        | Traian Dorz     | Semănaţi Cuvântul Sfânt    | Cugetări Nemuritoare       | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                   | Traian Dorz     | Istoria unei Jertfe vol. 1 | Istoria unei Jertfe        | articol |
-| Cap. 15 - Un An Nou Fericit                              | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                   | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 17 - Vin rândurile noi                              | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 4 - Anul următor                                    | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 27 - Pe drumul ales                                 | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 29 - Ne apropiem de Ţărm                            | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Experienţa şi cântarea                                   | Traian Dorz     | Semănaţi Cuvântul Sfânt    | Cugetări Nemuritoare       | articol |
-| Ceea ce lipseşte sufletului                              | Traian Dorz     | Semănaţi Cuvântul Sfânt    | Cugetări Nemuritoare       | articol |
-| Cap. 8 - Marele necaz salvator                           | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                     | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 9 - În vremea aceea...                              | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 27 - Întristarea cea binecuvântată                  | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor               | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 11 - Semnele Oastei Domnului                        | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 26 - Limpezirea apelor adânci                       | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 5 - Necazuri şi speranţe                            | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Curajul şi lucrarea                                      | Traian Dorz     | Dorim să fim               | Cugetări Nemuritoare       | articol |
-| Nevinovăţia şi timiditatea                               | Traian Dorz     | Dorim să fim               | Cugetări Nemuritoare       | articol |
-| Cap. 5 - În noaptea aceea...                             | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Semănat şi seceriş                                       | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Să nu uităm în rugăciune                                 | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Talanţii şi cetăţile                                     | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Cap. 13 - Jugul, sarcina şi crucea                       | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 10 - Pe drumul Crucii                               | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 6 - Alte amare adevăruri                            | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 29 - Anul jubiliar 1988                             | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 6 - Între două judecăţi                             | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Ceea ce ne dă Hristos                                    | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Pământ şi Cer                                            | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Cap. 9 - A doua judecată                                 | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                   | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Lucrarea Duhului Sfânt                                   | Traian Dorz     | Semănaţi Cuvântul Sfânt    | Cugetări Nemuritoare       | articol |
-| Să nu pierdem legătura                                   | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Frumosul şi greul început                                | Traian Dorz     | Credinţa Încununată        | Cugetări Nemuritoare       | articol |
-| Cap. 10 - Va veni un altul...                            | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 13 - E poate ultima-ncercare...                     | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 11 - Răscrucea Isus                                 | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 21 - La 25 de ani...                                | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Tineretul creator                                        | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Vremurile de Har                                         | Traian Dorz     | Credinţa Încununată        | Cugetări Nemuritoare       | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                  | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 7 - Printre leu şi printre urs                      | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                      | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 15 - Micii contemporani ai marilor oameni           | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                    | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 22 - Al doilea 2-4-2                                | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 15 - Al doilea foc                                  | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 17 - Ziua a doua                                    | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 1 - Înfricoşata lepădare                            | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 19 - Mereu morminte noi                             | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 23 - Cuvânt Testamentar                             | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 28 - Alte întristări binefăcătoare                  | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 2 - Istoria unei Jertfe...                          | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 5 - Întâia judecată                                 | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cea mai urgentă nevoie                                   | Traian Dorz     | Semănaţi Cuvântul Sfânt    | Cugetări Nemuritoare       | articol |
-| Cântarea de la Marea Roşie                               | Pr. Iosif Trifa | Spre Canaan                | Spre Canaan                | articol |
-| Cap. 30 - Alte adevăruri noi                             | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 31 - O altă judecată                                | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Totul în Hristos                                         | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Puterea şi primirea ei                                   | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Colaborarea în Domnul                                    | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Curăţia şi creaţia                                       | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-| Vol. 1                                                   | Traian Dorz     | Cântări Nemuritoare vol. 1 | Cântări Nemuritoare        | poezie  |
-| Cap. 8 - Al şaptelea foc                                 | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                    | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 18 - La 25 de ani                                   | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 19 - Şi binele trebuie plătit                       | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                   | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 23 - Şi ultimul 2                                   | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Cap. 16 - Din cetate în cetate...                        | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Cap. 2 - A treia zi istorică                             | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 7 - Aşa ne-au judecat                               | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 12 - Toate lucrează spre bine                       | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 13 - Pe urmele profetului                           | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Al treilea cuvânt                                        | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | poezie  |
-| Cap. 1 - Cel mai frumos Isus                             | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                  | Traian Dorz     | Istoria unei Jertfe vol. 3 | Istoria unei Jertfe        | articol |
-| Cap. 22 - Peregrinările soliei                           | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 24 - Pânza care se ţese                             | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 26 - Fântânile certei noastre                       | Traian Dorz     | Istoria unei Jertfe vol. 4 | Istoria unei Jertfe        | articol |
-| Cap. 13 - Frumosul tineret creştin                       | Traian Dorz     | Istoria unei Jertfe vol. 1 | Istoria unei Jertfe        | articol |
-| Cap. 16 - Leacul dureroasei sfâşieri                     | Traian Dorz     | Istoria unei Jertfe vol. 1 | Istoria unei Jertfe        | articol |
-| Cap. 18 - Frumosul an 1930                               | Traian Dorz     | Istoria unei Jertfe vol. 1 | Istoria unei Jertfe        | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele              | Traian Dorz     | Istoria unei Jertfe vol. 1 | Istoria unei Jertfe        | articol |
-| Cap. 23 - La zece ani de Oaste                           | Traian Dorz     | Istoria unei Jertfe vol. 1 | Istoria unei Jertfe        | articol |
-| Cap. 4 - În virtutea frumosului avânt...                 | Traian Dorz     | Istoria unei Jertfe vol. 2 | Istoria unei Jertfe        | articol |
-| Bătrâneţea şi uitarea                                    | Traian Dorz     | Dorim să fim               | Cugetări Nemuritoare       | articol |
-| Lumină şi întuneric                                      | Traian Dorz     | Şi acum să facem           | Cugetări Nemuritoare       | articol |
-| Talentele şi aflarea lor                                 | Traian Dorz     | Şi acum să facem           | Cugetări Nemuritoare       | articol |
-| Taina Evangheliei                                        | Traian Dorz     | Semănaţi Cuvântul Sfânt    | Cugetări Nemuritoare       | articol |
-| Cap. 9 - Pe drumul crucii mele                           | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Începutul minunilor mele                                 | Traian Dorz     | Prietenul Tinereţii mele   | Cugetări Nemuritoare       | articol |
-| Cap. 28 - Necazurile din lungul drumului                 | Traian Dorz     | Hristos - Marturia mea     | Hristos - Marturia mea     | articol |
-| Îţi mulţumim Isuse Doamne                                | Traian Dorz     | Cântări Nemuritoare vol. 1 | Cântări Nemuritoare        | poezie  |
-| Mai sunt multe...                                        | Traian Dorz     | Hristos - Slava noastră    | Meditații la Ev. după Ioan | articol |
-| Marile adevăruri mântuitoare                             | Traian Dorz     | Credinţa Încununată        | Cugetări Nemuritoare       | articol |
-| Întâi să fim                                             | Traian Dorz     | Întâi să fim               | Cugetări Nemuritoare       | articol |
-+----------------------------------------------------------+-----------------+----------------------------+----------------------------+---------+
++-------------------------------------------------------------------------+---------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
+| Titlu                                                                   | Occurrences                                             | Author          | Tip                          | Carte                        | Volum   |
++-------------------------------------------------------------------------+---------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
+| Cap. 12 - Naşterea imnului duhovnicesc                                  | {'poezie', 'Poezie', 'poeziei', 'poezia', 'Poezia'}     | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 15 - Un An Nou Fericit                                             | {'poezia', 'poezie', 'Poezie'}                          | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 8 - Marele necaz salvator                                          | {'poezie', 'poezii', 'poezia'}                          | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                    | {'poezie', 'poeziile'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                                  | {'poezie', 'poezii', 'poeziei'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 17 - Vin rândurile noi                                             | {'poezie', 'poeziei', 'Poezia', 'poezia'}               | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                             | {'poezii', 'poezie', 'poezia', 'poeziile'}              | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                              | {'poezie', 'poezii', 'poeziile'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 4 - Anul următor                                                   | {'poezii', 'poezie', 'poeziile'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 22 - Al doilea 2-4-2                                               | {'poezie'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 11 - Semnele Oastei Domnului                                       | {'poezie', 'poezii', 'poezia', 'poeziilor', 'poeziile'} | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 26 - Limpezirea apelor adânci                                      | {'poezie', 'poeziilor', 'poeziile', 'Poezia'}           | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 5 - În noaptea aceea...                                            | {'poezie', 'poezia', 'poeziei', 'poezii'}               | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                | {'poezie', 'poeziile', 'poezii'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 10 - Pe drumul Crucii                                              | {'poezie', 'poezia', 'poezii', 'poeziilor'}             | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 13 - Jugul, sarcina şi crucea                                      | {'poezie', 'poeziile', 'poezii'}                        | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 29 - Anul jubiliar 1988                                            | {'poezie', 'poezii'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 6 - Între două judecăţi                                            | {'poezie', 'poeziile', 'poezii'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                  | {'poezie', 'poezii'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                            | {'poezie', 'poezia'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                            | {'poezie', 'poeziile'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 28 - Alte întristări binefăcătoare                                 | {'poezie', 'poezii'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                | {'poezie', 'poeziei'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                 | {'poezie', 'poezia'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Al treilea cuvânt                                                       | {'poezie'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | poezie  |
+| Cap. 13 - Pe urmele profetului                                          | {'poezie'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 16 - Leacul dureroasei sfâşieri                                    | {'poezie'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                          | {'poezie'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Eu am văzut...                                                          | {'poezie'}                                              | Traian Dorz     | Hristos - Dumnezeul nostru   | Meditații la Ev. după Ioan   | articol |
+| Iertare şi iubire                                                       | {'poezie'}                                              | Traian Dorz     | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
+| Cap. 27 - Pe drumul ales                                                | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                           | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 27 - Întristarea cea binecuvântată                                 | {'poezii', 'poeziile', 'poeziei'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 5 - Necazuri şi speranţe                                           | {'poezia', 'poezii', 'poeziile', 'poeziilor'}           | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                           | {'poeziei', 'poeziile', 'poezii'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                | {'poeziile', 'poezii', 'poezia'}                        | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 10 - Va veni un altul...                                           | {'poezii', 'poeziile'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                | {'poezii', 'poeziei', 'poezia'}                         | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                    | {'poezii', 'poezia'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 21 - La 25 de ani...                                               | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 1 - Înfricoşata lepădare                                           | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                     | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 15 - Al doilea foc                                                 | {'poezii', 'poeziilor'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 15 - Micii contemporani ai marilor oameni                          | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 17 - Ziua a doua                                                   | {'poezia', 'poezii'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                         | {'poezii', 'Poezia'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                   | {'poeziile', 'poezia'}                                  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 30 - Alte adevăruri noi                                            | {'poezii', 'poeziile'}                                  | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 31 - O altă judecată                                               | {'poezii', 'Poezii'}                                    | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 7 - Printre leu şi printre urs                                     | {'poezia'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cântarea de la Marea Roşie                                              | {'poezii', 'poezia'}                                    | Pr. Iosif Trifa | Spre Canaan                  | Spre Canaan                  | articol |
+| Vol. 1                                                                  | {'poezii', 'Poeziile'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
+| Bun rămas, mă duc!                                                      | {'Poezii'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 4   | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Cel mai frumos Isus                                            | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                            | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Cel mai bun misionar                                          | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                   | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 12 - Toate lucrează spre bine                                      | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                                      | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 16 - Din cetate în cetate...                                       | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                              | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 18 - La 25 de ani                                                  | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 19 - Şi binele trebuie plătit                                      | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 2 - A treia zi istorică                                            | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                             | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                  | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 22 - Peregrinările soliei                                          | {'poeziile'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 23 - Şi ultimul 2                                                  | {'poeziei'}                                             | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 24 - Pânza care se ţese                                            | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 26 - Fântânile certei noastre                                      | {'poezia'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 28 - Necazurile din lungul drumului                                | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                 | {'poeziile'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                | {'poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 2   | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                              | {'Poezii'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                | {'poezia'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cap. 9 - Pe drumul crucii mele                                          | {'poezii'}                                              | Traian Dorz     | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Comorile care rămân veşnic                                              | {'Poeziei'}                                             | Traian Dorz     | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
+| Din Preistorie coboară                                                  | {'Poezia'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon) | {'poeziile'}                                            | Traian Dorz     | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| Niciodată n-a vorbit cineva astfel...                                   | {'Poeziei'}                                             | Traian Dorz     | Hristos - Învăţătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Ucenicul şi prigonitorul                                                | {'Poeziei'}                                             | Traian Dorz     | Calea Bunului Urmaş          | Cugetări Nemuritoare         | articol |
+| Vol. 6                                                                  | {'poezii'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 6   | Cântări Nemuritoare          | poezie  |
+| Vol. 7                                                                  | {'poezii'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 7   | Cântări Nemuritoare          | poezie  |
+| Vol. 8                                                                  | {'poezii'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
+| Vol. 9                                                                  | {'poezii'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 9   | Cântări Nemuritoare          | poezie  |
+| Începutul minunilor mele                                                | {'poeziei'}                                             | Traian Dorz     | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
+| Îţi mulţumim Isuse Doamne                                               | {'Poeziile'}                                            | Traian Dorz     | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
++-------------------------------------------------------------------------+---------------------------------------------------------+-----------------+------------------------------+------------------------------+---------+
 Searching Poezie using http://localhost:9000...
-Got 128 hits:
-Score: 5.4285717
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Unde este poezia?
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1 - Unde este <em>poezia</em> pe care v-o ofer\u0103 lumea ast\u0103zi vou\u0103 celor ce c\u0103uta\u0163i \u00een ea iubirea, frumosul, adev\u0103rul",
-"lumea \u015fi arta ei sub numele divin al <em>poeziei</em>! ",
-"2 - Ce este <em>poezia</em> lumeasc\u0103? O \u00eeng\u0103imare de cuvinte f\u0103r\u0103",
-"7 - C\u00e2ntarea \u015fi <em>poezia</em> sunt apoi cre\u015fterea \u015fi \u00een\u0103l\u0163area, conduc\u00e2nd maturizarea",
-"Tinere\u0163ea, <em>poezia</em>, c\u00e2ntarea"
-],
-"title": [
-"Unde este <em>poezia</em>?"
-]
-}
-
-Score: 3.9629629
+Got 87 hits:
+Score: 18.42824
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 12 - Naşterea imnului duhovnicesc
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenc\u0103 multe <em>poezii</em>. Mai ales \u00een anii de la \u00eenceputul Oastei c\u00e2nd \u00eenc\u0103 nu se n\u0103scuse <em>poezia</em> religioas\u0103",
-"nu se putea asculta obi\u015fnuit dec\u00e2t <em>poezie</em> \u015fi muzic\u0103 lumeasc\u0103. <em>Poezie</em> \u015fi muzic\u0103 cu adev\u0103rat cre\u015ftin\u0103 \u015fi",
-"noi. Poporul nostru, poporul <em>poeziei</em> \u015fi c\u00e2ntecului nu avea nici <em>poezie</em> nici c\u00e2ntec pentru Hristos. A",
-"\u201cA mai venit o <em>poezie</em> pentru cei din Oastea Domnului. \u00cen nr. 41 am publicat o <em>poezie</em> - cea dint\u00e2i - intrat\u0103",
-" a atras \u015fi <em>poezia</em> popular\u0103 \u00een slujba Domnului. Minunata <em>poezie</em> de al\u0103turi e o dovad\u0103 gr\u0103itoare"
-]
-}
+Highlight: nu se putea asculta obişnuit decât <em>poezie</em> şi muzică lumească. <em>Poezie</em> şi muzică cu adevărat creştină şi
+Highlight: “A mai venit o <em>poezie</em> pentru cei din Oastea Domnului. În nr. 41 am publicat o <em>poezie</em> - cea dintâi - intrată
+Highlight: noi. Poporul nostru, poporul <em>poeziei</em> şi cântecului nu avea nici <em>poezie</em> nici cântec pentru Hristos. A
+Highlight:  a atras şi <em>poezia</em> populară în slujba Domnului. Minunata <em>poezie</em> de alături e o dovadă grăitoare
+Highlight: “Poporul nostru este un popor iubitor de <em>poezie</em> şi de cântare. <em>Poezia</em> şi cântarea este un dar special al poporului
+Highlight: nici pe departe <em>poezia</em> şi cântarea românului - şi totuşi viaţa lor este plină de <em>poezie</em> şi cântarea religioasă
 
-Score: 3.875
+Score: 17.332386
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 15 - Un An Nou Fericit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"arte frumoase: <em>poezia</em> \u015fi c\u00e2ntarea. Biblia con\u0163ine nenum\u0103rate opere alese de c\u00e2ntare \u015fi <em>poezie</em>. \u00cen Biblie",
-"dar <em>poezia</em> \u015fi c\u00e2ntarea nu aduc dec\u00e2t armonie, unitate, \u00een\u0103l\u0163are, desf\u0103tare \u015fi pace. Numai <em>poezia</em> \u015fi c\u00e2ntarea",
-"numai \u00een zorii zilei de Anul Nou. Cuv\u00e2nt\u0103rile, <em>poeziile</em> \u015fi c\u00e2nt\u0103rile Domnului sunt \u00een astfel de nop\u0163i",
-"melodii, apoi am cuprins \u015fi pe cei ce compuneau <em>poezii</em>... Pe m\u0103sur\u0103 ce aceste adun\u0103ri ale noastre s-au",
-"Arad cam din 1982, cu organizarea unor seri de <em>poezie</em> \u015fi c\u00e2nt\u0103ri, din timp \u00een timp, \u015fi mai ales cu s\u0103rb\u0103toarea"
-]
-}
+Highlight: arte frumoase: <em>poezia</em> şi cântarea. Biblia conţine nenumărate opere alese de cântare şi <em>poezie</em>. În Biblie
+Highlight: Arad cam din 1982, cu organizarea unor seri de <em>poezie</em> şi cântări, din timp în timp, şi mai ales cu sărbătoarea
+Highlight: şi onorabil fel. De aceea fie că vorbim despre <em>poezie</em>, fie despre cuvânt, fie mai ales despre cântare
+Highlight: Biblie, prima <em>poezie</em>-cântare scrisă pe larg este cea de la
+Highlight: Lumea a fost creată numai pentru <em>poezie</em> şi cântare, căci acestea sunt fiicele dragostei
+Highlight: viaţa viitoare vorbesc despre Iubire, despre <em>Poezie</em> şi despre Cântare. Noi trăim pentru ele chiar de acum
 
-Score: 3.8095238
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 11 - Ce minunat lucrează Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"noastre <em>poezii</em> religioase, alte zeci de nume noi \u015fi tinere care s-au impus pe t\u0103r\u00e2mul <em>poeziei</em>, mai harnice",
-"poetic. Se adunaser\u0103 la mine zeci de caiete cu <em>poezii</em>, unele cuprinz\u00e2nd frumoase \u015fi talentate scrieri",
-"talenta\u0163i de la care am selectat c\u00e2te o seam\u0103 de <em>poezii</em> din cele mai reu\u015fite \u015fi rev\u0103z\u00e2ndu-le c\u00e2te pu\u0163in",
-"Prima antologie a tinerei noastre <em>poezii</em> religioase, Vol. 1 ",
-"zeci de <em>poezii</em> alese din crea\u0163ia lui. \u00cen cuv\u00e2ntul introductiv cu titlu  Frumoasa"
-]
-}
-
-Score: 3.8095238
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"tocmai \u00eenv\u0103\u0163\u0103tura \u015fi \u00eensu\u015firea <em>poeziei</em> pentru noi \u00een\u015fine are \u00eent\u00e2iul pre\u0163. <em>Poezia</em> este \u015fi ea tot Cuv\u00e2nt al",
-"zi a Prim\u0103verii. Prim\u0103vara \u00eenseamn\u0103: tinere\u0163e, <em>poezie</em>, c\u00e2ntare. Ziua aceasta este cu deosebire o zi \u00een",
-"este Acela\u015fi Ieri, Azi \u015fi \u00een Veac. Tinere\u0163ea Sa, <em>poezia</em> Sa \u015fi c\u00e2ntarea Sa sunt ca \u015fi El. Noi le afl\u0103m toate",
-"este o Prim\u0103var\u0103 ve\u015fnic\u0103, o tinere\u0163e ve\u015fnic\u0103, o <em>poezie</em> \u015fi o c\u00e2ntare ve\u015fnic\u0103. \u015ei noi de aceea suntem ferici\u0163i",
-"at\u00e2t trupe\u015fte c\u00e2t mai ales suflete\u015fte? Unde este <em>poezia</em> pe care v-o ofer\u0103 lumea ast\u0103zi, vou\u0103 celor ce c\u0103uta\u0163i"
-]
-}
-
-Score: 3.7777777
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 4 - Anul următor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"potrivite cu textele din caietul de <em>poezii</em>, <em>poezie</em>-desen, <em>poezie</em>-desen... Nu mai era nevoie dec\u00e2t s\u0103",
-"Unele dintre <em>poezii</em> din colec\u0163ia \u201cC\u00e2nt\u0103ri Nemuritoare\u201d spre surprinderea",
-"legat\u0103 \u00een care erau selec\u0163ionate aproape 1.200 de <em>poezii</em> din primele caiete din seria asta. Nu \u015ftiu dup\u0103",
-"culegere, chiar unele dintre cele mai frumoase <em>poezii</em> con\u0163inute \u00een acele caiete. Am str\u00e2ns cele r\u0103mase",
-"\u00eenceput s\u0103 \u00eenve\u0163e pe de rost mereu mai multe dintre <em>poeziile</em> acestea \u015fi s\u0103 le recite pe la adun\u0103ri, prin biserici"
-]
-}
-
-Score: 3.764706
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"revist\u0103, la o editur\u0103... De ce nu vrei s\u0103 scrii d-ta <em>poezii</em> patriotice, sociale, politice? - Ai c\u00e2\u015ftiga mii",
-"editura Oastei Domnului din Sibiu primul volum de <em>poezii</em> religioase ",
-"\u00cen anul 1937, mi-a ap\u0103rut al doilea volum de <em>poezii</em> religioase tot la Sibiu ",
-"tipografia Diecezan\u0103 Oradea al treilea volum de <em>poezii</em> religioase ",
-"\u00cen 1939 mi-a ap\u0103rut la Cluj al patrulea volum de <em>poezii</em> religioase "
-]
-}
-
-Score: 3.764706
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"num\u0103rul de <em>poezii</em> dup\u0103 cum urmeaz\u0103: ",
-" (4224 <em>poezii</em>):",
-"Vol. 1 (420 <em>poezii</em>):",
-"Vol. 2 (313 <em>poezii</em>):",
-"Vol. 4 (320 <em>poezii</em> ilustrate pentru copii):"
-]
-}
-
-Score: 3.6923077
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Experienţa şi cântarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi au cultivat cele dou\u0103 divine daruri care sunt <em>poezia</em> \u015fi c\u00e2ntarea. ",
-"Cele mai minunate <em>poezii</em> \u015fi c\u00e2nt\u0103ri sunt con\u0163inute \u00een Biblia lui Dumnezeu",
-"4 - \u00cen Sf\u00e2nta Scriptur\u0103 prima <em>poezie</em> pus\u0103 pe melodie de c\u00e2ntare este cea din ",
-"Dumnezeu dinaintea lui \u015fi dup\u0103 el - sunt numai <em>poezii</em> \u015fi c\u00e2nt\u0103ri de laud\u0103 \u015fi recuno\u015ftin\u0163\u0103 din partea",
-"Sf\u00e2nt\u0103, \u015fi \u0162ara Sf\u00e2nt\u0103 \u015fi Istoria Sf\u00e2nt\u0103 numai de <em>poezia</em> \u015fi c\u00e2ntarea lui Dumnezeu. "
-]
-}
-
-Score: 3.6666667
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Ceea ce lipseşte sufletului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sufletului omenesc \u015fi vie\u0163ii lumii acesteia, este <em>poezia</em> \u015fi c\u00e2ntarea lui Hristos. ",
-"adun\u0103rile \u015fi bisericile noastre ar fi pline numai de <em>poezia</em> \u015fi c\u00e2ntarea adev\u0103rat\u0103, ei cu to\u0163ii \u015fi-ar procura",
-"produce dezbin\u0103ri, discu\u0163ii, divergen\u0163e... Dar <em>poezia</em> nu. Ea produce numai \u00eenc\u00e2ntare, \u00een\u0103l\u0163are \u015fi bucurie",
-"b\u0103tr\u00e2ne\u0163ii - ci cu elanul fericit al dragostei, al <em>poeziei</em>, al c\u0103ldurii Dumnezeie\u015fti pentru care se merit\u0103",
-"un om al luptei \u015fi jertfei, - este \u015fi un om al <em>poeziei</em> \u015fi al c\u00e2nt\u0103rii. Cu acestea el reu\u015fe\u015fte s\u0103 treac\u0103"
-]
-}
-
-Score: 3.6666667
+Score: 15.916666
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 8 - Marele necaz salvator
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"avem o c\u00e2ntare \u015fi o <em>poezie</em> religioas\u0103, duhovniceasc\u0103, cu adev\u0103rat cre\u015ftin\u0103. O <em>poezie</em> \u015fi o c\u00e2ntare pe m\u0103sura",
-"celor mai frumoase <em>poezii</em> cre\u015ftine\u015fti ",
-"noi, cu Oastea Domnului dorim s\u0103 facem s\u0103 \u00eenvie <em>poezia</em> \u015fi c\u00e2ntarea religioas\u0103 \u015fi cre\u015ftineasc\u0103 de care",
-"Noi vom \u00eencuraja \u015fi vom publica orice <em>poezie</em> reu\u015fit\u0103, \u00eendemn\u00e2nd la asta \u015fi prin aceste concursuri",
-"s\u0103 se nasc\u0103 \u015fi s\u0103 creasc\u0103 \u015fi \u00een poporul nostru o <em>poezie</em> \u015fi o c\u00e2ntare care s\u0103 fie cu adev\u0103rat vrednic\u0103 de"
-]
-}
+Highlight: avem o cântare şi o <em>poezie</em> religioasă, duhovnicească, cu adevărat creştină. O <em>poezie</em> şi o cântare pe măsura
+Highlight: Noi vom încuraja şi vom publica orice <em>poezie</em> reuşită, îndemnând la asta şi prin aceste concursuri
+Highlight: să se nască şi să crească şi în poporul nostru o <em>poezie</em> şi o cântare care să fie cu adevărat vrednică de
+Highlight: pe care au şi publicat-o la foaie, împreună cu o <em>poezie</em> nouă şi cu câteva cuvinte de preţuire din partea
+Highlight: celor mai frumoase <em>poezii</em> creştineşti
+Highlight: noi, cu Oastea Domnului dorim să facem să învie <em>poezia</em> şi cântarea religioasă şi creştinească de care
 
-Score: 3.6363635
+Score: 15.90909
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"glasurile tuturor \u00eentr-un singur cor ceresc. Iar <em>poeziile</em> declamate \u00een general de surorile tinere, cu lacrimi",
-"Duhul Sf\u00e2nt, c\u0103ci fie cuv\u00e2ntul, fie c\u00e2ntarea ori <em>poezia</em>, toate acestea sunt Cuv\u00e2ntul \u015fi \u00eendemnul trimis",
-"Dup\u0103 alte <em>poezii</em> \u015fi c\u00e2nt\u0103ri urmeaz\u0103 la cuv\u00e2nt dragul \u015fi bunul nostru",
-"Urmeaz\u0103 o <em>poezie</em>, apoi c\u00e2ntarea: ",
-"Se recit\u0103 o <em>poezie</em>, apoi se ridic\u0103 la cuv\u00e2nt p\u0103rintele Dumitriu de"
-]
-}
+Highlight: Urmează o <em>poezie</em>, apoi cântarea:
+Highlight: Se recită o <em>poezie</em>, apoi se ridică la cuvânt părintele Dumitriu de
+Highlight: Altă cântare, altă <em>poezie</em>, şi ia cuvântul fr. Petrică din Maramureş:
+Highlight: După o <em>poezie</em> frumoasă, se ridică la cuvânt fratele Aurel din
+Highlight: Se cântă o cântare, se spune o <em>poezie</em>, după care urmează la cuvânt fr. Suciu Vasile din
+Highlight: glasurile tuturor într-un singur cor ceresc. Iar <em>poeziile</em> declamate în general de surorile tinere, cu lacrimi
 
-Score: 3.6
+Score: 14.452381
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 11 - Ce minunat lucrează Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Frumoasa noastră <em>poezie</em> tânără
+Highlight: acum un alt nou şi frumos rod: prima antologie de <em>poezie</em> religioasă românească.
+Highlight: cântări. Scriitori nu cărţi. Când munceşti să faci o <em>poezie</em> frumoasă, este ceva. Dar când reuşeşti să faci
+Highlight: noastre <em>poezii</em> religioase, alte zeci de nume noi şi tinere care s-au impus pe tărâmul <em>poeziei</em>, mai harnice
+Highlight: poetic. Se adunaseră la mine zeci de caiete cu <em>poezii</em>, unele cuprinzând frumoase şi talentate scrieri
+Highlight: talentaţi de la care am selectat câte o seamă de <em>poezii</em> din cele mai reuşite şi revăzându-le câte puţin
+
+Score: 14.452381
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 17 - Vin rândurile noi
+Type: articol
+Author: Traian Dorz
+Highlight: zi a Primăverii. Primăvara înseamnă: tinereţe, <em>poezie</em>, cântare. Ziua aceasta este cu deosebire o zi în
+Highlight: este o Primăvară veşnică, o tinereţe veşnică, o <em>poezie</em> şi o cântare veşnică. Şi noi de aceea suntem fericiţi
+Highlight: - Să se înveţe nu numai o singură <em>poezie</em> şi apoi să se spună mereu tot asta, ca şi cum ai
+Highlight: tocmai învăţătura şi însuşirea <em>poeziei</em> pentru noi înşine are întâiul preţ. <em>Poezia</em> este şi ea tot Cuvânt al
+Highlight: este Acelaşi Ieri, Azi şi în Veac. Tinereţea Sa, <em>poezia</em> Sa şi cântarea Sa sunt ca şi El. Noi le aflăm toate
+Highlight: atât trupeşte cât mai ales sufleteşte? Unde este <em>poezia</em> pe care v-o oferă lumea astăzi, vouă celor ce căutaţi
+
+Score: 14.4
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 9 - În vremea aceea...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"parc \u015fi lucr\u00e2nd la <em>poezii</em>. Ne luam la \u00eentrecere \u00eempreun\u0103, care scriem mai repede o <em>poezie</em>. De multe ori m-a",
-"cunoscut care a scris o <em>poezie</em> plin\u0103 de \u00een\u0163eles. Dac\u0103 \u00eemi aduc bine aminte <em>poezia</em> lui suna cam a\u015fa:",
-"altele care pe atunci bucurau adun\u0103rile prin coruri, <em>poezii</em> \u015fi rug\u0103ciuni rostite cu putere. \u00cen",
-"Avea a\u015fa un dar de a citi \u00eenc\u00e2t \u015fi cea mai slab\u0103 <em>poezie</em> ap\u0103rea nespus de frumoas\u0103 dup\u0103 ce o citea el. Adeseori",
-"m-a \u00eentrecut. Apoi eu corectam <em>poezia</em> lui iar el pe a mea... \u015ei le publicam la foaie. P\u0103rintelui"
-]
-}
+Highlight: parc şi lucrând la <em>poezii</em>. Ne luam la întrecere împreună, care scriem mai repede o <em>poezie</em>. De multe ori m-a
+Highlight: cunoscut care a scris o <em>poezie</em> plină de înţeles. Dacă îmi aduc bine aminte <em>poezia</em> lui suna cam aşa:
+Highlight: Avea aşa un dar de a citi încât şi cea mai slabă <em>poezie</em> apărea nespus de frumoasă după ce o citea el. Adeseori
+Highlight: altele care pe atunci bucurau adunările prin coruri, <em>poezii</em> şi rugăciuni rostite cu putere. În
+Highlight: m-a întrecut. Apoi eu corectam <em>poezia</em> lui iar el pe a mea... Şi le publicam la foaie. Părintelui
+Highlight: i-a plăcut mult mai ales una din <em>poeziile</em> lui: Începe o luptă, se înalţă un steag... care mai târziu a devenit
 
-Score: 3.6
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 27 - Întristarea cea binecuvântată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"frumoase <em>poezii</em> ale lor. G\u00e2ndul era ca prin aceast\u0103 colec\u0163ie s\u0103 fie lansa\u0163i \u015fi ei \u015fi <em>poeziile</em> lor, s\u0103",
-"tineri s-au propus \u015fi de data asta, la r\u00e2nd cu <em>poezii</em>, melodii, eseuri, cuget\u0103ri, complet\u0103ri \u015fi constat\u0103ri",
-"r\u00e2nduial\u0103 aproape 30 de creatori de c\u00e2nt\u0103ri, de <em>poezii</em>, de eseuri \u015fi cuget\u0103ri, rev\u0103rs\u00e2nd pe masa \u00eembel\u015fugat\u0103",
-"adun\u0103rii fr\u0103\u0163e\u015fti cele mai frumoase crea\u0163ii ale lor: <em>poezii</em>, c\u00e2nt\u0103ri, scenete biblice, cuget\u0103ri, medita\u0163ii",
-"\u015fi am ajuns la morm\u00e2ntul frumosului luceaf\u0103r al <em>poeziei</em> noastre vii. Era acoperit cu flori verzi \u015fi proaspete"
-]
-}
-
-Score: 3.5555556
+Score: 14.388889
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 9 - Adevărurile mormântului nemuritor
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"A\u015fadar nici tu <em>poezie</em>, nici tu poet. Nu \u015ftiu \u00een ce const\u0103 valoarea propriu-zis\u0103",
-"subtitlul pe care \u00eel poart\u0103 cartea: \u201cC\u00e2nt\u0103ri \u015fi <em>poezii</em> pentru cei mai buni copii\u201d. ",
-"folosite la ilustra\u0163iile care \u00eenso\u0163esc fiecare <em>poezie</em> \u00een parte, ci ne referim mai ales la con\u0163inutul",
-"specifice c\u0103r\u0163ii lui Traian Dorz, desprinse din <em>poezii</em> alese la \u00eent\u00e2mplare, pentru a ne risipi \u015fi cea",
-"Astfel nu pu\u0163ine sunt <em>poeziile</em> \u00een care Traian Dorz \u00eencearc\u0103 s\u0103 strecoare \u00een mintea"
-]
-}
+Highlight: Aşadar nici tu <em>poezie</em>, nici tu poet. Nu ştiu în ce constă valoarea propriu-zisă
+Highlight: folosite la ilustraţiile care însoţesc fiecare <em>poezie</em> în parte, ci ne referim mai ales la conţinutul
+Highlight: iad, drept sursă a păcatului, vom cita din a doua <em>poezie</em> câteva versuri care iau forma unei invocări: “Apără
+Highlight: subtitlul pe care îl poartă cartea: “Cântări şi <em>poezii</em> pentru cei mai buni copii”.  Folosind
+Highlight: specifice cărţii lui Traian Dorz, desprinse din <em>poezii</em> alese la întâmplare, pentru a ne risipi şi cea
+Highlight: Astfel nu puţine sunt <em>poeziile</em> în care Traian Dorz încearcă să strecoare în mintea
 
-Score: 3.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"memorie foarte bun\u0103 - \u015fi \u00eenv\u0103\u0163ase o mul\u0163ime de <em>poezii</em>, dar acum nervii \u00eei sl\u0103biser\u0103 \u015fi le recita pl\u00e2ng\u00e2nd",
-"puternic cu toat\u0103 fiin\u0163a lui ceea ce se spunea \u00een <em>poezia</em> recitat\u0103 chiar \u015fi atunci c\u00e2nd nu-l mai asculta",
-"Era o antologie \u00eentreag\u0103 a <em>poeziilor</em> f\u0103cute \u015fi r\u0103sp\u00e2ndite \u00een ace\u015fti ani mul\u0163i, tr\u0103i\u0163i prin",
-"Multe din aceste <em>poezii</em>, lucrate de adev\u0103ra\u0163i mae\u015ftri, erau capodopere de sim\u0163ire \u015fi de",
-"Fiecare <em>poezie</em> \u00ee\u015fi avea la el istorisirea ei. \u015ei el spunea de"
-]
-}
-
-Score: 3.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Compunerile <em>poeziilor</em> le f\u0103ceam acolo \u00eentr-un mod cu totul neobi\u015fnuit",
-"\u00eenceput neav\u00e2nd nici un mijloc de scris, compuneam <em>poeziile</em> strof\u0103 cu strof\u0103 \u015fi le re\u0163ineam \u00een memorie. Lucram",
-"Apoi \u00eencepeam a doua <em>poezie</em> tot a\u015fa. Apoi le repetam pe am\u00e2ndou\u0103. Dup\u0103 aceea",
-"titlurile \u015fi num\u0103rul lor. <em>Poezia</em> 59 - ",
-". <em>Poezia</em> 87 - "
-]
-}
-
-Score: 3.5
+Score: 12.944444
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
+Title: Cap. 4 - Anul următor
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015ftiam ce mult iubea el c\u0103r\u0163ile Domnului \u015fi mai ales <em>poezia</em> \u015fi c\u00e2ntarea Oastei din care \u00een anii posibilit\u0103\u0163ilor",
-"casa lor \u00eel \u0163ineam \u00eentre genunchii mei \u00eenv\u0103\u0163\u00e2ndu-l <em>poezii</em>. P\u0103rea c\u0103 se apropie atunci - dar \u00een cur\u00e2nd \u015fcoala",
-"\u015fi p\u0103m\u00e2ntul \u015fi cerul de laudele Domnului, iar <em>poeziile</em> \u015fi rug\u0103ciunile rostite de copii, r\u0103sun\u0103 ca venind",
-"S-a dep\u0103rtat de la el. Astfel compune chiar \u015fi <em>poezii</em> pline de imita\u0163ii, plagiaturi \u015fi c\u00e2rpeli luate",
-"\u00cen afar\u0103 de \u201c<em>poezii</em>\u201d s-a apucat s\u0103 scrie \u015fi el \u201cmedita\u0163ii\u201d, imit\u00e2ndu-m\u0103"
-]
-}
+Highlight: potrivite cu textele din caietul de <em>poezii</em>, <em>poezie</em>-desen, <em>poezie</em>-desen... Nu mai era nevoie decât să
+Highlight: Unele dintre <em>poezii</em> din colecţia “Cântări Nemuritoare” spre surprinderea
+Highlight: legată în care erau selecţionate aproape 1.200 de <em>poezii</em> din primele caiete din seria asta. Nu ştiu după
+Highlight: culegere, chiar unele dintre cele mai frumoase <em>poezii</em> conţinute în acele caiete. Am strâns cele rămase
+Highlight: început să înveţe pe de rost mereu mai multe dintre <em>poeziile</em> acestea şi să le recite pe la adunări, prin biserici
+Highlight: carte “Osana, Osana”, conţinând multe şi variate <em>poezii</em> îndeosebi pentru copii, mai îmbogăţită şi cu felurite
 
-Score: 3.5
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Curajul şi lucrarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eengerul <em>poeziei</em> \u015fi al c\u00e2nt\u0103rii pentru c\u0103 el s-a \u00eenf\u0103\u0163i\u015fat mereu \u00eenconjurat de c\u00e2ntare \u015fi <em>poezie</em>, fie c\u0103",
-"cuprinde \u015fi alte sim\u0163\u0103minte, dar \u00een c\u00e2ntarea \u015fi <em>poezia</em> care sunt dragostea se cuprind numai adev\u0103rurile",
-"9 - S\u0103 cultiv\u0103m <em>poezia</em> \u015fi c\u00e2ntarea fiindc\u0103 ele duc la rug\u0103ciune \u015fi la",
-"st\u0103rile noastre s\u0103rb\u0103tore\u015fti, \u00eengerii minuna\u0163i ai <em>poeziei</em> \u015fi c\u00e2nt\u0103rii urc\u0103 \u015fi coboar\u0103 de la noi la cer. \u015ei",
-"mai \u00eenalte c\u00e2nt\u0103ri \u015fi \u00een duhul celei mai divine <em>poezii</em>: Plec\u0103ciune \u0162ie, c\u0103reia \u0162i s-a f\u0103cut mare Har."
-]
-}
-
-Score: 3.5
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Nevinovăţia şi timiditatea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"num\u0103rul de ordine... <em>Poezia</em> nr. 87 - titlul \u015fi ideea. <em>Poezia</em> 165 la fel. <em>Poezia</em> 580 tot a\u015fa... ",
-"15 - Dup\u0103 prima <em>poezie</em> am f\u0103cut la fel cu a doua. Apoi cu a treia, apoi",
-"\u015fi s\u0103 re\u0163ine\u0163i corect versete biblice, psalmi, <em>poezii</em>, p\u0103r\u0163i \u015fi capitole din Evanghelie. ",
-"auzi pe cineva rostind f\u0103r\u0103 gre\u015f din memorie o <em>poezie</em> frumoas\u0103, un verset sf\u00e2nt, un citat \u00een\u0163elept. ",
-"carte - \u015fi chiar citind le gre\u015fesc. O astfel de <em>poezie</em>, c\u00e2t de frumoas\u0103 ar fi, \u00ee\u015fi pierde orice valoare"
-]
-}
-
-Score: 3.4285715
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"am avut g\u00e2ndurile din care mai t\u00e2rziu am compus <em>poezia</em>:",
-"acolo, \u00een zbuciumul acelei nop\u0163i de Cr\u0103ciun prima <em>poezie</em> din ",
-"necesar, g\u00e2ndindu-m\u0103 la clipa aceea, am compus <em>poezia</em>: ",
-"care le-am \u00een\u015firuit toat\u0103 noaptea, \u00een strofele <em>poeziei</em> compuse atunci:",
-"d-ta e\u015fti fratele Tudusciuc, care ai scris at\u00e2tea <em>poezii</em> \u015fi c\u00e2nt\u0103ri la Oastea Domnului? - s-a uitat str\u0103in"
-]
-}
-
-Score: 3.4285715
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Semănat şi seceriş
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dac\u0103 vrem s\u0103 spunem o <em>poezie</em>, s\u0103 nu o citim din carte, s\u0103 o \u00eenv\u0103\u0163\u0103m mai \u00eent\u00e2i",
-"frumoas\u0103 \u015fi cu c\u00e2t e mai gustoas\u0103 o c\u00e2ntare, o <em>poezie</em>, o medita\u0163ie liber\u0103, f\u0103r\u0103 carte? C\u00e2nd o spui ori",
-"exprim\u0103m prin cuv\u00e2nt, prin c\u00e2ntare, prin rug\u0103ciune ori <em>poezie</em>, \u00eensu\u015findu-ni-l \u00eent\u00e2i noi \u00een\u015fine \u00eenv\u0103\u0163\u00e2ndu-l pe",
-"16 - \u00centr-o <em>poezie</em>, esen\u0163ialul este adev\u0103rul din ea \u015fi nu inten\u0163ia",
-"Fire\u015fte c\u0103 inten\u0163ia face mai frumoas\u0103 o <em>poezie</em> c\u00e2nd ea \u00eens\u0103\u015fi este frumoas\u0103. \u015ei melodia face mai"
-]
-}
-
-Score: 3.4285715
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Să nu uităm în rugăciune
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"creatori de talent, oameni ai Cuv\u00e2ntului scris, ai <em>Poeziei</em> \u015fi C\u00e2nt\u0103rii, Scriitori de opere nemuritoare, pentru",
-"se \u015fterge, se deformeaz\u0103 - dar cuv\u00e2ntul scris, <em>poezia</em>, melodia, c\u00e2ntarea, se va repeta mereu \u00een noi \u015fi",
-"tr\u0103im ca din nou bucuria \u015fi frumuse\u0163ea c\u00e2nt\u0103rii \u015fi <em>poeziei</em>. \u015ei ori de c\u00e2te ori le-am auzi nu ne s\u0103tur\u0103m s\u0103",
-"apreciat c\u0103ruia i-am dat nu demult o caset\u0103 cu <em>poezii</em> \u015fi c\u00e2nt\u0103ri alese, - mi-a spus cu lacrimi - de patruzeci",
-"iubirea sunt dou\u0103 surori ve\u015fnice cu c\u00e2ntarea \u015fi <em>poezia</em> nemuritoare. Orice creator adev\u0103rat le-a cunoscut"
-]
-}
-
-Score: 3.4285715
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Talanţii şi cetăţile
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Exist\u0103 dou\u0103 feluri de <em>poezie</em> \u015fi c\u00e2ntare. Cea a lumii \u015fi cea a lui Hristos. <em>Poezia</em> \u015fi c\u00e2ntarea lumeasc\u0103",
-"11 - Prim\u0103vara vie\u0163ii spirituale \u00eenseamn\u0103 <em>poezie</em>, c\u00e2ntare. Acestea sunt adev\u0103ratele comori netrec\u0103toare",
-"atinge de Dumnezeu. Cine tr\u0103ie\u015fte \u00een tinere\u0163e, \u00een <em>poezie</em>, \u00een c\u00e2ntare, acela a cunoscut ceea ce poate fi",
-"13 - <em>Poezia</em> \u015fi C\u00e2ntarea sunt ca apele curg\u0103toare, limpezi \u015fi",
-"14 - C\u00e2nd ne atingem de <em>poezia</em> adev\u0103rat\u0103, ca de fa\u0163a limpede a unui izvor ceresc"
-]
-}
-
-Score: 3.3333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 13 - Jugul, sarcina şi crucea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"po\u0163i, trimite-ne c\u00e2te o <em>poezie</em> nou\u0103, sunt at\u00e2t de gustate \u015fi dorite <em>poeziile</em> tale. To\u0163i \u00eentreab\u0103 de tine",
-"tine \u015fi a\u015fteapt\u0103 ve\u015fti. Ne g\u00e2ndim s\u0103-\u0163i str\u00e2ngem <em>poeziile</em> cele publicate \u015fi cele mai noi ca s\u0103 \u0163i le public\u0103m",
-"dec\u00e2t el. Mi-a cerut \u00een c\u00e2teva r\u00e2nduri ce anume <em>poezii</em> pe ce subiecte s\u0103-i scriu pentru completarea t\u00e2lcuirilor",
-"1936 p\u0103rintele mi-a tip\u0103rit a doua culegere de <em>poezii</em> "
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Trifa despre vremea tineretului \u015fi Traian Dorz o <em>poezie</em>: A sunat mobilizarea.",
-"ca roua. Nicolae Vonica: O oaste de tineri. \u015ei <em>poezia</em> lui I. V. Spiridon: \u00cencepe o lupt\u0103, se \u00eenal\u0163\u0103 un",
-"care scriseser\u0103 \u00een num\u0103rul trecut, mai apar cu <em>poezii</em>, medita\u0163ii \u015fi ve\u015fti o mul\u0163ime de alte nume cunoscute",
-"armata atunci. \u015ei c\u00e2nd mai puteam \u00eei trimiteam <em>poezii</em> noi de care - \u00eemi spuneau mai t\u00e2rziu fra\u0163ii - c\u00e2nd",
-"feti\u0163\u0103 Maria, cutremur\u00e2nd sufletele cu focul <em>poeziilor</em> ei, cu lacrimile ei. Oastea Domnului din Hunedoara"
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"apropiat cu tinerii care aveau de la Dumnezeu darul <em>poeziei</em> \u015fi al compunerii de melodii frumoase pentru c\u00e2nt\u0103rile",
-"Crucii. Se aleg totdeauna vorbitorii cei mai buni, <em>poeziile</em> cele mai frumoase, c\u00e2nt\u0103rile cele mai cunoscute",
-"cort unde se continu\u0103 petrecerea numai cu c\u00e2nt\u0103ri, <em>poezii</em>, scurte scenete, piese religioase ori diafilme",
-"b\u0103iatul lui Ovidiu de 16 ani \u00eenv\u0103\u0163a s\u0103 scrie ni\u015fte <em>poezii</em> pe care i le dasem eu.",
-"eu v-am cunoscut pe dv. mai demult, v-am citit <em>poeziile</em> \u015fi unele lucr\u0103ri \u015fi doream mult s\u0103 st\u0103m odat\u0103"
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cunoscutului poet Nichita St\u0103nescu, un volum selectiv din <em>poeziile</em> mele pentru a apare \u00een una dintre editurile de",
-"at\u00e2ta tineret, at\u00e2\u0163ia copii - \u015fi nu avem o carte de <em>poezii</em> religioase, o carte de c\u00e2nt\u0103ri cre\u015ftine pentru",
-"c\u0103r\u0163ile pentru masele largi de cititori, literatur\u0103, <em>poezie</em>, c\u00e2nt\u0103ri religioase?",
-"g\u00e2ndi\u0163i c\u0103 totu\u015fi s-ar putea s\u0103 tip\u0103ri\u0163i o carte de <em>poezii</em>? Sunt alese dintre cele mai frumoase \u015fi sunt rev\u0103zute",
-" de <em>poezii</em>, c\u00e2ntece, piese noi, \u00een plus cu predici rostite"
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 29 - Anul jubiliar 1988
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"etc. S-au rostit <em>poezii</em>, crea\u0163ii originale \u015fi interpret\u0103ri duioase din montaje de <em>poezii</em> potrivite momentului",
-"fra\u0163i veni\u0163i din toate p\u0103r\u0163ile \u0163\u0103rii, au declamat <em>poezii</em>, crea\u0163ii originale \u015fi ocazionale, s-au c\u00e2ntat minunatele",
-"mai c\u00e2ntat, am mai spus medita\u0163ii, istorioare \u015fi <em>poezii</em> pe care cei ce le auzeau pentru prima dat\u0103 le ascultau",
-"tineretul fr\u0103\u0163esc din zona respectiv\u0103 \u015fi c\u00e2te o <em>poezie</em> recitat\u0103 de o t\u00e2n\u0103r\u0103 sor\u0103 \u00eembr\u0103cat\u0103 \u00een portul na\u0163ional"
-]
-}
-
-Score: 3.3333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 6 - Între două judecăţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sub tipar a 5-a carte din <em>poeziile</em> Oastei. \u015ei urmeaz\u0103 la r\u00e2nd a 6-a (<em>poeziile</em> preaiubitului nostru lupt\u0103tor",
-" prima carte de <em>poezii</em> ",
-"umil sat al Bihorului, a \u00eenceput s\u0103 ne trimit\u0103 <em>poezii</em> care m\u0103rturiseau despre un talent ce a\u015ftepta s\u0103",
-"Marin P. Guicin. O feti\u0163\u0103 declam\u0103 o zguduitoare <em>poezie</em>. Toat\u0103 mul\u0163imea era cutremurat\u0103. Cuv\u00e2nt\u0103rile deschid"
-]
-}
-
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Ceea ce ne dă Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"oameni de Dumnezeu. Dac\u0103 doresc <em>poezia</em>, s\u0103-L g\u0103seasc\u0103 pe Hristos \u00eentr-o <em>poezie</em> inspirat\u0103 \u015fi vrednic\u0103 de El",
-"2 - Dac\u0103 a r\u0103mas ceva nemuritor \u00een <em>poezie</em>, \u00een c\u00e2ntare, \u00een orice domeniu de crea\u0163ie, - au",
-"\u015fi pl\u0103cut \u015fi fericit este numai \u00een Dumnezeu... <em>Poezia</em>, c\u00e2ntarea, medita\u0163ia, arta inspirat\u0103, sunt mijloacele",
-"El. S\u0103 cre\u0103m aceast\u0103 <em>poezie</em>."
-]
-}
-
-Score: 3.3333333
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Pământ şi Cer
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"nostru Divin a pus \u00een noi at\u00e2ta din cer, - at\u00e2ta <em>poezie</em>, at\u00e2ta c\u00e2ntare, at\u00e2ta iubire, - \u00eenc\u00e2t noi ar trebui",
-"\u00eennobileaz\u0103, se u\u015fureaz\u0103 ca lumina, ca tinere\u0163ea, ca <em>poezia</em> \u015fi c\u00e2ntarea nemuritoare.",
-"printre care cele mai frumoase sunt: dragostea, <em>poezia</em>, rug\u0103ciunea \u015fi c\u00e2ntarea.",
-"biruitoare Numele S\u0103u Biruitor, \u015fi anume: tinere\u0163ea, <em>poezia</em> \u015fi c\u00e2ntarea. Adun\u0103rile noastre sunt formate aproape",
-"sunt formate aproape \u00een \u00eentregimea lor numai de <em>poezie</em> \u015fi de c\u00e2ntare."
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"acum s\u0103 fim \u00eempreun\u0103... \u00cemi cuno\u015fteau mai ales <em>poeziile</em> - \u015fi nu mai g\u0103seau cuvinte, a\u015fa m\u0103 l\u0103udau.",
-"s\u0103n\u0103toas\u0103. Uneori vorbea at\u00e2t de \u00eenfl\u0103c\u0103rat \u015fi compunea <em>poezii</em> buni\u015foare. Ce p\u0103cat \u00eens\u0103 c\u0103 toate acestea sunt",
-"cum am descris mai t\u00e2rziu \u00een cele trei strofe din <em>poezia</em>:",
-"am compus primele versuri din <em>poezia</em>:"
-]
-}
-
-Score: 3.2
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cendat\u0103 dup\u0103 aceea am \u015fi scris aceste g\u00e2nduri \u00een dou\u0103 <em>poezii</em>, a\u015fezate apoi una dup\u0103 alta \u00een cartea ",
-"Aceste dou\u0103 <em>poezii</em> erau: ",
-"problema fratelui Moldoveanu, - le redau aceste dou\u0103 <em>poezii</em>, izvor\u00e2te din acel dureros moment \u015fi din rug\u0103ciunea",
-"\u00eei spuneau g\u00e2ndurile noastre din cea de a treia <em>poezie</em> pe care i-o trimiteam \u00eempreun\u0103 cu cele dou\u0103:"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Lucrarea Duhului Sfânt
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"9 - S\u0103rb\u0103toarea \u015fi prim\u0103vara \u00eenseamn\u0103 tinere\u0163e, <em>poezie</em> \u015fi c\u00e2ntare. \u00cen zile ca acestea trebuie s\u0103 ne \u00een\u0103l\u0163\u0103m",
-"dintre noi, aceste trei mari valori: tinere\u0163ea, <em>poezia</em> \u015fi c\u00e2ntarea, r\u0103m\u00e2n unice \u015fi eterne. Numai c\u00e2nd",
-"este Acela\u015fi, ieri, azi \u015fi \u00een veci. Tinere\u0163ea Sa, <em>poezia</em> Sa \u015fi c\u00e2ntarea Sa sunt ca \u015fi El. ",
-"exist\u0103 o tinere\u0163e ve\u015fnic\u0103, o s\u0103rb\u0103toare fericit\u0103, o <em>poezie</em> frumoas\u0103, o c\u00e2ntare divin\u0103, prin lucrarea nemuritoare"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Să nu pierdem legătura
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"10 - O <em>poezie</em> - zic ace\u015fti poe\u0163i - nu trebuie s\u0103 o \u00een\u0163eleag\u0103 nimeni. O <em>poezie</em> trebuie ca atunci",
-"poetul s\u0103 spun\u0103 - nu el s\u0103-\u0163i dea \u00een\u0163elesul ei. C\u0103 <em>poezia</em> este nu ceea ce \u00ee\u0163i spune el, ci este ce pricepi",
-"15 - Dac\u0103 o <em>poezie</em> pe care o scriu, n-o poate \u00een\u0163elege nimeni, sau"
-]
-}
-
-Score: 3.2
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Frumosul şi greul început
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"u\u015for, fiindc\u0103 avem at\u00e2ta bel\u015fug de c\u00e2ntare \u015fi de <em>poezie</em> \u00eenc\u00e2t nici nu mai \u015ftim ce s\u0103 facem cu ele. Suntem",
-"aceste frumoase perle ale \u00eenceputurilor adev\u0103ratei <em>poezii</em> religioase a poporului nostru. Era un fenomen care",
-"straturile sociale au \u0163\u00e2\u015fnit atunci izvoarele <em>poeziei</em> noastre religioase. Am urm\u0103rit vreo 10 ani titlurile",
-"reu\u015fit \u00een lucrul de care m-am apucat. \u015ei \u00een lucrul <em>poeziilor</em> n-am sim\u0163it c\u0103 am reu\u015fit bine. "
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Lucram <em>poezii</em> \u015fi \u00eei d\u0103deam s\u0103 le pun\u0103 melodii. Speram c\u0103 aceasta",
-"ref\u0103cut \u015fi tip\u0103rit apoi prima lui c\u0103rticic\u0103 de <em>poezii</em> pe care i-am adus-o, ca pe o surpriz\u0103 fericit\u0103",
-"\u00cen timpul acesta am compus cele mai amare din <em>poeziile</em> mele:"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"am scris altele vreo cincizeci noi: medita\u0163ii, <em>poezii</em>, povestiri, unele cunoscute, altele nu...",
-"niciodat\u0103. \u00centr-adev\u0103r cum spune medita\u0163ia din <em>poezia</em> de mai jos:",
-" - de exemplu. De ce nu vrei s\u0103 scrii <em>poezii</em> patriotice, sociale, politice? Ai c\u00e2\u015ftiga mii de"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"cum au fost cele cu crucile Oastei \u015fi alte multe <em>poezii</em> care au ap\u0103rut atunci prin ",
-"Munteanu Muntmarg ne-a adus c\u00e2ntarea semnificativ\u0103 a <em>poeziei</em> fr. Dorz: Te-am sim\u0163it Isuse.",
-"vestit c\u0103 ne-a adus o c\u00e2ntare nou\u0103 \u015fi ne-a c\u00e2ntat <em>poezia</em> fr. Dorz: Te-am min\u0163it Isuse - pe mine m-a fulgerat"
-]
-}
-
-Score: 3.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 21 - La 25 de ani...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi cu un con\u0163inut minunat de vorbiri, c\u00e2nt\u0103ri, <em>poezii</em>, declam\u0103ri. Aveam cu noi \u015fi doi preo\u0163i. Totul a",
-"Lucr\u0103rile scrise ale Oastei: Medita\u0163ii, <em>poezii</em>, c\u00e2nt\u0103ri, \u00eendemnuri, au ajuns la sute de titluri",
-"Num\u0103rul c\u00e2nt\u0103rilor din <em>poezii</em> originale sau versific\u0103ri biblice c\u0103rora li s-au"
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Tineretul creator
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"azi vor avea sf\u00e2r\u015fit. Dar <em>poezia</em> \u015fi c\u00e2ntarea nu vor sf\u00e2r\u015fi niciodat\u0103. \u00cen <em>poezie</em> \u015fi c\u00e2ntare Dumnezeu a pus",
-"vestitorii \u00eenfl\u0103c\u0103ra\u0163i ai Evangheliei. Dar mai ales <em>poezia</em> \u015fi c\u00e2ntarea, poe\u0163ii \u015fi c\u00e2nt\u0103re\u0163ii lui Hristos."
-]
-}
-
-Score: 3.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Vremurile de Har
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-" Ceea ce se f\u0103cuse \u00eenainte de el, \u00een privin\u0163a <em>poeziei</em> \u015fi c\u00e2nt\u0103rii religioase \u00een popor, erau doar ni\u015fte",
-"toate acestea se vede ce greu se poate na\u015fte o <em>poezie</em> adev\u0103rat\u0103, chiar c\u00e2nd este mult\u0103 bun\u0103voin\u0163\u0103 pentru",
-"devenit ea \u00eens\u0103\u015fi o \u015fcoal\u0103 creatoare de c\u00e2nt\u0103ri \u015fi <em>poezii</em> pentru al\u0163ii. "
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Evanghelia dup\u0103 Ioan - \u015fi o \u00eenv\u0103\u0163ase pe de rost ca pe o <em>poezie</em> de la \u00eenceput p\u00e2n\u0103 la sf\u00e2r\u015fit. \u00cen ziua c\u00e2nd o \u015ftia",
-"scriitor \u015fi filozof francez necredincios, - am scris <em>poezia</em> "
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"bucurie pe care le-am avut atunci, le-am descris \u00een <em>poezia</em> ",
-"Atunci am compus <em>poezia</em>:"
-]
-}
-
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cinci caiete cu Istoria Oastei, zece caiete cu <em>poezii</em>, altele cu medita\u0163ii, c\u0103r\u0163i, coresponden\u0163\u0103, fotografii",
-"afar\u0103 de faptul c\u0103 am scris c\u00e2te ceva medita\u0163ii \u015fi <em>poezii</em>, c\u0103 am \u00eenregistrat unele din acestea pentru fra\u0163i"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 15 - Micii contemporani ai marilor oameni
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"una cu note, una f\u0103r\u0103, apoi mai multe c\u0103r\u0163i de <em>poezii</em> \u015fi medita\u0163ii de ale noastre, precum \u015fi de ale altor",
-"C\u0103l\u0103uzit de g\u00e2ndul acesta publicam \u00een gazet\u0103 sute de <em>poezii</em> pe care le primeam din \u0163ar\u0103, pe cele mai multe"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"scris mai t\u00e2rziu cu toat\u0103 durerea mea una dintre <em>poeziile</em> de care mi-e team\u0103 \u015fi-acum: ",
-"moarte... Atunci mi-a venit \u00een g\u00e2nd \u015fi am compus \u015fi <em>poezia</em>: "
-]
-}
-
-Score: 2.6666665
+Score: 12.666666
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 22 - Al doilea 2-4-2
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mereu p\u00e2n\u0103 ce o vom \u00eenv\u0103\u0163a pe de rost, ca pe o <em>poezie</em>, verset cu verset, capitol cu capitol \u015fi carte",
-"\u00een c\u00e2tva timp a \u00eenv\u0103\u0163at toat\u0103 Evanghelia ca pe o <em>poezie</em>, repet\u00e2nd-o mereu p\u00e2n\u0103 i s-a fixat \u00een cap pentru"
-]
-}
+Highlight: mereu până ce o vom învăţa pe de rost, ca pe o <em>poezie</em>, verset cu verset, capitol cu capitol şi carte
+Highlight: în câtva timp a învăţat toată Evanghelia ca pe o <em>poezie</em>, repetând-o mereu până i s-a fixat în cap pentru
 
-Score: 2.6666665
+Score: 9.875
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 11 - Semnele Oastei Domnului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-", iar anul acesta la Cluj alte dou\u0103 c\u0103r\u0163i de <em>poezii</em>: ",
-"suferin\u0163ele copiilor lui Dumnezeu. Toate titlurile <em>poeziilor</em>, articolelor sau \u015ftirilor erau pline de \u00een\u0163elesul"
-]
-}
+Highlight: Fiecare <em>poezie</em> îşi avea la el istorisirea ei. Şi el spunea de
+Highlight: memorie foarte bună - şi învăţase o mulţime de <em>poezii</em>, dar acum nervii îi slăbiseră şi le recita plângând
+Highlight: puternic cu toată fiinţa lui ceea ce se spunea în <em>poezia</em> recitată chiar şi atunci când nu-l mai asculta
+Highlight: Era o antologie întreagă a <em>poeziilor</em> făcute şi răspândite în aceşti ani mulţi, trăiţi prin
+Highlight: Multe din aceste <em>poezii</em>, lucrate de adevăraţi maeştri, erau capodopere de simţire şi de
+Highlight: La Aiud şi la Canal, învăţase <em>poeziile</em> lui Nechifor Crainic de la el însuşi...
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 17 - Ziua a doua
+Score: 9.875
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 26 - Limpezirea apelor adânci
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"apoi mai jos \u00een marea bucurie a noii biruin\u0163e \u015fi <em>poezia</em> :",
-"Biblioteca de <em>poezii</em> Doina Golgotei, cuprindea 26 de numere."
-]
-}
+Highlight: Apoi începeam a doua <em>poezie</em> tot aşa. Apoi le repetam pe amândouă. După aceea
+Highlight: Compunerile <em>poeziilor</em> le făceam acolo într-un mod cu totul neobişnuit
+Highlight: început neavând nici un mijloc de scris, compuneam <em>poeziile</em> strofă cu strofă şi le reţineam în memorie. Lucram
+Highlight: titlurile şi numărul lor. <em>Poezia</em> 59 -
+Highlight: . <em>Poezia</em> 87 -
+Highlight: . <em>Poezia</em> 115 -
 
-Score: 2.6666665
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: acolo, în zbuciumul acelei nopţi de Crăciun prima <em>poezie</em> din
+Highlight: am avut gândurile din care mai târziu am compus <em>poezia</em>: Mormântul
+Highlight: necesar, gândindu-mă la clipa aceea, am compus <em>poezia</em>:
+Highlight: care le-am înşiruit toată noaptea, în strofele <em>poeziei</em> compuse atunci:
+Highlight: d-ta eşti fratele Tudusciuc, care ai scris atâtea <em>poezii</em> şi cântări la Oastea Domnului? - s-a uitat străin
+Highlight: şi la ziua fericirii mele, am compus după aceea <em>poezia</em>:
+
+Score: 9.833333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 1 - Înfricoşata lepădare
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sufleteasc\u0103 mai ales pentru copii \u015fi tineret? C\u0103r\u0163ile de <em>poezii</em>, de c\u00e2nt\u0103ri religioase, de medita\u0163ie, de rug\u0103ciune",
-"patruzeci de caiete cu medita\u0163ii evanghelice \u015fi <em>poezii</em> religioase. Acestea erau singura ei m\u00e2ng\u00e2iere \u00een"
-]
-}
+Highlight: cărţile pentru masele largi de cititori, literatură, <em>poezie</em>, cântări religioase?
+Highlight: cunoscutului poet Nichita Stănescu, un volum selectiv din <em>poeziile</em> mele pentru a apare în una dintre editurile de
+Highlight: atâta tineret, atâţia copii - şi nu avem o carte de <em>poezii</em> religioase, o carte de cântări creştine pentru
+Highlight: gândiţi că totuşi s-ar putea să tipăriţi o carte de <em>poezii</em>? Sunt alese dintre cele mai frumoase şi sunt revăzute
+Highlight:  de <em>poezii</em>, cântece, piese noi, în plus cu predici rostite
 
-Score: 2.6666665
+Score: 9.833333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 10 - Pe drumul Crucii
+Type: articol
+Author: Traian Dorz
+Highlight: Trifa despre vremea tineretului şi Traian Dorz o <em>poezie</em>: A sunat mobilizarea.
+Highlight: ca roua. Nicolae Vonica: O oaste de tineri. Şi <em>poezia</em> lui I. V. Spiridon: Începe o luptă, se înalţă un
+Highlight: care scriseseră în numărul trecut, mai apar cu <em>poezii</em>, meditaţii şi veşti o mulţime de alte nume cunoscute
+Highlight: armata atunci. Şi când mai puteam îi trimiteam <em>poezii</em> noi de care - îmi spuneau mai târziu fraţii - când
+Highlight: fetiţă Maria, cutremurând sufletele cu focul <em>poeziilor</em> ei, cu lacrimile ei. Oastea Domnului din Hunedoara
+
+Score: 9.833333
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 13 - Jugul, sarcina şi crucea
+Type: articol
+Author: Traian Dorz
+Highlight: poţi, trimite-ne câte o <em>poezie</em> nouă, sunt atât de gustate şi dorite <em>poeziile</em> tale. Toţi întreabă de tine
+Highlight: tine şi aşteaptă veşti. Ne gândim să-ţi strângem <em>poeziile</em> cele publicate şi cele mai noi ca să ţi le publicăm
+Highlight: decât el. Mi-a cerut în câteva rânduri ce anume <em>poezii</em> pe ce subiecte să-i scriu pentru completarea tâlcuirilor
+Highlight: 1936 părintele mi-a tipărit a doua culegere de <em>poezii</em>
+
+Score: 9.833333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 29 - Anul jubiliar 1988
+Type: articol
+Author: Traian Dorz
+Highlight: tineretul frăţesc din zona respectivă şi câte o <em>poezie</em> recitată de o tânără soră îmbrăcată în portul naţional
+Highlight: etc. S-au rostit <em>poezii</em>, creaţii originale şi interpretări duioase din montaje de <em>poezii</em> potrivite momentului
+Highlight: fraţi veniţi din toate părţile ţării, au declamat <em>poezii</em>, creaţii originale şi ocazionale, s-au cântat minunatele
+Highlight: mai cântat, am mai spus meditaţii, istorioare şi <em>poezii</em> pe care cei ce le auzeau pentru prima dată le ascultau
+
+Score: 9.833333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
+Type: articol
+Author: Traian Dorz
+Highlight: Marin P. Guicin. O fetiţă declamă o zguduitoare <em>poezie</em>. Toată mulţimea era cutremurată. Cuvântările deschid
+Highlight: sub tipar a 5-a carte din <em>poeziile</em> Oastei. Şi urmează la rând a 6-a (<em>poeziile</em> preaiubitului nostru luptător
+Highlight:  prima carte de <em>poezii</em>
+Highlight: umil sat al Bihorului, a început să ne trimită <em>poezii</em> care mărturiseau despre un talent ce aştepta să
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: îi spuneau gândurile noastre din cea de a treia <em>poezie</em> pe care i-o trimiteam împreună cu cele două:
+Highlight: Îndată după aceea am şi scris aceste gânduri în două <em>poezii</em>, aşezate apoi una după alta în cartea  Cântări
+Highlight: Aceste două <em>poezii</em> erau:  Nu-nlătura
+Highlight: problema fratelui Moldoveanu, - le redau aceste două <em>poezii</em>, izvorâte din acel dureros moment şi din rugăciunea
+
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 19 - Mereu morminte noi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"fusesem chema\u0163i s\u0103 particip\u0103m \u015fi noi doi, eu cu o <em>poezie</em>, iar el cu o vorbire. Dup\u0103 ce eu plin de timiditate",
-"solemnit\u0103\u0163ii de acolo, care m\u0103 anulase de tot, am spus <em>poezia</em> mea: "
-]
-}
+Highlight: fusesem chemaţi să participăm şi noi doi, eu cu o <em>poezie</em>, iar el cu o vorbire. După ce eu plin de timiditate
+Highlight: solemnităţii de acolo, care mă anulase de tot, am spus <em>poezia</em> mea:
 
-Score: 2.6666665
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 23 - Cuvânt Testamentar
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mult \u015fi at\u00e2t de multe. Rug\u0103ciunile, medita\u0163iile, <em>poeziile</em>, c\u00e2nt\u0103rile \u00eenl\u0103crimate toate p\u0103trunse de un fior",
-"S\u0103 p\u0103r\u0103sim totul \u015fi studiul biblic \u015fi cenaclu \u015fi <em>poezie</em> \u015fi tot? Nu-i oare aceasta o ispit\u0103 puternic\u0103 de"
-]
-}
+Highlight: Să părăsim totul şi studiul biblic şi cenaclu şi <em>poezie</em> şi tot? Nu-i oare aceasta o ispită puternică de
+Highlight: mult şi atât de multe. Rugăciunile, meditaţiile, <em>poeziile</em>, cântările înlăcrimate toate pătrunse de un fior
 
-Score: 2.6666665
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 28 - Alte întristări binefăcătoare
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" casete ori c\u0103r\u0163i de ale noastre cu medita\u0163ii, <em>poezii</em>, c\u00e2nt\u0103ri, etc. pe care ascult\u00e2ndu-le cu r\u0103bdare",
-"ocazie unii fra\u0163i mi-au sugerat g\u00e2ndul s\u0103-i compun o <em>poezie</em> aniversar\u0103, apoi ei \u00eei vor g\u0103si o melodie potrivit\u0103"
-]
-}
+Highlight: ocazie unii fraţi mi-au sugerat gândul să-i compun o <em>poezie</em> aniversară, apoi ei îi vor găsi o melodie potrivită
+Highlight:  casete ori cărţi de ale noastre cu meditaţii, <em>poezii</em>, cântări, etc. pe care ascultându-le cu răbdare
 
-Score: 2.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cendat\u0103 dup\u0103 aceasta apar la r\u00e2nd primele articole, <em>poezii</em> \u015fi scrisori sosite din \u0163ar\u0103 ca r\u0103spuns la cele",
-"(<em>Poezia</em> aceasta e a fratelui Gh. V. Laz\u0103r - Ia\u015fi. Melodia"
-]
-}
-
-Score: 2.6666665
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 5 - Întâia judecată
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-", fr. Ilie Covaci, autorul <em>poeziei</em> ",
-"\u00eendreptat \u015fi a sc\u0103pat. A gr\u0103it b\u0103tr\u00e2ne\u0163e \u015fi \u00een <em>poezie</em>. To\u0163i pl\u00e2ng."
-]
-}
+Highlight: îndreptat şi a scăpat. A grăit bătrâneţe şi în <em>poezie</em>. Toţi plâng.
+Highlight: , fr. Ilie Covaci, autorul <em>poeziei</em>  Isus
 
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Cea mai urgentă nevoie
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"16 - Biblia, Cuv\u00e2ntul Sf\u00e2nt al lui Dumnezeu, <em>poezia</em> \u015fi c\u00e2ntarea Domnului sunt mijloacele totdeauna",
-"17 - Un verset din Evanghelie, o c\u00e2ntare sau o <em>poezie</em> nu-i greu s\u0103 ni le str\u00e2ngem fiecare din noi \u015fi"
-]
-}
-
-Score: 2.6666665
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Cântarea de la Marea Roşie
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"noastre suflete\u015fti. Nu plac tuturor aceste c\u00e2nt\u0103ri <em>poezii</em>; sunt c\u00e2nt\u0103ri duhovnice\u015fti pe care oamenii cei",
-"acest lucru fratele nostru osta\u015f, N. Cimpoca, \u00een <em>poezia</em>: "
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 30 - Alte adevăruri noi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"au ridicat o ma\u015fin\u0103 veche de scris, ni\u015fte foi cu <em>poezii</em> pe care \u00eencerca s\u0103 le scrie Ovidiu, copilul de",
-"eu v-am cunoscut pe dv. mai demult. V-am citit <em>poeziile</em> \u015fi unele lucr\u0103ri. \u015ei doream s\u0103 stau odat\u0103 de vorb\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 31 - O altă judecată
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"caiet \u201cC\u00e2nt\u0103ri Nemuritoare\u201d vol. 8 din care copia <em>poezii</em> b\u0103iatul meu de 16 ani pentru a \u00eenv\u0103\u0163a s\u0103 scrie",
-"- <em>Poezii</em>, medita\u0163ii, proverbe. "
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Totul în Hristos
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceasta, iat\u0103 ce g\u00e2nduri, ce idei, ce c\u00e2nt\u0103ri \u015fi ce <em>poezii</em> minunate le-a inspirat Dumnezeu.",
-"om inspirat de Duhul Sf\u00e2nt se ocup\u0103 s\u0103 scrie o <em>poezie</em>, s\u0103 compun\u0103 o c\u00e2ntare ori un eseu, - el care nu"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Puterea şi primirea ei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"O <em>poezie</em> spus\u0103 cu lacrimi, o rug\u0103ciune \u00een\u0103l\u0163at\u0103 cu lacrimi",
-"ascult\u0103 at\u00e2t de mult\u0103 muzic\u0103, se scriu at\u00e2t de multe <em>poezii</em>. \u015ei vr\u00e2nd-nevr\u00e2nd, acestea ne pot influen\u0163a f\u0103r\u0103"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Colaborarea în Domnul
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sut\u0103 de <em>poezii</em>, sau o sut\u0103 de c\u00e2nt\u0103ri bune, - asta nu mai merge.",
-"Cine vrea s\u0103 fac\u0103 o sut\u0103 de <em>poezii</em> pe noapte"
-]
-}
-
-Score: 2.6666665
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Curăţia şi creaţia
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sf\u00e2nt al crucii, cu care \u0163ine condeiul sf\u00e2nt al <em>poeziei</em>, cu care atinge corzile sfinte ale harfei, - p\u00e2n\u0103",
-"Dumnezeu. Melodia pe care a\u0163i primit-o atunci, <em>poezia</em> pe care a\u0163i conceput-o atunci, expresia care a\u0163i"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Vol. 1
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>poezii</em>",
-"<em>Poeziile</em> rev\u0103zute din:"
-]
-}
-
-Score: 2.0
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00centors \u00een celul\u0103, am compus atunci <em>poezia</em>:"
-]
-}
+Highlight: Evanghelia după Ioan - şi o învăţase pe de rost ca pe o <em>poezie</em> de la început până la sfârşit. În ziua când o ştia
+Highlight: scriitor şi filozof francez necredincios, - am scris <em>poezia</em>
 
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"C\u00e2nd mi-a ap\u0103rut primul volum de <em>poezii</em> "
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 18 - La 25 de ani
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Copiii \u015fi tineretul nostru au recitat mi\u015fc\u0103toare <em>poezii</em> \u015fi cu to\u0163ii am c\u00e2ntat multe c\u00e2nt\u0103ri \u015fi colinzi"
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 19 - Şi binele trebuie plătit
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Am redactat o foaie religioas\u0103 \u015fi am scris ni\u015fte <em>poezii</em> cre\u015ftine. "
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"au ars acolo sute \u015fi mii de c\u0103r\u0163i de c\u00e2nt\u0103ri, de <em>poezii</em>, de Biblii, de colec\u0163ii, de scrisori, de albume"
-]
-}
-
-Score: 2.0
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Din aceste fr\u0103m\u00e2nt\u0103ri au ie\u015fit atunci versurile <em>poeziei</em> "
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 16 - Din cetate în cetate...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"biseric\u0103, c\u00e2nd ace\u015ftia se f\u0103ceau mai m\u0103ri\u015fori spuneau <em>poezii</em> \u015fi c\u00e2ntau \u00een cor."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 2 - A treia zi istorică
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Sfintei Cruci. Chiar \u015fi la \u00eenceputul declam\u0103rilor de <em>poezii</em> \u015fi la sf\u00e2r\u015fitul acestora. Prin aceasta se creeaz\u0103"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- <em>Poezii</em>, medita\u0163ii, proverbe..."
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 12 - Toate lucrează spre bine
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"din c\u00e2nt\u0103ri, rug\u0103ciuni, cuv\u00e2nt\u0103ri \u015fi declam\u0103ri de <em>poezii</em> pline de putere \u015fi de lacrimi. O mare lucrare de"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 13 - Pe urmele profetului
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"mun\u0163i \u015fi peste aceste v\u0103i, plini de singur\u0103tate, de <em>poezie</em>, de tragedii, de dragoste - de Istorie \u015fi de Dumnezeu"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Al treilea cuvânt
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"singura realitate pe care n-o putem falsifica. O <em>poezie</em> po\u0163i s-o scrii cum \u00ee\u0163i place, sau o c\u00e2ntare po\u0163i"
-]
-}
+Highlight: singura realitate pe care n-o putem falsifica. O <em>poezie</em> poţi s-o scrii cum îţi place, sau o cântare poţi
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"r\u0103ni\u0163i ascultar\u0103 cu lacrimi frumoasele c\u00e2nt\u0103ri, <em>poezii</em>, cuv\u00e2nt\u0103ri \u015fi rug\u0103ciuni. Apoi au urmat darurile"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"aceste grup\u0103ri \u015fi confesiuni. Medita\u0163ii ad\u00e2nci, <em>poeziile</em> inspirate sau c\u00e2nt\u0103rile nemuritoare ale Oastei"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 22 - Peregrinările soliei
+Title: Cap. 13 - Pe urmele profetului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"citea cu lacrimi \u015fi \u00eemi recita din c\u00e2nt\u0103rile \u015fi <em>poeziile</em> dv. Ce bucurie \u015fi ce surpriz\u0103 s\u0103 v\u0103 cunosc aici"
-]
-}
+Highlight: munţi şi peste aceste văi, plini de singurătate, de <em>poezie</em>, de tragedii, de dragoste - de Istorie şi de Dumnezeu
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 24 - Pânza care se ţese
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Dar lipsa Bibliilor, a c\u0103r\u0163ilor de c\u00e2nt\u0103ri, de <em>poezii</em> ori povestiri biblice se sim\u0163ea din ce \u00een ce mai"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 26 - Fântânile certei noastre
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lumea asta mai duios \u015fi mai dulce dec\u00e2t c\u00e2ntarea \u015fi <em>poezia</em> rev\u0103rsat\u0103 din inimile noastre chiar de Duhul Sf\u00e2nt"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cendemnat de \u00eencuraj\u0103rile de prin foaie spre a se scrie <em>poezii</em>, \u00eencepusem s\u0103 scriu \u015fi s\u0103 trimit \u015fi eu acolo sfioasele"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 16 - Leacul dureroasei sfâşieri
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103 fie greco catolic. Acest frate a scris dulcea <em>poezie</em>-c\u00e2ntare: "
-]
-}
+Highlight: să fie greco catolic. Acest frate a scris dulcea <em>poezie</em>-cântare:
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"magazin de cuno\u015ftin\u0163e folositoare de tot felul... <em>poezii</em>, schi\u0163e, istorioare, povestiri pentru petrecere"
-]
-}
-
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-".. Oastea Domnului are \u015fi un cor... Se declam\u0103 <em>poezii</em>, se interpreteaz\u0103 piese religioase \u015fi astfel se"
-]
-}
-
-Score: 2.0
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 23 - La zece ani de Oaste
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"rec\u00e2\u015ftig\u0103 mo\u015fia pierdut\u0103 cu b\u0103uturile. Scrie minunata <em>poezie</em> "
-]
-}
+Highlight: recâştigă moşia pierdută cu băuturile. Scrie minunata <em>poezie</em>
 
-Score: 2.0
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Eu am văzut...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"p\u0103rin\u0163ii lor credincio\u015fi la biseric\u0103 \u015fi spuneau <em>poezii</em> \u00een adunarea fr\u0103\u0163easc\u0103. Dar \u00eendat\u0103 ce au ajuns \u015fi"
-]
-}
+Highlight: - ci mulţi spun nişte predici ca o <em>poezie</em> învăţată pe dinafară, sau citită din cartea altora
 
-Score: 2.0
+Score: 9.5
 Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Bătrâneţea şi uitarea
+Book: Mărgăritarul Ascuns
+Title: Iertare şi iubire
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"15 - O <em>poezie</em> o po\u0163i scrie cum vrei, o povestire po\u0163i s\u0103 o spui"
-]
-}
+Highlight: afla această putere şi de am găsi acest mijloc, ce <em>poezie</em> s-ar naşte - şi ce cântări s-ar auzi.
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Lumină şi întuneric
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"13 - Unde sunt scriitorii duhovnice\u015fti? Unde <em>poezia</em>, unde c\u00e2ntarea sf\u00e2nt\u0103, unde propov\u0103duitorii lui"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Talentele şi aflarea lor
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"16 - Este desigur un mare merit s\u0103 creezi o <em>poezie</em> de valoare, o c\u00e2ntare inspirat\u0103, o carte de talent"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Taina Evangheliei
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"frumoaselor rug\u0103ciuni \u015fi c\u00e2nt\u0103ri, ori medita\u0163ii \u015fi <em>poezii</em> divine din biseric\u0103 nu a fost r\u00e2nduit s\u0103 sece,"
-]
-}
-
-Score: 2.0
+Score: 0.9411765
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 9 - Pe drumul crucii mele
+Title: Cap. 27 - Pe drumul ales
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"citea, compun\u00e2nd \u015fi el unele articola\u015fe \u015fi chiar <em>poezii</em>, cu care colabora la foaie. "
-]
-}
+Highlight: revistă, la o editură... De ce nu vrei să scrii d-ta <em>poezii</em> patriotice, sociale, politice? - Ai câştiga mii
+Highlight: editura Oastei Domnului din Sibiu primul volum de <em>poezii</em> religioase
+Highlight: În anul 1937, mi-a apărut al doilea volum de <em>poezii</em> religioase tot la Sibiu
+Highlight: tipografia Diecezană Oradea al treilea volum de <em>poezii</em> religioase
+Highlight: În 1939 mi-a apărut la Cluj al patrulea volum de <em>poezii</em> religioase
+Highlight: 1940 mi-a apărut tot la Cluj al cincilea volum de <em>poezii</em> religioase
 
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Începutul minunilor mele
+Score: 0.9411765
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"le \u00eempletim firele de aur ale melodiilor \u015fi ale <em>poeziei</em> \u00eempreun\u0103. "
-]
-}
+Highlight: numărul de <em>poezii</em> după cum urmează:
+Highlight:  (4224 <em>poezii</em>):
+Highlight: Vol. 1 (420 <em>poezii</em>):
+Highlight: Vol. 2 (313 <em>poezii</em>):
+Highlight: Vol. 4 (320 <em>poezii</em> ilustrate pentru copii):
+Highlight: (2088 <em>poezii</em>):
 
-Score: 2.0
+Score: 0.9
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 27 - Întristarea cea binecuvântată
+Type: articol
+Author: Traian Dorz
+Highlight: frumoase <em>poezii</em> ale lor. Gândul era ca prin această colecţie să fie lansaţi şi ei şi <em>poeziile</em> lor, să
+Highlight: tineri s-au propus şi de data asta, la rând cu <em>poezii</em>, melodii, eseuri, cugetări, completări şi constatări
+Highlight: rânduială aproape 30 de creatori de cântări, de <em>poezii</em>, de eseuri şi cugetări, revărsând pe masa îmbelşugată
+Highlight: adunării frăţeşti cele mai frumoase creaţii ale lor: <em>poezii</em>, cântări, scenete biblice, cugetări, meditaţii
+Highlight: şi am ajuns la mormântul frumosului luceafăr al <em>poeziei</em> noastre vii. Era acoperit cu flori verzi şi proaspete
+Highlight: dragostea şi jertfa lui aduse pe altarul frumuseţii şi <em>poeziei</em> adevărate - am aşezat în faţa mormântului lui Mihai
+
+Score: 0.875
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: ştiam ce mult iubea el cărţile Domnului şi mai ales <em>poezia</em> şi cântarea Oastei din care în anii posibilităţilor
+Highlight: casa lor îl ţineam între genunchii mei învăţându-l <em>poezii</em>. Părea că se apropie atunci - dar în curând şcoala
+Highlight: şi pământul şi cerul de laudele Domnului, iar <em>poeziile</em> şi rugăciunile rostite de copii, răsună ca venind
+Highlight: S-a depărtat de la el. Astfel compune chiar şi <em>poezii</em> pline de imitaţii, plagiaturi şi cârpeli luate
+Highlight: În afară de “<em>poezii</em>” s-a apucat să scrie şi el “meditaţii”, imitându-mă
+Highlight: mistificator neruşinat al meditaţiilor mele şi <em>poeziilor</em> - să-l ştie toţi că este el, Moldoveanu Nicolae
+
+Score: 0.8333333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: apropiat cu tinerii care aveau de la Dumnezeu darul <em>poeziei</em> şi al compunerii de melodii frumoase pentru cântările
+Highlight: Crucii. Se aleg totdeauna vorbitorii cei mai buni, <em>poeziile</em> cele mai frumoase, cântările cele mai cunoscute
+Highlight: cort unde se continuă petrecerea numai cu cântări, <em>poezii</em>, scurte scenete, piese religioase ori diafilme
+Highlight: băiatul lui Ovidiu de 16 ani învăţa să scrie nişte <em>poezii</em> pe care i le dasem eu.
+Highlight: eu v-am cunoscut pe dv. mai demult, v-am citit <em>poeziile</em> şi unele lucrări şi doream mult să stăm odată
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: acum să fim împreună... Îmi cunoşteau mai ales <em>poeziile</em> - şi nu mai găseau cuvinte, aşa mă lăudau.
+Highlight: sănătoasă. Uneori vorbea atât de înflăcărat şi compunea <em>poezii</em> bunişoare. Ce păcat însă că toate acestea sunt
+Highlight: cum am descris mai târziu în cele trei strofe din <em>poezia</em>:
+Highlight: am compus primele versuri din <em>poezia</em>:
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 10 - Va veni un altul...
+Type: articol
+Author: Traian Dorz
+Highlight: Lucram <em>poezii</em> şi îi dădeam să le pună melodii. Speram că aceasta
+Highlight: refăcut şi tipărit apoi prima lui cărticică de <em>poezii</em> pe care i-am adus-o, ca pe o surpriză fericită
+Highlight: În timpul acesta am compus cele mai amare din <em>poeziile</em> mele:
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: cum au fost cele cu crucile Oastei şi alte multe <em>poezii</em> care au apărut atunci prin
+Highlight: Munteanu Muntmarg ne-a adus cântarea semnificativă a <em>poeziei</em> fr. Dorz: Te-am simţit Isuse.
+Highlight: vestit că ne-a adus o cântare nouă şi ne-a cântat <em>poezia</em> fr. Dorz: Te-am minţit Isuse - pe mine m-a fulgerat
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: am scris altele vreo cincizeci noi: meditaţii, <em>poezii</em>, povestiri, unele cunoscute, altele nu...
+Highlight: niciodată. Într-adevăr cum spune meditaţia din <em>poezia</em> de mai jos:
+Highlight:  - de exemplu. De ce nu vrei să scrii <em>poezii</em> patriotice, sociale, politice? Ai câştiga mii de
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 21 - La 25 de ani...
+Type: articol
+Author: Traian Dorz
+Highlight: şi cu un conţinut minunat de vorbiri, cântări, <em>poezii</em>, declamări. Aveam cu noi şi doi preoţi. Totul a
+Highlight: Lucrările scrise ale Oastei: Meditaţii, <em>poezii</em>, cântări, îndemnuri, au ajuns la sute de titluri
+Highlight: Numărul cântărilor din <em>poezii</em> originale sau versificări biblice cărora li s-au
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 1 - Înfricoşata lepădare
+Type: articol
+Author: Traian Dorz
+Highlight: sufletească mai ales pentru copii şi tineret? Cărţile de <em>poezii</em>, de cântări religioase, de meditaţie, de rugăciune
+Highlight: patruzeci de caiete cu meditaţii evanghelice şi <em>poezii</em> religioase. Acestea erau singura ei mângâiere în
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: Cinci caiete cu Istoria Oastei, zece caiete cu <em>poezii</em>, altele cu meditaţii, cărţi, corespondenţă, fotografii
+Highlight: afară de faptul că am scris câte ceva meditaţii şi <em>poezii</em>, că am înregistrat unele din acestea pentru fraţi
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 15 - Al doilea foc
+Type: articol
+Author: Traian Dorz
+Highlight: , iar anul acesta la Cluj alte două cărţi de <em>poezii</em>:
+Highlight: suferinţele copiilor lui Dumnezeu. Toate titlurile <em>poeziilor</em>, articolelor sau ştirilor erau pline de înţelesul
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 15 - Micii contemporani ai marilor oameni
+Type: articol
+Author: Traian Dorz
+Highlight: una cu note, una fără, apoi mai multe cărţi de <em>poezii</em> şi meditaţii de ale noastre, precum şi de ale altor
+Highlight: Călăuzit de gândul acesta publicam în gazetă sute de <em>poezii</em> pe care le primeam din ţară, pe cele mai multe
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 17 - Ziua a doua
+Type: articol
+Author: Traian Dorz
+Highlight: apoi mai jos în marea bucurie a noii biruinţe şi <em>poezia</em> :
+Highlight: Biblioteca de <em>poezii</em> Doina Golgotei, cuprindea 26 de numere.
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: Îndată după aceasta apar la rând primele articole, <em>poezii</em> şi scrisori sosite din ţară ca răspuns la cele
+Highlight: (<em>Poezia</em> aceasta e a fratelui Gh. V. Lazăr - Iaşi. Melodia
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: scris mai târziu cu toată durerea mea una dintre <em>poeziile</em> de care mi-e teamă şi-acum:
+Highlight: moarte... Atunci mi-a venit în gând şi am compus şi <em>poezia</em>:
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 30 - Alte adevăruri noi
+Type: articol
+Author: Traian Dorz
+Highlight: au ridicat o maşină veche de scris, nişte foi cu <em>poezii</em> pe care încerca să le scrie Ovidiu, copilul de
+Highlight: eu v-am cunoscut pe dv. mai demult. V-am citit <em>poeziile</em> şi unele lucrări. Şi doream să stau odată de vorbă
+
+Score: 0.6666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: caiet “Cântări Nemuritoare” vol. 8 din care copia <em>poezii</em> băiatul meu de 16 ani pentru a învăţa să scrie
+Highlight: - <em>Poezii</em>, meditaţii, proverbe.
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: bucurie pe care le-am avut atunci, le-am descris în <em>poezia</em>
+Highlight: Atunci am compus <em>poezia</em>:
+
+Score: 0.6666666
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Cântarea de la Marea Roşie
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: noastre sufleteşti. Nu plac tuturor aceste cântări <em>poezii</em>; sunt cântări duhovniceşti pe care oamenii cei
+Highlight: acest lucru fratele nostru ostaş, N. Cimpoca, în <em>poezia</em>:
+
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Vol. 1
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>poezii</em>
+Highlight: <em>Poeziile</em> revăzute din:
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Bun rămas, mă duc!
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Poezii</em> şi melodii
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: răniţi ascultară cu lacrimi frumoasele cântări, <em>poezii</em>, cuvântări şi rugăciuni. Apoi au urmat darurile
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: acest nou fel de petreceri, aceste noi cântări şi <em>poezii</em>, acest nou fel de predici şi de predicatori, acest
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 11 - Cel mai bun misionar
+Type: articol
+Author: Traian Dorz
+Highlight: vrea. Pe lângă acestea vor veni şi premii pentru <em>poezii</em> religioase, etc. Facem şi această jertfă ca să
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: Când mi-a apărut primul volum de <em>poezii</em>
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 12 - Toate lucrează spre bine
+Type: articol
+Author: Traian Dorz
+Highlight: din cântări, rugăciuni, cuvântări şi declamări de <em>poezii</em> pline de putere şi de lacrimi. O mare lucrare de
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight: Îndemnat de încurajările de prin foaie spre a se scrie <em>poezii</em>, începusem să scriu şi să trimit şi eu acolo sfioasele
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 16 - Din cetate în cetate...
+Type: articol
+Author: Traian Dorz
+Highlight: biserică, când aceştia se făceau mai mărişori spuneau <em>poezii</em> şi cântau în cor.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 18 - Frumosul an 1930
+Type: articol
+Author: Traian Dorz
+Highlight: magazin de cunoştinţe folositoare de tot felul... <em>poezii</em>, schiţe, istorioare, povestiri pentru petrecere
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 18 - La 25 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: Copiii şi tineretul nostru au recitat mişcătoare <em>poezii</em> şi cu toţii am cântat multe cântări şi colinzi
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 19 - Şi binele trebuie plătit
+Type: articol
+Author: Traian Dorz
+Highlight: Am redactat o foaie religioasă şi am scris nişte <em>poezii</em> creştine.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 2 - A treia zi istorică
+Type: articol
+Author: Traian Dorz
+Highlight: Sfintei Cruci. Chiar şi la începutul declamărilor de <em>poezii</em> şi la sfârşitul acestora. Prin aceasta se creează
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Type: articol
+Author: Traian Dorz
+Highlight: .. Oastea Domnului are şi un cor... Se declamă <em>poezii</em>, se interpretează piese religioase şi astfel se
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: au ars acolo sute şi mii de cărţi de cântări, de <em>poezii</em>, de Biblii, de colecţii, de scrisori, de albume
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 22 - Peregrinările soliei
+Type: articol
+Author: Traian Dorz
+Highlight: citea cu lacrimi şi îmi recita din cântările şi <em>poeziile</em> dv. Ce bucurie şi ce surpriză să vă cunosc aici
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 23 - Şi ultimul 2
+Type: articol
+Author: Traian Dorz
+Highlight: Din aceste frământări au ieşit atunci versurile <em>poeziei</em>
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 24 - Pânza care se ţese
+Type: articol
+Author: Traian Dorz
+Highlight: Dar lipsa Bibliilor, a cărţilor de cântări, de <em>poezii</em> ori povestiri biblice se simţea din ce în ce mai
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 26 - Fântânile certei noastre
+Type: articol
+Author: Traian Dorz
+Highlight: lumea asta mai duios şi mai dulce decât cântarea şi <em>poezia</em> revărsată din inimile noastre chiar de Duhul Sfânt
+
+Score: 0.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 28 - Necazurile din lungul drumului
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cinci caiete cu Istoria Oastei, zece caiete cu <em>poezii</em>, altele cu medita\u0163ii \u015fi cu proverbe, c\u0103r\u0163i, coresponden\u0163\u0103"
-]
-}
+Highlight: Cinci caiete cu Istoria Oastei, zece caiete cu <em>poezii</em>, altele cu meditaţii şi cu proverbe, cărţi, corespondenţă
 
-Score: 2.0
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: aceste grupări şi confesiuni. Meditaţii adânci, <em>poeziile</em> inspirate sau cântările nemuritoare ale Oastei
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: părinţii lor credincioşi la biserică şi spuneau <em>poezii</em> în adunarea frăţească. Dar îndată ce au ajuns şi
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
+Type: articol
+Author: Traian Dorz
+Highlight: - <em>Poezii</em>, meditaţii, proverbe...
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: Întors în celulă, am compus atunci <em>poezia</em>:
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 9 - Pe drumul crucii mele
+Type: articol
+Author: Traian Dorz
+Highlight: citea, compunând şi el unele articolaşe şi chiar <em>poezii</em>, cu care colabora la foaie.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Comorile care rămân veşnic
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Spre Cetatea <em>Poeziei</em> nu poţi merge pe urmele altora decât foarte puţin
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din Preistorie coboară
+Type: poezie
+Author: Traian Dorz
+Highlight: prin care avem Adevărul şi <em>Poezia</em>
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)
+Type: articol
+Author: Traian Dorz
+Highlight: Când este vorba despre dragoste, de exemplu, nu <em>poeziile</em> despre ea, nici cântările despre ea, nici predicile
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Niciodată n-a vorbit cineva astfel...
+Type: articol
+Author: Traian Dorz
+Highlight: ascultat extaziaţi glasul Filozofiei, Muzicii şi <em>Poeziei</em>,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Ucenicul şi prigonitorul
+Type: articol
+Author: Traian Dorz
+Highlight: ascultat pe extaziaţi, glasul filozofiei, Muzicii şi <em>Poeziei</em>,
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Vol. 6
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>poezii</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Vol. 7
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>poezii</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Vol. 8
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>poezii</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Vol. 9
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>poezii</em>
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Începutul minunilor mele
+Type: articol
+Author: Traian Dorz
+Highlight: le împletim firele de aur ale melodiilor şi ale <em>poeziei</em> împreună.
+
+Score: 0.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: Îţi mulţumim Isuse Doamne
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>Poeziile</em> ref\u0103cute din:"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Mai sunt multe...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00eenchinat at\u00e2t de des\u0103v\u00e2r\u015fite opere vreodat\u0103, c\u00e2nt\u0103ri, <em>poezii</em>, rug\u0103ciuni, adora\u0163ii?... "
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Credinţa Încununată
-Title: Marile adevăruri mântuitoare
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"trebuiesc \u00eembr\u0103cate \u00een ve\u015fminte de povestire, de <em>poezie</em>, de c\u00e2ntare, de proverbe, de pilde sau istorioare"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Întâi să fim
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"4 - Am scris anul trecut o <em>poezie</em>, am f\u0103cut un desen, am lucrat la ceva, - c\u00e2nd anul"
-]
-}
+Highlight: <em>Poeziile</em> refăcute din:
 

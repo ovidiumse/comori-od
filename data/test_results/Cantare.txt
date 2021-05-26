@@ -1,1789 +1,1232 @@
-+----------------------------------------+-----------------+-------------------------------+----------------------------+---------+
-| Titlu                                  | Author          | Tip                           | Carte                      | Volum   |
-+----------------------------------------+-----------------+-------------------------------+----------------------------+---------+
-| Toate cântă-cântă                      | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Cântă-i mamă cântă                     | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Să-I cântăm, să-I cântăm...            | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare        | poezie  |
-| Cântă-I Mamă, cântă                    | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| Cântarea de la Marea Roşie             | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                | articol |
-| Cântarea                               | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare        | articol |
-| Cântăm Domnului                        | Traian Dorz     | Păşunile Dulci                | Cugetări Nemuritoare       | poezie  |
-| Cântăm Domnului                        | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare        | poezie  |
-| Inima şi cântarea                      | Traian Dorz     | Dorim să fim                  | Cugetări Nemuritoare       | articol |
-| Cântarea Mielului                      | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                | articol |
-| Cerurile-Ţi cântă                      | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare        | poezie  |
-| Experienţa şi cântarea                 | Traian Dorz     | Semănaţi Cuvântul Sfânt       | Cugetări Nemuritoare       | articol |
-| Cânta o pasăre măiastră                | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare        | poezie  |
-| Cântă mamă legănând                    | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântarea Învierii, cum Doamne          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Cântarea Biruinţei                     | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Cântarea Viitoare                      | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare        | poezie  |
-| Să mai cântăm o dată                   | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare        | poezie  |
-| Cântă Maică legănând                   | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| Cântarea Revederii                     | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Suprema cântare Iubirii                | Traian Dorz     | Hristos - Slava noastră       | Meditații la Ev. după Ioan | poezie  |
-| Cântarea Deborei                       | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Suprema cântare Iubirii                | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Cântarea anilor...                     | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare        | poezie  |
-| Cântarea Veşniciei                     | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Cântă Maică-n ceasul sfânt             | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| Nu-i cântare care                      | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan | poezie  |
-| S-aducem cântare                       | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântă-mi mamă                          | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Nu-i cântare care                      | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Creşti cântare dulce                   | Traian Dorz     | Şi acum să facem              | Cugetări Nemuritoare       | poezie  |
-| Cântarea Veşniciei spre                | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan | poezie  |
-| Fără lacrimi nu-i cântare...           | Traian Dorz     | Lupta cea Bună                | Cugetări Nemuritoare       | poezie  |
-| Cânta-voi Celui Preaiubit              | Traian Dorz     | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan | poezie  |
-| Cântarea Izbăvirii                     | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Vino mamă să-I cântăm                  | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 1                 | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| E cineva, cântă                        | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Îţi cântăm Tată Sfânt                  | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare        | poezie  |
-| Cântarea Învierii o, cum               | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Creşti cântare dulce                   | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Cântarea Veşniciei spre                | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare        | poezie  |
-| Veniţi să cântăm!                      | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare        | poezie  |
-| Fără lacrimi nu-i cântare              | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare        | poezie  |
-| Cântă Maică liniştit                   | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| Cântă-i mamă psalmii                   | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| Cântă-mi, dulce mamă                   | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| Doamne, ce cântare sfântă              | Traian Dorz     | Eternele Poeme                | Cugetări Nemuritoare       | poezie  |
-| Doamne, ce cântare sfântă              | Traian Dorz     | Întâi să fim                  | Cugetări Nemuritoare       | poezie  |
-| Îţi cânt cu al meu suflet              | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântarea îngeraşilor                   | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântă câmpul                           | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântă-i mamă liniştit                  | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântă-i mamă psalmii                   | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântă-mi dulce mamă                    | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 3                 | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 7                 | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 11                | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 13                | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Din toată inima-Ţi cânt                | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Cum Ţi-aş putea cânta Isus             | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Cum să nu Te cânt?                     | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Aş dori să cânt...                     | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare        | poezie  |
-| Cum să nu Te cânt Isuse?               | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare        | poezie  |
-| Cântarea mea să fie                    | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Eu Îţi cântam                          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Nalţă-te cântarea mea                  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Doamne, ce cântare sfântă              | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare        | poezie  |
-| De-ar şti harfa care cântă             | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan | poezie  |
-| Cânta-voi totdeauna                    | Traian Dorz     | Strălucirea Biruinţei         | Cugetări Nemuritoare       | poezie  |
-| Cântă-i tată la copil                  | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cântarea împăratului David             | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Asaf                      | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 6                 | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 8                 | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 10                | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cântarea Roadelor                      | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare        | poezie  |
-| Doamne, să nu cânt vreodată            | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| De-ar şti harfa care cântă             | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare        | poezie  |
-| Cântarea lui Isaia - 21                | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Cap. 1 - Cânt. Cântărilor              | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare        | poezie  |
-| Poţi să cânţi                          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Toţi pot cânta                         | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare        | poezie  |
-| Cânta-voi totdeauna                    | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare        | poezie  |
-| Cap. 12 - Naşterea imnului duhovnicesc | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe        | articol |
-| Cap. 15 - Un An Nou Fericit            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe        | articol |
-| Cap. 26 - Fântânile certei noastre     | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe        | articol |
-| Cap. 18 - Frumoasele noastre Rusalii   | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe        | articol |
-| Facerea şi Început                     | Traian Dorz     | Păşunile Dulci                | Cugetări Nemuritoare       | articol |
-| Răbdarea şi loviturile                 | Traian Dorz     | Cununile Slăvite              | Cugetări Nemuritoare       | articol |
-| Cap. 13 - E poate ultima-ncercare...   | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe        | articol |
-| Milă ai de mine Doamne                 | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare        | poezie  |
-| Cap. 7 - Printre leu şi printre urs    | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe        | articol |
-| Cap. 6 - Alte amare adevăruri          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe        | articol |
-| Cap. 29 - Ne apropiem de Ţărm          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea     | articol |
-| Lauda pentru Dumnezeu                  | Traian Dorz     | Garanţia Veşnică              | Cugetări Nemuritoare       | articol |
-| Cap. 11 - Răscrucea Isus               | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe        | articol |
-| Isuse, noi copiii...                   | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare        | poezie  |
-| Cap. 9 - În vremea aceea...            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe        | articol |
-| Când a văzut Isus pe Mama Sa...        | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan | articol |
-+----------------------------------------+-----------------+-------------------------------+----------------------------+---------+
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                    | Occurrences                                                       | Author          | Tip                            | Carte                        | Volum   |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Suprema cântare Iubirii                                                                  | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Creşti cântare dulce                                                                     | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| S-aducem cântare                                                                         | {'cântare', 'cânt'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Nu-i cântare care                                                                        | {'cântare', 'cântă', 'cânt'}                                      | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Nu-i cântare care                                                                        | {'cântare', 'cântă', 'cânt'}                                      | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cântarea de la Marea Roşie                                                               | {'cântau', 'cântare', 'cântarea', 'cântăm', 'cânta', 'Cântarea'}  | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Cântarea Mielului                                                                        | {'cântare', 'Cântare', 'Cântarea', 'cânta', 'cântăm', 'cântarea'} | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                                   | {'cântare', 'cânte', 'Cântarea', 'cântarea'}                      | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 15 - Un An Nou Fericit                                                              | {'cântarea', 'cântare', 'Cântarea', 'cânte'}                      | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cântarea                                                                                 | {'cântare', 'Cântarea'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cântăm Domnului                                                                          | {'Cântare', 'cântăm', 'Cântăm'}                                   | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | poezie  |
+| Cântăm Domnului                                                                          | {'Cântare', 'cântăm', 'Cântăm'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Cântă mamă legănând                                                                      | {'cântare', 'Cântă', 'cântă'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cap. 26 - Fântânile certei noastre                                                       | {'cântare', 'Cântarea'}                                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                     | {'cântă', 'cântare', 'cântarea'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                                 | {'cântare', 'cântase', 'cântarea', 'cânta'}                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Facerea şi Început                                                                       | {'cântare', 'Cântare', 'cânta', 'cântarea', 'cântă'}              | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Cap. 6 - Alte amare adevăruri                                                            | {'cântare', 'cântarea', 'cântă', 'cânta'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                                      | {'cântare', 'cânta', 'cântarea', 'cântam'}                        | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                              | {'cânt', 'cântare', 'cântăm', 'cântam', 'cânte'}                  | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 8 - Marele necaz salvator                                                           | {'cântare', 'cânte', 'cântarea'}                                  | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                         | {'cânt', 'cântare', 'cântam', 'cântă', 'cânte'}                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cântarea Deborei                                                                         | {'cântare', 'cânta', 'cânte', 'Cântarea'}                         | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 66                                                                               | {'cântare', 'cântă'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 42                                                                               | {'cântare', 'cânta'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cântarea Izbăvirii                                                                       | {'cântare', 'cânta', 'cânt', 'Cântarea'}                          | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Îţi cântăm Tată Sfânt                                                                    | {'cântare', 'cântă', 'cântăm'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Cântarea îngeraşilor                                                                     | {'cântare', 'Cântarea'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Cânt. Cântărilor                                                                | {'cântare', 'Cânt'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cântarea lui Asaf                                                                        | {'cântare', 'Cântarea'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cântarea lui Isaia - 6                                                                   | {'cântare', 'Cântarea'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cap. 14 - Strâmta cărare mântuitoare                                                     | {'cântare', 'Cânt', 'cânt', 'cântăm', 'cânta', 'cânţi'}           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Bucurie şi nefericire                                                                    | {'cântau', 'cântare', 'cântăm', 'cânta', 'cântarea', 'Cântarea'}  | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Cap. 17 - Vin rândurile noi                                                              | {'cântare', 'cântarea'}                                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                                  | {'cânte', 'cântare', 'cântăm'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                                   | {'cânte', 'cântare', 'cânta', 'cântă', 'cânt'}                    | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 8 - Al şaptelea foc                                                                 | {'cântare', 'cântă', 'cântarea'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Psalmul 45                                                                               | {'cântă', 'cântare', 'cântarea', 'cânt'}                          | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Biblia, Cuvântul Sfânt                                                                   | {'cântare', 'cânt'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cap. 13 - Pe urmele profetului                                                           | {'cântare', 'cântarea', 'cântau'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Chemări                                                                                  | {'cântare', 'cânta', 'cântarea'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Fără luptă nu-i cunună                                                                   | {'cântare', 'cântarea'}                                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
+| Cap. 14 - Să ne apropiem de sfârşit                                                      | {'cântare', 'cânte'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 16 - Din cetate în cetate...                                                        | {'cântare', 'cântau'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 29 - Anul jubiliar 1988                                                             | {'cântare', 'cântau'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                                               | {'cântare', 'cântă'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cântaţi, fraţi şi surori                                                                 | {'cântare', 'cântarea'}                                           | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Nu-i judecător mai drept                                                                 | {'cântare', 'cântă'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Psalmul 43                                                                               | {'cântare', 'cânta'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Aş vrea ca-n focul unic                                                                  | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Lucrători                                                                                | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Lumina-i Chipul Tău                                                                      | {'Cântare', 'cântare'}                                            | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Mare plâns şi tânguieli                                                                  | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| O, harfa mea...                                                                          | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Plinătatea fericirii mele                                                                | {'cântare'}                                                       | Traian Dorz     | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Psalmul 32                                                                               | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 74                                                                               | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Unde-I Domnul meu?                                                                       | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| V-am cercetat                                                                            | {'cântare'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cap. 13 - E poate ultima-ncercare...                                                     | {'cânte', 'cântare', 'cântă', 'cântarea'}                         | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                                            | {'cântare', 'cântarea', 'Cântarea', 'Cântă'}                      | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Când a văzut Isus pe Mama Sa...                                                          | {'cânte', 'cântare', 'cântam', 'cântarea', 'cânta', 'Cântam'}     | Traian Dorz     | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
+| Cap. 15 - Călătoria la Ierusalim                                                         | {'cântăm', 'cântare', 'cântarea', 'cântă', 'cântau'}              | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                                             | {'cântarea', 'cântare', 'cântăm', 'cântam'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                                                   | {'cântare', 'cânta', 'cânte', 'cântarea'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                                 | {'cântarea', 'cântare', 'cântau', 'cântă'}                        | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cântările Naşterii                                                                       | {'cântare', 'cânte', 'Cântă', 'cântă'}                            | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cap. 10 - Va veni un altul...                                                            | {'cântare', 'cântarea', 'cântam', 'cânta', 'cânţi'}               | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Semnele Oastei Domnului                                                        | {'cântare', 'cântarea', 'Cântarea', 'cântase', 'cânta', 'cântau'} | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                               | {'cântare', 'cântă', 'Cântă', 'cântarea'}                         | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cântări de Sus                                                                           | {'cântare', 'cânt', 'cânta', 'cântă', 'cântarea'}                 | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Cântări de Sus                                                                           | {'cântare', 'cânt', 'cânta', 'cântă', 'cântarea'}                 | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Din părţile Transilvaniei                                                                | {'cântare', 'cântăm', 'cântă', 'cânta', 'Cântăm'}                 | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'cântare', 'cântarea', 'Cântarea'}                               | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 13 - Frumosul tineret creştin                                                       | {'cântare', 'cântă', 'cântarea', 'cânta'}                         | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Psalmul 108                                                                              | {'cântare', 'cânte', 'cânta', 'cântarea'}                         | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Binecuvântat să fie Domnul, Stânca                                                       | {'cântare', 'cânta', 'cânt', 'cânte'}                             | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cap. 22 - Peregrinările soliei                                                           | {'cânte', 'cântare', 'cântă'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                                 | {'cânta', 'cântare', 'Cântă', 'cântarea'}                         | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Despre iubire                                                                            | {'cântare', 'cântarea', 'cânt', 'cânta'}                          | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                                                  | {'cântare', 'cântă'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Doamne, cum să nu-Ţi dăm?                                                                | {'cântare', 'cânta'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Psalmul 89                                                                               | {'cântare', 'cânta', 'cânte'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| S-au dus demult                                                                          | {'cântare', 'cânta', 'cânt', 'cântarea'}                          | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
+| S-au dus demult                                                                          | {'cântare', 'cânta', 'cânt', 'cântarea'}                          | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Slavă şi-nchinare                                                                        | {'cântare', 'cânte'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Aceea ce nu se poate ascunde                                                             | {'cântare', 'cânta', 'cântă'}                                     | Traian Dorz     | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Aici în pustiul acesta                                                                   | {'cântare', 'cântarea', 'cântă'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cap. 21 - După cei 50 de ani                                                             | {'cântare', 'cânt', 'cântarea'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Nu-i loc mai sfânt                                                                       | {'cântare', 'cântă'}                                              | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| Nu-i loc mai sfânt                                                                       | {'cântare', 'cântă'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Nu-mi mai aduc aminte şi nici                                                            | {'cântare', 'cânt', 'cântarea'}                                   | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
+| Nu-mi mai aduc aminte şi nici                                                            | {'cântare', 'cânt', 'cântarea'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| O, Isuse-Atotputernic                                                                    | {'cântare', 'cânta'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| O, Tu mi-ai dat vederea                                                                  | {'cântare', 'cântarea'}                                           | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
+| O, cerească melodie                                                                      | {'cântare', 'cântă'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Psalmul 122                                                                              | {'cântare', 'cântă'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 126                                                                              | {'cântare', 'cântam'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 65                                                                               | {'cântare', 'cânt', 'cântă'}                                      | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Să Te privesc din plin                                                                   | {'cântare', 'cânt'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
 Searching Cantare using http://localhost:9000...
-Got 1589 hits:
-Score: 3.2156863
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Toate cântă-cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Toate <em>c\u00e2nt\u0103</em>-<em>c\u00e2nt\u0103</em> Sus \u015fi jos \u015fi Sus",
-"toate <em>c\u00e2nt\u0103</em>-<em>c\u00e2nt\u0103</em> slava Ta Isus. ",
-"toate <em>c\u00e2nt\u0103</em>-<em>c\u00e2nt\u0103</em> slava Ta Isus",
-"toate-\u0162i <em>c\u00e2nt\u0103</em>-<em>c\u00e2nt\u0103</em>, Drag M\u00e2ntuitor",
-"toate <em>c\u00e2nt\u0103</em>-<em>c\u00e2nt\u0103</em>, Drag M\u00e2ntuitor."
-],
-"title": [
-"Toate <em>c\u00e2nt\u0103</em>-<em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 3.0833333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-i mamă cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 <em>c\u00e2nt\u0103</em>",
-"<em>c\u00e2nt\u0103</em>-i mam\u0103 dulce",
-"<em>c\u00e2nt\u0103</em>-mi mama mea",
-"<em>c\u00e2nt\u0103</em>-mi de Isus",
-"<em>c\u00e2nt\u0103</em>-mi mama mea"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 <em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 3.0833333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Să-I cântăm, să-I cântăm...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103-I <em>c\u00e2nt\u0103m</em>, s\u0103-I <em>c\u00e2nt\u0103m</em>",
-"S\u0103-I <em>c\u00e2nt\u0103m</em>, s\u0103-I <em>c\u00e2nt\u0103m</em>",
-"S\u0103-I <em>c\u00e2nt\u0103m</em> ne\u00eencetat",
-"s\u0103-I <em>c\u00e2nt\u0103m</em> de mii de ori",
-"S\u0103-I <em>c\u00e2nt\u0103m</em> preaferici\u0163i"
-],
-"title": [
-"S\u0103-I <em>c\u00e2nt\u0103m</em>, s\u0103-I <em>c\u00e2nt\u0103m</em>..."
-]
-}
-
-Score: 3.0476189
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cântă-I Mamă, cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-I Mam\u0103, <em>c\u00e2nt\u0103</em>",
-"<em>c\u00e2nt\u0103</em>-I Mam\u0103, dulce",
-"<em>C\u00e2nt\u0103</em>-I lui Isus",
-"<em>C\u00e2nt\u0103</em>-I Mam\u0103 bun\u0103, ",
-"<em>C\u00e2nt\u0103</em>-I Mam\u0103 dulce, "
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-I Mam\u0103, <em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 2.9230769
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Cântarea de la Marea Roşie
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"ceat\u0103 de \u00eengeri care <em>c\u00e2ntau</em> o <em>c\u00e2ntare</em> nou\u0103 \u015fi nimeni nu putea s\u0103 \u00eenve\u0163e <em>c\u00e2ntarea</em> aceasta dec\u00e2t cei 144",
-"au c\u00e2ntat Moise \u015fi copiii lui Israel <em>c\u00e2ntarea</em> aceasta: S\u0103 <em>c\u00e2nt\u0103m</em> Domnului c\u0103ci cu slav\u0103 S-a preasl\u0103vit",
-"lor se \u00eencheie cu rug\u0103ciune \u015fi <em>c\u00e2ntare</em> de slav\u0103 lui Dumnezeu. Dar <em>c\u00e2ntarea</em> aceasta nu e numai a celor sc\u0103pa\u0163i",
-"diavolului Faraon. Bucuria \u015fi <em>c\u00e2ntarea</em> de la Marea Ro\u015fie este bucuria \u015fi <em>c\u00e2ntarea</em> tuturor celor r\u0103scump\u0103ra\u0163i",
-"robia diavolului Faraon... \u015fi noi trebuie s\u0103 <em>c\u00e2nt\u0103m</em> o <em>c\u00e2ntare</em> nou\u0103, de slav\u0103 \u015fi laud\u0103 lui Dumnezeu.  Israelienii"
-],
-"title": [
-"<em>C\u00e2ntarea</em> de la Marea Ro\u015fie"
-]
-}
-
-Score: 2.9130435
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Cântarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1 - <em>C\u00e2ntarea</em>-i rev\u0103rsarea prea-plinului duios",
-"2 - <em>C\u00e2ntarea</em>-i r\u0103corirea ce-av\u00e2ntul tineresc",
-"3 - <em>C\u00e2ntarea</em>-i desc\u0103rcarea iubirii c\u00e2nd prea plin",
-"4 - <em>C\u00e2ntarea</em> e mijlocul prin care-mp\u0103rt\u0103\u015fim",
-"5 - <em>C\u00e2ntarea</em> e solia"
-],
-"title": [
-"<em>C\u00e2ntarea</em>"
-]
-}
-
-Score: 2.875
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Cântăm Domnului
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-I <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>",
-"s\u0103-\u0162i <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>",
-"s\u0103-\u0162i <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>",
-"<em>C\u00e2nt\u0103m</em> Domnului, <em>c\u00e2nt\u0103m</em> o",
-"o <em>C\u00e2ntare</em> Nou\u0103,  c\u00e2nd"
-],
-"title": [
-"<em>C\u00e2nt\u0103m</em> Domnului"
-]
-}
-
-Score: 2.875
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Cântăm Domnului
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u015fi-I <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>",
-"s\u0103-\u0162i <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>",
-"s\u0103-\u0162i <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>, <em>c\u00e2nt\u0103m</em>",
-"<em>C\u00e2nt\u0103m</em> Domnului, <em>c\u00e2nt\u0103m</em> o",
-"o <em>C\u00e2ntare</em> Nou\u0103,  c\u00e2nd"
-],
-"title": [
-"<em>C\u00e2nt\u0103m</em> Domnului"
-]
-}
-
-Score: 2.8666668
-Volume: Cugetări Nemuritoare
-Book: Dorim să fim
-Title: Inima şi cântarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ci se <em>c\u00e2nt\u0103</em>... De ce \u00een Casa Domnului toate slujbele sfinte se <em>c\u00e2nt\u0103</em>, toate rug\u0103ciunile se <em>c\u00e2nt\u0103</em>, toate",
-"1 - Cea mai frumoas\u0103 <em>c\u00e2ntare</em> este aceea care iese dintr-o inim\u0103 bun\u0103 \u015fi curat\u0103. Dar o astfel de inim\u0103",
-"O astfel de <em>c\u00e2ntare</em> este cea mai pl\u0103cut\u0103 celor din cer - \u015fi cea mai",
-"3 - <em>C\u00e2ntarea</em> este unul dintre cele mai mari daruri l\u0103sate de",
-"doctrinele \u00eei despart, discu\u0163iile \u00eei despart, dar <em>c\u00e2ntarea</em> \u015fi poezia i-a unit pe totdeauna pe oameni \u015fi nu"
-],
-"title": [
-"Inima \u015fi <em>c\u00e2ntarea</em>"
-]
-}
-
-Score: 2.857143
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Cântarea Mielului
-Type: articol
-Author: Pr. Iosif Trifa
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Mielului \u00eenc\u0103 e <em>c\u00e2ntare</em> nou\u0103 pe care o pot <em>c\u00e2nta</em> numai cei r\u0103scump\u0103ra\u0163i",
-"despre o <em>c\u00e2ntare</em> nou\u0103. <em>C\u00e2ntare</em> nou\u0103 au c\u00e2ntat israelienii c\u00e2nd au sc\u0103pat din Marea Ro\u015fie.  C\u00e2ntare",
-"r\u0103scump\u0103r\u0103rii - acolo se aude \u00eendat\u0103 <em>c\u00e2ntarea</em> Mielului, <em>c\u00e2ntarea</em> cea nou\u0103 (",
-"\u015fi pe noi, cei din Oastea Domnului, s\u0103 <em>c\u00e2nt\u0103m</em> Domnului <em>c\u00e2ntare</em> nou\u0103. Oastea Domnului are \u015fi ea c\u00e2nt\u0103ri",
-"<em>C\u00e2ntare</em> nou\u0103 au"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Mielului"
-]
-}
-
-Score: 2.857143
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Cerurile-Ţi cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"toate <em>c\u00e2nt\u0103</em>, <em>c\u00e2nt\u0103</em>, <em>c\u00e2nt\u0103</em>...",
-"<em>c\u00e2nt\u0103</em>, <em>c\u00e2nt\u0103</em>, <em>c\u00e2nt\u0103</em> \u0162ie...",
-"toate <em>c\u00e2nt\u0103</em>, toate <em>c\u00e2nt\u0103</em> pentru",
-"\u00eentr-o unic\u0103-nchinare, <em>c\u00e2nt\u0103</em> \u0162ie, <em>c\u00e2nt\u0103</em> \u0162ie cu",
-"Cerurile-\u0162i <em>c\u00e2nt\u0103</em> Doamne slava Ta din mii de strune orice"
-],
-"title": [
-"Cerurile-\u0162i <em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 2.8461537
-Volume: Cugetări Nemuritoare
-Book: Semănaţi Cuvântul Sfânt
-Title: Experienţa şi cântarea
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1 - Orice experien\u0163\u0103 cu Dumnezeu este o <em>c\u00e2ntare</em> \u015fi o \u00eenc\u00e2ntare de fiecare dat\u0103, pentru orice suflet care",
-"cultivat cele dou\u0103 divine daruri care sunt poezia \u015fi <em>c\u00e2ntarea</em>. ",
-"poezie pus\u0103 pe melodie de <em>c\u00e2ntare</em> este cea din ",
-", denumit\u0103 <em>C\u00e2ntarea</em> Izb\u0103virii. Moise trebuie s\u0103",
-"cu Dumnezeu, cei izb\u0103vi\u0163i au sim\u0163it nevoia s\u0103-I <em>c\u00e2nte</em> \u015fi s\u0103-I arate Domnului \u00een felul acesta recuno\u015ftin\u0163a"
-],
-"title": [
-"Experien\u0163a \u015fi <em>c\u00e2ntarea</em>"
-]
-}
-
-Score: 2.8181818
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cânta o pasăre măiastră
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nta</em> o pas\u0103re m\u0103iastr\u0103",
-"de Golgota duios <em>c\u00e2nta</em>",
-"at\u00e2t de limpede <em>c\u00e2nta</em>",
-"am \u00eenceput s\u0103-l <em>c\u00e2nt</em> \u015fi eu",
-"<em>c\u00e2ntarea</em> Jertfei Preaiubite"
-],
-"title": [
-"<em>C\u00e2nta</em> o pas\u0103re m\u0103iastr\u0103"
-]
-}
-
-Score: 2.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă mamă legănând
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em> mam\u0103, <em>c\u00e2nt\u0103</em>",
-"<em>C\u00e2nt\u0103</em> mam\u0103 leg\u0103n\u00e2nd o",
-"o <em>c\u00e2ntare</em> dulce c\u00e2nd",
-"o <em>c\u00e2ntare</em> sf\u00e2nt\u0103",
-"<em>C\u00e2nt\u0103</em>-i mam\u0103"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em> mam\u0103 leg\u0103n\u00e2nd"
-]
-}
-
-Score: 2.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cântarea Învierii, cum Doamne
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> \u00cenvierii",
-"cum Doamne-o vom <em>c\u00e2nta</em>",
-"cum vei <em>c\u00e2nta</em> atunci? ",
-"<em>C\u00e2ntarea</em> \u00cenvierii",
-"cum s-o <em>c\u00e2nt\u0103m</em> Iubirii"
-],
-"title": [
-"<em>C\u00e2ntarea</em> \u00cenvierii, cum Doamne"
-]
-}
-
-Score: 2.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cântarea Biruinţei
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Biruin\u0163ei, ",
-"<em>C\u00e2ntarea</em> Biruin\u0163ei, e Numele T\u0103u Drag, ",
-"<em>C\u00e2ntarea</em> Biruin\u0163ei e Numele",
-"Biruitorul, <em>c\u00e2nta</em>-vom numai \u0162ie, ",
-"<em>C\u00e2ntarea</em> Biruin\u0163ei, e"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Biruin\u0163ei"
-]
-}
-
-Score: 2.7777777
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Cântarea Viitoare
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Viitoare",
-"a\u015f vrea s-o pot <em>c\u00e2nta</em>",
-"<em>c\u00e2ntarea</em> s\u0103-mi r\u0103sfir",
-"<em>c\u00e2ntarea</em> s\u0103-mi r\u0103sfir",
-"- <em>C\u00e2ntarea</em> Viitoare"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Viitoare"
-]
-}
-
-Score: 2.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Să mai cântăm o dată
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S\u0103 mai <em>c\u00e2nt\u0103m</em>, s\u0103 mai <em>c\u00e2nt\u0103m</em>",
-"S\u0103 mai <em>c\u00e2nt\u0103m</em> o dat\u0103 c\u00e2ntarea",
-"<em>c\u00e2ntarea</em> asta drag\u0103 ce",
-"S\u0103 mai <em>c\u00e2nt\u0103m</em> iubirea",
-"\u015fi mult I-o vom <em>c\u00e2nta</em>"
-],
-"title": [
-"S\u0103 mai <em>c\u00e2nt\u0103m</em> o dat\u0103"
-]
-}
-
-Score: 2.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cântă Maică legănând
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em> Maic\u0103 leg\u0103n\u00e2nd",
-"o <em>c\u00e2ntare</em> dulce",
-"<em>C\u00e2nt\u0103</em>-I Maic\u0103-ncetinel",
-"cum cu drag se <em>c\u00e2nt\u0103</em>",
-"<em>C\u00e2nt\u0103</em>-I Maic\u0103 de-un Mielu\u0163"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em> Maic\u0103 leg\u0103n\u00e2nd"
-]
-}
-
-Score: 2.7142859
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cântarea Revederii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Revederii",
-"<em>C\u00e2ntarea</em> Revederii",
-"<em>C\u00e2ntarea</em> \u00cenfierii",
-"<em>C\u00e2ntarea</em> \u00cenfierii",
-"<em>C\u00e2ntarea</em> \u00cenvierii"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Revederii"
-]
-}
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Slava noastră
-Title: Suprema cântare Iubirii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Suprema <em>c\u00e2ntare</em> Iubirii-de-Sus",
-"Suprema <em>c\u00e2ntare</em> Iubirii - umbl\u00e2nd",
-"Suprema <em>c\u00e2ntare</em> Supremei Iubiri",
-"Suprema <em>c\u00e2ntare</em> iubirii-de-jos",
-"Suprema <em>c\u00e2ntare</em> Iubirii - doar ea"
-],
-"title": [
-"Suprema <em>c\u00e2ntare</em> Iubirii"
-]
-}
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea Deborei
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>c\u00e2nta</em>-voi Domnului, <em>c\u00e2nta</em>, ",
-"s\u0103 <em>c\u00e2nte</em>-n glas mereu pe Domnul lor",
-"s\u0103-I <em>c\u00e2nte</em> binecuv\u00e2ntarea-I mare",
-"\u015fi zi-o <em>c\u00e2ntare</em> pentru Dumnezeu. "
-],
-"title": [
-"<em>C\u00e2ntarea</em> Deborei"
-]
-}
-
-Score: 2.6666665
+Got 1235 hits:
+Score: 18.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Suprema cântare Iubirii
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Suprema <em>c\u00e2ntare</em> Iubirii-de-Sus",
-"Suprema <em>c\u00e2ntare</em> Iubirii - umbl\u00e2nd",
-"Suprema <em>c\u00e2ntare</em> Supremei Iubiri",
-"Suprema <em>c\u00e2ntare</em> iubirii-de-jos",
-"Suprema <em>c\u00e2ntare</em> Iubirii - doar ea"
-],
-"title": [
-"Suprema <em>c\u00e2ntare</em> Iubirii"
-]
-}
+Highlight: Suprema <em>cântare</em> Iubirii-de-Sus
+Highlight: Suprema <em>cântare</em> Iubirii - umblând
+Highlight: Suprema <em>cântare</em> Supremei Iubiri
+Highlight: Suprema <em>cântare</em> iubirii-de-jos
+Highlight: Suprema <em>cântare</em> Iubirii - doar ea
+Highlight: Suprema <em>cântare</em> Iubirii
 
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Cântarea anilor...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> anilor trecu\u0163i",
-"o <em>c\u00e2nt</em> tot mai cu jale",
-"o <em>c\u00e2nt</em> mai cu-nfocare, ",
-"- O, de-a\u015f putea s-o <em>c\u00e2nt</em> deplin"
-],
-"title": [
-"<em>C\u00e2ntarea</em> anilor..."
-]
-}
-
-Score: 2.6666665
+Score: 17.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
-Title: Cântarea Veşniciei
+Title: Creşti cântare dulce
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Ve\u015fniciei",
-"<em>c\u00e2nta</em>-va-ntotdeauna: ",
-"din <em>C\u00e2ntarea</em> C\u00e2nt\u0103rilor noastre, ",
-"trec\u00e2ndu-ne din C\u00e2nt\u0103rile Nemuritoare \u00een <em>C\u00e2ntarea</em> \u00cenvierii \u015fi apoi",
-"\u015fi \u00een urma noastr\u0103 <em>c\u00e2ntarea</em> Ei, "
-],
-"title": [
-"<em>C\u00e2ntarea</em> Ve\u015fniciei"
-]
-}
+Highlight: Creşti <em>cântare</em> dulce
+Highlight: Creşti <em>cântare</em> sfântă
+Highlight: Creşti <em>cântare</em> naltă
+Highlight: Creşti <em>cântare</em> dulce
 
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cântă Maică-n ceasul sfânt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em> Maic\u0103-n ceasul sf\u00e2nt",
-"<em>C\u00e2nt\u0103</em>-I lui Isus",
-"<em>C\u00e2nt\u0103</em>-I Maic\u0103",
-"<em>C\u00e2nt\u0103</em>-I Maic\u0103-nduio\u015fat",
-"<em>C\u00e2nt\u0103</em>-I Maic\u0103, lui Isus"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em> Maic\u0103-n ceasul sf\u00e2nt"
-]
-}
-
-Score: 2.6
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Nu-i cântare care
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-i <em>c\u00e2ntare</em> care",
-"<em>c\u00e2nt\u0103</em> fericirea",
-"<em>c\u00e2nt\u0103</em> fericirea. ",
-"de-atunci <em>c\u00e2nt</em> \u015fi pl\u00e2ng \u015fi suf\u0103r"
-],
-"title": [
-"Nu-i <em>c\u00e2ntare</em> care"
-]
-}
-
-Score: 2.6
+Score: 17.133333
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: S-aducem cântare
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"S-aducem <em>c\u00e2ntare</em>",
-"Etern\u0103 <em>c\u00e2ntare</em>",
-"preadulcele <em>c\u00e2nt</em>"
-],
-"title": [
-"S-aducem <em>c\u00e2ntare</em>"
-]
-}
+Highlight: S-aducem <em>cântare</em>
+Highlight: Eternă <em>cântare</em>
+Highlight: preadulcele <em>cânt</em>
+Highlight: S-aducem <em>cântare</em>
 
-Score: 2.6
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-mi mamă
+Score: 15.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Nu-i cântare care
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-mi mam\u0103 c\u00e2ntec sf\u00e2nt",
-"<em>C\u00e2nt\u0103</em>-mi de Isus",
-"<em>C\u00e2nt\u0103</em>-mi mam\u0103",
-"<em>C\u00e2nt\u0103</em>-mi mam\u0103-nduio\u015fat"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-mi mam\u0103"
-]
-}
+Highlight: Nu-i <em>cântare</em> care
+Highlight: <em>cântă</em> fericirea
+Highlight: <em>cântă</em> fericirea.
+Highlight: de-atunci <em>cânt</em> şi plâng şi sufăr
+Highlight: Nu-i <em>cântare</em> care
 
-Score: 2.6
+Score: 15.8
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Nu-i cântare care
 Type: poezie
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nu-i <em>c\u00e2ntare</em> care",
-"<em>c\u00e2nt\u0103</em> fericirea",
-"<em>c\u00e2nt\u0103</em> fericirea. ",
-"de-atunci <em>c\u00e2nt</em> \u015fi pl\u00e2ng \u015fi suf\u0103r"
-],
-"title": [
-"Nu-i <em>c\u00e2ntare</em> care"
-]
-}
+Highlight: Nu-i <em>cântare</em> care
+Highlight: <em>cântă</em> fericirea
+Highlight: <em>cântă</em> fericirea.
+Highlight: de-atunci <em>cânt</em> şi plâng şi sufăr
+Highlight: Nu-i <em>cântare</em> care
 
-Score: 2.5
-Volume: Cugetări Nemuritoare
-Book: Şi acum să facem
-Title: Creşti cântare dulce
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cre\u015fti <em>c\u00e2ntare</em> dulce",
-"Cre\u015fti <em>c\u00e2ntare</em> sf\u00e2nt\u0103",
-"Cre\u015fti <em>c\u00e2ntare</em> nalt\u0103"
-],
-"title": [
-"Cre\u015fti <em>c\u00e2ntare</em> dulce"
-]
-}
+Score: 10.07265
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Cântarea de la Marea Roşie
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: ceată de îngeri care <em>cântau</em> o <em>cântare</em> nouă şi nimeni nu putea să înveţe <em>cântarea</em> aceasta decât cei 144
+Highlight: lor se încheie cu rugăciune şi <em>cântare</em> de slavă lui Dumnezeu. Dar <em>cântarea</em> aceasta nu e numai a celor scăpaţi
+Highlight: robia diavolului Faraon... şi noi trebuie să <em>cântăm</em> o <em>cântare</em> nouă, de slavă şi laudă lui Dumnezeu.  Israelienii
+Highlight: căinţă şi Sângele Mielului - începe şi el a <em>cânta</em> o <em>cântare</em> nouă. În Oastea Domnului avem şi noi multe
+Highlight: Ce <em>cântare</em> vie şi caldă!
+Highlight: . Va rămânea de-a pururi această <em>cântare</em> căci ea a ieşit din bucuria unui popor izbăvit
+Highlight: <em>Cântarea</em> de la Marea Roşie
 
-Score: 2.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Cântarea Veşniciei spre
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Ve\u015fniciei spre Nesf\u00e2r\u015fitul M\u00e2ne",
-"r\u0103m\u00e2ne-n Poart\u0103 rou\u0103 s\u0103 intre numai <em>c\u00e2nt</em>. ",
-"... <em>C\u00e2ntarea</em> Ve\u015fniciei prime\u015fte-mi-o Isuse"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Ve\u015fniciei spre"
-]
-}
+Score: 9.595238
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Cântarea Mielului
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: despre o <em>cântare</em> nouă. <em>Cântare</em> nouă au cântat israelienii când au scăpat din Marea Roşie.
+Highlight: <em>Cântarea</em> Mielului încă e <em>cântare</em> nouă pe care o pot <em>cânta</em> numai cei răscumpăraţi
+Highlight: şi pe noi, cei din Oastea Domnului, să <em>cântăm</em> Domnului <em>cântare</em> nouă. Oastea Domnului are şi ea cântări
+Highlight: <em>Cântare</em> nouă au
+Highlight: răscumpărării - acolo se aude îndată <em>cântarea</em> Mielului, <em>cântarea</em> cea nouă ( Apoc
+Highlight: şi <em>cântarea</em> cea nouă.  Oriunde
+Highlight: <em>Cântarea</em> Mielului
 
-Score: 2.5
-Volume: Cugetări Nemuritoare
-Book: Lupta cea Bună
-Title: Fără lacrimi nu-i cântare...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lacrimi nu-i <em>c\u00e2ntare</em> dulce \u015fi frumoas\u0103",
-"c\u0103ci <em>c\u00e2ntarea</em> f\u0103r\u0103 lacrimi, duhul rece-l las\u0103",
-"ci <em>c\u00e2ntarea</em> f\u0103r\u0103 lacrimi"
-],
-"title": [
-"F\u0103r\u0103 lacrimi nu-i <em>c\u00e2ntare</em>..."
-]
-}
-
-Score: 2.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Cânta-voi Celui Preaiubit
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nta</em>-voi Celui Preaiubit",
-"<em>c\u00e2ntarea</em> Lui de jale",
-"<em>c\u00e2ntarea</em> unui pl\u00e2ns ad\u00e2nc"
-],
-"title": [
-"<em>C\u00e2nta</em>-voi Celui Preaiubit"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântarea Izbăvirii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pentru Dumnezeu c\u00e2ntar\u0103 o <em>c\u00e2ntare</em>-n unic fel. ",
-"... Domnului <em>c\u00e2nta</em>-voi pururi, ziceau ei cu glas m\u0103re\u0163",
-"Domnul e T\u0103ria noastr\u0103 \u015fi Temei de ve\u015fnic <em>c\u00e2nt</em>"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Izb\u0103virii"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Vino mamă să-I cântăm
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Vino mam\u0103 s\u0103-I <em>c\u00e2nt\u0103m</em>",
-"s\u0103-I <em>c\u00e2nt\u0103m</em> \u00een dulce fel",
-"Slava Ta - vom <em>c\u00e2nta</em>"
-],
-"title": [
-"Vino mam\u0103 s\u0103-I <em>c\u00e2nt\u0103m</em>"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 1
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nta</em>-voi Celui Preaiubit",
-"<em>c\u00e2ntarea</em> Lui de jale",
-"<em>c\u00e2ntarea</em> unui pl\u00e2ns ad\u00e2nc"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 1"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: E cineva, cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"- e cineva, <em>c\u00e2nt\u0103</em> prin zarea pustie. ",
-"E cineva <em>c\u00e2nt\u0103</em>... E unul, sunt doi, ",
-"\u015fi <em>c\u00e2nt\u0103</em> prin soare, prin noapte \u015fi ploi"
-],
-"title": [
-"E cineva, <em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Îţi cântăm Tată Sfânt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00ce\u0163i <em>c\u00e2nt\u0103</em> Tat\u0103 Sf\u00e2nt cu iubire",
-"Te sl\u0103vim, Te sl\u0103vim... \u015fi <em>c\u00e2ntare</em>",
-"ne-a dat starea din care-\u0162i <em>c\u00e2nt\u0103m</em>. "
-],
-"title": [
-"\u00ce\u0163i <em>c\u00e2nt\u0103m</em> Tat\u0103 Sf\u00e2nt"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cântarea Învierii o, cum
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> \u00cenvierii",
-"cum vom <em>c\u00e2nta</em> atunci? ",
-"<em>c\u00e2nta</em>-vor cei iubi\u0163i"
-],
-"title": [
-"<em>C\u00e2ntarea</em> \u00cenvierii o, cum"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Creşti cântare dulce
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cre\u015fti <em>c\u00e2ntare</em> dulce",
-"Cre\u015fti <em>c\u00e2ntare</em> sf\u00e2nt\u0103",
-"Cre\u015fti <em>c\u00e2ntare</em> nalt\u0103"
-],
-"title": [
-"Cre\u015fti <em>c\u00e2ntare</em> dulce"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Cântarea Veşniciei spre
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> Ve\u015fniciei spre Nesf\u00e2r\u015fitul M\u00e2ne",
-"r\u0103m\u00e2ne-n Poart\u0103 rou\u0103 s\u0103 intre numai <em>c\u00e2nt</em>. ",
-"... <em>C\u00e2ntarea</em> Ve\u015fniciei prime\u015fte-mi-o Isuse"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Ve\u015fniciei spre"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Veniţi să cântăm!
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Veni\u0163i s\u0103 <em>c\u00e2nt\u0103m</em> cu to\u0163ii",
-"Veni\u0163i s\u0103-I <em>c\u00e2nt\u0103m</em> cu to\u0163ii",
-"Veni\u0163i s\u0103-I <em>c\u00e2nt\u0103m</em> cu to\u0163ii"
-],
-"title": [
-"Veni\u0163i s\u0103 <em>c\u00e2nt\u0103m</em>!"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Fără lacrimi nu-i cântare
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"lacrimi, nu-i <em>c\u00e2ntare</em> dulce \u015fi frumoas\u0103",
-"c\u0103ci <em>c\u00e2ntarea</em> f\u0103r\u0103 lacrimi, duhul rece-l las\u0103",
-"\u015fi <em>c\u00e2ntarea</em> f\u0103r\u0103 lacrimi"
-],
-"title": [
-"F\u0103r\u0103 lacrimi nu-i <em>c\u00e2ntare</em>"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cântă Maică liniştit
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em> Maic\u0103 lini\u015ftit",
-"<em>C\u00e2nt\u0103</em>-I Maic\u0103 lui Isus, ",
-"<em>c\u00e2nt\u0103</em>-I Domnului Hristos"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em> Maic\u0103 lini\u015ftit"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cântă-i mamă psalmii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 psalmii sfin\u0163i, ",
-"cum <em>c\u00e2nta</em>-n fiori fierbin\u0163i",
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 la copil, "
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 psalmii"
-]
-}
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Cântă-mi, dulce mamă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-mi, dulce mam\u0103, ",
-"s\u0103 <em>c\u00e2nt\u0103m</em> \u00een cor, ",
-"s\u0103 <em>c\u00e2nt\u0103m</em> \u00een cor"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-mi, dulce mam\u0103"
-]
-}
-
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Eternele Poeme
-Title: Doamne, ce cântare sfântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Doamne, ce <em>c\u00e2ntare</em> sf\u00e2nt\u0103",
-"se prefac <em>c\u00e2ntare</em>."
-],
-"title": [
-"Doamne, ce <em>c\u00e2ntare</em> sf\u00e2nt\u0103"
-]
-}
-
-Score: 2.3333333
-Volume: Cugetări Nemuritoare
-Book: Întâi să fim
-Title: Doamne, ce cântare sfântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Doamne ce <em>c\u00e2ntare</em> sf\u00e2nt\u0103",
-"se prefac <em>c\u00e2ntare</em>."
-],
-"title": [
-"Doamne, ce <em>c\u00e2ntare</em> sf\u00e2nt\u0103"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Îţi cânt cu al meu suflet
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00ce\u0163i <em>c\u00e2nt</em> cu al meu suflet",
-"\u015fi cu-a mea gur\u0103-\u0162i <em>c\u00e2nt</em>"
-],
-"title": [
-"\u00ce\u0163i <em>c\u00e2nt</em> cu al meu suflet"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântarea îngeraşilor
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> \u00eengera\u015filor",
-"cu-a dragostei <em>c\u00e2ntare</em>. "
-],
-"title": [
-"<em>C\u00e2ntarea</em> \u00eengera\u015filor"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă câmpul
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em> c\u00e2mpul fericit",
-"<em>C\u00e2nt\u0103</em> p\u0103s\u0103rile-n cr\u00e2ng"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em> c\u00e2mpul"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-i mamă liniştit
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 lini\u015ftit",
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 de Isus"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 lini\u015ftit"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-i mamă psalmii
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 psalmii sfin\u0163i",
-"cum <em>c\u00e2nta</em>-n fiori fierbin\u0163i"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-i mam\u0103 psalmii"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-mi dulce mamă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-mi dulce mam\u0103",
-"s\u0103-I <em>c\u00e2nt\u0103m</em> \u00een cor"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-mi dulce mam\u0103"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 3
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"spre El mi-nal\u0163 <em>c\u00e2ntarea</em>",
-"\u015fi to\u0163i s\u0103-I <em>c\u00e2nte</em> Lui. "
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 3"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 7
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"pot s\u0103 <em>c\u00e2nte</em> bucura\u0163i, ",
-"c\u00e2nd s\u0103racii pot s\u0103 <em>c\u00e2nte</em>"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 7"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 11
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u0103ci nu moartea \u015fi nici mor\u0163ii-\u0162i vor <em>c\u00e2nta</em>",
-"vom <em>c\u00e2nta</em> mereu c\u00e2nt\u0103rile-\u0162i divine"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 11"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 13
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>c\u00e2nte</em> tot p\u0103m\u00e2ntul, <em>c\u00e2nte</em> totdeauna: "
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 13"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Din toată inima-Ţi cânt
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Din toat\u0103 inima-\u0162i <em>c\u00e2nt</em> \u0162ie",
-"Din toat\u0103 inima-\u0162i <em>c\u00e2nt</em> \u0162ie"
-],
-"title": [
-"Din toat\u0103 inima-\u0162i <em>c\u00e2nt</em>"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Cum Ţi-aş putea cânta Isus
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cum \u0162i-a\u015f putea <em>c\u00e2nta</em> Isus",
-"s\u0103 pot <em>c\u00e2nta</em> odat\u0103"
-],
-"title": [
-"Cum \u0162i-a\u015f putea <em>c\u00e2nta</em> Isus"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Cum să nu Te cânt?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cum s\u0103 nu Te <em>c\u00e2nt</em> Isuse",
-"cum s\u0103 nu Te <em>c\u00e2nt</em>"
-],
-"title": [
-"Cum s\u0103 nu Te <em>c\u00e2nt</em>?"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Aş dori să cânt...
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"A\u015f dori s\u0103 <em>c\u00e2nt</em> un c\u00e2ntec pentru Tine",
-"ca suspinul lui s\u0103-l <em>c\u00e2nte</em>-ncetinel"
-],
-"title": [
-"A\u015f dori s\u0103 <em>c\u00e2nt</em>..."
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cum să nu Te cânt Isuse?
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Cum s\u0103 nu Te <em>c\u00e2nt</em> Isuse",
-"cum s\u0103 nu Te <em>c\u00e2nt</em>, "
-],
-"title": [
-"Cum s\u0103 nu Te <em>c\u00e2nt</em> Isuse?"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cântarea mea să fie
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2ntarea</em> mea s\u0103 fie ca roua primei flori",
-"- a\u015fa Isus, s\u0103-mi fie <em>c\u00e2ntarea</em> mea spre Tine! "
-],
-"title": [
-"<em>C\u00e2ntarea</em> mea s\u0103 fie"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Eu Îţi cântam
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Eu \u00ce\u0163i <em>c\u00e2ntam</em> c\u00e2nt\u0103ri divine, ",
-"- c\u0103 Te iubesc \u015fi-a\u015ftept - <em>c\u00e2ntam</em>"
-],
-"title": [
-"Eu \u00ce\u0163i <em>c\u00e2ntam</em>"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Nalţă-te cântarea mea
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Nal\u0163\u0103-te <em>c\u00e2ntarea</em> mea, ",
-"g\u00e2nd ca cel ce <em>c\u00e2nt\u0103</em>. "
-],
-"title": [
-"Nal\u0163\u0103-te <em>c\u00e2ntarea</em> mea"
-]
-}
-
-Score: 2.3333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 11
-Title: Doamne, ce cântare sfântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Doamne, ce <em>c\u00e2ntare</em> sf\u00e2nt\u0103",
-"se prefac <em>c\u00e2ntare</em>."
-],
-"title": [
-"Doamne, ce <em>c\u00e2ntare</em> sf\u00e2nt\u0103"
-]
-}
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mântuitorul nostru
-Title: De-ar şti harfa care cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"De-ar \u015fti harfa care <em>c\u00e2nt\u0103</em>"
-],
-"title": [
-"De-ar \u015fti harfa care <em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 2.0
-Volume: Cugetări Nemuritoare
-Book: Strălucirea Biruinţei
-Title: Cânta-voi totdeauna
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nta</em>-voi totdeauna pe Cel ce mi te-a dat"
-],
-"title": [
-"<em>C\u00e2nta</em>-voi totdeauna"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Cântă-i tată la copil
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nt\u0103</em>-i tat\u0103 la copil"
-],
-"title": [
-"<em>C\u00e2nt\u0103</em>-i tat\u0103 la copil"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea împăratului David
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"de-aceea-\u0162i voi <em>c\u00e2nta</em> prin neamuri Doamne"
-],
-"title": [
-"<em>C\u00e2ntarea</em> \u00eemp\u0103ratului David"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Asaf
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"ne vom pune slava \u00een a Ta <em>c\u00e2ntare</em>"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Asaf"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 6
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00cen ziua aceea c\u00e2nta\u0163i o <em>c\u00e2ntare</em>"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 6"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 8
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ve\u0163i <em>c\u00e2nta</em> ca-n noaptea"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 8"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 10
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"c\u00e2nt\u0103ri de veselie vom <em>c\u00e2nta</em>, "
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 10"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Cântarea Roadelor
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>c\u00e2ntarea</em> celui ce culege un rod prin munc\u0103 c\u00e2\u015ftigat"
-],
-"title": [
-"<em>C\u00e2ntarea</em> Roadelor"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Doamne, să nu cânt vreodată
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Doamne, s\u0103 nu <em>c\u00e2nt</em> vreodat\u0103"
-],
-"title": [
-"Doamne, s\u0103 nu <em>c\u00e2nt</em> vreodat\u0103"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: De-ar şti harfa care cântă
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"De-ar \u015fti harfa care <em>c\u00e2nt\u0103</em>"
-],
-"title": [
-"De-ar \u015fti harfa care <em>c\u00e2nt\u0103</em>"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Isaia - 21
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"naintea voastr\u0103 va <em>c\u00e2nta</em> c\u00e2mpia"
-],
-"title": [
-"<em>C\u00e2ntarea</em> lui Isaia - 21"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 1 - Cânt. Cântărilor
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"1-Aceasta e-o <em>c\u00e2ntare</em> a C\u00e2nt\u0103rilor, pl\u0103cut\u0103"
-],
-"title": [
-"Cap. 1 - <em>C\u00e2nt</em>. C\u00e2nt\u0103rilor"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Poţi să cânţi
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Po\u0163i s\u0103 <em>c\u00e2n\u0163i</em> c\u00e2nt\u0103ri o mie"
-],
-"title": [
-"Po\u0163i s\u0103 <em>c\u00e2n\u0163i</em>"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Toţi pot cânta
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"To\u0163i pot <em>c\u00e2nta</em>"
-],
-"title": [
-"To\u0163i pot <em>c\u00e2nta</em>"
-]
-}
-
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Cânta-voi totdeauna
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"<em>C\u00e2nta</em>-voi totdeauna"
-],
-"title": [
-"<em>C\u00e2nta</em>-voi totdeauna"
-]
-}
-
-Score: 1.9770114
+Score: 8.417077
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 12 - Naşterea imnului duhovnicesc
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" al nostru, o <em>c\u00e2ntare</em> a noastr\u0103 care s\u0103 <em>c\u00e2nte</em> chem\u0103rile noastre \u015fi \u00een sunetul c\u0103reia",
-"<em>C\u00e2ntarea</em> Oastei pentru Domnul este nu numai o <em>c\u00e2ntare</em> vie care cre\u015fte \u015fi spore\u015fte",
-"<em>c\u00e2ntarea</em> mea e scurt\u0103 se <em>c\u00e2nt\u0103</em> \u00eentr-un fel",
-"este un popor iubitor de poezie \u015fi de <em>c\u00e2ntare</em>. Poezia \u015fi <em>c\u00e2ntarea</em> este un dar special al poporului nostru",
-"decursul vremii <em>c\u00e2ntarea</em> religioas\u0103 s-a r\u0103cit \u015fi ea \u015fi s-a stins mereu. Azi, <em>c\u00e2ntarea</em> religioas\u0103 a ie\u015fit"
-]
-}
+Highlight:  al nostru, o <em>cântare</em> a noastră care să <em>cânte</em> chemările noastre şi în sunetul căreia
+Highlight: <em>Cântarea</em> Oastei pentru Domnul este nu numai o <em>cântare</em> vie care creşte şi sporeşte
+Highlight: este un popor iubitor de poezie şi de <em>cântare</em>. Poezia şi <em>cântarea</em> este un dar special al poporului nostru
+Highlight: devenit <em>cântare</em> bisericească, iar <em>cântarea</em> bisericească a fost închisă în strană. La început biserica a
+Highlight: s-a întâmplat şi cu <em>cântarea</em> religioasă... Cum te aude cineva cântând vreo <em>cântare</em> religioasă strigă după
+Highlight: Noi, un popor plin de poezie şi <em>cântare</em>, n-avem poezii care să <em>cânte</em> Jertfa Golgotei şi tainele mântuirii
 
-Score: 1.9444444
+Score: 8.356837
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 15 - Un An Nou Fericit
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"arte frumoase: poezia \u015fi <em>c\u00e2ntarea</em>. Biblia con\u0163ine nenum\u0103rate opere alese de <em>c\u00e2ntare</em> \u015fi poezie. \u00cen Biblie",
-" - <em>C\u00e2ntarea</em> Izb\u0103virii. O <em>c\u00e2ntare</em> de laud\u0103 pentru",
-"). <em>C\u00e2ntarea</em> lui Moise se <em>c\u00e2nt\u0103</em> \u015fi \u00een cer (",
-"\u015fi <em>c\u00e2ntarea</em> nu aduc dec\u00e2t armonie, unitate, \u00een\u0103l\u0163are, desf\u0103tare \u015fi pace. Numai poezia \u015fi <em>c\u00e2ntarea</em> dragostei",
-"fiecare va trebui s\u0103 recite o poezie, sau s\u0103 ne <em>c\u00e2nte</em> o <em>c\u00e2ntare</em> nou\u0103, ori un eseu, ori o medita\u0163ie, ori un"
-]
-}
+Highlight: arte frumoase: poezia şi <em>cântarea</em>. Biblia conţine nenumărate opere alese de <em>cântare</em> şi poezie. În Biblie
+Highlight:  - <em>Cântarea</em> Izbăvirii. O <em>cântare</em> de laudă pentru
+Highlight: fiecare va trebui să recite o poezie, sau să ne <em>cânte</em> o <em>cântare</em> nouă, ori un eseu, ori o meditaţie, ori un
+Highlight: dulcea-vă <em>cântare</em> steagul
+Highlight: poezie, fie despre cuvânt, fie mai ales despre <em>cântare</em>, ori de altă ramură de creaţie, noi avem în vedere
+Highlight: - un psalm, o rugăciune fierbinte, o <em>cântare</em> -
 
-Score: 1.9130435
+Score: 8.289855
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Cântarea
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Cuprinde-te-n <em>cântare</em> cu tot ce-i dulce-n tine
+Highlight: îmbracă-ţi în <em>cântare</em> fiinţa ta întreagă
+Highlight: 1 - <em>Cântarea</em>-i revărsarea prea-plinului duios din
+Highlight: 2 - <em>Cântarea</em>-i răcorirea ce-avântul tineresc o
+Highlight: 3 - <em>Cântarea</em>-i descărcarea iubirii când prea plin ni-e
+Highlight: 4 - <em>Cântarea</em> e mijlocul prin care-mpărtăşim tăcerea
+Highlight: <em>Cântarea</em>
+
+Score: 8.270833
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Cântăm Domnului
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>Cântare</em> Nouă,
+Highlight: o <em>Cântare</em> Nouă...
+Highlight: şi-I <em>cântăm</em>, <em>cântăm</em>, <em>cântăm</em> o
+Highlight: să-Ţi <em>cântăm</em>, <em>cântăm</em>, <em>cântăm</em>
+Highlight: să-Ţi <em>cântăm</em>, <em>cântăm</em>, <em>cântăm</em>
+Highlight: <em>Cântăm</em> Domnului, <em>cântăm</em> o
+Highlight: <em>Cântăm</em> Domnului
+
+Score: 8.270833
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Cântăm Domnului
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>Cântare</em> Nouă,
+Highlight: o <em>Cântare</em> Nouă.
+Highlight: şi-I <em>cântăm</em>, <em>cântăm</em>, <em>cântăm</em> o
+Highlight: să-Ţi <em>cântăm</em>, <em>cântăm</em>, <em>cântăm</em>
+Highlight: să-Ţi <em>cântăm</em>, <em>cântăm</em>, <em>cântăm</em>
+Highlight: <em>Cântăm</em> Domnului, <em>cântăm</em> o
+Highlight: <em>Cântăm</em> Domnului
+
+Score: 8.233333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Cântă mamă legănând
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>cântare</em> dulce
+Highlight: o <em>cântare</em> sfântă
+Highlight: <em>Cântă</em> mamă, <em>cântă</em> o
+Highlight: <em>Cântă</em> mamă legănând o
+Highlight: <em>Cântă</em>-i mamă
+Highlight: cu drag se <em>cântă</em>
+Highlight: <em>Cântă</em> mamă legănând
+
+Score: 7.8136644
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 26 - Fântânile certei noastre
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"loc, c\u0103ci de <em>c\u00e2ntare</em> avem totdeauna cea mai mare nevoie \u015fi cea mai dulce bucurie. <em>C\u00e2ntarea</em> Domnului este",
-"dat rug\u0103ciunea \u015fi <em>c\u00e2ntarea</em> cu lacrimi. C\u00e2t de neferici\u0163i sunt cei care nu pot <em>c\u00e2nta</em> \u015fi nu se pot ruga",
-"Apoi <em>c\u00e2ntarea</em>. Ce poate fi pe lumea asta mai duios \u015fi mai dulce dec\u00e2t <em>c\u00e2ntarea</em> \u015fi poezia rev\u0103rsat\u0103",
-"\u00een rug\u0103ciune \u015fi-n <em>c\u00e2ntare</em> \u015fi-n",
-"<em>C\u00e2ntarea</em>.  Din"
-]
-}
+Highlight: loc, căci de <em>cântare</em> avem totdeauna cea mai mare nevoie şi cea mai dulce bucurie. <em>Cântarea</em> Domnului este
+Highlight: în rugăciune şi-n <em>cântare</em> şi-n
+Highlight: din inimile noastre chiar de Duhul Sfânt!... În <em>cântare</em> sunt toate binecuvântările pentru că în ea este
+Highlight: în nici o altă <em>cântare</em> din lume.
+Highlight: iubire şi <em>cântare</em>,
+Highlight: iar dragostea-i <em>cântare</em>.
 
-Score: 1.9
+Score: 7.6166663
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Se <em>c\u00e2nt\u0103</em> <em>c\u00e2ntarea</em> ",
-"Se <em>c\u00e2nt\u0103</em> o <em>c\u00e2ntare</em>, se spune o poezie, dup\u0103 care urmeaz\u0103 la cuv\u00e2nt",
-"nu cununi am vrut \u00een via\u0163\u0103, ci <em>c\u00e2ntare</em> \u015fi-nfr\u0103\u0163ire c\u0103ci",
-"m\u00e2ine vom <em>c\u00e2nta</em>-mpreun\u0103 la \u00cent\u00e2ia \u00cenviere. Eu",
-"inspira\u0163i de Duhul Sf\u00e2nt, c\u0103ci fie cuv\u00e2ntul, fie <em>c\u00e2ntarea</em> ori poezia, toate acestea sunt Cuv\u00e2ntul \u015fi \u00eendemnul"
-]
-}
+Highlight: Se <em>cântă</em> o <em>cântare</em>, se spune o poezie, după care urmează la cuvânt
+Highlight: nu cununi am vrut în viaţă, ci <em>cântare</em> şi-nfrăţire căci
+Highlight: Altă <em>cântare</em>, altă poezie, şi ia cuvântul fr. Petrică din Maramureş:
+Highlight: După o altă <em>cântare</em> înflăcărată, cântată puternic de către toţi, se
+Highlight: Alte poezii, o <em>cântare</em> zguduitoare, şi ia cuvântul fr. Valer din Hunedoara:
+Highlight: Se <em>cântă</em> <em>cântarea</em>  Ce
 
-Score: 1.8888888
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Facerea şi Început
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"sim\u0163im o ad\u00e2nc\u0103 nevoie de a o <em>c\u00e2nta</em>, de a o asculta <em>c\u00e2ntarea</em>. ",
-"Cine iube\u015fte acela \u015fi <em>c\u00e2nt\u0103</em>. Cine <em>c\u00e2nt\u0103</em> acela \u015fi iube\u015fte. ",
-"18 - Cine iube\u015fte lumea, <em>c\u00e2nt\u0103</em> pentru lume. \u015ei cine <em>c\u00e2nt\u0103</em> c\u00e2ntece lume\u015fti, acela",
-"O, ce sl\u0103vit\u0103 <em>c\u00e2ntare</em> trebuie s\u0103 fi fost acest \u00cenceput!  5",
-"Din <em>C\u00e2ntare</em> s-a n\u0103scut Cuv\u00e2ntul - izvorul Luminii.  Din"
-]
-}
-
-Score: 1.8888888
-Volume: Cugetări Nemuritoare
-Book: Cununile Slăvite
-Title: Răbdarea şi loviturile
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"3 - <em>C\u00e2ntarea</em> este de obicei izbucnirea fericit\u0103 a unui suflet",
-"\u00eemplinirii unei mari dorin\u0163e, ce fericit\u0103 este <em>c\u00e2ntarea</em>, ",
-"- <em>c\u00e2ntarea</em> este cea mai mare nevoie a sufletului. ",
-"dec\u00e2t <em>c\u00e2ntarea</em>, ",
-"\u00een valuri de recuno\u015ftin\u0163\u0103 \u015fi de bucurie, mai mari dec\u00e2t <em>c\u00e2ntarea</em>. "
-]
-}
-
-Score: 1.875
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"a \u00eenmorm\u00e2nt\u0103rilor fra\u0163ii nu aveau voie s\u0103 <em>c\u00e2nte</em> vreo <em>c\u00e2ntare</em> sau s\u0103 citeasc\u0103 din Biblie.",
-"dragostei fa\u0163\u0103 de Hristos, a\u015fa cum tr\u0103ie\u015fte \u015fi <em>c\u00e2nt\u0103</em> aceast\u0103 dragoste \u00een Evangheliile M\u00e2ntuitorului,",
-"- Domnule, \u015fti\u0163i dv. c\u00e2nd am scris eu <em>c\u00e2ntarea</em> asta? \u00cen 1934. Aveam atunci 20 de ani. Sunt aproape",
-"- Da, dar ea se <em>c\u00e2nt\u0103</em>  acum",
-"le-au pus \u00een vedere fra\u0163ilor s\u0103 nu \u00eendr\u0103zneasc\u0103 s\u0103 <em>c\u00e2nte</em> sau s\u0103 vorbeasc\u0103 la nunt\u0103 - ci doar s\u0103 stea la mas\u0103"
-]
-}
-
-Score: 1.8666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 10
-Title: Milă ai de mine Doamne
-Type: poezie
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"era ca al celor ce <em>c\u00e2nt\u0103</em> cu harfa... \u015fi <em>c\u00e2ntau</em> din harfele lor. <em>C\u00e2ntau</em> o <em>c\u00e2ntare</em> nou\u0103, \u00eenaintea Scaunului",
-"<em>C\u00e2ntau</em> o <em>c\u00e2ntare</em> nou\u0103... \u015fi nimeni nu putea s\u0103 \u00eenve\u0163e <em>c\u00e2ntarea</em> afar\u0103 de cei care fuseser\u0103",
-"\u015ei <em>c\u00e2ntau</em> o <em>c\u00e2ntare</em> nou\u0103 zic\u00e2nd: Vrednic e\u015fti Tu...  c\u0103ci",
-"gur\u0103 <em>C\u00e2ntarea</em> Nou\u0103, lauda etern\u0103 a Dumnezeului nostru.  Isaia",
-"C\u00e2nta\u0163i Domnului o <em>c\u00e2ntare</em> nou\u0103"
-]
-}
-
-Score: 1.8571428
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"un dar minunat de a <em>c\u00e2nta</em> \u015fi compune melodii. De la ea am re\u0163inut atunci <em>c\u00e2ntarea</em>:",
-"Ea <em>c\u00e2nta</em> totdeauna cu lacrimi... Ne-a mi\u015fcat at\u00e2t de ad\u00e2nc felul ei nep\u0103m\u00e2ntesc de a <em>c\u00e2nta</em>...",
-"Totdeauna c\u00e2nd <em>c\u00e2ntam</em> <em>c\u00e2ntarea</em> aceasta nu pot s\u0103 nu-mi amintesc de ea... \u015fi de tragedia sorei ei.",
-"adunarea \u015fi <em>c\u00e2ntarea</em>. L\u0103s\u00e2nd toate celelalte \u00een voia Domnului. De fapt adunarea \u015fi <em>c\u00e2ntarea</em> erau voluntariatul",
-"timp ce totul \u00een jurul lor \u00eenvie... Cum spune <em>c\u00e2ntarea</em>: Nici"
-]
-}
-
-Score: 1.8571428
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Ceresc\u201d. Apoi se <em>c\u00e2nt\u0103</em> cu to\u0163ii Sfinte Dumnezeule (de trei ori) dup\u0103 felul cum se <em>c\u00e2nt\u0103</em> la sfintele noastre",
-"cununiei, \u00eencheiat\u0103 iar\u0103\u015fi cu o <em>c\u00e2ntare</em> fr\u0103\u0163easc\u0103, \u00eendeosebi <em>c\u00e2ntarea</em>:",
-"modul cel mai solemn \u015fi \u00eentr-un singur glas <em>c\u00e2nt\u0103</em> <em>c\u00e2ntarea</em> de s\u0103rb\u0103toare \u015fi binecuv\u00e2ntare a mirilor:",
-"m\u0103rturisit, peste to\u0163i \u015fi peste toate. Urmeaz\u0103 apoi o <em>c\u00e2ntare</em> de rug\u0103ciune ori de mul\u0163umire, dup\u0103 care se a\u015feaz\u0103",
-"frumoase, c\u00e2nt\u0103rile cele mai cunoscute pentru a putea <em>c\u00e2nta</em> cu to\u0163ii... L\u00e2ng\u0103 masa mirilor, se a\u015feaz\u0103 de obicei"
-]
-}
-
-Score: 1.8571428
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"Harfa este numai <em>c\u00e2ntarea</em>. <em>C\u00e2ntarea</em> este p\u0103rt\u0103\u015fie, p\u0103rt\u0103\u015fia este putere \u015fi via\u0163\u0103",
-"- <em>C\u00e2ntarea</em> \u00eengera\u015filor -",
-"- <em>C\u00e2nt\u0103</em>-mi mam\u0103 Vol",
-"- <em>C\u00e2ntarea</em> C\u00e2nt\u0103rilor mele -",
-"- <em>C\u00e2ntarea</em> \u00cenvierii -"
-]
-}
-
-Score: 1.8571428
-Volume: Cugetări Nemuritoare
-Book: Garanţia Veşnică
-Title: Lauda pentru Dumnezeu
-Type: articol
-Author: Traian Dorz
-highlight: {
-"verses.text": [
-"s\u0103-I plac\u0103 Lui, ce <em>c\u00e2n\u0163i</em>, c\u00e2nd <em>c\u00e2n\u0163i</em>, a\u015fa r\u0103u cum <em>c\u00e2n\u0163i</em>? ",
-"duhovnicesc pentru noi, dec\u00e2t s\u0103 particip\u0103m cu to\u0163ii la <em>c\u00e2ntarea</em> de laud\u0103 spre cinstea Domnului, \u00een Casa Domnului",
-"\u00eenceput, participarea \u00een biseric\u0103 \u015fi \u00een adunare la <em>c\u00e2ntarea</em> laudelor Domnului, era o bucurie a tuturor credincio\u015filor",
-" c\u0103ci toate acestea erau ocupate cu grija de a <em>c\u00e2nta</em> Domnului \u015fi erau ocupate de puterea Duhului Sf\u00e2nt",
-"4 - Mai sunt \u00eenc\u0103 locuri pe unde <em>c\u00e2ntarea</em> \u00een comun se face \u015fi azi ca adunarea credincio\u015filor"
-]
-}
-
-Score: 1.8461539
+Score: 7.5897436
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"care \u00eemi spunea c\u0103 aceast\u0103 <em>c\u00e2ntare</em> are leg\u0103tur\u0103 cu misiunea celui care o <em>c\u00e2ntase</em>. \u015ei nu m-am \u00een\u015felat. P\u0103r",
-"la Sibiu cu <em>c\u00e2ntarea</em> Te-am min\u0163it Isuse (tr\u0103dase cauza Domnului) \u015fi tot cu aceast\u0103 <em>c\u00e2ntare</em> s-a \u00eentors",
-"glasul \u00eengeresc al surorii Maria Dan din Mada, care <em>c\u00e2nta</em>: Pas\u0103re",
-" dup\u0103 fiecare vorbire \u00een\u0103l\u0163\u00e2ndu-se Domnului o <em>c\u00e2ntare</em> acompaniat\u0103 de fanfar\u0103. P\u00e2n\u0103 noaptea t\u00e2rziu, fra\u0163ii",
-"\u00eendeosebi noua <em>c\u00e2ntare</em>: A sunat mobilizarea. P\u0103r"
-]
-}
+Highlight: care îmi spunea că această <em>cântare</em> are legătură cu misiunea celui care o <em>cântase</em>. Şi nu m-am înşelat. Păr
+Highlight: la Sibiu cu <em>cântarea</em> Te-am minţit Isuse (trădase cauza Domnului) şi tot cu această <em>cântare</em> s-a întors
+Highlight:  după fiecare vorbire înălţându-se Domnului o <em>cântare</em> acompaniată de fanfară. Până noaptea târziu, fraţii
+Highlight: îndeosebi noua <em>cântare</em>: A sunat mobilizarea. Păr
+Highlight: în inimă. Iar când ne-a vestit că ne-a adus o <em>cântare</em> nouă şi ne-a cântat poezia fr. Dorz: Te-am minţit
+Highlight: glasul îngeresc al surorii Maria Dan din Mada, care <em>cânta</em>: Pasăre
 
-Score: 1.8461539
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Isuse, noi copiii...
-Type: poezie
+Score: 7.3444443
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Facerea şi Început
+Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"\u00een cor <em>c\u00e2nt\u0103m</em> cu to\u0163ii",
-"\u00een cor <em>c\u00e2nt\u0103m</em>, \u00een cor",
-"\u00een cor, \u00een cor <em>c\u00e2nt\u0103m</em>",
-"\u00een cor <em>c\u00e2nt\u0103m</em> cu to\u0163ii",
-"\u00een cor <em>c\u00e2nt\u0103m</em> \u00een cor"
-]
-}
+Highlight: O, ce slăvită <em>cântare</em> trebuie să fi fost acest Început!
+Highlight: Din <em>Cântare</em> s-a născut Cuvântul - izvorul Luminii.
+Highlight: Fără <em>cântare</em> nu putem fi, ca fără iubire
+Highlight: Căci cine iubeşte nu poate fără <em>cântare</em>.
+Highlight: simţim o adâncă nevoie de a o <em>cânta</em>, de a o asculta <em>cântarea</em>.  Fără
+Highlight: Cine iubeşte acela şi <em>cântă</em>. Cine <em>cântă</em> acela şi iubeşte.  Cânţi
 
-Score: 1.8333334
+Score: 6.928571
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: cununiei, încheiată iarăşi cu o <em>cântare</em> frăţească, îndeosebi <em>cântarea</em>:
+Highlight: mărturisit, peste toţi şi peste toate. Urmează apoi o <em>cântare</em> de rugăciune ori de mulţumire, după care se aşează
+Highlight: mesei pentru un alt scurt program mai ales de <em>cântare</em> şi mulţumire, toată nunta în picioare, în modul
+Highlight: Ceresc”. Apoi se <em>cântă</em> cu toţii Sfinte Dumnezeule (de trei ori) după felul cum se <em>cântă</em> la sfintele noastre
+Highlight: modul cel mai solemn şi într-un singur glas <em>cântă</em> <em>cântarea</em> de sărbătoare şi binecuvântare a mirilor:
+Highlight: frumoase, cântările cele mai cunoscute pentru a putea <em>cânta</em> cu toţii... Lângă masa mirilor, se aşează de obicei
+
+Score: 6.928571
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: ton, spre a nu fi auziţi de nimeni, - singura <em>cântare</em> permisă atunci
+Highlight: Dar a fost cea mai potrivită şi mai scumpă <em>cântare</em> de nuntă pentru vremea de atunci, nu numai pentru
+Highlight: fraţilor, cu câte un cuvânt, o <em>cântare</em>, o rugăciune...
+Highlight: un dar minunat de a <em>cânta</em> şi compune melodii. De la ea am reţinut atunci <em>cântarea</em>: “O
+Highlight: Ea <em>cânta</em> totdeauna cu lacrimi... Ne-a mişcat atât de adânc felul ei nepământesc de a <em>cânta</em>... Totdeauna
+Highlight: Totdeauna când <em>cântam</em> <em>cântarea</em> aceasta nu pot să nu-mi amintesc de ea... şi de tragedia sorei ei. Acum
+
+Score: 6.9166665
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 9 - În vremea aceea...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-" \u015ei dup\u0103 ce au obosit mi-au poruncit s\u0103 le <em>c\u00e2nt</em> o <em>c\u00e2ntare</em> de la Oastea Domnului. Eu am c\u00e2ntat pl\u00e2ng\u00e2nd",
-"spus s\u0103 nu mai <em>c\u00e2nt\u0103m</em> c\u00e2nt\u0103rile Oastei c\u0103 aduce jandarmii s\u0103 ne lege. S\u0103 nu le <em>c\u00e2nt\u0103m</em> nici \u00een cas\u0103 nici",
-"se \u00eenal\u0163\u0103 un steag... care mai t\u00e2rziu a devenit <em>c\u00e2ntare</em>. \u00centr-o",
-"Noi <em>c\u00e2ntam</em> cu to\u0163ii Bl\u00e2ndul P\u0103stor. C\u00e2nd iat\u0103 intr\u00e2nd pe u\u015f\u0103",
-"afar\u0103 c\u0103 aceste c\u00e2nt\u0103ri, zice el, sunt bune s\u0103 le <em>c\u00e2nte</em> lumea numai \u00een case pustii, c\u0103 zice c\u0103-s adventiste"
-]
-}
+Highlight:  Şi după ce au obosit mi-au poruncit să le <em>cânt</em> o <em>cântare</em> de la Oastea Domnului. Eu am cântat plângând
+Highlight: se înalţă un steag... care mai târziu a devenit <em>cântare</em>. Într-o
+Highlight: prin sat spre biserică. Dar autorităţile pentru o <em>cântare</em> sfântă m-au dat pe mine în judecată, iar acum se
+Highlight: spus să nu mai <em>cântăm</em> cântările Oastei că aduce jandarmii să ne lege. Să nu le <em>cântăm</em> nici în casă nici
+Highlight: Noi <em>cântam</em> cu toţii Blândul Păstor. Când iată intrând pe uşă
+Highlight: afară că aceste cântări, zice el, sunt bune să le <em>cânte</em> lumea numai în case pustii, că zice că-s adventiste
 
-Score: 1.8181818
+Score: 6.9
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 8 - Marele necaz salvator
+Type: articol
+Author: Traian Dorz
+Highlight: avem o <em>cântare</em> şi o poezie religioasă, duhovnicească, cu adevărat creştină. O poezie şi o <em>cântare</em> pe măsura
+Highlight: să crească şi în poporul nostru o poezie şi o <em>cântare</em> care să fie cu adevărat vrednică de slava şi lauda
+Highlight: adaug corului slăbuţ care încerca să <em>cânte</em> cu noile lui corzi, <em>cântarea</em> cea nouă cu care abia căuta să se
+Highlight: acest lucru. Nimeni n-a îndemnat poporul nostru să <em>cânte</em> Domnului şi să-L laude cu tot talentul său pe Domnul
+Highlight: Oastea Domnului dorim să facem să învie poezia şi <em>cântarea</em> religioasă şi creştinească de care este în stare
+Highlight: se obişnuiască şi poporul nostru, - <em>cântarea</em> laudei lui Dumnezeu, pe care alte popoare o cunoşteau de
+
+Score: 6.888889
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: celulei noastre aproape totdeauna eram ales eu să <em>cânt</em> o <em>cântare</em> de la Oastea Domnului.
+Highlight: cântat nimeni o altă <em>cântare</em> până ce au învăţat-o cu toţii pe asta. Atunci o <em>cântam</em> tot coridorul în aşa
+Highlight: cântaseră Tatăl nostru în genunchi. Şi mai cântaseră o <em>cântare</em> după ce se terminase slujba în biserică.
+Highlight: Sunt Paştile... Toate clopotele <em>cântă</em> la toate bisericile. Şi e un timp aşa de frumos
+Highlight: uneori program de cântări. Fiecare celulă trebuia să <em>cânte</em> la rând câte un cântec pentru toţi ceilalţi. Când
+Highlight: poporul s-a adunat împrejurul lor şi i-a rugat să mai <em>cânte</em> acolo în curtea mânăstirii...
+
+Score: 6.8333335
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cântarea Deborei
+Type: poezie
+Author: Traian Dorz
+Highlight: şi zi-o <em>cântare</em> pentru Dumnezeu.
+Highlight: <em>cânta</em>-voi Domnului, <em>cânta</em>,  lui
+Highlight: să <em>cânte</em>-n glas mereu pe Domnul lor să-I
+Highlight: să-I <em>cânte</em> binecuvântarea-I mare a
+Highlight: <em>Cântarea</em> Deborei
+
+Score: 6.8333335
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 66
+Type: poezie
+Author: Traian Dorz
+Highlight: - Un psalm. O <em>cântare</em> -
+Highlight: şi faceţi să răsune-n veci a slavei Lui <em>cântare</em>
+Highlight: şi-ndată slava Lui a fost pe limba mea <em>cântare</em>...
+Highlight: 4-Pământul se închină-ntreg naintea Ta şi <em>cântă</em> Îţi
+Highlight: Îţi <em>cântă</em> Numele Tău bun şi slava Ta cea sfântă 5-Veniţi
+
+Score: 6.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 42
+Type: poezie
+Author: Traian Dorz
+Highlight: - O <em>cântare</em> a fiilor lui Core. Către mai marele cântăreţilor -
+Highlight: Cum mergeam spre Casa Sfântă, vesel şi-n <em>cântare</em>
+Highlight: 8-Ziua Domnul mă ajută, noaptea-I fac <em>cântare</em>
+Highlight: Ai în Dumnezeu nădejde căci <em>cânta</em>-I-vei iară
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Cântarea Izbăvirii
+Type: poezie
+Author: Traian Dorz
+Highlight: pentru Dumnezeu cântară o <em>cântare</em>-n unic fel.
+Highlight: ... Domnului <em>cânta</em>-voi pururi, ziceau ei cu glas măreţ
+Highlight: Domnul e Tăria noastră şi Temei de veşnic <em>cânt</em>
+Highlight: <em>Cântarea</em> Izbăvirii
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Îţi cântăm Tată Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Te slăvim, Te slăvim... şi <em>cântare</em>
+Highlight: Îţi <em>cântă</em> Tată Sfânt cu iubire pentru
+Highlight: ne-a dat starea din care-Ţi <em>cântăm</em>.
+Highlight: Îţi <em>cântăm</em> Tată Sfânt
+
+Score: 6.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Cântarea îngeraşilor
+Type: poezie
+Author: Traian Dorz
+Highlight: cu-a dragostei <em>cântare</em>.
+Highlight: <em>Cântarea</em> îngeraşilor se-nalţă
+Highlight: <em>Cântarea</em> îngeraşilor
+
+Score: 6.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 1 - Cânt. Cântărilor
+Type: poezie
+Author: Traian Dorz
+Highlight: 1-Aceasta e-o <em>cântare</em> a Cântărilor, plăcută
+Highlight: Cap. 1 - <em>Cânt</em>. Cântărilor
+
+Score: 6.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cântarea lui Asaf
+Type: poezie
+Author: Traian Dorz
+Highlight: ne vom pune slava în a Ta <em>cântare</em>
+Highlight: <em>Cântarea</em> lui Asaf
+
+Score: 6.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cântarea lui Isaia - 6
+Type: poezie
+Author: Traian Dorz
+Highlight: În ziua aceea cântaţi o <em>cântare</em>
+Highlight: <em>Cântarea</em> lui Isaia - 6
+
+Score: 6.233333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 14 - Strâmta cărare mântuitoare
+Type: articol
+Author: Traian Dorz
+Highlight: străzile oraşului până la locul de adunare. O <em>cântare</em> nouă, nemaiauzită răsuna pe străzile oraşului.
+Highlight:  să te ocupi numai de cântări! Domnul Isus la <em>cântare</em> te-a chemat şi pentru aceasta ţi-a pus în mână
+Highlight: - <em>Cânt</em>! - zise el. Eu <em>cânt</em> între gorniştii de la muzică din trompeta asta. -
+Highlight: făcuţi pentru discuţii. Noi să-I <em>cântăm</em> Domnului, căci Domnul pentru a-I <em>cânta</em> ne-a făcut pe noi.
+Highlight: - Ştii să <em>cânţi</em> din ea
+Highlight: - Vrei să ne <em>cânţi</em> şi nouă ceva? -
+
+Score: 6.222222
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Bucurie şi nefericire
+Type: articol
+Author: Traian Dorz
+Highlight: bătrâni, s-au proşternut înaintea Mielului... şi <em>cântau</em> o <em>cântare</em> nouă zicând: vrednic eşti Tu...
+Highlight: De orice <em>cântare</em> şi de orice iubire.
+Highlight: Dorim şi noi Mântuitorul nostru Preaiubit să-Ţi <em>cântăm</em> într-un nesfârşit cor, nesfârşita noastră mulţumire
+Highlight: din Cer alcătuiesc mereu cântări noi, pentru a <em>cânta</em> şi a înălţa veşnic, lauda Marelui nostru Dumnezeu
+Highlight: ... şi <em>cântarea</em> lor vorbea cât de mare şi cât de minunate sunt
+Highlight: <em>Cântarea</em> aceasta ar trebui să fie neîncetat şi în toate
+
+Score: 6.222222
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 17 - Vin rândurile noi
+Type: articol
+Author: Traian Dorz
+Highlight: Primăverii. Primăvara înseamnă: tinereţe, poezie, <em>cântare</em>. Ziua aceasta este cu deosebire o zi în care trebuie
+Highlight: Primăvară veşnică, o tinereţe veşnică, o poezie şi o <em>cântare</em> veşnică. Şi noi de aceea suntem fericiţi pentru
+Highlight: cunoscut din celelalte rânduri: rugăciunea fierbinte, <em>cântarea</em> înlăcrimată, părtăşia cerească. Acum totul se
+Highlight: Ieri, Azi şi în Veac. Tinereţea Sa, poezia Sa şi <em>cântarea</em> Sa sunt ca şi El. Noi le aflăm toate aceste minuni
+Highlight: pentru unul care şi-a pierdut mintea? Unde este <em>cântarea</em> pe care v-o oferă lumea? Iată nişte ţipete, nişte
+Highlight: Eternă. Tinereţea este Înviere, poezia Înălţare, <em>cântarea</em> Pogorârea Duhului, inspiraţia, înveşnicirea.
+
+Score: 6.208333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: îngăduiţi în biserici nicăieri nici să <em>cânte</em> măcar o <em>cântare</em>, în timpul slujbei sau după terminarea ei
+Highlight: sufletele cerului, spre a se înfrăţi în aceeaşi <em>cântare</em> de dragoste înălţată în desăvârşită unire spre
+Highlight: împreună asupra celor citite. Să se roage împreună, să <em>cânte</em> împreună... Asta cât mai des, până când lumina lui
+Highlight: adunăm într-o casă la unul din noi unde ne rugăm, <em>cântăm</em> împreună şi citim din Biblie, - iar cu ei fac aceasta
+Highlight: ci se mai adună şi după masă ca să se roage, să <em>cânte</em> şi să citească din Biblie. -
+Highlight: - Ne rugăm lui Dumnezeu, citim din Biblie şi <em>cântăm</em> - au răspuns fraţii. -
+
+Score: 6.190476
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: Fiecare celulă trebuia să <em>cânte</em>, spre ascultarea celorlalte câte o <em>cântare</em> aleasă. Când venea rândul
+Highlight: cântat nimeni altă <em>cântare</em> decât asta, până ce au învăţat-o toate celulele. Atunci <em>cânta</em> tot coridorul în
+Highlight: între gardurile acestea sunt liber. Toate clopotele <em>cântă</em> la toate bisericile. Şi e un timp aşa de frumos
+Highlight: celulei noastre eram ales aproape totdeauna să le <em>cânt</em> eu una din cântările Oastei Domnului. Am cântat
+
+Score: 6.1666665
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: frumoasa Ta <em>cântare</em> pe-ntinderea senină,
+Highlight:  - o <em>cântare</em> de slavă şi mulţumire Aceluia, care Singur ne va
+Highlight: <em>cântă</em>-n cor, <em>cântă</em>-n cor minunat. Strâns
+Highlight: Pe tot întinsul zării <em>cântarea</em> a-ncetat s-aude
+
+Score: 6.1666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 45
+Type: poezie
+Author: Traian Dorz
+Highlight: De cântat cum se <em>cântă</em> “Crinii”. Către mai marele cântăreţilor. O <em>cântare</em>. O <em>cântare</em> de dragoste -
+Highlight: şi zic: <em>cântarea</em> mea de slavă-i pentru-mpăratul meu Ceresc
+Highlight: în strălucitele-Ţi lăcaşuri sunt numai veselii şi <em>cânt</em>
+
+Score: 6.133333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Biblia, Cuvântul Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: în <em>cântare</em> se trezi
+Highlight: Când <em>cântare</em>
+Highlight: Dulce <em>cânt</em>.  Ale
+Highlight: cu etern şi dulce <em>cânt</em>.
+
+Score: 6.133333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 13 - Pe urmele profetului
+Type: articol
+Author: Traian Dorz
+Highlight: Sau ca în frumoasa şi cereasca noastră <em>cântare</em>, ca la nunta cosmică:
+Highlight: Ce cor ceresc şi ce <em>cântare</em>
+Highlight: părintele mi-a spus odată că stătea el când a scris <em>cântarea</em> lui  Mai
+Highlight: <em>cântau</em> când sfânta-Ţi sărutare
+
+Score: 6.133333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Chemări
+Type: poezie
+Author: Traian Dorz
+Highlight: aceasta El a pus-o în iubire şi-n <em>cântare</em>
+Highlight: El pe veci stă unde sunt: iubire şi <em>cântare</em>,
+Highlight: şi nici <em>cânta</em> nu
+Highlight: iubirea şi <em>cântarea</em> din credinţa Lui curată
+
+Score: 6.133333
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Fără luptă nu-i cunună
+Type: poezie
+Author: Traian Dorz
+Highlight: lacrimi nu-i <em>cântare</em> dulce şi frumoasă
+Highlight: o <em>cântare</em> doar prin lacrimi poate-avea căldură.
+Highlight: căci <em>cântarea</em> fără lacrimi duhul rece-l lasă şi
+Highlight: şi <em>cântarea</em> fără lacrimi
+
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: care ai avut de la Domnul Oastei un dar unic de <em>cântare</em>, spre a-l folosi bine, iar nu rău?
+Highlight: Ar fi numai pâine şi dragoste, încredere şi <em>cântare</em>, - iar nu pietre şi întristări, bănuieli şi ură
+Highlight: Domnului, - dar cu toate acestea nu-i pot suferi să <em>cânte</em>, nu-i pot îngădui să se adune, nu-i pot înţelege
+
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 16 - Din cetate în cetate...
+Type: articol
+Author: Traian Dorz
+Highlight: două surori, apoi o <em>cântare</em>. Din nou un frate şi două surori, apoi iar o <em>cântare</em>, până se rugau toţi
+Highlight: aceştia se făceau mai mărişori spuneau poezii şi <em>cântau</em> în cor.
+
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 29 - Anul jubiliar 1988
+Type: articol
+Author: Traian Dorz
+Highlight: pogorârea Sfântului Duh, veniţi la mormântul meu cu o <em>cântare</em>, cu o floare, cu o lacrimă, pentru ca şi de acolo
+Highlight: Din fiecare zonă era ales un frate vorbitor, o <em>cântare</em> cântată în cor de către tineretul frăţesc din zona
+Highlight: asistat de toţi fraţii şi surorile prezenţi, care <em>cântau</em> cu lumânări aprinse în mâini şi cu lacrimi aprinse
+
+Score: 6.083333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 9 - Adevărurile mormântului nemuritor
+Type: articol
+Author: Traian Dorz
+Highlight: dimineaţa când a început programul cu rugăciune şi <em>cântare</em> - şi până după ora 12 s-au perindat prin faţa microfonului
+Highlight: dar în toţi acelaşi duh. Alte voci, dar aceeaşi <em>cântare</em>. Alte glasuri, dar acelaşi Cuvânt.
+Highlight: slava Domnului Isus şi lângă El cu toţi cei care <em>cântă</em> din harfa de aur, pe marea de cristal a Noului Ierusalim
+
+Score: 6.083333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Cântaţi, fraţi şi surori
+Type: poezie
+Author: Traian Dorz
+Highlight: iubire şi <em>cântare</em>
+Highlight: iar dragostea-i <em>cântare</em>.
+Highlight: <em>cântarea</em>-i bucurie,
+
+Score: 6.083333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Nu-i judecător mai drept
+Type: poezie
+Author: Traian Dorz
+Highlight: când <em>cântare</em>, când suspine
+Highlight: când <em>cântare</em> - dacă ţin
+Highlight: dragostea-Ţi din mine <em>cântă</em>
+
+Score: 6.083333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 43
+Type: poezie
+Author: Traian Dorz
+Highlight: a laudei <em>cântare</em>.
+Highlight: cu-aleasa mea <em>cântare</em>
+Highlight: şi-Ţi voi <em>cânta</em> cu harfa mea a
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Aş vrea ca-n focul unic
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>cântare</em> şi lacrimi.
+Highlight: care ne-ai făcut tot drumul o <em>cântare</em> fericită.
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Lucrători
+Type: poezie
+Author: Traian Dorz
+Highlight: Numai când unim cu toţii într-o singură <em>cântare</em>
+Highlight: să ne-aprindem cu-o <em>cântare</em>,
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Lumina-i Chipul Tău
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Cântare</em>-i veşnicia mea
+Highlight: <em>cântare</em>-i veşnicia mea.
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Mare plâns şi tânguieli
+Type: poezie
+Author: Traian Dorz
+Highlight: - dar <em>cântare</em> şi iubire
+Highlight: ci <em>cântare</em> la sfârşit
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: O, harfa mea...
+Type: poezie
+Author: Traian Dorz
+Highlight: încet de ultima <em>cântare</em>
+Highlight: copt rodul nostru de <em>cântare</em>
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Plinătatea fericirii mele
+Type: articol
+Author: Traian Dorz
+Highlight: 2 - Poate fi în limba omenească o mai slăvită <em>cântare</em> de izbăvire ca aceea pe care a izbucnit-o împlinirea
+Highlight: 18 - Şi dacă în sărbătoarea de azi este atâta <em>cântare</em> şi har, ce trebuie să fie în cea de mâine?
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 32
+Type: poezie
+Author: Traian Dorz
+Highlight: - Un psalm al lui David. O <em>cântare</em> -
+Highlight: şi mă-nconjuri cu <em>cântare</em>...
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 74
+Type: poezie
+Author: Traian Dorz
+Highlight: - O <em>cântare</em> a lui Asaf -
+Highlight: ca o <em>cântare</em> dintre oameni, între îngeri
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Unde-I Domnul meu?
+Type: poezie
+Author: Traian Dorz
+Highlight: şi de-atuncea nu-i <em>cântare</em>
+Highlight: nu-i <em>cântare</em>-n lumea-ntreagă s-o simt mai
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: V-am cercetat
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>cântare</em> şi-o lumină
+Highlight: şi <em>cântare</em> îndemnaţi,
+
+Score: 4.9375
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: a înmormântărilor fraţii nu aveau voie să <em>cânte</em> vreo <em>cântare</em> sau să citească din Biblie.
+Highlight: dragostei faţă de Hristos, aşa cum trăieşte şi <em>cântă</em> această dragoste în Evangheliile Mântuitorului,
+Highlight: - Domnule, ştiţi dv. când am scris eu <em>cântarea</em> asta? În 1934. Aveam atunci 20 de ani. Sunt aproape
+Highlight: - Da, dar ea se <em>cântă</em>  acum
+Highlight: le-au pus în vedere fraţilor să nu îndrăznească să <em>cânte</em> sau să vorbească la nuntă - ci doar să stea la masă
+Highlight: cântările Oastei în limbile sârbă şi ucraineană şi le <em>cântă</em> atât de minunat în bisericile lor.
+
+Score: 4.928571
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: înlăturat singur, iar astăzi nu mai naşte nici o <em>cântare</em> vie din Duhul Sfânt, ci face doar din ambiţie nişte
+Highlight: Harfa este numai <em>cântarea</em>. <em>Cântarea</em> este părtăşie, părtăşia este putere şi viaţă
+Highlight: - <em>Cântarea</em> îngeraşilor -
+Highlight: - <em>Cântă</em>-mi mamă Vol
+Highlight: - <em>Cântarea</em> Cântărilor mele -
+Highlight: - <em>Cântarea</em> Învierii -
+
+Score: 4.909091
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
 Title: Când a văzut Isus pe Mama Sa...
 Type: articol
 Author: Traian Dorz
-highlight: {
-"verses.text": [
-"dintre clipele vie\u0163ii, cineva a \u00eenceput s\u0103 <em>c\u00e2nte</em> o <em>c\u00e2ntare</em> despre mama: ",
-"la propria sa durere. To\u0163i <em>c\u00e2ntam</em> despre mama celui care alc\u0103tuise <em>c\u00e2ntarea</em>, dar fiecare ne g\u00e2ndeam la",
-"col\u0163ul de l\u00e2ng\u0103 u\u015f\u0103 era un chinuit care nu <em>c\u00e2nta</em>. Nu <em>c\u00e2nta</em>, dar pl\u00e2ngea mai amar \u015fi mai nest\u0103p\u00e2nit dec\u00e2t",
-"To\u0163i <em>c\u00e2ntam</em> cu ochii plini de lacrimi \u015fi nici unii nu ni le",
-"<em>C\u00e2ntam</em> \u015fi eu cu cea mai zdrobit\u0103 inim\u0103 din c\u00e2te inimi"
-]
-}
+Highlight: dintre clipele vieţii, cineva a început să <em>cânte</em> o <em>cântare</em> despre mama:
+Highlight: la propria sa durere. Toţi <em>cântam</em> despre mama celui care alcătuise <em>cântarea</em>, dar fiecare ne gândeam la
+Highlight: colţul de lângă uşă era un chinuit care nu <em>cânta</em>. Nu <em>cânta</em>, dar plângea mai amar şi mai nestăpânit decât
+Highlight: Toţi <em>cântam</em> cu ochii plini de lacrimi şi nici unii nu ni le
+Highlight: <em>Cântam</em> şi eu cu cea mai zdrobită inimă din câte inimi
+Highlight: Era cel ce făcuse <em>cântarea</em>.
+
+Score: 4.888889
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: întâlni odată Acolo cu toţii să <em>cântăm</em> împreună cu îngerii o <em>cântare</em> cum nu mai ştie nimeni şi cum n-a
+Highlight: suferinţă decât ca la o binecuvântare, după cum spune <em>cântarea</em>:  Nu
+Highlight: toţi în frunte cu mitropolitul Nicolae începem să <em>cântăm</em>  Naşterea
+Highlight: născut Mântuitorul. Un neam întreg parcă păşeşte şi <em>cântă</em> alături de noi. E
+Highlight: ceată venea cântând cântări creştineşti. Ruşii <em>cântau</em> şi Credeul. De la Ierusalim, calea ţinea o zi până
+Highlight: mărire lui Dumnezeu. 160 de închinători români <em>cântăm</em> pe locul unde S-a botezat Mântuitorul troparul
+
+Score: 4.888889
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: Şi adeseori <em>cântarea</em> se înălţa ca un cor frumos acompaniat de toţi. Ne pierdeam în <em>cântare</em> până când cineva
+Highlight: Ne pregăteam să <em>cântăm</em>: “O ce veste minunată”. În
+Highlight: de aşteptare afară la număr, <em>cântam</em>... La
+Highlight: La Oradea acum trei ani <em>cântarea</em>  Vreau
+Highlight: , - devenise <em>cântarea</em> închisorii. Toţi o învăţaseră şi oriunde mergeai, o auzeai fredonându-se
+Highlight: Aici <em>cântarea</em> noastră obişnuită deveni acum  Psalmul
+
+Score: 4.875
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 11 - Ce minunat lucrează Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: ceruri ale muzicii îngereşti când îşi topesc în <em>cântare</em> inima şi lacrimile lor cu ale noastre. Aceste voci
+Highlight: Dar tot din cauza lui Moldoveanu s-au oprit a mai <em>cânta</em>. E adevărat că şi Moldoveanu a compus la început
+Highlight: deodată zece tineri cu harfe de aur care încep să <em>cânte</em> tot mai înflăcărat. Duhul care fusese cândva peste
+Highlight: le-a dat Domnul Oastei Sale, iată că poezia şi <em>cântarea</em> religioasă, începute cu adevărat în ţara noastră
+Highlight: şi a cultivat cu deosebită stăruinţă poezia şi <em>cântarea</em> duhovnicească. Sute şi sute de glasuri şi condeie
+Highlight: Abia Oastea Domnului a trezit poezia şi <em>cântarea</em> religioasă, aceste “două frumoase adormite” ale
+
+Score: 4.875
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: fericită <em>cântarea</em> şi tremura fericit harul. Toate acestea pentru că în inima mea era o <em>cântare</em> nemuritoare
+Highlight: aripile mele. Şi atâta întuneric şi atâta lumină în <em>cântarea</em> mea.  Trebuie
+Highlight: unică. La auzirea marii bucurii unii strigau, alţii <em>cântau</em>, alţii plângeau, unii se prăbuşiră în genunchi
+Highlight: Toţi pomii se legănau fericiţi, toate păsările <em>cântau</em> fericite, toate florile zâmbeau cu feţele pline
+Highlight: luminile ochilor - ştiţi dv. când am scris eu <em>cântarea</em> aceasta? - În 1934! Aveam atunci abia 20 de ani
+Highlight: - Da, dar ea se <em>cântă</em>
+
+Score: 4.875
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Cântările Naşterii
+Type: poezie
+Author: Traian Dorz
+Highlight: o <em>cântare</em> de mărire au pornit să-I <em>cânte</em>-n cor:
+Highlight: <em>Cântă</em> îngerii Osanei imnul sfânt
+Highlight: <em>cântă</em> şi păstorii cântec
+Highlight: <em>Cântă</em> magii aducându-I darul lor
+Highlight: <em>cântă</em> steaua cu lumină
+Highlight: <em>Cântă</em> Cerul şi pământul Sus şi jos
+
+Score: 4.857143
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 10 - Va veni un altul...
+Type: articol
+Author: Traian Dorz
+Highlight: atunci câteva zile de carceră pentru o astfel de <em>cântare</em> cu care ne-au prins. Ne pârâse cineva dintre cei
+Highlight: Atunci am compus eu textul iar el melodia la <em>cântarea</em>: Chiar
+Highlight: uneori preoţii făceau slujba Liturghiei, iar noi <em>cântam</em> răspunsurile.
+Highlight: credinţe străine şi se sfătuia cu ei, şoptea cu ei, <em>cânta</em> şi se ruga cu ei, iar aceştia şi începuseră să-mi
+Highlight: <em>cântarea</em> dragostei curate
+Highlight: să <em>cânţi</em>, să lăcrimezi - şi-apoi
+
+Score: 4.857143
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 11 - Semnele Oastei Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: programele noastre de meditaţie, de rugăciune şi de <em>cântare</em> în fiecare dimineaţă. - La început cu 2-3 ascultători
+Highlight: plăcea nouă tuturor: <em>cântarea</em> noastră. Nimeni nu s-a putut gândi la acest rău. <em>Cântarea</em> sirenei acesteia
+Highlight: La Jilava <em>cântase</em> cu Vasile Militaru, până la moartea acestuia:
+Highlight: Când le recita şi le <em>cânta</em>, ochii lui erau plini acum de altfel de lacrimi
+Highlight: În izbucnirea marii bucurii, unii strigau, alţii <em>cântau</em>, alţii se prăbuşiseră în genunchi. Dar toţi aveau
+
+Score: 4.857143
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
+Type: articol
+Author: Traian Dorz
+Highlight: declamă frumos. Urmează Oastea din Sadu cu altă <em>cântare</em> - şi iarăşi declamă micul şi cumintele ostăşel
+Highlight: locului I. Manta şi părintele Trifa. În strană <em>cântă</em> ostaşii Domnului. După
+Highlight: adunase... Începe programul. Corul Oastei din Sibiu <em>cântă</em>  Împărate
+Highlight: Încep cântările şi declamările. <em>Cântă</em> alternativ Oastea din Sibiu şi Oastea din Sadu.
+Highlight: din Sibiu cu <em>cântarea</em>
+Highlight:  - şi o declamare... Se <em>cântă</em> pe patru voci:
+
+Score: 4.857143
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Cântări de Sus
+Type: poezie
+Author: Traian Dorz
+Highlight: o veşnică <em>cântare</em>.
+Highlight: să-Ţi <em>cânt</em> o
+Highlight: <em>cânta</em> vreun
+Highlight: se <em>cântă</em>-n Sărbătoare?  Cântări
+Highlight: noi Ţi-am <em>cânta</em> o
+Highlight: <em>cântarea</em> cea mai dragă.  Isus
+
+Score: 4.857143
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Cântări de Sus
+Type: poezie
+Author: Traian Dorz
+Highlight: o veşnică <em>cântare</em>.
+Highlight: să-Ţi <em>cânt</em> o
+Highlight: <em>cânta</em> vreun
+Highlight: se <em>cântă</em>-n Sărbătoare?  Cântări
+Highlight: noi Ţi-am <em>cânta</em> o
+Highlight: <em>cântarea</em> cea mai dragă.  Isus
+
+Score: 4.857143
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Transilvaniei
+Type: articol
+Author: Traian Dorz
+Highlight: nu poate să nu aibă un plâns ori o <em>cântare</em>.
+Highlight: că unde prea <em>cântăm</em> pe cale,
+Highlight: numai în iubire <em>cântă</em>-un
+Highlight: fiecare şi-are vremea şi de-a plânge şi-a <em>cânta</em>
+Highlight: şi-i <em>cântă</em>-al îngerilor roi
+Highlight: 166 - <em>Cântăm</em> copilăria la anii ei de-atunci
+
+Score: 4.857143
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)
+Type: articol
+Author: Traian Dorz
+Highlight: Biserica şi adunarea Domnului nu pot trăi fără <em>cântare</em>, tot aşa cum nu pot trăi fără cuvânt şi fără rugăciune
+Highlight: unde se ajunge până la îmbătare cu vin, acolo nu <em>cântarea</em> duhovnicească răsună, ci mai degrabă cântările
+Highlight: <em>Cântarea</em> duhovnicească este izbucnirea în afară spre Dumnezeu
+Highlight: care are viaţă şi simţire de vreun fel, doreşte <em>cântarea</em> şi o practică în felul său, fiindcă orice creatură
+Highlight: oricine împiedică sau vrea să împiedice în vreun fel <em>cântarea</em> duhovnicească în Biserica cea vie şi în adunarea
+Highlight: care ne-ai lăsat Cuvântul Tău, Rugăciunea Ta şi <em>Cântarea</em> Ta sfântă, ca prin ele să ne chemi la Tine, să
+
+Score: 4.8333335
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight: ramuri verzi în mâini. Facem cu ei o mică probă de <em>cântare</em>. Îi punem în rând. Urmează un moment mişcător,
+Highlight:  ne <em>cântă</em> apoi nespus de duios <em>cântarea</em>
+Highlight: se amesteca printre noi, ne lua de după cap şi <em>cânta</em> fericit împreună cu noi din toată inima până ce
+Highlight: Într-o atmosferă plină de foc sfânt, s-a intonat <em>cântarea</em>-rugăciune  Împărate
+
+Score: 4.8333335
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 108
+Type: poezie
+Author: Traian Dorz
+Highlight: - O <em>cântare</em>. Un psalm al lui David -
+Highlight: să-Ţi <em>cânte</em> Doamne, Ţie
+Highlight: în multe neamuri Te-a <em>cânta</em>
+Highlight: <em>cântarea</em> mea plăcută.
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Binecuvântat să fie Domnul, Stânca
+Type: poezie
+Author: Traian Dorz
+Highlight: Dumnezeul meu, - <em>cântare</em>
+Highlight: veşnic voi <em>cânta</em>,  pentru
+Highlight: aş putea să <em>cânt</em>,
+Highlight: <em>cânte</em> slava Ta cea mare
+
+Score: 4.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 22 - Peregrinările soliei
+Type: articol
+Author: Traian Dorz
+Highlight: întristat că deşi le-am dat voie să <em>cânte</em> şi ei acolo la priceasnă o <em>cântare</em> de Paşti “Din mormântu-ntunecat
+Highlight: de lacrimi. Pentru sufletele care au nevoie să <em>cânte</em>, să se roage şi să plângă înaintea Mântuitorului
+Highlight: lângă inima şi trăirea lor, a celor ce plâng şi <em>cântă</em> şi muncesc şi sufăr şi asudă. Să nu fie pentru ei
+
+Score: 4.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 24 - Înaintea mai-marilor norodului
+Type: articol
+Author: Traian Dorz
+Highlight: încât n-am putut <em>cânta</em> decât cu glasul cel mai jos cu putinţă doar o singură <em>cântare</em>: Hristos a Înviat
+Highlight: - <em>Cântă</em> cântări de la Oastea Domnului şi se roagă.  -
+Highlight: se permită cuvântul liber, rugăciunea liberă şi <em>cântarea</em> laică religioasă a Oastei Domnului libere. Prin
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre iubire
+Type: articol
+Author: Traian Dorz
+Highlight: că-n iubire şi-n <em>cântare</em> locuieşte Cel Frumos.
+Highlight: 32 - Fiii mei, iubirea-n suflet şi <em>cântarea</em> s-o păstraţi - amândouă
+Highlight: pasărea cu mai drag <em>cânt</em>
+Highlight: numai cântecul iubirii l-ai <em>cânta</em> cu drag în veac.
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din alte diferite părţi
+Type: articol
+Author: Traian Dorz
+Highlight: căci în muncă şi-n <em>cântare</em>,
+Highlight: de aceea unii <em>cântă</em>,  -
+Highlight: 281 - Cucul <em>cântă</em>-n frunza lată lenea-i
+Highlight: cucul <em>cântă</em> şi se cară lenea
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Doamne, cum să nu-Ţi dăm?
+Type: poezie
+Author: Traian Dorz
+Highlight: pentru pâine şi <em>cântare</em>
+Highlight: veşnic vom <em>cânta</em>, vom <em>cânta</em>, vom <em>cânta</em>
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 89
+Type: poezie
+Author: Traian Dorz
+Highlight: - O <em>cântare</em> a lui Etan ezrahitul -
+Highlight: 1-Voi <em>cânta</em> întotdeauna îndurarea Domnului
+Highlight: Tu Taborul şi Hermonul faci să <em>cânte</em> de-al Tău Nume
+Highlight: Ci bucuros şi fericit va <em>cânta</em> pe totdeauna
+
+Score: 4.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: S-au dus demult
+Type: poezie
+Author: Traian Dorz
+Highlight: mergând fără <em>cântare</em> de-atât amar de
+Highlight: puteam <em>cânta</em> cu lacrimi sau lăcrima cântând.  O
+Highlight: atât de dor să <em>cânt</em> ca-n
+Highlight: să vină iar <em>cântarea</em> în dragul ei hotar
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: S-au dus demult
+Type: poezie
+Author: Traian Dorz
+Highlight: mergând fără <em>cântare</em> de-atât amar de
+Highlight: puteam <em>cânta</em> cu lacrimi sau lăcrima cântând.  O
+Highlight: atât de dor să <em>cânt</em> ca-n
+Highlight: să vină iar <em>cântarea</em> în dragul ei hotar
+
+Score: 4.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Slavă şi-nchinare
+Type: poezie
+Author: Traian Dorz
+Highlight: Slavă şi <em>cântare</em>
+Highlight: <em>cânte</em> lăudându-L Veacul
+Highlight: <em>cânte</em> lăudându-L
+Highlight: <em>cânte</em> lăudându-L
+
+Score: 4.75
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Aceea ce nu se poate ascunde
+Type: articol
+Author: Traian Dorz
+Highlight: Aceeaşi <em>cântare</em> Biruitoare o vor <em>cânta</em> glasurile noastre şi vom fi înfăşuraţi
+Highlight: 2 - Nenorocit este cel ce <em>cântă</em> pentru cine nu-l aude, nefericit
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Aici în pustiul acesta
+Type: poezie
+Author: Traian Dorz
+Highlight: la jug şi <em>cântare</em> - spre rod şi viaţă.
+Highlight: să-Şi nalţe <em>cântarea</em>, să-Şi are livada...
+Highlight: Azi <em>cântă</em> izvoare din Stâncă ţâşnind
+
+Score: 4.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 21 - După cei 50 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: să-mi fi sfârşit a Ta <em>cântare</em>
+Highlight: cum Tu ai vrut s-o <em>cânt</em> cu ea.
+Highlight: mare pătrundere în masă: - misionarismul laic, <em>cântarea</em> religioasă, cuvântul liber, predica liberă, rugăciunea
+
+Score: 4.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Nu-i loc mai sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: în rugăciune şi-n <em>cântare</em>
+Highlight: când e Hristos în toţi ce <em>cântă</em> şi
+Highlight: şi toţi ce <em>cântă</em>-s în Hristos când
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Nu-i loc mai sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: în rugăciune şi-n <em>cântare</em>
+Highlight: când e Hristos în toţi ce <em>cântă</em> şi
+Highlight: şi toţi ce <em>cântă</em>-s în Hristos când
+
+Score: 4.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Nu-mi mai aduc aminte şi nici
+Type: poezie
+Author: Traian Dorz
+Highlight: se face-acum <em>cântare</em> cu uriaş hotar
+Highlight: Ci ţes un nimb de aur din lacrimi şi din <em>cânt</em> întregii
+Highlight: vreau să înalţ <em>cântarea</em> răbdării pân-la cer cu
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Nu-mi mai aduc aminte şi nici
+Type: poezie
+Author: Traian Dorz
+Highlight: se face-acum <em>cântare</em> cu uriaş hotar
+Highlight: Ci ţes un nimb de aur din lacrimi şi din <em>cânt</em> întregii
+Highlight: vreau să înalţ <em>cântarea</em> răbdării pân-la cer cu
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: O, Isuse-Atotputernic
+Type: poezie
+Author: Traian Dorz
+Highlight: niciodată-n vreo <em>cântare</em>, orişicât ar fi de dulce
+Highlight: Veşnic de-aş <em>cânta</em> Isuse, cu un grai mai sus de Fire,  n-aş
+Highlight: n-aş putea <em>cânta</em> sublimul Biruinţei de pe Cruce
+
+Score: 4.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: O, Tu mi-ai dat vederea
+Type: poezie
+Author: Traian Dorz
+Highlight: că-n iubire şi-n <em>cântare</em> locuieşte Dumnezeu.
+Highlight: Tu mi-ai adus <em>cântarea</em> şi-al
+Highlight: Fiii mei, iubirea-n suflet şi <em>cântarea</em> s-o păstraţi amândouă
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: O, cerească melodie
+Type: poezie
+Author: Traian Dorz
+Highlight: O, <em>cântare</em>-nlăcrimată
+Highlight: cui te <em>cântă</em> mai frumos,  harul
+Highlight: cui te <em>cântă</em> mai frumos.  O
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 122
+Type: poezie
+Author: Traian Dorz
+Highlight: - O <em>cântare</em> a treptelor. Un psalm al lui David -
+Highlight: Domnului Îi <em>cântă</em>
+Highlight: Domnului să-I dea mărire, Numelui Său <em>cântă</em>.
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 126
+Type: poezie
+Author: Traian Dorz
+Highlight: - O <em>cântare</em> a treptelor -
+Highlight: <em>cântam</em>, din inimă, <em>cântam</em>.
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 65
+Type: poezie
+Author: Traian Dorz
+Highlight: - Un psalm al lui David. O <em>cântare</em> -
+Highlight: dealurile-ncinse-s cu veselii şi <em>cânt</em>
+Highlight: şi toate <em>cântă</em> Doamne, de vesele
+
+Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Să Te privesc din plin
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>cântare</em> care am s-o <em>cânt</em>
+Highlight: Să-Ţi <em>cânt</em> Isus... şi-n cea din urmă cântare
 
