@@ -1,4 +1,4 @@
-FROM jwilder/nginx-proxy
+FROM jwilder/nginx-proxy:v0.9.0
 RUN apt-get update && apt-get install -y less curl
 COPY comori-od.conf /etc/nginx/vhost.d/localhost
 COPY comori-od.conf /etc/nginx/vhost.d/comori-od.ro
