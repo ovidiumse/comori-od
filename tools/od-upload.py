@@ -94,8 +94,8 @@ def create_index(idx_name):
                         "keywords": ["exemplu"]
                     },
                     "romanian_stemmer": {
-                        "type": "stemmer",
-                        "language": "romanian"
+                        "type": "hunspell",
+                        "language": "ro_simple"
                     },
                     "od_shingle": {
                         'type': 'shingle',
@@ -116,33 +116,31 @@ def create_index(idx_name):
                     }
                 },
                 "analyzer": {
-                    "romanian": {
+                    "standard": {
                         'type': 'custom',
                         "tokenizer": "standard",
-                        "filter": ["lowercase", "romanian_keywords", "romanian_stemmer"]
+                        "filter": ["lowercase", "romanian_keywords"]
                     },
                     "folding": {
                         'type': 'custom',
                         "tokenizer": "standard",
                         "filter":
-                        ["lowercase", "asciifolding", "romanian_keywords", "romanian_stemmer"]
+                        ["lowercase", "asciifolding", "romanian_keywords"]
                     },
-                    "folding_synonym": {
+                    "folding_stemmed": {
                         'type': 'custom',
-                        "tokenizer": "standard",
-                        "filter":
-                        ["lowercase", "synonyms", "asciifolding", "romanian_keywords", "romanian_stemmer"]
-                    },
-                    "folding_stop": {
-                        'type': 'custom',
-                        "tokenizer": "standard",
-                        "filter":
-                        ["lowercase", "romanian_stop", "asciifolding", "romanian_keywords", "romanian_stemmer"]
+                        'tokenizer': 'standard',
+                        'filter': ["lowercase", "synonyms", "asciifolding", "romanian_stemmer", "romanian_keywords"]
                     },
                     "completion": {
                         'type': 'custom',
                         "tokenizer": "standard",
-                        "filter": ["lowercase", "asciifolding", "romanian_stemmer"]
+                        "filter": ["lowercase", "asciifolding"]
+                    },
+                    "completion_folding_stemmed": {
+                        'type': 'custom',
+                        "tokenizer": "standard",
+                        "filter": ["lowercase",  "asciifolding", "romanian_stemmer"]
                     },
                     "suggesting": {
                         'type': 'custom',
@@ -169,7 +167,7 @@ def create_index(idx_name):
             'title': {
                 'type': 'text',
                 'term_vector': 'with_positions_offsets',
-                'analyzer': 'romanian',
+                'analyzer': 'standard',
                 'fields': {
                     'keyword': {
                         'type': 'keyword'
@@ -179,9 +177,18 @@ def create_index(idx_name):
                         'term_vector': 'with_positions_offsets',
                         'analyzer': 'folding',
                     },
+                    'folded_stemmed': {
+                        'type': 'text',
+                        'term_vector': 'with_positions_offsets',
+                        'analyzer': 'folding_stemmed',
+                    },
                     'completion': {
                         'type': 'search_as_you_type',
                         'analyzer': 'completion',
+                    },
+                    'completion_folded_stemmed': {
+                        'type': 'search_as_you_type',
+                        'analyzer': 'completion_folding_stemmed',
                     },
                     'suggesting': {
                         'type': 'text',
@@ -200,12 +207,17 @@ def create_index(idx_name):
                     'text': {
                         'type': 'text',
                         'term_vector': 'with_positions_offsets',
-                        'analyzer': 'romanian',
+                        'analyzer': 'standard',
                         'fields': {
                             'folded': {
                                 'type': 'text',
                                 'term_vector': 'with_positions_offsets',
                                 'analyzer': 'folding',
+                            },
+                            'folded_stemmed': {
+                                'type': 'text',
+                                'term_vector': 'with_positions_offsets',
+                                'analyzer': 'folding_stemmed',
                             },
                             'suggesting': {
                                 'type': 'text',
@@ -227,7 +239,7 @@ def create_index(idx_name):
         }
     }
 
-    post(idx_name, {'settings': settings, 'doc_type': 'articles', 'mappings': mappings})
+    post(idx_name, {'settings': settings, 'mappings': mappings})
 
 
 def index_all(idx_name, articles):
