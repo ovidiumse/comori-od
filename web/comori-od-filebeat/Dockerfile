@@ -1,4 +1,4 @@
-FROM docker.elastic.co/beats/filebeat:7.11.2
+FROM docker.elastic.co/beats/filebeat:7.13.0
 
 USER root
 RUN yum -y update && yum -y install less curl
