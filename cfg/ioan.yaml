@@ -1,46 +1,24 @@
-preprocessing:
-  - to:
-      style:
-        text-align: right
-      nested-style:
-        font-size: 125%
-        color: "#1a8cff"
-    apply:
-      nested-style:
-        font-style: italic
-        font-weight: bold
-
 pre-paragraph-first-letter:
   class: WPDropcap
 
-pre-article-title:
+book-title:
+  nested-style:
+    font-size: 208%
+    color: "#0000ff"
+
+article-title:
   nested-style:
     font-size: 208%
     font-weight: bold
     color: "#ff0000"
-  style:
-    text-align: justify
-  other:
-    capitalized: False
 
-article-title:
+article-bible-ref:
   nested-style:
-    font-size: 166%
-    font-weight: bold
-    color: "#ff0000"
-  style:
-    text-align: justify
-  other:
-    capitalized: False
-
-article-body:
-  nested-style:
-    font-size: 125%
+    font-size: 91%
+    color: "#ff8000"
 
 poem-title:
   nested-style:
     font-size: 166%
     font-weight: bold
     color: "#ff00ff"
-  style:
-    text-align: justify
