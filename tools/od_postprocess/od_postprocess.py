@@ -462,7 +462,8 @@ class BibleRefResolver(object):
                     if bibleRef:
                         contMatch['ref'] = bibleRef
                         resolvedRefs.append(contMatch)
-                        lastPos = contMatch['end']
+
+                    lastPos = contMatch['end']
             else:
                 lastPos = text.find(' ', matchEntry['start'])
 
