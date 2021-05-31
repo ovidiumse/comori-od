@@ -1,0 +1,33 @@
+{
+  "name": "comori-od-static-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "SERVER_API_URL=http://localhost:9000/ CLIENT_API_URL=http://localhost:9000/ BASE_URL=http://localhost/ INDEX_NAME=od nuxt-ts",
+    "build_dev": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=http://localhost:9000/ BASE_URL=http://localhost/ INDEX_NAME=od nuxt-ts build",
+    "build_prod": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=https://api.comori-od.ro/ BASE_URL=http://comori-od.ro/ INDEX_NAME=odbeta nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^1.0.0",
+    "nuxt": "^2.14.0",
+    "vuetify-loader": "^1.6.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.0",
+    "@nuxt/typescript-build": "^2.0.2",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}
