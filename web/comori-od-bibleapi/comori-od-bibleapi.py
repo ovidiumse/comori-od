@@ -85,10 +85,16 @@ BIBLE_ALIASES = {
     'Apocalipsa': ['Apoc', 'Apoc.']
 }
 
-REFERENCE_REGEX = re.compile(
-    r'(?P<book_number>\d)* ?(?P<book_name>.+?) ?(?P<chapter>\d+):?(?P<verse>\d+)?-?(?P<verseEnd>\d+)?'
-)
+regxGroups = {
+    'book_number': r'((?P<book_number>\d+)\s+)?',
+    'book_name': r'(?P<book_name>([^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)',
+    'chapter': r'(cap\.\s*)?(?P<chapter>\d+)\s*',
+    'verse_start': r'(\s*(:|,)?\s*((v.)|(vers.)|(versetul))?\s*(?P<verse_start>\d+))?',
+    'verse_end': r'(\s*-\s*(?P<verse_end>\d+)\s*,?)?',
+    'verses': r'(\s*(:|,)?\s*(?P<verses>\s*((\s*,\s*)?\d+)+))?'
+}
 
+REFERENCE_REGEX = re.compile(''.join([v for k, v in regxGroups.items()]))
 
 class HandleCORS(object):
     def process_request(self, req, resp):
@@ -101,13 +107,13 @@ class HandleCORS(object):
 
 
 class Bible(object):
-    def makeChapter(self, bookName, chapter, verse=None, verse_end=None, include_titles=False):
+    def makeChapter(self, bookName, chapter, verse=None, verse_end=None, verseNumbers=[], include_titles=False):
         return {
             'book': bookName,
             'name': chapter['name'],
             'link': chapter['link'],
             'chapter': chapter['chapter'],
-            'verses': self.buildVerses(chapter, verse, verse_end, include_titles)
+            'verses': self.buildVerses(chapter, verse, verse_end, verseNumbers, include_titles)
         }
 
     def makeVerse(self, verse):
@@ -122,19 +128,27 @@ class Bible(object):
 
         return r
 
-    def buildVerses(self, chapter, verse_start=None, verse_end=None, include_titles=False):
+    def buildVerses(self, chapter, verse_start=None, verse_end=None, verseNumbers=[], include_titles=False):
         verses = []
         title_verse = None
-        for index, verse in enumerate(chapter['verses']):
+        for verse in chapter['verses']:
             if include_titles and verse['type'] == 'title':
                 title_verse = verse
             elif verse['type'] == 'verse':
-                if verse_start and verse_start > verse['number']:
+                include = False
+                if verse_start and verse_end and verse['number'] >= verse_start and verse['number'] <= verse_end:
+                    include = True
+                elif verse_start and verse['number'] == verse_start:
+                    include = True
+                elif verse_end and verse['number'] == verse_end:
+                    include = True
+                elif verse['number'] in verseNumbers:
+                    include = True
+                elif verse_start is None and verse_end is None and not verseNumbers: 
+                    include = True
+
+                if not include:
                     continue
-                elif verse_end and verse_end < verse['number']:
-                    break
-                elif not verse_end and verse_start and verse_start < verse['number']:
-                    break
 
                 if include_titles and title_verse:
                     verses.append(title_verse)
@@ -161,16 +175,15 @@ class Bible(object):
             resp.body, resp.content_type = self.make_response(
                 {
                     'message':
-                    "The given reference doesn't match the <book_name> <chapter>[:<verse>[-<verseEnd>]] schema."
+                    "The given reference doesn't match the <book_name> <chapter>[:<verse>[-<verseEnd>]][verse n, verse n + 1...] schema."
                 }, callback)
             return
 
         logging.info('Looking for {}...'.format(match.groupdict()))
 
-        book_name = ""
+        book_name = match.group('book_name').strip()
         if match.group('book_number'):
-            book_name += "{} ".format(match.group('book_number'))
-        book_name += match.group('book_name').strip()
+            book_name = "{} {}".format(match.group('book_number'), book_name)
 
         if book_name not in BIBLE:
             resp.status = falcon.HTTP_404
@@ -179,7 +192,30 @@ class Bible(object):
             return
 
         book = BIBLE[book_name]
+        
         chapter_nr = int(match.group('chapter'))
+
+        verse_start = int(match.group('verse_start')) if match.group('verse_start') else None
+        verse_end = int(match.group('verse_end')) if match.group('verse_end') else None
+        if verse_start and verse_end and verse_end < verse_start:
+            resp.status = falcon.HTTP_400
+            resp.body, resp.content_type = self.make_response(
+                {'message': 'Invalid verse range: {}-{}'.format(verse_start, verse_end)}, callback)
+            return
+
+        verses = []
+        if len(book["chapters"]) == 1 and chapter_nr is not None and chapter_nr > 1:
+            verses.append(chapter_nr)
+
+            if verse_end and not verse_start:
+                verses.append(verse_end)
+                verse_end = None
+
+            chapter_nr = 1
+        
+        if match.group('verses'):
+            verses += [int(v.strip()) for v in match.group('verses').split(',')]
+        
         if chapter_nr > len(book['chapters']):
             resp.status = falcon.HTTP_404
             resp.body, resp.content_type = self.make_response(
@@ -188,19 +224,12 @@ class Bible(object):
             return
 
         chapter = book['chapters'][chapter_nr - 1]
-        verse_nr = int(match.group('verse')) if match.group('verse') else None
-        verse_end = int(match.group('verseEnd')) if match.group('verseEnd') else None
-        if verse_nr and verse_end and verse_end < verse_nr:
-            resp.status = falcon.HTTP_400
-            resp.body, resp.content_type = self.make_response(
-                {'message': 'Invalid verse range: {}-{}'.format(verse_nr, verse_end)}, callback)
-            return
 
-        response = self.makeChapter(book['name'], chapter, verse_nr, verse_end, include_titles)
+        response = self.makeChapter(book['name'], chapter, verse_start, verse_end, verses, include_titles)
         if not response['verses']:
             resp.status = falcon.HTTP_404
             resp.body, resp.content_type = self.make_response(
-                {'message': "Verse {} doesn't exist in {}!".format(verse_nr, chapter['name'])},
+                {'message': "Verse {} doesn't exist in {}!".format(verse_start, chapter['name'])},
                 callback)
             return
 
@@ -222,11 +251,6 @@ class Aliases(object):
             resp.body = json.dumps(BIBLE_ALIASES[book_name])
         else:
             resp.body = json.dumps(BIBLE_ALIASES)
-
-
-class Examples(object):
-    def on_get(self, req, resp):
-        pass
 
 
 def load_app(bible_filepath):
@@ -253,12 +277,10 @@ def load_app(bible_filepath):
     bible = Bible()
     books = Books()
     aliases = Aliases()
-    examples = Examples()
 
     app.add_route('/bible/books', books)
     app.add_route('/bible/books/aliases', aliases)
     app.add_route('/bible/books/{book_name}/aliases', aliases)
-    app.add_route('/bible/examples', examples)
     app.add_route('/bible/{reference}', bible)
 
     return app
