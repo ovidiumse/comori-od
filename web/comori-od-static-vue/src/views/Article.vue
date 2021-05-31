@@ -42,8 +42,8 @@
                                 <template v-slot:activator="{on, attrs}">
                                     <a href='#' @click.prevent="show[content.text + verseIndex] = true" v-bind="attrs" v-on="on">{{content.text}}</a>
                                 </template>
-                                <template v-if="article._source['bible-refs'][content.text]">
-                                    <p v-for="verse in article._source['bible-refs'][content.text].verses" 
+                                <template v-if="article._source['bible-refs'][content.ref]">
+                                    <p v-for="verse in article._source['bible-refs'][content.ref].verses" 
                                        :key="verse.name"
                                        class="mb-0">
                                        <b>{{verse.name}}:</b> {{verse.text}}
@@ -163,7 +163,7 @@ export default {
                 return "span";
         },
         getSimilar(id) {
-            let url = shared.base_url + shared.index_name + '/article/similar?id=' + encodeURIComponent(id)
+            let url = shared.base_url + shared.index_name + '/articles/similar?id=' + encodeURIComponent(id)
             console.log("Getting similars from " + url)
             fetch(url)
                 .then(response => response.json())
@@ -178,7 +178,7 @@ export default {
                 })
         },
         getById(id) {
-            let url = shared.base_url + shared.index_name + '/article?id=' + encodeURIComponent(id)
+            let url = shared.base_url + shared.index_name + '/articles?id=' + encodeURIComponent(id)
             console.log("Getting by id from " + url);
             fetch(url)
                 .then(response => response.json())
