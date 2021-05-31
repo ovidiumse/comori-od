@@ -19,7 +19,7 @@ tmux send-keys -t dev "cd projects/comori-od/web/comori-od-all" C-m
 tmux send-keys -t dev "./tail-dev.sh" C-m
 
 tmux select-pane -t 2
-tmux send-keys -t dev "docker stats" C-m
+tmux send-keys -t dev "cd projects/comori-od/data" C-m
 
 tmux select-pane -t 4
 tmux send-keys -t dev "top -i" C-m
@@ -27,5 +27,9 @@ tmux send-keys -t dev "top -i" C-m
 tmux select-pane -t 2
 tmux split -v -t dev
 tmux send-keys -t dev "cd projects/comori-od/tools" C-m
+
+tmux select-pane -t 0
+tmux split -h -t dev
+tmux send-keys -t dev "docker stats" C-m
 
 tmux attach -t dev
