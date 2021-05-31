@@ -1,5 +1,6 @@
 #!/usr/bin/pypy3
 import os
+import re
 import falcon
 from falcon_auth import FalconAuthMiddleware
 from falcon_auth.backends import AuthBackend
@@ -146,29 +147,22 @@ class Articles(object):
 
         should_match = []
 
-        fields = ["title", "title.folded", "verses.text", "verses.text.folded"]
-        for f in fields:
+        fields = [("title", 20), ("title.folded", 18),
+                  ("verses.text", 10),
+                  ("verses.text.folded", 8),
+                  ("title.folded_stemmed", 4),
+                  ("verses.text.folded_stemmed", 1)]
+
+        for field, boost in fields:
             should_match.append({
                 "intervals": {
-                    f: {
+                    field: {
                         "match": {
                             "query": q,
                             "max_gaps": 4,
                             "ordered": True
-                        }
-                    }
-                }
-            })
-
-            should_match.append({
-                "intervals": {
-                    f: {
-                        "match": {
-                            "query": q,
-                            "max_gaps": 4,
-                            "ordered": True,
-                            "analyzer": "folding_synonym"
-                        }
+                        },
+                        "boost": boost
                     }
                 }
             })
@@ -179,18 +173,16 @@ class Articles(object):
         should_match_highlight = []
         should_match_highlight.append({
             "simple_query_string": {
-                "query": "\"{}\"~{}".format(q, 4),
-                "fields": ["title^2", "title.folded^2", "verses.text", "verses.text.folded"],
-                "default_operator": "AND"
-            }
-        })
-
-        should_match_highlight.append({
-            "simple_query_string": {
-                "query": "\"{}\"~{}".format(q, 4),
-                "fields": ["title^2", "title.folded^2", "verses.text", "verses.text.folded"],
-                "default_operator": "AND",
-                "analyzer": "folding_synonym"
+                "query":
+                "\"{}\"~{}".format(q, 4),
+                "fields": [
+                    "title^20", "title.folded^18",
+                    "verses.text^10", "verses.text.folded^8",
+                    "title.folded_stemmed^4",
+                    "verses.text.folded_stemmed"
+                ],
+                "default_operator":
+                "AND"
             }
         })
 
@@ -232,17 +224,20 @@ class Articles(object):
                 },
                 'fields': {
                     'title': {
-                        "matched_fields": ["title", "title.folded"],
+                        "matched_fields": ["title", "title.folded", "title.stemmed_folded", "title.folded_stemmed"],
                         'type': 'fvh'
                     },
                     'verses.text': {
                         "matched_fields":
-                        ["verses.text", "verses.text.folded"],
+                        ["verses.text", "verses.text.folded", "verses.text.stemmed_folded", "verses.text.folded_stemmed"],
                         'type': 'fvh'
                     }
                 },
+                "number_of_fragments": 6,
+                "fragment_size": 100,
                 "order": "score"
             },
+            'sort': ['_score', {'title.keyword': 'asc'}],
             'size': limit,
             'from': offset
         }
@@ -267,6 +262,8 @@ class Articles(object):
                         }
                     }
                 }
+    
+        # print("Query: {}".format(json.dumps(query_body, indent=2)))
 
         return ES.search(index=idx_name, body=query_body, timeout="1m")
 
@@ -284,6 +281,9 @@ class Articles(object):
                         }
                     }]
                 }
+            },
+            '_source': {
+                'excludes': ['verses', 'bible-refs']
             },
             'highlight': {
                 'highlight_query': {
@@ -303,9 +303,11 @@ class Articles(object):
                     }
                 },
                 "number_of_fragments": 1000,
-                "fragment_size": 10000,
+                "fragment_size": 10000
             },
         }
+
+        removeHighlightTags = lambda text : re.sub(r'\<\/?em.*?\>', '', text)
 
         get_response = self.getById(idx_name, req)
         search_response = ES.search(index=idx_name, body=query_body, timeout="1m")
@@ -323,6 +325,10 @@ class Articles(object):
         highlighted_verses = highlight["verses.text"]
 
         source = get_response["_source"]
+        highlighted_title = highlight["title"][0] if "title" in highlight else None
+        if highlighted_title and removeHighlightTags(highlighted_title) == source["title"]:
+            source["title"] = highlighted_title
+
         source_verses = source["verses"]
 
         lastIndex = 0
@@ -333,7 +339,7 @@ class Articles(object):
                 for chunkIndex in range(0, len(verse)):
                     chunk = verse[chunkIndex]
 
-                    if highlighted_verse.replace("<em>", "").replace("</em>", "") == chunk['text']:
+                    if removeHighlightTags(highlighted_verse) == chunk['text']:
                         lastIndex = verseIndex
                         verse[chunkIndex]['text'] = highlighted_verse
                         break
@@ -542,8 +548,10 @@ class Titles(object):
                 },
                 'size': limit,
                 'from': offset,
-                'sort': [{'_insert_ts': {'order': 'asc'}}]
+                'sort': [{'_insert_idx': {'order': 'asc'}}]
             }
+
+            # print("Query: {}".format(json.dumps(query_body, indent=2)))
 
             response = ES.search(index=idx_name, body=query_body)
             resp.status = falcon.HTTP_200
@@ -562,8 +570,20 @@ class TitlesCompletion(object):
             results = ES.search(index=idx_name,
                                 body={
                                     'query': {
-                                        'match_phrase_prefix': {
-                                            'title.completion': req.params['prefix']
+                                        'multi_match': {
+                                            'query': req.params['prefix'],
+                                            'type': 'bool_prefix',
+                                            "fields": [
+                                                "title.completion",
+                                                "title.completion._2gram",
+                                                "title.completion._3gram",
+                                                "title.completion_stemmed_folded",
+                                                "title.completion_stemmed_folded._2gram",
+                                                "title.completion_stemmed_folded._3gram"
+                                                "title.completion_folded_stemmed",
+                                                "title.completion_folded_stemmed._2gram",
+                                                "title.completion_folded_stemmed._3gram"
+                                            ]
                                         }
                                     },
                                     '_source': {
@@ -831,7 +851,7 @@ def load_app(cfg_filepath):
     index = Index()
     articles = Articles()
     content = ContentHandler()
-    authors = FieldAggregator('author', [])
+    authors = FieldAggregator('author', ['type', 'book'])
     types = FieldAggregator('type', [])
     volumes = FieldAggregator('volume', ['author'])
     books = FieldAggregator('book', ['author', 'volume'])
