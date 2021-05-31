@@ -271,15 +271,6 @@ def merge_multiline_subtitles(soup, cfg):
         subtitle = subtitle.find_next(lambda tag: isArticleSubtitle(tag, cfg))
 
 
-def normalize_title_sizes(soup, cfg):
-    print("Normalizing title sizes...")
-
-    title = find_title(soup, cfg)
-    while title:
-        replaceNestedStyleAttribute(title, 'font-size', '166%')
-        title = find_title(soup, cfg, title)
-
-
 def fix_first_paragraph_first_letters(soup, cfg):
     print("Fixing first paragraph first letters...")
 
@@ -374,7 +365,6 @@ def main():
         if 'article-subtitle' in cfg:
             merge_multiline_subtitles(soup, cfg)
 
-        normalize_title_sizes(soup, cfg)
         fix_first_paragraph_first_letters(soup, cfg)
         remove_white_text(soup, cfg)
         replace_hardpagebreaks_with_breaks(soup, cfg)
