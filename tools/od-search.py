@@ -71,7 +71,9 @@ def search(idx_name, query, fields):
             print("Author: {}".format(result['author']))
 
         if "highlight" in fields and 'highlight' in hit:
-            print("highlight: {}".format(json.dumps(hit['highlight'], indent=2)))
+            for field in hit['highlight']:
+                for highlight in hit['highlight'][field]:
+                    print("Highlight: {}".format(highlight))
         print("")
 
 

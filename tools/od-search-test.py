@@ -27,6 +27,25 @@ def parseArgs():
     return PARSER_.parse_args()
 
 
+def extract_occurrences(highlights):
+    occurrences = []
+    for highlight in highlights:
+        end = 0
+        while True:
+            start = highlight.find("<em>", end)
+            if start < 0:
+                break
+            start += len("<em>")
+
+            end = highlight.find("</em>", start)
+            if end < 0:
+                break;
+
+            occurrences.append(highlight[start:end])
+            end += len("</em>")
+
+    return set(occurrences)
+
 def run_searches(outdir, external_host):
     queries = [
         "Dumnezeu", "Ajutor", "Iertare", "Smerenie", "Indurare", "Suferinta",
@@ -42,7 +61,7 @@ def run_searches(outdir, external_host):
         "Batran", "Tanar", "Har", "Bun", "Rau", "Lacrimi", "Vesnic",
         "Judecata", "Nou", "Vechi", "Ascultare", "Maica", "Domnul", "Mire",
         "Mireasa", "Logodna", "Viu", "Rece", "Fierbinte", "Genunchi", "Curat",
-        "Intinat", "Cer", "Intelept", "Intelepciune", "Ura", "Dar", "Biruinta",
+        "Intinat", "întinat", "Cer", "Intelept", "Intelepciune", "Ura", "Dar", "Biruinta",
         "Infrangere", "Neam", "Vrajmas", "Legat", "Legatura", "Cunostinta",
         "Ingamfa", "Vorbire", "Tacere", "Mult", "Putin", "Inchinare",
         "Rugaciune", "Fericit", "Fericire", "Aproape", "Departe", "Intuneric",
@@ -62,7 +81,7 @@ def run_searches(outdir, external_host):
         "Hotarat", "Hotarare", "Meditare", "Meditatie", "Poezie", "Citire",
         "Trezire", "Rod", "Cules", "Adunare", "Altar", "Apus", "Rasarit",
         "Ridicat", "Bland", "Blandete", "Afara", "Inauntru", "Gol", "Acoperit",
-        "Bolnav", "Sanatos", "Lacom", "Lacomie", "Predestinare", "Prooroci",
+        "Bolnav", "Sanatos", "Lacom", "Lacomie", "Predestinare", "Predestinatie", "predestinație", "Prooroci",
         "Prorocii", "Chin", "Cautare", "Ajuns", "Ajungere", "Plin", "Murdar",
         "Supus", "Supunere", "femeie de ce plangi", "nu esti tu la rand", "nu ești tu la rând"
     ]
@@ -70,7 +89,7 @@ def run_searches(outdir, external_host):
     if not os.path.exists(outdir):
         os.makedirs(outdir)
 
-    for q in queries:
+    for q in sorted(queries):
         filename = "{}.txt".format(os.path.join(outdir, q.replace(" ", "_")))
         print("Searching for '{}'".format(q))
         lines = []
@@ -92,7 +111,7 @@ def run_searches(outdir, external_host):
             for line in proc.stdout:
                 line = line.strip()
                 if line.startswith("Score: "):
-                    article = {'score': line[len("Score: "):]}
+                    article = {'score': line[len("Score: "):], 'highlights': []}
                 elif line.startswith("Title: "):
                     article['title'] = line[len("Title: "):]
                 elif line.startswith("Author: "):
@@ -103,6 +122,8 @@ def run_searches(outdir, external_host):
                     article['volume'] = line[len("Volume: "):]
                 elif line.startswith("Type: "):
                     article['type'] = line[len("Type: "):]
+                elif line.startswith("Highlight: "):
+                    article['highlights'].append(line[len("Highlight: "):])
                 elif not line and article:
                     articles.append(article)
                     article = {}
@@ -110,15 +131,15 @@ def run_searches(outdir, external_host):
                 lines.append(line)
 
         tbl = PrettyTable()
-        tbl.field_names = ["Titlu", "Author", "Tip", "Carte", "Volum"]
+        tbl.field_names = ["Titlu", "Occurrences", "Author", "Tip", "Carte", "Volum"]
         for f in tbl.field_names:
             tbl.align[f] = 'l'
 
-        articles = sorted(articles, key=lambda a: a['score'], reverse=True)
         for article in articles:
             tbl.add_row([
-                article['title'], article['author'], article['book'],
-                article['volume'], article['type']
+                article['title'],
+                extract_occurrences(article['highlights']), article['author'],
+                article['book'], article['volume'], article['type']
             ])
 
         with open(filename, 'w') as out_file:
