@@ -210,6 +210,16 @@ def isArticleSubtitle(tag, cfg):
     return checkProps(tag, cfg['article-subtitle'])
 
 
+def isArticleBibleRef(tag, cfg):
+    if 'article-bible-ref' not in cfg:
+        return False
+    
+    if tag.name != 'p':
+        return False
+    
+    return checkProps(tag, cfg['article-bible-ref'])
+
+
 def isPoemTitle(tag, cfg):
     if 'poem-title' not in cfg:
         return False
@@ -282,21 +292,25 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
     articles = []
 
     for p in soup.find_all('p'):
+        subtitle = None
+        bibleRef = None
         if isBookTitle(p, cfg):
             book = p.text
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
             title = p.text
-            subtitle = getSubtitle(p, cfg)
             type = "poezie" if isPoemTitle(p, cfg) else "articol"
             verses = []
             lastTag = ""
             lastValue = []
-            current_p = subtitle if subtitle else p
-            for v in current_p.next_elements:
+            for v in p.next_siblings:
                 if v.name == 'p' and (isPoemTitle(v, cfg) or isArticleTitle(
                         v, cfg) or isBookTitle(v, cfg)
                                       or isVolumeTitle(v, cfg)):
                     break
+                elif v.name == 'p' and isArticleSubtitle(v, cfg):
+                    subtitle = v
+                elif v.name == 'p' and isArticleBibleRef(v, cfg):
+                    bibleRef = v
                 elif v.name == 'p':
                     verse = extractVerse(v)
 
@@ -327,6 +341,9 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
 
                 if subtitle:
                     article['subtitle'] = subtitle.text.strip()
+                
+                if bibleRef:
+                    article['bible-ref'] = bibleRef.text.strip()
 
                 articles.append(article)
 

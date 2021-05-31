@@ -21,7 +21,7 @@ copy() {
 }
 
 prepare_dir() {
-    dir=$CWD/$1
+    dir=$CWD/../data/$1
     dest_old=$DEST/old/$1/
     dest_new=$DEST/new/$1/
 
