@@ -1,0 +1,1842 @@
+# word list version 3.3.7
+SET UTF-8
+TRY iaertolncusampdbgtfzvshajixkwyqACDM
+KEY qwertyuiop|asdfghjkl|zxcvbnm
+
+#***************************************
+# Romanian Hunspell Dictionary
+# Copyright (C) 2005-2009 Rospell Team, http://rospell.sourceforge.net
+#***************************************
+# Authors:
+#   Lucian Constantin (rospell) <struct_bylighting at yahoo dot com>
+#   Andrei Cipu <strainu10@gmail.com>
+#   Sorin Sbarnea (http://www.i18n.ro)
+#   Alexandru Szasz (Mozilla and OpenOffice.org Romanian Translation Team)
+#   Ionut Paduraru (http://www.archeus.ro)
+#   Adrian Stoica (OpenOffice.org Romanian Translation Team) <adrian dot stoica at cuvinte dot ro>
+#   Nicu Buculei (OpenOffice.org Romanian Translation Team) <nicu at apsro dot com>
+#   Catalin Francu (http://dexonline.ro)
+#   Ionel Mugurel Ciobica (previous aspell releases) <tgakic at sg10 chem tue nl>
+#   Mihai Budiu (ispell dictionary) <mihaib at cs cmu edu>
+#
+# Copyright Terms:
+#  GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
+#
+#***************************************
+# Cuprins:
+# O - general prefix re
+#
+# Verbe:
+# N - general sufix verbe gerunziu
+# K - verbe conj 1.1, terminate in a la infinitiv, insa nu in ez la pers I sing (v1.utf8)
+#    - automatic prefix re
+# B - verbe conj 1.2,  terminate in a la infinitiv si ez la pers I sing (v1.utf8)
+#    - automatic prefix re
+# EHG - verbe conj 3, terminate in e la infinitiv (v3.utf8)
+#    - automatic prefix re
+# I - verbe conjugarea 4, terminate in i sau i la infinitiv (v4.utf8)
+#   - numai conjugarile 4.2 (terminare esc pers I sing) si 4.4 (asc) sunt implementate
+#   - automatic prefix re
+#
+# Substantive
+# AFfRrsu - feminine (sf.utf8)
+# C - neutre care fac plural in uri: abajur/abajururi (sn.utf8)
+# c - neutre cu defect de plural
+# MP - neutre care fac pluralul in e: sablon/sabloane (sn.utf8)
+# z - neutre cu oa
+# L - masculine (sm.utf8)
+# l - masculine cu defect de plural
+#
+# Adjective
+# DQST - adjective (adj.utf8)
+#       - check overlap between Q and S
+#       - e - adjective terminate in e, care au aceeasi forma la sing m si f
+#       - t - adjective terminate in et
+#       -q - adjective terminate in fag
+#       - automatic prefix ne
+#
+# Nume proprii
+# U - feminine
+# T - masculine
+#
+# Neologisme
+# n - substantive neutre
+#********************************************************************************
+
+#********************************************************************************
+# adjective terminate in et
+SFX t Y 17
+SFX t 0 u et
+SFX t 0 ul et
+SFX t 0 ului et
+SFX t 0 ule et
+SFX t 0 i et
+SFX t 0 ii et
+SFX t 0 ilor et
+SFX t et eata [^i]et
+SFX t et eata [^i]et
+SFX t et eato [^i]et
+SFX t et ata iet
+SFX t et ata iet
+SFX t et ato iet
+SFX t 0 ei et
+SFX t 0 e et
+SFX t 0 ele et
+SFX t 0 elor et
+
+#********************************************************************************
+# adjective terminate in e, care au aceeasi forma la sing m si f
+SFX e Y 15
+SFX e 0 le e
+SFX e 0 lui e
+SFX e e i [^td]e
+SFX e e ii [^td]e
+SFX e e ilor [^td]e
+SFX e de zi de
+SFX e de zii de
+SFX e de zilor de
+SFX e te ti te
+SFX e te tii te
+SFX e te tilor te
+SFX e 0 a e
+SFX e 0 i e
+SFX e 0 le e
+SFX e 0 lor e
+PFX e Y 1
+PFX e 0 ne .
+
+#********************************************************************************
+# neologisme subst neutru: cd-ul, cd-uri
+SFX n Y 5
+SFX n -ul 0 -ul
+SFX n -ul -ului -ul
+SFX n -ul -uri -ul
+SFX n -ul -urile -ul
+SFX n -ul -urilor -ul
+
+# prefix re
+PFX O Y 1
+PFX O 0 re .
+
+
+#********************************************************************************
+# verbe gerunziu
+SFX N Y 14
+SFX N 0 u-ma d
+SFX N 0 u-te d
+SFX N 0 u-l d
+SFX N 0 -o d
+SFX N 0 u-se d
+SFX N 0 u-si d
+SFX N 0 u-si-o d
+SFX N 0 u-si-l d
+SFX N 0 u-si-le d
+SFX N 0 u-si-i d
+SFX N 0 u-ne d
+SFX N 0 u-va d
+SFX N 0 u-i d
+SFX N 0 u-le d
+
+
+#********************************************************************************
+# verbe conj 1.1, terminate in a la infinitiv, insa nu in ez la pers I sing (v1/K)
+SFX K Y 133
+SFX K ac aci ac
+SFX K at ati at
+SFX K st sti st
+SFX K rt rti rt
+SFX K pt pti pt
+SFX K nc nci nc
+SFX K ec eci ec
+SFX K rc rci rc
+SFX K oc oci oc
+SFX K sc sti sc
+SFX K sc sti sc
+SFX K ut uti ut
+SFX K ct cti ct
+SFX K lt lti lt
+SFX K d zi ed
+SFX K d zi ud
+SFX K ad ezi ad
+SFX K it iti it
+SFX K ic ici ic
+SFX K t ti nt
+SFX K d zi nd
+SFX K 0 i [^tcdu]
+SFX K 0 a [^u]
+SFX K 0 a-ma [^u]
+SFX K 0 a-te [^u]
+SFX K 0 a-l [^u]
+SFX K 0 a-o [^u]
+SFX K 0 a-ne [^u]
+SFX K 0 ati-va [^u]
+SFX K 0 a-i [^u]
+SFX K 0 a-le [^u]
+SFX K 0 am [^u]
+SFX K 0 ati [^u]
+SFX K 0 ati-ma [^u]
+SFX K 0 ati-va [^u]
+SFX K 0 ati-o [^u]
+SFX K 0 ati-l [^u]
+SFX K 0 ati-ne [^u]
+SFX K 0 ati-i [^u]
+SFX K 0 ati-le [^u]
+SFX K 0 am [^u]
+SFX K 0 ai [^u]
+SFX K 0 a [^u]
+SFX K 0 ati [^u]
+SFX K 0 au [^u]
+SFX K 0 and [^u]
+SFX K 0 andu-ma [^u]
+SFX K 0 andu-te [^u]
+SFX K 0 andu-l [^u]
+SFX K 0 and-o [^u]
+SFX K 0 andu-se [^u]
+SFX K 0 andu-si [^u]
+SFX K 0 andu-si-o [^u]
+SFX K 0 andu-si-l [^u]
+SFX K 0 andu-si-le [^u]
+SFX K 0 andu-ne [^u]
+SFX K 0 andu-va [^u]
+SFX K 0 andu-i [^u]
+SFX K 0 andu-le [^u]
+SFX K 0 at  [^u]
+SFX K 0 at-o  [^u]
+SFX K 0 asem [^u]
+SFX K 0 asesi [^u]
+SFX K 0 ase [^u]
+SFX K 0 aseti [^u]
+SFX K 0 asera [^u]
+SFX K 0 aseram [^u]
+SFX K 0 aserati [^u]
+SFX K 0 a [^u]
+SFX K 0 at [^u]
+SFX K 0 ai [^u]
+SFX K 0 asi [^u]
+SFX K 0 a [^u]
+SFX K 0 aram [^u]
+SFX K 0 arati [^u]
+SFX K 0 ara [^u]
+SFX K u i u
+SFX K u a u
+SFX K u a-ma u
+SFX K u a-te u
+SFX K u a-l u
+SFX K u a-o u
+SFX K u a-ne u
+SFX K u ati-va u
+SFX K u a-i u
+SFX K u a-le u
+SFX K u am u
+SFX K u ati u
+SFX K u ati-ma u
+SFX K u ati-va u
+SFX K u ati-o u
+SFX K u ati-l u
+SFX K u ati-ne u
+SFX K u ati-i u
+SFX K u ati-le u
+SFX K u am u
+SFX K u ai u
+SFX K u a u
+SFX K u ati u
+SFX K u au u
+SFX K u and u
+SFX K u andu-ma u
+SFX K u andu-te u
+SFX K u andu-l u
+SFX K u and-o u
+SFX K u andu-se u
+SFX K u andu-si u
+SFX K u andu-si-o u
+SFX K u andu-si-l u
+SFX K u andu-si-le u
+SFX K u andu-ne u
+SFX K u andu-va u
+SFX K u andu-i u
+SFX K u andu-le u
+SFX K u at  u
+SFX K u at-o  u
+SFX K u asem u
+SFX K u asesi u
+SFX K u ase u
+SFX K u aseti u
+SFX K u asera u
+SFX K u aseram u
+SFX K u aserati u
+SFX K u a u
+SFX K u at u
+SFX K u ai u
+SFX K u asi u
+SFX K u a u
+SFX K u aram u
+SFX K u arati u
+SFX K u ara u
+SFX K u e u
+SFX K 0 e [^u]
+
+PFX K Y 1
+PFX K 0 re .
+#end********************************************************************************
+
+
+#********************************************************************************
+# verbe conj 1.2,  terminate in a la infinitiv si ez la pers I sing (v1/B)
+SFX B Y 161
+SFX B z zi z
+SFX B ez eaza [^i]ez
+SFX B ez eaza-ma [^i]ez
+SFX B ez eaza-te [^i]ez
+SFX B ez eaza-l [^i]ez
+SFX B ez eaza-o [^i]ez
+SFX B ez eaza-ne [^i]ez
+SFX B ez eaza-le [^i]ez
+SFX B ez aza iez
+SFX B ez aza-ma iez
+SFX B ez aza-te iez
+SFX B ez aza-l iez
+SFX B ez aza-o iez
+SFX B ez aza-ne iez
+SFX B ez aza-le iez
+SFX B ez am [^hi]ez
+SFX B ghez gam ghez
+SFX B chez cam chez
+SFX B ez em iez
+SFX B ez ati [^h]ez
+SFX B chez cati chez
+SFX B ghez gati ghez
+SFX B ez ati-ma [^h]ez
+SFX B chez cati-ma chez
+SFX B ghez gati-ma ghez
+SFX B ez ati-l [^h]ez
+SFX B chez cati-l chez
+SFX B ghez gati-l ghez
+SFX B ez ati-o [^h]ez
+SFX B chez cati-o chez
+SFX B ghez gati-o ghez
+SFX B ez ati-ne [^h]ez
+SFX B chez cati-ne chez
+SFX B ghez gati-ne ghez
+SFX B ez ati-va [^h]ez
+SFX B chez cati-va chez
+SFX B ghez gati-va ghez
+SFX B ez ati-i [^h]ez
+SFX B chez cati-i chez
+SFX B ghez gati-i ghez
+SFX B ez ati-le [^h]ez
+SFX B chez cati-le chez
+SFX B ghez gati-le ghez
+SFX B z ze z
+SFX B ez am [^h]ez
+SFX B chez cam chez
+SFX B ghez gam ghez
+SFX B ez ai [^h]ez
+SFX B chez cai chez
+SFX B ghez gai ghez
+SFX B ez a [^h]ez
+SFX B chez ca chez
+SFX B ghez ga ghez
+SFX B ez au [^h]ez
+SFX B chez cau chez
+SFX B ghez gau ghez
+SFX B ez and [^hi]ez
+SFX B chez cand chez
+SFX B ghez gand ghez
+SFX B iez iind iez
+SFX B ez andu-ma [^hi]ez
+SFX B chez candu-ma chez
+SFX B ghez gandu-ma ghez
+SFX B iez iindu-ma iez
+SFX B ez andu-te [^hi]ez
+SFX B chez candu-te chez
+SFX B ghez gandu-te ghez
+SFX B iez iindu-te iez
+SFX B ez andu-l [^hi]ez
+SFX B chez candu-l chez
+SFX B ghez gandu-l ghez
+SFX B iez iindu-l iez
+SFX B ez and-o [^hi]ez
+SFX B chez cand-o chez
+SFX B ghez gand-o ghez
+SFX B iez iind-o iez
+SFX B ez andu-se [^hi]ez
+SFX B ez andu-si [^hi]ez
+SFX B ez andu-si-l [^hi]ez
+SFX B ez andu-si-o [^hi]ez
+SFX B ez andu-si-le [^hi]ez
+SFX B chez candu-se chez
+SFX B chez candu-si chez
+SFX B chez candu-si-o chez
+SFX B chez candu-si-l chez
+SFX B chez candu-si-le chez
+SFX B ghez gandu-se ghez
+SFX B ghez gandu-si ghez
+SFX B ghez gandu-si-o ghez
+SFX B ghez gandu-si-l ghez
+SFX B ghez gandu-si-le ghez
+SFX B iez iindu-se iez
+SFX B iez iindu-si iez
+SFX B iez iindu-si-l iez
+SFX B iez iindu-si-o iez
+SFX B iez iindu-si-le iez
+SFX B ez andu-ne [^hi]ez
+SFX B chez candu-ne chez
+SFX B ghez gandu-ne ghez
+SFX B iez iindu-ne iez
+SFX B ez andu-va [^hi]ez
+SFX B chez candu-va chez
+SFX B ghez gandu-va ghez
+SFX B iez iindu-va iez
+SFX B ez andu-i [^hi]ez
+SFX B chez candu-i chez
+SFX B ghez gandu-i ghez
+SFX B iez iindu-i iez
+SFX B ez andu-le [^hi]ez
+SFX B chez candu-le chez
+SFX B ghez gandu-le ghez
+SFX B iez iindu-le iez
+SFX B ez at [^h]ez
+SFX B chez cat chez
+SFX B ghez gat ghez
+SFX B ez at-o [^h]ez
+SFX B chez cat-o chez
+SFX B ghez gat-o ghez
+SFX B ez asem [^h]ez
+SFX B ez aseti [^h]ez
+SFX B chez casem chez
+SFX B chez caseti chez
+SFX B ghez gasem ghez
+SFX B ghez gaseti ghez
+SFX B ez asesi [^h]ez
+SFX B chez casesi chez
+SFX B ghez gasesi ghez
+SFX B ez ase [^h]ez
+SFX B chez case chez
+SFX B ghez gase ghez
+SFX B ez aseram [^h]ez
+SFX B chez caseram chez
+SFX B ghez gaseram ghez
+SFX B ez aserati [^h]ez
+SFX B chez caserati chez
+SFX B ghez gaserati ghez
+SFX B ez asera [^h]ez
+SFX B chez casera chez
+SFX B ghez gasera ghez
+SFX B ez a [^h]ez
+SFX B chez ca chez
+SFX B ghez ga ghez
+SFX B ez ai [^h]ez
+SFX B ez asi [^h]ez
+SFX B ez a [^hi]ez
+SFX B ez e iez
+SFX B ez aram [^h]ez
+SFX B ez arati [^h]ez
+SFX B ez ara [^h]ez
+SFX B chez cai chez
+SFX B chez casi chez
+SFX B chez ca chez
+SFX B chez caram chez
+SFX B chez carati chez
+SFX B chez cara chez
+SFX B ghez gai ghez
+SFX B ghez gasi ghez
+SFX B ghez ga ghez
+SFX B ghez garam ghez
+SFX B ghez garati ghez
+SFX B ghez gara ghez
+
+PFX B Y 1
+PFX B 0 re .
+#end********************************************************************************
+
+
+
+#********************************************************************************
+# verbe conj 3, terminate in g, c, p la pers I sing (v3/EH, maybe /G)
+# pun, tin, raman, rad, transmit, tes, descing, zic, seduc, petrec
+SFX E Y 157
+SFX E n i n
+SFX E d zi d
+SFX E t ti t
+SFX E s si s
+SFX E 0 i [^sdtn]
+SFX E 0 e .
+SFX E 0 em .
+SFX E 0 eti .
+SFX E 0 eam [^g]
+SFX E 0 eai [^g]
+SFX E 0 ea [^g]
+SFX E 0 eati [^g]
+SFX E 0 eau [^g]
+SFX E 0 eam [^a]g
+SFX E 0 eai [^a]g
+SFX E 0 ea [^a]g
+SFX E 0 eati [^a]g
+SFX E 0 eau [^a]g
+SFX E ag ageam ag
+SFX E ag ageai ag
+SFX E ag agea ag
+SFX E ag ageati ag
+SFX E ag ageau ag
+SFX E 0 and [^dtg]
+SFX E d zand d
+SFX E t tand t
+SFX E 0 and [^a]g
+SFX E ag agand ag
+SFX E an asesem an
+SFX E an asesesi an
+SFX E an asese an
+SFX E an aseseram an
+SFX E an aseserati an
+SFX E an asesera an
+SFX E 0 usem [ri]n
+SFX E 0 usesi [ri]n
+SFX E 0 use [ri]n
+SFX E 0 useram [ri]n
+SFX E 0 userati [ri]n
+SFX E 0 usera [ri]n
+SFX E n sesem un
+SFX E n sesesi un
+SFX E n sese un
+SFX E n seseram un
+SFX E n seserati un
+SFX E n sesera un
+SFX E d sesem d
+SFX E d sesesi d
+SFX E d sese d
+SFX E d seseti d
+SFX E d seseram d
+SFX E d seserati d
+SFX E d sesera d
+SFX E 0 usem ec
+SFX E 0 usesi ec
+SFX E 0 use ec
+SFX E 0 useram ec
+SFX E 0 userati ec
+SFX E 0 usera ec
+SFX E c sesem [ui]c
+SFX E c sesesi [ui]c
+SFX E c sese [ui]c
+SFX E c seseram [ui]c
+SFX E c seserati [ui]c
+SFX E c sesera [ui]c
+SFX E 0 usem ep
+SFX E 0 usesi ep
+SFX E 0 use ep
+SFX E 0 useram ep
+SFX E 0 userati ep
+SFX E 0 usera ep
+SFX E 0 sesem up
+SFX E 0 sesesi up
+SFX E 0 sese up
+SFX E 0 seseram up
+SFX E 0 seserati up
+SFX E g sesem [^a]g
+SFX E g sesesi [^a]g
+SFX E g sese [^a]g
+SFX E g seseram [^a]g
+SFX E g seserati [^a]g
+SFX E g sesera [^a]g
+SFX E ag asesem ag
+SFX E ag asesesi ag
+SFX E ag asese ag
+SFX E ag aseseram ag
+SFX E ag aseserati ag
+SFX E ag asesera ag
+SFX E 0 ui [ri]n
+SFX E 0 usi [ri]n
+SFX E 0 u [ri]n
+SFX E 0 uram [ri]n
+SFX E 0 urati [ri]n
+SFX E 0 ura [ri]n
+SFX E n sei un
+SFX E n sesi un
+SFX E n se un
+SFX E n seram un
+SFX E n serati un
+SFX E n sera un
+SFX E 0 ui ec
+SFX E 0 usi ec
+SFX E 0 u ec
+SFX E 0 uram ec
+SFX E 0 urati ec
+SFX E 0 ura ec
+SFX E c sei [ui]c
+SFX E c sesi [ui]c
+SFX E c se [ui]c
+SFX E c seram [ui]c
+SFX E c serati [ui]c
+SFX E c sera [ui]c
+SFX E an asei an
+SFX E an asesi an
+SFX E an ase an
+SFX E an aseram an
+SFX E an aserati an
+SFX E an asera an
+SFX E 0 ui ep
+SFX E 0 usi ep
+SFX E 0 u ep
+SFX E 0 uram ep
+SFX E 0 urati ep
+SFX E 0 ura ep
+SFX E 0 sei up
+SFX E 0 sesi up
+SFX E 0 se up
+SFX E 0 seram up
+SFX E 0 serati up
+SFX E 0 sera up
+SFX E d sei [^gncp]
+SFX E d sesi [^gncp]
+SFX E d se [^gncp]
+SFX E d seram [^gncp]
+SFX E d serati [^gncp]
+SFX E d sera [^gncp]
+SFX E g sei [^s][nleru]g
+SFX E g sesi [^s][nleru]g
+SFX E g se [^s][nleru]g
+SFX E g seram [^s][nleru]g
+SFX E g serati [^s][nleru]g
+SFX E g sera [^s][nleru]g
+SFX E 0 a [^gnpbc]
+SFX E g aga eg
+SFX E erg earga erg
+SFX E 0 a [^er]g
+SFX E 0 a [^e]rg
+SFX E ern earna ern
+SFX E 0 a [^e]rn
+SFX E 0 a [^r]n
+SFX E ep eapa ep
+SFX E 0 a [^e]p
+SFX E erb earba erb
+SFX E 0 a [^e]rb
+SFX E 0 a [^r]b
+SFX E ec eaca ec
+SFX E 0 a [^e]c
+PFX E Y 1
+PFX E 0 re .
+
+# cont... - verbe terimante in g sau c la persoana I singular prezend: ajung,
+SFX H Y 116
+SFX H g ge-mi g
+SFX H g ge-ti g
+SFX H g ge-ma g
+SFX H g ge-l g
+SFX H g ge-o g
+SFX H g ge-ne g
+SFX H g ge-i g
+SFX H d de-ma d
+SFX H d de-mi d
+SFX H d de-ti d
+SFX H d de-l d
+SFX H d de-o d
+SFX H d de-ne d
+SFX H d de-i d
+SFX H d de-le d
+SFX H c -ma [ui]c
+SFX H c -l [ui]c
+SFX H c -o [ui]c
+SFX H c -ne [ui]c
+SFX H c -i [ui]c
+SFX H c -le [ui]c
+SFX H c -mi [ui]c
+SFX H c -ti [ui]c
+SFX H 0 e-ma ec
+SFX H 0 e-te ec
+SFX H 0 e-mi ec
+SFX H 0 e-ti ec
+SFX H 0 e-l ec
+SFX H 0 e-o ec
+SFX H 0 e-ne ec
+SFX H 0 e-i ec
+SFX H 0 e-le ec
+SFX H t te-ma t
+SFX H t te-mi t
+SFX H t te-ti t
+SFX H t te-l t
+SFX H t te-o t
+SFX H t te-ne t
+SFX H t te-i t
+SFX H t te-le t
+SFX H 0 eti-ma .
+SFX H 0 eti-va .
+SFX H 0 eti-l .
+SFX H 0 eti-o .
+SFX H 0 eti-ne .
+SFX H 0 eti-i .
+SFX H 0 eti-le .
+SFX H t tandu-ma t
+SFX H t tandu-te t
+SFX H t tandu-l t
+SFX H t tand-o t
+SFX H t tandu-se t
+SFX H t tandu-si t
+SFX H t tandu-si-i t
+SFX H t tandu-si-l t
+SFX H t tandu-si-o t
+SFX H t tandu-si-le t
+SFX H t tandu-ne t
+SFX H t tandu-va t
+SFX H t tandu-i t
+SFX H t tandu-le t
+SFX H d zandu-ma d
+SFX H d zandu-te d
+SFX H d zandu-l d
+SFX H d zand-o d
+SFX H d zandu-se d
+SFX H d zandu-si d
+SFX H d zandu-si-l d
+SFX H d zandu-si-o d
+SFX H d zandu-si-le d
+SFX H d zandu-ne d
+SFX H d zandu-va d
+SFX H d zandu-i d
+SFX H d zandu-le d
+SFX H 0 andu-ma [^a]g
+SFX H 0 andu-te [^a]g
+SFX H 0 andu-l [^a]g
+SFX H 0 and-o [^a]g
+SFX H 0 andu-se [^a]g
+SFX H 0 andu-si [^a]g
+SFX H 0 andu-si-i [^a]g
+SFX H 0 andu-si-l [^a]g
+SFX H 0 andu-si-o [^a]g
+SFX H 0 andu-si-le [^a]g
+SFX H 0 andu-ne [^a]g
+SFX H 0 andu-va [^a]g
+SFX H 0 andu-i [^a]g
+SFX H 0 andu-le [^a]g
+SFX H ag agandu-ma ag
+SFX H ag agandu-te ag
+SFX H ag agandu-l ag
+SFX H ag agand-o ag
+SFX H ag agandu-se ag
+SFX H ag agandu-si ag
+SFX H ag agandu-si-i ag
+SFX H ag agandu-si-l ag
+SFX H ag agandu-si-o ag
+SFX H ag agandu-si-le ag
+SFX H ag agandu-ne ag
+SFX H ag agandu-va ag
+SFX H ag agandu-i ag
+SFX H ag agandu-le ag
+SFX H 0 andu-ma [^dtg]
+SFX H 0 andu-te [^dtg]
+SFX H 0 andu-l [^dtg]
+SFX H 0 and-o [^dtg]
+SFX H 0 andu-se [^dtg]
+SFX H 0 andu-si [^dtg]
+SFX H 0 andu-si-i [^dtg]
+SFX H 0 andu-si-l [^dtg]
+SFX H 0 andu-si-o [^dtg]
+SFX H 0 andu-si-le [^dtg]
+SFX H 0 andu-ne [^dtg]
+SFX H 0 andu-va [^dtg]
+SFX H 0 andu-i [^dtg]
+SFX H 0 andu-le [^dtg]
+PFX H Y 1
+PFX H 0 re .
+
+# cont... - verbe terimante in g la persoana I singular prezent: ajung, merg
+SFX G Y 1
+SFX G 0 -o .
+PFX G Y 1
+PFX G 0 re .
+#end*******************************************************************************
+
+
+
+#********************************************************************************
+# verbe conjugarea 4.2 (esc) si 4.4 (asc) (v4/I)
+#********************************************************************************
+SFX I Y 203
+SFX I esc esti esc    #prezent
+SFX I esc este esc
+SFX I esc este-ma esc #prezent imperativ
+SFX I esc este-te esc
+SFX I esc este-l esc
+SFX I esc este-o esc
+SFX I esc este-ne esc
+SFX I esc este-i esc
+SFX I esc im [^i]esc
+SFX I esc iti [^i]esc
+SFX I esc m iesc
+SFX I esc ti iesc
+SFX I esc iti-ma [^i]esc #prezent imperativ
+SFX I esc iti-l [^i]esc
+SFX I esc iti-o [^i]esc
+SFX I esc iti-ne [^i]esc
+SFX I esc iti-va [^i]esc
+SFX I esc iti-i [^i]esc
+SFX I esc ti-ma iesc
+SFX I esc ti-l iesc
+SFX I esc ti-o iesc
+SFX I esc ti-ne iesc
+SFX I esc ti-va iesc
+SFX I esc ti-i iesc
+SFX I esc am iesc #imperfect
+SFX I esc ai iesc
+SFX I esc a iesc
+SFX I esc ati iesc
+SFX I esc au iesc
+SFX I esc eam [^i]esc #imperfect
+SFX I esc eai [^i]esc
+SFX I esc ea [^i]esc
+SFX I esc eati [^i]esc
+SFX I esc eau [^i]esc
+SFX I esc ind [^i]esc #gerunziu
+SFX I esc indu-ma [^i]esc
+SFX I esc indu-te [^i]esc
+SFX I esc indu-l [^i]esc
+SFX I esc ind-o [^i]esc
+SFX I esc indu-se [^i]esc
+SFX I esc indu-si [^i]esc
+SFX I esc indu-si-i [^i]esc
+SFX I esc indu-si-o [^i]esc
+SFX I esc indu-si-l [^i]esc
+SFX I esc indu-si-le [^i]esc
+SFX I esc indu-ne [^i]esc
+SFX I esc indu-va [^i]esc
+SFX I esc indu-i [^i]esc
+SFX I esc indu-le [^i]esc
+SFX I esc nd iesc
+SFX I esc ndu-ma iesc
+SFX I esc ndu-te iesc
+SFX I esc ndu-l iesc
+SFX I esc nd-o iesc
+SFX I esc ndu-se iesc
+SFX I esc ndu-si iesc
+SFX I esc ndu-si-i iesc
+SFX I esc ndu-si-o iesc
+SFX I esc ndu-si-l iesc
+SFX I esc ndu-si-le iesc
+SFX I esc ndu-ne iesc
+SFX I esc ndu-va iesc
+SFX I esc ndu-i iesc
+SFX I esc ndu-le iesc
+SFX I esc isem [^i]esc #mai mult ca perfect
+SFX I esc isesi [^i]esc
+SFX I esc ise [^i]esc
+SFX I esc iseram [^i]esc
+SFX I esc iserati [^i]esc
+SFX I esc iseti [^i]esc
+SFX I esc isera [^i]esc
+SFX I esc sem iesc
+SFX I esc sesi iesc
+SFX I esc se iesc
+SFX I esc seram iesc
+SFX I esc sem iesc
+SFX I esc serati iesc
+SFX I esc seti iesc
+SFX I esc sera iesc
+SFX I esc i [^i]esc #viitor1
+SFX I esc it [^i]esc #viitor2
+SFX I iesc i iesc
+SFX I esc t iesc
+SFX I esc it [^i]esc #participiu
+SFX I esc it-o [^i]esc
+SFX I esc t iesc #participiu
+SFX I esc t-o iesc
+SFX I esc ii [^i]esc #prefect simplu
+SFX I esc isi [^i]esc
+SFX I esc i [^i]esc
+SFX I esc iram [^i]esc
+SFX I esc irati [^i]esc
+SFX I esc ira [^i]esc
+SFX I esc i iesc
+SFX I esc si iesc
+SFX I iesc i iesc
+SFX I esc asca iesc
+SFX I esc easca [^i]esc
+SFX I esc ram iesc
+SFX I esc rati iesc
+SFX I esc ra iesc
+SFX I asc asti asc #prezent
+SFX I asc aste asc
+SFX I asc aste-ma asc #prezent imperativ
+SFX I asc aste-te asc
+SFX I asc aste-l asc
+SFX I asc aste-o asc
+SFX I asc aste-ne asc
+SFX I asc aste-i asc
+SFX I asc am asc
+SFX I asc ati asc
+SFX I asc ati-ma asc #prezent imperativ
+SFX I asc ati-va asc
+SFX I asc ati-l asc
+SFX I asc ati-o asc
+SFX I asc ati-ne asc
+SFX I asc ati-i asc
+SFX I asc am asc #imperfect
+SFX I asc ai asc
+SFX I asc a asc
+SFX I asc ati asc
+SFX I asc au asc
+SFX I asc and asc #gerunziu
+SFX I asc andu-ma asc
+SFX I asc andu-te asc
+SFX I asc andu-l asc
+SFX I asc and-o asc
+SFX I asc andu-se asc
+SFX I asc andu-si asc
+SFX I asc andu-si-i asc
+SFX I asc andu-si-o asc
+SFX I asc andu-si-l asc
+SFX I asc andu-si-le asc
+SFX I asc andu-ne asc
+SFX I asc andu-va asc
+SFX I asc andu-i asc
+SFX I asc andu-le asc
+SFX I asc asem asc #mai mult ca perfect
+SFX I asc asesi asc
+SFX I asc ase asc
+SFX I asc asem asc
+SFX I asc aseti asc
+SFX I asc asera asc
+SFX I asc i asc #viitor 1
+SFX I asc at asc #viitor 2
+SFX I asc at asc #participiu
+SFX I asc at-o asc
+SFX I asc ai asc
+SFX I asc asi asc
+SFX I asc i asc
+SFX I asc aram asc
+SFX I asc arati asc
+SFX I asc ara asc
+SFX I 0  este-ma i #prezent imperativ
+SFX I 0 este-te i
+SFX I 0 este-l i
+SFX I 0 este-o i
+SFX I 0 este-ne i
+SFX I 0 este-i i
+SFX I 0 e i
+SFX I 0 m i
+SFX I 0 ti i
+SFX I 0 ti-ma i #prezent imperativ
+SFX I 0 ti-va i
+SFX I 0 ti-l i
+SFX I 0 ti-o i
+SFX I 0 ti-ne i
+SFX I 0 ti-i i
+SFX I 0 am i #imperfect
+SFX I 0 ai i
+SFX I 0 a i
+SFX I 0 ati i
+SFX I 0 au i
+SFX I 0 nd i #gerunziu
+SFX I 0 ndu-ma i
+SFX I 0 ndu-te i
+SFX I 0 ndu-l i
+SFX I 0 nd-o i
+SFX I 0 ndu-se i
+SFX I 0 ndu-si i
+SFX I 0 ndu-si-i i
+SFX I 0 ndu-si-o i
+SFX I 0 ndu-si-l i
+SFX I 0 ndu-si-le i
+SFX I 0 ndu-ne i
+SFX I 0 ndu-va i
+SFX I 0 ndu-i i
+SFX I 0 ndu-le i
+SFX I 0 sem i #mai mult ca perfect
+SFX I 0 sesi i
+SFX I 0 se i
+SFX I 0 sem i
+SFX I 0 seti i
+SFX I 0 seram i
+SFX I 0 serati i
+SFX I 0 sera i
+SFX I 0 t i #participiu
+SFX I 0 t-o i
+SFX I 0 i i  #perfect simplu
+SFX I 0 si i
+SFX I 0 ram i
+SFX I 0 rati i
+SFX I 0 ra i
+PFX I Y 1
+PFX I 0 re .
+#end*******************************************************************************
+
+
+#********************************************************************************
+# feminin
+SFX r Y 37
+SFX r ica ica ica                        s.f.sg.art.
+SFX r ica ea ica                        s.f.sg.art.
+SFX r ica ico ica
+SFX r ica elei ica                         s.f.sg.dat.
+SFX r ica ele ica                          s.f.pl.neart.
+SFX r ica elele ica                        s.f.pl.dat.
+SFX r ica elelor ica                       s.f.pl.dat.
+SFX r sca sca sca                    s.f.sg.art
+SFX r sca scao sca
+SFX r sca stei [^a]sca                    s.f.sg.dat
+SFX r sca ste [^a]sca                    s.f.pl.neart.
+SFX r sca stele [^a]sca                    s.f.pl.art.
+SFX r sca stelor [^a]sca                    s.f.pl.dat.
+SFX r asca astei [^e]asca                    s.f.sg.dat
+SFX r asca aste [^e]asca                    s.f.pl.neart.
+SFX r asca astele [^e]asca                    s.f.pl.art.
+SFX r asca astelor [^e]asca                    s.f.pl.dat.
+SFX r asca stei easca                    s.f.sg.dat
+SFX r asca ste easca                    s.f.pl.neart.
+SFX r asca stele easca                    s.f.pl.art.
+SFX r asca stelor easca                    s.f.pl.dat.
+SFX r ata ata ata                s.f.sg.art.
+SFX r ata ato ata
+SFX r ata tei eata               s.f.sg.dat
+SFX r ata te  eata              s.f.pl.neart.
+SFX r ata tele  eata              s.f.pl.art.
+SFX r ata telor eata              s.f.pl.dat.
+SFX r ata etei [^e]ata               s.f.sg.dat
+SFX r ata ete  [^e]ata              s.f.pl.neart.
+SFX r ata etele  [^e]ata              s.f.pl.art.
+SFX r ata etelor  [^e]ata              s.f.pl.dat.
+SFX r ga ga ga          s.f.sg.art
+SFX r ga go ga
+SFX r ga gii ga         s.f.sg.dat
+SFX r ga gi ga          s.f.pl.neart.
+SFX r ga gile ga          s.f.pl.art.
+SFX r ga gilor ga          s.f.pl.dat.
+
+SFX R Y 72
+SFX R sca sca sca                    s.f.sg.art
+SFX R sca scao sca
+SFX R sca stii [^a]sca                    s.f.sg.dat
+SFX R sca sti [^a]sca                    s.f.pl.neart.
+SFX R sca stile [^a]sca                    s.f.pl.art.
+SFX R sca stilor [^a]sca                    s.f.pl.dat.
+SFX R asca astii [^e]asca                    s.f.sg.dat
+SFX R asca asti [^e]asca                    s.f.pl.neart.
+SFX R asca astile [^e]asca                    s.f.pl.art.
+SFX R asca astilor [^e]asca                    s.f.pl.dat.
+SFX R asca stii easca                    s.f.sg.dat
+SFX R asca sti easca                    s.f.pl.neart.
+SFX R asca stile easca                    s.f.pl.art.
+SFX R asca stilor easca                    s.f.pl.dat.
+SFX R anca anca anca              s.f.sg.art.
+SFX R anca anco anca
+SFX R anca ncei [^i]anca             s.f.sg.dat.
+SFX R anca nce [^i]anca              s.f.pl.neart.
+SFX R anca ncele [^i]anca            s.f.pl.art.
+SFX R anca ncelor [^i]anca            s.f.pl.art.dat.
+SFX R anca encei ianca             s.f.sg.dat.
+SFX R anca ence ianca              s.f.pl.neart.
+SFX R anca encele ianca            s.f.pl.art.
+SFX R anca encelor ianca            s.f.pl.art.dat.
+SFX R ana ana [^e]ana              s.f.sg.art.
+SFX R ana ano [^e]ana
+SFX R ana enei [^e]ana             s.f.sg.dat.
+SFX R ana ene [^e]ana              s.f.pl.neart.
+SFX R ana enele [^e]ana            s.f.pl.art.
+SFX R ana enelor [^e]ana           s.f.pl.dat.
+SFX R ana ana eana                  s.f.sg.art.
+SFX R ana ano eana
+SFX R ana nei eana                   s.f.sg.dat.
+SFX R ana ne eana                    s.f.pl.neart.
+SFX R ana nele eana                  s.f.pl.art.
+SFX R ana nelor eana                 s.f.pl.dat.
+SFX R aza aza aza                     s.f.sg.art
+SFX R aza azo aza
+SFX R aza ezei aza                    s.f.sg.dat.
+SFX R aza eze aza                     s.f.pl.neart.
+SFX R aza ezele aza                   s.f.pl.art.
+SFX R aza ezelor aza                  s.f.pl.dat.
+SFX R asca  asca asca               s.f.sg.art.
+SFX R asca  asco asca
+SFX R asca  esti asca                 s.f.pl.neart.
+SFX R asca  estii asca                s.f.sg.dat.
+SFX R asca  estile asca              s.f.pl.art.
+SFX R asca  estilor asca             s.f.pl.dat.
+SFX R aie aia aie                       s.f.sg.art.
+SFX R aie aio aie
+SFX R aie aii aie                        s.f.sg.dat.
+SFX R aie ai aie                         s.f.pl.neart.
+SFX R aie aile aie                       s.f.pl.art.
+SFX R aie ailor aie                      s.f.pl.dat.
+SFX R ica ica ica                        s.f.sg.art.
+SFX R ica ico ica
+SFX R ica icii ica                         s.f.sg.dat.
+SFX R ica ici ica                          s.f.pl.neart.
+SFX R ica icile ica                        s.f.pl.dat.
+SFX R ica icilor ica                       s.f.pl.dat.
+SFX R ara ara ara                         s.f.sg.art.
+SFX R ara aro ara
+SFX R ara erei ara                         s.f.sg.dat.
+SFX R ara ere ara                          s.f.pl.neart.
+SFX R ara erele ara                        s.f.pl.art.
+SFX R ara erelor ara                       s.f.pl.dat.
+SFX R a a [^rnzci]a                         s.f.sg.art.
+SFX R a o [^rnzci]a
+SFX R a e [^rnzci]a                         s.f.pl.neart.
+SFX R a ei [^rnzci]a                        s.f.sg.dat.
+SFX R a ele [^rnzci]a                      s.f.pl.art.
+SFX R a elor [^rnzc]a                      s.f.pl.dat.
+
+
+SFX s Y 6
+SFX s ica ica ica                        s.f.sg.art.
+SFX s ica ico ica
+SFX s ica icei ica                         s.f.sg.dat.
+SFX s ica ice ica                          s.f.pl.neart.
+SFX s ica icele ica                        s.f.pl.art.
+SFX s ica icelor ica                       s.f.pl.dat.
+
+SFX u Y 6
+SFX u ica ica ica                        s.f.sg.art.
+SFX u ica ico ica
+SFX u ica elei ica                         s.f.sg.dat.
+SFX u ica ele ica                          s.f.pl.neart.
+SFX u ica elele ica                        s.f.pl.art.
+SFX u ica elelor ica                       s.f.pl.dat.
+
+
+
+#defect de singular
+SFX a Y 2
+SFX a   e     ele   e                  s.f.pl.art.
+SFX a   e     elor  e                  s.f.pl.dat.
+
+
+
+#defect de plural
+SFX f Y 69
+SFX f   a     a       a              s.f.sg.art.
+SFX f   a     a-i       a
+SFX f   a     o       a
+SFX f   eala eli      eala           s.f.sg.dat.neart
+SFX f   eala elii      eala           s.f.sg.dat.
+SFX f   ura urii      ura              s.f.sg.dat.
+SFX f   ura uri       ura             s.f.sg.dat.neart.
+SFX f   ca cii      ca                 s.f.sg.dat.
+SFX f   ca ci       ca                 s.f.sg.dat.neart.
+SFX f   ala elii      [^e]ala           s.f.sg.dat.
+SFX f   ala eli       [^e]ala           s.f.sg.dat.neart.
+SFX f   da zi da                         s.f.sg.dat.neart.
+SFX f   da zii da                        s.f.sg.dat.
+SFX f   e ea      ire                     s.f.sg.art.
+SFX f   e eo      ire
+SFX f   e ea-i      ire
+SFX f   e i      ire                       s.f.sg.neart.dat.
+SFX f   e ii      ire                      s.f.sg.dat.
+SFX f   0 a      oare                   s.f.sg.art
+SFX f   0 o      oare
+SFX f   0 a-i      oare
+SFX f   are ri      oare                s.f.sg.dat.neart.
+SFX f   are rii      oare               s.f.sg.dat.
+SFX f   are   arii    [^oi]are       s.f.sg.dat.
+SFX f   are   ari     [^oi]are       s.f.sg.neart.dat.
+SFX f   are   area   [^oi]are      s.f.sg.art.
+SFX f   are   area-i   [^oi]are
+SFX f   are   areo   [^oi]are
+SFX f   e     ea     ere            s.f.sg.art.
+SFX f   e     ea-i     ere            s.f.sg.art.
+SFX f   e     eo     ere            s.f.sg.art.
+SFX f   e     ii      ere            s.f.sg.dat.
+SFX f   e     i       ere            s.f.sg.neart.dat.
+SFX f  za   ze   za     s.f.sg.neart.dat
+SFX f  za   zei   za     s.f.sg.art.dat
+SFX f  ta   te   ta     s.f.sg.neart.dat
+SFX f  ta   tei   ta     s.f.sg.art.dat
+SFX f  ta   te   ta     s.f.sg.neart.dat
+SFX f  ta   tei   ta     s.f.sg.art.dat
+SFX f  na   ne   na     s.f.sg.neart.dat
+SFX f  na   nei   na     s.f.sg.art.dat
+SFX f  ma   me   ma     s.f.sg.neart.dat
+SFX f  ma   mei   ma     s.f.sg.art.dat
+SFX f  fa   fe   fa     s.f.sg.neart.dat
+SFX f  fa   fei   fa     s.f.sg.art.dat
+SFX f  va   ve   va     s.f.sg.neart.dat
+SFX f  va   vei   va     s.f.sg.art.dat
+SFX f  ra   re   [^u]ra     s.f.sg.neart.dat
+SFX f  ra   rei   [^u]ra     s.f.sg.art.dat
+SFX f  ie   ia    ie         s.f.sg.art.
+SFX f  ie   ia-i    ie
+SFX f  ie   io    ie
+SFX f  ie   iei    ie         s.f.sg.dat.art.
+SFX f  ie   ii    ie         s.f.sg.dat.neart.
+SFX f   0     a   ime       s.f.sg.art.
+SFX f   0     a-i   ime
+SFX f   0     o   ime
+SFX f   e     i   ime       s.f.sg.dat.neart.
+SFX f   e     ii   ime       s.f.sg.dat.art.
+SFX f   ate   atea    ate       s.f.sg.art.
+SFX f   ate   atea-i    ate
+SFX f   ate   ateo    ate
+SFX f   ate   atii    ate       s.f.sg.dat.art.
+SFX f   ate   ati     ate       s.f.sg.dat.neart.
+SFX f   0     a      [iu]ne       s.f.sg.art.
+SFX f   0     a-i      [iu]ne
+SFX f   0     o      [iu]ne       s.f.sg.art.
+SFX f   e     ii      [iu]ne       s.f.sg.dat.art.
+SFX f   e     i       [iu]ne       s.f.sg.dat.neart.
+
+
+SFX F Y 53
+SFX F   a     a       a              s.f.sg.art.
+SFX F   a     a-i       a
+SFX F   a     o       a
+SFX F   eala elii      eala           s.f.sg.dat.
+SFX F   eala eli       eala           s.f.pl.neart.
+SFX F   eala  elile     eala         s.f.pl.art.
+SFX F   eala  elilor   eala          s.f.pl.dat.
+SFX F   ura urii      ura              s.f.sg.dat.
+SFX F   ura uri       ura             s.f.pl.neart.
+SFX F   ura  urile     ura            s.f.pl.art.
+SFX F   ura  urilor   ura             s.f.pl.dat.
+SFX F   ca cii      ca                 s.f.sg.dat.
+SFX F   ca ci       ca                 s.f.pl.neart.
+SFX F   ca cile     ca                 s.f.pl.art.
+SFX F   ca cilor    ca                 s.f.pl.dat.
+SFX F   ala elii      [^e]ala           s.f.sg.dat.
+SFX F   ala eli       [^e]ala           s.f.pl.neart.
+SFX F   ala elile     [^e]ala           s.f.pl.art.
+SFX F   ala elilor    [^e]ala           s.f.pl.dat.
+SFX F   da zi da                         s.f.pl.neart.
+SFX F   da zii da                        s.f.sg.dat.
+SFX F   da zile da                       s.f.pl.art.
+SFX F   da zilor da                      s.f.pl.dat.
+SFX F   e ea      ire                     s.f.sg.art.
+SFX F   e eo      ire
+SFX F   e ea-i      ire
+SFX F   e i      ire                       s.f.pl.neart.
+SFX F   e ii      ire                      s.f.sg.dat.
+SFX F   e ile      ire                    s.f.pl.art.
+SFX F   e ilor      ire                   s.f.pl.dat
+SFX F   0 a      oare                   s.f.sg.art
+SFX F   0 o      oare
+SFX F   0 a-i      oare
+SFX F   are ri      oare                s.f.pl.neart.
+SFX F   are rii      oare               s.f.sg.dat.
+SFX F   are rile      oare             s.f.pl.art.
+SFX F   are rilor      oare            s.f.pl.dat.
+SFX F   aja  aji      aja               s.f.pl.neart.
+SFX F   aja  ajii      aja              s.f.sg.dat.
+SFX F   aja  ajile      aja            s.f.pl.art.
+SFX F   aja  ajilor      aja            s.f.pl.dat.
+SFX F   a  i      ina                    s.f.pl.neart.
+SFX F   a  ii      ina                   s.f.sg.dat.
+SFX F   a  ile      ina                 s.f.pl.art.
+SFX F   a  ilor      ina                s.f.pl.dat.
+SFX F   ara ari      [^oe]ara          s.f.pl.neart.
+SFX F   ara arii     [^oe]ara           s.f.sg.dat.
+SFX F   ara arile    [^oe]ara           s.f.pl.art.
+SFX F   ara arilor   [^oe]ara           s.f.pl.dat.
+SFX F   ara ri      [oe]ara            s.f.pll.neart.
+SFX F   ara rii     [oe]ara             s.f.sg.dat.
+SFX F   ara rile    [oe]ara            s.f.pl.art.
+SFX F   ara rilor   [oe]ara            s.f.pl.dat.
+
+SFX A Y 93
+SFX A   a     a       a                  s.f.sg.art.
+SFX A   a     o       a
+SFX A   a     ei      [^s]a              s.f.sg.dat.
+SFX A   a     e       [^s]a              s.f.pl.neart.
+SFX A   a     ele     [^s]a              s.f.pl.art.
+SFX A   a     elor    [^s]a              s.f.pl.dat.
+SFX A   a     ei      [^a]sa             s.f.sg.dat.
+SFX A   a     e       [^a]sa             s.f.pl.neart.
+SFX A   a     ele     [^a]sa            s.f.pl.art.
+SFX A   a     elor    [^a]sa            s.f.pl.dat.
+SFX A   a     ei      [^e]asa           s.f.sg.dat.
+SFX A   a     e       [^e]asa           s.f.pl.neart.
+SFX A   a     ele     [^e]asa          s.f.pl.art.
+SFX A   a     elor    [^e]asa           s.f.pl.dat.
+SFX A   asa   sei     easa       s.f.sg.dat
+SFX A   asa   se      easa       s.f.pl.neart.
+SFX A   asa   sele    easa       s.f.pl.art.
+SFX A   asa   selor   easa       s.f.pl.dat.
+SFX A   0     a       [^i]e          s.f.sg.art.
+SFX A   0     o       [^i]e
+SFX A   0     a-i       [^i]e
+SFX A   e     a       ie             s.f.sg.art.
+SFX A   e     o       ie
+SFX A   e     a-i       ie
+SFX A   are   arii    [^oi]are       s.f.sg.dat.
+SFX A   are   ari     [^oi]are       s.f.pl.neart.
+SFX A   are   arile   [^oi]are      s.f.pl.art.
+SFX A   are   arilor  [^oi]are      s.f.pl.dat.
+SFX A   are   erii    iare       s.f.sg.dat.
+SFX A   are   eri     iare       s.f.pl.neart.
+SFX A   are   erile   iare       s.f.pl.art.
+SFX A   are   erilor  iare       s.f.pl.dat.
+SFX A   oare     orii       oare        s.f.sg.dat.
+SFX A   oare     ori      oare       s.f.pl.art.
+SFX A   oare     oarele      oare       s.f.pl.art.
+SFX A   oare     orilor    oare       s.f.pl.dat.
+SFX A   e     ii      ere            s.f.sg.dat.
+SFX A   e     i       ere            s.f.pl.neart.
+SFX A   e     ile     ere            s.f.pl.art.
+SFX A   e     ilor    ere            s.f.pl.dat.
+SFX A   e     ii      are            s.f.sg.dat.
+SFX A   e     i       are            s.f.pl.neart.
+SFX A   e     ile     are            s.f.pl.art.
+SFX A   e     ilor    are            s.f.pl.dat.
+SFX A   e     ii      [iu]ne       s.f.sg.dat.
+SFX A   e     i       [iu]ne       s.f.pl.neart.
+SFX A   e     ile     [iu]ne      s.f.pl.art.
+SFX A   e     ilor    [iu]ne      s.f.pl.dat.
+SFX A   0     i       [^e]ie      s.f.pl.neart.
+SFX A   e     i       ie           s.f.pl.neart.
+SFX A   e     ile     [^e]ie      s.f.pl.art.
+SFX A   e     ilor    [^e]ie      s.f.pl.dat.
+SFX A   e     0       eie      s.f.sg.dat.
+SFX A   e     le      eie      s.f.pl.art.
+SFX A   e     lor     eie      s.f.pl.dat.
+SFX A   ate   atii    ate       s.f.sg.dat.
+SFX A   ate   ati     ate       s.f.pl.neart.
+SFX A   ate   atile   ate       s.f.pl.neart.
+SFX A   ate   atilor  ate       s.f.pl.dat.
+SFX A   te   tii    [^a]te       s.f.sg.dat.
+SFX A   te   ti     [^a]te       s.f.pl.neart.
+SFX A   te   tile   [^a]te       s.f.pl.neart.
+SFX A   te   tilor  [^a]te       s.f.pl.dat.
+SFX A   0     ua      a         s.f.sg.art.
+SFX A   0     o      a
+SFX A   0     lei     [^e]a        s.f.sg.dat.
+SFX A   0     le      [^e]a        s.f.pl.neart.
+SFX A   0     lele    [^e]a        s.f.pl.art.
+SFX A   0     lelor   [^e]a         s.f.pl.dat.
+SFX A   a     lei     ea          s.f.sg.dat.
+SFX A   a     le      ea          s.f.pl.neart.
+SFX A   a     lele    ea          s.f.pl.art.
+SFX A   a     lelor   ea          s.f.pl.dat.
+SFX A   e     eo   ime
+SFX A   e     i   ime       s.f.pl.neart.
+SFX A   e     ii   ime       s.f.sg.dat.
+SFX A   e     ile   ime      s.f.pl.art.
+SFX A   e     ilor   ime     s.f.pl.dat.
+SFX A   e     i   lme       s.f.pl.neart.
+SFX A   e     ii   lme       s.f.sg.dat.
+SFX A   e     ile   lme      s.f.pl.art.
+SFX A   e     ilor   lme     s.f.pl.dat.
+SFX A   e     i   ce        s.f.pl.neart.
+SFX A   e     ii   ce        s.f.sg.dat.
+SFX A   e     ile   ce      s.f.pl.art.
+SFX A   e     ilor   ce      s.f.pl.dat.
+SFX A   0     i      ee   s.f.sg.dat
+SFX A   0     le   ee   s.f.pl.art
+SFX A   0     lor  ee   s.f.pl.dat
+SFX A   0    i     te
+SFX A   0    ii     te
+SFX A   0    ile     te
+SFX A   0    ilor     te
+#end********************************************************************************
+
+
+#********************************************************************************
+# neutre: abajur/abajurui (C) sau sablon/sabloane (MP)
+SFX C Y 15
+SFX C 0 u  [^u]
+SFX C 0 u-i  [^u]
+SFX C 0 ul  [^u]            s.n. sg. art.
+SFX C 0 uri  [^u]           s.n. pl. neart.
+SFX C 0 urile  [^u]         s.n. pl. art.
+SFX C 0 urilor  [^u]        s.n. pl. dat.
+SFX C 0 ului  [^u]          s.n. sg. dat.
+SFX C 0 ule  [^u]
+SFX C 0 -i u
+SFX C 0 l u                  s.n. sg. art.
+SFX C 0 ri u                  s.n. pl. neart.
+SFX C 0 rile u               s.n. pl. art.
+SFX C 0 rilor u             s.n. pl. dat.
+SFX C 0 lui u               s.n. sg. dat.
+SFX C 0 le u
+
+SFX c Y 9
+SFX c 0 u  [^u]
+SFX c 0 u-i  [^u]
+SFX c 0 ul  [^u]            s.n. sg. art.
+SFX c 0 ului  [^u]          s.n. sg. dat.
+SFX c 0 ule  [^u]
+SFX c 0 -i u
+SFX c 0 l u                  s.n. sg. art.
+SFX c 0 lui u               s.n. sg. dat.
+SFX c 0 le u
+
+
+
+SFX M Y 10
+SFX M 0 u .
+SFX M 0 ul .               s.n.sg.art.
+SFX M 0 ului .             s.n.sg.dat.
+SFX M 0 ule .
+SFX M 0 e [^n]             s.n.pl.neart.
+SFX M 0 ele [^n]           s.n.pl.art.
+SFX M 0 elor [^n]          s.n.pl.dat.
+SFX M on oane on            s.n.pl.neart.
+SFX M on oanele on          s.n.pl.art.
+SFX M on oanelor on         s.n.pl.dat.
+
+SFX P Y 57
+SFX P   0     u      [^u]
+SFX P   0     u-i      [^u]
+SFX P   0     ul      [^u]            s.n.sg.art.
+SFX P   0     ului    [^u]            s.n.sg.dat.
+SFX P   0     ule    [^u]
+SFX P   0     e       [^dginprut]    s.n.pl.neart.
+SFX P   0     ele     [^dginprut]    s.n.pl.art.
+SFX P   0     elor    [^dginprut]    s.n.pl.dat.
+SFX P   0     e       [^o][dg]         s.n.pl.neart.
+SFX P   0     ele     [^o][dg]        s.n.pl.art.
+SFX P   0     elor    [^o][dg]         s.n.pl.dat.
+SFX P   0     e       [^n]t             s.n.pl.neart.
+SFX P   0     ele     [^n]t             s.n.pl.art.
+SFX P   0     elor    [^n]t             s.n.pl.dat.
+SFX P   0     e       [^a]nt            s.n.pl.neart.
+SFX P   0     ele     [^a]nt           s.n.pl.art.
+SFX P   0     elor    [^a]nt           s.n.pl.dat.
+SFX P   ant   inte    ant              s.n.pl.neart.
+SFX P   ant   intele  ant             s.n.pl.art.
+SFX P   ant   intelor ant             s.n.pl.dat.
+SFX P   g     age     og              s.n.pl.neart.
+SFX P   g     agele   og             s.n.pl.art.
+SFX P   g     agelor  og             s.n.pl.dat.
+SFX P   od     oade     od              s.n.pl.neart.
+SFX P   od     oadele   od              s.n.pl.art.
+SFX P   od     oadelor  od              s.n.pl.dat.
+SFX P   p     ape     op               s.n.pl.neart.
+SFX P   p     apele   op               s.n.pl.art.
+SFX P   p     apelor  op               s.n.pl.dat.
+SFX P   i      aie     oi                 s.n.pl.neart.
+SFX P   i      aiele     oi              s.n.pl.art.
+SFX P   i      aielor     oi             s.n.pl.dat.
+SFX P   0     e       [^o]r             s.n.pl.neart.
+SFX P   0     ele     [^o]r             s.n.pl.art.
+SFX P   0     elor    [^o]r             s.n.pl.dat.
+SFX P   i     e       ci                  s.n.pl.neart.
+SFX P   i     ele     ci                  s.n.pl.art.
+SFX P   i     elor    ci                  s.n.pl.dat.
+SFX P   r     are     or                 s.n.pl.neart.
+SFX P   r     arele   or                 s.n.pl.art.
+SFX P   r     arelor  or                 s.n.pl.dat.
+SFX P   n     ane     on                 s.n.pl.neart.
+SFX P   n     anele   on                 s.n.pl.art.
+SFX P   n     anelor  on                 s.n.pl.dat.
+SFX P   0     e       [^o]n                 s.n.pl.neart.
+SFX P   0     ele     [^o]n                 s.n.pl.art.
+SFX P   0     elor    [^o]n                 s.n.pl.dat.
+SFX P   0     l       u                        s.n.sg.art.
+SFX P   0     i       u
+SFX P   0     le     u
+SFX P   0     lui     u                        s.n.sg.dat.
+SFX P   u     i       iu                        s.n.pl.neart.
+SFX P   u     ile     iu                       s.n.pl.art.
+SFX P   u     ilor    iu                       s.n.pl.dat.
+SFX P   u     e       [^i]u                 s.n.pl.neart.
+SFX P   u     ele     [^i]u                 s.n.pl.art.
+SFX P   u     elor    [^i]u                 s.n.pl.dat.
+
+SFX z Y 64
+SFX z 0 ul ol
+SFX z 0 ul os
+SFX z 0 ul oc
+SFX z 0 ul om
+SFX z 0 ul oz
+SFX z 0 ul ov
+SFX z 0 ul oi
+SFX z 0 ul on
+SFX z 0 u ol
+SFX z 0 u os
+SFX z 0 u oc
+SFX z 0 u om
+SFX z 0 u oz
+SFX z 0 u ov
+SFX z 0 u oi
+SFX z 0 u on
+SFX z 0 u-i ol
+SFX z 0 u-i os
+SFX z 0 u-i oc
+SFX z 0 u-i om
+SFX z 0 u-i oz
+SFX z 0 u-i ov
+SFX z 0 u-i oi
+SFX z 0 u-i on
+SFX z 0 ule ol
+SFX z 0 ule os
+SFX z 0 ule oc
+SFX z 0 ule om
+SFX z 0 ule oz
+SFX z 0 ule ov
+SFX z 0 ule oi
+SFX z 0 ule on
+SFX z 0 ului ol
+SFX z 0 ului os
+SFX z 0 ului oc
+SFX z 0 ului om
+SFX z 0 ului oz
+SFX z 0 ului ov
+SFX z 0 ului oi
+SFX z 0 ului on
+SFX z ol oale ol
+SFX z os oase os
+SFX z oc oace oc
+SFX z om oame om
+SFX z oz oaze oz
+SFX z ov oave ov
+SFX z oi oaie oi
+SFX z on oane on
+SFX z ol oalele ol
+SFX z os oasele os
+SFX z oc oacele oc
+SFX z om oamele om
+SFX z oz oazele oz
+SFX z ov oavele ov
+SFX z oi oaiele oi
+SFX z on oanele on
+SFX z ol oalelor ol
+SFX z os oaselor os
+SFX z oc oacelor oc
+SFX z om oamelor om
+SFX z oz oazelor oz
+SFX z ov oavelor ov
+SFX z oi oaielor oi
+SFX z on oanelor on
+
+
+#end********************************************************************************
+
+#********************************************************************************
+# adjective
+SFX D Y 12
+SFX D 0 u .
+SFX D 0 ul .
+SFX D 0 ule .
+SFX D 0 ului .
+SFX D 0 i .
+SFX D 0 ii .
+SFX D 0 ilor .
+SFX D 0 a .
+SFX D 0 a .
+SFX D 0 e .
+SFX D 0 ele .
+SFX D 0 elor .
+PFX D Y 1
+PFX D 0 ne .
+
+SFX S Y 14
+SFX S ic icu ic
+SFX S ic icule ic
+SFX S ic icul ic                       adj.m.sg.neart.
+SFX S ic icului ic                       adj.m.sg.dat.
+SFX S ic ici ic                       adj.m.pl.neart.
+SFX S ic icii ic                       adj.m.pl.art.
+SFX S ic icilor ic                       adj.m.pl.dat.
+SFX S ic ica ic                        adj.f.sg.neart.
+SFX S ic ica ic                        adj.f.sg.art.
+SFX S ic ico ic
+SFX S ic icei ic                         adj.f.sg.dat.
+SFX S ic ice ic                          adj.f.pl.neart.
+SFX S ic icele ic                        adj.f.pl.dat.
+SFX S ic icelor ic                       adj.f.pl.dat.
+PFX S Y 1
+PFX S 0 ne .
+
+SFX q Y 12
+SFX q   0     u      .
+SFX q   0     ul      .            adj. m. sg. art.
+SFX q   0     ului    .            adj. m. sg. dat.
+SFX q   0     i       .      adj. m. pl.
+SFX q   0     ii      .      adj. m. pl. art.
+SFX q   0     ilor    .      adj. m. pl. dat.
+SFX q   0    a
+SFX q   0    a
+SFX q   0    ei
+SFX q   0    e
+SFX q   0    ele
+SFX q   0    elor
+PFX q Y 1
+PFX q 0 ne .
+
+
+SFX Q Y 152
+SFX Q   0     u      [^eu]
+SFX Q   0     ul      [^eu]            adj. m. sg. art.
+SFX Q   0     ului    [^eu]            adj. m. sg. dat.
+SFX Q   0     i       [^cdenstux]      adj. m. pl.
+SFX Q   0     ii      [^cdenstux]      adj. m. pl. art.
+SFX Q   0     ilor    [^cdenstux]      adj. m. pl. dat.
+SFX Q   0     a       [^cegrsuit]        adj. f. sg.
+SFX Q   0     e      i        adj. f. sg.
+SFX Q   t     ata      [^u]t        adj. f. sg.
+SFX Q   0     a      ut        adj. f. sg.
+SFX Q   0     a       [^cgrsut]         adj. f. sg. art.
+SFX Q   t     ata      [^u]t         adj. f. sg. art.
+SFX Q   0     a       ut         adj. f. sg. art.
+SFX Q   0     ei      [^cgnrsu]        adj. f. sg. dat.
+SFX Q   0     e       [^cgnrsu]        adj. f. pl.
+SFX Q   0     ele     [^cgnrsu]        adj. f. pl. art.
+SFX Q   0     elor    [^cgnrsu]        adj. f. pl. dat.
+SFX Q   0     i       [^s]c            adj. m. pl.
+SFX Q   0     ii      [^s]c            adj. m. pl. art.
+SFX Q   0     ilor    [^s]c            adj. m. pl. dat.
+SFX Q   0     a       [^s]c            adj. f. sg.
+SFX Q   0     a       [^s]c            adj. f. sg. art.
+SFX Q   0     e      [^s]c
+SFX Q   0     ele       [^s]c
+SFX Q   0     elor      [^s]c
+SFX Q   sc    sti     sc               adj. m. pl.
+SFX Q   sc    stii    sc               adj. m. pl. art.
+SFX Q   sc    stilor  sc               adj. m. pl. dat.
+SFX Q   sc    asca    [^a]..sc         adj. f. sg.
+SFX Q   sc    asca    [^a]..sc         adj. f. sg. art.
+SFX Q   x     csi     x        # de verificat ordinea si la randurile urmatoare
+SFX Q   x     csii    x
+SFX Q   x     csilor  x
+SFX Q   0     a       a..sc
+SFX Q   0     a       a..sc
+SFX Q   e     i       e
+SFX Q   e     ii      e
+SFX Q   e     ilor    e
+SFX Q   g     a       [^eu]g
+SFX Q   g     a       [^eu]g
+SFX Q   g     ga     ug
+SFX Q   g     ga     ug
+SFX Q   g     ge     ug
+SFX Q   g     gele     ug
+SFX Q   g     gelor     ug
+SFX Q   g     aga     eg
+SFX Q   g     aga     eg
+SFX Q   0     ile     g
+SFX Q   0     i       [^a]n
+SFX Q   0     ii      [^a]n
+SFX Q   0     ilor    [^a]n
+SFX Q   0     ei      [^a]n
+SFX Q   0     e       [^a]n
+SFX Q   0     ele     [^a]n
+SFX Q   0     elor    [^a]n
+SFX Q   an    eni     [^eflmt]an
+SFX Q   an    enii    [^eflmt]an
+SFX Q   an    enilor  [^eflmt]an
+SFX Q   an    enei    [^eflmt]an
+SFX Q   an    ene     [^eflmt]an
+SFX Q   an    enele   [^eflmt]an
+SFX Q   an    enelor  [^eflmt]an
+SFX Q   an    ni      [^c]ean
+SFX Q   an    nii     [^c]ean
+SFX Q   an    nilor   [^c]ean
+SFX Q   an    nei     [^c]ean
+SFX Q   an    ne      [^c]ean
+SFX Q   an    nele    [^c]ean
+SFX Q   an    nelor   [^c]ean
+SFX Q   an    eni     cean
+SFX Q   an    enii    cean
+SFX Q   an    enilor  cean
+SFX Q   an    enei    cean
+SFX Q   an    ene     cean
+SFX Q   an    enele   cean
+SFX Q   an    enelor  cean
+SFX Q   0     i       [flmt]an
+SFX Q   0     ii      [flmt]an
+SFX Q   0     ilor    [flmt]an
+SFX Q   0     ei      [flmt]an
+SFX Q   0     e       [flmt]an
+SFX Q   0     ele     [flmt]an
+SFX Q   0     elor    [flmt]an
+SFX Q   0     a       [^o][rs]
+SFX Q   0     a       [^o][rs]
+SFX Q   0     ei      [^o][rs]
+SFX Q   0     e       [^o][rs]
+SFX Q   0     ele     [^o][rs]
+SFX Q   0     elor    [^o][rs]
+SFX Q   r     are     [^j]or      # ????? feminin singular!!!
+SFX Q   r     area    tor
+SFX Q   r     ara     [^jt]or
+SFX Q   r     ara     [^jt]or
+SFX Q   r     arei    [^j]or
+SFX Q   r     are     [^j]or
+SFX Q   r     arele   [^j]or
+SFX Q   r     arelor  [^j]or
+SFX Q   0     a       jor
+SFX Q   r     ra      jor
+SFX Q   r     rei     jor
+SFX Q   r     re      jor
+SFX Q   r     rele    jor
+SFX Q   r     relor   jor
+SFX Q   s     asa     [eo]s
+SFX Q   s     asa     [eo]s
+SFX Q   s     asei    os
+SFX Q   s     ase     os
+SFX Q   s     asele   os
+SFX Q   s     aselor  os
+SFX Q   0     l       u
+SFX Q   0     lui     u
+SFX Q   u     i       [^r]u
+SFX Q   u     ii      iu
+SFX Q   u     ii      [^ri]u
+SFX Q   u     ilor    [^r]u
+SFX Q   u     i       [^s].ru
+SFX Q   u     ii      [^s].ru
+SFX Q   u     ilor    [^s].ru
+SFX Q   stru  stri    stru
+SFX Q   stru  strii   stru
+SFX Q   stru  strilor stru
+SFX Q   u     a       [^ei]u
+SFX Q   u     a       u
+SFX Q   u     ei      [^e]u
+SFX Q   u     e       [^ei]u
+SFX Q   u     ele     [^ei]u
+SFX Q   u     elor    [^ei]u
+SFX Q   u     aua     eu
+SFX Q   u     lei     eu
+SFX Q   u     le      eu
+SFX Q   u     lele    eu
+SFX Q   u     lelor   eu
+SFX Q   u     e       iu
+SFX Q   u     i       iu
+SFX Q   u     ile     iu
+SFX Q   u     ilor    iu
+SFX Q   d     zi      d
+SFX Q   d     zii     d
+SFX Q   d     zilor   d
+SFX Q   s     si      s
+SFX Q   s     sii     s
+SFX Q   s     silor   s
+SFX Q   t     ti      [^s]t
+SFX Q   t     tii     [^s]t
+SFX Q   t     tilor   [^s]t
+SFX Q   st    sti     st
+SFX Q   st    stii    st
+SFX Q   st    stilor  st
+SFX Q   0     ei      [aei]c
+SFX Q   0     e       [aei]c
+SFX Q   0     ele     [aei]c
+SFX Q   0     elor    [aei]c
+PFX Q Y 1
+PFX Q 0 ne .
+#end*******************************************************************************
+
+
+#********************************************************************************
+# masculine (sm/L)
+SFX L Y 69
+SFX L   0     u-i      [^eu]
+SFX L   0     u      [^eu]
+SFX L   0     ul      [^eu]           s. m. sg. art.
+SFX L   0     ului    [^eu]          s. m. sg. dat.
+SFX L   0     ule    [^eu]
+SFX L   0     i       [^deilnstu]    s. m. pl. neart.
+SFX L   0     ii      [^deilnstu]     s. m. pl. art.
+SFX L   0     ilor    [^deilnstu]    s. m. pl. dat.
+SFX L   0     i       [^a]n            s. m. pl. neart.
+SFX L   0     ii      [^a]n            s. m. pl. art.
+SFX L   0     ilor    [^a]n           s. m. pl. dat.
+SFX L   0     i       [^ei]an         s. m. pl. neart.
+SFX L   0     ii      [^ei]an         s. m. pl. art.
+SFX L   0     ilor    [^ei]an         s. m. pl. dat.
+SFX L   an    ni      ean           s. m. pl. neart.
+SFX L   an    nii     ean           s. m. pl. art.
+SFX L   an    nilor   ean           s. m. pl. dat.
+SFX L   an    eni     ian            s. m. pl. neart.
+SFX L   an    enii    ian             s. m. pl. art.
+SFX L   an    enilor  ian            s. m. pl. dat.
+SFX L   0     i       i                  s. m. pl. art.
+SFX L   0     lor     i                 s. m. pl. dat.
+SFX L   d     zi      d                s. m. pl. neart.
+SFX L   d     zii     d                s. m. pl. art.
+SFX L   d     zilor   d               s. m. pl. dat.
+SFX L   0     le      e                s. m. sg. art.
+SFX L   0     lui     e                s. m. sg. dat.
+SFX L   e     i      [^t]e                s. m. pl. neart.
+SFX L   e     ii      [^t]e                s. m. pl. art.
+SFX L   e     ilor      [^t]e             s. m. pl. dat.
+SFX L   te    ti      te                 s. m. pl. neart.
+SFX L   te    tii     te                 s. m. pl. art.
+SFX L   te    tilor   te                 s. m. pl. dat.
+SFX L   s     si      s                  s. m. pl. neart.
+SFX L   s     sii     s                   s. m. pl. art.
+SFX L   s     silor   s                  s. m. pl. dat.
+SFX L   0     l       u                  s. m. sg. art.
+SFX L   0     lui     u                 s. m. sg. dat.
+SFX L   0     le     u
+SFX L   u     i       [^ri]u             s. m. pl. neart.
+SFX L   u     ii      [^ri]u             s. m. pl. art.
+SFX L   u     ilor    [^ri]u            s. m. pl. dat.
+SFX L   iu     iu-i       iu
+SFX L   iu     ii       iu               s. m. pl. neart.
+SFX L   iu     iii      iu                s. m. pl. art.
+SFX L   u     ilor    iu                 s. m. pl. dat.
+SFX L   u     i       [^s].ru            s. m. pl. neart.
+SFX L   u     ii      [^s].ru            s. m. pl. art.
+SFX L   u     ilor    [^s].ru           s. m. pl. dat.
+SFX L   stru  stri    stru              s. m. pl. neart.
+SFX L   stru  strii   stru              s. m. pl. neart.
+SFX L   stru  strilor stru              s. m. pl. dat.
+SFX L   scru  scri    scru              s. m. pl. neart.
+SFX L   scru  scrii   scru              s. m. pl. neart.
+SFX L   scru  scrilor scru              s. m. pl. dat.
+SFX L   l     i       el                   s. m. pl. neart.
+SFX L   l     ii      el                    s. m. pl. art.
+SFX L   l     ilor    el                   s. m. pl. dat.
+SFX L   0     i       [^e]l                s. m. pl. neart.
+SFX L   0     ii      [^e]l                s. m. pl. art.
+SFX L   0     ilor    [^e]l                s. m. pl. dat.
+SFX L   t     tu-i      [^s]t
+SFX L   t     ti      [^s]t                  s. m. pl. neart.
+SFX L   t     tii     [^s]t                  s. m. pl. art.
+SFX L   t     tilor   [^s]t                 s. m. pl. dat.
+SFX L   st    stu-i     st
+SFX L   st    sti     st                    s. m. pl. neart.
+SFX L   st    stii    st                    s. m. pl. art.
+SFX L   st    stilor  st                   s. m. pl. dat.
+#end*******************************************************************************
+
+#********************************************************************************
+# masculine (sm/l)
+SFX l Y 13
+SFX l   0     u-i      [^eu]
+SFX l   0     u      [^eu]
+SFX l   0     ul      [^eu]           s. m. sg. art.
+SFX l   0     ului    [^eu]          s. m. sg. dat.
+SFX l   0     ule    [^eu]
+SFX l   0     le      e                s. m. sg. art.
+SFX l   0     lui     e                s. m. sg. dat.
+SFX l   0     l       u                  s. m. sg. art.
+SFX l   0     lui     u                 s. m. sg. dat.
+SFX l   0     le     u
+SFX l   iu     iu-i       iu
+SFX l   t     tu-i      [^s]t
+SFX l   st    stu-i     st
+#end*******************************************************************************
+
+# Nume proprii feminine
+SFX U Y 3
+SFX U a o a
+SFX U a ei [^cgk]a
+SFX U a ai [cgk]a
+#end*******************************************************************************
+
+# Nume proprii masculine
+SFX T Y 3
+SFX T 0 le u
+SFX T 0 e an
+SFX T 0 e el
+#end*******************************************************************************
+
+
+#
+# Sugestii
+#
+REP 4
+REP ce che
+REP ci chi
+REP ge ghe
+REP gi ghi
+
+MAP 8
+MAP aaai
+MAP iia
+MAP sss
+MAP ttt
+MAP AAAI
+MAP IIA
+MAP SSS
+MAP TTT
+
+#
+# Conversie de caractere
+#
+#MOZILLA ICONV 4
+#MOZILLA ICONV s s
+#MOZILLA ICONV t t
+#MOZILLA ICONV S S
+#MOZILLA ICONV T T

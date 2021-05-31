@@ -55,6 +55,7 @@ services:
       - es_data:/usr/share/elasticsearch/data
       - es_config:/usr/share/elasticsearch/config
       - es_logs:/usr/share/elasticsearch/logs
+      - ../comori-od-es/hunspell:/usr/share/elasticsearch/config/hunspell
     expose:
       - "9200"
     networks:
