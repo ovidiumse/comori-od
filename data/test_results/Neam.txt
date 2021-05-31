@@ -1,110 +1,118 @@
-+---------------------------------------------------------------------------------------+--------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                 | Occurrences                                | Author      | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------+--------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Cap. 30 - Proverbe                                                                    | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 13 - După luarea lui Moisi...                                                    | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Ce puţine adevăruri putem spune                                              | {'neam', 'neamul', 'neamului', 'Neamului'} | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare                                       | {'neam', 'neamul'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 10 - Va veni un altul...                                                         | {'neam'}                                   | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                                  | {'neam', 'neamul', 'neamului'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                   | {'neam', 'Neamul', 'neamul'}               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                              | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                         | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cântarea lui Moise                                                                    | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 29 - Anul jubiliar 1988                                                          | {'neam', 'neamul', 'neamului'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 30 - Alte adevăruri noi                                                          | {'neam', 'neamului', 'neamul'}             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                            | {'neam', 'neamul', 'neamului'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                       | {'neam', 'neamul', 'Neamul'}               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                                | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Pleacă de aici...                                                                     | {'Neam', 'neamul', 'neam'}                 | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                  | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                         | {'neamul', 'neam'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 33 - Adevărurile mormântului nemuritor                                           | {'neamul', 'neam', 'neamului'}             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                                 | {'neam', 'neamului', 'neamul'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Psalmul 78                                                                            | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Al treilea cuvânt                                                                     | {'neam', 'neamul'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
-| Cap. 14 - Strâmta cărare mântuitoare                                                  | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Psalmul 79                                                                            | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Babel                                                                                 | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Cap. 15 - Călătoria la Ierusalim                                                      | {'neam'}                                   | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cântarea Mariei, Maica Domnului                                                       | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Da, înainte de Avraam, sunt Eu...                                                     | {'neam'}                                   | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Dar vine pentru ca să cunoască lumea                                                  | {'neam'}                                   | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Din părţile Munteniei                                                                 | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                              | {'neam'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Mă voi întoarce la voi                                                                | {'neam'}                                   | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Psalmul 100                                                                           | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 106                                                                           | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 119                                                                           | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 135                                                                           | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 45                                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 72                                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 87                                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 89                                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 90                                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Rugăciunea profetului Ieremia - 4                                                     | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Rugăciunea împăratului David - 1                                                      | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Toate-ai să le pierzi                                                                 | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Începutul semnelor Lui                                                                | {'neam'}                                   | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 2 - A treia zi istorică                                                          | {'neam', 'neamului', 'neamul'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                          | {'neam', 'neamului', 'neamul'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 8 - Aşezarea temeliilor veşnice                                                  | {'neam', 'neamul', 'neamului'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                          | {'neam', 'neamului', 'neamul'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                              | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Pe drumul Crucii                                                            | {'neam', 'Neamul', 'neamul', 'neamului'}   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 16 - Leacul dureroasei sfâşieri                                                  | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 8 - A treia Judecată                                                             | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Unul din ei, Caiafa, le-a zis...                                                      | {'neam', 'neamului', 'neamul'}             | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Întrebarea şi răspunsul                                                               | {'neam', 'neamului'}                       | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| ... Vorbesc după cum M-a învăţat Tatăl                                                | {'neam', 'neamului'}                       | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Calea şi urmaşul                                                                      | {'neam', 'neamul'}                         | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Înfricoşata lepădare                                                         | {'neam', 'neamul'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                      | {'neam', 'neamul'}                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Apostolia Femeilor                                                          | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                            | {'neam', 'neamului'}                       | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                              | {'neam', 'neamului'}                       | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Copiii                                                                                | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre iubire                                                                         | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre prietenie                                                                      | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Moldovei                                                                  | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Nimeni din voi nu ţine Legea                                                          | {'neam', 'neamul'}                         | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Om trimes de Dumnezeu...                                                              | {'neam', 'neamul'}                         | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Pavel la Atena                                                                        | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Psalmul 59                                                                            | {'neam', 'neamul'}                         | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Slava şi răsplata                                                                     | {'neam', 'neamul'}                         | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Avraam şi Eliezer                                                                     | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Bolile şi vindecarea                                                                  | {'neam'}                                   | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                                 | {'neam'}                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                           | {'neam'}                                   | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 31 - Şi acum încheierea                                                          | {'neam'}                                   | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Cânt. Cântărilor                                                             | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 7 - A doua Judecată                                                              | {'neam'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Pe drumul crucii mele                                                        | {'neam'}                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Ce limpede văd azi                                                                    | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Cântarea bătrânilor slăviţi                                                           | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cântarea lui Asaf                                                                     | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cântarea împăratului David                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Câte rădăcini ascunse                                                                 | {'neam'}                                   | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | poezie  |
-| Câte rădăcini ascunse                                                                 | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Dar vine ceasul...                                                                    | {'neam'}                                   | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| De Sus, din dragostea Golgotei                                                        | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Despre faptă                                                                          | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre ură                                                                            | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Dragostea cu care M-ai iubit Tu...                                                    | {'neam'}                                   | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Eu mi-am făcut                                                                        | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Fiindcă era mare preot... a profeţit                                                  | {'neam'}                                   | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Ioan stătea cu ucenicii săi                                                           | {'neam'}                                   | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Isus Hristos este                                                                     | {'neam'}                                   | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Isuse-ai Tăi suntem                                                                   | {'neam'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'neam'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                | {'neam'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                         | {'neam'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                           | {'neam'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Liniştire şi vindecare                                                                | {'neam'}                                   | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-+---------------------------------------------------------------------------------------+--------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-Searching Neam using http://localhost:9000...
-Got 227 hits:
-Score: 15.875
++------------------------------------------------------------------------+------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                  | Occurrences                                    | Author      | Tip                            | Carte                        | Volum   |
++------------------------------------------------------------------------+------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Oameni noi, neam nou                                                   | {'neam'}                                       | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| Cap. 30 - Proverbe                                                     | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Veghere şi apărare                                                     | {'neam', 'Neamul'}                             | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Cap. 13 - După luarea lui Moisi...                                     | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 1 - Ce puţine adevăruri putem spune                               | {'neam', 'neamul', 'neamurile', 'neamului'}    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare                        | {'neam', 'neamul', 'neamurile', 'neamuri'}     | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Va veni un altul...                                          | {'neam'}                                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                   | {'neam', 'neamul', 'neamuri', 'neamului'}      | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                    | {'neam', 'Neamul', 'neamul'}                   | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                               | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                          | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Riscul şi izbânda                                                      | {'neam', 'neamurile', 'Neamul'}                | Traian Dorz | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | articol |
+| Cântarea lui Moise                                                     | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Strămoşii şi învăţămintele                                             | {'neam'}                                       | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Cap. 29 - Anul jubiliar 1988                                           | {'neam', 'neamurile', 'neamul', 'neamului'}    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 30 - Alte adevăruri noi                                           | {'neam', 'neamului', 'neamul'}                 | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                             | {'neam', 'neamul', 'neamului'}                 | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                   | {'neam', 'neamului', 'neamuri'}                | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                        | {'neam', 'neamul', 'Neamul'}                   | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                 | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)          | {'neamul', 'neam', 'neamurile'}                | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Pleacă de aici...                                                      | {'Neam', 'neamul', 'neam'}                     | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 7 - Primii paşi spre o rânduială                                  | {'neam', 'neamului', 'neamul', 'neamuri'}      | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Psalmul 106                                                            | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cap. 15 - Călătoria la Ierusalim                                       | {'neam', 'neamuri', 'neamurile'}               | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 33 - Adevărurile mormântului nemuritor                            | {'neamul', 'neam', 'neamului'}                 | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Drumul şi ţinta                                                        | {'neam', 'neamului'}                           | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Psalmul 135                                                            | {'neam', 'neamuri', 'neamurilor'}              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 72                                                             | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 78                                                             | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 79                                                             | {'neam', 'neamuri', 'neamul'}                  | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Taină-a fost                                                           | {'neam', 'neamurile'}                          | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Al treilea cuvânt                                                      | {'neam', 'neamul'}                             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Cap. 14 - Strâmta cărare mântuitoare                                   | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Psalmul 87                                                             | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 89                                                             | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Rugăciunea împăratului David - 1                                       | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Babel                                                                  | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Binefacerea şi rugăciunea                                              | {'neam'}                                       | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Când nu mai ştim                                                       | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Cântarea Mariei - 1                                                    | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Cântarea Mariei, Maica Domnului                                        | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Da, înainte de Avraam, sunt Eu...                                      | {'neam'}                                       | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Dar vine pentru ca să cunoască lumea                                   | {'neam'}                                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Din Cântările Eterne                                                   | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Din părţile Munteniei                                                  | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Gelozia şi ura                                                         | {'neam'}                                       | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)               | {'neam'}                                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Mă voi întoarce la voi                                                 | {'neam'}                                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Proslăvirea lui Dumnezeu                                               | {'neam'}                                       | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Psalmul 100                                                            | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 119                                                            | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 45                                                             | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 90                                                             | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Rugăciunea pentru popor                                                | {'neam'}                                       | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Rugăciunea profetului Ieremia - 4                                      | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Sunt zile mari...                                                      | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Toate-ai să le pierzi                                                  | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Veniţi copii din lume                                                  | {'neam'}                                       | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Voia lui Dumnezeu                                                      | {'neam'}                                       | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Începutul semnelor Lui                                                 | {'neam'}                                       | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Înfricarea de cutremure                                                | {'neam'}                                       | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Cap. 2 - A treia zi istorică                                           | {'neam', 'neamului', 'neamul'}                 | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 21 - După cei 50 de ani                                           | {'neam', 'neamuri', 'neamului', 'neamul'}      | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cântarea lui Asaf                                                      | {'neam', 'neamuri', 'neamurilor'}              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Lupta Binelui şi Răul                                                  | {'neam', 'neamului', 'neamul', 'neamuri'}      | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Cap. 8 - Aşezarea temeliilor veşnice                                   | {'neam', 'neamul', 'neamului', 'neamurilor'}   | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)          | {'neam', 'neamuri', 'neamurile', 'neamurilor'} | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                           | {'neam', 'neamului', 'neamul'}                 | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator               | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Pe drumul Crucii                                             | {'neam', 'Neamul', 'neamul', 'neamului'}       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 16 - Leacul dureroasei sfâşieri                                   | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 7 - A doua Judecată                                               | {'neam', 'neamurile'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                              | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cântarea împăratului David                                             | {'neam', 'neamuri'}                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Deşertăciune şi slavă                                                  | {'neam', 'neamurilor', 'neamurile'}            | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)            | {'neam', 'neamurile'}                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Unul din ei, Caiafa, le-a zis...                                       | {'neam', 'neamului', 'neamul'}                 | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| Întrebarea şi răspunsul                                                | {'neam', 'neamului'}                           | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| ... Vorbesc după cum M-a învăţat Tatăl                                 | {'neam', 'neamului'}                           | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Boală şi vindecare                                                     | {'neam', 'neamului'}                           | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Calea şi urmaşul                                                       | {'neam', 'neamul'}                             | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Înfricoşata lepădare                                          | {'neam', 'neamul'}                             | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                       | {'neam', 'neamul'}                             | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Apostolia Femeilor                                           | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                             | {'neam', 'neamului'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                               | {'neam', 'neamului'}                           | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Copiii                                                                 | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Călăuzirea Duhului Sfânt                                               | {'neam', 'neamurile'}                          | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Despre iubire                                                          | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Despre prietenie                                                       | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Moldovei                                                   | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Dincoace şi dincolo                                                    | {'neam', 'neamuri'}                            | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Durata şi valoarea                                                     | {'neam', 'neamului'}                           | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii) | {'neam', 'neamurile'}                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Lumină şi întuneric                                                    | {'neam', 'neamuri'}                            | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Nimeni din voi nu ţine Legea                                           | {'neam', 'neamul'}                             | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Om trimes de Dumnezeu...                                               | {'neam', 'neamul'}                             | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| Pavel la Atena                                                         | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Psalmul 59                                                             | {'neam', 'neamul'}                             | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
++------------------------------------------------------------------------+------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Neam using https://api.comori-od.ro...
+Got 433 hits:
+Score: 21.0
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Oameni noi, neam nou
+Type: articol
+Author: Traian Dorz
+Highlight: Oameni noi, <em>neam</em> nou
+
+Score: 15.888888
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 30 - Proverbe
@@ -116,6 +124,19 @@ Highlight: 13-Este-un <em>neam</em> de oameni care are ochii îngâmfaţi
 Highlight: 14-Este-un <em>neam</em> cu dinţi de săbii şi măsele de cuţit
 Highlight: 26-Şoarecii de munte care nu sunt <em>neam</em> puternic, dar
 Highlight: şi nu-şi binecuvântează mama: - ăsta-i <em>neamul</em> rău.  12-Este-un
+
+Score: 15.888888
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Veghere şi apărare
+Type: articol
+Author: Traian Dorz
+Highlight: cum să nu mai fi avut un alt <em>neam</em> din lume.
+Highlight: ascultătoare de Dumnezeu, cum să nu mai aibă nici un alt <em>neam</em> de pe pământ.
+Highlight: poate faţă de nici un alt <em>neam</em> nu S-a mai arătat aşa.
+Highlight: 10 - Peste nici un alt <em>neam</em> poate că n-au trecut chiar
+Highlight: Cu nici un alt <em>neam</em> parcă n-a lucrat aşa Dumnezeu: Hristos parcă S-a
+Highlight: 8 - <em>Neamul</em> nostru ar trebui să aibă faţă de Dumnezeu aşa o
 
 Score: 15.857142
 Volume: Istoria unei Jertfe
@@ -130,7 +151,7 @@ Highlight: şi închegării unităţii noastre de credinţă şi de <em>neam</em
 Highlight: sursă de dureri şi otravă între fraţii de acelaşi <em>neam</em>!
 Highlight: cerească ne poate face înfrăţirea credinţei şi a <em>neamului</em> nostru...
 
-Score: 15.275
+Score: 15.288889
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 1 - Ce puţine adevăruri putem spune
@@ -140,10 +161,10 @@ Highlight: adevăr şi mântuirea unui <em>neam</em> - Dumnezeu îl trimite pe p
 Highlight: alţii şi pentru mai târziu, căci orice om şi orice <em>neam</em> şi orice timp este trecător, dar Poruncile Mele
 Highlight: Fiecare <em>neam</em> îşi are profetul său şi fiecare Timp îşi are profetul
 Highlight: cunoşti şi înţelegi tu, este pentru tine. Şi pentru <em>neamul</em> tău. Şi pentru vremea de acum.  Ceea
+Highlight: mântuirea celor la care sunt trimeşi. Dar mai adesea <em>neamurile</em> îşi leapădă profeţii zădărnicindu-şi mântuirea
 Highlight: pot. Pentru ca adevărurile trimise timpului şi <em>neamului</em> nostru cărora le-am fost şi eu martor - să aibă
-Highlight: <em>Neamului</em> nostru ştiu că nu-i va mai fi trimis alt profet
 
-Score: 15.233334
+Score: 15.275
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 4-a a Postului Mare
@@ -153,6 +174,8 @@ Highlight: profeţi. Câte unul din fiecare <em>neam</em> care era atunci sub ce
 Highlight: acesta este dator s-o ţină. Ci a auzit-o fiecare <em>neam</em> de sub cer în propria sa limbă, pentru ca fiecare
 Highlight: credincioase trebuie să fi avut la început acest <em>neam</em>! Ce părinţi sănătoşi!
 Highlight: Apoi ce taină este supravieţuirea acestui <em>neam</em> de-a lungul celor o mie de ani de cumplit întuneric
+Highlight: pentru toţi oamenii din toate vremurile, din toate <em>neamurile</em> şi din toate stările lor. Aşa fiind Dumnezeu faţă
+Highlight: Lui a răsunat în şaptezeci de limbi... Atâtea <em>neamuri</em> erau atunci pe pământ. Fiecare popor a auzit în
 
 Score: 15.2
 Volume: Istoria unei Jertfe
@@ -164,7 +187,7 @@ Highlight: Hristos, - să o ducă apoi din loc în loc, din <em>neam</em> în <e
 Highlight: biserici. Şi aproape nimic nici de fiu al acestui <em>neam</em>.
 Highlight: în primul rând misiunea lor faţă de propriul lor <em>neam</em>.
 
-Score: 14.456522
+Score: 14.462963
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 18 - Frumoasele noastre Rusalii
@@ -172,12 +195,12 @@ Type: articol
 Author: Traian Dorz
 Highlight: de pace în care să se îmbrăţişeze om cu om, <em>neam</em> cu <em>neam</em>, suflet cu suflet, sărutându-se cu dragoste
 Highlight: Dumnezeu la noi, la <em>neamul</em> nostru. Dumnezeu nu ne-a trimis nouă pe cineva din alt <em>neam</em> şi din altă limbă
+Highlight: Iosif la noi, cum El a trimes în trecut şi la alte <em>neamuri</em> mari oameni ai Lui, spre a le aduce vestea cea
 Highlight: om mare şi sfânt a sunat trâmbiţa redeşteptării <em>neamului</em> nostru din moartea păcatului, la o viaţă nouă
 Highlight: Acest om a fost un profet ales de Dumnezeu, din <em>neamul</em> nostru şi din biserica noastră pentru a ne aduce
 Highlight: poate ca să nu-l primim. Ci ni l-a trimes pe el din <em>neamul</em> nostru, de limba noastră, din credinţa părinţilor
-Highlight: vă vestesc Evanghelia mântuirii. Să nu vă uitaţi <em>neamul</em> şi patria voastră, pe care să o iubim, pentru care
 
-Score: 14.423077
+Score: 14.428572
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
@@ -216,7 +239,18 @@ Highlight: cu ea vom muri, încredinţaţi că dacă mântuirea <em>neamului</em
 Highlight: cumplită, traşi pe roată, cei trei martiri ai <em>neamului</em> nostru: Horea, Cloşca şi Crişan. Şi
 Highlight: ideal nobil şi sfânt al luminării şi mântuirii <em>neamului</em> acestuia. Toţi aceşti modeşti şi tăcuţi mucenici
 
-Score: 14.25
+Score: 14.333333
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Riscul şi izbânda
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Dumnezeu trimite fiecărui <em>neam</em>, un profet din însuşi acest <em>neam</em>, pentru ca solia adusă de el să
+Highlight: împiedicată cu nimic. Dacă le-ar trimite un profet din alt <em>neam</em>, poate ar avea motiv de îndoială şi de respingere
+Highlight: 12 - Fericite sunt <em>neamurile</em> care îşi recunosc şi îşi primesc profeţii lor
+Highlight: 16 - <em>Neamul</em> nostru a avut şi el destui profeţi pregătitori
+
+Score: 14.3
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cântarea lui Moise
@@ -225,8 +259,19 @@ Author: Traian Dorz
 Highlight: un <em>neam</em> îndărătnic şi nepriceput.
 Highlight: căci sunt un <em>neam</em> stricat cu-ai lor
 Highlight: - ei sunt un <em>neam</em> ce cuviinţa şi-orice pricepere-au pierdut.
+Highlight: la <em>neamuri</em>, când îi despărţise El atunci
 
-Score: 12.90909
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Strămoşii şi învăţămintele
+Type: articol
+Author: Traian Dorz
+Highlight: altoit, care nu-i din specia trunchiului acestui <em>neam</em>, nu este viabil şi nu aduce rod sănătos.
+Highlight: Acela în care mai bate ceva din inima acestui <em>neam</em> strămoşesc, aude totdeauna glasul strămoşilor, nu
+Highlight: necondiţionat de viitor. Cine îşi leapădă părinţii săi de <em>neam</em> şi de crez - îşi pierde chiar în aceeaşi clipă şi
+
+Score: 12.923076
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 29 - Anul jubiliar 1988
@@ -234,10 +279,10 @@ Type: articol
 Author: Traian Dorz
 Highlight: născut aici unul dintre cei mai sfinţi fii ai acestui <em>neam</em>, din una dintre cele mai sfinte mame ale acestui
 Highlight: s-a născut al treilea erou şi martir al acestui <em>neam</em>, cu nimic mai prejos decât ceilalţi doi.
+Highlight: tuturor marilor Săi fii, din toate <em>neamurile</em>, printre care a avut şi <em>neamul</em> nostru, pe unul dintre aceştia
 Highlight: părintele nostru, profetul şi martirul lui Hristos din <em>neamul</em> nostru şi din timpurile noastre. Cu o veşnică recunoştinţă
 Highlight: frumoasă cale spre mântuirea sufletelor noastre, ale <em>neamului</em> nostru şi ale bisericii noastre.  -
 Highlight: pentru harul Său cel mare pe care l-a revărsat peste <em>neamul</em> nostru şi peste sufletele noastre prin trimiterea
-Highlight: viaţă în slujba lui Dumnezeu, a bisericii şi a <em>neamului</em> acestuia.  Ne-am
 
 Score: 12.874999
 Volume: Hristos - Marturia mea
@@ -268,6 +313,19 @@ Highlight: Dumnezeu prin acest profet al timpului nostru şi al <em>neamului</em
 Score: 12.8571415
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul şi Mântuitorul nostru, ca indivizi şi ca <em>neam</em>!
+Highlight: Dumnezeu din orice timp, din orice loc şi din orice <em>neam</em>. Ei au îmbrăţişat cu o dragoste largă ca a lui Hristos
+Highlight: - Eu nu apăr aici numai fiinţa <em>neamului</em> meu, ci apăr credinţa lui Isus Hristos!
+Highlight: toate ducând în final la nimicirea sufletului şi a <em>neamului</em> nostru!
+Highlight: oraş să dormi până dimineaţă. Ştiu că d-ta ai “<em>neamuri</em>” pe aici la care ai mai fost. Eu pot să-ţi dau
+Highlight: credinţa părinţilor noştri şi nici de simţirea <em>neamului</em> nostru, ne îndeplinim în mod loial, din conştiinţă
+
+Score: 12.8571415
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
 Author: Traian Dorz
@@ -292,6 +350,18 @@ Highlight: nişte fii credincioşi ai bisericii şi ai <em>neamului</em> nostru.
 Highlight: noastre. Luptăm pentru întărirea bisericii şi a <em>neamului</em> nostru. Biserica şi ţara să se bucure de lupta
 
 Score: 12.8571415
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Type: articol
+Author: Traian Dorz
+Highlight: era marele vrăjmaş. El şi tot <em>neamul</em> lui, care ar fi trebuit să fie un <em>neam</em> sfânt, o preoţie aleasă, nişte
+Highlight: Dar, în loc să fie aşa, ei erau un <em>neam</em> blestemat, o preoţime decăzută, nişte vase nelegiuite
+Highlight: Ioan, Alexandru şi cu toţi cei care se trăgeau din <em>neamul</em> lor nelegiuit, au căutat mereu numai să pună mâna
+Highlight: ura faţă de urmaşii Lui, până astăzi, ele şi tot <em>neamul</em> lor!...
+Highlight: Tatălui Meu; el este Casa de rugăciune pentru toate <em>neamurile</em>... iar voi nu sunteţi în mâinile lor, ci sunteţi
+
+Score: 12.8571415
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învăţătorul nostru
 Title: Pleacă de aici...
@@ -305,26 +375,37 @@ Highlight: - Pe cine din <em>neamul</em> nostru mai vezi tu umblând numai cu Bi
 
 Score: 12.833332
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 7 - Primii paşi spre o rânduială
 Type: articol
 Author: Traian Dorz
-Highlight: Domnul şi Mântuitorul nostru, ca indivizi şi ca <em>neam</em>!
-Highlight: Dumnezeu din orice timp, din orice loc şi din orice <em>neam</em>. Ei au îmbrăţişat cu o dragoste largă ca a lui Hristos
-Highlight: - Eu nu apăr aici numai fiinţa <em>neamului</em> meu, ci apăr credinţa lui Isus Hristos!
-Highlight: toate ducând în final la nimicirea sufletului şi a <em>neamului</em> nostru!
-Highlight: credinţa părinţilor noştri şi nici de simţirea <em>neamului</em> nostru, ne îndeplinim în mod loial, din conştiinţă
+Highlight: va da mărire statornică acestei ţări - şi acestui <em>neam</em>
+Highlight: şi grele rod vlaga, sănătatea şi viitorul acestui <em>neam</em>. Acum, după război, avem duşmani mai mari decât
+Highlight: al adevăratei înălţări şi mântuiri a ţării şi <em>neamului</em> nostru nu poate veni decât prin Hristos. Prin
+Highlight:  nu te teme. Tu nu eşti singur, - Eu mai am în <em>neamul</em> acesta şi în biserica aceasta încă nenumărate mii
+Highlight: Alte <em>neamuri</em> mai înainte, a zis dl. Munteanu - au demult astfel
 
 Score: 12.833332
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 106
+Type: poezie
+Author: Traian Dorz
+Highlight: din <em>neam</em> în <em>neam</em>, pe veci de veci şi s-a lăsat spre ştire.
+Highlight: 27-Că printre <em>neamuri</em> El a lor sămânţă-o s-o doboare ca
+Highlight: 35-Cu <em>neamuri</em> s-au amestecat ca rău să făptuiască.
+Highlight: de printre <em>neamuri</em> ca să fim toţi iarăşi împreună,
+
+Score: 12.799999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
 Type: articol
 Author: Traian Dorz
-Highlight: era marele vrăjmaş. El şi tot <em>neamul</em> lui, care ar fi trebuit să fie un <em>neam</em> sfânt, o preoţie aleasă, nişte
-Highlight: Dar, în loc să fie aşa, ei erau un <em>neam</em> blestemat, o preoţime decăzută, nişte vase nelegiuite
-Highlight: Ioan, Alexandru şi cu toţi cei care se trăgeau din <em>neamul</em> lor nelegiuit, au căutat mereu numai să pună mâna
-Highlight: ura faţă de urmaşii Lui, până astăzi, ele şi tot <em>neamul</em> lor!...
+Highlight: faţa locului sfânt unde S-a născut Mântuitorul. Un <em>neam</em> întreg parcă păşeşte şi cântă alături de noi.
+Highlight: ..Un <em>neam</em> întreg parcă e alături cu noi şi cântă cu noi..
+Highlight: privelişte neuitată: oameni din fel de fel de ţări şi <em>neamuri</em> se roagă, plâng, suspină şi sărută locurile sfinte
+Highlight: vrut Dumnezeu ca aici să se întâlnească toate <em>neamurile</em> şi toate confesiunile din lume strânse de Golgota
 
 Score: 12.799999
 Volume: Hristos - Marturia mea
@@ -337,15 +418,35 @@ Highlight: fericit pregăteşte Hristos prin Evanghelia Sa acestui <em>neam</em>
 Highlight: aceeaşi Lucrare mântuitoare şi vie spre mântuirea <em>neamului</em> acestuia şi poate a multor altora. Spre renaşterea
 
 Score: 12.799999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 7 - Primii paşi spre o rânduială
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Drumul şi ţinta
 Type: articol
 Author: Traian Dorz
-Highlight: va da mărire statornică acestei ţări - şi acestui <em>neam</em>
-Highlight: şi grele rod vlaga, sănătatea şi viitorul acestui <em>neam</em>. Acum, după război, avem duşmani mai mari decât
-Highlight: al adevăratei înălţări şi mântuiri a ţării şi <em>neamului</em> nostru nu poate veni decât prin Hristos. Prin
-Highlight:  nu te teme. Tu nu eşti singur, - Eu mai am în <em>neamul</em> acesta şi în biserica aceasta încă nenumărate mii
+Highlight: De aceea orice părinţi, orice biserică şi orice <em>neam</em>, trebuie să pună problema îndrumării tineretului
+Highlight: 15 - Fără Hristos oricâtă avuţie ar avea un <em>neam</em>,
+Highlight: 17 - Cum se va putea ţine curată cărarea <em>neamului</em> nostru spre un viitor fericit?
+Highlight: viitorul familiei noastre, a Bisericii noastre şi a <em>neamului</em> nostru,
+
+Score: 12.799999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 135
+Type: poezie
+Author: Traian Dorz
+Highlight: şi sfânta-Ţi pomenire din <em>neam</em> în <em>neam</em> va sta.
+Highlight: 10-Ucis-a regi puternici, mari <em>neamuri</em> a lovit 11-Pe
+Highlight: 15-Ai <em>neamurilor</em> idoli argint şi aur sunt
+
+Score: 12.799999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 72
+Type: poezie
+Author: Traian Dorz
+Highlight: cât soare-ar fi şi lună, din <em>neam</em> în <em>neam</em> cei vii
+Highlight: şi toate-a lumii <em>neamuri</em> doar Lui Îi vor sluji
+Highlight: şi-a lumii <em>neamuri</em> toate numi-L-vor fericit.
 
 Score: 12.799999
 Volume: Cântări Nemuritoare
@@ -357,6 +458,26 @@ Highlight: un <em>neam</em> neascultător de Domnul şi răzvrătit şi cârtito
 Highlight: un <em>neam</em> ce n-are suflet tare
 Highlight: a Domnului lucrări, la <em>neamul</em> de oameni care vor veni puterea
 Highlight: 57-S-au depărtat de El netrebnici ca <em>neamul</em> lor necredincios
+
+Score: 12.799999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 79
+Type: poezie
+Author: Traian Dorz
+Highlight: şi din <em>neam</em> în <em>neam</em> vesti-vom lauda şi slava Ta
+Highlight: 1-Doamne, năvăliră <em>neamuri</em> peste moştenirea-Ţi iar Templul
+Highlight: 6-Varsă-Ţi Doamne-a Ta mânie peste <em>neamul</em> cu gând rău peste
+
+Score: 12.799999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Taină-a fost
+Type: poezie
+Author: Traian Dorz
+Highlight: Lui este Sfânt şi îndurarea Lui se întinde din <em>neam</em> în <em>neam</em> peste cei ce se tem de El.
+Highlight: ... toate <em>neamurile</em> mă vor ferici pentru că Cel Atotputernic a făcut
+Highlight: roabei Sale. Căci iată, de acum încolo toate <em>neamurile</em> îmi vor zice  Fericită
 
 Score: 12.749999
 Volume: Istoria unei Jertfe
@@ -380,11 +501,30 @@ Highlight: pe care le avem. Pentru mântuirea noastră şi a <em>neamului</em> n
 Score: 12.749999
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 79
+Title: Psalmul 87
 Type: poezie
 Author: Traian Dorz
-Highlight: şi din <em>neam</em> în <em>neam</em> vesti-vom lauda şi slava Ta
-Highlight: 6-Varsă-Ţi Doamne-a Ta mânie peste <em>neamul</em> cu gând rău peste
+Highlight: din <em>neam</em> în <em>neam</em> au fost purtate
+Highlight: 6-El numără pe <em>neamuri</em>, El Domnul Cel Temut
+
+Score: 12.749999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 89
+Type: poezie
+Author: Traian Dorz
+Highlight: şi din <em>neam</em> în <em>neam</em> voi spune eu credincioşia Lui
+Highlight: că purtăm în sân ruşinea multor <em>neamuri</em> de-oameni răi...
+
+Score: 12.749999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Rugăciunea împăratului David - 1
+Type: poezie
+Author: Traian Dorz
+Highlight: Este-oare-un singur <em>neam</em> în lumea-ntreagă
+Highlight: Ca să-Şi facă un <em>neam</em> veşnic şi să facă
+Highlight: din Egipt şi dintre <em>neamuri</em> să-i aduni?
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -395,13 +535,29 @@ Author: Traian Dorz
 Highlight: şi <em>neam</em> de <em>neam</em>
 
 Score: 12.666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Binefacerea şi rugăciunea
 Type: articol
 Author: Traian Dorz
-Highlight: faţa locului sfânt unde S-a născut Mântuitorul. Un <em>neam</em> întreg parcă păşeşte şi cântă alături de noi.
-Highlight: ..Un <em>neam</em> întreg parcă e alături cu noi şi cântă cu noi..
+Highlight:  - fiecare <em>neam</em> de oameni îşi are prorocul său bun şi prorocii lui răi.
+Highlight: Şi fiecare <em>neam</em> devine aşa cum
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Când nu mai ştim
+Type: poezie
+Author: Traian Dorz
+Highlight: Tu-ai dat din veci din <em>neam</em> în <em>neam</em> la toţi ai Tăi scăpare
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Cântarea Mariei - 1
+Type: poezie
+Author: Traian Dorz
+Highlight: din <em>neam</em> în <em>neam</em> se-ntinde-a Sa-ndurare
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -429,12 +585,28 @@ Highlight: din <em>neam</em> în <em>neam</em>,
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Din Cântările Eterne
+Type: poezie
+Author: Traian Dorz
+Highlight: şi cântarea-ţi va cuprinde <em>neam</em> cu <em>neam</em> şi ins cu ins
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Munteniei
 Type: articol
 Author: Traian Dorz
 Highlight: că-i omul om din <em>neam</em> de cinste
 Highlight: sau că-i un prost din <em>neam</em> de proşti.
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Gelozia şi ura
+Type: articol
+Author: Traian Dorz
+Highlight:  o familie faţă de o altă familie, un <em>neam</em> faţă de un alt <em>neam</em>.
 
 Score: 12.666666
 Volume: Hristos - Puterea Apostoliei
@@ -453,20 +625,20 @@ Author: Traian Dorz
 Highlight: ce ne va găti fiecărui <em>neam</em> un loc, iar apoi, în locul rânduit fiecărui <em>neam</em>, Domnul Isus va rândui un
 
 Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Proslăvirea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: înaintaşi şi urmaşi, bătrâni şi tineri, din <em>neam</em> în <em>neam</em>, din generaţie în generaţie, din veac în veac
+
+Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 100
 Type: poezie
 Author: Traian Dorz
 Highlight: şi din <em>neam</em> în <em>neam</em> Îşi ţine
-
-Score: 12.666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 106
-Type: poezie
-Author: Traian Dorz
-Highlight: din <em>neam</em> în <em>neam</em>, pe veci de veci şi s-a lăsat spre ştire.
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -479,14 +651,6 @@ Highlight: din <em>neam</em> în <em>neam</em> va sta
 Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 135
-Type: poezie
-Author: Traian Dorz
-Highlight: şi sfânta-Ţi pomenire din <em>neam</em> în <em>neam</em> va sta.
-
-Score: 12.666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 45
 Type: poezie
 Author: Traian Dorz
@@ -495,34 +659,18 @@ Highlight: 17-Din <em>neam</em> în <em>neam</em> iubitu-Ţi Nume de-a pururi Ţ
 Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 72
-Type: poezie
-Author: Traian Dorz
-Highlight: cât soare-ar fi şi lună, din <em>neam</em> în <em>neam</em> cei vii
-
-Score: 12.666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 87
-Type: poezie
-Author: Traian Dorz
-Highlight: din <em>neam</em> în <em>neam</em> au fost purtate
-
-Score: 12.666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 89
-Type: poezie
-Author: Traian Dorz
-Highlight: şi din <em>neam</em> în <em>neam</em> voi spune eu credincioşia Lui
-
-Score: 12.666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 90
 Type: poezie
 Author: Traian Dorz
 Highlight: 1-Doamne Tu-ai fost locul nostru de-adăpost din <em>neam</em> în <em>neam</em>
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Rugăciunea pentru popor
+Type: articol
+Author: Traian Dorz
+Highlight: numele său legat de opera sa va rămânea din <em>neam</em> în <em>neam</em>.
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -534,12 +682,11 @@ Highlight: din <em>neam</em> în <em>neam</em> Ţi-l dăinuieşti.
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea împăratului David - 1
+Book: Cântări Nemuritoare vol. 10
+Title: Sunt zile mari...
 Type: poezie
 Author: Traian Dorz
-Highlight: Este-oare-un singur <em>neam</em> în lumea-ntreagă
-Highlight: Ca să-Şi facă un <em>neam</em> veşnic şi să facă
+Highlight: din <em>neam</em> în <em>neam</em> purtate
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -551,6 +698,23 @@ Highlight: orice <em>neam</em> şi orice limbă,
 Highlight: Orice <em>neam</em> e nestatornic
 
 Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Veniţi copii din lume
+Type: poezie
+Author: Traian Dorz
+Highlight: cântaţi din <em>neam</em> în <em>neam</em>
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Voia lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: <em>neam</em> al meu şi suflet al meu,
+Highlight: 19 - De aceea <em>neam</em> al meu
+
+Score: 12.666666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
 Title: Începutul semnelor Lui
@@ -558,6 +722,14 @@ Type: articol
 Author: Traian Dorz
 Highlight: un <em>neam</em> preacurvar şi viclean cere semn
 Highlight: numai în vederea salvării unui suflet sau a unui <em>neam</em>,
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Înfricarea de cutremure
+Type: articol
+Author: Traian Dorz
+Highlight: războaie şi veşti de războaie... un <em>neam</em> se va scula împotriva altui <em>neam</em> şi o împărăţie împotriva altei împărăţii
 
 Score: 9.923077
 Volume: Istoria unei Jertfe
@@ -572,20 +744,46 @@ Highlight: de Dumnezeu, în mijlocul bisericii noastre şi a <em>neamului</em> n
 Highlight: spunem acest mare şi sfânt adevăr: dacă mântuirea <em>neamului</em> nostru din păcatul şi osânda lui sufletească şi
 Highlight: construcţiei lor, pentru a clădi pe ea izbăvirea <em>neamului</em> din prăbuşire şi a bisericii din corupţie.
 
-Score: 9.888889
+Score: 9.9
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 21 - După cei 50 de ani
 Type: articol
 Author: Traian Dorz
-Highlight: de la credinţă, se va salva sufletul acestui <em>neam</em>. Dumnezeu ne-a izbăvit naţiunea noastră de stăpânirea
+Highlight: sufletul acestui <em>neam</em>. Dumnezeu ne-a izbăvit naţiunea noastră de stăpânirea altor <em>neamuri</em>, iar acum noi
 Highlight: care urmăreau ruinarea trupească şi sufletească a <em>neamului</em> nostru.  Printre
 Highlight: sudalmei şi a tuturor păcatelor care ticăloşesc <em>neamul</em> nostru şi pierd sufletele oamenilor. Se pornea
 Highlight: păcatelor trupeşti - zicea el - se va salva trupul <em>neamului</em> nostru, iar prin biruinţa contra rătăcirilor de
 Highlight: şi scriitor strălucit în slujba bisericii şi a <em>neamului</em>. Şi după 25 de ani de preoţie cutremurătoare în
 Highlight: lăsa ca o avuţie veşnică prin biserica sa, prin <em>neamul</em> său, - Ortodoxiei şi Lumii.
 
-Score: 9.833333
+Score: 9.875
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cântarea lui Asaf
+Type: poezie
+Author: Traian Dorz
+Highlight: i-alunga un <em>neam</em> la altul
+Highlight: a Lui fapte printre <em>neamuri</em> le
+Highlight: pentru-a <em>neamurilor</em> mii şi
+Highlight: vorbiţi printre <em>neamuri</em> de lauda Lui
+Highlight: căci zeii-altor <em>neamuri</em> sunt idoli deşerţi
+Highlight: Familii de <em>neamuri</em> daţi Domnului, daţi
+
+Score: 9.875
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Lupta Binelui şi Răul
+Type: articol
+Author: Traian Dorz
+Highlight: întregi familii, sau a unei cetăţi, sau a unui întreg <em>neam</em>,
+Highlight: oamenii <em>neamului</em> evreiesc ar fi crezut în Domnul, nu numai că Dumnezeu le-ar fi ferit tot <em>neamul</em> lor de
+Highlight: de năvălirea altor <em>neamuri</em>,  dar
+Highlight: preţ de suferinţă, a plătit Ierusalimul şi tot <em>neamul</em> lui Israel, nesocotinţa conducătorilor săi,  care
+Highlight: Dumnezeu, se întoarce totdeauna împotriva vieţii şi <em>neamului</em> aceluia vrăjmaş.  11
+Highlight: faţa lui Dumnezeu, în faţa istoriei şi în faţa <em>neamului</em> său, pentru tot ce va urma din clipa luării acelei
+
+Score: 9.857142
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 8 - Aşezarea temeliilor veşnice
@@ -596,6 +794,19 @@ Highlight:  Cuvântul Domnului care voia să mântuiască tot <em>neamul</em> no
 Highlight: cu adevărat mântuirea sufletului şi mântuirea <em>neamului</em> nostru. Căci încă de la început, în viziunea păr
 Highlight: Iosif, aceste două mântuiri - a sufletului şi a <em>neamului</em> - erau strâns legate una de alta. Ba încă el chiar
 Highlight: duşmanul cel de moarte al sufletului nostru şi al <em>neamului</em> nostru.
+Highlight: toată lumea ca să slujească de mărturie tuturor <em>neamurilor</em>...
+
+Score: 9.833333
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
+Type: articol
+Author: Traian Dorz
+Highlight: Barnaba era un evreu care vorbea greceşte, de <em>neam</em> din Cipru. Numele lui înseamnă
+Highlight: din afara Ierusalimului, între păgânii dintre <em>neamuri</em>, la Antiohia Siriei.  Până
+Highlight: propovăduise numai evreilor. Acum sosise vremea ca toate <em>neamurile</em> să audă vestea cea dulce şi scumpă că Hristos
+Highlight: aflau în Ierusalim iudei şi prozeliţi din toate <em>neamurile</em> care sunt sub cer - cum spune Cuvântul Sfânt (
+Highlight: Cuvântul lui Hristos nu numai evreilor, ci şi <em>neamurilor</em>.  Cu
 
 Score: 9.8
 Volume: Istoria unei Jertfe
@@ -643,12 +854,52 @@ Highlight: împăcare a bisericilor noastre şi de mântuirea <em>neamului</em> 
 Score: 9.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
+Title: Cap. 7 - A doua Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: femei şi popoare din toată lumea, fără deosebire de <em>neam</em> şi confesiune. Întocmai ca în Biserica Sf. Mormânt
+Highlight: părţile! Femei de prin toate ţările şi din toate <em>neamurile</em> şi confesiunile vin mereu să se roage şi să plângă
+Highlight: lângă Mormântul Născătoarei să se strângă toate <em>neamurile</em> lumii atrase de lacrimile şi de rugăciunile celei
+
+Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
 Title: Cap. 8 - A treia Judecată
 Type: articol
 Author: Traian Dorz
 Highlight: Păcatul s-a întins ca lepra peste trupul acestui <em>neam</em> care în trecutul lui a fost mai aproape de Dumnezeu
 Highlight: pacea şi buna înţelegere între toţi fiii <em>neamului</em> nostru românesc
 Highlight: luptat şi am sângerat pentru binele bisericii şi <em>neamului</em> meu. Şi acum slăvit să fie Domnul iată văd şi
+
+Score: 9.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cântarea împăratului David
+Type: poezie
+Author: Traian Dorz
+Highlight: mă păstrezi drept căpetenie de <em>neam</em>
+Highlight: El îmi supune <em>neamuri</em> şi mă scapă
+Highlight: de-aceea-Ţi voi cânta prin <em>neamuri</em> Doamne
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Deşertăciune şi slavă
+Type: articol
+Author: Traian Dorz
+Highlight: fie peste un <em>neam</em>!
+Highlight: - pe tot de-a lungul veacurilor şi a <em>neamurilor</em> omeneşti,  -
+Highlight: cuprindă toate inimile, toate casele şi toate <em>neamurile</em>,
+
+Score: 9.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
+Type: articol
+Author: Traian Dorz
+Highlight: şi cu cei care sunt una cu El, din orice loc şi <em>neam</em> şi stare ar fi ei sau noi.
+Highlight: în Ierusalim iudei, oameni cucernici din toate <em>neamurile</em> care sunt sub cer. 6
+Highlight: aşa fel încât noi toţi cei care eram din toate <em>neamurile</em> de sub cer şi de sub iad, beţivi, mincinoşi, desfrânaţi
 
 Score: 9.75
 Volume: Meditații la Ev. după Ioan
@@ -677,6 +928,15 @@ Title: ... Vorbesc după cum M-a învăţat Tatăl
 Type: articol
 Author: Traian Dorz
 Highlight: suflete, ci sunteţi părinţii unui întreg <em>neam</em> de oameni, a <em>neamului</em> viitor.
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Boală şi vindecare
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeu a întărit totdeauna pe apărătorii acestui <em>neam</em>,
+Highlight: 15 - Dacă n-ar fi întărit Dumnezeu fiinţa <em>neamului</em> nostru,  -
 
 Score: 9.666667
 Volume: Cugetări Nemuritoare
@@ -742,6 +1002,15 @@ Highlight: şi cu tine va începe un <em>neam</em> sfânt,
 Highlight: blestemaţi şi ei şi <em>neamul</em> care-i nasc, până-n mormânt.
 
 Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Călăuzirea Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: şi cu cei care sunt una cu El, din orice loc şi <em>neam</em> şi stare - ar fi ei sau noi.
+Highlight: în aşa fel încât toţi cei care eram de toate <em>neamurile</em> de sub cer şi de sub iad: beţivi, mincinoşi, desfrânaţi
+
+Score: 9.666667
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre iubire
@@ -767,6 +1036,42 @@ Type: articol
 Author: Traian Dorz
 Highlight: lipsit degrab îşi pierde orice prieten şi-orice <em>neam</em>.
 Highlight: 168 - Omul care nu se roagă pentru <em>neamul</em> său lovit
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Dincoace şi dincolo
+Type: articol
+Author: Traian Dorz
+Highlight: Fiecare <em>neam</em> rău, fiecare generaţie, fiecare naţiune rea, - îşi
+Highlight: scurt sau mai lung al istoriei sale, faţă de alte <em>neamuri</em>, faţă de alte naţiuni.
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Durata şi valoarea
+Type: articol
+Author: Traian Dorz
+Highlight: trezirii unei conştiinţe pământeşti între fiii unui <em>neam</em> a fost nevoie de un preţ atât de mare şi de greu
+Highlight: trebuie să le fim nespus de recunoscători profeţilor <em>neamului</em> nostru care ne-au trezit nouă conştiinţa naţională
+
+Score: 9.666667
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
+Type: articol
+Author: Traian Dorz
+Highlight: nou, în care se năştea şi se încetăţenea un nou <em>neam</em> de oameni, născuţi din Sângele Mielului, din Crucea
+Highlight: Nu numai până la marginea pământului, în toate <em>neamurile</em>, ci şi până la marginea iadului, în toate păcatele
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Lumină şi întuneric
+Type: articol
+Author: Traian Dorz
+Highlight: 17 - Tineretul este viitorul unui <em>neam</em>, al unei biserici, al omenirii. Dar unde se duce
+Highlight: mari nenorociri ale multor oameni şi ale multor <em>neamuri</em> de pe pământ. Fără lumina cărţii, într-adevăr omul
 
 Score: 9.666667
 Volume: Meditații la Ev. după Ioan
@@ -802,245 +1107,4 @@ Type: poezie
 Author: Traian Dorz
 Highlight: de-al lor <em>neam</em> Îţi baţi joc
 Highlight: să-i ştie <em>neamul</em> tot
-
-Score: 9.666667
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Slava şi răsplata
-Type: articol
-Author: Traian Dorz
-Highlight: poate făli o biserică, un sat, o adunare, sau un <em>neam</em>.
-Highlight: Le place numai să-şi laude satul lor, <em>neamul</em> lor, oraşul lor şi ţara lor,  dar
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Avraam şi Eliezer
-Type: poezie
-Author: Traian Dorz
-Highlight: nu căutaţi la fiii voştri fetele de <em>neam</em> străin
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Bolile şi vindecarea
-Type: articol
-Author: Traian Dorz
-Highlight: câtorva suflete ci sunteţi părinţii unui viitor întreg <em>neam</em> de oameni.
-
-Score: 9.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-Highlight: Hristos ci şi mai mult, împotriva întregului nostru <em>neam</em> şi a întregii noastre biserici, prin împiedicarea
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-Highlight: tineret vom creşte şi ce minunat viitor va avea acest <em>neam</em>...”
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 31 - Şi acum încheierea
-Type: articol
-Author: Traian Dorz
-Highlight: moral şi social inspirat din iubirea de ţară şi de <em>neam</em>, şi un caracter religios inspirat din dragostea
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 6 - Cânt. Cântărilor
-Type: poezie
-Author: Traian Dorz
-Highlight: a-unui <em>neam</em> şi-a unui om ales între popoare...
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 7 - A doua Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: femei şi popoare din toată lumea, fără deosebire de <em>neam</em> şi confesiune. Întocmai ca în Biserica Sf. Mormânt
-
-Score: 9.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 9 - Pe drumul crucii mele
-Type: articol
-Author: Traian Dorz
-Highlight: lui Dumnezeu ci şi împotriva sufletului acestui <em>neam</em>, a cărui lumină au stins-o şi a cărui salvare au
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ce limpede văd azi
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-n mijlocul acestui <em>neam</em>.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea bătrânilor slăviţi
-Type: poezie
-Author: Traian Dorz
-Highlight: din orice <em>neam</em> şi seminţii
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea lui Asaf
-Type: poezie
-Author: Traian Dorz
-Highlight: i-alunga un <em>neam</em> la altul
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea împăratului David
-Type: poezie
-Author: Traian Dorz
-Highlight: mă păstrezi drept căpetenie de <em>neam</em>
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Câte rădăcini ascunse
-Type: poezie
-Author: Traian Dorz
-Highlight: sunt sub cer, în veci sunt <em>neam</em>:
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Câte rădăcini ascunse
-Type: poezie
-Author: Traian Dorz
-Highlight: sunt sub cer, în veci sunt <em>neam</em>:
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Dar vine ceasul...
-Type: articol
-Author: Traian Dorz
-Highlight: Ori din care <em>neam</em> sau stare ar fi, ei se aseamănă atunci între ei
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: De Sus, din dragostea Golgotei
-Type: poezie
-Author: Traian Dorz
-Highlight: Din orice <em>neam</em> ai face parte
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre faptă
-Type: articol
-Author: Traian Dorz
-Highlight: şi-a-l făptui un <em>neam</em> ales.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre ură
-Type: articol
-Author: Traian Dorz
-Highlight: 16 - Teme-te mai mult de pizma celui <em>neam</em> cu tine
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Dragostea cu care M-ai iubit Tu...
-Type: articol
-Author: Traian Dorz
-Highlight: ai Lui pretutindeni, de orice limbă şi de orice <em>neam</em> pământesc şi duhovnicesc, să fim una prin Hristos
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Eu mi-am făcut
-Type: poezie
-Author: Traian Dorz
-Highlight: mi-ai rânduit o slavă, mi-am dat un cer şi-un <em>neam</em>,
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Fiindcă era mare preot... a profeţit
-Type: articol
-Author: Traian Dorz
-Highlight: a prorocit că Isus avea să moară pentru <em>neam</em>.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Ioan stătea cu ucenicii săi
-Type: articol
-Author: Traian Dorz
-Highlight: şi astfel voi veţi fi părinţii unui întreg <em>neam</em> binecuvântat, iar steagul primit de la voi va trece
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Isus Hristos este
-Type: articol
-Author: Traian Dorz
-Highlight: şi de orice <em>neam</em> (
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Isuse-ai Tăi suntem
-Type: poezie
-Author: Traian Dorz
-Highlight: un <em>neam</em> ales şi preaiubit.
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
-Type: articol
-Author: Traian Dorz
-Highlight: valoare veşnică. Pentru orice suflet, pentru orice <em>neam</em>, pentru orice generaţie.
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-Highlight: nou, în care se năştea şi se încetăţenea un nou <em>neam</em> de oameni, născuţi din Sângele Mielului, din Crucea
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-Highlight: Barnaba era un evreu care vorbea greceşte, de <em>neam</em> din Cipru. Numele lui înseamnă
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
-Type: articol
-Author: Traian Dorz
-Highlight: şi cu cei care sunt una cu El, din orice loc şi <em>neam</em> şi stare ar fi ei sau noi.
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Liniştire şi vindecare
-Type: articol
-Author: Traian Dorz
-Highlight: sufletului său ci împotriva sufletelor întregului său <em>neam</em>.
 

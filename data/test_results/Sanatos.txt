@@ -1,135 +1,133 @@
-+----------------------------------------------------------------------------------------+-----------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                  | Occurrences                                                     | Author      | Tip                            | Carte                        | Volum   |
-+----------------------------------------------------------------------------------------+-----------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Fiul tău este sănătos                                                                  | {'sănătos', 'sănătatea', 'sănătate', 'sănătoşi'}                | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| Şi-a luat patul                                                                        | {'sănătos', 'sănătate'}                                         | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Din părţile Crişanei                                                                   | {'sănătoasă', 'sănătos', 'sănătoase', 'Sănătatea'}              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Scoală-te... şi umblă                                                                  | {'sănătos'}                                                     | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                        | {'sănătos', 'sănătatea'}                                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                   | {'sănătos', 'sănătăţii', 'sănătoasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                           | {'sănătoasă', 'sănătos', 'sănătoase'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                                     | {'sănătos', 'sănătoase', 'sănătoasă', 'sanatoriul'}             | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Va veni un altul...                                                          | {'sănătos', 'sănătoasă', 'sănătoase'}                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)                   | {'sănătos', 'sănătate', 'sănătatea'}                            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Unii credeau că Isus îi zisese...                                                      | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cap. 15 - Un An Nou Fericit                                                            | {'sănătos'}                                                     | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Despre muncă                                                                           | {'sănătos'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                               | {'sănătos', 'sănătoasă', 'sănătate'}                            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| El mărturiseşte ce a văzut...                                                          | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cap. 27 - Pe drumul ales                                                               | {'sănătos', 'sănătoşi', 'sănătoasă', 'sănătoase'}               | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                          | {'sănătos', 'sănătoasă', 'sănătoase'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 1 - Cel mai frumos Isus                                                           | {'sănătos', 'sănătoşi', 'sănătoasă'}                            | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Adevărata credinţă                                                                     | {'sănătos', 'sănătate'}                                         | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Binecuvântat să fie                                                                    | {'sănătos', 'sănătoşi'}                                         | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Cap. 28 - Necazurile din lungul drumului                                               | {'sănătos', 'sănătate'}                                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Despre cinste                                                                          | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Isus a zis: vrei?                                                                      | {'sănătos', 'sănătatea'}                                        | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Oricine se cobora se vindeca                                                           | {'sănătos', 'sănătate'}                                         | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Rămâneţi în dragostea Mea                                                              | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| ... Vino după Mine...                                                                  | {'sănătos'}                                                     | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                    | {'sănătos'}                                                     | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                     | {'sănătos'}                                                     | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Dacă ştiţi - dacă faceţi                                                               | {'sănătos'}                                                     | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Isus l-a găsit şi i-a zis...                                                           | {'sănătos'}                                                     | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                  | {'sănătos'}                                                     | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Marele nostru Binefăcător                                                              | {'Sănătos', 'sănătos'}                                          | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Statornicia şi siguranţa mântuitoare                                                   | {'sănătos'}                                                     | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Suferinţa şi slava                                                                     | {'sănătos'}                                                     | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Smerenia şi dragostea adevărată                                                        | {'sănătos', 'sănătoasă', 'sănătoase'}                           | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Cap. 6 - Între două judecăţi                                                           | {'sănătos', 'sănătatea', 'sanatoriul', 'Sanatoriul'}            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                               | {'sănătos', 'sănătoasă', 'sănătoase'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                 | {'sănătos', 'sănătoasă', 'Sănătoase'}                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                             | {'sănătos', 'sănătoasă', 'sănătoase', 'sănătatea', 'sănătăţii'} | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                               | {'sănătos', 'sănătăţii', 'sănătoase', 'sănătoşi', 'sănătoasă'}  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Binecuvântata muncă grea                                                      | {'sănătos', 'sănătoasă', 'sănătoşi', 'sănătate'}                | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 10 - Pe drumul Crucii                                                             | {'sănătos', 'sănătăţii', 'sănătatea'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                        | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Din părţile Banatului                                                                  | {'sănătos', 'sănătate', 'sănătăţii'}                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Bucovinei                                                                  | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Eu sunt Pâinea vieţii                                                                  | {'sănătos', 'sănătoasă', 'sănătoşi'}                            | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor) | {'sănătos', 'sănătatea', 'sănătoase'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Veţi cunoaşte Adevărul                                                                 | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Începutul semnelor Lui                                                                 | {'sănătos', 'sănătoase', 'sănătoasă'}                           | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| A face voia lui Dumnezeu                                                               | {'sănătoasă', 'sănătos'}                                        | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Binefacerea şi recunoştinţa                                                            | {'sănătos', 'sănătoase', 'sănătoasă'}                           | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                           | {'sănătos', 'sănătoasă', 'sănătate'}                            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Fermenţii sunt născuţi să moară                                              | {'sănătos', 'sanatoriul', 'sănătatea'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 16 - Leacul dureroasei sfâşieri                                                   | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                                                  | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 26 - Limpezirea apelor adânci                                                     | {'sănătos', 'sănătatea', 'sănătoasă'}                           | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 31 - Şi acum încheierea                                                           | {'sănătos', 'sănătatea', 'sănătoasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                                          | {'sănătos', 'sănătoase', 'sanatoriul'}                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                               | {'sănătos', 'sănătoase', 'sănătoasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                             | {'sănătos', 'sănătăţii', 'sănătoşi'}                            | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                                      | {'sănătatea', 'sănătos', 'sănătoasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cum au auzit că vine Isus                                                              | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cărarea şi urmele                                                                      | {'sănătos', 'sănătoase', 'sănătoasă'}                           | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Dar lumea nu L-a cunoscut...                                                           | {'sănătos', 'sănătoşi'}                                         | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Despre cumpătare                                                                       | {'sănătoasă', 'sănătos'}                                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Hristos - Dumnezeul nostru                                                             | {'sănătos', 'sănătoşi'}                                         | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)         | {'sănătos', 'sănătoasă', 'sănătoase'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                          | {'sănătos', 'sănătoşi', 'sănătoasă'}                            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Liniştire şi vindecare                                                                 | {'sănătos', 'sanatorii', 'sănătoase'}                           | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Mântuirea şi păcatul                                                                   | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| N-ai nici cincizeci de ani...                                                          | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Roadele Adevărului şi Dragostei                                                        | {'sănătos', 'sănătoasă', 'sănătatea'}                           | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Smerenia şi curăţia                                                                    | {'sănătos', 'sănătoasă', 'sănătoase'}                           | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Înaintaşii şi urmaşii                                                                  | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| ... Şi a primit învăţătura Lui                                                         | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Adevărul şi inimile                                                                    | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Aşa cum cunosc Eu pe Tatăl                                                             | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Binecuvântat să fie sufletul                                                           | {'sănătos', 'sănătoşi'}                                         | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Bolile şi vindecarea                                                                   | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Grăuntele de muştar                                                           | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Toate lucrează spre bine                                                     | {'sănătos', 'sănătate'}                                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 17 - Vin rândurile noi                                                            | {'sănătos', 'sănătoşi'}                                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 33 - Adevărurile mormântului nemuritor                                            | {'sănătos', 'sănătăţii'}                                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 4 - Anul următor                                                                  | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Apele adânci se limpezesc greu                                                | {'sănătos', 'sănătatea'}                                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                             | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                                  | {'sănătos', 'sănătatea'}                                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cercetaţi Scripturile                                                                  | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cine crede în Fiul are...                                                              | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Despre milă                                                                            | {'sănătos', 'sănătoşi'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Duhul Adevărului                                                                       | {'sănătos', 'sănătate'}                                         | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Grija                                                                                  | {'sănătos', 'sănătate'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 28-a după Rusalii                                          | {'sănătos', 'sănătoase'}                                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)           | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Prilejul şi păcatul                                                                    | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Puterea rădăcinii                                                                      | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| S-a iscat o neînţelegere                                                               | {'sănătoase', 'sănătos'}                                        | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Setea şi izvorul                                                                       | {'sănătos', 'sănătate'}                                         | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Sfinţii din mijlocul nostru                                                            | {'sănătos', 'sănătoasă'}                                        | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-+----------------------------------------------------------------------------------------+-----------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Sanatos using http://localhost:9000...
-Got 451 hits:
-Score: 15.8
++----------------------------------------------------------------------------------------+---------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                  | Occurrences                                       | Author      | Tip                            | Carte                        | Volum   |
++----------------------------------------------------------------------------------------+---------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Fiul tău este sănătos                                                                  | {'sănătos', 'sănătoşi'}                           | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Şi-a luat patul                                                                        | {'sănătos'}                                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Din părţile Crişanei                                                                   | {'sănătoasă', 'sănătos', 'sănătoase'}             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Scoală-te... şi umblă                                                                  | {'sănătos'}                                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Cap. 2 - A treia zi istorică                                                           | {'sănătoasă', 'sănătos', 'sănătoase'}             | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Va veni un altul...                                                          | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                   | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                                                     | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Primirea şi darea                                                                      | {'sănătos', 'sănătoase'}                          | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Unii credeau că Isus îi zisese...                                                      | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Binefacerea şi mulţumirea                                                              | {'sănătos'}                                       | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Cap. 15 - Un An Nou Fericit                                                            | {'sănătos'}                                       | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                        | {'sănătos'}                                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Despre muncă                                                                           | {'sănătos'}                                       | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Dovadă şi credinţă                                                                     | {'sănătos'}                                       | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)                   | {'sănătos'}                                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Ochiul e luminătorul                                                                   | {'sănătos'}                                       | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| El mărturiseşte ce a văzut...                                                          | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Cap. 27 - Pe drumul ales                                                               | {'sănătos', 'sănătoşi', 'sănătoasă', 'sănătoase'} | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                          | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                               | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Frumosul şi greul început                                                              | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Cel mai frumos Isus                                                           | {'sănătos', 'sănătoşi', 'sănătoasă'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Asuprirea este o ruşine                                                                | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Binecuvântat să fie                                                                    | {'sănătos', 'sănătoşi'}                           | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Despre cinste                                                                          | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Puţina noastră credinţă                                                                | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Rămâneţi în dragostea Mea                                                              | {'sănătos', 'sănătoase'}                          | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| ... Vino după Mine...                                                                  | {'sănătos'}                                       | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| Adevărata credinţă                                                                     | {'sănătos'}                                       | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Adevăratele duhuri duhovniceşti                                                        | {'sănătos'}                                       | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Alergarea stăruitoare                                                                  | {'sănătos'}                                       | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Bolile sufleteşti                                                                      | {'sănătos'}                                       | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                    | {'sănătos'}                                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                     | {'sănătos'}                                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                               | {'sănătos'}                                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Dacă ştiţi - dacă faceţi                                                               | {'sănătos'}                                       | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Doamne, dar cu acesta ce va fi?                                                        | {'sănătos'}                                       | Traian Dorz | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | articol |
+| Isus a zis: vrei?                                                                      | {'sănătos'}                                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Isus l-a găsit şi i-a zis...                                                           | {'sănătos'}                                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                  | {'sănătos'}                                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Marele nostru Binefăcător                                                              | {'Sănătos', 'sănătos'}                            | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Oricine se cobora se vindeca                                                           | {'sănătos'}                                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Statornicia şi siguranţa mântuitoare                                                   | {'sănătos'}                                       | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Strămoşii şi învăţămintele                                                             | {'sănătos'}                                       | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Suferinţa şi slava                                                                     | {'sănătos'}                                       | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Tineretul şi grija lui                                                                 | {'sănătos'}                                       | Traian Dorz | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Toma, nu era cu ei                                                                     | {'sănătos'}                                       | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Un gând rău                                                                            | {'sănătos'}                                       | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Ştiinţa şi fapta                                                                       | {'sănătos'}                                       | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Smerenia şi dragostea adevărată                                                        | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                               | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                 | {'sănătos', 'sănătoasă', 'Sănătoase'}             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cumpătarea şi necumpătarea                                                             | {'sănătos', 'sănătoşi', 'sănătoasă'}              | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Permis şi nepermis                                                                     | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Tineretul şi îndrumarea lui                                                            | {'sănătos', 'sănătoşi', 'sănătoasă', 'sănătoase'} | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Nu puteau crede...                                                                     | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 16 - Leacul dureroasei sfâşieri                                                   | {'sănătos', 'sănătoasă', 'nesănătoasă'}           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                        | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Binecuvântata muncă grea                                                      | {'sănătos', 'sănătoasă', 'sănătoşi'}              | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 9 - A doua judecată                                                               | {'sănătos', 'sănătoase', 'sănătoşi', 'sănătoasă'} | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Curăţie şi vicleşug                                                                    | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Din părţile Bucovinei                                                                  | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Eu sunt Pâinea vieţii                                                                  | {'sănătos', 'sănătoasă', 'sănătoşi'}              | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Liniştea vieţii curate                                                                 | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Puterea voinţei noastre                                                                | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Veţi cunoaşte Adevărul                                                                 | {'sănătos', 'sănătoase'}                          | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Începutul semnelor Lui                                                                 | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| A face voia lui Dumnezeu                                                               | {'sănătoasă', 'sănătos'}                          | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| A zice şi a face                                                                       | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Acum şi atunci                                                                         | {'sănătos', 'sănătoase', 'sănătoşi'}              | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Binefacerea şi recunoştinţa                                                            | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Cap. 18 - Frumosul an 1930                                                             | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Un vânt rău                                                                  | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                               | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cum au auzit că vine Isus                                                              | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Căderea şi ridicarea                                                                   | {'sănătos', 'sănătoasă', 'nesănătoase'}           | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Căile bune şi căile rele                                                               | {'sănătos', 'sănătoase'}                          | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Cărarea şi urmele                                                                      | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Dar lumea nu L-a cunoscut...                                                           | {'sănătos', 'sănătoşi'}                           | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| Despre cumpătare                                                                       | {'sănătoasă', 'sănătos'}                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Drumul şi ţinta                                                                        | {'sănătos', 'sănătoase', 'sănătoasă'}             | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Hristos - Dumnezeul nostru                                                             | {'sănătos', 'sănătoşi'}                           | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor) | {'sănătos', 'sănătoase'}                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)         | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                          | {'sănătos', 'sănătoşi', 'sănătoasă'}              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Mântuirea şi păcatul                                                                   | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| N-ai nici cincizeci de ani...                                                          | {'sănătos', 'sănătoase'}                          | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Smerenia şi curăţia                                                                    | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| Înaintaşii şi urmaşii                                                                  | {'sănătos', 'sănătoase'}                          | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Întoarcerea şi Rugăciunea                                                              | {'sănătos', 'sănătoasă', 'sănătoase'}             | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| ... Şi a primit învăţătura Lui                                                         | {'sănătos', 'sănătoase'}                          | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Adevărata credinţă                                                                     | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Adevărul şi inimile                                                                    | {'sănătos', 'sănătoase'}                          | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Alegerea Harului Ceresc                                                                | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Aşa cum cunosc Eu pe Tatăl                                                             | {'sănătos', 'sănătoase'}                          | Traian Dorz | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Binecuvântat să fie sufletul                                                           | {'sănătos', 'sănătoşi'}                           | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Binefacerile şi mulţumirea                                                             | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Bolile şi vindecarea                                                                   | {'sănătos', 'sănătoase'}                          | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| Bucuria şi întristarea                                                                 | {'sănătos', 'sănătoasă'}                          | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
++----------------------------------------------------------------------------------------+---------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Sanatos using https://api.comori-od.ro...
+Got 561 hits:
+Score: 15.666667
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Izvorul nostru
 Title: Fiul tău este sănătos
 Type: articol
 Author: Traian Dorz
 Highlight: Părinte credincios, oare fiul tău este <em>sănătos</em>?
-Highlight: şi <em>sănătatea</em>, sau mintea, sau credinţa,  s-au
-Highlight: şi nu există <em>sănătate</em> mai fericită ca credinţa în Hristos!
 Highlight: această boală aducătoare de moarte, făcându-i <em>sănătoşi</em> în credinţă prin umblarea şi ascultarea de Adevărul
 Highlight: Fiul tău este <em>sănătos</em>
 
-Score: 7.7460318
+Score: 7.714286
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Şi-a luat patul
 Type: articol
 Author: Traian Dorz
-Highlight: nu fii <em>sănătos</em> bine. Însă când poţi ridica şi purta poveri, atunci este semn sigur că ai <em>sănătate</em> şi putere
-Highlight: Îndată omul acela s-a făcut <em>sănătos</em>, şi-a luat patul, şi umbla. Ziua aceea era o zi de Sabat. Dar
+Highlight: Îndată omul acela s-a făcut <em>sănătos</em>, şi-a luat patul, şi umbla. Ziua aceea era o zi de Sabat.
+Highlight: Pentru că se poate să şi umbli şi totuşi să nu fii <em>sănătos</em> bine. Însă când poţi ridica şi purta poveri, atunci
 Highlight: Dragul meu, nici tu nu eşti <em>sănătos</em> în credinţă dacă nu poţi purta poveri.
 Highlight: şi cu smerenie, tu dragul meu, nu eşti <em>sănătos</em>!
 Highlight: Căci <em>sănătos</em> este numai acela care poate purta:
 Highlight: înseamnă că nu eşti în El. Căci dacă ai fi, ai fi <em>sănătos</em> deplin. Adică ai putea purta totul.
 
-Score: 7.3
+Score: 7.275
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Crişanei
@@ -140,7 +138,6 @@ Highlight: - cei prea-prea, nu-i <em>sănătos</em>.  78
 Highlight: într-un trup puternic, tânăr şi-ndrăzneţ şi <em>sănătos</em>
 Highlight: ce-i prea mult, nu-i <em>sănătos</em>.
 Highlight: când acestea-s <em>sănătoase</em>, <em>sănătoasă</em> ţi-e fiinţa.
-Highlight: <em>Sănătatea</em>-i cumpărată cu
 
 Score: 7.2000003
 Volume: Meditații la Ev. după Ioan
@@ -152,32 +149,6 @@ Highlight: poţi şi umbla, tu încă nu eşti <em>sănătos</em> deplin.
 Highlight: Ia seama că cel <em>sănătos</em> se cunoaşte după cum umblă:
 Highlight: - acela nu este <em>sănătos</em>! Nici la minte nici la credinţă.
 Highlight: Căci acela care este <em>sănătos</em> cu adevărat, are
-
-Score: 6.9375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: furtună, fie că eşti sărac ori bogat, tare ori slab, <em>sănătos</em> ori bolnav - priveşte clipă de clipă ţintă la Cel
-Highlight:  care spunea că sunt <em>sănătos</em> şi dornic de muncă. Atacul s-a pornit acum contra
-Highlight: orice s-ar întâmpla, cerându-I pururea să vă ţină <em>sănătos</em>, spre a alimenta şi mai departe fronturile.
-Highlight: mişcări cu greutăţi şi jertfe în care mi s-a topit <em>sănătatea</em> şi viaţa, fără să am nici un sprijin.  Am
-Highlight: Urmează anii în care mi-am măcinat pieptul şi <em>sănătatea</em>. Anii în care am creat  Lumina
-Highlight: Iată asta e răsplata pentru că mi-am jertfit <em>sănătatea</em> şi viaţa la  Lumina
-
-Score: 6.888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: şi simţământul a tot ce era pus de Dumnezeu mai <em>sănătos</em> şi mai nobil în fiinţa credincioasă a poporului
-Highlight: ordonată şi biruitoare care înaintează pe mijlocul <em>sănătos</em> şi curat dar foarte îngust al drumului mântuirii
-Highlight: - el se înstrăinează, de obicei, de tot felul <em>sănătos</em> în care îl educaseră părinţii credincioşi.
-Highlight: de vorbă cu el - şi se interesaseră de starea <em>sănătăţii</em> mele. Medicul
-Highlight: izvorăsc dintr-o boală mintală, ci din cea mai <em>sănătoasă</em> luciditate. -
-Highlight: decât la moartea acolo, mai ales în condiţiile <em>sănătăţii</em> mele de acum? Aşa
 
 Score: 6.888889
 Volume: Istoria unei Jertfe
@@ -191,19 +162,6 @@ Highlight: alinieze şi pe alţii cât mai desăvârşit după acest <em>sănăt
 Highlight: umblarea curată şi de la păstrarea învăţăturii <em>sănătoase</em>. Ei dispreţuiesc ascultarea frăţească, îngăduie
 Highlight: orientarea fraţilor pe calea şi învăţătura cea <em>sănătoasă</em>. Deşi împrejurările în care ne găsim sunt tot
 Highlight: Dreptarul învăţăturii <em>sănătoase</em> după care lucrase părintele Iosif era preluat
-
-Score: 6.875
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: Evanghelia Lui poate creşte şi forma un tineret <em>sănătos</em> trupeşte şi sufleteşte - zicea şi scria el adesea
-Highlight: şi bisericii noastre se ridică un tineret nou, <em>sănătos</em> şi harnic, care începe să tragă brazde tot mai
-Highlight: acestui popor spre Hristos. În loc de un tineret <em>sănătos</em> şi curat, nobil şi vrednic prin credinţa în Dumnezeu
-Highlight: ţinut până la sfârşit dreptarul învăţăturilor <em>sănătoase</em> auzite de la început, fără a se abate de la ele
-Highlight: făceau cinste Lucrării Domnului umplând de o <em>sănătoasă</em> nădejde în viitorul neamului şi bisericii noastre
-Highlight: nimic acolo fiind bolnav şi internat acum în <em>sanatoriul</em> particular al unui medic neamţ, Dr. Wakemann
 
 Score: 6.857143
 Volume: Istoria unei Jertfe
@@ -219,17 +177,40 @@ Highlight: Totdeauna am pus o mare nădejde în trezirea minţii <em>sănătoase
 Highlight: a Domnului nostru pentru reorientarea noastră <em>sănătoasă</em> şi deplină pe linia voii lui Dumnezeu arătată
 
 Score: 6.857143
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
 Type: articol
 Author: Traian Dorz
-Highlight: Şi cum fiecare semănător care este înţelept şi <em>sănătos</em> se gândeşte din vremea semănatului ca să semene
-Highlight: cugetul şi cum promiteai Domnului că dacă te va face <em>sănătos</em>, o, cum vei alerga de acum înainte numai pentru
-Highlight: Acum ai ajuns iarăşi <em>sănătos</em>. Acum ai iarăşi ocazii şi ai iarăşi timp şi ai
-Highlight: Ai fost bolnav şi ai cerut Domnului <em>sănătate</em>...  Când
-Highlight: Sa ocrotitoare de peste casa noastră, de peste <em>sănătatea</em> noastră, de peste maşina şi de peste slujba noastră
-Highlight: s-au obişnuit numai să primească soare, ploaie, <em>sănătate</em>, cărţi, Biblii, pâine, belşug din toate,
+Highlight: şi simţământul a tot ce era pus de Dumnezeu mai <em>sănătos</em> şi mai nobil în fiinţa credincioasă a poporului
+Highlight: ordonată şi biruitoare care înaintează pe mijlocul <em>sănătos</em> şi curat dar foarte îngust al drumului mântuirii
+Highlight: - el se înstrăinează, de obicei, de tot felul <em>sănătos</em> în care îl educaseră părinţii credincioşi.
+Highlight: izvorăsc dintr-o boală mintală, ci din cea mai <em>sănătoasă</em> luciditate. -
+Highlight: este un lăstar al credinţei noastre şi o parte <em>sănătoasă</em> a poporului nostru - nu i se dă acest drept.
+Highlight: şi cu inima smerită, astfel că înţelepciunea <em>sănătoasă</em> le-a luminat ochii sufleteşti asupra primejdiei
+
+Score: 6.8333335
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight: Evanghelia Lui poate creşte şi forma un tineret <em>sănătos</em> trupeşte şi sufleteşte - zicea şi scria el adesea
+Highlight: şi bisericii noastre se ridică un tineret nou, <em>sănătos</em> şi harnic, care începe să tragă brazde tot mai
+Highlight: acestui popor spre Hristos. În loc de un tineret <em>sănătos</em> şi curat, nobil şi vrednic prin credinţa în Dumnezeu
+Highlight: ţinut până la sfârşit dreptarul învăţăturilor <em>sănătoase</em> auzite de la început, fără a se abate de la ele
+Highlight: făceau cinste Lucrării Domnului umplând de o <em>sănătoasă</em> nădejde în viitorul neamului şi bisericii noastre
+
+Score: 6.8
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Primirea şi darea
+Type: articol
+Author: Traian Dorz
+Highlight: Ce este <em>sănătos</em> şi ce nu.
+Highlight: Dar cei mai mulţi oameni şi-au pierdut gustul <em>sănătos</em>. Mănâncă orice, înghit orice, se îndoapă cu orice
+Highlight: Atunci echilibrul <em>sănătos</em> i se pierde.
+Highlight: - atunci toate aceste simţuri sunt <em>sănătoase</em> şi îl duc pe om pe un drum mântuitor.  Când
 
 Score: 6.8
 Volume: Meditații la Ev. după Ioan
@@ -242,6 +223,16 @@ Highlight: Satana face din cel până mai ieri <em>sănătos</em>, un nefericit 
 Highlight: Trezeşte-ne Doamne Isuse, mintea <em>sănătoasă</em> prin înştiinţările la timp, ori de câte ori satana
 
 Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Binefacerea şi mulţumirea
+Type: articol
+Author: Traian Dorz
+Highlight: Şi cum fiecare semănător care este înţelept şi <em>sănătos</em> - se gândeşte din vremea semănatului ca să semene
+Highlight: cugetul şi promiţi Domnului că dacă te va face <em>sănătos</em>, o, cum vei alerga şi tu de acum înainte numai
+Highlight: - Şi după ce ai ajuns iarăşi <em>sănătos</em>... şi ai iarăşi ocazii
+
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 15 - Un An Nou Fericit
@@ -250,6 +241,16 @@ Author: Traian Dorz
 Highlight: pregătire fiindcă Izvorul este puternic şi terenul <em>sănătos</em>.
 Highlight: diminua şi ar deterioriza specificul curat şi <em>sănătos</em> al limbii şi simţirii noastre duhovniceşti. Când
 Highlight: vedem şi cunoaştem nu numai ceea ce este curat şi <em>sănătos</em> al nostru, - ci şi ceea ce este îndoielnic şi străin
+
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: furtună, fie că eşti sărac ori bogat, tare ori slab, <em>sănătos</em> ori bolnav - priveşte clipă de clipă ţintă la Cel
+Highlight:  care spunea că sunt <em>sănătos</em> şi dornic de muncă. Atacul s-a pornit acum contra
+Highlight: orice s-ar întâmpla, cerându-I pururea să vă ţină <em>sănătos</em>, spre a alimenta şi mai departe fronturile.
 
 Score: 6.75
 Volume: Cântări Nemuritoare
@@ -261,18 +262,35 @@ Highlight: 53 - Cât eşti <em>sănătos</em> munceşte,
 Highlight: munca face <em>sănătos</em>,
 Highlight: 69 - Sărăcia e-o ruşine când e omul <em>sănătos</em>,
 
-Score: 6.233333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
+Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Dovadă şi credinţă
 Type: articol
 Author: Traian Dorz
-Highlight: făcut nicicând serviciu la biserică, nici când era <em>sănătos</em>. O singură dată a fost, când I.P.S. Sa mitropolitul
-Highlight: Fratele meu, de eşti <em>sănătos</em>, de eşti bolnav, de eşti în lipsă sau îndestulare;
-Highlight: răscruce grea şi care face un apel la raţiunea <em>sănătoasă</em> a celui care purta marea răspundere pentru crima
-Highlight: Dorindu-vă <em>sănătate</em> şi nesecată putere de muncă în ogorul atât de
-Highlight: Primiţi vă rog smeritele mele urări de <em>sănătate</em> şi de orice har îl crede Domnul folositor Sf.
-Highlight: acela care atunci reprezenta linia cea vie şi <em>sănătoasă</em> a luptei evanghelice din biserica noastră şi poporul
+Highlight: Orice om <em>sănătos</em> n-are nevoie nici de dovezi şi nici de explicaţii
+Highlight: adică bărbăţia şi maturitatea, în care tot ce este <em>sănătos</em> se rotunjeşte, crescând în putere şi în întindere
+Highlight: 12 - Tu ne zideşti temeinic şi <em>sănătos</em> bărbăţia hotărârilor cinstite şi îndrăzneţe.
+
+Score: 6.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
+Type: articol
+Author: Traian Dorz
+Highlight: Şi cum fiecare semănător care este înţelept şi <em>sănătos</em> se gândeşte din vremea semănatului ca să semene
+Highlight: cugetul şi cum promiteai Domnului că dacă te va face <em>sănătos</em>, o, cum vei alerga de acum înainte numai pentru
+Highlight: Acum ai ajuns iarăşi <em>sănătos</em>. Acum ai iarăşi ocazii şi ai iarăşi timp şi ai
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ochiul e luminătorul
+Type: poezie
+Author: Traian Dorz
+Highlight: căci când ochiul cel din frunte e curat şi <em>sănătos</em>
+Highlight: curăţeşte-i de-orice vină, fă-i să vadă <em>sănătos</em>
+Highlight: Când nici plânsul nici cuptorul nu-l pot face <em>sănătos</em>
 
 Score: 6.233333
 Volume: Meditații la Ev. după Ioan
@@ -311,6 +329,30 @@ Highlight: Lucrarea şi o hrănesc. Dacă aceste mădulare sunt <em>sănătoase<
 Highlight: atunci tot Trupul Său, toată Biserica va fi vie, <em>sănătoasă</em>, lucrătoare şi rodnică.  Dar
 Highlight: Când aceste mădulare din fruntea adunării sunt <em>sănătoase</em>, cât de plin de lumină, de limpezime şi de putere
 
+Score: 6.1666665
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: făcut nicicând serviciu la biserică, nici când era <em>sănătos</em>. O singură dată a fost, când I.P.S. Sa mitropolitul
+Highlight: Fratele meu, de eşti <em>sănătos</em>, de eşti bolnav, de eşti în lipsă sau îndestulare;
+Highlight: răscruce grea şi care face un apel la raţiunea <em>sănătoasă</em> a celui care purta marea răspundere pentru crima
+Highlight: acela care atunci reprezenta linia cea vie şi <em>sănătoasă</em> a luptei evanghelice din biserica noastră şi poporul
+Highlight: Dar până la urmă rămăşiţa cea <em>sănătoasă</em> şi sfântă va birui, atât în cei credincioşi cât
+
+Score: 6.1666665
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Frumosul şi greul început
+Type: articol
+Author: Traian Dorz
+Highlight: Evanghelia Lui poate creşte şi forma un tineret <em>sănătos</em> trupeşte şi sufleteşte - zicea şi scria el adesea
+Highlight: şi bisericii noastre se ridică un tineret nou, <em>sănătos</em> şi harnic, care începe să tragă brazde tot mai
+Highlight: ţinut până la sfârşit dreptarul învăţăturilor <em>sănătoase</em> auzite de la început, fără a se abate de la ele
+Highlight: făceau cinste Lucrării Domnului umplând de o <em>sănătoasă</em> nădejde în viitorul Neamului şi Bisericii noastre
+Highlight: Dumnezeu a început o lucrare evanghelică cu adevărat <em>sănătoasă</em> şi roditoare, acolo şuvoiul mântuitor a început
+
 Score: 6.133333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
@@ -323,13 +365,12 @@ Highlight: mare zăpăceală, mulţi şi-au pierdut judecata <em>sănătoasă</e
 
 Score: 6.083333
 Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Adevărata credinţă
+Book: Numele Biruitorului
+Title: Asuprirea este o ruşine
 Type: articol
 Author: Traian Dorz
-Highlight: 2 - Părinte credincios, oare fiul tău este <em>sănătos</em> sufleteşte?
-Highlight: Vrei să te faci <em>sănătos</em>? - Dacă vrei puternic şi cu credinţă, şi aceasta
-Highlight: şi nu există <em>sănătate</em> mai fericită ca credinţa în Hristos!  Ferice
+Highlight: tânăr, puternic, <em>sănătos</em> şi înălţat astăzi, - nu-ţi pierde omule mintea ta <em>sănătoasă</em>, nici cumpătul tău
+Highlight: într-o clipă de mânie şi de pierdere a echilibrului <em>sănătos</em> ai săvârşit vreo faptă nedemnă faţă de cineva,
 
 Score: 6.083333
 Volume: Cântări Nemuritoare
@@ -342,16 +383,6 @@ Highlight: crească <em>sănătos</em>, umble credincios
 Highlight: fie <em>sănătoşi</em>, umble credincioşi aibă
 
 Score: 6.083333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: şi grele nu s-a rătăcit de la drumul drept şi <em>sănătos</em> - şi nu s-a pripit în luarea nici unei hotărâri
-Highlight: Acum dv. vorbiţi aşa fiindcă vă simţiţi tare şi <em>sănătos</em> şi sus. Va veni însă vremea când nu veţi mai fi
-Highlight: A fost şubred în carnea sa, dar de o putere şi <em>sănătate</em> fără margini în caracterul său. Nu dormea decât
-
-Score: 6.083333
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre cinste
@@ -362,24 +393,14 @@ Highlight: <em>sănătos</em> e trupu-ntreg.
 Highlight: 54 - O albină <em>sănătoasă</em> nu se-aşează-n loc stricat - cel
 
 Score: 6.083333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Isus a zis: vrei?
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Puţina noastră credinţă
 Type: articol
 Author: Traian Dorz
-Highlight: de multă vreme, i-a zis: Vrei să te faci <em>sănătos</em>?
-Highlight: Vrei să te faci <em>sănătos</em>? - Dacă vrei puternic şi cu credinţă şi aceasta
-Highlight: Vrei să-ţi pierzi familia, prietenii, <em>sănătatea</em>? - neglijează-i!
-
-Score: 6.083333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Oricine se cobora se vindeca
-Type: articol
-Author: Traian Dorz
-Highlight: se cobora în ea, după tulburarea apei, se făcea <em>sănătos</em>, orice boală ar fi avut.
-Highlight: Domnului, cu lacrimi de pocăinţă, ca să poţi fi făcut <em>sănătos</em>.
-Highlight: credincioşie, în ascultarea la picioarele lui Isus, este <em>sănătate</em>, este putere şi mântuire pentru orice suflet. De
+Highlight: 1 - Când se înalţă cel rău ca un pom verde, <em>sănătos</em> şi puternic, plin de trufie şi de dispreţ pentru
+Highlight: acestea cresc normal, cum cresc roadele într-un pom <em>sănătos</em>, sădit în pământ bun.
+Highlight: şi să ai totdeauna o strânsă şi <em>sănătoasă</em> legătură cu ele.
 
 Score: 6.083333
 Volume: Meditații la Ev. după Ioan
@@ -401,6 +422,42 @@ Highlight: picioarele lor, nu pot sta şi nu pot umbla drept şi <em>sănătos</
 Highlight: ne porunceşti să călcăm pe urmele Tale drept, <em>sănătos</em>, frumos şi statornic.
 
 Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Adevărata credinţă
+Type: articol
+Author: Traian Dorz
+Highlight: 2 - Părinte credincios, oare fiul tău este <em>sănătos</em> sufleteşte?
+Highlight: Vrei să te faci <em>sănătos</em>? - Dacă vrei puternic şi cu credinţă, şi aceasta
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Adevăratele duhuri duhovniceşti
+Type: articol
+Author: Traian Dorz
+Highlight: aceea un trup <em>sănătos</em> este totdeauna acolo unde este capul său.
+Highlight: Şi un mădular <em>sănătos</em>, este întotdeauna
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Alergarea stăruitoare
+Type: articol
+Author: Traian Dorz
+Highlight: sârmă, - iar nu un mădular viu şi <em>sănătos</em>.
+Highlight: Căci un mădular <em>sănătos</em> simte cu celelalte, umblă cu celelalte
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Bolile sufleteşti
+Type: articol
+Author: Traian Dorz
+Highlight: trupească ar suferi cineva, dacă sufletul lui este <em>sănătos</em>, trupul rezistă şi supravieţuieşte,
+Highlight: dacă doreşti cu adevărat să te faci <em>sănătos</em>, vino mai întâi la Doctorul sufletelor noastre
+
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
@@ -418,6 +475,15 @@ Author: Traian Dorz
 Highlight: două posibilităţi: să ieşi <em>sănătos</em> ori să ieşi bolnav. Dacă ieşi <em>sănătos</em> e bine, dacă ieşi bolnav e rău
 
 Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: şi grele nu s-a rătăcit de la drumul drept şi <em>sănătos</em> - şi nu s-a pripit în luarea nici unei hotărâri
+Highlight: Acum dv. vorbiţi aşa fiindcă vă simţiţi tare şi <em>sănătos</em> şi sus. Va veni însă vremea când nu veţi mai fi
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: Dacă ştiţi - dacă faceţi
@@ -425,6 +491,24 @@ Type: articol
 Author: Traian Dorz
 Highlight: A-l face, este fericirea sufletului <em>sănătos</em>.
 Highlight: credincios, nu va reuşi să facă vreodată ceva <em>sănătos</em> şi vrednic, dacă mai întâi nu va căuta a fi
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Doamne, dar cu acesta ce va fi?
+Type: articol
+Author: Traian Dorz
+Highlight: Binecuvântată este prezenţa unui tineret <em>sănătos</em> şi înţelept în Lucrarea lui Dumnezeu!
+Highlight: înaintea Domnului pentru un viitor fericit şi <em>sănătos</em> al tinerilor noştri. Nici unii dintre noi, n-ar
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Isus a zis: vrei?
+Type: articol
+Author: Traian Dorz
+Highlight: de multă vreme, i-a zis: Vrei să te faci <em>sănătos</em>?
+Highlight: Vrei să te faci <em>sănătos</em>? - Dacă vrei puternic şi cu credinţă şi aceasta
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -454,6 +538,15 @@ Highlight: 4 - <em>Sănătos</em> este numai acela care poate purta poveri.
 Highlight: înseamnă că nu eşti în El. Căci dacă ai fi, ai fi <em>sănătos</em> deplin.
 
 Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Oricine se cobora se vindeca
+Type: articol
+Author: Traian Dorz
+Highlight: se cobora în ea, după tulburarea apei, se făcea <em>sănătos</em>, orice boală ar fi avut.
+Highlight: Domnului, cu lacrimi de pocăinţă, ca să poţi fi făcut <em>sănătos</em>.
+
+Score: 5.9999995
 Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Statornicia şi siguranţa mântuitoare
@@ -464,12 +557,56 @@ Highlight:  să creşti... să creşti puternic, să creşti <em>sănătos</em> 
 
 Score: 5.9999995
 Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Strămoşii şi învăţămintele
+Type: articol
+Author: Traian Dorz
+Highlight: trunchiului acestui neam, nu este viabil şi nu aduce rod <em>sănătos</em>.
+Highlight: încorporează atât de adânc întrepătrunzându-se cu poporul <em>sănătos</em>.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Suferinţa şi slava
 Type: articol
 Author: Traian Dorz
 Highlight: Pe un pom, pe o floare, pe un trup <em>sănătos</em>, soarele îl face rodnic şi frumos.
 Highlight: duhovnicească precum în cea trupească. Pe cel <em>sănătos</em> în credinţă, nevinovat în purtări şi rodnic în
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Tineretul şi grija lui
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Binecuvântată este prezenţa unui tineret <em>sănătos</em> şi înţelept în Lucrarea lui Dumnezeu!
+Highlight: înaintea Domnului pentru un viitor fericit şi <em>sănătos</em> al tinerilor noştri.
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Toma, nu era cu ei
+Type: articol
+Author: Traian Dorz
+Highlight: aceea un trup <em>sănătos</em> este totdeauna acolo unde este capul său.
+Highlight: Şi un mădular <em>sănătos</em> este totdeauna
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Un gând rău
+Type: articol
+Author: Traian Dorz
+Highlight: Curând ucide tot ce este <em>sănătos</em> în trup, dacă a mai fost ceva vreodată şi <em>sănătos</em>.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Ştiinţa şi fapta
+Type: articol
+Author: Traian Dorz
+Highlight: A-l face este fericirea sufletului <em>sănătos</em>.
+Highlight: credincios, nu va reuşi să facă vreodată ceva <em>sănătos</em> şi vrednic, dacă mai întâi nu va căuta a şti
 
 Score: 4.9
 Volume: Cugetări Nemuritoare
@@ -483,19 +620,6 @@ Highlight: este în primul rând raţiune, adică este cugetare <em>sănătoasă
 Highlight: oamenii nu au mai umblat conduşi de judecata <em>sănătoasă</em> a minţii
 Highlight: trebuie să fie ascultată mintea cu îndrumarea ei <em>sănătoasă</em>,
 Highlight: este călăuzită de dreptarul cel bun al minţii <em>sănătoase</em>.
-
-Score: 4.888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 6 - Între două judecăţi
-Type: articol
-Author: Traian Dorz
-Highlight: dovadă despre felul înalt, biblic, evanghelic, <em>sănătos</em>, în care erau privite toate lucrurile şi evenimentele
-Highlight:  - unde mi-am jertfit <em>sănătatea</em>, - am fost dat în chipul unui lup îmbrăcat în
-Highlight:  de Sus. Anume, <em>sanatoriul</em> în care stă păr. Iosif se află pe o stradă ce
-Highlight:  <em>sanatoriul</em> de pe strada Păcii...
-Highlight: Toţi fraţii să ne rugăm pentru <em>sănătatea</em> preaiubitului nostru luptător. Ca Domnul să ni-l
-Highlight: <em>Sanatoriul</em> cel luxos
 
 Score: 4.857143
 Volume: Istoria unei Jertfe
@@ -524,52 +648,66 @@ Highlight: orientare <em>sănătoasă</em>.
 Highlight: Dreptarul Învăţăturii <em>Sănătoase</em>
 
 Score: 4.857143
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Cumpătarea şi necumpătarea
 Type: articol
 Author: Traian Dorz
-Highlight: până când nu se va mai vorbi de el. Moţa este <em>sănătos</em> şi priceput, va şti să umple în curând totul cu
-Highlight: plină de căldura Evangheliei şi de cuminţenia <em>sănătoasă</em> de altădată. Foaia care înainte era plină de citiri
-Highlight: biblice, de sfaturi mântuitoare şi de îndemnuri <em>sănătoase</em> - acum ajunsese plină de lucruri din ce în ce
-Highlight: Mulţi ne întreabă despre <em>sănătatea</em> părintelui Trifa. Le răspundem tuturor că - mulţumită
-Highlight: sanatoriu merge cu paşi repezi spre refacerea <em>sănătăţii</em> şi - de va fi cu voia Domnului - nu peste mult
-Highlight: şi toţi pentru unul... el şi-a pus în cumpănă <em>sănătatea</em> şi viaţa trupească... el nu s-a îmbolnăvit la
+Highlight: fiecărui mădular al său, dacă acest mădular este <em>sănătos</em> şi ascultător.
+Highlight: comoară pentru o fiinţă pe lume decât ochii treji, <em>sănătoşi</em> şi atenţi, care văd drept şi bine, cu o minte
+Highlight: Când o fiinţă are ochii <em>sănătoşi</em>, treji şi atenţi - nu i se poate întâmpla niciodată
+Highlight: ochii îndreptaţi, înseamnă mintea trează, atentă, <em>sănătoasă</em> şi ascuţită.  5
+Highlight: tot aşa mintea <em>sănătoasă</em> va călăuzi toate poruncile şi dorinţele, gândurile
+Highlight: Dacă ochii sunt <em>sănătoşi</em> - tot trupul este plin de lumină...
 
 Score: 4.857143
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Permis şi nepermis
 Type: articol
 Author: Traian Dorz
-Highlight: mai merge deloc pe la adunările frăţeşti. Era <em>sănătos</em> şi liber de zece ani, dar cu nimic nu arăta o altfel
-Highlight: legile <em>sănătăţii</em> sufleteşti - poate aduce prin unul bolnav, pierzarea multor suflete <em>sănătoase</em>. Încercarea
-Highlight: deci timpul şi prilejul să ne verificăm starea <em>sănătăţii</em>, după operaţia grea prin care trecusem. Era cu
-Highlight: Întâi pe cele de jos, apoi cei mai tineri ori mai <em>sănătoşi</em>, pe cele de mai sus. Ne-am pus fiecare bagajul
-Highlight: Domnului, dacă ar fi fost îndrumat de o judecată <em>sănătoasă</em>. Uneori vorbea atât de înflăcărat şi compunea
+Highlight: nesocotită faptă, când are în întregime un control <em>sănătos</em> al unei minţi limpezi.
+Highlight: mintea <em>sănătoasă</em>, atâta timp cât are mintea la locul ei, nu poate face răul.  Mintea
+Highlight: Mintea lui <em>sănătoasă</em> nu-l
+Highlight: răul dacă i-ar fi mintea lui totdeauna atentă, <em>sănătoasă</em> şi la locul ei.  Omul
+Highlight: îşi pierde dreptarul şi controlul unei minţi <em>sănătoase</em>.  Nimeni
+Highlight: pentru un timp sau pentru totdeauna, judecata lui <em>sănătoasă</em>.
+
+Score: 4.857143
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Tineretul şi îndrumarea lui
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărul rodeşte <em>sănătos</em> şi durează neschimbat.
+Highlight: - Ochii <em>sănătoşi</em> sunt cel mai mare dar de la Dumnezeu pentru orice fiinţă.  Vederea
+Highlight: Vederea <em>sănătoasă</em> este cea
+Highlight: Şi ochii <em>sănătoşi</em> sunt cei mai necesari, pentru îndrumarea tinerilor
+Highlight: lucru este ca aceştia să fie nişte ochi curaţi şi <em>sănătoşi</em>!  5
+Highlight: 8 - Toate mădularele <em>sănătoase</em> ale unui corp sunt necesare corpului, dar ochii
 
 Score: 4.8333335
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 5 - Binecuvântata muncă grea
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Nu puteau crede...
 Type: articol
 Author: Traian Dorz
-Highlight: Când omul este <em>sănătos</em> şi în putere - munca desigur este un dar de la
-Highlight: ci îţi aduce şi în suflet bucuria ei curată şi <em>sănătoasă</em>, pe care nimic altceva decât ea nu ţi-o poate
-Highlight: - care de obicei rodeau mult căci erau mari şi <em>sănătoşi</em>.
-Highlight: albăstrele pe cap, cu feţele îmbujorate de muncă şi de <em>sănătate</em>. Şi mai ales de frumuseţea şi de curăţia lor sufletească
-Highlight: uscată, mai mult de mălai decât de grâu. Totuşi ce <em>sănătoşi</em> şi ce frumoşi erau cu toţii, ca nişte bujori şi
+Highlight: Într-un suflet <em>sănătos</em>,
+Highlight: Voinţa <em>sănătoasă</em> este aceea care are aceeaşi ţintă şi aceeaşi plăcere
+Highlight: fi o voinţă curată, cinstită şi <em>sănătoasă</em>,
+Highlight: iar voinţa cea <em>sănătoasă</em> va fi totdeauna biruitoare şi niciodată
+Highlight: Prin voinţa noastră îndrumată de o minte <em>sănătoasă</em>, luminată de Cuvântul Tău, şi de o conştiinţă
 
 Score: 4.8
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 16 - Leacul dureroasei sfâşieri
 Type: articol
 Author: Traian Dorz
-Highlight: erau prea bucuroşi de starea lui nici bolnav nici <em>sănătos</em>, nici cu şcoală nici fără...
-Highlight: care, cu toată munca grea şi starea agravată a <em>sănătăţii</em> sale, îşi găsea totuşi timp să mi le scrie.
-Highlight: împotriva ţării mele. Dimpotrivă - cu jertfa <em>sănătăţii</em> mele - am ajutat şi legea, am ajutat şi biserica
-Highlight: răsplata acestor lupte, în care mi-am jertfit eu <em>sănătatea</em>.
+Highlight: acestui popor. El venea din adânc din trecutul <em>sănătos</em> şi creştin al neamului sfânt. Din conştiinţa Adevărului
+Highlight: nostru, era leacul cel ceresc pentru vindecarea <em>sănătoasă</em> şi fericită şi a acestei rane.  Dar
+Highlight: credinţa pe care o naşte în suflete. Este învăţătura <em>sănătoasă</em> şi dreaptă? - aşa va fi şi credinţa celor ce primesc
+Highlight: învăţătură! Este învăţătura falsă, potrivnică, <em>nesănătoasă</em>? - aşa va fi şi credinţa izvorâtă din ea.  Duhul
 
 Score: 4.8
 Volume: Istoria unei Jertfe
@@ -583,15 +721,37 @@ Highlight: frumos şi îndurerat, căutând să trezească mintea <em>sănătoas
 Highlight: acele părţi, orice urmă de lucrare duhovnicească, <em>sănătoasă</em> şi rodnică.
 
 Score: 4.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 5 - Binecuvântata muncă grea
 Type: articol
 Author: Traian Dorz
-Highlight: 253 - Tânărul ce vrea s-ajungă drept şi <em>sănătos</em> şi tare
-Highlight: cumpătarea - <em>sănătate</em> rugăciunea
-Highlight: 205 - Munca este <em>sănătate</em> la oricine-n orice fel;  piere
-Highlight: 220 - Cumpătarea este maica <em>sănătăţii</em> şi virtuţii numai
+Highlight: Când omul este <em>sănătos</em> şi în putere - munca desigur este un dar de la
+Highlight: ci îţi aduce şi în suflet bucuria ei curată şi <em>sănătoasă</em>, pe care nimic altceva decât ea nu ţi-o poate
+Highlight: - care de obicei rodeau mult căci erau mari şi <em>sănătoşi</em>.
+Highlight: uscată, mai mult de mălai decât de grâu. Totuşi ce <em>sănătoşi</em> şi ce frumoşi erau cu toţii, ca nişte bujori şi
+
+Score: 4.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: mai merge deloc pe la adunările frăţeşti. Era <em>sănătos</em> şi liber de zece ani, dar cu nimic nu arăta o altfel
+Highlight: aduce prin unul bolnav, pierzarea multor suflete <em>sănătoase</em>. Încercarea
+Highlight: Întâi pe cele de jos, apoi cei mai tineri ori mai <em>sănătoşi</em>, pe cele de mai sus. Ne-am pus fiecare bagajul
+Highlight: Domnului, dacă ar fi fost îndrumat de o judecată <em>sănătoasă</em>. Uneori vorbea atât de înflăcărat şi compunea
+
+Score: 4.8
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Curăţie şi vicleşug
+Type: articol
+Author: Traian Dorz
+Highlight: fără tineret este lipsită nu numai de un viitor <em>sănătos</em>, dar şi de cea mai curată bucurie,
+Highlight: Când viaţa unor părinţi este <em>sănătoasă</em> şi curată, copiii vin atunci ca un dar al lui
+Highlight: 12 - Când viaţa unei familii duhovniceşti este <em>sănătoasă</em> în Domnul, când ei sunt adevăraţi credincioşi
+Highlight: însemnat lucru este ca viaţa unor părinţi să fie <em>sănătoasă</em>, armonioasă şi curată! Căci dacă este aşa, - atunci
 
 Score: 4.8
 Volume: Cântări Nemuritoare
@@ -615,15 +775,26 @@ Highlight: vor fi pline de hrană <em>sănătoasă</em>. Şi generaţiile de cit
 Highlight: Hrană substanţială şi <em>sănătoasă</em> numai în El poate afla fiecare secol şi fiecare
 
 Score: 4.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Liniştea vieţii curate
 Type: articol
 Author: Traian Dorz
-Highlight: să ne facă să alcătuim un singur trup sfânt şi <em>sănătos</em>, al cărui Cap fericit şi binecuvântat să fii Tu
-Highlight: acelaşi duh de viaţă sfântă, care ne întreţine <em>sănătatea</em> şi puterea vieţii noastre duhovniceşti şi ne face
-Highlight: venele bisericii, atunci toate mădularele ei sunt <em>sănătoase</em>. Toate crengile ei sunt verzi, şi nu se vede nicăieri
-Highlight: să-L adânciţi, potrivit dreptarului învăţăturii <em>sănătoase</em>, turnându-L fierbinte în tiparul acestor învăţături
+Highlight: Părinţi, educatori, păstori - şi orice om matur şi <em>sănătos</em>, -
+Highlight: atâta vreme bunele rânduieli <em>sănătoase</em> şi morale sunt păzite în familie din tată în fiu
+Highlight: iar înţelegerea şi prietenia <em>sănătoasă</em> şi morală apropiau sufletele tuturor până la căldură
+Highlight: Să trecem cu hotărâre la o îndrumare <em>sănătoasă</em> a celor care vin după noi, mai întâi prin credinţa
+
+Score: 4.8
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Puterea voinţei noastre
+Type: articol
+Author: Traian Dorz
+Highlight: 4 - Într-un suflet <em>sănătos</em>,
+Highlight: 3 - Voinţa <em>sănătoasă</em> este aceea care are aceeaşi ţintă şi aceeaşi plăcere
+Highlight: adevărului, - va fi o voinţă curată, cinstită şi <em>sănătoasă</em>.
+Highlight: întunece mintea omului, abătând-o de la calea cea <em>sănătoasă</em> a voii lui Dumnezeu,
 
 Score: 4.8
 Volume: Meditații la Ev. după Ioan
@@ -657,6 +828,26 @@ Highlight: hrană <em>sănătoasă</em>. Şi toate generaţiile de cititori ar c
 
 Score: 4.75
 Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: A zice şi a face
+Type: articol
+Author: Traian Dorz
+Highlight: experienţele sale şi-a alcătuit un dreptar de viaţă <em>sănătos</em> şi temeinic,
+Highlight: - acela ştie că dacă mintea <em>sănătoasă</em> şi
+Highlight: inima noastră nu vrea să se supună nici minţii <em>sănătoase</em>,  nici
+
+Score: 4.75
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Acum şi atunci
+Type: articol
+Author: Traian Dorz
+Highlight: mădular drept, tare şi <em>sănătos</em>
+Highlight: 15 - Câtă vreme oasele sunt întregi şi <em>sănătoase</em>, - oricât de slabă şi de puţină şi de zdrobită
+Highlight:  nu veţi fi mereu mari, nici nu veţi fi mereu <em>sănătoşi</em>.
+
+Score: 4.75
+Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Binefacerea şi recunoştinţa
 Type: articol
@@ -667,32 +858,12 @@ Highlight: - încât orice hotărâre bună, orice îndrumare <em>sănătoasă</
 Score: 4.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
+Title: Cap. 18 - Frumosul an 1930
 Type: articol
 Author: Traian Dorz
-Highlight: răsărise ca un miracol ceresc din tot ce aveau mai <em>sănătos</em> şi mai al lor biserica noastră şi neamul nostru
-Highlight: citească şi să interpreteze Biblia, pe linia <em>sănătoasă</em> a învăţăturii evanghelice a bisericii şi credinţei
-Highlight: Mântuitor... transmit tuturor fraţilor ostaşi urări de <em>sănătate</em> şi să ne rugăm cu toţii pentru a fi cunoscută
-
-Score: 4.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 12 - Fermenţii sunt născuţi să moară
-Type: articol
-Author: Traian Dorz
-Highlight: cu fiecare ins în parte. Trupul neamului va fi <em>sănătos</em> pe deplin numai atunci când fiecare celulă va fi
-Highlight: Pentru a merge de acolo la tipografie şi la <em>sanatoriul</em> părintelui, trebuia să urcăm destul de mult pe
-Highlight: mai faci asta! Dumnezeu ţi-a dat ţie puterea şi <em>sănătatea</em> pentru altceva şi nu pentru a ţi le primejdui
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 16 - Leacul dureroasei sfâşieri
-Type: articol
-Author: Traian Dorz
-Highlight: acestui popor. El venea din adânc din trecutul <em>sănătos</em> şi creştin al neamului sfânt. Din conştiinţa Adevărului
-Highlight: nostru, era leacul cel ceresc pentru vindecarea <em>sănătoasă</em> şi fericită şi a acestei rane.  Dar
-Highlight: credinţa pe care o naşte în suflete. Este învăţătura <em>sănătoasă</em> şi dreaptă? - aşa va fi şi credinţa celor ce primesc
+Highlight: până când nu se va mai vorbi de el. Moţa este <em>sănătos</em> şi priceput, va şti să umple în curând totul cu
+Highlight: plină de căldura Evangheliei şi de cuminţenia <em>sănătoasă</em> de altădată. Foaia care înainte era plină de citiri
+Highlight: biblice, de sfaturi mântuitoare şi de îndemnuri <em>sănătoase</em> - acum ajunsese plină de lucruri din ce în ce
 
 Score: 4.75
 Volume: Istoria unei Jertfe
@@ -705,36 +876,6 @@ Highlight: cârmacii care le îndrumau şi-au pierdut orientarea <em>sănătoas�
 Highlight:  care luptă şi nimiceşte buruiana din ţarina <em>sănătoasă</em> a bisericii şi a neamului. Noi eram buruiana care
 
 Score: 4.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-Highlight: toţii marea poruncă a Domnului de a ne reorienta <em>sănătos</em> şi clar pe linia Voii lui Dumnezeu imprimată de
-Highlight: fronturile ţării cei mai frumoşi ani din viaţă, <em>sănătatea</em> ori sângele, ori fraţii, ori părinţii noştri.
-Highlight: instalase o boală, care urmărea să nimicească viaţa <em>sănătoasă</em>, să îmbolnăvească inima - adică să-i strice credinţa
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 31 - Şi acum încheierea
-Type: articol
-Author: Traian Dorz
-Highlight: şi noapte, cu vreme şi fără vreme, bolnav ori <em>sănătos</em>, ca să-i pot ajuta pe toţi să ajungă la pace, la
-Highlight: care mi-au extenuat sufletul şi mi-au ruinat <em>sănătatea</em>, viaţa, familia, - mă aflu răsplătit numai cu
-Highlight: la unitate, la colaborare şi la orientarea cea <em>sănătoasă</em> şi bună în dreapta învăţătură. Cine a vrut să
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-Highlight: să cred despre omul acesta. Cred că nu-i chiar <em>sănătos</em> la cap nu numai la suflet. Mai degrabă cred că
-Highlight: limpezirea mai grabnică şi mai puternică a orientării <em>sănătoase</em> a tuturor celor cu inima curată. Adunările
-Highlight: ori cu primele exemplare - mergeam grăbit spre <em>sanatoriul</em> Wakemann să le duc părintelui care mă aştepta
-
-Score: 4.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 8 - Al şaptelea foc
@@ -745,25 +886,6 @@ Highlight: plină de răutate împotriva oricărei învăţături <em>sănătoas
 Highlight: să pedepsească pe cineva, îi ia aceluia mintea <em>sănătoasă</em>. Apoi acela se va pierde singur. Şi sigur.
 
 Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 9 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-Highlight: sunt tineri în jur de 20 de ani. Tineret frumos, <em>sănătos</em>, entuziast şi fericit, dar mai ales curat în toată
-Highlight: pentru a mă sili să-ncep iarăşi. Starea grea a <em>sănătăţii</em> mele, ca şi vitregia anilor la care am ajuns părea
-Highlight: carte atât de îndrăgită de toţi copiii şi părinţii <em>sănătoşi</em>. Poate însă că cei care au călcat-o în picioare
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 9 - Înţelepciunea şi puterea
-Type: articol
-Author: Traian Dorz
-Highlight: din <em>sănătatea</em> corpului tău pentru învierea ţării noastre. Sufletul tău este însă întreg, <em>sănătos</em> şi frumos
-Highlight: minte şi în inimă învăţătura şi credinţa cea <em>sănătoasă</em> şi dreaptă prin care fiecare din cei chemaţi să-şi
-
-Score: 4.75
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Împăratul nostru
 Title: Cum au auzit că vine Isus
@@ -772,6 +894,25 @@ Author: Traian Dorz
 Highlight: îndrumată bine, atunci totul este chibzuit, înalt, <em>sănătos</em> şi temeinic.
 Highlight: inima nu-i îndrumată şi stăpânită de o minte <em>sănătoasă</em>, ea va face mereu lucruri de care omului îi va
 Highlight: Te rugăm dăruieşte mulţimilor noastre o minte <em>sănătoasă</em>,
+
+Score: 4.75
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Căderea şi ridicarea
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul ca Oastea Sa acum, orientată deplin şi <em>sănătos</em>, asupra tuturor celor dinăuntru şi dinafară, să
+Highlight: se pierde învăţătura <em>sănătoasă</em> şi dau năvală tot felul de învăţături <em>nesănătoase</em>, atunci începe nimicirea
+
+Score: 4.75
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Căile bune şi căile rele
+Type: articol
+Author: Traian Dorz
+Highlight: el - viitorul om, va ajunge să fie un mădular <em>sănătos</em> al societăţii
+Highlight: Cartea lui Dumnezeu şi dreptarul învăţăturii <em>sănătoase</em> şi încercate,
+Highlight: izvoarele nesecate şi fericite ale învăţăturii <em>sănătoase</em>,
 
 Score: 4.75
 Volume: Cugetări Nemuritoare
@@ -804,6 +945,16 @@ Highlight: lâng-o inimă curată cereţi mintea <em>sănătoasă</em>.
 
 Score: 4.75
 Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Drumul şi ţinta
+Type: articol
+Author: Traian Dorz
+Highlight: îl va creşte cinstit, iar cartea îl va îndemna <em>sănătos</em>.
+Highlight: vie a vieţii sfinte şi în rânduielile vii şi <em>sănătoase</em> ale învăţăturii voii Sale Sfinte!
+Highlight: Trezeşte-ne Doamne tuturora mintea <em>sănătoasă</em> ca să privim problema îndrumării tineretului nostru
+
+Score: 4.75
+Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
 Title: Hristos - Dumnezeul nostru
 Type: articol
@@ -811,6 +962,16 @@ Author: Traian Dorz
 Highlight: viaţă în întuneric, cum ar putea îndruma atunci <em>sănătos</em> pe alţii, în lumina trăirii cu Hristos?
 Highlight: ar trebui să fie ochii curaţi şi îndrumătorii <em>sănătoşi</em> ai gloatei, sufăr de orbie sufletească.  Din
 Highlight: adică ochii <em>sănătoşi</em> care se păstrează curaţi prin lacrimi şi smerenie
+
+Score: 4.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)
+Type: articol
+Author: Traian Dorz
+Highlight: să ne facă să alcătuim un singur trup sfânt şi <em>sănătos</em>, al cărui Cap fericit şi binecuvântat să fii Tu
+Highlight: venele bisericii, atunci toate mădularele ei sunt <em>sănătoase</em>. Toate crengile ei sunt verzi, şi nu se vede nicăieri
+Highlight: să-L adânciţi, potrivit dreptarului învăţăturii <em>sănătoase</em>, turnându-L fierbinte în tiparul acestor învăţături
 
 Score: 4.75
 Volume: Hristos - Puterea Apostoliei
@@ -834,16 +995,6 @@ Highlight: păcatele dinăuntru curăţate, a venit şi orientarea <em>sănătoa
 
 Score: 4.75
 Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Liniştire şi vindecare
-Type: articol
-Author: Traian Dorz
-Highlight: - Vrei să te faci <em>sănătos</em>? - întreabă El.
-Highlight: caută liniştirea şi vindecarea lor prin spitale, <em>sanatorii</em>, locuri de odihnă... Şi uneori li se pare că o
-Highlight: Acesta este drumul păstrării învăţăturii <em>sănătoase</em> şi al continuării credinţei adevărate.
-
-Score: 4.75
-Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Mântuirea şi păcatul
 Type: articol
@@ -861,16 +1012,6 @@ Author: Traian Dorz
 Highlight: ci după conţinutul <em>sănătos</em> pe care
 Highlight: învăţături <em>sănătoase</em>, nu se măsoară după haina celui care ţi-o spune,  ci
 Highlight: credincios, dă o şi mai mare valoare cuvintelor sale <em>sănătoase</em> şi pline de seriozitate.
-
-Score: 4.75
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Roadele Adevărului şi Dragostei
-Type: articol
-Author: Traian Dorz
-Highlight: văzându-le el este dator să le mărturisească, <em>sănătos</em> şi profund.
-Highlight: Înzestrează-le cu o minte <em>sănătoasă</em> care să poată primi şi purta adevărul
-Highlight: în Mâna Lui soarta ta şi <em>sănătatea</em> ta,
 
 Score: 4.75
 Volume: Cugetări Nemuritoare
@@ -892,6 +1033,16 @@ Highlight: ci după conţinutul <em>sănătos</em> pe care
 Highlight: învăţături <em>sănătoase</em>, nu se măsoară după haina celui ce ţi-o spune,  ci
 Highlight: credincios, dă o şi mai mare valoare cuvintelor sale <em>sănătoase</em> şi pline de seriozitate.
 
+Score: 4.75
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Întoarcerea şi Rugăciunea
+Type: articol
+Author: Traian Dorz
+Highlight: tot poporul lor este bine îndrumat şi dacă este <em>sănătos</em> condus de către aceştia (
+Highlight: când de la capul statului vine îndemnarea cea <em>sănătoasă</em> şi bună, atunci de la cel dintâi şi până la cel
+Highlight: Poate să întocmească legi drepte şi <em>sănătoase</em>, ca să îndemne fericit spre o cinstită şi curată
+
 Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pâinea noastră
@@ -903,12 +1054,30 @@ Highlight: Ascultarea de îndemnurile conştiinţei <em>sănătoase</em>, adică
 
 Score: 4.6666665
 Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Adevărata credinţă
+Type: articol
+Author: Traian Dorz
+Highlight: 17 - Orice om <em>sănătos</em> la minte ar fi gata să facă orice, numai să poată
+Highlight: vină odată vremea binecuvântată în care mintea <em>sănătoasă</em> şi
+
+Score: 4.6666665
+Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Adevărul şi inimile
 Type: articol
 Author: Traian Dorz
 Highlight: minte blestemată, cum să mai poată gândi drept, <em>sănătos</em> şi ordonat?
 Highlight: cei răi, salvându-se în echilibrul unei raţiuni <em>sănătoase</em>
+
+Score: 4.6666665
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Alegerea Harului Ceresc
+Type: articol
+Author: Traian Dorz
+Highlight: deosebeşte cu uşurinţă, de la început, lemnul bun, <em>sănătos</em>, uşor şi frumos
+Highlight: să le trezească tuturor oamenilor o conştiinţă <em>sănătoasă</em> a datoriei, a răspunderii, a misiunii umane pe
 
 Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
@@ -930,6 +1099,15 @@ Highlight: fie <em>sănătoşi</em>
 
 Score: 4.6666665
 Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Binefacerile şi mulţumirea
+Type: articol
+Author: Traian Dorz
+Highlight: şi care se orientează <em>sănătos</em> din îndemnul Cuvântului prin lupta şi frământările
+Highlight: noastră şi până când conştiinţa şi orientarea <em>sănătoasă</em> îşi vor fi făcut şi ele lucrarea lor în noi, sau
+
+Score: 4.6666665
+Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Bolile şi vindecarea
 Type: articol
@@ -938,190 +1116,11 @@ Highlight: este forţat, obositor şi insistent - nu este nici <em>sănătos</em
 Highlight: Sufletele din aceste familii sunt mioape, fără vederi <em>sănătoase</em> sunt
 
 Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 1 - Grăuntele de muştar
-Type: articol
-Author: Traian Dorz
-Highlight: acolo de la sat a pornit totdeauna ceea ce a fost <em>sănătos</em> şi viteaz în istoria noastră. Şi de acolo trebuie
-Highlight: şi nimiciseră atâtea bune, încât orice minte <em>sănătoasă</em> privea viitorul cu cea mai mare teamă şi îngrijorare
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 12 - Toate lucrează spre bine
-Type: articol
-Author: Traian Dorz
-Highlight:  presupunând că sunteţi mult mai tânăr şi mai <em>sănătos</em> ca mine, - şi vă invit cu toată omenia şi iubirea
-Highlight: dintâi cuvânt, vă doresc din toată inima numai <em>sănătate</em> şi bucurie, atât dv. personal cât şi familiei
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-Highlight: Roadele nu vor întârzia să apară. Trunchiul este <em>sănătos</em>, terenul fertil, iar răsadurile sunt din cele mai
-Highlight: nu vă rugaţi să nu vină. Furtuna pentru arborii <em>sănătoşi</em> este salvarea lor. Prin furtuni ei îşi adâncesc
-
-Score: 4.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 33 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-Highlight: sunt tineri în jur de 20 de ani. Tineret frumos, <em>sănătos</em>, entuziast şi fericit prin Hristos care umple inimile
-Highlight: pentru a mă sili să reîncep iarăşi. Starea grea a <em>sănătăţii</em> mele, bătrâneţea şi neputinţele în care mă găsesc
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 4 - Anul următor
-Type: articol
-Author: Traian Dorz
-Highlight: pricina urmăritorilor mei - şi cât eram încă mai <em>sănătos</em> şi mai de puţini ani, - acum n-aş mai putea. Vin
-Highlight: şi să nu se abată de la calea şi învăţătura ei <em>sănătoasă</em>. De la ţinta şi specificul ei, rânduite ei de
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 5 - Apele adânci se limpezesc greu
-Type: articol
-Author: Traian Dorz
-Highlight: totdeauna treaz care vedea departe, care judeca <em>sănătos</em> şi care nu înceta a trage mereu semnalele de alarmă
-Highlight: străine, pentru stârpirea relelor care nimicesc <em>sănătatea</em> societăţii şi pentru înviorarea vieţii religioase
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă voi fi <em>sănătos</em> Îl voi mărturisi până unde mă va întinde El. Dacă
-Highlight: Oastei, care nu numai că avea unele din cele mai <em>sănătoase</em> vederi, dar avea şi o viguroasă şi entuziastă
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-Highlight: aceasta în câteva zile voi muri sigur. Nimeni chiar <em>sănătos</em> fiind n-ar fi fost în stare să reziste ceva mai
-Highlight: bolnave, trebuie neapărat ca altele să fie mai <em>sănătoase</em>. Dacă unele sunt mai uşurate, trebuie ca altele
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 7 - Primii paşi spre o rânduială
-Type: articol
-Author: Traian Dorz
-Highlight: ia mişcarea cea nouă. Scopul ei era hotărât şi <em>sănătos</em> dar se promitea greu şi îndelungat. Piedicile se
-Highlight: căci scăderi şi păcate multe şi grele rod vlaga, <em>sănătatea</em> şi viitorul acestui neam. Acum, după război, avem
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Cercetaţi Scripturile
-Type: articol
-Author: Traian Dorz
-Highlight: trebuie să cerceteze meseria. Dacă va fi priceput, <em>sănătos</em> şi harnic, va ajunge.
-Highlight: puternică, inimă smerită şi primitoare a îndrumării <em>sănătoase</em>, credinţă tare şi statornică, - va ajunge sigur
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Cine crede în Fiul are...
-Type: articol
-Author: Traian Dorz
-Highlight: ) un mers <em>sănătos</em> vrednic de Hristos.
-Highlight: că ai seriozitate, orientare <em>sănătoasă</em>, conţinut şi valoare duhovnicească vieţii tale
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre milă
-Type: articol
-Author: Traian Dorz
-Highlight: 13 - Tu cel care ai piciorul <em>sănătos</em> şi-alergi uşor,
-Highlight: 27 - Cei prea <em>sănătoşi</em> şi tineri
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Duhul Adevărului
-Type: articol
-Author: Traian Dorz
-Highlight: După cum soarele, pentru ceea ce este <em>sănătos</em> e viaţă şi
-Highlight: unele este <em>sănătate</em>, iar în altele moarte.  După
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Grija
-Type: articol
-Author: Traian Dorz
-Highlight: e podoaba cea mai scumpă pentru omul <em>sănătos</em>.
-Highlight: - grija este <em>sănătate</em> iar
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 28-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: Duhul Vieţii, va dovedi aceasta că va avea un mers <em>sănătos</em> şi o trăire înţeleaptă şi frumoasă, dreaptă şi
-Highlight: să ne supunem totdeauna Ţie ca nişte mădulare <em>sănătoase</em>, ascultătoare şi smerite. Pentru ca Tu să-Ţi faci
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
-Type: articol
-Author: Traian Dorz
-Highlight: de păcat, are curat în conştiinţa sa echilibrul <em>sănătos</em> între aceste slobozenii. Şi ştie clar de fiecare
-Highlight: credinţa curată, învăţătura dreaptă, îndrumarea <em>sănătoasă</em> de la înaintaşii tăi, aşa să o şi dai urmaşilor
-
-Score: 4.6666665
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Prilejul şi păcatul
+Book: Cununile Slăvite
+Title: Bucuria şi întristarea
 Type: articol
 Author: Traian Dorz
-Highlight: ajunge până atât de adânc încât nu mai este nimic <em>sănătos</em> şi nimic cruţat în viaţa şi în societatea omenească
-Highlight: Dar când oamenii încep să-şi piardă judecata <em>sănătoasă</em>, când încep să calce în picioare orice gând sau
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Puterea rădăcinii
-Type: poezie
-Author: Traian Dorz
-Highlight:  eşti <em>sănătos</em>!
-Highlight:  e <em>sănătoasă</em>, şi
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: S-a iscat o neînţelegere
-Type: articol
-Author: Traian Dorz
-Highlight: dreptarul învăţăturii <em>sănătoase</em>, şi de fraţii săi, trebuie să asculte fiecare ucenic <em>sănătos</em> (
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Setea şi izvorul
-Type: articol
-Author: Traian Dorz
-Highlight: lumina lui Dumnezeu vezi luminos şi vezi clar, vezi <em>sănătos</em> şi vezi realitatea, vezi adevărul şi în toate direcţiile
-Highlight: Soarele îţi va da lumină şi <em>sănătate</em>, voioşie şi claritate, vigoare şi lărgime.
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Sfinţii din mijlocul nostru
-Type: articol
-Author: Traian Dorz
-Highlight: 13 - Când este <em>sănătos</em> şi îi merge bine, omul totdeauna este “îmbrăcat”
-Highlight: totdeauna, acela care este un om şi care are o minte <em>sănătoasă</em>.
+Highlight: sau mai <em>sănătos</em>, el ca dragul Timotei, poate fi o pildă tuturor
+Highlight: - Nici o hotărâre nu-i mai folositoare şi mai <em>sănătoasă</em> decât aceea pe care o ia omul când este condus
 

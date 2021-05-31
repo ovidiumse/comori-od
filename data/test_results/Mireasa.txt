@@ -1,72 +1,118 @@
-+---------------------------------------------------------------------------------------------+-----------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences                       | Author      | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-----------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Cap. 21 - Tipografia - un minunat şi dureros ideal                                          | {'Mireasa', 'mireasa', 'mireasă'} | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 4 - Cânt. Cântărilor                                                                   | {'Mireasa', 'mireasa', 'Mireasă'} | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 15-a după Rusalii                                               | {'Mireasa', 'Mireasă'}            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 5 - Întâia judecată                                                                    | {'Mireasa', 'Mireasă'}            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                               | {'mireasa', 'Mireasă', 'mireasă'} | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Amin, vino Doamne Isuse                                                                     | {'Mireasa'}                       | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Nainte de-a fi fost vecia                                                                   | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| O, ce frumoasă eşti Iubito                                                                  | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Râvna pentru Casa Ta...                                                                     | {'Mireasa'}                       | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Ţi-e greu acum în lumea rea                                                                 | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Cap. 5 - Necazuri şi speranţe                                                               | {'Mireasa', 'Mireasă', 'mireasă'} | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Însoţirea sufletelor sfinte                                                                 | {'Mireasa', 'Mireasă'}            | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Prietenul Mirelui                                                                           | {'Mireasa', 'mireasă'}            | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Atât de mult...                                                                             | {'Mireasa'}                       | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Bunavestire                                                                                 | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Cap. 10 - Biserica cea vie şi cea care învie                                                | {'Mireasa'}                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Pe urmele profetului                                                              | {'Mireasa'}                       | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'Mireasa'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | {'Mireasa'}                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                               | {'Mireasa'}                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 5 - Cânt. Cântărilor                                                                   | {'mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Ce linişte-ameninţătoare                                                                    | {'mireasa'}                       | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
-| Comorile care rămân veşnic                                                                  | {'Mireasa'}                       | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Cum n-am putut gândi                                                                        | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Dar vine pentru ca să cunoască lumea                                                        | {'Mireasa'}                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Deşi ştim bine                                                                              | {'Mireasa'}                       | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
-| Deşi ştim bine                                                                              | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Din alte diferite părţi                                                                     | {'mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| L-au găsit... dincolo de mare                                                               | {'mireasa'}                       | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                      | {'Mireasa'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                             | {'Mireasa'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'Mireasa'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Mângâietorul vă va învăţa toate                                                             | {'Mireasa'}                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Niciodată n-a vorbit cineva astfel...                                                       | {'mireasa'}                       | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Stăpân şi Soţ al vieţii mele                                                                | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Suim plângând adesea...                                                                     | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Sunt trandafirul Tău                                                                        | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Tu-ai vrut să fim                                                                           | {'mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Voi cei chemaţi                                                                             | {'Mireasa'}                       | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Voi cei chemaţi să duceţi                                                                   | {'Mireasa'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
-| Vă este de folos să Mă duc                                                                  | {'Mireasa'}                       | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| Şi nimeni nu va mai răpi bucuria - voastră                                                  | {'mireasa'}                       | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| Cap. 16 - Din cetate în cetate...                                                           | {'mireasă'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Isuse, când din nou                                                                         | {'Mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Biserică slăvită                                                                            | {'Mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Dovada supremei iubiri                                                            | {'mireasă'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'mireasă'}                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                              | {'Mireasă'}                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                                 | {'mireasă'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Ce cununie strălucită                                                                       | {'mireasă'}                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
-| Ce nume-ar fi!                                                                              | {'Mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Cât sunt în lume, sunt Lumina lumii                                                         | {'mireasă'}                       | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Dragostea pentru înaintaşi                                                                  | {'mireasă'}                       | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| La Nunta Noastră                                                                            | {'mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Noi am aflat comoara                                                                        | {'Mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Nu-şi mai aduce aminte de suferinţă                                                         | {'mireasă'}                       | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| Osteneala şi lenea                                                                          | {'mireasă'}                       | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Pe acela îl veţi primi                                                                      | {'mireasă'}                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Pentru Cine-mi pun?                                                                         | {'mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Rugăciune                                                                                   | {'mireasă'}                       | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Rugăciune şi mărturisire                                                                    | {'mireasă'}                       | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Tu ne-ai născut                                                                             | {'mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Tu ne-ai promis, noi am crezut                                                              | {'mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-+---------------------------------------------------------------------------------------------+-----------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Mireasa using http://localhost:9000...
-Got 63 hits:
++---------------------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences                                  | Author      | Tip                            | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Şi Duhul şi Mireasa                                                                         | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Cap. 21 - Tipografia - un minunat şi dureros ideal                                          | {'Mireasa', 'mireasa', 'mireasă'}            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Lucrarea Domnului Isus                                                                      | {'mireasa', 'Mireasa'}                       | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Cap. 4 - Cânt. Cântărilor                                                                   | {'Mireasa', 'mireasa', 'Mireasă', 'Mireaso'} | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 15-a după Rusalii                                               | {'Mireasa', 'Mireasă'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 5 - Întâia judecată                                                                    | {'Mireasa', 'Mireasă'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Sfârşesc Isus...                                                                            | {'Mireasa', 'Mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Vino, dulce înger                                                                           | {'Mireasa', 'Mireasă'}                       | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Râvna pentru Casa Ta...                                                                     | {'Mireasa', 'Miresei'}                       | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 6 - Alte amare adevăruri                                                               | {'mireasa', 'Mireasă', 'mireasă'}            | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Amin, vino Doamne Isuse                                                                     | {'Mireasa'}                                  | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Duhul Sfânt, Mângâietorul                                                                   | {'Mireasa'}                                  | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Lucrătorii lui Hristos                                                                      | {'Mireasa'}                                  | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Nainte de-a fi fost vecia                                                                   | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| O, ce frumoasă eşti Iubito                                                                  | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Ţi-e greu acum în lumea rea                                                                 | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cap. 5 - Necazuri şi speranţe                                                               | {'Mireasa', 'Mireasă', 'mireasă'}            | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Însoţirea sufletelor sfinte                                                                 | {'Mireasa', 'Mireasă'}                       | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Prietenul Mirelui                                                                           | {'Mireasa', 'mireasă'}                       | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Semănat şi seceriş                                                                          | {'mireasa', 'mireasă'}                       | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Apărarea Adevărului                                                                         | {'Mireasa'}                                  | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Atât de mult...                                                                             | {'Mireasa'}                                  | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Bunavestire                                                                                 | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cap. 10 - Biserica cea vie şi cea care învie                                                | {'Mireasa'}                                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 13 - Pe urmele profetului                                                              | {'Mireasa'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                             | {'Mireasa'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                             | {'Mireasa'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                                               | {'Mireasa'}                                  | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - Cânt. Cântărilor                                                                   | {'mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Ce linişte-ameninţătoare                                                                    | {'mireasa'}                                  | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
+| Ce linişte-ameninţătoare                                                                    | {'mireasa'}                                  | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | poezie  |
+| Ce linişte-ameninţătoare                                                                    | {'mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Ce mare taină este Lucrarea Domnului                                                        | {'Mireasa'}                                  | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Comorile care rămân veşnic                                                                  | {'Mireasa'}                                  | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Credinţa încununată                                                                         | {'Mireasa'}                                  | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Cum n-am putut gândi                                                                        | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Când va fi                                                                                  | {'mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Dar vine pentru ca să cunoască lumea                                                        | {'Mireasa'}                                  | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Deşi ştim bine                                                                              | {'Mireasa'}                                  | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
+| Deşi ştim bine                                                                              | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Din alte diferite părţi                                                                     | {'mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| L-au găsit... dincolo de mare                                                               | {'mireasa'}                                  | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                      | {'Mireasa'}                                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                             | {'Mireasa'}                                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'Mireasa'}                                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Lucrarea Sfântului Duh                                                                      | {'Mireasa'}                                  | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Mâhnire şi nădejde                                                                          | {'Mireasa'}                                  | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Mângâietorul vă va învăţa toate                                                             | {'Mireasa'}                                  | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Niciodată n-a vorbit cineva astfel...                                                       | {'mireasa'}                                  | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| O, Preaiubitul meu...                                                                       | {'mireasa'}                                  | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | poezie  |
+| O, Preaiubitul meu...                                                                       | {'mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Stăpân şi Soţ al vieţii mele                                                                | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Suferinţa Adevărului                                                                        | {'Mireasa'}                                  | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Suim plângând adesea...                                                                     | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Sunt trandafirul Tău                                                                        | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Taină-a fost                                                                                | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Talentele şi aflarea lor                                                                    | {'Mireasa'}                                  | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Tu-ai vrut să fim                                                                           | {'mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Un Mire şi un Model                                                                         | {'mireasa'}                                  | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Viitorul întristărilor noastre                                                              | {'mireasa'}                                  | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Vino dulce înger                                                                            | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Voi cei chemaţi                                                                             | {'Mireasa'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Voi cei chemaţi să duceţi                                                                   | {'Mireasa'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
+| Vă este de folos să Mă duc                                                                  | {'Mireasa'}                                  | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Şi nimeni nu va mai răpi bucuria - voastră                                                  | {'mireasa'}                                  | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Cap. 16 - Din cetate în cetate...                                                           | {'mireasă'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Isuse, când din nou                                                                         | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Binecuvântare ţie                                                                           | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Biserică slăvită                                                                            | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cap. 12 - Dovada supremei iubiri                                                            | {'mireasă'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'mireasă'}                                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                              | {'Mireasă'}                                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                                 | {'mireasă'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Ce cununie strălucită                                                                       | {'mireasă'}                                  | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
+| Ce nume-ar fi!                                                                              | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cât sunt în lume, sunt Lumina lumii                                                         | {'mireasă'}                                  | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Dragostea pentru înaintaşi                                                                  | {'mireasă'}                                  | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Eu nu mă voi desparte                                                                       | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| La Nunta Noastră                                                                            | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Maică Preacurată                                                                            | {'mireasă'}                                  | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
+| Maică Preacurată din inima                                                                  | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Maică Preacurată, omenirea                                                                  | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Noi am aflat comoara                                                                        | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Nu-şi mai aduce aminte de suferinţă                                                         | {'mireasă'}                                  | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Nădejdea mea Isuse                                                                          | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Osteneala şi lenea                                                                          | {'mireasă'}                                  | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Pe acela îl veţi primi                                                                      | {'mireasă'}                                  | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Pentru Cine-mi pun?                                                                         | {'mireasă'}                                  | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | poezie  |
+| Pentru Cine-mi pun?                                                                         | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Rugăciune                                                                                   | {'mireasă'}                                  | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Rugăciune şi mărturisire                                                                    | {'mireasă'}                                  | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| Sărbătoarea îngerilor                                                                       | {'Mireasă'}                                  | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| Taină şi Minune                                                                             | {'Mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Tu ne-ai născut                                                                             | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Tu ne-ai promis, noi am crezut                                                              | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Unire şi suferinţă                                                                          | {'Mireasă'}                                  | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Întoarce-mi Iubire...                                                                       | {'mireasă'}                                  | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | poezie  |
+| Întoarce-mi iubire                                                                          | {'mireasă'}                                  | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
+| Întoarce-mi iubire                                                                          | {'mireasă'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Cap. 23 - Cuvânt Testamentar                                                                | {'mirese', 'mireselor'}                      | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
++---------------------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Mireasa using https://api.comori-od.ro...
+Got 106 hits:
+Score: 30.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Şi Duhul şi Mireasa
+Type: poezie
+Author: Traian Dorz
+Highlight: Şi Duhul şi <em>Mireasa</em> zic: vină, vină, vină
+Highlight: Şi Duhul şi <em>Mireasa</em>
+
 Score: 15.714286
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
@@ -80,7 +126,16 @@ Highlight: <em>mireasa</em>
 Highlight: cinste pentru <em>mireasă</em>!
 Highlight: <em>mireasă</em>
 
-Score: 13.866666
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Lucrarea Domnului Isus
+Type: articol
+Author: Traian Dorz
+Highlight: este <em>mireasa</em> peste care El Şi-a pus Numele Lui, aşa cum un mire îşi pune numele său peste <em>mireasa</em> iubită
+Highlight: părinte îşi acopere cu numele său familia sa... <em>Mireasa</em> nu mai poartă alt nume decât al mirelui ei. Şi
+
+Score: 13.9
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 4 - Cânt. Cântărilor
@@ -90,6 +145,7 @@ Highlight: <em>Mireasa</em> Mea Curată
 Highlight: <em>mireasa</em> Mea
 Highlight: tu soră şi <em>Mireasă</em> cu
 Highlight: <em>Mireasă</em> şi
+Highlight: <em>Mireaso</em>, vin’ cu Mine priveşte
 
 Score: 13.866666
 Volume: Hristos - Puterea Apostoliei
@@ -112,7 +168,37 @@ Highlight: <em>Mireasa</em> Vântului
 Highlight: <em>Mireasa</em> Vântului
 Highlight: Mântuitorul şi Biruitorul şi de Preasfânta Sa <em>Mireasă</em> Maica noastră Biserică, precum şi de scumpul nostru
 
-Score: 12.714286
+Score: 13.416666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Sfârşesc Isus...
+Type: poezie
+Author: Traian Dorz
+Highlight: Şi Duhul şi <em>Mireasa</em> zic: Vino.
+Highlight: ne-ai făcut <em>Mireasa</em> Ta
+Highlight: Dumnezeu Cetatea Sfântă, Noul Ierusalim, gătită ca o <em>Mireasă</em> împodobită pentru Mirele ei.
+
+Score: 13.416666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Vino, dulce înger
+Type: poezie
+Author: Traian Dorz
+Highlight: strălucind <em>Mireasa</em> Mirelui Isus.
+Highlight: Maica-i ori <em>Mireasa</em> lui Isus Hristos?
+Highlight: Maică sau <em>Mireasă</em> a lui Dumnezeu.  Toată
+
+Score: 12.749999
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: Râvna pentru Casa Ta...
+Type: articol
+Author: Traian Dorz
+Highlight: ea care este <em>Mireasa</em> lui Hristos (
+Highlight: Căci Biserica este <em>Mireasa</em> Lui şi Casa pe care a răscumpărat-o El, cu Sfântul
+Highlight: rugăm veghează Tu Însuţi cu toată grija asupra <em>Miresei</em> Tale iubite, şi nu îngădui vrăjmaşului să o întineze
+
+Score: 12.732143
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 6 - Alte amare adevăruri
@@ -135,6 +221,24 @@ Highlight: lucra Eu prin cea prin care este în Imaginea Mea, <em>Mireasa</em> M
 Highlight: 20 - Duhul Meu şi <em>Mireasa</em> Mea una sunt.
 
 Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Duhul Sfânt, Mângâietorul
+Type: articol
+Author: Traian Dorz
+Highlight: - ce grijă scumpă are El de Biserica şi <em>Mireasa</em> Domnului Isus, Preaiubitul ei!
+Highlight: şi <em>Mireasa</em>
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Lucrătorii lui Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: şi numai în măsura în care această Fecioară, <em>Mireasa</em> Lui, se păstrează curată, sfântă, fără pată şi
+Highlight: aşa, nu este un adevărat mădular al Bisericii, <em>Mireasa</em> lui Hristos.
+
+Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Nainte de-a fi fost vecia
@@ -151,15 +255,6 @@ Type: poezie
 Author: Traian Dorz
 Highlight: Biserică, <em>Mireasa</em> Mea
 Highlight: eşti tu pe veci <em>Mireasa</em> Mea!
-
-Score: 12.666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Râvna pentru Casa Ta...
-Type: articol
-Author: Traian Dorz
-Highlight: ea care este <em>Mireasa</em> lui Hristos (
-Highlight: Căci Biserica este <em>Mireasa</em> Lui şi Casa pe care a răscumpărat-o El, cu Sfântul
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -198,6 +293,23 @@ Type: articol
 Author: Traian Dorz
 Highlight: , <em>Mireasa</em> lui Hristos erau chemaţi să fie alţii.
 Highlight: Cine are <em>mireasă</em>, este mire; dar prietenul mirelui, care stă şi-i ascultă, se bucură foarte mult când
+
+Score: 11.0
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Semănat şi seceriş
+Type: articol
+Author: Traian Dorz
+Highlight: îmbrăcăminte frumoasă face şi mai frumoasă pe <em>mireasa</em> care ea însăşi are frumuseţea sa.
+Highlight: frumoasă nu ne face să ne uităm cu plăcere la o <em>mireasă</em> gârbovă.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Apărarea Adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: răscumpăraţi de Hristos din toate vremurile, Biserica, <em>Mireasa</em> Împăratului Împăraţilor (
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -273,11 +385,43 @@ Highlight: <em>mireasa</em> Mirelui de Sus,
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Ce linişte-ameninţătoare
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>mireasa</em> Mirelui de Sus,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Ce linişte-ameninţătoare
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>mireasa</em> Mirelui de Sus,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Ce mare taină este Lucrarea Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: şi cea nevăzută, tot aşa este şi cu Biserica, <em>Mireasa</em> Lui
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
 Title: Comorile care rămân veşnic
 Type: articol
 Author: Traian Dorz
 Highlight: 9 - Biserica este <em>Mireasa</em> cea curată a lui Hristos.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Credinţa încununată
+Type: articol
+Author: Traian Dorz
+Highlight: Biserica Sa, Templul Său duhovnicesc, Lăcaşul Său, şi <em>Mireasa</em> Lui cu care va petrece El Veşnicia?
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -286,6 +430,14 @@ Title: Cum n-am putut gândi
 Type: poezie
 Author: Traian Dorz
 Highlight: sfinţeşte-Ţi Tu <em>Mireasa</em> Ta
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Când va fi
+Type: poezie
+Author: Traian Dorz
+Highlight: ea să-mi fie sora şi <em>mireasa</em> mea.
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -352,6 +504,22 @@ Author: Traian Dorz
 Highlight: fiicei cereşti a Ierusalimului de Sus, care va fi <em>Mireasa</em> Slăvită a Mirelui Slăvit, Biserica lui Hristos
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Lucrarea Sfântului Duh
+Type: articol
+Author: Traian Dorz
+Highlight: fiecare în parte - şi pentru toată Biserica şi <em>Mireasa</em> Domnului Isus!
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Mâhnire şi nădejde
+Type: articol
+Author: Traian Dorz
+Highlight: Aşa arată acum ochii şi rugăciunea Bisericii, <em>Mireasa</em> Ta când plângând Te cheamă.
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Calea vieţii noastre
 Title: Mângâietorul vă va învăţa toate
@@ -368,12 +536,36 @@ Author: Traian Dorz
 Highlight: Veţi suspina şi voi ascultându-L, ca <em>mireasa</em> din Cântarea Cântărilor: ah, înnebuneam când îmi
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: O, Preaiubitul meu...
+Type: poezie
+Author: Traian Dorz
+Highlight: ţinând de braţ <em>mireasa</em> mea
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: O, Preaiubitul meu...
+Type: poezie
+Author: Traian Dorz
+Highlight: ţinând de braţ <em>mireasa</em> mea
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Stăpân şi Soţ al vieţii mele
 Type: poezie
 Author: Traian Dorz
 Highlight: Biserică <em>Mireasa</em> Ta.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Suferinţa Adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: - O, cât de dureros suferă Biserica Domnului, <em>Mireasa</em> Curată a lui Hristos (
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -393,11 +585,51 @@ Highlight: <em>Mireasa</em> scumpă şi aleasă
 
 Score: 9.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Taină-a fost
+Type: poezie
+Author: Traian Dorz
+Highlight: fericim pe Preasfânta Fecioară Maria, Maica şi <em>Mireasa</em> Fiului lui Dumnezeu, cu toată recunoştinţa şi smerenia
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Talentele şi aflarea lor
+Type: articol
+Author: Traian Dorz
+Highlight: clădirea Sa gata... Când Mirele va veni să-Şi ridice <em>Mireasa</em> gătită de nuntă, o, atunci totul va arăta altfel
+
+Score: 9.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Tu-ai vrut să fim
 Type: poezie
 Author: Traian Dorz
 Highlight: Tu-ai vrut să fim <em>mireasa</em> Ta
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Un Mire şi un Model
+Type: articol
+Author: Traian Dorz
+Highlight: 3 - În acest timp de obicei <em>mireasa</em> se poate răzgândi. Hotărârea ei poate uneori să
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Viitorul întristărilor noastre
+Type: articol
+Author: Traian Dorz
+Highlight: când se duce să facă pregătirile nunţii pentru <em>mireasa</em> lui ce-l aşteaptă.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Vino dulce înger
+Type: poezie
+Author: Traian Dorz
+Highlight: strălucind <em>Mireasa</em> Mielului Ceresc.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -448,6 +680,14 @@ Type: poezie
 Author: Traian Dorz
 Highlight: de <em>Mireasă</em>
 Highlight: Isus, a Ta <em>Mireasă</em>.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Binecuvântare ţie
+Type: poezie
+Author: Traian Dorz
+Highlight: Tu ai fost aleasă Cerului <em>Mireasă</em>,
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -523,11 +763,43 @@ Highlight: Sunt ca o <em>mireasă</em> care este bolnavă de dragostea Ta şi ca
 
 Score: 4.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Eu nu mă voi desparte
+Type: poezie
+Author: Traian Dorz
+Highlight: ci vreau să-mi fac din ele <em>mireasă</em> şi soţie
+
+Score: 4.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: La Nunta Noastră
 Type: poezie
 Author: Traian Dorz
 Highlight: - podoabe de <em>mireasă</em>.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Maică Preacurată
+Type: poezie
+Author: Traian Dorz
+Highlight: cerului <em>mireasă</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Maică Preacurată din inima
+Type: poezie
+Author: Traian Dorz
+Highlight: cerului <em>mireasă</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Maică Preacurată, omenirea
+Type: poezie
+Author: Traian Dorz
+Highlight: Cerului <em>Mireasă</em>,
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -546,6 +818,14 @@ Author: Traian Dorz
 Highlight: Dar cum o <em>mireasă</em> se bucură la sosirea preaiubitului ei, nu atât
 
 Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Nădejdea mea Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: alături de - alături de <em>Mireasă</em>!
+
+Score: 4.5
 Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Osteneala şi lenea
@@ -560,6 +840,14 @@ Title: Pe acela îl veţi primi
 Type: articol
 Author: Traian Dorz
 Highlight: <em>mireasă</em>
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Pentru Cine-mi pun?
+Type: poezie
+Author: Traian Dorz
+Highlight: pentru Cine pun portiţei steagul de <em>mireasă</em>?
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -586,6 +874,22 @@ Author: Traian Dorz
 Highlight: Cine face ca o adunare să ajungă o <em>mireasă</em> a lui Hristos, - acela va fi cu adevărat un prieten
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Sărbătoarea îngerilor
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeu cetatea Sfântă, Noul Ierusalim, gătită ca o <em>Mireasă</em> pentru Mirele ei şi Noul Pământ va fi unit cu noul
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Taină şi Minune
+Type: poezie
+Author: Traian Dorz
+Highlight: Maică şi <em>Mireasă</em>, tu lumini frumoasă
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Tu ne-ai născut
@@ -600,4 +904,45 @@ Title: Tu ne-ai promis, noi am crezut
 Type: poezie
 Author: Traian Dorz
 Highlight: cum o <em>mireasă</em> după soţ
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Unire şi suferinţă
+Type: articol
+Author: Traian Dorz
+Highlight: 3 - Scumpă <em>Mireasă</em> a lui Hristos, Tainică Lucrare a dragostei şi a
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Întoarce-mi Iubire...
+Type: poezie
+Author: Traian Dorz
+Highlight: ...Din pasăre albă prefă-te <em>mireasă</em>
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Întoarce-mi iubire
+Type: poezie
+Author: Traian Dorz
+Highlight: ...Din pasăre albă prefă-te <em>mireasă</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Întoarce-mi iubire
+Type: poezie
+Author: Traian Dorz
+Highlight: ...Din pasăre albă prefă-te <em>mireasă</em>
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight:  cum ar fi cea de a “fura” papucii unor surori <em>mirese</em>, la nunţi frăţeşti.
+Highlight: Tot din anturajul tânărului “cu papucii <em>mireselor</em>” mai sunt şi alţi doi care nu mult după aceea
 

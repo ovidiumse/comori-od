@@ -1,123 +1,109 @@
-+----------------------------------------------------------------------------------+--------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                            | Occurrences                                      | Author          | Tip                            | Carte                        | Volum   |
-+----------------------------------------------------------------------------------+--------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Despre ajutorare                                                                 | {'ajutor', 'ajutorare'}                          | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                  | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Cel mai bun misionar                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                      | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 4 - Anul următor                                                            | {'ajutor', 'ajutorul', 'Ajutor'}                 | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                      | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                          | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Un Mângâietor care să rămână                                                     | {'Ajutor', 'ajutor'}                             | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Cap. 21 - Tipografia - un minunat şi dureros ideal                               | {'ajutor', 'ajutorul', 'Ajutorul'}               | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                               | {'ajutor', 'Ajutor', 'ajutorul', 'ajutorarea'}   | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                    | {'ajutor', 'ajutorarea', 'ajutorul'}             | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 13 - Frumosul tineret creştin                                               | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Anul jubiliar 1988                                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Pe drumul Crucii                                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Din cea mai adâncă                                                               | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Din cea mai adâncă                                                               | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Dumnezeul Îndrăznelii                                                            | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Cap. 20 - Rugul care nu se mistuie                                               | {'ajutor', 'ajutorarea', 'Ajutorul', 'ajutorul'} | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Între două judecăţi                                                     | {'ajutor', 'ajutorul', 'Ajutorul'}               | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Binecuvântata muncă grea                                                | {'ajutorul', 'ajutor', 'ajutorau', 'ajutorarea'} | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Apostolia Femeilor                                                     | {'ajutor', 'ajutorarea', 'ajutorul'}             | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                 | {'ajutor', 'ajutorarea', 'ajutorul'}             | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                             | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                    | {'ajutor', 'ajutorul', 'ajutorarea'}             | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 16-a după Rusalii                                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 1 - Înfricoşata lepădare                                                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                              | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                 | {'ajutor', 'ajutorare'}                          | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 8 - A treia Judecată                                                        | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                         | {'ajutor', 'ajutorasem'}                         | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Nu mai au vin                                                                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Psalmul 115                                                                      | {'Ajutor', 'Ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Unul din ucenici: Andrei                                                         | {'ajutor', 'ajutorarea'}                         | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Viaţa noastră şi tainele ei                                                      | {'ajutor', 'ajutorului'}                         | Traian Dorz     | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                           | {'ajutor'}                                       | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 5 - Întâia judecată                                                         | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Nu ştim ce vrea să spună                                                         | {'ajutor'}                                       | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| Pe Tine Te vom cere                                                              | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Pe acela pe care îl trimit Eu                                                    | {'ajutor'}                                       | Traian Dorz     | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Praznicul Rusaliilor 1938                                                        | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
-| Psalmul 124                                                                      | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Psalmul 149                                                                      | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| S-a dus şi a spus iudeilor                                                       | {'ajutor'}                                       | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Să nu vi se tulbure inima                                                        | {'ajutor'}                                       | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| În faţa Mării Roşii                                                              | {'ajutor'}                                       | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
-| Îţi mulţumim cu lacrimi                                                          | {'ajutor'}                                       | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
-| Îţi mulţumim cu lacrimi                                                          | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Cap. 11 - Răscrucea Isus                                                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Jugul, sarcina şi crucea                                               | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 1 - Cel mai frumos Isus                                                     | {'ajutor', 'ajutorul', 'ajutorarea'}             | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)             | {'ajutor', 'ajutorul', 'ajutorarea'}             | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 18 - Frumosul an 1930                                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 24 - Pânza care se ţese                                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                            | {'ajutor', 'ajutorul', 'ajutorarea'}             | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                              | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                                            | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 7 - Printre leu şi printre urs                                              | {'ajutor', 'ajutorul', 'ajutorare'}              | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Şi laţul s-a rupt                                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Despre iubire                                                                    | {'ajutor', 'Ajutorul', 'ajutorul'}               | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut) | {'ajutor', 'ajutorare', 'ajutorul'}              | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Acela pe care îl iubeşti Tu...                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                  | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Semnele Oastei Domnului                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                          | {'ajutor', 'ajutorarea'}                         | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 15 - Micii contemporani ai marilor oameni                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 21 - La 25 de ani...                                                        | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 3 - Începutul chemării                                                      | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 32 - Şi alte lupte                                                          | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 9 - Pe drumul crucii mele                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Când mi-este greu                                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cântarea împăratului David                                                       | {'ajutor', 'ajutorare'}                          | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Despre bunătate                                                                  | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre prietenie                                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre suferinţă                                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Banatului                                                            | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Dumnezeu şi Casa Lui                                                             | {'ajutor', 'ajutorului'}                         | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| După aceea Isus S-a dus...                                                       | {'ajutor', 'ajutorului'}                         | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| O cunună de spini                                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Obişnuit şi neobişnuit                                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Psalmul 119                                                                      | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Psalmul 30                                                                       | {'ajutor', 'ajutorarea'}                         | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Psalmul 46                                                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-+----------------------------------------------------------------------------------+--------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-Searching Ajutor using http://localhost:9000...
-Got 428 hits:
-Score: 18.694445
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre ajutorare
-Type: articol
-Author: Traian Dorz
-Highlight: cu ce pot, ei au s-aducă orişicui vreun <em>ajutor</em>
-Highlight: 31 - Noi dăm <em>ajutor</em> la alţii ca să-i facem ca şi ei
-Highlight: 35 - Ruşinoasă-i viaţa celor nimănui spre <em>ajutor</em>;
-Highlight:  vreun <em>ajutor</em>
-Highlight: sigură-i numai izbânda când e Ceru-n <em>ajutor</em>.
-Highlight: 45 - Nu cere-<em>ajutor</em> la nimeni decât muncii tale,
-Highlight: Despre <em>ajutorare</em>
-
++------------------------------------------------------------------------------+--------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                        | Occurrences                                      | Author          | Tip                            | Carte                        | Volum   |
++------------------------------------------------------------------------------+--------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Cap. 2 - Istoria unei Jertfe...                                              | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Cel mai bun misionar                                               | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Despre ajutorare                                                             | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                  | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 4 - Anul următor                                                        | {'ajutor', 'ajutorul', 'Ajutor'}                 | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                  | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                      | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Suflete binefăcătoare                                                        | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Un Mângâietor care să rămână                                                 | {'Ajutor', 'ajutor'}                             | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Cap. 21 - Tipografia - un minunat şi dureros ideal                           | {'ajutor', 'ajutorul', 'Ajutorul'}               | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                                           | {'ajutor', 'Ajutor', 'ajutorul'}                 | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                     | {'ajutor', 'ajutorul', 'ajutoare'}               | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cele mari şi cele mici                                                       | {'ajutor', 'ajutorul', 'ajutorului'}             | Traian Dorz     | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Cap. 13 - Frumosul tineret creştin                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                            | {'ajutor', 'ajutoare', 'ajutorul'}               | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 29 - Anul jubiliar 1988                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Pe drumul Crucii                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Omul lui Dumnezeu                                                            | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Bunătatea şi înţelepciunea                                                   | {'ajutor'}                                       | Traian Dorz     | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Din cea mai adâncă                                                           | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Din cea mai adâncă                                                           | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Dumnezeul Îndrăznelii                                                        | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cap. 6 - Între două judecăţi                                                 | {'ajutor', 'ajutorul', 'Ajutorul'}               | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                           | {'ajutor', 'Ajutorul', 'ajutorul'}               | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                                    | {'ajutor', 'ajutoarele', 'ajutorul', 'ajutoare'} | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Binecuvântata muncă grea                                            | {'ajutorul', 'ajutor'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Ameninţare şi izbăvire                                                       | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                               | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 16-a după Rusalii                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 1 - Înfricoşata lepădare                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Apostolia Femeilor                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                             | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                       | {'ajutor', 'ajutoare'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 21 - După cei 50 de ani                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                          | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                               | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Nu mai au vin                                                                | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Psalmul 115                                                                  | {'Ajutor', 'Ajutorul'}                           | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Viaţa noastră şi tainele ei                                                  | {'ajutor', 'ajutorului'}                         | Traian Dorz     | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                             | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                     | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                     | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Ce gând frumos!...                                                           | {'ajutor'}                                       | Traian Dorz     | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Ce vezi venind?                                                              | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Cine Mă vede pe Mine                                                         | {'ajutor'}                                       | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Facerea de bine                                                              | {'ajutor'}                                       | Traian Dorz     | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Lumina şi credincioşia                                                       | {'ajutor'}                                       | Traian Dorz     | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Mâinile lui Dumnezeu                                                         | {'ajutor'}                                       | Traian Dorz     | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Nu ştim ce vrea să spună                                                     | {'ajutor'}                                       | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Pe Tine Te vom cere                                                          | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Pe acela pe care îl trimit Eu                                                | {'ajutor'}                                       | Traian Dorz     | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Praznicul Rusaliilor 1938                                                    | {'ajutor'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
+| Psalmul 124                                                                  | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 149                                                                  | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Răsplătirea şi pedeapsa                                                      | {'ajutor'}                                       | Traian Dorz     | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Răul şi binele                                                               | {'ajutor', 'Ajutor'}                             | Traian Dorz     | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| S-a dus şi a spus iudeilor                                                   | {'ajutor'}                                       | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Să nu vi se tulbure inima                                                    | {'ajutor'}                                       | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Tu pleci undeva                                                              | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Unul din ucenici: Andrei                                                     | {'ajutor'}                                       | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| În faţa Mării Roşii                                                          | {'ajutor'}                                       | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Întoarcerea şi vindecarea                                                    | {'ajutor'}                                       | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Îţi mulţumim cu lacrimi                                                      | {'ajutor'}                                       | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
+| Îţi mulţumim cu lacrimi                                                      | {'ajutor'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Cap. 11 - Răscrucea Isus                                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 13 - Jugul, sarcina şi crucea                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)         | {'ajutor', 'ajutorul', 'ajutoare'}               | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 1 - Cel mai frumos Isus                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Un vânt rău                                                        | {'ajutor', 'ajutorul', 'ajutoare'}               | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 24 - Pânza care se ţese                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Despre iubire                                                                | {'ajutor', 'Ajutorul', 'ajutoru', 'ajutorul'}    | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Şi n-au prins nimic în noaptea aceea                                         | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                          | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                 | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 28 - Necazurile din lungul drumului                                     | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 8 - Şi laţul s-a rupt                                                   | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Credinţa şi ridicarea                                                        | {'Ajutor', 'ajutorul'}                           | Traian Dorz     | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi) | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Mâhnire şi nădejde                                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Nicodim... a venit şi el...                                                  | {'ajutor', 'ajutoare', 'ajutorul'}               | Traian Dorz     | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
+| Trufia şi plata ei                                                           | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Vinovăţia şi Răsplata                                                        | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Întristarea şi mângâierea                                                    | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Acela pe care îl iubeşti Tu...                                               | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                              | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                        | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 11 - Semnele Oastei Domnului                                            | {'ajutor', 'ajutorul'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
++------------------------------------------------------------------------------+--------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+Searching Ajutor using https://api.comori-od.ro...
+Got 582 hits:
 Score: 17.754545
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
@@ -131,7 +117,7 @@ Highlight: Şi au sărit fraţii în <em>ajutor</em>. Dar consistoriul şi mitro
 Highlight: moşii şi păduri - nici măcar cu un leu n-a sărit în <em>ajutor</em>. Atunci de fapt era primejdia cu  Tipografia
 Highlight: strâns cu totul (cu Banca Naţională cu tot), un <em>ajutor</em> de vreo 250.000 lei. Dar ce era acest  picur
 
-Score: 16.9375
+Score: 16.933334
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 11 - Cel mai bun misionar
@@ -144,7 +130,20 @@ Highlight: acestor spice sufleteşti s-a făcut şi o chemare de <em>ajutor</em>
 Highlight: aşa. Fiecare ostaş să aibă la îndemână cărţi de <em>ajutor</em> sufletesc pentru a putea aduce şi pe alţii sub
 Highlight: hotărâre lucrul Domnului înainta frumos. Fără nici un <em>ajutor</em> material nici din partea mitropoliei, nici din
 
-Score: 16.351648
+Score: 16.691177
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre ajutorare
+Type: articol
+Author: Traian Dorz
+Highlight: cu ce pot, ei au s-aducă orişicui vreun <em>ajutor</em>
+Highlight: 31 - Noi dăm <em>ajutor</em> la alţii ca să-i facem ca şi ei
+Highlight: 35 - Ruşinoasă-i viaţa celor nimănui spre <em>ajutor</em>;
+Highlight:  vreun <em>ajutor</em>
+Highlight: sigură-i numai izbânda când e Ceru-n <em>ajutor</em>.
+Highlight: 45 - Nu cere-<em>ajutor</em> la nimeni decât muncii tale,
+
+Score: 16.337662
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 20 - Câte feţe ar fi putut avea binele
@@ -259,6 +258,18 @@ Highlight: ascunse, iar pădurile sunt dese şi mari, - de ce mare <em>ajutor</e
 Highlight: Astfel de <em>ajutor</em> binecuvântat în locuri grele, astfel de lumini
 Highlight: tocmai atunci vin şi tocmai acolo caută să dea <em>ajutorul</em> lor, împlinind ce lipseşte din partea tuturor
 
+Score: 15.233334
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Suflete binefăcătoare
+Type: articol
+Author: Traian Dorz
+Highlight: în vremile de grea cumpănă pe cine să chemi în <em>ajutor</em>.
+Highlight: grea cumpănă pentru noi, - am găsit un aşa de mare <em>ajutor</em>.
+Highlight: 4 - Suflete greu încercat, care ai nevoie de un <em>ajutor</em> în încercare, de o mângâiere în durerea ta, de
+Highlight: când o familie nenorocită va avea nevoie de vreun <em>ajutor</em> al tău,
+Highlight: El nu va pregeta să vină grabnic şi fericit în <em>ajutorul</em> vostru.
+
 Score: 15.2
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Calea vieţii noastre
@@ -270,7 +281,7 @@ Highlight: Isus ştia cât de multă trebuinţă vor avea de un <em>ajutor</em> 
 Highlight: Vor primi un <em>ajutor</em> care îi va întări în orice luptă. Îi va face neclintiţi
 Highlight: încercările lor din lume, dăruindu-le şi ocrotire şi <em>ajutor</em> în toate, până la capăt.
 
-Score: 14.423077
+Score: 14.428572
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 21 - Tipografia - un minunat şi dureros ideal
@@ -282,19 +293,6 @@ Highlight: sufletelor iubitoare şi jertfitoare cu fărâma lor de <em>ajutor</e
 Highlight: şi la <em>ajutorul</em> vostru iubiţilor fraţi ostaşi din Oastea Domnului. Vă cer înainte de toate <em>ajutorul</em> cel
 Highlight: şi ea a ajuns acum răspândită prin toată ţara. <em>Ajutorul</em> şi harul ce ni l-a dat Domnul trebuie să ne fie
 Highlight: tipografia Oastei Domnului... Domnul să-ţi răsplătească <em>ajutorul</em> trimis, iar nouă să ne ajute să ducem la împlinire
-
-Score: 14.409091
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: am lăsat-o totdeauna deschisă pentru a da sfat, <em>ajutor</em> şi apărare, pentru plângerile văduvelor şi a săracilor
-Highlight: predica, iese însufleţirea, ies mişcări, fapte şi <em>ajutor</em> pentru păstoriţi.
-Highlight: dat pe Duhul Sfânt ca Ocrotitor, Mângâietor şi <em>Ajutor</em> în lupta Evangheliei Sale şi că acum El este Îndrumătorul
-Highlight: pe Isus, - învăţăturile şi virtuţile Lui - în <em>ajutorul</em> şi folosul sufletului şi traiului vostru - şi
-Highlight: este deschisă totdeauna cu tot ce are, pentru <em>ajutorarea</em> şi lipsurile lor. Calul meu, carul şi boii mei
-Highlight: Viorel tot mai adânc în mlaştina pierzării, iar cu <em>ajutorul</em> şi neştiinţa lui Viorel să-l atragă tot mai mult
 
 Score: 14.4
 Volume: Istoria unei Jertfe
@@ -308,6 +306,32 @@ Highlight: săi duhovniceşti din Lucrarea Oastei îi săreau în <em>ajutor</em
 Highlight: înghită pe cel drept, - Dumnezeu îi trimite şi <em>ajutorul</em> omului... Aşa
 Highlight: Numele Domnului vă mulţumim d-le deputat pentru <em>ajutorul</em> ce ni-l daţi. Vă
 Highlight:  - anunţa el cu bucurie în noua foaie. - Cu <em>ajutorul</em> lui Dumnezeu vom continua în foaia aceasta
+
+Score: 14.388889
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: am lăsat-o totdeauna deschisă pentru a da sfat, <em>ajutor</em> şi apărare, pentru plângerile văduvelor şi a săracilor
+Highlight: predica, iese însufleţirea, ies mişcări, fapte şi <em>ajutor</em> pentru păstoriţi.
+Highlight: dat pe Duhul Sfânt ca Ocrotitor, Mângâietor şi <em>Ajutor</em> în lupta Evangheliei Sale şi că acum El este Îndrumătorul
+Highlight: pe Isus, - învăţăturile şi virtuţile Lui - în <em>ajutorul</em> şi folosul sufletului şi traiului vostru - şi
+Highlight: Viorel tot mai adânc în mlaştina pierzării, iar cu <em>ajutorul</em> şi neştiinţa lui Viorel să-l atragă tot mai mult
+Highlight: încât am mulţumit neîncetat lui Dumnezeu pentru <em>ajutorul</em> pe care îl primisem de la El prin ei. Dl
+
+Score: 14.375
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: faţa Mântuitorului, de la care să ceară putere şi <em>ajutor</em> pentru tot ce îi aşteaptă dincolo.
+Highlight:  iar celălalt un căpitan, probabil un <em>ajutor</em> al maiorului...
+Highlight: primejdie? Că nici astăzi nu avem nici un alt aliat şi <em>ajutor</em> nici împotriva vrăjmaşilor dinafară, nici împotriva
+Highlight: vedea totul crescând în armonie şi frumuseţe prin <em>ajutorul</em> Cuvântului şi Duhului Sfânt.  Marele
+Highlight: din cămară şi banii din buzunar, pentru a duce <em>ajutoare</em> familiilor sărace rămase fără părinte ori soţ
+Highlight: rândul trecut ci un altul. Căpitanul care părea <em>ajutorul</em> lui. Un om dur şi mai puţin inteligent.
 
 Score: 14.375
 Volume: Istoria unei Jertfe
@@ -335,30 +359,17 @@ Highlight: ne-a oferit cu toată dragostea <em>ajutorul</em> d-sale... Dar pe l�
 Highlight: celelalte care i-au urmat, - a apărut numai cu <em>ajutorul</em> Domnului şi ai smeriţilor lucrători ai Lui
 
 Score: 14.357142
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Cele mari şi cele mici
 Type: articol
 Author: Traian Dorz
-Highlight: faţa Mântuitorului, de la care să ceară putere şi <em>ajutor</em> pentru tot ce îi aşteaptă dincolo.
-Highlight:  iar celălalt un căpitan, probabil un <em>ajutor</em> al maiorului...
-Highlight: primejdie? Că nici astăzi nu avem nici un alt aliat şi <em>ajutor</em> nici împotriva vrăjmaşilor dinafară, nici împotriva
-Highlight: vedea totul crescând în armonie şi frumuseţe prin <em>ajutorul</em> Cuvântului şi Duhului Sfânt.  Marele
-Highlight: rândul trecut ci un altul. Căpitanul care părea <em>ajutorul</em> lui. Un om dur şi mai puţin inteligent.
-Highlight: din Bucureşti - Adrian Păunescu - solicitându-i <em>ajutorul</em> şi recomandarea sa către vreo editură pentru tipărirea
-
-Score: 14.357142
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-Highlight:  un <em>ajutor</em> fraţilor, care locuiau în Iudeea,
-Highlight: 30. ceea ce au şi făcut, şi au trimis acest <em>ajutor</em> la prezbiteri
-Highlight: urechile bisericii, ce aud îndată orice chemare după <em>ajutor</em>, orice suspin după mângâiere, orice îndemn spre
-Highlight: fost: Evanghelizarea, cârmuirea, învăţătura, într-<em>ajutorarea</em>, păstorirea (
-Highlight: 29 - În <em>ajutorul</em> fraţilor lipsiţi
-Highlight: daruri ale lui Dumnezeu în Biserica Sa, este într-<em>ajutorarea</em> frăţească.
+Highlight: biruim pe cele mici, adesea nu avem nevoie de un <em>ajutor</em> deosebit. Trecem prin ele ca prin apele cele mici
+Highlight: - fără un puternic <em>ajutor</em> al lui Dumnezeu.
+Highlight: fără a cere cu credinţă şi a primi un puternic <em>ajutor</em> Dumnezeiesc.
+Highlight: De a-L chema în <em>ajutorul</em> nostru, cu toată deznădejdea stării în care am
+Highlight: Îngroziţi de ele să strigăm neîncetat după <em>ajutorul</em> Mâinilor puternice ale lui Dumnezeu.
+Highlight: prin care au trecut ei cu bine, numai datorită <em>ajutorului</em> ceresc
 
 Score: 14.333333
 Volume: Istoria unei Jertfe
@@ -371,6 +382,18 @@ Highlight: Opreşte-te în genunchi şi suspină după <em>ajutor</em>. Harul Du
 Highlight: lecţie cu Oastea copiilor. În lucrarea aceasta va da <em>ajutor</em> şi fr. Alexandru Moraru, absolvent al şcolii normale
 Highlight: curând, şi fr. Marini pentru că va fi nevoie de <em>ajutorul</em> nostru la lucrul ce are să înceapă în redacţia
 Highlight: biserică şi învăţătorul în şcoală. Fără voi şi <em>ajutorul</em> vostru nici preotul şi nici învăţătorul nu poate
+
+Score: 14.333333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 19 - Omul trimes de Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: dragostei mele, desigur i-aş fi putut fi de mai mare <em>ajutor</em>. Dar eu nu eram decât un biet tinerel, abia venit
+Highlight: ocupaţi cu ale noastre, nu-i dădeam aproape nici un <em>ajutor</em> sorei Liţa la treburile ei. Adesea o vedeam rugându-se
+Highlight: luptătorilor de la front să reziste că le soseşte <em>ajutor</em>.
+Highlight: fierbinte din Hristos. N-am avut alte subvenţii şi <em>ajutoare</em>, n-am avut alte avuţii şi fonduri, n-am avut alt
+Highlight: împărtăşit mereu ostaşilor Lui solia cea dulce că <em>ajutorul</em> Domnului este cu noi şi între noi...
 
 Score: 14.333333
 Volume: Istoria unei Jertfe
@@ -396,15 +419,35 @@ Highlight: aici ne-a ajutat şi nouă Domnul... O piatră de <em>ajutor</em> am 
 Highlight: Deznădăjduit, el a cerut atunci <em>ajutorul</em> părintelui Iosif, care l-a înţeles şi l-a ajutat
 
 Score: 14.3
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
 Type: articol
 Author: Traian Dorz
-Highlight: dragostei mele, desigur i-aş fi putut fi de mai mare <em>ajutor</em>. Dar eu nu eram decât un biet tinerel, abia venit
-Highlight: ocupaţi cu ale noastre, nu-i dădeam aproape nici un <em>ajutor</em> sorei Liţa la treburile ei. Adesea o vedeam rugându-se
-Highlight: luptătorilor de la front să reziste că le soseşte <em>ajutor</em>.
-Highlight: împărtăşit mereu ostaşilor Lui solia cea dulce că <em>ajutorul</em> Domnului este cu noi şi între noi...
+Highlight:  un <em>ajutor</em> fraţilor, care locuiau în Iudeea,
+Highlight: 30. ceea ce au şi făcut, şi au trimis acest <em>ajutor</em> la prezbiteri
+Highlight: urechile bisericii, ce aud îndată orice chemare după <em>ajutor</em>, orice suspin după mângâiere, orice îndemn spre
+Highlight: 29 - În <em>ajutorul</em> fraţilor lipsiţi
+
+Score: 14.3
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Omul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: caute să dea acest <em>ajutor</em>, dar totdeauna cu toată priceperea, în aşa fel ca <em>ajutorul</em> să-i facă bine, iar
+Highlight: are nevoie de <em>ajutor</em>, fie că îl cere el, fie că nu-l cere.  Oricine
+Highlight: Oricine poate să dea un <em>ajutor</em> unui nenorocit
+
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Bunătatea şi înţelepciunea
+Type: articol
+Author: Traian Dorz
+Highlight: cât de mare <em>ajutor</em> îţi sunt atunci pe cale tăbliţele îndrumătoare
+Highlight: Aşa de mare <em>ajutor</em> îţi sunt sfaturile unui om bun, - când eşti la
+Highlight: 16 - De un mare <em>ajutor</em> binecuvântat în locuri grele,
 
 Score: 14.25
 Volume: Istoria unei Jertfe
@@ -439,19 +482,6 @@ Highlight: vino-n <em>ajutor</em> degrab
 Score: 12.916666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-Highlight: Cricău, Vara Romanenco, suflet care i-a fost de mult <em>ajutor</em> în lupta Domnului.
-Highlight: Un mare <em>ajutor</em> am avut din partea scumpilor fraţi din Chiuieşti
-Highlight: gând în jurul ei, să sprijinim răspândirea şi <em>ajutorarea</em> ei, sprijinind astfel lupta Domnului şi steagul
-Highlight: Marelui nostru Dumnezeu şi Mântuitor Isus Hristos, <em>Ajutorul</em> nostru şi Pilda noastră, prin care ai Lui au putut
-Highlight: Ghiţă Anăstăsoaiei şi sora Nataliţa Iordache. Cu <em>ajutorul</em> Domnului vor lua parte fr. T. Dorz, D. Bălăuţă
-Highlight: Cu <em>ajutorul</em> Domnului la unele din aceste adunări va merge
-
-Score: 12.916666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
 Title: Cap. 6 - Între două judecăţi
 Type: articol
 Author: Traian Dorz
@@ -462,18 +492,30 @@ Highlight: bisericii. Cu <em>ajutorul</em> Celui Care este <em>Ajutorul</em>, Lu
 Highlight: dârz al bisericii străbune caută să făurească cu <em>ajutorul</em> mişcării creştine Oastea Domnului o ţărănime nouă
 Highlight: Împăratului Ceresc, Fiul lui Dumnezeu, şi face cu <em>ajutorul</em> lui Dumnezeu o armată de luptători neînfricaţi
 
-Score: 12.888888
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 5 - Binecuvântata muncă grea
+Score: 12.90909
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
 Type: articol
 Author: Traian Dorz
-Highlight: Sus, cerând <em>ajutorul</em> Domnului Dumnezeu. Şi apoi mulţumindu-I pentru primirea acestui <em>ajutor</em>.
-Highlight: Sau Lucrarea şi Casa Domnului care au lipsă de <em>ajutor</em> şi din partea ta.  Hărnicia
-Highlight: tine şi pentru ai tăi hrana, îmbrăcămintea şi <em>ajutorul</em> trebuincios, ci te ajută să-l poţi ajuta şi pe
-Highlight: casă, de la pădure de departe, - cu toţii se într-<em>ajutorau</em>, începând de la cel dintâi şi până la cel din
-Highlight: facă lucrul cel mai greu singur. Toţi săreau în <em>ajutorul</em> lui.
-Highlight: toţi vecinii şi chiar dintre toţi oamenii. Într-<em>ajutorarea</em> săritoare şi bucuroasă, cu prietenie şi cu părtăşie
+Highlight: Cricău, Vara Romanenco, suflet care i-a fost de mult <em>ajutor</em> în lupta Domnului.
+Highlight: Un mare <em>ajutor</em> am avut din partea scumpilor fraţi din Chiuieşti
+Highlight: Marelui nostru Dumnezeu şi Mântuitor Isus Hristos, <em>Ajutorul</em> nostru şi Pilda noastră, prin care ai Lui au putut
+Highlight: Ghiţă Anăstăsoaiei şi sora Nataliţa Iordache. Cu <em>ajutorul</em> Domnului vor lua parte fr. T. Dorz, D. Bălăuţă
+Highlight: Cu <em>ajutorul</em> Domnului la unele din aceste adunări va merge
+Highlight: Va lua parte cu <em>ajutorul</em> Domnului şi fr. Popa Petru - Batiz. În
+
+Score: 12.8571415
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărat este că I.P.S. Sa refuzându-mi orice <em>ajutor</em> material, nici măcar să tipăresc
+Highlight: mitropolitul Nicolae Bălan, după ce îmi refuzase <em>ajutor</em>, m-a oprit cu forţa publică să mut tipografia şi
+Highlight: acest deficit au intrat şi <em>ajutoarele</em>. În acest deficit a intrat şi <em>ajutorul</em> de 80.000 lei de la Banca
+Highlight:  Darurile şi <em>ajutoarele</em> despre care se face atâta caz s-au folosit şi
+Highlight: foilor. Cea mai mare parte a acestor daruri şi <em>ajutoare</em> s-au consumat la acoperirea deficitului foilor
 
 Score: 12.833332
 Volume: Istoria unei Jertfe
@@ -487,27 +529,27 @@ Highlight: fruntea acestei acţiuni, săriră rând pe rând în <em>ajutorul</e
 Highlight: vremea sa, nişte vrăjmaşi din afara Oastei, cu <em>ajutorul</em> unor vrăjmaşi din lăuntrul ei (Moldoveanu, Banu
 Highlight: să-l vizitez la episcopie fie pentru a-i solicita <em>ajutorul</em> pentru un candidat la preoţie ori la Seminar,
 
-Score: 12.799999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 14 - Apostolia Femeilor
-Type: articol
-Author: Traian Dorz
-Highlight: ) - a avut un mare <em>ajutor</em> de la Domnul prin apostolia unor tot atât de sfinte
-Highlight: începutului Oastei, - surorile noastre au dat un <em>ajutor</em> din cele mai mari făcându-se multe din ele nişte
-Highlight: răspândire a Bibliei şi cărţilor Oastei sau în <em>ajutorarea</em> materială a tipăririi acestora ori a ajutorării
-Highlight: Anica Damian cu fetiţa ei Amelia s-au hotărât, cu <em>ajutorul</em> Domnului ca în fiecare zi să citească câte un
-
-Score: 12.799999
+Score: 12.833332
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
+Title: Cap. 5 - Binecuvântata muncă grea
 Type: articol
 Author: Traian Dorz
-Highlight: Iosif şi cărţi de ale noastre... Au fost un mare <em>ajutor</em> şi o mare înviorare a Lucrării Domnului reluarea
-Highlight: lovite de nenorocire, - spre cele care le ofereau <em>ajutor</em>. Astfel am ajuns să aducem şi să adăpostim sute
-Highlight: multe adunări şi multe judeţe, în îmbărbătarea şi <em>ajutorarea</em> fraţilor noştri, atât sufleteşte cât şi trupeşte
-Highlight: primejdia morţii, strigam şi nimeni nu era să vină în <em>ajutorul</em> meu.
+Highlight: Sus, cerând <em>ajutorul</em> Domnului Dumnezeu. Şi apoi mulţumindu-I pentru primirea acestui <em>ajutor</em>.
+Highlight: Sau Lucrarea şi Casa Domnului care au lipsă de <em>ajutor</em> şi din partea ta.  Hărnicia
+Highlight: tine şi pentru ai tăi hrana, îmbrăcămintea şi <em>ajutorul</em> trebuincios, ci te ajută să-l poţi ajuta şi pe
+Highlight: facă lucrul cel mai greu singur. Toţi săreau în <em>ajutorul</em> lui.
+
+Score: 12.799999
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Ameninţare şi izbăvire
+Type: articol
+Author: Traian Dorz
+Highlight: putere nici să ne mai rugăm sau să mai nădăjduim în <em>ajutor</em>.
+Highlight: un <em>ajutor</em> pentru desăvârşirea altora,
+Highlight: căci chiar atunci avem cea mai mare nevoie de <em>ajutorul</em> Tău.  7
+Highlight: nu se roagă ca arătarea Domnului în apărarea şi <em>ajutorul</em> lui - să se facă în răzbunare, în mânie sau în
 
 Score: 12.799999
 Volume: Istoria unei Jertfe
@@ -532,17 +574,6 @@ Highlight: Bizuit numai pe <em>ajutorul</em> pe care am simţit că mi-l dă put
 Highlight: tuturor celor ce avem nevoie în orice clipă de <em>ajutorul</em> ei.  M-am
 
 Score: 12.799999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-Highlight: Nu am nici un salar, nici pensie, nici măcar un <em>ajutor</em> social... Stau aşa.
-Highlight: goală. Fără salar, fără pensie, fără nici un fel de <em>ajutor</em> decât de la Dumnezeu. Ca să vedeţi câtă dreptate
-Highlight: mai venit la mine pentru ultima dată. Era tot cu <em>ajutorul</em> său căpitanul... După ce mi s-a mai scotocit iarăşi
-Highlight: a hotărât în inimă să dea pentru cinstirea şi <em>ajutorarea</em> mirilor şi a familiei care se întemeiază acum
-
-Score: 12.799999
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 16-a după Rusalii
@@ -562,6 +593,36 @@ Author: Traian Dorz
 Highlight: orfelinatului, azilului dv. jumătate din averea ei ca <em>ajutor</em> pentru îmbunătăţirea hranei, pentru îmbrăcămintea
 Highlight: pe fraţi. Dar fără curaj pe faţă - şi fără alt <em>ajutor</em> decât compasiunea lor sinceră dar deocamdată neputincioasă
 Highlight: respective la fel n-au intervenit în nici un caz în <em>ajutorul</em> nici unora dintre aceşti enoriaşi ai lor, ba în
+
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 14 - Apostolia Femeilor
+Type: articol
+Author: Traian Dorz
+Highlight: ) - a avut un mare <em>ajutor</em> de la Domnul prin apostolia unor tot atât de sfinte
+Highlight: începutului Oastei, - surorile noastre au dat un <em>ajutor</em> din cele mai mari făcându-se multe din ele nişte
+Highlight: Anica Damian cu fetiţa ei Amelia s-au hotărât, cu <em>ajutorul</em> Domnului ca în fiecare zi să citească câte un
+
+Score: 12.749999
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 17 - Mereu prin ape tulburi
+Type: articol
+Author: Traian Dorz
+Highlight: Iosif şi cărţi de ale noastre... Au fost un mare <em>ajutor</em> şi o mare înviorare a Lucrării Domnului reluarea
+Highlight: lovite de nenorocire, - spre cele care le ofereau <em>ajutor</em>. Astfel am ajuns să aducem şi să adăpostim sute
+Highlight: primejdia morţii, strigam şi nimeni nu era să vină în <em>ajutorul</em> meu.
+
+Score: 12.749999
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: părintelui Iosif. Fusesem chemat de dimineaţă să dau un <em>ajutor</em> la nişte lucrări la primăria comunei unde locuiam
+Highlight: toate părţile - şi Tu nu-mi dai nici un semn de <em>ajutor</em>. Şi bat la poarta Ta închisă - şi nu-mi răspunzi
+Highlight: greutăţi. Am făcut atunci cu grijă o strângere de <em>ajutoare</em> în bani şi în alimente pentru ei - şi prin familia
 
 Score: 12.749999
 Volume: Istoria unei Jertfe
@@ -595,33 +656,13 @@ Highlight: tras lui Goliat câteva zdravene lovituri. Şi cu <em>ajutorul</em> D
 
 Score: 12.749999
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
 Type: articol
 Author: Traian Dorz
-Highlight: părţile - şi Tu nu-mi făgăduieşti parcă nici un <em>ajutor</em>. Şi bat la poarta Ta închisă - şi Tu nu-mi răspunzi
-Highlight: îngrijiţi cu hrană şi îmbrăcăminte. Altora, li s-a dat <em>ajutor</em> să-şi facă locuinţă... Bolnavii erau cercetaţi
-Highlight: Lucrarea de <em>ajutorare</em> frăţească era întreţinută peste tot de duhul darnic
-
-Score: 12.749999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Adevărat este că I.P.S. Sa refuzându-mi orice <em>ajutor</em> material, nici măcar să tipăresc
-Highlight: mitropolitul Nicolae Bălan, după ce îmi refuzase <em>ajutor</em>, m-a oprit cu forţa publică să mut tipografia şi
-Highlight: intrat şi ajutoarele. În acest deficit a intrat şi <em>ajutorul</em> de 80.000 lei de la Banca Naţională.
-
-Score: 12.749999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: celelalte fire ale Cuvântului Sfânt care îţi vin în <em>ajutor</em> pentru ajungerea la această ţintă cât mai frumos
-Highlight: L-am îmbrăţişat cu bucurie atunci şi i-am dat cât <em>ajutor</em> i-am putut, fără a-i aminti nimic de cele petrecute
-Highlight: Mai mult sau mai puţin, pe fiecare din ei îi <em>ajutorasem</em> şi în felul acesta... Dar
+Highlight: Nu am nici un salar, nici pensie, nici măcar un <em>ajutor</em> social... Stau aşa.
+Highlight: goală. Fără salar, fără pensie, fără nici un fel de <em>ajutor</em> decât de la Dumnezeu. Ca să vedeţi câtă dreptate
+Highlight: mai venit la mine pentru ultima dată. Era tot cu <em>ajutorul</em> său căpitanul... După ce mi s-a mai scotocit iarăşi
 
 Score: 12.749999
 Volume: Meditații la Ev. după Ioan
@@ -644,16 +685,6 @@ Highlight: căci El le este Scut şi <em>Ajutor</em>.
 Highlight: căci El e Scutul şi-<em>Ajutorul</em> lor 11-Câţi
 
 Score: 12.749999
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Unul din ucenici: Andrei
-Type: articol
-Author: Traian Dorz
-Highlight: pricepere observând totdeauna unde este nevoie de un <em>ajutor</em> şi fiind gata să-l dea cu bucurie şi cu grabă.
-Highlight: şi cine are nevoie de ceva, ca să ajute. De cât <em>ajutor</em> şi folos sunt astfel de ucenici binecuvântaţi!
-Highlight: au, ci pentru propăşirea Evangheliei şi pentru <em>ajutorarea</em> lipsiţilor, pentru a-şi muta avuţia în ceruri
-
-Score: 12.749999
 Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
 Title: Viaţa noastră şi tainele ei
@@ -664,13 +695,13 @@ Highlight: Dăruieşte-ne Te rugăm şi mai departe acest <em>ajutor</em> pentru
 Highlight: este numai rezultatul <em>ajutorului</em> pe care ni l-ai dat Tu. Fără
 
 Score: 12.666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
 Type: articol
 Author: Traian Dorz
-Highlight: părintelui Iosif. Fusesem chemat de dimineaţă să dau un <em>ajutor</em> la nişte lucrări la primăria comunei unde locuiam
-Highlight: toate părţile - şi Tu nu-mi dai nici un semn de <em>ajutor</em>. Şi bat la poarta Ta închisă - şi nu-mi răspunzi
+Highlight: părţile - şi Tu nu-mi făgăduieşti parcă nici un <em>ajutor</em>. Şi bat la poarta Ta închisă - şi Tu nu-mi răspunzi
+Highlight: îngrijiţi cu hrană şi îmbrăcăminte. Altora, li s-a dat <em>ajutor</em> să-şi facă locuinţă... Bolnavii erau cercetaţi
 
 Score: 12.666666
 Volume: Istoria unei Jertfe
@@ -680,6 +711,69 @@ Type: articol
 Author: Traian Dorz
 Highlight: la foaie. Ostaşii din întreaga ţară au sărit în <em>ajutor</em> cu colecte, donaţii şi liste de subscripţii, care
 Highlight: din iarnă a alergat aici la Sibiu spre a fi în <em>ajutor</em> părintelui Iosif.
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: celelalte fire ale Cuvântului Sfânt care îţi vin în <em>ajutor</em> pentru ajungerea la această ţintă cât mai frumos
+Highlight: L-am îmbrăţişat cu bucurie atunci şi i-am dat cât <em>ajutor</em> i-am putut, fără a-i aminti nimic de cele petrecute
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Ce gând frumos!...
+Type: articol
+Author: Traian Dorz
+Highlight: şi dacă nu dăm <em>ajutor</em>.
+Highlight: 12 - Când ar arde casa ta - ce ai face? N-ai striga după <em>ajutor</em> şi nu l-ai arăta
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ce vezi venind?
+Type: poezie
+Author: Traian Dorz
+Highlight: pe Domnul <em>ajutor</em>
+Highlight: pe Domnul, doar pe Domnul de pază şi-<em>ajutor</em>.
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Cine Mă vede pe Mine
+Type: articol
+Author: Traian Dorz
+Highlight: - Să dai orice <em>ajutor</em>, orice sfat, orice exemplu când trebuie, cui trebuie
+Highlight: - şi ne putem bucura pe veci de putere şi de <em>ajutor</em>, pentru orice lucru şi cuvânt bun al nostru.
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Facerea de bine
+Type: articol
+Author: Traian Dorz
+Highlight: când tu vei avea cea mai mare lipsă şi nevoie de <em>ajutor</em>...
+Highlight: tine, când vei fi tu în lipsă şi vei aştepta tu <em>ajutor</em>.
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Lumina şi credincioşia
+Type: articol
+Author: Traian Dorz
+Highlight: nevoie în starea lui grea, de <em>ajutor</em>, ca să se ridice.
+Highlight: 3 - Având nevoie de <em>ajutor</em>, omul a ajuns la rugăciune
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Mâinile lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: poţi să scapi, - strigă spre Domnul şi cheamă în <em>ajutor</em> Mâna Lui, - şi ea va rupe toate lanţurile satanei
+Highlight: primejdie apropiindu-se - şi nu-ţi grăbeşti mâna în <em>ajutor</em> când poţi face aceasta, - să ştii şi tu că Mâna
 
 Score: 12.666666
 Volume: Meditații la Ev. după Ioan
@@ -736,6 +830,24 @@ Highlight: pe cei fără-<em>ajutor</em>.
 Highlight: tăişuri <em>ajutor</em>
 
 Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Răsplătirea şi pedeapsa
+Type: articol
+Author: Traian Dorz
+Highlight: vie şi adevărată a inimii şi a vieţii noastre, un <em>ajutor</em> fără de care am fi nu numai nespus de nefericiţi
+Highlight: ni se pare prea mare spre a-i fi alături cu un <em>ajutor</em> sau cu o mângâiere.
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Răul şi binele
+Type: articol
+Author: Traian Dorz
+Highlight: toate că au la îndemână tot harul lui Dumnezeu spre <em>ajutor</em>
+Highlight: păstrăm în noi Duhul Sfânt, care ne-a fost dat ca <em>Ajutor</em> şi Pază în toată această luptă.
+
+Score: 12.666666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: S-a dus şi a spus iudeilor
@@ -754,6 +866,24 @@ Highlight: şi a cărui iubire vrea să ne vină în <em>ajutor</em>, ori mărin
 Highlight: Şi pentru puternicul Tău <em>ajutor</em> cu care eşti gata să ne aperi totdeauna, când suntem
 
 Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Tu pleci undeva
+Type: poezie
+Author: Traian Dorz
+Highlight: sprijin, să-ţi dea sprijin şi-<em>ajutor</em>...
+Highlight: <em>ajutor</em> nepreţuit
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Unul din ucenici: Andrei
+Type: articol
+Author: Traian Dorz
+Highlight: pricepere observând totdeauna unde este nevoie de un <em>ajutor</em> şi fiind gata să-l dea cu bucurie şi cu grabă.
+Highlight: şi cine are nevoie de ceva, ca să ajute. De cât <em>ajutor</em> şi folos sunt astfel de ucenici binecuvântaţi!
+
+Score: 12.666666
 Volume: Spre Canaan
 Book: Spre Canaan
 Title: În faţa Mării Roşii
@@ -761,6 +891,15 @@ Type: articol
 Author: Pr. Iosif Trifa
 Highlight: înspăimântat foarte tare, şi au strigat către Domnul după <em>ajutor</em>. Ei au zis lui Moise: Nu erau oare morminte în
 Highlight: frământăm nopţile şi ceream Domnului un sfat, un <em>ajutor</em>, un răspuns, dar la toate frământările mele, răspunsul
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Întoarcerea şi vindecarea
+Type: articol
+Author: Traian Dorz
+Highlight: preţuire în Domnul, - şi să fim gata să le venim în <em>ajutor</em>, cu grabă şi cu grijă, ori de câte ori vor fi în
+Highlight: pentru că şi ele au fost şi poate mai sunt de mult <em>ajutor</em> multora
 
 Score: 12.666666
 Volume: Meditații la Ev. după Ioan
@@ -806,7 +945,19 @@ Highlight: fierbinte în Domnul şi-ţi doresc tot harul şi <em>ajutorul</em> S
 Highlight: a-şi avea pretutindeni susţinători şi unelte. Cu <em>ajutorul</em> unor astfel de oameni i-au atras pe Viorel şi
 Highlight: lăsată deplin în mâinile agresorului, care cu <em>ajutorul</em> legii şi cu complicitatea tuturor celorlalţi mai
 
-Score: 9.833333
+Score: 9.857142
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
+Type: articol
+Author: Traian Dorz
+Highlight: pentru fiecare <em>ajutor</em> pe care ni-l dai - ca să putem face un bine, când putem veni în <em>ajutorul</em> Lucrării Tale
+Highlight: pentru harul şi părtăşia la această strângere de <em>ajutoare</em> pentru sfinţi. Şi au făcut aceasta nu numai cum
+Highlight: lună, partea Domnului, din ceea ce am realizat cu <em>ajutorul</em> şi sub paza Lui?  Cât
+Highlight: pentru harul şi părtăşia la această strângere de <em>ajutoare</em> pentru sfinţi. Şi au făcut aceasta nu numai cum
+Highlight: întâlni cu un leu... Omul se rugă puternic şi cu <em>ajutorul</em> lui Dumnezeu reuşi să scape şi din ghearele leului
+
+Score: 9.8
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
@@ -816,18 +967,6 @@ Highlight: aceste duhuri noi. Acestora le veniră îndată în “<em>ajutor</em
 Highlight: urmat, ci şi mai mult, ca puterea, garanţia şi <em>ajutorul</em> biruinţei lor. Pentru ca ai Lui să fie plini totdeauna
 Highlight: omul cu El. Muncind din greu, omul slab să ceară <em>ajutorul</em> lui Dumnezeu, - iar primindu-l, să-I mulţumească
 Highlight: mulţumească. Suferind cu frică, femeia să-I ceară <em>ajutorul</em> lui Dumnezeu - şi primindu-l, să-I mulţumească. Îngrozit
-Highlight: închisorii. Pe urmă se făcea regulat cercetarea şi <em>ajutorarea</em> bolnavilor din spitale, de pe la case, de la
-
-Score: 9.833333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
-Type: articol
-Author: Traian Dorz
-Highlight: pentru fiecare <em>ajutor</em> pe care ni-l dai - ca să putem face un bine, când putem veni în <em>ajutorul</em> Lucrării Tale
-Highlight: <em>ajutorarea</em> celor lipsiţi sau prinşi în lucrul Evangheliei
-Highlight: lună, partea Domnului, din ceea ce am realizat cu <em>ajutorul</em> şi sub paza Lui?  Cât
-Highlight: întâlni cu un leu... Omul se rugă puternic şi cu <em>ajutorul</em> lui Dumnezeu reuşi să scape şi din ghearele leului
 
 Score: 9.8
 Volume: Istoria unei Jertfe
@@ -842,6 +981,16 @@ Highlight: . Păr. Moţa de la Orăştie vine în <em>ajutorul</em> şi tovără
 
 Score: 9.8
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 18 - Un vânt rău
+Type: articol
+Author: Traian Dorz
+Highlight: Fraţii care mai rămăseseră ne chemau disperaţi în <em>ajutor</em>, pentru limpezirea şi împăcarea furtunilor stârnite
+Highlight: venim puternic în <em>ajutorul</em> fraţilor noştri încercaţi. Organizarăm strângeri de <em>ajutoare</em> pe judeţe şi pe
+Highlight: părere limpede şi una pentru toţi. Diavolul, cu <em>ajutorul</em> acestui vânt rău şi tulburător, căuta să împingă
+
+Score: 9.8
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 24 - Pânza care se ţese
 Type: articol
@@ -851,15 +1000,27 @@ Highlight: cu grabă acolo şi lucrând cu înţelepciunea şi <em>ajutorul</em>
 Highlight: Când ne-au oferit <em>ajutorul</em> acesta, le-am arătat cu mare speranţă şi bucurie
 Highlight: Sebeş, a trecut şi el în veşnicie. Am ajuns cu <em>ajutorul</em> Domnului şi lângă sicriul fr. Ilie şi împreună
 
-Score: 9.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Score: 9.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre iubire
 Type: articol
 Author: Traian Dorz
-Highlight: Un mic <em>ajutor</em> în locul neplătitorilor, ni-l mai dădeau cei ce
-Highlight: mele despre marea nevoie de care o are acolo de <em>ajutorul</em> meu în lucrul Domnului, arătându-i că nu se poate
-Highlight: mica lui pensioară de invalid şi trimite pentru <em>ajutorarea</em> Lucrării Domnului suma de două mii de lei...
+Highlight: nu da sfaturi, nici mustrare când e lipsă de-<em>ajutor</em>.
+Highlight: 62 - <em>Ajutorul</em> dat grăbit
+Highlight: <em>ajutoru</em>-ntârziat
+Highlight: în zadar aştepţi lumina şi-<em>ajutorul</em> sfânt să-ţi vină.
+
+Score: 9.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Şi n-au prins nimic în noaptea aceea
+Type: articol
+Author: Traian Dorz
+Highlight: alergarea după pâinea vieţii, ne sunt de cel mai mare <em>ajutor</em>.
+Highlight: Dar numai părtăşia şi munca ne dau căldura şi <em>ajutorul</em> curajului şi încrederii, speranţei şi năzuinţei
+Highlight: mai grele stări - nu-i lasă fără mângâierea şi <em>ajutorul</em> Lui, niciodată pe ai Săi.
+Highlight: bine. De aceea este totdeauna gata să vină în <em>ajutorul</em> celor care sunt ispitiţi - şi să-i scape (
 
 Score: 9.75
 Volume: Istoria unei Jertfe
@@ -870,16 +1031,6 @@ Author: Traian Dorz
 Highlight: toate cele ce le-am înfăţişat am vrut să fiu de un <em>ajutor</em> fraţilor şi fiilor noştri ca în astfel de împrejurări
 Highlight: sfârşitul ei. Mulţumesc Bunului Tată ceresc pentru tot <em>ajutorul</em> pe care mi l-a dat întâi ca s-o trăiesc, apoi
 Highlight: în faţa ei. Înainte de orice muncă Ţi-am cerut <em>ajutorul</em> Tău - şi după fiecare spor al ei, Ţi-am mulţumit
-
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 18 - Un vânt rău
-Type: articol
-Author: Traian Dorz
-Highlight: Fraţii care mai rămăseseră ne chemau disperaţi în <em>ajutor</em>, pentru limpezirea şi împăcarea furtunilor stârnite
-Highlight: părere limpede şi una pentru toţi. Diavolul, cu <em>ajutorul</em> acestui vânt rău şi tulburător, căuta să împingă
-Highlight: Noi căutam să venim puternic în <em>ajutorul</em> fraţilor noştri încercaţi. Organizarăm strângeri
 
 Score: 9.75
 Volume: Istoria unei Jertfe
@@ -903,16 +1054,6 @@ Highlight: - Vă duceţi cu tovarăşul (...) <em>ajutorul</em> d-tale, la dâns
 
 Score: 9.75
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: care singurii pot fi pentru biserica noastră un <em>ajutor</em> efectiv în lupta contra sectelor şi a păcatului
-Highlight: salveze pe sora ei. Venise să-mi ceară şi mie <em>ajutorul</em> unei intervenţii pe lângă Dorica spre a o convinge
-Highlight:  totul făcându-se în deplină armonie şi într-<em>ajutorare</em>.
-
-Score: 9.75
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 8 - Şi laţul s-a rupt
 Type: articol
@@ -922,24 +1063,14 @@ Highlight: cei care mai sufereau ca noi pentru Evanghelie - <em>ajutorul</em> S�
 Highlight: este. Cel puţin eu cel bătrân şi bolnav, fără <em>ajutorul</em> rugăciunii n-aş fi putut rezista, pentru că totul
 
 Score: 9.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre iubire
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Credinţa şi ridicarea
 Type: articol
 Author: Traian Dorz
-Highlight: nu da sfaturi, nici mustrare când e lipsă de-<em>ajutor</em>.
-Highlight: 62 - <em>Ajutorul</em> dat grăbit
-Highlight: în zadar aştepţi lumina şi-<em>ajutorul</em> sfânt să-ţi vină.
-
-Score: 9.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)
-Type: articol
-Author: Traian Dorz
-Highlight: mulţumire sau de mângâiere pe care i-l spui, un <em>ajutor</em> pe care i-l oferi, un avantaj pe care i-l înlesneşti
-Highlight:  de înţelegere, de dragoste, de prietenie şi <em>ajutorare</em> - acum tu, îngâmfatule, îngrăşatule, încrezutule
-Highlight: postul înalt unde te îngraşi şi te lauzi, prin <em>ajutorul</em> frăţesc - de ce eşti acum nerecunoscător, nesimţit
+Highlight: Dă slavă veşnică numai marelui tău <em>Ajutor</em>, Hristos.
+Highlight: Dumnezeu va veni iarăşi în <em>ajutorul</em> dreptăţii tale!  2
+Highlight: Ci Domnul a fost <em>ajutorul</em> tău. Numai El.  9
 
 Score: 9.75
 Volume: Hristos - Puterea Apostoliei
@@ -949,6 +1080,56 @@ Type: articol
 Author: Traian Dorz
 Highlight: familie unde trebuie să primească şi să dea iubire, <em>ajutor</em>, pildă binecuvântată, - el dă o pildă rea, - ce
 Highlight: Dumnezeu pentru <em>ajutorul</em> pe care El ţi-l dă prin altul, să-I mulţumească şi altul pentru <em>ajutorul</em> pe care El
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Mâhnire şi nădejde
+Type: articol
+Author: Traian Dorz
+Highlight: cât de hotărât Se va ridica El odată să-i vină în <em>ajutor</em>!
+Highlight: Doamne Isuse, vino atunci degrab în <em>ajutorul</em> ei!  16
+Highlight: Ce mângâietor va veni odată Domnul în <em>ajutorul</em> acestora.
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Nicodim... a venit şi el...
+Type: articol
+Author: Traian Dorz
+Highlight: neputinţă, Dumnezeu va îngriji să-I trimită un <em>ajutor</em> care să fie în stare să-L salveze.
+Highlight: să-i mai trimită îndată şi alţi însoţitori şi <em>ajutoare</em>.
+Highlight: Ajută-ne să ne bizuim în totul şi totdeauna pe <em>ajutorul</em> şi pe grija Ta sfântă.
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Trufia şi plata ei
+Type: articol
+Author: Traian Dorz
+Highlight: Iar Mâna Lui va fi gata să-ţi vină în <em>ajutor</em> la timp, nu te teme!
+Highlight: spre tine... şi grija Lui este gata să vină în <em>ajutorul</em> tău.  16
+Highlight: nu-ţi pierde răbdarea până când va veni El în <em>ajutorul</em> tău.
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Vinovăţia şi Răsplata
+Type: articol
+Author: Traian Dorz
+Highlight: Evanghelia nici un <em>ajutor</em>.
+Highlight: 14 - Din cauza celor răi şi cu <em>ajutorul</em> lor, stăpânirea păcatului se întinde cumplit,
+Highlight: Tatăl nostru Ceresc, Te rugăm dă-ne puterea şi <em>ajutorul</em> Tău, să facem pentru Tine tot mai mult, tot mai
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Întristarea şi mângâierea
+Type: articol
+Author: Traian Dorz
+Highlight: ne sunt de cel mai mare <em>ajutor</em>.
+Highlight: şi munca împreună cu fraţii, ne dau căldura şi <em>ajutorul</em> curajului şi încrederii,
+Highlight: mai grele stări, - nu-i lasă fără mângâierea şi <em>ajutorul</em> Lui, niciodată pe ai Săi.
 
 Score: 9.666667
 Volume: Meditații la Ev. după Ioan
@@ -969,6 +1150,15 @@ Highlight: Aron a fost dat ca un <em>ajutor</em> şi ca o întregire a lui Moise
 Highlight: împreună cu el pe o mare mulţime de preoţi, cu <em>ajutorul</em> cărora apoi a făcut această minunată Lucrare a
 
 Score: 9.666667
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: Un mic <em>ajutor</em> în locul neplătitorilor, ni-l mai dădeau cei ce
+Highlight: mele despre marea nevoie de care o are acolo de <em>ajutorul</em> meu în lucrul Domnului, arătându-i că nu se poate
+
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 11 - Semnele Oastei Domnului
@@ -976,184 +1166,4 @@ Type: articol
 Author: Traian Dorz
 Highlight: Ce paravan bun şi ce <em>ajutor</em> în aceste planuri ale lor le fusese lesne-crezarea
 Highlight: Am luat hotărâri bune şi ne-am rugat pentru <em>ajutorul</em> Domnului, ca în viitor să fim cât se poate de
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-Highlight: dintr-o dragoste creştinească de a da o mână de <em>ajutor</em> unei Lucrări duhovniceşti, prigonită şi năpăstuită
-Highlight: înţelegere creştinească. O nădejde că din toată <em>ajutorarea</em> aceasta, va ieşi odată, cât de târziu, după o
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 15 - Micii contemporani ai marilor oameni
-Type: articol
-Author: Traian Dorz
-Highlight: mai angajară lucrători la tipografie şi încă un <em>ajutor</em> lui Ion cel care învârtea la roata tipografiei
-Highlight: felul acesta în ţară şi în lume, precum şi de <em>ajutorul</em> material oferit de noi, George A. Petre s-a învoit
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 21 - La 25 de ani...
-Type: articol
-Author: Traian Dorz
-Highlight: rămânând pe jos, de unde nu se putea ridica fără <em>ajutor</em>. Din anturajul său s-a aflat că a suferit şi de
-Highlight: A mulţumit pentru tot <em>ajutorul</em> mai întâi sufletesc, apoi şi pentru celălalt material
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
-Type: articol
-Author: Traian Dorz
-Highlight: necunoscut şi pierdut pe totdeauna, fără acest <em>ajutor</em>.
-Highlight: Şi într-adevăr cu <em>ajutorul</em> Domnului aceste lucrări le-am încheiat cu bine
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 3 - Începutul chemării
-Type: articol
-Author: Traian Dorz
-Highlight: ceva ce-l face pe om să-şi caute un reazem, un <em>ajutor</em> sufletesc
-Highlight: apleci la pieptul Tău şi să mă reazem numai în <em>ajutorul</em> Tău. Mă simţesc dator să-Ţi mulţumesc şi din acest
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 32 - Şi alte lupte
-Type: articol
-Author: Traian Dorz
-Highlight: oameni care trăiesc şi mor fără Dumnezeu şi fără <em>ajutor</em>. Câţi patriarhi, câţi mitropoliţi, câţi episcopi
-Highlight: Pecetluieşte-le toate acestea cu Harul Tău, cu <em>ajutorul</em> şi sprijinul Tău, pentru împlinirea lor desăvârşită
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 9 - Pe drumul crucii mele
-Type: articol
-Author: Traian Dorz
-Highlight: de a mă aduce lângă el căci am să-i fiu de mare <em>ajutor</em>.
-Highlight: Cu <em>ajutorul</em> fratelui Pavel mi-am făcut ieşirea din spital
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Când mi-este greu
-Type: poezie
-Author: Traian Dorz
-Highlight: de nu mi-ai da Isuse atâta <em>ajutor</em>?
-Highlight: să-Ţi ceară <em>ajutorul</em> când relele-i înfrâng.
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cântarea împăratului David
-Type: poezie
-Author: Traian Dorz
-Highlight: la El, căci El îmi dă-<em>ajutor</em>
-Highlight: să-mi dea <em>ajutorare</em>.
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bunătate
-Type: articol
-Author: Traian Dorz
-Highlight: dar tu, tocmai dimpotrivă, uită ce-ai dat <em>ajutor</em>,
-Highlight: fără <em>ajutorul</em> său
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre prietenie
-Type: articol
-Author: Traian Dorz
-Highlight: 113 - Orişicare pot da sfaturi - însă <em>ajutor</em> puţini
-Highlight: 38 - Fă-ţi prieteni cu-<em>ajutorul</em> bogăţiilor nedrepte ca
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre suferinţă
-Type: articol
-Author: Traian Dorz
-Highlight: - minunea vine-n <em>ajutor</em>,
-Highlight: să-i aduci ca Bunul Doctor, <em>ajutorul</em> priceput.
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-Highlight: când eşti cu El, tu poţi fi sigur de <em>ajutor</em> la orice greu
-Highlight: nu-i iubire nici izbândă fără <em>ajutorul</em> lor.
-
-Score: 9.666667
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Dumnezeu şi Casa Lui
-Type: articol
-Author: Traian Dorz
-Highlight: şi le va face dreptate, atunci El le va veni în <em>ajutor</em>.
-Highlight: puternică rugăciune a tuturora pentru primirea <em>ajutorului</em> lui Dumnezeu, fără de care toate armele şi toată
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: După aceea Isus S-a dus...
-Type: articol
-Author: Traian Dorz
-Highlight: dureri nemărginite care are cea mai mare nevoie de <em>ajutor</em>.
-Highlight: avem pe Domnul Isus şi făgăduinţa Prezenţei, <em>ajutorului</em>, luminii şi bucuriei Lui pe cale şi
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: O cunună de spini
-Type: articol
-Author: Traian Dorz
-Highlight: n-are nici un folos de tine. Evanghelia nici un <em>ajutor</em>. Fraţii nici o bucurie. Predicuţele tale şi starea
-Highlight: cât mai repede. Căci din cauza acestora şi cu <em>ajutorul</em> lor, diavolul tronează ucigaş - iar Hristos este
-
-Score: 9.666667
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Obişnuit şi neobişnuit
-Type: articol
-Author: Traian Dorz
-Highlight: stare rea, fă tot şi cheamă-L pe Domnul degrab în <em>ajutor</em>.
-Highlight: ce-o au înaintea Domnului, să chemăm pe Domnul în <em>ajutorul</em> lor, ori de câte ori ne aducem aminte de ei.
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 119
-Type: poezie
-Author: Traian Dorz
-Highlight: într-<em>ajutor</em> deplin
-Highlight: 174-Suspin după-<em>ajutorul</em>
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 30
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-mi ajută Doamne că-s făr-de-<em>ajutor</em>...
-Highlight: - Un psalm al lui David, pentru <em>ajutorarea</em> Casei Domnului - 1-Te
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 46
-Type: poezie
-Author: Traian Dorz
-Highlight: 5-Dumnezeu e-n al ei mijloc veşnic sprijin şi-<em>ajutor</em>
-Highlight: El ni-e-<em>ajutorul</em> ce-n necaz nicicând
 

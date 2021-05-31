@@ -1,120 +1,88 @@
-+---------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                           | Occurrences                                  | Author      | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Ce cununie strălucită                                                           | {'cununie', 'cununa'}                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
-| Cap. 6 - Alte amare adevăruri                                                   | {'cununie', 'cununia', 'cununiei', 'cunună'} | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Pe urmele profetului                                                  | {'cununie', 'cununa'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cântec                                                                          | {'cununie'}                                  | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Cap. 30 - Alte adevăruri noi                                                    | {'cununia', 'cununie'}                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Din părţile Olteniei                                                            | {'cununie', 'cunună'}                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 14 - Un an adânc roditor                                                   | {'cununie'}                                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                     | {'cununie'}                                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Frumuseţea amintirilor mele!                                                    | {'cununie'}                                  | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Mă duc să dorm puţin...                                                         | {'cununie'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| O, cerul meu cel tânăr                                                          | {'cununie'}                                  | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Fără luptă nu-i cunună                                                          | {'cunună', 'cununa'}                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
-| Ne-am cununat                                                                   | {'cununat', 'Cunună'}                        | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| O cunună de spini                                                               | {'cunună'}                                   | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                            | {'cununi', 'cununile', 'cununa', 'Cununa'}   | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Înţelepciunea şi nebunia                                                        | {'cununa', 'cunună', 'Cunună'}               | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Despre îndrăzneală - curaj                                                      | {'cununi', 'cununa'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Aceea ce nu se poate ascunde                                                    | {'cununiei', 'cununile', 'cunună'}           | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Bolile şi suferinţele de pe pământ                                              | {'cununa', 'cununia', 'Cununa', 'cununii'}   | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                               | {'cununa', 'Cununa', 'cunună'}               | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                          | {'cununa', 'cunună'}                         | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Din alte diferite părţi                                                         | {'cununi', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)           | {'cunună', 'cununa', 'cununiei'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Nu-mi acoperiţi mormântul                                                       | {'cununi', 'cununile'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Cap. 19 - Al treilea februarie                                                  | {'cununa'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                              | {'cunună', 'cununa'}                         | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 32 - Şi alte lupte                                                         | {'cunună', 'cununa'}                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Dragul mult iubirii mele                                                        | {'cununi', 'cununaţi'}                       | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Iată Omul                                                                       | {'cununa', 'cunună'}                         | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)        | {'cunună', 'cununa'}                         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Să vă răsplătească Domnul                                                       | {'Cununa', 'cununa'}                         | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Un cântar mare şi alb                                                           | {'cununi', 'cununa', 'cunună'}               | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Îţi mulţumesc că mi-ai venit                                                    | {'cununa', 'cununi', 'cunună'}               | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Am fost în multe locuri                                                         | {'cununi', 'cunună'}                         | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Am fost în multe locuri                                                         | {'cununi', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Cap. 10 - Biserica cea vie şi cea care învie                                    | {'cununa'}                                   | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                        | {'cunune', 'cununia'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Cel mai bun misionar                                                  | {'cununa', 'cunună'}                         | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 17 - Vin rândurile noi                                                     | {'cunună'}                                   | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                  | {'cununa', 'cunună'}                         | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 4 - Proverbe                                                               | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 4 - În virtutea frumosului avânt...                                        | {'cununa', 'cunună'}                         | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Ce am scris, am scris                                                           | {'cunună'}                                   | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Ce fericit e să fii mamă                                                        | {'cunună'}                                   | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
-| Ce fericit e să fii mamă                                                        | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Ceea ce ne-a făcut unul                                                         | {'cununi', 'cunună'}                         | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Cei ce-au muncit                                                                | {'cununa', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Cel ce binecuvântează                                                           | {'cununa'}                                   | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | poezie  |
-| Crin iubit                                                                      | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Curăţia                                                                         | {'cununa'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Când nu voi mai întoarce...                                                     | {'cunună'}                                   | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Când nu voi mai întoarce...                                                     | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Când te uiţi prea mult                                                          | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Cât puteţi bucuraţi-vă iară!                                                    | {'cununa'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
-| Cât puteţi, bucuraţi-vă!                                                        | {'cununa'}                                   | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Despre răbdare                                                                  | {'cununa', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre statornicie                                                              | {'cununa'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre suferinţă                                                                | {'cunună', 'cununa'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre virtute                                                                  | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Banatului                                                           | {'cunună', 'cununat'}                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Transilvaniei                                                       | {'cununile', 'cununa'}                       | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Doamne, eu mereu tot cuget...                                                   | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Domnul a grăit odată                                                            | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Eu nu umblu după slava omenească...                                             | {'cunună', 'cununi'}                         | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Fie-vă Cuvântul...                                                              | {'cununa', 'Cununa'}                         | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Hristos e-n frunte                                                              | {'cununa'}                                   | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Iubire, haidem împreună                                                         | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica 1-a a Postului Mare                                   | {'cununi', 'cununa'}                         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)        | {'Cunună', 'cunună'}                         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)          | {'cunună'}                                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                  | {'cunună'}                                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)            | {'cununat', 'cunună'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)    | {'cununa', 'cunună'}                         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi) | {'cunună'}                                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Nunta Noastră                                                                | {'cununi', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Mai mult decât...                                                               | {'cununa', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Noi avem toţi un Domn                                                           | {'cunună'}                                   | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Noi avem toţi un Domn                                                           | {'cunună'}                                   | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| O, ce uşor mă-ntorc                                                             | {'Cununa', 'cununa'}                         | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Omul cel mai fericit                                                            | {'Cununa', 'cununa'}                         | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Oriunde şi oricând                                                              | {'cununa', 'cunună'}                         | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Pe Mine nu Mă aveţi totdeauna                                                   | {'cununa', 'cununi'}                         | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Pentru fraţii cei statornici                                                    | {'cununi'}                                   | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | poezie  |
-| Pentru fraţii cei statornici                                                    | {'cununi'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Pricepere şi teamă                                                              | {'cunună', 'cununa'}                         | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
-| Rugăciune                                                                       | {'cununa', 'cunună'}                         | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Suferinţă - crin din care                                                       | {'cununa', 'cununi'}                         | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Tot corul Veşniciei                                                             | {'cununile', 'cununi'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Unde sunt pârâşii tăi?                                                          | {'cunună', 'cununa'}                         | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Urmarea adevărată a lui Isus                                                    | {'cunună', 'cununi'}                         | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Vine Fiul Sfântului                                                             | {'cununa', 'cununiţa'}                       | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Împlinirea                                                                      | {'cununa', 'cunună'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| În jurul nostru                                                                 | {'cununa'}                                   | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| În jurul nostru mii de fraţi...                                                 | {'cununa'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
-| În zorii dimineţii                                                              | {'cununi'}                                   | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
-| În zorii dimineţii                                                              | {'cununi'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| ... Da Doamne, cred!                                                            | {'cununa'}                                   | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| ... Du-te şi să nu mai păcătuieşti                                              | {'cunună'}                                   | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| ... Era ceasul al zecelea                                                       | {'cununa'}                                   | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Şi nu vine la judecată                                                      | {'cunună'}                                   | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-+---------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Cununie using http://localhost:9000...
-Got 490 hits:
-Score: 30.666666
++---------------------------------------------------------------------------------+------------------------------------+-------------+------------------------------+------------------------------+---------+
+| Titlu                                                                           | Occurrences                        | Author      | Tip                          | Carte                        | Volum   |
++---------------------------------------------------------------------------------+------------------------------------+-------------+------------------------------+------------------------------+---------+
+| Ce cununie strălucită                                                           | {'cununie'}                        | Traian Dorz | Credinţa Încununată          | Cugetări Nemuritoare         | poezie  |
+| Ce cununie strălucită                                                           | {'cununie'}                        | Traian Dorz | Hristos - Marturia mea       | Hristos - Marturia mea       | poezie  |
+| Ce cununie strălucită                                                           | {'cununie'}                        | Traian Dorz | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
+| Cap. 6 - Alte amare adevăruri                                                   | {'cununie', 'cununia', 'cununiei'} | Traian Dorz | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Un Mire şi un Model                                                             | {'cununie', 'cununia'}             | Traian Dorz | Întâi să fim                 | Cugetări Nemuritoare         | articol |
+| Cap. 13 - Pe urmele profetului                                                  | {'cununie'}                        | Traian Dorz | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cântec                                                                          | {'cununie'}                        | Traian Dorz | Cântări Nemuritoare vol. 6   | Cântări Nemuritoare          | poezie  |
+| Cap. 30 - Alte adevăruri noi                                                    | {'cununia', 'cununie'}             | Traian Dorz | Hristos - Marturia mea       | Hristos - Marturia mea       | articol |
+| Cap. 14 - Un an adânc roditor                                                   | {'cununie'}                        | Traian Dorz | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                     | {'cununie'}                        | Traian Dorz | Istoria unei Jertfe vol. 1   | Istoria unei Jertfe          | articol |
+| Din părţile Olteniei                                                            | {'cununie'}                        | Traian Dorz | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Frumuseţea amintirilor mele!                                                    | {'cununie'}                        | Traian Dorz | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
+| Mă duc să dorm puţin...                                                         | {'cununie'}                        | Traian Dorz | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
+| O, cerul meu cel tânăr                                                          | {'cununie'}                        | Traian Dorz | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
+| Vino Vântule Ceresc                                                             | {'cununie'}                        | Traian Dorz | Întâi să fim                 | Cugetări Nemuritoare         | poezie  |
+| Vino Vântule Ceresc                                                             | {'cununie'}                        | Traian Dorz | Eternele Poeme               | Cugetări Nemuritoare         | poezie  |
+| Vino Vântule Ceresc                                                             | {'cununie'}                        | Traian Dorz | Cântări Nemuritoare vol. 11  | Cântări Nemuritoare          | poezie  |
+| Aceea ce nu se poate ascunde                                                    | {'cununiei'}                       | Traian Dorz | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
+| Bolile şi suferinţele de pe pământ                                              | {'cununia', 'cununii'}             | Traian Dorz | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
+| O, fericit biruitor                                                             | {'Cununii'}                        | Traian Dorz | Numele Biruitorului          | Cugetări Nemuritoare         | poezie  |
+| O, fericit biruitor                                                             | {'Cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
+| Am fost un ceas                                                                 | {'cununia'}                        | Traian Dorz | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
+| Binefacerea şi rugăciunea                                                       | {'cununiei'}                       | Traian Dorz | Săgeţile biruitoare          | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                        | {'cununia'}                        | Traian Dorz | Istoria unei Jertfe vol. 4   | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                             | {'cununia'}                        | Traian Dorz | Istoria unei Jertfe vol. 3   | Istoria unei Jertfe          | articol |
+| Cuvântul şi pacea                                                               | {'cununia'}                        | Traian Dorz | Poruncile Iubirii            | Cugetări Nemuritoare         | articol |
+| Dac-aş fi crezut Isuse!                                                         | {'cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
+| Despre adevăr                                                                   | {'cununia'}                        | Traian Dorz | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Despre desăvârşire                                                              | {'cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 3   | Cântări Nemuritoare          | articol |
+| Doamne, starea asta                                                             | {'cununia'}                        | Traian Dorz | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
+| Doamne, starea asta tristă                                                      | {'cununia'}                        | Traian Dorz | Alergarea Stăruitoare        | Cugetări Nemuritoare         | poezie  |
+| Fericiţi şi sfinţi cei care                                                     | {'cununiei'}                       | Traian Dorz | Cântări Nemuritoare vol. 8   | Cântări Nemuritoare          | poezie  |
+| Iată Ceru-ntreg stă gata                                                        | {'cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
+| Isus S-a apropiat...                                                            | {'cununii'}                        | Traian Dorz | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | articol |
+| Isuse, o Doamne Isuse                                                           | {'cununii'}                        | Traian Dorz | Hristos - Dumnezeul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Isuse, o Doamne Isuse                                                           | {'cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 1   | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 17-a după Rusalii                                   | {'cununii'}                        | Traian Dorz | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)           | {'cununiei'}                       | Traian Dorz | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv) | {'cununiei'}                       | Traian Dorz | Hristos - Puterea Apostoliei | Hristos - Puterea Apostoliei | articol |
+| Lucrarea lui Dumnezeu                                                           | {'cununii'}                        | Traian Dorz | Garanţia Veşnică             | Cugetări Nemuritoare         | articol |
+| Mulţi s-au întors înapoi...                                                     | {'cununii'}                        | Traian Dorz | Hristos - Pâinea noastră     | Meditații la Ev. după Ioan   | articol |
+| Nu Te dor Isuse                                                                 | {'cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 10  | Cântări Nemuritoare          | poezie  |
+| Nu-şi mai aduce aminte de suferinţă                                             | {'cununia'}                        | Traian Dorz | Hristos - Pacea noastră      | Meditații la Ev. după Ioan   | articol |
+| Pe la geamul îngheţat                                                           | {'cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 6   | Cântări Nemuritoare          | poezie  |
+| Pe la geamul îngheţat                                                           | {'Cununii'}                        | Traian Dorz | Cântări Nemuritoare vol. 11  | Cântări Nemuritoare          | poezie  |
+| Pentru Clipa Aceea...                                                           | {'Cununiei'}                       | Traian Dorz | Prietenul Tinereţii mele     | Cugetări Nemuritoare         | articol |
+| Rugăciune                                                                       | {'cununiei'}                       | Traian Dorz | Piatra Scumpă                | Cugetări Nemuritoare         | articol |
+| Singurul Templu Etern                                                           | {'cununiei'}                       | Traian Dorz | Mărgăritarul Ascuns          | Cugetări Nemuritoare         | articol |
+| Săraci şi bogaţi                                                                | {'cununii'}                        | Traian Dorz | Credinţa Încununată          | Cugetări Nemuritoare         | articol |
+| Ucenicul acesta este...                                                         | {'cununii'}                        | Traian Dorz | Hristos - Slava noastră      | Meditații la Ev. după Ioan   | articol |
+| Viitorul întristărilor noastre                                                  | {'cununia'}                        | Traian Dorz | Mărturisirea Strălucită      | Cugetări Nemuritoare         | articol |
++---------------------------------------------------------------------------------+------------------------------------+-------------+------------------------------+------------------------------+---------+
+Searching Cununie using https://api.comori-od.ro...
+Got 51 hits:
+Score: 30.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Ce cununie strălucită
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce <em>cununie</em> strălucită
+Highlight: Ce <em>cununie</em> strălucită
+
+Score: 30.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Ce cununie strălucită
 Type: poezie
 Author: Traian Dorz
 Highlight: Ce <em>cununie</em> strălucită
-Highlight: Ce mâini mi-au aşezat <em>cununa</em>
 Highlight: Ce <em>cununie</em> strălucită
 
-Score: 12.8571415
+Score: 30.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ce cununie strălucită
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce <em>cununie</em> strălucită
+Highlight: Ce <em>cununie</em> strălucită
+
+Score: 12.799999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 6 - Alte amare adevăruri
@@ -124,10 +92,19 @@ Highlight: însoţitorii lor se încolonează pentru plecarea la <em>cununie</em
 Highlight: atât la mergerea nuntaşilor la biserică pentru <em>cununie</em>, cât şi la întoarcerea lor înapoi. În unele locuri
 Highlight: Şi cea de duminică după venirea de la slujba şi <em>cununia</em> mirilor de la biserică. Căci nunţile noastre se
 Highlight: Liturghie până la sfârşit, după care începe slujba <em>cununiei</em>, încheiată iarăşi cu o cântare frăţească, îndeosebi
-Highlight: Acum o <em>cunună</em> v-aşează Hristos şi-o
-Highlight: şi-n ceruri o sfântă <em>cunună</em>... După
 
 Score: 12.799999
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Un Mire şi un Model
+Type: articol
+Author: Traian Dorz
+Highlight: Timpul dintre logodnă şi <em>cununie</em> este perioada de verificare
+Highlight: legământul logodnei este păstrată curată până la <em>cununie</em>.
+Highlight: timpul nostru dintre logodna legământului până la <em>cununia</em> nunţii. 2
+Highlight: însoţirea veşnică, iar <em>cununia</em> este al doilea pas. Timpul
+
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 13 - Pe urmele profetului
@@ -135,8 +112,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: Ce <em>cununie</em> strălucită
 Highlight: Ce <em>cununie</em> strălucită
-Highlight: le-au ţinut <em>cununa</em>,  brazi
-Highlight: Ce mâini mi-au aşezat <em>cununa</em>
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -156,16 +131,6 @@ Author: Traian Dorz
 Highlight: nunţii şi până la biserică pentru <em>cununia</em> religioasă. După <em>cununie</em> se întorceau iarăşi în acelaşi fel
 Highlight: nunţii. Şi cea de duminică după venirea de la <em>cununia</em> din biserică şi când încheiam de obicei nunta.
 
-Score: 9.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Olteniei
-Type: articol
-Author: Traian Dorz
-Highlight: 200 - Chiar şi pietrele sfinţite martore la <em>cununie</em>
-Highlight: 28 - Pentru soţul ei, <em>cunună</em> e femeia cea cinstită dar
-Highlight: învăţătura lor să-ţi fie ca o <em>cunună</em>, ca un scut,  -
-
 Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
@@ -181,6 +146,14 @@ Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
 Highlight: unde ne aşteptau o mare mulţime de oameni. După <em>cununie</em> ne-am întors cântând şi slăvind pe Dumnezeu...
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Olteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 200 - Chiar şi pietrele sfinţite martore la <em>cununie</em>
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -206,824 +179,303 @@ Type: poezie
 Author: Traian Dorz
 Highlight: înalţă Tu, cinstindu-i eterna <em>cununie</em>.
 
-Score: 2.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Fără luptă nu-i cunună
-Type: poezie
-Author: Traian Dorz
-Highlight: Fără luptă nu-i <em>cunună</em> veşnică şi bună
-Highlight: căci <em>cununa</em> fără luptă este o minciună
-Highlight: şi <em>cununa</em> fără luptă grabnic
-Highlight: Fără luptă nu-i <em>cunună</em>
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ne-am cununat
-Type: poezie
-Author: Traian Dorz
-Highlight: Ne-am <em>cununat</em> a noastră soartă
-Highlight: de la Calvar pân-la <em>Cunună</em>
-Highlight: Ne-am <em>cununat</em>
-
-Score: 2.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: O cunună de spini
-Type: articol
-Author: Traian Dorz
-Highlight: Ostaşii au împletit o <em>cunună</em> de spini, I-au pus-o pe cap,
-Highlight: O <em>cunună</em> de spini
-
-Score: 0.9
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: mormântul cu <em>cununi</em> - ci cu iubire
-Highlight: nu <em>cununi</em> am vrut în viaţă, ci cântare şi-nfrăţire
-Highlight: căci <em>cununile</em> se uscă
-Highlight: doar iubirile curate sunt <em>cununi</em> nemuritoare.
-Highlight: moarte pe acest drum greu dar glorios, până la <em>cununa</em> şi slava cea veşnică pe care ne-a promis-o Domnul
-Highlight: spre Ziua şi <em>Cununa</em> şi Plata strălucită.
-
-Score: 0.875
+Score: 9.5
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Înţelepciunea şi nebunia
-Type: articol
+Book: Întâi să fim
+Title: Vino Vântule Ceresc
+Type: poezie
 Author: Traian Dorz
-Highlight: Şi <em>cununa</em> vieţii veşnice începe de la <em>cununa</em> cea de spini.
-Highlight: iar <em>cununa</em> de spini se va preface în <em>cunună</em> de aur şi va căpăta o strălucire
-Highlight: întâmpinat calvarul: ca o scară spre <em>Cunună</em>.
-Highlight: Aşa trebuie purtată <em>cununa</em> de spini: ca o coroană împărătească
-Highlight: Şi nici o <em>cunună</em> n-are numai o faţă.
+Highlight: steag de <em>cununie</em>
 
-Score: 0.8333333
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Vino Vântule Ceresc
+Type: poezie
+Author: Traian Dorz
+Highlight: steag de <em>cununie</em>
+
+Score: 9.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre îndrăzneală - curaj
-Type: articol
+Book: Cântări Nemuritoare vol. 11
+Title: Vino Vântule Ceresc
+Type: poezie
 Author: Traian Dorz
-Highlight: Cinstei moştenesc <em>cununi</em> cereşti,
-Highlight: toţi ceilalţi primesc deşarte glorii şi <em>cununi</em> lumeşti;
-Highlight: cât de scump plătesc <em>cununa</em> şi şi-o pierd aşa curând!
-Highlight: vor primi <em>cununi</em> şi glorii care-n veci nu veştejesc.
-Highlight: vor primi-n curând <em>cununa</em>.
+Highlight: steag de <em>cununie</em>
 
-Score: 0.8
+Score: 0.6666666
 Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
 Title: Aceea ce nu se poate ascunde
 Type: articol
 Author: Traian Dorz
-Highlight: minunea viitoare a <em>cununiei</em> noastre în Casa noastră de aur sub <em>cununile</em> noastre împreunate
 Highlight: voştri... Fie peste noi cele patru peceţi ale <em>cununiei</em> în cele Trei Nume ale Celui Ascuns şi Prezent
-Highlight: sub o singură viţă vom odihni şi o singură <em>cunună</em> va fi atunci pe capul nostru.
+Highlight: minunea viitoare a <em>cununiei</em> noastre în Casa noastră de aur sub cununile noastre
 
-Score: 0.8
+Score: 0.6666666
 Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
 Title: Bolile şi suferinţele de pe pământ
 Type: articol
 Author: Traian Dorz
-Highlight: vom intra în strălucirea unde ne aşteaptă <em>cununa</em> şi <em>cununia</em> noastră fericită.
-Highlight: Paştile noastre Isus, este aproape. <em>Cununa</em> şi slava celor care sufăr pentru El şi cu El, vin
+Highlight: intra în strălucirea unde ne aşteaptă cununa şi <em>cununia</em> noastră fericită.
 Highlight: Este dobândirea <em>cununii</em> pentru care am luptat.
 
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: încep să trăiesc, mergând fericit spre crucea şi <em>cununa</em> mea... către care mă chemau cei doi ochi cu cearcăne
-Highlight: <em>Cununa</em> Oastei începea să strălucească tot mai departe
-Highlight: linguşită din umbra comodă devenise geloasă. Această <em>cunună</em> a Oastei nu trebuie să mai stea pe capul simplu
-Highlight: Mijlocul de a-şi trece această <em>cunună</em> pe capul său, a fost găsit tot de iscoditorii vicleni
-
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-Highlight: Dar acum, <em>cununa</em> este încă departe, iar vrăjmaşul este lângă noi
-Highlight:  Care îl aşteptau cu <em>cununa</em> vieţii
-Highlight: Această <em>cunună</em> ne aşteaptă şi pe noi pe
-Highlight: loc de un jubileu de bucurie - mă pomenesc cu o <em>cunună</em> de spini şi cu nesfârşite hule şi ocări... că am
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-Highlight: <em>cununi</em> nemuritoare.
-Highlight: la mireasa cu <em>cunună</em>.
-Highlight: 215 - Soţia cea cinstită e soţului <em>cunună</em>:
-Highlight: a virtuţilor <em>cunună</em>.
-
-Score: 0.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
-Type: articol
-Author: Traian Dorz
-Highlight: Mântuirea este ca o <em>cunună</em> pe care Dumnezeu o ţine deasupra capului nostru
-Highlight: pierdut statornicia şi şi-a schimbat credinţa - <em>cununa</em> făgăduită dispare, mântuirea făgăduită este retrasă
-Highlight: credincios, adică statornic până la moarte, va primi <em>cununa</em> vieţii (
-Highlight: părticică din Hristos, este atât de minunată cât taina <em>cununiei</em> fericite când cei doi miri devin unul, cu un singur
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Nu-mi acoperiţi mormântul
-Type: poezie
-Author: Traian Dorz
-Highlight: mormântul cu <em>cununi</em>, ci cu iubire
-Highlight: nu <em>cununi</em> am vrut în viaţă ci cântare şi-nfrăţire
-Highlight: căci <em>cununile</em> se uscă
-Highlight: dar iubirile curate sunt <em>cununi</em> nemuritoare.
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
-Type: articol
-Author: Traian Dorz
-Highlight: şi ne dă <em>cununa</em> lor de mucenici
-Highlight: lupta cea bună ai luptat. Domnul să-ţi dea acum <em>cununa</em> vieţii.
-Highlight: De acum îl aşteaptă <em>cununa</em> neprihănirii (
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-Highlight: la Arad. Era pe atunci un tinerel din frumoasa <em>cunună</em> a tineretului din jurul Aradului.
-Highlight: mântuirea lor până la capăt şi crucea lor până la <em>cunună</em>.
-Highlight: Pentru sufletele nemântuite care ne aşteaptă, pentru <em>cununa</em> vieţii care ne aşteaptă, pentru Isus, Răsplata
-
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 32 - Şi alte lupte
-Type: articol
-Author: Traian Dorz
-Highlight: Fără luptă nu-i <em>cunună</em> veşnică şi bună
-Highlight: căci <em>cununa</em> fără luptă este doar minciună
-Highlight: şi <em>cununa</em> fără luptă -
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Dragul mult iubirii mele
-Type: poezie
-Author: Traian Dorz
-Highlight: Ţes <em>cununi</em> de rouă zorii
-Highlight: <em>cununaţi</em> sub măr
-Highlight: <em>cununaţi</em> sub măr.
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Iată Omul
-Type: articol
-Author: Traian Dorz
-Highlight: Isus a ieşit deci afară, purtând <em>cununa</em> de spini şi haina de purpură.
-Highlight: Poate ideea cu <em>cununa</em> de spini să fi fost chiar a lui Pilat.
-Highlight: Înfăţişarea lui Isus, plin de sânge şi de vânătăi, cu o <em>cunună</em> de chinuri şi cu o haină de batjocură, nevinovat
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
-Type: articol
-Author: Traian Dorz
-Highlight: coroană, <em>cunună</em>, <em>cunună</em> biruitoare, cel încununat frumos
-Highlight: partea ta de moştenire din ceruri, partea ta din <em>cununa</em> vieţii veşnice şi partea ta din răsplata de la
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Să vă răsplătească Domnul
-Type: poezie
-Author: Traian Dorz
-Highlight: cu <em>Cununa</em> Slavei Sale
-Highlight: - Domnul să vă dea <em>cununa</em>
-Highlight: să vă dea la El <em>cununa</em>
-
-Score: 0.75
+Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Un cântar mare şi alb
-Type: articol
-Author: Traian Dorz
-Highlight: toate nenumăratele lor <em>cununi</em> de aur zadarnic - nu puteau cântări cât <em>cununa</em> Lui de spini.
-Highlight: ce deasupra fiecăruia era un înger ţinând câte o <em>cunună</em> strălucitoare.  10
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Îţi mulţumesc că mi-ai venit
+Book: Numele Biruitorului
+Title: O, fericit biruitor
 Type: poezie
 Author: Traian Dorz
-Highlight: <em>cununa</em> şi veşmântul meu
-Highlight: să mă <em>cununi</em> cu Tine.
-Highlight: o cruce şi-o <em>cunună</em>!
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Am fost în multe locuri
-Type: poezie
-Author: Traian Dorz
-Highlight: lumeşti <em>cununi</em>
-Highlight: cu-a Ta <em>cunună</em>, Preaiubite
+Highlight: slava sfintei <em>Cununii</em>
+Highlight: spre slava sfintei <em>Cununii</em>
 
 Score: 0.6666666
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Am fost în multe locuri
+Book: Cântări Nemuritoare vol. 10
+Title: O, fericit biruitor
 Type: poezie
 Author: Traian Dorz
-Highlight: lumeşti <em>cununi</em>
-Highlight: cu-a Ta <em>cunună</em>, Preaiubite
+Highlight: slava sfintei <em>Cununii</em>
+Highlight: spre slava sfintei <em>Cununii</em>
 
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Am fost un ceas
+Type: poezie
+Author: Traian Dorz
+Highlight: ce naltă-i <em>cununia</em> cu rugul luminos
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Binefacerea şi rugăciunea
 Type: articol
 Author: Traian Dorz
-Highlight: luăm şi noi <em>cununa</em>.
-Highlight: Dragă Vasile! Lupta cea bună te-ai luptat, Domnul să-ţi dea acum <em>cununa</em> vieţii.
+Highlight: ispită frumoasa pecete a legământului tău şi a <em>cununiei</em> tale cu El.
 
-Score: 0.6666666
+Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-Highlight: pentru că a îndrăznit să <em>cunune</em> doi tineri ostaşi care îl chemaseră ca naş la <em>cununia</em> lor - şi pentru că mai
+Highlight: doi tineri ostaşi care îl chemaseră ca naş la <em>cununia</em> lor - şi pentru că mai luase parte şi la o altă
 
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 11 - Cel mai bun misionar
-Type: articol
-Author: Traian Dorz
-Highlight: Iosif a avut de gând să le strângă în acea carte, - <em>cununa</em> scrierilor lui, - se mai găsesc încă răspândite
-Highlight: mai putea găsi din ele şi le va strânge într-o <em>cunună</em> de mărgăritare pe fruntea cărora va scrie
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-Highlight: lume există atâta întrecere şi exerciţiu pentru o <em>cunună</em> şi pentru un premiu trecător, - oare noi nu trebuie
-Highlight: trebuie să facem şi mai mult pentru o <em>cunună</em> nemuritoare, şi pentru un premiu veşnic?
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-Highlight: mărturia recunoştinţei mele cu a lor, aşezând-o în <em>cununa</em> fericită pe care dragostea fraţilor a aşezat-o
-Highlight:  - ei, cei care erau cândva atât de aproape de <em>cunună</em>...
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 4 - Proverbe
-Type: poezie
-Author: Traian Dorz
-Highlight: 9-Ea pe capul tău va pune fericita ei <em>cunună</em>
-Highlight: şi-o <em>cunună</em>-mpărătească drept podoabă o să-ţi pună.
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-Highlight: ca nimeni să nu-ţi ia <em>cununa</em>.
-Highlight: cu orice preţ de jertfă şi de dragoste, până la <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Ce am scris, am scris
-Type: articol
-Author: Traian Dorz
-Highlight: Isuse, tuturor o veşnică răsplată şi o nemuritoare <em>cunună</em>, căci au meritat-o (
-Highlight: pe noi, care cădem încă în luptă, să moştenim o <em>cunună</em> de acelaşi preţ cu a lor (
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Ce fericit e să fii mamă
-Type: poezie
-Author: Traian Dorz
-Highlight: un luptător către <em>cunună</em>
-Highlight: O, ce răsplată şi <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Ce fericit e să fii mamă
-Type: poezie
-Author: Traian Dorz
-Highlight: un luptător către <em>cunună</em>
-Highlight: O, ce răsplată şi <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Ceea ce ne-a făcut unul
-Type: articol
-Author: Traian Dorz
-Highlight: pare că trăiesc un vis dulce în care cele două <em>cununi</em> ale noastre strălucesc împreună, - iar la urmă
-Highlight: şi am luat o <em>cunună</em> de aur.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Cei ce-au muncit
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>cununa</em> lor de veşnică mărire
-Highlight: Cei ce-au învins au dreptul la <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Cel ce binecuvântează
-Type: poezie
-Author: Traian Dorz
-Highlight: El să dea <em>cununa</em> Vieţii
-Highlight: să-l faci vrednic de <em>cununa</em> celei mai cereşti vieţi.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Crin iubit
-Type: poezie
-Author: Traian Dorz
-Highlight: scumpa ta <em>cunună</em>
-Highlight: scumpa ta <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Curăţia
-Type: articol
-Author: Traian Dorz
-Highlight: peste capetele care le aşteaptă-n cer <em>cununa</em>.
-Highlight: fie-ne-ntreită frunţilor <em>cununa</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Când nu voi mai întoarce...
-Type: poezie
-Author: Traian Dorz
-Highlight: o carte şi-o <em>cunună</em>,
-Highlight: iar în <em>cunună</em> fraţii
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Când nu voi mai întoarce...
-Type: poezie
-Author: Traian Dorz
-Highlight: o carte şi-o <em>cunună</em>,
-Highlight: iar în <em>cunună</em> fraţii
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Când te uiţi prea mult
-Type: poezie
-Author: Traian Dorz
-Highlight: Ce <em>cunună</em>, ce <em>cunună</em>
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cât puteţi bucuraţi-vă iară!
-Type: poezie
-Author: Traian Dorz
-Highlight: le-amintiţi de <em>cununa</em> slăvită
-Highlight: şi <em>cununa</em> vieţii de-apoi
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cât puteţi, bucuraţi-vă!
-Type: poezie
-Author: Traian Dorz
-Highlight: le-amintiţi de <em>cununa</em> slăvită
-Highlight: şi <em>cununa</em> vieţii de-apoi
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre răbdare
-Type: articol
-Author: Traian Dorz
-Highlight: <em>cununa</em> scumpă-a biruinţei
-Highlight: vei cunoaşte ce <em>cunună</em> poartă fruntea răbdătoare.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre statornicie
-Type: articol
-Author: Traian Dorz
-Highlight: 3 - În <em>cununa</em> minunată care ţi-o va da vecia
-Highlight: va primi <em>cununa</em> vieţii şi doritul viitor.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre suferinţă
-Type: articol
-Author: Traian Dorz
-Highlight: fiecare-i doar o floare, - numai toţi <em>cunună</em>.
-Highlight: luptă, - dacă vrei <em>cununa</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre virtute
-Type: articol
-Author: Traian Dorz
-Highlight: - ca o <em>cunună</em>:
-Highlight: a virtuţilor <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-Highlight: veşnica-i <em>cunună</em>.
-Highlight: de-aceea bine te gândeşte cât încă nu v-aţi <em>cununat</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
-Author: Traian Dorz
-Highlight: şi cum preschimbi în raze <em>cununile</em> de spini.
-Highlight: <em>cununa</em> veşnicei vieţi.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, eu mereu tot cuget...
-Type: poezie
-Author: Traian Dorz
-Highlight: împleti-ţi-vei în <em>cunună</em> trandafirii mângâierii.
-Highlight: pregătindu-mă de Nuntă, cu a Cerului <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Domnul a grăit odată
-Type: poezie
-Author: Traian Dorz
-Highlight: pentru veşnica <em>cunună</em>
-Highlight: - ei au veşnica <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Eu nu umblu după slava omenească...
-Type: articol
-Author: Traian Dorz
-Highlight: Mai bine să nu porţi în lume nici o <em>cunună</em> decât să porţi <em>cununi</em> primite în schimbul sufletului tău,
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Fie-vă Cuvântul...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi <em>cununa</em> vieţii plată de la El.
-Highlight: şi <em>Cununa</em> Vieţii, plată de la El!
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Hristos e-n frunte
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>cununa</em> de biruitori?
-Highlight: <em>cununa</em> de biruitori!
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Iubire, haidem împreună
-Type: poezie
-Author: Traian Dorz
-Highlight: c-atuncea spinii ni-s <em>cunună</em>
-Highlight: căci spinii ne vor fi <em>cunună</em>
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica 1-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: Domnie al lui Dumnezeu, îmbrăcaţi în haine albe, cu <em>cununi</em> de aur pe cap, şi cu harfe în mâini, binecuvântaţi
-Highlight: Răsplătirilor să le dăruiască în veşnicie slava şi <em>cununa</em> Lui pentru tot ce au suferit ca să ne mântuim noi
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
-Type: articol
-Author: Traian Dorz
-Highlight: Ştefan, Ştefana, numele acesta înseamnă <em>Cunună</em>... Într-adevăr, ce <em>cunună</em> frumoasă erau astfel de suflete pentru
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă vrem să avem o <em>cunună</em> ca a Lui, trebuie să şi ducem o luptă ca a Lui
-Highlight: Numai ca o <em>cunună</em> a biruinţei de la sfârşitul luptelor noastre
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
-Type: articol
-Author: Traian Dorz
-Highlight: lepăda îndrumările mamei tale! Căci ele sunt o <em>cunună</em> plăcută pe capul tău, şi un lanţ de aur la gâtul
-Highlight: numai până la o bătălie să ducem lupta, ci până la <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
-Type: articol
-Author: Traian Dorz
-Highlight: ta, de credinţa ta, de familia ta cu care te-a <em>cununat</em> Hristos prin legământul Crucii Lui! Şi pe care
-Highlight: Gheţimani, nici pe Golgota, nici pe Cruce în cuie, cu <em>cunună</em> de spini pe cap, scuipaţi şi bătuţi până la sânge
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)
-Type: articol
-Author: Traian Dorz
-Highlight: după o muncă. Este premiul după o alergare. Este <em>cununa</em> după o biruinţă.
-Highlight: înainte de muncă, premiu înainte de alergare şi <em>cunună</em> înainte de luptă?
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)
-Type: articol
-Author: Traian Dorz
-Highlight: şi pe care Duhul Sfânt a ţinut-o mereu ca pe o <em>cunună</em> scumpă deasupra capului celui chemat şi ales pentru
-Highlight: toate rânduielile cerute de primirea ei. Ea este o <em>cunună</em> a vieţii. Un premiu ceresc. O fericită şi binecuvântată
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: La Nunta Noastră
-Type: poezie
-Author: Traian Dorz
-Highlight: topi-va salbe şi <em>cununi</em>
-Highlight: - <em>cunună</em> de topaze.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Mai mult decât...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi cei viteji <em>cununa</em>
-Highlight: de-a dragostei <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Noi avem toţi un Domn
-Type: poezie
-Author: Traian Dorz
-Highlight: la un lanţ, la un jug, şi-o <em>cunună</em>
-Highlight: pentru-o jertfă şi-un jug şi-o <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Noi avem toţi un Domn
-Type: poezie
-Author: Traian Dorz
-Highlight: la un lanţ, la un jug, şi-o <em>cunună</em>
-Highlight: pentru-o jertfă şi-un jug şi-o <em>cunună</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: O, ce uşor mă-ntorc
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Cununa</em> mea de flori uscate
-Highlight: s-aşează sub <em>cununa</em> Ta
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Omul cel mai fericit
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Cununa</em> mea s-a aşezat tremurând fericită, pe totdeauna sub <em>cununa</em> Ta şi îmbrăţişându-se
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Oriunde şi oricând
-Type: articol
-Author: Traian Dorz
-Highlight: Să primeşti <em>cununa</em> Slavei, aceea va fi <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Pe Mine nu Mă aveţi totdeauna
-Type: articol
-Author: Traian Dorz
-Highlight: duce să-şi primească şi ei <em>cununa</em> vieţii din Mâna Domnului, după atâtea <em>cununi</em> de spini primite din mâinile
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Pentru fraţii cei statornici
-Type: poezie
-Author: Traian Dorz
-Highlight: veşnice <em>cununi</em>
-Highlight: căci şi ei ne fac s-ajungem veşnice <em>cununi</em>.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Pentru fraţii cei statornici
-Type: poezie
-Author: Traian Dorz
-Highlight: veşnice <em>cununi</em>
-Highlight: căci şi ei ne fac s-ajungem veşnice <em>cununi</em>.
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Pricepere şi teamă
-Type: articol
-Author: Traian Dorz
-Highlight: 16 - Ca o <em>cunună</em> împărătească împodobită cu mărgăritare scumpe şi
-Highlight: încearcă fiecare mărgăritar aşezat la locul lui, în <em>cununa</em> cea de aur preţios a împăratului,
-
-Score: 0.6666666
+Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: loc în Săptămâna Luminată a anului 1958. De la <em>cununia</em> lor din biserică, am venit în cea mai mare taină
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Cuvântul şi pacea
+Type: articol
+Author: Traian Dorz
+Highlight: mai fericiţi de cum mergeam la <em>cununia</em> noastră şi mai împodobiţi ca la orice nuntă.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Dac-aş fi crezut Isuse!
+Type: poezie
+Author: Traian Dorz
+Highlight: sfintei Tale <em>cununii</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre adevăr
+Type: articol
+Author: Traian Dorz
+Highlight: mai bine-n jug cu cel cuminte, decât cu prostul <em>cununia</em>, -
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre desăvârşire
+Type: articol
+Author: Traian Dorz
+Highlight: batjocura-i arvuna <em>cununii</em> viitoare.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Doamne, starea asta
+Type: poezie
+Author: Traian Dorz
+Highlight: şi mă scapă din adâncul unde-mi arde <em>cununia</em>
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Doamne, starea asta tristă
+Type: poezie
+Author: Traian Dorz
+Highlight: şi mă scapă din adâncul unde-mi arde <em>cununia</em>
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Fericiţi şi sfinţi cei care
+Type: poezie
+Author: Traian Dorz
+Highlight: şi pentru că în clipa <em>cununiei</em> noastre, cuprinzându-ne în braţele
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Iată Ceru-ntreg stă gata
+Type: poezie
+Author: Traian Dorz
+Highlight: şi <em>cununii</em> lui Hristos!
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Isus S-a apropiat...
+Type: articol
+Author: Traian Dorz
+Highlight: Speranţa izbânzii şi <em>cununii</em>.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Isuse, o Doamne Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: la slava <em>cununii</em> primite.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Isuse, o Doamne Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: la slava <em>cununii</em> primite.
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 17-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Cum se împacă cu muzica lumească la <em>cununii</em>?
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
+Type: articol
+Author: Traian Dorz
+Highlight: părticică din Hristos, este atât de minunată cât taina <em>cununiei</em> fericite când cei doi miri devin unul, cu un singur
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)
+Type: articol
+Author: Traian Dorz
+Highlight: cutremurător şi neuitat al naşterii din nou, al <em>cununiei</em> tale cu El, la picioarele Crucii Sale prin care
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Lucrarea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: cărunte când eşti atât de aproape de cinstirea <em>cununii</em> şi răsplătirii acestora?
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Mulţi s-au întors înapoi...
+Type: articol
+Author: Traian Dorz
+Highlight: avantajele imediate ce li se îmbiau în schimbul <em>cununii</em> cereşti prea îndepărtate. Şi L-au părăsit pe Hristos
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Nu Te dor Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: nu Te dor asprimea spinilor <em>cununii</em>
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Nu-şi mai aduce aminte de suferinţă
+Type: articol
+Author: Traian Dorz
+Highlight: În ocara şi nedreptatea de acum, - la <em>cununia</em> de atunci.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Pe la geamul îngheţat
+Type: poezie
+Author: Traian Dorz
+Highlight: razele <em>cununii</em>.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Pe la geamul îngheţat
+Type: poezie
+Author: Traian Dorz
+Highlight: razele <em>Cununii</em>.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Pentru Clipa Aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: 24 - Ziua <em>Cununiei</em> mele cereşti cu Tine Prietenul Dumnezeiesc al
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
 Title: Rugăciune
 Type: articol
 Author: Traian Dorz
-Highlight: spre <em>cununa</em> de biruitori
-Highlight: promiţi această <em>cunună</em> şi garantezi acest nimb
+Highlight: cele patru peceţi ale <em>cununiei</em> veşnice
 
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Suferinţă - crin din care
-Type: poezie
-Author: Traian Dorz
-Highlight: crin din care Domnul Şi-a-mpletit <em>cununa</em>
-Highlight: şi-n iubirea armoniei salbe şi <em>cununi</em> s-adune
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Tot corul Veşniciei
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>cununile</em> de aur şi harfele-arzătoare
-Highlight: dintre minuni şi raze, dintre <em>cununi</em> şi ere
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Unde sunt pârâşii tăi?
-Type: articol
-Author: Traian Dorz
-Highlight: vine către voi, ci e Solul Slavei care vă aduce o <em>cunună</em> veşnic strălucitoare, dacă biruiţi moartea.
-Highlight: <em>cununa</em> scumpă-a biruinţei
-
-Score: 0.6666666
+Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Urmarea adevărată a lui Isus
+Book: Mărgăritarul Ascuns
+Title: Singurul Templu Etern
 Type: articol
 Author: Traian Dorz
-Highlight: Mai bine să nu porţi în lume nici o <em>cunună</em> decât să porţi <em>cununi</em> primite în schimbul sufletului tău.
+Highlight: întâlnirii cu Tine, clipa legământului nostru, clipa <em>cununiei</em> noastre veşnice...
 
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Vine Fiul Sfântului
-Type: poezie
-Author: Traian Dorz
-Highlight: şi <em>cununa</em> spinului...
-Highlight: <em>cununiţa</em> grâului
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Împlinirea
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Săraci şi bogaţi
 Type: articol
 Author: Traian Dorz
-Highlight: peste fruntea aplecată, pune ea <em>cununa</em>.
-Highlight: e un semn că numai astfel se ajunge la <em>cunună</em>.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: În jurul nostru
-Type: poezie
-Author: Traian Dorz
-Highlight: Hristos, <em>cununa</em> biruinţei voastre
-Highlight: şi voi <em>cununa</em> lui Hristos!
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: În jurul nostru mii de fraţi...
-Type: poezie
-Author: Traian Dorz
-Highlight: Hristos - <em>cununa</em> biruinţei voastre
-Highlight: şi voi - <em>cununa</em> lui Hristos.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: În zorii dimineţii
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>cununi</em> sărbătoreşti
-Highlight: - <em>cununi</em> sărbătoreşti!
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: În zorii dimineţii
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>cununi</em> sărbătoreşti
-Highlight: - <em>cununi</em> sărbătoreşti!
+Highlight: împacă Biserica lui Dumnezeu cu muzică lumească la <em>cununii</em>?
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: ... Da Doamne, cred!
+Book: Hristos - Slava noastră
+Title: Ucenicul acesta este...
 Type: articol
 Author: Traian Dorz
-Highlight: şi <em>cununa</em> oricărei pierderi,
+Highlight: plină de adevăruri Dumnezeieşti, fără de care <em>cununii</em> Bibliei i-ar fi lipsit o podoabă de adevăr atât
 
 Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: ... Du-te şi să nu mai păcătuieşti
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Viitorul întristărilor noastre
 Type: articol
 Author: Traian Dorz
-Highlight: şi credinţa noastră până la <em>cunună</em> (
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: ... Era ceasul al zecelea
-Type: articol
-Author: Traian Dorz
-Highlight: Fii credincios până la moarte şi vei primi <em>cununa</em> vieţii (
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: ... Şi nu vine la judecată
-Type: articol
-Author: Traian Dorz
-Highlight: merge, dar nu la Judecată, ci la răsplătire şi la <em>cunună</em>.
+Highlight: În singurătatea şi dorul de acum, la <em>cununia</em> de atunci.
 

@@ -1,109 +1,117 @@
-+----------------------------------------------------------------------------------+------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                            | Occurrences                              | Author          | Tip                              | Carte                        | Volum   |
-+----------------------------------------------------------------------------------+------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| La Apostolul din Duminica 1-a a Postului Mare                                    | {'ocara', 'ocară', 'Ocara'}              | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Ei l-au ocărât                                                                   | {'Ocara', 'ocară', 'ocărât', 'ocări'}    | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Aur şi zgură                                                                     | {'Ocara', 'ocară', 'ocări'}              | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Psalmul 119                                                                      | {'ocara', 'ocară', 'ocări'}              | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                              | {'ocara'}                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Despre păcat                                                                     | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre îndreptare                                                                | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Iubeşte-amarul rugăciunii                                                        | {'ocara'}                                | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| Iubeşte-amarul rugăciunii                                                        | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)              | {'ocara'}                                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Moise iese din desfătările Egiptului                                             | {'ocara'}                                | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Nu-mi mai aduc aminte şi nici                                                    | {'ocara'}                                | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Nu-mi mai aduc aminte şi nici                                                    | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| O, Nume Sfânt...                                                                 | {'ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
-| O, Nume Sfânt...                                                                 | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Psalmul 109                                                                      | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Psalmul 44                                                                       | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Însoţirea sufletelor sfinte                                                      | {'ocara'}                                | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Psalmul 69                                                                       | {'ocara', 'ocară'}                       | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 7 - Printre leu şi printre urs                                              | {'ocara', 'ocară', 'ocări'}              | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                         | {'ocara', 'ocară', 'ocări'}              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut) | {'ocara', 'ocară', 'Ocările'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Psalmul 89                                                                       | {'ocara', 'ocară', 'ocărât'}             | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Din părţile Bucovinei                                                            | {'ocara', 'ocară'}                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Ştiţi... Calea                                                                   | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)         | {'Ocara', 'ocară', 'ocărâţi', 'ocări'}   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Bolile şi suferinţele de pe pământ                                               | {'ocara', 'ocărâtori', 'ocară'}          | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                           | {'ocara', 'ocară', 'ocărâţi'}            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                          | {'ocara', 'ocară'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)           | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Mă voi întoarce la voi                                                           | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Răscrucea Isus                                                         | {'ocara', 'ocările', 'Ocările', 'ocări'} | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Ceea ce este al meu                                                              | {'ocara', 'ocării', 'ocărât'}            | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cap. 18 - Un vânt rău                                                            | {'ocara', 'ocări', 'ocările'}            | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                | {'ocara', 'ocările', 'ocărî'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                     | {'ocara', 'ocările'}                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| David şi Goliat                                                                  | {'ocara', 'ocărau'}                      | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| ... Slava de dinainte de a fi lumea                                              | {'ocara'}                                | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... V-am făcut cunoscut tot...                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| ... Şi au ieşit unul câte unul...                                                | {'ocara'}                                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Aici intră rosturile Oastei                                                      | {'ocara'}                                | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Al treilea cuvânt                                                                | {'ocara'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
-| Aţi umblat să vă veseliţi...                                                     | {'ocara'}                                | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - Jugul, sarcina şi crucea                                               | {'ocara'}                                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 16 - O plecare îndurerată                                                   | {'ocara'}                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Proverbe                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 28 - Proverbe                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 29 - Proverbe                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Ce Slăvit Biruitor este Domnul                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | poezie  |
-| Ce dulce-a fost cândva                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Ce sfânt şi nalt curaj                                                           | {'ocara'}                                | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Ce sfânt şi nalt curaj                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Cu cine să Te-aseamăn?                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cu gândul la răbdarea Ta                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Cum crezi să scapi?                                                              | {'ocara'}                                | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
-| Cum crezi să scapi?                                                              | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Când eşti dat în mâna...                                                         | {'ocara'}                                | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| Când eşti dat în mâna...                                                         | {'ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
-| Când eşti dat în mâna...                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Când veţi înălţa pe Fiul, veţi cunoaşte                                          | {'ocara'}                                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cântarea lui Isaia - 2                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cântările Învierii                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Cât va trăi Lumina                                                               | {'ocara'}                                | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | poezie  |
-| Cât va trăi Lumina                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Dacă rodul tău                                                                   | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| De Tine sunt legat Isus                                                          | {'Ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
-| De Tine sunt legat Isus                                                          | {'Ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| De ce noi nu putem?                                                              | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Doamne, nu fac                                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| Doamne, nu fac                                                                   | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Domnul Isus                                                                      | {'ocara'}                                | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Domnul Isus                                                                      | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Douăsprezece coşuri...                                                           | {'ocara'}                                | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Eu nu umblu după slava omenească...                                              | {'ocara'}                                | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Fereşte-te de desfrânare                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Focul şi înştiinţarea                                                            | {'ocara'}                                | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Făgăduinţa şi împlinirea                                                         | {'ocara'}                                | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Haidem... să murim cu El                                                         | {'ocara'}                                | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Isus nu voia să stea în Iudeea                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                    | {'ocara'}                                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Liniştea răbdării noastre                                                        | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Moştenire şi moştenitori                                                         | {'ocara'}                                | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Măreţia şi cuprinderea                                                           | {'ocara'}                                | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Neprihănirea şi vinovăţia                                                        | {'ocara'}                                | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Niciodată nu se                                                                  | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Nu cumva şi tu eşti                                                              | {'Ocara'}                                | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Nu-şi mai aduce aminte de suferinţă                                              | {'ocara'}                                | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Nu-ţi pese de părerea lumii                                                      | {'ocara'}                                | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Nu-ţi pese de părerea lumii                                                      | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Prin lupte                                                                       | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Privesc la fratele                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Psalmul 74                                                                       | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Părinţii şi copiii                                                               | {'ocara'}                                | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Rugăciunea profetului Ieremia - 4                                                | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Scoală-te... şi umblă                                                            | {'ocara'}                                | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Smerenia                                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Să fie împreună cu Mine                                                          | {'ocara'}                                | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Să-l omoare şi pe Lazăr                                                          | {'ocara'}                                | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Urmarea adevărată a lui Isus                                                     | {'ocara'}                                | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Va veni şi Ziua Sfântă                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-+----------------------------------------------------------------------------------+------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Ocara using http://localhost:9000...
-Got 298 hits:
++----------------------------------------------------------------------------------+------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                            | Occurrences                              | Author          | Tip                            | Carte                        | Volum   |
++----------------------------------------------------------------------------------+------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Slava şi ocara veşnică                                                           | {'ocara'}                                | Traian Dorz     | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica 1-a a Postului Mare                                    | {'ocara', 'ocară', 'Ocara'}              | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Ei l-au ocărât                                                                   | {'Ocara', 'ocară', 'ocărât', 'ocărăşte'} | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Aur şi zgură                                                                     | {'Ocara', 'ocară', 'ocărăşte', 'ocări'}  | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Psalmul 119                                                                      | {'ocara', 'ocară', 'ocări'}              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Au iubit mai mult slava oamenilor                                                | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Ce alegem noi?                                                                   | {'ocară', 'ocara'}                       | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Închinare                                                                        | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | articol |
+| Despre îndreptare                                                                | {'ocara', 'ocărăşti'}                    | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Luaţi Duh Sfânt                                                                  | {'ocara', 'ocării'}                      | Traian Dorz     | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                              | {'ocara'}                                | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Despre păcat                                                                     | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Iubeşte-amarul rugăciunii                                                        | {'ocara'}                                | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Iubeşte-amarul rugăciunii                                                        | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)              | {'ocara'}                                | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Moise iese din desfătările Egiptului                                             | {'ocara'}                                | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Nu-mi mai aduc aminte şi nici                                                    | {'ocara'}                                | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | poezie  |
+| Nu-mi mai aduc aminte şi nici                                                    | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| O, Nume Sfânt...                                                                 | {'ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| O, Nume Sfânt...                                                                 | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Psalmul 109                                                                      | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Psalmul 44                                                                       | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Însoţirea sufletelor sfinte                                                      | {'ocara'}                                | Traian Dorz     | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Psalmul 69                                                                       | {'ocara', 'ocară'}                       | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cap. 7 - Printre leu şi printre urs                                              | {'ocara', 'ocară', 'ocări'}              | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut) | {'ocara', 'ocară', 'Ocările', 'ocărăsc'} | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                         | {'ocara', 'ocară', 'ocări'}              | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Psalmul 89                                                                       | {'ocara', 'ocară', 'ocărât'}             | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Din părţile Bucovinei                                                            | {'ocara', 'ocară'}                       | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Ştiţi... Calea                                                                   | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)         | {'Ocara', 'ocară', 'ocărâţi', 'ocări'}   | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Bolile şi suferinţele de pe pământ                                               | {'ocara', 'ocărăsc', 'ocară'}            | Traian Dorz     | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                           | {'ocara', 'ocară', 'ocărâţi'}            | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                          | {'ocara', 'ocară'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Ce este Adevărul?                                                                | {'ocara', 'ocară'}                       | Traian Dorz     | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Frumuseţea inimii noastre                                                        | {'ocara', 'ocară'}                       | Traian Dorz     | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)           | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Mă voi întoarce la voi                                                           | {'ocara', 'ocară'}                       | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Cap. 11 - Răscrucea Isus                                                         | {'ocara', 'ocările', 'Ocările', 'ocări'} | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Ceea ce este al meu                                                              | {'ocara', 'ocării', 'ocărât'}            | Traian Dorz     | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Cap. 18 - Un vânt rău                                                            | {'ocara', 'ocări', 'ocările'}            | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                                | {'ocara', 'ocările', 'ocărî'}            | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Nenorocirile şi salvarea                                                         | {'ocara', 'ocări', 'ocările'}            | Traian Dorz     | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Vremea chemării noastre                                                          | {'ocara', 'ocărilor'}                    | Traian Dorz     | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Adevăr şi imitaţie                                                               | {'Ocara', 'ocărât'}                      | Traian Dorz     | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Cap. 5 - În noaptea aceea...                                                     | {'ocara', 'ocările'}                     | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| David şi Goliat                                                                  | {'ocara', 'ocărau'}                      | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Lucrătorul şi lucrarea                                                           | {'ocara', 'ocărât'}                      | Traian Dorz     | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Nu-şi mai aduce aminte de suferinţă                                              | {'ocara', 'ocărăsc'}                     | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Psalmul 74                                                                       | {'ocara', 'ocărăsc'}                     | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Viitorul întristărilor noastre                                                   | {'ocara', 'ocărăsc'}                     | Traian Dorz     | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| ... Slava de dinainte de a fi lumea                                              | {'ocara'}                                | Traian Dorz     | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| ... V-am făcut cunoscut tot...                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| ... Şi au ieşit unul câte unul...                                                | {'ocara'}                                | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| A fi în Hristos                                                                  | {'ocara'}                                | Traian Dorz     | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Aici intră rosturile Oastei                                                      | {'ocara'}                                | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Al treilea cuvânt                                                                | {'ocara'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Alergarea spre Ţintă                                                             | {'ocara'}                                | Traian Dorz     | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Aţi umblat să vă veseliţi...                                                     | {'ocara'}                                | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Cap. 13 - Jugul, sarcina şi crucea                                               | {'ocara'}                                | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 16 - O plecare îndurerată                                                   | {'ocara'}                                | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Proverbe                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cap. 28 - Proverbe                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cap. 29 - Proverbe                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Ce Slăvit Biruitor este Domnul                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | poezie  |
+| Ce dulce-a fost cândva                                                           | {'ocara'}                                | Traian Dorz     | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Ce dulce-a fost cândva                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Ce sfânt şi nalt curaj                                                           | {'ocara'}                                | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Ce sfânt şi nalt curaj                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cercetaţi duhurile                                                               | {'ocara'}                                | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Credinţa şi statornicia                                                          | {'ocara'}                                | Traian Dorz     | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Cu cine să Te-aseamăn?                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cu gândul la răbdarea Ta                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cum crezi să scapi?                                                              | {'ocara'}                                | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | poezie  |
+| Cum crezi să scapi?                                                              | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Când eşti dat în mâna...                                                         | {'ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| Când eşti dat în mâna...                                                         | {'ocara'}                                | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Când eşti dat în mâna...                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Când veţi înălţa pe Fiul, veţi cunoaşte                                          | {'ocara'}                                | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Când vin marile încercări                                                        | {'ocara'}                                | Traian Dorz     | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Cântarea lui Isaia - 2                                                           | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cântările Învierii                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cât va trăi Lumina                                                               | {'ocara'}                                | Traian Dorz     | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | poezie  |
+| Cât va trăi Lumina                                                               | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Dacă rodul tău                                                                   | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| De Tine sunt legat Isus                                                          | {'Ocara'}                                | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| De Tine sunt legat Isus                                                          | {'Ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| De ce noi nu putem?                                                              | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Dincoace şi dincolo                                                              | {'ocara'}                                | Traian Dorz     | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Doamne, nu fac                                                                   | {'ocara'}                                | Traian Dorz     | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Doamne, nu fac                                                                   | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Domnul Isus                                                                      | {'ocara'}                                | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Domnul Isus                                                                      | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Douăsprezece coşuri...                                                           | {'ocara'}                                | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Dovada învierii noastre                                                          | {'ocara'}                                | Traian Dorz     | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Dumnezeu şi glasul Lui                                                           | {'ocara'}                                | Traian Dorz     | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Eu nu umblu după slava omenească...                                              | {'ocara'}                                | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Evenimentele şi istoria noastră                                                  | {'ocara'}                                | Traian Dorz     | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | articol |
+| Fereşte-te de desfrânare                                                         | {'ocara'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Focul şi înştiinţarea                                                            | {'ocara'}                                | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
++----------------------------------------------------------------------------------+------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+Searching Ocara using https://api.comori-od.ro...
+Got 375 hits:
+Score: 21.0
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Slava şi ocara veşnică
+Type: articol
+Author: Traian Dorz
+Highlight: Slava şi <em>ocara</em> veşnică
+
 Score: 16.189394
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
@@ -117,7 +125,7 @@ Highlight: învredniceşte astfel şi pe mine de o parte din <em>ocara</em> Lui.
 Highlight: luat numele şi haina de preot... Aceasta este o <em>ocară</em> a lui Hristos pentru mine, dar slăvit să fie Domnul
 Highlight: Moartea răstignit pe cruce era o <em>ocară</em> înainte de răstignirea lui Isus pe o Cruce. Dar
 
-Score: 15.955555
+Score: 15.966666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
 Title: Ei l-au ocărât
@@ -126,12 +134,12 @@ Author: Traian Dorz
 Highlight: <em>Ocara</em> este răspunsul
 Highlight: <em>Ocara</em> nu se poate ridica în sus, ea se
 Highlight: pentru orice om ca să recurgă la înjurătură şi la <em>ocară</em>, la acest mijloc ruşinos, faţă de alt om, spre a-l
-Highlight: Cine trebuie să recurgă la constrângere şi la <em>ocară</em> acela este nedemn şi netrebnic.  Cine
+Highlight: recurgă la constrângere şi la <em>ocară</em> acela este nedemn şi netrebnic.  Cine
 Highlight: Ei l-au <em>ocărât</em>, şi i-au zis: Tu eşti ucenicul Lui; noi suntem ucenicii lui Moise. Ocara
-Highlight: Nu te simţi niciodată atins de <em>ocări</em>, când nu le meriţi.  Dacă
+Highlight: Cine <em>ocărăşte</em> este un un om fără cinste
 Highlight: Ei l-au <em>ocărât</em>
 
-Score: 13.923809
+Score: 13.941666
 Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Aur şi zgură
@@ -140,9 +148,9 @@ Author: Traian Dorz
 Highlight: 4 - <em>Ocara</em> este răspunsul asupritorului prost, când înfumurarea
 Highlight: <em>Ocara</em> nu se poate ridica în sus - ea se
 Highlight: pentru orice om să recurgă la înjurătură şi la <em>ocară</em>, la aceste mijloace ruşinoase, faţă de un alt om
-Highlight: Acela ce trebuie să recurgă la constrângere şi la <em>ocară</em>, acela este nedemn şi netrebnic.  Cine
+Highlight: recurgă la constrângere şi la <em>ocară</em>, acela este nedemn şi netrebnic.  Cine
+Highlight: Cine <em>ocărăşte</em> este un om fără cinste şi
 Highlight: 9 - Nu te simţi niciodată atins de <em>ocări</em>, când nu le meriţi.  Dacă
-Highlight: frumoasă a Cinstei - noroiul nici unei <em>ocări</em> nu te poate atinge...  Ocara
 
 Score: 13.923809
 Volume: Cântări Nemuritoare
@@ -156,6 +164,53 @@ Highlight: să nu fiu de-<em>ocară</em>
 Highlight: Tu să nu mă laşi de-<em>ocară</em> în a mea nădejde.
 Highlight: 42-Şi-atuncea voi răspunde de orişice <em>ocări</em> căci
 Highlight: multe-<em>ocări</em> cu-o gură rea dar
+
+Score: 13.416666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Au iubit mai mult slava oamenilor
+Type: articol
+Author: Traian Dorz
+Highlight: oamenilor sau <em>ocara</em> lui Isus, deşi ştii că trecătoarea slavă a lumii e <em>ocară</em> veşnică şi <em>ocara</em> trecătoare
+
+Score: 13.416666
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Ce alegem noi?
+Type: articol
+Author: Traian Dorz
+Highlight: - deşi ştii că trecătoarea slavă a lumii e <em>ocară</em> veşnică şi că <em>ocara</em> trecătoare
+Highlight: oamenilor sau <em>ocara</em> lui Isus,  -
+
+Score: 13.416666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Închinare
+Type: articol
+Author: Traian Dorz
+Highlight: numele nostru cel omenesc şi neputincios ceva din <em>ocara</em> slăvită a Numelui Tău Cel Dumnezeiesc şi Puternic
+Highlight: schimbat Crucea Ta pe cununile lumii acesteia. Nici <em>ocara</em> Ta pe slava ei.
+Highlight: laudă, totuşi ne-am ferit totdeauna să nu-Ţi aducem <em>ocară</em>. Dacă nu totdeauna am putut mărturisi înalt, totuşi
+
+Score: 12.749999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre îndreptare
+Type: articol
+Author: Traian Dorz
+Highlight: <em>ocara</em> este aspră şi taie
+Highlight: - de-aceea sfatu-ndreaptă, <em>ocara</em> îndârjeşte.
+Highlight: sfătuieşte decât să <em>ocărăşti</em>,  cu
+
+Score: 12.749999
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Luaţi Duh Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: al lui Isus chiar dacă are parte tot mai mult de <em>ocara</em> lui Hristos, el o iubeşte aceasta cu mult mai mult
+Highlight: Despre Moise se spune: el socotea <em>ocara</em> lui Hristos ca o mai mare bogăţie decât comorile
+Highlight: măsura cu care ne putem preda crucii şi jertfei, <em>ocării</em> şi morţii, pentru Hristos şi între ai Săi.
 
 Score: 12.666666
 Volume: Istoria unei Jertfe
@@ -174,15 +229,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: 55 - Oamenii iubesc <em>ocara</em> aruncată peste-acei
 Highlight: <em>ocara</em> de cunună - nu-l face niciodată!
-
-Score: 12.666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre îndreptare
-Type: articol
-Author: Traian Dorz
-Highlight: <em>ocara</em> este aspră şi taie şi răneşte
-Highlight: - de-aceea sfatu-ndreaptă, <em>ocara</em> îndârjeşte.
 
 Score: 12.666666
 Volume: Meditații la Ev. după Ioan
@@ -307,6 +353,17 @@ Highlight: Şi într-un rând mi-am avut de ascultat o aspră <em>ocară</em> ş
 Highlight: fraţilor, numai ură împotriva bisericii, numai <em>ocări</em> împotriva învăţăturii, credinţei şi dragostei dintâi
 Highlight: spre a nu-l face să izbucnească în cine ştie ce <em>ocări</em>, făcând de ruşine Lucrarea Domnului, - de care lui
 
+Score: 11.833333
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)
+Type: articol
+Author: Traian Dorz
+Highlight: şi dacă împreună trebuie să purtăm sarcinile sau <em>ocara</em> lui Hristos,
+Highlight: scuipările, bătăile, cununa de spini, haina de <em>ocară</em>;  judecata
+Highlight: dispreţuitoare, gesturi urâte şi chiar cuvinte de <em>ocară</em>.  Binele
+Highlight: Lui Însuşi; ci, după cum este scris: “<em>Ocările</em> celor ce Te <em>ocărăsc</em> pe Tine au căzut peste Mine.” 4
+
 Score: 11.8
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
@@ -317,17 +374,6 @@ Highlight: <em>ocara</em> neamurilor
 Highlight: să zidim zidul Ierusalimului ca să nu mai fim de <em>ocară</em> ( Neemia
 Highlight: să zidim zidul Ierusalimului ca să nu mai fim de <em>ocară</em>
 Highlight: Cei ce îmi aruncă <em>ocări</em> în punctul acesta, ar trebui să se gândească şi
-
-Score: 11.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)
-Type: articol
-Author: Traian Dorz
-Highlight: şi dacă împreună trebuie să purtăm sarcinile sau <em>ocara</em> lui Hristos,
-Highlight: scuipările, bătăile, cununa de spini, haina de <em>ocară</em>;  judecata
-Highlight: dispreţuitoare, gesturi urâte şi chiar cuvinte de <em>ocară</em>.  Binele
-Highlight: Şi-a plăcut Lui Însuşi; ci, după cum este scris: “<em>Ocările</em> celor ce Te ocărăsc pe Tine au căzut peste Mine
 
 Score: 11.8
 Volume: Cântări Nemuritoare
@@ -358,7 +404,7 @@ Author: Traian Dorz
 Highlight: - căci <em>ocara</em> nu te-ajunge, de nu te cobori la ea.
 Highlight: Nu răspunde cu <em>ocară</em>, când <em>ocară</em> vei primi de
 
-Score: 11.25641
+Score: 11.261905
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
@@ -377,7 +423,7 @@ Book: Mărgăritarul Ascuns
 Title: Bolile şi suferinţele de pe pământ
 Type: articol
 Author: Traian Dorz
-Highlight: Însuşi va arunca <em>ocara</em> celor ce ocărăsc Numele Său şi al copiilor Săi, asupra acestor <em>ocărâtori</em>.
+Highlight: 15 - Dumnezeu Însuşi va arunca <em>ocara</em> celor ce <em>ocărăsc</em> Numele Său şi al copiilor Săi, asupra acestor
 Highlight: sau a altuia - şi acest scaun de cinste sau de <em>ocară</em> pe care stăm acum în lumea asta. Nici
 
 Score: 11.083333
@@ -398,6 +444,24 @@ Type: articol
 Author: Traian Dorz
 Highlight: vieţii sale fiecare om merge în slava veşnică sau în <em>ocara</em> şi ruşinea veşnică, după felul cum a trăit fiecare
 Highlight: spre-<em>ocară</em> sau spre slavă.
+
+Score: 11.0
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Ce este Adevărul?
+Type: articol
+Author: Traian Dorz
+Highlight: Suferinţei Lui, I-am purtat şi noi cu vrednicie <em>ocara</em> Sa.
+Highlight: străluci pe frunţile noastre în locul numelui de <em>ocară</em> pe care îl purtasem atât de mult, din partea lumii
+
+Score: 11.0
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Frumuseţea inimii noastre
+Type: articol
+Author: Traian Dorz
+Highlight: şi dacă împreună trebuie să purtăm sarcinile sau <em>ocara</em> lui Hristos,
+Highlight: sau chiar cuvinte de <em>ocară</em>...  Mulţumirea
 
 Score: 11.0
 Volume: Hristos - Puterea Apostoliei
@@ -459,6 +523,35 @@ Highlight: mai întrista, ci bucură-te că ai şi tu o parte de <em>ocara</em> 
 Highlight: îndureraţi văzând nedreptăţile ce i se făceau, <em>ocările</em> ce i se aruncau, ameninţările ce curgeau asupra
 Highlight: fi de voi când din pricina Mea, oamenii vă vor <em>ocărî</em>, vă vor prigoni şi vor spune tot felul de lucruri
 
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Nenorocirile şi salvarea
+Type: articol
+Author: Traian Dorz
+Highlight:  - Vrăjmaşul care aruncă <em>ocara</em> sau palme şi sentinţe grele sau ameninţări de moarte
+Highlight: care vrăjmaşul său îi aruncă cele mai înjositoare <em>ocări</em>,
+Highlight: vedea cum în timp ce asupritorul lor le arunca <em>ocările</em> cele mai înfricoşate, Dumnezeul lor deschidea uşa
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Vremea chemării noastre
+Type: articol
+Author: Traian Dorz
+Highlight: fierbinţi suferinţe între sufletul care suferă <em>ocara</em> lui Hristos(
+Highlight: deoparte fiind pus ca o privelişte în mijlocul <em>ocărilor</em> lumii şi a necazurilor personale, iar pe de altă
+Highlight: cu munca, cu lupta şi cu jertfa ta la purtarea <em>ocărilor</em> lui Hristos şi la alor Lui pe pământ?
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Adevăr şi imitaţie
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Ocara</em> şi boala ta, închisoarea şi pătimirile tale, nu
+Highlight: care plângea, sau care flămânzea, sau care era <em>ocărât</em>, prigonit, lepădat şi omorât:  ferice
+
 Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
@@ -476,6 +569,42 @@ Type: poezie
 Author: Traian Dorz
 Highlight: David, auzind <em>ocara</em>, a zis de credinţă plin:
 Highlight: Goliat şi filistenii <em>ocărau</em> pe Israel că
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Lucrătorul şi lucrarea
+Type: articol
+Author: Traian Dorz
+Highlight: Pavel spune: Când suntem prigoniţi - răbdăm... căci <em>ocara</em> venea de la ai lor, prigoana venea de la străini
+Highlight: Dar cel care învăţase să binecuvânteze când era <em>ocărât</em> de fraţi, putea şi ştia să şi rabde când era prigonit
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Nu-şi mai aduce aminte de suferinţă
+Type: articol
+Author: Traian Dorz
+Highlight: În <em>ocara</em> şi nedreptatea de acum, - la cununia de atunci.
+Highlight: Şi în scuipările celor ce vă <em>ocărăsc</em> - la
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 74
+Type: poezie
+Author: Traian Dorz
+Highlight: auzi <em>ocara</em> ce-Ţi aruncă cel fără minte ne-ncetat
+Highlight: 18-Adu-Ţi aminte că vrăjmaşii Te <em>ocărăsc</em> şi-Ţi caută vină şi
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Viitorul întristărilor noastre
+Type: articol
+Author: Traian Dorz
+Highlight: În <em>ocara</em> şi nedreptatea de acum - la răsplătirea de atunci
+Highlight: Şi în scuipările celor ce vă <em>ocărăsc</em> acum, la clipa sărutării lui Hristos, pe lacrimile
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -502,6 +631,14 @@ Author: Traian Dorz
 Highlight: Vor pleca rând pe rând spre <em>ocara</em> şi osânda veşnică (
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: A fi în Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: dacă n-ai fost împreună cu El şi cu fraţii tăi în <em>ocara</em> şi în răbdarea Sa?
+
+Score: 9.5
 Volume: Spre Canaan
 Book: Spre Canaan
 Title: Aici intră rosturile Oastei
@@ -516,6 +653,14 @@ Title: Al treilea cuvânt
 Type: poezie
 Author: Traian Dorz
 Highlight: nefericirea semenilor noştri, spre slava sau spre <em>ocara</em> lui Hristos, spre slujirea binelui sau a răului
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Alergarea spre Ţintă
+Type: articol
+Author: Traian Dorz
+Highlight: Dar pentru că prea puţini doresc să sufere <em>ocara</em> lui Hristos şi să ia sarcina binelui altora, - cerută
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -574,6 +719,14 @@ Author: Traian Dorz
 Highlight: căci <em>ocara</em> Lui cu El au purtat.
 
 Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Ce dulce-a fost cândva
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce dulce-a fost cândva <em>ocara</em>
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Ce dulce-a fost cândva
@@ -596,6 +749,22 @@ Title: Ce sfânt şi nalt curaj
 Type: poezie
 Author: Traian Dorz
 Highlight: - să porţi <em>ocara</em> unei urme
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Cercetaţi duhurile
+Type: articol
+Author: Traian Dorz
+Highlight: doresc slava lui Hristos, - dar fără <em>ocara</em> Lui.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Credinţa şi statornicia
+Type: articol
+Author: Traian Dorz
+Highlight: dispreţuit, ei şi erau gata să-I împărtăşească <em>ocara</em> şi suferinţa Lui. Cu o inimă hotărâtă alipită de
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -631,7 +800,7 @@ Highlight: Cum crezi să scapi de-<em>ocara</em>
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
+Book: Hristos - Viţa vieţii noastre
 Title: Când eşti dat în mâna...
 Type: poezie
 Author: Traian Dorz
@@ -639,7 +808,7 @@ Highlight: dinspre Mâine la <em>ocara</em> de-azi priveşte
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
+Book: Hristos - Vindecătorul nostru
 Title: Când eşti dat în mâna...
 Type: poezie
 Author: Traian Dorz
@@ -660,6 +829,14 @@ Title: Când veţi înălţa pe Fiul, veţi cunoaşte
 Type: articol
 Author: Traian Dorz
 Highlight: de Tine, pe pământ nu dorim decât să purtăm acum <em>ocara</em> Ta, când Tu eşti batjocorit, căci aceasta este pentru
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Când vin marile încercări
+Type: articol
+Author: Traian Dorz
+Highlight: mai întrista, ci bucură-te că ai şi tu o parte de <em>ocara</em> lui Hristos.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -726,6 +903,14 @@ Author: Traian Dorz
 Highlight: Fiindcă nu iubim <em>ocara</em>
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Dincoace şi dincolo
+Type: articol
+Author: Traian Dorz
+Highlight: ori slava veşnică, ori <em>ocara</em> şi ruşinea veşnică
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Mijlocitorul nostru
 Title: Doamne, nu fac
@@ -766,12 +951,36 @@ Author: Traian Dorz
 Highlight: trebuie să fie în stare să sufere şi să poarte şi <em>ocara</em> şi grija altora.
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Dovada învierii noastre
+Type: articol
+Author: Traian Dorz
+Highlight: şi vor suferi cu bucurie <em>ocara</em> lui Hristos, nedorind să aibă altă soartă decât
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Dumnezeu şi glasul Lui
+Type: articol
+Author: Traian Dorz
+Highlight: cât şi pentru <em>ocara</em> şi tăgăduirea acelora care sunt fii ai diavolului
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Eu nu umblu după slava omenească...
 Type: articol
 Author: Traian Dorz
 Highlight: după cum nu-şi cruţă nici <em>ocara</em> pentru cei care dispreţuiesc slava ei.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Evenimentele şi istoria noastră
+Type: articol
+Author: Traian Dorz
+Highlight: iertării şi dragostei Sale, nu este oare tocmai <em>ocara</em> pentru El o mai mare cinste ca oricare alta pentru
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -788,196 +997,4 @@ Title: Focul şi înştiinţarea
 Type: articol
 Author: Traian Dorz
 Highlight: Chiar <em>ocara</em> îndurată se preface în cea mai mare cinste.
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Făgăduinţa şi împlinirea
-Type: articol
-Author: Traian Dorz
-Highlight: la Crucea şi la <em>ocara</em> Numelui Său şi a sfinţirii Sale...
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Haidem... să murim cu El
-Type: articol
-Author: Traian Dorz
-Highlight: şi dispreţuit, ei erau gata să-I împărtăşească <em>ocara</em> şi suferinţa Lui, cu o inimă hotărâtă alipită de
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Isus nu voia să stea în Iudeea
-Type: articol
-Author: Traian Dorz
-Highlight: în <em>ocara</em> şi dispreţul veşnic (
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
-Type: articol
-Author: Traian Dorz
-Highlight: fără cruce, doresc slava lui Hristos, dar fără <em>ocara</em> Lui.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Liniştea răbdării noastre
-Type: poezie
-Author: Traian Dorz
-Highlight: Când ai suferit <em>ocara</em>
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Moştenire şi moştenitori
-Type: articol
-Author: Traian Dorz
-Highlight: îi vede <em>ocara</em> pe care o îndură,
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Măreţia şi cuprinderea
-Type: articol
-Author: Traian Dorz
-Highlight: înalţe acum când pentru aceasta trebuie să sufere <em>ocara</em> şi osânda lumii acesteia.
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Neprihănirea şi vinovăţia
-Type: articol
-Author: Traian Dorz
-Highlight: Vor pleca rând pe rând spre <em>ocara</em> şi spre osânda veşnică(
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Niciodată nu se
-Type: poezie
-Author: Traian Dorz
-Highlight: nici <em>ocara</em>
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Nu cumva şi tu eşti
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Ocara</em> Lui va fi pentru tine o cinste veşnică. Dar
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Nu-şi mai aduce aminte de suferinţă
-Type: articol
-Author: Traian Dorz
-Highlight: În <em>ocara</em> şi nedreptatea de acum, - la cununia de atunci.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Nu-ţi pese de părerea lumii
-Type: poezie
-Author: Traian Dorz
-Highlight: Nu-ţi pese de <em>ocara</em> celor
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Nu-ţi pese de părerea lumii
-Type: poezie
-Author: Traian Dorz
-Highlight: Nu-ţi pese de <em>ocara</em> celor
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Prin lupte
-Type: poezie
-Author: Traian Dorz
-Highlight: să purtăm cu Tine jugul şi <em>ocara</em> şi lovirea
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Privesc la fratele
-Type: poezie
-Author: Traian Dorz
-Highlight: - el poate îndura <em>ocara</em>
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 74
-Type: poezie
-Author: Traian Dorz
-Highlight: auzi <em>ocara</em> ce-Ţi aruncă cel fără minte ne-ncetat
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Părinţii şi copiii
-Type: articol
-Author: Traian Dorz
-Highlight: Şi <em>ocara</em> lui Hristos, este o coroană mai strălucitoare ca
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Rugăciunea profetului Ieremia - 4
-Type: poezie
-Author: Traian Dorz
-Highlight: şi vezi-ne <em>ocara</em> cea grea de ne-ndurat,
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Scoală-te... şi umblă
-Type: articol
-Author: Traian Dorz
-Highlight: mărturia ta. Şi după ea îţi vei primi şi lauda şi <em>ocara</em>
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Smerenia
-Type: articol
-Author: Traian Dorz
-Highlight: Sfântul n-a răbdat <em>ocara</em> subjugat de slăbiciune
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Să fie împreună cu Mine
-Type: articol
-Author: Traian Dorz
-Highlight: răsplata Lui, dacă tu n-ai fost împreună cu El în <em>ocara</em> şi în răbdarea Sa?
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Să-l omoare şi pe Lazăr
-Type: articol
-Author: Traian Dorz
-Highlight: ) şi vor suferi cu bucurie <em>ocara</em> lui Hristos, nedorind să aibă altă soartă decât
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Urmarea adevărată a lui Isus
-Type: articol
-Author: Traian Dorz
-Highlight: După cum nu-şi cruţă lumea nici <em>ocara</em> pentru cei care dispreţuiesc slava ei.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Va veni şi Ziua Sfântă
-Type: poezie
-Author: Traian Dorz
-Highlight: care-au suferit <em>ocara</em>
 

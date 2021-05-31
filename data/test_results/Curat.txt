@@ -1,110 +1,124 @@
-+---------------------------------------------------------------------------------------------+--------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences                                                  | Author      | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+--------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| O, ce curat e cerul                                                                         | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Să cauţi doar ce-i curat                                                                    | {'curat', 'curaţi', 'curate'}                                | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Să cauţi doar ce-i curat                                                                    | {'curat', 'curaţi', 'curate'}                                | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Ce-i mai curat?                                                                             | {'curat'}                                                    | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Ce-i mai curat?                                                                             | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Dragoste, cuvânt curat                                                                      | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Grâu curat                                                                                  | {'curat'}                                                    | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Grâu curat                                                                                  | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Am fost copil aşa curat                                                                     | {'curat', 'curata'}                                          | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Mai curat decât zăpada                                                                      | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Mai curat decât zăpada                                                                      | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Numai cei cu gând curat                                                                     | {'curat', 'curaţi'}                                          | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Cu cât e mai curat                                                                          | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Iubiţi orice cuvânt curat                                                                   | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| O, fiu curat...                                                                             | {'curat'}                                                    | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
-| Slavă-n tine Cer curat                                                                      | {'curat'}                                                    | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Slavă-n tine Cer curat                                                                      | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Despre curăţie                                                                              | {'curăţie', 'curat'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Sunteţi curaţi din pricina Cuvântului                                                       | {'curaţi', 'curat', 'curate', 'curăţi', 'Curat', 'curăţiţi'} | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)          | {'curat', 'curată', 'Curat', 'curate'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'curat', 'curată'}                                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Despre adevăr                                                                               | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 5-a a Postului Mare                                             | {'curat', 'curăţia', 'curăţi'}                               | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Din alte diferite părţi                                                                     | {'curăţită', 'Curat', 'curat'}                               | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Crişanei                                                                        | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Voi sunteţi curaţi, dar nu toţi                                                             | {'curat', 'curaţi', 'curăţat', 'curăţit', 'curăţie'}         | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Din părţile Transilvaniei                                                                   | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'curat'}                                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                        | {'curat'}                                                    | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Despre cinste                                                                               | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                             | {'curat'}                                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Arătarea şi ascunderea                                                                      | {'curat'}                                                    | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                                 | {'curăţire', 'curat', 'curăţia'}                             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cred Doamne                                                                                 | {'curată', 'curat', 'curate'}                                | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Din părţile Olteniei                                                                        | {'curata', 'curat', 'curată'}                                | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                        | {'curat', 'curate', 'curăţia', 'curaţi', 'curăţie'}          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                               | {'curat', 'curăţă', 'curaţi', 'curate', 'curăţarea'}         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Despre iubire                                                                               | {'curat', 'curată', 'curaţi'}                                | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Reîntâlnirea...                                                                             | {'Curaţi', 'curat', 'Curat', 'curată'}                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Reîntâlnirea...                                                                             | {'Curaţi', 'curat', 'Curat', 'curată'}                       | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                                  | {'curat', 'curată', 'curate'}                                | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Despre păcat                                                                                | {'curat', 'curăţie', 'curată'}                               | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Frumuseţea                                                                                  | {'curat', 'curate'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 9 - A doua judecată                                                                    | {'curat', 'curăţat', 'curăţia'}                              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cântarea împăratului David                                                                  | {'curat', 'curăţie', 'curăţia'}                              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Din părţile Moldovei                                                                        | {'curat', 'curată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Maramureşului                                                                   | {'curat', 'curată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Maria a luat un litru de mir                                                                | {'curat'}                                                    | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Izvorul curăţiei mele                                                                       | {'curat', 'curăţia', 'curăţit', 'curăţiei'}                  | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Smerenia şi curăţia                                                                         | {'curat', 'curăţia', 'curaţi', 'curate', 'curăţiei'}         | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Cel mai frumos Isus                                                                | {'curat', 'curăţarea', 'curăţătoare'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'curat', 'curăţitor', 'curăţiţi', 'curată', 'curate'}       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                                | {'curat', 'curăţire', 'curăţiţi', 'curate', 'curaţi'}        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'curată', 'curat', 'curăţia', 'curate'}                     | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Din părţile Banatului                                                                       | {'curat', 'curată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)             | {'curat', 'curăţie', 'curatei', 'curăţia'}                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Din părţile Bucovinei                                                                       | {'curat', 'curată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'curat', 'curăţit', 'curate', 'curată'}                     | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)                | {'curat', 'curăţia', 'curăţiei', 'curate'}                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Intrarea şi Ieşirea                                                                         | {'curat', 'curăţirea', 'curăţi', 'curată'}                   | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Eu una ştiu                                                                                 | {'curat', 'curaţi'}                                          | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Smerenia                                                                                    | {'curat', 'curăţie', 'curăţia'}                              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 15 - Un An Nou Fericit                                                                 | {'curat', 'curată'}                                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                                  | {'curat', 'curată'}                                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Despre bunătate                                                                             | {'curat', 'curaţi'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre lăcomie                                                                              | {'curat', 'curată'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre îndrăzneală - curaj                                                                  | {'Curat', 'curat', 'curată'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Isus a cunoscut că voiau să-L întrebe                                                       | {'curat', 'curată'}                                          | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| Laudă şi mustrare                                                                           | {'curată', 'curat'}                                          | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| În grija ascultării mele                                                                    | {'curate', 'curat'}                                          | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| În grija ascultării mele                                                                    | {'curate', 'curat'}                                          | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Ca un ascuns mărgăritar                                                                     | {'curat'}                                                    | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Ca un ascuns mărgăritar                                                                     | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Despre muncă                                                                                | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                                       | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| E ziua bucuriei azi                                                                         | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| O, întâia mea credinţă!...                                                                  | {'curat'}                                                    | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| O, întâia mea credinţă!...                                                                  | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Păcat e tot ce duci                                                                         | {'curat'}                                                    | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Păcat e tot ce duci                                                                         | {'curat'}                                                    | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | {'curat', 'curăţia', 'curate'}                               | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 17-a după Rusalii                                               | {'curat', 'curăţim', 'curăţa', 'curăţat'}                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Acum vedem bine...                                                                          | {'curate', 'curat', 'curată'}                                | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                               | {'curat', 'curate', 'curăţite', 'curăţia', 'curăţitor'}      | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 2 - A treia zi istorică                                                                | {'curat', 'curată', 'curatul'}                               | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 15-a după Rusalii                                               | {'curat', 'curăţii', 'curăţie', 'curăţate'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)              | {'curate', 'curat', 'curăţia', 'curaţi', 'curăţie'}          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 13 - După luarea lui Moisi...                                                          | {'curat', 'CURĂŢIE', 'curăţia', 'curăţie', 'curată'}         | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 24 - Pânza care se ţese                                                                | {'curat', 'curată', 'curate', 'curăţia', 'curaţi'}           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Va veni un altul...                                                               | {'curat', 'curaţi', 'curată', 'curăţie', 'curate'}           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                       | {'curat', 'curăţia', 'curate'}                               | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | {'curat', 'curăţit', 'curăţie', 'curate'}                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Psalmul 119                                                                                 | {'curat', 'curată', 'curăţie'}                               | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Rămâneţi în dragostea Mea                                                                   | {'curăţie', 'curat', 'curate', 'curăţitoare', 'curăţiei'}    | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'curat', 'curăţie', 'curată', 'curate'}                     | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                         | {'curat', 'curăţie', 'Curăţia', 'curaţi', 'curată'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Dacă aţi fi din lume...                                                                     | {'curat', 'curaţi', 'curăţit', 'curate'}                     | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Dulce şi amar                                                                               | {'curat', 'curate', 'curaţi', 'curată'}                      | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Cap. 27 - Pe drumul ales                                                                    | {'curat', 'curată', 'curăţit'}                               | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                                     | {'curat', 'curată', 'curăţie'}                               | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-+---------------------------------------------------------------------------------------------+--------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Curat using http://localhost:9000...
-Got 1803 hits:
-Score: 37.30357
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences                                                   | Author      | Tip                            | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| O, ce curat e cerul                                                                         | {'curat'}                                                     | Traian Dorz | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | poezie  |
+| O, ce curat e cerul                                                                         | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Să cauţi doar ce-i curat                                                                    | {'curat', 'curaţi', 'curate'}                                 | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Să cauţi doar ce-i curat                                                                    | {'curat', 'curaţi', 'curate'}                                 | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Grâu curat                                                                                  | {'curat', 'curând'}                                           | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Grâu curat                                                                                  | {'curat', 'curând'}                                           | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Ce-i mai curat?                                                                             | {'curat'}                                                     | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Ce-i mai curat?                                                                             | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Dragoste, cuvânt curat                                                                      | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Am fost copil aşa curat                                                                     | {'curat', 'curata'}                                           | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Mai curat decât zăpada                                                                      | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Mai curat decât zăpada                                                                      | {'curat'}                                                     | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Mai curat decât zăpada                                                                      | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Mustră-mi Tu Cuvânt curat                                                                   | {'curat', 'Curat'}                                            | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Numai cei cu gând curat                                                                     | {'curat', 'curaţi'}                                           | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cu cât e mai curat                                                                          | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Iubiţi orice cuvânt curat                                                                   | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| O, fiu curat...                                                                             | {'curat'}                                                     | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
+| O, fiu curat...                                                                             | {'curat'}                                                     | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | poezie  |
+| O, fiu curat...                                                                             | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Slavă-n tine Cer curat                                                                      | {'curat'}                                                     | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | poezie  |
+| Slavă-n tine Cer curat                                                                      | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Sunteţi curaţi din pricina Cuvântului                                                       | {'curaţi', 'curat', 'curate', 'curăţi', 'Curat'}              | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Despre curăţie                                                                              | {'necurate', 'curat'}                                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)          | {'curat', 'curată', 'Curat', 'curate'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'curat', 'necurat', 'curată'}                                | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Despre adevăr                                                                               | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                                                     | {'curat', 'Curat'}                                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 5-a a Postului Mare                                             | {'curăţi', 'curat'}                                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Din părţile Crişanei                                                                        | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Răufăcătorii Lucrării Domnului                                                              | {'curat', 'curată'}                                           | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Voi sunteţi curaţi, dar nu toţi                                                             | {'curat', 'curaţi', 'curăţat', 'curând', 'curăţii'}           | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                        | {'curat'}                                                     | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Din părţile Transilvaniei                                                                   | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'curat'}                                                     | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Despre cinste                                                                               | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                             | {'curat'}                                                     | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Arătarea şi ascunderea                                                                      | {'curat'}                                                     | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Din părţile Olteniei                                                                        | {'curata', 'curat', 'curată'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Binecuvântare şi zădărnicie                                                                 | {'curat', 'necurat', 'curând'}                                | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                                 | {'curat', 'curate'}                                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cred Doamne                                                                                 | {'curată', 'curat', 'curate'}                                 | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Fluviul şi Oceanul                                                                          | {'curat', 'curate'}                                           | Traian Dorz | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | articol |
+| Purtătorul Cuvântului                                                                       | {'curaţi', 'curat', 'curate', 'curăţi'}                       | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Despre iubire                                                                               | {'curat', 'curată', 'curaţi'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                               | {'curat', 'curăţă', 'curaţi', 'curate', 'necurate'}           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Din părţile Maramureşului                                                                   | {'curat', 'curând'}                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cap. 9 - A doua judecată                                                                    | {'curat', 'curând', 'Curând', 'curăţat'}                      | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                                  | {'curat', 'curată', 'curate'}                                 | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Despre păcat                                                                                | {'curat', 'curând', 'curată'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Moldovei                                                                        | {'curat', 'necurat', 'curată'}                                | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                        | {'curat', 'curaţi', 'curând', 'curate'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Reîntâlnirea...                                                                             | {'Curaţi', 'curat', 'Curat', 'curată'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Reîntâlnirea...                                                                             | {'Curaţi', 'curat', 'Curat', 'curată'}                        | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Frumuseţea                                                                                  | {'curat', 'curând', 'curate'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cântarea împăratului David                                                                  | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Maria a luat un litru de mir                                                                | {'curat'}                                                     | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Liniştea vieţii curate                                                                      | {'curat', 'curând', 'curate'}                                 | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'curat', 'curând'}                                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 1 - Cel mai frumos Isus                                                                | {'curat', 'curând', 'Curând'}                                 | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                                | {'curat', 'curate', 'curaţi', 'curând'}                       | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'curată', 'curat', 'curate', 'curând'}                       | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Despre muncă                                                                                | {'curat', 'curând'}                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Banatului                                                                       | {'curat', 'curată', 'curând'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Înştiinţarea şi împlinirea                                                                  | {'Curat', 'necurat', 'curate', 'curat', 'curând', 'Necuraţi'} | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Din părţile Bucovinei                                                                       | {'curat', 'curată'}                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cap. 15 - Un An Nou Fericit                                                                 | {'curat', 'curând', 'curată'}                                 | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Despre îndrăzneală - curaj                                                                  | {'Curat', 'curat', 'curând', 'curată'}                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Intrusul şi moştenirea                                                                      | {'curat', 'curaţi', 'curată', 'curând'}                       | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Despre bunătate                                                                             | {'curat', 'curaţi', 'curând'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Despre lăcomie                                                                              | {'curat', 'curată', 'curând'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Intrarea şi Ieşirea                                                                         | {'curat', 'curăţi', 'curată', 'curând'}                       | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'curat', 'necurat', 'curate', 'curată'}                      | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)                | {'curat', 'curate', 'curând', 'curată'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Din părţile Munteniei                                                                       | {'curat', 'curând'}                                           | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Eu una ştiu                                                                                 | {'curat', 'curaţi'}                                           | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Isus a cunoscut că voiau să-L întrebe                                                       | {'curat', 'necurat', 'curată'}                                | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                                                  | {'curat', 'curată'}                                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Dezvinovăţiri învinuitoare                                                                  | {'curat', 'curând'}                                           | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)             | {'curat', 'curatei'}                                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Laudă şi mustrare                                                                           | {'curată', 'curat'}                                           | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Ochiul e luminătorul                                                                        | {'curat', 'necurat'}                                          | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Primirea şi darea                                                                           | {'curat', 'curaţi'}                                           | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Slujba şi inima                                                                             | {'curat', 'curând'}                                           | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| În grija ascultării mele                                                                    | {'curate', 'curat'}                                           | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| În grija ascultării mele                                                                    | {'curate', 'curat'}                                           | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Ca un ascuns mărgăritar                                                                     | {'curat'}                                                     | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Ca un ascuns mărgăritar                                                                     | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cine-i oare cel mai mare?                                                                   | {'curat', 'Curat'}                                            | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| E ziua bucuriei azi                                                                         | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| O, întâia mea credinţă!...                                                                  | {'curat'}                                                     | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| O, întâia mea credinţă!...                                                                  | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Păcat e tot ce duci                                                                         | {'curat'}                                                     | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Păcat e tot ce duci                                                                         | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Smerenia                                                                                    | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Voi sunteţi lumina lumii                                                                    | {'curat'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Cap. 2 - O taină a lui Dumnezeu                                                             | {'curat', 'curate', 'necurate', 'curând'}                     | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Acum vedem bine...                                                                          | {'curate', 'curat', 'curată', 'curând'}                       | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 17-a după Rusalii                                               | {'curat', 'necurat', 'necurăţii', 'Curând', 'curăţa'}         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 2 - A treia zi istorică                                                                | {'curat', 'curată', 'curatul'}                                | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Curat using https://api.comori-od.ro...
+Got 2796 hits:
+Score: 37.285713
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: O, ce curat e cerul
+Type: poezie
+Author: Traian Dorz
+Highlight: O, ce <em>curat</em> e cerul la orice răsărit
+Highlight: - O, ce <em>curat</em> e duhul în orice tainic ceas
+Highlight: O, ce <em>curat</em> e visul din care te trezeşti
+Highlight: O, ce <em>curat</em> e gândul de după ce-ai pătruns
+Highlight: O, ce <em>curat</em> e-al zilei desăvârşit apus
+Highlight: O, ce <em>curat</em> e totul când viaţa la sfârşit
+Highlight: O, ce <em>curat</em> e cerul
+
+Score: 37.285713
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: O, ce curat e cerul
@@ -146,6 +160,30 @@ Highlight: doar câte sunt <em>curate</em> ia-le
 Highlight: ce nu-s <em>curate</em>, nu lua!
 Highlight: Să cauţi doar ce-i <em>curat</em>
 
+Score: 35.3
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Grâu curat
+Type: poezie
+Author: Traian Dorz
+Highlight: Grâu <em>curat</em> sub grele brazde semănat
+Highlight: rabdă şi aşteaptă soarele <em>curat</em>
+Highlight: - Sfântă pâine bună, trup de grâu <em>curat</em>
+Highlight: mai <em>curând</em> s-ajungă spic de aur plin luminat
+Highlight: Grâu <em>curat</em>
+
+Score: 35.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Grâu curat
+Type: poezie
+Author: Traian Dorz
+Highlight: Grâu <em>curat</em> sub grele brazde semănat
+Highlight: rabdă şi aşteaptă soarele <em>curat</em>
+Highlight: - Sfântă pâine bună, trup de grâu <em>curat</em>
+Highlight: mai <em>curând</em> s-ajungă spic de aur plin luminat
+Highlight: Grâu <em>curat</em>
+
 Score: 35.25
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
@@ -179,28 +217,6 @@ Highlight: Legământul meu <em>curat</em>
 Highlight: Dragoste, altar <em>curat</em>
 Highlight: Dragoste, cuvânt <em>curat</em>
 
-Score: 35.25
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Grâu curat
-Type: poezie
-Author: Traian Dorz
-Highlight: Grâu <em>curat</em> sub grele brazde semănat
-Highlight: rabdă şi aşteaptă soarele <em>curat</em>
-Highlight: - Sfântă pâine bună, trup de grâu <em>curat</em>
-Highlight: Grâu <em>curat</em>
-
-Score: 35.25
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Grâu curat
-Type: poezie
-Author: Traian Dorz
-Highlight: Grâu <em>curat</em> sub grele brazde semănat
-Highlight: rabdă şi aşteaptă soarele <em>curat</em>
-Highlight: - Sfântă pâine bună, trup de grâu <em>curat</em>
-Highlight: Grâu <em>curat</em>
-
 Score: 33.8
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
@@ -224,6 +240,16 @@ Highlight: Mai <em>curat</em> decât cristalul
 Highlight: Mai <em>curat</em> decât zăpada
 
 Score: 33.666664
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Mai curat decât zăpada
+Type: poezie
+Author: Traian Dorz
+Highlight: Mai <em>curat</em> decât zăpada
+Highlight: Mai <em>curat</em> decât cristalul
+Highlight: Mai <em>curat</em> decât zăpada
+
+Score: 33.666664
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Mai curat decât zăpada
@@ -232,6 +258,16 @@ Author: Traian Dorz
 Highlight: Mai <em>curat</em> decât zăpada
 Highlight: Mai <em>curat</em> decât cristalul
 Highlight: Mai <em>curat</em> decât zăpada
+
+Score: 33.666664
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Mustră-mi Tu Cuvânt curat
+Type: poezie
+Author: Traian Dorz
+Highlight: Mustră-mi Tu Cuvânt <em>curat</em>
+Highlight: Mustră-mi Tu <em>Curat</em> Cuvânt
+Highlight: Mustră-mi Tu Cuvânt <em>curat</em>
 
 Score: 30.666666
 Volume: Cântări Nemuritoare
@@ -271,6 +307,24 @@ Highlight: O, fiu <em>curat</em> - nu-ntoarce
 Highlight: O, fiu <em>curat</em>...
 
 Score: 30.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: O, fiu curat...
+Type: poezie
+Author: Traian Dorz
+Highlight: O, fiu <em>curat</em> - nu-ntoarce
+Highlight: O, fiu <em>curat</em>...
+
+Score: 30.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: O, fiu curat...
+Type: poezie
+Author: Traian Dorz
+Highlight: O, fiu <em>curat</em> - nu-ntoarce
+Highlight: O, fiu <em>curat</em>...
+
+Score: 30.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
 Title: Slavă-n tine Cer curat
@@ -288,21 +342,7 @@ Author: Traian Dorz
 Highlight: Slavă-n tine Cer <em>curat</em>
 Highlight: Slavă-n tine Cer <em>curat</em>
 
-Score: 19.973684
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre curăţie
-Type: articol
-Author: Traian Dorz
-Highlight: cel ce umblă-n <em>curăţie</em> va ieşi mereu <em>curat</em>.
-Highlight: - Fiul meu, în gând şi-n faptă fii de-a pururea <em>curat</em>,  ca
-Highlight: 9 - Dacă sufletul <em>curat</em> ţi-e dacă
-Highlight: dacă duhul ţi-e <em>curat</em>,  grijă
-Highlight: vasul trupului <em>curat</em>,  ca
-Highlight: doar un trup <em>curat</em> e vasul cel de
-Highlight: Despre <em>curăţie</em>
-
-Score: 18.714285
+Score: 18.704546
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: Sunteţi curaţi din pricina Cuvântului
@@ -310,13 +350,26 @@ Type: articol
 Author: Traian Dorz
 Highlight: vedeţi oameni <em>curaţi</em>, tineret <em>curat</em>, fecioare <em>curate</em>, adunări <em>curate</em>, comunităţi <em>curate</em> - daţi sufletelor
 Highlight: Cuvântul <em>curat</em> îi va <em>curăţi</em>...
-Highlight: veşnică Ţie Sfânt şi <em>Curat</em> Cuvânt Dumnezeiesc, prin care am fost şi noi <em>curăţiţi</em> de vechile noastre păcate
 Highlight: Eşti ori mai <em>curat</em>, ori mai întinat.  Ori
 Highlight: uşor şi cât de înviorat te simţi după un cuvânt <em>curat</em>.  Dar
 Highlight: sufletelor Cuvântul lui Hristos <em>curat</em>.  Cuvântul
+Highlight: Slavă veşnică Ţie Sfânt şi <em>Curat</em> Cuvânt Dumnezeiesc, prin care am fost şi noi curăţiţi
 Highlight: Sunteţi <em>curaţi</em> din pricina Cuvântului
 
-Score: 17.465517
+Score: 17.962963
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre curăţie
+Type: articol
+Author: Traian Dorz
+Highlight: 51 - Prin mijloace <em>necurate</em> n-ai să strângi un scop <em>curat</em>,
+Highlight: - Fiul meu, în gând şi-n faptă fii de-a pururea <em>curat</em>,  ca
+Highlight: 9 - Dacă sufletul <em>curat</em> ţi-e dacă
+Highlight: dacă duhul ţi-e <em>curat</em>,  grijă
+Highlight: vasul trupului <em>curat</em>,  ca
+Highlight: doar un trup <em>curat</em> e vasul cel de
+
+Score: 17.458334
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
@@ -325,24 +378,24 @@ Author: Traian Dorz
 Highlight: vestitorul Evangheliei este <em>curat</em>, - <em>curată</em> va şi învăţătura. <em>Curat</em> va fi şi Cuvântul. <em>Curat</em> va fi tot ce vine
 Highlight: vasul este <em>curat</em>, <em>curat</em> este şi conţinutul pus în el. Când o conductă este <em>curată</em>, <em>curată</em> va fi şi apa
 Highlight: este întru totul <em>curat</em>, după cum este scris. Cuvintele Domnului sunt Cuvinte <em>curate</em>, un argint lămurit
-Highlight: trebuie să fie un vas <em>curat</em>.
+Highlight: aceea şi cel care Îl poartă, trebuie să fie un vas <em>curat</em>.
 Highlight: fierbinte, Cuvântul strălucitor şi lămurit, Cuvântul <em>curat</em> şi preţios al lui Dumnezeu, în aşa fel încât oricine
 Highlight: Oricât de <em>curat</em> este un argint, dacă el este trecut printr-un cuptor
 
-Score: 17.1375
+Score: 17.15238
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
 Type: articol
 Author: Traian Dorz
+Highlight: ascunzişurile, pentru că nu-i cinstit şi nu-i <em>curat</em>. E necinstit şi <em>necurat</em> şi în ce spune şi în ce ascunde.
 Highlight: deschis şi oriunde adevărul <em>curat</em> al lui Hristos din toată inima voastră <em>curată</em>!
 Highlight: Ierusalim paşnic şi Cincizecime liberă. Ierusalim <em>curat</em> şi Cincizecime adevărată. Ierusalim slăvit şi Cincizecime
 Highlight: sufletul <em>curat</em> sau nu, gândurile deschise sau nu, umblările arătate sau nu.  Oricine
 Highlight: Oricine este <em>curat</em>, acela
 Highlight: Nu-şi ascunde planurile, fiindcă ceea ce este <em>curat</em> şi frumos n-ai nici nevoie şi n-ai nici voie să
-Highlight: destăinui ascunzişurile, pentru că nu-i cinstit şi nu-i <em>curat</em>. E necinstit şi necurat şi în ce spune şi în ce
 
-Score: 17.123077
+Score: 17.116667
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre adevăr
@@ -355,33 +408,33 @@ Highlight: totdeauna e <em>curat</em> şi luminos,
 Highlight: 63 - Cel <em>curat</em> la gând, cunoaşte
 Highlight: 68 - Frumos lucru e-adevărul, şi statornic şi <em>curat</em>,
 
-Score: 16.964287
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: păstrează <em>curat</em>, ori se face rău. După cum este scris: Fraţilor, eu am vieţuit cu toată <em>curăţia</em> cugetului
-Highlight: noastre, noi ni-l putem fie <em>curăţi</em>, fie întina. Putem să ni-l păstrăm fie <em>curat</em> prin silinţa noastră în cele
-Highlight: va umbla printre oamenii săi cu tot cugetul său <em>curat</em> şi cu toată fiinţa lui însufleţită de Duhul Sfânt
-Highlight: începutul vieţii omului nu poate fi decât bun şi <em>curat</em>, cum sunt toate însuşirile unui copil, atât cele
-Highlight: Mulţumesc lui Dumnezeu căruia Îi slujesc cu un cuget <em>curat</em> din moşi strămoşi ( 2
-Highlight: nedrepţi. De aceea, mă silesc să am totdeauna un cuget <em>curat</em> înaintea lui Dumnezeu şi înaintea oamenilor ( Fap
-
-Score: 16.954546
+Score: 16.967743
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din alte diferite părţi
 Type: articol
 Author: Traian Dorz
-Highlight: căci în mintea <em>curăţită</em> prin Cuvântul Cel <em>Curat</em>
-Highlight: 1 - Duhul cel <em>curat</em> e-altarul de lumină-al Celui Drept Scaunul
+Highlight: 1 - Duhul cel <em>curat</em> e-altarul de lumină-al Celui Drept
+Highlight: căci în mintea curăţită prin Cuvântul Cel <em>Curat</em>
 Highlight: să aibă o purtare bună şi s-aibă sufletul <em>curat</em>.
 Highlight: - şi când drumul ţi-e <em>curat</em> -
 Highlight: mai scump ca aurul <em>curat</em>
 Highlight: zilnic alte fapte bune, face-acelaşi duh <em>curat</em>.
 
-Score: 16.673077
+Score: 16.923077
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a a Postului Mare
+Type: articol
+Author: Traian Dorz
+Highlight: noastre, noi ni-l putem fie <em>curăţi</em>, fie întina. Putem să ni-l păstrăm fie <em>curat</em> prin silinţa noastră în cele
+Highlight: va umbla printre oamenii săi cu tot cugetul său <em>curat</em> şi cu toată fiinţa lui însufleţită de Duhul Sfânt
+Highlight: începutul vieţii omului nu poate fi decât bun şi <em>curat</em>, cum sunt toate însuşirile unui copil, atât cele
+Highlight: trăieşte omul, cugetul acesta ori se păstrează <em>curat</em>, ori se face rău. După cum este scris: Fraţilor
+Highlight: Mulţumesc lui Dumnezeu căruia Îi slujesc cu un cuget <em>curat</em> din moşi strămoşi ( 2
+Highlight: nedrepţi. De aceea, mă silesc să am totdeauna un cuget <em>curat</em> înaintea lui Dumnezeu şi înaintea oamenilor ( Fap
+
+Score: 16.694445
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Crişanei
@@ -394,7 +447,20 @@ Highlight: 123 - A iubi <em>curat</em> înseamnă a-l stima pe cel iubit
 Highlight: 170 - Să cauţi doar ce-i <em>curat</em> în viaţă
 Highlight: <em>curat</em> nectarul care-l ia.
 
-Score: 16.4375
+Score: 16.65909
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Răufăcătorii Lucrării Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: şi văd totdeauna adevărul acesta <em>curat</em>, al sufletului de apostol <em>curat</em>.
+Highlight: deschis şi oriunde adevărul <em>curat</em> al lui Hristos din inima voastră <em>curată</em>.
+Highlight: <em>curat</em>
+Highlight: Oricine este <em>curat</em>, acela
+Highlight: Nu-ţi ascunde planurile, pentru că ceea ce este <em>curat</em> şi frumos n-ai nici nevoie şi n-ai nici voie să
+Highlight: inimii, pentru că nu-i nici cinstit şi nu-i nici <em>curat</em>.  Numai
+
+Score: 16.423077
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: Voi sunteţi curaţi, dar nu toţi
@@ -404,11 +470,24 @@ Highlight: ca să fie <em>curat</em> de tot; şi voi sunteţi <em>curaţi</em>, 
 Highlight: fie <em>curat</em> de tot. Şi voi sunteţi <em>curaţi</em>...
 Highlight: Un suflet <em>curat</em> este numai acela care
 Highlight: curăţeşte neîncetat pe sine, şi care se lasă mereu <em>curăţat</em> de alţii şi
-Highlight: fost şi este <em>curăţit</em> el însuşi.  Sufletul
-Highlight: Sufletul care nu luptă mereu spre o şi mai mare <em>curăţie</em> a sa, şi a altora
+Highlight: curăţie a sa, şi a altora, acela îşi va pierde <em>curând</em> şi pe acea curăţie pe care i se pare că o mai are
+Highlight: pământeşti, El le dădea pilda celei mai sfinte <em>curăţii</em>.  În
 Highlight: Voi sunteţi <em>curaţi</em>, dar nu toţi
 
-Score: 16.361904
+Score: 16.38857
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: însufleţire a tot ceea ce era mai bun, mai uman, mai <em>curat</em> în specificul nostru românesc şi creştinesc. Ea
+Highlight: biruitoare care înaintează pe mijlocul sănătos şi <em>curat</em> dar foarte îngust al drumului mântuirii. Fiecare
+Highlight: luptătorii Domnului! Ce elan tineresc şi jertfitor, <em>curat</em> şi fierbinte, îi însufleţea pe toţi fraţii noştri
+Highlight: bisericii vii şi trăitoare în gândul ascultător, <em>curat</em> şi smerit al lui Hristos.
+Highlight: lucrat cu putere asupra tuturor celor cu cugetul <em>curat</em> şi cu inima smerită, astfel că înţelepciunea sănătoasă
+Highlight: puternic, mustul e <em>curat</em>
+
+Score: 16.369747
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Transilvaniei
@@ -421,7 +500,7 @@ Highlight: 93 - Spune-mi totdeauna voia ta Cuvântule <em>curat</em>
 Highlight: 107 - Cum tremură privirea izvorului <em>curat</em>
 Highlight: cât vei iubi vei fi <em>curat</em>
 
-Score: 16.361904
+Score: 16.366072
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
@@ -434,20 +513,7 @@ Highlight:  şi pe acest dar Dumnezeu îl dă fiecărui cuget <em>curat</em> şi
 Highlight: Să cerem mereu Domnului un cuget <em>curat</em> şi o inimă smerită şi să ne străduim să le păzim
 Highlight: Binecuvântează pe cei cu cugetul <em>curat</em>, care caută mereu slava Ta, propăşirea Evangheliei
 
-Score: 16.351648
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: însufleţire a tot ceea ce era mai bun, mai uman, mai <em>curat</em> în specificul nostru românesc şi creştinesc. Ea
-Highlight: biruitoare care înaintează pe mijlocul sănătos şi <em>curat</em> dar foarte îngust al drumului mântuirii. Fiecare
-Highlight: luptătorii Domnului! Ce elan tineresc şi jertfitor, <em>curat</em> şi fierbinte, îi însufleţea pe toţi fraţii noştri
-Highlight: bisericii vii şi trăitoare în gândul ascultător, <em>curat</em> şi smerit al lui Hristos.
-Highlight: lucrat cu putere asupra tuturor celor cu cugetul <em>curat</em> şi cu inima smerită, astfel că înţelepciunea sănătoasă
-Highlight: trunchiul e puternic, mustul e <em>curat</em>
-
-Score: 16.317461
+Score: 16.337662
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre cinste
@@ -460,7 +526,7 @@ Highlight: pe cel <em>curat</em>, credinţa l-ajută să nu cază.
 Highlight: dacă-ţi vrei sfârşit <em>curat</em>.
 Highlight: le-are cugetul <em>curat</em>.
 
-Score: 16.303572
+Score: 16.317461
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
@@ -486,33 +552,7 @@ Highlight: Şi fii sigur că atuncea Hristos te va izbăvi <em>curat</em> şi bi
 Highlight: 15 - Dacă vrei să-ţi păstrezi cugetul totdeauna <em>curat</em>
 Highlight: 19 - Cel credincios şi <em>curat</em>, departe de a se încurca, va face totdeauna prin
 
-Score: 15.90909
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
-Type: articol
-Author: Traian Dorz
-Highlight: sfârşit lucrarea de <em>curăţire</em> pe care ai început-o între noi, spre a-Ţi alege grâul cel <em>curat</em>, smerit şi sănătos
-Highlight: pocăinţa şi îndreptarea. Dar dacă nu mai este nimic <em>curat</em> în el, Dumnezeu va avea milă de adunarea voastră
-Highlight: tine, transformându-te în altceva mai înalt, mai <em>curat</em>, mai sfânt decum fuseseşi până la ea.  Unde
-Highlight: Şi dacă adevărul <em>curat</em> al lui Dumnezeu este Unul, adevărurile false ale
-Highlight: uneşte-i cu trupul Tău, cu unitatea frăţească în duhul <em>curat</em> şi frumos al ei, pentru a fi iarăşi şi ei fericiţi
-Highlight: Şi Îl cheamă smerenia şi <em>curăţia</em> lor, ascultarea şi sinceritatea fiecărui suflet
-
-Score: 15.888888
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Cred Doamne
-Type: articol
-Author: Traian Dorz
-Highlight: Ce credinţă sinceră şi <em>curată</em> au copiii cei care au un cuget <em>curat</em> şi o inimă neprefăcută
-Highlight: păstrează într-un cuget <em>curat</em> ( 1
-Highlight: Iar cine pierde acest cuget <em>curat</em> îşi pierde cu el credinţa
-Highlight: Câtă vreme omul are un cuget <em>curat</em>, priviţi ce frumoasă este credinţa şi în Dumnezeu
-Highlight: Ci să păstrăm taina credinţei într-un cuget <em>curat</em> cu care să putem sta totdeauna în faţa Ta.
-Highlight: Cugetele <em>curate</em> au credinţa în ele însele, pentru că credinţa este
-
-Score: 15.875
+Score: 15.923077
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Olteniei
@@ -525,33 +565,72 @@ Highlight: 60 - Nu te mândri că legea ţi-o ţii cu gând <em>curat</em>,
 Highlight: căci dacă-n vas e mir <em>curat</em>
 Highlight: 50 - Ca la oboseala mare apa rece şi <em>curată</em> aşa
 
-Score: 15.3375
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
+Score: 15.9
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Binecuvântare şi zădărnicie
 Type: articol
 Author: Traian Dorz
-Highlight: trupul tău <em>curat</em> şi sfânt, pentru ca chipul lui Hristos, Părintele şi Făcătorul tău, să rămână <em>curat</em> peste
-Highlight: Dumnezeu, tot ca şi sufletul. Ce minunat este un trup <em>curat</em>, înfrânat, serios, cuviincios, decent, neprihănit
-Highlight: Orice bob de grâu sănătos şi <em>curat</em> are pe el un chip, care uimitor de minunat, seamănă
-Highlight: vrăjmaşul iubirii <em>curate</em> caută cu toată şiretenia să ne strice inima de la <em>curăţia</em> dragostei unice pe
-Highlight:  cu o înfăţişare plină de nevinovăţie, cu ochi <em>curaţi</em>, cu vorbă sfioasă, cu gesturi pline de bun simţ
-Highlight: lui Hristos şi să-L poţi iubi şi sluji pe El în <em>curăţie</em>. Aceasta îţi va face şi îţi va păstra nu numai
+Highlight: totdeauna ca nu cumva pentru un scop <em>curat</em>, să folosească vreun mijloc <em>necurat</em>.
+Highlight: Dacă nu începi căsnicia ta cinstit, <em>curat</em>, serios şi hotărât pe calea voii lui Dumnezeu, -
+Highlight: 15 - Pentru un cuget <em>curat</em>, teama ca o ţintă bună să nu o urmărească pe căi
+Highlight:  caută să nu te abaţi niciodată din drumul cel <em>curat</em>,
+Highlight: vreo vorbă, vreo cale, vreun mijloc care n-ar fi <em>curat</em> şi cinstit în total.
+Highlight: Tot ce este fără Dumnezeu, va fi nimicit, mai <em>curând</em> ori mai târziu. Dar nu prea târziu.  3
 
-Score: 15.333333
+Score: 15.888888
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
 Type: articol
 Author: Traian Dorz
-Highlight: numărul lor frumos şi <em>curat</em>, alte suflete pe care le înfrumuseţează şi le <em>curăţă</em>.
-Highlight: Duhului, acolo unde se mărturiseşte <em>curat</em> Adevărul şi unde sunt <em>curaţi</em> mărturisitorii Lui.
-Highlight: Şi pentru că aceşti oameni n-au cugetul <em>curat</em> şi nici inima smerită, ci sunt necinstiţi în umblarea
-Highlight: Dar când eşti cu un cuget <em>curat</em> faţă de Dumnezeu şi îţi împlineşti cinstit şi din
-Highlight: izvoare vii şi <em>curate</em> şi spre care oricine, mergând, se înalţă, se vindecă, se <em>curăţă</em>, se sfinţeşte.
-Highlight: şi se va face prin naşterea din nou părtaş la <em>curăţarea</em> şi răscumpărarea aduse de preţul Jertfei Sale
+Highlight: pocăinţa şi îndreptarea. Dar dacă nu mai este nimic <em>curat</em> în el, Dumnezeu va avea milă de adunarea voastră
+Highlight: tine, transformându-te în altceva mai înalt, mai <em>curat</em>, mai sfânt decum fuseseşi până la ea.
+Highlight: Şi dacă adevărul <em>curat</em> al lui Dumnezeu este Unul, adevărurile false ale
+Highlight: început-o între noi, spre a-Ţi alege grâul cel <em>curat</em>, smerit şi sănătos pentru grânarul ceresc, iar ceea
+Highlight: uneşte-i cu trupul Tău, cu unitatea frăţească în duhul <em>curat</em> şi frumos al ei, pentru a fi iarăşi şi ei fericiţi
+Highlight: scumpe, rugăciuni atât de cereşti, lacrimi atât de <em>curate</em>, îmbrăţişări atât de îngereşti...  O
 
-Score: 15.328571
+Score: 15.875
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Cred Doamne
+Type: articol
+Author: Traian Dorz
+Highlight: Ce credinţă sinceră şi <em>curată</em> au copiii cei care au un cuget <em>curat</em> şi o inimă neprefăcută
+Highlight: păstrează într-un cuget <em>curat</em> ( 1
+Highlight: Iar cine pierde acest cuget <em>curat</em> îşi pierde cu el credinţa
+Highlight: Câtă vreme omul are un cuget <em>curat</em>, priviţi ce frumoasă este credinţa şi în Dumnezeu
+Highlight: Ci să păstrăm taina credinţei într-un cuget <em>curat</em> cu care să putem sta totdeauna în faţa Ta.
+Highlight: Cugetele <em>curate</em> au credinţa în ele însele, pentru că credinţa este
+
+Score: 15.857142
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Fluviul şi Oceanul
+Type: articol
+Author: Traian Dorz
+Highlight: frumoasă şi adâncă prin care să se scurgă folositor şi <em>curat</em>.
+Highlight: e mare lucru ca un izvor să ţâşnească frumos şi <em>curat</em> undeva, dar este un lucru poate şi mai mare ca acestui
+Highlight: să i se croiască un drum tot aşa de frumos şi de <em>curat</em> mai departe.
+Highlight: creştine a părinţilor noştri, şi din specificul <em>curat</em> al neamului nostru, ca singurul produs fericit al
+Highlight: numai că l-a făcut să ţâşnească atât de viu, de <em>curat</em> şi de frumos spărgând o crustă groasă de veacuri, -
+Highlight: Dumnezeu a adus din străfundurile noastre cele mai <em>curate</em>, acest izvor aducător de viaţă nouă - nu numai
+
+Score: 15.356522
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Purtătorul Cuvântului
+Type: articol
+Author: Traian Dorz
+Highlight: vedeţi oameni <em>curaţi</em>, tineret <em>curat</em>, fecioare <em>curate</em>, adunări <em>curate</em>, comunităţi <em>curate</em> - daţi sufletelor
+Highlight: Cuvântul <em>curat</em> îi va <em>curăţi</em>.
+Highlight: sufletelor Cuvântul lui Hristos <em>curat</em>.  Cuvântul
+Highlight: 15 - Numai sufletul <em>curat</em> nu se preface cu viclenie când e mustrat şi nu se
+Highlight: Le va <em>curăţi</em> întâi mintea luminând-o asupra
+Highlight: Le va <em>curăţi</em> apoi inima de toate plăcerile păcătoase.  Şi
+
+Score: 15.341177
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre iubire
@@ -563,6 +642,97 @@ Highlight: te iubesc din gând <em>curat</em>,
 Highlight: cel <em>curat</em> caută iubirea unde totul e voios -
 Highlight: 22 - Dragostea <em>curată</em>, mare şi
 Highlight: amândouă la credinţă duc pe cei cu gând <em>curaţi</em>;  inima
+
+Score: 15.328571
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Type: articol
+Author: Traian Dorz
+Highlight: numărul lor frumos şi <em>curat</em>, alte suflete pe care le înfrumuseţează şi le <em>curăţă</em>.
+Highlight: Duhului, acolo unde se mărturiseşte <em>curat</em> Adevărul şi unde sunt <em>curaţi</em> mărturisitorii Lui.
+Highlight: Şi pentru că aceşti oameni n-au cugetul <em>curat</em> şi nici inima smerită, ci sunt necinstiţi în umblarea
+Highlight: Dar când eşti cu un cuget <em>curat</em> faţă de Dumnezeu şi îţi împlineşti cinstit şi din
+Highlight: izvoare vii şi <em>curate</em> şi spre care oricine, mergând, se înalţă, se vindecă, se <em>curăţă</em>, se sfinţeşte.
+Highlight: aducea pe cei bolnavi şi pe cei chinuiţi de duhuri <em>necurate</em>: şi toţi se vindecau. 17
+
+Score: 15.323077
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Maramureşului
+Type: articol
+Author: Traian Dorz
+Highlight: ce-şi pierde numele <em>curat</em>
+Highlight: 38 - Omul cel <em>curat</em> iubeşte curăţenia frumoasă
+Highlight: darul lui <em>curat</em> să-l simtă înţeles şi-mpărtăşit.
+Highlight: ci-i frumos să se îmbrace cu bun simţ şi gând <em>curat</em>
+Highlight: 5 - Dacă plângi pentru oricare, în <em>curând</em> ai să orbeşti,  dacă
+Highlight: în <em>curând</em>, în grele lipsuri ai dori - şi n-o să ai.  6
+
+Score: 15.309091
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: arde de tot, ori se va alege ceva <em>curat</em> din noi - dacă mai este ceva <em>curat</em>. Ţine-ne în această şcoală grea
+Highlight: noastre meditaţii. - Şi ce se alegea de tot gândul <em>curat</em> cu care le începusem! Noi
+Highlight: suferă pentru Dumnezeu, dar care nu rămâne smerit şi <em>curat</em> cu inima, poate cădea astfel. Dacă nu se cercetează
+Highlight: apoi <em>curând</em> duhul rece al fratelui Lae Marini, - apoi şi cel uşuratic al fratelui Opriş. <em>Curând</em> toţi
+Highlight: prin care am trecut, este cu neputinţă să nu-l fi <em>curăţat</em> pe fiecare din cei ce am fost aruncaţi în el. Dacă
+Highlight: această ţintă cât mai frumos, cât mai bine, cât mai <em>curând</em> şi cu cât mai mult folos sufletesc. Dar
+
+Score: 15.3
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
+Type: articol
+Author: Traian Dorz
+Highlight: lui că a fost <em>curat</em> în tot ce a făcut şi vorbit, - va fi dator faţă de Dumnezeu să fie <em>curat</em> şi oricare
+Highlight: care apără forma sunt greşiţi. Dacă au un cuget <em>curat</em>, ei vor ajunge să afle şi Miezul.  Noi
+Highlight: de moarte unul pe altul, dar împotriva Duhului <em>curat</em> al Oastei Domnului aceste două duhuri se unesc.
+Highlight: Sfânta Scriptură. Dragostea care vine dintr-o inimă <em>curată</em>, dintr-un cuget bun şi dintr-o credinţă neprefăcută
+Highlight: potrivnice poruncii Evangheliei, stricătoare a unităţii <em>curate</em> şi semănătoare a urii între fraţi, - îngustimea
+Highlight: Este nevoie mereu să ne întoarcem spre adevărurile <em>curate</em> şi simple de la început, chiar dacă mai târziu
+
+Score: 15.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre păcat
+Type: articol
+Author: Traian Dorz
+Highlight: dar cum de <em>curat</em> e cerul fără număr înstelat
+Highlight: chipul cerului nu poate străluci <em>curat</em> în noi.
+Highlight: moartea sufletului este lipsa duhului <em>curat</em>.
+Highlight: - ea păstrează tot <em>curat</em>.
+Highlight: nu-i conduceţi la păcate că-i aprindeţi şi-n <em>curând</em> după
+Highlight: 50 - Pâraiele când izvorăsc cu apa lor <em>curată</em>,  dar
+
+Score: 15.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Moldovei
+Type: articol
+Author: Traian Dorz
+Highlight: - fii <em>curat</em>
+Highlight: - şi a-ţi păstra <em>curat</em> lăuntrul în orice loc şi timp ai sta.
+Highlight: nicicând nu va ieşi <em>curat</em> acel ce-n ea se bagă.
+Highlight: 148 - Până-i sufletul <em>curat</em>
+Highlight: - şi nici nu urmări cu darul să faci un lucru <em>necurat</em>.  23
+Highlight: ţinta ţi-e <em>curată</em> şi-ai
+
+Score: 15.3
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
+Type: articol
+Author: Traian Dorz
+Highlight: trupul tău <em>curat</em> şi sfânt, pentru ca chipul lui Hristos, Părintele şi Făcătorul tău, să rămână <em>curat</em> peste
+Highlight: Dumnezeu, tot ca şi sufletul. Ce minunat este un trup <em>curat</em>, înfrânat, serios, cuviincios, decent, neprihănit
+Highlight: Orice bob de grâu sănătos şi <em>curat</em> are pe el un chip, care uimitor de minunat, seamănă
+Highlight:  cu o înfăţişare plină de nevinovăţie, cu ochi <em>curaţi</em>, cu vorbă sfioasă, cu gesturi pline de bun simţ
+Highlight: Cine-ar fi zis atuncea, Isuse, că-n <em>curând</em>
+Highlight: încercări şi ispitiri prin care vrăjmaşul iubirii <em>curate</em> caută cu toată şiretenia să ne strice inima de
 
 Score: 15.3
 Volume: Istoria unei Jertfe
@@ -591,32 +761,6 @@ Highlight: precum <em>curată</em>-i jertfa pe care-acum zidiţi!  Curat
 Highlight: <em>curată</em> pilda vieţii,
 
 Score: 15.288889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-Highlight: lui că a fost <em>curat</em> în tot ce a făcut şi vorbit, - va fi dator faţă de Dumnezeu să fie <em>curat</em> şi oricare
-Highlight: care apără forma sunt greşiţi. Dacă au un cuget <em>curat</em>, ei vor ajunge să afle şi Miezul.  Noi
-Highlight: de moarte unul pe altul, dar împotriva Duhului <em>curat</em> al Oastei Domnului aceste două duhuri se unesc.
-Highlight: Sfânta Scriptură. Dragostea care vine dintr-o inimă <em>curată</em>, dintr-un cuget bun şi dintr-o credinţă neprefăcută
-Highlight: potrivnice poruncii Evangheliei, stricătoare a unităţii <em>curate</em> şi semănătoare a urii între fraţi, - îngustimea
-Highlight: Este nevoie mereu să ne întoarcem spre adevărurile <em>curate</em> şi simple de la început, chiar dacă mai târziu
-
-Score: 15.288889
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre păcat
-Type: articol
-Author: Traian Dorz
-Highlight: dar cum de <em>curat</em> e cerul fără număr înstelat
-Highlight: chipul cerului nu poate străluci <em>curat</em> în noi.
-Highlight: moartea sufletului este lipsa duhului <em>curat</em>.
-Highlight: - ea păstrează tot <em>curat</em>.
-Highlight: de <em>curăţie</em> şi-nfrânare.  41
-Highlight: 50 - Pâraiele când izvorăsc cu apa lor <em>curată</em>,  dar
-
-Score: 15.288889
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Frumuseţea
@@ -626,23 +770,10 @@ Highlight: frumuseţea dinăuntru o păstrează-un gând <em>curat</em>.
 Highlight: şi-al inimii, <em>curat</em>.
 Highlight: numai cel <em>curat</em> pătrunde toată
 Highlight: numai cel <em>curat</em> cuprinde bucuria ei duioasă,
-Highlight: mai <em>curate</em> şi mai albe când e sufletul frumos.  2
-Highlight: ci podoabele ei scumpe sunt virtuţile <em>curate</em> căci
+Highlight: lumii toate prea <em>curând</em> se rup însă
+Highlight: mai <em>curate</em> şi mai albe când
 
-Score: 15.275
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: arde de tot, ori se va alege ceva <em>curat</em> din noi - dacă mai este ceva <em>curat</em>. Ţine-ne în această şcoală grea
-Highlight: noastre meditaţii. - Şi ce se alegea de tot gândul <em>curat</em> cu care le începusem! Noi
-Highlight: suferă pentru Dumnezeu, dar care nu rămâne smerit şi <em>curat</em> cu inima, poate cădea astfel. Dacă nu se cercetează
-Highlight: prin care am trecut, este cu neputinţă să nu-l fi <em>curăţat</em> pe fiecare din cei ce am fost aruncaţi în el. Dacă
-Highlight: Aşa cum o făcea cu toată smerenia şi cu toată <em>curăţia</em> de conştiinţă acel minunat Pavel care lucrase mai
-Highlight: nostru Mântuitor Isus. - Şi să ne rugăm pentru <em>curăţia</em> şi biruinţa Lucrării Oastei, la temelia căreia
-
-Score: 15.257143
+Score: 15.2
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cântarea împăratului David
@@ -651,33 +782,6 @@ Author: Traian Dorz
 Highlight: cu omul cel <em>curat</em>, <em>curat</em> eşti
 Highlight: Cuvântul Domnului <em>curat</em> e
 Highlight: ei zdrobiţi cad sub călcâiul meu <em>curat</em> (bis).
-Highlight: mi-a dat după-a mea <em>curăţie</em> căci
-Highlight: El care-mi vede <em>curăţia</em>.  Partea
-
-Score: 15.257143
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Moldovei
-Type: articol
-Author: Traian Dorz
-Highlight: - fii <em>curat</em>
-Highlight: - şi a-ţi păstra <em>curat</em> lăuntrul în orice loc şi timp ai sta.
-Highlight: nicicând nu va ieşi <em>curat</em> acel ce-n ea se bagă.
-Highlight: 148 - Până-i sufletul <em>curat</em>
-Highlight: 73 - Dacă ţinta ţi-e <em>curată</em> şi-ai
-Highlight: viaţa care e <em>curată</em>.  82
-
-Score: 15.233334
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Maramureşului
-Type: articol
-Author: Traian Dorz
-Highlight: ce-şi pierde numele <em>curat</em>
-Highlight: 38 - Omul cel <em>curat</em> iubeşte curăţenia frumoasă
-Highlight: darul lui <em>curat</em> să-l simtă înţeles şi-mpărtăşit.
-Highlight: ci-i frumos să se îmbrace cu bun simţ şi gând <em>curat</em>
-Highlight: de vrei dragoste <em>curată</em>
 
 Score: 15.2
 Volume: Meditații la Ev. după Ioan
@@ -689,47 +793,18 @@ Highlight: cu cel <em>curat</em> Te araţi <em>curat</em>,
 Highlight: Maria a luat un litru cu mir de nard <em>curat</em>, de mare preţ, a uns picioarele lui Isus, şi
 Highlight: Maria a luat un vas cu mir de nard <em>curat</em>, de mare preţ,
 
-Score: 14.8571415
+Score: 14.749999
 Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Izvorul curăţiei mele
+Book: Numele Biruitorului
+Title: Liniştea vieţii curate
 Type: articol
 Author: Traian Dorz
-Highlight: 7 - Dacă ceva îmi este <em>curat</em> în faţa Ta Dumnezeule al meu cu adevărat, acest
-Highlight: acest ceva trebuie să-mi apară tot astfel de <em>curat</em> şi în faţa oamenilor.
-Highlight: - Dar oamenii nu-mi pot vedea <em>curăţia</em> sufletului meu decât din <em>curăţia</em> umblărilor mele trupeşti.
-Highlight: pretinde că sufletul meu este înnoit, sfinţit, <em>curăţit</em>, câtă vreme trupul meu este acelaşi fel vechi de
-Highlight: 10 - Tu eşti Izvorul <em>curăţiei</em> întregii mele fiinţe, atât a trupului cât şi a sufletului meu.
-Highlight: Izvorul <em>curăţiei</em> mele
+Highlight: sinceritate şi cu smerenie rămâne statornic şi <em>curat</em> în Casa şi în Lucrarea Domnului,
+Highlight: trebuinţă trupească lipsită de orice fior dulce şi <em>curat</em> care din credinţă izvorăşte şi în ea se păstrează
+Highlight: niciodată, fiindcă Dumnezeu le ajută până ce în <em>curând</em> ajung şi ei să primească numele biruitorului,
+Highlight: Liniştea vieţii <em>curate</em>
 
-Score: 14.8571415
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Smerenia şi curăţia
-Type: articol
-Author: Traian Dorz
-Highlight: - <em>curat</em> şi drept faţă de toţi semenii tăi, adică un om după
-Highlight: Oricine nu se poartă în orice loc şi în orice vreme <em>curat</em> şi drept faţă de toţi semenii săi,
-Highlight: păcatul primit în inimă şi stricarea cugetului de la <em>curăţia</em> dragostei şi ascultării de Domnul şi de fraţi.
-Highlight: 2 - Cel ce are ochii duhului <em>curaţi</em>,  şi
-Highlight: Dumnezeu nu îngăduie ca suflete <em>curate</em> să rătăcească. Pe aceste suflete adevărul le-a
-Highlight: slăbiciune şi minciună pot fi numai acei ce sunt robii <em>curăţiei</em>.  Slobozi
-Highlight: Smerenia şi <em>curăţia</em>
-
-Score: 14.433333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: ofrandele noastre făcute bisericii şi Domnului cu gând <em>curat</em> şi cu evlavie, - ne sunt respinse sau privite cu
-Highlight: Isuse, am strigat eu, respirând din plin tot aerul <em>curat</em> şi liber al lui Dumnezeu, din cea mai frumoasă lună
-Highlight: alegerea, atunci se vede ce rămâne cu adevărat <em>curat</em> şi ales în el.
-Highlight: cuptorul de foc al încercărilor de pe pământ, pentru <em>curăţarea</em> lor din nou prin suferinţă. În
-Highlight: iar în focul încercărilor suferea cu ei, pentru <em>curăţarea</em> lor din nou. Dumnezeu
-Highlight: cum am spus - vremea probelor pregătitoare şi <em>curăţătoare</em>. Proba focului este ultima. Mulţi cad în aceste
-
-Score: 14.428572
+Score: 14.461538
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
@@ -738,11 +813,24 @@ Author: Traian Dorz
 Highlight: a căutat să strângă de gât duhul evanghelic şi <em>curat</em> al Oastei, să-l atragă în apele sale murdare şi
 Highlight: al acestor lupte şi păreri, - valul fierbinte şi <em>curat</em> al dragostei şi unităţii l-a depăşit demult, iar
 Highlight: puteţi să credeţi ceea ce v-am spus. Vreau să fiu <em>curat</em> de sângele tuturor. Dar mai ales de al Lucrării
-Highlight: focul <em>curăţitor</em> din care totdeauna adevărul ideii iese luminos, iar adevăraţii ei fii ies <em>curăţiţi</em>.
-Highlight: Cu cât o viaţă este mai <em>curată</em>, cu atâta conştiinţa ei este mai trează şi inteligenţa
-Highlight: care sunt fiinţe supranaturale, şi deci nespus mai <em>curate</em> şi mai inteligente ca noi, ne pot fi un exemplu
+Highlight: “Iată Eu vin <em>curând</em>; şi răsplata Mea este
+Highlight: un sfârşit - dar numai Singur Domnul ştie cât de <em>curând</em> sau cât de târziu de vremea noastră este acesta
+Highlight: cutremurătoarea făgăduinţă a lui Hristos: Eu vin <em>curând</em>... Această venire ne priveşte pe toţi, - dar pe
 
-Score: 14.423077
+Score: 14.452381
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: ofrandele noastre făcute bisericii şi Domnului cu gând <em>curat</em> şi cu evlavie, - ne sunt respinse sau privite cu
+Highlight: Isuse, am strigat eu, respirând din plin tot aerul <em>curat</em> şi liber al lui Dumnezeu, din cea mai frumoasă lună
+Highlight: alegerea, atunci se vede ce rămâne cu adevărat <em>curat</em> şi ales în el.
+Highlight: două posibilităţi. Să scapi <em>curând</em> sau să scapi târziu. Dacă scapi <em>curând</em> e bine, dacă scapi târziu e
+Highlight: <em>Curând</em> apoi am aflat de la ei că se petrecuseră în ţară
+Highlight: cunoscut care l-a angajat la o instituţie din Oradea. <em>Curând</em> acolo a deprins munci de birou şi a fost avansat
+
+Score: 14.4375
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 23 - Cuvânt Testamentar
@@ -751,11 +839,11 @@ Author: Traian Dorz
 Highlight: denaturând învăţătura sănătoasă şi alungând duhul <em>curat</em> şi deschis al Oastei, oriunde pătrund.
 Highlight: - şi nu cu a altora. A găti mâncarea după felul <em>curat</em> şi gustos al mamei noastre bune care ne-a născut
 Highlight: izvorul să rămână liber, limpede, aurul să rămână <em>curat</em> şi Ideea să se arate că este a lui Dumnezeu.
-Highlight: mai trimită pentru altă <em>curăţire</em> (pe cei care n-au căutat să se lase <em>curăţiţi</em> şi pe cei ce le-au îngăduit
 Highlight: Lucrarea lui Dumnezeu pe căi dosnice şi nu prea <em>curate</em>. De aceea creează numai probleme atât de un fel
 Highlight: cauza asta nu mai văd limpede şi nu mai pot urma <em>curaţi</em> calea Domnului. Au primit în inima lor odată cu
+Highlight: ascultă de nimeni, acolo este dezordine şi haos şi în <em>curând</em> va veni peste toţi prăpădul şi pustiirea.  2
 
-Score: 14.4
+Score: 14.409091
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
@@ -764,11 +852,24 @@ Author: Traian Dorz
 Highlight: ostilitate faţă de această <em>curată</em> şi sănătoasă Lucrare de trăire în Duhul <em>curat</em> al dragostei şi învăţăturii
 Highlight: care ne puteam apropia, a fost cât se poate de <em>curat</em> şi de statornic urmărit de noi. Clerul ca instituţia
 Highlight: Dumnezeieşti în toate acţiunile ei. Orice cuget <em>curat</em> şi orice minte sănătoasă, apropiindu-se de ea şi
-Highlight: aproape şaptezeci de ani de existenţă, cu toată <em>curăţia</em>, sinceritatea şi smerenia devotamentului nostru
 Highlight: funcţie i-am scris o scrisoare plină de cele mai <em>curate</em> şi calde bucurii. Bucuria noastră în clipa asta
 Highlight: suferinţele şi încercările noastre pentru a ne păstra <em>curată</em> conştiinţa şi umblarea noastră faţă de învăţătura
+Highlight: bisericeşti, care din întâmplare mi-au căzut în mână de <em>curând</em>: În
 
-Score: 14.388889
+Score: 14.409091
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre muncă
+Type: articol
+Author: Traian Dorz
+Highlight: 9 - Când e omul om <em>curat</em>
+Highlight: 94 - Cu cât vrei să-ţi fie lucrul mai <em>curat</em> şi mai plăcut,
+Highlight: - şi vei strânge după brazdă grâu ca aurul <em>curat</em>.
+Highlight: puţini uniţi, <em>curând</em> sunt tari.  15
+Highlight: 19 - Cine umblă-n două luntrii în <em>curând</em> ajunge-n apă,  cine-aleargă
+Highlight: stă <em>curând</em> fără ţâţâni,  unde
+
+Score: 14.409091
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Banatului
@@ -778,23 +879,23 @@ Highlight: însă omul cel cuminte şi cu cugetul <em>curat</em>
 Highlight: şi umblă ca şi cel <em>curat</em>
 Highlight: 244 - Orice om se cade totul a avea <em>curat</em> şi-ales
 Highlight: unde-i dragoste <em>curată</em> n-o
+Highlight: în <em>curând</em> de ploi şi vânturi vezi şi stâlpul la pământ.
 Highlight: 107 - Gura ce-nţeleaptă este ca fântâna cea <em>curată</em> face
-Highlight: aibă dragoste <em>curată</em>, bucuroasă şi-nnoită.  141
 
-Score: 14.388889
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
+Score: 14.409091
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Înştiinţarea şi împlinirea
 Type: articol
 Author: Traian Dorz
-Highlight: Dacă m-ar încerca - zice omul răbdării - aş ieşi <em>curat</em> ca aurul, căci piciorul meu s-a ţinut de paşii Lui
-Highlight: Cât despre mine - mărturiseşte Apostolul <em>curat</em> - puţin îmi pasă dacă sunt judecat de oricine; eu
-Highlight: Lucrase cu cugetul <em>curat</em>, fără să pretindă răsplătiri pentru nedreptate,
-Highlight: către fraţi şi surori cu rugăciune, cu post, cu <em>curăţie</em> de inimă, cu smerenie şi cu ascultare necurmată
-Highlight: Cine a avut grijă să vină iarăşi duhul <em>curatei</em> înţelepciuni care să trezească minţile amăgite
-Highlight: dorea ca ei să-i vadă credincioşia lui faţă de <em>curăţia</em> învăţăturii pe care le-o propovăduia, pentru ca
+Highlight: Stăpânul Cel <em>Curat</em> S-a aplecat atât de mult, cât de mult trebuie să se aplece ucenicul cel <em>necurat</em>!
+Highlight: deprins prin întrebuinţarea minţii sale <em>curate</em> şi a cugetului său <em>curat</em> ca să deosebească vine Voia lui Dumnezeu
+Highlight: adevărat <em>curat</em> la inimă, nu-i este greu să spele pe oricine, greu îi este aceasta numai celui <em>necurat</em>.
+Highlight: nu crezi tu că nimeni nu va şti în <em>curând</em> ce faci tu.  În
+Highlight: În <em>curând</em> te vor şti toţi.  Şi
+Highlight: 13 - <em>Necuraţi</em> cum sunt unii oameni prea adesea, în cele lăuntrice
 
-Score: 14.375
+Score: 14.388889
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Bucovinei
@@ -808,30 +909,69 @@ Highlight: - când e dragostea <em>curată</em> ea
 Highlight:  tare şi <em>curată</em>. 98
 
 Score: 14.375
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 15 - Un An Nou Fericit
 Type: articol
 Author: Traian Dorz
-Highlight: merge bine sau dacă merge rău. Dacă ce atinge este <em>curat</em> sau dacă este necurat. Dacă ce primeşte este adevărat
-Highlight: Iar ca să faci bine, <em>curat</em> şi drept această lucrare, trebuie să cercetezi atât
-Highlight:  Fereşte-te de orice păcat, apoi stai drept şi <em>curat</em> în faţa oricărei judecăţi, ca Sfântul Pavel. Să
-Highlight: răstignit din dragoste pentru el, ca să fie spălat şi <em>curăţit</em> acolo de puterea Sângelui nevinovat al lui Isus
-Highlight: Isus. Apoi să se îmbrace acolo în armele <em>curate</em> ale luminii şi să pornească hotărât şi curajos la luptă
-Highlight: pierde sau vei cheltui spre a o avea mereu mare, <em>curată</em> şi fierbinte.  Fie-ţi
+Highlight: Sale. Pentru strălucirea a tot ce e frumos, nobil, <em>curat</em> şi ceresc. Poezia şi cântarea sunt adorare, rugăciune
+Highlight: străină care ar diminua şi ar deterioriza specificul <em>curat</em> şi sănătos al limbii şi simţirii noastre duhovniceşti
+Highlight: îndată vedem şi cunoaştem nu numai ceea ce este <em>curat</em> şi sănătos al nostru, - ci şi ceea ce este îndoielnic
+Highlight: contururi ce nici nu le bănuisem înainte. Se năştea în <em>curând</em>, un fenomen poate unic, în universul credinţei
+Highlight: din această Antologie. Şi desigur că va veni în <em>curând</em> vol. 3. Apoi cine ştie câte încă sunt în pregătire
+Highlight: fugim cât mai departe de ele. Orice conştiinţă <em>curată</em> şi trează se îngrozeşte de aceste prăpăstii, şi
 
 Score: 14.375
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre îndrăzneală - curaj
 Type: articol
 Author: Traian Dorz
-Highlight: sfânt, la tot ce este adevărat, la tot ce este <em>curat</em> şi vrednic de iubit şi de primit, la orice faptă
-Highlight: care are temere de Dumnezeu şi frică de păcat, are <em>curat</em> în conştiinţa sa echilibrul sănătos între aceste
-Highlight: chip vrednic, nu lucrează cinstit, nu trăieşte <em>curat</em>, - ce pot gândi sau vorbi sau face ceilalţi între
-Highlight: aceasta cel mai hotărâtor cuvânt de învoire îl are <em>curăţia</em> lui Hristos, sfinţenia Duhului Său. Un bilet de
-Highlight: un ceas şi într-un loc, dacă nu are semnătura <em>curăţiei</em> şi pecetea Duhului Sfânt, nu are nici o valoare
-Highlight: satisfacţii şi slobozenii de tot felul, dar care nu sunt <em>curate</em> înaintea Cuvântului lui Dumnezeu, nici binecuvântate
+Highlight: 2 - Cu-ndrăzneală tu să aperi Adevărul cel <em>Curat</em>
+Highlight: şi e <em>curat</em>.
+Highlight: ca să nu cazi niciodată de pe drumul cel <em>curat</em>.
+Highlight: cât de scump plătesc cununa şi şi-o pierd aşa <em>curând</em>!  Pe
+Highlight: sau credinţa, sau nădejdea, sau iubirea ta <em>curată</em> - luptă-te
+Highlight: vor primi-n <em>curând</em> cununa.
+
+Score: 14.375
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Intrusul şi moştenirea
+Type: articol
+Author: Traian Dorz
+Highlight: altul, - până va desfiinţa şi va nimici cuibul cel <em>curat</em> şi frumos. Pentru că părinţii n-au fost treji când
+Highlight: 6 - Părinţi ai cuibului <em>curat</em> şi liniştit, fiţi cu grijă când vreo pasăre străină
+Highlight: va fi acel părinte şi acel fiu, dacă vor păstra <em>curat</em> adevărul învăţăturii primite. Şi osândiţi vor fi
+Highlight: care au ostenit să aducă hrană pentru puii cei <em>curaţi</em> ai cuibului, - se pomenesc dintr-o dată că acest
+Highlight: Adevăraţii pui ai cuibului crescuţi de mama blândă şi <em>curată</em>, rămân uimiţi de obrăznicia străinului apărut în
+Highlight: continuatori în ea, unii mai demult, alţii mai de <em>curând</em>, unii mai la centru, alţii mai la margine. Şi trebuie
+
+Score: 14.357142
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre bunătate
+Type: articol
+Author: Traian Dorz
+Highlight: 5 - Cel <em>curat</em> din veşnicie şi pe veci e bunătate;
+Highlight: nefiind dator la nimeni, poţi privi la toţi <em>curat</em>.
+Highlight: căci acel ce preţuieşte ce-i <em>curat</em> şi sfânt în el
+Highlight: căci acei <em>curaţi</em> la suflet ne-ncetat au bucurie.  13
+Highlight: cel care-a uitat pe alţii e uitat şi el <em>curând</em>.  Fericit
+Highlight: 46 - Vorba bună stinge focul mai <em>curând</em> ca apa mare - vorba
+
+Score: 14.357142
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre lăcomie
+Type: articol
+Author: Traian Dorz
+Highlight: nu primi ce nu-i <em>curat</em>,
+Highlight: 57 - Nu e cugetul <em>curat</em>
+Highlight: 63 - Cea mai moale pernă-n lume este cugetul <em>curat</em>,
+Highlight: dacă le învingi pe-acestea şi-ţi ţii inima <em>curată</em>,  mintea
+Highlight: ce cumperi ieftin, rupi <em>curând</em> -
+Highlight: 89 - De-orişice avere-n lume ai să te desparţi <em>curând</em>,
 
 Score: 14.357142
 Volume: Cugetări Nemuritoare
@@ -842,9 +982,46 @@ Author: Traian Dorz
 Highlight: încercării acesteia, te va face să fii atât de <em>curat</em>, de strălucitor şi de puternic, cât este nevoie
 Highlight: 6 - Cei care n-au nici cugetul <em>curat</em>, nici dorinţa sinceră după Dumnezeu şi după Adevăr
 Highlight: Dar oricum, dacă vă veţi purta totdeauna <em>curat</em>, ei vor putea să vadă credinţa şi frumuseţea voastră
-Highlight: să-ţi fie încălzit cuptorul în care vei suferi <em>curăţirea</em> ta.  El
 Highlight: Dacă au fost pete, le va <em>curăţi</em>.  Dacă
 Highlight: 5 - Cei care au un cuget sincer şi o dorinţă <em>curată</em>, capătă în clipa strigării adevărului, suprema
+Highlight: Hohotele voastre de râs de azi, se vor schimba în <em>curând</em> în hohote de plâns veşnic, deznădăjduit şi amar
+
+Score: 14.357142
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
+Type: articol
+Author: Traian Dorz
+Highlight: dacă merge rău. Dacă ce atinge este <em>curat</em> sau dacă este <em>necurat</em>. Dacă ce primeşte este adevărat sau dacă
+Highlight: Iar ca să faci bine, <em>curat</em> şi drept această lucrare, trebuie să cercetezi atât
+Highlight:  Fereşte-te de orice păcat, apoi stai drept şi <em>curat</em> în faţa oricărei judecăţi, ca Sfântul Pavel. Să
+Highlight: al lui Isus. Apoi să se îmbrace acolo în armele <em>curate</em> ale luminii şi să pornească hotărât şi curajos
+Highlight: pierde sau vei cheltui spre a o avea mereu mare, <em>curată</em> şi fierbinte.  Fie-ţi
+
+Score: 14.357142
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
+Type: articol
+Author: Traian Dorz
+Highlight: sfânt, la tot ce este adevărat, la tot ce este <em>curat</em> şi vrednic de iubit şi de primit, la orice faptă
+Highlight: care are temere de Dumnezeu şi frică de păcat, are <em>curat</em> în conştiinţa sa echilibrul sănătos între aceste
+Highlight: chip vrednic, nu lucrează cinstit, nu trăieşte <em>curat</em>, - ce pot gândi sau vorbi sau face ceilalţi între
+Highlight: satisfacţii şi slobozenii de tot felul, dar care nu sunt <em>curate</em> înaintea Cuvântului lui Dumnezeu, nici binecuvântate
+Highlight: cu atâta dragoste oile unui străin, vei paşte în <em>curând</em> şi oile Mele...  Atunci
+Highlight: trebuie să-l şi dai. Cum ai primit tu credinţa <em>curată</em>, învăţătura dreaptă, îndrumarea sănătoasă de la
+
+Score: 14.333333
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: nu se teme de ruşine omul cel <em>curat</em>,
+Highlight: 115 - Nebunul şi gelosul hulesc pe cel <em>curat</em>
+Highlight: căminul să-şi păzească <em>curat</em> şi iubitor
+Highlight: să înghită o cămilă, - în <em>curând</em> se va-neca.  8
+Highlight: 161 - Cel ce s-amestecă-n tărâţe <em>curând</em> va fi de porci mâncat,
 
 Score: 14.333333
 Volume: Meditații la Ev. după Ioan
@@ -858,27 +1035,14 @@ Highlight: şi dacă vrei să-ţi păstrezi cugetul totdeauna <em>curat</em>
 Highlight: Căci fiind cu Tine, vom merge <em>curaţi</em> şi ne vom întoarce <em>curaţi</em>,
 
 Score: 14.333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Smerenia
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Isus a cunoscut că voiau să-L întrebe
 Type: articol
 Author: Traian Dorz
-Highlight: cât le avem pe-acestea două noi mergem pe un drum <em>curat</em>
-Highlight: 15 - Eşti <em>curat</em> numai atâta câtă vreme eşti smerit
-Highlight: şi eşti frate câtă vreme poţi fi sincer şi <em>curat</em>
-Highlight: 2 - În smerenie-i blândeţe, <em>curăţie</em> şi răbdare de
-Highlight: 9 - Smerenia şi <em>curăţia</em> sunt cele două-mbrăţişări pe
-
-Score: 14.3
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-Highlight: Sale. Pentru strălucirea a tot ce e frumos, nobil, <em>curat</em> şi ceresc. Poezia şi cântarea sunt adorare, rugăciune
-Highlight: străină care ar diminua şi ar deterioriza specificul <em>curat</em> şi sănătos al limbii şi simţirii noastre duhovniceşti
-Highlight: îndată vedem şi cunoaştem nu numai ceea ce este <em>curat</em> şi sănătos al nostru, - ci şi ceea ce este îndoielnic
-Highlight: fugim cât mai departe de ele. Orice conştiinţă <em>curată</em> şi trează se îngrozeşte de aceste prăpăstii, şi
+Highlight: când cel <em>curat</em> va păstra <em>curat</em> ceea ce a înţeles şi îl va folosi în chip mântuitor, cel <em>necurat</em> va vinde
+Highlight: întreabă sau caută să afle, este un suflet de om <em>curat</em>, atunci nu-i greu să i se răspundă şi să i se arate
+Highlight: care o dai şi o promiţi celor ce Te caută cu inimă <em>curată</em> şi cu gând mântuitor.
 
 Score: 14.3
 Volume: Istoria unei Jertfe
@@ -892,47 +1056,26 @@ Highlight: fericit pregăteşte Dumnezeu prin acest tineret <em>curat</em> şi n
 Highlight: nenorocitul care o are de la orice bucurie sinceră şi <em>curată</em>. O, dacă s-ar trezi din această beţie a urii chinuitoare
 
 Score: 14.3
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bunătate
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Dezvinovăţiri învinuitoare
 Type: articol
 Author: Traian Dorz
-Highlight: 5 - Cel <em>curat</em> din veşnicie şi pe veci e bunătate;
-Highlight: nefiind dator la nimeni, poţi privi la toţi <em>curat</em>.
-Highlight: căci acel ce preţuieşte ce-i <em>curat</em> şi sfânt în el
-Highlight: căci acei <em>curaţi</em> la suflet ne-ncetat au bucurie.  13
+Highlight: Nici o putere de pe lume nu-l poate ţine pe cineva <em>curat</em> lângă Hristos
+Highlight: Şi ce adânc le simte cel <em>curat</em>.
+Highlight: este un frate adevărat, un suflet cinstit, un om <em>curat</em>.
+Highlight: Doamne Isuse, adu cât mai <em>curând</em> ziua aceasta.
 
 Score: 14.3
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre lăcomie
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
 Type: articol
 Author: Traian Dorz
-Highlight: nu primi ce nu-i <em>curat</em>,
-Highlight: 57 - Nu e cugetul <em>curat</em>
-Highlight: 63 - Cea mai moale pernă-n lume este cugetul <em>curat</em>,
-Highlight: dacă le învingi pe-acestea şi-ţi ţii inima <em>curată</em>,  mintea
-
-Score: 14.3
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre îndrăzneală - curaj
-Type: articol
-Author: Traian Dorz
-Highlight: 2 - Cu-ndrăzneală tu să aperi Adevărul cel <em>Curat</em>
-Highlight: şi e <em>curat</em>.
-Highlight: ca să nu cazi niciodată de pe drumul cel <em>curat</em>.
-Highlight: sau credinţa, sau nădejdea, sau iubirea ta <em>curată</em> - luptă-te
-
-Score: 14.3
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Isus a cunoscut că voiau să-L întrebe
-Type: articol
-Author: Traian Dorz
-Highlight: Căci pe când cel <em>curat</em> va păstra <em>curat</em> ceea ce a înţeles şi îl va folosi în chip
-Highlight: întreabă sau caută să afle, este un suflet de om <em>curat</em>, atunci nu-i greu să i se răspundă şi să i se arate
-Highlight: care o dai şi o promiţi celor ce Te caută cu inimă <em>curată</em> şi cu gând mântuitor.
+Highlight: Dacă m-ar încerca - zice omul răbdării - aş ieşi <em>curat</em> ca aurul, căci piciorul meu s-a ţinut de paşii Lui
+Highlight: Cât despre mine - mărturiseşte Apostolul <em>curat</em> - puţin îmi pasă dacă sunt judecat de oricine; eu
+Highlight: Lucrase cu cugetul <em>curat</em>, fără să pretindă răsplătiri pentru nedreptate,
+Highlight: Cine a avut grijă să vină iarăşi duhul <em>curatei</em> înţelepciuni care să trezească minţile amăgite
 
 Score: 14.3
 Volume: Cugetări Nemuritoare
@@ -943,6 +1086,37 @@ Author: Traian Dorz
 Highlight: 8 - Ce credinţă sinceră şi <em>curată</em> au copiii cei care au un cuget <em>curat</em> şi o inimă neprihănită!
 Highlight: păstrează într-un cuget <em>curat</em>  (
 Highlight: Iar cine îşi pierde acest cuget <em>curat</em> îşi pierde odată cu
+
+Score: 14.3
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ochiul e luminătorul
+Type: poezie
+Author: Traian Dorz
+Highlight: trupul care are ochiul lui <em>curat</em>
+Highlight: căci când ochiul cel din frunte e <em>curat</em> şi sănătos
+Highlight: ce s-aştepţi la celelalte, - ce mai poate fi <em>curat</em>
+Highlight: e mai bine să se piardă numai ochiul <em>necurat</em>.
+
+Score: 14.3
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Primirea şi darea
+Type: articol
+Author: Traian Dorz
+Highlight: are lumină, - umblă drept. Umblă frumos. Umblă <em>curat</em>.
+Highlight: Ce este <em>curat</em> şi ce nu.
+Highlight: Îi arată ce este <em>curat</em> şi ce nu.
+Highlight: Poate fi uneori cu o faţă luminoasă. Cu nişte ochi <em>curaţi</em>. Cu un auz treaz. Cu un miros fin. Cu un gust bun
+
+Score: 14.3
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Slujba şi inima
+Type: articol
+Author: Traian Dorz
+Highlight: într-un râu <em>curat</em> - murdăreşte şi infectează <em>curând</em> şi partea cea care ar izvorî dintr-un loc <em>curat</em>.
+Highlight: pentru Dumnezeu. Pentru că numai atunci omul va fi <em>curat</em> deplin şi va fi statornic pentru orice lucrare bună
 
 Score: 14.3
 Volume: Meditații la Ev. după Ioan
@@ -986,23 +1160,13 @@ Highlight: al mântuirii dar <em>curat</em>
 
 Score: 14.25
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre muncă
-Type: articol
+Book: Cântări Nemuritoare vol. 10
+Title: Cine-i oare cel mai mare?
+Type: poezie
 Author: Traian Dorz
-Highlight: 9 - Când e omul om <em>curat</em>
-Highlight: 94 - Cu cât vrei să-ţi fie lucrul mai <em>curat</em> şi mai plăcut,
-Highlight: - şi vei strânge după brazdă grâu ca aurul <em>curat</em>.
-
-Score: 14.25
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-Highlight: nu se teme de ruşine omul cel <em>curat</em>,
-Highlight: 115 - Nebunul şi gelosul hulesc pe cel <em>curat</em>
-Highlight: căminul să-şi păzească <em>curat</em> şi iubitor
+Highlight: cu-un copil <em>curat</em> şi blând.
+Highlight: pentru Domnul Cel <em>Curat</em>?
+Highlight: alt fel de-a vedea <em>curat</em>
 
 Score: 14.25
 Volume: Cântări Nemuritoare
@@ -1052,7 +1216,27 @@ Author: Traian Dorz
 Highlight: <em>curat</em> când dai, <em>curat</em> când iei.
 Highlight: ce nu-i senin şi nu-i <em>curat</em>
 
-Score: 12.95238
+Score: 14.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Smerenia
+Type: articol
+Author: Traian Dorz
+Highlight: cât le avem pe-acestea două noi mergem pe un drum <em>curat</em>
+Highlight: 15 - Eşti <em>curat</em> numai atâta câtă vreme eşti smerit
+Highlight: şi eşti frate câtă vreme poţi fi sincer şi <em>curat</em>
+
+Score: 14.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Voi sunteţi lumina lumii
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce lumină-n tot ce faceţi, ce-adevăr <em>curat</em> şi drept
+Highlight: sunteţi şi sarea lumii, voi, prin tot ce-aveţi <em>curat</em>
+Highlight: daţi al sării gust <em>curat</em>
+
+Score: 12.961537
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
@@ -1060,12 +1244,25 @@ Type: articol
 Author: Traian Dorz
 Highlight: în cei înşelători. Au părăsit pe cei cu cugetul <em>curat</em> - şi s-au luat după cei prefăcuţi. Au “scos” din
 Highlight: cinstite decât cealaltă partidă, împotriva duhului <em>curat</em> al Oastei dintâi.
-Highlight: Duhului, fără căldura dragostei lui Dumnezeu, fără <em>curăţia</em> Adevărului, fără Evanghelia voii lui Hristos. Judecata
-Highlight: Şi după cum taina credinţei pregăteşte cugetele <em>curate</em> pentru venirea lui Hristos, tot aşa taina fărădelegii
-Highlight: trebuind să-şi păstreze toată inima şi gândurile în <em>curăţia</em> dragostei numai de El, - se lasă amăgiţi de vreuna
-Highlight: ispitirile şarpelui. Şi inimile lor se strică de la <em>curăţia</em> dragostei cea faţă de Isus. Atunci primesc aceştia
+Highlight: cugetele <em>curate</em> pentru venirea lui Hristos, tot aşa taina fărădelegii pregăteşte cugetele <em>necurate</em> pentru
+Highlight: Au urmat <em>curând</em> uneltirile, urmăririle, înscenările, judecăţile
+Highlight: sfântă şi pregătite pentru atâta roadă sfântă - în <em>curând</em> sunt nimicite fără cruţare de către acele duhuri
+Highlight: adevărate. Evenimentele politice din ţară au “rezolvat” <em>curând</em> problema lor - şi iată cum: În
 
-Score: 12.944444
+Score: 12.941175
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Acum vedem bine...
+Type: articol
+Author: Traian Dorz
+Highlight: făcând Lucrarea Domnului cu mâini <em>curate</em>, cu cuget <em>curat</em> şi cu o viaţă <em>curată</em>...
+Highlight: decât sămânţa bună, va preface <em>curând</em> în pălămidă şi spini tot câmpul cel <em>curat</em> al Evangheliei.  Apele
+Highlight: să fie păstrată mereu <em>curată</em> şi lăsată tot <em>curată</em> şi urmaşilor lor, aşa cum <em>curată</em> au primit-o, de la înaintaşi
+Highlight: murdare vărsându-se în albia <em>curată</em> a Lucrării Domnului, pot foarte <em>curând</em> tulbura şi strica totul.  De
+Highlight: de aceea trebuie ca să rămână <em>curată</em> şi în urma noastră, după cum <em>curată</em> a fost înainte, când noi am aflat-o
+Highlight: Căci mulţi, întorşi de <em>curând</em>, nu pot uşor înţelege că în lucrurile mântuirii
+
+Score: 12.941175
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 17-a după Rusalii
@@ -1073,36 +1270,10 @@ Type: articol
 Author: Traian Dorz
 Highlight: Şi apoi cei buni, ca grâul rămas <em>curat</em>, vor fi puşi în grânarul Stăpânului.
 Highlight: gândul cel bun, sămânţa cea sfântă, legământul cel <em>curat</em> pus cu Dumnezeu... Ca şi sămânţa cea căzută în drum
-Highlight: avem astfel de făgăduinţe, prea iubiţilor, să ne <em>curăţim</em> de orice întinăciune a cărnii şi a duhului, şi
+Highlight: de ei, zice Domnul; nu vă atingeţi de ce este <em>necurat</em>, şi vă voi primi. 18
+Highlight: locui într-o viaţă amestecată cu tot felul de <em>necurăţii</em>.  Şi
+Highlight: <em>Curând</em> însă vrabia a murit, fără aer şi fără lumină, în
 Highlight: felul cum va lucra Domnul la Sfârşit, spre a-Şi <em>curăţa</em> holda Bisericii Sale de tot răul ce a năpădit-o
-Highlight: şi dorinţa apropiatei Veniri a Domnului, se vor <em>curăţa</em> fiecare, prin lacrimi şi prin sfinţire, de orice
-Highlight: Sfânt - şi numai apoi Îşi va strânge grâul Său <em>curăţat</em> astfel în grânarul Său Ceresc ( Matei
-
-Score: 12.928571
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Acum vedem bine...
-Type: articol
-Author: Traian Dorz
-Highlight: făcând Lucrarea Domnului cu mâini <em>curate</em>, cu cuget <em>curat</em> şi cu o viaţă <em>curată</em>...
-Highlight: tot câmpul cel <em>curat</em> al Evangheliei.  Apele
-Highlight: să fie păstrată mereu <em>curată</em> şi lăsată tot <em>curată</em> şi urmaşilor lor, aşa cum <em>curată</em> au primit-o, de la înaintaşi
-Highlight: de aceea trebuie ca să rămână <em>curată</em> şi în urma noastră, după cum <em>curată</em> a fost înainte, când noi am aflat-o
-Highlight: Apele acestea murdare vărsându-se în albia <em>curată</em> a Lucrării Domnului
-Highlight: vrăjmăşie, cu ură, cu răutate împotriva Lucrării <em>curate</em> din care nici nu vrea să plece, nici nu vrea să
-
-Score: 12.928571
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 19-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: mai mare nevoie să se controleze mereu spre a fi <em>curat</em>. Nici un alt mădular nu se vede pe sine însuşi aşa
-Highlight: privească cel mai dintâi pe sine să vadă dacă este <em>curat</em> sau nu.
-Highlight: cât de <em>curate</em> ar trebui să se păstreze conductele prin care se varsă Izvorul! Şi cât de <em>curăţite</em> ar trebui
-Highlight: lucrurile - încât cea mai mică umbră de abatere de la <em>curăţia</em> ascultării de Duhul Sfânt, să-l îngrijoreze şi
-Highlight: propovăduieşte nu numai o lumină călăuzitoare ci şi un foc <em>curăţitor</em>. Nu numai o apă în care se oglindeşte spre a-şi
-Highlight: Duhul Sfânt fiind în noi prin smerenia şi <em>curăţia</em> dată de El, ne cercetează la fel, ne arată de fiecare
 
 Score: 12.916666
 Volume: Istoria unei Jertfe
@@ -1116,197 +1287,4 @@ Highlight: evanghelică, vie din mişcarea aceasta înnoitoare, <em>curată</em>
 Highlight: sufletele şi adunările Domnului de la umblarea <em>curată</em> şi de la păstrarea învăţăturii sănătoase. Ei dispreţuiesc
 Highlight: O mişcare nouă şi <em>curată</em> cum era mişcarea duhovnicească a Oastei Domnului
 Highlight: Dumnezeu a ajutat Duhul Oastei ca pe micul dar <em>curatul</em> David să iese învingător asupra puternicilor săi
-
-Score: 12.90909
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 15-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă un vas este <em>curat</em>, el este folosit spre cinste şi sfinţenie, destoinic
-Highlight:  El a lucrat şi a poruncit cât de frumos şi de <em>curat</em> doreşte să fie, atunci cu cât mai mult doreşte El
-Highlight: dar şi impune lutului datoria unei ascultări şi <em>curăţii</em> desăvârşite, singurele care îl pot păstra în vrednicie
-Highlight: este datoria noastră să umblăm în smerenie şi în <em>curăţie</em>, când purtăm în noi comoara vreunui dar pe care
-Highlight: Domnului, spre a ne păstra darul în cinste şi <em>curăţie</em> şi pentru a fi vase folositoare Stăpânului nostru
-Highlight: şi ale înţelepciunii lui Hristos trebuie să fie <em>curăţate</em>, întărite, sfinţite prin foc.  De
-
-Score: 12.90909
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
-Author: Traian Dorz
-Highlight: O, cu ce mâini <em>curate</em> şi cu ce cuget <em>curat</em> trebuie să umble un adevărat slujitor
-Highlight: desfrânare duhovnicească, iar nu cei născuţi în chip <em>curat</em> şi sănătos, din Mâna cea bună a învăţăturii noastre
-Highlight: Păcatul strică cugetul de la <em>curăţia</em> dragostei faţă de Hristos, iar cugetul stricat
-Highlight: Pe voi înşivă păziţi-vă <em>curaţi</em> de orice întinăciune a cărnii sau a duhului; vegheaţi
-Highlight: dorului de fraţi, ale ostenelilor pentru unitatea şi <em>curăţia</em> Lucrării lui Dumnezeu.  Ce
-Highlight: aceste puteri nimicitoare de lumină, de unitate, de <em>curăţie</em> şi de adevăr?  Atunci
-
-Score: 12.899999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: departe <em>curat</em> în purtările şi viaţa mea, - ştiind şi dându-mi bine seama că fără de această <em>CURĂŢIE</em> SUFLETEASCĂ
-Highlight: au pierdut pe povăţuitorul şi păstorul lor cel <em>curat</em>. Şi iarăşi mulţi poate s-au bucurat crezând că voi
-Highlight: viaţa, cu dragostea, cu duhul, cu credinţa şi <em>curăţia</em> ( 2
-Highlight: aceea m-am silit să vă fiu totdeauna pildă de <em>curăţie</em> sufletească. În
-Highlight: şi să spună: viaţa mea vă poate fi un model de <em>curăţie</em>, de răbdare, de dărnicie, de bunătate - în toate
-Highlight: noastre de credinţă şi de neam. Răspundeam cu inima <em>curată</em>, unei iubiri binevoitoare ce ne fusese arătată
-
-Score: 12.899999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 24 - Pânza care se ţese
-Type: articol
-Author: Traian Dorz
-Highlight: vrăjmaşul care a semănat odată neghina în grâul cel <em>curat</em> pe când semănătorii dormeau, tot aşa va căuta mereu
-Highlight: trecut prin toate frumos şi a ieşit din flăcări <em>curat</em>. Acum Domnul l-a chemat la răsplata Sa, iar noi
-Highlight: albă şi <em>curată</em>, dar mai ales pe marginile ei de-a dreapta, adică în adunările harnice, <em>curate</em>, armonioase
-Highlight: lucrând cu tot mai multă grijă şi dragoste la <em>curăţia</em>, limpezirea şi înfrumuseţarea ei, iar Duhul Harului
-Highlight: mare încurajare pe linia speranţelor frumoase, <em>curate</em> de atunci, ce le adunam cu scumpătate în inimile
-Highlight: tineri şi tinere de la sate şi oraşe se adăugau <em>curaţi</em> şi frumoşi la numărul luptătorilor Domnului, aducând
-
-Score: 12.888888
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu nu-i lasă pe nici unii din cei cu cugetul <em>curat</em> şi cu inima smerită - să cadă în rătăcirea care
-Highlight: le-au pierdut pe aceste două comori sfinte: cugetul <em>curat</em> şi inima smerită.
-Highlight: Ochii lui Cornel erau limpezi, mă priveau calzi, <em>curaţi</em> şi înţelegători. Ochii
-Highlight: biserică, - fiindcă ea este şi trebuie să rămână <em>curată</em> şi sfântă. Pentru că este Casa Tatălui, iar Tatăl
-Highlight: o încredere şi iubire pline de sinceritate, de <em>curăţie</em>, de căldură. Şi
-Highlight: cântarea dragostei <em>curate</em> şi
-
-Score: 12.888888
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
-Type: articol
-Author: Traian Dorz
-Highlight: ordonat, merge drept, se dezvoltă armonios, trăieşte <em>curat</em>.
-Highlight: dragostea, sunt promise numai celor care au un cuget <em>curat</em> şi o inimă smerită. Numai acelora care în căutarea
-Highlight: În timp ce căutăm adevărul, dacă nu iubim <em>curăţia</em>, ochii noştri nu-l vor afla niciodată.
-Highlight: împreună cu El, darurile Duhului Sfânt şi virtuţile <em>curate</em> şi sfinte prin care ne păstrăm mântuirea ce ne-a
-Highlight: Toată valoarea cuiva stă tocmai în <em>curăţia</em> şi în statornicia lui, pe temelia adevărului şi
-Highlight: har, chiar dacă ei au ajuns atât de departe de <em>curăţia</em> lui, cât pământul de cer.
-
-Score: 12.888888
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
-Type: articol
-Author: Traian Dorz
-Highlight: Lucifer la început Dumnezeu l-a făcut bun, luminos şi <em>curat</em> şi i-a dat o misiune strălucită, frumoasă şi binecuvântată
-Highlight: Sufletul <em>curat</em> şi smerit care se apropie de Dumnezeu cu frică şi
-Highlight: Nu există un alt mijloc prin care să fii <em>curăţit</em>, sfinţit şi binecuvântat într-un grad mai înalt
-Highlight: orb, umblă cu ochii închişi şi a uitat că a fost <em>curăţit</em> de vechile lui păcate...  Deci
-Highlight: acestea învăluite în cea mai adâncă smerenie şi <em>curăţie</em>, ar întregi chipul divin şi fericit al evlaviei
-Highlight: starea până la care ridică Duhul Sfânt inimile <em>curate</em> şi vieţile superioare pe care le sudează de nemaidezlipit
-
-Score: 12.888888
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 119
-Type: poezie
-Author: Traian Dorz
-Highlight: mai mult decât mult aur <em>curat</em> şi preţios
-Highlight: pe Adevărul cel <em>curat</em>
-Highlight: <em>curată</em> calea sa?  -
-Highlight: căci caut în <em>curăţie</em> poruncile-a-Ţi păzi 46-De-a
-Highlight: cărarea Ta <em>curată</em>.  103-Ce
-Highlight: <em>curată</em>-nvăţătură şi-al Tău Slăvit Cuvânt 126-E
-
-Score: 12.888888
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Rămâneţi în dragostea Mea
-Type: articol
-Author: Traian Dorz
-Highlight: ca o luminoasă putere de păstrare în <em>curăţie</em>, totul este <em>curat</em>, sănătos şi bun. Totul poate fi dat şi
-Highlight: noastre şi păstrează totul proaspăt, sănătos şi <em>curat</em>, fiindcă puterea ei nimiceşte din noi şi dintre
-Highlight: când în ele se simte gustul cel dulce al dragostei <em>curate</em>, sănătoase şi fierbinţi!  Dragostea
-Highlight: Lasă să-ţi pătrundă binefacerile <em>curăţitoare</em> ale Dragostei Dumnezeieşti în toate straturile
-Highlight: Măsura ascultării şi <em>curăţiei</em>, tot aşa...
-Highlight: lucrează neîncetat prin Duhul Sfânt ca puterea <em>curăţitoare</em> a dragostei Tale să rămână mereu şi să lucreze
-
-Score: 12.874999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight:  la Cel care îl poate face <em>curat</em> şi mântuit - diavolul îndată sare cu şoapta: tu
-Highlight: pe cât suntem în stare numai adevărul, adevărul <em>curat</em>, - atât despre întâmplările care s-au petrecut cât
-Highlight: ştie cu câtă lepădare de sine, cu câtă cinste şi <em>curăţie</em> de inimă numai spre folosul bisericii şi binele
-Highlight: Sunt cu conştiinţa tare şi <em>curată</em> că n-am avut nici un gând şi nici o intenţie contra
-Highlight: este întâi <em>curată</em>, apoi paşnică, blândă, uşor de înduplecat, plină
-Highlight: P.S. Voastră, cu cele mai sfinte şi cu cele mai <em>curate</em> dorinţe, ca lucrul Domnului să meargă înainte?
-
-Score: 12.8571415
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: nimicea tot ce fusese frumos, înalt, smerit şi <em>curat</em>... Neghina aceasta se înmulţea cu iuţeală - căci
-Highlight: Am lucrat însă cu un cuget totdeauna <em>curat</em> atât faţă de Stăpânire şi faţă de biserică,
-Highlight: permanent într-un duh de rugăciune, de smerenie şi de <em>curăţie</em> duhovnicească, - uşor alunecau devenind nişte prilejuri
-Highlight: de la Duhul Sfânt, pe baza vieţuirii lor alese. <em>Curăţia</em>, smerenia şi dragostea, blândeţea şi înfrânarea
-Highlight: sufletească. Amândoi îmi păreau nişte dragi şi <em>curaţi</em> copii ai Oastei, născuţi şi crescuţi în vremea
-Highlight: duhul care lucra prin acest om era că în albia cea <em>curată</em> a Evangheliei înalte care se vestise până atunci
-
-Score: 12.8571415
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Dacă aţi fi din lume...
-Type: articol
-Author: Traian Dorz
-Highlight: - şi punându-l pe drumul <em>curat</em> al mântuirii, îl chemi după Tine spre slavă.
-Highlight: în chipul Tău smerit şi <em>curat</em>.
-Highlight: pentru aceasta, luptând şi lucrând ca să vă păstraţi <em>curaţi</em>, ca cel rău să nu mai aibă nimic în voi, cum n-a
-Highlight: Ţi-ai <em>curăţit</em> prin naşterea din nou, un popor al Tău scos din
-Highlight: vieţuim <em>curaţi</em> în ea.  Umblând
-Highlight: Umblând pe urmele Tale smerite şi <em>curate</em>,  în
-
-Score: 12.8571415
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Dulce şi amar
-Type: articol
-Author: Traian Dorz
-Highlight: câtă datorie avem cu toţii, ca să-l păstrăm <em>curat</em> cum ni l-au lăsat înaintaşii noştri, - pentru ca urmaşii
-Highlight: cu tot ce a avut pământul mai <em>curat</em>,
-Highlight: din izvoarele <em>curate</em> ale căruia ne adăpăm noi mereu şi mereu.  O
-Highlight: Asta este răsplata lucrătorilor <em>curaţi</em> şi smeriţi.  6
-Highlight: cuvintelor îngereşti, iată ce sfântă, ce înaltă, ce <em>curată</em> şi ce vrednică - de respect, ne apare Preasfânta
-Highlight: Sfânt, o mărire atât de sfântă şi o jertfă atât de <em>curată</em> şi vrednică, - precum Sfânta Fecioară Maria.  Fără
-
-Score: 12.833332
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-Highlight: - îmi umplu sufletul. Holdele de grâu frumos şi <em>curat</em> care da în copt - mi se părură câmpul nostru duhovnicesc
-Highlight: duhuri erau în ofensivă puternică împotriva duhului <em>curat</em> şi bun al Oastei Domnului.
-Highlight: orice preţ. Şi cu cât faţa binefăcătorului este mai <em>curată</em>, cu atâta trebuie aruncat asupra ei cu noroi mai
-Highlight: atâta vreme în foc - sau lângă el - de ce nu s-au <em>curăţit</em> şi ele spre a deveni vase de cinste folositoare
-Highlight:  Ce unitate de gânduri şi de simţiri, ce râvnă <em>curată</em> şi fierbinte, ce smerenie şi sinceritate, pe feţele
-
-Score: 12.833332
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-Highlight: vor putea produce niciodată nimic bun, durabil şi <em>curat</em>, - dar tot ce vor produce va fi rău, uşuratic şi
-Highlight: are peste ea un har atât de mare. De la izvoarele <em>curat</em> evanghelice ale Oastei Domnului vin să se adape
-Highlight: al sufletelor lor, inteligenţa lor frumoasă şi <em>curată</em> şi mai ales dragostea lor totală pentru Hristos
-Highlight: suprafaţă cât şi la adâncime - şi devenea mereu tot mai <em>curată</em> şi mai temeinică. Dumnezeul Răsplătirilor să binecuvânteze
-Highlight: sau în adevăr, în evlavie sau în înfrânare, în <em>curăţie</em> sau în rugăciune, în iertare sau în judecată, în
 

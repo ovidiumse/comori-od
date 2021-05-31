@@ -1,122 +1,109 @@
-+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                          | Occurrences                                                                 | Author      | Tip                              | Carte                        | Volum   |
-+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Învăţătorule, cine a păcătuit?                                                 | {'acoperi', 'acoperit', 'acoperind', 'acoperindu'}                          | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cap. 28 - Necazurile din lungul drumului                                       | {'acoperit'}                                                                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 12 - Dovada supremei iubiri                                               | {'acoperit', 'acoperind', 'acoperirea'}                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 21 - La 25 de ani...                                                      | {'acoperise', 'acoperit', 'acoperi', 'acoperite'}                           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                            | {'acoperit', 'acoperi', 'acoperire'}                                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                  | {'acoperit', 'acoperirea', 'acoperite'}                                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)           | {'acoperit', 'acoperiţi', 'acoperă', 'acoperi'}                             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Vindecarea şi moartea                                                          | {'acoperit', 'acoperită', 'acoperindu', 'acoperi'}                          | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cap. 6 - Strălucita sărbătoare de Rusalii                                      | {'acoperit', 'acoperită', 'acoperite'}                                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - Printre leu şi printre urs                                            | {'acoperit', 'acoperită'}                                                   | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Pe urmele profetului                                                 | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 29 - Anul jubiliar 1988                                                   | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                     | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Pe drumul crucii mele                                                 | {'acoperit'}                                                                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Dincolo de pârâul Chedron                                                      | {'acoperit'}                                                                | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Fericirea de a fi cu Domnul                                                    | {'acoperit'}                                                                | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Pentru Clipa Aceea...                                                          | {'acoperit'}                                                                | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Pentru viaţă, sau pentru judecată                                              | {'acoperit'}                                                                | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Primirea lui Hristos                                                           | {'acoperit'}                                                                | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Cap. 20 - Rugul care nu se mistuie                                             | {'acoperit', 'acoperi', 'acoperită', 'acopeream', 'acopereau', 'acoperise'} | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                   | {'acoperit', 'acoperiţi', 'acoperi'}                                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 26 - Limpezirea apelor adânci                                             | {'acoperit', 'acoperite', 'acoperă'}                                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                       | {'acoperit', 'acopeream', 'acoperindu'}                                     | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - A treia Judecată                                                      | {'acoperit', 'acoperirea', 'acoperindu'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                     | {'acoperit', 'acoperite', 'acoperim'}                                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                                  | {'acoperit', 'acoperind', 'acoperă'}                                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 1 - Cel mai frumos Isus                                                   | {'acoperit', 'acoperi'}                                                     | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                             | {'acoperit', 'acoperindu'}                                                  | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Un an adânc roditor                                                  | {'acoperit', 'acoperite'}                                                   | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                               | {'acoperit', 'acoperă'}                                                     | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 16 - O plecare îndurerată                                                 | {'acoperit', 'acopereau'}                                                   | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                         | {'acoperit', 'acoperită'}                                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                               | {'acoperit', 'acoperitoare'}                                                | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 33 - Adevărurile mormântului nemuritor                                    | {'acoperit', 'acoperite'}                                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Când lacrimile dulci...                                                        | {'acoperit', 'acoperi'}                                                     | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Din alte diferite părţi                                                        | {'acoperit', 'acoperi'}                                                     | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)       | {'acoperit', 'acoperi'}                                                     | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie) | {'acoperit', 'acoperiţi'}                                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Vă poruncesc... să vă iubiţi                                                   | {'acoperit', 'acoperind'}                                                   | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| ... Vorbesc după cum M-a învăţat Tatăl                                         | {'acoperit'}                                                                | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Şi nu vine la judecată                                                     | {'acoperit'}                                                                | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Acela care mi-a spus tot ce am făcut                                           | {'acoperit'}                                                                | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Atât de mult...                                                                | {'acoperit'}                                                                | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Bucuria Mea să rămână în voi                                                   | {'acoperit'}                                                                | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Va veni un altul...                                                  | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                          | {'acoperit'}                                                                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 15 - Al doilea foc                                                        | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                             | {'acoperit'}                                                                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                          | {'acoperit'}                                                                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Întristarea cea binecuvântată                                        | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                         | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 4 - Anul următor                                                          | {'acoperit'}                                                                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Cânt. Cântărilor                                                      | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 7 - Furtunile care încep de dimineaţă                                     | {'acoperit'}                                                                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Ce semn faci Tu ca să vedem?                                                   | {'acoperit'}                                                                | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Cetatea lui Andrei şi a lui Petru                                              | {'acoperit'}                                                                | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cine din voi Mă poate dovedi - că am păcat?                                    | {'acoperit'}                                                                | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cum aş putea să mai plâng?                                                     | {'acoperit'}                                                                | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cuprindă-mă în Tine                                                            | {'acoperit'}                                                                | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cuvintele Celui Scump                                                          | {'acoperit'}                                                                | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Darea şi primirea                                                              | {'acoperit'}                                                                | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Despre timp                                                                    | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre viaţă                                                                   | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Domnul a aflat                                                                 | {'acoperit'}                                                                | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Eu v-am dat o pildă                                                            | {'acoperit'}                                                                | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Făclie pentru paşii mei                                                        | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Isus legat...                                                                  | {'acoperit'}                                                                | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)    | {'acoperit'}                                                                | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                  | {'acoperit'}                                                                | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Mi-e veşnică viaţa                                                             | {'acoperit'}                                                                | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Moartea cea mai fioroasă                                                       | {'acoperit'}                                                                | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Nimeni nu Mi-o ia cu sila, ci o dau Eu                                         | {'acoperit'}                                                                | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Nu descuraja niciodată                                                         | {'acoperit'}                                                                | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Nu mai au vin                                                                  | {'acoperit'}                                                                | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| O, Veşnicie...                                                                 | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Psalmul 80                                                                     | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Rugăciune                                                                      | {'acoperit'}                                                                | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| S-au dus pierind milenii                                                       | {'acoperit'}                                                                | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| S-au dus pierind milenii                                                       | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Singurul Templu Etern                                                          | {'acoperit'}                                                                | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Să n-o sfâşiem!...                                                             | {'acoperit'}                                                                | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Te voi iubi nemărginit                                                         | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Unii credeau că Isus îi zisese...                                              | {'acoperit'}                                                                | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Vin Paştile                                                                    | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Împreună lucrători cu Dumnezeu                                                 | {'acoperit'}                                                                | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| În cel mai greu întuneric                                                      | {'acoperit'}                                                                | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| În spaima strălucită                                                           | {'acoperit'}                                                                | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Nu-mi acoperiţi mormântul                                                      | {'acoperiţi'}                                                               | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Cap. 24 - Înaintea mai-marilor norodului                                       | {'acoperi', 'acoperită', 'acoperiţi'}                                       | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                        | {'acoperi', 'acoperind', 'Acoperite', 'acoperită'}                          | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                       | {'acoperi', 'acopereau'}                                                    | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                   | {'acoperite', 'acoperim', 'acoperire'}                                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                | {'acoperise', 'acoperi', 'acoperită'}                                       | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                         | {'acoperirea', 'acoperitoare', 'acoperite'}                                 | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 25 - Al şaptelea foc                                                      | {'acoperi', 'acoperiţi'}                                                    | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| O peşteră... o piatră                                                          | {'acoperi', 'acoperite'}                                                    | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| ... Şi au ieşit unul câte unul...                                              | {'Acoperind', 'acoperindu'}                                                 | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Semnele Oastei Domnului                                              | {'acoperă', 'acoperite'}                                                    | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                           | {'acoperindu', 'acoperi'}                                                   | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 16 - Leacul dureroasei sfâşieri                                           | {'acoperi', 'acoperită'}                                                    | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-Searching Acoperit using http://localhost:9000...
-Got 261 hits:
-Score: 15.275
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Învăţătorule, cine a păcătuit?
-Type: articol
-Author: Traian Dorz
-Highlight: Săi nu te vor mai tot <em>acoperi</em>, ci va veni o zi din care nu vei mai fi <em>acoperit</em>,
-Highlight: chiar voi înşivă, câte păcate de ale voastre le-a <em>acoperit</em> Domnul? Astfel că nimeni, nici până azi, nu vi
-Highlight: El vi le-a <em>acoperit</em> şi n-a lăsat să fie aflate
-Highlight: A fost de-ajuns vremea cât ai fost tot <em>acoperit</em> şi răbdat, dar nu te-ai îndreptat ca să te mântuieşti
-Highlight: lăsat cea mai mare dovadă de împlinire a iubirii, <em>acoperind</em> mereu şi nedescoperind niciodată.  Când
-Highlight: v-a scăpat bunătatea Lui, <em>acoperindu</em>-vă fărădelegea!  El
-
++--------------------------------------------------------------------------------+------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                          | Occurrences                              | Author      | Tip                              | Carte                        | Volum   |
++--------------------------------------------------------------------------------+------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Cap. 28 - Necazurile din lungul drumului                                       | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Învăţătorule, cine a păcătuit?                                                 | {'acoperit'}                             | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Cap. 21 - La 25 de ani...                                                      | {'acoperit', 'acoperite'}                | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Mărturisire şi răspundere                                                      | {'acoperit', 'Acoperit', 'neacoperite'}  | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Dovada supremei iubiri                                               | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                                  | {'acoperit', 'acoperite', 'neacoperite'} | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)           | {'acoperit', 'acoperiţi', 'neacoperit'}  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 6 - Strălucita sărbătoare de Rusalii                                      | {'acoperit', 'acoperite'}                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Încrederea şi biruinţa                                                         | {'acoperit', 'acoperite'}                | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| Cap. 13 - Pe urmele profetului                                                 | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                            | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 29 - Anul jubiliar 1988                                                   | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                                     | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                            | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Pe drumul crucii mele                                                 | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Dincolo de pârâul Chedron                                                      | {'acoperit'}                             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Fericirea de a fi cu Domnul                                                    | {'acoperit'}                             | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Mormântul şi recunoştinţa                                                      | {'acoperit'}                             | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Pentru Clipa Aceea...                                                          | {'acoperit'}                             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Pentru viaţă, sau pentru judecată                                              | {'acoperit'}                             | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Primirea lui Hristos                                                           | {'acoperit'}                             | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Vindecarea şi moartea                                                          | {'acoperit'}                             | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cap. 14 - Un an adânc roditor                                                  | {'acoperit', 'acoperite'}                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                   | {'acoperit', 'acoperiţi'}                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 26 - Limpezirea apelor adânci                                             | {'acoperit', 'acoperite'}                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 33 - Adevărurile mormântului nemuritor                                    | {'acoperit', 'acoperite'}                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                                     | {'acoperit', 'acoperite'}                | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie) | {'acoperit', 'acoperiţi'}                | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Începutul şi Sfârşitul                                                         | {'acoperit', 'acoperiţi'}                | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| ... Vorbesc după cum M-a învăţat Tatăl                                         | {'acoperit'}                             | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Şi nu vine la judecată                                                     | {'acoperit'}                             | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| 2 Cronici 34, 18                                                               | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| A spune - şi a face                                                            | {'acoperit'}                             | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Acela care mi-a spus tot ce am făcut                                           | {'acoperit'}                             | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Adâncimea şi smerenia                                                          | {'acoperit'}                             | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Alegerea Harului Ceresc                                                        | {'acoperit'}                             | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Arătările Domnului                                                             | {'acoperit'}                             | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Atât de mult...                                                                | {'acoperit'}                             | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Binecuvântarea şi blestemul                                                    | {'acoperit'}                             | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| Bucuria Mea să rămână în voi                                                   | {'acoperit'}                             | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Cel mai frumos Isus                                                   | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Va veni un altul...                                                  | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                          | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 13 - După luarea lui Moisi...                                             | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Al doilea foc                                                        | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                               | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 16 - O plecare îndurerată                                                 | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                             | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 20 - Rugul care nu se mistuie                                             | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                          | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 23 - Şi ultimul 2                                                         | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 27 - Pe drumul ales                                                       | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 27 - Întristarea cea binecuvântată                                        | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                               | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                         | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 4 - Anul următor                                                          | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Cânt. Cântărilor                                                      | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 7 - Furtunile care încep de dimineaţă                                     | {'acoperit'}                             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - A treia Judecată                                                      | {'acoperit'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Ce semn faci Tu ca să vedem?                                                   | {'acoperit'}                             | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Cel iubitor - şi cei neiubitori                                                | {'acoperit'}                             | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Cetatea lui Andrei şi a lui Petru                                              | {'acoperit'}                             | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cine din voi Mă poate dovedi - că am păcat?                                    | {'acoperit'}                             | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cum aş putea să mai plâng?                                                     | {'acoperit'}                             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cuprindă-mă în Tine                                                            | {'acoperit'}                             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cuvintele Celui Scump                                                          | {'acoperit'}                             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Când lacrimile dulci...                                                        | {'acoperit'}                             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Darea şi primirea                                                              | {'acoperit'}                             | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| Darea şi primirea                                                              | {'acoperit'}                             | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Despre timp                                                                    | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre viaţă                                                                   | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                                        | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Domnul a aflat                                                                 | {'acoperit'}                             | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| După ce au prânzit...                                                          | {'acoperit'}                             | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Eu v-am dat o pildă                                                            | {'acoperit'}                             | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Făclie pentru paşii mei                                                        | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Geneza 8, 8                                                                    | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Grija umblării noastre                                                         | {'acoperit'}                             | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| I-a zis a doua oară                                                            | {'acoperit'}                             | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Isus le-a zis: aduceţi din peştii...                                           | {'acoperit'}                             | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Isus legat...                                                                  | {'acoperit'}                             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)       | {'acoperit'}                             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                                  | {'acoperit'}                             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)    | {'acoperit'}                             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                  | {'acoperit'}                             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Legea Dragostei                                                                | {'acoperit'}                             | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Lucrarea şi lucrătorul                                                         | {'acoperit'}                             | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Mi-e veşnică viaţa                                                             | {'acoperit'}                             | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
+| Moartea cea mai fioroasă                                                       | {'acoperit'}                             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Naşterea din nou                                                               | {'acoperit'}                             | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Nimeni nu Mi-o ia cu sila, ci o dau Eu                                         | {'acoperit'}                             | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Nu descuraja niciodată                                                         | {'acoperit'}                             | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Nu mai au vin                                                                  | {'acoperit'}                             | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| O, Veşnicie...                                                                 | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Preaiubit Isus, Jertfa noastră Sfântă                                          | {'acoperit'}                             | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Psalmul 80                                                                     | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Rugăciune                                                                      | {'acoperit'}                             | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| S-a aplecat şi s-a uitat                                                       | {'acoperit'}                             | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| S-au dus pierind milenii                                                       | {'acoperit'}                             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| S-au dus pierind milenii                                                       | {'acoperit'}                             | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
++--------------------------------------------------------------------------------+------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Acoperit using https://api.comori-od.ro...
+Got 159 hits:
 Score: 15.2
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
@@ -128,7 +115,40 @@ Highlight: de el, peste sicriu. Cei ce aruncau pământul au <em>acoperit</em>-o
 Highlight: desfacem nimic - le-am zis. Dacă Dumnezeu îl ţine <em>acoperit</em>,
 Highlight: Aşa - mai bine tăcem şi lăsăm totul <em>acoperit</em>. Lasă că va arăta odată Însuşi Dumnezeu sfinţenia
 
-Score: 14.4
+Score: 15.2
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Învăţătorule, cine a păcătuit?
+Type: articol
+Author: Traian Dorz
+Highlight: chiar voi înşivă, câte păcate de ale voastre le-a <em>acoperit</em> Domnul? Astfel că nimeni, nici până azi, nu vi
+Highlight: El vi le-a <em>acoperit</em> şi n-a lăsat să fie aflate şi ştiute aceste păcate
+Highlight: acoperi, ci va veni o zi din care nu vei mai fi <em>acoperit</em>,
+Highlight: A fost de-ajuns vremea cât ai fost tot <em>acoperit</em> şi răbdat, dar nu te-ai îndreptat ca să te mântuieşti
+
+Score: 14.3
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 21 - La 25 de ani...
+Type: articol
+Author: Traian Dorz
+Highlight: Apa care îi acoperise dintotdeauna, i-a <em>acoperit</em> iarăşi pe totdeauna...
+Highlight: Pentru cel care priveşte din Sus, nimic nu-i <em>acoperit</em>... ci totul este cunoscut. De aceea Judecata Lui
+Highlight: dar apele tulburi în care s-au scufundat i-au <em>acoperit</em> curând. Şi n-am mai aflat nimic despre soarta
+Highlight: bucuriile sunt totdeauna proaspete, lipsurile <em>acoperite</em>, inimile înflăcărate - şi duhul păstrat acelaşi
+
+Score: 14.3
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Mărturisire şi răspundere
+Type: articol
+Author: Traian Dorz
+Highlight: - dar există <em>acoperit</em>.
+Highlight: Descoperind numai ceea ce era creat, dar era <em>acoperit</em>...
+Highlight: <em>Acoperit</em> de întunericul din noi. Nu de întunericul
+Highlight: minunăţiilor lui Dumnezeu, pe care el le avea atunci <em>neacoperite</em> de ea.  Se
+
+Score: 14.25
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 12 - Dovada supremei iubiri
@@ -137,36 +157,8 @@ Author: Traian Dorz
 Highlight: ivit astfel deficitul destul de mare care trebuia <em>acoperit</em> şi pe care tot eu a trebuit să-l suport şi să-l
 Highlight: pentru cărţile editate de mine, - preţul lor l-am <em>acoperit</em> eu din venitul cărţilor mele. Astfel fiind ele
 Highlight: lui... şi mă uitam la pătura subţire cu care era <em>acoperit</em> şi care părea că nu are nimic sub ea, atât de
-Highlight:  <em>acoperind</em> din al meu, deficitul mare al foii. Aşa că nu-i
-Highlight: Domnului, totuşi aceşti bani s-au folosit pentru <em>acoperirea</em> cheltuielilor şi deficitului de la foaia  Lumina
-Highlight:  şi <em>acoperirea</em> deficitului ei, precum şi la tipărirea de cărţi
 
-Score: 14.357142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 21 - La 25 de ani...
-Type: articol
-Author: Traian Dorz
-Highlight: Apa care îi <em>acoperise</em> dintotdeauna, i-a <em>acoperit</em> iarăşi pe totdeauna...
-Highlight: Pentru cel care priveşte din Sus, nimic nu-i <em>acoperit</em>... ci totul este cunoscut. De aceea Judecata Lui
-Highlight: dar apele tulburi în care s-au scufundat i-au <em>acoperit</em> curând. Şi n-am mai aflat nimic despre soarta
-Highlight: Dacă aş zice: măcar noaptea mă va <em>acoperi</em> - şi se va întuneca lumina dimprejurul meu... Dar
-Highlight: bucuriile sunt totdeauna proaspete, lipsurile <em>acoperite</em>, inimile înflăcărate - şi duhul păstrat acelaşi
-
-Score: 12.8571415
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă Dumnezeu îl ţine <em>acoperit</em>, îl lăsăm şi noi tot aşa.
-Highlight: noastre pe care regretându-le Dumnezeu ni le-a <em>acoperit</em>. Sau neregretându-le, ni le va descoperi El ale
-Highlight: recunoşteam. Pentru ca în felul acesta să pot <em>acoperi</em> ceea ce bănuiam că nu pot şti sigur. Şi
-Highlight: promisiuni neţinute. Şi de atâtea vorbe fără <em>acoperire</em>. -
-Highlight: scurtă. Nereuşind să întindă de-ajuns rochiţa, îşi <em>acoperi</em> genunchii cu flanela pe care şi-o dezbrăcase).
-Highlight: Dar în sfera credinţei n-am putut tăcea şi <em>acoperi</em> fiindcă aici este vorba despre cu totul altceva
-
-Score: 12.8571415
+Score: 12.833332
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 6 - Alte amare adevăruri
@@ -174,12 +166,11 @@ Type: articol
 Author: Traian Dorz
 Highlight: înăuntru în casă. Stăteam zgribulit şi îmbrăcat, <em>acoperit</em> cu toate ţoalele pe care le aveam şi tot în patul
 Highlight: din cort ori în clipa plecării se aşează un coş <em>acoperit</em> cu un ştergar. În acest coş, la ieşire fiecare
-Highlight: trecut - aşa cum a fost. Dar bucuria iertării, <em>acoperirea</em> dragostei, blândeţea uitării pentru tot şi pentru
 Highlight: câte 3-400 de metri pătraţi şi chiar mai mari, <em>acoperite</em> cu prelate şi prevăzute cu bănci şi mese din scânduri
-Highlight: mari. Cum atunci să nu faci tot ce poţi pentru <em>acoperirea</em> acestor nevoi? Mai ales că noi avem o tradiţie
+Highlight: nemulţumiri. Ori mâncare aruncată, ori cheltuieli <em>neacoperite</em>, ori alte multe întâmplări neplăcute şi feţe
 Highlight: negre ale multora - care fără aceasta ar fi rămas <em>acoperite</em>. Şi ca să se arate şi faptele frumoase ale altora
 
-Score: 12.833332
+Score: 12.799999
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
@@ -188,22 +179,9 @@ Author: Traian Dorz
 Highlight: Nimic nu este ascuns de aceşti ochi, nimic nu este <em>acoperit</em> de aceste urechi. Tot ce s-a făcut la întuneric
 Highlight: rugăciunea noastră din odăiţa ascunsă, darul nostru <em>acoperit</em>, dragostea noastră tainică, singurătatea noastră
 Highlight: nicăieri nu suntem singuri şi niciunde nu suntem <em>acoperiţi</em>.  Şi
-Highlight: Cel care <em>acoperă</em> ceea ce a rămas neacoperit de ea.
-Highlight: dragoste Isus, Desăvârşirea credinţei noastre, şi va <em>acoperi</em> toate aceste lipsuri cu belşugul bogat şi veşnic
+Highlight: Cel care acoperă ceea ce a rămas <em>neacoperit</em> de ea.
 
-Score: 12.833332
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Vindecarea şi moartea
-Type: articol
-Author: Traian Dorz
-Highlight: chiar voi înşivă, câte păcate de ale voastre le-a <em>acoperit</em> Domnul? Astfel că nimeni nici până azi nu vi le-a
-Highlight: 16 - Domnul vi le-a <em>acoperit</em> şi n-a lăsat să fie aflate şi ştiute aceste păcate ale voastre
-Highlight: Izbăvitorul trimis să-i scape, fiindcă Faţa Lui era <em>acoperită</em>, iar ei nu ştiau unde şi cum să-L caute, - îi
-Highlight: scăpat bunătatea Lui <em>acoperindu</em>-vă fărădelegea!  De
-Highlight: De ce nu puteţi şi voi <em>acoperi</em> nimic la de-aproapele
-
-Score: 12.799999
+Score: 12.749999
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 6 - Strălucita sărbătoare de Rusalii
@@ -211,19 +189,17 @@ Type: articol
 Author: Traian Dorz
 Highlight: dată şi cazi undeva în mormântul care te aşteaptă <em>acoperit</em> de ochii tăi, la ceasul pe care nu-l ştii şi pe
 Highlight: de dor... De dor duios şi domol, ca un jăratic <em>acoperit</em>...
-Highlight: cea dintâi casă mare de piatră şi de cărămidă <em>acoperită</em> cu ţiglă din sătuţul nostru. Ale tuturor celorlalţi
-Highlight: celorlalţi erau încă de bârne afumate şi <em>acoperite</em> cu paie. Îşi făcuse singur şi grajdul cel mare, şura cea
+Highlight: tuturor celorlalţi erau încă de bârne afumate şi <em>acoperite</em> cu paie. Îşi făcuse singur şi grajdul cel mare
 
-Score: 12.799999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Încrederea şi biruinţa
 Type: articol
 Author: Traian Dorz
-Highlight: n-am mai aflat niciodată nimic. Apa vremii i-a <em>acoperit</em> pe totdeauna.
-Highlight:  devenind prilej de cădere pentru mulţi, s-au <em>acoperit</em> cu o ocară şi cu o ruşine veşnică. O, ce cumplit
-Highlight: - Lipsa lor de pregătire omenească, era mult <em>acoperită</em> şi întrecută de către darurile duhovniceşti pe
-Highlight: rămăşiţă de colibă dărâmată din timpul războiului şi <em>acoperită</em> acum cu coceni de porumb. Stătuse acolo o iarnă
+Highlight: om pe lumea aceasta căruia Hristos să nu-i fi <em>acoperit</em> o sumedenie de păcate.
+Highlight: dacă ar vrea să-şi aducă aminte câte păcate i-a <em>acoperit</em> Dumnezeu înainte de a-l lăsa să fie descoperit
+Highlight: Chiar şi cele <em>acoperite</em>, în urmă, timp îndelungat de răbdarea lui Dumnezeu
 
 Score: 12.666666
 Volume: Istoria unei Jertfe
@@ -233,6 +209,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: frăţeşti, odihneşte până la Învierea cea Mare trupul <em>acoperit</em> de dragoste şi de nemuritor nimb al acelui sfânt
 Highlight: trece pe acolo, se vede încă locul care acum este <em>acoperit</em> cu arini şi răchite, dar atunci era viran. Acolo
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: Dacă Dumnezeu îl ţine <em>acoperit</em>, îl lăsăm şi noi tot aşa.
+Highlight: noastre pe care regretându-le Dumnezeu ni le-a <em>acoperit</em>. Sau neregretându-le, ni le va descoperi El ale
 
 Score: 12.666666
 Volume: Istoria unei Jertfe
@@ -250,6 +235,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: ridice. Totul se petrecuse deci până la capăt <em>acoperit</em>, şiret, viclean şi nelegiuit prin surprindere
 Highlight: putut nici şoptit. Atunci s-a întins pe pat, s-a <em>acoperit</em> cu pătura pe cap... a mai spus că-l doare tare
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: n-am mai aflat niciodată nimic. Apa vremii i-a <em>acoperit</em> pe totdeauna.
+Highlight:  devenind prilej de cădere pentru mulţi, s-au <em>acoperit</em> cu o ocară şi cu o ruşine veşnică. O, ce cumplit
 
 Score: 12.666666
 Volume: Hristos - Marturia mea
@@ -278,6 +272,15 @@ Highlight: Tu ai <em>acoperit</em> florile căpătâiului nostru cu frunzarul to
 
 Score: 12.666666
 Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Mormântul şi recunoştinţa
+Type: articol
+Author: Traian Dorz
+Highlight: mare om al lui Dumnezeu trebuie să fie totdeauna <em>acoperit</em> nu numai cu laudele noastre, ori cu florile noastre
+Highlight: recunoştinţă numai în măsura în care cel din el s-a <em>acoperit</em> în viaţă de sfinţenie şi de curaj. El nu vorbeşte
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Pentru Clipa Aceea...
 Type: articol
@@ -303,96 +306,14 @@ Author: Traian Dorz
 Highlight: acest lucru este un merit atât de mare încât le-a <em>acoperit</em> toate păcatele.
 Highlight: singur lucru este un păcat atât de mare încât le-a <em>acoperit</em> toate meritele.
 
-Score: 9.875
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Vindecarea şi moartea
 Type: articol
 Author: Traian Dorz
-Highlight: Ei au <em>acoperit</em> tot ce se putea <em>acoperi</em>, - iar de pe patul morţii n-au cerut
-Highlight: Din Veşnicia <em>acoperită</em> pentru noi a Trecutului, până în Veşnicia plină
-Highlight: pe care începea să le compună personal, - îi <em>acopeream</em> unele ieşiri din cele pe care le cunoscusem în
-Highlight: scape pe unii - rudenii, vecini, prieteni - ne <em>acopereau</em> pe toţi. Astfel
-Highlight: aflat plin de răni şi de vânătăi... El şi le <em>acoperise</em> şi le ascunsese suferind cumplitele chinuri şapte
-Highlight: administraţia nu ştia sărmanul ce o să mai facă spre a <em>acoperi</em> datoriile pentru foaie şi cărţi precum şi plata
-
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-Highlight: ne-am strâns mai tare rana care ustura - şi am <em>acoperit</em> totul. Am spus totuşi adevărul dureros că în Cluj
-Highlight: Suciu Vasile şi Aurel Bocăneală, care erau cam <em>acoperiţi</em> acolo şi necunoscuţi în ţară. Şi i-am impus nu
-Highlight: venirea acelei zile, doar le voi putea rezolva şi <em>acoperi</em> cumva noi între noi, spre a nu ajunge cu ele la
-
-Score: 9.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-Highlight: peste ea câte puţin praf mărunt de var. Aşa s-a <em>acoperit</em> sticla cu un praf alb pe care apoi am început
-Highlight: câte erau. Poate cele mai frumoase îmi fuseseră <em>acoperite</em> de molozul durerilor multe şi grele care se prăbuşise
-Highlight: la dispoziţie pe acel fals har al său, care le <em>acoperă</em> pe toate. Poţi să faci orice vrei, poţi să umbli
-
-Score: 9.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-Highlight: Cu ce nevrednicie şi cu ce ruşine s-au <em>acoperit</em> atât în faţa lui Dumnezeu cât şi în faţa oamenilor
-Highlight: o groapă şi-l răsturnam din ladă. După aceea <em>acopeream</em> groapa şi-i puneam la cap un ţăruş cu un număr
-Highlight: Abia avui timp să întorc pătura peste toate, <em>acoperindu</em>-le lângă mine în pat.
-
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-Highlight:  eu am <em>acoperit</em> din al
-Highlight: consumat la <em>acoperirea</em> deficitului foilor. Căci pentru susţinerea foii  Lumina
-Highlight:  <em>acoperindu</em>-i un deficit de 300.000 lei. Aceasta ca un răspuns
-
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 9 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-Highlight: de proaspăt şi vorbeşte atât de puternic, este <em>acoperit</em> cu flori şi lacrimi, ca-n prima lui zi.
-Highlight: Ale acelora sunt <em>acoperite</em> de uitare ori de bălării, fără să le mai caute
-Highlight: primăvară duhovnicească, uităm frigul şi noaptea şi <em>acoperim</em> totul cu flori şi cu iubire.
-
-Score: 9.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: Domnului, care vă cere femeilor să aveţi capul <em>acoperit</em> la biserică, la adunare, la rugăciune...
-Highlight: speranţe de legătură şi de părtăşie trainică, <em>acoperind</em> totul, uitând totul, iertând totul, pentru a reface
-Highlight: şi dacă nu iartă şi nu <em>acoperă</em> numai el cu răbdarea sa toate,  atunci
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: Am <em>acoperit</em> fereastra.
-Highlight: ca şi cum ar vorbi ceva între ei acolo spre a <em>acoperi</em> vizeta ca să nu ne vadă de pe sală, - iar ceilalţi
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: Şi mormântul iubit rămâne în urma noastră <em>acoperit</em> de flori şi de lacrimi.
-Highlight: le-a îngropat în sufletul lui nemărginit de bun, <em>acoperindu</em>-le cu lespedea iertării şi uitării. Sufletul
+Highlight: chiar voi înşivă, câte păcate de ale voastre le-a <em>acoperit</em> Domnul? Astfel că nimeni nici până azi nu vi le-a
+Highlight: 16 - Domnul vi le-a <em>acoperit</em> şi n-a lăsat să fie aflate şi ştiute aceste păcate
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
@@ -405,39 +326,21 @@ Highlight: suportate cu răbdare, amenzile plătite, pagubele <em>acoperite</em>
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-Highlight: într-un loc larg, săpat în coasta ţărmului şi <em>acoperit</em> cu frunzele arborilor. Aici în faţa noastră este
-Highlight: aşezaţi în patru rânduri în această biserică ce <em>acoperă</em> peştera sfântă în care S-a născut Domnul. Sub altarul
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 16 - O plecare îndurerată
+Title: Cap. 23 - Cuvânt Testamentar
 Type: articol
 Author: Traian Dorz
-Highlight: la biserica din cartierul Mănăştur când sicriul <em>acoperit</em> de flori şi înconjurat de fraţi, al părintelui
-Highlight: Ce de flori, <em>acopereau</em> şi atunci acest mormânt nemuritor! Şi toată predica
+Highlight: ne-am strâns mai tare rana care ustura - şi am <em>acoperit</em> totul. Am spus totuşi adevărul dureros că în Cluj
+Highlight: Suciu Vasile şi Aurel Bocăneală, care erau cam <em>acoperiţi</em> acolo şi necunoscuţi în ţară. Şi i-am impus nu
 
 Score: 9.666667
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
+Title: Cap. 26 - Limpezirea apelor adânci
 Type: articol
 Author: Traian Dorz
-Highlight: acoperiş, geamurile, uşile, tot ce vezi aici. Apoi am <em>acoperit</em> cu coceni de porumb, apoi cu stuf... şi peste
-Highlight: marginea satului. Am aflat uşor coliba lui de lut <em>acoperită</em> cu stuf, fiindcă toţi cei pe care îi întrebam
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-Highlight: Domnului îmi erau închise. Şi tot cerul spre El <em>acoperit</em> de zidul prin care nu-mi putea nici trece nici
-Highlight: Gaura din uşa celulei nu avea <em>acoperitoare</em>, aşa că prin ea se vedea în curtea asta interioară
+Highlight: peste ea câte puţin praf mărunt de var. Aşa s-a <em>acoperit</em> sticla cu un praf alb pe care apoi am început
+Highlight: câte erau. Poate cele mai frumoase îmi fuseseră <em>acoperite</em> de molozul durerilor multe şi grele care se prăbuşise
 
 Score: 9.666667
 Volume: Hristos - Marturia mea
@@ -449,31 +352,13 @@ Highlight: care este viu şi vorbeşte atât de puternic era <em>acoperit</em> d
 Highlight: Ale acelora sunt <em>acoperite</em> de uitare şi praf şi nu le mai cercetează nimeni
 
 Score: 9.666667
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Când lacrimile dulci...
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 9 - Adevărurile mormântului nemuritor
 Type: articol
 Author: Traian Dorz
-Highlight: - Lacrimile au fost multe, prea multe - şi au <em>acoperit</em> totul.
-Highlight: Unul, altarul Tău cel fericit noi nu l-am putut <em>acoperi</em> nici cu daruri, nici cu flori,  ci
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-Highlight: 37 - Făţarnicul e un cărbune <em>acoperit</em> ce arde rău
-Highlight: 346 - C-o singură virtute <em>acoperi</em> multă vină;
-
-Score: 9.666667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
-Type: articol
-Author: Traian Dorz
-Highlight: Schimbarea la Faţă pe Tabor, şi norul luminos i-a <em>acoperit</em> cu lumina lui, ucenicii Domnului au auzit din
-Highlight: ce i-a mai rămas lui ca să trăiască, pentru a <em>acoperi</em> şi prisosul celor care nu dau nimic sau aproape
+Highlight: de proaspăt şi vorbeşte atât de puternic, este <em>acoperit</em> cu flori şi lacrimi, ca-n prima lui zi.
+Highlight: Ale acelora sunt <em>acoperite</em> de uitare ori de bălării, fără să le mai caute
 
 Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
@@ -485,13 +370,13 @@ Highlight: Dar ei au ascultat de Cuvântul Domnului şi n-au <em>acoperit</em> p
 Highlight: văzut undeva o primejdie de păcat, nu tăceţi, nu <em>acoperiţi</em>, ci vorbiţi. Vorbiţi mai întâi Domnului, cu rugăciune
 
 Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Vă poruncesc... să vă iubiţi
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Începutul şi Sfârşitul
 Type: articol
 Author: Traian Dorz
-Highlight: se cuprinde şi se pierde Moise, rămas undeva, <em>acoperit</em> şi întrecut nespus de mult, cu toate frumoasele
-Highlight: şănţuleţe de apă când se revarsă o mare de ape <em>acoperind</em> totul, ci sunt cuprinse şi întrecute toate nespus
+Highlight: noi nu este ascuns de aceşti ochi. Nimic nu este <em>acoperit</em> de aceste urechi.
+Highlight: nicăieri nu suntem singuri. Şi niciunde nu suntem <em>acoperiţi</em>.
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -510,12 +395,52 @@ Author: Traian Dorz
 Highlight: v-a <em>acoperit</em> El cu Jertfa Lui
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: 2 Cronici 34, 18
+Type: poezie
+Author: Traian Dorz
+Highlight: căci fusese-<em>acoperit</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: A spune - şi a face
+Type: articol
+Author: Traian Dorz
+Highlight: al acestei pilde rămânându-le multora atât de <em>acoperit</em>, ca altora înţelesul naşterii din nou
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Izvorul nostru
 Title: Acela care mi-a spus tot ce am făcut
 Type: articol
 Author: Traian Dorz
 Highlight: Căci şi eu am atâtea păcate pe care Tu mi le-ai <em>acoperit</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Adâncimea şi smerenia
+Type: articol
+Author: Traian Dorz
+Highlight: Până ce îi vine fiecărui privitor rândul să fie <em>acoperit</em> şi el în câte unul din mormintele care se tot
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Alegerea Harului Ceresc
+Type: articol
+Author: Traian Dorz
+Highlight: se cuprinde şi se pierde Moise, rămâne undeva <em>acoperit</em> şi întrecut nespus de mult, cu toate frumoasele
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Arătările Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: ori din pricina neascultării sale, îi este <em>acoperit</em> încă adevărul din acest cuvânt (
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -526,12 +451,28 @@ Author: Traian Dorz
 Highlight: Căci El le-a <em>acoperit</em> pe toate şi pe totdeauna cu strălucirea Sa.
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Binecuvântarea şi blestemul
+Type: articol
+Author: Traian Dorz
+Highlight: căci sufletul lui s-a <em>acoperit</em> de vina unei judecăţi nedrepte(
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: Bucuria Mea să rămână în voi
 Type: articol
 Author: Traian Dorz
 Highlight: sloi de gheaţă i-a lovit soţia şi copilul şi i-au <em>acoperit</em> cu apele tulburi.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Am <em>acoperit</em> fereastra.
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -552,10 +493,34 @@ Highlight: chiar achitat în întregime de cititori, abia ar fi <em>acoperit</em
 Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
+Title: Cap. 13 - După luarea lui Moisi...
+Type: articol
+Author: Traian Dorz
+Highlight: Şi mormântul iubit rămâne în urma noastră <em>acoperit</em> de flori şi de lacrimi.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
 Title: Cap. 15 - Al doilea foc
 Type: articol
 Author: Traian Dorz
 Highlight: vorbit atât de frumos şi cu atâta putere încât a <em>acoperit</em> toate lipsurile celor doi. Îmi ziceam că parcă
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: într-un loc larg, săpat în coasta ţărmului şi <em>acoperit</em> cu frunzele arborilor. Aici în faţa noastră este
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 16 - O plecare îndurerată
+Type: articol
+Author: Traian Dorz
+Highlight: la biserica din cartierul Mănăştur când sicriul <em>acoperit</em> de flori şi înconjurat de fraţi, al părintelui
 
 Score: 9.5
 Volume: Hristos - Marturia mea
@@ -566,6 +531,14 @@ Author: Traian Dorz
 Highlight: Am <em>acoperit</em> astfel fereastra.
 
 Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
+Type: articol
+Author: Traian Dorz
+Highlight: Ei au <em>acoperit</em> tot ce se putea acoperi, - iar de pe patul morţii
+
+Score: 9.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 21 - Şi mărturia trebuie plătită
@@ -574,12 +547,36 @@ Author: Traian Dorz
 Highlight: format din aproape treizeci de barăci, din lemn <em>acoperit</em> cu carton, aşezate în rânduri. Erau despărţite
 
 Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 23 - Şi ultimul 2
+Type: articol
+Author: Traian Dorz
+Highlight: acoperiş, geamurile, uşile, tot ce vezi aici. Apoi am <em>acoperit</em> cu coceni de porumb, apoi cu stuf... şi peste
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: Cu ce nevrednicie şi cu ce ruşine s-au <em>acoperit</em> atât în faţa lui Dumnezeu cât şi în faţa oamenilor
+
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 27 - Întristarea cea binecuvântată
 Type: articol
 Author: Traian Dorz
 Highlight: frumosului luceafăr al poeziei noastre vii. Era <em>acoperit</em> cu flori verzi şi proaspete, ca şi mormântul părintelui
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 3 - La scadenţa ispăşirilor
+Type: articol
+Author: Traian Dorz
+Highlight: Domnului îmi erau închise. Şi tot cerul spre El <em>acoperit</em> de zidul prin care nu-mi putea nici trece nici
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -614,12 +611,28 @@ Author: Traian Dorz
 Highlight: conturează ceva ca un pat alb, pe care întins şi <em>acoperit</em> pe piept stătea un tânăr bolnav care mi se părea
 
 Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight:  eu am <em>acoperit</em> din al meu un deficit de circa 300.000 lei. În
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pâinea noastră
 Title: Ce semn faci Tu ca să vedem?
 Type: articol
 Author: Traian Dorz
 Highlight: picioare ei singuri şi râdeau dispreţuitor cu capul <em>acoperit</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Cel iubitor - şi cei neiubitori
+Type: articol
+Author: Traian Dorz
+Highlight: Cuvântul Domnului care cere femeilor să aibă capul <em>acoperit</em> în biserică, în adunare şi la rugăciune...
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -663,6 +676,22 @@ Highlight: 5 - Lacrimile mâhnirii mele mi-au <em>acoperit</em> şi mi-au întun
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Când lacrimile dulci...
+Type: articol
+Author: Traian Dorz
+Highlight: - Lacrimile au fost multe, prea multe - şi au <em>acoperit</em> totul.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Darea şi primirea
+Type: articol
+Author: Traian Dorz
+Highlight: şi păcatul nostru <em>acoperit</em> pe totdeauna
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Darea şi primirea
 Type: articol
@@ -686,12 +715,28 @@ Author: Traian Dorz
 Highlight: 42 - Şi Destinul şi Nimicul au un chip <em>acoperit</em>,
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din alte diferite părţi
+Type: articol
+Author: Traian Dorz
+Highlight: 37 - Făţarnicul e un cărbune <em>acoperit</em> ce arde rău
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Izvorul nostru
 Title: Domnul a aflat
 Type: articol
 Author: Traian Dorz
 Highlight: fariseilor care este făţărnicia, căci nu este nimic <em>acoperit</em> care să nu se descopere, nici ascuns să nu fie
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: După ce au prânzit...
+Type: articol
+Author: Traian Dorz
+Highlight: veci, de tot ce ai făcut pentru noi. Tu ne-ai <em>acoperit</em> o rană cu o podoabă. Şi o înfrângere cu un braţ
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -710,12 +755,60 @@ Author: Traian Dorz
 Highlight: i-a <em>acoperit</em>... Ca plumbul s-au afundat în ea.
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Geneza 8, 8
+Type: poezie
+Author: Traian Dorz
+Highlight: pân-a-<em>acoperit</em> pământul
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Grija umblării noastre
+Type: articol
+Author: Traian Dorz
+Highlight: tot ce se adânceşte de la suprafaţă în jos, este <em>acoperit</em> la fel, fie că este mai puţină apă, fie că este
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: I-a zis a doua oară
+Type: articol
+Author: Traian Dorz
+Highlight: înţeleagă, ori din pricina neascultării sale, îi este <em>acoperit</em> încă adevărul din acest cuvânt.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Isus le-a zis: aduceţi din peştii...
+Type: articol
+Author: Traian Dorz
+Highlight: Ostenelile trecutului le-au <em>acoperit</em> datoriile de atunci. Dar lenea de acum ce s-o
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Răscumpărătorul nostru
 Title: Isus legat...
 Type: articol
 Author: Traian Dorz
 Highlight: <em>acoperit</em> de privirile care Îl caută cu lacrimi şi cu durere
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
+Type: articol
+Author: Traian Dorz
+Highlight: Schimbarea la Faţă pe Tabor, şi norul luminos i-a <em>acoperit</em> cu lumina lui, ucenicii Domnului au auzit din
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 14-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Domnului, care vă cere femeilor să aveţi capul <em>acoperit</em> la biserică, la adunare, la rugăciune...
 
 Score: 9.5
 Volume: Hristos - Puterea Apostoliei
@@ -734,6 +827,22 @@ Author: Traian Dorz
 Highlight: Pridvorul lui Solomon era un coridor <em>acoperit</em>, afară din templu şi lângă el.
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Legea Dragostei
+Type: articol
+Author: Traian Dorz
+Highlight: şi cu păcatul <em>acoperit</em>...
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Lucrarea şi lucrătorul
+Type: articol
+Author: Traian Dorz
+Highlight: se risipeşte de la primul vânt, iniţiatorul e <em>acoperit</em> de praful uitării.
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învierea noastră
 Title: Mi-e veşnică viaţa
@@ -748,6 +857,14 @@ Title: Moartea cea mai fioroasă
 Type: articol
 Author: Traian Dorz
 Highlight: eram <em>acoperit</em> de lepra păcătoşirii în care căzusem
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Naşterea din nou
+Type: articol
+Author: Traian Dorz
+Highlight: cea care ţi-a <em>acoperit</em> goliciunea ta la început,
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -782,6 +899,14 @@ Author: Traian Dorz
 Highlight: O, Veşnicie, - taină cu chip <em>acoperit</em>
 
 Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Preaiubit Isus, Jertfa noastră Sfântă
+Type: articol
+Author: Traian Dorz
+Highlight: cu durere, că dragostea Ta cea nespus de mare a <em>acoperit</em> totul. Şi a iertat totul. A spălat totul. Şi a
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 80
@@ -799,6 +924,14 @@ Highlight: <em>acoperit</em> păcatele noastre,
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: S-a aplecat şi s-a uitat
+Type: articol
+Author: Traian Dorz
+Highlight: Până ce îi vine fiecărui privitor rândul să fie <em>acoperit</em> şi el în câte unul din mormintele care se tot
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
 Book: Hristos - Răscumpărătorul nostru
 Title: S-au dus pierind milenii
 Type: poezie
@@ -812,197 +945,4 @@ Title: S-au dus pierind milenii
 Type: poezie
 Author: Traian Dorz
 Highlight: mânate în Nimicul cu chip <em>acoperit</em>.
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Singurul Templu Etern
-Type: articol
-Author: Traian Dorz
-Highlight: Umbrele care ne-au <em>acoperit</em> - vor pieri.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Să n-o sfâşiem!...
-Type: articol
-Author: Traian Dorz
-Highlight:  care ai îmbrăcat-o prima dată, cea care ţi-a <em>acoperit</em> goliciunea ta la început, este şi rămâne pe totdeauna
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Te voi iubi nemărginit
-Type: poezie
-Author: Traian Dorz
-Highlight: cât mie mi-ai <em>acoperit</em>
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Unii credeau că Isus îi zisese...
-Type: articol
-Author: Traian Dorz
-Highlight: face printre voi, mai cu multă uşurinţă şi mai <em>acoperit</em>, slujba satanică de iudă şi vânzător.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Vin Paştile
-Type: poezie
-Author: Traian Dorz
-Highlight: cu-atâtea lespezi grele fiind <em>acoperit</em>
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Împreună lucrători cu Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: Căci El le-a <em>acoperit</em> pe toate şi pe totdeauna cu strălucirea Sa.
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: În cel mai greu întuneric
-Type: articol
-Author: Traian Dorz
-Highlight: 9 - M-ai <em>acoperit</em> cu atâtea daruri şi m-ai înzestrat cu atâtea binefaceri
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: În spaima strălucită
-Type: poezie
-Author: Traian Dorz
-Highlight: Nimicul ce-ascunsese sub chip <em>acoperit</em>
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Nu-mi acoperiţi mormântul
-Type: poezie
-Author: Traian Dorz
-Highlight: Nu-mi <em>acoperiţi</em> mormântul cu cununi, ci cu iubire
-Highlight: Nu-mi <em>acoperiţi</em> mormântul
-
-Score: 0.8888889
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 24 - Înaintea mai-marilor norodului
-Type: articol
-Author: Traian Dorz
-Highlight: frica autorităţilor. Mai puţini, ne-ar fi putut <em>acoperi</em>, dar eram câteva mii, biserica plină şi cei mai
-Highlight: plin de muşte, cu greu ajungând la o fereastră <em>acoperită</em> cu cinci obloane, după care apoi s-a făcut lumină
-Highlight: cerceta... Fusesem dus de repetate ori cu ochii <em>acoperiţi</em>, pe la diferite personalităţi de pe coridoarele
-Highlight: nopţi fără mâncare, fără somn, uneori cu ochii <em>acoperiţi</em>... Am îndurat toate acestea chinuindu-mă, rugându-mă
-Highlight: dărâmată pe jumătate, de o bombă de război. Era <em>acoperită</em> cu coceni de porumb. Locuise acolo un ţigan -
-Highlight: M-am mutat în coliba <em>acoperită</em> cu coceni. Au venit acolo şi părinţii mei alungaţi
-
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-Highlight: De ce binecuvântări v-aţi putea <em>acoperi</em>, - dar sub ce blesteme vă îngropaţi.
-Highlight: rânduri de ferestre sunt puse obloane groase <em>acoperind</em> de tot fiecare fereastră zăbrelită.
-Highlight: Acum erau peste tot colibe toate la fel. <em>Acoperite</em> cu stuf sau cu coceni de porumb, o cameră, o tindă
-Highlight: adăpostim lucrurile. Deasupra intrării am pus căruţa <em>acoperită</em> cu grâu cosit, ca să ne fie un adăpost de soare
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
-Type: articol
-Author: Traian Dorz
-Highlight: spun pe faţă despre ea aceste lucruri pentru a-mi <em>acoperi</em> dragostea pe care i-o port. Şi pentru ca s-o pot
-Highlight: I-am mai zis nu ştiu ce, pentru a <em>acoperi</em> cumva această tristă prăpastie, apoi am plecat
-Highlight: peripeţiile prin care am trecut de la secretarele care <em>acopereau</em> sfintele icoane din birourile Sfântului Sinod
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 19 - Mereu morminte noi
-Type: articol
-Author: Traian Dorz
-Highlight: Luaseră parte aici atunci cu inimile <em>acoperite</em> jumătate de soare şi jumătate de nori, mulţi fraţi
-Highlight: - Trebuie prima dată să <em>acoperim</em> spărtura asta, ca nu cumva să cădem prin ea.
-Highlight: şi-au încetat munca lor. S-a găsit numai o nouă <em>acoperire</em> pentru adunările noastre, - organizarea de scurte
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: Era ca înlăturarea unei marame nefericite ce ne <em>acoperise</em> ochii cei adevăraţi cu o îndelungată orbie şi
-Highlight: în jurul acestui fir scump şi sfânt, pentru a-l <em>acoperi</em> şi pierde.
-Highlight: potrivnice, iar taina lui Dumnezeu parcă şi mai <em>acoperită</em>. Începuse să se formeze de acum, ameninţătoare
-
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: încât pentru el nu există iertare. Există numai <em>acoperirea</em> lui în suferinţă, în jertfă. Numai după ce Hristos
-Highlight: încheietură şi cu gaură la mijloc, fără nici o <em>acoperitoare</em>. Prin gaura asta se vedea o parte din curtea
-Highlight: de-ndelungata zăcere pe scândurile goale sau <em>acoperite</em> numai cu rogojini rupte, mi se făcuseră două bătături
-
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 25 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: pânză groasă, legaţi cu un elastic pentru a ne <em>acoperi</em> cât mai strâns ochii, spre a nu vedea nimic pe
-Highlight: iscoada şi vânzătorul lor. În primul rând pentru a <em>acoperi</em> în faţa lumii pe vânzător. Apoi pentru a-l folosi
-Highlight: cu faptele lor trebuie să luptăm ca să nu fim <em>acoperiţi</em> şi sufocaţi toţi. Ce greu îmi era şi să vorbesc
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: O peşteră... o piatră
-Type: articol
-Author: Traian Dorz
-Highlight: ceva, pe care el trebuie să le-o acopere, vor <em>acoperi</em> şi ei la rândul lor ceea ce văd la noul frate căzut
-Highlight: murdări pe alta, şi un păcat va <em>acoperi</em> pe altul.
-Highlight: Dacă totuşi cele <em>acoperite</em> vor fi chiar prea de tot, şi
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: ... Şi au ieşit unul câte unul...
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Acoperind</em> pe toţi cei căzuţi cu neprihănirea Sa, Isus a
-Highlight: Numai Hristos rămâne lângă cei pierduţi <em>acoperindu</em>-i,
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
-Type: articol
-Author: Traian Dorz
-Highlight: îl răstoarnă din ladă cum se nimereşte, apoi îl <em>acoperă</em> repede cu cât pământ au scos de sub el. Pe urmă
-Highlight: vedea unii cu alţii, - acum, erau garduri de zid, <em>acoperite</em> cu ţiglă, înalte, peste care nu mai puteai vedea
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: timp cât să întorc pătura peste toate acestea, <em>acoperindu</em>-le, lângă mine pe pat.
-Highlight: familia sa un astfel de “infractor” până când poate <em>acoperi</em> o datorie de o mie sau două mii de lei, - poate
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 16 - Leacul dureroasei sfâşieri
-Type: articol
-Author: Traian Dorz
-Highlight: Apusului, n-au putut şi nu vor putea niciodată <em>acoperi</em> nici în cea mai mică parte marea pagubă şi marea
-Highlight:  pentru că metoda nu era cea potrivită. Rana <em>acoperită</em> deasupra coace şi ustură tot nevindecată în adânc
 

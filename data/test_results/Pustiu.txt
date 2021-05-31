@@ -1,136 +1,137 @@
-+---------------------------------------------------------------------------------------------+-------------+-----------------+-------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences | Author          | Tip                           | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-------------+-----------------+-------------------------------+------------------------------+---------+
-| Sunt glasul celui ce strigă în pustie                                                       | {'pustiu'}  | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| Adevăratul trimes                                                                           | {'pustiu'}  | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
-| Apa din stâncă                                                                              | {'pustiu'}  | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                            | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Frumosul ecou                                                                               | {'pustiu'}  | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Veniţi suflete chemate                                                                      | {'pustiu'}  | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | poezie  |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                      | {'pustiu'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 31 - Şi acum încheierea                                                                | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Ce-ndurerat mă duc                                                                          | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Din alte diferite părţi                                                                     | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Oriunde când eram cu Tine                                                                   | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Pâinea vie                                                                                  | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Rugăciune                                                                                   | {'pustiu'}  | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
-| Tu mi-ai umplut                                                                             | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Ai milă Tu                                                                                  | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Am fost o harfă - 2                                                                         | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Asprime şi bunătate                                                                         | {'pustiu'}  | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Au plecat şi oameni nepregătiţi                                                             | {'pustiu'}  | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
-| Biruirea greului vieţii                                                                     | {'pustiu'}  | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Bolile şi suferinţele de pe pământ                                                          | {'pustiu'}  | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Bolnav de iubire                                                                            | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                             | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 10 - Va veni un altul...                                                               | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 11 - Ecles                                                                             | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                      | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                        | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                                                       | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                                | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                          | {'pustiu'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                                       | {'pustiu'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 23 - Cuvânt Testamentar                                                                | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                              | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 26 - Fântânile certei noastre                                                          | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Anul următor                                                                       | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                                    | {'pustiu'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 5 - Binecuvântata muncă grea                                                           | {'pustiu'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 8 - Cânt. Cântărilor                                                                   | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Ce dulce-a fost cândva                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Cel care îmi ceri şi îmi dai totul                                                          | {'pustiu'}  | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Cetatea lui Andrei şi a lui Petru                                                           | {'pustiu'}  | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cine-şi va alege frate                                                                      | {'pustiu'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
-| Cine-şi va alege frate                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Creatori şi creaţii                                                                         | {'pustiu'}  | Traian Dorz     | Avuţia Sfântului Moştenitor   | Cugetări Nemuritoare         | articol |
-| Curând îmi vei lua                                                                          | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Când Tu-mi pluteşti                                                                         | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Când Tu-mi pluteşti                                                                         | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Când am trecut                                                                              | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Când vei vedea                                                                              | {'pustiu'}  | Traian Dorz     | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| Când vei vedea                                                                              | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Cântarea lui Isaia - 24                                                                     | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cânturile mele...                                                                           | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Câţi ani mi-au trebuit                                                                      | {'pustiu'}  | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Câţi ani mi-au trebuit                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Dacă aduceţi multă roadă                                                                    | {'pustiu'}  | Traian Dorz     | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Dacă au păzit Cuvântul Meu                                                                  | {'pustiu'}  | Traian Dorz     | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Despre hotărâre                                                                             | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Despre voinţă                                                                               | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Din părţile Moldovei                                                                        | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                                       | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Din părţile Olteniei                                                                        | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Doamne, sunt o luminiţă                                                                     | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Douăsprezece coşuri...                                                                      | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Dragostea pentru înaintaşi                                                                  | {'pustiu'}  | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
-| Du-te şi tu de vesteşte                                                                     | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Dumnezeule-al Luminii                                                                       | {'pustiu'}  | Traian Dorz     | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | poezie  |
-| După aceea Isus S-a dus...                                                                  | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| După arşiţa de-o vară                                                                       | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| E-n trupul meu durerea                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Ei I-au zis: ce să facem?                                                                   | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| El vine iar...                                                                              | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Este aici un băieţel...                                                                     | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Este scris: sunteţi dumnezei!                                                               | {'pustiu'}  | Traian Dorz     | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Eu Te păstrez Isuse                                                                         | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Eu Te păstrez Isuse                                                                         | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Eu eram copil Isuse...                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Eu n-am uitat                                                                               | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Eu sunt...                                                                                  | {'pustiu'}  | Traian Dorz     | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Iar îmi scrii măicuţă...                                                                    | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Ispita îţi întinde...                                                                       | {'pustiu'}  | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Ispita îţi întinde...                                                                       | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Isus a zis: strângeţi fărâmiturile                                                          | {'pustiu'}  | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Isus, de veacuri eşti...                                                                    | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Isus, tot ce primim...                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| Isuse, Dumnezeul şi Mântuitorul - nostru Slăvit                                             | {'pustiu'}  | Traian Dorz     | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Isuse, o Isuse...- de-atâţia ani                                                            | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | {'pustiu'}  | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                               | {'pustiu'}  | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'pustiu'}  | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Lumina                                                                                      | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Mai smerit şi mai frumos                                                                    | {'pustiu'}  | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Mai vin, părinte drag                                                                       | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Mana                                                                                        | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Mi-e inima adesea                                                                           | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Minciuna                                                                                    | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
-| Minunată şi frumoasă                                                                        | {'pustiu'}  | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-+---------------------------------------------------------------------------------------------+-------------+-----------------+-------------------------------+------------------------------+---------+
-Searching Pustiu using http://localhost:9000...
-Got 160 hits:
-Score: 16.625
++----------------------------------------------------------------+-----------------------------------------------------+-----------------+-------------------------------+------------------------------+---------+
+| Titlu                                                          | Occurrences                                         | Author          | Tip                           | Carte                        | Volum   |
++----------------------------------------------------------------+-----------------------------------------------------+-----------------+-------------------------------+------------------------------+---------+
+| Sunt glasul celui ce strigă în pustie                          | {'Pustiul', 'pustiu', 'pustie'}                     | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| Adevăratul trimes                                              | {'pustiu'}                                          | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
+| Apa din stâncă                                                 | {'pustiu', 'pustie', 'pustia'}                      | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
+| Cap. 3 - La scadenţa ispăşirilor                               | {'pustiu', 'pustiul', 'puşti'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Frumosul ecou                                                  | {'pustiu', 'Pustiul'}                               | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Ce mult te-aştept                                              | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Ploaia şi Cuvântul                                             | {'pustiu'}                                          | Traian Dorz     | Şi acum să facem              | Cugetări Nemuritoare         | articol |
+| Veniţi suflete chemate                                         | {'pustiu'}                                          | Traian Dorz     | Eterna Iubire                 | Cugetări Nemuritoare         | poezie  |
+| Veniţi suflete chemate                                         | {'pustiu'}                                          | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | poezie  |
+| Veniţi suflete chemate                                         | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Rugăciune                                                      | {'pustiu', 'pustie', 'pustia', 'pustiul'}           | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
+| Pâinea vie                                                     | {'pustiu', 'pustiuri', 'pustiul'}                   | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                         | {'pustiu', 'pustiul'}                               | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 31 - Şi acum încheierea                                   | {'pustiu', 'pustiul'}                               | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Alege bine                                                     | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Ce-ndurerat mă duc                                             | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Din alte diferite părţi                                        | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Oriunde când eram cu Tine                                      | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Tu mi-ai umplut                                                | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Vreau Viaţa Ta                                                 | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Pustia şi izvorul                                              | {'pustiu', 'pustia', 'pustie', 'Pustia'}            | Traian Dorz     | Şi acum să facem              | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                         | {'pustiu', 'pustie', 'pustia', 'pustiei', 'pustii'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                 | {'pustiu', 'pustie', 'pustiul'}                     | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                            | {'pustiu', 'pustie', 'pustiul'}                     | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                       | {'pustiu', 'pustiul', 'pustii', 'pustia'}           | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Din părţile Munteniei                                          | {'pustiu', 'puşti', 'puştii', 'pustie'}             | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| Douăsprezece coşuri...                                         | {'pustiu', 'pustii', 'pustie', 'pustiul'}           | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
+| Moartea şi Viaţa                                               | {'pustiu', 'pustiuri', 'Pustiul'}                   | Traian Dorz     | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
+| Psalmul 78                                                     | {'pustiu', 'pustie', 'pustia'}                      | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Au plecat şi oameni nepregătiţi                                | {'pustiu', 'pustie'}                                | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                          | {'pustiu', 'pustii', 'pustiuri'}                    | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 23 - Cuvânt Testamentar                                   | {'pustiu', 'pustia', 'pustiul'}                     | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Isus a zis: strângeţi fărâmiturile                             | {'pustiu', 'pustii', 'Pustia'}                      | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
+| Psalmul 107                                                    | {'pustiu', 'pustii', 'pustia'}                      | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Biruirea greului vieţii                                        | {'pustiu', 'pustia'}                                | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                | {'pustiu', 'pustie'}                                | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                           | {'pustiu', 'pustii'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                | {'pustiu', 'pustie'}                                | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 26 - Fântânile certei noastre                             | {'pustiu', 'pustiei'}                               | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 4 - Anul următor                                          | {'pustiu', 'pustie'}                                | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Creatori şi creaţii                                            | {'pustiu', 'pustie'}                                | Traian Dorz     | Avuţia Sfântului Moştenitor   | Cugetări Nemuritoare         | articol |
+| Curajul şi lucrarea                                            | {'pustiu', 'pustie'}                                | Traian Dorz     | Dorim să fim                  | Cugetări Nemuritoare         | articol |
+| Când am trecut                                                 | {'pustiu', 'pustiul'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Cântările şi închinarea                                        | {'pustiu', 'pustiul'}                               | Traian Dorz     | Strălucirea Biruinţei         | Cugetări Nemuritoare         | articol |
+| Din părţile Olteniei                                           | {'pustiu', 'pustie'}                                | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
+| E-n trupul meu durerea                                         | {'pustiu', 'pustie'}                                | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Este scris: sunteţi dumnezei!                                  | {'pustiu', 'pustie'}                                | Traian Dorz     | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu) | {'pustiu', 'pustiul'}                               | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Mărturisirea                                                   | {'pustiu', 'pustii'}                                | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| O, Tată Sfânt, - eu Ţi-am fost                                 | {'pustiu', 'pustiul'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| O, după-a Ta iubire                                            | {'pustiu', 'pustie'}                                | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Prietene şi frate                                              | {'pustiu', 'pustia'}                                | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
+| Prietene şi frate                                              | {'pustiu', 'pustia'}                                | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Psalmul 63                                                     | {'pustiu', 'pustia'}                                | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Slobozenia şi robia lui Isus                                   | {'pustiu', 'pustie'}                                | Traian Dorz     | Lupta cea Bună                | Cugetări Nemuritoare         | articol |
+| Tu cine eşti?                                                  | {'pustiu', 'Pustiul'}                               | Traian Dorz     | Dorim să fim                  | Cugetări Nemuritoare         | articol |
+| Ucenicii au coborât... singuri                                 | {'pustiu', 'pustie'}                                | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
+| Veniţi de prânziţi...                                          | {'pustiu', 'pustie'}                                | Traian Dorz     | Hristos - Slava noastră       | Meditații la Ev. după Ioan   | articol |
+| Încrederea şi viaţa                                            | {'pustiu', 'pustie'}                                | Traian Dorz     | Poruncile Iubirii             | Cugetări Nemuritoare         | articol |
+| Ai milă Tu                                                     | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Ajutorarea Lucrării Domnului                                   | {'pustiu'}                                          | Traian Dorz     | Lupta cea Bună                | Cugetări Nemuritoare         | articol |
+| Am fost o harfă - 2                                            | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Asprime şi bunătate                                            | {'pustiu'}                                          | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
+| Bolile şi suferinţele de pe pământ                             | {'pustiu'}                                          | Traian Dorz     | Mărgăritarul Ascuns           | Cugetări Nemuritoare         | articol |
+| Bolnav de iubire                                               | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Cap. 10 - Va veni un altul...                                  | {'pustiu'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 11 - Ecles                                                | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cap. 18 - Un vânt rău                                          | {'pustiu'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                   | {'pustiu'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                             | {'pustiu'}                                          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                | {'pustiu'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                    | {'pustiu'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 4 - Vrăjmaşul caută viaţa pruncului                       | {'pustiu'}                                          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 5 - Binecuvântata muncă grea                              | {'pustiu'}                                          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 8 - Cânt. Cântărilor                                      | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Ce dulce-a fost cândva                                         | {'pustiu'}                                          | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Ce dulce-a fost cândva                                         | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Ce repede trec toate                                           | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Ce-I spui lui Isus?                                            | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Cei culţi - şi cei desculţi                                    | {'pustiu'}                                          | Traian Dorz     | Semănaţi Cuvântul Sfânt       | Cugetări Nemuritoare         | articol |
+| Cel care îmi ceri şi îmi dai totul                             | {'pustiu'}                                          | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Cetatea lui Andrei şi a lui Petru                              | {'pustiu'}                                          | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| Cine-şi va alege frate                                         | {'pustiu'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
+| Cine-şi va alege frate                                         | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Cum ai vrea să spui!                                           | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Curând îmi vei lua                                             | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Când Tu-mi pluteşti                                            | {'pustiu'}                                          | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
+| Când Tu-mi pluteşti                                            | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Când o să-ţi ardă cerul                                        | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Când spui “Femeia”                                             | {'pustiu'}                                          | Traian Dorz     | Credinţa Încununată           | Cugetări Nemuritoare         | poezie  |
+| Când spui “Femeia”                                             | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Când vei vedea                                                 | {'pustiu'}                                          | Traian Dorz     | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | poezie  |
+| Când vei vedea                                                 | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Cântarea lui Isaia - 24                                        | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cânturile mele...                                              | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Câţi ani mi-au trebuit                                         | {'pustiu'}                                          | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Câţi ani mi-au trebuit                                         | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Dacă aduceţi multă roadă                                       | {'pustiu'}                                          | Traian Dorz     | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Dacă au păzit Cuvântul Meu                                     | {'pustiu'}                                          | Traian Dorz     | Hristos - Viţa vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Despre hotărâre                                                | {'pustiu'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 3    | Cântări Nemuritoare          | articol |
++----------------------------------------------------------------+-----------------------------------------------------+-----------------+-------------------------------+------------------------------+---------+
+Searching Pustiu using https://api.comori-od.ro...
+Got 517 hits:
+Score: 18.673077
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: Sunt glasul celui ce strigă în pustie
 Type: articol
 Author: Traian Dorz
-Highlight: mereu în <em>pustiu</em>. În singurătate. Şi în zadar.
-Highlight: Pustiul era locul fără ecou. Un glas în <em>pustiu</em> este chiar
-Highlight: Evangheliei şi vestirea lui Hristos vorbesc adesea în <em>pustiu</em>!...
+Highlight: <em>Pustiul</em> era locul fără ecou. Un glas în <em>pustiu</em> este chiar
+Highlight: mereu în <em>pustiu</em>. În singurătate. Şi în zadar.  Pustiul
+Highlight: vestirea lui Hristos vorbesc adesea în <em>pustiu</em>!...
 Highlight: Totuşi, solul strigă, chiar dacă vede că strigă în <em>pustiu</em>!
 Highlight: strigă în <em>pustiu</em>!
 Highlight: Acolo unde vezi că este <em>pustiu</em>,
+Highlight: Sunt glasul celui ce strigă în <em>pustie</em>
 
-Score: 16.285713
+Score: 16.303572
 Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
 Title: Adevăratul trimes
 Type: articol
 Author: Traian Dorz
-Highlight: pentru netezirea căilor Domnului, sună mereu în <em>pustiu</em>.
+Highlight: căilor Domnului, sună mereu în <em>pustiu</em>.
 Highlight: Un glas în <em>pustiu</em> este chiar nimic.
 Highlight: Evangheliei şi vestirea lui Hristos, vorbesc adesea în <em>pustiu</em>!...
 Highlight: strigă în <em>pustiu</em>!
 Highlight: Acolo unde vezi că este <em>pustiu</em> sufletesc,
 Highlight: multe căi înşelătoare, câte sunt de obicei prin <em>pustiu</em>.
 
-Score: 14.25
+Score: 14.388889
 Volume: Spre Canaan
 Book: Spre Canaan
 Title: Apa din stâncă
@@ -138,8 +139,12 @@ Type: articol
 Author: Pr. Iosif Trifa
 Highlight: alături. Lumea aceasta este un <em>pustiu</em> al păcatului. Este un pământ <em>pustiu</em> şi fără apă sufletească. Sufletul
 Highlight: Însetat-a de Tine sufletul meu... într-un pământ <em>pustiu</em>, neumblat şi fără apă
+Highlight: Israelienii au avut necaz mare în <em>pustie</em> nu numai cu foamea, ci şi cu setea. Iar acest necaz l-a rezolvat
+Highlight: Toată adunarea copiilor lui Israel a plecat din <em>pustia</em> Sin, după călătoriile zilnice, pe care poruncise
+Highlight: este aproape totdeauna ca cel al israelienilor din <em>pustie</em>. Dacă Dumnezeu ne-ar judeca după răspunsul nostru
+Highlight: când a fost lovită Stânca Golgotei, într-o lume <em>pustie</em> şi fără apă, s-au revărsat apele vieţii şi s-a
 
-Score: 14.25
+Score: 14.333333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 3 - La scadenţa ispăşirilor
@@ -148,14 +153,46 @@ Author: Traian Dorz
 Highlight: sunt aruncat undeva în gol. Că umblu printr-un <em>pustiu</em> şi că mor într-o peşteră - în care nimeni nu mă
 Highlight: mai gol ca el, pentru că sufletul meu era ca un <em>pustiu</em> în care nimic din afară nu mai avea nici un răsunet
 Highlight: mârâie mereu şi el poate de frig. Parcă e un iad <em>pustiu</em> totul...
+Highlight: Din <em>pustiul</em> inimii mele un gând mi se ridică până la lumina
+Highlight: - Dar ai d-ta atâtea gloanţe câte să ne <em>puşti</em> pe toţi?
 
-Score: 14.25
+Score: 14.3
 Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Frumosul ecou
 Type: articol
 Author: Traian Dorz
-Highlight: - Sunt un glas în <em>pustiu</em>! O înştiinţare în <em>pustiu</em>! Un strigăt în <em>pustiu</em>!
+Highlight: Sunt un glas în <em>pustiu</em>! O înştiinţare în <em>pustiu</em>! Un strigăt în <em>pustiu</em>!
+Highlight: 15 - <em>Pustiul</em> e locul fără ecou
+
+Score: 14.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ce mult te-aştept
+Type: poezie
+Author: Traian Dorz
+Highlight: dar n-ai s-auzi decât <em>pustiu</em>
+Highlight: dar n-ai să vezi decât <em>pustiu</em>
+Highlight: dar n-ai să simţi decât <em>pustiu</em>
+
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Ploaia şi Cuvântul
+Type: articol
+Author: Traian Dorz
+Highlight: al cerului, pământul ar fi un imens <em>pustiu</em> mort. Pământul era <em>pustiu</em> şi gol - spune Cuvântul Sfânt(
+Highlight: să se umple ce era gol şi să se populeze ce era <em>pustiu</em>.
+
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Veniţi suflete chemate
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-atunci clopotul <em>pustiu</em>
+Highlight: până clopotul <em>pustiu</em>
+Highlight: căci când clopotul <em>pustiu</em>
 
 Score: 14.25
 Volume: Cugetări Nemuritoare
@@ -167,7 +204,43 @@ Highlight: şi-atunci clopotul <em>pustiu</em>
 Highlight: până clopotul <em>pustiu</em>
 Highlight: căci când clopotul <em>pustiu</em>
 
-Score: 12.666666
+Score: 14.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Veniţi suflete chemate
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-atunci clopotul <em>pustiu</em>
+Highlight: până clopotul <em>pustiu</em>
+Highlight: căci când clopotul <em>pustiu</em>
+
+Score: 12.874999
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Rugăciune
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: mine, ticălosul. Eu Te-am aflat într-un pământ <em>pustiu</em> şi fără de apă (
+Highlight: cea vie. Când era să mor de sete într-un pământ <em>pustiu</em> şi fără de apă, am auzit glasul Tău cel dulce:
+Highlight: gândim la mana cu care ai hrănit pe poporul Tău în <em>pustie</em> şi la apa din stâncă cu care l-ai adăpat. Fără
+Highlight: apa aceasta, israelienii ar fi pierit cu toţii în <em>pustie</em>. Cât de bun şi de milostiv ai fost Tu Doamne faţă
+Highlight: păcătoşii. Şi noi suntem nişte străini şi călători prin <em>pustia</em> acestei lumi. Nici o bucată de pâine şi nici un
+Highlight: şi scump fără de care cu toţii am fi pierit în <em>pustiul</em> acestei lumi.  O
+
+Score: 12.8571415
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Pâinea vie
+Type: articol
+Author: Traian Dorz
+Highlight: locul acesta ajunge <em>pustiu</em>. Acolo viaţa încetează şi totul devine mort.
+Highlight: Fără El totul ar fi mort şi <em>pustiu</em>, cum a fost înainte de a i-o da El.
+Highlight: Sunt <em>pustiuri</em> sufleteşti, după
+Highlight: după cum sunt şi <em>pustiuri</em> pământeşti.  Sunt
+Highlight: şi <em>pustiul</em> vine acolo unde nu mai poate fi hrană, adică lipseşte pâinea care întreţine viaţa. Şi în pământ
+Highlight: viaţa lumii s-a sfârşit. Va urma moartea ei şi <em>pustiul</em> veşnic.  Hristos
+
+Score: 12.749999
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 20 - Şi iertarea trebuie plătită!
@@ -175,14 +248,25 @@ Type: articol
 Author: Traian Dorz
 Highlight: care mă afund fără salvare... Că umblu printr-un <em>pustiu</em> primejdios... Că mor într-o peşteră închisă în
 Highlight: şi mai gol ca el, fiindcă sufletul meu era ca un <em>pustiu</em> în care nimic din afară nu mai avea nici un răsunet
+Highlight: Numai din <em>pustiul</em> întunecat al inimii mele un gând mi se ridică până
 
-Score: 12.666666
+Score: 12.749999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 31 - Şi acum încheierea
 Type: articol
 Author: Traian Dorz
 Highlight: semnal de alarmă, un glas care strigă în <em>pustiu</em>... În acest <em>pustiu</em> unde nu mai există astăzi nici un ecou
+Highlight: mult cu Faraon, am înfruntat marea, am străbătut <em>pustiul</em>, am suferit 40 de ani şi acum să nu intru şi eu
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Alege bine
+Type: poezie
+Author: Traian Dorz
+Highlight: mai <em>pustiu</em>.
+Highlight: să plângi în <em>pustiu</em>.
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -211,24 +295,6 @@ Highlight: inimii mi-era <em>pustiu</em>
 Highlight: doar inimii mi-era <em>pustiu</em>.
 
 Score: 12.666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Pâinea vie
-Type: articol
-Author: Traian Dorz
-Highlight: Pâinea încetează din vreun loc, locul acesta ajunge <em>pustiu</em>. Acolo viaţa încetează şi totul devine mort.
-Highlight: Fără El totul ar fi mort şi <em>pustiu</em>, cum a fost înainte de a i-o da El.
-
-Score: 12.666666
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Rugăciune
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: mine, ticălosul. Eu Te-am aflat într-un pământ <em>pustiu</em> şi fără de apă (
-Highlight: cea vie. Când era să mor de sete într-un pământ <em>pustiu</em> şi fără de apă, am auzit glasul Tău cel dulce:
-
-Score: 12.666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Tu mi-ai umplut
@@ -237,6 +303,392 @@ Author: Traian Dorz
 Highlight: şi ce <em>pustiu</em> întins şi mut,
 Highlight: şi golul meu <em>pustiu</em> şi mut,
 
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Vreau Viaţa Ta
+Type: poezie
+Author: Traian Dorz
+Highlight: să-mi scape sufletul <em>pustiu</em>
+Highlight: salvează-mi sufletul <em>pustiu</em>
+
+Score: 11.8
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Pustia şi izvorul
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Nu-i nici un <em>pustiu</em> chiar fără nici un izvor. Nu-i nici o nenorocire în care să nu licărească chiar
+Highlight: 2 - Cel care a făcut <em>pustia</em>, a rânduit din loc în loc un izvor. Cel care a
+Highlight: 3 - Trebuie numai în <em>pustie</em> să cauţi izvorul, în durere leacul şi în singurătate
+Highlight: 20 - Doamne, nu ne lăsa nici o <em>pustie</em> fără izvor, nici o groapă fără ieşire, nici un
+Highlight: <em>Pustia</em> şi izvorul
+
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: de când acest popor al Domnului umbla prin acest <em>pustiu</em> - spre Canaanul nostru dorit, pentru care ni se
+Highlight: Totuşi cei mai mulţi au pierit în <em>pustie</em>”. 1
+Highlight: înainte că drumul acestei călătorii va fi lung, că <em>pustia</em> va fi aspră şi că primejdiile vor fi multe. Dar
+Highlight: De asprimea <em>pustiei</em> şi de lungimea anilor prin care am trecut... Aceştia
+Highlight: minunate ale Oastei pe aceste locuri atunci uscate şi <em>pustii</em>. Acum
+Highlight: Iată ce lucrează <em>pustia</em> şi lipsa de legătură dintre fraţi!
+
+Score: 9.857142
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: ani... O perioadă cât o viaţă şi cât un drum prin <em>pustiu</em>...
+Highlight: apus, de la miazănoapte şi de la miazăzi. Prin <em>pustie</em> fără apă rătăceam, flămânzi şi setoşi eram... sufletul
+Highlight: morţii şi rupt-a lanţurile noastre... El a prefăcut <em>pustiul</em> nostru în iaz şi pământul uscat în izvoare de apă
+Highlight: Isuse Doamne, suntem în drum spre Canaan... prin <em>pustie</em>... prin
+Highlight: serbarea Oastei. Se bucură cei care “pribegeau prin <em>pustie</em>, sufereau de foame şi de sete, le tânjea sufletul
+Highlight: cerbul, limba muţilor cântă de bucurie căci în <em>pustie</em> au ţâşnit ape şi în pustietate pâraie
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: de ani nu se mai mişcă nimic în ele ca într-un <em>pustiu</em> sterp.
+Highlight: mult de mers, mult de luptat şi de suferit prin <em>pustie</em>. De-a
+Highlight: şi fiare. Şi prin toată umblarea noastră prin <em>pustiul</em> acestei lumi va trebui să fim treji şi gata de
+Highlight: Domnului să devină o căruţă izolată pe o stradă <em>pustie</em>. Şi nici o remorcă ataşată înapoia vreunei secte
+
+Score: 9.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: îngheţ şi <em>pustiu</em> şi-ntristare.
+Highlight: prin jalea şi <em>pustiul</em> ruinelor iubite... Zac
+Highlight: Iertare îi cerem Lucrării <em>pustii</em> lăsată
+Highlight: a venit <em>pustia</em> mai înfricoşată
+
+Score: 9.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Munteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 4 - În <em>pustiu</em> nu afli prieteni
+Highlight: 102 - Gura <em>puşti</em> nu-i aşa
+Highlight: gura <em>puştii</em> nu te doare
+Highlight: e ca praful din <em>pustie</em>, călătorului aprins.
+
+Score: 9.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Douăsprezece coşuri...
+Type: articol
+Author: Traian Dorz
+Highlight: trebuitoare celor care se înapoiau pe drumul lung şi <em>pustiu</em> până acasă. Iar ucenicii trebuiau să împartă celor
+Highlight: Îngrijeşte în chip deosebit în locuri <em>pustii</em>, pe drumuri singuratice şi grele.
+Highlight: lipsurile celor ce aveau să facă drum lung prin <em>pustie</em> şi ai îngrijit pentru ei de mană sau de fărâmituri
+Highlight: îndestulătoare pentru când vom avea de străbătut prin <em>pustiul</em> încercărilor şi prigoanelor pentru Cuvântul Tău
+
+Score: 9.8
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Moartea şi Viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: acela ajunge <em>pustiu</em>. Acolo viaţa încetează şi totul devine mort,
+Highlight: astfel sunt <em>pustiuri</em> sufleteşti, după
+Highlight: după cum sunt şi <em>pustiuri</em> pământeşti,
+Highlight: Moartea ori <em>Pustiul</em> vine acolo unde nu mai poate fi hrană, adică unde lipseşte pâinea care întreţine Viaţa
+
+Score: 9.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 78
+Type: poezie
+Author: Traian Dorz
+Highlight: 40-De câte ori se răzvrătiră ei împotriva-I prin <em>pustiu</em>
+Highlight: 15-Din stâncă, în <em>pustie</em>, apă El din belşug le-a dat să bea ca
+Highlight: să pună Dumnezeu o masă aicea în <em>pustia</em> grea?  20-El
+Highlight: 52-Cum i-a pornit pe-ai Săi cu turma, cum prin <em>pustie</em> i-a-ndrumat
+
+Score: 9.75
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Au plecat şi oameni nepregătiţi
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: oameni - zicea generalul - după ce ţinutul era <em>pustiu</em> şi lipsit de apă şi alimente, era o imposibilitate
+Highlight: mulţi. Aceştia au strigat mai întâi în cale prin <em>pustie</em>: daţi-ne carne!... de ce ne-aţi scos din Egipt
+Highlight: uriaşă de aproape un milion de oameni au plecat prin <em>pustie</em> spre o ţară îndepărtată.  Un
+
+Score: 9.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: vii la Domnul Isus. Să ieşi la Soare din acest <em>pustiu</em> mizerabil. Să scapi din această junglă îngrozitoare
+Highlight: vom mai ajunge şi cât vom sta prin aceste locuri <em>pustii</em>. Domnul ne-a dat aici un Noul Testament. Eu zic
+Highlight: Acum sunt aici prin aceste <em>pustiuri</em> murdare, cu aceste existenţe la fel de murdare
+
+Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight: cine ştie câtă vreme în altă robie, ori în alt <em>pustiu</em>.
+Highlight: înţelepciunii se dovedesc fără răspuns, lopata, focul şi <em>pustia</em> rămân singurele căi pentru îndepărtarea gunoaielor
+Highlight: lopata, El are în putere focul şi în stăpânire <em>pustiul</em>, aceste trei cutremurătoare mijloace de curăţire
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Isus a zis: strângeţi fărâmiturile
+Type: articol
+Author: Traian Dorz
+Highlight: Drumul fiind lung, locul fiind <em>pustiu</em>, sau necazul ţinând vreme multă, - nu uşor găseşti
+Highlight: sau în drumuri lungi şi prin locuri <em>pustii</em>,  este
+Highlight: <em>Pustia</em> e tot mai uscată iar drumul nostru poate fi încă
+
+Score: 9.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 107
+Type: poezie
+Author: Traian Dorz
+Highlight: 4-Pribegeau prin loc <em>pustiu</em> şi neumblat.
+Highlight: Pribegeau prin locuri şi pe căi <em>pustii</em>
+Highlight: şi <em>pustia</em>-n ape-o poate El schimba.
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Biruirea greului vieţii
+Type: articol
+Author: Traian Dorz
+Highlight: nu-i un gol <em>pustiu</em> pentru mine de când Te ştiu al meu şi de când viaţa mea e a Ta, ci <em>pustia</em> este o plinătate
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: Alegerea lui s-a făcut în singurătatea unui <em>pustiu</em> şi în minunea unui fel unic. Harul lui a fost un
+Highlight: meu... din partea păgânilor... în primejdii în <em>pustie</em>... pe mare... între fraţii mincinoşi. Osteneli
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: a murit sau a fost omorât pe drumul depărtat şi <em>pustiu</em>, ca un părăsit şi dispreţuit al tuturor.
+Highlight: stăruia vechiul duh pustiitor, lucrurile erau tot <em>pustii</em> şi bolnave.
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: durere la zădărnicia celor 11 ani de strigare în <em>pustiu</em>, fără urme şi fără roade.
+Highlight: Cerească. Ne asemănăm întrucâtva cu israelienii prin <em>pustie</em>. Ei aveau conducător pe Moise. Noi am plecat cu
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 26 - Fântânile certei noastre
+Type: articol
+Author: Traian Dorz
+Highlight: lucrurile în aşa fel încât ei nici n-au pierit în acel <em>pustiu</em> şi nici n-au trebuit să caute fântâni străine şi
+Highlight: şi sănătatea sufletelor noastre în uscăciunea <em>pustiei</em> lumii prin care trecem. Prin această secetă duhovnicească
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 4 - Anul următor
+Type: articol
+Author: Traian Dorz
+Highlight: într-un noian de ură şi-ntr-un <em>pustiu</em> amar
+Highlight: ca auru-n <em>pustie</em> mi-o simt fără folos. Nu-mi
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Creatori şi creaţii
+Type: articol
+Author: Traian Dorz
+Highlight: în jurul nostru un <em>pustiu</em> întunecos, avem o inimă necredincioasă sau o casă <em>pustie</em> şi întunecată de păcat
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Curajul şi lucrarea
+Type: articol
+Author: Traian Dorz
+Highlight: 10 - Ca pe scara cerească visată de Iacov în <em>pustiu</em> când îngerii urcau şi coborau spre el, tot aşa
+Highlight: magilor, ori cele mai grele ca în ispitirea din <em>pustie</em> ori în Gheţimani. Ori de bucurie ca sfintelor femei
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Când am trecut
+Type: poezie
+Author: Traian Dorz
+Highlight: era <em>pustiu</em> şi-ntunecat.
+Highlight: Azi tot <em>pustiul</em> e izvoare
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Cântările şi închinarea
+Type: articol
+Author: Traian Dorz
+Highlight: şi din mijlocul unui <em>pustiu</em> plin de necazuri
+Highlight: <em>pustiul</em> va fi străbătut,
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Olteniei
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Mai bine-n <em>pustiu</em> să stai
+Highlight: 30 - E mai bine să stai singur-singurel într-o <em>pustie</em>
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: E-n trupul meu durerea
+Type: poezie
+Author: Traian Dorz
+Highlight: într-un noian de ură şi-ntr-un <em>pustiu</em> amar,
+Highlight: ca auru-n <em>pustie</em> mi-o simt fără folos.  Nu-mi
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Este scris: sunteţi dumnezei!
+Type: articol
+Author: Traian Dorz
+Highlight: în jurul nostru un <em>pustiu</em> întunecos,
+Highlight: avem inima necredincioasă, sau o casă <em>pustie</em> şi întunecată de păcat
+
+Score: 9.666667
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Type: articol
+Author: Traian Dorz
+Highlight: ruinează şi se pustieşte, iar acolo unde este ruină şi <em>pustiu</em>, nu mai este nici o primejdie şi nu mai ameninţă
+Highlight: acestora, nu peste mult timp s-a ales ruina şi <em>pustiul</em> de toată munca lor.
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Mărturisirea
+Type: poezie
+Author: Traian Dorz
+Highlight: îngheţ şi <em>pustiu</em> şi-ntristare.
+Highlight: Iertare îi cerem Lucrării <em>pustii</em> lăsată
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: O, Tată Sfânt, - eu Ţi-am fost
+Type: poezie
+Author: Traian Dorz
+Highlight: - că-n mine doar <em>pustiu</em> era
+Highlight: Tu m-ai căutat prin tot <em>pustiul</em> şi
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: O, după-a Ta iubire
+Type: poezie
+Author: Traian Dorz
+Highlight: mi se părea <em>pustiu</em>
+Highlight: întreaga mea <em>pustie</em>.
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Prietene şi frate
+Type: poezie
+Author: Traian Dorz
+Highlight: căci cine ştie încă ce mult va fi <em>pustiu</em>,
+Highlight: <em>pustia</em> încă-i lungă, iar tu eşti un străin...
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Prietene şi frate
+Type: poezie
+Author: Traian Dorz
+Highlight: căci cine ştie încă ce mult va fi <em>pustiu</em>,
+Highlight: <em>pustia</em> încă-i lungă, iar tu eşti un străin...
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 63
+Type: poezie
+Author: Traian Dorz
+Highlight: ca-n locul fără ape, <em>pustiu</em> şi sec şi-uscat.
+Highlight: - Un psalm al lui David. Făcut când era în <em>pustia</em> lui Iuda - 1-O
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Slobozenia şi robia lui Isus
+Type: articol
+Author: Traian Dorz
+Highlight: puţina lumină pe care o dădea şi totul devine un <em>pustiu</em>.
+Highlight: când, prin voia lui Dumnezeu eşti dus de Duhul în <em>pustie</em> ca să fii ispitit de diavolul ( Matei
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Tu cine eşti?
+Type: articol
+Author: Traian Dorz
+Highlight: smerit şi mai mult spunând: Eu sunt un glas în <em>pustiu</em>.
+Highlight: <em>Pustiul</em> este locul unde un glas nu înseamnă nimic
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Ucenicii au coborât... singuri
+Type: articol
+Author: Traian Dorz
+Highlight: Şederea în <em>pustiu</em> şi în singurătate îşi are şi ea vremea ei.
+Highlight: mult. În curând se va sfârşi starea voastră în <em>pustie</em>, chiar dacă acum vi se pare îndelungată.
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Veniţi de prânziţi...
+Type: articol
+Author: Traian Dorz
+Highlight: jăraticul, peştele fript şi pâinea? Căci ţărmul fusese <em>pustiu</em>, iar ucenicii spuseseră că n-au nimic!
+Highlight: mâncaseră şi altădată, tot pâine şi tot peşte. În <em>pustie</em>. Dar atunci fusese ceva la început. Fuseseră cinci
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Încrederea şi viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: Ci locuieşte ca în locuri arse de <em>pustiu</em>, ca într-un
+Highlight: nenorocit în <em>pustie</em> şi nu va vedea venind fericirea niciodată.  Ci
+
 Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
@@ -244,6 +696,14 @@ Title: Ai milă Tu
 Type: poezie
 Author: Traian Dorz
 Highlight: - că nu e suflet mai <em>pustiu</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Ajutorarea Lucrării Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: - acela nici nu va afla decât <em>pustiu</em>. Şi acum în veacul acesta - şi în veacul viitor
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -260,22 +720,6 @@ Title: Asprime şi bunătate
 Type: articol
 Author: Traian Dorz
 Highlight: singurătatea ta, şi ea nu va mai fi niciodată un <em>pustiu</em> gol, - ci o plinătate fericită.
-
-Score: 9.5
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Au plecat şi oameni nepregătiţi
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: oameni - zicea generalul - după ce ţinutul era <em>pustiu</em> şi lipsit de apă şi alimente, era o imposibilitate
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Biruirea greului vieţii
-Type: articol
-Author: Traian Dorz
-Highlight: Singurătatea nu-i un gol <em>pustiu</em> pentru mine de când Te ştiu al meu şi de când viaţa
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -295,14 +739,6 @@ Highlight: e <em>pustiu</em> şi-s singur, Doamne nu mai pot.
 
 Score: 9.5
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-Highlight: Alegerea lui s-a făcut în singurătatea unui <em>pustiu</em> şi în minunea unui fel unic. Harul lui a fost un
-
-Score: 9.5
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 10 - Va veni un altul...
 Type: articol
@@ -316,30 +752,6 @@ Title: Cap. 11 - Ecles
 Type: poezie
 Author: Traian Dorz
 Highlight: căci vin şi anii de-ntuneric, când viitorul e <em>pustiu</em>.
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-Highlight: de când acest popor al Domnului umbla prin acest <em>pustiu</em> - spre Canaanul nostru dorit, pentru care ni se
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: a murit sau a fost omorât pe drumul depărtat şi <em>pustiu</em>, ca un părăsit şi dispreţuit al tuturor.
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: de ani nu se mai mişcă nimic în ele ca într-un <em>pustiu</em> sterp.
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -367,14 +779,6 @@ Highlight: de Dumnezeu ca nişte oaze binecuvântate în acel <em>pustiu</em> su
 
 Score: 9.5
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: durere la zădărnicia celor 11 ani de strigare în <em>pustiu</em>, fără urme şi fără roade.
-
-Score: 9.5
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
@@ -388,46 +792,6 @@ Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
 Highlight: apele acestui fluviu duhovnicesc peste întinsul <em>pustiu</em> al vieţii poporului nostru şi bisericii noastre
-
-Score: 9.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: vii la Domnul Isus. Să ieşi la Soare din acest <em>pustiu</em> mizerabil. Să scapi din această junglă îngrozitoare
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-Highlight: cine ştie câtă vreme în altă robie, ori în alt <em>pustiu</em>.
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-Highlight: ani... O perioadă cât o viaţă şi cât un drum prin <em>pustiu</em>...
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 26 - Fântânile certei noastre
-Type: articol
-Author: Traian Dorz
-Highlight: lucrurile în aşa fel încât ei nici n-au pierit în acel <em>pustiu</em> şi nici n-au trebuit să caute fântâni străine şi
-
-Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 4 - Anul următor
-Type: articol
-Author: Traian Dorz
-Highlight: într-un noian de ură şi-ntr-un <em>pustiu</em> amar
 
 Score: 9.5
 Volume: Hristos - Marturia mea
@@ -446,14 +810,6 @@ Author: Traian Dorz
 Highlight: Era <em>pustiu</em> pe câmpuri şi-atât de frig mi-era
 
 Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: îngheţ şi <em>pustiu</em> şi-ntristare.
-
-Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 8 - Cânt. Cântărilor
@@ -462,12 +818,44 @@ Author: Traian Dorz
 Highlight: 5-Dar cine este-aceea ce dinspre <em>pustiu</em> se suie
 
 Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Ce dulce-a fost cândva
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-acum în plâns <em>pustiu</em> te zbaţi.
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Ce dulce-a fost cândva
 Type: poezie
 Author: Traian Dorz
 Highlight: şi-acum în plâns <em>pustiu</em> te zbaţi.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ce repede trec toate
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce gol <em>pustiu</em> rămâne în sufletul din care
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ce-I spui lui Isus?
+Type: poezie
+Author: Traian Dorz
+Highlight: ca un umblet prin <em>pustiu</em>?
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Cei culţi - şi cei desculţi
+Type: articol
+Author: Traian Dorz
+Highlight: 7 - Biserica fără Oastea Domnului ajunge un <em>pustiu</em>, Oastea Domnului fără biserică ajunge o vraişte
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -502,12 +890,12 @@ Author: Traian Dorz
 Highlight: şi din suflet un <em>pustiu</em>.
 
 Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Creatori şi creaţii
-Type: articol
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Cum ai vrea să spui!
+Type: poezie
 Author: Traian Dorz
-Highlight: 2 - La început fiecare avem în jurul nostru un <em>pustiu</em> întunecos, avem o inimă necredincioasă sau o casă
+Highlight: de pe drumul tău <em>pustiu</em>
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -535,11 +923,27 @@ Highlight: <em>pustiu</em> al ţarinilor mele
 
 Score: 9.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Când am trecut
+Book: Cântări Nemuritoare vol. 10
+Title: Când o să-ţi ardă cerul
 Type: poezie
 Author: Traian Dorz
-Highlight: era <em>pustiu</em> şi-ntunecat.
+Highlight: răsună în <em>pustiu</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Când spui “Femeia”
+Type: poezie
+Author: Traian Dorz
+Highlight: ar fi-un <em>pustiu</em> şi-ar fi-o durere, şi-ar fi-o tristeţe tot, - sub
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Când spui “Femeia”
+Type: poezie
+Author: Traian Dorz
+Highlight: ar fi-un <em>pustiu</em> şi-ar fi-ntuneric şi-ar fi-o tristeţe tot,
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -612,316 +1016,4 @@ Title: Despre hotărâre
 Type: articol
 Author: Traian Dorz
 Highlight: pe întuneric şi-n <em>pustiu</em>
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre voinţă
-Type: articol
-Author: Traian Dorz
-Highlight: în <em>pustiu</em>,
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Moldovei
-Type: articol
-Author: Traian Dorz
-Highlight: sunt rugăciuni amare rostite în <em>pustiu</em>.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-Highlight: 4 - În <em>pustiu</em> nu afli prieteni
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Olteniei
-Type: articol
-Author: Traian Dorz
-Highlight: 11 - Mai bine-n <em>pustiu</em> să stai
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, sunt o luminiţă
-Type: poezie
-Author: Traian Dorz
-Highlight: în al lumii-ntins <em>pustiu</em>
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Douăsprezece coşuri...
-Type: articol
-Author: Traian Dorz
-Highlight: trebuitoare celor care se înapoiau pe drumul lung şi <em>pustiu</em> până acasă. Iar ucenicii trebuiau să împartă celor
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Dragostea pentru înaintaşi
-Type: articol
-Author: Traian Dorz
-Highlight: sufletul şi cu mâna închisă. În jurul lor va fi numai <em>pustiu</em> - şi înăuntrul lor numai moarte.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Du-te şi tu de vesteşte
-Type: poezie
-Author: Traian Dorz
-Highlight: chiar de crezi că-i în <em>pustiu</em>
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Dumnezeule-al Luminii
-Type: poezie
-Author: Traian Dorz
-Highlight: fără Tine-i întuneric şi <em>pustiu</em> şi veşnic chin.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: După aceea Isus S-a dus...
-Type: articol
-Author: Traian Dorz
-Highlight: acolo ca să Se ducă Singur, la o parte, într-un <em>pustiu</em> (
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: După arşiţa de-o vară
-Type: poezie
-Author: Traian Dorz
-Highlight: peste cât <em>pustiu</em> tânjeşte
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: E-n trupul meu durerea
-Type: poezie
-Author: Traian Dorz
-Highlight: într-un noian de ură şi-ntr-un <em>pustiu</em> amar,
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Ei I-au zis: ce să facem?
-Type: articol
-Author: Traian Dorz
-Highlight: cultul, să-şi chinuie trupul, să se retragă în <em>pustiu</em>... şi cine mai ştie ce alt canon.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: El vine iar...
-Type: poezie
-Author: Traian Dorz
-Highlight: e lumea lung şi-amar <em>pustiu</em>
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Este aici un băieţel...
-Type: articol
-Author: Traian Dorz
-Highlight: mii de suflete, pe drumul anevoios şi greu prin <em>pustiu</em>, spre Canaanul ceresc.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Este scris: sunteţi dumnezei!
-Type: articol
-Author: Traian Dorz
-Highlight: La început fiecare avem în jurul nostru un <em>pustiu</em> întunecos,
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Eu Te păstrez Isuse
-Type: poezie
-Author: Traian Dorz
-Highlight: în loc <em>pustiu</em> pe drumul spre Casa-ndepărtată.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Eu Te păstrez Isuse
-Type: poezie
-Author: Traian Dorz
-Highlight: în loc <em>pustiu</em> pe drumul spre Casa-ndepărtată.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Eu eram copil Isuse...
-Type: poezie
-Author: Traian Dorz
-Highlight: ajunsese-aşa <em>pustiu</em>.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Eu n-am uitat
-Type: poezie
-Author: Traian Dorz
-Highlight: şi cântecul răsună a jale şi-a <em>pustiu</em>.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Eu sunt...
-Type: articol
-Author: Traian Dorz
-Highlight: decât întuneric, minciună, vrăjmăşie, moarte şi <em>pustiu</em>?...
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Iar îmi scrii măicuţă...
-Type: poezie
-Author: Traian Dorz
-Highlight: Preţul mântuirii omului <em>pustiu</em>:
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Ispita îţi întinde...
-Type: poezie
-Author: Traian Dorz
-Highlight: nu-s oare rugi amare strigate în <em>pustiu</em>?
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Ispita îţi întinde...
-Type: poezie
-Author: Traian Dorz
-Highlight: nu-s oare rugi amare strigate în <em>pustiu</em>?
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Isus a zis: strângeţi fărâmiturile
-Type: articol
-Author: Traian Dorz
-Highlight: Drumul fiind lung, locul fiind <em>pustiu</em>, sau necazul ţinând vreme multă, - nu uşor găseşti
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Isus, de veacuri eşti...
-Type: poezie
-Author: Traian Dorz
-Highlight: departe, unde stam <em>pustiu</em>,
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Isus, tot ce primim...
-Type: poezie
-Author: Traian Dorz
-Highlight: iubiri şi lacrimi în <em>pustiu</em>?
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Isuse, Dumnezeul şi Mântuitorul - nostru Slăvit
-Type: articol
-Author: Traian Dorz
-Highlight: capul, ci ai petrecut nopţi şi zile întregi în <em>pustiu</em>, în singurătate şi în munţi, rugându-Te şi veghind
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Isuse, o Isuse...- de-atâţia ani
-Type: poezie
-Author: Traian Dorz
-Highlight: - într-un <em>pustiu</em> în care nici un răsunet nu-i
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
-Type: articol
-Author: Traian Dorz
-Highlight: ruinează şi se pustieşte, iar acolo unde este ruină şi <em>pustiu</em>, nu mai este nici o primejdie şi nu mai ameninţă
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
-Type: articol
-Author: Traian Dorz
-Highlight: ori s-au pierdut - acela nici nu va afla decât <em>pustiu</em>. Şi acum, în veacul acesta, şi în veacul viitor
-
-Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
-Type: articol
-Author: Traian Dorz
-Highlight: nimicit a doua. Aşa că frumosul Ierusalim a rămas <em>pustiu</em> şi pustiit de tot. Sfântul Templu a rămas dărâmat
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Lumina
-Type: articol
-Author: Traian Dorz
-Highlight: - când nu vor mai fi ele va fi-un etern <em>pustiu</em>.
-
-Score: 9.5
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Mai smerit şi mai frumos
-Type: articol
-Author: Traian Dorz
-Highlight: asta dinspre întuneric, dinspre robie, dinspre <em>pustiu</em> niciodată...
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Mai vin, părinte drag
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-n jur tristeţe şi <em>pustiu</em>
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Mana
-Type: poezie
-Author: Traian Dorz
-Highlight: Ne-ai adus în locu-acesta de <em>pustiu</em> neroditor
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Mi-e inima adesea
-Type: poezie
-Author: Traian Dorz
-Highlight: Şi mintea mi-e adesea un sterp şi-ntins <em>pustiu</em>
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Minciuna
-Type: articol
-Author: Traian Dorz
-Highlight: însă minciuna te trânteşte în cel mai blestemat <em>pustiu</em>.
-
-Score: 9.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Minunată şi frumoasă
-Type: poezie
-Author: Traian Dorz
-Highlight: că n-au ochii strălucire şi că-n inimi e <em>pustiu</em>...
 

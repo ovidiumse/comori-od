@@ -1,110 +1,121 @@
-+---------------------------------------------------------------------------------------------+----------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences                                              | Author          | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+----------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Cap. 21 - Şi mărturia trebuie plătită                                                       | {'murdar', 'murdari', 'murdărie', 'murdăria', 'murdară'} | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 5 - În noaptea aceea...                                                                | {'murdar', 'murdărie', 'murdării', 'murdari'}            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'murdar', 'murdărit'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Jugul, sarcina şi crucea                                                          | {'murdar'}                                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - Şi laţul s-a rupt                                                                  | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Despre lăcomie                                                                              | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din alte diferite părţi                                                                     | {'murdar', 'murdărit', 'murdăria', 'murdară'}            | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | {'murdar', 'murdărie', 'murdară'}                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                        | {'murdar', 'murdară', 'murdărit', 'murdăriei'}           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Din părţile Moldovei                                                                        | {'murdar', 'murdăria', 'murdărie'}                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'murdar', 'murdară', 'murdari'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'murdar', 'murdării'}                                   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'murdar', 'murdărit'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                      | {'murdar', 'murdărie'}                                   | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - Aşa ne-au judecat                                                                  | {'murdar', 'murdari'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Din părţile Crişanei                                                                        | {'murdar', 'murdărie'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 17-a după Rusalii                                               | {'murdar', 'murdară'}                                    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)          | {'murdar', 'murdară'}                                    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                                    | {'murdar', 'murdăria'}                                   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Statornicie şi abatere                                                                      | {'murdar', 'murdăriile'}                                 | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Înfricoşata lepădare                                                               | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                                | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 21 - La 25 de ani...                                                                   | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                                | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                                      | {'murdar'}                                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 26 - Proverbe                                                                          | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 31 - O altă judecată                                                                   | {'murdar'}                                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - A treia Judecată                                                                   | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                                    | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                                  | {'murdar'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cum voi mai putea trăi?                                                                     | {'murdar'}                                               | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Da şi nu                                                                                    | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Despre muncă                                                                                | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre omenie                                                                               | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre răbdare                                                                              | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Bucovinei                                                                       | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Maramureşului                                                                   | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Isus în Templu învăţa norodul                                                               | {'murdar'}                                               | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Judecata                                                                                    | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| L-au dus întâi la Ana                                                                       | {'murdar'}                                               | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 2-a a Postului Mare                                             | {'murdar'}                                               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)                  | {'murdar'}                                               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 28-a după Rusalii                                               | {'murdar'}                                               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                      | {'murdar'}                                               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| O Doamne, deschide-le ochii                                                                 | {'murdar'}                                               | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Părinţii şi copiii                                                                          | {'murdar'}                                               | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Risipa                                                                                      | {'murdar'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Râvna pentru Casa Ta...                                                                     | {'murdar'}                                               | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Strigătul şi şoapta                                                                         | {'murdar'}                                               | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Teama Înălţimilor Tale                                                                      | {'murdar'}                                               | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                                               | {'murdăria', 'murdăriile', 'murdari'}                    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Poruncile şi legămintele                                                                    | {'murdăria'}                                             | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | {'murdării'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Al doilea 2-4-2                                                                   | {'murdărie', 'murdari'}                                  | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 6 - Alte amare adevăruri                                                               | {'murdari', 'murdării'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                     | {'murdării', 'murdari'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | {'murdării'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Du-te de te spală                                                                           | {'murdari', 'murdăria'}                                  | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                      | {'murdăria', 'murdari'}                                  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Nu descuraja niciodată                                                                      | {'murdăria', 'murdării'}                                 | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Porunca şi ascultarea                                                                       | {'murdari', 'murdăria'}                                  | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| ... Unul din voi                                                                            | {'murdară'}                                              | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| ... Vino după Mine...                                                                       | {'murdării'}                                             | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Atât de mult...                                                                             | {'murdărită'}                                            | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Au prins deci pe Isus şi L-au legat                                                         | {'murdăria'}                                             | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Aur şi zgură                                                                                | {'murdărie'}                                             | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                      | {'murdărie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                           | {'murdăresc'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                          | {'murdării'}                                             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'murdării'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 24 - Pânza care se ţese                                                                | {'murdari'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                                    | {'murdărie'}                                             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                            | {'murdărie'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                                 | {'murdară'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                                           | {'murdară'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cine lucrează după adevăr, - vine la lumină                                                 | {'murdară'}                                              | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cu ştergarul cu care era încins                                                             | {'murdăria'}                                             | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Dacă nu-l atrage Tatăl                                                                      | {'murdară'}                                              | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| De patru zile... în mormânt                                                                 | {'murdăria'}                                             | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Despre curăţie                                                                              | {'murdărie'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre lene                                                                                 | {'murdăria'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre mânie                                                                                | {'murdărie'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre păcat                                                                                | {'murdăresc'}                                            | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                                       | {'murdari'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Ei l-au ocărât                                                                              | {'murdărie'}                                             | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Isus a găsit pe...                                                                          | {'murdări'}                                              | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Isus la Ierusalim                                                                           | {'murdărie'}                                             | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Judecata stă... în iubirea întunericului                                                    | {'murdară'}                                              | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                             | {'murdărie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                    | {'murdari'}                                              | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 15-a după Rusalii                                               | {'murdărite'}                                            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                               | {'murdărie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)       | {'murdăria'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)      | {'murdăresc'}                                            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | {'murdărie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                               | {'murdărie'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'murdăria'}                                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Le-au umplut până sus                                                                       | {'murdară'}                                              | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Lenea                                                                                       | {'murdăria'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-+---------------------------------------------------------------------------------------------+----------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Murdar using http://localhost:9000...
-Got 120 hits:
-Score: 14.375
++---------------------------------------------------------------------------------------------+-----------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences                       | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+-----------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Cap. 5 - În noaptea aceea...                                                                | {'murdar', 'murdării', 'murdari'} | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                                       | {'murdar', 'murdari'}             | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cercetarea de sine                                                                          | {'murdar', 'murdari'}             | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Jugul, sarcina şi crucea                                                          | {'murdar'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - Şi laţul s-a rupt                                                                  | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Despre lăcomie                                                                              | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'murdar', 'murdării'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 7 - Aşa ne-au judecat                                                                  | {'murdar', 'murdari'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'murdar', 'murdari'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Strămoşii şi învăţămintele                                                                  | {'murdar', 'murdari'}             | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
+| Adevăr şi imitaţie                                                                          | {'murdar'}                        | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Au şi cuvintele-o durere                                                                    | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Binefacerea şi recunoştinţa                                                                 | {'murdar'}                        | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Bunătatea Tatălui Ceresc                                                                    | {'murdar'}                        | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Înfricoşata lepădare                                                               | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 2 - A treia zi istorică                                                                | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                             | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                                      | {'murdar'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 21 - La 25 de ani...                                                                   | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                                | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Şi ultimul 2                                                                      | {'murdar'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 26 - Proverbe                                                                          | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Cap. 31 - O altă judecată                                                                   | {'murdar'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 8 - A treia Judecată                                                                   | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                                    | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                                                  | {'murdar'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cei din urmă şi cei dintâi...                                                               | {'murdar'}                        | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Cum voi mai putea trăi?                                                                     | {'murdar'}                        | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Curăţia şi creaţia                                                                          | {'murdar'}                        | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Da şi nu                                                                                    | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Darurile Duhului Sfânt                                                                      | {'murdar'}                        | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Despre muncă                                                                                | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre omenie                                                                               | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre răbdare                                                                              | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                                                     | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Bucovinei                                                                       | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Crişanei                                                                        | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Maramureşului                                                                   | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Moldovei                                                                        | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Gust şi lumină                                                                              | {'murdar'}                        | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
+| Isus în Templu învăţa norodul                                                               | {'murdar'}                        | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Judecata                                                                                    | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| L-au dus întâi la Ana                                                                       | {'murdar'}                        | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 17-a după Rusalii                                               | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 2-a a Postului Mare                                             | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)          | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)                  | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 28-a după Rusalii                                               | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                      | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                        | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                                    | {'murdar'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Luca 15, 20-24                                                                              | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Mai sus doresc                                                                              | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Mormântul şi recunoştinţa                                                                   | {'murdar'}                        | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Nu judecaţi!                                                                                | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| O Doamne, deschide-le ochii                                                                 | {'murdar'}                        | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Preaiubit Isus, Jertfa noastră Sfântă                                                       | {'murdar'}                        | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Părinţii şi copiii                                                                          | {'murdar'}                        | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Păzirea Lucrării Domnului                                                                   | {'murdar'}                        | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Risipa                                                                                      | {'murdar'}                        | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Râvna pentru Casa Ta...                                                                     | {'murdar'}                        | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Statornicie şi abatere                                                                      | {'murdar'}                        | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Strigătul şi şoapta                                                                         | {'murdar'}                        | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Talentele şi aflarea lor                                                                    | {'murdar'}                        | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
+| Teama Înălţimilor Tale                                                                      | {'murdar'}                        | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Ucenicul acesta este...                                                                     | {'murdar'}                        | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Zvonurile dezbinătoare                                                                      | {'murdar'}                        | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Cap. 11 - Răscrucea Isus                                                                    | {'murdării'}                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Alte amare adevăruri                                                               | {'murdari', 'murdării'}           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                                     | {'murdării', 'murdari'}           | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                                    | {'murdării'}                      | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| ... Vino după Mine...                                                                       | {'murdării'}                      | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Adevăr şi falsitate                                                                         | {'murdari'}                       | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Bucuria păcatului                                                                           | {'murdări'}                       | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                          | {'murdării'}                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Al doilea 2-4-2                                                                   | {'murdari'}                       | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'murdării'}                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 24 - Pânza care se ţese                                                                | {'murdari'}                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Din părţile Munteniei                                                                       | {'murdari'}                       | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Du-te de te spală                                                                           | {'murdari'}                       | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Fluviul şi Oceanul                                                                          | {'murdării'}                      | Traian Dorz | Semănaţi Cuvântul Sfânt          | Cugetări Nemuritoare         | articol |
+| Independenţa trupească şi cea sufletească                                                   | {'murdării'}                      | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Isus a găsit pe...                                                                          | {'murdări'}                       | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                    | {'murdari'}                       | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                                               | {'murdari'}                       | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                      | {'murdari'}                       | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Lăudătorii micimii                                                                          | {'murdari'}                       | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Naşterea din nou                                                                            | {'murdări'}                       | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Noapte în Gheenă                                                                            | {'murdari'}                       | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Nu descuraja niciodată                                                                      | {'murdării'}                      | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| O peşteră... o piatră                                                                       | {'murdări'}                       | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Oricui bea din apa aceasta                                                                  | {'murdării'}                      | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Porunca şi ascultarea                                                                       | {'murdari'}                       | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Primirea şi darea                                                                           | {'murdării'}                      | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Păcatul şi ispăşirea                                                                        | {'murdării'}                      | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Răbdarea şi înţelegerea                                                                     | {'murdări'}                       | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Răufăcătorii Lucrării Domnului                                                              | {'murdari'}                       | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
++---------------------------------------------------------------------------------------------+-----------------------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Murdar using https://api.comori-od.ro...
+Got 104 hits:
+Score: 14.333333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: înjurau, cum se zvârcoleau în acest noroi <em>murdar</em>, mai <em>murdar</em> cel sufletesc parcă, decât cel trupesc.
+Highlight: cât palma, în care ardea un bec obosit, galben şi <em>murdar</em> - se vedea un colţişor de geam, prin care se vedea
+Highlight: hârdaielor sau de pe la pământ şi gunoaie numai <em>murdării</em>, noroi şi apă... Era
+Highlight: zac unii peste alţii <em>murdari</em> şi uzi, o claie
+
+Score: 14.3
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 21 - Şi mărturia trebuie plătită
@@ -113,23 +124,18 @@ Author: Traian Dorz
 Highlight: se zvârcoleau în acest noroi întunecat şi <em>murdar</em>. Mai <em>murdar</em> parcă cel sufletesc - decât celălalt.
 Highlight: cât palma în care ardea un bec obosit, galben şi <em>murdar</em> - se vedea - ireal de departe şi de sus - printr-un
 Highlight: i-au vândut vreun Iuda pe <em>murdari</em> arginţi pe-orice
-Highlight: ca şi la mijloc erau trei hârdaie mari pentru <em>murdărie</em> în care sutele de oameni din dormitor, în cea
-Highlight: stropiţi pe toate hainele de jos şi până sus, de <em>murdăria</em> care se usca ca o scoarţă pe hainele lor.  Începură
-Highlight: această lume care este o junglă îngrozitoare şi <em>murdară</em>, cu fiinţe respingătoare şi mai primejdioase decât
-
-Score: 14.357142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: înjurau, cum se zvârcoleau în acest noroi <em>murdar</em>, mai <em>murdar</em> cel sufletesc parcă, decât cel trupesc.
-Highlight: cât palma, în care ardea un bec obosit, galben şi <em>murdar</em> - se vedea un colţişor de geam, prin care se vedea
-Highlight: la mijlocul lui, erau trei hârdaie mari pentru <em>murdărie</em> la care sutele de oameni din dormitor, în cea
-Highlight: hârdaielor sau de pe la pământ şi gunoaie numai <em>murdării</em>, noroi şi apă... Era
-Highlight: zac unii peste alţii <em>murdari</em> şi uzi, o claie
 
 Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Cercetarea de sine
+Type: articol
+Author: Traian Dorz
+Highlight: să fim serioşi oriunde, mai ales în acest veac <em>murdar</em> şi uşuratic. Să nu ne permitem glume nepotrivite
+Highlight: 14 - Veacul acesta s-a prăbuşit în cel mai <em>murdar</em> păcat, în păcatul desfrânării trupului, a sufletului
+Highlight: nimic care vorbesc orice. Acest fel de oameni <em>murdari</em> şi uşuratici au ajuns să umple acum tot pământul
+
+Score: 12.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
@@ -137,7 +143,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: putuse până la el să prăvălească muntele acesta <em>murdar</em> şi ucigător, aducând în locul lui soarele şi primăvara
 Highlight: încă pe atât de mulţi. Şi mai batjocoreşte atât de <em>murdar</em> cauza lui Dumnezeu.
-Highlight: când tot ce-i vrednic de-nchinare e lepădat şi <em>murdărit</em> când
 
 Score: 12.666666
 Volume: Hristos - Marturia mea
@@ -166,59 +171,6 @@ Author: Traian Dorz
 Highlight: 98 - Un câştig <em>murdar</em> aduce pagubă întotdeauna,
 Highlight: 99 - Nădejdea de câştig <em>murdar</em>
 
-Score: 9.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-Highlight: - când ţi-e degetul <em>murdar</em>
-Highlight: vei fi udat şi <em>murdărit</em>.  93
-Highlight: n-aruncă <em>murdăria</em> la vecin -
-Highlight: 151 - Dacă mâna ta-i <em>murdară</em> nu ţi-o-ntinde
-
-Score: 9.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
-Type: articol
-Author: Traian Dorz
-Highlight: bădăran, se roagă neglijent, cântă nepăsător, trăiesc <em>murdar</em>, se poartă nesimţit... necuviincios, neatent. Cât
-Highlight: întunericului veşnic şi prăbuşirea în propria lor <em>murdărie</em> nevrednică, mai curând decum îşi închipuie ei
-Highlight: mai frumos. Se poate albi şi o haină care a fost <em>murdară</em> cândva, prin lucrarea unui curăţitor puternic.
-Highlight: prin această putere o haină care nici n-a fost <em>murdară</em> deloc!
-
-Score: 9.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
-Type: articol
-Author: Traian Dorz
-Highlight: scufundarea în desfrânare, prăbuşirea în robia celui mai <em>murdar</em> şi mai ruşinos dintre toate păcatele, care este
-Highlight: clipă îngrozitoare şi ce prăbuşire nevrednică şi <em>murdară</em> este aceasta! Ce tăvălire în noroi! Ce trădare
-Highlight: Uşa Îndurării şi spre Faţa Dragostei pe care a <em>murdărit</em>-o... Dacă lacrimile vor fi sincere şi dacă durerea
-Highlight: după noi, la noi şi pentru noi, aici în lumea <em>murdăriei</em>, în dispreţul păcatului, în primejdia morţii,
-
-Score: 9.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Moldovei
-Type: articol
-Author: Traian Dorz
-Highlight: să se facă porc <em>murdar</em>!
-Highlight: <em>murdăria</em> ca şi lenea şi ca boala - sunt păcat.  15
-Highlight: 44 - Iertăm uşor o <em>murdărie</em> pe caracterul orişicui -
-
-Score: 9.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
-Type: articol
-Author: Traian Dorz
-Highlight: tocmai inima ta, în chipul cel mai mişelesc şi mai <em>murdar</em>. Ca să se împlinească profeţia: acela care întinde
-Highlight: ca mărturisirea lor: uşuratică şi amestecată, <em>murdară</em> şi prefăcută, vicleană şi lacomă, îngâmfată şi
-Highlight: cei mai decăzuţi, mai vânduţi lui satana şi mai <em>murdari</em> îndrăznesc - fără nici un fel de ruşine şi în total
-
 Score: 9.75
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
@@ -230,24 +182,6 @@ Highlight: vor împroşca cu aceste <em>murdării</em> tot ce aveţi voi sfânt.
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: tem că nu vor rămânea singurii vinovaţi de acest <em>murdar</em> păcat împotriva unei Lucrări sfinte care trebuie
-Highlight: când tot ce-i vrednic de-nchinare e lepădat sau <em>murdărit</em>,
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: - Scroafe <em>murdar</em>!
-Highlight: multă, iar înăuntru un miros greu de mucegai şi de <em>murdărie</em> stătută. Am pipăit în colţ un prici de lemn şi
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 7 - Aşa ne-au judecat
 Type: articol
@@ -256,49 +190,54 @@ Highlight: planul acesta era mai gândit, mai şiret şi mai <em>murdar</em>.
 Highlight: Între acestea - cei patru pereţi grei şi groşi şi <em>murdari</em>... Apoi tavanul negru de deasupra şi cimentul negru
 
 Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Crişanei
-Type: articol
-Author: Traian Dorz
-Highlight: nu-şi ţine trupul său <em>murdar</em>.
-Highlight: putrezi-va-n <em>murdărie</em>.
-
-Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 17-a după Rusalii
+Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
 Type: articol
 Author: Traian Dorz
-Highlight: .. Ca şi sămânţa cea căzută în drum. Un picior <em>murdar</em> o îngroapă în noroi. O copită o zdrobeşte... Un
-Highlight: poftele şi păcatele sale, stările şi prezenţa sa <em>murdară</em> şi scârboasă, desigur că Dumnezeu nu mai poate
-
-Score: 9.666667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
-Type: articol
-Author: Traian Dorz
-Highlight: argint, dacă el este trecut printr-un cuptor rece şi <em>murdar</em>, el nu iese de acolo lămurit şi strălucitor - ci
-Highlight: fi un medicament, dacă este luat cu o lingură <em>murdară</em> sau cu o seringă infectată, - medicamentul nu va
-
-Score: 9.666667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
-Type: articol
-Author: Traian Dorz
-Highlight: Li se înfăţişează aşa cum e el, negru, urât şi <em>murdar</em>, cum este păcatul pe care li-l îmbie.
-Highlight: câte astfel de fapte ale unui cuget curăţat de <em>murdăria</em> păcatului în care trăise înainte de clipa cea
+Highlight: tocmai inima ta, în chipul cel mai mişelesc şi mai <em>murdar</em>. Ca să se împlinească profeţia: acela care întinde
+Highlight: cei mai decăzuţi, mai vânduţi lui satana şi mai <em>murdari</em> îndrăznesc - fără nici un fel de ruşine şi în total
 
 Score: 9.666667
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Statornicie şi abatere
+Book: Şi acum să facem
+Title: Strămoşii şi învăţămintele
 Type: articol
 Author: Traian Dorz
-Highlight: Dumnezeu care este Curăţie, urăşte tot ce este <em>murdar</em> în gânduri, în cuvinte, în fapte - la orice om
-Highlight: - Toate <em>murdăriile</em>, toate înşelăciunile, toate crimele, toate vânzările
+Highlight: curaţi şi treji, ca şi de trupul care are ochiul <em>murdar</em> şi adormit!
+Highlight: sau mai târziu în lupta cu aceşti trei Goliaţi <em>murdari</em>, fie deodată fie pe rând... Dar ori de câte ori
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Adevăr şi imitaţie
+Type: articol
+Author: Traian Dorz
+Highlight: Cel rău este un imitator <em>murdar</em>: orice lucrează original Dumnezeu, - satana pândeşte
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Au şi cuvintele-o durere
+Type: poezie
+Author: Traian Dorz
+Highlight: dar ce <em>murdar</em> şi uşuratic îl spun atâţia pe pământ!
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Binefacerea şi recunoştinţa
+Type: articol
+Author: Traian Dorz
+Highlight: sfinte cu gândul necinstit, sau lacom, sau necurat (<em>murdar</em>), desfrânat, necurăţit!
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Bunătatea Tatălui Ceresc
+Type: articol
+Author: Traian Dorz
+Highlight: Ca pe sămânţa cea căzută în drum, un picior <em>murdar</em> o îngroapă în noroi...
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -307,6 +246,14 @@ Title: Cap. 1 - Înfricoşata lepădare
 Type: articol
 Author: Traian Dorz
 Highlight: suflete slabe, cu atât cei ce lucrează în acest mod <em>murdar</em> şi mârşav - sunt mai vinovaţi şi mai vrednici de
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
+Type: articol
+Author: Traian Dorz
+Highlight: tem că nu vor rămânea singurii vinovaţi de acest <em>murdar</em> păcat împotriva unei Lucrări sfinte care trebuie
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -323,6 +270,14 @@ Title: Cap. 2 - Istoria unei Jertfe...
 Type: articol
 Author: Traian Dorz
 Highlight:  nr. 3 cu ilustraţia: un lup <em>murdar</em>, în piele de oaie cu 3 cărţi de joc în gură şi
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: - Scroafe <em>murdar</em>!
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -390,11 +345,27 @@ Highlight: / Domnul vrea să fii în rai / iar satan să fii <em>murdar</em>” 
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Cei din urmă şi cei dintâi...
+Type: articol
+Author: Traian Dorz
+Highlight: se despartă de Dumnezeul lor în chipul cel mai <em>murdar</em>,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Cum voi mai putea trăi?
 Type: articol
 Author: Traian Dorz
 Highlight: de leşie şi plină de nisip. Un clei scârbos şi <em>murdar</em> îmi lipise mâinile şi picioarele de aşternutul
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Curăţia şi creaţia
+Type: articol
+Author: Traian Dorz
+Highlight: Cine se apropie <em>murdar</em> va fi ars. Cine se apropie curat, va fi sfinţit
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -403,6 +374,14 @@ Title: Da şi nu
 Type: poezie
 Author: Traian Dorz
 Highlight: iar satan să fii <em>murdar</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Darurile Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: Li se înfăţişează aşa cum e el, negru, urât şi <em>murdar</em>, cum este păcatul pe care li-l îmbie lor.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -431,6 +410,14 @@ Highlight: decât să mănânci o pâine pe-un ban câştigat <em>murdar</em>,
 Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
+Title: Din alte diferite părţi
+Type: articol
+Author: Traian Dorz
+Highlight: - când ţi-e degetul <em>murdar</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Bucovinei
 Type: articol
 Author: Traian Dorz
@@ -439,10 +426,34 @@ Highlight: 86 - Înşelătoria este meşteşugul cel <em>murdar</em>
 Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Crişanei
+Type: articol
+Author: Traian Dorz
+Highlight: nu-şi ţine trupul său <em>murdar</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Maramureşului
 Type: articol
 Author: Traian Dorz
 Highlight: nici la trup şi nici la suflet nu-i <em>murdar</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Moldovei
+Type: articol
+Author: Traian Dorz
+Highlight: să se facă porc <em>murdar</em>!
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Gust şi lumină
+Type: articol
+Author: Traian Dorz
+Highlight: întrebat: Prietene, cum ai intrat tu aici? Un om <em>murdar</em> într-un loc sfânt?...
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -471,10 +482,26 @@ Highlight: viclene şi flămânde, în bârlogul lupului turbat şi <em>murdar</
 Score: 9.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 17-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: .. Ca şi sămânţa cea căzută în drum. Un picior <em>murdar</em> o îngroapă în noroi. O copită o zdrobeşte... Un
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 2-a a Postului Mare
 Type: articol
 Author: Traian Dorz
 Highlight: spre a-şi prăbuşi fiinţa într-un noroi tot mai <em>murdar</em> şi etern!
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
+Type: articol
+Author: Traian Dorz
+Highlight: argint, dacă el este trecut printr-un cuptor rece şi <em>murdar</em>, el nu iese de acolo lămurit şi strălucitor - ci
 
 Score: 9.5
 Volume: Hristos - Puterea Apostoliei
@@ -501,6 +528,62 @@ Author: Traian Dorz
 Highlight: dintre voi aţi fost legaţi atât de crunt şi de <em>murdar</em>! Acum desigur nu vă mai îmbătaţi să faceţi bătăi
 
 Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
+Type: articol
+Author: Traian Dorz
+Highlight: bădăran, se roagă neglijent, cântă nepăsător, trăiesc <em>murdar</em>, se poartă nesimţit... necuviincios, neatent. Cât
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
+Type: articol
+Author: Traian Dorz
+Highlight: scufundarea în desfrânare, prăbuşirea în robia celui mai <em>murdar</em> şi mai ruşinos dintre toate păcatele, care este
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
+Type: articol
+Author: Traian Dorz
+Highlight: Li se înfăţişează aşa cum e el, negru, urât şi <em>murdar</em>, cum este păcatul pe care li-l îmbie.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Luca 15, 20-24
+Type: poezie
+Author: Traian Dorz
+Highlight: un <em>murdar</em> rămâne şi-un pierdut zdrenţos
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Mai sus doresc
+Type: poezie
+Author: Traian Dorz
+Highlight: acest noroi <em>murdar</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Mormântul şi recunoştinţa
+Type: articol
+Author: Traian Dorz
+Highlight: Sfinţenia fără curaj este terfelită de păcatul <em>murdar</em>. Demnitatea fără curaj, este insultată de slugărnicia
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Nu judecaţi!
+Type: poezie
+Author: Traian Dorz
+Highlight: în gura unui porc <em>murdar</em>
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Împăratul nostru
 Title: O Doamne, deschide-le ochii
@@ -509,12 +592,28 @@ Author: Traian Dorz
 Highlight: Nădejdea de câştig <em>murdar</em>
 
 Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Preaiubit Isus, Jertfa noastră Sfântă
+Type: articol
+Author: Traian Dorz
+Highlight: a fost, oricât de neruşinat a vorbit, oricât de <em>murdar</em> s-a purtat - că printr-o pocăinţă tot atât de adâncă
+
+Score: 9.5
 Volume: Cugetări Nemuritoare
 Book: Lumina Iubitului Fiu
 Title: Părinţii şi copiii
 Type: articol
 Author: Traian Dorz
 Highlight: pe aceasta pentru toate grămezile voastre de aur <em>murdar</em> şi pieritor.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Păzirea Lucrării Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: inima ta în chipul cel mai mişelesc şi cel mai <em>murdar</em>.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -534,11 +633,27 @@ Highlight: lovi obrazul neruşinat al diavolului, marele porc <em>murdar</em>, c
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Statornicie şi abatere
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeu care este Curăţie, urăşte tot ce este <em>murdar</em> în gânduri, în cuvinte, în fapte - la orice om
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Strigătul şi şoapta
 Type: articol
 Author: Traian Dorz
 Highlight: pentru că într-un moment dat a intrat acolo un porc <em>murdar</em>, ci alungă porcul şi-şi păstrează casa.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Talentele şi aflarea lor
+Type: articol
+Author: Traian Dorz
+Highlight: scris, pentru a înlătura tot ce este mort, fals şi <em>murdar</em>, ca să rămână numai ceea ce este viu, sănătos şi
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -548,25 +663,21 @@ Type: articol
 Author: Traian Dorz
 Highlight: 5 - Acest noroi <em>murdar</em> poate să se reverse iarăşi oricând peste inima
 
-Score: 0.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Ucenicul acesta este...
 Type: articol
 Author: Traian Dorz
-Highlight: Suferă toată <em>murdăria</em> pe care ţi-o aruncă, suferă în locul celor care-au
-Highlight: pierdute, umblând ca oile căpiate prin toate <em>murdăriile</em> şi spinii nelegiuirilor în care ne ţinea vechiul
-Highlight: surorile în ochii şi în urechile cărora se aruncă <em>murdăria</em> învinuirilor nedrepte contra noastră tac...
-Highlight: împotriva Lui. Toţi aceşti martori mincinoşi şi <em>murdari</em> spun neadevăruri. Omul Acesta n-a fost în stare
+Highlight: Cele mai sfinte cântări dacă se aud în loc <em>murdar</em>, sună ca nişte ocări pentru Numele Cel Sfânt al
 
-Score: 0.75
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Poruncile şi legămintele
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Zvonurile dezbinătoare
 Type: articol
-Author: Pr. Iosif Trifa
-Highlight: oglinzi, oglinda îmi arată <em>murdăria</em> de pe obraz. Dar lumina atât: ea îmi arată <em>murdăria</em>, dar nu o şterge.
-Highlight: făcea lumină în viaţa omului arătându-i păcatul şi <em>murdăria</em>.
+Author: Traian Dorz
+Highlight: Cele mai sfinte cântări dacă se aud în loc <em>murdar</em>, sună ca nişte ocări pentru Numele Cel Sfânt al
 
 Score: 0.6666666
 Volume: Istoria unei Jertfe
@@ -576,15 +687,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: care mai de care, cu cele mai grele pietre şi <em>murdării</em> în binefăcătorul lor de ieri, care se chinuia
 Highlight: prefăcătoria lui Nicolae Vonica se sparse ca un hârdău cu <em>murdării</em>. Ceea ce n-am mai putut nici auzi nici vedea niciodată
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 22 - Al doilea 2-4-2
-Type: articol
-Author: Traian Dorz
-Highlight: pentru că aproape totdeauna aflam prin castron <em>murdărie</em> de şobolan, pietricele, paie, aţe, aşchii de lemn
-Highlight: cum am fost fiecare gâfâind, uzi de sudoare şi <em>murdari</em> de praful devenit noroi pe ochi, pe gurile, pe
 
 Score: 0.6666666
 Volume: Istoria unei Jertfe
@@ -613,50 +715,6 @@ Author: Traian Dorz
 Highlight: piatră scumpă. Au aruncat asupra ei cu tot felul de <em>murdării</em> şi au lovit-o cu tot felul de ciocane, căutând
 Highlight: Când aceste “filtre” se umplu ele însele de <em>murdării</em>, - desigur este de cea mai mare nevoie ca ele
 
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Du-te de te spală
-Type: articol
-Author: Traian Dorz
-Highlight: fiindcă nu se lasă spălaţi, rămân veşnic negri şi <em>murdari</em>, ca roata morii care deşi veşnic stă tot sub revărsarea
-Highlight:  Evangheliei, ca să ţi se ducă toată <em>murdăria</em> minţii şi a inimii tale, a trecutului şi a prezentului
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-Highlight: El ne-a spălat cu Sângele Lui de toată <em>murdăria</em> păcatelor noastre.
-Highlight: numai pentru cei neprihăniţi, ci şi pentru cei mai <em>murdari</em>. Nu numai pentru cei binefăcători, ci şi pentru
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Nu descuraja niciodată
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă nu-L primeşti pe El, - vei pieri în <em>murdăria</em> ta.
-Highlight: de prin căderi şi <em>murdării</em>,
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Porunca şi ascultarea
-Type: articol
-Author: Traian Dorz
-Highlight: fiindcă nu se lasă spălaţi, rămân veşnic negri şi <em>murdari</em>, cum rămâne roata morii care deşi veşnic stă sub
-Highlight:  Evangheliei, ca să ţi se ducă toată <em>murdăria</em> minţii şi a inimii tale, a trecutului şi a prezentului
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: ... Unul din voi
-Type: articol
-Author: Traian Dorz
-Highlight: după ce trece, după ce pleacă, este ca atingerea <em>murdară</em> şi rece a unei târâtoare urâte şi veninoase. Şi
-
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
@@ -666,44 +724,20 @@ Author: Traian Dorz
 Highlight: să-i tot scoale de prin gropi, de prin căderi şi <em>murdării</em>. Să-i tot spele şi să-i tot tragă după El, să-i
 
 Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Atât de mult...
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Adevăr şi falsitate
 Type: articol
 Author: Traian Dorz
-Highlight: Acela prin care ai fost creat, îţi spală faţa <em>murdărită</em> de păcatul omului şi de păcatul lui satana, curăţindu-te
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Au prins deci pe Isus şi L-au legat
-Type: articol
-Author: Traian Dorz
-Highlight: privim la Iuda, la această zdreanţă tăvălită în <em>murdăria</em> celui mai cumplit dintre toate păcatele, trădarea
+Highlight: copiilor săi. Îi chinuie, îi poartă goi, flămânzi şi <em>murdari</em>. Îi alungă sau îi ucide.
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Aur şi zgură
+Book: Crucea Mântuitoare
+Title: Bucuria păcatului
 Type: articol
 Author: Traian Dorz
-Highlight: poate ridica în sus - ea se varsă în jos, ca orice <em>murdărie</em>.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-Highlight: tot ce te strânsese ca o coajă, te apăsase ca o <em>murdărie</em> şi te mâncase ca un jeg.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: vina mea. Ceea ce Pictorul lucrează, eu stric şi <em>murdăresc</em>.
+Highlight: Astfel o mână va <em>murdări</em> pe alta.
 
 Score: 0.5
 Volume: Hristos - Marturia mea
@@ -712,6 +746,14 @@ Title: Cap. 19 - Şi binele trebuie plătit
 Type: articol
 Author: Traian Dorz
 Highlight: obiectul acela în colţ. Era tineta, hârdăul de <em>murdării</em>. Ce bine că este măcar aceasta.
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 22 - Al doilea 2-4-2
+Type: articol
+Author: Traian Dorz
+Highlight: cum am fost fiecare gâfâind, uzi de sudoare şi <em>murdari</em> de praful devenit noroi pe ochi, pe gurile, pe
 
 Score: 0.5
 Volume: Istoria unei Jertfe
@@ -730,102 +772,6 @@ Author: Traian Dorz
 Highlight: adunarea Domnului nişte lucrători răi, nechibzuiţi, <em>murdari</em>, leneşi, lacomi ori nebuni care dorm, sau lenevesc
 
 Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: crezându-se nişte uriaşi s-au înecat în propria lor <em>murdărie</em> care i-a acoperit fără a mai putea ieşi din ea
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-Highlight: multă, iar înăuntru un miros greu de mucegai şi <em>murdărie</em> stătută.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: răsplătit cu rău, mai ales atunci când politica <em>murdară</em> e amestecată până şi în biserică.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 9 - Înţelepciunea şi puterea
-Type: articol
-Author: Traian Dorz
-Highlight: minunate faci cu meseria ta. Intri într-o casă <em>murdară</em>, te apuci de lucru, şi când o deschizi e alta.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Cine lucrează după adevăr, - vine la lumină
-Type: articol
-Author: Traian Dorz
-Highlight: Scrii corespondenţă ruşinoasă, <em>murdară</em> şi necredincioasă?
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Cu ştergarul cu care era încins
-Type: articol
-Author: Traian Dorz
-Highlight: sau când vrei să te ocupi de <em>murdăria</em> pe care o are el sau în el,
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Dacă nu-l atrage Tatăl
-Type: articol
-Author: Traian Dorz
-Highlight: bine să nu te duci. Decât să mergi acolo cu haina <em>murdară</em> sau cu intenţii murdare. Căci totdeauna eşti în
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: De patru zile... în mormânt
-Type: articol
-Author: Traian Dorz
-Highlight: de <em>murdăria</em> cuvintelor pe care le vorbesc,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre curăţie
-Type: articol
-Author: Traian Dorz
-Highlight: Neprihănirea-i ca şi ochiul: chiar cea mai mică <em>murdărie</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre lene
-Type: articol
-Author: Traian Dorz
-Highlight: 10 - În apa cea stătută s-adună <em>murdăria</em>,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre mânie
-Type: articol
-Author: Traian Dorz
-Highlight: 26 - Apa tulbure aduce mult gunoi şi <em>murdărie</em>;
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre păcat
-Type: articol
-Author: Traian Dorz
-Highlight: <em>murdăresc</em> tot ce privesc.
-
-Score: 0.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Munteniei
@@ -836,10 +782,26 @@ Highlight: - nici gând sfânt la cei <em>murdari</em>.
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
-Title: Ei l-au ocărât
+Title: Du-te de te spală
 Type: articol
 Author: Traian Dorz
-Highlight: poate ridica în sus, ea se varsă în jos, ca orice <em>murdărie</em>
+Highlight: fiindcă nu se lasă spălaţi, rămân veşnic negri şi <em>murdari</em>, ca roata morii care deşi veşnic stă tot sub revărsarea
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Fluviul şi Oceanul
+Type: articol
+Author: Traian Dorz
+Highlight: ori ceva mai târziu, în nişte băltoace pline de <em>murdării</em> şi broaşte. Ar fi fost mai bine să nu fi fost
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Independenţa trupească şi cea sufletească
+Type: articol
+Author: Traian Dorz
+Highlight: oprească ei înşişi de la fumat, de la sudalme, de la <em>murdării</em>? Îndată ce vor avea prima ocazie vor păcătui din
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -848,30 +810,6 @@ Title: Isus a găsit pe...
 Type: articol
 Author: Traian Dorz
 Highlight: Noi numai ne putem <em>murdări</em>. Dar de spălat
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Isus la Ierusalim
-Type: articol
-Author: Traian Dorz
-Highlight: acesta al Domnului, diavolul a întinat totul cu <em>murdărie</em> şi nelegiuiri. De aceea este neapărat nevoie de
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Judecata stă... în iubirea întunericului
-Type: articol
-Author: Traian Dorz
-Highlight:  spre băltoacele păcatului cu o <em>murdară</em> plăcere trupul şi sufletul său,
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
-Type: articol
-Author: Traian Dorz
-Highlight: Altora le-au tăvălit-o în <em>murdărie</em> şi aşa i-au silit s-o înghită.
 
 Score: 0.5
 Volume: Hristos - Puterea Apostoliei
@@ -884,72 +822,104 @@ Highlight: şi făţarnici, şerpi şi pui de năpârci. Pe cei <em>murdari</em>
 Score: 0.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 15-a după Rusalii
+Title: La Apostolul din Duminica a 14-a după Rusalii
 Type: articol
 Author: Traian Dorz
-Highlight: multe au fost <em>murdărite</em> de păcat,
+Highlight: împotriva Lui. Toţi aceşti martori mincinoşi şi <em>murdari</em> spun neadevăruri. Omul Acesta n-a fost în stare
 
 Score: 0.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 19-a după Rusalii
+Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
 Type: articol
 Author: Traian Dorz
-Highlight: cumva pe conducta vieţii noastre să se adune vreo <em>murdărie</em>, vreun păcat ascuns, vreo infecţie care apoi să
+Highlight: numai pentru cei neprihăniţi, ci şi pentru cei mai <em>murdari</em>. Nu numai pentru cei binefăcători, ci şi pentru
 
 Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Lăudătorii micimii
 Type: articol
 Author: Traian Dorz
-Highlight: nerecunoştinţa voastră, cu insultele voastre, cu <em>murdăria</em> netrebniciei voastre, care n-aţi suferit nimic
+Highlight: sau cu banii <em>murdari</em> ai păcatului,
 
 Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Naşterea din nou
 Type: articol
 Author: Traian Dorz
-Highlight: niciodată după gunoaiele lumii, pentru care se <em>murdăresc</em> atât de mulţi!
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
-Type: articol
-Author: Traian Dorz
-Highlight: În loc să fie curăţie şi frumuseţe, a devenit <em>murdărie</em> şi urâciune. Aproape nici un cuvânt omenesc de
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
-Type: articol
-Author: Traian Dorz
-Highlight: de plămâni - din zgârcenie, din nepăsare, din <em>murdărie</em> şi aşa mai departe.
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-Highlight: gunoaie... dacă urechile ei vor fi astupate de <em>murdăria</em> păcatului sau asurzite de ţipetele lumeşti...
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Le-au umplut până sus
-Type: articol
-Author: Traian Dorz
-Highlight: tot ce fusese în ele. Adică de apa stătută şi <em>murdară</em> a trecutului.
+Highlight: N-o lepăda, n-o sfâşia, n-o <em>murdări</em>.
 
 Score: 0.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Lenea
+Book: Cântări Nemuritoare vol. 1
+Title: Noapte în Gheenă
+Type: poezie
+Author: Traian Dorz
+Highlight: zac unii peste alţii <em>murdari</em> şi uzi, o claie
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Nu descuraja niciodată
 Type: articol
 Author: Traian Dorz
-Highlight: 13 - Trândăvia-i <em>murdăria</em> unde se adună toate
+Highlight: de prin căderi şi <em>murdării</em>,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: O peşteră... o piatră
+Type: articol
+Author: Traian Dorz
+Highlight: Astfel o mână va <em>murdări</em> pe alta, şi un păcat va acoperi pe altul.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Oricui bea din apa aceasta
+Type: articol
+Author: Traian Dorz
+Highlight: scârbit de toată această apă întinată cu atâtea <em>murdării</em> celebre, se va îneca în deznădejde.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Porunca şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: fiindcă nu se lasă spălaţi, rămân veşnic negri şi <em>murdari</em>, cum rămâne roata morii care deşi veşnic stă sub
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Primirea şi darea
+Type: articol
+Author: Traian Dorz
+Highlight: pierdut demult această însuşire aleasă, umblând prin <em>murdării</em>, trăind prin mortăciuni, trăind prin haznale!
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Păcatul şi ispăşirea
+Type: articol
+Author: Traian Dorz
+Highlight: scârbit de toată această apă întinată cu atâtea <em>murdării</em> “celebre”, se va îneca în deznădejde.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Răbdarea şi înţelegerea
+Type: articol
+Author: Traian Dorz
+Highlight: praf, - umblarea stricată a altora, uşor te poate <em>murdări</em>...
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Răufăcătorii Lucrării Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: în ce mai decăzuţi, mai vânduţi satanei şi mai <em>murdari</em>, îndrăznesc fără nici un fel de ruşine şi în total
 

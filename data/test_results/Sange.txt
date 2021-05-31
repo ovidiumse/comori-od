@@ -1,149 +1,137 @@
-+------------------------------------------------------------------------------------+---------------------------------+-----------------+-------------------------------+------------------------------+---------+
-| Titlu                                                                              | Occurrences                     | Author          | Tip                           | Carte                        | Volum   |
-+------------------------------------------------------------------------------------+---------------------------------+-----------------+-------------------------------+------------------------------+---------+
-| La Apostolul din Duminica a 5-a a Postului Mare                                    | {'sânge', 'Sângele', 'Sânge'}   | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Soseşte Mirele Izbăvitor                                                           | {'sânge', 'sângele', 'Sângele'} | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
-| La Apostolul din Duminica a 28-a după Rusalii                                      | {'Sânge', 'sângele', 'Sângele'} | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 13 - După luarea lui Moisi...                                                 | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                    | {'sânge', 'Sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                                   | {'Sânge', 'sânge', 'Sângele'}   | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)               | {'sânge', 'Sângele'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                           | {'sânge', 'sângele', 'Sângele'} | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                | {'sânge', 'Sângele', 'sângele'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                            | {'sânge', 'sângele', 'Sângele'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                           | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Sângele Mielului                                                                   | {'Sânge', 'sângele', 'Sângele'} | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Atât de mult...                                                                    | {'Sânge', 'Sângele'}            | Traian Dorz     | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 12 - Dovada supremei iubiri                                                   | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'sânge', 'Sângele', 'sângele'} | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                           | {'sângele', 'sânge'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Golgota...                                                                         | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| Cap. 28 - Necazurile din lungul drumului                                           | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 5 - Necazuri şi speranţe                                                      | {'sânge', 'Sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Doamne, Ziua ce desparte...                                                        | {'sânge', 'Sânge', 'Sângele'}   | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Iată Omul                                                                          | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)    | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| În Vinerea Patimilor                                                               | {'sânge', 'Sânge', 'Sângele'}   | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | poezie  |
-| În Vinerea Patimilor                                                               | {'sânge', 'Sângele'}            | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Cain                                                                               | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Cap. 11 - Semnele Oastei Domnului                                                  | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                             | {'Sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                              | {'sânge'}                       | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                            | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cu Domnul spre Golgota - 1                                                         | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Cu Domnul spre Golgota - 2                                                         | {'sânge', 'Sânge'}              | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Cântări Îndepărtate...                                                             | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Doamne-n Săptămâna asta...                                                         | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)              | {'sânge', 'Sânge'}              | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Lângă Crucea lui Isus...                                                           | {'sânge'}                       | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| Moşteniri                                                                          | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| În mâinile lor...                                                                  | {'sânge'}                       | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| Şi mai frică...                                                                    | {'sânge'}                       | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| ... Doamne, Tu să-mi speli picioarele?                                             | {'sânge', 'sângele', 'Sângele'} | Traian Dorz     | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
-| ... Du-te şi să nu mai păcătuieşti                                                 | {'Sânge', 'Sângele'}            | Traian Dorz     | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                             | {'sânge', 'sângere', 'sângele'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 5 - Binecuvântata muncă grea                                                  | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 11 - Răscrucea Isus                                                           | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain) | {'Sânge', 'Sângele'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Nici o vină...                                                                     | {'sânge', 'Sângele', 'sângele'} | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| Nu descuraja niciodată                                                             | {'sânge', 'Sângele'}            | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
-| Plânge ucigaşul                                                                    | {'sânge', 'sângele'}            | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| ... El este Acela...                                                               | {'Sângele', 'sânge'}            | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| ...Ce plin de ierni e aici!                                                        | {'sânge', 'sângele'}            | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Al treilea cuvânt                                                                  | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
-| Binefacerea şi recunoştinţa                                                        | {'sângele', 'sânge'}            | Traian Dorz     | Păşunile Dulci                | Cugetări Nemuritoare         | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                   | {'sânge', 'sângere'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                  | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 21 - La 25 de ani...                                                          | {'sânge', 'Sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                | {'sânge', 'sângele'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Din ziua aceea au hotărât                                                          | {'sânge', 'Sângele'}            | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
-| Ferirea de ispite                                                                  | {'sânge', 'sângele'}            | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Isus în Templu                                                                     | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Sfinţitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Isuse Drag, ce Crucea                                                              | {'Sânge', 'sângele'}            | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)    | {'sânge', 'Sângele'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                                      | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)     | {'sânge', 'Sângele'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Lazăre vino!                                                                       | {'sânge', 'Sângele'}            | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
-| Mulţi au citit                                                                     | {'Sânge', 'Sângele'}            | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
-| O Doamne Isuse,                                                                    | {'Sânge', 'Sângele'}            | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Oricui bea din apa aceasta                                                         | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Pilat îşi spală mâinile                                                            | {'Sânge', 'Sângele'}            | Traian Dorz     | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Trimişii fariseilor                                                                | {'sânge', 'sângele'}            | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| Împreună lucrători cu Dumnezeu                                                     | {'Sânge', 'Sângele'}            | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
-| ... Mielul lui Dumnezeu                                                            | {'Sânge'}                       | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Pentru că n-au cunoscut                                                        | {'sânge'}                       | Traian Dorz     | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
-| Acum din nou...                                                                    | {'Sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Am biruit                                                                          | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Am cu Hristos un legământ                                                          | {'sânge'}                       | Traian Dorz     | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Am cu Hristos un legământ                                                          | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Aproape, ca o seară...                                                             | {'Sânge'}                       | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
-| Aproape, ca o seară...                                                             | {'Sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Aruncă-ţi de pe umeri                                                              | {'Sânge'}                       | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | poezie  |
-| Atuncea când am fost                                                               | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Bolnav de iubire                                                                   | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Cap. 10 - Va veni un altul...                                                      | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Un an adânc roditor                                                      | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 16 - Leacul dureroasei sfâşieri                                               | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                     | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                       | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                      | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                           | {'sânge'}                       | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 25 - Al şaptelea foc                                                          | {'sânge'}                       | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 25 - Istorie şi suferinţă                                                     | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 29 - Proverbe                                                                 | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cap. 30 - Proverbe                                                                 | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cap. 4 - Anul următor                                                              | {'sânge'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Ce sfânt e-un legământ                                                             | {'Sânge'}                       | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Ce sfânt e-un legământ                                                             | {'Sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Ce-ai dori tu oare?                                                                | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Celui plătit... nu-i pasă                                                          | {'sânge'}                       | Traian Dorz     | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cetatea lui Andrei şi a lui Petru                                                  | {'sânge'}                       | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| Chiar dac-ar fi                                                                    | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
-| Credinţă - cea                                                                     | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Cu Domnul spre Golgota - 3                                                         | {'sânge'}                       | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-+------------------------------------------------------------------------------------+---------------------------------+-----------------+-------------------------------+------------------------------+---------+
-Searching Sange using http://localhost:9000...
-Got 459 hits:
-Score: 7.964286
++---------------------------------------------------------------------------------+--------------------+-----------------+-------------------------------+------------------------------+---------+
+| Titlu                                                                           | Occurrences        | Author          | Tip                           | Carte                        | Volum   |
++---------------------------------------------------------------------------------+--------------------+-----------------+-------------------------------+------------------------------+---------+
+| Sânge şi apă...                                                                 | {'sânge', 'Sânge'} | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 5-a a Postului Mare                                 | {'sânge', 'Sânge'} | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 13 - După luarea lui Moisi...                                              | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                                | {'Sânge', 'sânge'} | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                 | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 28-a după Rusalii                                   | {'Sânge'}          | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)            | {'sânge'}          | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Soseşte Mirele Izbăvitor                                                        | {'sânge'}          | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
+| Sângele Tău...                                                                  | {'Sânge'}          | Traian Dorz     | Credinţa Încununată           | Cugetări Nemuritoare         | poezie  |
+| Sângele Tău...                                                                  | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Acum şi atunci                                                                  | {'sânge', 'Sânge'} | Traian Dorz     | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                             | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                        | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                         | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                        | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Mâinile şi Golgota                                                              | {'sânge'}          | Traian Dorz     | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| Atât de mult...                                                                 | {'Sânge'}          | Traian Dorz     | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cain                                                                            | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Cap. 11 - Semnele Oastei Domnului                                               | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                          | {'Sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                          | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                           | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                        | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                         | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                        | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 5 - Necazuri şi speranţe                                                   | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cu Domnul spre Golgota - 1                                                      | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Cu Domnul spre Golgota - 2                                                      | {'sânge', 'Sânge'} | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Cântări Îndepărtate...                                                          | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Doamne, Ziua ce desparte...                                                     | {'sânge', 'Sânge'} | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Doamne-n Săptămâna asta...                                                      | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Fărădelegile şi Dreptatea                                                       | {'sânge'}          | Traian Dorz     | Porţile Veşniciei             | Cugetări Nemuritoare         | articol |
+| Golgota...                                                                      | {'sânge'}          | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| Iată Omul                                                                       | {'sânge'}          | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)           | {'sânge', 'Sânge'} | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv) | {'sânge'}          | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Lângă Crucea lui Isus...                                                        | {'sânge'}          | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| Mamă, uite mamă                                                                 | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare          | poezie  |
+| Moşteniri                                                                       | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Naşterea din nou                                                                | {'sânge'}          | Traian Dorz     | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| Pentru ca voi să credeţi                                                        | {'sânge'}          | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Tot pe Cruce e Isus                                                             | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Vorba şi scrierea                                                               | {'sânge'}          | Traian Dorz     | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| În Vinerea Patimilor                                                            | {'sânge', 'Sânge'} | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | poezie  |
+| În Vinerea Patimilor                                                            | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| În mâinile lor...                                                               | {'sânge'}          | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| Şi mai frică...                                                                 | {'sânge'}          | Traian Dorz     | Hristos - Jertfa noastră      | Meditații la Ev. după Ioan   | articol |
+| ... Doamne, Tu să-mi speli picioarele?                                          | {'sânge'}          | Traian Dorz     | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
+| ... Du-te şi să nu mai păcătuieşti                                              | {'Sânge'}          | Traian Dorz     | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| ... El este Acela...                                                            | {'sânge'}          | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Mielul lui Dumnezeu                                                         | {'Sânge'}          | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Pentru că n-au cunoscut                                                     | {'sânge'}          | Traian Dorz     | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | articol |
+| ...Ce plin de ierni e aici!                                                     | {'sânge'}          | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Acum din nou...                                                                 | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Adevărata credinţă                                                              | {'sânge'}          | Traian Dorz     | Numele Biruitorului           | Cugetări Nemuritoare         | articol |
+| Adevăratul ucenic al Domnului                                                   | {'sânge'}          | Traian Dorz     | Lupta cea Bună                | Cugetări Nemuritoare         | articol |
+| Al treilea cuvânt                                                               | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | poezie  |
+| Alegerea şi mărturia                                                            | {'Sânge'}          | Traian Dorz     | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| Am biruit                                                                       | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Am cu Hristos un legământ                                                       | {'sânge'}          | Traian Dorz     | Hristos - Pacea noastră       | Meditații la Ev. după Ioan   | poezie  |
+| Am cu Hristos un legământ                                                       | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Aproape, ca o seară...                                                          | {'Sânge'}          | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | poezie  |
+| Aproape, ca o seară...                                                          | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Are cine să-l osândească...                                                     | {'sânge'}          | Traian Dorz     | Hristos - Împăratul nostru    | Meditații la Ev. după Ioan   | articol |
+| Aruncă-ţi de pe umeri                                                           | {'Sânge'}          | Traian Dorz     | Mărturisirea Strălucită       | Cugetări Nemuritoare         | poezie  |
+| Aruncă-ţi de pe umeri                                                           | {'Sânge'}          | Traian Dorz     | Piatra Scumpă                 | Cugetări Nemuritoare         | poezie  |
+| Aruncă-ţi de pe umeri                                                           | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Atuncea când am fost                                                            | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Aveai şi tu                                                                     | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Binefacerea şi recunoştinţa                                                     | {'sânge'}          | Traian Dorz     | Păşunile Dulci                | Cugetări Nemuritoare         | articol |
+| Bolnav de iubire                                                                | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Bucurie şi întristare                                                           | {'sânge'}          | Traian Dorz     | Cununile Slăvite              | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Va veni un altul...                                                   | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                        | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                          | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Un an adânc roditor                                                   | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 16 - Leacul dureroasei sfâşieri                                            | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                                | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 19 - Al treilea februarie                                                  | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                                    | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                               | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                                   | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 21 - La 25 de ani...                                                       | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                        | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 25 - Al şaptelea foc                                                       | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 25 - Istorie şi suferinţă                                                  | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 29 - Proverbe                                                              | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cap. 30 - Proverbe                                                              | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
+| Cap. 4 - Anul următor                                                           | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 5 - Binecuvântata muncă grea                                               | {'sânge'}          | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 7 - Printre leu şi printre urs                                             | {'sânge'}          | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Ce mult îmi pare c-am trăit                                                     | {'sânge'}          | Traian Dorz     | Eternele Poeme                | Cugetări Nemuritoare         | poezie  |
+| Ce mult îmi pare c-am trăit                                                     | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare          | poezie  |
+| Ce neagră-i Poarta asta                                                         | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Ce sfânt e-un legământ                                                          | {'Sânge'}          | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Ce sfânt e-un legământ                                                          | {'Sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Ce-ai dori tu oare?                                                             | {'sânge'}          | Traian Dorz     | Cântări Nemuritoare vol. 7    | Cântări Nemuritoare          | poezie  |
+| Celui plătit... nu-i pasă                                                       | {'sânge'}          | Traian Dorz     | Hristos - Păstorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cernerea Lucrării Domnului                                                      | {'sânge'}          | Traian Dorz     | Garanţia Veşnică              | Cugetări Nemuritoare         | articol |
++---------------------------------------------------------------------------------+--------------------+-----------------+-------------------------------+------------------------------+---------+
+Searching Sange using https://api.comori-od.ro...
+Got 328 hits:
+Score: 18.714285
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Sânge şi apă...
+Type: articol
+Author: Traian Dorz
+Highlight: străpuns coasta cu o suliţă; şi îndată a ieşit din ea <em>sânge</em> şi apă.
+Highlight: Cel ce a venit nu numai cu apă, ci cu apă şi cu <em>Sânge</em>
+Highlight: nici o putere. După cum n-ar fi avut nici apă fără <em>sânge</em>.
+Highlight: Şi cu cât Jertfa de <em>Sânge</em> a lui Dumnezeu este nespus mai mare decât orice
+Highlight: asupra coastei Sale din care curgeau şiroaie de <em>sânge</em>, şi întorcându-se apoi spre mulţime, le-a spus cu
+Highlight: trebuie să încetăm a spune: Slavă Scumpului Tău <em>Sânge</em> ispăşitor.
+Highlight: <em>Sânge</em> şi apă...
+
+Score: 7.875
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a a Postului Mare
 Type: articol
 Author: Traian Dorz
-Highlight: în Locul preasfânt, nu cu <em>sânge</em> de ţapi şi de viţei, ci cu Însuşi <em>Sângele</em> Său, după ce a căpătat o răscumpărare
+Highlight: dată pentru totdeauna, în Locul preasfânt, nu cu <em>sânge</em> de ţapi şi de viţei, ci cu Însuşi Sângele Său, după
 Highlight: Cine cinsteşte acest Sfânt <em>Sânge</em> şi îl primeşte cu o pocăinţă atât de adânc recunoscătoare
 Highlight: de-ajuns o dată şi pe vecii vecilor preţul acestui <em>Sânge</em> care i s-a dat.
 Highlight: primească atât de mult cât i s-a dat prin acest <em>Sânge</em>, şi acum, cât i se îmbie, aceluia nu numai că nu
 Highlight: Lui. Toate legămintele Vechiului Testament prin <em>sânge</em> şi jertfe preînchipuiau numai marele şi cutremurătorul
 Highlight: până astăzi a trebuit să aducă şi ei preţul lor de <em>sânge</em> şi de suferinţă, pentru că L-au primit, pentru că
 
-Score: 7.3615384
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Soseşte Mirele Izbăvitor
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: stropită cu <em>sânge</em>, era un mort. Unde era <em>sânge</em> de miel era viaţă, unde nu era acest <em>sânge</em>, era moarte
-Highlight: fioroasă a morţii şi un înger a uns uşiorii caselor cu <em>sânge</em> de miel - a sosit scăparea.  Mielul
-Highlight: dobitoc... şi va fi <em>sângele</em> semn vouă pe casele în care veţi fi. Eu voi vedea <em>sângele</em> şi voi trece pe lângă
-Highlight: sufletele noastre, dar ne apără <em>Sângele</em> Mielului. Ah, ce scump şi preţios este <em>Sângele</em> Mielului în faţa Tatălui
-Highlight: noastre, cu <em>Sângele</em> Mielului... a uns mintea şi inima noastră, să înţelegem şi să primim <em>Sângele</em> Mielului
-Highlight: de fiecare casă şi să-l junghie. Şi să ia din <em>sângele</em> lui şi să ungă amândoi stâlpii de la uşă şi pragul
-
-Score: 7.3285713
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 28-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: întunericului! Ce putere mare şi veşnică are acest <em>Sânge</em> Sfânt, de a spăla orice păcat şi de a sfinţi orice
-Highlight: strălucit ca acela!... Ce fel de <em>Sânge</em> este acesta?
-Highlight: Dumnezeieşti din care a curs şi peste tine acest <em>Sânge</em> cutremurător de Sfânt al Preadulcelui, Preascumpului
-Highlight: Preaiubitului tău Mântuitor! Căci numai acest Sfânt şi Unic <em>Sânge</em> te-a răscumpărat şi pe tine de sub puterea diavolului
-Highlight: 14. în care avem răscumpărarea, prin <em>sângele</em> Lui, iertarea păcatelor. 15
-Highlight: 14 - Prin <em>Sângele</em> Lui O
-
-Score: 7.288889
+Score: 7.2000003
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 13 - După luarea lui Moisi...
@@ -153,23 +141,8 @@ Highlight: până la moarte pentru Adevăr, a suferit până la <em>sânge</em> 
 Highlight: reci, masa stropită cu lacrimi, patul stropit cu <em>sânge</em>, treptele presărate cu suspine, drumurile presărate
 Highlight: atâta trudă şi sudoare sfântă, stropit cu atâta <em>sânge</em> şi lacrimi sfinte. Încă odată ucigaşa lăcomie îşi
 Highlight: înveţe măcar pe viitor ca să ne împotrivim până la <em>sânge</em> în lupta de a păstra Lucrarea Domnului ferită de
-Highlight: Jertfa Golgotei. Zi de zi, prin suferinţa lui, cu <em>sângele</em> lui, cu viaţa lui, a lucrat la uriaşa clădire a
-Highlight: Acesta este Testamentul scris cu <em>sângele</em> lui pe toate paginile din cartea vieţii lui. Ultimul
 
-Score: 7.275
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: O noapte cu <em>sânge</em>
-Highlight: mă înfricoşez. Perina şi patul meu erau pline de <em>sânge</em>. Se deschise cu putere rana din piept. Am trezit
-Highlight: Şi am rămas. La 10 ani de Oaste, am scris, cu <em>sânge</em>, acel număr festiv din foaia
-Highlight: Eu am scris 12 ani, cu <em>sânge</em> de jertfă, ceea ce am scris. Se înşală cei ce cred
-Highlight: care ţi se dă de sus, de pe Crucea Golgotei prin <em>Sângele</em> şi meritele lui Isus Cel Răstignit pentru tine
-Highlight: trezit pe fiul meu Tit, şi am plâns împreună. <em>Sângele</em> îmi spunea că trebuie să plec iar pe drumul spitalului
-
-Score: 7.2333336
+Score: 7.2000003
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 15 - Călătoria la Ierusalim
@@ -179,9 +152,30 @@ Highlight: Am plâns pe locul unde Şi-a vărsat Scumpul Său <em>Sânge</em> pe
 Highlight: seara Patimilor Sale, cu lacrimi şi cu sudori de <em>sânge</em> pentru biruinţa mântuirii noastre. Iată aici aproape
 Highlight: locul unde S-a rugat Mântuitorul meu cu sudori de <em>sânge</em> mai mult am plâns decât m-am rugat. Nu puteam altcum
 Highlight: locul unde El S-a rugat pentru mine cu sudori de <em>sânge</em> eu mă simţesc atât de vinovat, atât de ticălos,
-Highlight: în marmură roşie... buzele mele părea că ating <em>Sângele</em> Mântuitorului - şi de sus din icoană părea că aud
 
-Score: 7.2333336
+Score: 7.2000003
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: O noapte cu <em>sânge</em>
+Highlight: mă înfricoşez. Perina şi patul meu erau pline de <em>sânge</em>. Se deschise cu putere rana din piept. Am trezit
+Highlight: Şi am rămas. La 10 ani de Oaste, am scris, cu <em>sânge</em>, acel număr festiv din foaia
+Highlight: Eu am scris 12 ani, cu <em>sânge</em> de jertfă, ceea ce am scris. Se înşală cei ce cred
+
+Score: 7.2000003
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 28-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: întunericului! Ce putere mare şi veşnică are acest <em>Sânge</em> Sfânt, de a spăla orice păcat şi de a sfinţi orice
+Highlight: este nespus mai strălucit ca acela!... Ce fel de <em>Sânge</em> este acesta?
+Highlight: Dumnezeieşti din care a curs şi peste tine acest <em>Sânge</em> cutremurător de Sfânt al Preadulcelui, Preascumpului
+Highlight: Preaiubitului tău Mântuitor! Căci numai acest Sfânt şi Unic <em>Sânge</em> te-a răscumpărat şi pe tine de sub puterea diavolului
+
+Score: 7.2000003
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)
@@ -190,22 +184,49 @@ Author: Traian Dorz
 Highlight: cuvinte de <em>sânge</em> şi de lacrimi să-ţi mai vorbesc eu ţie despre ceea ce nu pot decât cu <em>sânge</em> şi cu lacrimi
 Highlight: cunună de spini pe cap, scuipaţi şi bătuţi până la <em>sânge</em>, goi şi dispreţuiţi ca El, pentru ca să ne putem
 Highlight:  suferă, plângi, roagă-te, luptă chiar până la <em>sânge</em>, dar nu te lipi!... Nu te mai alipi niciodată şi
-Highlight: a plăti diavolului prin suferinţele Sale, prin <em>Sângele</em> Său şi prin moartea Sa, preţul nespus de mare cerut
 
-Score: 6.9
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
+Score: 7.2000003
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Soseşte Mirele Izbăvitor
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: stropită cu <em>sânge</em>, era un mort. Unde era <em>sânge</em> de miel era viaţă, unde nu era acest <em>sânge</em>, era moarte
+Highlight: fioroasă a morţii şi un înger a uns uşiorii caselor cu <em>sânge</em> de miel - a sosit scăparea.  Mielul
+
+Score: 7.2000003
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Sângele Tău...
+Type: poezie
+Author: Traian Dorz
+Highlight: Sfânt <em>Sânge</em> Preacurat
+Highlight: Sfânt <em>Sânge</em> - decât Tine?
+Highlight: - o <em>Sânge</em> Sfânt al lui
+Highlight: Sfânt <em>Sânge</em>, nu mă mai lăsa
+
+Score: 7.2000003
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Sângele Tău...
+Type: poezie
+Author: Traian Dorz
+Highlight: Sfânt <em>Sânge</em> Preacurat
+Highlight: Sfânt <em>Sânge</em> - decât Tine?
+Highlight: - O <em>Sânge</em> Sfânt al lui
+Highlight: Sfânt <em>Sânge</em>, nu mă mai lăsa
+
+Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Acum şi atunci
 Type: articol
 Author: Traian Dorz
-Highlight: să-mi curgă <em>sânge</em> din rana operată astă-vară. Când i-am arătat pr. Vasile mâna plină de <em>sânge</em> din rana ce
-Highlight: iubirii şi recunoştinţei mele pentru jertfa ce cu <em>sânge</em> şi cu suferinţă o faci pentru a ne scoate definitiv
-Highlight: aceleia tot <em>sângele</em> tuturor prorocilor lui Hristos. De la <em>sângele</em> lui Abel până la <em>sângele</em> lui Zaharia
-Highlight: plecat spre casă cu rana sângerând. Dar şi din <em>sângele</em> acesta, din jertfa aceasta a ieşit biruinţa, în
-Highlight: tare şi dulce. Din împunsătura spinilor a picurat <em>Sângele</em> Domnului. Din spinii suferinţelor şi încercărilor
-Highlight: aceea şi Isus ca să sfinţească norodul cu Însuşi <em>Sângele</em> Său, a pătimit dincolo de poartă. Să ieşim dar
+Highlight: Hristos este Cel ce a venit nu numai cu apă, ci şi cu <em>sânge</em> (
+Highlight: După cum n-ar fi avut apă fără <em>sânge</em>.
+Highlight: Şi cu cât Jertfa de <em>Sânge</em> a lui Dumnezeu - este nespus mai mare decât orice
 
-Score: 6.888889
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
@@ -214,22 +235,27 @@ Author: Traian Dorz
 Highlight: se ivise dintr-o dată boala asta cu vărsături de <em>sânge</em> pe gură, pe nas... Cu dureri ascuţite în piept.
 Highlight: Autopsia a dovedit că două cheaguri de <em>sânge</em> pornite din tromboflebita lui de la picior, se opriseră
 Highlight: pe care noi l-am scris o viaţă întreagă unii cu <em>sânge</em>, alţii cu sudoare. Unii cu lacrimi, alţii cu vânătăi
-Highlight: Lucrarea lui Dumnezeu câştigată cu <em>Sângele</em> Sfânt al Lui şi cu <em>sângele</em> atâtor alor Lui.
-Highlight: Duhul Harului şi să calci în picioare din nou <em>Sângele</em> prin care ai fost răscumpărat şi Jertfa cutremurătoare
-Highlight: Dumnezeu va cere mare parte din <em>sângele</em> acestui neam din mâna voastră, lucrători ai Oastei
 
-Score: 6.8333335
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: să-mi curgă <em>sânge</em> din rana operată astă-vară. Când i-am arătat pr. Vasile mâna plină de <em>sânge</em> din rana ce
+Highlight: iubirii şi recunoştinţei mele pentru jertfa ce cu <em>sânge</em> şi cu suferinţă o faci pentru a ne scoate definitiv
+
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 6 - Zile rânduite şi paşi număraţi
 Type: articol
 Author: Traian Dorz
-Highlight:  dar ei nu ne lăsau. Pereţii erau numai <em>sânge</em>... De <em>sângele</em> nostru erau stropiţi peste tot şi murdari
 Highlight: cu pumnii, ni se părea că ne odihnim. Eram numai <em>sânge</em>. Se dezbrăcară numai în cămaşă. Ne-au bătut până
+Highlight: pe jos, dar ei nu ne lăsau. Pereţii erau numai <em>sânge</em>... De sângele nostru erau stropiţi peste tot şi
 Highlight: fel cu fraţii. Au fost bătuţi şi acolo până la <em>sânge</em>...
-Highlight: minunea asta. Iar ei mărturiseau cu lacrimi despre <em>Sângele</em> Răscumpărător şi despre Harul cel puternic al Mântuitorului
 
-Score: 6.8
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 8 - Al şaptelea foc
@@ -238,147 +264,25 @@ Author: Traian Dorz
 Highlight: azi curge numai <em>sânge</em> şi plâns din rana grea
 Highlight: rod cu <em>sânge</em> sfânt muncit.
 Highlight: legământ de <em>sânge</em> pe-un trecut amar.
-Highlight: cei care ne lăsasem pe front ani din viaţă, ori <em>sângele</em>, ori fraţii, ori părinţii noştri...
 
-Score: 6.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Sângele Mielului
-Type: poezie
+Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Mâinile şi Golgota
+Type: articol
 Author: Traian Dorz
-Highlight: Sfântul <em>Sânge</em>-al lui Hristos
-Highlight: să-i ia <em>sângele</em> să-şi ungă poarta caselor cu el.  Mielul
-Highlight: va fi izbăvirea noastră, <em>sângele</em>-i un legământ...  Ei
-Highlight: ... <em>Sângele</em> e Legământul neschimbat
-Highlight: <em>Sângele</em> Mielului
+Highlight: Când sunt crispate de ură şi mânjite de <em>sânge</em>,
+Highlight: câte suflete s-au târât spre tine, presărând cu <em>sânge</em>, cu lacrimi şi cu sudoare, fiecare urmă a lui Dumnezeu
+Highlight: Golgota nume de lumină, cuvânt de foc, cântare de <em>sânge</em> şi lacrimi, - Tu eşti starea negrăită şi strălucită
 
-Score: 6.208333
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
 Title: Atât de mult...
 Type: articol
 Author: Traian Dorz
-Highlight: satana, curăţindu-te cu Unicul Său <em>Sânge</em> în stare să te spele: <em>Sângele</em> Lui!
+Highlight: păcatul lui satana, curăţindu-te cu Unicul Său <em>Sânge</em> în stare să te spele: Sângele Lui!
 Highlight: mereu avem nevoie de iertarea şi spălarea Acestui <em>Sânge</em> Sfânt,
-Highlight: după ce a primit cunoştinţa Adevărului, pângărind <em>Sângele</em> cu care a fost sfinţit şi batjocorind pe Duhul
-Highlight: primeşte mărturisirea şi chemarea aceasta. Crede în <em>Sângele</em> lui Isus Hristos care pentru noi a curs pe Cruce
-Highlight: Dumnezeu ţi-a dat în scris, Pecetluit cu <em>Sângele</em> Fiului Său, actul testamentului Iertării Sale.
-Highlight: închinăm cutremuraţi în faţa Crucii pe care curge <em>Sângele</em> Cel Scump al Tău, Mântuitorul nostru Sfânt, spălând
-
-Score: 6.1666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: ) şi a luptat până la <em>sânge</em> în războiul cel sfânt al Domnului Isus.
-Highlight: Hristos din jertfă, udat cu lacrimi şi răscumpărat cu <em>sânge</em> sfânt şi cu suferinţă sfântă - să nu poată fi nimicit
-Highlight: nevoie permanent de mari plăci de vată pentru <em>sângele</em> ce se prelingea şi puroiul ce supura continuu din
-Highlight: ), a mers mereu înainte stropind cu <em>sângele</em> lui câmpul de luptă al Evangheliei. S-a
-Highlight: Iată, cu cât mai mult este Duhul decât carnea şi <em>sângele</em>. Şi legăturile sufleteşti decât cele trupeşti!
-
-Score: 6.1666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: ardea, din nas mi se prelingeau două şiroaie de <em>sânge</em> pe mâini, pe piept, pe podea... Parcă nu mă durea
-Highlight: sudori pe care mi le ştergeam împreună cu urmele de <em>sânge</em> rămase pe faţă. Nişte cuţite de foc îmi străpungeau
-Highlight: Mântuitorul nostru a plătit preţul păcatelor noastre cu <em>Sângele</em> Său, noi am fost iertaţi. Altfel n-am fi fost salvaţi
-Highlight: dă o dată plesneşte pielea vânătă şi împroaşcă <em>sângele</em> peste tot. Văzând-o aşa îmi zise:
-Highlight: picioare. De multe ori dimineaţa eram dus să-mi şterg <em>sângele</em> stropit pe parchet.
-
-Score: 6.133333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
-Type: articol
-Author: Traian Dorz
-Highlight: oprească <em>sângele</em>, apoi m-au legat cu nişte prosoape şi obiele, care se umplură şi ele îndată de <em>sânge</em>. Aşa
-Highlight: ridicat de acolo cu labele picioarelor scăldate în <em>sânge</em>, tăiate aproape de tot.  Au
-Highlight: plângând. Din picioarele mele desculţe curgea vale <em>sângele</em> înroşind pământul şi iarba.  Mama
-
-Score: 6.133333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Golgota...
-Type: articol
-Author: Traian Dorz
-Highlight: câte suflete s-au târât spre tine presărând cu <em>sânge</em>, cu lacrimi şi cu sudoare fiecare urmă a lui Dumnezeu
-Highlight: Golgota, nume de lumină, cuvânt de foc, cântare de <em>sânge</em> şi de lacrimi. Tu eşti starea negrăită şi strălucită
-Highlight: cuvânt pe care să ni-l mai scrie cu mâna lui, cu <em>sângele</em> şi lacrimile lui. Deşi de la cea dintâi carte a
-Highlight: mea - şi dragostea mea, şi lacrimile mele - şi <em>sângele</em> meu; şi moartea mea - şi învierea mea, - fă să
-
-Score: 6.083333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: trăit? - zicea el cu tristeţe. Am vărsături de <em>sânge</em> pe gură şi pe nas, dureri ascuţite în piept - o
-Highlight: Domnul. Autopsia a dovedit că două cheaguri de <em>sânge</em> pornite din tromboflebita lui, se opriseră în plămân
-Highlight: decât să sugă ca nişte paraziţi şi astăzi din <em>sângele</em> şi sudoarea acestei sfinte Lucrări începute de
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-Highlight: scriu pe hârtia asta, aceste rânduri de foc şi de <em>sânge</em> pentru mine. Şi mă voi ruga până când şi mie mi
-Highlight: fost cândva a Oastei Domnului, averea câştigată cu <em>sânge</em> şi sudoare, cu lacrimi şi rugăciune de către părintele
-Highlight: pentru a-i putea ierta vina aceasta. Numai singur <em>Sângele</em> lui Hristos poate. Dar pentru o astfel de iertare
-
-Score: 6.083333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, Ziua ce desparte...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi călăi setoşi de <em>sânge</em>...
-Highlight: şi spălaţi cu <em>Sânge</em> Veşnic curs din ale Tale Rane,
-Highlight: e-nsetat să-Ţi vadă Doamne, <em>Sângele</em> curgând la vale,  căci
-
-Score: 6.083333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Iată Omul
-Type: articol
-Author: Traian Dorz
-Highlight: aleasă tocmai spre a ascunde trupul înroşit de <em>sânge</em> şi spatele brăzdat ca de fiarele unor pluguri.
-Highlight: Înfăţişarea lui Isus, plin de <em>sânge</em> şi de vânătăi, cu o cunună de chinuri şi cu o haină
-Highlight: lovitură, pielea crăpa şi de sub greutăţile de plumb <em>sângele</em> ţâşnea stropind până departe.  De
-
-Score: 6.083333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)
-Type: articol
-Author: Traian Dorz
-Highlight: griji, cu dureri, cu lacrimi, cu sudoare şi cu <em>sânge</em>, - atunci nici nu-ţi pasă prea mult de acoperişul
-Highlight: unele împotriva altora cu o ură şi cu o sete de <em>sânge</em> în stare de orice nelegiuiri!...
-Highlight: După cum într-un trup sănătos <em>sângele</em> este acela care întreţine energia şi viaţa în toate
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: În Vinerea Patimilor
-Type: poezie
-Author: Traian Dorz
-Highlight: numai ochi aprinşi de ură şi călcâi setoşi de <em>sânge</em>.
-Highlight: şi răscumpăraţi cu <em>Sânge</em> curs din miile de rane,
-Highlight: ar dori să-Ţi vadă râuri <em>Sângele</em> curgând la vale ca
-
-Score: 6.083333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: În Vinerea Patimilor
-Type: poezie
-Author: Traian Dorz
-Highlight: numai ochi aprinşi de ură şi călăi setoşi de <em>sânge</em>.
-Highlight: şi răscumpăraţi cu <em>sânge</em> curs din miile de rane.
-Highlight: ar dori să-Ţi vadă râuri <em>Sângele</em> curgând la vale ca
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
@@ -400,12 +304,30 @@ Highlight: Adapă-mă-n <em>sânge</em>, hrăneşte-mă-n pâne
 
 Score: 5.9999995
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: ) şi a luptat până la <em>sânge</em> în războiul cel sfânt al Domnului Isus.
+Highlight: Hristos din jertfă, udat cu lacrimi şi răscumpărat cu <em>sânge</em> sfânt şi cu suferinţă sfântă - să nu poată fi nimicit
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 12 - Naşterea imnului duhovnicesc
 Type: articol
 Author: Traian Dorz
 Highlight: din fruntea-I senină picură <em>Sânge</em>
 Highlight: de cei ce n-au primit Sfântul Lui <em>Sânge</em>
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: ardea, din nas mi se prelingeau două şiroaie de <em>sânge</em> pe mâini, pe piept, pe podea... Parcă nu mă durea
+Highlight: sudori pe care mi le ştergeam împreună cu urmele de <em>sânge</em> rămase pe faţă. Nişte cuţite de foc îmi străpungeau
 
 Score: 5.9999995
 Volume: Hristos - Marturia mea
@@ -417,6 +339,15 @@ Highlight: bătături, ci nişte băşici mari pline cu apă şi cu <em>sânge</
 Highlight: şi l-au călcat cu cizmele, până l-au umplut de <em>sânge</em> şi au obosit. Apoi din nou l-au legat alături de
 
 Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: trăit? - zicea el cu tristeţe. Am vărsături de <em>sânge</em> pe gură şi pe nas, dureri ascuţite în piept - o
+Highlight: Domnul. Autopsia a dovedit că două cheaguri de <em>sânge</em> pornite din tromboflebita lui, se opriseră în plămân
+
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 4 - Aur lămurit, trestii clătinate
@@ -424,6 +355,24 @@ Type: articol
 Author: Traian Dorz
 Highlight: ei. Şi îl loveau bătându-l până l-au umplut de <em>sânge</em> şi au obosit.
 Highlight: apucau. Până ce le-au spart capul şi i-au umplut de <em>sânge</em>... S-au oprit din furia lor sălbatică numai când
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
+Type: articol
+Author: Traian Dorz
+Highlight: ridicat de acolo cu labele picioarelor scăldate în <em>sânge</em>, tăiate aproape de tot.
+Highlight: prosoape şi obiele, care se umplură şi ele îndată de <em>sânge</em>. Aşa, pe sus, m-au dus în braţe până acasă şi m-au
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: scriu pe hârtia asta, aceste rânduri de foc şi de <em>sânge</em> pentru mine. Şi mă voi ruga până când şi mie mi
+Highlight: fost cândva a Oastei Domnului, averea câştigată cu <em>sânge</em> şi sudoare, cu lacrimi şi rugăciune de către părintele
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
@@ -454,12 +403,48 @@ Highlight: că tot ce uzi cu lacrimi din ce sădeşti cu <em>sânge</em>
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Doamne, Ziua ce desparte...
+Type: poezie
+Author: Traian Dorz
+Highlight: şi călăi setoşi de <em>sânge</em>...
+Highlight: şi spălaţi cu <em>Sânge</em> Veşnic curs din ale Tale Rane,
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Doamne-n Săptămâna asta...
 Type: poezie
 Author: Traian Dorz
 Highlight: să simţim cum arde biciul peste <em>sânge</em> şi sudoare.
 Highlight: să plătim cu-aceleaşi lacrimi şi cu-acelaşi <em>sânge</em> toate,
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Fărădelegile şi Dreptatea
+Type: articol
+Author: Traian Dorz
+Highlight: Pe urma tuturor înşelătorilor au curs mări de <em>sânge</em>, de lacrimi şi de durere - ale celor sărmani şi
+Highlight: aceiaşi osândă cu criminalii şi cu vărsătorii de <em>sânge</em>?
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Golgota...
+Type: articol
+Author: Traian Dorz
+Highlight: câte suflete s-au târât spre tine presărând cu <em>sânge</em>, cu lacrimi şi cu sudoare fiecare urmă a lui Dumnezeu
+Highlight: Golgota, nume de lumină, cuvânt de foc, cântare de <em>sânge</em> şi de lacrimi. Tu eşti starea negrăită şi strălucită
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Iată Omul
+Type: articol
+Author: Traian Dorz
+Highlight: aleasă tocmai spre a ascunde trupul înroşit de <em>sânge</em> şi spatele brăzdat ca de fiarele unor pluguri.
+Highlight: Înfăţişarea lui Isus, plin de <em>sânge</em> şi de vânătăi, cu o cunună de chinuri şi cu o haină
 
 Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
@@ -469,6 +454,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: întuneric, prăbuşire, războaie, crime, jafuri, <em>sânge</em>, apăsare şi moarte - peste atâtea întinderi şi peste
 Highlight: întorcându-I spatele, după ce El Şi-a pus semnătura de <em>Sânge</em> a Fiului Său pe acest document zguduitor? (
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)
+Type: articol
+Author: Traian Dorz
+Highlight: griji, cu dureri, cu lacrimi, cu sudoare şi cu <em>sânge</em>, - atunci nici nu-ţi pasă prea mult de acoperişul
+Highlight: unele împotriva altora cu o ură şi cu o sete de <em>sânge</em> în stare de orice nelegiuiri!...
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -481,12 +475,75 @@ Highlight: Fără <em>sânge</em> nu este iertare (
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Mamă, uite mamă
+Type: poezie
+Author: Traian Dorz
+Highlight: numai praf şi <em>sânge</em>
+Highlight: Faţa Lui de <em>sânge</em>.
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Moşteniri
 Type: poezie
 Author: Traian Dorz
 Highlight: şi <em>sânge</em>,
 Highlight: cu lacrimi şi cu <em>sânge</em> sfânt.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Naşterea din nou
+Type: articol
+Author: Traian Dorz
+Highlight: prin <em>sânge</em> şi prin lacrimi,
+Highlight: 19 - Fără <em>sânge</em> nu este iertare (
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Pentru ca voi să credeţi
+Type: articol
+Author: Traian Dorz
+Highlight: le-au scris, de multă sudoare, de multe lacrimi şi <em>sânge</em>.
+Highlight: Cutremuraţi-vă când le atingeţi. Sunt grele de <em>sânge</em> sfânt şi de morţi sfinte.
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Tot pe Cruce e Isus
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Sânge</em>-al Lui Obraz
+Highlight: trebuie-al Lui <em>Sânge</em> Sfânt
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Vorba şi scrierea
+Type: articol
+Author: Traian Dorz
+Highlight: le-au scris, de multă sudoare, de multe lacrimi şi <em>sânge</em>.
+Highlight: Sunt grele de <em>sânge</em> sfânt şi de morţi sfinţi.
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: În Vinerea Patimilor
+Type: poezie
+Author: Traian Dorz
+Highlight: numai ochi aprinşi de ură şi călcâi setoşi de <em>sânge</em>.
+Highlight: şi răscumpăraţi cu <em>Sânge</em> curs din miile de rane,
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: În Vinerea Patimilor
+Type: poezie
+Author: Traian Dorz
+Highlight: numai ochi aprinşi de ură şi călăi setoşi de <em>sânge</em>.
+Highlight: şi răscumpăraţi cu <em>sânge</em> curs din miile de rane.
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -506,292 +563,29 @@ Author: Traian Dorz
 Highlight: Mâinile şi le vedea mereu pline de <em>sânge</em> şi alerga înspăimântat pe la toate izvoarele şi
 Highlight: lui ci şi pe sufletul lui. Mâncarea şi-o vedea <em>sânge</em>, hainele spini şi casa foc.
 
-Score: 4.8
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: ... Doamne, Tu să-mi speli picioarele?
 Type: articol
 Author: Traian Dorz
-Highlight: poate înlocui în viaţa ta, pentru că este <em>sânge</em> din <em>sângele</em> tău şi carne din carnea ta.
-Highlight:  eşti în stare să-ţi dai picătură cu picătură <em>sângele</em> tău şi viaţa ta, pentru a o scăpa pe a celuilalt
-Highlight: Când le vorbise în trecut despre Trupul şi <em>Sângele</em> Său (
+Highlight: n-o mai poate înlocui în viaţa ta, pentru că este <em>sânge</em> din sângele tău şi carne din carnea ta.
 
-Score: 4.8
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: ... Du-te şi să nu mai păcătuieşti
 Type: articol
 Author: Traian Dorz
 Highlight: cunoştinţa adevărului şi a fost spălat cu Singurul <em>Sânge</em> care S-a vărsat numai o singură dată (
-Highlight: odată de păcatele lor şi au fost sfinţiţi prin <em>Sângele</em> lui Hristos.
-Highlight: sau că <em>Sângele</em> Cel Sfânt al Domnului Isus nu l-ar mai putea spăla
-Highlight: Să vină cu lacrimi şi pocăinţă la <em>Sângele</em> iertării Lui şi va fi iarăşi iertat.
 
-Score: 4.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-Highlight: începută şi dusă frumos până aici cu atâtea jertfe şi <em>sânge</em>, - acum noi o lăsăm să cadă sub ochii noştri, pradă
-Highlight: Domnului din Cluj, se răsuceau mereu şi făceau să <em>sângere</em> neîncetat trupul Domnului din pricina lor. Duhul
-Highlight: adunării, redeschizând rănile vechi şi făcându-le să <em>sângere</em> iarăşi... Din
-Highlight: preţ şi mai sfânt bun: lacrimile, sudoarea şi <em>sângele</em> vieţii lor.
-
-Score: 4.8
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 5 - Binecuvântata muncă grea
-Type: articol
-Author: Traian Dorz
-Highlight: fel. De multe ori picioarele lor erau pline de <em>sânge</em> şi crăpate de bătături. Dar se obişnuiseră să rabde
-Highlight: era mai ales din cauza muştelor care le sugeau <em>sângele</em> şi le însângerau ochii. Bieţii boi înjugaţi la
-Highlight: spate, unde nu le puteau alunga - şi le sugeau <em>sângele</em> de era o rană toată pielea lor.
-Highlight: fără apărare, ca muştele mici şi mari să le sugă <em>sângele</em> în cel mai chinuitor fel.
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: Germania, cornul fascist veni la putere prin foc şi <em>sânge</em>, începând lupta forţată pentru cucerirea lumii pentru
-Highlight: când cu prilejul unei adunări, a stropit masa cu <em>sângele</em> pieptului său...
-Highlight: febră, şi a treia zi m-am coborât la Sibiu cu <em>sângele</em> în gură. Boala reizbucnise.
-
-Score: 4.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
-Type: articol
-Author: Traian Dorz
-Highlight: a adus-o Jertfa Crucii Sale. Şi primeşte acest <em>Sânge</em> vărsat şi pentru tine, predându-te Lui pe totdeauna
-Highlight: uşoare ar fi nelegiuirile pe care le-ai săvârşit, <em>Sângele</em> scump al lui Isus Hristos Cel Răstignit - ţi le
-Highlight: picioarele Crucii lui Isus, şi acolo unde picură <em>Sângele</em> Lui vărsat pentru spălarea păcatelor noastre!
-
-Score: 4.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Nici o vină...
-Type: articol
-Author: Traian Dorz
-Highlight: acum: o gloată înnebunită de ură şi însetată de <em>sânge</em>, urlă, se agită, răcneşte şi ţipă, aţâţată de preoţii
-Highlight: vină în Isus. Şi totuşi mâinile lui sunt pline de <em>Sângele</em> Nevinovat al lui Isus bătut şi chinuit de el. Chiar
-Highlight: mâinile vinovate ale vândutului judecător, pline de <em>sângele</em> Tău nevinovat.
-
-Score: 4.75
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Nu descuraja niciodată
-Type: articol
-Author: Traian Dorz
-Highlight: ci pretinde - pâinea a trebuit mereu cucerită cu <em>sânge</em>
-Highlight: 9 - Nimic altceva decât <em>Sângele</em> lui Hristos, îţi spală sufletul de vina morţii
-Highlight: - Numai <em>Sângele</em> Crucii lui Hristos.  Dacă
-
-Score: 4.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Plânge ucigaşul
-Type: poezie
-Author: Traian Dorz
-Highlight: pe urma mea doar <em>sânge</em> şi blesteme-au rămas.
-Highlight: aud vieţi ucise cum <em>sângele</em> mi-l cer,
-Highlight: mustrarea s-o înăbuş sau <em>sângele</em> să-l şterg
-
-Score: 4.6666665
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: ... El este Acela...
 Type: articol
 Author: Traian Dorz
-Highlight: Numai <em>Sângele</em> Său, nici un alt <em>sânge</em> în afară de El, nu ne mai poate curăţi
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: ...Ce plin de ierni e aici!
-Type: articol
-Author: Traian Dorz
-Highlight: 15 - ce <em>sânge</em> mult a răscumpărat această libertate curgând amestecat
-Highlight: divine cântările, ce amare lacrimile şi ce scump <em>sângele</em> acelora care au trăit, au luptat, au muncit, au
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Al treilea cuvânt
-Type: poezie
-Author: Traian Dorz
-Highlight: cu urechile mele, sau am stropit cu propriul meu <em>sânge</em> în cei aproape treizeci de ani peste care se întinde
-Highlight: sfinţilor, care veacuri la rând au fost stropite cu <em>sângele</em> acelora care le-au transcris şi le-au ascuns, ca
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Binefacerea şi recunoştinţa
-Type: articol
-Author: Traian Dorz
-Highlight: 9 - Se spune că <em>sângele</em> nu se poate face apă şi nici apa <em>sânge</em>.
-
-Score: 4.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
-Type: articol
-Author: Traian Dorz
-Highlight: nu vedeau şi că milioanele de morţi şi mările de <em>sânge</em> şi de lacrimi nu ne învăţaseră nimic.
-Highlight: să-mi <em>sângere</em>, să-mi crape faţa, să mă întindă să scrâşnesc -
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: chinuri şi dureri... Mâinile îi erau scăldate de <em>sânge</em>, dimpreună cu aproape jumătate kg. de vată...
-Highlight: robul acela de Iosif nu-şi pusese decât lacrimile, <em>sângele</em>, sudoarea şi jertfa totală a vieţii şi a talentului
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 21 - La 25 de ani...
-Type: articol
-Author: Traian Dorz
-Highlight: la rădăcina căruia s-au vărsat atâtea lacrimi şi <em>sânge</em>.
-Highlight: răscumpărat prin Moartea Ta şi care ne-ai sfinţit prin <em>Sângele</em> Tău.
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: care s-au adus atâtea jertfe şi lacrimi sfinte şi <em>sânge</em> sfânt!...
-Highlight: Ce minunat este acest circuit frăţesc. Este ca <em>sângele</em> într-un trup, care umblând prin toate mădularele
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Din ziua aceea au hotărât
-Type: articol
-Author: Traian Dorz
-Highlight: fi plătit de două mii de ani cu nici un preţ de <em>sânge</em> şi de suferinţă adus pentru el,
-Highlight: şi când singuri au cerut ca <em>Sângele</em> Lui să fie asupra lor şi asupra tuturor urmaşilor
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Ferirea de ispite
-Type: poezie
-Author: Traian Dorz
-Highlight: 11-De-ţi vor zice: hai să-ntindem laţuri, <em>sânge</em> să vărsăm
-Highlight: sunt mereu grăbiţi să verse <em>sângele</em> nevinovat...
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Isus în Templu
-Type: articol
-Author: Traian Dorz
-Highlight: aceştia îşi încărcau mereu sufletul cu cel mai greu <em>sânge</em> şi cu cel mai greu păcat în faţa lui Dumnezeu.
-Highlight: feluriţi vânzători trăiau numai din chinul, din <em>sângele</em> şi munca mulţimii neştiutoare, vândută şi exploatată
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Isuse Drag, ce Crucea
-Type: poezie
-Author: Traian Dorz
-Highlight: prin <em>Sânge</em> ai sfinţit
-Highlight: prin <em>sângele</em>-Ţi Curat
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
-Type: articol
-Author: Traian Dorz
-Highlight: lui. Erau cei care mâncaseră din pâinea lui de <em>sânge</em>, de sudoare, de lacrimi. Erau cei dinăuntru, nu
-Highlight: oricare dintre noi, căci e a Lui! Şi El Şi-a dat <em>Sângele</em> Său pentru ea.  Luaţi
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: scăldaţi în lacrimi şi cu sufletul tău scăldat în <em>sânge</em>: Ce aţi făcut din inima mea?
-Highlight: leagă iarăşi cu suspine, o încălzeşte iarăşi cu <em>sângele</em> său, dar nu se poate despărţi. Şi nu poate trăi
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
-Author: Traian Dorz
-Highlight: ca să se scoale şi să se spele de noroi sau de <em>sânge</em>...
-Highlight: cărui Lucrare o dezbină... Şi calcă în picioare <em>Sângele</em> lui Hristos, a cărui Jertfă o nesocoteşte.
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Lazăre vino!
-Type: articol
-Author: Traian Dorz
-Highlight: creat, care ne-a dat viaţă din Viaţa Lui, <em>sânge</em> din <em>Sângele</em> Lui, trup din Trupul Lui (
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Mulţi au citit
-Type: articol
-Author: Traian Dorz
-Highlight: împărtăşi mântuitor din acest adevăr şi din acest <em>Sânge</em> al Crucii lui Isus, să nu trecem şi noi tot aşa
-Highlight: coboară-ţi lacrimile la picioarele Crucii lui Isus, sub <em>Sângele</em> care curge din ranele Lui.  Însemnarea
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: O Doamne Isuse,
-Type: articol
-Author: Traian Dorz
-Highlight: rugăm să ne dai totdeauna această Pâine şi acest <em>Sânge</em> Sfânt şi fă ca ele să se prefacă în noi cu adevărat
-Highlight: Îţi mulţumim pentru Trupul Tău şi pentru <em>Sângele</em> Tău Sfânt pe care ni l-ai lăsat viaţă şi părtăşie
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Oricui bea din apa aceasta
-Type: articol
-Author: Traian Dorz
-Highlight: Vei trece peste <em>sânge</em> de frate,
-Highlight: Bei tu. Dar în pahar bei <em>sângele</em> copiilor tăi. Lacrimile soţiei tale. Sănătatea
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Pilat îşi spală mâinile
-Type: poezie
-Author: Traian Dorz
-Highlight: de-acest Sfânt <em>Sânge</em>, veşnic nu se vor spăla.
-Highlight: <em>Sângele</em> cel fără-vină
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Trimişii fariseilor
-Type: articol
-Author: Traian Dorz
-Highlight: răi nu-şi dau seama ce mare păcat este să vinzi <em>sânge</em> nevinovat!
-Highlight: Din <em>sângele</em> tău se va ridica şi mai puternic Glasul Adevărului
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Împreună lucrători cu Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: curăţindu-te cu Unicul <em>Sânge</em> în stare să te spele: <em>Sângele</em> Lui!
+Highlight: Numai Sângele Său, nici un alt <em>sânge</em> în afară de El, nu ne mai poate curăţi de păcatul
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -810,12 +604,52 @@ Author: Traian Dorz
 Highlight: de gândire înspăimântătoare, a umplut lumea de <em>sânge</em>, de groază, de vaiete şi de oroare.
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: ...Ce plin de ierni e aici!
+Type: articol
+Author: Traian Dorz
+Highlight: 15 - ce <em>sânge</em> mult a răscumpărat această libertate curgând amestecat
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Acum din nou...
 Type: poezie
 Author: Traian Dorz
 Highlight: pe Golgota, - şi-acolo, cu <em>Sânge</em> le-a spălat...
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Adevărata credinţă
+Type: articol
+Author: Traian Dorz
+Highlight: până la moarte, nu numai până la <em>sânge</em> (
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Adevăratul ucenic al Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: un strigăt. El strigă până la primejdie, până la <em>sânge</em>, până la moarte, - prin răbdarea sau prin tăcerea
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Al treilea cuvânt
+Type: poezie
+Author: Traian Dorz
+Highlight: cu urechile mele, sau am stropit cu propriul meu <em>sânge</em> în cei aproape treizeci de ani peste care se întinde
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Alegerea şi mărturia
+Type: articol
+Author: Traian Dorz
+Highlight:  acest adevăr şi din acest <em>Sânge</em> al Crucii lui Isus.
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -858,8 +692,32 @@ Author: Traian Dorz
 Highlight: doar Scumpul <em>Sânge</em>-al Său
 
 Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Are cine să-l osândească...
+Type: articol
+Author: Traian Dorz
+Highlight: spune stropii mei de lacrimi şi stropii mei de <em>sânge</em> cu care Ţi-o trimit împodobită Biblia mea, ca apărător
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Aruncă-ţi de pe umeri
+Type: poezie
+Author: Traian Dorz
+Highlight: să curgă-Acel Sfânt <em>Sânge</em>
+
+Score: 4.5
 Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
+Title: Aruncă-ţi de pe umeri
+Type: poezie
+Author: Traian Dorz
+Highlight: să curgă-Acel Sfânt <em>Sânge</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
 Title: Aruncă-ţi de pe umeri
 Type: poezie
 Author: Traian Dorz
@@ -875,11 +733,35 @@ Highlight: în mâini de <em>sânge</em> pline
 
 Score: 4.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Aveai şi tu
+Type: poezie
+Author: Traian Dorz
+Highlight: cu-atâta <em>sânge</em> şi noroi?
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Binefacerea şi recunoştinţa
+Type: articol
+Author: Traian Dorz
+Highlight: spune că sângele nu se poate face apă şi nici apa <em>sânge</em>.
+
+Score: 4.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Bolnav de iubire
 Type: poezie
 Author: Traian Dorz
 Highlight: s-o plătesc cu <em>sânge</em>, dar să nu mi-o vând.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Bucurie şi întristare
+Type: articol
+Author: Traian Dorz
+Highlight: Numai silnicie, <em>sânge</em>, lacrimi şi iad.
 
 Score: 4.5
 Volume: Istoria unei Jertfe
@@ -888,6 +770,22 @@ Title: Cap. 10 - Va veni un altul...
 Type: articol
 Author: Traian Dorz
 Highlight: de-acei cu mâini de <em>sânge</em> pline
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Germania, cornul fascist veni la putere prin foc şi <em>sânge</em>, începând lupta forţată pentru cucerirea lumii pentru
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: începută şi dusă frumos până aici cu atâtea jertfe şi <em>sânge</em>, - acum noi o lăsăm să cadă sub ochii noştri, pradă
 
 Score: 4.5
 Volume: Istoria unei Jertfe
@@ -904,6 +802,14 @@ Title: Cap. 16 - Leacul dureroasei sfâşieri
 Type: articol
 Author: Traian Dorz
 Highlight: sufletele noastre nu s-a umplut. S-a vărsat în ea atâta <em>sânge</em>, atâtea trupuri, atâţia ani, - dar ea este şi astăzi
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 17 - Mereu prin ape tulburi
+Type: articol
+Author: Traian Dorz
+Highlight: nu vedeau şi că milioanele de morţi şi mările de <em>sânge</em> şi de lacrimi nu ne învăţaseră nimic.
 
 Score: 4.5
 Volume: Istoria unei Jertfe
@@ -923,11 +829,27 @@ Highlight: mântuiri al acestor veşnice valori, orice picătură de <em>sânge<
 
 Score: 4.5
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 19 - Omul trimes de Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: chinuri şi dureri... Mâinile îi erau scăldate de <em>sânge</em>, dimpreună cu aproape jumătate kg. de vată...
+
+Score: 4.5
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 20 - După alţi 30 de ani
 Type: articol
 Author: Traian Dorz
 Highlight: însemnările anilor acelora cu multe lacrimi şi mult <em>sânge</em>, pe multe pagini, cu multe jertfe, despre tot ce
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 21 - La 25 de ani...
+Type: articol
+Author: Traian Dorz
+Highlight: la rădăcina căruia s-au vărsat atâtea lacrimi şi <em>sânge</em>.
 
 Score: 4.5
 Volume: Hristos - Marturia mea
@@ -978,6 +900,46 @@ Author: Traian Dorz
 Highlight: trezit. Capul mă durea puternic, apa era înroşită de <em>sânge</em> - şi eu îngheţat de frig. Şi altele şi altele ţinându-se
 
 Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 5 - Binecuvântata muncă grea
+Type: articol
+Author: Traian Dorz
+Highlight: fel. De multe ori picioarele lor erau pline de <em>sânge</em> şi crăpate de bătături. Dar se obişnuiseră să rabde
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: care s-au adus atâtea jertfe şi lacrimi sfinte şi <em>sânge</em> sfânt!...
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Ce mult îmi pare c-am trăit
+Type: poezie
+Author: Traian Dorz
+Highlight: Sudori de <em>sânge</em>-mi cad în praf şi cupa e amară
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Ce mult îmi pare c-am trăit
+Type: poezie
+Author: Traian Dorz
+Highlight: Sudori de <em>sânge</em>-mi cad în praf şi cupa e amară
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Ce neagră-i Poarta asta
+Type: poezie
+Author: Traian Dorz
+Highlight: iertat de-al Lui Sfânt <em>Sânge</em> poţi merge fericit
+
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
 Title: Ce sfânt e-un legământ
@@ -1010,34 +972,10 @@ Author: Traian Dorz
 Highlight: Dar ce-i pasă celui plătit cu preţul cel scump de <em>sânge</em>, de sudoare şi de lacrimi cu care au fost câştigate
 
 Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Cetatea lui Andrei şi a lui Petru
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Cernerea Lucrării Domnului
 Type: articol
 Author: Traian Dorz
-Highlight:  pretinde - pâinea a trebuit mereu cucerită cu <em>sânge</em> şi păstrată cu lupte.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Chiar dac-ar fi
-Type: poezie
-Author: Traian Dorz
-Highlight: de cei cu mâini de <em>sânge</em> pline
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Credinţă - cea
-Type: poezie
-Author: Traian Dorz
-Highlight: umplând pământul cu mări de <em>sânge</em> şi de plâns,
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cu Domnul spre Golgota - 3
-Type: poezie
-Author: Traian Dorz
-Highlight: lumii ce-a-nsetat de <em>sânge</em> şi de-omor a fost flămândă!
+Highlight: şi chiar prin <em>sânge</em>,
 

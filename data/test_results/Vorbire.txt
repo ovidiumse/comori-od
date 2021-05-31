@@ -1,150 +1,171 @@
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences                                                                        | Author          | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Despre vorbire                                                                              | {'vorbire', 'vorbă', 'vorbi', 'vorba', 'vorbe'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | {'vorbire', 'vorbesc'}                                                             | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                                 | {'vorba', 'vorbire', 'vorbele'}                                                    | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 12 - Dovada supremei iubiri                                                            | {'vorbire', 'vorbă', 'vorbe'}                                                      | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                                       | {'vorbire', 'vorbi', 'vorbirea', 'vorba'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)                | {'vorbire', 'Vorbesc', 'vorbim', 'vorbă'}                                          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'vorbire', 'vorbeam', 'vorbă', 'vorbind', 'vorbe'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                              | {'vorbire', 'vorbă', 'vorbeau', 'Vorbirea', 'vorbind'}                             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 5 - Întâia judecată                                                                    | {'vorbire', 'vorba'}                                                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Din părţile Maramureşului                                                                   | {'vorbire', 'vorbi', 'vorbă'}                                                      | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 9 - În vremea aceea...                                                                 | {'vorbire', 'vorbise', 'vorbeau', 'vorbea'}                                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 16-a după Rusalii                                               | {'vorbire', 'vorba', 'Vorbirea', 'vorbirea', 'vorbind'}                            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)                           | {'vorbire', 'vorbind', 'vorbi', 'vorbirea', 'vorbele', 'vorbesc'}                  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Acela care mi-a spus tot ce am făcut                                                        | {'vorbire', 'vorbi', 'vorbesc'}                                                    | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Pe când vorbea Isus, mulţi au crezut...                                                     | {'vorbire', 'vorbe', 'vorbele', 'vorbesc', 'vorbirea', 'vorbea'}                   | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Vorbirea şi harul                                                                           | {'vorbire', 'vorbesc', 'vorbele', 'vorbirea', 'vorbi', 'Vorbirea'}                 | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Poate vorbi singur...                                                                       | {'vorbire', 'vorbi', 'Vorbirea'}                                                   | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Eu, Cel ce vorbesc cu tine...                                                               | {'vorbire', 'vorbesc', 'vorbim'}                                                   | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Noroadele vorbeau în şoaptă                                                                 | {'vorbire', 'vorbi', 'vorbeau'}                                                    | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 9 - A doua judecată                                                                    | {'vorbire', 'vorbim', 'vorbesc', 'vorbise', 'vorbea', 'vorba', 'vorbă', 'vorbeam'} | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Din părţile Olteniei                                                                        | {'vorbire', 'vorbă', 'vorba', 'vorbe'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 15 - Al doilea foc                                                                     | {'vorbire', 'vorbi', 'vorbă', 'vorbind', 'vorbirea'}                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'vorbire', 'vorbe', 'vorbesc', 'vorbirea'}                                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 18 - Un vânt rău                                                                       | {'vorbirea', 'vorbire', 'vorba', 'vorbim', 'vorbesc', 'vorbă'}                     | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'vorbire', 'vorbi', 'vorbesc', 'vorbă', 'vorbise'}                                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)                | {'vorbire', 'vorba', 'vorbim', 'vorbirea'}                                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Despre flecărie                                                                             | {'vorbire', 'vorbe', 'vorba', 'vorbă', 'vorbi'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Nicodim I-a zis: cum se poate?                                                              | {'vorbire', 'vorbim', 'vorba', 'vorbesc', 'vorbind'}                               | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Arătarea şi ascunderea                                                                      | {'vorbire', 'vorbesc', 'vorbă', 'vorbim', 'vorbind'}                               | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'vorbire', 'vorbesc', 'vorbea', 'vorbă', 'vorbe'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                                    | {'vorbire', 'vorbi', 'vorbesc', 'vorbe', 'vorba'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)              | {'vorbire', 'vorbele', 'vorbi', 'vorba', 'vorbesc'}                                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| ... Tu dar ce zici?                                                                         | {'vorbire', 'vorbirea', 'vorbi'}                                                   | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Adevărul şi mărturisirea                                                                    | {'vorbire', 'vorbesc', 'vorbi', 'Vorbirea'}                                        | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                    | {'vorbire', 'vorbi', 'vorba', 'vorbesc'}                                           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | {'vorbire', 'vorbi', 'vorbesc', 'vorbele'}                                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 19 - Mereu morminte noi                                                                | {'vorbire', 'vorba', 'vorbirea'}                                                   | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 25 - Istorie şi suferinţă                                                              | {'vorbire', 'vorbă', 'Vorbeam', 'vorbesc'}                                         | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| ... Doamne, Tu să-mi speli picioarele?                                                      | {'vorbire', 'vorbise', 'Vorbirea'}                                                 | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                          | {'vorbire', 'vorba', 'vorbi'}                                                      | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Când va veni El, va dovedi...                                                               | {'vorbire', 'vorbea', 'vorbirea'}                                                  | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| De aceea au zis                                                                             | {'vorbire', 'vorbesc'}                                                             | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| El este Acela despre care ziceam                                                            | {'vorbire', 'vorbi', 'vorbise'}                                                    | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Iudeii Îl căutau în timpul Praznicului                                                      | {'vorbire', 'vorbi'}                                                               | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                       | {'vorbire', 'vorbim', 'vorbesc'}                                                   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)             | {'vorbire', 'vorbi', 'vorbirea'}                                                   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)            | {'vorbire', 'vorba'}                                                               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Suiţi-vă voi...                                                                             | {'vorbire', 'vorba', 'vorbe'}                                                      | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Arată-ne pe Tatăl!                                                                          | {'vorbire', 'vorbind'}                                                             | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Cap. 24 - Pânza care se ţese                                                                | {'vorbire', 'vorbea'}                                                              | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Două mii de ani Isuse...                                                                    | {'vorbire', 'vorbesc'}                                                             | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Moise, alesul Domnului, a petrecut                                                          | {'vorbă', 'vorbire'}                                                               | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Nu ştim ce vrea să spună                                                                    | {'vorbire', 'vorbea'}                                                              | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Nu-i greu ce dăm noi                                                                        | {'vorbire', 'vorbesc'}                                                             | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Celor ce răzbesc nainte                                                                     | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Cine crede în Fiul are...                                                                   | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cine primeşte... adevereşte                                                                 | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Corabia a sosit îndată                                                                      | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                             | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Paharul dat de Tatăl...                                                                     | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Pe acela pe care îl trimit Eu                                                               | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Păcatul fricii                                                                              | {'vorbire'}                                                                        | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Toţi cei ce fuseseră cu Isus, - mărturiseau                                                 | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Unul din ucenici: Andrei                                                                    | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Ştia pe cel ce avea să-L vândă                                                              | {'vorbire'}                                                                        | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Vorbirea şi tăcerea                                                                         | {'vorbi', 'Vorbirea'}                                                              | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Acela despre care vorbea Isus                                                               | {'vorbea'}                                                                         | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Ce dulci sunt două vorbe                                                                    | {'vorbe'}                                                                          | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Isus vorbise despre... - dar ei credeau că...                                               | {'vorbise'}                                                                        | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| La auzul acestor vorbe, au luat - pietre...                                                 | {'vorbe'}                                                                          | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Vorbea Isus de pe colină                                                                    | {'Vorbea', 'vorbea'}                                                               | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Atâtea vorbe                                                                                | {'vorbe'}                                                                          | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Din frică, nu vorbeau despre El                                                             | {'vorbea', 'vorbeau'}                                                              | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Ferice-i a vorbi                                                                            | {'vorbi'}                                                                          | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| ... Vorbesc după cum M-a învăţat Tatăl                                                      | {'Vorbesc'}                                                                        | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 7 - Printre leu şi printre urs                                                         | {'vorbisem', 'vorbe', 'vorbă', 'vorbi', 'vorbim'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Din alte diferite părţi                                                                     | {'Vorba', 'vorbele', 'vorbirea', 'vorbe', 'vorba'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 5 - În noaptea aceea...                                                                | {'vorbind', 'vorbele', 'vorbea', 'vorbă', 'vorbim'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | {'vorbele', 'vorbă', 'vorbeau', 'vorbim', 'vorbe', 'vorbesc'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Va veni un altul...                                                               | {'vorbea', 'vorbe', 'vorbeam', 'vorbă'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                        | {'vorbesc', 'vorbisem', 'vorbă', 'vorbe', 'vorbi', 'vorbeam'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Din părţile Banatului                                                                       | {'vorbă', 'vorba', 'vorbim'}                                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                                    | {'vorbă', 'vorba', 'vorbeam', 'vorbi'}                                             | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Despre tăcere                                                                               | {'vorba', 'vorbă', 'vorbi', 'vorbesc'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | {'vorbim', 'vorbirea', 'vorbă', 'vorbesc', 'vorbele'}                              | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Cel mai frumos Isus                                                                | {'vorbim', 'vorbă', 'vorbi', 'vorbeau'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                          | {'vorba', 'vorbe', 'vorbesc', 'vorbi', 'vorbă'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'vorbim', 'vorbe', 'vorbă', 'vorba', 'vorbisem'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                            | {'vorbesc', 'Vorbea', 'vorbim', 'vorbeau', 'vorbe', 'vorbele'}                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                               | {'vorbi', 'vorbele', 'vorba', 'vorbă', 'vorbesc'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                                    | {'vorbă', 'vorbesc', 'vorbi', 'Vorbesc'}                                           | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 6 - Alte amare adevăruri                                                               | {'vorbesc', 'vorbă', 'vorbind'}                                                    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                                  | {'vorbelor', 'vorba', 'vorbim', 'vorbă', 'vorbeam'}                                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                              | {'vorbesc', 'vorbindu', 'vorbi', 'vorba', 'vorbise'}                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                                | {'vorbă', 'vorbesc', 'vorbe', 'vorbim'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                                    | {'vorbesc', 'vorbisem', 'vorbă'}                                                   | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - Aşa ne-au judecat                                                                  | {'vorbise', 'vorbisem', 'vorba', 'vorbea', 'vorbind', 'vorbi'}                     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                              | {'vorbă'}                                                                          | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| N-am pierdut pe nici unul                                                                   | {'vorbe', 'vorbă', 'vorba', 'vorbim'}                                              | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                      | {'vorbi', 'vorbă', 'vorba', 'vorbim', 'vorbesc'}                                   | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Vorbire using http://localhost:9000...
-Got 996 hits:
-Score: 30.88889
++---------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences                                       | Author          | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Despre vorbire                                                                              | {'vorbire'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Când a auzit Petru că este Domnul...                                                        | {'vorbirea', 'vorbire'}                           | Traian Dorz     | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Cap. 11 - Răscrucea Isus                                                                    | {'vorbirile', 'vorbire', 'vorbirea'}              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                                 | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Biblia şi viaţa                                                                             | {'vorbire', 'vorbirea', 'vorbirile', 'Vorbirile'} | Traian Dorz     | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Dovada supremei iubiri                                                            | {'vorbire', 'vorbirea', 'vorbirii', 'vorbiri'}    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Primii paşi spre o rânduială                                                       | {'vorbire', 'vorbirea', 'Vorbirea'}               | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Rugăciunea şi fiii ei                                                                       | {'vorbire', 'vorbirile', 'vorbirea'}              | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)                | {'vorbire'}                                       | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Vorba şi împlinirea                                                                         | {'vorbire'}                                       | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                              | {'vorbire', 'Vorbirea', 'vorbirile', 'vorbirea'}  | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Călăuzirea Duhului Sfânt                                                                    | {'vorbire', 'vorbirea', 'vorbirii'}               | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 16-a după Rusalii                                               | {'vorbire', 'Vorbirea', 'vorbirea'}               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)                           | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Acela care mi-a spus tot ce am făcut                                                        | {'vorbire'}                                       | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'vorbire'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                                    | {'vorbire'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                                 | {'vorbire'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cuvântul, duhul şi simţirea                                                                 | {'vorbire'}                                       | Traian Dorz     | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Din părţile Maramureşului                                                                   | {'vorbire'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Vorbirea şi harul                                                                           | {'vorbire', 'vorbirea', 'Vorbirea'}               | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Pe când vorbea Isus, mulţi au crezut...                                                     | {'vorbire', 'vorbirea', 'vorbirile', 'vorbirii'}  | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 15 - Al doilea foc                                                                     | {'vorbire', 'vorbirii', 'vorbirile', 'vorbirea'}  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Noi am auzit...                                                                             | {'vorbire', 'vorbirea', 'vorbiri', 'vorbirii'}    | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 18 - Un vânt rău                                                                       | {'vorbirea', 'vorbire', 'vorbiri', 'vorbirii'}    | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)                | {'vorbire', 'vorbirii', 'vorbirea'}               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Lucrarea Sfântului Duh                                                                      | {'vorbire', 'vorbirea', 'Vorbirile'}              | Traian Dorz     | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| ... Tu dar ce zici?                                                                         | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 19 - Mereu morminte noi                                                                | {'vorbire', 'vorbiri', 'vorbirea', 'vorbirile'}   | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'vorbire', 'vorbirea', 'Vorbirea'}               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                          | {'vorbire', 'vorbirilor', 'vorbiri'}              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)              | {'vorbire', 'vorbirii', 'vorbirilor'}             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Nicodim I-a zis: cum se poate?                                                              | {'vorbire', 'vorbiri', 'vorbirile'}               | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Poate vorbi singur...                                                                       | {'vorbire', 'Vorbirea', 'vorbirile'}              | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Tu cine eşti?                                                                               | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| ... Doamne, Tu să-mi speli picioarele?                                                      | {'vorbire', 'Vorbirea'}                           | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| A paşte turma Domnului                                                                      | {'vorbire', 'vorbirile'}                          | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Adevărul şi mărturisirea                                                                    | {'vorbire', 'Vorbirea'}                           | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Arătarea şi ascunderea                                                                      | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'vorbire', 'vorbiri'}                            | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 25 - Istorie şi suferinţă                                                              | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cine primeşte... adevereşte                                                                 | {'vorbire', 'vorbirile'}                          | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Când va veni El, va dovedi...                                                               | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| De aceea au zis                                                                             | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Din părţile Olteniei                                                                        | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                             | {'vorbire', 'vorbiri'}                            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)             | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)            | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Noroadele vorbeau în şoaptă                                                                 | {'vorbire', 'vorbiri'}                            | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Nu-i greu ce dăm noi                                                                        | {'vorbire', 'vorbiri'}                            | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Pacea - şi fiii păcii                                                                       | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Petru s-a întristat                                                                         | {'vorbire', 'vorbirea'}                           | Traian Dorz     | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Zvonul printre fraţi                                                                        | {'vorbire', 'vorbirii'}                           | Traian Dorz     | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Adevăratele duhuri duhovniceşti                                                             | {'vorbire'}                                       | Traian Dorz     | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Adevăratul ucenic al Domnului                                                               | {'vorbire'}                                       | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Arată-ne pe Tatăl!                                                                          | {'vorbire'}                                       | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| Cap. 24 - Pânza care se ţese                                                                | {'vorbire'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                                    | {'vorbire'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                                    | {'vorbire'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cel Adevărat şi cel mincinos                                                                | {'vorbire'}                                       | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Celor ce răzbesc nainte                                                                     | {'vorbire'}                                       | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
+| Cine Mă vede pe Mine                                                                        | {'vorbire'}                                       | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cine crede în Fiul are...                                                                   | {'vorbire'}                                       | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Corabia a sosit îndată                                                                      | {'vorbire'}                                       | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Cum M-a trimis pe Mine Tatăl                                                                | {'vorbire'}                                       | Traian Dorz     | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cunoaşterea şi ascultarea                                                                   | {'vorbire'}                                       | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Curajul şi lucrarea                                                                         | {'vorbire'}                                       | Traian Dorz     | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Căderea şi ridicarea                                                                        | {'vorbire'}                                       | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| Despre flecărie                                                                             | {'vorbire'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Două mii de ani Isuse...                                                                    | {'vorbire'}                                       | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| El este Acela despre care ziceam                                                            | {'vorbire'}                                       | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Eu, Cel ce vorbesc cu tine...                                                               | {'vorbire'}                                       | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Frumuseţea inimii noastre                                                                   | {'vorbire'}                                       | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Grija umblării noastre                                                                      | {'vorbire'}                                       | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Hristos S-a dat pe Sine!                                                                    | {'vorbire'}                                       | Traian Dorz     | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Iudeii Îl căutau în timpul Praznicului                                                      | {'vorbire'}                                       | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                    | {'vorbire'}                                       | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                       | {'vorbire'}                                       | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | {'vorbire'}                                       | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Libertatea Cuvântului Sfânt                                                                 | {'vorbire'}                                       | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| Luaţi Duh Sfânt                                                                             | {'vorbire'}                                       | Traian Dorz     | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Lupta contra păcatului                                                                      | {'vorbire'}                                       | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Marea şi ultima biruinţă                                                                    | {'vorbire'}                                       | Traian Dorz     | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Moise, alesul Domnului, a petrecut                                                          | {'vorbire'}                                       | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Nu ştim ce vrea să spună                                                                    | {'vorbire'}                                       | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Oamenii lui Dumnezeu                                                                        | {'vorbire'}                                       | Traian Dorz     | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Paharul dat de Tatăl...                                                                     | {'vorbire'}                                       | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Pe acela pe care îl trimit Eu                                                               | {'vorbire'}                                       | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Ploaia şi Cuvântul                                                                          | {'vorbire'}                                       | Traian Dorz     | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
+| Păcatul fricii                                                                              | {'vorbire'}                                       | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Semănat şi seceriş                                                                          | {'vorbire'}                                       | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Sufletul omului şi voia lui Dumnezeu                                                        | {'vorbire'}                                       | Traian Dorz     | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Suiţi-vă voi...                                                                             | {'vorbire'}                                       | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Tot despre cârtitor                                                                         | {'vorbire'}                                       | Traian Dorz     | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Toţi cei ce fuseseră cu Isus, - mărturiseau                                                 | {'vorbire'}                                       | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Trimesul şi vânzătorul                                                                      | {'vorbire'}                                       | Traian Dorz     | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Unde sunt doi                                                                               | {'vorbire'}                                       | Traian Dorz     | Semănaţi Cuvântul Sfânt          | Cugetări Nemuritoare         | articol |
+| Unul din ucenici: Andrei                                                                    | {'vorbire'}                                       | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Vorbind astfel arăta                                                                        | {'vorbire'}                                       | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
++---------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
+Searching Vorbire using https://api.comori-od.ro...
+Got 303 hits:
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre vorbire
 Type: articol
 Author: Traian Dorz
 Highlight: şi încetează-a ta <em>vorbire</em>,
-Highlight: spune-i doar o <em>vorbă</em>-două - şi te du în drumul tău.  7
-Highlight: 9 - Nu <em>vorbi</em> uşor de lucruri care te-au costat prea mult preţul
-Highlight: 10 - Ceea ce încredinţează, - nu e <em>vorba</em> ce se spune ci
-Highlight: mulţi rămân la <em>vorbe</em> - şi nu mai ajung.  17
-Highlight: 17 - Sfatul cel mai bun e-acela cu mai scurtă <em>vorbă</em> dat sfatul
 Highlight: Despre <em>vorbire</em>
 
-Score: 15.971428
+Score: 16.351648
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Când a auzit Petru că este Domnul...
+Type: articol
+Author: Traian Dorz
+Highlight: în toată <em>vorbirea</em> noastră mai ales între fraţi, sau în cercul prietenilor noştri, o <em>vorbire</em> cuviincioasă
+Highlight: După o astfel de <em>vorbire</em> care ne-a răpit un ceas din cea mai scumpă vreme
+Highlight: Dacă veţi întrebuinţa o <em>vorbire</em> simplă, vă vor înţelege şi cei învăţaţi. Iar dacă
+Highlight: Dar dacă veţi întrebuinţa o <em>vorbire</em> încâlcită şi pretenţioasă, pentru a-i uimi pe ascultători
+Highlight: pentru noi şcoala adevăratei înţelepciuni şi în <em>vorbire</em> şi în purtare.
+Highlight: împrumuta felul Tău şi faţă de semenii săi, în <em>vorbire</em> şi purtare.
+
+Score: 15.90909
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
+Highlight: deschide cu Împărate Ceresc. Încep apoi <em>vorbirile</em>, după fiecare <em>vorbire</em> pe rând corul Oastei de la Bucureşti
 Highlight: Duhului Sfânt. Au vorbit 20 de fraţi, după fiecare <em>vorbire</em> înălţându-se Domnului o cântare acompaniată de
 Highlight: Munteanu, care deschide cuvântările cu o mişcătoare <em>vorbire</em> pentru scopul binecuvântatei înţelegeri pentru
-Highlight: Împărate Ceresc. Încep apoi vorbirile, după fiecare <em>vorbire</em> pe rând corul Oastei de la Bucureşti şi fanfara
 Highlight: după care a urmat fr. Ioan Tudusciuc, apoi a doua <em>vorbire</em> a părintelui Iosif:
 Highlight: Vasile Gâlea de la Bârlad, rosteşte o mişcătoare <em>vorbire</em>.
-Highlight: îndrăzneală taina Evangheliei, să <em>vorbesc</em> cu îndrăzneală aşa cum trebuie să <em>vorbesc</em> ( Efes
+Highlight: şi fraţi. Momentul cel mai impresionant a fost <em>vorbirea</em> părintelui Iosif. La chemarea sa, din mijlocul
 
-Score: 15.959999
+Score: 15.875
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
 Type: articol
 Author: Traian Dorz
-Highlight: dulceaţă, de frumuseţe. Fie că e <em>vorba</em> de rugăciune, fie de <em>vorbire</em>, fie de binefacerile lui felurite
 Highlight: inimă şi un gând, o învăţătură şi o credinţă, o <em>vorbire</em> şi o umblare. Faceţi fiecare totul ca să fiţi ca
 Highlight: Când este Duhul Sfânt într-o <em>vorbire</em>, atunci un curent ceresc înfioară totul, o lumină
+Highlight: frumuseţe. Fie că e vorba de rugăciune, fie de <em>vorbire</em>, fie de binefacerile lui felurite în mijlocul celorlalţi
 Highlight: Nu te ridica la <em>vorbire</em> dacă nu ai un puternic îndemn din partea Duhului
 Highlight: limbă şi având aceeaşi Înţelepciune, avem aceeaşi <em>vorbire</em>. Având acelaşi auz, înţelegem la fel - şi având
-Highlight: chinui pe toţi cu <em>vorbele</em> tale despre dragoste, când tu eşti cu totul împotriva ei? Cu <em>vorbele</em> tale despre
+Highlight: Aceasta este totdeauna minunea pe care o face <em>vorbirea</em> Duhului, fiindcă nu Apostolii vorbeau, ci Duhul
 
-Score: 14.4375
+Score: 14.388889
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Biblia şi viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: După o astfel de <em>vorbire</em> care ne-a răpit un ceas din cea mai scumpă vreme
+Highlight: 17 - Dacă veţi întrebuinţa o <em>vorbire</em> simplă, vă vor înţelege şi cei învăţaţi.
+Highlight: Dar dacă veţi întrebuinţa o <em>vorbire</em> încâlcită şi pretenţioasă, pentru a-i uimi pe ascultători
+Highlight: Când <em>vorbirea</em> noastră se formează după vocabularul clar, cuviincios
+Highlight: Este o fericire să asculţi <em>vorbirile</em> pline de miez ale unor ucenici credincioşi ai
+Highlight: 15 - <em>Vorbirile</em> încâlcite şi vorbitorii acestora, nu aduc niciodată
+
+Score: 14.388889
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 12 - Dovada supremei iubiri
@@ -153,11 +174,11 @@ Author: Traian Dorz
 Highlight: Dar chiar şi în acea <em>vorbire</em> în faţa arhiepiscopiei şi congresului am arătat
 Highlight: Dar el ne grăieşte altfel. Cutremurătoarea lui <em>vorbire</em> de acum este şi mai puternică decât toate cele
 Highlight: După o <em>vorbire</em> la păr. Bujoreanu îl vedem pe părintele Vladimir
-Highlight: decembrie 1937 avurăm acasă cu toţii o stare de <em>vorbă</em> în legătură cu următoarea nevoie de foaie, când
-Highlight: După câteva <em>vorbe</em> începătoare, părintele descrisese pe scurt starea
-Highlight: durerea sa şi nu mai ştia cum să ne liniştească, cu <em>vorbe</em> mângâietoare şi calde: -
+Highlight: 26 iunie 1932 acelaşi preot Iosif Trifa publică <em>vorbirea</em> sa de a doua zi de Rusalii de la Congresul Oastei
+Highlight: Reclamanta stăruia mereu asupra <em>vorbirii</em> pe care am ţinut-o cu prilejul congresului, când
+Highlight: Toată ziua şi toată noaptea continuă programul de <em>vorbiri</em>, cântări şi rugăciuni al fraţilor. Dintre preoţii
 
-Score: 14.416667
+Score: 14.375
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 7 - Primii paşi spre o rânduială
@@ -166,11 +187,23 @@ Author: Traian Dorz
 Highlight: nici denumirea care i s-a dat şi nici felul de <em>vorbire</em> care i s-a imprimat de la început, acestei paşnice
 Highlight: frăţietatea îşi va lua încet, încet, din felul de <em>vorbire</em> de
 Highlight: La această <em>vorbire</em> păr. Trifa a zis: iacă, eu, în această istorie
-Highlight: s-a încetăţenit acel vocabular, acest fel de a <em>vorbi</em> şi scrie, care mai târziu va părea unora prea de
 Highlight: fel de a fi, au rămas mereu la numele lor şi la <em>vorbirea</em> lor, încredinţaţi că prin toate aceste lucruri
-Highlight: împotriva uneltirilor vrăjmaşului diavol. Şi este <em>vorba</em> acolo despre centura Adevărului, platoşa neprihănirii
+Highlight: <em>Vorbirea</em> părintelui I. Trifa Adunarea
+Highlight: <em>Vorbirea</em> primpretorului E. Munteanu A
 
-Score: 14.4
+Score: 14.333333
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Rugăciunea şi fiii ei
+Type: articol
+Author: Traian Dorz
+Highlight: bătături nici la şolduri de dormit, nici la limbă de <em>vorbire</em>, nici la degete de lingură, - ci la genunchi de
+Highlight: - atunci orice <em>vorbire</em> a noastră va fi ascultată cu plăcere de întreaga
+Highlight: aceea nu mai au nici ce să le spună fraţilor în <em>vorbire</em>.
+Highlight: 16 - O, cât de puţine sunt <em>vorbirile</em> despre care întreaga adunare să spună că a fost
+Highlight: adunaţi ascultă cu plăcere şi se întorc zidiţi de <em>vorbirea</em> lor.  O
+
+Score: 14.25
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)
@@ -179,102 +212,62 @@ Author: Traian Dorz
 Highlight: Sfântul Pavel foloseşte acest fel de <em>vorbire</em> ca un exemplu pentru ceea ce a făcut Mântuitorul
 Highlight: preajma ta, - felul tău de viaţă, felul tău de <em>vorbire</em>, felul tău de lucrare?
 Highlight:  o fire ambiţioasă, o umblare dezbinătoare, o <em>vorbire</em> prefăcută sau vicleană, o viaţă răvăşită şi rătăcită
-Highlight: 19. <em>Vorbesc</em> omeneşte, din pricina neputinţei firii voastre
-Highlight: meditaţiei, a postului, a binefacerilor, dar nu <em>vorbim</em> despre acestea cu toată inima arzând de o dorinţă
-Highlight: pocăinţa noastră nu-i o trecere la o sectă sau o <em>vorbă</em> goală. Ci-i o schimbare adevărată, o înnoire făcută
 
-Score: 12.966665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Vorba şi împlinirea
 Type: articol
 Author: Traian Dorz
-Highlight: tu care ai avut un talent aşa de frumos pentru <em>vorbire</em> şi o râvnă aşa de fierbinte să alergi?
-Highlight: Înaintaşii mei au avut o atât de limpede <em>vorbire</em>, de aprinsă dragoste şi de sfântă viaţă.
-Highlight: neascultător printre fraţi. Când toţi credeam la fel, <em>vorbeam</em> la fel şi umblam la fel. Ar
-Highlight: Nimeni, nimeni. Nici măcar de formă. Nici măcar cu o <em>vorbă</em>. N-am dorit nici un sacrificiu... - dar am dorit
-Highlight: La de toate câte este nevoie, - am răspuns eu <em>vorbind</em> despre serviciu. -
-Highlight: La auzul acestor <em>vorbe</em> inspectorul sări furios gata să mă lovească: -
+Highlight: inimă şi un gând, o învăţătură şi o credinţă, o <em>vorbire</em> şi o umblare.
+Highlight: 16 - Când este Duhul Sfânt într-o <em>vorbire</em>, atunci un cutremur ceresc înfioară totul,
+Highlight: Fie că e vorba de rugăciune, fie de <em>vorbire</em>, fie de binefacerile lui felurite, - în mijlocul
 
-Score: 12.961537
+Score: 12.888888
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)
 Type: articol
 Author: Traian Dorz
-Highlight: atunci orice <em>vorbire</em> a noastră va fi ascultată cu plăcere de întreaga adunare. Şi orice <em>vorbă</em> a noastră
+Highlight: şi părtăşia noastră în dragoste, - atunci orice <em>vorbire</em> a noastră va fi ascultată cu plăcere de întreaga
 Highlight: aceea nu mai au nici ce să le spună fraţilor în <em>vorbire</em>.
-Highlight: când s-a înmulţit numărul ucenicilor, evreii care <em>vorbeau</em> greceşte, cârteau împotriva evreilor, pentru că
 Highlight: 5. <em>Vorbirea</em> aceasta a plăcut întregii adunări. Au ales pe
-Highlight: 1 - Evreii care <em>vorbeau</em> greceşte, cârteau Orice
-Highlight: Iar toţi aceştia, <em>vorbind</em> o limbă străină de a poporului sfânt, având o fire
+Highlight: 5 - <em>Vorbirea</em> aceasta a plăcut întregii adunări Tot
+Highlight: O, cât de puţine sunt <em>vorbirile</em> despre care întreagă adunarea să spună că au fost
+Highlight: adunaţi ascultă cu plăcere şi se întorc zidiţi de <em>vorbirea</em> lor!  O
 
-Score: 12.941175
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
+Score: 12.799999
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Călăuzirea Duhului Sfânt
 Type: articol
 Author: Traian Dorz
-Highlight: în duh: vibra mişcător, însufleţitor. A fost o <em>vorbire</em> ce a rămas în suflete şi desigur că va duce şi
-Highlight: întărire sufletească. Dăm în altă parte această <em>vorbire</em>.
-Highlight: ştie omul să-şi întocmească planurile când este <em>vorba</em> să urmărească ceea ce îi place ( Ieremia
-Highlight: faptul că aici nu este <em>vorba</em> numai  despre
-Highlight:  ci este <em>vorba</em> despre  soluţionarea
-Highlight: bisericii, din toate unghiurile ţării. Nu mai este <em>vorba</em> de un act de insubordinaţiune al unei persoane ci
+Highlight: 3 - Nu te ridica la <em>vorbire</em> dacă nu ai un puternic îndemn din partea Duhului
+Highlight: limbă şi având aceeaşi înţelepciune avem aceeaşi <em>vorbire</em>,
+Highlight: Aceasta este totdeauna minunea pe care o face <em>vorbirea</em> Duhului, fiindcă nu apostolii vorbeau, ci Duhul
+Highlight: cei ce-l aud. Duhul Sfânt îi dă darul acesta al <em>vorbirii</em> în felurite limbi, după feluritele trebuinţe sufleteşti
 
-Score: 12.923076
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Maramureşului
-Type: articol
-Author: Traian Dorz
-Highlight: în tăcere şi-n <em>vorbire</em>, în umblare ca şi-n faptă
-Highlight: şi în muncă şi-n odihnă, şi-n <em>vorbire</em> şi-n bucate.
-Highlight: 19 - Nu-ţi <em>vorbi</em> de rău duşmanul, dacă este om cinstit nici
-Highlight: 52 - Dacă-n stările de <em>vorbă</em> nu te cerţi şi nu te-aprinzi ai
-Highlight: pătează orişicâtă <em>vorbă</em> rea orişicine-ar
-Highlight: 75 - De la <em>vorbă</em> treci la faptă
-
-Score: 12.899999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: hotărât - şi minunatul lui dar de <em>vorbire</em>.
-Highlight: Tinerime rătăcită, plin de putere ne-a ţinut o <em>vorbire</em> înflăcărată... ardeam cu toţii şi din adâncul sufletului
-Highlight: fr. Vasile Roşianu care era brutar la Spital şi <em>vorbise</em> cu portarul să-mi dea voie să merg la ei, ori de
-Highlight: (Aceştia luau adesea cuvântul în adunare şi unii <em>vorbeau</em> frumos). Apoi mai erau o seamă de tinere ca surorile
-Highlight: Dintre toţi tinerii care <em>vorbeau</em> atunci prin adunări îmi plăcea
-Highlight: Marini, pe Vasile Roşianu şi pe Viorel... Frumos <em>vorbea</em> pe atunci fr. Viorel Trifa, fiindcă sufletul lui
-
-Score: 12.874999
+Score: 12.799999
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 16-a după Rusalii
 Type: articol
 Author: Traian Dorz
 Highlight: 8. în slavă şi în ocară, în <em>vorbire</em> de rău şi în <em>vorbire</em> de bine. Suntem priviţi ca nişte înşelători
-Highlight: că purtarea lui începe să dea semne de mândrie, <em>vorba</em> începe să-i fie poruncitoare şi aspră, inima neprimitoare
 Highlight: <em>Vorbirea</em> de rău trebuie să ne atingă numai în măsura în
 Highlight: În <em>vorbirea</em> de bine să trecem tot meritul asupra Domnului
-Highlight: importanţă în luarea marilor hotărâri, şi când este <em>vorba</em> de vreun drept sau de vreo parte în împărţirea avantajelor
-Highlight: viaţa chiar şi prin stările în care, omeneşte <em>vorbind</em>, ar trebui să fim cei mai întristaţi.
 
-Score: 12.874999
+Score: 12.749999
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)
 Type: articol
 Author: Traian Dorz
-Highlight: puternic în Scripturi, cu o <em>vorbire</em> cuceritoare, frumoasă şi meşteşugită, <em>vorbind</em> cu o aleasă înţelepciune
+Highlight: iscusit în cuvânt şi puternic în Scripturi, cu o <em>vorbire</em> cuceritoare, frumoasă şi meşteşugită, vorbind cu
 Highlight: Altul este poate ca Pavel, cu o <em>vorbire</em> mai simplă, dar mai puternică, mai calmă, dar mai
-Highlight: oricât de mult s-ar fi vorbit sau încă s-ar mai <em>vorbi</em> despre aceste adevăruri şi datorii, pe care trebuie
 Highlight: să clădească şi el deasupra Temeliei ceva, prin <em>vorbirea</em> lui, sau prin cântarea, sau prin scrisul lui -
-Highlight: Le plac predicuţele uşoare, căile uşoare, <em>vorbele</em> uşoare, îmbrăcămintea uşoară şi sarcinile uşoare
-Highlight: Toţi Sfinţii Părinţi <em>vorbesc</em> în scrierile lor că acest foc va fi un cumplit
 
-Score: 12.799999
+Score: 12.666666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Izvorul nostru
 Title: Acela care mi-a spus tot ce am făcut
@@ -282,243 +275,139 @@ Type: articol
 Author: Traian Dorz
 Highlight: de a face aşa, este un mare păcat şi se cheamă <em>vorbire</em> de rău (
 Highlight: Te rog dăruieşte-mi un duh cumpătat în <em>vorbire</em> pentru că fiecare cuvânt al meu mă va judeca pe
-Highlight: Nu spune nici un rău despre nimeni înainte de a <em>vorbi</em> cu acela personal, despre păcatul care îl vezi la
-Highlight: şi să <em>vorbesc</em> mai puţin despre ele.
 
-Score: 11.95
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Pe când vorbea Isus, mulţi au crezut...
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
-Highlight: Nu repetaţi mereu în <em>vorbire</em> aceleaşi lucruri simple şi fără adâncime,
-Highlight: lucruri. Şi nu umpleţi vremea numai cu <em>vorbe</em> goale, ci umpleţi <em>vorbele</em> voastre cu puterea Cuvântului Sfânt
-Highlight: şi nici unii nu mai pot fi atenţi, ei tot <em>vorbesc</em> şi <em>vorbesc</em>, pierzând timpul cel scump şi sfânt, fără
-Highlight: seama de ele, <em>vorbirea</em> voastră va fi cu har şi dreasă cu sare, după cum a fost <em>vorbirea</em> Domnului Isus
-Highlight: Pe când <em>vorbea</em> Isus astfel, mulţi au crezut în El. Credinţa
-Highlight: Aşa trebuie să fie <em>vorbirea</em> noastră încât  tot
-Highlight: Pe când <em>vorbea</em> Isus, mulţi au crezut...
+Highlight: tu care ai avut un talent aşa de frumos pentru <em>vorbire</em> şi o râvnă aşa de fierbinte să alergi?
+Highlight: Înaintaşii mei au avut o atât de limpede <em>vorbire</em>, de aprinsă dragoste şi de sfântă viaţă.
 
-Score: 11.888889
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight: în duh: vibra mişcător, însufleţitor. A fost o <em>vorbire</em> ce a rămas în suflete şi desigur că va duce şi
+Highlight: întărire sufletească. Dăm în altă parte această <em>vorbire</em>.
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 9 - În vremea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: plăcea felul lui hotărât - şi minunatul lui dar de <em>vorbire</em>.
+Highlight: Tinerime rătăcită, plin de putere ne-a ţinut o <em>vorbire</em> înflăcărată... ardeam cu toţii şi din adâncul sufletului
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Cuvântul, duhul şi simţirea
+Type: articol
+Author: Traian Dorz
+Highlight: aceea dacă este o <em>vorbire</em> trupească pentru lucrurile trupului - trebuie să fie şi o <em>vorbire</em> duhovnicească
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Maramureşului
+Type: articol
+Author: Traian Dorz
+Highlight: în tăcere şi-n <em>vorbire</em>, în umblare ca şi-n faptă
+Highlight: şi în muncă şi-n odihnă, şi-n <em>vorbire</em> şi-n bucate.
+
+Score: 11.833333
 Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Vorbirea şi harul
 Type: articol
 Author: Traian Dorz
-Highlight: ascultă, - renunţaţi la <em>vorbire</em> şi adânciţi-vă în rugăciune pentru cei ce <em>vorbesc</em> şi pentru cei ce ascultă
-Highlight: <em>vorbele</em> care au rămas în istorie, n-au fost din cele mai
+Highlight: care să dea har celor ce ascultă, - renunţaţi la <em>vorbire</em> şi adânciţi-vă în rugăciune pentru cei ce vorbesc
 Highlight: dos, - căci din pricina acestuia va lepăda toată <em>vorbirea</em> ta.
 Highlight: vorbiţi, oricând vorbiţi - şi tot timpul cât durează <em>vorbirea</em> voastră, - amintiţi-vă neîncetat că voi vestiţi
-Highlight: aşa cum I-aţi <em>vorbi</em> Lui cum doreşte El. Cum Îi place Lui.
-Highlight: Atunci şi numai atunci <em>vorbirea</em> voastră va fi
+Highlight: atunci <em>vorbirea</em> voastră va fi spre folosul şi bucuria tuturor celor ce vă ascultă.
+Highlight: Atunci <em>vorbirea</em> vă va
 Highlight: <em>Vorbirea</em> şi harul
 
-Score: 11.833333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Poate vorbi singur...
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă după ani lungi de credinţă, felul de <em>vorbire</em> al cuiva este tot fără sare şi tot fără har (
-Highlight: vârstă, el singur poate <em>vorbi</em> despre ce-l priveşte. Când
-Highlight: Când un fiu poate <em>vorbi</em> singur şi ştie să vorbească
-Highlight: <em>Vorbirea</em> cuiva este dovada maturităţii sale, dovada înţelepciunii
-Highlight: Dar cine poate <em>vorbi</em> singur, fără să trebuiască să stea mereu lângă el
-Highlight: Poate <em>vorbi</em> singur...
-
-Score: 11.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Eu, Cel ce vorbesc cu tine...
-Type: articol
-Author: Traian Dorz
-Highlight: gura noastră să fie cumpătată în <em>vorbire</em> şi în tăcere,
-Highlight: Isus i-a zis: Eu, cel care <em>vorbesc</em> cu tine, sunt Acela. Toată
-Highlight: şi cu care <em>vorbim</em> noi prin rugăciunile şi meditaţiile şi mărturisirea
-Highlight: înduri să asculţi cu bunătate şi răbdare tot ce-Ţi <em>vorbim</em> fiecare dintre noi, despre păcatele noastre, despre
-Highlight: Eu, Cel ce <em>vorbesc</em> cu tine...
-
-Score: 11.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Noroadele vorbeau în şoaptă
-Type: articol
-Author: Traian Dorz
-Highlight: Ci cumpătaţi în <em>vorbire</em> şi înţelepţi în purtare, să fie şi prin cuvânt
-Highlight: Atunci când nu se poate <em>vorbi</em> tare, când nu se poate <em>vorbi</em> decât în şoaptă, atunci se spun foarte
-Highlight: Noroadele <em>vorbeau</em> mult în şoaptă despre El. Unii ziceau: Este
-Highlight: Noroadele <em>vorbeau</em> în şoaptă
-
-Score: 9.947369
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Fratele Opriş... are un aşa minunat dar de <em>vorbire</em>, de emoţionare, de cucerire. Şi-a pus viaţa întreagă
-Highlight: va trebui să <em>vorbim</em> şi despre lucruri neplăcute. Ei bine iată acum trebuie să vă <em>vorbesc</em> despre lucrul
-Highlight: glasul care îi <em>vorbise</em>, dar de data asta a văzut pe Cineva îmbrăcat în alb, care îi <em>vorbea</em> dintr-o mare
-Highlight: Dumnezeu, Marele nostru Medic Mântuitor, - fie că este <em>vorba</em> de spital, de închisoare sau de alt necaz - încercarea
-Highlight: trei oameni. Aici stăteam ziua la mâncare sau la <em>vorbă</em>, în şoapte. Încă
-Highlight: - E foarte bine aşa, - gândeam şi <em>vorbeam</em>. În felul acesta vom avea prilejul nu numai să
-
 Score: 9.9375
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Olteniei
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Pe când vorbea Isus, mulţi au crezut...
 Type: articol
 Author: Traian Dorz
-Highlight: 97 - Gândeşte-te ce ai de spus nainte de <em>vorbire</em>!
-Highlight: 14 - Cine-n <em>vorbă</em> nu greşeşte multă
-Highlight: - căci în <em>vorbă</em> mai ales se
-Highlight: 15 - Leapădă-ţi de tot din gură <em>vorba</em> cu-nţeles sucit,  ea
-Highlight: ca vântul <em>vorba</em> zboară.  17
-Highlight: 41 - Limba înţeleaptă-n <em>vorbe</em> dă ştiinţa cea plăcută,  gura
+Highlight: repetaţi mereu în <em>vorbire</em> aceleaşi lucruri simple şi fără adâncime,
+Highlight: repetate ar fi, nu pot niciodată înlocui <em>vorbirea</em> şi <em>vorbirile</em> pline de putere şi de miez duhovnicesc.
+Highlight: seama de ele, <em>vorbirea</em> voastră va fi cu har şi dreasă cu sare, după cum a fost <em>vorbirea</em> Domnului Isus
+Highlight: Chemarea de la sfârşitul <em>vorbirii</em>, trebuie să fie numai prilejul dovedirii credinţei
+Highlight: Aşa trebuie să fie <em>vorbirea</em> noastră încât  tot
+Highlight: care au auzit-o, să fie numai o urmare normală a <em>vorbirii</em>, iar nu o urmare forţată a prea îndelungatelor
 
-Score: 9.933333
+Score: 9.9
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 15 - Al doilea foc
 Type: articol
 Author: Traian Dorz
 Highlight: Aşa de mare putere în <em>vorbire</em> avea fr. Marini.
-Highlight: noi. Când vine de la episcop, aproape nu mai poţi <em>vorbi</em> cu el. -
-Highlight: cunoscut şi pe Tudor Popescu. Am stat adeseori de <em>vorbă</em> cu el chiar în casa lui. Despre istoria căruia ştiam
-Highlight: eu, ci îl ştiu bine cu toţii cei ce l-au auzit <em>vorbind</em>. Dintre aceştia mulţi mai trăiesc şi azi. Aş
-Highlight: vorbiseră înaintea lui spre a-i da prilejul a ne <em>vorbi</em> el în aşa fel încât ne-a umplut sufletele... Sau
+Highlight: avea fratele Marini un mare dar şi talent: darul <em>vorbirii</em> puternice, închegate, înflăcărate şi cuceritoare
+Highlight: legătură cu puterea din <em>vorbirile</em> fr. Marini...
+Highlight: ...când s-au terminat <em>vorbirile</em> slabe ale celor doi dinaintea
 Highlight: adunarea de seara, în curtea surorii Mina Stoica, în <em>vorbirea</em> lui, oamenii se predau Domnului cu grămada, în
+Highlight: oprit în drum unde l-a înconjurat mulţimea şi <em>vorbirea</em> lui i-a uimit şi cucerit pe toţi. Dar
 
-Score: 9.933333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
+Score: 9.875
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Noi am auzit...
 Type: articol
 Author: Traian Dorz
-Highlight: Şi apoi dă-le Doamne o gură înţeleaptă la <em>vorbire</em>, blândă la mustrări, caldă la chemare, curată la
-Highlight: faptele pe care le face, căci ne cleveteşte cu <em>vorbe</em> rele... ( 3
-Highlight: tot întrebi pe un astfel de vrăjitor, căruia îi <em>vorbesc</em> tot felul de duhuri mincinoase, tot felul de lucruri
-Highlight: în îngeri de lumină, ca să vă amăgească. Şi vă <em>vorbesc</em> cu aere  profetice
-Highlight: inima voastră este numai Duhul lui Hristos, în <em>vorbirea</em> voastră numai Cuvântul lui Hristos şi în viaţa
-Highlight: despre care sunt tot mai puţini cei care ne mai <em>vorbesc</em> acum.  O
+Highlight: dăruieşte vorbitorilor Tăi un cuget curat şi o <em>vorbire</em> desluşită,
+Highlight:  <em>vorbirea</em> Mea? - le-a zis Isus, - şi tot El a şi răspuns:
+Highlight: să nu-ţi pierzi degeaba timpul ascultării unei <em>vorbiri</em>, caută să fi atent la tot ce spune.  Căci
+Highlight: şti cuvintele lui să-i acopere gândurile, duhul <em>vorbirii</em> sale le va descoperi,  -
+Highlight: De aceea în timpul <em>vorbirii</em> tale, ascultă şi tu din când în când la Hristos
+Highlight: mrejile pierzătoare ale celor răuvoitori, care cu <em>vorbiri</em> dulci şi amăgitoare umblă mereu să înşele inimile
 
-Score: 9.928572
+Score: 9.833333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 18 - Un vânt rău
 Type: articol
 Author: Traian Dorz
 Highlight: aşa mare putere în <em>vorbirea</em> sa. A fost o mare bucurie pentru toţi minunata lui <em>vorbire</em>, singura care a înviorat
-Highlight: început mai mult tăcu. Pe urmă căută să schimbe <em>vorba</em>. Înţelesei că despre legătura cu fraţii aleşi din
-Highlight: mergeau lucrurile acolo el dorea mai bine să nu <em>vorbim</em>. Mergeau bine - după părerea lui - şi eu mai bine
-Highlight: N-am vrut să-l întristez, nici să <em>vorbesc</em> împotriva lor - dar în tot anul acela nu ne-am
-Highlight: Sibiu nu voiau nici acum cu nici un chip să stăm de <em>vorbă</em> cu cei de la mitropolie. Noi voiam să vedem dacă
-Highlight: Secaş ne trimise <em>vorbă</em> că poate să vorbească doar un singur frate dintre
+Highlight: , cu <em>vorbiri</em> dulci şi amăgitoare de inimile celor lesne-crezători
+Highlight: cuvântarea mitropolitului. Dar chiar de la începutul <em>vorbirii</em> sale ne-a privit cu nişte ochi încruntaţi ca pe
+Highlight: După terminarea <em>vorbirii</em> fratelui Petru, mulţimea fraţilor s-a strecurat
 
-Score: 9.916667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
-Type: articol
-Author: Traian Dorz
-Highlight: acolo la încheierea anului şi că le-a ţinut o <em>vorbire</em> ca unor tineri preoţi care mergând în parohii le
-Highlight: - va <em>vorbi</em> altfel. Trecuse printr-o sfântă transformare. Era unicul caz. La vremea sa vom <em>vorbi</em> mai pe
-Highlight: ce <em>vorbesc</em> eu, - ei sunt pentru război”. (
-Highlight: cu un preot vicar a stat aproape două ceasuri de <em>vorbă</em> cu mine. Adică am vorbit numai dânsul şi eu, fiindcă
-Highlight: pentru că nu-mi pot stăpâni durerea şi trebuia să <em>vorbesc</em> în felul acesta. Dar de ce nu este nimeni care
-Highlight: fusesem la el ultima dată. Atunci se comportase şi <em>vorbise</em> cu totul altfel. Felul acesta în care l-am văzut
-
-Score: 9.916667
+Score: 9.833333
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)
 Type: articol
 Author: Traian Dorz
 Highlight: semnele lumii în casă, ori anecdotele lumeşti în <em>vorbire</em>, ori necumpătarea în purtări, ori desfrâul în ochi
-Highlight: aşa. Când este <em>vorba</em> de bine, atunci lumea vorbeşte numai despre unul. Când este <em>vorba</em> de rău, atunci
-Highlight: Carnea!... Nu-i <em>vorba</em> aici numai de îmbuibarea cu mâncăruri de multe feluri
-Highlight: Este şi de asta, dar nu numai de asta. Ci este <em>vorba</em> de un mai larg înţeles al tuturor pretenţiilor legate
-Highlight: atunci când noi nu grăim nimic. Chiar şi atunci când <em>vorbim</em> prea mult fără să spunem nimic.
+Highlight: Cuvântul carne, în înţelesul Bibliei şi al <em>vorbirii</em> duhovniceşti, are aici şi peste tot în Sfintele
 Highlight: nimic. După <em>vorbirea</em> aceasta, un ascultător a întrebat pe altul:
-
-Score: 9.9
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre flecărie
-Type: articol
-Author: Traian Dorz
-Highlight: Cel ce n-ar greşi-n <em>vorbire</em> ar fi-un om desăvârşit -
-Highlight: fapta bună - <em>vorbe</em> rele,  fapta
-Highlight: Fugi de <em>vorba</em> rea şi roagă gândul sfânt să-ţi
-Highlight: rana unei <em>vorbe</em> rele nu se-nchide viaţa toată;  dacă
-Highlight: dacă ştii ce usturime poţi să faci c-o <em>vorbă</em> rea,  către
-Highlight: nu <em>vorbi</em> grăbit de nimeni până n-ai o-ncredinţare,
-
-Score: 9.875
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Nicodim I-a zis: cum se poate?
-Type: articol
-Author: Traian Dorz
-Highlight: trebuie o <em>vorbire</em> duhovnicească
-Highlight: Ci <em>vorbim</em> despre acea renaştere sufletească despre care este <em>vorba</em> aici, acum, despre
-Highlight: cât de mulţi <em>vorbesc</em> aiurea.  E
-Highlight: E plină lumea de oameni neştiutori, care duhovniceşte <em>vorbind</em> sunt nişte
-Highlight: <em>vorbesc</em> cu trufaşă  competenţă
-Highlight: Nu vrem să <em>vorbim</em> acum, în aceste rânduri despre Sfânta Taină a Botezului
-
-Score: 9.857142
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Arătarea şi ascunderea
-Type: articol
-Author: Traian Dorz
-Highlight: Orice <em>vorbire</em> îşi are motivul ei mărturisit sau nemărturisit.
-Highlight: Unii spun motivul pentru care <em>vorbesc</em>, pe
-Highlight: Unii spun motivul pentru care nu <em>vorbesc</em>, alţii nu-l spun.
-Highlight: 10 - Dacă vă interesează Isus, stăm de <em>vorbă</em> toată viaţa, oricât vreţi şi oriunde vreţi.
-Highlight: dacă nu vă interesează El, atunci n-avem ce să mai <em>vorbim</em> nici două minute împreună, niciodată.
-Highlight: credincios va fi tare totdeauna în mărturisirea Lui şi <em>vorbind</em> cu îndrăzneală sau tăcând cu înţelepciune - va
-
-Score: 9.857142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-Highlight: soră văduvă, cu un defect de <em>vorbire</em>, - şi ne-a spus:
-Highlight: - “Eu nu pot să <em>vorbesc</em> nimănui despre Domnul din
-Highlight: înţeleagă darul lui Dumnezeu şi cine era Acela care <em>vorbea</em> cu noi atunci - şi pe câte căi voia El să vină
-Highlight: Nu s-a auzit nici o <em>vorbă</em> de glumă proastă şi nici o înjurătură şi nu s-a
-Highlight: slujba lui. La priveghere în loc de rugăciuni şi <em>vorbe</em> folositoare se fac jocuri de cărţi, strigăte, glume
-Highlight: În alte duminici cercetăm spitalele stând de <em>vorbă</em> cu bolnavii şi mângâindu-i cu Cuvântul Domnului
-
-Score: 9.857142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-Highlight: făcuse întocmai ca pâinea şi apa. El era veşnic în <em>vorbire</em> cu Dumnezeu. El grăia clipă de clipă cu Domnul
-Highlight: nume de preoţi despre care am vorbit şi vom mai <em>vorbi</em> şi cărora le vom păstra o veşnică preţuire - şi
-Highlight: acesta pentru Hristos! Toţi sfinţii evanghelişti <em>vorbesc</em> care de care mai frumos despre el. În
-Highlight:  să-şi însemne bine aceste <em>vorbe</em>. În pornirea de a nimici un om şi o jertfă, să nu
-Highlight: mine. Iar eu nu aveam nici o altă apărare decât <em>vorba</em>:
-Highlight: E şi firesc să fie aşa. Căci altfel nu se poate <em>vorbi</em> despre a suferi. Numai ca nevinovat poţi spune că
-
-Score: 9.857142
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
-Author: Traian Dorz
-Highlight: nostru Isus Hristos, să aveţi toţi acelaşi fel de <em>vorbire</em>, să n-aveţi dezbinări între voi, ci să fiţi uniţi
-Highlight: se duce de spune altui frate lucrător, ducând <em>vorbele</em> de la unul despre altul...
-Highlight: s-au dus îndată să spună, nu la lume, pentru a se <em>vorbi</em> de rău Lucrarea Domnului, ci la Apostolul lui Dumnezeu
-Highlight: prefăcătoriei, a dragostei făţarnice... a iubirii false cu <em>vorba</em> şi cu cântarea. Dar a uneltirii cu fapta, contra
-Highlight: E şi mai de mirare cum pot <em>vorbi</em> aceştia de sinceritatea inimii, când ei au o inimă
-Highlight: Ce duhuri le <em>vorbesc</em> oamenilor acestora?
+Highlight: - Ce zici despre <em>vorbirea</em> asta?
+Highlight: de seamă asupra ta, asupra învăţăturii, asupra <em>vorbirii</em> şi asupra pildei pe care o dai altora. Asupra
 
 Score: 9.833333
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Lucrarea Sfântului Duh
+Type: articol
+Author: Traian Dorz
+Highlight: Iar dacă Îl vei primi, atunci să ştii că nu o <em>vorbire</em> în altă limbă va fi dovada că L-ai primit, ci dovada
+Highlight: Toată <em>vorbirea</em> aceea din Ziua Cincizecimii, cuprinde esenţa Lucrării
+Highlight: 8 - Nu <em>vorbirea</em> în limbi neînţelese este semnul Duhului Sfânt
+Highlight: Iar aceasta se face cu <em>vorbirea</em> cea mai înţeleaptă. Căci dacă trâmbiţa ar da un
+Highlight: <em>Vorbirile</em> neînţelese nu sunt ale Duhului Sfânt, ci a unor
+
+Score: 9.8
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: ... Tu dar ce zici?
@@ -527,44 +416,7 @@ Author: Traian Dorz
 Highlight: dar ce usturătoare este această <em>vorbire</em>, pentru orice om care umblă după păcate şi aleargă
 Highlight: este <em>vorbirea</em> Domnului când grăieşte în apărarea oamenilor.  Dar
 Highlight: Dar cât de îngrozitoare este <em>vorbirea</em> oamenilor
-Highlight: Acum vă va <em>vorbi</em> pentru ochi şi pentru conştiinţă, vouă tuturor fariseilor
 Highlight: ce dulce este Cuvântul Tău şi ce clară este <em>vorbirea</em> Ta, pentru orice suflet care vrea să se mântuiască
-
-Score: 9.833333
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Adevărul şi mărturisirea
-Type: articol
-Author: Traian Dorz
-Highlight: 11 - Dacă după ani lungi de credinţă, felul de <em>vorbire</em> al cuiva este încă tot fără sare şi tot fără har
-Highlight: Isus Hristos, aceia ce cred în Numele Lui şi care <em>vorbesc</em> în acest Nume.  2
-Highlight: 10 - Când un fiu poate <em>vorbi</em> singur şi ştie să vorbească bine, adică are înţelepciunea
-Highlight: <em>Vorbirea</em> cuiva este dovada maturităţii sale, dovada înţelepciunii
-Highlight: 12 - Dar cine poate <em>vorbi</em> singur, fără să trebuiască să stea mereu lângă el
-
-Score: 9.833333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
-Type: articol
-Author: Traian Dorz
-Highlight: urările lor de bine, atât în scris, cât şi în <em>vorbire</em>.
-Highlight: dacă mulţi înţelepţi ai lumii acesteia ne-au putut <em>vorbi</em> înalt şi inspirat despre ce este şi trebuie să fie
-Highlight: dacă este un nume de soră sau de frate. Când este <em>vorba</em> de  ea
-Highlight: Fiii mei, vă <em>vorbesc</em> vouă care mă mai ascultaţi şi vouă care mă mai
-Highlight: Aici nu este <em>vorba</em> de cei care-L urăsc pe Domnul sau Îl ocărăsc şi
-
-Score: 9.833333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
-Type: articol
-Author: Traian Dorz
-Highlight: tinereţea; ci fii o pildă pentru credincioşi: în <em>vorbire</em>, în purtare, în dragoste, în credinţă, în curăţie
-Highlight: care îl are o făptură omenească. Darul de a putea <em>vorbi</em>, de a-şi putea exprima simţămintele prin cuvinte
-Highlight: M-a învăţat ce trebuie să spun şi cum trebuie să <em>vorbesc</em> (
-Highlight: Nu <em>vorbele</em>, ci puterea sunt semnele. Nu lauda, ci roadele
-Highlight: gândul său, pentru nimic. Pentru că oricine va <em>vorbi</em> sau va gândi ceva rău împotriva lui, va fi judecat
 
 Score: 9.8
 Volume: Istoria unei Jertfe
@@ -573,29 +425,20 @@ Title: Cap. 19 - Mereu morminte noi
 Type: articol
 Author: Traian Dorz
 Highlight: participăm şi noi doi, eu cu o poezie, iar el cu o <em>vorbire</em>. După ce eu plin de timiditate şi de stângăcie
-Highlight: spus la rândul meu, nu ştiam de ce a venit mereu <em>vorba</em> “despărţire”. Despărţirea sfântului Pavel de la
+Highlight:  şi un bogat program de cântări, declamări şi <em>vorbiri</em>.  Printre
 Highlight: ştiu cât a vorbit, dar tot timpul cât a ţinut <em>vorbirea</em> lui, nu s-a auzit un zgomot, nu s-a făcut o mişcare
-Highlight: limpede adevărata semnificaţie. Iată despre ce este <em>vorba</em>: Preotul parohiei noastre care în ultimul timp a
+Highlight: fermecaţi de harul şi de lumina cerească din toate <em>vorbirile</em> lui, despre dragostea şi lacrimile lui Dumnezeu
 
 Score: 9.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 25 - Istorie şi suferinţă
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
 Type: articol
 Author: Traian Dorz
-Highlight: apărare al bisericii. Ei fac apostolatul laic prin <em>vorbire</em> şi faptă. Pe voi fraţii ostaşi vă binecuvântez
-Highlight: săgeţi ameninţătoare, interzicându-ne orice <em>vorbă</em>... <em>Vorbeam</em> numai în şoaptă şi numai câteva minute - totuşi
-Highlight: poartă numele de ostaşi ai Domnului despre care <em>vorbesc</em> acum şi vreau ca acest cuvânt al meu să fie ascultat
-
-Score: 9.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: ... Doamne, Tu să-mi speli picioarele?
-Type: articol
-Author: Traian Dorz
-Highlight:  nu numai o <em>vorbire</em>, însă tot aşa de neobişnuită. De aceea era mult
-Highlight: Când le <em>vorbise</em> în trecut despre Trupul şi Sângele Său ( Ioan
-Highlight: cei mai mulţi dintre ucenicii Săi L-au părăsit. <em>Vorbirea</em> neobişnuită pe care toţi o auziseră, unii n-au
+Highlight: Şi apoi dă-le Doamne o gură înţeleaptă la <em>vorbire</em>, blândă la mustrări, caldă la chemare, curată la
+Highlight: inima voastră este numai Duhul lui Hristos, în <em>vorbirea</em> voastră numai Cuvântul lui Hristos şi în viaţa
+Highlight: <em>Vorbirea</em> Părintelui Pavel către păstoriţii lui din Efes
+Highlight: <em>Vorbirea</em> părintelui Iosif la zece ani de păstorire, în
 
 Score: 9.75
 Volume: Istoria unei Jertfe
@@ -604,132 +447,183 @@ Title: Cap. 20 - Rugul care nu se mistuie
 Type: articol
 Author: Traian Dorz
 Highlight: Dumnezeu cu un mare dar şi cu o mare putere în <em>vorbire</em>, el n-a obosit nici până azi, în anii bătrâneţii
-Highlight: atunci încă simţul de a ajuta şi cu mâna nu numai cu <em>vorba</em>, la lucrul Evangheliei - nu-l aveau prea mulţi.
-Highlight: Dacă va <em>vorbi</em> El de la catedră, vom auzi şi din bancă, şi de la
+Highlight: rugăciunea rostită de fr. Ilie Marini, a urmat şirul <em>vorbirilor</em> începând cu fr. David Bălăuţă, fr. Dr. Banu,
+Highlight: cerceta ducându-le Cuvântul lui Dumnezeu în cărţi şi <em>vorbiri</em> - şi pe cât se poate şi cu hrană trupească rece
 
 Score: 9.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
+Type: articol
+Author: Traian Dorz
+Highlight: nostru Isus Hristos, să aveţi toţi acelaşi fel de <em>vorbire</em>, să n-aveţi dezbinări între voi, ci să fiţi uniţi
+Highlight: propovăduiesc Evanghelia: nu cu înţelepciunea <em>vorbirii</em>, ca nu cumva crucea lui Hristos să fie făcută
+Highlight: din voi şi dintre voi duhul dezbinărilor, al <em>vorbirilor</em> felurite, al certurilor şi al zavistiei!
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Nicodim I-a zis: cum se poate?
+Type: articol
+Author: Traian Dorz
+Highlight: trebuie o <em>vorbire</em> duhovnicească
+Highlight: lucrurile duhovniceşti s-au băgat oameni fireşti, cu <em>vorbiri</em> fireşti, cu înţelegeri fireşti, cu explicaţii fireşti
+Highlight: ei. Şi se acopere în minţile oamenilor şi în <em>vorbirile</em> lor, tot ce este în legătură cu ea, spunându-se
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Poate vorbi singur...
+Type: articol
+Author: Traian Dorz
+Highlight: Dacă după ani lungi de credinţă, felul de <em>vorbire</em> al cuiva este tot fără sare şi tot fără har (
+Highlight: <em>Vorbirea</em> cuiva este dovada maturităţii sale, dovada înţelepciunii
+Highlight: ca prin <em>vorbirile</em> lor, ei să fie totdeauna o puternică dovadă despre
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Tu cine eşti?
+Type: articol
+Author: Traian Dorz
+Highlight: lucrare de artă: o scriere, o poezie, o cântare, o <em>vorbire</em>, tot ceea ce este inspiraţie, este zbor. Zbor înalt
+Highlight: Moise a zis: Ah Doamne eu nu sunt un om cu <em>vorbirea</em> uşoară... nu pot să merg. Trimite pe altul.  Iar
+Highlight: Cu cât un vorbitor va fi mai smerit, cu atâta <em>vorbirea</em> sa va fi mai înaltă. Şi cu cât un binefăcător
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: ... Doamne, Tu să-mi speli picioarele?
+Type: articol
+Author: Traian Dorz
+Highlight:  nu numai o <em>vorbire</em>, însă tot aşa de neobişnuită. De aceea era mult
+Highlight: cei mai mulţi dintre ucenicii Săi L-au părăsit. <em>Vorbirea</em> neobişnuită pe care toţi o auziseră, unii n-au
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: A paşte turma Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: nu înseamnă numai să se dea pilda turmei în <em>vorbire</em>, în blândeţe, în înfrânare, în răbdare, în dragoste
+Highlight: dacă nu-şi opresc <em>vorbirile</em> porcoase în faţa ta,
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Adevărul şi mărturisirea
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Dacă după ani lungi de credinţă, felul de <em>vorbire</em> al cuiva este încă tot fără sare şi tot fără har
+Highlight: <em>Vorbirea</em> cuiva este dovada maturităţii sale, dovada înţelepciunii
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Arătarea şi ascunderea
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Orice <em>vorbire</em> îşi are motivul ei mărturisit sau nemărturisit.
+Highlight: caută să se ascundă după diferite cotituri ale <em>vorbirii</em> sau ale tăcerii lor.
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
+Type: articol
+Author: Traian Dorz
+Highlight: acolo la încheierea anului şi că le-a ţinut o <em>vorbire</em> ca unor tineri preoţi care mergând în parohii le
+Highlight: majoritatea lor tineri şi auzind înflăcăratele <em>vorbiri</em> pline de curaj, de sinceritate şi de purtare sfântă
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Type: articol
+Author: Traian Dorz
+Highlight: venit la redacţie o soră văduvă, cu un defect de <em>vorbire</em>, - şi ne-a spus:
+Highlight: În restul <em>vorbirii</em> s-au arătat rosturile creştineşti, bisericeşti
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 25 - Istorie şi suferinţă
+Type: articol
+Author: Traian Dorz
+Highlight: apărare al bisericii. Ei fac apostolatul laic prin <em>vorbire</em> şi faptă. Pe voi fraţii ostaşi vă binecuvântez
+Highlight: La sfârşitul <em>vorbirii</em> sale, adânc mişcat şi îndurerat s-a aplecat şi
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Cine primeşte... adevereşte
+Type: articol
+Author: Traian Dorz
+Highlight: puterea înnoitoare a lui Hristos este numai o <em>vorbire</em> goală, fiindcă iată dovada: pe el, pe acesta nu
+Highlight: mai puternică predică despre Tine decât toate <em>vorbirile</em> lor.
+
+Score: 9.666667
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pacea noastră
 Title: Când va veni El, va dovedi...
 Type: articol
 Author: Traian Dorz
 Highlight: Iar dacă Îl vei primi, atunci să ştii că nu o <em>vorbire</em> în altă limbă va fi dovada că L-ai primit, ci dovada
-Highlight: Duhul Sfânt care <em>vorbea</em> prin gura sfântului apostol, arăta puternic chiar
 Highlight: Toată <em>vorbirea</em> aceea din Ziua Cincizecimii cuprinde esenţa lucrării
 
-Score: 9.75
+Score: 9.666667
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
 Title: De aceea au zis
 Type: articol
 Author: Traian Dorz
-Highlight: Orice <em>vorbire</em> îşi are motivul ei mărturisit sau nemărturisit.
-Highlight: Unii spun motivul pentru care <em>vorbesc</em>, pe
-Highlight: Unii spun motivul pentru care nu <em>vorbesc</em>, alţii nu-l spun.
+Highlight: Orice <em>vorbire</em> îşi are motivul ei mărturisit sau nemărturisit
+Highlight: caută să se ascundă după diferite cotituri ale <em>vorbirii</em> sau ale tăcerii lor.
 
-Score: 9.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: El este Acela despre care ziceam
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Olteniei
 Type: articol
 Author: Traian Dorz
-Highlight: Bagă bine de seamă la felul lor de <em>vorbire</em> de astăzi, dar nu uita pe cel de ieri. Şi lasă-i
-Highlight: În felul de a <em>vorbi</em> al lui Ioan Botezătorul, apare mereu trimiterea
-Highlight: nu înfăţişează altfel decât cele pe care el le <em>vorbise</em> la început. Ci ele întăresc şi adeveresc şi mai
+Highlight: 97 - Gândeşte-te ce ai de spus nainte de <em>vorbire</em>!
+Highlight: 16 - Fă jug <em>vorbirii</em> tale iar limbii tale cheie,  o
 
-Score: 9.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Iudeii Îl căutau în timpul Praznicului
-Type: articol
-Author: Traian Dorz
-Highlight: atunci când tăcerea era mai înţeleaptă decât orice <em>vorbire</em>.
-Highlight: ), în felul de a nu lucra, şi a nu <em>vorbi</em>.  Va
-Highlight: Va <em>vorbi</em> totdeauna cu grijă şi cu chibzuinţă ( Iacov
-
-Score: 9.75
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
+Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
 Type: articol
 Author: Traian Dorz
-Highlight: Lucrul acesta nu este numai o simplă <em>vorbire</em>, sau doar o laudă de formă - ci este o realitate
-Highlight: şi în timp ce <em>vorbim</em> despre împăcare - noi urzim uneltiri şi
-Highlight: mişcă, nu mai lucrează, nu mai respiră, nu mai <em>vorbesc</em>...  Ci
+Highlight: în multe feluri... Dacă nu greşeşte cineva în <em>vorbire</em>, este un om desăvârşit (
+Highlight: Din pricina unei <em>vorbiri</em> şi a unei feţe blânde la un credincios, capătă
 
-Score: 9.75
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)
 Type: articol
 Author: Traian Dorz
 Highlight: A face o <em>vorbire</em> sau o vorbărie religioasă poate orice pomănar care
-Highlight: desigur nu e un nenorocit. Fiindcă nu se poate <em>vorbi</em> de o mântuire a cuiva, decât în clipa când el începe
 Highlight: mărturisim în chip plin de vrednicie - cu toată <em>vorbirea</em> noastră, umblarea şi trăirea noastră - adevărul
 
-Score: 9.75
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)
 Type: articol
 Author: Traian Dorz
 Highlight: aceeaşi credinţă a inimii şi la acelaşi fel de <em>vorbire</em> a gurii cu toţi fraţii noştri şi cu toată Lucrarea
-Highlight: De fiecare dată când este <em>vorba</em> despre un păcat - la fel.  Iar
-Highlight: Iar când este <em>vorba</em> despre o virtute a credinţei
+Highlight: voastre, bunul simţ al purtării voastre, cuvintele <em>vorbirii</em> voastre, delicateţea gesturilor voastre, toate
 
-Score: 9.75
+Score: 9.666667
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învăţătorul nostru
-Title: Suiţi-vă voi...
+Title: Noroadele vorbeau în şoaptă
 Type: articol
 Author: Traian Dorz
-Highlight: ci înţelepţi, şi în tăcere şi în <em>vorbire</em>, să umble potrivit cu umblarea Ta.
-Highlight: smerenia sinceră şi adevărată, cu fapta, nu numai cu <em>vorba</em>.
-Highlight: Rabdă <em>vorbe</em>, rabdă fapte, fără nici o-mpotrivire
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Arată-ne pe Tatăl!
-Type: articol
-Author: Traian Dorz
-Highlight: Apoi prin tot felul de <em>vorbire</em>, de cântare, de primire, de umblare, tot pentru
-Highlight: cu cuvintele noastre oricât de frumoase ar fi, <em>vorbind</em>, scriind, cântând sau rugându-ne,  -
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 24 - Pânza care se ţese
-Type: articol
-Author: Traian Dorz
-Highlight: mai văzusem de atunci. Fr. Leon a ţinut o scurtă <em>vorbire</em> luându-şi rămas bun de la fraţi, pentru ultima
-Highlight: care fratele nostru ţinea atât de mult şi din care <em>vorbea</em> atât de des: şi după ce vă voi pregăti un loc,
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Două mii de ani Isuse...
-Type: poezie
-Author: Traian Dorz
-Highlight: nici duioasa Ta <em>vorbire</em> care mângâie şi-alină,
-Highlight: şi <em>vorbesc</em> despre-mpăcare pe
-
-Score: 9.666667
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Moise, alesul Domnului, a petrecut
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: prin care Domnul a stat de <em>vorbă</em> cu Moise, iar un timp petrecut în <em>vorbire</em> cu Domnul nu este niciodată
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Nu ştim ce vrea să spună
-Type: articol
-Author: Traian Dorz
-Highlight: - Dar înafară de puţina noastră mângâiere din <em>vorbire</em> şi osteneli şi puţina încurajare pe care i-o puteam
-Highlight: Părintele şi învăţătorul nostru, <em>vorbea</em> puţin şi aştepta mult.
+Highlight: Ci cumpătaţi în <em>vorbire</em> şi înţelepţi în purtare, să fie şi prin cuvânt
+Highlight: totdeauna trează şi înţeleaptă care să-i ferească de <em>vorbiri</em> nechibzuite şi de obiceiurile uşuratice şi lumeşti
 
 Score: 9.666667
 Volume: Cântări Nemuritoare
@@ -738,7 +632,89 @@ Title: Nu-i greu ce dăm noi
 Type: poezie
 Author: Traian Dorz
 Highlight: Nu-i prea mult harul în <em>vorbire</em>,
-Highlight: ce-o prea tot cântă şi-o <em>vorbesc</em>.
+Highlight: <em>vorbiri</em> prea multe-s fără har,
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Pacea - şi fiii păcii
+Type: articol
+Author: Traian Dorz
+Highlight: roadele Tale, ci numai falsa <em>vorbire</em> în felurite limbi, - care nu este <em>vorbirea</em> Ta.
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Petru s-a întristat
+Type: articol
+Author: Traian Dorz
+Highlight: Nu înseamnă numai să se dea pildă turmei, în <em>vorbire</em>, în blândeţe, în înfrânare, în răbdare, în dragoste
+Highlight: Întocmiţi-vă <em>vorbirea</em> în aşa fel ca s-o înţeleagă toţi şi să se hrănească
+
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Zvonul printre fraţi
+Type: articol
+Author: Traian Dorz
+Highlight: Hristos: unitatea în învăţătură, în credinţă, în <em>vorbire</em>, în umblare, unitate în răbdare, în blândeţe, în
+Highlight: Fă jug <em>vorbirii</em> tale, iar limbii tale cheie
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Adevăratele duhuri duhovniceşti
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Darul puterii în <em>vorbire</em> şi în scriere,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Adevăratul ucenic al Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: - Să fii măsurat în <em>vorbire</em>, chibzuit în fapte, mărginit în dorinţe.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Calea vieţii noastre
+Title: Arată-ne pe Tatăl!
+Type: articol
+Author: Traian Dorz
+Highlight: Apoi prin tot felul de <em>vorbire</em>, de cântare, de primire, de umblare, tot pentru
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 24 - Pânza care se ţese
+Type: articol
+Author: Traian Dorz
+Highlight: mai văzusem de atunci. Fr. Leon a ţinut o scurtă <em>vorbire</em> luându-şi rămas bun de la fraţi, pentru ultima
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: făcuse întocmai ca pâinea şi apa. El era veşnic în <em>vorbire</em> cu Dumnezeu. El grăia clipă de clipă cu Domnul
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Fratele Opriş... are un aşa minunat dar de <em>vorbire</em>, de emoţionare, de cucerire. Şi-a pus viaţa întreagă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Cel Adevărat şi cel mincinos
+Type: articol
+Author: Traian Dorz
+Highlight:  o fire ambiţioasă, o umblare dezbinătoare, o <em>vorbire</em> prefăcută sau vicleană, o viaţă răvăşită şi rătăcită
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -750,19 +726,19 @@ Highlight: Gândeşte-te ce ai de spus, nainte de <em>vorbire</em>,
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Cine Mă vede pe Mine
+Type: articol
+Author: Traian Dorz
+Highlight: - Să fii măsurat în <em>vorbire</em>, chibzuit în fapte, mărginit în dorinţe.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
 Title: Cine crede în Fiul are...
 Type: articol
 Author: Traian Dorz
 Highlight: că ai măsură înţeleaptă în <em>vorbire</em>,
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Cine primeşte... adevereşte
-Type: articol
-Author: Traian Dorz
-Highlight: puterea înnoitoare a lui Hristos este numai o <em>vorbire</em> goală, fiindcă iată dovada: pe el, pe acesta nu
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -773,12 +749,180 @@ Author: Traian Dorz
 Highlight: casă, când El nu este în adunare, când nu-I în <em>vorbire</em>, când nu-I în lucrare şi-n inimă, - ce triste sunt
 
 Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Cum M-a trimis pe Mine Tatăl
 Type: articol
 Author: Traian Dorz
-Highlight: în multe feluri... Dacă nu greşeşte cineva în <em>vorbire</em>, este un om desăvârşit (
+Highlight: Cu o <em>vorbire</em>, cu o umblare, cu o trăire ca ei, printre ei, lângă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Cunoaşterea şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: A face o <em>vorbire</em> sau o vorbărie religioasă, poate orice pomănar
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Curajul şi lucrarea
+Type: articol
+Author: Traian Dorz
+Highlight: Hristos Domnul nu înseamnă numai activitate de <em>vorbire</em> şi de limbă, ci înseamnă mai ales curaj, înseamnă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Căderea şi ridicarea
+Type: articol
+Author: Traian Dorz
+Highlight: vestitorii Domnului au o putere Dumnezeiască în <em>vorbire</em>,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre flecărie
+Type: articol
+Author: Traian Dorz
+Highlight: Cel ce n-ar greşi-n <em>vorbire</em> ar fi-un om desăvârşit -
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Două mii de ani Isuse...
+Type: poezie
+Author: Traian Dorz
+Highlight: nici duioasa Ta <em>vorbire</em> care mângâie şi-alină,
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: El este Acela despre care ziceam
+Type: articol
+Author: Traian Dorz
+Highlight: Bagă bine de seamă la felul lor de <em>vorbire</em> de astăzi, dar nu uita pe cel de ieri. Şi lasă-i
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Eu, Cel ce vorbesc cu tine...
+Type: articol
+Author: Traian Dorz
+Highlight: gura noastră să fie cumpătată în <em>vorbire</em> şi în tăcere,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Frumuseţea inimii noastre
+Type: articol
+Author: Traian Dorz
+Highlight: şi la acelaşi fel de <em>vorbire</em> al gurii,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Grija umblării noastre
+Type: articol
+Author: Traian Dorz
+Highlight: 3 - Să fim totdeauna măsuraţi în <em>vorbire</em> şi în comportări.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Hristos S-a dat pe Sine!
+Type: articol
+Author: Traian Dorz
+Highlight: o <em>vorbire</em> minunată,
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Iudeii Îl căutau în timpul Praznicului
+Type: articol
+Author: Traian Dorz
+Highlight: atunci când tăcerea era mai înţeleaptă decât orice <em>vorbire</em>.
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
+Type: articol
+Author: Traian Dorz
+Highlight: urările lor de bine, atât în scris, cât şi în <em>vorbire</em>.
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
+Type: articol
+Author: Traian Dorz
+Highlight: Lucrul acesta nu este numai o simplă <em>vorbire</em>, sau doar o laudă de formă - ci este o realitate
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Type: articol
+Author: Traian Dorz
+Highlight: tinereţea; ci fii o pildă pentru credincioşi: în <em>vorbire</em>, în purtare, în dragoste, în credinţă, în curăţie
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Libertatea Cuvântului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: de o mie de ori mai nevoie de tăcere decât de <em>vorbire</em>, - este o mare chibzuinţă şi pricepere.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Luaţi Duh Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: Darul puterii în <em>vorbire</em> şi în scriere,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Lupta contra păcatului
+Type: articol
+Author: Traian Dorz
+Highlight: Ori când sunt păcate între fraţi, <em>vorbire</em> de rău între surori, neascultare între tineret
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Marea şi ultima biruinţă
+Type: articol
+Author: Traian Dorz
+Highlight: 13 - Orice <em>vorbire</em> şi cuvânt al Domnului Isus, arată limpede ceva
+
+Score: 9.5
+Volume: Spre Canaan
+Book: Spre Canaan
+Title: Moise, alesul Domnului, a petrecut
+Type: articol
+Author: Pr. Iosif Trifa
+Highlight: stat de vorbă cu Moise, iar un timp petrecut în <em>vorbire</em> cu Domnul nu este niciodată un timp pierdut.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Nu ştim ce vrea să spună
+Type: articol
+Author: Traian Dorz
+Highlight: - Dar înafară de puţina noastră mângâiere din <em>vorbire</em> şi osteneli şi puţina încurajare pe care i-o puteam
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Oamenii lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: în urările lor de bine, atât în scris cât şi în <em>vorbire</em>.
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -798,11 +942,51 @@ Highlight: privinţele o pildă de fapte bune pentru credincioşi: în <em>vorbi
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Ploaia şi Cuvântul
+Type: articol
+Author: Traian Dorz
+Highlight: 6 - Să nu ne îndoim de puterea de <em>vorbire</em> a Cuvântului lui Dumnezeu. Cât de târziu şi cât
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
 Book: Lumina Iubitului Fiu
 Title: Păcatul fricii
 Type: articol
 Author: Traian Dorz
 Highlight: când El nu este în adunare, când El nu este în <em>vorbire</em>, când El nu-i în Lucrare şi în inimă, - ce triste
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Semănat şi seceriş
+Type: articol
+Author: Traian Dorz
+Highlight: O poezie sau o cântare, sau o <em>vorbire</em> au valoare numai în măsura în care acestea lasă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Sufletul omului şi voia lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Isus Domnul nostru, - ajungând la acelaşi fel de <em>vorbire</em> şi umblare.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Suiţi-vă voi...
+Type: articol
+Author: Traian Dorz
+Highlight: ci înţelepţi, şi în tăcere şi în <em>vorbire</em>, să umble potrivit cu umblarea Ta.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Tot despre cârtitor
+Type: articol
+Author: Traian Dorz
+Highlight: Că greşeşte cel mai ades în <em>vorbire</em>.
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -811,6 +995,22 @@ Title: Toţi cei ce fuseseră cu Isus, - mărturiseau
 Type: articol
 Author: Traian Dorz
 Highlight: Mărturisirea despre Isus, este nu numai <em>vorbire</em> despre Evanghelia Sa, sau predicarea poruncilor
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Trimesul şi vânzătorul
+Type: articol
+Author: Traian Dorz
+Highlight: privinţele o pildă de fapte bune pentru credincioşi: în <em>vorbire</em>, în purtare, în dragoste, în credinţă, în curăţie
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Unde sunt doi
+Type: articol
+Author: Traian Dorz
+Highlight: să aibă pe totdeauna şi în totul acelaşi fel de <em>vorbire</em>, de gândire, de umblare şi de simţire care îl face
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -822,434 +1022,9 @@ Highlight: Unul prin <em>vorbire</em>, altul prin tăcere,
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Ştia pe cel ce avea să-L vândă
+Book: Hristos - Împăratul nostru
+Title: Vorbind astfel arăta
 Type: articol
 Author: Traian Dorz
-Highlight: şi toate aluziile pe care i le făcea Domnul în <em>vorbire</em> anume ca să-l înştiinţeze şi să-l trezească, nu-l
-
-Score: 2.857143
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Vorbirea şi tăcerea
-Type: articol
-Author: Traian Dorz
-Highlight: 20 - Atunci când nu se poate <em>vorbi</em> tare, când nu se poate <em>vorbi</em> decât în şoaptă, atunci se spun foarte
-Highlight: fiecăruia Se suie El. După tăcerea fiecăruia va <em>vorbi</em> El. Şi după lucrarea fiecăruia va răsplăti El.
-Highlight: lucra şi a nu <em>vorbi</em>.  Dar
-Highlight: Va <em>vorbi</em> totdeauna
-Highlight: se răspândesc atunci în norod, când nu se poate <em>vorbi</em> decât în şoaptă.
-Highlight: <em>Vorbirea</em> şi tăcerea
-
-Score: 2.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Acela despre care vorbea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: făcut semn să întrebe cine este acela despre care <em>vorbea</em> Isus.
-Highlight: să-L întrebe pe Domnul cine este acela despre care <em>vorbea</em> Isus.
-Highlight: Acela despre care <em>vorbea</em> Isus, era păcatul - şi nu omul.
-Highlight: Acela despre care <em>vorbea</em> Isus
-
-Score: 2.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Ce dulci sunt două vorbe
-Type: poezie
-Author: Traian Dorz
-Highlight: Ce dulci sunt două <em>vorbe</em>-n lume
-Highlight: când spui aceste două <em>vorbe</em>
-Highlight: spre-aceste două <em>vorbe</em> scumpe.
-Highlight: Ce dulci sunt două <em>vorbe</em>
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Isus vorbise despre... - dar ei credeau că...
-Type: articol
-Author: Traian Dorz
-Highlight: Isus <em>vorbise</em> despre moartea lui, dar ei credeau că vorbeşte
-Highlight: De atâtea ori Domnul Isus <em>vorbise</em> una, iar ascultătorii Lui înţeleseseră cu totul
-Highlight: Isus <em>vorbise</em> despre... - dar ei credeau că...
-
-Score: 2.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: La auzul acestor vorbe, au luat - pietre...
-Type: articol
-Author: Traian Dorz
-Highlight: La auzul acestor <em>vorbe</em>, au luat pietre ca să arunce în El. Dar Isus S-a ascuns,
-Highlight: iar când a spus aceste <em>vorbe</em>, oamenii s-au aplecat...
-Highlight: La auzul acestor <em>vorbe</em>, au luat - pietre...
-
-Score: 2.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Vorbea Isus de pe colină
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Vorbea</em> Isus de pe colină
-Highlight: <em>vorbea</em> Isus de pe colină,
-Highlight: <em>Vorbea</em> Isus de pe colină
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Atâtea vorbe
-Type: poezie
-Author: Traian Dorz
-Highlight: Atâtea <em>vorbe</em> fără rost
-Highlight: Atâtea <em>vorbe</em>
-
-Score: 2.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Din frică, nu vorbeau despre El
-Type: articol
-Author: Traian Dorz
-Highlight: Totuşi, de frica iudeilor, nimeni nu <em>vorbea</em> de El pe faţă.
-Highlight: Din frică, nu <em>vorbeau</em> despre El
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Ferice-i a vorbi
-Type: poezie
-Author: Traian Dorz
-Highlight: Ferice-i a <em>vorbi</em> Cuvântul
-Highlight: Ferice-i a <em>vorbi</em>
-
-Score: 2.0
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: ... Vorbesc după cum M-a învăţat Tatăl
-Type: articol
-Author: Traian Dorz
-Highlight: ... <em>Vorbesc</em> după cum M-a învăţat Tatăl
-
-Score: 0.9736842
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: fiecare. Le-am amintit pentru ultima dată tot ce <em>vorbisem</em> cu ei de când ne-am cunoscut, despre mântuirea
-Highlight: renaşterea duhovnicească a poporului nostru, aceste <em>vorbe</em> grele şi neadevărate despre sfânta Lucrare.
-Highlight: explice! Du-te d-ta pe la credincioşi, stai de <em>vorbă</em> cu ei şi arată-le!
-Highlight: talent artistic, Pop deprinsese bine arta de a <em>vorbi</em> îndrăzneţ şi atrăgător. Alegea diferite istorioare
-Highlight: devenea dintr-o dată ca un tigru furios care muşca cu <em>vorbe</em> grele şi necruţătoare pe oricine i se împotrivea
-Highlight: nevoie să ne ocupăm de omul acesta, deşi oricând <em>vorbim</em> despre el ne este neplăcut fiindcă el va avea un
-
-Score: 0.969697
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-Highlight: 33 - <em>Vorba</em> rea a spart mai multe capete - decât toporul,
-Highlight: - cei cu <em>vorbele</em> mieroase multe viclenii ascund.
-Highlight: - în <em>vorbirea</em> celui trufaş nu te-ncrede nici un pas.
-Highlight: 46 - Puţine <em>vorbe</em> sunt cuvinte,
-Highlight: cum e omul, aşa-i <em>vorba</em>.
-Highlight: 48 - Pe acel cu <em>vorbe</em> multe
-
-Score: 0.96
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: slobozit graiul, cuvintele îmi erau grele şi grave, <em>vorbind</em> despre cumplita spaimă şi primejdie cu care vine
-Highlight: în glas atunci când <em>vorbele</em> aprind,
-Highlight: găsise El cu cale să ne trimită. Parcă Domnul ne <em>vorbea</em>:
-Highlight: ştiu ce e cu el, fiindcă nu vrea nici să stea de <em>vorbă</em> cu noi. Când l-am întrebat: d-ta eşti fratele Tudusciuc
-Highlight: care nu voia să aibă nici un fel de apropiere. Nu <em>vorbea</em> cu nimeni nimic şi nici nu răspundea nimănui. Nu
-Highlight: repede. Pe când noi ceilalţi care nu încetăm să <em>vorbim</em> despre Hristos celorlalţi, - vom sta acolo mult
-
-Score: 0.95652175
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: când a văzut purtarea slabă şi <em>vorbele</em> de nimic, - ori purtarea şi <em>vorbele</em> sectare, - ale aceluia care trebuia
-Highlight: de <em>vorbă</em>, fiindcă cei mai mulţi dintre ei n-aveau o altă plăcere mai mare decât să se ia la <em>vorbă</em> asupra
-Highlight: dacă aşa <em>vorbeau</em> despre aceste cele mai mari adevăruri, - e uşor să-ţi închipui cum <em>vorbeau</em> despre celelalte
-Highlight: fi duşi, - spre a mai da de ştire ce facem, ce <em>vorbim</em>, ce gândim. Omul acesta are o structură sufletească
-Highlight: Plătim ce <em>vorbe</em> grele-am spus în viaţă prin
-Highlight: istorisiri - şi încă al altora... Ce greu îmi era să <em>vorbesc</em> despre aceştia. M-am
-
-Score: 0.95454544
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-Highlight: El nu numai că numai tăcea şi numai <em>vorbea</em> cu jumătăţi de <em>vorbe</em> împotriva noastră - ci începuse să vorbească
-Highlight: Cum <em>vorbeam</em> cu fr. Cornel, un pumn mânios văzui venind pe neaşteptate
-Highlight: văd cât înţeleg şi cât simt ei din ceea ce le <em>vorbeam</em> eu. Doream să le simt duhul lor cum răspunde duhului
-Highlight: sărbătorile, erau mereu împreună, putând sta de <em>vorbă</em> cât voiau. Noi
-Highlight: în situaţia asta aveam destulă vreme să stau de <em>vorbă</em> cu fr. Moldoveanu. Aici eram acum numai cu el. Ceilalţi
-Highlight: având timp destul, am angajat destule stări de <em>vorbă</em> zilnic, având astfel fiecare dintre noi prilej să-l
-
-Score: 0.95454544
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: când începusem să <em>vorbesc</em> astfel, dar când am ajuns la acest punct, am simţit că <em>vorbisem</em> de-ajuns - şi am
-Highlight: în aceşti trei ani din urmă, cu câţi stătusem de <em>vorbă</em>, câţi veniseră pe la mine - mi-a arătat dosarul
-Highlight: alarmat de faptul acesta. Desigur stătuseră de <em>vorbă</em> cu el - şi se interesaseră de starea sănătăţii mele
-Highlight: Când am auzit oprindu-se maşina şi apoi <em>vorbe</em> în faţa uşii, am avut doar atâta timp cât să întorc
-Highlight: Am înţeles atunci că mi se oferă o ocazie să pot <em>vorbi</em> ceea ce îmi stătea demult pe suflet. Avusesem timp
-Highlight: Eram atât de mişcat încât <em>vorbeam</em> cu lacrimi. Toţi trei mă ascultau fără să mă privească
-
-Score: 0.95454544
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-Highlight: 42 - Din <em>vorbă</em>-n <em>vorbă</em> se arată
-Highlight: că <em>vorba</em>, numai <em>vorba</em>, adesea n-are preţ.
-Highlight: omul înţelept n-aruncă nici o <em>vorbă</em> fără rost.  7
-Highlight: 9 - Împreună noi <em>vorbim</em> dar
-Highlight: câte-o <em>vorbă</em>-adevărată, pune în minciuna lui.  20
-Highlight: căci o <em>vorbă</em> rea de-i spui iar
-
-Score: 0.95238096
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 24 - Înaintea mai-marilor norodului
-Type: articol
-Author: Traian Dorz
-Highlight: împotriva lui. Aşa că cei mai mulţi nici nu ridicau o <em>vorbă</em> de apărare pentru fraţi.
-Highlight: În multe locuri am avut stări de <em>vorbă</em> zile şi nopţi la rând, cu dezbateri foarte aprinse
-Highlight: la amândouă aceste mari adunări frăţeşti, fiind <em>vorba</em> de o încununare mare a eforturilor noastre spre
-Highlight: localităţi vecine, iar ei se vor duce să stea de <em>vorbă</em> cu autoritatea care ne-a chemat.
-Highlight: miezul nopţii când adunarea era în toi şi tocmai le <em>vorbeam</em> eu fraţilor - au apărut intrând pe uşă vreo 5-6
-Highlight: colonelul... şi maiorul... cutare. Cu noi veţi mai <em>vorbi</em>.
-
-Score: 0.95
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre tăcere
-Type: articol
-Author: Traian Dorz
-Highlight: 1 - Fiul meu, măsoară-ţi <em>vorba</em> ori de câte ori nu taci
-Highlight: şi nu face <em>vorbă</em> multă
-Highlight: căci a şti să taci mai bine-i decât e să ştii <em>vorbi</em>.
-Highlight: nimeni n-a crăpat vreodată c-a ţinut o <em>vorbă</em>-n el.
-Highlight: 9 - Dacă şti <em>vorbi</em>, ne placi
-Highlight: când <em>vorbesc</em>, grăiesc ceva.
-
-Score: 0.94736844
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: Iată de aceea <em>vorbim</em> aşa cum <em>vorbim</em> acum. Fiindcă acest duh nu numai nouă ne-a
-Highlight: Judecata lor fiind pământească, umblarea lumească şi <em>vorbirea</em> firească, - tot aşa este şi sămânţa pe care o
-Highlight: potriveşte de minune cu firea acelor oameni şi cu <em>vorbirea</em> acelor părţi de ţară. De aceea poate acest duh
-Highlight: În condiţiile descrise mai sus, am stat de <em>vorbă</em> cu mai mulţi fraţi de răspundere din Lucrare. Şi
-Highlight: poartă şi aşa <em>vorbesc</em> nişte credincioşi?  De
-Highlight: De ce faceţi scandal şi ce înseamnă <em>vorbele</em> astea necuviincioase
-
-Score: 0.9444444
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: de mâncare şi pături, dar nu ni s-a dat voie să <em>vorbim</em> cu nimeni.
-Highlight: suntem în cea mai mare primejdie. N-avem voie să <em>vorbim</em> între noi decât în şoapte. N-avem voie să ştim
-Highlight: Peste tot însă nu se mai auzea nici o <em>vorbă</em>, ci numai paşi. După zgomotul paşilor, când eram
-Highlight: dintre noi se aşezară în faţa uşii ca şi cum ar <em>vorbi</em> ceva între ei acolo spre a acoperi vizeta ca să
-Highlight: margini. Trecătorii se opreau uitându-se după noi şi <em>vorbeau</em> speriaţi între ei. Unii ducându-şi batistele la
-Highlight: care înapoi, nu cumva să fugim vreunul - sau să <em>vorbim</em> cu cineva.
-
-Score: 0.9444444
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: nimic pentru a-l apăra pe nevinovat. Căci nu era <em>vorba</em> de un om - ci de o Cauză a lui Dumnezeu.
-Highlight: gazetele mitropoliei tot nu încetau cu tot felul de <em>vorbe</em> dispreţuitoare şi judecăţi nedrepte asupra vieţii
-Highlight: duhovnicească, ce este Oastea Domnului. Faptele <em>vorbesc</em>.
-Highlight: Şi am început a <em>vorbi</em>. Cu însufleţire de preot tânăr, am început a învăţa
-Highlight: însufleţirea mea - şi în cealaltă zi tot satul era plin de <em>vorbă</em> că eu nici praznicele din calendar nu vi le ştiu
-Highlight: acum 10 ani, nu puteam înţelege pe deplin aceste <em>vorbe</em>, acest îndemn al sf. ap. Pavel: să aprinzi darul
-
-Score: 0.9444444
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: nu ne îngăduia să <em>vorbim</em>. Iar pe mine, îndată, de la început, m-a bruscat cu <em>vorbe</em> aspre:
-Highlight: verbală bunăvoinţă, când venea - între două grabe - o <em>vorbă</em> şi despre strădaniile preotului  cam
-Highlight: asta pot jura că nu. Mi s-ar fi aruncat în faţă <em>vorba</em>: Singur te-ai încurcat, singur te descurcă.  Azi
-Highlight: Demult mi se tot arunca <em>vorba</em> că am făcut bani cu  Lumina
-Highlight: urmă. Înainte de Naşterea Domnului ce a trecut, <em>vorbisem</em> cu I.P.S. Sa de acest sfat. I-a plăcut ideea şi
-Highlight: Fapte, nu <em>vorbe</em>
-
-Score: 0.9444444
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-Highlight: vină binele din el? - cum pretind unii, care ne <em>vorbesc</em> de rău, că spunem noi. - Osânda acestor oameni
-Highlight: Oastea Domnului erau dintre cele mai zgomotoase. <em>Vorbea</em> neîncetat în aşa de viclean fel tot numai despre
-Highlight: Am mers astfel fără să ne mai <em>vorbim</em> nimic unul altuia. Până ce am ajuns la podul de
-Highlight: înaintea lui, - se opreau, se uitau şi şopteau sau <em>vorbeau</em> tare între ei arătând spre el. Am văzut că tare
-Highlight: aprinse remuşcări. Şi n-am mai putut spune decât trei <em>vorbe</em>:
-Highlight: alungându-mi înapoi în jos toate gândurile şi toate <em>vorbele</em> mele cu care îndrăzneam să mă apropii într-acolo
-
-Score: 0.9411765
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: vom mai <em>vorbi</em>. Aş vrea să cunosc şi lucrarea despre care spui. Dar despre toate acestea voi <em>vorbi</em> şi cu
-Highlight: peste cincizeci de ani în timpul cărora nimic din <em>vorbele</em> şi faptele noastre sau din atitudinea noastră n-a
-Highlight: oricine citeşte aici Traian Dorz, ştie că este <em>vorba</em> despre Oastea Domnului. Dar spune d-ta, - ai venit
-Highlight: plece în alta. Totuşi şi-a făcut timp să stea de <em>vorbă</em> din nou cu mine. Voiam o aprobare pentru tipărirea
-Highlight: la el şi să vorbiţi împreună. După aceea am să <em>vorbesc</em> şi eu cu el. Problema aceasta priveşte toată ţara
-Highlight: Îmbrăcămintea mea nu le prea inspira mare încredere în <em>vorbele</em> mele.
-
-Score: 0.9411765
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: acum ca să-ţi spun că patriarhul vrea să stea de <em>vorbă</em> cu d-ta în problema Oastei Domnului, aşa că ai să-i
-Highlight: Precizam că nu <em>vorbesc</em> în numele nimănui decât al meu personal. Specificam
-Highlight: patriarhul şi Sinodul bisericii au spus că dacă nu pot <em>vorbi</em> în numele Oastei Domnului ci numai în numele meu
-Highlight: a <em>vorbi</em>
-Highlight: . <em>Vorbesc</em> altora atâta despre muncă
-Highlight: <em>Vorbesc</em>
-
-Score: 0.9411765
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-Highlight: obişnuisem cu ei şi mă gândeam de fiecare dată să le <em>vorbesc</em> cât pot şi lor despre Dumnezeu, despre voia Lui
-Highlight: dată mă gândeam că poate fi ultima mea stare de <em>vorbă</em> cu ei - şi mă temeam de Domnul să tac şi să nu le
-Highlight: Unii şi mai rău. Am mai scris asta şi altădată <em>vorbind</em> despre alţii. Doamne, ce la rând şi ce repede s-au
-Highlight: oricărui om aş fi dus - eu să-l privesc şi să-i <em>vorbesc</em> conştient de toată greutatea importanţei veşnice
-Highlight: ori mă duce pe mine la el, tocmai pentru ca să-i <em>vorbesc</em> despre sufletul său şi despre Dumnezeul lui, cele
-Highlight: - Ştii ce <em>vorbesc</em> despre d-ta fraţii dumitale?... cutare şi cutare
-
-Score: 0.9375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: timpului. El nu se lasă prea înflăcărat de larma <em>vorbelor</em> mari şi de agitaţia însufleţirilor mici. Ci zidit
-Highlight: Dar despre ei şi despre faptele lor va mai veni <em>vorba</em> şi în partea a doua a acestei cărţi.
-Highlight: părintele Iosif. Vom avea mai târziu prilejul să <em>vorbim</em> mai pe larg despre partea pe care a luat-o el la
-Highlight: terminat slujba şi predica... apoi am vrut să stăm de <em>vorbă</em> vreo
-Highlight: . Când e <em>vorba</em> de
-Highlight: atât de mic, ca atunci când stam în faţa lui şi <em>vorbeam</em> cu acest om. Mă uitam spre el aproape ca spre turnul
-
-Score: 0.9375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
-Type: articol
-Author: Traian Dorz
-Highlight: iată au ajuns o privelişte de care se miră şi <em>vorbesc</em> toţi oamenii! Nu mai înţelegem nimic!
-Highlight: aceste lucruri am cugetat ori de câte ori am auzit <em>vorbindu</em>-se cu judecată asupra Lucrării Oastei Domnului
-Highlight: numele unor fraţi despre care mai târziu se va <em>vorbi</em> tot mai mult în legătură cu evenimentele din istoria
-Highlight: - Da! - a oftat el atunci. Şi apoi am schimbat <em>vorba</em>.
-Highlight: lui. Dar oricât m-am străduit să fiu ca el, să-i <em>vorbesc</em> mamei lui ca el, să plâng ca el, să simt ca el
-Highlight: este aşezat acum sicriul său, fratele Marini le <em>vorbise</em> atunci sătenilor săi şi nouă tuturor, cu o înflăcărare
-
-Score: 0.9375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-Highlight: înghesuială, după multe nopţi nedormite şi lungi stări de <em>vorbă</em> pentru aplanarea frământărilor şi neînţelegerilor
-Highlight: deosebesc deloc de oamenii lumeşti. Trăiesc ca ei, <em>vorbesc</em> ca ei, umblă ca ei, - dar numindu-se cu lăudăroasă
-Highlight: cealaltă, sunt nemulţumiţi alţii. De aici apoi <em>vorbe</em> rele, învinuiri, judecăţi, ură, bârfe şi numai rău
-Highlight: se dau drept plini de Duhul Sfânt “prorocesc”, “<em>vorbesc</em> în limbi” şi cu un duh de ghicire pun în uimire
-Highlight: să nu meargă cu cei de la cort. Stătusem mult de <em>vorbă</em> cu ei înainte de ruptura lor, zile şi nopţi, luni
-Highlight: Din anul 1984 începusem să gândim şi să <em>vorbim</em> foarte insistent despre trebuinţa asta. Ei, cei
-
-Score: 0.9375
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-Highlight: când începusem să <em>vorbesc</em> - dar când am ajuns la acest punct, am simţit că <em>vorbisem</em> de-ajuns - şi am tăcut
-Highlight: prin curte cu ceilalţi la muncă, îmi îngăduia să <em>vorbesc</em> cu mulţi alţii ceva folositor şi bun, atât pentru
-Highlight: că doarme, dar trăgea cu urechea să audă tot ce <em>vorbesc</em>. Din când în când îi surprindeam ochii sticlind
-Highlight: lungi şi stăruitoare sfaturi frăţeşti şi stări de <em>vorbă</em> mai ales prin adunările atinse de boala dezbinătoare
-Highlight: duhovnicească, atât pentru călătoriile şi stările de <em>vorbă</em> spre lămurirea fraţilor, cât şi pentru concentrarea
-Highlight: Ştim cu cine ai stat de <em>vorbă</em>, ştim câţi au venit pe la d-ta pe acasă. Uite aici
-
-Score: 0.9375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-Highlight: miraţi la mine când au auzit cum îmi <em>vorbise</em> educatorul şi cum <em>vorbisem</em> eu cu el - şi din ceasul acela au
-Highlight: Am crezut că este <em>vorba</em> de acea înfăţişare formală la Procuratură, după
-Highlight: trebuia normal să apară la un proces nici n-a fost <em>vorba</em>... Nici măcar cea mai elementară conştiinţă a împlinirii
-Highlight: care îl arăta. Şi de totala inconştienţă cu care <em>vorbea</em> nu atât despre noi cât despre cele mai sfinte valori
-Highlight: doi. Toţi erau tineri, pletoşi, foarte bruneţi, <em>vorbind</em> între ei şi râzând zgomotos pe ţigăneşte, ungureşte
-Highlight: ieri şi alaltăieri la toţi cei cu care mai putusem <em>vorbi</em>. Poate vreunuia îi vor folosi. Ascultaseră toţi
-
-Score: 0.93333334
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 22 - Peregrinările soliei
-Type: articol
-Author: Traian Dorz
-Highlight: ocazie tot ce îmi ceruse la ultima mea stare de <em>vorbă</em> cu dânsul şi anume memoriul, tabelul cu cele 30
-Highlight: acest scop. Am avut cu această ocazie o stare de <em>vorbă</em> foarte apropiată, cuprinzând amănunte şi gânduri
-Highlight: Ne-a primit cu bucurie şi mi-a arătat în <em>vorbă</em> foarte multă bunăvoinţă. I-am arătat memoriul şi
-Highlight: primire la episcopul titular Eftimie, pentru a sta de <em>vorbă</em> personal şi cu dânsul, căruia voiam să-i predau
-Highlight: eram episcop la Arad, am avut o frumoasă stare de <em>vorbă</em> cu o delegaţie de patru bărbaţi care spuneau că
-Highlight: Mi-a spus că regretă că nu poate să stea acum de <em>vorbă</em> cu dv., că s-ar bucura dacă aţi putea aştepta până
-
-Score: 0.93333334
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: N-am pierdut pe nici unul
-Type: articol
-Author: Traian Dorz
-Highlight: aşa: Dacă-n douăzeci de <em>vorbe</em> ai ceva să ne spui nouă, şi-l poţi spune-n două <em>vorbe</em>, - află-le pe acestea
-Highlight: trebuie să avem când spunem fiecare <em>vorbă</em>, fiindcă fiecare <em>vorbă</em> este un legământ de un fel.
-Highlight: A zis lucrul acesta ca să se împlinească <em>vorba</em>, pe care o spusese: N-am
-Highlight: O, ce mare preţ are fiecare <em>vorbă</em> pe care o spunem fiecare din noi.  Noi
-Highlight: cuvânt pe care îl rostim, fiindcă ne-am obişnuit să <em>vorbim</em> atât de mult, încât noi înşine nu mai dăm de cele
-Highlight: doreşte să-Şi ţină <em>vorba</em> dată.
-
-Score: 0.9285714
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: Am mers să-l ascult, dar felul lui de a <em>vorbi</em>, gesturile lui şi toată comportarea sa, m-a şocat
-Highlight: mi-au zis că numai dacă mergi fr. ta vor sta de <em>vorbă</em> cu mine...
-Highlight: cu ea ne-am înţeles până la urmă bine. A rămas <em>vorba</em> că se vor face pregătirile începătoare a nunţii
-Highlight: continue. Şi o luai înaintea lui fără să ne mai <em>vorbim</em> nimic unul altuia.
-Highlight: aminte şi spui, - poate că scapi. Dacă nu - mai <em>vorbim</em> noi şi altfel. Mai avem şi alte metode. Vei vedea
-Highlight: acelaşi lucru se întâmplă ori dacă tac, ori dacă <em>vorbesc</em>. Mai bine am tăcut.
+Highlight: Orice <em>vorbire</em> a Domnului arăta precis ceva, numea clar un adevăr
 

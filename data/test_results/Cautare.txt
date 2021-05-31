@@ -1,135 +1,93 @@
-+----------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                            | Occurrences                                               | Author          | Tip                              | Carte                        | Volum   |
-+----------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Căutarea şi aflarea                                                              | {'căutăm', 'căutare', 'caută', 'Căutarea'}                | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Cap. 6 - Între două judecăţi                                                     | {'căutare', 'caută', 'caute'}                             | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Bucuria aflării Domnului                                                         | {'căutare', 'căutarea', 'caută', 'căuta'}                 | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Vino şi vezi...                                                                  | {'căutare', 'caută', 'căuta'}                             | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Voi nu Mă cunoaşteţi                                                             | {'căutăm', 'căutare', 'caută'}                            | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                         | {'căutare', 'căuta', 'caute', 'căutau'}                   | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                      | {'căutare', 'caută', 'cauţi'}                             | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Doamne... nu ştim                                                                | {'căutare', 'Căutăm', 'căutăm'}                           | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Isus Se plimba prin Templu                                                       | {'căutare', 'căutau', 'caută'}                            | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Cap. 19 - Mereu morminte noi                                                     | {'căutare', 'căuta'}                                      | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                     | {'căutare', 'căuta'}                                      | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Nu-i o mai strălucită viaţă                                                      | {'căutare'}                                               | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Nu-i o mai strălucită viaţă                                                      | {'căutare'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| S-au dus să-L caute pe Isus                                                      | {'cauţi', 'caută', 'caute'}                               | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Eu nu caut slava Mea                                                             | {'caut', 'caută', 'cauţi'}                                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Nu caut voia Mea...                                                              | {'caut', 'caută'}                                         | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                         | {'caută', 'căuta', 'căutase', 'căutau'}                   | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Căutau pe Isus...                                                                | {'căutau', 'caute', 'căutarea', 'cauţi', 'Căutau'}        | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Unde-ţi cauţi tu fericirea?                                                      | {'cauţi', 'Caut'}                                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Tu poţi să cauţi...                                                              | {'cauţi'}                                                 | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Tu poţi să cauţi...                                                              | {'cauţi'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Mă veţi căuta... şi veţi muri în păcatele - voastre...                           | {'căuta', 'cauţi', 'caută'}                               | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| A lumii avuţii le caută...                                                       | {'caută', 'cauţi'}                                        | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| A lumii avuţii le caută...                                                       | {'caută', 'cauţi'}                                        | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Acela pe care Îl caută ei...                                                     | {'caută', 'căuta'}                                        | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 2 - Îndemn la căutarea Înţelepciunii                                        | {'căuta', 'cauţi', 'căutarea'}                            | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Tu singur trebuie să cauţi                                                       | {'cauţi', 'căută'}                                        | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Caută-ntruna Adevărul                                                            | {'Caută'}                                                 | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | poezie  |
-| Iudeii Îl căutau în timpul Praznicului                                           | {'căutau'}                                                | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Caut să-mi refac                                                                 | {'Caut'}                                                  | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Suflete ce cauţi                                                                 | {'cauţi'}                                                 | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | poezie  |
-| Suflete ce cauţi                                                                 | {'cauţi'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Să cauţi doar ce-i curat                                                         | {'cauţi'}                                                 | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Să cauţi doar ce-i curat                                                         | {'cauţi'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Îşi caută oile pe nume...                                                        | {'căuta', 'caută'}                                        | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Saul caută să ucidă                                                              | {'caută'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)            | {'căutarea', 'căutăm', 'căuta', 'caută', 'căutam'}        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                              | {'căuta', 'caută', 'caut', 'căutau'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                          | {'căuta', 'caute', 'caut', 'căutăm'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                              | {'căuta', 'caută', 'căutam', 'Căutam', 'căutăm'}          | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Acela este adevărat                                                              | {'caută'}                                                 | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                  | {'caute', 'caută', 'caut', 'căutarea', 'căutam'}          | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Isus le-a zis: ce căutaţi?                                                       | {'caută', 'caute', 'cauţi'}                               | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                    | {'caută', 'căutase'}                                      | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Lângă poarta oilor                                                               | {'caute', 'căuta', 'caută', 'Caută'}                      | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut) | {'căuta', 'caută', 'căutau', 'caute'}                     | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Când trecea, Isus a văzut pe un orb                                              | {'caute', 'căuta', 'caută'}                               | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Despre căsnicie                                                                  | {'cauţi', 'caută', 'Caută'}                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Isus a cunoscut că voiau să-L întrebe                                            | {'caută', 'cauţi', 'căutau'}                              | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Pe cine căutaţi?                                                                 | {'caute', 'caută'}                                        | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Răscrucea Isus                                                         | {'caută', 'căuta', 'căutarea', 'căutăm'}                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                       | {'caute', 'caută', 'căuta'}                               | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                  | {'caute', 'caută', 'căuta', 'căutau'}                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                     | {'caute', 'căutăm', 'căuta'}                              | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                         | {'caută', 'caut', 'căutau', 'căuta'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Despre adevăr                                                                    | {'caută', 'cauţi', 'căutăm'}                              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre rău                                                                       | {'caută', 'cauţi', 'căuta'}                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Intrarea şi Ieşirea                                                              | {'caută', 'căuta', 'caut'}                                | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Isus în Templu învăţa norodul                                                    | {'caute', 'caută'}                                        | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - E poate ultima-ncercare...                                             | {'caută', 'căuta'}                                        | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 26 - Fântânile certei noastre                                               | {'căută', 'căuta', 'caută', 'căutau', 'caute'}            | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Dar acum n-au nici o dezvinovăţire                                               | {'caută', 'Caută', 'căuta'}                               | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Din părţile Banatului                                                            | {'caută', 'cauţi', 'căuta'}                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                    | {'caută', 'căuta'}                                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| O, cât de Bun este Domnul!                                                       | {'caute', 'caută', 'căuta'}                               | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Slava şi răsplata                                                                | {'caută'}                                                 | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Acum vedem bine...                                                               | {'caută', 'caute', 'căuta'}                               | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                             | {'caută', 'căuta', 'caute'}                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                     | {'căutau', 'caută', 'căuta', 'caute'}                     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                         | {'căutau', 'căuta', 'Căutam', 'căutăm', 'caut'}           | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                 | {'căuta', 'caută', 'căutai', 'cauţi', 'căutam', 'căutau'} | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                           | {'căutau', 'caută', 'caut'}                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Despre pace                                                                      | {'caută', 'Caută', 'căuta'}                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Doamne, la cine să ne ducem?                                                     | {'caută', 'caute', 'căutăm'}                              | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| Flămând ca nu de pâine                                                           | {'caut', 'caută'}                                         | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
-| Flămând ca nu de pâine                                                           | {'caut', 'caută'}                                         | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)         | {'cauţi', 'Caut', 'căutăm', 'căuta', 'caută'}             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Oricui bea din apa aceasta                                                       | {'cauţi'}                                                 | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Osteneala şi lenea                                                               | {'caută', 'căuta'}                                        | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Primirea lui Hristos                                                             | {'caută'}                                                 | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Psalmul 119                                                                      | {'caută', 'caut'}                                         | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| ... Unde locuieşti?                                                              | {'caută'}                                                 | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| A sosit ceasul să fie proslăvit Fiul                                             | {'căutau', 'caute', 'căutăm', 'căuta'}                    | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Buna-cuviinţă şi evlavia                                                         | {'cauţi', 'caută', 'căuta'}                               | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cap. 12 - Dovada supremei iubiri                                                 | {'caută', 'caute', 'căutau', 'căuta'}                     | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                               | {'căuta', 'caută', 'cauţi'}                               | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Un An Nou Fericit                                                      | {'căuta', 'căutam', 'caută', 'căutăm', 'caute'}           | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                            | {'căuta', 'caute', 'căutăm', 'căutau', 'căutam'}          | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 28 - Necazurile din lungul drumului                                         | {'căuta', 'caută', 'căutăm', 'caut'}                      | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 5 - Întâia judecată                                                         | {'căuta', 'cauţi', 'caută'}                               | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                       | {'căuta', 'caută', 'Caută', 'căutase'}                    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Carne şi Duh...                                                                  | {'căuta'}                                                 | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Celui plătit... nu-i pasă                                                        | {'caută', 'căuta', 'Caută'}                               | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Cine intră pe uşă este păstorul...                                               | {'căuta', 'cauţi'}                                        | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Dar cel plătit lasă oile                                                         | {'caute', 'caută'}                                        | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Despre bunătate                                                                  | {'căuta', 'caută'}                                        | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre cinste                                                                    | {'caută'}                                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre mulţumire                                                                 | {'Caută', 'căuta', 'cauţi', 'caută'}                      | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                            | {'caută', 'Caută', 'cauţi'}                               | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Fricoşii să plece acasă                                                          | {'căuta'}                                                 | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-+----------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Cautare using http://localhost:9000...
-Got 974 hits:
-Score: 6.8333335
++---------------------------------------------------------------------------+---------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                     | Occurrences                           | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------+---------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Căutarea şi aflarea                                                       | {'căutare', 'căutării', 'Căutarea'}   | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Bucuria aflării Domnului                                                  | {'căutare', 'căutarea'}               | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Doamne... nu ştim                                                         | {'căutare', 'căutările'}              | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| Cap. 19 - Mereu morminte noi                                              | {'căutare'}                           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                               | {'căutare'}                           | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                              | {'căutare'}                           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                  | {'căutare'}                           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Între două judecăţi                                              | {'căutare'}                           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cercetaţi duhurile                                                        | {'căutare'}                           | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Când eşti dus...                                                          | {'căutare'}                           | Traian Dorz | Semănaţi Cuvântul Sfânt          | Cugetări Nemuritoare         | articol |
+| Inima şi Împărăţia Domnului                                               | {'căutare'}                           | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Isus Se plimba prin Templu                                                | {'căutare'}                           | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Nu-i o mai strălucită viaţă                                               | {'căutare'}                           | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Nu-i o mai strălucită viaţă                                               | {'căutare'}                           | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Temelia Oastei Domnului                                                   | {'căutare'}                           | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Vino şi vezi...                                                           | {'căutare'}                           | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Voi nu Mă cunoaşteţi                                                      | {'căutare'}                           | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 2 - Îndemn la căutarea Înţelepciunii                                 | {'căutarea'}                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Căutau pe Isus...                                                         | {'căutarea', 'căutării'}              | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| S-au întors acasă                                                         | {'căutări', 'căutarea', 'căutărilor'} | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Sărbătorile noastre                                                       | {'căutarea', 'căutării'}              | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Unire şi suferinţă                                                        | {'căutările', 'căutarea', 'căutării'} | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| L-au găsit... dincolo de mare                                             | {'căutarea'}                          | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)     | {'căutarea'}                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Neliniştitul suflet                                                       | {'căutarea'}                          | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
+| Neliniştitul suflet                                                       | {'căutarea'}                          | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Silinţa şi ajungerea                                                      | {'căutarea', 'căutări'}               | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| În locul unde fusese Isus                                                 | {'căutarea', 'căutări'}               | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... în Numele Meu, voi face                                               | {'căutarea'}                          | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| A crede în Isus Hristos                                                   | {'căutarea'}                          | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| A trecut Isuse vântul                                                     | {'căutării'}                          | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Ca să se arate în el lucrările - lui Dumnezeu                             | {'căutării'}                          | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Grăuntele de muştar                                              | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                  | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                    | {'căutări'}                           | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Pe urmele profetului                                            | {'căutări'}                           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                          | {'căutarea'}                          | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 19 - Al treilea februarie                                            | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                           | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                            | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                             | {'căutări'}                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - Anul următor                                                     | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                   | {'căutarea'}                          | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 9 - Ecles                                                            | {'căutarea'}                          | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Ce-nalt e Doamne                                                          | {'căutarea'}                          | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
+| Ce-nalt e Doamne                                                          | {'căutarea'}                          | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Dar acum n-au nici o dezvinovăţire                                        | {'căutarea'}                          | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Domnul meu...                                                             | {'căutările'}                         | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Ei nu sunt din lume                                                       | {'căutarea'}                          | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Era o zi de sabat                                                         | {'căutarea'}                          | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Fericirea de a fi cu Domnul                                               | {'căutările'}                         | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Isus a zis: Marie!                                                        | {'căutări'}                           | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Isus le-a zis: aduceţi din peştii...                                      | {'căutarea'}                          | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Iubirea şi aurul ceresc                                                   | {'căutarea'}                          | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)  | {'căutării'}                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)       | {'căutarea'}                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului) | {'căutării'}                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 5-a a Postului Mare                           | {'Căutarea'}                          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mai bun este sfârşitul                                                    | {'căutarea'}                          | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Mă căutaţi, pentru că aţi mâncat                                          | {'căutarea'}                          | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Mărturisire şi răspundere                                                 | {'căutarea'}                          | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Noi am găsit                                                              | {'căutarea'}                          | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| O, clipa revederii Lui                                                    | {'căutarea'}                          | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | poezie  |
+| Pe când plângea...                                                        | {'căutările'}                         | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Păcatul fricii                                                            | {'căutarea'}                          | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Părinţii noştri au mâncat                                                 | {'căutarea'}                          | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Părinţii noştri...                                                        | {'căutarea'}                          | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| S-a întors... şi a văzut pe Isus                                          | {'căutarea'}                          | Traian Dorz | Hristos - Mântuitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Singura Speranţă                                                          | {'căutări'}                           | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Tu n-ai vrut fără noi                                                     | {'căutării'}                          | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Vrăjmaşii lui Dumnezeu                                                    | {'căutarea'}                          | Traian Dorz | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| Împlinirea hotărârilor lui Dumnezeu                                       | {'căutarea'}                          | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Şi-a lăsat găleata şi s-a dus                                             | {'căutarea'}                          | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
++---------------------------------------------------------------------------+---------------------------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Cautare using https://api.comori-od.ro...
+Got 73 hits:
+Score: 6.6666665
 Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Căutarea şi aflarea
 Type: articol
 Author: Traian Dorz
-Highlight: dorim, să o <em>căutăm</em> şi să luptăm ca să o dobândim, căci chiar în această dorinţă şi <em>căutare</em> a ei, este
-Highlight: Unii o doresc, o <em>caută</em> şi o ajung,
-Highlight: Iar alţii nici n-o doresc, nici n-o <em>caută</em>. Prin urmare nici n-o află niciodată.
-Highlight: Cine nu <em>caută</em> această unică legătură, nu mai are alta.
+Highlight: să o dobândim, căci chiar în această dorinţă şi <em>căutare</em> a ei, este meritul nostru.
+Highlight: rânduit-o Dumnezeu. Aceştia vor primi răsplata <em>căutării</em>.
 Highlight: <em>Căutarea</em> şi aflarea
 
-Score: 4.9
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 6 - Între două judecăţi
-Type: articol
-Author: Traian Dorz
-Highlight: într-o casă a consistoriului din Sibiu. Şi după o <em>căutare</em> îndelungată prin Sibiu, fraţii au mutat locuinţa
-Highlight: Părintele Trifa, apărător dârz al bisericii străbune <em>caută</em> să făurească cu ajutorul mişcării creştine Oastea
-Highlight: - Părintele Iosif Trifa <em>caută</em> să mântuiască în chip înalt neamul nostru cu ajutorul
-Highlight: Iosif Trifa - într-o vreme când puteri vrăjmaşe <em>caută</em> să dărâme biserica, - înflăcărează şi umple bisericile
-Highlight: . Noi îl rugăm pe păr. Moţa să <em>caute</em> sf. sa prin colecţia scrisului său pentru popor
-Highlight: cineva pentru o crimă, o nelegiuire, - legiuitorul <em>caută</em> şi sondează cu sârguinţă intenţia, cauzele şi împrejurimile
-
-Score: 4.857143
+Score: 4.6666665
 Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
 Title: Bucuria aflării Domnului
@@ -137,91 +95,87 @@ Type: articol
 Author: Traian Dorz
 Highlight: Le este urâtă şi respingătoare orice <em>căutare</em> după laudele şi linguşirile lor,
 Highlight: Dar mai ales în <em>căutarea</em> lui Hristos.  Atunci
-Highlight: - căci pe sufletele care Îl <em>caută</em> pe Hristos în vorbirea ta, chiar le doare şi le
-Highlight: vestitor al Sfintei Evanghelii, acestea n-au ce <em>căuta</em> niciodată.
-Highlight: 5 - Ascultătorul te cercetează şi-ţi <em>caută</em> fiinţa ta, să vadă dacă tu Îl ai pe Hristos
-Highlight: Îţi <em>caută</em> sinceritatea şi încredinţarea, convingerea mărturisirii
 
-Score: 4.8333335
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Vino şi vezi...
-Type: articol
-Author: Traian Dorz
-Highlight: Le este urâtă şi respingătoare orice <em>căutare</em> după laude şi linguşiri
-Highlight: Căci sufletele care Îl <em>caută</em> pe Hristos în vorbirea ta, chiar le doare şi le
-Highlight: la un vestitor al Sfintei Evanghelii, n-are ce <em>căuta</em> niciodată.
-Highlight: Ascultătorul te cercetează şi îţi <em>caută</em> fiinţa ta, să vadă dacă tu Îl ai pe Hristos şi dacă
-Highlight: Îţi <em>caută</em> sinceritatea, încredinţarea, convingerea mărturisirii tale
-
-Score: 4.8333335
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Voi nu Mă cunoaşteţi
-Type: articol
-Author: Traian Dorz
-Highlight: trebuie să o dorim, să o <em>căutăm</em>, să o dobândim. În chiar această dorinţă şi <em>căutare</em> a ei, este meritul nostru
-Highlight: Unii o doresc, o <em>caută</em> şi o ajung,
-Highlight: Iar alţii nici n-o doresc, nici n-o <em>caută</em> şi prin urmare nici n-o află.
-Highlight: Cine nu <em>caută</em> această unică legătură, nu mai are alta.
-
-Score: 4.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-Highlight: mai aflăm acul în carul cu fân? - apoi după o <em>căutare</em> obositoare de multe ori fără rezultat, părintele
-Highlight: starea aceasta, - dar se credea puternic şi se <em>căuta</em> grabnic refacerea unităţii şi armoniei între cele
-Highlight: dinafară - când au auzit că a venit un om care să <em>caute</em> binele copiilor lui Israel
-Highlight:  <em>căutau</em> să-mi ia viaţa şi zestrea morală. Mă gândeam în
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-Highlight: neastâmpăr cuprinde sufletul iubitor şi o continuă <em>căutare</em> de noi căi îl frământă pentru revărsarea binefacerilor
-Highlight: lui nouă, înflăcărată de căldura inimii sale noi, <em>caută</em> şi găseşte o mie de căi necunoscute înainte, neobişnuite
-Highlight: Domnul e cu noi. Un beat strigă la mine: ha-a-a, ce <em>cauţi</em> tu aici? Sărmanul, mi se părea că văd pe gadareanul
-
-Score: 4.75
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Calea vieţii noastre
 Title: Doamne... nu ştim
 Type: articol
 Author: Traian Dorz
 Highlight: capetele ei învăţate, cu toate mijloacele ei de <em>căutare</em> şi cu toate secolele de osteneli - cât a ajuns
-Highlight: <em>Căutăm</em>, <em>căutăm</em>... - ni se pare o clipă că am aflat, dar îndată
+Highlight: Doamne ca Omenirea aceasta atât de zbuciumată în <em>căutările</em> ei, să ajungă să Te cunoască pe Tine Miezul şi
 
-Score: 4.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Isus Se plimba prin Templu
-Type: articol
-Author: Traian Dorz
-Highlight: meditare, de adâncire, de rugăciune în duh - şi de <em>căutare</em> a celor ce aveau nevoie de El.
-Highlight: în Templu, fiindcă cei pe care El îi aştepta, Îl <em>căutau</em> pe afară.
-Highlight: Curând vor veni acele suflete care Îl <em>caută</em> pe Domnul, iar ele trebuie să vă afle pe voi
-
-Score: 4.6666665
+Score: 4.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 19 - Mereu morminte noi
 Type: articol
 Author: Traian Dorz
 Highlight: A trebuit după multă <em>căutare</em> să se afle în sfârşit un străin care să-i bată
-Highlight: stingherit şi ruşinat de această zgomotoasă manifestare, <em>căuta</em> să se strecoare cât mai repede şi cât mai ferit
 
-Score: 4.6666665
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Type: articol
+Author: Traian Dorz
+Highlight: neastâmpăr cuprinde sufletul iubitor şi o continuă <em>căutare</em> de noi căi îl frământă pentru revărsarea binefacerilor
+
+Score: 4.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 23 - Cuvânt Testamentar
 Type: articol
 Author: Traian Dorz
 Highlight: nimic definitivat, suntem cu toţii într-o febrilă <em>căutare</em> şi ce nu am realizat noi, ce nu am fost în stare
-Highlight: pescari aleşi ai Tăi din luntrea noastră, vor şti <em>căuta</em> hrana cea mai bună şi gustoasă pentru noi şi urmaşii
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 4 - În virtutea frumosului avânt...
+Type: articol
+Author: Traian Dorz
+Highlight: mai aflăm acul în carul cu fân? - apoi după o <em>căutare</em> obositoare de multe ori fără rezultat, părintele
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
+Type: articol
+Author: Traian Dorz
+Highlight: într-o casă a consistoriului din Sibiu. Şi după o <em>căutare</em> îndelungată prin Sibiu, fraţii au mutat locuinţa
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Cercetaţi duhurile
+Type: articol
+Author: Traian Dorz
+Highlight: nici calea pe care şi-a ales-o pentru această <em>căutare</em>.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Când eşti dus...
+Type: articol
+Author: Traian Dorz
+Highlight: nimic definitivat, suntem cu toţii într-o febrilă <em>căutare</em> şi ce nu am realizat unii, o vor realiza sigur
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Inima şi Împărăţia Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: cu toate mijloacele ei de <em>căutare</em>
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Isus Se plimba prin Templu
+Type: articol
+Author: Traian Dorz
+Highlight: meditare, de adâncire, de rugăciune în duh - şi de <em>căutare</em> a celor ce aveau nevoie de El.
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -239,1076 +193,490 @@ Type: poezie
 Author: Traian Dorz
 Highlight: <em>căutare</em> a lui Dumnezeu.
 
-Score: 2.9230769
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: S-au dus să-L caute pe Isus
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Temelia Oastei Domnului
 Type: articol
 Author: Traian Dorz
-Highlight: Dacă nu ştii să-L <em>cauţi</em> pe El, <em>caută</em> măcar pe ai Lui
-Highlight: corăbiile acestea, şi s-au dus la Capernaum să <em>caute</em> pe Isus. Dacă
-Highlight: să-L <em>cauţi</em>
-Highlight: Şi să-L <em>cauţi</em> pe Hristos  până
-Highlight: mor oamenii care nici nu-L cunosc şi nici nu-L <em>caută</em> pe Hristos. Ei stau acolo unde El nu mai este demult
-Highlight:  să-L <em>cauţi</em> pe Hristos îndată şi cu grijă. Dacă
-Highlight: S-au dus să-L <em>caute</em> pe Isus
+Highlight: neastâmpăr cuprinde sufletul iubitor şi o continuă <em>căutare</em> de noi căi îl frământă pentru revărsarea binefacerilor
 
-Score: 2.909091
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Vino şi vezi...
+Type: articol
+Author: Traian Dorz
+Highlight: Le este urâtă şi respingătoare orice <em>căutare</em> după laude şi linguşiri
+
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
-Title: Eu nu caut slava Mea
+Title: Voi nu Mă cunoaşteţi
 Type: articol
 Author: Traian Dorz
-Highlight: Eu nu <em>caut</em> slava Mea; este Unul care o <em>caută</em> şi care judecă.
-Highlight: Când <em>cauţi</em> îmbogăţirea ta, trebuie să nedreptăţeşti
-Highlight: Când <em>cauţi</em> foloasele tale, trebuie să înşeli pe alţii îndepărtându-i.
-Highlight: Când <em>cauţi</em> slava ta, trebuie
-Highlight: Omul care nu <em>caută</em> îmbogăţirea sa, sau foloasele sale, sau slava sa
-Highlight: Cine <em>caută</em> slava lui Dumnezeu şi foloasele lui Hristos, este
-Highlight: Eu nu <em>caut</em> slava Mea
+Highlight: căutăm, să o dobândim. În chiar această dorinţă şi <em>căutare</em> a ei, este meritul nostru.
 
-Score: 2.9
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Nu caut voia Mea...
-Type: articol
-Author: Traian Dorz
-Highlight: dreaptă, pentru că nu <em>caut</em> să fac voia Mea, ci voia Tatălui, care M-a trimis.
-Highlight: Cine <em>caută</em> să-şi facă totdeauna
-Highlight: Drept judecă numai acela care <em>caută</em> să facă voia Tatălui.
-Highlight: Drept judecă numai acela care <em>caută</em> să nu se piardă nici un suflet din biserică,
-Highlight: Care <em>caută</em> să nu se piardă nimic pentru păcat nici din timp
-Highlight: numai acela care nu <em>caută</em> foloasele sale ci foloasele lui Dumnezeu.
-Highlight: Nu <em>caut</em> voia Mea...
-
-Score: 2.8888888
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
-Type: articol
-Author: Traian Dorz
-Highlight: viaţă, cu atâta satana <em>caută</em> mai mult să o nimicească. Şi cu cât Domnul Hristos <em>caută</em> să ocrotească mai cu
-Highlight: cu dragoste un suflet - cu atâta vrăjmaşul <em>caută</em> mai cu ură să-l arunce în tot mai multe primejdii.
-Highlight: salvat de la moarte. Satana <em>căuta</em> să-mi ia
-Highlight:  <em>căuta</em> să mi-o ia. Dar Domnul nu i-a
-Highlight: Bunica gândindu-se că sunt pe uliţă la copii, nu mă <em>căutase</em>. Când m-a găsit într-un târziu, îmi mai revenisem
-Highlight: multe bande înarmate şi în stările acelea tulburi <em>căutau</em> să mute hotarul cât mai încoace, iar ai noştri
-Highlight: Cap. 4 - Vrăjmaşul <em>caută</em> viaţa pruncului
-
-Score: 2.8888888
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Căutau pe Isus...
-Type: articol
-Author: Traian Dorz
-Highlight: Ei <em>căutau</em> pe Isus, şi vorbeau unii cu alţii în Templu:
-Highlight: înaintaşi, ci veniseră cu o fierbinte dorinţă să-L <em>caute</em> şi să-L afle pe Hristos.
-Highlight: Fără <em>căutarea</em> şi fără aflarea lui Hristos, toată îndeplinirea
-Highlight: atunci când gândul lui Hristos lipseşte, toată <em>căutarea</em> devine zadarnică sau aproape...
-Highlight: meu, adevărata pregătire pentru sărbători este să <em>cauţi</em> pe Domnul tău din toată inima ta, din tot cugetul
-Highlight: şi vor îndemna şi pe alţii să <em>caute</em> fericirea Ierusalimului (
-Highlight: <em>Căutau</em> pe Isus...
-
-Score: 2.8888888
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Unde-ţi cauţi tu fericirea?
-Type: poezie
-Author: Traian Dorz
-Highlight: Unde-ţi <em>cauţi</em> tu fericirea
-Highlight: <em>Caut</em>-o la Isus, numai la Isus
-Highlight: Unde-ţi <em>cauţi</em> tu mântuirea
-Highlight: <em>Caut</em>-o la Isus, numai la Isus
-Highlight: Unde-ţi <em>cauţi</em> tu liniştirea
-Highlight: <em>Caut</em>-o la Isus, numai la Isus
-Highlight: Unde-ţi <em>cauţi</em> tu fericirea?
-
-Score: 2.875
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Tu poţi să cauţi...
-Type: poezie
-Author: Traian Dorz
-Highlight: Tu poţi să <em>cauţi</em> şi ce se pare
-Highlight: Tu poţi să <em>cauţi</em> şi ce în lume
-Highlight: Tu poţi să <em>cauţi</em> desăvârşita
-Highlight: Tu poţi să <em>cauţi</em> şi-n lume-astâmpăr
-Highlight: Tu poţi să <em>cauţi</em> - şi eu căutat-am
-Highlight: Tu poţi să <em>cauţi</em>... dar ia aminte
-Highlight: Tu poţi să <em>cauţi</em>...
-
-Score: 2.875
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Tu poţi să cauţi...
-Type: poezie
-Author: Traian Dorz
-Highlight: Tu poţi să <em>cauţi</em> şi ce se pare
-Highlight: Tu poţi să <em>cauţi</em> şi ce în lume
-Highlight: Tu poţi să <em>cauţi</em> desăvârşita
-Highlight: Tu poţi să <em>cauţi</em> şi-n lume-astâmpăr
-Highlight: Tu poţi să <em>cauţi</em> - şi eu căutat-am
-Highlight: Tu poţi să <em>cauţi</em>... dar ia aminte
-Highlight: Tu poţi să <em>cauţi</em>...
-
-Score: 2.857143
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Mă veţi căuta... şi veţi muri în păcatele - voastre...
-Type: articol
-Author: Traian Dorz
-Highlight: Isus le-a mai spus: Eu Mă duc, şi Mă veţi <em>căuta</em>, şi veţi muri în păcatul vostru;
-Highlight: primăvara, zadarnic mai <em>cauţi</em> ghiocei.
-Highlight: După ce s-au dus rândunelele, zadarnic mai <em>cauţi</em> sub streaşină,
-Highlight: , când trebuie să <em>cauţi</em> dacă mai vrei, să găseşti. Dacă mergi în vremea
-Highlight: fiecare lucru îşi are vremea sa, ştiţi şi că cine îl <em>caută</em> când se poate găsi îl găseşte cu uşurinţă şi se
-Highlight: Atunci Îl va mai <em>căuta</em>, dar nu-L va mai găsi.
-Highlight: Mă veţi <em>căuta</em>... şi veţi muri în păcatele - voastre...
-
-Score: 2.8333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: A lumii avuţii le caută...
-Type: poezie
-Author: Traian Dorz
-Highlight: A lumii avuţii le <em>caută</em> tot mai puţin, căci ele-ţi fac
-Highlight: le <em>caută</em> tot mai mult că-n ele stă tot ce-i vrednic şi frumos
-Highlight: fă-ţi cât poţi mai mulţi prieteni din cei ce-L <em>caută</em> pe Hristos
-Highlight: vinovată să <em>cauţi</em> s-o faci cât mai puţin
-Highlight: dar <em>caută</em> ne-ncetat
-Highlight: A lumii avuţii le <em>caută</em>...
-
-Score: 2.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: A lumii avuţii le caută...
-Type: poezie
-Author: Traian Dorz
-Highlight: A lumii avuţii le <em>caută</em> tot mai puţin, căci ele-ţi fac
-Highlight: le <em>caută</em> tot mai mult că-n ele stă tot ce-i vrednic şi frumos
-Highlight: fă-ţi cât poţi mai mulţi prieteni din cei ce-L <em>caută</em> pe Hristos
-Highlight: vinovată să <em>cauţi</em> s-o faci cât mai puţin
-Highlight: dar <em>caută</em> ne-ncetat
-Highlight: A lumii avuţii le <em>caută</em>...
-
-Score: 2.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Acela pe care Îl caută ei...
-Type: articol
-Author: Traian Dorz
-Highlight: din Ierusalim ziceau: Nu este El acela, pe care <em>caută</em> ei să-L omoare?
-Highlight: creşte, mijloacele de urmărire cu care vrăjmaşul va <em>căuta</em> să-L ucidă pe Hristos, vor fi tot mai viclene şi
-Highlight: Când prin mijloacele viclene vor <em>căuta</em> să Te fure de la noi, dăruieşte-ne înţelepciunea
-Highlight: Acela pe care Îl <em>caută</em> ei...
-
-Score: 2.75
+Score: 2.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 2 - Îndemn la căutarea Înţelepciunii
 Type: poezie
 Author: Traian Dorz
-Highlight: 4-Dacă-o vei <em>căuta</em> cum <em>cauţi</em> după-argint, după-o comoară,
-Highlight: dacă vei umbla s-o afli precum <em>cauţi</em> averea rară
 Highlight: Cap. 2 - Îndemn la <em>căutarea</em> Înţelepciunii
 
-Score: 2.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Tu singur trebuie să cauţi
-Type: poezie
-Author: Traian Dorz
-Highlight: Tu singur trebuie să <em>cauţi</em>,
-Highlight: Dar <em>căută</em>, stăruie şi bate
-Highlight: ce <em>cauţi</em> umblând stăruitor
-Highlight: Tu singur trebuie să <em>cauţi</em>
-
-Score: 2.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Caută-ntruna Adevărul
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Caută</em>-ntruna Adevărul căci el nu-i uşor de-aflat
-Highlight: <em>Caută</em> dragostea şi-aleargă după adevăr mereu
-Highlight: <em>Caută</em>-ntruna Adevărul
-
-Score: 2.6666665
+Score: 0.8
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Iudeii Îl căutau în timpul Praznicului
+Book: Hristos - Învierea noastră
+Title: Căutau pe Isus...
 Type: articol
 Author: Traian Dorz
-Highlight: Iudeii Îl <em>căutau</em> în timpul praznicului, şi ziceau: Unde este?
-Highlight: În vremile aspre când iudeii Îl <em>căutau</em>, Isus Se fereşte de praznice mari.
-Highlight: Iudeii Îl <em>căutau</em> în timpul Praznicului
+Highlight: Fără <em>căutarea</em> şi fără aflarea lui Hristos, toată îndeplinirea
+Highlight: atunci când gândul lui Hristos lipseşte, toată <em>căutarea</em> devine zadarnică sau aproape...
+Highlight: şi din El să-ţi faci tu ţinta cercetării şi <em>căutării</em> tale strălucitoare (
+Highlight: rugăciune, tot mai frământaţi de singurul gând al <em>căutării</em> şi al aflării mântuirii Domnului.
 
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Caut să-mi refac
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Caut</em> să-mi refac din cioburi,
-Highlight: <em>Caut</em> să-mi refac
-
-Score: 2.5
+Score: 0.75
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Suflete ce cauţi
-Type: poezie
-Author: Traian Dorz
-Highlight: Suflete ce <em>cauţi</em> pe Domnul
-Highlight: Suflete ce <em>cauţi</em>
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Suflete ce cauţi
-Type: poezie
-Author: Traian Dorz
-Highlight: Suflete ce <em>cauţi</em> pe Domnul
-Highlight: Suflete ce <em>cauţi</em>
-
-Score: 2.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Să cauţi doar ce-i curat
-Type: poezie
-Author: Traian Dorz
-Highlight: Să <em>cauţi</em> doar ce-i curat în viaţă
-Highlight: Să <em>cauţi</em> doar ce-i curat
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Să cauţi doar ce-i curat
-Type: poezie
-Author: Traian Dorz
-Highlight: Să <em>cauţi</em> doar ce-i curat în viaţă
-Highlight: Să <em>cauţi</em> doar ce-i curat
-
-Score: 2.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Îşi caută oile pe nume...
+Book: Hristos - Mântuitorul nostru
+Title: S-au întors acasă
 Type: articol
 Author: Traian Dorz
-Highlight: va <em>căuta</em> să ridice pe cei care nu pot merge pe picioarele
-Highlight: Îşi <em>caută</em> oile pe nume...
+Highlight: totuşi El ni Se arată fără aceste stăruitoare <em>căutări</em> ale noastre, asta este în totul numai dovada marii
+Highlight: Pentru partea pe care ne-o laşi nouă în <em>căutarea</em> şi aflarea Adevărului mântuirii.
+Highlight: smerenia aflării pe care ne-o făgăduieşti în urma <em>căutărilor</em> noastre, apoi ne-o dai.
 
-Score: 2.0
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Saul caută să ucidă
-Type: poezie
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Sărbătorile noastre
+Type: articol
 Author: Traian Dorz
-Highlight: Saul <em>caută</em> să ucidă
+Highlight: 11 - Fără <em>căutarea</em> şi fără aflarea lui Hristos, toată îndeplinirea
+Highlight: atunci când gândul lui Hristos lipseşte, - toată <em>căutarea</em> devine zadarnică sau aproape...
+Highlight: şi din El să-ţi faci tu ţinta cercetării şi <em>căutării</em> tale stăruitoare (
 
-Score: 0.9411765
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Unire şi suferinţă
+Type: articol
+Author: Traian Dorz
+Highlight: 7 - Îmi voi aminti veşnic de <em>căutările</em> mele după Domnul meu
+Highlight: limpede şi stăruitor, chemându-mă să pornesc în <em>căutarea</em> lui Dumnezeu, - Singurul care îmi putea potoli
+Highlight: Binecuvântată fie neliniştea <em>căutării</em> Tale, Preaiubitul meu!
+
+Score: 0.6666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: L-au găsit... dincolo de mare
+Type: articol
+Author: Traian Dorz
+Highlight: şi <em>căutarea</em> credinţei din inimă.
+Highlight: lumină şi putere în <em>căutarea</em> şi umblarea după Tine,
+
+Score: 0.6666666
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
 Type: articol
 Author: Traian Dorz
-Highlight: noastră în <em>căutarea</em> lui Dumnezeu, depinde de felul cum Îl <em>căutăm</em>.
-Highlight: Mă veţi <em>căuta</em> şi Mă veţi găsi, dacă Mă veţi <em>căuta</em> cu toată inima - zice
-Highlight: 17. Dar dacă, în timp ce <em>căutăm</em> să fim socotiţi neprihăniţi în Hristos, şi noi
-Highlight: întâi că El este, apoi până ce nu a ştiut cum se <em>caută</em>, cum se află şi cum se păstrează mântuirea Lui.
-Highlight: 17 - În timp ce <em>căutam</em>...  Toate
 Highlight: curat şi o inimă smerită. Numai acelora care în <em>căutarea</em> lor umblă totdeauna fără vicleşug, fără prefăcătorie
+Highlight: Toată reuşita noastră în <em>căutarea</em> lui Dumnezeu, depinde de felul cum Îl căutăm.
 
-Score: 0.93333334
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: aproape de capătul vieţii mele... Ştiu că mulţi veţi <em>căuta</em> destule greşeli în istorisirea mea - şi poate şi
-Highlight: Se poate să aflaţi. Fiecare află ceea ce <em>caută</em>, mai ales că nici eu, ca toţi semenii mei, nu sunt
-Highlight: Nu-mi <em>caut</em> dezvinovăţiri - şi chiar dacă le-aş afla, nu vreau
-Highlight: posturi, prin înfrânări şi primejdii - au căutat şi <em>caută</em> a deveni mari prin trufie, prin neascultare, prin
-Highlight: - oricine ar fi aceştia şi cu orice mijloace ar <em>căuta</em> să ne atragă după ei.
-Highlight: În urma acelei scrisori veniseră la mine şi mi-o <em>căutau</em> acum. Mă aşteptam la asta şi de aceea pregătisem
-
-Score: 0.93333334
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-Highlight: Vom <em>căuta</em> mai departe să urmărim îndeaproape toată desfăşurarea
-Highlight: spre oraşe şi spre centrele muncitoreşti, ca să-şi <em>caute</em> un loc de muncă, mai liniştit şi mai sigur decât
-Highlight: - Prin cine să <em>caut</em>? - mă întrebam iarăşi. Nu cunosc deocamdată pe nimeni
-Highlight: Negăsind nimic, am plecat spre Comăneşti. Să <em>căutăm</em> acolo un loc şi o muncă.
-Highlight: M-a îndemnat cineva să merg la ei şi prin ei să <em>caut</em> un loc de muncă acolo. Erau fratele Cornel Rusu
-Highlight: bolnav şi <em>caut</em> un loc de lucru undeva.
-
-Score: 0.93333334
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: ca el, - nu mergea deloc. Sau dacă mergea, ori <em>căuta</em> să se arate tot timpul ca unul din cei mai apropiaţi
-Highlight: duhuri diferite din adânc şi prin felurite metode <em>caută</em> să ajungă cât mai în vârf, fiecare cu un alt scop
-Highlight: cred că singură dragostea poate rezolva totul. Şi <em>căutam</em> să izbutesc pe această cale să-l conving pe Moldoveanu
-Highlight: posibilitate de a feri pe fraţi de necazuri, eu voi <em>căuta</em> să fac tot ce pot, cu orice risc pentru mine.
-Highlight: ştiam cum şi mai ales nu prea voiam să încep... <em>Căutam</em> să amân cât mai mult, înţelegând ce plin de primejdii
-Highlight: - Am toată bunăvoinţa să vă ajut. Să <em>căutăm</em> împreună orice posibilitate pe care am avea-o spre
-
-Score: 0.9285714
+Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Acela este adevărat
+Book: Hristos - Pâinea noastră
+Title: Neliniştitul suflet
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>căutarea</em> lui sfârşi-va
+Highlight: deşartă-i e <em>căutarea</em>.
+
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Neliniştitul suflet
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>căutarea</em> lui sfârşi-va
+Highlight: deşartă-i e <em>căutarea</em>.
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Silinţa şi ajungerea
 Type: articol
 Author: Traian Dorz
-Highlight: Cine vorbeşte de la sine, <em>caută</em> slava lui însuşi, dar cine <em>caută</em> slava
-Highlight: În omul care <em>caută</em> slava oamenilor, nu poate locui Adevărul, nici Lumina
-Highlight: De aceea cine <em>caută</em> slava pe care le-o dau oamenii, nu le poate spune
-Highlight: De aceea cine <em>caută</em> slava oamenilor nu este adevărat.
-Highlight: Nici cine <em>caută</em> slava unor principii şi
-Highlight: Nici cine <em>caută</em> slava lui însuşi nu este adevărat, fiindcă iubindu-se
+Highlight: 10 - Aceasta este <em>căutarea</em> din Cântarea Cântărilor. “Adormisem, dar inima
+Highlight: nu simţim durerea şi dorinţa unei grabnice <em>căutări</em>.
 
-Score: 0.9285714
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu se gândi de pe patul de la spital, să <em>caute</em> dreptatea la cei mai de sus de la Bucureşti.
-Highlight: patul spitalului spre a merge la Bucureşti să-şi <em>caute</em> dreptatea.
-Highlight: rămâne aici, de multe ori, şi pentru cei care Îl <em>caută</em> pe Domnul. Fratele meu, când Îl priveşti ţintă pe
-Highlight: Silit de această ilegalitate a trebuit să-mi <em>caut</em> un refugiu la Bucureşti, să mă apăr de aici.
-Highlight: În <em>căutarea</em> unui post
-Highlight: În situaţia grea de preot bolnav de la ţară, îmi <em>căutam</em> prin anii 1920-1921
-
-Score: 0.9166667
+Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Isus le-a zis: ce căutaţi?
+Book: Hristos - Mântuitorul nostru
+Title: În locul unde fusese Isus
 Type: articol
 Author: Traian Dorz
-Highlight: fiecăruia, <em>caută</em> să trezească conştiinţa tuturor acelora care în loc să <em>caute</em> acolo mântuirea, îşi <em>caută</em> pierzarea
-Highlight: Fii binecuvântat, căci vei găsi ceea ce <em>cauţi</em>. Fiindcă tu <em>cauţi</em> mântuirea sufletului tău, iar El voieşte
-Highlight: răspunzi Domnului fără frică şi fără ruşine ce <em>cauţi</em> la biserică sau în adunarea Lui - ferice de tine
-Highlight: Dar dacă tu <em>cauţi</em> lucruri pe care nu le-ai putut spune fără ruşine, fără
-Highlight: Ştie că unii se duc să <em>caute</em> motive ca să-L pârască pe El şi pe ai Lui, ca fariseii
-Highlight: Ferice de toţi aceştia că ei <em>caută</em> binele.
+Highlight: Aceasta este <em>căutarea</em> din Cântarea Cântărilor:
+Highlight: Isus, nu simţim durerea şi dorinţa unei grabnice <em>căutări</em>. Atunci ne despărţim de fraţi, ne ducem departe
 
-Score: 0.9166667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
-Type: articol
-Author: Traian Dorz
-Highlight: Evanghelia unde se află ei. Dacă nu-L <em>caută</em> ei pe Domnul, îi <em>caută</em> Domnul pe ei. Şi dacă nu ştiu ei unde
-Highlight: necruţătoare prigonire, cu gândul de a o nimici, după cum <em>căutase</em> să facă şi cu Isus.  Dumnezeu
-Highlight: ca un cancer ascuns în cele mai delicate locuri, <em>caută</em> să cuprindă şi să ucidă tot trupul acestei sfinte
-Highlight:  când nu-şi mai poate răbda suferinţa lui, îşi <em>caută</em> pe orice cale mijlocul prin care crede el că şi-ar
-Highlight: osândeşte inima lui înaintea lui Dumnezeu când <em>caută</em> uşurarea suferinţei sale - şi nici pentru calea
-Highlight: Ferice de acela care <em>caută</em> mai întâi vindecarea sufletului său de boala păcatului
-
-Score: 0.9166667
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Lângă poarta oilor
+Book: Hristos - Calea vieţii noastre
+Title: ... în Numele Meu, voi face
 Type: articol
 Author: Traian Dorz
-Highlight: trebuie să <em>caute</em> mereu căile oilor,
-Highlight: Hristos venea să <em>caute</em> oile pierdute ale casei lui Israel
-Highlight: Vei <em>căuta</em> mereu şi vei intra cât mai des prin poarta oilor tale...
-Highlight: Mulţi păstori <em>caută</em> cu totul
-Highlight: lor. <em>Caută</em> porţile cârciumilor, ale cinematografelor, ale balurilor, ale pierzării,
-Highlight: dar nu <em>caută</em> niciodată
+Highlight: Şi tot ce are ca scop <em>căutarea</em> - dobândirea şi păstrarea vieţii veşnice pentru
 
-Score: 0.9090909
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Rusalii - (Vindecarea a doi orbi şi un mut)
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: A crede în Isus Hristos
 Type: articol
 Author: Traian Dorz
-Highlight: de a <em>căuta</em> fericirea sa, <em>caută</em> fericirea celuilalt. Şi mai înainte ca să-i placă lui ceva, <em>caută</em> ceea
-Highlight: că Şi-a ieşit din minţi, deci că este nebun, şi <em>căutau</em> să pună mâna pe El ca pe unul care le făcea necaz
-Highlight: veniseră iarăşi cu nişte astfel de gânduri, să-L <em>caute</em> pe Isus. Iar Mama Sa, aflând despre planul lor,
-Highlight: oameni înrăiţi, robiţi cu totul de diavolul şi care <em>căutau</em> nu numai să-i zădărnicească Lucrarea Lui mântuitoare
-Highlight: alcătuiască un trup în Domnul, dacă fiecare mădular <em>caută</em> mai întâi nu folosul său, ci folosul celuilalt.
-Highlight: Dacă totdeauna noi vom <em>căuta</em> să-i învăţăm numai pe alţii, atunci noi vom rămâne
+Highlight: Şi tot ce are ca scop <em>căutarea</em> - dobândirea şi păstrarea vieţii veşnice pentru
 
-Score: 0.9
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: A trecut Isuse vântul
+Type: poezie
+Author: Traian Dorz
+Highlight: Dar nu-i zbuciumul <em>căutării</em> în acest frământ slăvit
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
-Title: Când trecea, Isus a văzut pe un orb
+Title: Ca să se arate în el lucrările - lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: Lui era acoperită, iar ei nu ştiau unde să-L <em>caute</em>, îi <em>căuta</em> mereu
-Highlight: Numai cine <em>caută</em>, acela găseşte,  numai
-Highlight: Hristos a venit să <em>caute</em> şi să mântuiască ce era pierdut,  adică
-Highlight: anume prin casele pe unde zăceau cei bolnavi şi îi <em>căuta</em> El să-i vindece.
-Highlight: nefericiţi, pentru care venise El anume ca să-i <em>caute</em> şi să-i ajute.
-Highlight: părăsite pe care nimeni nu vă iubeşte şi nu vă <em>caută</em>,
+Highlight: Osteneala şi zbuciumul <em>căutării</em> leacului său, este preţul prin care fiecare om
 
-Score: 0.9
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre căsnicie
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 1 - Grăuntele de muştar
 Type: articol
 Author: Traian Dorz
-Highlight: nici când <em>cauţi</em> o soţie sau un soţ, să nu <em>cauţi</em> rău -
-Highlight: <em>caută</em>-ţi o pereche-aşa să
-Highlight: în care fiecare <em>caută</em> ca celălalt să poată-afla o
-Highlight: 17 - Cine <em>caută</em> o nevastă fără un cusur pe lume moare
-Highlight: 20 - <em>Caută</em>-ţi casă şi soţie cum
-Highlight: 24 - Cine <em>caută</em> cal să n-aibă chiar nici un cusur deloc va
+Highlight: care putea urma, au început să se frământe în <em>căutarea</em> şi găsirea unor măsuri de oprire a răului şi de
 
-Score: 0.9
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Isus a cunoscut că voiau să-L întrebe
-Type: articol
-Author: Traian Dorz
-Highlight: Cunoşti uşor pe cel ce <em>caută</em> ceva. Numai ceea ce <em>caută</em>, nu cunoşti aşa uşor.
-Highlight: vedea îndată pe faţa şi pe privirea celui care <em>caută</em> şi umblă să afle şi să ştie. Numai ce vrea să întrebe
-Highlight: Când cel care întreabă sau <em>caută</em> să afle, este un suflet de om curat, atunci nu-i
-Highlight: Hristos, la toţi cei care îi vezi că umblă să afle şi <em>caută</em> să întrebe.
-Highlight: Ce <em>cauţi</em> tu să afli?
-Highlight: nerecunoscătorul slăbănog, care L-a arătat celor ce-L <em>căutau</em> să-L omoare spunând: - Acela este? (
-
-Score: 0.9
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Pe cine căutaţi?
-Type: articol
-Author: Traian Dorz
-Highlight: În chip normal oamenii legii trebuie să <em>caute</em> pe oamenii fărădelegii, fiindcă aşa este scris (
-Highlight: Soldaţii unei ţări trebuie să <em>caute</em> pe vrăjmaşii care ameninţă libertatea şi viaţa poporului
-Highlight: Aprozii şi slujitorii tribunalelor ar trebui să-i <em>caute</em> pe cei care scapă de sub paza legii şi care sunt
-Highlight: Slujitorii cuiva, să <em>caute</em> pe cei care ar fi furat ceva din avutul stăpânilor
-Highlight: Iuda cu ucenicii săi, <em>caută</em> pe Hristos şi pe ucenicii Lui.
-Highlight: - <em>caută</em> totuşi din nou să le trezească cugetul lor spre
-
-Score: 0.8888889
+Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-Highlight: extremele care apoi nu pot să trăiască împreună, ci <em>caută</em> întotdeauna să se nimicească una pe alta, fiindcă
-Highlight: Viorel era de aceeaşi culoare politică, - vrăjmaşul <em>căuta</em> să arunce asupra părintelui Iosif şi a Lucrării
-Highlight: numai până la biserică ci şi în ea. Duhul necurat <em>caută</em> să întineze tot ce este sfânt şi să-şi bage spurcăciunile
-Highlight: Idolul Baal n-are ce <em>căuta</em> în biserică. Afară cu el! Noi luptăm pentru o biserică
 Highlight: martorul şi părtaşul acelei arderi şi frământări în <em>căutarea</em> unei ieşiri din această stare înăbuşitoare.
-Highlight: Trifa. Şi noi, ca el, slujim adevărul cinstea şi <em>căutăm</em> ridicarea morală şi materială a poporului nostru
 
-Score: 0.8888889
+Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
+Title: Cap. 12 - Naşterea imnului duhovnicesc
 Type: articol
 Author: Traian Dorz
-Highlight: suflete - iar această dorinţă făcu pe oameni să <em>caute</em> ceva mai adânc şi ceva mai mult. Era ceva de la
-Highlight: Nesiguranţa lucrurilor din lume, făcea pe oameni să <em>caute</em> pacea şi siguranţa lor în Dumnezeu.
-Highlight: pe care au făcut-o şi o fac mulţi din cei care <em>caută</em> şi care vestesc mântuirea lui Hristos. Fac binele
-Highlight: potrivnici. Prin amândouă aceste duhuri, vrăjmaşul <em>caută</em> să înăbuşe mişcarea cea sănătoasă trezită şi însufleţită
-Highlight: Sfânt care aduce mântuirea tuturor acelora care o <em>caută</em>, în felul cel minunat pe care l-a vestit sf. ap
-Highlight: )... A <em>căuta</em> mântuirea înafară de acest Izvor al mântuirii înseamnă
+Highlight: Cunoşteam şi eu atât de bine chinul acestor <em>căutări</em>, dar nu l-am mărturisit niciodată. Eu îmi scriam
 
-Score: 0.8888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: Unde acestea sunt zadarnice, el nu mai are ce să <em>caute</em>. De unde acestea sunt alungate, pleacă şi el - sau
-Highlight: Nu adevărul dezbină pe cei ce-L <em>caută</em> şi-L iubesc pe Domnul - ci şiretenia înşelătoriei
-Highlight: primejdioasă şi vicleană a lui satan. Ea este aceea care <em>caută</em> şi reuşeşte să facă dezbinările între fraţi, între
-Highlight: cu toţii, văzând starea noastră de strâmtorare, <em>caută</em> să folosească necazul Oastei Domnului, pentru a
-Highlight: Dacă ar <em>căuta</em> ei cu adevărat folosul Evangheliei lui Dumnezeu
-Highlight: luate măsuri împotriva acelor lucrări străine care <em>căutau</em> pretutindeni ca să atragă pe fraţi de partea lor
-
-Score: 0.8888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: sau se strecurau de pe la celelalte barăci să-şi <em>caute</em> prieteni sau cunoscuţi - tot mai rămâneau destui
-Highlight: prin celelalte barăci din secţia bărbaţilor. Să <em>căutăm</em> poate mai sunt pe acolo fraţi de ai noştri, cunoscuţi
-Highlight: - Hai să mergem să-l <em>căutăm</em>!
-Highlight: cu nimeni nimic şi nici nu răspundea nimănui. Nu <em>căuta</em> nici o apropiere de alţii şi nu-l interesa absolut
-Highlight: celelalte barăci să-i vizităm pe fraţi, sau să mai <em>căutăm</em> printre miile de oameni de aici pe alţii eventuali
-Highlight: înţeles că oricând vom ieşi din acest întuneric să ne <em>căutăm</em>, să ne găsim.
-
-Score: 0.8888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: întâmplă că dacă nu se supune nici loviturilor care <em>caută</em> să o îndrepteze şi nici nu se lasă acoperită de
-Highlight: - Mi-e indiferent! Eu nu <em>caut</em> aici să-mi arat valoarea persoanei mele, ci vreau
-Highlight: Ancheta devenise aproape cu neputinţă de suportat. Se <em>căutau</em> învinovăţiri tot mai grele pentru Frăţietatea noastră
-Highlight: Se <em>căuta</em> cu tot dinadinsul ca Lucrarea Oastei să fie dovedită
-Highlight: În afară de asta se <em>căuta</em> descoperirea de noi învinuiţi. Cât mai mulţi fraţi
-Highlight: Se <em>căuta</em> aflarea a câtor mai multe cărţi şi fapte...
-
-Score: 0.8888889
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre adevăr
-Type: articol
-Author: Traian Dorz
-Highlight: <em>caută</em>-mbogăţirea sfântă cu comoara asta mare.
-Highlight: <em>caută</em>-l până ce-l găseşti,
-Highlight: făr-să-l <em>cauţi</em> afli-un adevăr frumos,
-Highlight: 75 - Cine <em>caută</em> doar
-Highlight: ci doar celor ce le <em>caută</em> cu sudoare şi fior.
-Highlight: 90 - Noi suntem pe lume numai Adevărul să-l <em>căutăm</em>
-
-Score: 0.8888889
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre rău
-Type: articol
-Author: Traian Dorz
-Highlight: de nu te <em>caută</em> răul, îl <em>cauţi</em> tu pe el.
-Highlight: <em>cauţi</em> numai al tău folos când
-Highlight: <em>cauţi</em> folosul la o mie.  7
-Highlight: 27 - Cel ce <em>caută</em> slava lumii e spre rele aplecat cel
-Highlight: 38 - Nu <em>căuta</em> la alţii rău că
-Highlight: dacă-i dai un ban, el <em>caută</em> ca să-ţi fure punga plină,  -
-
-Score: 0.8888889
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Intrarea şi Ieşirea
-Type: articol
-Author: Traian Dorz
-Highlight: 13 - Hristos mai <em>caută</em> încă pe păcătoşi şi pierduţi... dar nu-i va mai <em>căuta</em> multă vreme.
-Highlight: 16 - Acum vă <em>caut</em> Eu pe voi - zice Domnul Isus.
-Highlight:  Mă veţi <em>căuta</em> pe Mine...
-Highlight: 17 - Mă veţi <em>căuta</em> cu ochii topiţi de lacrimi, cu sufletul secat de
-Highlight: Mă veţi <em>căuta</em> în toate părţile, în toate templele, în toate cărţile
-Highlight: 20 - Dragostea lui Hristos <em>caută</em> mereu şi mereu să strângă iarăşi pe toţi cei risipiţi
-
-Score: 0.8888889
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Isus în Templu învăţa norodul
-Type: articol
-Author: Traian Dorz
-Highlight: cei pierduţi merg să-L <em>caute</em> pe Dumnezeu, ci Dumnezeu merge mereu să-i <em>caute</em> pe ei (
-Highlight: Dar Hristos care <em>caută</em> sufletele pierdute şi mântuirea lor, nu poate pleca
-Highlight: avantaje pentru voi, dar Hristos care a venit să <em>caute</em> şi să iubească oile cele pierdute, nu poate pleca
-Highlight: El rămâne mereu ca să <em>caute</em> sufletele pierdute, acolo unde le poate afla şi
-Highlight: şi să înveţe pe cei ce nu ştiu unde să-L <em>caute</em> pe El, nu ştiu cum să se împărtăşească din binefacerile
-Highlight: Nu ştiu sărmanii unde să se ducă să-L <em>caute</em> astăzi pe Hristos, ci se duc tot acolo unde ştiau
-
-Score: 0.875
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: umblet şi după înfăţişare, cine sunt şi pentru ce mă <em>caută</em>.
-Highlight: - Bine, atunci vom <em>căuta</em> noi cărţile d-tale. Pe unde mai ai cărţi, caiete
-Highlight: tineretului decât aceşti părinţi înapoiaţi, care <em>caută</em> să frâneze mersul nou al vieţii.
-Highlight: ai bisericii şi patriei - şi să aibă curajul a <em>căuta</em> o cale constructivă de rezolvare a problemei lor
-Highlight: M-am bucurat de această ocazie. Voi <em>căuta</em> să le înfăţişez din nou cu toată durerea situaţia
-Highlight: lucrurile. În toate domeniile se întreprind căi noi, se <em>caută</em> metode îmbunătăţite, se încearcă soluţii adecvate
-
-Score: 0.875
+Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 26 - Fântânile certei noastre
+Title: Cap. 13 - Pe urmele profetului
 Type: articol
 Author: Traian Dorz
-Highlight: moarte şi care <em>căută</em> să ne înfometeze şi să ne ia orice putere de viaţă, a căutat şi va <em>căuta</em> mereu numai
-Highlight: oricum sunt ei, - fă tot şi-i <em>caută</em> că
-Highlight: căutând să le răpească fântânile... Şi pe oriunde <em>căutau</em> să-şi afle apă de viaţă urmaşii lui Avraam, filistenii
-Highlight: să plece în altă parte. Filistenii tocmai asta <em>căutau</em>, ca să scape de ei.  Până
-Highlight: n-au pierit în acel pustiu şi nici n-au trebuit să <em>caute</em> fântâni străine şi nici să fugă de frică în alt
-Highlight: mereu fiii neamurilor acestora printre care trecem, <em>caută</em> să ni le astupe, să ni le înfunde, să ni le oprească
+Highlight: spunea el - m-am tăvălit de bucurie când după <em>căutări</em> chinuitoare am găsit în sfârşit rima cea mai fericită:
 
-Score: 0.875
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 17 - Mereu prin ape tulburi
+Type: articol
+Author: Traian Dorz
+Highlight: Ardealului de Nord, am început călătoriile misionare în <em>căutarea</em> fraţilor şi adunărilor. Uneori amândoi împreună
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 19 - Al treilea februarie
+Type: articol
+Author: Traian Dorz
+Highlight: străini şi călători în lumea aceasta. Suntem în <em>căutarea</em> altei Patrii mai bune. În fruntea noastră, ca
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: În <em>căutarea</em> unui post
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: Iată amintirea, <em>căutarea</em> şi chemarea lui către ei la sărbătoarea celor
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: mai drept şi mai clar. După marile furtuni şi <em>căutări</em>, cerul se arată mai curat iar apele mai liniştite
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 4 - Anul următor
+Type: articol
+Author: Traian Dorz
+Highlight: Mai târziu când vor mai apare şi altele, <em>căutarea</em> după ele va fi şi mai mare.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 4 - Aur lămurit, trestii clătinate
+Type: articol
+Author: Traian Dorz
+Highlight: mergeam adeseori împreună cu Marcu Nechifor în <em>căutarea</em> sufletelor pierdute... O luam pe străzi... întâlneam
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Cap. 9 - Ecles
+Type: poezie
+Author: Traian Dorz
+Highlight: 1-Mi-am pus inima-n <em>căutarea</em> tuturor acestor zise
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Ce-nalt e Doamne
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>căutarea</em> drumul şi-l tot creşte
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Ce-nalt e Doamne
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>căutarea</em> drumul şi-l tot creşte
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: Dar acum n-au nici o dezvinovăţire
 Type: articol
 Author: Traian Dorz
-Highlight: mare rău, este că totdeauna nestatornicii aceştia <em>caută</em>,
-Highlight: înăbuşi mustrările cugetului, mintea lor vinovată <em>caută</em> în Sfântul Cuvânt al lui Dumnezeu versete al căror
-Highlight: mare păcat este acela că atunci când face răul, <em>caută</em> dezvinovăţiri pentru răul său, chiar în Cuvintele
-Highlight: <em>Caută</em> să-şi arunce vina sa asupra Cuvântului Dumnezeiesc
-Highlight: de acela care în loc de pocăinţă şi îndreptare <em>caută</em> versete prin care să se dezvinovăţească, - şi nu
-Highlight: îndreptăm umblarea şi să părăsim cu frică păcatul, vom <em>căuta</em> dezvinovăţiri pentru păcatul nostru şi îndreptăţiri
+Highlight: Căci chiar <em>căutarea</em> de dezvinovăţiri pentru păcatul nostru ne-ar fi
 
-Score: 0.875
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Domnul meu...
 Type: articol
 Author: Traian Dorz
-Highlight: 110 - Înţeleptul, ca albina, <em>caută</em> numai ce-i frumos
-Highlight: - când <em>cauţi</em> mai bine
-Highlight: dracul n-are ce <em>căuta</em>.
-Highlight: când vezi minciuna că se <em>caută</em>,
-Highlight: dar când mergi să <em>cauţi</em> soţie de trei ori întâi te roagă
-Highlight: 189 - Beţivul <em>caută</em> reazem de-un stâlp, oricât de mic,
+Highlight: vei simţi o deplină despăgubire pentru toate <em>căutările</em> tale.
 
-Score: 0.875
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Ei nu sunt din lume
+Type: articol
+Author: Traian Dorz
+Highlight: şi umblând în <em>căutarea</em> moştenirii Împărăţiei Tale,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Era o zi de sabat
+Type: articol
+Author: Traian Dorz
+Highlight: sărbătoare, trebuie să fie folosite numai pentru <em>căutarea</em> bolnavilor şi vindecarea lor.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Fericirea de a fi cu Domnul
+Type: articol
+Author: Traian Dorz
+Highlight: Cât de fierbinţi erau <em>căutările</em> mele, întrebările mele, strigătele mele, rugăminţile
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Isus a zis: Marie!
+Type: articol
+Author: Traian Dorz
+Highlight: stări îndelungi cu îndurerate şi deznădăjduite <em>căutări</em>,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Isus le-a zis: aduceţi din peştii...
+Type: articol
+Author: Traian Dorz
+Highlight: aleargă şi nu obosesc, în ascultarea voii Tale şi în <em>căutarea</em> sufletelor pierdute, pentru a le salva.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Iubirea şi aurul ceresc
+Type: articol
+Author: Traian Dorz
+Highlight: şi fiul meu, prin împlinirea voii Lui şi prin <em>căutarea</em> săracilor Lui,
+
+Score: 0.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
+Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
 Type: articol
 Author: Traian Dorz
-Highlight: Cine <em>caută</em>, totdeauna găseşte, dar cine zice: nu mai este - acela nici nu află nimic...
-Highlight: Cine <em>caută</em> săraci
-Highlight: erau cândva prin locurile astea... şi se duce şi-i <em>caută</em>, totdeauna află pe cei care au fost ieri sau pe
-Highlight: Cine nu <em>caută</em> pe fraţi cu dragoste şi cu dor, acela nici nu merită
-Highlight: udă pe altul, acela va fi udat şi el - şi cine <em>caută</em> pe alţii, va fi căutat şi el.
-Highlight: Când un suflet bolnav te va <em>căuta</em> şi-ţi va cere un leac, când o familie nenorocită
+Highlight: iau toiagul <em>căutării</em> altora, grija mântuirii altora, povara îndrumării
 
-Score: 0.875
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: O, cât de Bun este Domnul!
-Type: articol
-Author: Traian Dorz
-Highlight: piardă, să se ticăloşească, să rătăcească, să-şi <em>caute</em> singure hrana cum pot ele.
-Highlight: oile şi <em>caută</em> cârciumile, teatrele, laudele, afacerile, distracţiile şi lenevia.
-Highlight: Pentru că el <em>caută</em> numai
-Highlight: duc ele, ce învaţă ele, ce cred ele şi ce păşuni <em>caută</em>,
-Highlight: risipească, ştiu cum să-l plătească cu ceea ce <em>caută</em> el.
-Highlight: învăţa cântările tale, nici primi cuvântul tău, nici <em>căuta</em> uşa ta.
-
-Score: 0.875
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Slava şi răsplata
-Type: articol
-Author: Traian Dorz
-Highlight: - şi nu <em>caută</em> cu dinadinsul să facă voia lui Dumnezeu.
-Highlight: 6 - În omul care <em>caută</em> slava oamenilor, nu poate locui Adevărul, nici Lumina
-Highlight: De aceea cine <em>caută</em> slava pe care o dau oamenii, nu le poate spune decât
-Highlight: 8 - Cine <em>caută</em> slava oamenilor nu este om adevărat ci târâtoare.
-Highlight: Cine <em>caută</em> slava unor principii
-Highlight: 9 - Cine <em>caută</em> slava lui însuşi, nu este om adevărat, fiindcă iubindu-se
-
-Score: 0.85714287
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Acum vedem bine...
-Type: articol
-Author: Traian Dorz
-Highlight: Câtă vreme omul <em>caută</em> înţelepciunea, este un înţelept - spune un proverb
-Highlight: sufletele care Îl iubesc pe Hristos, trebuie să <em>caute</em> ca Lucrarea Lui pentru care înaintaşii noştri în
-Highlight: plivească, să şi vegheze când vrăjmaşul sau buruiana <em>caută</em> să o strice.
-Highlight: Dacă va asculta şi va <em>căuta</em> să-şi câştige pâinea muncind în linişte
-Highlight: Diotref e rău desigur, dar e singur şi <em>caută</em> să rămână singur. Dacă se nimiceşte el, se nimiceşte
-Highlight: ci umblă, aleargă şi <em>caută</em> după cât mai mulţi partizani,
-
-Score: 0.85714287
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 14 - Strâmta cărare mântuitoare
-Type: articol
-Author: Traian Dorz
-Highlight: formalistă, fie stânga sectaristă, amândouă acestea îşi <em>caută</em> numai foloasele lor - şi nu foloasele lui Hristos
-Highlight: Fiecare <em>caută</em> să facă pe Hristos robul lor - şi nu să se facă
-Highlight: acestea se sfâşie între ele, fiindcă fiecare îşi <em>caută</em> numai folosul său însuşi, cu preţul nimicirii oricăror
-Highlight: Trădătorul Domnului nu-şi găseşte liniştea niciodată. El <em>caută</em> să-i facă trădători şi pe alţii, crezând că în felul
-Highlight: dintre toţi ceilalţi pe care îi numea rătăciţi - şi <em>căuta</em> să mă convingă că el, despre mine are cu totul alte
-Highlight: mari care începură - nu le-au mai lăsat timp să <em>caute</em> mântuirea... Apoi mulţi au pierit.
-
-Score: 0.85714287
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 2 - A treia zi istorică
-Type: articol
-Author: Traian Dorz
-Highlight: tovarăşi de rătăcire dintre fraţii noştri, iar acum <em>căutau</em> prin aceştia să rupă cât mai multe adunări, - vorbeam
-Highlight: Trebuie să fie puşi odată la punct toţi cei care tot <em>caută</em> să ne mai ţină în robia bisericii căutând să întoarcă
-Highlight: va vedea clar acest adevăr şi până ce se vor tot <em>căuta</em> mereu alte căi pentru această salvare, totul va
-Highlight: acum ca pe o piatră de poticnire, s-ar putea să <em>caute</em> mâine această piatră ca s-o pună în capul unghiului
-Highlight: asupra sufletelor neştiutoare ori uşuratice şi <em>caută</em> să le sucească mintea, să le strice inima, să-i
-Highlight: aştepta să-i spună tot. Ne urmărea îndeaproape şi <em>căuta</em> să afle tot ce facem şi hotărâm.
-
-Score: 0.85714287
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 24 - Înaintea mai-marilor norodului
-Type: articol
-Author: Traian Dorz
-Highlight: preoţi credincioşi sufereau şi ei din cauza asta şi <em>căutau</em> să împace lucrurile pe cât puteau, dar chiar şi
-Highlight: - Iar dacă nu vom <em>căuta</em> să facem nimic, autorităţile vor începe imediat
-Highlight: de necazuri şi de a apăra cauza Oastei, eu voi <em>căuta</em> să fac tot ce pot. Cu orice risc pentru mine.
-Highlight: cum şi mai ales nu voiam să încep singur nimic. <em>Căutam</em> să amân cât mai mult totul. Trebuia să mă mai sfătuiesc
-Highlight: - Să <em>căutăm</em> împreună frate Dorz orice posibilitate pe care
-Highlight: Am plecat imediat la Cluj să-l <em>caut</em> pe Pop Alexandru la casa lui Chişu, unde ştiam că
-
-Score: 0.85714287
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-Highlight: de răspunderea pentru urmările acestui păcat. Şi <em>căuta</em> cu viclenie să scape de aceste urmări aruncând răspunderea
-Highlight: înseamnă că au căutat şi au găsit mult. Poate mai <em>caută</em> şi acum.
-Highlight: Mă întristai de întâmplarea asta, dar <em>căutai</em> să mă liniştesc ştiind că n-are de ce să-l ţină
-Highlight: vremea să-l ispăşeşti! În zadar strigi. În zadar <em>cauţi</em> scăpare. În zadar ceri izbăvire! Nu mai este nici
-Highlight: sărbătoare mare, ne-am dus trei la mânăstire... <em>căutam</em> pe unul care bănuiam că de sărbători va merge acolo
-Highlight: cercetat pe toţi fraţii luându-le buletinele. Îl <em>căutau</em> cu deosebire pe fr. Arcadie - dar deşi el era în
-
-Score: 0.85714287
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-Highlight: învăţătorul său. Şi începură să se facă o gloată, care <em>căutau</em> cu grabă şi găsiră destule pietre şi destul noroi
-Highlight: Pentru ca toate sufletele sincere şi curate care <em>caută</em> să ştie şi să cunoască adevărul, să-şi poată forma
-Highlight: <em>căutau</em> să afle ceva asupra lui ca să-l pârască, dar n-au
-Highlight: Dumnezeule, ai milă, căci la umbra aripilor Tale <em>caut</em> un loc de scăpare până va trece fărădelegea (Psalm
-Highlight: lucruri mari şi minunate se petrec cu toţi cei ce Te <em>caută</em> şi Te află pe Tine.
-Highlight:  <em>căutau</em> să îmi ia viaţa, ajunsesem şi eu sub ienupărul
-
-Score: 0.85714287
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre pace
-Type: articol
-Author: Traian Dorz
-Highlight: şi c-o inimă curată <em>caută</em> pacea-n orice faptă.
-Highlight: 2 - <em>Caută</em> pacea chiar nedreaptă
-Highlight: <em>caută</em> să nu-ţi pierzi vreodată pacea ta din Cerul bun
-Highlight: căci pe-aceia care pace şi-mpăcare vor <em>căuta</em>,
-Highlight: 21 - <em>Caută</em> pacea... dar cu cei răi chiar şi împăcat grijeşte
-Highlight: 24 - <em>Caută</em> să faci totdeauna pace în cetatea ta
-
-Score: 0.85714287
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Doamne, la cine să ne ducem?
-Type: articol
-Author: Traian Dorz
-Highlight: oameni! Ei <em>caută</em> bucuria şi lumina şi viaţa. Şi pentru că nu ştiu la cine să le mai <em>caute</em> ca să le poată
-Highlight: Atâţia nemângâiaţi care nu mai ştiu unde să mai <em>caute</em> uşurare.  Atâţia
-Highlight: Din ce Te <em>căutăm</em> tot mai mult, noi Te aflăm tot mai mult, mai frumos
-Highlight: Nici nu mai <em>căutăm</em> altă cale şi altă fericire decât pe Tine.
-Highlight: Nu putem propovădui nimic altceva celor ce <em>caută</em> mântuirea,
-
-Score: 0.85714287
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Flămând ca nu de pâine
-Type: poezie
-Author: Traian Dorz
-Highlight: Te <em>caut</em> căci al meu suflet
-Highlight: Te <em>caut</em> şi nu
-Highlight: Te <em>caută</em> şi doreşte
-Highlight: dar nu pe ei îi <em>caut</em>
-Highlight: ei Te <em>caut</em> pe Tine.
-Highlight: ci-n el Te <em>caut</em> pe Tine.
-
-Score: 0.85714287
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Flămând ca nu de pâine
-Type: poezie
-Author: Traian Dorz
-Highlight: Te <em>caut</em> căci al meu suflet
-Highlight: Te <em>caut</em> şi nu
-Highlight: Te <em>caută</em> şi doreşte
-Highlight: dar nu pe ei îi <em>caut</em>
-Highlight: ei Te <em>caut</em> pe Tine.
-Highlight: ci-n el Te <em>caut</em> pe Tine.
-
-Score: 0.85714287
+Score: 0.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
+Title: La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)
 Type: articol
 Author: Traian Dorz
-Highlight: - Ce <em>cauţi</em>, bătrânule înţelept cu lampa ta aprinsă ziua la amiaza mare?
-Highlight: - <em>Caut</em> un om! - a răspuns
-Highlight: - <em>Caut</em> un om! - zise el, lăcrimând cu tristeţe. Pentru
-Highlight: dragoste numai atunci când din ceea ce facem nu <em>căutăm</em> numai câştigul nostru, ci şi al altora. Acela care
-Highlight: să mă bucur de lumina lui numai eu singur? Voi <em>căuta</em> calea spre el, croind astfel urme şi pentru alţii
-Highlight: lui Dumnezeu tocmai atunci vin şi tocmai acolo <em>caută</em> să dea ajutorul lor, împlinind ce lipseşte din partea
+Highlight: cu dragostea de fraţi iubirea de toţi oamenii (<em>căutarea</em> mântuirii şi a fericirii tuturor) - să ştim că
 
-Score: 0.85714287
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Oricui bea din apa aceasta
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului)
 Type: articol
 Author: Traian Dorz
-Highlight: oricare ar fi obiectul dorinţelor tale, ceea ce <em>cauţi</em> tu cu adevărat este fericirea,
-Highlight: pare că primind ceva din aceste lucruri pe care le <em>cauţi</em> îţi stâmperi puţin setea.
-Highlight: Adevărata glorie o câştigi în Hristos, atunci când <em>cauţi</em> uitând de tine, să-I aduci Lui cea mai mare slavă
-Highlight: după care tânjeşti tu. Dar nu ştii unde şi cum s-o <em>cauţi</em>!
-Highlight: - dar în adâncul tău tu nu pe acestea le <em>cauţi</em>. Ci fericirea pe care gândeşti tu că vei afla-o
-Highlight: oricare ar fi obiectul dorinţelor tale, ceea ce <em>cauţi</em> tu prin aceasta este fericirea.
+Highlight: pe noi toţi să ne proşternem, de la începutul <em>căutării</em> noastre după mântuire, în faţa îndurării Tatălui
 
-Score: 0.85714287
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Osteneala şi lenea
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 5-a a Postului Mare
 Type: articol
 Author: Traian Dorz
-Highlight: Cine <em>caută</em> leacul
-Highlight:  se găseşte, - şi cine <em>caută</em> până îl găseşte
-Highlight: păcat şi nu-L <em>caută</em> pe Domnul Isus, piere în osânda veşnică.
-Highlight: 2 - Cine renunţă sau cine <em>caută</em> leacul unde
-Highlight: sau nici nu se osteneşte să-l înceapă a-l <em>căuta</em>,
-Highlight: când inima, sau adunarea, sau lucrarea aceea mai <em>caută</em> şi mai priveşte şi în altă lumină, deosebită de
+Highlight: <em>Căutarea</em> bunurilor viitoare îl înalţă pe adevăratul preot
 
-Score: 0.85714287
+Score: 0.5
 Volume: Cugetări Nemuritoare
 Book: Lumina Iubitului Fiu
-Title: Primirea lui Hristos
+Title: Mai bun este sfârşitul
 Type: articol
 Author: Traian Dorz
-Highlight: 8 - Cine <em>caută</em> întotdeauna să-şi facă numai voia sa, acela nu judecă
-Highlight: Drept judecă numai acela care <em>caută</em> să facă nu voia sa ci voia Tatălui.
-Highlight: Drept judecă numai acela care <em>caută</em> să nu se piardă nici un suflet din biserică
-Highlight: 9 - Drept judecă numai omul acela care nu-şi <em>caută</em> foloasele sale ci totdeauna numai foloasele lui
-Highlight: Care nu-şi <em>caută</em> dreptul său, ci dreptatea lui Dumnezeu şi a de-aproapelui
-Highlight: Care nu <em>caută</em> să-şi impună niciodată voinţa sa ci doreşte să se facă numai
+Highlight: 5 - Mulţi încep frumos, cu <em>căutarea</em> Domnului, cu umblarea după Isus, dar sfârşesc
 
-Score: 0.85714287
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 119
-Type: poezie
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Mă căutaţi, pentru că aţi mâncat
+Type: articol
 Author: Traian Dorz
-Highlight: şi care-L <em>caută</em> pe Domnul
-Highlight: 10-Te <em>caut</em> mereu o Doamne
-Highlight: căci <em>caut</em> în curăţie poruncile-a-Ţi păzi
-Highlight: o <em>caut</em> ne-ncetat.
-Highlight: dar <em>caut</em> sfinte desfătări
-Highlight: că ei nu <em>caută</em>-orânduirea-Ţi,
+Highlight: dar când <em>căutarea</em> aceasta după El este pornită din dorinţe şi din
 
-Score: 0.8333333
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Mărturisire şi răspundere
+Type: articol
+Author: Traian Dorz
+Highlight: Ostenelile pe care le depui spre <em>căutarea</em> lor arată şi dragostea ta pentru ele. Dar şi vrednicia
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
-Title: ... Unde locuieşti?
+Title: Noi am găsit
 Type: articol
 Author: Traian Dorz
-Highlight: sfârşitul vieţii pe pământ, orice suflet care-L <em>caută</em> şi-L doreşte cu adevărat pe Hristos, întreabă:
-Highlight: Oricine Îl <em>caută</em> pe Domnul trebuie să ştie bine că El are grădina
-Highlight: Cine nu-L <em>caută</em>
-Highlight: viaţa şi fericirea cerească, pe toţi acei care-L <em>caută</em> din toată inima şi care rămân lângă El, cu viaţa
-Highlight: cu dragoste şi cu putere toate sufletele care Te <em>caută</em>, şi nu ştiu unde să Te afle.
+Highlight: inimă smerită, în toate lucrurile. Dar mai ales în <em>căutarea</em> lui Hristos. Atunci El nu vă va lăsa să vă rătăciţi
 
-Score: 0.8333333
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: A sosit ceasul să fie proslăvit Fiul
+Book: Hristos - Slava noastră
+Title: O, clipa revederii Lui
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>căutarea</em>
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Pe când plângea...
 Type: articol
 Author: Traian Dorz
-Highlight: audă şi ei - neamurile - care <em>căutau</em> să-L cunoască pe Isus, dar <em>căutau</em> să-L abată de la calea Crucii
-Highlight: Dar când sufletele venite de departe să-L <em>caute</em> pe Domnul, le cer ucenicilor să-L arate pe Hristos
-Highlight: ajută-ne să nu <em>căutăm</em> vreo scăpare de la plătirea acestui preţ cerut
-Highlight: Fiul meu, de ai iubire, nu <em>căuta</em> al tău folos,
+Highlight: După toate <em>căutările</em> ei, după toate eforturile şi zbuciumările ei,
 
-Score: 0.8333333
+Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Buna-cuviinţă şi evlavia
+Book: Lumina Iubitului Fiu
+Title: Păcatul fricii
 Type: articol
 Author: Traian Dorz
-Highlight: 11 - Când <em>cauţi</em> îmbogăţirea ta, trebuie să nedreptăţeşti pe alţii, furându-i.
-Highlight: Când <em>cauţi</em> foloasele tale
-Highlight: Când <em>cauţi</em> slava ta, trebuie să-i înjoseşti pe alţii hulindu-i
-Highlight: care sunt slujitorii adevăraţi ai Domnului, nu-şi <em>caută</em> slava lor personală nici unul.
-Highlight: Lucrarea lui Dumnezeu, tu slujitorule al Lui, vei <em>căuta</em> slava ta, să ştii că şi tu eşti un trufaş şi un
+Highlight: dar când <em>căutarea</em> aceasta după El este pornită din dorinţe şi din
 
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: dosarul IV - alăturat întâmpinării - prin care se <em>caută</em> un administrator pentru foaie, cum se explică lămurirea
-Highlight: pe ce căi întortocheate şi grele trebuie să-şi <em>caute</em> alţii mântuirea sufletului lor, noi nu ştim să mulţumim
-Highlight: Popovici alcătuiau telegramele ce trebuiau trimise şi <em>căutau</em> adresele fraţilor şi adunărilor care trebuiau să
-Highlight: lucruri păgâneşti şi drăceşti - n-au ce să mai <em>caute</em> cu nici o ocazie în casa şi în viaţa creştinilor
-Highlight: Nici cei care vor <em>căuta</em> s-o nimicească - nu vor putea-o nimici. Căci ea
-
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: din Evanghelie, pentru că acela <em>căuta</em> să ucidă trupul dar acesta <em>caută</em> să ucidă sufletul. Şi scris este
-Highlight: În starea aceasta m-a găsit scrisoarea care mă <em>căuta</em> de la Sibiu, din partea păr. Iosif. Era o scrisoare
-Highlight: îngrozesc gândindu-mă că şi azi este un Irod care <em>caută</em> pruncii să-i taie. Acest Irod este vrăjmaşul diavol
-Highlight: amăgindu-l la păcat, te uiţi cu nepăsare - şi nu <em>cauţi</em> să mântuieşti pe copilul tău”. Ba încă unii părinţi
-
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-Highlight: primi ori şi-ar asuma, el va fi în stare sau va <em>căuta</em> s-o împlinească în cel mai frumos şi onorabil fel
-Highlight: care, cu sufletul chinuit şi cu ochii înlăcrimaţi, <em>căutam</em> să le arăt toate argumentele Evangheliei pentru
-Highlight: este urmăritorul nostru - şi cu câtă răzbunare <em>caută</em> el acum în toate felurile să ne facă oricât de mult
-Highlight: unde n-am mai fost. De fiecare dată noi trebuie să <em>căutăm</em> căi şi metode prin care să lucrăm şi să putem lucra
-Highlight: duhurile prorocilor să fie supuse prorocilor, adică să <em>caute</em> a fi una în gândire şi lucrare.
-
-Score: 0.8333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: Domnului se înteţiră din toate părţile. Vrăjmaşul <em>căuta</em> cu toată puterea nimicirea ei şi într-un fel şi
-Highlight: acolo au început să se apropie de Dumnezeu şi să <em>caute</em> Cuvântul Lui.
-Highlight: promis că oricând vom ieşi din acest întuneric să ne <em>căutăm</em> şi să ne găsim unul pe celălalt. Dar amândoi presimţeam
-Highlight: mizeria îi îndobitocise atât de mult încât nu mai <em>căutau</em> nimic altceva decât mâncare şi ţigări. Erau atât
-Highlight: uşoare la grădinării. Aşteptându-mi plecarea, mai <em>căutam</em> pe ici pe colo câte un suflet care să mai dorească
-
-Score: 0.8333333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: patriarhului. M-am bucurat de această ocazie. Voi <em>căuta</em> să le înfăţişez din nou, cu toată durerea, situaţia
-Highlight: mutaţii şi că în toate domeniile de activitate se <em>caută</em> şi se întreprind căi noi şi metode noi pentru stăvilirea
-Highlight: luptă, prin muncă şi prin înfrânare - au căutat şi <em>caută</em> să devină
-Highlight: - Să mai <em>căutăm</em> şi noi? Eu sunt sigur că mai ai şi altele.
-Highlight: Dacă totuşi vrei, eu mă duc până la Tg. Mureş să <em>caut</em> pe cel care are acest loc, şi să i-l cumpărăm pentru
-
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-Highlight: preoţiei, <em>căuta</em> pe de-o parte s-o lanseze, iar prin respingerea atacurilor de tot felul <em>căuta</em> să o apere
-Highlight: În aceste încercări învinuitul <em>căuta</em> să-şi apere marea şi sfânta lui dreptate şi să apere
-Highlight: curaj sfânt. Şcoala aceasta te învaţă mai ales să <em>cauţi</em> la voia Domnului şi nu la faţa omului. Te mai învaţă
-Highlight: răsplăteşte biserica - mai precis ierarhia - pe cei care <em>caută</em> mântuirea prin biserică.
-
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-Highlight: nu mă puteam gândi atunci că de multă vreme se <em>căuta</em> un pretext, un prilej, să fiu prins cumva cu orice
-Highlight: - dar când şi părinţii <em>caută</em> căile deşertăciunii
-Highlight: un bine şi să-ţi dea ce ai dreptul - ci fiecare <em>caută</em> să ţi-l împuţineze cu ceva. Ori chiar de tot. Nu
-Highlight: eşti încrezător în ceea ce ţi s-a promis - du-te. <em>Caută</em> acum să primeşti de la oamenii pe care vrei să-i
-Highlight: direct şi indirect de starea în care sunt. Se <em>căutase</em> în toate privinţele să mi se grăbească sfârşitul
-
-Score: 0.8333333
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Carne şi Duh...
+Book: Hristos - Pâinea noastră
+Title: Părinţii noştri au mâncat
 Type: articol
 Author: Traian Dorz
-Highlight: Atunci nu vei <em>căuta</em> carnea, ci duhul oamenilor.
-Highlight: Vei <em>căuta</em> nu darurile lor, ci pe ei înşişi
-Highlight: Vei <em>căuta</em> nu vorbele ci puterea (
-Highlight: Vei <em>căuta</em> nu înfăţişarea ci credinţa
-Highlight: Vei <em>căuta</em> nu să-i faci mai formalişti pe oameni, sau mai extremişti,
+Highlight: Mulţi încep frumos cu <em>căutarea</em> Domnului, cu umblarea după Isus, dar sfârşesc
 
-Score: 0.8333333
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Părinţii noştri...
+Type: articol
+Author: Traian Dorz
+Highlight: fiecare uită şi frica şi ruşinea, alergând în <em>căutarea</em> şi aducerea altora la Hristos!
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Celui plătit... nu-i pasă
+Book: Hristos - Mântuitorul nostru
+Title: S-a întors... şi a văzut pe Isus
 Type: articol
 Author: Traian Dorz
-Highlight: risipească, ştiu cum să-i plătească cu ceea ce <em>caută</em> el.
-Highlight: învăţa cântările tale, nici primi cuvântul tău, nici <em>căuta</em> uşa ta. Tu eşti vinovatul.
-Highlight: Oile <em>caută</em> glasul lui Hristos care le mângâie, să le hrănească
-Highlight: acestuia nu-i pasă de oile Tale. Plin de vicleşug, el <em>caută</em> folosul lui, nu al lor şi al Tău (
-Highlight: <em>Caută</em> fraţii şi grijeşte-i cum grijeşti comoara rară
+Highlight: când tot timpul tău este umplut cu <em>căutarea</em> şi chemarea Lui,
 
-Score: 0.8333333
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Singura Speranţă
+Type: articol
+Author: Traian Dorz
+Highlight: stări apăsătoare cu îndurerate şi deznădăjduite <em>căutări</em>,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Prietenul Tinereţii mele
+Title: Tu n-ai vrut fără noi
+Type: articol
+Author: Traian Dorz
+Highlight: pe un rod al muncii şi luptei, al suferinţei şi <em>căutării</em> mele? Al căinţei şi dorului meu?
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Vrăjmaşii lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Se risipesc întâi în <em>căutarea</em> de argumente împotriva existenţei Lui şi a minunilor
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Împlinirea hotărârilor lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: înguste, trufia sectară, setea după întâietate şi <em>căutarea</em> slavei deşarte dintre voi.
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Cine intră pe uşă este păstorul...
+Book: Hristos - Izvorul nostru
+Title: Şi-a lăsat găleata şi s-a dus
 Type: articol
 Author: Traian Dorz
-Highlight: Vei <em>căuta</em> pe cei pierduţi, ca să-i aduci pe câţi poţi la Hristos căci nu vei putea să nu-i <em>cauţi</em>,
-Highlight: vei <em>căuta</em> cu bunătate şi cu milă pe cele bolnave şi căzute
-Highlight: vei <em>căuta</em> numai lâna,
-Highlight: - ci le vei <em>căuta</em> sufletele
-
-Score: 0.8333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Dar cel plătit lasă oile
-Type: articol
-Author: Traian Dorz
-Highlight: piardă, să se ticăloşească, să rătăcească, să-şi <em>caute</em> singure hrana cum pot ele.
-Highlight: oile şi <em>caută</em> cârciumile, teatrele, laudele, afacerile, distracţiile şi lenevia.
-Highlight: Pentru că el <em>caută</em> numai
-Highlight: duc ele, ce învaţă ele, ce cred ele şi ce păşuni <em>caută</em>,
-Highlight: Tău, dar nu în Adevărul Tău şi în Duhul Tău, ci <em>caută</em> să înşele sufletele spre a-şi mări
-
-Score: 0.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bunătate
-Type: articol
-Author: Traian Dorz
-Highlight: 14 - Nu <em>căuta</em> să placi la lume, <em>caută</em> Cerului să placi;
-Highlight: 3 - Celui ce-ţi aruncă pietre, <em>caută</em> pâine să-i arunci,  căci
-Highlight: <em>caută</em>-n orice zi cu grijă să faci cel puţin un bine;
-Highlight: celui care-ţi face răul <em>caută</em> binele să-i
-
-Score: 0.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre cinste
-Type: articol
-Author: Traian Dorz
-Highlight: <em>caută</em> că negrind pe altul nu te vei albi pe tine.
-Highlight: şi-apoi în zadar o <em>caută</em>, n-o mai află până mor.
-Highlight: <em>caută</em> mai întâi să placi
-Highlight: <em>caută</em> şi-mplineşte voia cinstei pe-al vieţii drum.
-Highlight: 78 - Fiecare <em>caută</em> drumul de-a ajunge om vestit
-
-Score: 0.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre mulţumire
-Type: articol
-Author: Traian Dorz
-Highlight: 3 - <em>Caută</em> mai întâi pe Bine şi pe buni să-i mulţumeşti,
-Highlight: dar când vei <em>căuta</em> păcatul şi pe-ai săi a-i mulţumi,
-Highlight: ei au lipsă de aceasta, tu să <em>cauţi</em> să-i satisfaci,
-Highlight: 19 - Conştiinţa ce te mustră <em>caută</em> să ţi-o linişteşti,
-Highlight: fericit cel care-şi <em>caută</em> mulţumirea lui aşa.
-
-Score: 0.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-Highlight: <em>caută</em>-i mai nainte,
-Highlight: <em>caută</em> munca şi-o cinsteşte
-Highlight: 82 - <em>Caută</em> să ajungi prin muncă,
-Highlight: 91 - Stăpâneşte-ţi nervii, <em>caută</em> liniştirea-n muncă bună
-Highlight: când <em>cauţi</em> la placul tuturor.
-
-Score: 0.8333333
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Fricoşii să plece acasă
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: legaţi mai mult de lume decât de Dumnezeu, n-au ce <em>căuta</em> în armata Domnului. Cei ce iubesc mai mult lumea
-Highlight: lumeşti decât sufletul şi cele sufleteşti, n-au ce <em>căuta</em> în războiul cel sfânt. Cei ce ascultă mai mult de
-Highlight: ), n-au ce <em>căuta</em> în oştirea Domnului; să plece acasă! Cei ce cred
-Highlight: pot sluji şi lui Dumnezeu şi lui mamona - n-au ce <em>căuta</em> în războiul cel sfânt; să plece acasă!
-Highlight: fricoşii numai moaie inima fraţilor. Fricoşii n-au ce <em>căuta</em> nici în luptele cele duhovniceşti! Ei sunt o slăbire
+Highlight: Fiecare uită şi frica şi ruşinea şi aleargă în <em>căutarea</em> şi aducerea altora la Hristos!
 

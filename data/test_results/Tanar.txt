@@ -1,109 +1,139 @@
-+---------------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                 | Occurrences                                  | Author      | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| O, cerul meu cel tânăr                                                                | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Rămâi tânăr totdeauna                                                                 | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Scrisoare unui tânăr                                                                  | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Cap. 13 - Frumosul tineret creştin                                                    | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                    | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Isus a găsit un asin                                                                  | {'tânăr', 'Tânărul', 'tânărul'}              | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 23 - Cuvânt Testamentar                                                          | {'tânăr', 'tânără', 'tânărului'}             | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                          | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 28 - Alte întristări binefăcătoare                                               | {'tânăr', 'Tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                    | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Apele adânci se limpezesc greu                                               | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                               | {'tânăr', 'tânărul', 'Tânărul'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                              | {'tânăr', 'tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                            | {'tânăr', 'tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                                  | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                       | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                           | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cei care vin de tineri                                                                | {'Tânăr', 'tânăr'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Din părţile Munteniei                                                                 | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Plăceri                                                                               | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Cap. 22 - Al doilea 2-4-2                                                             | {'tânăr', 'tânărul'}                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 2 - Grâul cel care moare                                                         | {'tânăr', 'tânărul', 'Tânărul'}              | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Bucuria Mea să rămână în voi                                                          | {'tânăr', 'Tânărul', 'tânără', 'tânărul'}    | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Cel mai frumos Isus                                                          | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                                 | {'tânăr', 'tânără'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 1 - Grăuntele de muştar                                                          | {'tânăr', 'tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                     | {'tânăr', 'tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                         | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                            | {'tânăr', 'tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Doamne, sunt din nou                                                                  | {'tânăr', 'tânărul'}                         | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | poezie  |
-| Cap. 14 - Un an adânc roditor                                                         | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 15 - Un An Nou Fericit                                                           | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                          | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 30 - Alte adevăruri noi                                                          | {'tânăr'}                                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 6 - Alte amare adevăruri                                                         | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Despre ascultare                                                                      | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Ispita desfrânării                                                                    | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                        | {'tânăr'}                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Nu-i bătrân nicicând                                                                  | {'tânăr'}                                    | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Nu-i bătrân nicicând                                                                  | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Îţi vei da viaţa?                                                                     | {'tânăr'}                                    | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cap. 3 - Începutul chemării                                                           | {'tânăr', 'Tânărul', 'tânărul', 'tânărului'} | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                          | {'tânăr', 'tânărul', 'tânărului'}            | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Pe drumul Crucii                                                            | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                                         | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                   | {'tânăr', 'tânără', 'tânăra'}                | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Pe drumul crucii mele                                                        | {'tânăr', 'tânărul', 'tânără'}               | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)         | {'tânăr', 'tânărul'}                         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| A fost chemat şi Isus...                                                              | {'tânăr', 'tânără'}                          | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                                                | {'tânăr', 'tânără'}                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 15 - Micii contemporani ai marilor oameni                                        | {'tânăr', 'tânărul'}                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                | {'tânăr', 'tânăra'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 22 - Peregrinările soliei                                                        | {'tânăr', 'tânărul'}                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                         | {'tânăr', 'tânără'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 31 - O altă judecată                                                             | {'tânăr', 'tânărul'}                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Copiii mei                                                                            | {'tânăr', 'tânără'}                          | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Dacă ai fi cunoscut tu...                                                             | {'tânăr', 'tânărul'}                         | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| Din părţile Banatului                                                                 | {'tânăr', 'Tânărul'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Frumuseţea amintirilor mele!                                                          | {'tânăr', 'tânără'}                          | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                | {'tânăr', 'tânărul'}                         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| ... Ce vom face?                                                                      | {'tânăr'}                                    | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| ... I-a zis: Învăţătorule, ştim                                                       | {'tânăr'}                                    | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cap. 12 - Dovada supremei iubiri                                                      | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Toate lucrează spre bine                                                    | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Pe urmele profetului                                                        | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Proverbe                                                                    | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 3 - Marea cernere                                                                | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 4 - Anul următor                                                                 | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                              | {'tânăr'}                                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 6 - Strălucita sărbătoare de Rusalii                                             | {'tânăr'}                                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 6 - Între două judecăţi                                                          | {'tânăr'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Furtunile care încep de dimineaţă                                            | {'tânăr'}                                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 8 - Marele necaz salvator                                                        | {'tânăr'}                                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Ce bine-a fost credinţă                                                               | {'tânăr'}                                    | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | poezie  |
-| Ce bine-a fost...                                                                     | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Ce frumoase-s toate                                                                   | {'tânăr'}                                    | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
-| Cum M-ai trimes Tu...                                                                 | {'tânăr'}                                    | Traian Dorz | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Când soarele se culcă...                                                              | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| De-aş ajunge cea mai mare                                                             | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Despre bine                                                                           | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre deşertăciune                                                                   | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre dreptate                                                                       | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre grijă                                                                          | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre hărnicie                                                                       | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre lene                                                                           | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre muncă                                                                          | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Despre înţelepciune                                                                   | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din pricina lui mulţi credeau                                                         | {'tânăr'}                                    | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Din părţile Bucovinei                                                                 | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Crişanei                                                                  | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Dobrogei                                                                  | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Transilvaniei                                                             | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Doamne, eu mereu tot cuget...                                                         | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Iacov şi Beniamin                                                                     | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Isus a zis: strângeţi fărâmiturile                                                    | {'tânăr'}                                    | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Isuse, Scump Isuse                                                                    | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 2-a a Postului Mare                                       | {'Tânăr'}                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'tânăr'}                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                         | {'tânăr'}                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Moartea                                                                               | {'tânăr'}                                    | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-+---------------------------------------------------------------------------------------+----------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Tanar using http://localhost:9000...
-Got 182 hits:
++----------------------------------------------------------------+--------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                          | Occurrences        | Author      | Tip                            | Carte                        | Volum   |
++----------------------------------------------------------------+--------------------+-------------+--------------------------------+------------------------------+---------+
+| Atunci când erai mai tânăr...                                  | {'tânăr'}          | Traian Dorz | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | articol |
+| Doamne, sunt din nou un tânăr                                  | {'tânăr'}          | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | poezie  |
+| Doamne, sunt din nou un tânăr                                  | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| O, cerul meu cel tânăr                                         | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Rămâi tânăr totdeauna                                          | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Scrisoare unui tânăr                                           | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Tu Veşnicule Tânăr...                                          | {'Tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Cap. 13 - Frumosul tineret creştin                             | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                             | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                             | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 28 - Alte întristări binefăcătoare                        | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Apele adânci se limpezesc greu                        | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Doamne, dar cu acesta ce va fi?                                | {'tânăr'}          | Traian Dorz | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | articol |
+| Isus a găsit un asin                                           | {'tânăr'}          | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Să-L întâmpinăm pe Domnul                                      | {'tânăr'}          | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator       | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Strâmta cărare mântuitoare                           | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                     | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                        | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                    | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cei care vin de tineri                                         | {'Tânăr', 'tânăr'} | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Din părţile Munteniei                                          | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Plăceri                                                        | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Bucuria Mea să rămână în voi                                   | {'tânăr'}          | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Cel mai frumos Isus                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 1 - Grăuntele de muştar                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Un an adânc roditor                                  | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 15 - Un An Nou Fericit                                    | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                              | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 2 - Grâul cel care moare                                  | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                  | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                          | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 22 - Al doilea 2-4-2                                      | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 30 - Alte adevăruri noi                                   | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 6 - Alte amare adevăruri                                  | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                     | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Daniel 1, 3-17                                                 | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Despre ascultare                                               | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Doamne, sunt din nou                                           | {'tânăr'}          | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | poezie  |
+| Ispita desfrânării                                             | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor) | {'tânăr'}          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Luca 7, 11-16                                                  | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Nu-i bătrân nicicând                                           | {'tânăr'}          | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Nu-i bătrân nicicând                                           | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| O tinereţe veşnică                                             | {'tânăr', 'Tânăr'} | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Plenitudinea puterii                                           | {'tânăr'}          | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Rugăciunea şi fiii ei                                          | {'tânăr'}          | Traian Dorz | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Îţi vei da viaţa?                                              | {'tânăr'}          | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| ... Ce vom face?                                               | {'tânăr'}          | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| ... I-a zis: Învăţătorule, ştim                                | {'tânăr'}          | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... În care nu mai fusese pus nimeni                           | {'tânăr'}          | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
+| A fost chemat şi Isus...                                       | {'tânăr'}          | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Asuprirea este o ruşine                                        | {'tânăr'}          | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Bolile sufleteşti                                              | {'tânăr'}          | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Bunul simţ                                                     | {'tânăr'}          | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Pe drumul Crucii                                     | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                         | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                               | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 12 - Toate lucrează spre bine                             | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 13 - Pe urmele profetului                                 | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 15 - Micii contemporani ai marilor oameni                 | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                         | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 21 - După cei 50 de ani                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                 | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                  | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 29 - Proverbe                                             | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Cap. 3 - Marea cernere                                         | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 3 - Începutul chemării                                    | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                      | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 4 - Anul următor                                          | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 4 - Vrăjmaşul caută viaţa pruncului                       | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - Necazuri şi speranţe                                  | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 6 - Strălucita sărbătoare de Rusalii                      | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 6 - Între două judecăţi                                   | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 7 - Furtunile care încep de dimineaţă                     | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 7 - Printre leu şi printre urs                            | {'tânăr'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 8 - Marele necaz salvator                                 | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 9 - Pe drumul crucii mele                                 | {'tânăr'}          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Ce bine-a fost credinţă                                        | {'tânăr'}          | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | poezie  |
+| Ce bine-a fost...                                              | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Ce frumoase-s toate                                            | {'tânăr'}          | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
+| Ce frumoase-s toate                                            | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Ce frumoase-s toate-toate                                      | {'tânăr'}          | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | poezie  |
+| Ce mult îmi pare c-am trăit                                    | {'tânăr'}          | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
+| Ce mult îmi pare c-am trăit                                    | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Ceea ce ne dă Hristos                                          | {'tânăr'}          | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Cei chemaţi de Domnul                                          | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Cei din urmă şi cei dintâi...                                  | {'tânăr'}          | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Copii şi părinţi                                               | {'tânăr'}          | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Copiii mei                                                     | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cum M-ai trimes Tu...                                          | {'tânăr'}          | Traian Dorz | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Curajul şi lucrarea                                            | {'tânăr'}          | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| Cuvântul lui Dumnezeu                                          | {'tânăr'}          | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Când soarele se culcă...                                       | {'tânăr'}          | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Dacă ai fi cunoscut tu...                                      | {'tânăr'}          | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Darurile lui Dumnezeu                                          | {'tânăr'}          | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
++----------------------------------------------------------------+--------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Tanar using https://api.comori-od.ro...
+Got 181 hits:
+Score: 17.0
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Atunci când erai mai tânăr...
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărat, adevărat, îţi spun că, atunci când erai mai <em>tânăr</em>, singur te încingeai
+Highlight: Când erai <em>tânăr</em> te încingeai şi mergeai unde voiai - îi spune Domnul
+Highlight: Atunci când erai mai <em>tânăr</em>...
+
+Score: 17.0
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Doamne, sunt din nou un tânăr
+Type: poezie
+Author: Traian Dorz
+Highlight: Doamne, sunt din nou un <em>tânăr</em>
+Highlight: s-au făcut un <em>tânăr</em> vis
+Highlight: Doamne, sunt din nou un <em>tânăr</em>
+
+Score: 17.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Doamne, sunt din nou un tânăr
+Type: poezie
+Author: Traian Dorz
+Highlight: Doamne, sunt din nou un <em>tânăr</em>
+Highlight: s-au făcut un <em>tânăr</em> vis
+Highlight: Doamne, sunt din nou un <em>tânăr</em>
+
 Score: 15.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
@@ -131,7 +161,16 @@ Author: Traian Dorz
 Highlight: - <em>tânăr</em> drag, - numai iubirea lui Isus este iubire,
 Highlight: Scrisoare unui <em>tânăr</em>
 
-Score: 8.141176
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Tu Veşnicule Tânăr...
+Type: poezie
+Author: Traian Dorz
+Highlight: Tu, Veşnicule <em>Tânăr</em>, Isuse Preafrumos,
+Highlight: Tu Veşnicule <em>Tânăr</em>...
+
+Score: 8.099999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 13 - Frumosul tineret creştin
@@ -144,7 +183,7 @@ Highlight: Sau, cuvântul de bun venit adăugat scrisorii unui <em>tânăr</em> 
 Highlight: un alt <em>tânăr</em> colporator
 Highlight: de frig şi de sfială. Pentru ei, văzând acolo un <em>tânăr</em> ţăran, n-a fost nici o mirare. Erau oarecum obişnuiţi
 
-Score: 7.5555553
+Score: 7.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 20 - Rugul care nu se mistuie
@@ -155,57 +194,6 @@ Highlight: Era încă <em>tânăr</em> şi începător, nu prea îndrăznea să 
 Highlight: Costică Magdici era un <em>tânăr</em> refugiat din Bucovina şi ocrotit prin familia fr
 Highlight: Fr. Popa Petru din Batiz, era un alt <em>tânăr</em> înflăcărat, fiul şi misionarul iubit al Hunedoarei
 Highlight: Fr. Constantin Tudose era cel mai <em>tânăr</em> dintre cei trei fraţi Tudose din Lieşti, care s-au
-Highlight: chemarea zguduitoare a Cuvântului lui Dumnezeu, o <em>tânără</em> a venit în faţă şi căzând în genunchi a mărturisit
-
-Score: 7.275
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Isus a găsit un asin
-Type: articol
-Author: Traian Dorz
-Highlight: intrarea în Ierusalim, Domnul Isus a găsit un asin <em>tânăr</em>, pe care nu încălcase încă nici un om (
-Highlight: O, ce Stăpân şi Domn Slăvit, pentru un <em>tânăr</em> predat Lui, este Împăratul Hristos!
-Highlight: istorie şi în viaţă, poate da Hristos, oricărui <em>tânăr</em> care este în stare să-L poarte triumfal pe El, printre
-Highlight: Hristos în istoria noastră, prin acest uriaş şi <em>tânăr</em> slujitor al Său care n-avea decât ceva peste treizeci
-Highlight: <em>Tânărul</em> asin, liber de orice obligaţii omeneşti, care era
-Highlight: Isus, să-şi facă slujba lor de a-l dezlega pe <em>tânărul</em> purtător de Hristos, de la uşa la care era legat
-
-Score: 7.257143
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-Highlight: şi în mod stăruitor şi personal pe fiecare <em>tânăr</em> sau <em>tânără</em> din familia şi din adunarea lor ca cel mai
-Highlight: Nordul Ardealului sau din adunarea din Cluj, unde un <em>tânăr</em> pretins credincios s-a dovedit a fi în stare de
-Highlight: decât între cei mai decăzuţi oameni... Şi acel <em>tânăr</em> cam lăudat de cei din Cluj şi-a mai făcut şi un
-Highlight: primit o astfel de scrisoare de la Cluj, semnată “un <em>tânăr</em>”, - dar mi-a fost dintr-o dată uşor să văd ca şi
-Highlight: Tot din anturajul <em>tânărului</em> “cu papucii mireselor” mai sunt şi alţi doi care
-
-Score: 7.257143
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: Acesta era un frate <em>tânăr</em>, care se predase Domnului în urmă cu câţiva ani
-Highlight: de care era despărţit al şaselea an acum. Era un <em>tânăr</em> cu pregătire superioară. Abia fusese numit într-un
-Highlight: iar hrana îi era atât de puţină pentru trupul lui <em>tânăr</em> şi slăbit... Am rupt din puţinul nostru şi i-am
-Highlight: M-am bucurat nespus de mult de acest <em>tânăr</em> şi de râvna lui pentru Domnul. Am mai stat de vorbă
-Highlight: inima mea tot mai mult unei alte fiinţe. Era o <em>tânără</em> colegă de facultate cu care m-am logodit. Atunci
-Highlight: că nu. Una era prea bătrână, iar cealaltă prea <em>tânără</em>... Şi ochii care nu se văd... Acum
-
-Score: 7.2333336
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 28 - Alte întristări binefăcătoare
-Type: articol
-Author: Traian Dorz
-Highlight: lua iarăşi drumurile ca în trecut când eram mai <em>tânăr</em> şi mai sănătos. Acum nu mai sunt în stare, sunt
-Highlight: atmosferă de certuri şi lupte. Iar la Milişăuţi era un <em>tânăr</em> încrezut şi înfumurat care avea o atitudine foarte
-Highlight: Dar s-a ridicat nervos un altul înaintea lor, un <em>tânăr</em> care era singurul intelectual dintre ei şi care
-Highlight: ridică mai multe voci tinere, - dar mai ales un <em>tânăr</em> care era foarte agitat, - nu puteţi pleca aşa de
-Highlight: <em>Tânărul</em> de la Milişăuţi şi-a recunoscut greşelile şi a
 
 Score: 7.2000003
 Volume: Istoria unei Jertfe
@@ -220,6 +208,28 @@ Highlight: apucat şi pe voi să nu mă înţelegeţi. Ca păstor <em>tânăr</e
 
 Score: 7.2000003
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight: Nordul Ardealului sau din adunarea din Cluj, unde un <em>tânăr</em> pretins credincios s-a dovedit a fi în stare de
+Highlight: decât între cei mai decăzuţi oameni... Şi acel <em>tânăr</em> cam lăudat de cei din Cluj şi-a mai făcut şi un
+Highlight: îndeaproape şi în mod stăruitor şi personal pe fiecare <em>tânăr</em> sau tânără din familia şi din adunarea lor ca cel
+Highlight: primit o astfel de scrisoare de la Cluj, semnată “un <em>tânăr</em>”, - dar mi-a fost dintr-o dată uşor să văd ca şi
+
+Score: 7.2000003
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 28 - Alte întristări binefăcătoare
+Type: articol
+Author: Traian Dorz
+Highlight: lua iarăşi drumurile ca în trecut când eram mai <em>tânăr</em> şi mai sănătos. Acum nu mai sunt în stare, sunt
+Highlight: atmosferă de certuri şi lupte. Iar la Milişăuţi era un <em>tânăr</em> încrezut şi înfumurat care avea o atitudine foarte
+Highlight: Dar s-a ridicat nervos un altul înaintea lor, un <em>tânăr</em> care era singurul intelectual dintre ei şi care
+Highlight: ridică mai multe voci tinere, - dar mai ales un <em>tânăr</em> care era foarte agitat, - nu puteţi pleca aşa de
+
+Score: 7.2000003
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 5 - Apele adânci se limpezesc greu
 Type: articol
@@ -229,20 +239,51 @@ Highlight: cineva, privind peste toţi şi văzându-l pe cel mai <em>tânăr</e
 Highlight: bine treaba aceasta decât părintele Trifa. El e <em>tânăr</em>, e talentat, are elan şi are şi timp - adăugă mai
 Highlight: nici cine ştie ce funcţie importantă. Este cel mai <em>tânăr</em> şi mai liber. El şi aşa este proaspăt venit de la
 
-Score: 6.909091
+Score: 7.2000003
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Title: Cap. 5 - În noaptea aceea...
 Type: articol
 Author: Traian Dorz
-Highlight: Siria un <em>tânăr</em> numit Efrem, singurul fiu al unor părinţi bogaţi dar credincioşi. Acest <em>tânăr</em> era foarte
-Highlight: pieptul încă-i <em>tânăr</em> chiar dacă-i slăbit,
-Highlight: Cum <em>tânărul</em> trecea pe cale, vaca nu s-a dat în lături ca să-i facă loc. Atunci <em>tânărul</em> furios luă
-Highlight: dete la o parte ci o luă înaintea lui pe cărare. <em>Tânărul</em> şi mai furios lovi iarăşi vaca. Dar vaca iarăşi
-Highlight: - Vezi-ţi de treabă momârlane, - zise <em>tânărul</em> bogat şi încrezut. Ce, eu sunt văcarul tău? Ce-mi
-Highlight: vaite <em>tânărul</em>. -
+Highlight: Acesta era un frate <em>tânăr</em>, care se predase Domnului în urmă cu câţiva ani
+Highlight: de care era despărţit al şaselea an acum. Era un <em>tânăr</em> cu pregătire superioară. Abia fusese numit într-un
+Highlight: iar hrana îi era atât de puţină pentru trupul lui <em>tânăr</em> şi slăbit... Am rupt din puţinul nostru şi i-am
+Highlight: M-am bucurat nespus de mult de acest <em>tânăr</em> şi de râvna lui pentru Domnul. Am mai stat de vorbă
 
-Score: 6.8
+Score: 7.2000003
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Doamne, dar cu acesta ce va fi?
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul să aibă o grijă deosebită de el, ca de un <em>tânăr</em> neîncercat.
+Highlight: Unde este un <em>tânăr</em> ca Ioan - acolo avem dreptul să slăvim pe Dumnezeu
+Highlight: Iată un exemplu obligatoriu pentru orice <em>tânăr</em> sfânt. Pentru orice ucenic cu adevărat iubit de
+Highlight: şi arătat atât de desăvârşit ca acel Dumnezeiesc <em>tânăr</em> care a fost sfântul apostol Ioan.
+
+Score: 7.2000003
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Isus a găsit un asin
+Type: articol
+Author: Traian Dorz
+Highlight: intrarea în Ierusalim, Domnul Isus a găsit un asin <em>tânăr</em>, pe care nu încălcase încă nici un om (
+Highlight: O, ce Stăpân şi Domn Slăvit, pentru un <em>tânăr</em> predat Lui, este Împăratul Hristos!
+Highlight: istorie şi în viaţă, poate da Hristos, oricărui <em>tânăr</em> care este în stare să-L poarte triumfal pe El, printre
+Highlight: Hristos în istoria noastră, prin acest uriaş şi <em>tânăr</em> slujitor al Său care n-avea decât ceva peste treizeci
+
+Score: 7.2000003
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Să-L întâmpinăm pe Domnul
+Type: articol
+Author: Traian Dorz
+Highlight: intrarea în Ierusalim Domnul Isus a găsit un asin <em>tânăr</em>, pe care nu încălecase încă nici un om (
+Highlight: 9 - O, ce Stăpân şi Domn Slăvit, pentru un <em>tânăr</em> predat Lui, este Împăratul Hristos!
+Highlight: istorie şi în viaţă, poate da Hristos, oricărui <em>tânăr</em> care este în stare să-L poarte triumfal pe El printre
+Highlight: prin părintele nostru Iosif, prin acest uriaş şi <em>tânăr</em> slujitor al Său, care n-avea decât abia ceva peste
+
+Score: 6.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
@@ -251,18 +292,6 @@ Author: Traian Dorz
 Highlight: ultima promoţie de la Curtea de Argeş care era un <em>tânăr</em> frate din Oastea Domnului, venind de la seminar
 Highlight: cele ce le auzeam cu urechile mele de la acest <em>tânăr</em>. Dar cunoscându-l bine mi-am dat seama că nu spune
 Highlight: cunosc pe acest om bun încă dinainte de 1940, când <em>tânăr</em> absolvent teolog de la Roman venise preot în Panticeu
-Highlight: şi zdrobit în suflet de aceste vorbe - spunea <em>tânărul</em> frate preot, încât nu mi-am revenit nici acum.
-
-Score: 6.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: Ca <em>tânăr</em> preot în Bucureşti, înzestrat cu multă putere şi
-Highlight: A fost voia Domnului însă ca deşi mai <em>tânăr</em> ca părintele Iosif, după ce o vreme a suferit de
-Highlight: de inimă şi de voinţă Vasile Ouatu care deşi mai <em>tânăr</em> ca toţi, era plin de înflăcărare şi de îndrăzneală
-Highlight: cel despre care am mai vorbit: preotul Secaş, <em>tânărul</em> şi priceputul duhovnic care era foarte pe plac
 
 Score: 6.75
 Volume: Istoria unei Jertfe
@@ -276,6 +305,16 @@ Highlight: ele prinseseră rădăcini puternice în sufletul lui <em>tânăr</em
 
 Score: 6.75
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 18 - Frumosul an 1930
+Type: articol
+Author: Traian Dorz
+Highlight: Ca <em>tânăr</em> preot în Bucureşti, înzestrat cu multă putere şi
+Highlight: A fost voia Domnului însă ca deşi mai <em>tânăr</em> ca părintele Iosif, după ce o vreme a suferit de
+Highlight: de inimă şi de voinţă Vasile Ouatu care deşi mai <em>tânăr</em> ca toţi, era plin de înflăcărare şi de îndrăzneală
+
+Score: 6.75
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
@@ -283,6 +322,15 @@ Author: Traian Dorz
 Highlight: prag, gata să intre. Unul mai în vârstă. Altul mai <em>tânăr</em>, cu un ochi stricat. Tremurau încă furioşi şi strigau
 Highlight: - Eu, - zise cel mai <em>tânăr</em> şi mai supărat, - sunt Pop Şandor de la Cluj. Cum
 Highlight: cuviinţă. Mă îndurerase mai ales cuvintele acelui <em>tânăr</em> care avea ochiul stricat şi care vorbise atât de
+
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Type: articol
+Author: Traian Dorz
+Highlight: Siria un <em>tânăr</em> numit Efrem, singurul fiu al unor părinţi bogaţi dar credincioşi. Acest <em>tânăr</em> era foarte
+Highlight: pieptul încă-i <em>tânăr</em> chiar dacă-i slăbit,
 
 Score: 6.75
 Volume: Istoria unei Jertfe
@@ -324,33 +372,7 @@ Highlight: şi-l păstrează pururi <em>tânăr</em> pân-la bătrâneţi pe-ace
 Highlight: - sufletul şi-atunci tresare şi se bucură, ca <em>tânăr</em>,
 Highlight: cel ce-o are, pe vecie, va fi <em>tânăr</em>
 
-Score: 6.2499995
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 22 - Al doilea 2-4-2
-Type: articol
-Author: Traian Dorz
-Highlight: Siria un <em>tânăr</em> numit Efrem, singurul fiu al unor părinţi bogaţi, dar credincioşi. Acest <em>tânăr</em> era foarte
-Highlight: Cum <em>tânărul</em> trecând, vaca nu se dădu la o parte ca să-i facă loc, iar <em>tânărul</em> Efrem furios că
-Highlight: de părinţi la nişte rudenii într-un oraş vecin, <em>tânărul</em> trecu printr-o pădure. La marginea pădurii era
-Highlight: - Vezi-ţi de drum momârlane - zise <em>tânărul</em> bogat şi încrezut, supărat de îndrăzneala săracului
-Highlight: nevinovat, sunt nevinovat - începu să se vaiete <em>tânărul</em> Efrem. Lăsaţi-mă în pace.
-Highlight: Şi <em>tânărul</em> fu dus la închisoare unde urmă ancheta cu bătăi
-
-Score: 6.233333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 2 - Grâul cel care moare
-Type: articol
-Author: Traian Dorz
-Highlight: celelalte vaci din curte se repede spre ea un tăuraş <em>tânăr</em> pe care nimeni nu-l ştia că împunge.
-Highlight: erau cât se poate de grele şi el încă destul de <em>tânăr</em>, n-a putut rămâne multă vreme singur.
-Highlight: Grăuntele şi jertfa se numea atunci <em>tânărul</em> preot Iosif Trifa.  Se
-Highlight: cea mai potrivită gimnaziul de la Beiuş. Acolo <em>tânărul</em> Iosif a mai învăţat alţi patru ani, fiind mereu
-Highlight: peste munţii care despart aceste două depărtări. <em>Tânărul</em> Iosif făcea şi el aceste drumuri împreună cu convoaiele
-Highlight: Dar în timpul bolii <em>tânărul</em> slăbise mult. Nepoata preotului Cotişel văzându-l
-
-Score: 6.1666665
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: Bucuria Mea să rămână în voi
@@ -358,11 +380,8 @@ Type: articol
 Author: Traian Dorz
 Highlight: veniseră ca să-I asculte Cuvintele Lui de pe munte, un <em>tânăr</em> ucenic a venit la Isus şi L-a întrebat:
 Highlight: Seara, venind părinţii fetei şi plăcându-le de <em>tânăr</em>, l-au oprit la ei zicând: Rămâi la noi şi dacă vă
-Highlight: <em>Tânărul</em> ucenic a luat ulciorul din mâna Domnului Isus şi
-Highlight: când ucenicul umbla pe la porţi să găsească apă, o <em>tânără</em> fată l-a chemat în curtea casei lor ca să-i dea
-Highlight: iar lângă fântână la umbra viţei era răcoare, <em>tânărul</em> ucenic s-a dat în vorbe cu fata; apoi de bucuria
 
-Score: 6.133333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
@@ -370,21 +389,8 @@ Type: articol
 Author: Traian Dorz
 Highlight: încăpere mare unde mă aştepta în picioare un bărbat <em>tânăr</em> de o statură uriaşă:
 Highlight: Dogaru Traian - la care s-a mai adăugat de curând un <em>tânăr</em> înflăcărat Cornel Rusu, născut într-o familie baptistă
-Highlight: atunci la noi - asta era în 1943 - a cunoscut pe o <em>tânără</em> surioară bună din Săsciori. Noi, garantând pentru
-Highlight: mulţi tineri. Astfel era Dandea Maria din Corna, o <em>tânără</em> foarte înflăcărată de la început pentru Domnul
 
-Score: 6.133333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: printre unii care ascultau - venea obişnuit şi un <em>tânăr</em> slăbuţ şi palid, dar foarte nervos şi împotrivitor
-Highlight:  Hrana îi era atât de puţină pentru trupul lui <em>tânăr</em> şi slăbit. Am rupt din puţinul nostru de hrană şi
-Highlight: făceam loc tot mai mult unei alte fiinţe, care era o <em>tânără</em> colegă de facultate cu care m-am logodit. Atunci
-Highlight: Căci una era prea bătrână... Cealaltă era prea <em>tânără</em>... Şi ochii care nu se văd... Acum regăsesc aici
-
-Score: 6.083333
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 1 - Grăuntele de muştar
@@ -392,47 +398,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: de la teologia Sibiului şi care era acum preot <em>tânăr</em> pe undeva prin satele Munţilor Apuseni.
 Highlight: simţământ tainic şi puternic îl apropiase de acest <em>tânăr</em>, puţin la trup dar uriaş la suflet. Şi o adâncă
-Highlight: legătură duhovnicească l-a apropiat cu deosebire de <em>tânărul</em> acesta.
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: Şi eu am fost încă mai <em>tânăr</em> decât tine când a trebuit să plec pe urmele Domnului
-Highlight: redacţia foii şi în fruntea adunării din Sibiu un <em>tânăr</em> preot care prin felul priceput şi curajos în care
-Highlight: Aşa om era <em>tânărul</em> preot Gheorghe Secaş.
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: văzut la masa din mijloc aşezat pe un divan un om <em>tânăr</em> în reverendă, iar pe margini, aşteptând pe o bancă
-Highlight: numai un preot cu figură mai distinsă dar încă <em>tânăr</em> - şi care era ocupat vorbind la două telefoane deodată
-Highlight: că intră în curte Pop Alexandru, împreună cu o <em>tânără</em>, care am aflat că de data asta era una din fiicele
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
-Type: articol
-Author: Traian Dorz
-Highlight: făcuse în atâţia zeci de ani când, măcar, eram <em>tânăr</em>. Vecinii se uitau şi ei miraţi şi neîncrezători
-Highlight: deschise brusc şi îmi apăru în celulă un tovarăş <em>tânăr</em> şi infirm de un picior. Îmi spuse că vine din penitenciarul
-Highlight: în faţa mesei dincolo de care stăteau alături <em>tânărul</em> căpitan, ajutorul comandantului împreună cu grefierul
-
-Score: 6.083333
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Doamne, sunt din nou
-Type: poezie
-Author: Traian Dorz
-Highlight: Doamne, sunt din nou un <em>tânăr</em>
-Highlight: s-au făcut un <em>tânăr</em> vis
-Highlight: peste <em>tânărul</em> izvor
 
 Score: 5.9999995
 Volume: Istoria unei Jertfe
@@ -462,6 +427,50 @@ Highlight: Fratele Petre era mai <em>tânăr</em> cu aproape 4 ani ca mine, dar 
 Highlight: urmat el... Nu voi uita niciodată ce frumos era. Un <em>tânăr</em> de 16 ani îmbrăcat cu sumăniţă de lână albă, cu
 
 Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 19 - Omul trimes de Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Şi eu am fost încă mai <em>tânăr</em> decât tine când a trebuit să plec pe urmele Domnului
+Highlight: redacţia foii şi în fruntea adunării din Sibiu un <em>tânăr</em> preot care prin felul priceput şi curajos în care
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 2 - Grâul cel care moare
+Type: articol
+Author: Traian Dorz
+Highlight: celelalte vaci din curte se repede spre ea un tăuraş <em>tânăr</em> pe care nimeni nu-l ştia că împunge.
+Highlight: erau cât se poate de grele şi el încă destul de <em>tânăr</em>, n-a putut rămâne multă vreme singur.
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 20 - După alţi 30 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: văzut la masa din mijloc aşezat pe un divan un om <em>tânăr</em> în reverendă, iar pe margini, aşteptând pe o bancă
+Highlight: numai un preot cu figură mai distinsă dar încă <em>tânăr</em> - şi care era ocupat vorbind la două telefoane deodată
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: printre unii care ascultau - venea obişnuit şi un <em>tânăr</em> slăbuţ şi palid, dar foarte nervos şi împotrivitor
+Highlight:  Hrana îi era atât de puţină pentru trupul lui <em>tânăr</em> şi slăbit. Am rupt din puţinul nostru de hrană şi
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 22 - Al doilea 2-4-2
+Type: articol
+Author: Traian Dorz
+Highlight: Siria un <em>tânăr</em> numit Efrem, singurul fiu al unor părinţi bogaţi, dar credincioşi. Acest <em>tânăr</em> era foarte
+
+Score: 5.9999995
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 30 - Alte adevăruri noi
@@ -480,6 +489,24 @@ Highlight: cea mai mare nevoie de Dumnezeu. Nu veţi fi tot <em>tânăr</em>, to
 Highlight: dat în primire pentru câteva ceasuri la un ofiţer <em>tânăr</em> care doar trebuia să-mi transcrie declaraţia mea
 
 Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
+Type: articol
+Author: Traian Dorz
+Highlight: făcuse în atâţia zeci de ani când, măcar, eram <em>tânăr</em>. Vecinii se uitau şi ei miraţi şi neîncrezători
+Highlight: deschise brusc şi îmi apăru în celulă un tovarăş <em>tânăr</em> şi infirm de un picior. Îmi spuse că vine din penitenciarul
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Daniel 1, 3-17
+Type: poezie
+Author: Traian Dorz
+Highlight: Acest <em>tânăr</em> bun şi vrednic
+Highlight: Fericit e-un <em>tânăr</em> vrednic şi-nfrânat
+
+Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre ascultare
@@ -487,6 +514,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: niciodată nu-i prea <em>tânăr</em>, niciodată prea bătrân.
 Highlight: 55 - Ia un sfat şi de la <em>tânăr</em>,
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Doamne, sunt din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Doamne, sunt din nou un <em>tânăr</em>
+Highlight: s-au făcut un <em>tânăr</em> vis
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
@@ -507,6 +543,15 @@ Highlight: Frate <em>tânăr</em> de ani şi sfios la cuvânt, învaţă din ace
 Highlight: Pătrunde-te scump frate <em>tânăr</em>, de aceste haruri cereşti, veghează în practicarea
 
 Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Luca 7, 11-16
+Type: poezie
+Author: Traian Dorz
+Highlight: pe un <em>tânăr</em> din Nain
+Highlight: i-a-nviat pe fiul <em>tânăr</em>
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Nu-i bătrân nicicând
@@ -525,6 +570,33 @@ Highlight: tot mai <em>tânăr</em> în Hristos.
 Highlight: nu-i bătrân ci-i veşnic <em>tânăr</em>
 
 Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: O tinereţe veşnică
+Type: articol
+Author: Traian Dorz
+Highlight: 5 - Noi toţi avem acum un suflet <em>tânăr</em>. Chiar noi cei care avem perii capului cărunţi,
+Highlight: izvorăşte din Hristos, Preaiubitul nostru Cel Veşnic <em>Tânăr</em>.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Plenitudinea puterii
+Type: articol
+Author: Traian Dorz
+Highlight: rodind creaţii fericite şi dulci - este veşnic <em>tânăr</em>.
+Highlight: era el când spunea aceste lucruri... şi totuşi ce <em>tânăr</em> era.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Rugăciunea şi fiii ei
+Type: articol
+Author: Traian Dorz
+Highlight: 20 - Frate <em>tânăr</em> de azi, şi sfios la cuvânt,
+Highlight: Pătrunde-te scump frate <em>tânăr</em> de aceste haruri cereşti, veghează în practicarea
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: Îţi vei da viaţa?
@@ -532,188 +604,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: Eram <em>tânăr</em>, Doamne Isuse, iar jertfele, catacombele şi moartea
 Highlight: doream şi ceea ce eu mi-am prezis, în frumosul avânt <em>tânăr</em>, în frumosul elan al dragostei mele dintâi.
-
-Score: 4.888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 3 - Începutul chemării
-Type: articol
-Author: Traian Dorz
-Highlight: Numele şi lupta acestui de <em>tânăr</em> încercat slujitor al lui Hristos, începeau să fie
-Highlight: sărac de moţi, avea atât de multe alte nevoi. <em>Tânărul</em> învăţător cu inima lui curată şi plină de milă
-Highlight: care cam toţi se feresc, îndată ce au cunoscut că <em>tânărul</em> învăţător îi iubeşte şi-i ajută erau zi şi noapte
-Highlight: S-a aranjat cu grabă căsătoria <em>tânărului</em> Iosif cu o fată anume Iulia, fiica unui nepot
-Highlight: Pentru <em>tânărul</em> preot Iosif noua însărcinare era şi mai grea decât
-Highlight: O conştiinţă deja formată cum era aceea a <em>tânărului</em> preot Iosif, maturizat de durerile personale ca
-
-Score: 4.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 21 - După cei 50 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: natal al eroului Avram Iancu. Acesta, pe atunci <em>tânăr</em> preot, îi era bine cunoscut mitropolitului încă
-Highlight: fusese instalat atunci de curând ca mitropolit, <em>tânărul</em> şi entuziastul cleric Nicolae Bălan, fost profesor
-Highlight: om capabil şi înzestrat cu aceste calităţi. Era <em>tânărul</em> preot Iosif Trifa, originar din Munţii Apuseni
-Highlight: atunci se petrecuseră lucruri tragice cu familia <em>tânărului</em> preot. Trei copii cu soţia îi muriseră la rând
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
-Type: articol
-Author: Traian Dorz
-Highlight: Pagina a 3-a publica un tâlc despre Samuel, un <em>tânăr</em> care a răspuns la chemarea Domnului. O cântare,
-Highlight: numai noi cei din Sibiu care alcătuiam un fel de <em>tânără</em> gardă a părintelui Iosif, dar în toată ţara avea
-Highlight: Începuse să-i scrie o <em>tânără</em> de prin judeţul Vlaşca. Au legat o corespondenţă
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-Highlight: nimeni. Îl vor afla cu uşurinţă. E un mormânt viu şi <em>tânăr</em>, care predică neîncetat şi tuturor celor care vin
-Highlight: ei i s-a schimbat dintr-o dată devenind atât de <em>tânără</em> şi de frumoasă cum fusese numai în anii tinereţii
-Highlight: de război pe frumoasa şi harnica noastră maşină <em>tânără</em>, nu s-au mai gândit să-şi cumpere alta. Au pus
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: atunci pentru Domnul. (Vasile Marini este cel mai <em>tânăr</em> din familia Marini de la Săsciori). Promitea foarte
-Highlight: venise de curând Vasile Marini ca ginere după o soră <em>tânără</em> care, mai înainte ca fată, era o credincioasă deplin
-Highlight: despre punerea la cale a acestei căsătorii prin <em>tânăra</em> soră Maricica Săilă din Bacău.
-
-Score: 4.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 9 - Pe drumul crucii mele
-Type: articol
-Author: Traian Dorz
-Highlight: între noi pentru un timp de un an şi ceva încă un <em>tânăr</em>, Nicolae Vonica, un băiat tot aşa de înalt şi de
-Highlight: A apărut din nou apoi aici fratele Marini, <em>tânărul</em> învăţător din Săsciori, jud. Alba, despre care
-Highlight: Sora era Tily Bernhardt, o <em>tânără</em> care se lipise şi ea aici şi lucra la registrele
-
-Score: 4.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu şi alegerea Lui se opresc asupra unui suflet <em>tânăr</em>, această strălucită minune lucrează prin acest suflet
-Highlight: asupra căruia îl face foarte atent Sfântul Pavel pe <em>tânărul</em> său urmaş este învăţătura, adică felul cum explică
-Highlight:  Iar în al doilea rând, pentru a-l pregăti pe <em>tânărul</em> ucenic şi viitorul urmaş că şi el nu trebuie să
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: A fost chemat şi Isus...
-Type: articol
-Author: Traian Dorz
-Highlight: Dragă frate <em>tânăr</em>,
-Highlight: dragă soră <em>tânără</em>,
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 11 - Ce minunat lucrează Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: noastră este frumoasă, inima curată şi sufletul <em>tânăr</em>.
-Highlight: Frumoasa noastră poezie <em>tânără</em>
-
-Score: 4.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 15 - Micii contemporani ai marilor oameni
-Type: articol
-Author: Traian Dorz
-Highlight: învârtea cu succes, fiind şi el destul de puternic şi <em>tânăr</em> pe atunci.
-Highlight: Apoi arătându-l fr. Marini i-am zis: acesta este <em>tânărul</em> de care ţi-am spus. Iar lui i-am zis:
-
-Score: 4.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: el să-i lucrez dacă voi avea ce. Acesta era un <em>tânăr</em>, fost în lagărul de exterminare de la Auschwitz
-Highlight: din nou acasă cu Costică, dar nu singur. Venea cu <em>tânăra</em> soţie a fratelui din comuna cea mai de nord a ţării
-
-Score: 4.6666665
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 22 - Peregrinările soliei
-Type: articol
-Author: Traian Dorz
-Highlight: atunci printre alţii la revista noastră şi dânsul ca <em>tânăr</em> teolog - şi ne apropiasem sufleteşte mult, încă
-Highlight: fac singur acest drum greu şi lung. M-a primit <em>tânărul</em> părinte secretar Stolian Lupşor, care de la început
-
-Score: 4.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-Highlight: Acesta de acum însă era un <em>tânăr</em> cunoscut, care venea speriat, cu vestea că securitatea
-Highlight: faţa i s-a schimbat dintr-o dată devenind atât de <em>tânără</em> şi de frumoasă cum fusese numai în anii tinereţii
-
-Score: 4.6666665
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 31 - O altă judecată
-Type: articol
-Author: Traian Dorz
-Highlight: deschise brusc şi în celulă îmi apăru un tovarăş <em>tânăr</em> şi infirm de un picior. Îmi spusese că vine din
-Highlight: în faţa mesei dincolo de care stăteau alături <em>tânărul</em> căpitan, ajutorul comandantului şi grefierul civil
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Copiii mei
-Type: poezie
-Author: Traian Dorz
-Highlight: eu sunt astăzi tot bunul vostru prieten <em>tânăr</em>...
-Highlight: iubirea-I <em>tânără</em> mereu
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Dacă ai fi cunoscut tu...
-Type: articol
-Author: Traian Dorz
-Highlight: Fiecare om are, sau a avut, prilejul să fie odată <em>tânăr</em>.
-Highlight: Un astfel de prilej a avut şi <em>tânărul</em> bogat din  Marcu
-
-Score: 4.6666665
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-Highlight: pe un <em>tânăr</em> ce doreşte a fi om adevărat
-Highlight: 253 - <em>Tânărul</em> ce vrea s-ajungă drept şi sănătos şi tare
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Frumuseţea amintirilor mele!
-Type: articol
-Author: Traian Dorz
-Highlight: Picioarele mele îşi recăpătau sprinteneala cerbului <em>tânăr</em> şi nici dealurile cele mai mari, nu le-ar fi putut
-Highlight: mereu fierbinte, inima mea mereu dulce, viaţa mea <em>tânără</em>, timpul mereu sărbătoare.
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-Highlight: - Sunt tare amărât frate! - răspunse cel <em>tânăr</em>. Îndată ce am început viaţa mea cea nouă cu Domnul
-Highlight: - Stai frate, opreşte-te - strigă <em>tânărul</em> - nu necazuri cere Domnului pentru mine, ci răbdare
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -730,6 +620,62 @@ Title: ... I-a zis: Învăţătorule, ştim
 Type: articol
 Author: Traian Dorz
 Highlight: atenţia arătându-mi un tablou care înfăţişa un <em>tânăr</em> ţinând ceva între buze.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: ... În care nu mai fusese pus nimeni
+Type: articol
+Author: Traian Dorz
+Highlight: Erau în oraşul şi în adunarea tinereţii mele un <em>tânăr</em> şi o tânără. Păreau credincioşi adevăraţi amândoi
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: A fost chemat şi Isus...
+Type: articol
+Author: Traian Dorz
+Highlight: Dragă frate <em>tânăr</em>,
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Asuprirea este o ruşine
+Type: articol
+Author: Traian Dorz
+Highlight: 15 - Dacă eşti <em>tânăr</em>, puternic, sănătos şi înălţat astăzi, - nu-ţi pierde
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Bolile sufleteşti
+Type: articol
+Author: Traian Dorz
+Highlight: poate să fie trupul acelui om cât de puternic şi de <em>tânăr</em>, cât de frumos şi plin de sănătate, el în curând
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Bunul simţ
+Type: articol
+Author: Traian Dorz
+Highlight: sensibilă a unui credincios, nu numai când este <em>tânăr</em>, - ci toată viaţa sa.
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 10 - Pe drumul Crucii
+Type: articol
+Author: Traian Dorz
+Highlight: Pagina a 3-a publica un tâlc despre Samuel, un <em>tânăr</em> care a răspuns la chemarea Domnului. O cântare,
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 11 - Ce minunat lucrează Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: noastră este frumoasă, inima curată şi sufletul <em>tânăr</em>.
 
 Score: 4.5
 Volume: Istoria unei Jertfe
@@ -756,6 +702,46 @@ Author: Traian Dorz
 Highlight: Trecuseră aproape 50 de ani de atunci când <em>tânăr</em> fiind venisem aici de la Sibiu, cu toţi cei ce eram
 
 Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 15 - Micii contemporani ai marilor oameni
+Type: articol
+Author: Traian Dorz
+Highlight: învârtea cu succes, fiind şi el destul de puternic şi <em>tânăr</em> pe atunci.
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: el să-i lucrez dacă voi avea ce. Acesta era un <em>tânăr</em>, fost în lagărul de exterminare de la Auschwitz
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 21 - După cei 50 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: natal al eroului Avram Iancu. Acesta, pe atunci <em>tânăr</em> preot, îi era bine cunoscut mitropolitului încă
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 22 - Peregrinările soliei
+Type: articol
+Author: Traian Dorz
+Highlight: atunci printre alţii la revista noastră şi dânsul ca <em>tânăr</em> teolog - şi ne apropiasem sufleteşte mult, încă
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: Acesta de acum însă era un <em>tânăr</em> cunoscut, care venea speriat, cu vestea că securitatea
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Cap. 29 - Proverbe
@@ -773,6 +759,22 @@ Highlight: Am fost <em>tânăr</em> şi am îmbătrânit, dar nu am văzut pe ce
 
 Score: 4.5
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 3 - Începutul chemării
+Type: articol
+Author: Traian Dorz
+Highlight: Numele şi lupta acestui de <em>tânăr</em> încercat slujitor al lui Hristos, începeau să fie
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: deschise brusc şi în celulă îmi apăru un tovarăş <em>tânăr</em> şi infirm de un picior. Îmi spusese că vine din
+
+Score: 4.5
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 4 - Anul următor
 Type: articol
@@ -786,6 +788,14 @@ Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
 Type: articol
 Author: Traian Dorz
 Highlight: putea niciodată în lumea aceasta. Murise şi el <em>tânăr</em> ca şi tatăl său Daniel, mort tot de inimă şi tot
+
+Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: nimeni. Îl vor afla cu uşurinţă. E un mormânt viu şi <em>tânăr</em>, care predică neîncetat şi tuturor celor care vin
 
 Score: 4.5
 Volume: Hristos - Marturia mea
@@ -812,12 +822,28 @@ Author: Traian Dorz
 Highlight:  pe care întins şi acoperit pe piept stătea un <em>tânăr</em> bolnav care mi se părea că eram eu.
 
 Score: 4.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: atunci pentru Domnul. (Vasile Marini este cel mai <em>tânăr</em> din familia Marini de la Săsciori). Promitea foarte
+
+Score: 4.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 8 - Marele necaz salvator
 Type: articol
 Author: Traian Dorz
 Highlight: mai neobservat şi cum să scap mai repede. Eu, un <em>tânăr</em> ţăran, cu opinci şi cojocel, în mijlocul lor, iar
+
+Score: 4.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 9 - Pe drumul crucii mele
+Type: articol
+Author: Traian Dorz
+Highlight: între noi pentru un timp de un an şi ceva încă un <em>tânăr</em>, Nicolae Vonica, un băiat tot aşa de înalt şi de
 
 Score: 4.5
 Volume: Cugetări Nemuritoare
@@ -844,12 +870,100 @@ Author: Traian Dorz
 Highlight: cu cât moare mai de <em>tânăr</em>
 
 Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Ce frumoase-s toate
+Type: poezie
+Author: Traian Dorz
+Highlight: cu cât moare mai de <em>tânăr</em>
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Ce frumoase-s toate-toate
+Type: poezie
+Author: Traian Dorz
+Highlight: cu cât moare mai de <em>tânăr</em>
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Ce mult îmi pare c-am trăit
+Type: poezie
+Author: Traian Dorz
+Highlight: părintele meu sfânt e mult mai <em>tânăr</em> decât mine
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Ce mult îmi pare c-am trăit
+Type: poezie
+Author: Traian Dorz
+Highlight: părintele meu sfânt e mult mai <em>tânăr</em> decât mine
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Ceea ce ne dă Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: este mai însemnat lucru să te întorci la Dumnezeu <em>tânăr</em>, când ai duşmanul morţii înapoia ta şi nu-l vezi
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Cei chemaţi de Domnul
+Type: poezie
+Author: Traian Dorz
+Highlight: Vino suflet <em>tânăr</em> pune legământ
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Cei din urmă şi cei dintâi...
+Type: articol
+Author: Traian Dorz
+Highlight: Atunci va veni repede ca o căprioară şi ca un cerb <em>tânăr</em>,
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Copii şi părinţi
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - O, nu te amăgi, dacă eşti <em>tânăr</em>, că mai ai timp...
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Copiii mei
+Type: poezie
+Author: Traian Dorz
+Highlight: eu sunt astăzi tot bunul vostru prieten <em>tânăr</em>...
+
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Mijlocitorul nostru
 Title: Cum M-ai trimes Tu...
 Type: articol
 Author: Traian Dorz
 Highlight: De ce a ales Dumnezeu pe Ghedeon, un <em>tânăr</em> neîncercat, care îşi vedea de treabă să bată grâu
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Curajul şi lucrarea
+Type: articol
+Author: Traian Dorz
+Highlight: început are totdeauna mulţumire la urmă. Cocorul <em>tânăr</em> şi curajos în primăvară care a despicat cu putere
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Cuvântul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - De ce a ales Dumnezeu pe Ghedeon, un <em>tânăr</em> neîncercat, care îşi vedea de treaba lui să bată
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -860,178 +974,18 @@ Author: Traian Dorz
 Highlight: cum fratele mai <em>tânăr</em>, pe primul dintre fraţi...
 
 Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: De-aş ajunge cea mai mare
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>tânăr</em> fără de Hristos!
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bine
-Type: articol
-Author: Traian Dorz
-Highlight: nici cel <em>tânăr</em> să nu calce sfatul unui înţelept,
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre deşertăciune
-Type: articol
-Author: Traian Dorz
-Highlight: oricât eşti de <em>tânăr</em> astăzi
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre dreptate
-Type: articol
-Author: Traian Dorz
-Highlight: şi-ndreaptă-ţi fiul cât e <em>tânăr</em>:
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre grijă
-Type: articol
-Author: Traian Dorz
-Highlight: 12 - Mai bine să-nveţi de <em>tânăr</em> ca să ştii păstra ce ai,
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre hărnicie
-Type: articol
-Author: Traian Dorz
-Highlight: ca un <em>tânăr</em> delăsat.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre lene
-Type: articol
-Author: Traian Dorz
-Highlight: pe cel <em>tânăr</em> gură-cască,
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre muncă
-Type: articol
-Author: Traian Dorz
-Highlight: 21 - Cine nu aleargă <em>tânăr</em> va trudi bătrân fiind,
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre înţelepciune
-Type: articol
-Author: Traian Dorz
-Highlight: 58 - Adu-ţi aminte când eşti <em>tânăr</em> că şi tu ai să-mbătrâneşti,
-
-Score: 4.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Din pricina lui mulţi credeau
+Book: Hristos - Izvorul nostru
+Title: Dacă ai fi cunoscut tu...
 Type: articol
 Author: Traian Dorz
-Highlight: Lazăr, deşi <em>tânăr</em>, era un suflet matur şi evlavios, un om întreg,
+Highlight: Fiecare om are, sau a avut, prilejul să fie odată <em>tânăr</em>.
 
 Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Bucovinei
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Darurile lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: îndrumarea căpătată de vreun <em>tânăr</em> în vreun fel
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Crişanei
-Type: articol
-Author: Traian Dorz
-Highlight: într-un trup puternic, <em>tânăr</em> şi-ndrăzneţ şi sănătos
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Dobrogei
-Type: articol
-Author: Traian Dorz
-Highlight: 19 - Când îl judeci pe cel <em>tânăr</em>, nu-l privi ca pe-un bătrân,
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
-Author: Traian Dorz
-Highlight: 18 - Rămâi <em>tânăr</em> totdeauna în al inimii fior
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, eu mereu tot cuget...
-Type: poezie
-Author: Traian Dorz
-Highlight: tu m-ai învăţat de <em>tânăr</em> să privesc şi moartea-n faţă
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Iacov şi Beniamin
-Type: poezie
-Author: Traian Dorz
-Highlight: cel mai <em>tânăr</em> frate-al lor
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Isus a zis: strângeţi fărâmiturile
-Type: articol
-Author: Traian Dorz
-Highlight: Aşa ni-l putem închipui pe sfântul Ioan, <em>tânăr</em> ucenic al Domnului, totdeauna atent şi însemnându-şi
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Isuse, Scump Isuse
-Type: poezie
-Author: Traian Dorz
-Highlight: deşi sunt mic şi <em>tânăr</em>
-
-Score: 4.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 2-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: O, ce Creator Desăvârşit, Veşnic <em>Tânăr</em>, veşnic în plinătatea tuturor puterilor Sale creatoare
-
-Score: 4.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
-Type: articol
-Author: Traian Dorz
-Highlight: Odată un călugăr <em>tânăr</em> care slujea la o mânăstire fiindu-i foame într-o
-
-Score: 4.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
-Type: articol
-Author: Traian Dorz
-Highlight: În copilăria mea, aveam acasă un <em>tânăr</em> păr frumos care, în primii doi ani de rod avea nişte
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Moartea
-Type: articol
-Author: Traian Dorz
-Highlight: cât e <em>tânăr</em> şi e tare şi în toate-i merge
+Highlight: sfaturile şi pildele lor vrednice, un astfel de <em>tânăr</em> va creşte sănătos şi cinstit, curajos şi cumpătat
 

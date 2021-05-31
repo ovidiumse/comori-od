@@ -1,106 +1,109 @@
-+---------------------------------------------------------------------------------+--------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                           | Occurrences              | Author          | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------+--------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Am cu viaţa un cules                                                            | {'cules'}                | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
-| Am cu viaţa un cules                                                            | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cap. 17 - Vin rândurile noi                                                     | {'cules', 'culesul'}     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Biruirea greului vieţii                                                         | {'cules'}                | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Despre muncă                                                                    | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Transilvaniei                                                       | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                   | {'cules'}                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Mana din ziua a 7-a;                                                            | {'cules'}                | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| ... Pe orice mlădiţă roditoare El o curăţeşte                                   | {'cules', 'culesului'}   | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Cap. 5 - Binecuvântata muncă grea                                               | {'cules', 'culesul'}     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| ... Şi voi sunteţi datori                                                       | {'cules'}                | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Cel mai frumos Isus                                                    | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                          | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                            | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                              | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 16 - O plecare îndurerată                                                  | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Grâul cel care moare                                                   | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 21 - La 25 de ani...                                                       | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                  | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 25 - Al şaptelea foc                                                       | {'cules'}                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                        | {'cules'}                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 5 - Apele adânci se limpezesc greu                                         | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Ce oare duci?                                                                   | {'cules'}                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Ce oare duci?                                                                   | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Ce-mbelşugat plăteşte                                                           | {'Cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Curând îmi vei lua                                                              | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Când sunt cu Tine                                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cânturile mele...                                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Câte-o povestire mică                                                           | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Daţi piatra la o parte!                                                         | {'cules'}                | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| De ziua ta!                                                                     | {'cules'}                | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| De ziua ta!                                                                     | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Despre dărnicie                                                                 | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre rău                                                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre timp                                                                     | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Doamne Isuse, Pacea noastră                                                     | {'Cules'}                | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Doamne, iată-mi şi hotarul                                                      | {'cules'}                | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | poezie  |
-| Doamne, iată-mi şi hotarul                                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Dulcea Ta Frumuseţe...                                                          | {'cules'}                | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| E sărbătoare până-n cer                                                         | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Eu nu mă plâng...                                                               | {'cules'}                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Eu nu mă plâng...                                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Isuse, cântecele mele                                                           | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Isuse, o Isuse...                                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Iuda                                                                            | {'cules'}                | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| La Nunta ta de aur...                                                           | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
-| La Nunta ta de aur...                                                           | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| La muncă                                                                        | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| La pomul Cunoştinţei                                                            | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Livada                                                                          | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Mama lui Isus a zis                                                             | {'cules'}                | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Moşteniri                                                                       | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Munca                                                                           | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Nu-i spre fericire calea                                                        | {'cules'}                | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Nu-i spre fericire calea                                                        | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Nu-ţi începe, nu-ţi începe                                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| O, Strălucită Faţă...                                                           | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| O, dacă ne-ai lungit atât                                                       | {'cules'}                | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| O, dacă ne-ai lungit atât                                                       | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| O, nopţi adânci...                                                              | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| O, nu mai spun...                                                               | {'cules'}                | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| O, nu mai spun...                                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Până n-ai ajuns...                                                              | {'cules'}                | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Până n-ai ajuns...                                                              | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Să nu te temi de bătrâneţe                                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Tu scump copil                                                                  | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Ucenicii Îl rugau să mănânce                                                    | {'cules'}                | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Un strigăt de durere                                                            | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Culesul roadelor                                                                | {'Culesul'}              | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Culesul roadelor                                                                | {'Culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 16-a după Rusalii                                   | {'culesul', 'culesului'} | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Alţii s-au ostenit                                                              | {'Culesul'}              | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Am fost o harfă - 1                                                             | {'culeşi'}               | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Ascultarea                                                                      | {'culesului'}            | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Bucuria nu-i deplină                                                            | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cap. 8 - Aşezarea temeliilor veşnice                                            | {'culesului'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cuvintele lui Dumnezeu                                                          | {'culesul'}              | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cântarea Roadelor                                                               | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Dacă-ţi doreşti                                                                 | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| De n-ai fi Tu, n-ar fi                                                          | {'culesul'}              | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
-| De n-ai fi Tu, n-ar fi                                                          | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| De unde ai în tine?                                                             | {'culeşi'}               | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| De unde ai în tine?                                                             | {'culeşi'}               | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| E toamna mea aproape                                                            | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Grija                                                                           | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)            | {'culesului'}            | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv) | {'culesul'}              | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare                                 | {'culesul'}              | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La cei ce ne urmează                                                            | {'culesul'}              | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| La cei ce ne urmează                                                            | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Nădejde                                                                         | {'culesului'}            | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| O, cât de dulce e viaţa                                                         | {'culesul'}              | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| O, cât de dulce e viaţa                                                         | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Roade!                                                                          | {'culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Să ne grăbim prieteni                                                           | {'culesului'}            | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
-| Să ne grăbim prieteni                                                           | {'culesului'}            | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Un semănat neîntrerupt                                                          | {'Culesul'}              | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-+---------------------------------------------------------------------------------+--------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Cules using http://localhost:9000...
-Got 97 hits:
++---------------------------------------------------------------+--------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Titlu                                                         | Occurrences              | Author          | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------+--------------------------+-----------------+----------------------------------+------------------------------+---------+
+| Am cu viaţa un cules                                          | {'cules'}                | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | poezie  |
+| Am cu viaţa un cules                                          | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Cap. 17 - Vin rândurile noi                                   | {'cules', 'culesul'}     | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Viaţa din Hristos                                             | {'cules', 'culesului'}   | Traian Dorz     | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Învierea - şi urmările ei                                     | {'cules', 'culesul'}     | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Biruirea greului vieţii                                       | {'cules'}                | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Cuvântul lui Dumnezeu                                         | {'cules'}                | Traian Dorz     | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Despre muncă                                                  | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Deuteronom 26, 1                                              | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Din părţile Transilvaniei                                     | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Izbăvirile Domnului                                           | {'cules'}                | Traian Dorz     | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei) | {'cules'}                | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mai mult am fost departe                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Mana din ziua a 7-a;                                          | {'cules'}                | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
+| Propovăduirea Evangheliei                                     | {'cules'}                | Traian Dorz     | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| ... Pe orice mlădiţă roditoare El o curăţeşte                 | {'cules', 'culesului'}   | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Cap. 5 - Binecuvântata muncă grea                             | {'cules', 'culesul'}     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| ... Şi voi sunteţi datori                                     | {'cules'}                | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| A spune - şi a face                                           | {'cules'}                | Traian Dorz     | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Aceste frunze care-mi cad                                     | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Aveţi ceva de mâncare?                                        | {'cules'}                | Traian Dorz     | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Bucuria păcatului                                             | {'cules'}                | Traian Dorz     | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Cel mai frumos Isus                                  | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                        | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                          | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                            | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 16 - O plecare îndurerată                                | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 2 - Grâul cel care moare                                 | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 21 - La 25 de ani...                                     | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 25 - Al şaptelea foc                                     | {'cules'}                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 27 - Pe drumul ales                                      | {'cules'}                | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 5 - Apele adânci se limpezesc greu                       | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Ce oare duci?                                                 | {'cules'}                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Ce oare duci?                                                 | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Ce-mbelşugat plăteşte                                         | {'Cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Curând îmi vei lua                                            | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Când sunt cu Tine                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Când voi reveni                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Cânturile mele...                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Câte-o povestire mică                                         | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Daţi piatra la o parte!                                       | {'cules'}                | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| De ziua ta!                                                   | {'cules'}                | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| De ziua ta!                                                   | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Despre dărnicie                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre rău                                                    | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre timp                                                   | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Doamne Isuse, Pacea noastră                                   | {'Cules'}                | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Doamne, iată-mi şi hotarul                                    | {'cules'}                | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | poezie  |
+| Doamne, iată-mi şi hotarul                                    | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Dulcea Ta Frumuseţe...                                        | {'cules'}                | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| E sărbătoare până-n cer                                       | {'cules'}                | Traian Dorz     | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | poezie  |
+| E sărbătoare până-n cer                                       | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Eu nu mă plâng...                                             | {'cules'}                | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Eu nu mă plâng...                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Isuse, cântecele mele                                         | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Isuse, o Isuse...                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Iuda                                                          | {'cules'}                | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| La Nunta ta de aur...                                         | {'cules'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
+| La Nunta ta de aur...                                         | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| La Strălucirea Viitoare                                       | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| La muncă                                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| La pomul Cunoştinţei                                          | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| La strălucirea Viitoare                                       | {'cules'}                | Traian Dorz     | Dorim să fim                     | Cugetări Nemuritoare         | poezie  |
+| Livada                                                        | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Mama lui Isus a zis                                           | {'cules'}                | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Matei 21, 33-41                                               | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Moşteniri                                                     | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Munca                                                         | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Nu-i spre fericire calea                                      | {'cules'}                | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
+| Nu-i spre fericire calea                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Nu-ţi începe, nu-ţi începe                                    | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| O trecere grăbită                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| O, Strălucită Faţă...                                         | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| O, dacă ne-ai lungit atât                                     | {'cules'}                | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| O, dacă ne-ai lungit atât                                     | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| O, nopţi adânci...                                            | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| O, nu mai spun...                                             | {'cules'}                | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| O, nu mai spun...                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Până n-ai ajuns...                                            | {'cules'}                | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
+| Până n-ai ajuns...                                            | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Seamănă cu hărnicie                                           | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Spre-nţelegerea străbună                                      | {'cules'}                | Traian Dorz     | Eternele Poeme                   | Cugetări Nemuritoare         | poezie  |
+| Spre-nţelegerea străbună                                      | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Să nu te temi de bătrâneţe                                    | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Să nu uităm în rugăciune                                      | {'cules'}                | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Tot ce-ai semănat                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Trec anii...                                                  | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Tu scump copil                                                | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Ucenicii Îl rugau să mănânce                                  | {'cules'}                | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Un strigăt de durere                                          | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Unde este poezia?                                             | {'cules'}                | Traian Dorz     | Semănaţi Cuvântul Sfânt          | Cugetări Nemuritoare         | articol |
+| Vine-odată vremea                                             | {'cules'}                | Traian Dorz     | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Culesul roadelor                                              | {'Culesul'}              | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | poezie  |
+| Culesul roadelor                                              | {'Culesul'}              | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Iubirea mea-i culeasă                                         | {'culeasă'}              | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
+| Ia-mă Isuse, ia-mă                                            | {'necules'}              | Traian Dorz     | Cununile Slăvite                 | Cugetări Nemuritoare         | poezie  |
+| Ia-mă Isuse, ia-mă                                            | {'necules'}              | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 16-a după Rusalii                 | {'culesul', 'culesului'} | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Talanţii şi cetăţile                                          | {'culesul', 'culesului'} | Traian Dorz     | Întâi să fim                     | Cugetări Nemuritoare         | articol |
++---------------------------------------------------------------+--------------------------+-----------------+----------------------------------+------------------------------+---------+
+Searching Cules using https://api.comori-od.ro...
+Got 149 hits:
 Score: 33.666664
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pacea noastră
@@ -132,6 +135,26 @@ Highlight:  Fără aceasta nu este viaţă, nici rodire, nici <em>cules</em> ve�
 Highlight: realizare frumoasă. Terenul e bun, vremea e bună, - <em>cules</em> bun.
 Highlight: este salvat şi fericit. Coacerea va fi bună şi <em>culesul</em> binecuvântat.  -
 
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Viaţa din Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: 14 - Numai la <em>cules</em> se văd ce au ajuns, mlădiţele care s-au lăsat curăţite
+Highlight: Vei vedea la <em>cules</em>.
+Highlight: La vremea <em>culesului</em> numai, se vede cât de necesare erau suferinţele
+
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Învierea - şi urmările ei
+Type: articol
+Author: Traian Dorz
+Highlight:  nici maturizare, nici rod, nici coacere, nici <em>cules</em>, nici viaţă.
+Highlight: ciclul următor, la o altă însămânţare, la un alt <em>cules</em>.
+Highlight: decât trei anotimpuri: însămânţarea, rodirea şi <em>culesul</em>. Celălalt anotimp este numai trecerea la ciclul
+
 Score: 12.666666
 Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
@@ -139,6 +162,15 @@ Title: Biruirea greului vieţii
 Type: articol
 Author: Traian Dorz
 Highlight: sau amare prin care le-am primit, le-am <em>cules</em> şi le-am <em>cules</em> una câte una ca pe nişte mărgăritare albe
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Cuvântul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: la ce roade ai <em>cules</em> ascultând înţeleptele îndrumări ale Domnului
+Highlight: - şi ce ruşine au <em>cules</em> cei care nu L-au
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -151,12 +183,30 @@ Highlight: e ca unul ce tot ară, dar n-ajunge la <em>cules</em>.
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Deuteronom 26, 1
+Type: poezie
+Author: Traian Dorz
+Highlight: cel dintâi <em>cules</em> şi rod
+Highlight: Dă-i şi tu la Domnul din orice <em>cules</em>
+
+Score: 12.666666
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Transilvaniei
 Type: articol
 Author: Traian Dorz
 Highlight: atunci mai copt ţi-e rodul <em>cules</em> din an în an
 Highlight: Caută să poţi sta-n linişte şi să strângi etern <em>cules</em>
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Izbăvirile Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: 6 - Când toamna vin carele încărcate de rodul <em>cules</em> de pe ogoare şi se îndreaptă grele spre grânare
+Highlight: şi cine se va mai putea bucura de <em>cules</em>?
 
 Score: 12.666666
 Volume: Hristos - Puterea Apostoliei
@@ -168,12 +218,30 @@ Highlight: totul nu se continuă prin îngrijire şi nu ajunge la <em>cules</em>
 Highlight: unui rod, nădejdea unei bucurii, promisiunea unui <em>cules</em>.
 
 Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Mai mult am fost departe
+Type: poezie
+Author: Traian Dorz
+Highlight: vezi crescându-Ţi frumosul rod <em>cules</em>
+Highlight: despăgubeşte-mi Doamne suspinul la <em>cules</em>.
+
+Score: 12.666666
 Volume: Spre Canaan
 Book: Spre Canaan
 Title: Mana din ziua a 7-a;
 Type: articol
 Author: Pr. Iosif Trifa
 Highlight: oamenilor o zi de <em>cules</em> mană cerească - diavolul şi-a zis: hai să pun şi eu mana mea la <em>cules</em> tot în aceeaşi
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Propovăduirea Evangheliei
+Type: articol
+Author: Traian Dorz
+Highlight: nu se continuă prin îngrijire şi nu se ajunge la <em>cules</em> - semănatul este în zadar.
+Highlight: unui rod, nădejdea unei bucurii, promisiunea unui <em>cules</em>.
 
 Score: 9.666667
 Volume: Meditații la Ev. după Ioan
@@ -200,6 +268,38 @@ Title: ... Şi voi sunteţi datori
 Type: articol
 Author: Traian Dorz
 Highlight: Deci cel puţin jumătate din rodul <em>cules</em> la vremea roadelor, sunt de drept, ale Lui
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: A spune - şi a face
+Type: articol
+Author: Traian Dorz
+Highlight: 8 - Cel puţin jumătate din rodul <em>cules</em> la vremea roadelor, sunt de drept ale lui Dumnezeu
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Aceste frunze care-mi cad
+Type: poezie
+Author: Traian Dorz
+Highlight: ce Mâna Bunului Stăpân cu-al ei <em>cules</em> - aşteaptă.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Aveţi ceva de mâncare?
+Type: articol
+Author: Traian Dorz
+Highlight: fără o răsplată binecuvântată. Nici o muncă fără <em>cules</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Bucuria păcatului
+Type: articol
+Author: Traian Dorz
+Highlight: dar când n-am ascultat, totdeauna am <em>cules</em> numai dureri şi nenorociri,
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -331,6 +431,14 @@ Highlight: Isus, doar chinuri am <em>cules</em>.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Când voi reveni
+Type: poezie
+Author: Traian Dorz
+Highlight: fă-mă Drag Isus, să-mi aflu acest sfânt <em>cules</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Cânturile mele...
 Type: poezie
@@ -426,6 +534,14 @@ Author: Traian Dorz
 Highlight: tămâioară, de smirnă şi de mirt. Din fiecare am <em>cules</em> câte două şi le-am legat împreună cu un fir de aur
 
 Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: E sărbătoare până-n cer
+Type: poezie
+Author: Traian Dorz
+Highlight: E sărbătoare şi <em>cules</em>
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: E sărbătoare până-n cer
@@ -491,6 +607,14 @@ Highlight: rodească-ţi tot ce semeni cu însutit <em>cules</em>,
 
 Score: 9.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: La Strălucirea Viitoare
+Type: poezie
+Author: Traian Dorz
+Highlight: cu-mbelşugat şi bun <em>cules</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: La muncă
 Type: poezie
@@ -504,6 +628,14 @@ Title: La pomul Cunoştinţei
 Type: poezie
 Author: Traian Dorz
 Highlight: Dar ce va fi când pomul va fi <em>cules</em> întreg,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: La strălucirea Viitoare
+Type: poezie
+Author: Traian Dorz
+Highlight: cu-mbelşugat şi sfânt <em>cules</em>,
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -520,6 +652,14 @@ Title: Mama lui Isus a zis
 Type: articol
 Author: Traian Dorz
 Highlight: faptul că a ajuns îmbrăcăminte a Creatorului, a <em>cules</em> rod cea mai mare slavă.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Matei 21, 33-41
+Type: poezie
+Author: Traian Dorz
+Highlight: dar când la <em>cules</em>-stăpânul
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -560,6 +700,14 @@ Title: Nu-ţi începe, nu-ţi începe
 Type: poezie
 Author: Traian Dorz
 Highlight: cu El ai şi muncă - şi <em>cules</em> frumos.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: O trecere grăbită
+Type: poezie
+Author: Traian Dorz
+Highlight: să iei numai puţinul <em>cules</em> din zbor zorit.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -627,11 +775,59 @@ Highlight: care-ţi trebuia <em>cules</em>,
 
 Score: 9.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Seamănă cu hărnicie
+Type: poezie
+Author: Traian Dorz
+Highlight: căci cu rod ales - vei fi la <em>cules</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Spre-nţelegerea străbună
+Type: poezie
+Author: Traian Dorz
+Highlight: flori cu mincinos <em>cules</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Spre-nţelegerea străbună
+Type: poezie
+Author: Traian Dorz
+Highlight: flori cu mincinos <em>cules</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Să nu te temi de bătrâneţe
 Type: poezie
 Author: Traian Dorz
 Highlight: de rod şi de belşug <em>cules</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Să nu uităm în rugăciune
+Type: articol
+Author: Traian Dorz
+Highlight: ridicat ele sufletul şi roadele inspiraţiei care le-a <em>cules</em> el de pe acolo pentru el şi pentru alţii - sunt
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Tot ce-ai semănat
+Type: poezie
+Author: Traian Dorz
+Highlight: şi va fi <em>cules</em> în cânt
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Trec anii...
+Type: poezie
+Author: Traian Dorz
+Highlight: căci anii de <em>cules</em> sosesc, - să le-mplinim dobânda
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -657,6 +853,22 @@ Type: poezie
 Author: Traian Dorz
 Highlight: iar eu cu milă i-am <em>cules</em> şi le-am făcut un nume,
 
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Unde este poezia?
+Type: articol
+Author: Traian Dorz
+Highlight: conducând maturizarea spre coacere şi apoi spre <em>cules</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Vine-odată vremea
+Type: poezie
+Author: Traian Dorz
+Highlight: Vine-odată vremea oricărui <em>cules</em>
+
 Score: 2.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învierea noastră
@@ -674,6 +886,33 @@ Type: poezie
 Author: Traian Dorz
 Highlight: <em>Culesul</em> roadelor răbdării
 Highlight: <em>Culesul</em> roadelor
+
+Score: 2.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Iubirea mea-i culeasă
+Type: poezie
+Author: Traian Dorz
+Highlight: Iubirea mea-i <em>culeasă</em> din raiul Tău Isus,
+Highlight: Iubirea mea-i <em>culeasă</em>
+
+Score: 0.6666666
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Ia-mă Isuse, ia-mă
+Type: poezie
+Author: Traian Dorz
+Highlight: crinul curat <em>necules</em>
+Highlight: - ce trist, o ce trist e un crin <em>necules</em>
+
+Score: 0.6666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Ia-mă Isuse, ia-mă
+Type: poezie
+Author: Traian Dorz
+Highlight: crinul curat <em>necules</em>
+Highlight: - ce trist, o ce trist e un crin <em>necules</em>
 
 Score: 0.6666666
 Volume: Hristos - Puterea Apostoliei
@@ -684,211 +923,12 @@ Author: Traian Dorz
 Highlight: primăvara la vremea cea mai potrivită, înflorirea sau <em>culesul</em>, ploaia sau soarele, seara sau dimineaţa, fiecare
 Highlight: Cine seamănă în vremea <em>culesului</em> şi se duce să culeagă în vremea semănatului, ce
 
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Alţii s-au ostenit
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Culesul</em> roadelor este cea mai fericită şi cea mai plăcută
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Am fost o harfă - 1
-Type: poezie
-Author: Traian Dorz
-Highlight: prin luna crinilor <em>culeşi</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Ascultarea
-Type: articol
-Author: Traian Dorz
-Highlight: <em>culesului</em> în urma cuvântului curat
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Bucuria nu-i deplină
-Type: poezie
-Author: Traian Dorz
-Highlight: decât la <em>culesul</em> plin
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 8 - Aşezarea temeliilor veşnice
-Type: articol
-Author: Traian Dorz
-Highlight: ce negrăită şi strălucită va fi atunci bucuria <em>culesului</em> pentru cei care umblă acum plângând când aruncă
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Cuvintele lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: Şi oricât ai semăna, seamănă numai pentru <em>culesul</em> acela!
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Cântarea Roadelor
-Type: poezie
-Author: Traian Dorz
-Highlight: pentru <em>culesul</em> cu cântări!
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Dacă-ţi doreşti
-Type: poezie
-Author: Traian Dorz
-Highlight: Dacă-ţi doreşti <em>culesul</em>
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: De n-ai fi Tu, n-ar fi
-Type: poezie
-Author: Traian Dorz
-Highlight: nici semănatul nici <em>culesul</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: De n-ai fi Tu, n-ar fi
-Type: poezie
-Author: Traian Dorz
-Highlight: nici semănatul nici <em>culesul</em>
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: De unde ai în tine?
-Type: poezie
-Author: Traian Dorz
-Highlight: cât pui în pâinea caldă şi-n strugurii <em>culeşi</em>?
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: De unde ai în tine?
-Type: poezie
-Author: Traian Dorz
-Highlight: cât pui în pâinea caldă şi-n strugurii <em>culeşi</em>?
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: E toamna mea aproape
-Type: poezie
-Author: Traian Dorz
-Highlight: ce-aproape e <em>culesul</em>, - şi n-am nimic să strâng!...
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Grija
-Type: articol
-Author: Traian Dorz
-Highlight: că-n zadar te duci cu sacul când <em>culesul</em> a trecut
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
-Type: articol
-Author: Traian Dorz
-Highlight: merge bine? Pentru că dacă încă n-a venit vremea <em>culesului</em> pedepselor a ceea ce am semănat sau încă mai semănăm
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)
-Type: articol
-Author: Traian Dorz
-Highlight: stăpânirea unei vii sădite de-a gata şi te bucuri de <em>culesul</em> îmbelşugat al unor roade la care alţii au muncit
-
-Score: 0.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: nu şi-ar mai avea aceeaşi vreme. Semănatul şi <em>culesul</em> n-ar mai fi într-o ordine. Naşterile şi morţile
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: La cei ce ne urmează
-Type: poezie
-Author: Traian Dorz
-Highlight: mai fericit <em>culesul</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: La cei ce ne urmează
-Type: poezie
-Author: Traian Dorz
-Highlight: mai fericit <em>culesul</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Nădejde
-Type: poezie
-Author: Traian Dorz
-Highlight: vestiţi sărbătoarea <em>culesului</em> meu!...
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: O, cât de dulce e viaţa
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>culesul</em> unei zile dragi,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: O, cât de dulce e viaţa
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>culesul</em> unei zile dragi,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Roade!
-Type: poezie
-Author: Traian Dorz
-Highlight: vine grabnic <em>culesul</em> roadelor oricui
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Să ne grăbim prieteni
-Type: poezie
-Author: Traian Dorz
-Highlight: Grăbesc vierii lucrul <em>culesului</em> rămas
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Să ne grăbim prieteni
-Type: poezie
-Author: Traian Dorz
-Highlight: Grăbesc vierii lucrul <em>culesului</em> rămas
-
-Score: 0.5
+Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Un semănat neîntrerupt
+Book: Întâi să fim
+Title: Talanţii şi cetăţile
 Type: articol
 Author: Traian Dorz
-Highlight: <em>Culesul</em> roadelor este cea mai plăcută şi cea mai fericită
+Highlight: însămânţare - acela îşi va pregăti bine şi rodirea şi <em>culesul</em>.
+Highlight: sunt sigur niciodată. Într-o zi va veni clipa <em>culesului</em>, - şi atunci voi merge cu ce mi-am strâns.
 

@@ -1,122 +1,95 @@
-+-------------------------------------------------------------------------------+----------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                         | Occurrences                                  | Author          | Tip                            | Carte                        | Volum   |
-+-------------------------------------------------------------------------------+----------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Cap. 5 - Întâia judecată                                                      | {'supunere', 'supunerea', 'supună'}          | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                      | {'supunere', 'supune', 'supunerea'}          | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 2 - A treia zi istorică                                                  | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                           | {'supunere', 'supune', 'supună'}             | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                           | {'supunere', 'supună'}                       | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                          | {'supunere', 'supunerea'}                    | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Dacă au păzit Cuvântul Meu                                                    | {'supunere', 'supună', 'supune'}             | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Cap. 23 - Cuvânt Testamentar                                                  | {'supunere', 'supune', 'supun', 'supunerea'} | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - A doua Judecată                                                      | {'supunere', 'supune', 'supună'}             | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Auzirea şi ascultarea                                                         | {'supunere', 'supună'}                       | Traian Dorz     | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 11 - Răscrucea Isus                                                      | {'supunere', 'supune'}                       | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                | {'supunere', 'supune'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                      | {'supunere', 'supunem'}                      | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 30 - Şi acum ultimul cuvânt                                              | {'supunere', 'supunem'}                      | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                    | {'supunere', 'supune'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                    | {'supunere', 'supunerea'}                    | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                   | {'supunere', 'supun'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Eu Îmi cunosc oile Mele                                                       | {'supunere', 'supună'}                       | Traian Dorz     | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 28-a după Rusalii                                 | {'supunere', 'supunem'}                      | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Tot despre oi şi despre câini                                                 | {'supunere', 'supună'}                       | Traian Dorz     | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Voi aveţi de tată pe diavolul                                                 | {'supunere', 'supună'}                       | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Înfricoşata lepădare                                                 | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                  | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                  | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 3 - Marea cernere                                                        | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 33 - Adevărurile mormântului nemuritor                                   | {'supunere'}                                 | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 8 - A treia Judecată                                                     | {'supunere'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Când va veni Hristos, ne va spune                                             | {'supunere'}                                 | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| Dacă ai fi cunoscut tu...                                                     | {'supunere'}                                 | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| Din ziua aceea au hotărât                                                     | {'supunere'}                                 | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| Dragostea nu pizmuieşte!                                                      | {'supunere'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Eu Te-am proslăvit pe pământ                                                  | {'supunere'}                                 | Traian Dorz     | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 17-a după Rusalii                                 | {'supunere'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului) | {'supunere'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                 | {'supunere'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Lucraţi pentru mâncarea netrecătoare                                          | {'supunere'}                                 | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| O lucrare am făcut...                                                         | {'supunere'}                                 | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Păcatul şi ispăşirea                                                          | {'supunere'}                                 | Traian Dorz     | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Tocmai de aceea v-am spus...                                                  | {'supunere'}                                 | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                             | {'supună', 'supune'}                         | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Nouă - şi nu lumii                                                            | {'supunerea', 'supună'}                      | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Singura Avuţie                                                                | {'supune', 'supună'}                         | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Cap. 14 - Un an adânc roditor                                                 | {'supune'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cine este din Dumnezeu, ascultă                                               | {'supune', 'supună'}                         | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| El era la început                                                             | {'supune', 'supunea'}                        | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                | {'supună', 'supune'}                         | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Păcatul, izvorul răului                                                       | {'supune', 'supună'}                         | Traian Dorz     | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Cel mai frumos Isus                                                  | {'supun', 'supune'}                          | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                               | {'supune'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Uşor e jugul lui Hristos                                            | {'supunerea', 'supună'}                      | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 15 - Un An Nou Fericit                                                   | {'supunem', 'supună'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                  | {'supunem'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                               | {'supune', 'supunem'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                 | {'supune', 'supunem'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 26 - Limpezirea apelor adânci                                            | {'supună'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cuvântul S-a făcut Trup...                                                    | {'supune', 'supună'}                         | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Hristos - Dumnezeul nostru                                                    | {'supune', 'supună'}                         | Traian Dorz     | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Isus vorbise despre... - dar ei credeau că...                                 | {'supună', 'supune'}                         | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                 | {'supunerea', 'supună'}                      | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                 | {'supune', 'supună'}                         | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Lăudăm pe Domnul nostru                                                       | {'supun', 'supune'}                          | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Meditaţie despre Jertfă                                                       | {'supune', 'supunerea'}                      | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Măreţia şi bunătatea                                                          | {'Supune', 'supunerea'}                      | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Nu voi M-aţi ales pe Mine                                                     | {'supune'}                                   | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Ridicaţi-vă ochii                                                             | {'supunerea'}                                | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| Scrisoare despre jertfă...                                                    | {'supune', 'supunerea'}                      | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Smerenia şi dragostea adevărată                                               | {'supunerea', 'supună'}                      | Traian Dorz     | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Tot ce face Tatăl, face şi Fiul                                               | {'supune'}                                   | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Împlinirea                                                                    | {'supun', 'supună'}                          | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Învăţători şi ucenici                                                         | {'supunem', 'supune'}                        | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| ... Doamne, Tu să-mi speli picioarele?                                        | {'supuneau'}                                 | Traian Dorz     | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... I s-a închinat                                                            | {'supunerea'}                                | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| ... vor veni romanii...                                                       | {'supune'}                                   | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| ... Şi voi sunteţi datori                                                     | {'supunerea'}                                | Traian Dorz     | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Andrei şi Filip                                                               | {'supun'}                                    | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Atunci de ce botezi dacă nu eşti?                                             | {'supunerea'}                                | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Au plecat şi oameni nepregătiţi                                               | {'supună'}                                   | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
-| Bunul nostru Tată...                                                          | {'supun'}                                    | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Ca râul care are                                                              | {'supune'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Dovada supremei iubiri                                              | {'supunem'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                        | {'supuneam'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                            | {'supun'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Atacul împotriva steagului                                          | {'Supunerea'}                                | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                           | {'supună'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                    | {'supunea'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                               | {'supune'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                   | {'supun'}                                    | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                        | {'supune'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                         | {'supune'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 23 - Proverbe                                                            | {'supune'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 31 - O altă judecată                                                     | {'supune'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                      | {'supună'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                       | {'supunea'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                         | {'supune'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                      | {'supune'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                      | {'supună'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                             | {'supunem'}                                  | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Ce am scris, am scris                                                         | {'supunerea'}                                | Traian Dorz     | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Ce sfânt e-un legământ                                                        | {'supune'}                                   | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-+-------------------------------------------------------------------------------+----------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-Searching Supunere using http://localhost:9000...
-Got 175 hits:
-Score: 15.275
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Cu smerită <em>supunere</em>,
-Highlight: Cu smerită <em>supunere</em>,
-Highlight: grozav încât nu mai poţi fi iertat decât prin o <em>supunere</em> necondiţionată
-Highlight: Am căutat să aflu cum anume ar fi această <em>supunere</em> necondiţionată. Păr. Gârlea - care tocmai fusese
-Highlight: 5-I-1935 (v. la dosar nr. 4) prin care deneagă <em>supunerea</em> în mod precis, spunând că n-a primit nici o însărcinare
-Highlight: Tot sufletul să se <em>supună</em> stăpânirilor celor mai înalte, căci nu este stăpânire
-
++----------------------------------------------------------------------------------------+----------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                  | Occurrences                            | Author      | Tip                            | Carte                        | Volum   |
++----------------------------------------------------------------------------------------+----------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Cap. 24 - Înaintea mai-marilor norodului                                               | {'supunere', 'supunerea', 'supunerii'} | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - Întâia judecată                                                               | {'supunere', 'supunerea'}              | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 2 - A treia zi istorică                                                           | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                                    | {'supunere', 'supunerea'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                    | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                   | {'supunere', 'supunerea'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Slujba şi inima                                                                        | {'supunere'}                           | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Supunerea în Lucrare                                                                   | {'supunere', 'Supunerea'}              | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Cap. 22 - Peregrinările soliei                                                         | {'supunere', 'supuneri'}               | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                           | {'supunere', 'supunerea'}              | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 7 - A doua Judecată                                                               | {'supunere', 'supunerii'}              | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 9 - Adevărurile mormântului nemuritor                                             | {'supunere', 'supunerea'}              | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Auzirea şi ascultarea                                                                  | {'supunere'}                           | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Înfricoşata lepădare                                                          | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                           | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                               | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 21 - După cei 50 de ani                                                           | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                         | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 28 - Necazurile din lungul drumului                                               | {'supunere'}                           | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 3 - Marea cernere                                                                 | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 30 - Şi acum ultimul cuvânt                                                       | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 33 - Adevărurile mormântului nemuritor                                            | {'supunere'}                           | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 7 - Aşa ne-au judecat                                                             | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                                              | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                            | {'supunere'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Când va veni Hristos, ne va spune                                                      | {'supunere'}                           | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Dacă ai fi cunoscut tu...                                                              | {'supunere'}                           | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Dacă au păzit Cuvântul Meu                                                             | {'supunere'}                           | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Din ziua aceea au hotărât                                                              | {'supunere'}                           | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| Dragostea nu pizmuieşte!                                                               | {'supunere'}                           | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | poezie  |
+| Dragostea nu pizmuieşte!                                                               | {'supunere'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Eu Te-am proslăvit pe pământ                                                           | {'supunere'}                           | Traian Dorz | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Eu Îmi cunosc oile Mele                                                                | {'supunere'}                           | Traian Dorz | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Facerea de bine                                                                        | {'supunere'}                           | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Fapta şi încredinţarea                                                                 | {'supunere'}                           | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 17-a după Rusalii                                          | {'supunere'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 28-a după Rusalii                                          | {'supunere'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)          | {'supunere'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                          | {'supunere'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Lucraţi pentru mâncarea netrecătoare                                                   | {'supunere'}                           | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Mâinile şi coasta Lui                                                                  | {'supunere'}                           | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| O lucrare am făcut...                                                                  | {'supunere'}                           | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Pacea - şi fiii păcii                                                                  | {'supunere'}                           | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Păcatul şi ispăşirea                                                                   | {'supunere'}                           | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Tocmai de aceea v-am spus...                                                           | {'supunere'}                           | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Tot despre oi şi despre câini                                                          | {'supunere'}                           | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Voi aveţi de tată pe diavolul                                                          | {'supunere'}                           | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Înştiinţarea şi lumina                                                                 | {'supunere'}                           | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Nouă - şi nu lumii                                                                     | {'supunerea'}                          | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Timpul şi Veşnicia                                                                     | {'supunerea'}                          | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Ascultarea de Dumnezeu                                                                 | {'Supunerea', 'supuneri'}              | Traian Dorz | Crucea Mântuitoare             | Cugetări Nemuritoare         | articol |
+| Ridicaţi-vă ochii                                                                      | {'supunerea'}                          | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Îţi mulţumesc că M-ai ascultat                                                         | {'Supunerea', 'supuneri'}              | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| ... I s-a închinat                                                                     | {'supunerea'}                          | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| ... Şi voi sunteţi datori                                                              | {'supunerea'}                          | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Atunci de ce botezi dacă nu eşti?                                                      | {'supunerea'}                          | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 10 - Uşor e jugul lui Hristos                                                     | {'supunerea'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 14 - Atacul împotriva steagului                                                   | {'Supunerea'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 15 - Micii contemporani ai marilor oameni                                         | {'supunerii'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                        | {'supunerii'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 7 - Furtunile care încep de dimineaţă                                             | {'supunerii'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Ce am scris, am scris                                                                  | {'supunerea'}                          | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
+| Dacă nu te spăl Eu...                                                                  | {'supunerea'}                          | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Despre încercare                                                                       | {'supunerile'}                         | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Deşertăciune şi slavă                                                                  | {'supunerea'}                          | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Dragostea şi ascultarea                                                                | {'supunerea'}                          | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| După focul încercării                                                                  | {'supunerea'}                          | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Eu şi Tatăl suntem Una                                                                 | {'supunerea'}                          | Traian Dorz | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Inima şi mintea                                                                        | {'supunerea'}                          | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 19-a după Rusalii                                          | {'supunerea'}                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                         | {'supunerii'}                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum) | {'supunerea'}                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Mai presus de toţi...                                                                  | {'supunerea'}                          | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Mama lui Isus a zis                                                                    | {'supunerea'}                          | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Meditaţie despre Jertfă                                                                | {'supunerea'}                          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Mă sfinţesc pentru ei                                                                  | {'supunerea'}                          | Traian Dorz | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Măreţia şi bunătatea                                                                   | {'supunerea'}                          | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Mărturisirea Adevărului                                                                | {'supunerea'}                          | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Porţile Veşniciei                                                                      | {'supunerea'}                          | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Păcatul şi osânda                                                                      | {'supunerea'}                          | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Răspunsurile Domnului                                                                  | {'supunerii'}                          | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Scrisoare despre jertfă...                                                             | {'supunerea'}                          | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Sfinţirea prin Adevăr                                                                  | {'supunerea'}                          | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Smerenia şi dragostea adevărată                                                        | {'supunerea'}                          | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| Tot ce are Tatăl este al Meu                                                           | {'supunerea'}                          | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Umblaţi ca unii care aveţi Lumina                                                      | {'supunerea'}                          | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
++----------------------------------------------------------------------------------------+----------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Supunere using https://api.comori-od.ro...
+Got 86 hits:
 Score: 15.257143
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
@@ -127,8 +100,21 @@ Highlight: Oastei Domnului. Ni se cerea multă răbdare şi <em>supunere</em> p�
 Highlight: Că ostaşii, în loc să dea dovadă de <em>supunere</em> şi reţinere până ce li se va rezolva problema
 Highlight:  Dar dacă nu veţi dovedi o sinceră dorinţă de <em>supunere</em> faţă de această dispoziţie, să nu vă aşteptaţi
 Highlight: - Ce oprire? Ce <em>supunere</em>? Unde scrie Evanghelia că trebuie să ascultăm
-Highlight: cumva o portiţă de semi independenţă, pentru a nu <em>supune</em> întru totul activitatea fraţilor preotului paroh
 Highlight: rezolvarea problemei noastre este condiţionată de <em>supunerea</em> noastră dispoziţiilor Autorităţii de Stat... Că
+Highlight: gravitatea situaţiei şi dorind să dea dovadă sinceră a <em>supunerii</em> noastre, au sfătuit pe toţi fraţii să asculte
+
+Score: 15.257143
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Cu smerită <em>supunere</em>,
+Highlight: Cu smerită <em>supunere</em>,
+Highlight: grozav încât nu mai poţi fi iertat decât prin o <em>supunere</em> necondiţionată
+Highlight: Am căutat să aflu cum anume ar fi această <em>supunere</em> necondiţionată. Păr. Gârlea - care tocmai fusese
+Highlight: 5-I-1935 (v. la dosar nr. 4) prin care deneagă <em>supunerea</em> în mod precis, spunând că n-a primit nici o însărcinare
+Highlight: <em>supunerea</em> necondiţionată
 
 Score: 15.2
 Volume: Istoria unei Jertfe
@@ -141,7 +127,7 @@ Highlight: Cu smerită <em>supunere</em>,
 Highlight: Cu <em>supunere</em> şi devotament mărturisim din nou credinţa noastră
 Highlight: înaintat o moţiune I.P.S. Voastre - cu smerită <em>supunere</em> şi încredere aşteptăm răspunsul la această moţiune
 
-Score: 14.409091
+Score: 14.3
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 7 - Printre leu şi printre urs
@@ -150,11 +136,9 @@ Author: Traian Dorz
 Highlight: rămânem sărutându-vă cu <em>supunere</em> dreapta
 Highlight: pentru care umblam. Dar şi îndemnuri la răbdare şi <em>supunere</em>, până când se va ajunge la această rezolvare,
 Highlight: nu veţi dovedi peste tot o sinceră dorinţă de <em>supunere</em> şi de ascultare faţă de aceste dispoziţii să nu
-Highlight: procedeze mai radical faţă de el: Ori ascultă şi se <em>supune</em> şi el învăţăturii şi Frăţietăţii - ziceau ei -
-Highlight: de ajuns cât i s-a tot spus - fără să vrea să se <em>supună</em> Cuvântului şi Frăţietăţii!... Dar
-Highlight: necruţătoare, ca pe nişte potrivnici care refuză să se <em>supună</em> şi să accepte o legalitate cinstită... Cu
+Highlight: rezolvarea problemei noastre este condiţionată de <em>supunerea</em> noastră faţă de Autorităţile de Stat. Problema
 
-Score: 14.3
+Score: 14.25
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 22 - Statutele - marea şi permanenta primejdie
@@ -163,7 +147,6 @@ Author: Traian Dorz
 Highlight: ascultare şi <em>supunere</em> necondiţionată
 Highlight: pentru cei intraţi în Oastea Domnului: ascultare şi <em>supunere</em> întru toate faţă de Dumnezeu. Cel intrat în armată
 Highlight: Sfânt. Când trăieşti o astfel de ascultare, de <em>supunere</em> şi de încredere în Domnul, viaţa ta ajunge sub
-Highlight: viaţă ortodoxă şi înfrânată cărora trebuie să se <em>supună</em> orice suflet şi oricare lucrare care vrea să fie
 
 Score: 12.749999
 Volume: Istoria unei Jertfe
@@ -175,57 +158,23 @@ Highlight: unei bune rezolvări a problemei noastre, - cu <em>supunere</em> fias
 Highlight: deplina noastră bună credinţă, rămân cu fiască <em>supunere</em> sărutând Dreapta
 Highlight: şi cu acest prilej totalul nostru ataşament şi <em>supunerea</em> pe care o datorăm. Binevoiţi
 
-Score: 9.857142
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Dacă au păzit Cuvântul Meu
-Type: articol
-Author: Traian Dorz
-Highlight: Acolo unde nu este o ascultare din inimă şi o <em>supunere</em> frăţească ascultătoare - acolo nu multă vreme
-Highlight: orice vrea, fără să ţină seama că este dator să se <em>supună</em> unei rânduieli, unei îndrumări, unei supravegheri
-Highlight: şi să li se <em>supună</em> şi să-i asculte (
-Highlight: Pentru că cine nu se <em>supune</em> astfel fraţilor mai mari şi îndrumătorilor Lucrării Domnului
-Highlight: la înaintarea Evangheliei, acela Domnului nu se <em>supune</em>.
-Highlight: numai fiii ascultării să n-aibă datoria de a se <em>supune</em> cuiva?
-
-Score: 9.833333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-Highlight: în alte păcate ascunse, fie dintr-o prea oarbă <em>supunere</em> sau obligaţie faţă de cei ce menţin dezbinarea
-Highlight: prin chemarea noastră creştină - datoria de a ne <em>supune</em> şi de a le respecta. Anume autoritatea de stat
-Highlight: numai în silă şi vădit fără convingere... Nu se <em>supun</em> rânduielilor normale din biserică, nu se împărtăşesc
-Highlight: îi despart. Dar iertarea, iubirea, răbdarea şi <em>supunerea</em> frăţească sunt cele dintâi condiţii şi semne ale
-Highlight: pentru cei câţiva neascultători, care iată, nu se <em>supun</em> nici bisericii, nici statului, nici Frăţietăţii
-
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 7 - A doua Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: acest plan n-a reuşit. Cu toate asigurările de <em>supunere</em> şi ascultare date faţă de I.P.S. Sa mitropolitul
-Highlight: instanţă - inculpatul precizează că înţelege a se <em>supune</em> ordinelor chiriarhului său în toate privinţele
-Highlight: inculpatul. În declaraţia inculpatului că înţelege să se <em>supună</em> ordinelor chiriarhului său rămânând sub ascultarea
-
-Score: 9.666667
+Score: 12.666666
 Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Auzirea şi ascultarea
+Book: Întâi să fim
+Title: Slujba şi inima
 Type: articol
 Author: Traian Dorz
-Highlight: în primul rând <em>supunere</em> şi ascultare, iar diavolul n-a vrut niciodată nici să se <em>supună</em> şi nici să asculte
+Highlight: în stăpânirea Mea, să-şi predea în robia Mea cu <em>supunere</em> totală şi necondiţionată toate cele trei compartimente
+Highlight: într-adevăr să faci această lepădare totală de tine şi <em>supunere</em> totală faţă de Isus? El numai dacă tu vrei cu
 
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
+Score: 11.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Supunerea în Lucrare
 Type: articol
 Author: Traian Dorz
-Highlight: De aceea, cu <em>supunere</em> şi devotament, rugăm pe I.P.S. Sa mitropolit Nicolae
-Highlight: scrisului, părintele Iosif Trifa declară că va <em>supune</em> cenzurii personale a I.P.S. Sale mitropolitului
+Highlight: Acolo unde nu este o ascultare din inimă şi o <em>supunere</em> frăţească din convingere, - acolo nu multă vreme
+Highlight: <em>Supunerea</em> în Lucrare
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
@@ -233,35 +182,25 @@ Book: Istoria unei Jertfe vol. 4
 Title: Cap. 22 - Peregrinările soliei
 Type: articol
 Author: Traian Dorz
-Highlight: cu bunăvoinţă mărturisirea noastră de sinceră <em>supunere</em> fiască. Şi omagiul acestei supuneri, în acest
-Highlight: Desigur că mă voi <em>supune</em> şi mă voi conforma întru totul oricărei comisii
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: lucrurile stau altfel. Trebuie să dăm dovadă de <em>supunere</em> şi de ascultare faţă de mai marii noştri. Aşa
-Highlight: combatere a răului şi de propagare a binelui. Noi le <em>supunem</em> verificării oricui, din punctul de vedere al doctrinei
+Highlight: mărturisirea noastră de sinceră <em>supunere</em> fiască. Şi omagiul acestei <em>supuneri</em>, în acest album
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 30 - Şi acum ultimul cuvânt
+Title: Cap. 23 - Cuvânt Testamentar
 Type: articol
 Author: Traian Dorz
-Highlight: ani şi toate dovezile noastre clare de dragoste, <em>supunere</em> şi bunăvoinţă n-au făcut pe nici unii dintre aceşti
-Highlight: toată smerenia şi îngrijorarea inimii noastre, <em>supunem</em> înţeleptei bunăvoinţe şi părinteştii iubiri a Sf
+Highlight: în alte păcate ascunse, fie dintr-o prea oarbă <em>supunere</em> sau obligaţie faţă de cei ce menţin dezbinarea
+Highlight: îi despart. Dar iertarea, iubirea, răbdarea şi <em>supunerea</em> frăţească sunt cele dintâi condiţii şi semne ale
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 7 - Aşa ne-au judecat
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 7 - A doua Judecată
 Type: articol
 Author: Traian Dorz
-Highlight: plantoanele, el are grijă să fie curăţenie, ordine şi <em>supunere</em> necondiţionată. La apelul de seara ori dimineaţa
-Highlight:  ori vrea el să-i facă vreun rău fiindcă nu se <em>supune</em> orbeşte dispoziţiilor ori pretenţiilor lui. Iar
+Highlight: acest plan n-a reuşit. Cu toate asigurările de <em>supunere</em> şi ascultare date faţă de I.P.S. Sa mitropolitul
+Highlight: autoritatea bisericească. Toate acestea nu sunt semnele <em>supunerii</em> şi a înţelegerii. În această atitudine de nepronunţarea
 
 Score: 9.666667
 Volume: Istoria unei Jertfe
@@ -272,49 +211,13 @@ Author: Traian Dorz
 Highlight: viaţa cumpătată, la hărnicie, la economie, la <em>supunere</em> şi respect faţă de legile şi conducătorii statului
 Highlight: noastre să cerem binecuvântarea lui Dumnezeu şi <em>supunerea</em> oamenilor faţă de acestea. Totuşi nimeni în afară
 
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: Cu fiască <em>supunere</em>
-Highlight:  Mă <em>supun</em> întru totul disciplinei bisericeşti fără nici o
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Eu Îmi cunosc oile Mele
-Type: articol
-Author: Traian Dorz
-Highlight: fraţi şi nu poţi trăi între ei cu ascultare şi cu <em>supunere</em> faţă de învăţătură, ci umbli să tot sari peste
-Highlight: capul lor, să nu asculte de nimeni şi să nu se <em>supună</em> nimănui.  Oile
-
-Score: 9.666667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 28-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: rămase în ascultare de El au dovedit totdeauna <em>supunere</em> Domnului Isus Hristos, ca unui Cap. Ca unui Stăpân
-Highlight: Bisericii şi al Oastei noastre, şi dorim să ne <em>supunem</em> totdeauna Ţie ca nişte mădulare sănătoase, ascultătoare
-
-Score: 9.666667
+Score: 9.5
 Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Tot despre oi şi despre câini
+Book: Calea Bunului Urmaş
+Title: Auzirea şi ascultarea
 Type: articol
 Author: Traian Dorz
-Highlight: fraţi şi nu poţi trăi între ei cu ascultare şi cu <em>supunere</em> faţă de învăţătură şi umbli să tot sari peste
-Highlight: capul lor. Să nu asculte de nimeni şi să nu se <em>supună</em> nimănui.  Oile
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Voi aveţi de tată pe diavolul
-Type: articol
-Author: Traian Dorz
-Highlight: este ascultare şi <em>supunere</em>, iar diavolul nu vrea nici să asculte nici să se <em>supună</em> niciodată şi nimănui
+Highlight: Adevăr şi pentru că Adevărul cere în primul rând <em>supunere</em> şi ascultare, iar diavolul n-a vrut niciodată
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -334,6 +237,14 @@ Highlight: aducea o atmosferă nouă, de mai mult respect şi <em>supunere</em> 
 
 Score: 9.5
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: De aceea, cu <em>supunere</em> şi devotament, rugăm pe I.P.S. Sa mitropolit Nicolae
+
+Score: 9.5
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 21 - După cei 50 de ani
 Type: articol
@@ -349,12 +260,28 @@ Author: Traian Dorz
 Highlight: îmbrăcat această uniformă şi am pus legământul de <em>supunere</em> şi credinţă faţă de Dumnezeu pe acest steag şi
 
 Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: lucrurile stau altfel. Trebuie să dăm dovadă de <em>supunere</em> şi de ascultare faţă de mai marii noştri. Aşa
+
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 3 - Marea cernere
 Type: articol
 Author: Traian Dorz
 Highlight: Cei legaţi, prin <em>supunere</em>, de stăpânirea acestui om al zilei, a omului puternic
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 30 - Şi acum ultimul cuvânt
+Type: articol
+Author: Traian Dorz
+Highlight: ani şi toate dovezile noastre clare de dragoste, <em>supunere</em> şi bunăvoinţă n-au făcut pe nici unii dintre aceşti
 
 Score: 9.5
 Volume: Hristos - Marturia mea
@@ -366,8 +293,24 @@ Highlight: ci dimpotrivă numai îndemnurile evanghelice de <em>supunere</em>, d
 
 Score: 9.5
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
+Type: articol
+Author: Traian Dorz
+Highlight: plantoanele, el are grijă să fie curăţenie, ordine şi <em>supunere</em> necondiţionată. La apelul de seara ori dimineaţa
+
+Score: 9.5
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Cu fiască <em>supunere</em>
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 9 - În vremea aceea...
 Type: articol
 Author: Traian Dorz
 Highlight: Cu fiască <em>supunere</em>
@@ -390,11 +333,27 @@ Highlight: mai învie niciodată cum a fost, iar unde nu-i <em>supunere</em> şi
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Dacă au păzit Cuvântul Meu
+Type: articol
+Author: Traian Dorz
+Highlight: Acolo unde nu este o ascultare din inimă şi o <em>supunere</em> frăţească ascultătoare - acolo nu multă vreme
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învierea noastră
 Title: Din ziua aceea au hotărât
 Type: articol
 Author: Traian Dorz
 Highlight: spre neascultare şi nu spre <em>supunere</em>, şi trezeşte-i Doamne la timp.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Dragostea nu pizmuieşte!
+Type: poezie
+Author: Traian Dorz
+Highlight: cu <em>supunere</em>-n trăire,
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -413,12 +372,44 @@ Author: Traian Dorz
 Highlight: deplina <em>supunere</em> faţă de poruncile primite de la Tatăl,
 
 Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Eu Îmi cunosc oile Mele
+Type: articol
+Author: Traian Dorz
+Highlight: fraţi şi nu poţi trăi între ei cu ascultare şi cu <em>supunere</em> faţă de învăţătură, ci umbli să tot sari peste
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Facerea de bine
+Type: articol
+Author: Traian Dorz
+Highlight: faţă de nimeni o mai mare datorie de iubire şi de <em>supunere</em>, ca faţă de părinţii săi.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Fapta şi încredinţarea
+Type: articol
+Author: Traian Dorz
+Highlight: colaborarea frăţească, de ascultarea în Domnul şi de <em>supunere</em> în dragoste a fiecăruia dintre noi de ceilalţi
+
+Score: 9.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 17-a după Rusalii
 Type: articol
 Author: Traian Dorz
 Highlight: Tu fă binele în temere de Dumnezeu şi în <em>supunere</em> faţă de voia Lui sfântă. Şi nu mai judeca nici
+
+Score: 9.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 28-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: rămase în ascultare de El au dovedit totdeauna <em>supunere</em> Domnului Isus Hristos, ca unui Cap. Ca unui Stăpân
 
 Score: 9.5
 Volume: Hristos - Puterea Apostoliei
@@ -446,11 +437,27 @@ Highlight: fiu recunoscător şi preţuitor cu ascultare şi <em>supunere</em>.
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Mâinile şi coasta Lui
+Type: articol
+Author: Traian Dorz
+Highlight: birui prin forţă, a ales totuşi să biruiască prin <em>supunere</em>.
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învăţătorul nostru
 Title: O lucrare am făcut...
 Type: articol
 Author: Traian Dorz
 Highlight: şi s-au predat Lui urmându-L cu dragoste şi cu <em>supunere</em> până la moarte.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Pacea - şi fiii păcii
+Type: articol
+Author: Traian Dorz
+Highlight: birui prin forţă a ales totuşi să biruiască prin <em>supunere</em>.
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -468,16 +475,31 @@ Type: articol
 Author: Traian Dorz
 Highlight: ci urmându-Te cu <em>supunere</em> şi răbdare în vremea ocării Tale, să ne facem
 
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Tot despre oi şi despre câini
 Type: articol
 Author: Traian Dorz
-Highlight: va trebui să se <em>supună</em>... Dacă nu se va <em>supune</em> de bună voie îl veţi forţa să se <em>supună</em>. Doar voi aveţi
-Highlight: faţă tot el singur că este un răzvrătit care nu se <em>supune</em> bisericii. Astfel, cu atât mai uşor va putea fi
+Highlight: fraţi şi nu poţi trăi între ei cu ascultare şi cu <em>supunere</em> faţă de învăţătură şi umbli să tot sari peste
 
-Score: 0.8
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Luminătorul nostru
+Title: Voi aveţi de tată pe diavolul
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărul care în primul rând este ascultare şi <em>supunere</em>, iar diavolul nu vrea nici să asculte nici să
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Înştiinţarea şi lumina
+Type: articol
+Author: Traian Dorz
+Highlight: sfintele înştiinţări, pentru inima care le ascultă cu <em>supunere</em>.
+
+Score: 0.75
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Calea vieţii noastre
 Title: Nouă - şi nu lumii
@@ -486,217 +508,25 @@ Author: Traian Dorz
 Highlight: ori a vrut să vorbească despre iubire, despre <em>supunerea</em> şi despre ascultarea faţă de El, Isus i-a pus
 Highlight: acestea, dar lumea nu va avea nici iubirea, nici <em>supunerea</em> şi nici ascultarea Lui.
 Highlight: Domnului Isus Îi vor fi supuşi Lui, lumea nu va iubi <em>supunerea</em> faţă de Dumnezeu.
-Highlight: nici să I se <em>supună</em>,
-
-Score: 0.8
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Singura Avuţie
-Type: articol
-Author: Traian Dorz
-Highlight: ascultă şi se <em>supune</em> la tot ceea ce este voia lui Dumnezeu şi porunca lui Dumnezeu ca să se <em>supună</em> şi să asculte
-Highlight: despovărează conştiinţele şi face instinctele să se <em>supună</em> raţiunii sănătoase, osândind tot ce este nebulos
-Highlight: 18 - Cine nu se <em>supune</em> în totul voii lui Dumnezeu şi întregului Său Cuvânt
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 14 - Un an adânc roditor
-Type: articol
-Author: Traian Dorz
-Highlight: când toţi împreună iau o hotărâre - şi fiecare se <em>supune</em> hotărârii luate de către toţi, atunci această ispită
-Highlight: părerile şi experienţele noastre. Dar mai ales de a ne <em>supune</em> fraţilor noştri când este vorba de păreri la care
-Highlight: singurul deţinător al Revelaţiei, ci se duce şi se <em>supune</em> şi întreabă şi primeşte părerea celor care erau
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Cine este din Dumnezeu, ascultă
-Type: articol
-Author: Traian Dorz
-Highlight: ascultă şi se <em>supune</em>, la tot ceea ce este voia lui Dumnezeu şi porunca lui Dumnezeu ca să se <em>supună</em> şi ca să
-Highlight: Cine nu se <em>supune</em> şi nu ascultă, nu este din Dumnezeu,
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: El era la început
-Type: articol
-Author: Traian Dorz
-Highlight: Ca Dumnezeu Îşi <em>supune</em> toate lucrurile, ca Om Se <em>supunea</em> tuturor lucrurilor.
-Highlight: S-a întrupat prin puterea pe care o avea de a-Şi <em>supune</em> legile cărora oamenii, prin firea lor, sunt supuşi
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
-Type: articol
-Author: Traian Dorz
-Highlight: fi ascultat, dacă mai întâi nu a ştiut cum să se <em>supună</em> el însuşi la o ascultare deplină faţă de cei pe
-Highlight: ascultători până la moarte. El a învăţat să Se <em>supună</em> până la orice smerenie, de aceea a fost vrednic
-Highlight: fericit înveţi de la acel maestru care el însuşi se <em>supune</em> mai întâi rânduielii căreia îţi arată ţie să te
 
 Score: 0.75
 Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Păcatul, izvorul răului
+Book: Eterna Iubire
+Title: Timpul şi Veşnicia
 Type: articol
 Author: Traian Dorz
-Highlight: Tot ce se <em>supune</em> Fiului şi se face pentru Fiul, Tatălui I se <em>supune</em> şi Lui I se face.
-Highlight: de mândria şi egoismul celor obişnuiţi să nu se <em>supună</em> nimănui, ci numai să comande tuturor.  11
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: Mă <em>supun</em>: totul era pentru mine complet necunoscut. Niciodată
-Highlight: strânsă şi constrânsă, ascultă şi se preface că se “<em>supune</em>” puţin. Dar îndată ce este lăsată iarăşi mai slobodă
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-Highlight: Dedesubt, prin lucrarea puterii pe care o are de a-Şi <em>supune</em> toate lucrurile de orice natură ar fi ele
-Highlight: Aron ascultă de Moise. Atunci duhul preoţesc se <em>supune</em> şi colaborează strâns cu duhul profetic iar amândouă
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 10 - Uşor e jugul lui Hristos
-Type: articol
-Author: Traian Dorz
-Highlight: Mi-am adus aminte de <em>supunerea</em> şi devotamentul lui faţă de stăpânul său.
-Highlight: fost să-Şi răspândească Evanghelia Sa şi să-Şi <em>supună</em> pe toţi oamenii?
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-Highlight: dar este bine ca şi gusturile noastre să ni le <em>supunem</em> gusturilor frăţeşti, şi să ni le formăm potrivit
-Highlight: Domnul când i-a învăţat pe ai Săi ca fiecare să se <em>supună</em> grupării sale, ca duhurile prorocilor să fie supuse
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 19 - Mereu morminte noi
-Type: articol
-Author: Traian Dorz
-Highlight: întocmai cum ar fi făcut şi fratele Petre. Ne <em>supunem</em> şi nu cârtim întru nimic împotriva măsurilor care
-Highlight: de episcop, şi să nu veniţi. Noi trebuie să ne <em>supunem</em> autorităţii şi mai marilor noştri cum ne învaţă
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: sau nu s-ar <em>supune</em> dispoziţiilor arhiepiscopiei
-Highlight: Ne închinăm legilor, ne <em>supunem</em> ierarhiilor noastre bisericeşti, dar calea sufletului
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: chiar el nu poate singur - va convoca Sinodul şi va <em>supune</em> problema deciziei lui. Noi oricare, avem sub conducerea
-Highlight: - Cum nu ne <em>supunem</em> prea fericite? Şi cum nu ascultăm, când în cea
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-Highlight: adică desfrânarea, fiindcă nu le mai convine să se <em>supună</em> nimănui şi fiindcă o astfel de
-Highlight:  Dar câtă vreme erau slabi, erau nevoiţi să se <em>supună</em>, fiindcă n-aveau cum altfel. Îndată ce li s-a ivit
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Cuvântul S-a făcut Trup...
-Type: articol
-Author: Traian Dorz
-Highlight: . El Însuşi prin puterea pe care o are de a-Şi <em>supune</em>
-Highlight: Singurul, Creator fiind, a putut - şi poate - să-Şi <em>supună</em> legile întocmite de El pentru creaturile Sale,
+Highlight: câte ori a vrut să vorbească despre iubirea, <em>supunerea</em> şi despre ascultarea faţă de El, Isus i-a pus
+Highlight: acestea, dar lumea nu va avea nici iubirea, nici <em>supunerea</em> şi nici ascultarea Lui.
+Highlight: Domnului Isus Îi vor fi supuşi Lui, lumea nu va iubi <em>supunerea</em> faţă de Dumnezeu.
 
 Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Hristos - Dumnezeul nostru
+Book: Crucea Mântuitoare
+Title: Ascultarea de Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: . El Însuşi prin puterea pe care o are de a-Şi <em>supune</em>
-Highlight: Singurul, Creator fiind, - a putut - poate - să-Şi <em>supună</em> legile întocmite de El pentru creaturile Sale,
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Isus vorbise despre... - dar ei credeau că...
-Type: articol
-Author: Traian Dorz
-Highlight: Nu-l lasă să întrebe şi să se <em>supună</em>! Ci îl îngâmfă să se închipuie atotcunoscător.
-Highlight: care cercetează şi se <em>supune</em>,
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 19-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: aminte de răul care îl face, nesocotind nu numai <em>supunerea</em> frăţească, ci chiar şi Cuvântul lui Dumnezeu care
-Highlight: însemnate. În felul acesta nici Domnul nu-I nevoit să-l <em>supună</em> la constrângerea suferinţei spre a-l păstra în
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-Highlight: a se <em>supune</em> cu toată ascultarea voii Sale.
-Highlight: Oricine pretinde aceste drepturi trebuie să se <em>supună</em> acestei
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Lăudăm pe Domnul nostru
-Type: poezie
-Author: Traian Dorz
-Highlight: laude pe Domnul toate câte Lui I se <em>supun</em>
-Highlight: se <em>supune</em> sfântu-I glas.
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Meditaţie despre Jertfă
-Type: poezie
-Author: Traian Dorz
-Highlight: înghiţite de lumină, strălucirea le <em>supune</em>.
-Highlight: prin <em>supunerea</em> iubirii,
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Măreţia şi bunătatea
-Type: articol
-Author: Traian Dorz
-Highlight: 11 - <em>Supune</em>-te deci şi rabdă, cu încredere neclintită că Tatăl
-Highlight: şi Viaţa care le îndrumă şi le controlează <em>supunerea</em>, armonia şi marginile tuturor nemărginirilor lor
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Nu voi M-aţi ales pe Mine
-Type: articol
-Author: Traian Dorz
-Highlight: Ci se va <em>supune</em> moale şi ascultător, spre a putea scoate din el
-Highlight: O, dacă ne-am <em>supune</em> noi toţi deplin Duhului Sfânt, ca El să poată lucra
+Highlight: 7 - <em>Supunerea</em> şi ascultarea desăvârşită de voia Tatălui, oricare
+Highlight: oricare ar fi fost preţul acestei <em>supuneri</em> şi ascultări, a fost totdeauna nu numai gândul dar şi fapta
 
 Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
@@ -708,56 +538,13 @@ Highlight: Că Lui Îi datorăm toată <em>supunerea</em> şi recunoştinţa pen
 Highlight: ca să-Ţi arate cu tăcere şi răbdare <em>supunerea</em> lor,
 
 Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Scrisoare despre jertfă...
-Type: poezie
-Author: Traian Dorz
-Highlight: înghiţite de lumină, strălucirea le <em>supune</em>.
-Highlight: prin <em>supunerea</em> iubirii,
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Smerenia şi dragostea adevărată
-Type: articol
-Author: Traian Dorz
-Highlight: adică întrece <em>supunerea</em> faţă de Cuvântul Său,
-Highlight: Inima să asculte disciplinată şi să se <em>supună</em>, în tot ce este călăuzită de dreptarul cel bun
-
-Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Tot ce face Tatăl, face şi Fiul
+Book: Hristos - Învierea noastră
+Title: Îţi mulţumesc că M-ai ascultat
 Type: articol
 Author: Traian Dorz
-Highlight: Tot ce se <em>supune</em> Lui şi se face pentru Fiul, Tatălui I se <em>supune</em> şi Lui I se face.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Împlinirea
-Type: articol
-Author: Traian Dorz
-Highlight: împlinirea pe-acei ce I se <em>supun</em>
-Highlight: şi dacă Cel Bun prin asta a-nvăţat să Se <em>supună</em>
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Învăţători şi ucenici
-Type: articol
-Author: Traian Dorz
-Highlight: Să ne <em>supunem</em> totdeauna voia noastră - Voii lui Dumnezeu.
-Highlight: Şi dacă ne-am <em>supune</em> voia noastră Voii lui Hristos, cât de minunat ni
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: ... Doamne, Tu să-mi speli picioarele?
-Type: articol
-Author: Traian Dorz
-Highlight: Zece dintre ucenici se <em>supuneau</em> în tăcere la toate, plini de smerenie şi de cutremur
+Highlight: <em>Supunerea</em> şi ascultarea desăvârşită de voia Tatălui, oricare
+Highlight: oricare ar fi fost preţul acestei <em>supuneri</em> şi ascultări, a fost totdeauna nu numai gândul dar şi fapta
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -769,27 +556,11 @@ Highlight: cu toată voia şi toată <em>supunerea</em> ta. Toate necondiţionat
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: ... vor veni romanii...
-Type: articol
-Author: Traian Dorz
-Highlight: şi despre marea lor datorie de a I se <em>supune</em> şi a-L urma
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: ... Şi voi sunteţi datori
 Type: articol
 Author: Traian Dorz
 Highlight: datori să le arătăm către fraţii noştri, - din <em>supunerea</em> faţă de Dumnezeu, - oare cât înţelegem şi cum
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Andrei şi Filip
-Type: articol
-Author: Traian Dorz
-Highlight: credincioşi şi buni, care întreabă de fraţi şi se <em>supun</em> sfaturilor frăţeşti,
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -800,52 +571,12 @@ Author: Traian Dorz
 Highlight: chemări, el este vrednic de toată preţuirea şi <em>supunerea</em>. Şi poţi să-i fii ascultător şi urmaş, căci te
 
 Score: 0.5
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Au plecat şi oameni nepregătiţi
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: trebuie să intre în planurile Domnului şi să se <em>supună</em> lor.
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Bunul nostru Tată...
-Type: poezie
-Author: Traian Dorz
-Highlight: Ţie inima-mi <em>supun</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ca râul care are
-Type: poezie
-Author: Traian Dorz
-Highlight: frământă-te, munceşte şi luptă a-i <em>supune</em>,
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 10 - Uşor e jugul lui Hristos
 Type: articol
 Author: Traian Dorz
-Highlight: - N-avem decât să ne <em>supunem</em>!
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-Highlight: primejdiile pe care le înfruntam sau la care ne <em>supuneam</em> familiile noastre, pentru ca să strângem ajutoarele
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: sufletul mişcat şi plin de cutremur, hotărât să mă <em>supun</em> la tot ce mi se va cere. Nu mă dezmeticisem încă
+Highlight: Mi-am adus aminte de <em>supunerea</em> şi devotamentul lui faţă de stăpânul său.
 
 Score: 0.5
 Volume: Hristos - Marturia mea
@@ -856,116 +587,28 @@ Author: Traian Dorz
 Highlight: prea sfinţitul nu primeşte condiţii de la voi. <em>Supunerea</em> trebuie să fie necondiţionată. Încetaţi imediat
 
 Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: de Lucrarea Domnului. Că el doreşte acum să se <em>supună</em> oricărei hotărâri frăţeşti. Că este în stare să
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: deplin pe tainica intervenţie a lui Dumnezeu, se <em>supunea</em> liniştit la toate. Într-un fel era fericit că scăpa
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: biruieşte. Şi va trăi şi va birui până când Îşi va <em>supune</em> pe toţi vrăjmaşii Săi aşternut picioarelor Sale
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-Highlight: rând când la unii când la alţii. Pe cei ce nu se <em>supun</em> datoriilor Oastei Domnului îi ştergem afară din
-
-Score: 0.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
+Title: Cap. 15 - Micii contemporani ai marilor oameni
 Type: articol
 Author: Traian Dorz
-Highlight: arătându-mi pistolul în semn de ameninţare dacă nu m-aş <em>supune</em>, mă împinse un pas înainte şi-mi arătă direcţia
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: noastră, dacă la cea mai mică încercare căreia ne <em>supune</em> Domnul pentru dovedirea credinţei noastre - noi
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 23 - Proverbe
-Type: poezie
-Author: Traian Dorz
-Highlight: dacă nu poţi cu-nfrânarea lăcomia a-ţi <em>supune</em>.
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 31 - O altă judecată
-Type: articol
-Author: Traian Dorz
-Highlight: El raportează pe oricine nu se <em>supune</em> dispoziţiilor lui, iar conducerea ia imediat măsuri
+Highlight: de libertatea şi binecuvântările ascultării şi <em>supunerii</em> faţă de acest trimes al lui Dumnezeu pentru ei
 
 Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
+Title: Cap. 2 - Istoria unei Jertfe...
 Type: articol
 Author: Traian Dorz
-Highlight: obişnuiţi numai să poruncească iar ei să li se <em>supună</em>.
+Highlight: fotografia patriarhului Miron, ca o expresie a <em>supunerii</em> faţă de Autoritatea bisericii şi ca o dorinţă
 
 Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 7 - Furtunile care încep de dimineaţă
 Type: articol
 Author: Traian Dorz
-Highlight: Dar când satana ne <em>supunea</em> prin unii din cei închişi cu noi, la teroarea dinăuntru
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 7 - Primii paşi spre o rânduială
-Type: articol
-Author: Traian Dorz
-Highlight: să o porţi mai întâi cu tine însuţi, ca să poţi <em>supune</em> sub picioarele tale pe potrivnicul diavol şi amăgirile
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: - Se întâmplă că dacă nu se <em>supune</em> nici loviturilor care caută să o îndrepteze şi
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: atunci când se îmbolnăveşte omul trupesc. Să se <em>supună</em> adică unui tratament aspru şi atent până când se
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 9 - Înţelepciunea şi puterea
-Type: articol
-Author: Traian Dorz
-Highlight: credinţă împotriva vrăjmaşului nostru diavolul, să-l <em>supunem</em> sub picioarele noastre.
+Highlight: în măsură să-l convingă pe oricine de datoria <em>supunerii</em> ascultătoare. Ori pentru a face binele, ori pentru
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -977,9 +620,193 @@ Highlight: Împărăţia Lui le afişează în văzul tuturor. De <em>supunerea<
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Ce sfânt e-un legământ
+Book: Hristos - Modelul nostru
+Title: Dacă nu te spăl Eu...
+Type: articol
+Author: Traian Dorz
+Highlight: aşteaptă numai <em>supunerea</em> şi predarea ta.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre încercare
+Type: articol
+Author: Traian Dorz
+Highlight: 5 - Nevoia are şi ea <em>supunerile</em> ei -
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Deşertăciune şi slavă
+Type: articol
+Author: Traian Dorz
+Highlight: - aducând deplina fericire a tuturora, prin <em>supunerea</em> şi ascultarea tuturor de Singurul Împărat şi Păstor
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Dragostea şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: Fiul a dat Preţul întreg, prin <em>supunerea</em> Lui totală.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: După focul încercării
+Type: articol
+Author: Traian Dorz
+Highlight: Ce bucurie şi pace îţi dă rămânerea în <em>supunerea</em> la picioarele Domnului tău Isus (
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Eu şi Tatăl suntem Una
+Type: articol
+Author: Traian Dorz
+Highlight: şi Viaţa care le îndrumă şi le controlează <em>supunerea</em>, armonia şi marginile tuturor nemărginirilor lor
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Inima şi mintea
+Type: articol
+Author: Traian Dorz
+Highlight: şi care cu toată <em>supunerea</em> şi grija, se sileşte totdeauna să calce pe urmele
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 19-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: aminte de răul care îl face, nesocotind nu numai <em>supunerea</em> frăţească, ci chiar şi Cuvântul lui Dumnezeu care
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Type: articol
+Author: Traian Dorz
+Highlight: Mântuitorul nostru Isus Hristos; dar în privinţa <em>supunerii</em> şi a poruncirii, în privinţa smereniei în a asculta
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
+Type: articol
+Author: Traian Dorz
+Highlight: se ajunge dacă fiecare face ce vrea? Unde este <em>supunerea</em> şi ascultarea frăţească?
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Mai presus de toţi...
+Type: articol
+Author: Traian Dorz
+Highlight: de iubirea faţă de Hristos, adică trece peste <em>supunerea</em> faţă de Cuvântul Său, - aceasta devine nelegiuire
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: Mama lui Isus a zis
+Type: articol
+Author: Traian Dorz
+Highlight: împlinirea rugăciunilor noastre prin ascultarea şi <em>supunerea</em> ei.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Meditaţie despre Jertfă
 Type: poezie
 Author: Traian Dorz
-Highlight: Când omul vine şi-şi <em>supune</em>
+Highlight: prin <em>supunerea</em> iubirii,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Mă sfinţesc pentru ei
+Type: articol
+Author: Traian Dorz
+Highlight: cărui lucrare venise să ajute prin predarea şi <em>supunerea</em> ascultării totale.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Măreţia şi bunătatea
+Type: articol
+Author: Traian Dorz
+Highlight: şi Viaţa care le îndrumă şi le controlează <em>supunerea</em>, armonia şi marginile tuturor nemărginirilor lor
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Mărturisirea Adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: De <em>supunerea</em> ascultătoare şi de recunoaşterea adevărată, de
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Porţile Veşniciei
+Type: articol
+Author: Traian Dorz
+Highlight:  de ascultarea şi <em>supunerea</em> faţă de Stăpânul şi Făcătorul său,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Păcatul şi osânda
+Type: articol
+Author: Traian Dorz
+Highlight: s-o silim să stea în ascultarea Domnului şi în <em>supunerea</em> faţă de voia Sa.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Răspunsurile Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: Strigaţi şi voi din toată inima voastră, laudă <em>supunerii</em> depline în dragoste şi în credinţă Dumnezeului
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Scrisoare despre jertfă...
+Type: poezie
+Author: Traian Dorz
+Highlight: prin <em>supunerea</em> iubirii,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Sfinţirea prin Adevăr
+Type: articol
+Author: Traian Dorz
+Highlight: prin predarea şi prin <em>supunerea</em> ascultării lui totale de Dumnezeu.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Piatra Scumpă
+Title: Smerenia şi dragostea adevărată
+Type: articol
+Author: Traian Dorz
+Highlight: adică întrece <em>supunerea</em> faţă de Cuvântul Său,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: Tot ce are Tatăl este al Meu
+Type: articol
+Author: Traian Dorz
+Highlight: dragostea Sa, Fiul a dat Preţul Întreg, prin <em>supunerea</em> Lui totală.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Umblaţi ca unii care aveţi Lumina
+Type: articol
+Author: Traian Dorz
+Highlight: voinţa de a o urma în toate căile noastre cu toată <em>supunerea</em> şi ascultarea.
 

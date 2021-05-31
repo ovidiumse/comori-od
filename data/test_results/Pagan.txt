@@ -1,80 +1,71 @@
-+---------------------------------------------------------------------------------------------+-------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences             | Author      | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-------------------------+-------------+----------------------------------+------------------------------+---------+
-| Cap. 8 - A treia Judecată                                                                   | {'păgân'}               | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Pe drumul Crucii                                                                  | {'păgân', 'păgâni'}     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                                                    | {'păgân', 'păgâni'}     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)      | {'păgân', 'păgânii'}    | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)              | {'păgân', 'păgânii'}    | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Amin, vino Doamne Isuse                                                                     | {'păgân'}               | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Cel mai frumos Isus                                                                | {'păgân'}               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Va veni un altul...                                                               | {'păgân'}               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'păgân'}               | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                              | {'păgân'}               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                                | {'păgân'}               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Despre ascultare                                                                            | {'păgân'}               | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre credinţă                                                                             | {'păgân'}               | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                              | {'păgân'}               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)             | {'păgân'}               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                               | {'păgân'}               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Mă leg                                                                                      | {'păgân'}               | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Nicodim I-a zis: cum se poate?                                                              | {'păgân'}               | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Nouă nu ne este îngăduit...                                                                 | {'păgân'}               | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Nu este mai mare dragoste                                                                   | {'păgân'}               | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| S-a iscat o neînţelegere                                                                    | {'păgân'}               | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Să umblăm numai după Hristos                                                                | {'păgân'}               | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| În Cartea Ta...                                                                             | {'păgân'}               | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
-| În Cartea Ta...                                                                             | {'păgân'}               | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'păgâni', 'păgânii'}   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Am vrea să vedem pe Isus                                                                    | {'păgâni'}              | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                        | {'păgânesc', 'păgâni'}  | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare                                             | {'păgânilor', 'păgâne'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Mereu prin lupte                                                                            | {'păgână'}              | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Alţii s-au ostenit                                                                          | {'păgâni'}              | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                             | {'păgânilor'}           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                                                      | {'păgână'}              | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | {'păgână'}              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                            | {'păgânesc'}            | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Fermenţii sunt născuţi să moară                                                   | {'păgâne'}              | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                                      | {'păgâni'}              | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                          | {'păgânii'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'păgâni'}              | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                                            | {'păgâne'}              | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                          | {'păgâne'}              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                                       | {'păgâne'}              | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'păgâni'}              | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 30 - Alte adevăruri noi                                                                | {'păgânesc'}            | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 4 - Proverbe                                                                           | {'păgâne'}              | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                     | {'păgână'}              | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                                 | {'păgână'}              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Când se va întoarce Israel                                                                  | {'păgână'}              | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Dar ştiu că n-aveţi dragoste - de Dumnezeu                                                  | {'păgână'}              | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| De ce-aţi uitat?                                                                            | {'păgâne'}              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | poezie  |
-| De ce-aţi uitat?                                                                            | {'păgâne'}              | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Fereşte-te de desfrânare                                                                    | {'păgâne'}              | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| I-a scos pe toţi afară                                                                      | {'păgâne'}              | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Iată, vi-L aduc, ca să ştiţi                                                                | {'păgână'}              | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Isus i-a iubit până la capăt                                                                | {'păgânesc'}            | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)             | {'păgânilor'}           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                             | {'păgâni'}              | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | {'păgâni'}              | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'păgânilor'}           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'păgâni'}              | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La capătul umblării                                                                         | {'păgânesc'}            | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | poezie  |
-| O cunună de spini                                                                           | {'păgânii'}             | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Pentru ca ei să fie una...                                                                  | {'păgânilor'}           | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Pentru sfânta biruinţă                                                                      | {'păgâne'}              | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Prilejul şi păcatul                                                                         | {'păgânesc'}            | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Prin ce semn ne araţi?                                                                      | {'păgâni'}              | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Simon Petru mergea după Isus...                                                             | {'păgâni'}              | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Sunteţi sămânţa lui Avraam, dar...                                                          | {'păgânii'}             | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Vinul cel bun                                                                               | {'păgâne'}              | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Într-un singur trup, pe toţi fiii - lui Dumnezeu                                            | {'păgâne'}              | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Învăţătură şi deprinderi                                                                    | {'păgâni'}              | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Ştim că Dumnezeu a vorbit lui Moise...                                                      | {'păgâne'}              | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-+---------------------------------------------------------------------------------------------+-------------------------+-------------+----------------------------------+------------------------------+---------+
-Searching Pagan using http://localhost:9000...
-Got 71 hits:
++---------------------------------------------------------------------------------------------+-----------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences           | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+-----------------------+-------------+----------------------------------+------------------------------+---------+
+| Cap. 8 - A treia Judecată                                                                   | {'păgân'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Pe drumul Crucii                                                                  | {'păgân', 'păgâni'}   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                                    | {'păgân', 'păgâni'}   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)      | {'păgân', 'păgânii'}  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)              | {'păgân', 'păgânii'}  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Amin, vino Doamne Isuse                                                                     | {'păgân'}             | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Cel mai frumos Isus                                                                | {'păgân'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Va veni un altul...                                                               | {'păgân'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'păgân'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                              | {'păgân'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Cuvânt Testamentar                                                                | {'păgân'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Colaborarea în Domnul                                                                       | {'păgân'}             | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Daniel 5, 1-17                                                                              | {'păgân'}             | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Despre ascultare                                                                            | {'păgân'}             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre credinţă                                                                             | {'păgân'}             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Durere şi răbdare                                                                           | {'păgân'}             | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                              | {'păgân'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)             | {'păgân'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                               | {'păgân'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mă leg                                                                                      | {'păgân'}             | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Nicodim I-a zis: cum se poate?                                                              | {'păgân'}             | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Nouă nu ne este îngăduit...                                                                 | {'păgân'}             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Nu este mai mare dragoste                                                                   | {'păgân'}             | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| S-a iscat o neînţelegere                                                                    | {'păgân'}             | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Să umblăm numai după Hristos                                                                | {'păgân'}             | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| În Cartea Ta...                                                                             | {'păgân'}             | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | poezie  |
+| În Cartea Ta...                                                                             | {'păgân'}             | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'păgâni', 'păgânii'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Am vrea să vedem pe Isus                                                                    | {'păgâni'}            | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Alţii s-au ostenit                                                                          | {'păgâni'}            | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                             | {'păgânilor'}         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                                      | {'păgâni'}            | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 13 - După luarea lui Moisi...                                                          | {'păgânii'}           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                        | {'păgâni'}            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'păgâni'}            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'păgâni'}            | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Chinul - şi sfârşitul lui                                                                   | {'păgâni'}            | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Căderea şi ridicarea                                                                        | {'păgânii'}           | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| Dacă fratele-ţi greşeşte                                                                    | {'păgânul'}           | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | poezie  |
+| Dacă fratele-ţi greşeşte                                                                    | {'păgânul'}           | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| De frica sabatului                                                                          | {'păgâni'}            | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Facerea de bine                                                                             | {'păgâni'}            | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Harul de a suferi                                                                           | {'păgâni'}            | Traian Dorz | Dorim să fim                     | Cugetări Nemuritoare         | articol |
+| Ieremia 39, 1-10                                                                            | {'păgâni'}            | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)             | {'păgânilor'}         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                             | {'păgâni'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | {'păgâni'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare                                             | {'păgânilor'}         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'păgânilor'}         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)          | {'păgâni'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mărturisirea Adevărului                                                                     | {'păgânii'}           | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| O cunună de spini                                                                           | {'păgânii'}           | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Pentru ca ei să fie una...                                                                  | {'păgânilor'}         | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Prin ce semn ne araţi?                                                                      | {'păgâni'}            | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Păcatul şi iertarea                                                                         | {'păgânilor'}         | Traian Dorz | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
+| Simon Petru mergea după Isus...                                                             | {'păgâni'}            | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Soarele şi furtuna                                                                          | {'păgânii'}           | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Sunteţi sămânţa lui Avraam, dar...                                                          | {'păgânii'}           | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Voia lui Dumnezeu                                                                           | {'păgâni'}            | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Zvonul printre fraţi                                                                        | {'păgâni'}            | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| Zvonurile dezbinătoare                                                                      | {'păgâni'}            | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Învăţătură şi deprinderi                                                                    | {'păgâni'}            | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
++---------------------------------------------------------------------------------------------+-----------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Pagan using https://api.comori-od.ro...
+Got 62 hits:
 Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
@@ -169,6 +160,22 @@ Author: Traian Dorz
 Highlight: biserică - zice Hristos Însuşi - să-ţi fie ţie ca un <em>păgân</em> (
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Colaborarea în Domnul
+Type: articol
+Author: Traian Dorz
+Highlight: poartă cineva grijă de ai lui, este mai rău decât un <em>păgân</em> (
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Daniel 5, 1-17
+Type: poezie
+Author: Traian Dorz
+Highlight: Regele <em>păgân</em> petrece
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre ascultare
@@ -183,6 +190,14 @@ Title: Despre credinţă
 Type: articol
 Author: Traian Dorz
 Highlight: şi ce-a fost <em>păgân</em> odată şi ce astăzi e creştin.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Durere şi răbdare
+Type: articol
+Author: Traian Dorz
+Highlight: acela nu este credincios ci este mai rău ca un <em>păgân</em> (
 
 Score: 4.5
 Volume: Hristos - Puterea Apostoliei
@@ -290,33 +305,6 @@ Author: Traian Dorz
 Highlight: Un vestitor al Domnului printre <em>păgâni</em> nu ştia cum să mai spună unor suflete cât de Bun
 Highlight: Atunci toţi bieţii <em>păgâni</em> care îl cunoşteau pe acest credincios şi vedeau
 
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: reprezentantul leneviei spirituale, a conservatorismului <em>păgânesc</em>, - totdeauna gata gras şi greoi, dar totdeauna
-Highlight: care ne-am născut creştini. N-am fost sute de ani <em>păgâni</em>, apoi să ne încreştinăm ca ungurii, ca bulgarii
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: De aceea s-au prăbuşit toţi zeii şi idolii <em>păgânilor</em>. S-au pustiit toate religiile lor. Şi s-au nimicit
-Highlight: puternicele popoare şi despre vestitele împărăţii <em>păgâne</em> din trecut?... Amaleciţii, hetiţii, amoriţii, filistenii
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Mereu prin lupte
-Type: poezie
-Author: Traian Dorz
-Highlight: ne-ar sui pe altă cruce răzbunarea lor <em>păgână</em>, -
-Highlight: tot nu lasă pân-la urmă fapta crudă şi <em>păgână</em>
-
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Izvorul nostru
@@ -332,38 +320,6 @@ Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
 Type: articol
 Author: Traian Dorz
 Highlight: din partea celor din neamul meu... din partea <em>păgânilor</em>... în primejdii în pustie... pe mare... între
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 11 - Ce minunat lucrează Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: pătruns acolo decât în cea mai întunecată zonă <em>păgână</em> din lume. Despotismul conservatorist tronează vigilent
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: apăra, să-l acuze cum le place. Ori, nici cea mai <em>păgână</em> justiţie nu făcea acest lucru: să-i ia celui acuzat
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: O, în ce chip <em>păgânesc</em> se desfăşoară de obicei privegherile morţilor
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 12 - Fermenţii sunt născuţi să moară
-Type: articol
-Author: Traian Dorz
-Highlight: băuturi şi figuri sălbatice, - de la popoarele <em>păgâne</em> care ne-au stăpânit, le-am învăţat. Patima furtului
 
 Score: 0.5
 Volume: Istoria unei Jertfe
@@ -384,34 +340,18 @@ Highlight: Calea, Adevărul şi Viaţa, noi eram mai răi decât <em>păgânii</
 Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
+Title: Cap. 13 - E poate ultima-ncercare...
+Type: articol
+Author: Traian Dorz
+Highlight: care ne-am născut creştini. N-am fost sute de ani <em>păgâni</em>, apoi să ne încreştinăm ca ungurii, ca bulgarii
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
 Highlight: Atunci Evanghelia îi făcea pe <em>păgâni</em> oameni sfinţi, pe sălbatici fraţi, pe tâlhari călugări
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-Highlight: în marmură scumpă, însă a venit năvala hoardelor <em>păgâne</em> şi au distrus totul... Doar amintirea acestui loc
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-Highlight: Şi cum aceia au dus în mijlocul neamurilor <em>păgâne</em> lumina învăţăturii şi vieţii lui Hristos,
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: stăpânit prea multe secole de tot felul de popoare <em>păgâne</em>, inculte şi sălbatice, - cum au fost cele care
 
 Score: 0.5
 Volume: Istoria unei Jertfe
@@ -422,100 +362,68 @@ Author: Traian Dorz
 Highlight: nume frumoase de sfinţi, dar faptele lor sunt de <em>păgâni</em>.
 
 Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 30 - Alte adevăruri noi
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Chinul - şi sfârşitul lui
 Type: articol
 Author: Traian Dorz
-Highlight: şi pentru această cerească schimbare din felul <em>păgânesc</em> de mai înainte în acest fel duhovnicesc de azi
+Highlight: În privinţa aceasta, inchizitorii <em>păgâni</em> din noaptea păgânismului n-au fost cu nimic mai
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Căderea şi ridicarea
+Type: articol
+Author: Traian Dorz
+Highlight: numele, dar şi mai vinovată cu faptele, decât <em>păgânii</em>.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Dacă fratele-ţi greşeşte
+Type: poezie
+Author: Traian Dorz
+Highlight: atunci să-l socoţi <em>păgânul</em>
 
 Score: 0.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 4 - Proverbe
+Book: Cântări Nemuritoare vol. 10
+Title: Dacă fratele-ţi greşeşte
 Type: poezie
 Author: Traian Dorz
-Highlight: şi beau vinul stors cu silă, prin apucături <em>păgâne</em>.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-Highlight: prigonea pe fraţii noştri creştini era cel puţin <em>păgână</em>... şi era în acele secole întunecate... Pe când
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: turbare. Lupta era cumplită ca într-o lume complet <em>păgână</em>...
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Când se va întoarce Israel
-Type: poezie
-Author: Traian Dorz
-Highlight: şi pofta lui <em>păgână</em>
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Dar ştiu că n-aveţi dragoste - de Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: biruinţă Cuvântul credinţei Tale la toată lumea <em>păgână</em> care este încă atât de mare şi străină de Tine
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: De ce-aţi uitat?
-Type: poezie
-Author: Traian Dorz
-Highlight: credinţele <em>păgâne</em> cu chip viclean - smerit
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: De ce-aţi uitat?
-Type: poezie
-Author: Traian Dorz
-Highlight: credinţele <em>păgâne</em> cu chip viclean-smerit
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Fereşte-te de desfrânare
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-unui suflet scump ea-ntinde cursa patimii <em>păgâne</em>.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: I-a scos pe toţi afară
-Type: articol
-Author: Traian Dorz
-Highlight: toate speculaţiile şi monstruozităţile religiilor <em>păgâne</em>. În toate templele pământului unde intră El, Hristos
+Highlight: atunci să-l socoţi <em>păgânul</em>
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
-Title: Iată, vi-L aduc, ca să ştiţi
+Title: De frica sabatului
 Type: articol
 Author: Traian Dorz
-Highlight: Autoritatea lumească şi <em>păgână</em> Îl ura la fel de mult pe Hristos.
+Highlight: În privinţa aceasta inchizitorii <em>păgâni</em> din noaptea păgânismului n-au fost cu nimic mai
 
 Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Isus i-a iubit până la capăt
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Facerea de bine
 Type: articol
 Author: Traian Dorz
-Highlight: Şi nimic mai <em>păgânesc</em> decât lipsa ei.
+Highlight: credinţa şi Numele Domnului Isus erau prigonite de <em>păgâni</em>, au fost martirii care şi-au dat viaţa suferind
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Harul de a suferi
+Type: articol
+Author: Traian Dorz
+Highlight: făcut iscoade, vânzători şi unelte ale împăraţilor <em>păgâni</em> pentru a scăpa de suferinţă.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Ieremia 39, 1-10
+Type: poezie
+Author: Traian Dorz
+Highlight: nu mai este la <em>păgâni</em>
 
 Score: 0.5
 Volume: Hristos - Puterea Apostoliei
@@ -544,6 +452,14 @@ Highlight: Dumnezeu ori în primirea mântuirii. Câţi dintre <em>păgâni</em>
 Score: 0.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a a Postului Mare
+Type: articol
+Author: Traian Dorz
+Highlight: De aceea s-au prăbuşit toţi zeii şi idolii <em>păgânilor</em>. S-au pustiit toate religiile lor. Şi s-au nimicit
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
 Type: articol
 Author: Traian Dorz
@@ -559,11 +475,11 @@ Highlight: temeri era atât de treaz până şi la judecătorii <em>păgâni</em
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: La capătul umblării
-Type: poezie
+Book: Răsplata Ascultării
+Title: Mărturisirea Adevărului
+Type: articol
 Author: Traian Dorz
-Highlight: e lucru <em>păgânesc</em>,
+Highlight: 17 - În timp ce <em>păgânii</em> lui Hristos de atunci s-au temut să-i sfâşie cămaşa
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -582,28 +498,20 @@ Author: Traian Dorz
 Highlight: lucrurile astăzi când, în comparaţie cu numărul <em>păgânilor</em>, creştinii sunt atât de mulţi ca număr.
 
 Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Pentru sfânta biruinţă
-Type: poezie
-Author: Traian Dorz
-Highlight: de-ncercările <em>păgâne</em>
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Prilejul şi păcatul
-Type: articol
-Author: Traian Dorz
-Highlight: alipindu-se din nou de ceea ce era rău, necredincios şi <em>păgânesc</em>.
-
-Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
 Title: Prin ce semn ne araţi?
 Type: articol
 Author: Traian Dorz
 Highlight: cunoscuseră înainte beţivi, hoţi, desfrânaţi, bătăuşi, <em>păgâni</em>, canibali.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Păcatul şi iertarea
+Type: articol
+Author: Traian Dorz
+Highlight: Creştină, sute şi sute de ani, mai întâi le-a arătat <em>păgânilor</em> trăirea, apoi învăţătura.
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -614,6 +522,14 @@ Author: Traian Dorz
 Highlight: de prigonire ale primilor creştini, mulţi dintre <em>păgâni</em> care îi vedeau cu ce curaj şi iubire mergeau creştinii
 
 Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Soarele şi furtuna
+Type: articol
+Author: Traian Dorz
+Highlight: că-i vezi făcând fapte de aşa grozăvie cum nici <em>păgânii</em> nu fac...
+
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: Sunteţi sămânţa lui Avraam, dar...
@@ -622,20 +538,28 @@ Author: Traian Dorz
 Highlight: Voi aţi căzut şi aţi decăzut, mai rău decât <em>păgânii</em>,
 
 Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Vinul cel bun
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Voia lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: ba chiar cu otrava unor religii <em>păgâne</em> şi rătăcite, care de care mai rele.
+Highlight: 11 - Prigonitorii <em>păgâni</em> de multe ori aflându-le la părinţii şi fraţii noştri
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Într-un singur trup, pe toţi fiii - lui Dumnezeu
+Book: Hristos - Slava noastră
+Title: Zvonul printre fraţi
 Type: articol
 Author: Traian Dorz
-Highlight: ceresc şi vrednic, la cucerirea întregii lumi încă <em>păgâne</em>, cu credinţa şi cu fapta iubirii biruitoare,
+Highlight: câte au putut nimici înainte toţi prigonitorii <em>păgâni</em> laolaltă!
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Zvonurile dezbinătoare
+Type: articol
+Author: Traian Dorz
+Highlight: câte au putut nimici înainte toţi prigonitorii <em>păgâni</em> laolaltă!
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
@@ -644,12 +568,4 @@ Title: Învăţătură şi deprinderi
 Type: articol
 Author: Traian Dorz
 Highlight: creştine răsună nume de filozofi, uneori chiar <em>păgâni</em> - şi nu nume de profeţi, de apostoli sau sfinţi
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Ştim că Dumnezeu a vorbit lui Moise...
-Type: articol
-Author: Traian Dorz
-Highlight: Şi cum aceia au dus în mijlocul neamurilor <em>păgâne</em> lumina învăţăturii şi vieţii lui Hristos,
 

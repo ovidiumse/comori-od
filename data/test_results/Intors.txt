@@ -1,109 +1,123 @@
-+------------------------------------------------------------------------------------+-----------------------+-----------------+-------------------------------+------------------------------+---------+
-| Titlu                                                                              | Occurrences           | Author          | Tip                           | Carte                        | Volum   |
-+------------------------------------------------------------------------------------+-----------------------+-----------------+-------------------------------+------------------------------+---------+
-| Mulţi s-au întors înapoi...                                                        | {'întors'}            | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Şi s-au întors fiecare acasă...                                                    | {'întors'}            | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Aprozii s-au întors                                                                | {'întors'}            | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Isus S-a întors în Cana...                                                         | {'întors'}            | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Cel mai frumos Isus                                                       | {'întors', 'Întors'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                        | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                        | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                           | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                             | {'întors', 'Întors'}  | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                    | {'întors', 'Întors'}  | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'întors', 'întorşi'} | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Al doilea semn                                                                     | {'întors'}            | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Răscrucea Isus                                                           | {'Întors', 'întors'}  | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Anul următor                                                              | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 7 - Aşa ne-au judecat                                                         | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                | {'întors', 'Întors'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                   | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                               | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                       | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                     | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                     | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                           | {'întors', 'Întors'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 27 - Pe drumul ales                                                           | {'întors', 'Întors'}  | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                      | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 3 - Marea cernere                                                             | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                            | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 7 - A doua Judecată                                                           | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Ei s-au simţit mustraţi...                                                         | {'întors'}            | Traian Dorz     | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Haidem să ne întoarcem                                                             | {'întors'}            | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                      | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Mai sunt puţin cu voi                                                              | {'întors'}            | Traian Dorz     | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
-| Praznicul Rusaliilor 1938                                                          | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | poezie  |
-| Praznicul Rusaliilor 1938                                                          | {'întors'}            | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Împlinirea hotărârilor lui Dumnezeu                                                | {'întors'}            | Traian Dorz     | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
-| Învăţătorule... Te întorci iarăşi?                                                 | {'întors'}            | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
-| A intra în Oaste înseamnă a ieşi din lume                                          | {'întors'}            | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
-| Adânca usturime a căinţei mele                                                     | {'întors'}            | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                              | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 11 - Semnele Oastei Domnului                                                  | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                            | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 16 - Există un echilibru                                                      | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 16 - O plecare îndurerată                                                     | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                         | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 18 - La 25 de ani                                                             | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 18 - Un vânt rău                                                              | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                  | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                 | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 22 - Al doilea 2-4-2                                                          | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 25 - Istorie şi suferinţă                                                     | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 27 - Întristarea cea binecuvântată                                            | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 3 - Cumplitul şi neiertatul păcat                                             | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 31 - O altă judecată                                                          | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 31 - Şi acum încheierea                                                       | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                            | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 5 - Binecuvântata muncă grea                                                  | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 8 - Al şaptelea foc                                                           | {'Întors', 'întors'}  | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                           | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                                  | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Grabă şi zăbavă                                                                    | {'întors'}            | Traian Dorz     | Avuţia Sfântului Moştenitor   | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 17-a după Rusalii                                      | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain) | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)    | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                     | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                      | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)    | {'întors'}            | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Neprihănirea şi vinovăţia                                                          | {'întors'}            | Traian Dorz     | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
-| În faţa Porţii Îndurării                                                           | {'întors'}            | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
-| Şi l-a adus la Isus                                                                | {'întors'}            | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Au rămas la Isus                                                               | {'întors'}            | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Când au văzut-o sculându-se                                                    | {'întors'}            | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
-| ... Era ceasul al zecelea                                                          | {'întors'}            | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Ucenicii Lui au crezut în El...                                                | {'întors'}            | Traian Dorz     | Hristos - Sfinţitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| A face voia lui Dumnezeu                                                           | {'întors'}            | Traian Dorz     | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
-| Adevărata Lumină                                                                   | {'întors'}            | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
-| Aici este mirarea                                                                  | {'întors'}            | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Astfel este Pâinea... nu ca mana                                                   | {'întors'}            | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
-| Atunci a părăsit Iudeea...                                                         | {'întors'}            | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Ca nişte tunete                                                                    | {'întors'}            | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Ca nişte tunete                                                                    | {'întors'}            | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Cap. 1 - Înfricoşata lepădare                                                      | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                                             | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 12 - Ecles                                                                    | {'întors'}            | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Fermenţii sunt născuţi să moară                                          | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 12 - Toate lucrează spre bine                                                 | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                 | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                               | {'Întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                                 | {'Întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 13 - Pe urmele profetului                                                     | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Atacul împotriva steagului                                               | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 15 - Călătoria la Ierusalim                                                   | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 16 - Leacul dureroasei sfâşieri                                               | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                   | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 17 - Ziua a doua                                                              | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                               | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                         | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                     | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                      | {'Întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                 | {'întors'}            | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                             | {'întors'}            | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-+------------------------------------------------------------------------------------+-----------------------+-----------------+-------------------------------+------------------------------+---------+
-Searching Intors using http://localhost:9000...
-Got 207 hits:
++------------------------------------------------------------------------------------+----------------------+-----------------+-------------------------------+------------------------------+---------+
+| Titlu                                                                              | Occurrences          | Author          | Tip                           | Carte                        | Volum   |
++------------------------------------------------------------------------------------+----------------------+-----------------+-------------------------------+------------------------------+---------+
+| S-a întors... şi a văzut pe Isus                                                   | {'întors'}           | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Mulţi s-au întors înapoi...                                                        | {'întors'}           | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
+| S-au întors acasă                                                                  | {'întors'}           | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Şi s-au întors fiecare acasă...                                                    | {'întors'}           | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Aprozii s-au întors                                                                | {'întors'}           | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Isus S-a întors în Cana...                                                         | {'întors'}           | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Cel mai frumos Isus                                                       | {'întors', 'Întors'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                        | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 9 - În vremea aceea...                                                        | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                           | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                             | {'întors', 'Întors'} | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                    | {'întors', 'Întors'} | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Al doilea semn                                                                     | {'întors'}           | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Cap. 11 - Răscrucea Isus                                                           | {'Întors', 'întors'} | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 4 - Anul următor                                                              | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                                         | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                                | {'întors', 'Întors'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Bunătatea Tatălui Ceresc                                                           | {'întors'}           | Traian Dorz     | Credinţa Încununată           | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Dovada supremei iubiri                                                   | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Strâmta cărare mântuitoare                                               | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                                       | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                     | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                     | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                           | {'întors', 'Întors'} | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 27 - Pe drumul ales                                                           | {'întors', 'Întors'} | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                                      | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 3 - Marea cernere                                                             | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                            | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 7 - A doua Judecată                                                           | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Ei s-au simţit mustraţi...                                                         | {'întors'}           | Traian Dorz     | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Haidem să ne întoarcem                                                             | {'întors'}           | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                      | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Mai sunt puţin cu voi                                                              | {'întors'}           | Traian Dorz     | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
+| Praznicul Rusaliilor 1938                                                          | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | poezie  |
+| Praznicul Rusaliilor 1938                                                          | {'întors'}           | Traian Dorz     | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Împlinirea hotărârilor lui Dumnezeu                                                | {'întors'}           | Traian Dorz     | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
+| Înfricarea de cutremure                                                            | {'întors'}           | Traian Dorz     | Alergarea Stăruitoare         | Cugetări Nemuritoare         | articol |
+| Învăţătorule... Te întorci iarăşi?                                                 | {'întors'}           | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
+| A intra în Oaste înseamnă a ieşi din lume                                          | {'întors'}           | Pr. Iosif Trifa | Spre Canaan                   | Spre Canaan                  | articol |
+| Adânca usturime a căinţei mele                                                     | {'întors'}           | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Aşteptarea şi sosirea                                                              | {'întors'}           | Traian Dorz     | Săgeţile biruitoare           | Cugetări Nemuritoare         | articol |
+| Binefacerea şi rugăciunea                                                          | {'întors'}           | Traian Dorz     | Săgeţile biruitoare           | Cugetări Nemuritoare         | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                              | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 11 - Semnele Oastei Domnului                                                  | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 15 - Al doilea foc                                                            | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 16 - Există un echilibru                                                      | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 16 - O plecare îndurerată                                                     | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                         | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 18 - La 25 de ani                                                             | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 18 - Un vânt rău                                                              | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                                  | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                 | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 22 - Al doilea 2-4-2                                                          | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 25 - Istorie şi suferinţă                                                     | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 27 - Întristarea cea binecuvântată                                            | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 3 - Cumplitul şi neiertatul păcat                                             | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                                          | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 31 - Şi acum încheierea                                                       | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                            | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 5 - Binecuvântata muncă grea                                                  | {'întors'}           | Traian Dorz     | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 8 - Al şaptelea foc                                                           | {'Întors', 'întors'} | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                           | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 9 - Înţelepciunea şi puterea                                                  | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cea mai mare dovadă                                                                | {'întors'}           | Traian Dorz     | Mărturisirea Strălucită       | Cugetări Nemuritoare         | articol |
+| Duhul Adevărului şi celelalte duhuri                                               | {'întors'}           | Traian Dorz     | Lupta cea Bună                | Cugetări Nemuritoare         | articol |
+| Grabă şi zăbavă                                                                    | {'întors'}           | Traian Dorz     | Avuţia Sfântului Moştenitor   | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 17-a după Rusalii                                      | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain) | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 25-a după Rusalii - (Pilda Samariteanului Milostiv)    | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                     | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                      | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 5-a după Rusalii - (Vindecarea celor doi îndrăciţi)    | {'întors'}           | Traian Dorz     | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Moştenire şi moştenitori                                                           | {'întors'}           | Traian Dorz     | Porţile Veşniciei             | Cugetări Nemuritoare         | articol |
+| Neprihănirea şi vinovăţia                                                          | {'întors'}           | Traian Dorz     | Calea Bunului Urmaş           | Cugetări Nemuritoare         | articol |
+| Rugăciunea şi mulţumirea                                                           | {'întors'}           | Traian Dorz     | Întâi să fim                  | Cugetări Nemuritoare         | articol |
+| Ucenicul pe care îl iubea Isus                                                     | {'întors'}           | Traian Dorz     | Hristos - Slava noastră       | Meditații la Ev. după Ioan   | articol |
+| În faţa Porţii Îndurării                                                           | {'întors'}           | Traian Dorz     | Prietenul Tinereţii mele      | Cugetări Nemuritoare         | articol |
+| Şi l-a adus la Isus                                                                | {'întors'}           | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Au rămas la Isus                                                               | {'întors'}           | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Când au văzut-o sculându-se                                                    | {'întors'}           | Traian Dorz     | Hristos - Învierea noastră    | Meditații la Ev. după Ioan   | articol |
+| ... Era ceasul al zecelea                                                          | {'întors'}           | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| ... Ucenicii Lui au crezut în El...                                                | {'întors'}           | Traian Dorz     | Hristos - Sfinţitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| ... ea a crezut că este grădinarul...                                              | {'întors'}           | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| 2 Regi 5, 9                                                                        | {'întors'}           | Traian Dorz     | Cântări Nemuritoare vol. 11   | Cântări Nemuritoare          | poezie  |
+| A face voia lui Dumnezeu                                                           | {'întors'}           | Traian Dorz     | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
+| Adevăr şi imitaţie                                                                 | {'întors'}           | Traian Dorz     | Săgeţile biruitoare           | Cugetări Nemuritoare         | articol |
+| Adevărata Lumină                                                                   | {'întors'}           | Traian Dorz     | Hristos - Dumnezeul nostru    | Meditații la Ev. după Ioan   | articol |
+| Aici este mirarea                                                                  | {'întors'}           | Traian Dorz     | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Apropierea lui Dumnezeu                                                            | {'întors'}           | Traian Dorz     | Porţile Veşniciei             | Cugetări Nemuritoare         | articol |
+| Astfel este Pâinea... nu ca mana                                                   | {'întors'}           | Traian Dorz     | Hristos - Pâinea noastră      | Meditații la Ev. după Ioan   | articol |
+| Atunci a părăsit Iudeea...                                                         | {'întors'}           | Traian Dorz     | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Au ieşit şi au plecat                                                              | {'întors'}           | Traian Dorz     | Hristos - Mântuitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Biblia şi adevărul ei                                                              | {'întors'}           | Traian Dorz     | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| Binefacerea şi nerecunoştinţa                                                      | {'întors'}           | Traian Dorz     | Crucea Mântuitoare            | Cugetări Nemuritoare         | articol |
+| Ca nişte tunete                                                                    | {'întors'}           | Traian Dorz     | Hristos - Învăţătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Ca nişte tunete                                                                    | {'întors'}           | Traian Dorz     | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Cap. 1 - Înfricoşata lepădare                                                      | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                                             | {'întors'}           | Traian Dorz     | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Ecles                                                                    | {'întors'}           | Traian Dorz     | Cântări Nemuritoare vol. 2    | Cântări Nemuritoare          | poezie  |
++------------------------------------------------------------------------------------+----------------------+-----------------+-------------------------------+------------------------------+---------+
+Searching Intors using https://api.comori-od.ro...
+Got 258 hits:
+Score: 18.875
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: S-a întors... şi a văzut pe Isus
+Type: articol
+Author: Traian Dorz
+Highlight: mea fiinţă, căci Mântuitorul tău este <em>întors</em> spre tine şi tu <em>întors</em> spre El. De la El ai venit în lume pentru
+Highlight: După ce a zis aceste vorbe, s-a <em>întors</em>, şi a văzut pe Isus stând
+Highlight:  dar dintr-o dată s-a <em>întors</em> şi a văzut pe cineva înapoia ei.  Cum
+Highlight: Cum s-a <em>întors</em> ea dintr-o dată să se uite
+Highlight: deodată atunci că vine cineva din spate - şi s-a <em>întors</em> numaidecât să vadă pe cine au văzut îngerii din
+Highlight: Sau poate că Maria s-a <em>întors</em> numai la un îndemn lăuntric pe care îl presimte
+Highlight: S-a <em>întors</em>... şi a văzut pe Isus
+
 Score: 18.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pâinea noastră
@@ -116,6 +130,17 @@ Highlight: O, cât de mulţi s-au <em>întors</em> înapoi şi din aceia care au
 Highlight: cuvioasa lor comoditate. Şi n-au putut suferi ci s-au <em>întors</em> îndată înapoi, spre a nu-şi atrage cumva neiertătoarea
 Highlight:  i-a biruit. Şi i-a <em>întors</em> curând înapoi spre
 Highlight: Mulţi s-au <em>întors</em> înapoi...
+
+Score: 17.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: S-au întors acasă
+Type: articol
+Author: Traian Dorz
+Highlight: Apoi, ucenicii s-au <em>întors</em> acasă.
+Highlight: O, în ce stare ne-am <em>întors</em> şi noi odată de la mormântul unde ne-am dus pe
+Highlight: Dar ei s-au <em>întors</em> acasă fără Isus şi fără să fi făcut totul spre
+Highlight: S-au <em>întors</em> acasă
 
 Score: 17.0
 Volume: Meditații la Ev. după Ioan
@@ -145,7 +170,7 @@ Author: Traian Dorz
 Highlight: Isus S-a <em>întors</em> deci în Cana din Galileia, unde prefăcuse apa în vin.
 Highlight: Isus S-a <em>întors</em> în Cana...
 
-Score: 7.888889
+Score: 7.875
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
@@ -221,18 +246,6 @@ Highlight: <em>Întors</em> de la Davos bolnav, am plecat iarăşi în
 Highlight: <em>Întors</em> de la cimitir
 Highlight: Dar - printr-o adevărată minune - Domnul m-a <em>întors</em> din calea ce ducea la odihna veşnică, şi m-a trimis
 
-Score: 7.2333336
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: Acum vino dumneata dedesubt - i-am zis eu. M-am <em>întors</em> eu spre el dar nu mă mai puteam propti pe palme
-Highlight: Spre seară m-am <em>întors</em> din nou. Santinela nu mă opri nici la intrare.
-Highlight: În ziua despre care spun, când ne-am <em>întors</em> sus, cei din primele rânduri văzând lăzile de gunoi
-Highlight: A bătut, a căutat, a <em>întors</em> totul până le-a găsit. Patru copite de bou, cu
-Highlight: banditule - zise el pornind, cu ochii încruntaţi <em>întorşi</em> spre copil.  Nu
-
 Score: 7.2000003
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Izvorul nostru
@@ -254,6 +267,17 @@ Highlight: timpul din urmă avea doar o greutate de 32 de kg. <em>Întors</em> l
 Highlight: se lăsase peste ostăşia Domnului, păr. Vasile a <em>întors</em> din nou privirile luptătorilor spre Căpetenia şi
 Highlight: (trădase cauza Domnului) şi tot cu această cântare s-a <em>întors</em> acasă.
 Highlight:  Iar când s-a schimbat vântul interesului şi-a <em>întors</em> şi acesta cojocul convingerilor.
+
+Score: 7.2000003
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: Acum vino dumneata dedesubt - i-am zis eu. M-am <em>întors</em> eu spre el dar nu mă mai puteam propti pe palme
+Highlight: Spre seară m-am <em>întors</em> din nou. Santinela nu mă opri nici la intrare.
+Highlight: În ziua despre care spun, când ne-am <em>întors</em> sus, cei din primele rânduri văzând lăzile de gunoi
+Highlight: A bătut, a căutat, a <em>întors</em> totul până le-a găsit. Patru copite de bou, cu
 
 Score: 7.2000003
 Volume: Istoria unei Jertfe
@@ -287,6 +311,16 @@ Highlight: dogoritoare sau pe viscole cumplite - cei 12 km. dus şi <em>întors<
 Highlight: i-am făcut cunoscute toate cele petrecute... Apoi <em>întors</em> acasă, am luat legătură cu toţi fraţii mai de seamă
 Highlight: M-am <em>întors</em> cu sufletul şi mai amărât ca oricând. Pentru prima
 Highlight: <em>Întors</em> la Patriarhie am încercat din nou la uşa părintelui
+
+Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Bunătatea Tatălui Ceresc
+Type: articol
+Author: Traian Dorz
+Highlight: Până ce s-a <em>întors</em>...
+Highlight: 4 - Şi când fiul în sfârşit, s-a <em>întors</em>... cine l-a văzut întâi?
+Highlight: - Şi s-au <em>întors</em> iarăşi la vărsătura şi la mocirla pe care o lăsaseră
 
 Score: 6.75
 Volume: Istoria unei Jertfe
@@ -468,6 +502,16 @@ Highlight: răul făcut lui Daniel - s-a <em>întors</em> spre slavă şi
 Highlight: răul făcut de iudei apostolilor, s-a <em>întors</em> spre binele Bisericii. De acest lucru cei răi nu
 
 Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Înfricarea de cutremure
+Type: articol
+Author: Traian Dorz
+Highlight: 9 - Un suflet care s-a <em>întors</em> cu adevărat la Hristos, care a fost curăţit de
+Highlight: adevărat că el s-a <em>întors</em> sincer la Dumnezeu, - sau nu.
+Highlight: 10 - Un om care spune că s-a <em>întors</em> la Dumnezeu, dar
+
+Score: 6.75
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învierea noastră
 Title: Învăţătorule... Te întorci iarăşi?
@@ -493,6 +537,23 @@ Type: articol
 Author: Traian Dorz
 Highlight: soarele şi-a <em>întors</em> faţa dinspre mine să nu-mi văd dispreţul cu care mă priveşti.
 Highlight: 3 - M-am <em>întors</em> spre cerul
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Aşteptarea şi sosirea
+Type: articol
+Author: Traian Dorz
+Highlight: întoarcerii tale, - şi tu nu l-ai cunoscut, nu te-ai <em>întors</em>!
+Highlight: înţeles, nu le-ai folosit, nu le-ai primit, nu te-ai <em>întors</em>!
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Binefacerea şi rugăciunea
+Type: articol
+Author: Traian Dorz
+Highlight: 4 - M-am <em>întors</em> să văd glasul care îmi vorbea... şi când m-am <em>întors</em> am văzut şapte stele
 
 Score: 5.9999995
 Volume: Hristos - Marturia mea
@@ -683,6 +744,24 @@ Highlight: scos în cale lumina lui Isus Hristos care te-a <em>întors</em> din 
 
 Score: 5.9999995
 Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Cea mai mare dovadă
+Type: articol
+Author: Traian Dorz
+Highlight: A renunţat la libertatea adevărului, şi s-a <em>întors</em> la robia minciunii.
+Highlight: niciodată! Să ia seama la aceasta oricine încă nu s-a <em>întors</em> la Dumnezeu!
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Duhul Adevărului şi celelalte duhuri
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Nici unul dintre cei dezbinaţi nu s-au mai <em>întors</em> înapoi.
+Highlight: oare pe vreunul care să se fi căit şi să se fi <em>întors</em> din rătăcirea lui?
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Grabă şi zăbavă
 Type: articol
@@ -746,12 +825,39 @@ Highlight: căile noastre păcătoase şi ce bine este că Tu ne-ai <em>întors<
 
 Score: 5.9999995
 Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Moştenire şi moştenitori
+Type: articol
+Author: Traian Dorz
+Highlight: au fost aceia care privindu-vă cu speranţa, s-au <em>întors</em> înspăimântaţi din faţa săbiei învăpăiate care vă
+Highlight: 15 - Ori de câte ori omul s-a <em>întors</em> spre Dumnezeu, ca să se îndrepte după voia Lui
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Neprihănirea şi vinovăţia
 Type: articol
 Author: Traian Dorz
 Highlight: de pedeapsa ce-i aşteaptă, - totuşi ei nu s-au <em>întors</em> la Dumnezeu, spre a-şi mărturisi vina şi a-şi părăsi
 Highlight: Ajunseseră până în faţa Lui, dar s-au <em>întors</em> înapoi despărţindu-se de El.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Rugăciunea şi mulţumirea
+Type: articol
+Author: Traian Dorz
+Highlight: Când din cei zece leproşi vindecaţi, doar unul s-a <em>întors</em> să mulţumească, Mântuitorul Bun S-a întrebat cu
+Highlight: cu tristeţe: ...de ce numai străinul acesta s-a <em>întors</em> să mulţumească lui Dumnezeu? (
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Ucenicul pe care îl iubea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Petru s-a <em>întors</em>, şi a văzut venind după ei pe ucenicul pe care-l iubea Isus, acela care, la cină, se
+Highlight:  dacă o mai pot gusta. De toţi acei ce nu s-au <em>întors</em> plângând cu amar - dacă mai pot întoarce. De toţi
 
 Score: 5.9999995
 Volume: Cugetări Nemuritoare
@@ -804,12 +910,36 @@ Author: Traian Dorz
 Highlight: - Atunci de ce n-ai crezut şi de ce nu te-ai <em>întors</em> până astăzi la Domnul?
 
 Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: ... ea a crezut că este grădinarul...
+Type: articol
+Author: Traian Dorz
+Highlight: Acum când m-am <em>întors</em> cu toată faţa spre Tine o, cât de fericit Te recunosc
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: 2 Regi 5, 9
+Type: poezie
+Author: Traian Dorz
+Highlight: s-a <em>întors</em> asupra lui
+
+Score: 4.5
 Volume: Cugetări Nemuritoare
 Book: Lumina Iubitului Fiu
 Title: A face voia lui Dumnezeu
 Type: articol
 Author: Traian Dorz
 Highlight: nouă, şi învierea conştiinţelor în cei care s-au <em>întors</em> la Dumnezeu.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Adevăr şi imitaţie
+Type: articol
+Author: Traian Dorz
+Highlight: este cel dintâi şi cel din urmă semn că un om s-a <em>întors</em> la Dumnezeu
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -828,6 +958,14 @@ Author: Traian Dorz
 Highlight: ci şi cei mai cu neputinţă de <em>întors</em> dintre toţi (
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Apropierea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: noastră poate veni numai în ziua în care nu ne-am <em>întors</em> niciodată ochii înspre Domnul nostru.
+
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Pâinea noastră
 Title: Astfel este Pâinea... nu ca mana
@@ -842,6 +980,30 @@ Title: Atunci a părăsit Iudeea...
 Type: articol
 Author: Traian Dorz
 Highlight: Atunci a părăsit Iudeea, şi S-a <em>întors</em> în Galileia.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Au ieşit şi au plecat
+Type: articol
+Author: Traian Dorz
+Highlight: Mărire Ţie care Te-ai <em>întors</em> la noi arătându-ne că Tu ai biruit-o. Şi acum ne
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Biblia şi adevărul ei
+Type: articol
+Author: Traian Dorz
+Highlight: 3 - O, în ce stare ne-am <em>întors</em> şi noi vreodată, de la mormântul unde ne-am dus
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Binefacerea şi nerecunoştinţa
+Type: articol
+Author: Traian Dorz
+Highlight: 15 - Mortul Lazăr la chemarea Domnului Isus s-a <em>întors</em> din moarte şi a ieşit din mormânt.
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -882,148 +1044,4 @@ Title: Cap. 12 - Ecles
 Type: poezie
 Author: Traian Dorz
 Highlight: 7-Cât nu ţi s-a <em>întors</em> pământul în locul unde-a fost luat
-
-Score: 4.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 12 - Fermenţii sunt născuţi să moară
-Type: articol
-Author: Traian Dorz
-Highlight:  le-am trântit bicicleta la picioare apoi m-am <em>întors</em> zdrobit pe iarba şanţului şoselei, fără să mă mai
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 12 - Toate lucrează spre bine
-Type: articol
-Author: Traian Dorz
-Highlight: alte două săptămâni de tratament la Covasna. M-am <em>întors</em> de acolo ceva mai refăcut. Era şi nevoie întrucât
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: Seara, ne-am <em>întors</em> din nou în acelaşi fel, încolonaţi cu toţii cântând
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Întors</em> acasă, am găsit într-o revistă un anunţ că patriarhul
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Întors</em> acasă, am luat şi multe urecheli. Am avut destule
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 13 - Pe urmele profetului
-Type: articol
-Author: Traian Dorz
-Highlight: compactorie şi până la gară, cale de 2-3 ceasuri dus şi <em>întors</em>, ca foile să plece cu ambulanţele de dimineaţa
-
-Score: 4.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 14 - Atacul împotriva steagului
-Type: articol
-Author: Traian Dorz
-Highlight: îmi terminam la Oradea stagiul militar, eu m-am <em>întors</em> înapoi îngrijorat şi nerăbdător lângă părintele
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: înălţat goale către Tine ca să primească, apoi s-au <em>întors</em> pline spre semenii noştri ca să dea.
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-Highlight: un răgaz sufletesc, o descărcare a inimii. M-am <em>întors</em> în dosul unui stâlp şi căzând în genunchi am început
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 16 - Leacul dureroasei sfâşieri
-Type: articol
-Author: Traian Dorz
-Highlight: s-au mai refăcut? Care din cei plecaţi s-au mai <em>întors</em>? Care din răni s-au mai vindecat? - Nici una! Ci
-
-Score: 4.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
-Type: articol
-Author: Traian Dorz
-Highlight: făcând zilnic naveta pe jos cei cinci km dus şi <em>întors</em> de acasă până la serviciu. N-am făcut însă nici
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 17 - Ziua a doua
-Type: articol
-Author: Traian Dorz
-Highlight: durerea cea mai cumplită ne-a lovit inima când am <em>întors</em> pe partea cealaltă acel articol în care se scria
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: aminte de tot ce v-am spus Eu. Domnul Isus Şi-a <em>întors</em> privirile atunci spre ucenici, şi văzându-i profund
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: fost şi unii care mai târziu s-au trezit şi s-au <em>întors</em> plângând amar),
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
-Type: articol
-Author: Traian Dorz
-Highlight: să mai aud altele - predicile lui prin care s-au <em>întors</em> mii şi mii de suflete la Dumnezeu. Niciodată nu
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Întors</em> acasă am alergat din nou cu cele două-trei suflete
-
-Score: 4.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-Highlight: fraţilor şi chiar cu mijloacele de transport dus şi <em>întors</em>, era altă cauză.
-
-Score: 4.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
-Type: articol
-Author: Traian Dorz
-Highlight: Când m-am <em>întors</em> înapoi, am mai zăcut o vreme şi după aceea n-am
 

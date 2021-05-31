@@ -1,119 +1,62 @@
-+---------------------------------------------------------------+-----------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                         | Occurrences                       | Author      | Tip                              | Carte                        | Volum   |
-+---------------------------------------------------------------+-----------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Stând singur câteodată...                                     | {'alinare', 'alin'}               | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Nu-i aici a noastră bucurie                                   | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Azi când anul vechi Isuse                                     | {'alinare', 'alină'}              | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| La Sânul Tău cel plin                                         | {'alinare', 'alinul'}             | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Mamă, inima-nfricată                                          | {'alinare', 'alin'}               | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Nu-s numai slove                                              | {'alinare', 'alin'}               | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Sărută mamă                                                   | {'alinare', 'alină'}              | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Adevăratul trimes                                             | {'alinare'}                       | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| De la Nunta cea din Cana                                      | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| De la nunta cea din Cana                                      | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Eu nu ştiu Doamne                                             | {'alinare'}                       | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | poezie  |
-| Eu nu ştiu Doamne                                             | {'alinare'}                       | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | poezie  |
-| Eu nu ştiu Doamne                                             | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Legea... şi harul                                             | {'alinare'}                       | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| M-ai izbăvit                                                  | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Mamă, uite mamă                                               | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Pe sânul lui Isus                                             | {'alinare'}                       | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Prin lupte                                                    | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Suflet chinuit de patimi                                      | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Toţi cei apăsaţi Isuse                                        | {'alinare'}                       | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Toţi cei apăsaţi Isuse                                        | {'alinare'}                       | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Isuse-adu-Ţi aminte                                           | {'alină'}                         | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cap. 21 - Şi mărturia trebuie plătită                         | {'aline', 'aliniate', 'aliniaţi'} | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 5 - În noaptea aceea...                                  | {'aliniate', 'aliniaţi', 'alină'} | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Când simt că s-apropie                                        | {'alinarea', 'alin'}              | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Aceasta-i Golgota                                             | {'alinat', 'alină'}               | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Am dorit să-Ţi fiu                                            | {'alin', 'alină'}                 | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Cap. 17 - Ziua a doua                                         | {'alinului', 'alină'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Începutul chemării                                   | {'alina', 'alinarea'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                      | {'alinător', 'alinat'}            | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                 | {'aliniat'}                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Ce vuiete-au fost!                                            | {'alinului', 'alină'}             | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Ce vuiete-au fost!                                            | {'alinului', 'alină'}             | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Când ai iubirea lui Hristos                                   | {'alini'}                         | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Când mi-este greu                                             | {'alin', 'aline'}                 | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| De când la Cină                                               | {'alinat'}                        | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| De-ai lua pe umăr crucea                                      | {'alinarea'}                      | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Despre suferinţă                                              | {'alini'}                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Doamne, sufletul...                                           | {'alină', 'alin'}                 | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | poezie  |
-| Doamne, sufletul...                                           | {'alină', 'alin'}                 | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | poezie  |
-| Doamne, sufletul...                                           | {'alină', 'alin'}                 | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Doar lângă Tine                                               | {'alinul', 'alină'}               | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Isuse-adânc Ocean                                             | {'alini', 'alin'}                 | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului) | {'alinul', 'alina'}               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Lacrimile                                                     | {'aline', 'alină'}                | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Mi-aşa de dor de Tine                                         | {'alină', 'alini'}                | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Numai lângă Tine                                              | {'alini', 'aline'}                | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | poezie  |
-| O, Duhul Mângâierii                                           | {'alinarea', 'alină'}             | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| O, Duhul Mângâierii                                           | {'alinarea', 'alină'}             | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| O, treci adânc...                                             | {'alină', 'alinătoare'}           | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
-| O, treci adânc...                                             | {'alină', 'alinătoare'}           | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Poporul Meu...                                                | {'alinat', 'aline'}               | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Spre Tine strig Doamne                                        | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Tu poţi doar                                                  | {'alini'}                         | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Tu poţi doar                                                  | {'alini'}                         | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Tu ştii cât vreau                                             | {'alinul'}                        | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Zi de toamnă dureroasă...                                     | {'alini', 'aline'}                | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| În ceasul când ispita-i                                       | {'alini'}                         | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Îndurerat Izvor...                                            | {'aline', 'alin'}                 | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| A fost odată-un Copilaş                                       | {'alina'}                         | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Ai milă de mine                                               | {'Alinul'}                        | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | poezie  |
-| Ai milă de mine                                               | {'Alinul'}                        | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Al Cerului Cântec                                             | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Aprinsa Domnului iubire                                       | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Atuncea când am fost                                          | {'aline'}                         | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Aşa Isuse-aş vrea aşa - 1                                     | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Aşa Isuse-aş vrea aşa - 2                                     | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Aşteptare                                                     | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Binecuvântat e-acela                                          | {'aline'}                         | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | poezie  |
-| Binecuvântat e-acela                                          | {'aline'}                         | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Ca o gustoasă pâine                                           | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Cap. 1 - Cel mai frumos Isus                                  | {'aliniaţi'}                      | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                      | {'aline'}                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                              | {'aliniatul'}                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                            | {'aliniat'}                       | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                           | {'aliniate'}                      | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                  | {'aliniat'}                       | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Fiecare existenţă este o taină                       | {'aline'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 22 - Peregrinările soliei                                | {'aliniatul'}                     | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                 | {'aliniată'}                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 32 - Şi alte lupte                                       | {'alinat'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                       | {'aline'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                       | {'alinătoare'}                    | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 8 - A treia Judecată                                     | {'aliniatului'}                   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 8 - Şi laţul s-a rupt                                    | {'alinat'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Care-i alt dumnezeu mare?                                     | {'alini'}                         | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Care-i alt dumnezeu mare?                                     | {'alini'}                         | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Care-i alt dumnezeu mare?                                     | {'alini'}                         | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Cartea                                                        | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Ce bine-i la limanul...                                       | {'alinului'}                      | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Ce mir ceresc                                                 | {'alină'}                         | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Ce preţ înalt                                                 | {'alina'}                         | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Ce rost mai ai tu?                                            | {'alini'}                         | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
-| Ce rost mai ai tu?                                            | {'alini'}                         | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Ce-i puterea?                                                 | {'alină'}                         | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Cine din voi Mă poate dovedi - că am păcat?                   | {'Aliniaţi'}                      | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cu Taina-nviorării                                            | {'alin'}                          | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Cu ascultarea cea mai dulce                                   | {'alinată'}                       | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Cu mine-ai fost Prieten Drag                                  | {'alini'}                         | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Cu nădejde mai departe                                        | {'aline'}                         | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-+---------------------------------------------------------------+-----------------------------------+-------------+----------------------------------+------------------------------+---------+
-Searching Alinare using http://localhost:9000...
-Got 263 hits:
-Score: 12.799999
++-------------------------------------------------------------+--------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                       | Occurrences  | Author      | Tip                              | Carte                        | Volum   |
++-------------------------------------------------------------+--------------+-------------+----------------------------------+------------------------------+---------+
+| Mamă, uite mamă                                             | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Nu-i aici a noastră bucurie                                 | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Stând singur câteodată...                                   | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Adevăratul trimes                                           | {'alinare'}  | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
+| Azi când anul vechi Isuse                                   | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Bunătatea şi păcatul                                        | {'alinare'}  | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Cineva te strigă                                            | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Dacă ştii ce spune Domnul                                   | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| De la Nunta cea din Cana                                    | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| De la nunta cea din Cana                                    | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Eu nu ştiu Doamne                                           | {'alinare'}  | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | poezie  |
+| Eu nu ştiu Doamne                                           | {'alinare'}  | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | poezie  |
+| Eu nu ştiu Doamne                                           | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| La Sânul Tău cel plin                                       | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Legea... şi harul                                           | {'alinare'}  | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| M-ai izbăvit                                                | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
+| Mamă, inima-nfricată                                        | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Mamă, uite mamă                                             | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Nu-s numai slove                                            | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Pe sânul lui Isus                                           | {'alinare'}  | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Prin lupte                                                  | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Suflet chinuit de patimi                                    | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Sărută mamă                                                 | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Toţi cei apăsaţi Isuse                                      | {'alinare'}  | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Toţi cei apăsaţi Isuse                                      | {'alinare'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Când simt că s-apropie                                      | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| De-ai lua pe umăr crucea                                    | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Cap. 3 - Începutul chemării                                 | {'alinarea'} | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cântările Învierii                                          | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor) | {'alinarea'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| O, Duhul Mângâierii                                         | {'alinarea'} | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| O, Duhul Mângâierii                                         | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Omul cel mai fericit                                        | {'alinarea'} | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
+| Plecăciune ţie                                              | {'alinarea'} | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| Plecăciune ţie                                              | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
+| Plecăciune ţie                                              | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Preţul şi timpul                                            | {'alinarea'} | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Păcatul şi moartea                                          | {'alinarea'} | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Părinte-Atotputernic...                                     | {'alinări'}  | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Părinte-Atotputernic...                                     | {'alinări'}  | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Simon Petru stătea acolo...                                 | {'alinarea'} | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Slobozenia şi robia lui Isus                                | {'alinarea'} | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Suferinţă - crin din care                                   | {'alinarea'} | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Veniseră să le mângâie                                      | {'alinarea'} | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Întristarea şi mângâierea                                   | {'alinarea'} | Traian Dorz | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
++-------------------------------------------------------------+--------------+-------------+----------------------------------+------------------------------+---------+
+Searching Alinare using https://api.comori-od.ro...
+Got 45 hits:
+Score: 12.666666
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Stând singur câteodată...
+Book: Cântări Nemuritoare vol. 11
+Title: Mamă, uite mamă
 Type: poezie
 Author: Traian Dorz
-Highlight: un loc de <em>alinare</em> să-mi aflu-n poala lui...
-Highlight: şi-atâta <em>alinare</em>, - atâtea mângâieri
-Highlight: să n-am pe nime-aproape, cu care să m-<em>alin</em>.  Când
-Highlight: că nici n-aş vrea pe lume la altul s-o <em>alin</em> şi-atâta
+Highlight: duce <em>alinare</em>,
+Highlight: duce <em>alinare</em>.
 
 Score: 12.666666
 Volume: Cântări Nemuritoare
@@ -124,50 +67,14 @@ Author: Traian Dorz
 Highlight: Nu-i aici a noastră <em>alinare</em>,
 Highlight: - nu-i aici a voastră <em>alinare</em>!
 
-Score: 9.666667
+Score: 12.666666
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Azi când anul vechi Isuse
+Book: Cântări Nemuritoare vol. 9
+Title: Stând singur câteodată...
 Type: poezie
 Author: Traian Dorz
-Highlight: tocmai ca să poţi pe urmă cu-a Ta dulce <em>alinare</em>
-Highlight: Fiecare suflet care doar cu Tine se <em>alină</em>
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: La Sânul Tău cel plin
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-atât de dulce <em>alinare</em>
-Highlight: O, Sân Dumnezeiesc, <em>alinul</em>
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Mamă, inima-nfricată
-Type: poezie
-Author: Traian Dorz
-Highlight: simt putere şi-<em>alinare</em>.
-Highlight: inimii <em>alin</em> cu-al
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Nu-s numai slove
-Type: poezie
-Author: Traian Dorz
-Highlight: avânt viteaz şi <em>alinare</em> blândă
-Highlight: curaj luptând şi-<em>alin</em> în ceasul greu
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Sărută mamă
-Type: poezie
-Author: Traian Dorz
-Highlight: sărutul tău aduce la toate <em>alinare</em>.
-Highlight: sărutul tău <em>alină</em> durerea dintr-o dată.  Sărută
+Highlight: un loc de <em>alinare</em> să-mi aflu-n poala lui...
+Highlight: şi-atâta <em>alinare</em>, - atâtea mângâieri
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -176,6 +83,38 @@ Title: Adevăratul trimes
 Type: articol
 Author: Traian Dorz
 Highlight: răbdare şi blândeţe pe semeni, găsind milă şi <em>alinare</em> pentru zbuciumul şi slăbiciunile lor.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Azi când anul vechi Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: tocmai ca să poţi pe urmă cu-a Ta dulce <em>alinare</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Bunătatea şi păcatul
+Type: articol
+Author: Traian Dorz
+Highlight: putea alerga noi Doamne şi unde am putea găsi noi <em>alinare</em>, nădejde şi putere decât la umbra aripilor Tale
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Cineva te strigă
+Type: poezie
+Author: Traian Dorz
+Highlight: să duc <em>alinare</em>
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Dacă ştii ce spune Domnul
+Type: poezie
+Author: Traian Dorz
+Highlight: ca să simtă <em>alinare</em>
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -218,6 +157,14 @@ Author: Traian Dorz
 Highlight: dar ştiu că Tu vei fi-<em>alinare</em>
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: La Sânul Tău cel plin
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-atât de dulce <em>alinare</em>
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: Legea... şi harul
@@ -236,10 +183,26 @@ Highlight: nădejdi făr-<em>alinare</em> tot sufletul mi-l sapă?
 Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
+Title: Mamă, inima-nfricată
+Type: poezie
+Author: Traian Dorz
+Highlight: simt putere şi-<em>alinare</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
 Title: Mamă, uite mamă
 Type: poezie
 Author: Traian Dorz
 Highlight: duce-o <em>alinare</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Nu-s numai slove
+Type: poezie
+Author: Traian Dorz
+Highlight: avânt viteaz şi <em>alinare</em> blândă
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -266,6 +229,14 @@ Author: Traian Dorz
 Highlight: peste-adânca ta durere, lasă-adânca-I <em>alinare</em>,
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Sărută mamă
+Type: poezie
+Author: Traian Dorz
+Highlight: sărutul tău aduce la toate <em>alinare</em>.
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: Toţi cei apăsaţi Isuse
@@ -281,145 +252,14 @@ Type: poezie
 Author: Traian Dorz
 Highlight: şi aşteaptă <em>alinare</em>
 
-Score: 0.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Isuse-adu-Ţi aminte
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alină</em>-ne fiinţa sleită de putere
-Highlight: <em>alină</em>-ne răbdarea sătulă de-ntristare
-Highlight: <em>alină</em>-ne vegherea
-Highlight: <em>alină</em>-ne chemarea sfinţită de suspine
-Highlight: <em>alină</em>-ni-le toate Isuse, lângă Tine.
-
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: fratelui la care locuiam, cu nişte alifii care să-mi <em>aline</em> şi să-mi vindece ranele şi durerile. Mi-au legat
-Highlight: baracă era spălătoria. Apoi dormitorul în care erau <em>aliniate</em> pe patru rânduri câte 25 de paturi de fier cu
-Highlight: pentru număr în faţa barăcilor. Trebuia să stăm <em>aliniaţi</em> în rânduri de câte cinci, până ce se făcea numărul
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: albii pentru spălat. Apoi dormitorul în care erau <em>aliniate</em> pe patru rânduri câte 25 de paturi de fier cu
-Highlight: pentru număr în faţa barăcilor. Trebuia să stăm <em>aliniaţi</em> în rânduri de câte cinci, până se făcea numărul
-Highlight: Târziu, când se <em>alină</em> infernul gălăgiei
-
-Score: 0.75
+Score: 0.6666666
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Când simt că s-apropie
 Type: poezie
 Author: Traian Dorz
 Highlight: în rugăciune-mi caut <em>alinarea</em>
-Highlight: rugăciune-mi caut <em>alinarea</em>
-Highlight: <em>alin</em> şi scut şi har
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Aceasta-i Golgota
-Type: poezie
-Author: Traian Dorz
-Highlight: sub ea s-a <em>alinat</em>,
-Highlight: acolo îl <em>alină</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Am dorit să-Ţi fiu
-Type: poezie
-Author: Traian Dorz
-Highlight: un <em>alin</em> în mine,
-Highlight: nu se mai <em>alină</em>
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 17 - Ziua a doua
-Type: articol
-Author: Traian Dorz
-Highlight: mai moi ca untdelemnul <em>alinului</em> pe-o rană
-Highlight: pe care nici un zâmbet din lume nu le-<em>alină</em>...
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 3 - Începutul chemării
-Type: articol
-Author: Traian Dorz
-Highlight: puterea bunătăţii şi răbdării cu care asculta şi <em>alina</em> durerile felurite ale tuturor celor ce veneau la
-Highlight: şi cât de dăruită trebuie să-i fie viaţa lui în <em>alinarea</em> şi îmbărbătarea celor din jurul său!
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-Highlight: căruia trăieşte ca un adevărat părinte şi doctor <em>alinător</em> de dureri trupeşti şi sufleteşti.
-Highlight: binecuvântare. Că m-am lepădat de acela care mi-a <em>alinat</em> durerea. Şi pe care am dorit a-l vedea în persoană
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-Highlight: aici. Să pun punctul după care să nu mai iau un <em>aliniat</em> nou pentru alte întâmplări neprevăzute cu privire
-Highlight: N-aş vrea nici să mai deschid altă vorbă sau alt <em>aliniat</em> de nici un fel în privinţa lui. Mă rog lui Dumnezeu
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Ce vuiete-au fost!
-Type: poezie
-Author: Traian Dorz
-Highlight: mai moi ca untdelemnul <em>alinului</em> pe-o rană
-Highlight: pe care nici un zâmbet din lume nu le-<em>alină</em>.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Ce vuiete-au fost!
-Type: poezie
-Author: Traian Dorz
-Highlight: mai moi ca untdelemnul <em>alinului</em> pe-o rană
-Highlight: pe care nici un zâmbet din lume nu le-<em>alină</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Când ai iubirea lui Hristos
-Type: poezie
-Author: Traian Dorz
-Highlight: Ce nu poţi s-<em>alini</em> în lacrimi, ai s-<em>alini</em> cu-o vorbă bună
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Când mi-este greu
-Type: poezie
-Author: Traian Dorz
-Highlight: da Isuse <em>alin</em> Dumnezeiesc!...
-Highlight: şi cine să m-<em>aline</em> la sân m-ar
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: De când la Cină
-Type: poezie
-Author: Traian Dorz
-Highlight: la Sânul Tău s-au <em>alinat</em>!
-Highlight: s-au <em>alinat</em>,
+Highlight: în rugăciune-mi caut <em>alinarea</em>
 
 Score: 0.6666666
 Volume: Cântări Nemuritoare
@@ -429,529 +269,147 @@ Type: poezie
 Author: Traian Dorz
 Highlight: <em>alinarea</em>, <em>alinarea</em>
 
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre suferinţă
-Type: articol
-Author: Traian Dorz
-Highlight: 14 - Ce nu poţi s-<em>alini</em> cu lacrimi
-Highlight: poţi s-<em>alini</em> cu-o vorbă bună
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Doamne, sufletul...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi <em>alină</em>-i lui
-Highlight: şi <em>alin</em> adu-i
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Doamne, sufletul...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi <em>alină</em>-i lui
-Highlight: şi <em>alin</em> adu-i
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, sufletul...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi <em>alină</em>-i lui
-Highlight: şi <em>alin</em> adu-i
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Doar lângă Tine
-Type: poezie
-Author: Traian Dorz
-Highlight: doar lângă Tine-mi aflu-<em>alinul</em>
-Highlight: şi-<em>alină</em>-mi vântul cel cumplit,
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Isuse-adânc Ocean
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alini</em> adâncul lor nestins
-Highlight: În Tine-<em>alin</em> prin mii de valuri
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
-Type: articol
-Author: Traian Dorz
-Highlight: Te rugăm nu lăsa lumea aceasta bolnavă fără <em>alinul</em> şi vindecarea pe care le dă numai mila şi bunătatea
-Highlight: chinuiţi de urmările ascultării de el, spre a-i <em>alina</em>, vindeca şi învia.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Lacrimile
-Type: articol
-Author: Traian Dorz
-Highlight: nu-i balsam ca să-ţi <em>aline</em> rana tainică ce doare
-Highlight: se <em>alină</em> când o spală prima lacrimă curată.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Mi-aşa de dor de Tine
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alină</em> rana grea
-Highlight: şi-<em>alini</em> al meu suspin
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Numai lângă Tine
-Type: poezie
-Author: Traian Dorz
-Highlight: să mi le <em>alini</em>.
-Highlight: să se-<em>aline</em> ea.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: O, Duhul Mângâierii
-Type: poezie
-Author: Traian Dorz
-Highlight: aşterne <em>alinarea</em> iertării iubitor
-Highlight: O, Duhul Mângâierii <em>alină</em>-mi greul gând
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: O, Duhul Mângâierii
-Type: poezie
-Author: Traian Dorz
-Highlight: aşterne <em>alinarea</em> iertării iubitor
-Highlight: O, Duhul Mângâierii <em>alină</em>-mi greul gând
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: O, treci adânc...
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alină</em> multa-i frământare
-Highlight: spre Faţa Ta <em>alinătoare</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: O, treci adânc...
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alină</em> multa-i frământare
-Highlight: spre Faţa Ta <em>alinătoare</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Poporul Meu...
-Type: poezie
-Author: Traian Dorz
-Highlight: am <em>alinat</em> amarul la cel care suspină
-Highlight: Îmi daţi venin când setea aştept să Mi se-<em>aline</em>
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Spre Tine strig Doamne
-Type: poezie
-Author: Traian Dorz
-Highlight: în lacrimi jalea mi-o <em>alin</em>
-Highlight: <em>alin</em>...
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Tu poţi doar
-Type: poezie
-Author: Traian Dorz
-Highlight: s-<em>alini</em> a mea furtună grea
-Highlight: dar dacă n-o <em>alini</em> ajută-mi
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Tu poţi doar
-Type: poezie
-Author: Traian Dorz
-Highlight: s-<em>alini</em> a mea furtună grea
-Highlight: dar dacă n-o <em>alini</em> ajută-mi
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Tu ştii cât vreau
-Type: poezie
-Author: Traian Dorz
-Highlight: de-<em>alinul</em> nimănui
-Highlight: - de-<em>alinul</em> nimănui...
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Zi de toamnă dureroasă...
-Type: poezie
-Author: Traian Dorz
-Highlight: ca durerea ta din suflet s-o <em>alini</em> în Sfânta Casă.
-Highlight: lâng-un sân de mamă dulce, ca durerea să se-<em>aline</em>?
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: În ceasul când ispita-i
-Type: poezie
-Author: Traian Dorz
-Highlight: Ce nu poţi s-<em>alini</em> cu lacrimi
-Highlight: poţi s-<em>alini</em> c-o vorbă bună
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Îndurerat Izvor...
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-o să se-<em>aline</em>-ntregu-i plânset
-Highlight: nu pot să-mi mai găsesc <em>alin</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: A fost odată-un Copilaş
-Type: poezie
-Author: Traian Dorz
-Highlight: le <em>alina</em> tot plânsul.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Ai milă de mine
-Type: poezie
-Author: Traian Dorz
-Highlight: departe-I <em>Alinul</em>, iar inima-i pară,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Ai milă de mine
-Type: poezie
-Author: Traian Dorz
-Highlight: departe-I <em>Alinul</em>, iar inima-i pară,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Al Cerului Cântec
-Type: poezie
-Author: Traian Dorz
-Highlight: truditul meu gând să-l <em>alin</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Aprinsa Domnului iubire
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alin</em> pe răni şi mir pe glezne
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Atuncea când am fost
-Type: poezie
-Author: Traian Dorz
-Highlight: durerea să se-<em>aline</em>,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Aşa Isuse-aş vrea aşa - 1
-Type: poezie
-Author: Traian Dorz
-Highlight: curată ca un sfânt <em>alin</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Aşa Isuse-aş vrea aşa - 2
-Type: poezie
-Author: Traian Dorz
-Highlight: duioasă ca un sfânt <em>alin</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Aşteptare
-Type: poezie
-Author: Traian Dorz
-Highlight: nu-i <em>alin</em>, ci-i zbuciumare...
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Binecuvântat e-acela
-Type: poezie
-Author: Traian Dorz
-Highlight: Binecuvântat e-acela care ştie să <em>aline</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Binecuvântat e-acela
-Type: poezie
-Author: Traian Dorz
-Highlight: Binecuvântat e-acela care ştie să <em>aline</em>
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Ca o gustoasă pâine
-Type: poezie
-Author: Traian Dorz
-Highlight: cu care sufletu-mi <em>alin</em>.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: Şi tot aşa până n-am mai ştiut câţi stăm <em>aliniaţi</em> cu feţele la zid.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: şi revolverul îşi ciopârţesc fratele în loc să-i <em>aline</em> durerile sufleteşti şi trupeşti, - poporul trebuie
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: Cu privire la <em>aliniatul</em> a. din punctul 4 al memoriului precum am arătat
-
 Score: 0.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
+Title: Cap. 3 - Începutul chemării
 Type: articol
 Author: Traian Dorz
-Highlight: primiri sporeşte mereu - şi rândurile noului tineret <em>aliniat</em> pe urmele lui Hristos şi predat Domnului, devin
+Highlight: şi cât de dăruită trebuie să-i fie viaţa lui în <em>alinarea</em> şi îmbărbătarea celor din jurul său!
 
 Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Cântările Învierii
+Type: poezie
 Author: Traian Dorz
-Highlight: voia lui merge pe urma coloanei biruitoare şi <em>aliniate</em>.
+Highlight: Te-ai arătat la mare, <em>alinarea</em>
 
 Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 19 - Mereu morminte noi
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
 Type: articol
 Author: Traian Dorz
-Highlight: La masa din faţa sicriului s-au <em>aliniat</em> un şir de preoţi în odăjdii negre. În mijloc vicarul
+Highlight: lucrezi cu mâinile tale pentru Casa Sfântă, pentru <em>alinarea</em> suferinţei, pentru bucuria Duhului Sfânt - vă
 
 Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 2 - Fiecare existenţă este o taină
-Type: articol
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: O, Duhul Mângâierii
+Type: poezie
 Author: Traian Dorz
-Highlight: înţeleagă - atunci când tocmai mâna care trebuia să-l <em>aline</em>, îl alungă...
+Highlight: aşterne <em>alinarea</em> iertării iubitor
 
 Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 22 - Peregrinările soliei
-Type: articol
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: O, Duhul Mângâierii
+Type: poezie
 Author: Traian Dorz
-Highlight: care îl deschise la paragraful respectiv, citind <em>aliniatul</em> care scria precis despre...
+Highlight: aşterne <em>alinarea</em> iertării iubitor
 
 Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
+Volume: Cugetări Nemuritoare
+Book: Mărgăritarul Ascuns
+Title: Omul cel mai fericit
 Type: articol
 Author: Traian Dorz
-Highlight: de el Oştirea Domnului strâns unită şi frumos <em>aliniată</em> să înainteze nenumărată şi biruitoare spre Canaanul
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 32 - Şi alte lupte
-Type: articol
-Author: Traian Dorz
-Highlight: fizică şi sufletească a semenilor noştri chinuiţi am <em>alinat</em>.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-Highlight: cu nişte unsori care să-mi vindece şi să-mi mai <em>aline</em> durerile... Mi-au legat mâinile cu făşii de pânză
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-Highlight: punând <em>alinătoare</em> perne
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: judecată a procesului. Aceasta rezultă din textul <em>aliniatului</em> următor care prevede: “ în caz de respingere
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 8 - Şi laţul s-a rupt
-Type: articol
-Author: Traian Dorz
-Highlight: suferinţă fizică şi sufletească a semenilor noştri am <em>alinat</em>-o!
+Highlight: nici unde îmi voi apleca fruntea pentru <em>alinarea</em> mea
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
-Title: Care-i alt dumnezeu mare?
+Title: Plecăciune ţie
 Type: poezie
 Author: Traian Dorz
-Highlight: Tu <em>alini</em> zdrobite inimi când, în altfel, văd că iau
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Care-i alt dumnezeu mare?
-Type: poezie
-Author: Traian Dorz
-Highlight: Tu <em>alini</em> zdrobite inimi când, în altfel, văd că iau
+Highlight: pentru <em>alinarea</em> ranei tuturor.
 
 Score: 0.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
-Title: Care-i alt dumnezeu mare?
+Title: Plecăciune ţie
 Type: poezie
 Author: Traian Dorz
-Highlight: Tu <em>alini</em> zdrobite inimi când, în altfel, văd că iau
+Highlight: pentru <em>alinarea</em> ranei tuturor.
 
 Score: 0.5
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Cartea
-Type: articol
-Author: Traian Dorz
-Highlight: cartea este-un bun <em>alin</em>.
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Ce bine-i la limanul...
+Book: Cântări Nemuritoare vol. 11
+Title: Plecăciune ţie
 Type: poezie
 Author: Traian Dorz
-Highlight: fă-mi umbră cu aripa <em>alinului</em> Tău blând
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ce mir ceresc
-Type: poezie
-Author: Traian Dorz
-Highlight: ne-<em>alină</em> setea şi ne-o-ntrece
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ce preţ înalt
-Type: poezie
-Author: Traian Dorz
-Highlight: şi le-<em>alina</em> orice dureri
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Ce rost mai ai tu?
-Type: poezie
-Author: Traian Dorz
-Highlight: dar n-<em>alini</em> setea nimănui,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Ce rost mai ai tu?
-Type: poezie
-Author: Traian Dorz
-Highlight: dar n-<em>alini</em> setea nimănui,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Ce-i puterea?
-Type: poezie
-Author: Traian Dorz
-Highlight: marea linişte ce-<em>alină</em>
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Cine din voi Mă poate dovedi - că am păcat?
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Aliniaţi</em>-vă, oştire nenumărată cu toţii şi grăiţi încă
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cu Taina-nviorării
-Type: poezie
-Author: Traian Dorz
-Highlight: în inima-ntristată, o Doamne-<em>alin</em> să laşi.
+Highlight: pentru <em>alinarea</em> câtor răni ne dor.
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Cu ascultarea cea mai dulce
+Book: Poruncile Iubirii
+Title: Preţul şi timpul
 Type: articol
 Author: Traian Dorz
-Highlight: - Suferinţa trebuie <em>alinată</em> în fiecare zi şi foamea trebuie potolită în orice
+Highlight: amare ale apei lacrimilor - în ele este totuşi şi <em>alinarea</em>.
 
 Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Cu mine-ai fost Prieten Drag
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Păcatul şi moartea
+Type: articol
+Author: Traian Dorz
+Highlight: lângă o durere fără ca să ia parte într-un fel la <em>alinarea</em> ei.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Părinte-Atotputernic...
 Type: poezie
 Author: Traian Dorz
-Highlight: să mă ajuţi, ori să m-<em>alini</em>
+Highlight: ei, altor inimi caută să ducă <em>alinări</em>,
 
 Score: 0.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
-Title: Cu nădejde mai departe
+Title: Părinte-Atotputernic...
 Type: poezie
 Author: Traian Dorz
-Highlight: ce duios în suferinţe ştie Domnul să <em>aline</em>
+Highlight: ei, altor inimi caută să ducă <em>alinări</em>,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Simon Petru stătea acolo...
+Type: articol
+Author: Traian Dorz
+Highlight: urma ei nu se va şterge deplin decât când va veni <em>alinarea</em> Împărăţiei lui Dumnezeu.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Slobozenia şi robia lui Isus
+Type: articol
+Author: Traian Dorz
+Highlight: urma ei nu se va şterge deplin decât când va veni <em>alinarea</em> Împărăţiei lui Dumnezeu!
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Suferinţă - crin din care
+Type: poezie
+Author: Traian Dorz
+Highlight: şi-a încrederii odihnă şi-<em>alinarea</em> cea plăcută
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Veniseră să le mângâie
+Type: articol
+Author: Traian Dorz
+Highlight: lângă o durere fără să ia parte într-un fel la <em>alinarea</em> ei.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Întristarea şi mângâierea
+Type: articol
+Author: Traian Dorz
+Highlight: totdeauna, nu numai cu bucuria revederii, ci şi cu <em>alinarea</em> tuturor trebuinţelor lor.
 

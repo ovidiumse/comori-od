@@ -1,109 +1,137 @@
-+------------------------------------------------------------------------------------------+-------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                    | Occurrences                                     | Author      | Tip                            | Carte                        | Volum   |
-+------------------------------------------------------------------------------------------+-------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Lauda şi meritul                                                                         | {'lăuda', 'laudă', 'laudele', 'laude', 'Lauda'} | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Despre mândrie                                                                           | {'Lauda', 'lauda'}                              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din alte diferite părţi                                                                  | {'Lauda', 'lauda', 'laudă'}                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Crişanei                                                                     | {'lauda', 'Lauda', 'lăuda', 'laudă'}            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Lăudăm pe Domnul nostru                                                                  | {'lauda', 'laudă', 'Lăudăm', 'laude'}           | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Din părţile Bucovinei                                                                    | {'lauda', 'Lauda', 'lăuda', 'laudă'}            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Laudă şi mustrare                                                                        | {'laudă', 'Laudă'}                              | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Dacă aduceţi multă roadă                                                                 | {'laudă', 'lauda'}                              | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Din părţile Maramureşului                                                                | {'lauda', 'Lauda', 'lăuda', 'laudă'}            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 18 - Frumosul an 1930                                                               | {'lauda'}                                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                           | {'lauda', 'laudă'}                              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                            | {'lauda', 'lăuda', 'laudele', 'laude'}          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Din părţile Dobrogei                                                                     | {'Lauda', 'lauda', 'laudă'}                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| El va mărturisi despre Mine                                                              | {'lauda', 'laudă'}                              | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                        | {'lauda', 'laudă', 'laude', 'lăuda'}            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                            | {'lauda', 'lăuda', 'laude', 'laudă'}            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'lauda', 'laudă', 'laude'}                     | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului)                | {'lauda', 'laudă', 'lăuda', 'laude'}            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Bucurie şi nefericire                                                                    | {'lauda', 'laudă', 'lăuda', 'lăudăm'}           | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Cap. 15 - Un An Nou Fericit                                                              | {'lauda', 'laudă', 'laude'}                     | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Despre virtute                                                                           | {'lauda', 'lăuda', 'laudă'}                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Banatului                                                                    | {'lauda', 'laudă'}                              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Dulcea Ta Frumuseţe...                                                                   | {'lauda', 'laudă'}                              | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
-| Părinţii                                                                                 | {'lauda', 'laudă'}                              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Oriunde şi oricând                                                                       | {'lauda', 'laudă', 'laudelor'}                  | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Despre smerenie                                                                          | {'lauda', 'laudă', 'laude'}                     | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Olteniei                                                                     | {'lauda', 'lăuda', 'laudele'}                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Prin aceasta vor cunoaşte                                                                | {'lauda', 'laudă', 'laudele'}                   | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cap. 3 - Marea cernere                                                                   | {'lauda', 'laudă'}                              | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Comorile care rămân veşnic                                                               | {'lauda', 'laudă'}                              | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Cântarea lui Asaf                                                                        | {'lauda', 'lăuda'}                              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)             | {'lauda', 'laudă'}                              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Prin ce semn ne araţi?                                                                   | {'lauda', 'laudă'}                              | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Psalmul 79                                                                               | {'lauda', 'lăuda'}                              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Să umblăm numai după Hristos                                                             | {'lauda', 'laudă'}                              | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| În Casa Tatălui Meu sunt multe lăcaşuri                                                  | {'lauda', 'laudă'}                              | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Înainte de început                                                                       | {'lauda', 'laudă'}                              | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 5 - Întâia judecată                                                                 | {'lauda', 'lăudau', 'laud'}                     | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Mândria şi gloata                                                                        | {'lauda', 'laudele', 'laude'}                   | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Psalmul 106                                                                              | {'lauda', 'lăudăm', 'laude'}                    | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 8 - Marele necaz salvator                                                           | {'lauda', 'laude'}                              | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cum ţi s-au deschis ochii?                                                               | {'lauda', 'laude'}                              | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Despre viaţă                                                                             | {'lauda', 'lăudare'}                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                              | {'lauda', 'laudelor'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Livada                                                                                   | {'lauda', 'laude'}                              | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Trimişii                                                                                 | {'lauda', 'laude'}                              | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                              | {'lauda'}                                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                                        | {'lauda'}                                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Ceea ce ne-a făcut unul                                                                  | {'lauda'}                                       | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Cine crede în Mine, va face şi el                                                        | {'lauda'}                                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Cuvântul                                                                                 | {'lauda'}                                       | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cântarea îngerilor nenumăraţi                                                            | {'lauda'}                                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Dar voi nu Mă cinstiţi                                                                   | {'lauda'}                                       | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| După cum a fost înălţat şarpele                                                          | {'lauda'}                                       | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| El să crească                                                                            | {'lauda'}                                       | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Eu am venit pentru judecată                                                              | {'lauda'}                                       | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                   | {'lauda'}                                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Lângă Crucea lui Isus...                                                                 | {'lauda'}                                       | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Pe patul morţii mele                                                                     | {'lauda'}                                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Pe patul morţii mele                                                                     | {'lauda'}                                       | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Rugăciune şi mărturisire                                                                 | {'lauda'}                                       | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Scoală-te... şi umblă                                                                    | {'lauda'}                                       | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Suferinţa şi slava                                                                       | {'lauda'}                                       | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Între farisei era un om                                                                  | {'lauda'}                                       | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Învăţătură şi deprinderi                                                                 | {'lauda'}                                       | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Şi voi de asemenea veţi mărturisi                                                        | {'lauda'}                                       | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Nimeni din voi nu ţine Legea                                                             | {'laudă', 'lăuda'}                              | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Slava şi răsplata                                                                        | {'laudă', 'lăuda'}                              | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)   | {'lăudăm', 'laudă', 'laudelor'}                 | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Rugăciunea şi trăirea                                                                    | {'laudă', 'lăuda'}                              | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Binefacerea şi recunoştinţa                                                              | {'laudă'}                                       | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| O, dac-aş fi un înger                                                                    | {'lăuda'}                                       | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| O, dac-aş fi un înger                                                                    | {'lăuda'}                                       | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Faptă şi răsplată                                                                        | {'laudă', 'lăuda', 'laude', 'laudele'}          | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Mie nu-mi vorbeşti?                                                                      | {'laudă', 'laude'}                              | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Psalmul 145                                                                              | {'laudă', 'lăuda', 'laude', 'laudele'}          | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica Sfintei Învieri                                                | {'laudă', 'lăuda', 'laudele'}                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Psalmul 107                                                                              | {'lăuda', 'laude'}                              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cel Unul şi Unicul                                                                       | {'lăuda', 'laudă'}                              | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Te lăudăm pe Tine Mântuitor Slăvit                                                       | {'laudă', 'lăudăm'}                             | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Naşterea imnului duhovnicesc                                                   | {'lăuda', 'laudă', 'laude', 'lăudăm'}           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                                 | {'laudă', 'lăuda', 'laudele', 'lăudau'}         | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)                  | {'laudă', 'laude'}                              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Noi suntem sămânţa lui...                                                                | {'laudă', 'lăuda', 'laude', 'laudele'}          | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                  | {'lăuda', 'lăudă', 'laudele', 'laud'}           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Despre linguşire                                                                         | {'laudă', 'laude'}                              | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                                    | {'laudă', 'laudele'}                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Calea şi urmaşul                                                                         | {'laudă'}                                       | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                   | {'laudă'}                                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cine Mă urăşte pe Mine...                                                                | {'laudă', 'lăuda'}                              | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Eu nu sunt vrednic...                                                                    | {'lăuda', 'laudă'}                              | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica 1-a a Postului Mare                                            | {'laudă'}                                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 15-a după Rusalii                                            | {'laudă'}                                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Moştenire şi moştenitori                                                                 | {'lăuda', 'Laudă'}                              | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Noi, cuvântul cel mai greu                                                               | {'Lăuda', 'lăuda'}                              | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Sunteţi sămânţa lui Avraam, dar...                                                       | {'laudă', 'lăuda'}                              | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)   | {'laudă', 'laude'}                              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                      | {'laudă', 'lăuda', 'laude', 'laudele'}          | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                                   | {'lăuda', 'laudele', 'laud'}                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 8 - Al şaptelea foc                                                                 | {'laudă', 'lăudăm'}                             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-+------------------------------------------------------------------------------------------+-------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Lauda using http://localhost:9000...
-Got 518 hits:
++------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                    | Occurrences                                                          | Author      | Tip                            | Carte                        | Volum   |
++------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Lauda pentru Dumnezeu                                                                    | {'lauda', 'laudă', 'lăuda', 'laude', 'laudelor', 'laudele', 'Lauda'} | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Ochiul şi lauda Domnului                                                                 | {'laudele', 'lăuda', 'laudă', 'lauda'}                               | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Lauda şi meritul                                                                         | {'lăuda', 'laudă', 'laudele', 'laude', 'Lauda'}                      | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| Lauda şi încrederea noastră                                                              | {'laude', 'laudă', 'laudele', 'Lauda'}                               | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Cine laudă                                                                               | {'laudă'}                                                            | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Despre mândrie                                                                           | {'Lauda', 'lauda'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din alte diferite părţi                                                                  | {'Lauda', 'lauda', 'laudă'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Crişanei                                                                     | {'lauda', 'Lauda', 'lăuda', 'laudă'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Înălţimi şi josnicii                                                                     | {'lauda', 'lăuda', 'laudă'}                                          | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Din părţile Bucovinei                                                                    | {'lauda', 'Lauda', 'lăuda', 'laudă'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Iertare şi laudă                                                                         | {'laudă'}                                                            | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Laudă şi mustrare                                                                        | {'laudă', 'Laudă'}                                                   | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Să te laude oricine                                                                      | {'lauda', 'laude'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Dacă aduceţi multă roadă                                                                 | {'laudă', 'lauda'}                                                   | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Din părţile Maramureşului                                                                | {'lauda', 'Lauda', 'lăuda', 'laudă'}                                 | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cap. 18 - Frumosul an 1930                                                               | {'lauda'}                                                            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                           | {'lauda', 'laudă'}                                                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Lăudăm pe Domnul nostru                                                                  | {'lauda', 'laudă', 'laude', 'laudele'}                               | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                            | {'lauda', 'lăuda', 'laudele', 'laude'}                               | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Din părţile Dobrogei                                                                     | {'Lauda', 'lauda', 'laudă'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| El va mărturisi despre Mine                                                              | {'lauda', 'laudă'}                                                   | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Lucrarea Duhului Sfânt                                                                   | {'lauda', 'laudă'}                                                   | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                                        | {'lauda', 'laudă', 'laude', 'lăuda'}                                 | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 19-a după Rusalii                                            | {'lauda', 'lăuda', 'laude', 'laudă'}                                 | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Răspunsurile Domnului                                                                    | {'lauda', 'laudă'}                                                   | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Firea noastră pământească                                                                | {'lauda', 'laudă'}                                                   | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'lauda', 'laudă', 'laude'}                                          | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Alergarea stăruitoare                                                                    | {'Lauda', 'lauda', 'laude'}                                          | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului)                | {'lauda', 'laudă', 'lăuda', 'laude'}                                 | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Călătoria şi lupta                                                                       | {'lauda', 'laudă', 'lăuda', 'laudele'}                               | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Bucurie şi nefericire                                                                    | {'lauda', 'laudă', 'lăuda'}                                          | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Prin liniştea albă                                                                       | {'lauda', 'laudă'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| A zice şi a face                                                                         | {'lauda', 'laudă', 'lăuda', 'laude'}                                 | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Cap. 15 - Un An Nou Fericit                                                              | {'lauda', 'laudă', 'laude'}                                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Când s-au pogorât pe ţărm                                                                | {'lauda', 'lăuda', 'laudă'}                                          | Traian Dorz | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | articol |
+| Experienţa şi cântarea                                                                   | {'lauda', 'laudă'}                                                   | Traian Dorz | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | articol |
+| Izbăvirile Domnului                                                                      | {'lauda', 'laudă', 'laudele', 'laude'}                               | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Slujitorii şi urmaşii                                                                    | {'lauda', 'laudă', 'laude'}                                          | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Despre virtute                                                                           | {'lauda', 'lăuda', 'laudă'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Banatului                                                                    | {'lauda', 'laudă'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Dulcea Ta Frumuseţe...                                                                   | {'lauda', 'laudă'}                                                   | Traian Dorz | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | articol |
+| Milă ai de mine Doamne                                                                   | {'lauda', 'lăuda'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Părinţii                                                                                 | {'lauda', 'laudă'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Voia lui Dumnezeu                                                                        | {'lauda', 'laudă'}                                                   | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Oriunde şi oricând                                                                       | {'lauda', 'laudă', 'laudelor'}                                       | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Despre smerenie                                                                          | {'lauda', 'laudă', 'laude'}                                          | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Olteniei                                                                     | {'lauda', 'lăuda', 'laudele'}                                        | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Mamele şi răsplata lor                                                                   | {'lauda', 'laude', 'laudă'}                                          | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Noutatea iubirii                                                                         | {'lauda', 'laudă', 'laudele'}                                        | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Numele Domnului Isus                                                                     | {'lauda', 'laudă', 'laudele'}                                        | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Prin aceasta vor cunoaşte                                                                | {'lauda', 'laudă', 'laudele'}                                        | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Vorbirea şi felul ei                                                                     | {'lauda', 'lăuda', 'laudelor'}                                       | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Cap. 3 - Marea cernere                                                                   | {'lauda', 'laudă'}                                                   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Comorile care rămân veşnic                                                               | {'lauda', 'laudă'}                                                   | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Cântarea lui Asaf                                                                        | {'lauda', 'lăuda'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Durere şi răbdare                                                                        | {'Lauda', 'lăuda'}                                                   | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica lăsatului sec de carne - (a înfricoşatei Judecăţi)             | {'lauda', 'laudă'}                                                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Prin ce semn ne araţi?                                                                   | {'lauda', 'laudă'}                                                   | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Psalmul 79                                                                               | {'lauda', 'lăuda'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Să umblăm numai după Hristos                                                             | {'lauda', 'laudă'}                                                   | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| În Casa Tatălui Meu sunt multe lăcaşuri                                                  | {'lauda', 'laudă'}                                                   | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Înainte de început                                                                       | {'lauda', 'laudă'}                                                   | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Mândria şi gloata                                                                        | {'lauda', 'laudele', 'laudei', 'laude'}                              | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Cap. 8 - Marele necaz salvator                                                           | {'lauda', 'laude', 'laudei'}                                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cum ţi s-au deschis ochii?                                                               | {'lauda', 'laude'}                                                   | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                              | {'lauda', 'laudelor'}                                                | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Livada                                                                                   | {'lauda', 'laude'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Marile adevăruri mântuitoare                                                             | {'lauda', 'laude'}                                                   | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Psalmul 106                                                                              | {'lauda', 'laude'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Suferinţa şi slava                                                                       | {'lauda', 'laude'}                                                   | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| Trimişii                                                                                 | {'lauda', 'laude'}                                                   | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Încrederea şi viaţa                                                                      | {'lauda', 'laude'}                                                   | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Apropierea lui Dumnezeu                                                                  | {'lauda'}                                                            | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                              | {'lauda'}                                                            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                                 | {'lauda'}                                                            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 9 - Înţelepciunea şi puterea                                                        | {'lauda'}                                                            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Ceea ce ne-a făcut unul                                                                  | {'lauda'}                                                            | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Cel Cuprins şi Necuprins                                                                 | {'lauda'}                                                            | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Cine crede în Mine, va face şi el                                                        | {'lauda'}                                                            | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Crucea şi Jertfa                                                                         | {'lauda'}                                                            | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Cununile slăvite                                                                         | {'lauda'}                                                            | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | poezie  |
+| Cuvântul                                                                                 | {'lauda'}                                                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cântarea îngerilor nenumăraţi                                                            | {'lauda'}                                                            | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Dar voi nu Mă cinstiţi                                                                   | {'lauda'}                                                            | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Despre viaţă                                                                             | {'lauda'}                                                            | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Dragoste şi însoţire                                                                     | {'Lauda'}                                                            | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| După cum a fost înălţat şarpele                                                          | {'lauda'}                                                            | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| El să crească                                                                            | {'lauda'}                                                            | Traian Dorz | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Eu am venit pentru judecată                                                              | {'lauda'}                                                            | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Inima şi Împărăţia Domnului                                                              | {'lauda'}                                                            | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                   | {'lauda'}                                                            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La picioarele Domnului                                                                   | {'lauda'}                                                            | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Lângă Crucea lui Isus...                                                                 | {'lauda'}                                                            | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
+| Pe patul morţii mele                                                                     | {'lauda'}                                                            | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Pe patul morţii mele                                                                     | {'lauda'}                                                            | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Rugăciune şi mărturisire                                                                 | {'lauda'}                                                            | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| Scoală-te... şi umblă                                                                    | {'lauda'}                                                            | Traian Dorz | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Suferinţa şi slava                                                                       | {'lauda'}                                                            | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Veniţi să cântăm!                                                                        | {'lauda'}                                                            | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Vorbirea în felurite limbi                                                               | {'lauda'}                                                            | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
++------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Lauda using https://api.comori-od.ro...
+Got 626 hits:
+Score: 32.9
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Lauda pentru Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: cu căldură şi cu putere la cântarea sfântă spre <em>lauda</em> Domnului.
+Highlight: noi, decât să participăm cu toţii la cântarea de <em>laudă</em> spre cinstea Domnului, în Casa Domnului, în adunarea
+Highlight:  fiecare <em>lăuda</em> atunci
+Highlight:  trebuie să <em>laude</em> pe Domnul (
+Highlight: cântarea <em>laudelor</em> Domnului, era o bucurie a tuturor credincioşilor.  Cu
+Highlight: să ne obişnuim a cânta şi noi din toată inima <em>laudele</em> Domnului...
+Highlight: <em>Lauda</em> pentru Dumnezeu
+
+Score: 28.90909
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Ochiul şi lauda Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: ocupată cu <em>laudele</em> lui Dumnezeu, este ferită de ispita de a se <em>lăuda</em> pe sine,
+Highlight: şi a-L putea <em>lăuda</em> în orice loc şi
+Highlight: Ci tu <em>laudă</em>-L pe Domnul şi-I mulţumeşte şi pentru toate celelalte
+Highlight: sunt mai dese aceste izbucniri de mulţumire şi de <em>laudă</em> ale inimii noastre pentru Numele Lui,  cu
+Highlight: sau de a <em>lăuda</em> pe oameni
+Highlight: Ci trezindu-ţi mintea, <em>laudă</em> pe Domnul şi binecuvântează Numele Lui:
+Highlight: Ochiul şi <em>lauda</em> Domnului
+
 Score: 27.857143
 Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
@@ -116,7 +144,30 @@ Highlight: sunt <em>laudele</em> gurii noastre cu înaintaşii noştri cei credi
 Highlight: Un rob al păcatului fuge după <em>laude</em>.
 Highlight: <em>Lauda</em> şi meritul
 
-Score: 16.9375
+Score: 25.8
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Lauda şi încrederea noastră
+Type: articol
+Author: Traian Dorz
+Highlight: Fiindcă aceste <em>laude</em> sunt numai adevăruri. Toţi cei care se <em>laudă</em> în Domnul şi cu El, trebuie
+Highlight: 1 - Dacă <em>laudele</em> celui mincinos nu trebuie să le crezi niciodată, totuşi <em>laudele</em> celui mai cinstit dintre
+Highlight: <em>Lauda</em> şi încrederea noastră
+
+Score: 18.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Cine laudă
+Type: poezie
+Author: Traian Dorz
+Highlight: Cine <em>laudă</em> pe Domnul
+Highlight: cine <em>laudă</em> păcatul
+Highlight: cine <em>laudă</em>-adevărul
+Highlight: cine <em>laudă</em> minciuna
+Highlight: Cine <em>laudă</em> curăţia
+Highlight: Cine <em>laudă</em>
+
+Score: 16.933332
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Despre mândrie
@@ -155,19 +206,18 @@ Highlight: 141 - <em>Lauda</em> unui
 Highlight: vei <em>lăuda</em> pe altul, fie scurtă vorba ta lauda
 Highlight: mai mult se <em>laudă</em> aceia
 
-Score: 15.621211
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Lăudăm pe Domnul nostru
-Type: poezie
+Score: 15.544444
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Înălţimi şi josnicii
+Type: articol
 Author: Traian Dorz
-Highlight: căci doar Lui I se cuvine toată <em>lauda</em>
-Highlight: toată <em>lauda</em> se cade
-Highlight: de-a Ta <em>laudă</em> să fie Doamne, Universul plin.
-Highlight: <em>Lăudăm</em> pe Domnul nostru căci în veac El este Bun!  laude
-Highlight: <em>laude</em> pe Domnul toate câte Lui
-Highlight: <em>laude</em> cu bucurie al Lui Nume-n veci, amin.  Lăudăm
-Highlight: <em>Lăudăm</em> pe Domnul nostru
+Highlight: dacă <em>lauda</em> lui Dumnezeu nu străluceşte peste el, spre a-i da
+Highlight: Pretinde închinarea şi <em>lauda</em> nu pentru Dumnezeu, ci pentru sine.
+Highlight: De aceea Lui I se cuvinte Singur, toată <em>lauda</em> noastră prin toate ale noastre de la El.
+Highlight: poată mândri apoi şi <em>lăuda</em> pe sine, dispreţuind pe toţi ceilalţi şi
+Highlight: dau cu smerenie seama de marea lor datorie de a-L <em>lăuda</em> şi mai ascultători pe Dumnezeu!  Dar
+Highlight: Toţi cei care, ajunşi ceva, dacă nu-L <em>laudă</em> pe Dumnezeu -
 
 Score: 15.527778
 Volume: Cântări Nemuritoare
@@ -184,12 +234,31 @@ Highlight: o <em>laudă</em> ce ne-auzim ne-ajută
 
 Score: 15.5
 Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Iertare şi laudă
+Type: articol
+Author: Traian Dorz
+Highlight: Căci dacă nu le are, ci numai se <em>laudă</em>, - pe el îl aşteaptă securea.
+Highlight: Iertare şi <em>laudă</em>
+
+Score: 15.5
+Volume: Cugetări Nemuritoare
 Book: Avuţia Sfântului Moştenitor
 Title: Laudă şi mustrare
 Type: articol
 Author: Traian Dorz
 Highlight: socoti că locul tău este numai între cei pe care îi <em>laudă</em> Biblia,
 Highlight: <em>Laudă</em> şi mustrare
+
+Score: 14.749999
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Să te laude oricine
+Type: poezie
+Author: Traian Dorz
+Highlight: toată <em>lauda</em> din lume
+Highlight: Să te <em>laude</em> oricine şi
+Highlight: Să te <em>laude</em> oricine
 
 Score: 14.566666
 Volume: Meditații la Ev. după Ioan
@@ -236,6 +305,19 @@ Highlight: Şi <em>lauda</em> lui Dumnezeu se simte peste cine este, prin bunăv
 Highlight: Nu vorbele, ci puterea sunt semnele. Nu <em>lauda</em>, ci roadele. Nu îngâmfarea sa, ci dovada dată de
 Highlight: care se <em>laudă</em> singur şi se pretinde el însuşi, este lăudat, ci acela pe care Dumnezeu îl <em>laudă</em> ( 2
 
+Score: 13.541666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Lăudăm pe Domnul nostru
+Type: poezie
+Author: Traian Dorz
+Highlight: căci doar Lui I se cuvine toată <em>lauda</em>
+Highlight: toată <em>lauda</em> se cade numai Ţie, orişicând.
+Highlight: de-a Ta <em>laudă</em> să fie Doamne, Universul plin.
+Highlight: <em>laude</em> pe Domnul toate câte Lui I se supun câţi
+Highlight: <em>laude</em> cu bucurie al Lui Nume-n veci, amin.  Lăudăm
+Highlight: Numai <em>laudele</em> Sale să răsune peste tot căci
+
 Score: 13.5238085
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
@@ -267,6 +349,16 @@ Author: Traian Dorz
 Highlight: care nu doresc cu smerenie <em>lauda</em> lui Dumnezeu. Ci caută cu ascunsă trufie <em>lauda</em> lor înşişi.
 Highlight: Orice om care se <em>laudă</em> că-L are pe Duhul Sfânt, dar nu-L cunoaşte pe Hristos
 
+Score: 13.416666
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Lucrarea Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: doresc cu smerenie <em>lauda</em> lui Dumnezeu.
+Highlight: Şi caută cu ascunsă sau văzută trufie <em>lauda</em> lor înşişi.
+Highlight: 4 - Orice om care se <em>laudă</em> că-L are pe Duhul Sfânt, dar nu-L cunoaşte pe Hristos
+
 Score: 13.116667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
@@ -280,7 +372,7 @@ Highlight: ). Nu mă voi <em>lăuda</em> decât
 Highlight: slujirea Lui. Eu - o fiinţă mică şi slabă - nu mă pot <em>lăuda</em> decât  în
 Highlight: ales, ci acela pe care Domnul îl <em>laudă</em> (
 
-Score: 13.052288
+Score: 13.034188
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 19-a după Rusalii
@@ -292,6 +384,32 @@ Highlight: dacă n-ar fi fost alţii care să le <em>laude</em>, să spună cuvi
 Highlight: slăbiciune este făcută desăvârşită.” Deci, mă voi <em>lăuda</em> mult mai bucuros cu slăbiciunile mele, pentru ca
 Highlight: încerca timid şi mirat, cum poate cineva care se <em>laudă</em> cu întâietatea lui, să ajungă într-o astfel de stare
 Highlight: Domnul este tăria mea şi temeiul cântărilor mele de <em>laudă</em>,  El
+
+Score: 13.011111
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Răspunsurile Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: - şi veţi fi mişcaţi până la lacrimi de <em>lauda</em> aproape omenească, adusă de toate acestea lui Dumnezeu
+Highlight: 10 - Cerurile sunt pline de cântările de <em>laudă</em> şi de preamărire a lui Dumnezeu, cântări pe care
+Highlight: Firii, care stă în ascultarea voii lui Dumnezeu, Îl <em>laudă</em> pe El cu cântări de slavă şi bucurie.  Fericirea
+Highlight: cu tot ce este deasupra şi dedesubtul lor, - Îl <em>laudă</em> veşnic pe Dumnezeu,  pământul
+Highlight: toate, toate Îl <em>laudă</em> prin cântările lor pe Dumnezeu, care l-a făcut şi
+Highlight: fericirea deplină este totdeauna şi cântarea de <em>laudă</em> adusă cu mulţumire fierbinte, Izvorului acestei
+
+Score: 12.757143
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Firea noastră pământească
+Type: articol
+Author: Traian Dorz
+Highlight: neîncetat sufletul lor, umblând cu Hristos şi după El, <em>lauda</em> aceasta toţi o vor exprima la fel:
+Highlight: 15 - Oamenii lumii acesteia se <em>laudă</em> în multe feluri şi cu multe lucruri în viaţa lor
+Highlight: Şi toată vremea lor se <em>laudă</em> cu de toate.  Viaţa
+Highlight: din iertarea şi din harul lui Hristos, - ei se <em>laudă</em> numai cu Isus şi că sufletul lor este fericit cu
+Highlight: - Dacă toţi aceia care L-au aflat pe Hristos se <em>laudă</em> la fel cu fericirea lor în El,
+Highlight: aceasta este dovada mai puternică decât oricare altă <em>laudă</em> din lume, că fericirea lui Hristos este un slăvit
 
 Score: 12.757143
 Volume: Hristos - Puterea Apostoliei
@@ -306,6 +424,15 @@ Highlight: Şi cântaţi şi aduceţi din toată inima <em>laudă</em> Domnului.
 Highlight: Psalmii, cântările de <em>laudă</em> şi cântările duhovniceşti le erau recomandate mereu
 Highlight: cei dornici după întâietate, după înălţări, după <em>laude</em>, după scaune moi, după confort şi avantaje lumeşti
 
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Alergarea stăruitoare
+Type: articol
+Author: Traian Dorz
+Highlight: - <em>Lauda</em> lui va fi mare pentru Hristos înaintea oamenilor, - iar <em>lauda</em> Lui pentru el va
+Highlight:  de publicitate, de licitaţie zgomotoasă şi de <em>laude</em> personale, - care aduceau cel mai mare rău şi făceau
+
 Score: 12.595238
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
@@ -319,7 +446,20 @@ Highlight: condiţiile ei sunt ale Lui şi de la El, cine s-ar putea <em>lăuda<
 Highlight: Iar dacă totuşi se <em>laudă</em> şi aşteaptă să fie lăudat
 Highlight: 9. Nu prin fapte, ca să nu se <em>laude</em> nimeni. 10
 
-Score: 12.541666
+Score: 12.523809
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Călătoria şi lupta
+Type: articol
+Author: Traian Dorz
+Highlight: Biruitor vrednic de toată <em>lauda</em> noastră a tuturor,
+Highlight: 7 - Numai acela e vrednic de <em>laudă</em>, care a trecut biruitor în veşnicie.  Fiindcă
+Highlight: de aceea toate cerurile Îl <em>laudă</em> şi toate veacurile vor
+Highlight: 10 - Sunt vrednici de <em>laudă</em> şi acei mari oameni curajoşi, care în Numele Marelui
+Highlight: Căci şi cerul îi va <em>lăuda</em>, împreună cu Hristos, în veci şi în veci.
+Highlight: când părea că merită toate <em>laudele</em>.  5
+
+Score: 12.5
 Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Bucurie şi nefericire
@@ -330,7 +470,31 @@ Highlight: pe veşnicie vrednic de orice slavă şi de orice <em>laudă</em>.
 Highlight: Dumnezeu S-a îndurat să pună acelaşi fel de a-L <em>lăuda</em> pe Hristos ca în gura îngerilor Săi!
 Highlight: noi cântări, trebuie să alcătuim şi noi spre a-I <em>lăuda</em> vrednicia Mielului Dumnezeiesc, care a fost junghiat
 Highlight: De aceea unim şi noi cântările noastre de <em>laudă</em> pentru Tine încă de pe pământ, cu ale celor care
-Highlight: cu toată iubirea şi evlavia smereniei noastre, <em>lăudăm</em> Numele Tău, pentru că din adâncul sufletului nostru
+
+Score: 12.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Prin liniştea albă
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>lauda</em> de Domnul - prin a jertfei ceaţă
+Highlight: <em>laudă</em> pe Domnul - inimă smerită El
+Highlight: <em>laudă</em> pe Domnul, - fiu al Bunătăţii căci
+Highlight: <em>laudă</em> pe Domnul, - grai de rugăciune căci
+Highlight: <em>laudă</em> pe Domnul - lacrimă fierbinte căci
+
+Score: 12.257143
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: A zice şi a face
+Type: articol
+Author: Traian Dorz
+Highlight: Ori chiar să pretindă, fără ruşine să i se dea <em>lauda</em> aceasta.
+Highlight: ce face aduce <em>laudă</em> lui Dumnezeu.  3
+Highlight: 3 - Cine îşi cunoaşte inima sa, acela nu se va <em>lăuda</em> cu ea niciodată
+Highlight: spre alţii - aşteptând <em>laudă</em>...  Ori
+Highlight: Cât de gata este ea să se <em>laude</em>, să se umfle de mândrie, să se mânie, să se răzbune
+Highlight: şi să se <em>laude</em> cu
 
 Score: 12.257143
 Volume: Istoria unei Jertfe
@@ -344,6 +508,51 @@ Highlight:  - Cântarea Izbăvirii. O cântare de <em>laudă</em> pentru Dumneze
 Highlight: priveşte poezia şi cântarea nouă, mereu nouă de <em>laudă</em> şi de dragoste pentru Dumnezeu, este un prilej de
 Highlight: acestui nou răsărit ceresc, nu mai încetează să aducă <em>laude</em> lui Dumnezeu care le-a adus lumina aceasta. Se umpluse
 Highlight: minuni a fost un puternic simbol pentru toţi să <em>laude</em> Numele Domnului Izbăvitor, într-un fel unic şi nemuritor
+
+Score: 12.2
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Când s-au pogorât pe ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: trecută prin experienţele vieţii din lumea aceasta - <em>lauda</em> prea sigură a unora care spun cu uşurinţă:
+Highlight: pe marea acestei vieţi - noi să nu ne grăbim a-l <em>lăuda</em>. Iar
+Highlight: Numele îi mergea, căci îi mergea gura cu care se <em>lăuda</em> că este mântuită - dar vai, ea era moartă (
+Highlight: ticălos, nenorocit, orb şi gol, care totuşi se <em>laudă</em> că este bogat (în roadele Duhului) şi nu duce lipsă
+
+Score: 12.2
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Experienţa şi cântarea
+Type: articol
+Author: Traian Dorz
+Highlight: ai lui Dumnezeu au mai compus şi au mai cântat <em>lauda</em> şi slava Domnului. În urma fiecărei experienţe minunate
+Highlight: experienţă cu Dumnezeu simte nevoia unei cântări de <em>laudă</em> şi izbăvire faţă de El. E plină istoria de opere
+Highlight: lui şi după el - sunt numai poezii şi cântări de <em>laudă</em> şi recunoştinţă din partea tuturor acestor profeţi
+Highlight: oare tot atâtea minunate şi nemuritoare cântări de <em>laudă</em> şi recunoştinţă ridicate de aceşti mari şi sfinţi
+
+Score: 11.833333
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Izbăvirile Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: niciodată că cea dintâi datorie şi obligaţie să dăm <em>lauda</em> cea mai înaltă, o avem numai şi numai faţă de Dumnezeu
+Highlight: magaziile şi cămările se umplu - oare câte inimi <em>laudă</em> pe Dumnezeu pentru asta şi se gândesc la partea
+Highlight: 9 - Câţi Te <em>laudă</em> pe Tine Doamne cu iubire? Câţi Te preamăresc pe
+Highlight: foloseşte toată priceperea, mijloacele, truda şi <em>laudele</em> noastre?  Cine
+Highlight: 18 - Oricât de multe <em>laude</em> am vrea să înălţăm omului, oricărui om de pe faţa
+
+Score: 11.8
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Slujitorii şi urmaşii
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Dacă este atât de plăcută Domnului <em>lauda</em> Numelui Său de adevăraţii Săi slujitori,
+Highlight: şi Dreptul Dumnezeu, va da o veşnică răsplată şi <em>laudă</em> chiar şi celor mai smeriţi închinători ai Lui, ostaşi
+Highlight: Şi dacă vor avea o veşnică răsplată şi <em>laudă</em> de la Dumnezeu acei care cu râvnă şi cu jertfă I-au
+Highlight: să treacă pe lângă toate acestea ducându-se să <em>laude</em> pe Domnul dar
 
 Score: 11.75
 Volume: Cântări Nemuritoare
@@ -377,12 +586,32 @@ Highlight: <em>laudă</em>
 
 Score: 11.75
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Milă ai de mine Doamne
+Type: poezie
+Author: Traian Dorz
+Highlight: pe Stâncă... El mi-a pus în gură Cântarea Nouă, <em>lauda</em> eternă a Dumnezeului nostru.
+Highlight: - şi-atunci oasele-mi smerite <em>lăuda</em>-Te-vor mai vii Sfântă
+Highlight: - şi-a mea limbă <em>lăuda</em>-Ţi-va îndurarea necurmat,  Doamne
+
+Score: 11.75
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Părinţii
 Type: articol
 Author: Traian Dorz
 Highlight: <em>lauda</em> adevărată-i când cei buni te spun
 Highlight: 9 - Nu e <em>laudă</em> aceea când te <em>laudă</em> oricine lauda
+
+Score: 11.75
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Voia lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: gura sa numai <em>lauda</em> lui Dumnezeu! ...
+Highlight: cea mai înaltă, mai curată şi mai statornică <em>laudă</em> a lui Dumnezeu
+Highlight: 20 - Căci dacă nu strigi tu <em>laudă</em> Domnului - vor striga pietrele tale osândă odată
 
 Score: 11.133333
 Volume: Cugetări Nemuritoare
@@ -416,6 +645,35 @@ Highlight: urâţi pe câţi v-ar <em>lăuda</em>,  mustrarea
 Highlight: 85 - Din <em>laudele</em> meritate de orişicare om, să spui puţin
 
 Score: 11.083333
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Mamele şi răsplata lor
+Type: articol
+Author: Traian Dorz
+Highlight: cânta cântările sale nu spre <em>lauda</em> lui Dumnezeu, ci spre a-şi auzi <em>laude</em> pentru
+Highlight: va fi veşnic vrednică de cea mai mare cinste şi <em>laudă</em>, Sfânta Maică a Domnului Isus, care în tăcere şi
+
+Score: 11.083333
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Noutatea iubirii
+Type: articol
+Author: Traian Dorz
+Highlight: Oricât este de lată <em>lauda</em> noastră cu credinţa noastră, cu învăţătura noastră
+Highlight: 10 - Pâinea nu strigă, nu se <em>laudă</em>, nu se preface.  Ea
+Highlight: nici de chipurile sau de <em>laudele</em> noastre,  ci
+
+Score: 11.083333
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Numele Domnului Isus
+Type: articol
+Author: Traian Dorz
+Highlight: De aceea aceasta este şi bucuria şi <em>lauda</em> noastră în faţa tuturor încercărilor din afară,
+Highlight: 12 - Ce cântare de <em>laudă</em> ar putea exprima toate sfintele simţăminte ale dragostei
+Highlight: frumoase, dorim Isuse Preaiubit, să-Ţi alcătuim Ţie <em>laudele</em> cele mai înalte,
+
+Score: 11.083333
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Modelul nostru
 Title: Prin aceasta vor cunoaşte
@@ -424,6 +682,16 @@ Author: Traian Dorz
 Highlight: Oricât este de lată <em>lauda</em> noastră cu credinţa noastră, cu învăţătura noastră
 Highlight: Pâinea nu strigă, nu se <em>laudă</em>, nu se preface.  Ea
 Highlight: nici de chipurile sau de <em>laudele</em> noastre,  -
+
+Score: 11.083333
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Vorbirea şi felul ei
+Type: articol
+Author: Traian Dorz
+Highlight: trecută prin experienţele vieţii din lumea aceasta - <em>lauda</em> prea sigură a unora care spun cu uşurinţă: “noi
+Highlight: - noi să nu ne grăbim a-l <em>lăuda</em> pe nimeni.  13
+Highlight: atunci, când tu nici nu vei gândi la întâietatea <em>laudelor</em> -
 
 Score: 11.0
 Volume: Istoria unei Jertfe
@@ -451,6 +719,15 @@ Type: poezie
 Author: Traian Dorz
 Highlight: vorbiţi printre neamuri de <em>lauda</em> Lui
 Highlight: şi-atunci Numele Tău Sfânt vom <em>lăuda</em>
+
+Score: 11.0
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Durere şi răbdare
+Type: articol
+Author: Traian Dorz
+Highlight: - <em>Lauda</em> şi rugăciunea bucuroasă şi fericită este
+Highlight:  înseamnă a <em>lăuda</em> şi a ne ruga. -
 
 Score: 11.0
 Volume: Hristos - Puterea Apostoliei
@@ -506,17 +783,7 @@ Author: Traian Dorz
 Highlight: Hristos, Salvatorul acestei vieţi. Şi am vrut ca <em>lauda</em> aceasta să fie o cântare nemuritoare adusă dragostei
 Highlight: am dorit ca toată mărturia vieţii mele să fie o <em>laudă</em> vrednică adusă Scumpului meu Mântuitor Isus Hristos
 
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Cu un zel vrednic de toată <em>lauda</em> lucra acum şi I. Gr. Oprişan străduindu-se să arate
-Highlight: Congresul Oastei Domnului din Sibiu în 1932 toţi îl <em>lăudau</em> şi îi strigau  Osana
-Highlight: acest lucru, cu cât mai mult cu cât, dacă este să mă <em>laud</em> în Crucea lui Hristos, aşa cum a spus Pavel, marele
-
-Score: 9.75
+Score: 9.8
 Volume: Cugetări Nemuritoare
 Book: Lumina Iubitului Fiu
 Title: Mândria şi gloata
@@ -524,19 +791,10 @@ Type: articol
 Author: Traian Dorz
 Highlight: 1 - Dorinţa după slava lumii şi după <em>lauda</em> oamenilor, este o deşertăciune care se tot umflă şi tot creşte
 Highlight: adevărată, acolo umblarea după slava lumii şi după <em>laudele</em> oamenilor, este nimicită.
+Highlight: respingem toate ispitele <em>laudei</em>.
 Highlight: Ai un talent şi te mândreşti cu el, aşteptând <em>laude</em>?
 
 Score: 9.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 106
-Type: poezie
-Author: Traian Dorz
-Highlight: să ne fălim cu slava Ta, cu <em>lauda</em> Ta mare.
-Highlight: 1-Să-L <em>lăudăm</em> pe Domnul toţi, pe Domnul nostru Mare căci
-Highlight: 12-Atunci crezură-al Lui Cuvânt şi <em>laude</em>-I cântară 13-Dar
-
-Score: 9.666667
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 8 - Marele necaz salvator
@@ -544,6 +802,7 @@ Type: articol
 Author: Traian Dorz
 Highlight: cântare care să fie cu adevărat vrednică de slava şi <em>lauda</em> cea mai mare a lui Dumnezeu...
 Highlight: îndemnat poporul nostru să cânte Domnului şi să-L <em>laude</em> cu tot talentul său pe Domnul.  Acum
+Highlight: să se obişnuiască şi poporul nostru, - cântarea <em>laudei</em> lui Dumnezeu, pe care alte popoare o cunoşteau
 
 Score: 9.666667
 Volume: Meditații la Ev. după Ioan
@@ -553,15 +812,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: ca toată <em>lauda</em> să fie numai a Ta
 Highlight: şi toţi cei care ne văd să Te <em>laude</em> numai pe Tine şi toţi
-
-Score: 9.666667
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre viaţă
-Type: articol
-Author: Traian Dorz
-Highlight: alţii <em>lauda</em> din el.
-Highlight: 49 - Amână până seara a zilei <em>lăudare</em>,
 
 Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
@@ -582,6 +832,33 @@ Highlight: ce folosesc înşelăciunea şi <em>lauda</em>
 Highlight: cu <em>laude</em> şi
 
 Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Marile adevăruri mântuitoare
+Type: articol
+Author: Traian Dorz
+Highlight: 6 - Chiar când este meritată, <em>lauda</em> tot nu-i bună.
+Highlight: şi tot felul de <em>laude</em> de la oameni.  4
+
+Score: 9.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 2
+Title: Psalmul 106
+Type: poezie
+Author: Traian Dorz
+Highlight: să ne fălim cu slava Ta, cu <em>lauda</em> Ta mare.
+Highlight: 12-Atunci crezură-al Lui Cuvânt şi <em>laude</em>-I cântară 13-Dar
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Suferinţa şi slava
+Type: articol
+Author: Traian Dorz
+Highlight: spre <em>lauda</em> şi slujba Lui cea curată şi plăcută.
+Highlight: - au adus cele mai strălucite <em>laude</em> lui Dumnezeu.  Niciodată
+
+Score: 9.666667
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 6
 Title: Trimişii
@@ -590,6 +867,23 @@ Author: Traian Dorz
 Highlight: căci <em>lauda</em> le-ar face ne-nchipuit de rău.
 Highlight: ... Iar după-aceea poate să-i <em>laude</em> micimea
 
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Încrederea şi viaţa
+Type: articol
+Author: Traian Dorz
+Highlight: sau <em>lauda</em>, sau banii lui -
+Highlight: Şi apoi guriţa lor nevinovată, ca să-L <em>laude</em> pe Domnul,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Apropierea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Căci de la mulţumirea şi <em>lauda</em> de sine şi până la prăpastia iadului, nu este nici
+
 Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
@@ -597,6 +891,14 @@ Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
 Highlight: ne aduce la cunoştinţă nişte hotărâri de toată <em>lauda</em>.
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Cu un zel vrednic de toată <em>lauda</em> lucra acum şi I. Gr. Oprişan străduindu-se să arate
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -615,12 +917,36 @@ Author: Traian Dorz
 Highlight: stăpâneşti numai Tu, - şi ele sunt pline toate numai de <em>lauda</em> Ta. Locuieşte fericit acolo Preaiubitul meu
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Cel Cuprins şi Necuprins
+Type: articol
+Author: Traian Dorz
+Highlight: noastre, căruia Îi aducem toată slava, cinstea şi <em>lauda</em>, acum şi pururea şi în vecii vecilor.
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Calea vieţii noastre
 Title: Cine crede în Mine, va face şi el
 Type: articol
 Author: Traian Dorz
 Highlight: Iar noi numai aşa ne vom bucura de <em>lauda</em> Ta.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Crucea şi Jertfa
+Type: articol
+Author: Traian Dorz
+Highlight: Ca şi pentru sfântul Pavel, Crucea lui Isus este <em>lauda</em> noastră (
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Cununile slăvite
+Type: poezie
+Author: Traian Dorz
+Highlight: spre <em>lauda</em> lui Dumnezeu.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -647,6 +973,22 @@ Author: Traian Dorz
 Highlight: adânc şi curat simţământ al ascultării smerite, <em>lauda</em> buzelor noastre curate să-Ţi fie un untdelemn plăcut
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre viaţă
+Type: articol
+Author: Traian Dorz
+Highlight: alţii <em>lauda</em> din el.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Dragoste şi însoţire
+Type: articol
+Author: Traian Dorz
+Highlight: 20 - <em>Lauda</em> iubirii lui Hristos pentru Biserica Sa cea vie,
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
 Title: După cum a fost înălţat şarpele
@@ -671,12 +1013,28 @@ Author: Traian Dorz
 Highlight: stă toată mântuirea noastră şi toată <em>lauda</em> Ta.
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Inima şi Împărăţia Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: Căci fiecare trebuie să-şi primească <em>lauda</em> sa de la Domnul
+
+Score: 9.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
 Type: articol
 Author: Traian Dorz
 Highlight: împlinirea voii Sale. Iar ca răsplată, slava şi <em>lauda</em> veşnică.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: La picioarele Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: şi <em>lauda</em> pentru bunătatea Sa, revărsată peste mine şi peste
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -727,416 +1085,18 @@ Author: Traian Dorz
 Highlight: Chinurile Patimilor, <em>lauda</em> iubirii,
 
 Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Între farisei era un om
-Type: articol
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Veniţi să cântăm!
+Type: poezie
 Author: Traian Dorz
-Highlight: Căci Ţie Dumnezeul nostru se cuvinte toată <em>lauda</em>, slava şi închinăciunea, Tatălui, Fiului şi Sfântului
+Highlight: - toată <em>lauda</em> iubirii
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Învăţătură şi deprinderi
+Book: Alergarea Stăruitoare
+Title: Vorbirea în felurite limbi
 Type: articol
 Author: Traian Dorz
-Highlight:  Că nu vasului ci Stăpânului I se cuvine toată <em>lauda</em>.
-
-Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Şi voi de asemenea veţi mărturisi
-Type: articol
-Author: Traian Dorz
-Highlight: călăuzirea căruia, umblăm rodind în orice bine spre <em>lauda</em> Tatălui nostru care este în Ceruri.
-
-Score: 8.039682
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Nimeni din voi nu ţine Legea
-Type: articol
-Author: Traian Dorz
-Highlight: care se <em>laudă</em> mai tare, aceia fac cel mai puţin pentru ceea ce <em>laudă</em> ei.
-Highlight: Nu cei care se <em>laudă</em> cu credinţa, sunt vrednici de <em>laudă</em>, ci aceia pe care
-Highlight: Nu cei care se <em>laudă</em> cu legea
-Highlight: legea lor se poate <em>lăuda</em>!  Nu
-Highlight: care îi poate <em>lăuda</em> credinţa cea adevărată şi vie.
-Highlight: Dar acest fel de oameni nu se <em>laudă</em> pe ei înşişi niciodată.
-
-Score: 8.027778
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Slava şi răsplata
-Type: articol
-Author: Traian Dorz
-Highlight: care se <em>laudă</em> mai tare, aceia fac cel mai puţin pentru ceea ce <em>laudă</em> ei.
-Highlight: nu cei ce se <em>laudă</em> cu credinţa lor, sunt vrednici de <em>laudă</em>, ci aceia pe care
-Highlight: 11 - Nu cei care se <em>laudă</em> cu legea
-Highlight: legea lor se poate <em>lăuda</em>:  nu
-Highlight: care îi poate <em>lăuda</em> credinţa cea adevărată şi vie.
-Highlight: Dar acel fel de oameni nu se <em>laudă</em> pe ei înşişi niciodată.
-
-Score: 7.7460318
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)
-Type: articol
-Author: Traian Dorz
-Highlight: şi noi să <em>lăudăm</em> ce este vrednic de <em>laudă</em> şi ce trebuie să osândim. Pentru că nu cine se <em>laudă</em> singur este
-Highlight: sfătuiţi-vă unii pe alţii cu psalmi, cu cântări de <em>laudă</em> şi cu cântări duhovniceşti, cântând lui Dumnezeu
-Highlight: sfătuiţi-vă unii pe alţii cu psalmi, cu cântări de <em>laudă</em> şi cu cântări duhovniceşti, cântând lui Dumnezeu
-Highlight: este lăudat, ci acela pe care Domnul îl <em>laudă</em> (
-Highlight: Stelele, Luna şi Soarele <em>laudă</em> neîncetat Numele Lui.
-Highlight: Izvorul înţelepciunii, al învăţăturii, al <em>laudelor</em> şi mulţumirii este desigur Cuvântul lui Hristos
-
-Score: 7.7460318
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Rugăciunea şi trăirea
-Type: articol
-Author: Traian Dorz
-Highlight: că ei n-au spre <em>laudă</em> nimic
-Highlight: . Că în ce-i priveşte pe ei înşişi nu se pot <em>lăuda</em> cu nimic altceva
-Highlight: 6 - Fiii care nu se pot <em>lăuda</em> cu nimic altceva al lor, decât doar cu faptele mari
-Highlight: mult, batjocorindu-le această jalnică şi josnică <em>laudă</em>.
-Highlight: înălţa pe sine ci va înjosi pe acela cu care se <em>laudă</em>.
-Highlight: 19 - Virtuţile cu care omul se <em>laudă</em>, fără a le avea, - ele însele îl osândesc.
-
-Score: 7.714286
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Binefacerea şi recunoştinţa
-Type: articol
-Author: Traian Dorz
-Highlight: fierbinte cântarea de <em>laudă</em> adusă lui Dumnezeu - ce minunat ar fi adusă această <em>laudă</em>, întregită în una singură
-Highlight: o puternică participare la toată slujba lor de <em>laudă</em> lui Dumnezeu.  Şi
-Highlight: bună, orice îndrumare sănătoasă şi orice faptă de <em>laudă</em> luată de unii, ar trebui îndată îmbrăţişată cu atâta
-Highlight: înălţa într-adevăr lui Dumnezeu o primită şi sfântă <em>laudă</em>,
-Highlight: priveşte şi primeşte Domnul totdeauna, o astfel de <em>laudă</em>!
-
-Score: 7.714286
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: O, dac-aş fi un înger
-Type: poezie
-Author: Traian Dorz
-Highlight: Te-aş <em>lăuda</em> Isuse, ce Bun şi Mare eşti.
-Highlight: mii de raze Te-aş <em>lăuda</em> smerit
-Highlight: Te-aş <em>lăuda</em> Isuse, ce Bun şi
-Highlight: mii de imnuri Te-aş <em>lăuda</em> curat
-Highlight: Te-aş <em>lăuda</em> Isuse, ce Bun şi
-Highlight: Te-aş <em>lăuda</em> Isuse, ce dulce ne-ai iubit...
-
-Score: 7.714286
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: O, dac-aş fi un înger
-Type: poezie
-Author: Traian Dorz
-Highlight: Te-aş <em>lăuda</em> Isuse, ce Bun şi Mare eşti.
-Highlight: mii de raze Te-aş <em>lăuda</em> smerit
-Highlight: Te-aş <em>lăuda</em> Isuse, ce Bun şi
-Highlight: mii de imnuri Te-aş <em>lăuda</em> curat
-Highlight: Te-aş <em>lăuda</em> Isuse, ce Bun şi
-Highlight: Te-aş <em>lăuda</em> Isuse, ce dulce ne-ai iubit...
-
-Score: 7.309091
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Faptă şi răsplată
-Type: articol
-Author: Traian Dorz
-Highlight: urmaşilor săi, au rămas cele mai minunate cântări de <em>laudă</em> şi de rugăciune spre slava Domnului.
-Highlight: Numele Lui, Singurul Nume Vrednic de închinare şi de <em>laudă</em>.
-Highlight: Cel Bun nu se <em>laudă</em>, căci bunătatea Lui este simţită
-Highlight: 18 - O, dacă ar <em>lăuda</em> oamenii numai pe Cel Bun şi pe cei buni, - cât de
-Highlight: şi vremile, lucrările lui vor face pe mulţi să-L <em>laude</em> pe Domnul şi să cheme Numele Lui Cel Sfânt.  Cât
-Highlight: numai că în toate limbile pământului se vor cânta <em>laudele</em> Domnului,  ci
-
-Score: 7.288889
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Mie nu-mi vorbeşti?
-Type: articol
-Author: Traian Dorz
-Highlight: Şi numai cei slabi se <em>laudă</em> cu puterea lor. Cei înţelepţi n-au nevoie să se <em>laude</em>: înţelepciunea se cunoaşte
-Highlight: Numai cei proşti se <em>laudă</em> cu înţelepciunea lor.  Numai
-Highlight: Numai cei neputincioşi se <em>laudă</em> cu talentele lor. Şi
-Highlight: Nelegiuit este acela care se <em>laudă</em> cu averea sa către cel sărac sau cu fericirea sa
-Highlight: talentaţi n-au nevoie să se <em>laude</em> - talentul se simte. Cei tari n-au nevoie să se <em>laude</em> - puterea se vede.  Puternic
-Highlight:  să se mai <em>laude</em>!
-
-Score: 7.257143
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 145
-Type: poezie
-Author: Traian Dorz
-Highlight: cântare de <em>laudă</em> a lui David -
-Highlight: şi-al Tău Nume <em>lăuda</em>-L-voi
-Highlight: şi-al Tău Nume plin de slavă până-n veci voi <em>lăuda</em>.
-Highlight: 10-Toate lucrurile Tale Doamne Te vor <em>lăuda</em>
-Highlight: să se <em>laude</em>-ale Tale veşnice şi mari dreptăţi.  8-Domnul
-Highlight: 21-A mea gură să-I vestească <em>laudele</em> Lui pe plac
-
-Score: 7.2333336
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica Sfintei Învieri
-Type: articol
-Author: Traian Dorz
-Highlight: într-adevăr. Fiindcă cine îl are nu se <em>laudă</em>, iar cine se <em>laudă</em> - nu-l are!...
-Highlight: Nici nu-l <em>lăuda</em>, nici nu-l hulea pe împăratul lumesc.  Nu-L
-Highlight: înţeleagă bine că aici nu este vorba de cei care se <em>laudă</em> cu toate gurile lor că au botezul cu Duhul Sfânt
-Highlight: Nu-L interesau nici <em>laudele</em>, nici ameninţările
-
-Score: 7.2333336
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 107
-Type: poezie
-Author: Traian Dorz
-Highlight: 8-O, de-ar <em>lăuda</em> toţi oamenii mereu
-Highlight: 15-O, de-ar <em>lăuda</em> toţi oamenii mereu
-Highlight: 21-O, de-ar <em>lăuda</em> toţi oamenii mereu
-Highlight: 31-O, de-ar <em>lăuda</em> toţi oamenii mereu
-Highlight: şi să-L <em>laude</em> în sfaturi de bătrâni
-
-Score: 7.2000003
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Cel Unul şi Unicul
-Type: articol
-Author: Traian Dorz
-Highlight: nu se va <em>lăuda</em> cu aceasta niciodată.
-Highlight: Cine se <em>laudă</em>, acela nu este,
-Highlight: iar cine este, nu se <em>laudă</em>
-Highlight: bunătatea fără <em>laudă</em>,
-
-Score: 6.9333334
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Te lăudăm pe Tine Mântuitor Slăvit
-Type: poezie
-Author: Traian Dorz
-Highlight: Te <em>laudă</em> cu drag.
-Highlight: Te <em>lăudăm</em> pe Tine Mântuitor
-Highlight: Te <em>lăudăm</em> pe Tine
-Highlight: Te <em>lăudăm</em> pe Tine ce
-Highlight: Te <em>lăudăm</em> pe Tine
-Highlight: Te <em>lăudăm</em> pe Tine ce-ai
-Highlight: Te <em>lăudăm</em> pe Tine Mântuitor Slăvit
-
-Score: 6.875
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 12 - Naşterea imnului duhovnicesc
-Type: articol
-Author: Traian Dorz
-Highlight: copiii lui Dumnezeu, de aceea simţeau o lipsă de a-L <em>lăuda</em> neîncetat pe Dumnezeu prin cântări de slavă şi mărire
-Highlight: trebuie să cântăm cântări religioase. Oştile cereşti <em>laudă</em> neîncetat pe Dumnezeu şi pe
-Highlight: , de <em>laudă</em> şi de mărire lui Dumnezeu... Noi suntem nişte scăpaţi
-Highlight: Dumnezeu. Pământul împreună cu cerul ar trebui să <em>laude</em> neîncetat pe Domnul. Cântările noastre ar trebui
-Highlight:  Toţi avem nu numai dreptul ci şi datoria să-L <em>lăudăm</em> pe Domnul şi prin cântări de slavă şi mulţumită
-Highlight: liceu care scrie doar o poezie bună. E primit cu <em>laude</em> şi încurajări părând un element promiţător. Dar
-
-Score: 6.875
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
-Type: articol
-Author: Traian Dorz
-Highlight: nopţii, Pavel şi Sila se rugau, şi cântau cântări de <em>laudă</em> lui Dumnezeu; iar cei închişi îi ascultau.
-Highlight: vorbi de rău. Ba, tocmai dimpotrivă, chiar te va <em>lăuda</em>, fiindcă el, prefăcându-se credincios ca să înşele
-Highlight: Iată, unul care se <em>lăuda</em> că este misionar frăţesc, a luat o nevastă de la
-Highlight: Nu vă lăsaţi încântaţi de <em>laudele</em> lui!  Nu
-Highlight: sângerânde şi usturând de durere, noaptea cântau, <em>lăudau</em> pe Domnul şi se rugau, mărturisind tuturor celor
-Highlight: din nou începe râsul, felicitările, bancurile, <em>laudele</em> şi apoi zeflemeaua şi necredinţa.  Până
-
-Score: 6.857143
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)
-Type: articol
-Author: Traian Dorz
-Highlight: Căci nu cel ce se <em>laudă</em> singur este lăudat, ci acela pe care Domnul îl <em>laudă</em>. Şi nu acela ce se înalţă
-Highlight: O, slavă, cinste şi <em>laudă</em> veşnică să-Ţi fie aduse numai Numelui Tău, Părintele
-Highlight: Dorinţa după întâietatea în <em>laude</em> este una dintre cele mai mari şi mai greu de biruit
-Highlight: Foamea aceasta satanică după <em>laude</em> este cea mai cumplită şi mai nesăturată dintre toate
-Highlight: Atunci cine Doamne ar mai fi atât de dator să Te <em>laude</em>, să-Ţi cânte, să-Ţi plângă, să-Ţi spună, să-Ţi mulţumească
-
-Score: 6.857143
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Noi suntem sămânţa lui...
-Type: articol
-Author: Traian Dorz
-Highlight: şi n-au nici un alt lucru de <em>laudă</em>
-Highlight: Pentru fiii care nu se pot <em>lăuda</em> cu altceva decât cu meritele părinţilor lor, dacă
-Highlight: mult, batjocorindu-le această josnică şi jalnică <em>laudă</em>.
-Highlight: Aceasta este dovada tristă că ei n-au cu ce să se mai <em>laude</em> cu nimic altceva al lor.  Că
-Highlight: o mâţă, mai bine ar face să tacă, să nu se mai <em>laude</em> şi să nu mai spună nimănui că este fiul unui leu
-Highlight: Credeţi că vi s-a ridicat preţul în ochii cuiva prin <em>laudele</em> voastre?
-
-Score: 6.8333335
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu. Dacă voi trăi Îl voi <em>lăuda</em> pe Domnul trăind, dacă voi muri, Îl voi <em>lăuda</em> murind.
-Highlight: Abia ce ajunse acasă şi se <em>lăudă</em> la părinţii lui ce bine şi-a petrecut pe unde a
-Highlight: noastre şi dorinţele noastre sau mulţumirile şi <em>laudele</em> noastre. Iar
-Highlight: dragoste sunt iubit şi ocrotit, - nu ştiu cum să mai <em>laud</em> şi să mai preamăresc pe Domnul meu! În
-
-Score: 6.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre linguşire
-Type: articol
-Author: Traian Dorz
-Highlight: 18 - Cel ce-mi <em>laudă</em> virtutea vrea adesea să mi-o fure,
-Highlight: tot aşa linguşitorul <em>laudă</em> pe cei ca el.
-Highlight: 25 - Cei ce <em>laudă</em> trufia linguşind pe cel tiran
-Highlight: cel necinstit se pleacă cu <em>laude</em> oricui -
-
-Score: 6.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-Highlight: 61 - Cine <em>laudă</em> tâlharul ştii că-i place tâlhăria
-Highlight: cine <em>laudă</em> dreptatea îşi arată omenia
-Highlight: - vai de omul cărui toate i se <em>laudă</em> şi iartă!
-Highlight: sub <em>laudele</em>-uşoare.  125
-
-Score: 6.75
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Calea şi urmaşul
-Type: articol
-Author: Traian Dorz
-Highlight: El, se înşală şi se <em>laudă</em> zadarnic, cu ceea ce el nu mai are demult.
-Highlight: Ba se <em>laudă</em> cu atât mai tare cu
-Highlight: - lumea nu te urăşte, dimpotrivă: te admiră, te <em>laudă</em> sau chiar te iubeşte.
-
-Score: 6.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-Highlight: lucru şi acum mulţi din cei ce-şi fac o pricină de <em>laudă</em> din al doilea sau al treilea botez, din vorbirea
-Highlight: daruri şi talente ale lor, - sau ca aceştia care se <em>laudă</em> că au suferit - şi prin asta dispreţuiesc pe alţii
-Highlight: Dar ce <em>laudă</em> mai poate fi când şi acest lucru l-ai făcut de silă
-
-Score: 6.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Cine Mă urăşte pe Mine...
-Type: articol
-Author: Traian Dorz
-Highlight: şi <em>laudă</em> pe acela pe care îl vede El că nici nu se gândeşte la nici o <em>laudă</em>, lucrând în smerenia
-Highlight: orice ar părea ei că sunt, oricât de mult s-ar <em>lăuda</em> ei şi ar promite, - cu adevărat lucrători ai lui
-
-Score: 6.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Eu nu sunt vrednic...
-Type: articol
-Author: Traian Dorz
-Highlight: se va <em>lăuda</em> cu aceasta, niciodată. Cine se <em>laudă</em>, acela nu este, iar cine este, acela nu se <em>laudă</em>.
-
-Score: 6.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica 1-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: izbăvirea lui Dumnezeu din Marea Roşie! Cântarea lui de <em>laudă</em> care se cântă până astăzi şi până în veci şi în
-Highlight: în mine, nimeni nu-mi va răpi această pricină de <em>laudă</em>
-Highlight: început scrie între altele: Fericite şi vrednice de <em>laudă</em> sunt toate muceniciile care s-au făcut după voia
-
-Score: 6.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 15-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: ne-am împlinit bine slujba. Şi putem aştepta o <em>laudă</em> de la Acela care ne-a făcut şi ne-a aşezat acolo
-Highlight: personal, vreo slavă personală, vreo înălţare şi <em>laudă</em> personală dintr-un dar dat lui pentru slava lui
-Highlight: din acest dar un mijloc de câştig firesc şi de <em>laudă</em> personală. Şi-au considerat darul ca fiind un merit
-
-Score: 6.75
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Moştenire şi moştenitori
-Type: articol
-Author: Traian Dorz
-Highlight: 20 - A-L <em>lăuda</em> din tot sufletul pe Dumnezeu, pentru toate lucrările
-Highlight: împlinirea cu bucurie a acestei datorii de a-L <em>lăuda</em> pe El.
-Highlight: <em>Laudă</em> şi slavă veşnică Ţie Mântuitorul şi Iubitorul
-
-Score: 6.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Noi, cuvântul cel mai greu
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Lăuda</em>-vom, <em>lăuda</em>
-Highlight: <em>lăuda</em>-vom nesfârşit
-
-Score: 6.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Sunteţi sămânţa lui Avraam, dar...
-Type: articol
-Author: Traian Dorz
-Highlight: care omul se <em>laudă</em>, fără a le avea, ele însele îl osândesc.
-Highlight: Numele cu care omul se <em>laudă</em> fără a-l cinsti
-Highlight: O, dacă s-ar putea <em>lăuda</em>
-
-Score: 6.1666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
-Type: articol
-Author: Traian Dorz
-Highlight: are a-şi pretinde nici un drept personal, nici o <em>laudă</em> pentru asta. Domnul Isus poruncise: în dar aţi primit
-Highlight: toate privinţele, spre a fi astfel o pricină de <em>laudă</em> pentru Domnul, de cinstire pentru părinţi şi de
-Highlight: Nimeni nu trebuie deci să se <em>laude</em> cu darul primit, fiindcă la baza acordării darului
-Highlight: darul primit ca un merit al lor şi n-ar fi căutat <em>laude</em> pentru dar. Şi cu el foloasele pământeşti şi câştigurile
-Highlight: îngâmfe, să se îngraşe, să se încreadă în sine, să se <em>laude</em> şi să-şi caute folosul său, dispreţuind pe fraţi
-
-Score: 6.133333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: aminte cum încă din anul trecut ţi-am spus cum se <em>laudă</em> că el vorbeşte cu Dumnezeu şi că el întreabă iar
-Highlight:  - Le-am arătat aici zic, nu cu scopul de a ne <em>lăuda</em> pe noi sau de a-i învinovăţi pe alţii...
-Highlight: vocea care îi vorbeşte şi care nu se sfieşte să se <em>laude</em> că este glasul lui Dumnezeu, îi dă răspunsuri tot
-Highlight: întreacă a fi mai smerit, mai răbdător, mai ascuns de <em>laudele</em> şi de înălţarea oamenilor. În afară de smerenie
-
-Score: 6.133333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
-Type: articol
-Author: Traian Dorz
-Highlight: oriunde şi oricând, Îl voi <em>lăuda</em> pe Domnul trăind. Dacă voi muri, Îl voi <em>lăuda</em> murind. Dacă voi fi liber
-Highlight: fără nici o reţinere, n-am cruţat niciodată nici <em>laudele</em> şi nici mijloacele pe care le-am avut la îndemână
-Highlight: speranţa că am găsit o piatră scumpă am început să <em>laud</em> prea grăbit ceva care s-a dovedit curând că nu era
-
-Score: 6.133333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: credinţa lor. Şi nu mai găseau destule cuvinte de <em>laudă</em> şi de admiraţie pentru Oastea Domnului... Atunci
-Highlight: până la urmă nu s-au ales din suferinţă decât cu o <em>laudă</em> goală a gurii, - şi cu un păcat plin al mândriei
-Highlight: <em>lăudăm</em>, <em>lăudăm</em> pe Hristos. Jertfa
+Highlight: Singurul vrednic de toată slava, <em>lauda</em> şi mulţumirea noastră şi a tuturor oamenilor, acum
 

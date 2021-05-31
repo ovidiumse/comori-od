@@ -1,123 +1,133 @@
-+------------------------------------------------------------------------------------------+----------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                    | Occurrences                                        | Author          | Tip                              | Carte                        | Volum   |
-+------------------------------------------------------------------------------------------+----------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                            | {'alegere', 'alegi', 'alege', 'alegerea'}          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 1 - Cel mai frumos Isus                                                             | {'alegere', 'alege', 'aleg', 'alegerea'}           | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                          | {'alegere', 'Alege', 'alegi', 'alege'}             | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                         | {'alege', 'alegere', 'alegerea', 'alegi'}          | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Fiul dă viaţă cui vrea                                                                   | {'alegere'}                                        | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Păcatul, izvorul răului                                                                  | {'alegere'}                                        | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Pe scaunul de judecător                                                                  | {'alegere', 'alegi', 'alegerea', 'alege', 'Alege'} | Traian Dorz     | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                          | {'alegere', 'Alegerea', 'alegerea', 'alege'}       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                      | {'alegere', 'Alegea', 'alege', 'alegerea'}         | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                          | {'alegere', 'aleg', 'alegerea', 'Alegerea'}        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                                 | {'alegere', 'Alege', 'alegi', 'aleg'}              | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 6 - Alte amare adevăruri                                                            | {'alegere', 'aleg', 'alege'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica 1-a a Postului Mare                                            | {'alegere', 'alegerea', 'alegi', 'Alege'}          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                           | {'alegere', 'alegi', 'alege', 'alegerea'}          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 11 - Răscrucea Isus                                                                 | {'alegere', 'alege', 'aleg'}                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                             | {'alegere', 'alegător', 'alegerea'}                | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                      | {'alegere', 'alege'}                               | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                   | {'alegere', 'alegi'}                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 28 - Necazurile din lungul drumului                                                 | {'alegere', 'Alege'}                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Eu le-am dat slava                                                                       | {'alegere', 'alegerea'}                            | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Lumea nu Te-a cunoscut                                                                   | {'alegere', 'Alege'}                               | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Adevărata Viţă                                                                       | {'alegere'}                                        | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Am făcut cunoscut Numele Tău                                                             | {'alegere'}                                        | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Are să se facă bine!                                                                     | {'alegere'}                                        | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                             | {'alegere'}                                        | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Ziua a doua                                                                    | {'alegere'}                                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                        | {'alegere'}                                        | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                       | {'alegere'}                                        | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Căci despărţiţi de Mine nu puteţi face                                                   | {'alegere'}                                        | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                                            | {'alegere'}                                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                           | {'alegere'}                                        | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Rugăciune                                                                                | {'alegere'}                                        | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Vrednicia şi nevrednicia                                                                 | {'alegere'}                                        | Traian Dorz     | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Şi ai Săi nu L-au primit...                                                              | {'alegere'}                                        | Traian Dorz     | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Tu-ai fi putut s-alegi                                                                   | {'alegi', 'alege'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| La urma-urmei se alege                                                                   | {'alege'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Alegerea luptătorilor                                                                    | {'alege', 'alegi', 'Alegerea'}                     | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Cine-şi va alege frate                                                                   | {'alege'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | poezie  |
-| Cine-şi va alege frate                                                                   | {'alege'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Adevărata credinţă                                                                       | {'alegi', 'Alegi'}                                 | Traian Dorz     | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Cap. 3 - Marea cernere                                                                   | {'alege', 'alegerea', 'aleg'}                      | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cum M-ai trimes Tu...                                                                    | {'Alegerea', 'alege', 'alegerea'}                  | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Când azi, în faţa ta                                                                     | {'alegi'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Despre înţelepciune                                                                      | {'alege', 'aleg', 'alegi'}                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Isus a zis: vrei?                                                                        | {'alegi', 'Alegi'}                                 | Traian Dorz     | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)                     | {'alege'}                                          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                            | {'alege', 'Alegerea', 'alegerea', 'aleg'}          | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Ascultare şi părtăşie                                                                    | {'alege', 'alegi', 'aleg'}                         | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                                     | {'alege', 'aleg', 'Alege'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                                 | {'alege', 'aleg', 'alegea', 'alegerea'}            | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cuvântul şi Duhul                                                                        | {'Alege', 'alege', 'alegi', 'alegerea'}            | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Călător                                                                                  | {'alege', 'Alege', 'alegi'}                        | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Eu le cunosc                                                                             | {'alegerea', 'alege'}                              | Traian Dorz     | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Nu pe El - ci pe Baraba                                                                  | {'alegerea', 'alegeau', 'alegem', 'alege', 'aleg'} | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Răscoala de la Numeri cap. 14                                                            | {'alege', 'alegem'}                                | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Singurul Mântuitor este Hristos                                                          | {'alege', 'alegerea'}                              | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Alipire                                                                                  | {'alegi'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Cap. 15 - Un An Nou Fericit                                                              | {'alege'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                                 | {'alege', 'alegerea'}                              | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                                    | {'alegerea', 'alegea', 'alege'}                    | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cum are omul acesta învăţătură?                                                          | {'alege', 'alegi', 'Alegi'}                        | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Din părţile Banatului                                                                    | {'alegi', 'alege'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Isus ştia de la început...                                                               | {'alege', 'Alege'}                                 | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                      | {'alege', 'alegerea', 'aleg'}                      | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Psalmul 150                                                                              | {'alegem', 'alege', 'alegerea'}                    | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Unii ziceau: este Hristosul                                                              | {'Alege', 'alege', 'alegi'}                        | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Pentru ca lumea să creadă                                                            | {'alegerea'}                                       | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Va veni un altul...                                                            | {'alegerea', 'alege'}                              | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                                    | {'alege'}                                          | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 23 - Cuvânt Testamentar                                                             | {'alegerea'}                                       | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                                   | {'alegerea', 'aleg'}                               | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 26 - Limpezirea apelor adânci                                                       | {'alegerea', 'alege', 'alegi'}                     | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                                  | {'alegi', 'Alegerea', 'alege'}                     | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                                 | {'alege', 'alegerea'}                              | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cine Mă urăşte pe Mine...                                                                | {'alege', 'aleg'}                                  | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Dar unii din ei, s-au dus la farisei                                                     | {'aleg'}                                           | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Despre bine                                                                              | {'alege'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre bunătate                                                                          | {'alege', 'alegi'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Despre cinste                                                                            | {'aleg', 'alege'}                                  | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Munteniei                                                                    | {'alege', 'alegi', 'aleg'}                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din străfundul veşniciei                                                                 | {'alegi'}                                          | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | poezie  |
-| Din străfundul veşniciei                                                                 | {'alegi'}                                          | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Fiul lui Simon Iscarioteanul                                                             | {'alege'}                                          | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Judecata stă... în iubirea întunericului                                                 | {'alege', 'alegerea'}                              | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'Alegerea', 'alegerea', 'aleg'}                   | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                   | {'alegerea', 'aleg', 'alege'}                      | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Libertatea şi robia                                                                      | {'alege'}                                          | Traian Dorz     | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Moise, alesul Domnului, a petrecut                                                       | {'alege'}                                          | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Să spui, dar nu                                                                          | {'alegi', 'alege'}                                 | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Să spui, dar nu                                                                          | {'alegi', 'alege'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Toate-ai să le pierzi în viaţă                                                           | {'alegem'}                                         | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Voinţa                                                                                   | {'alegi', 'alege'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Începutul minunilor mele                                                                 | {'alegi'}                                          | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Înţelepciunea                                                                            | {'alegi', 'alege'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Şi lumea i-a urât...                                                                     | {'alegi', 'Alege', 'alegem'}                       | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... În odaia de judecată                                                                 | {'alege'}                                          | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| A crezut în El vreunul din cei mari?                                                     | {'alege'}                                          | Traian Dorz     | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Al tău e numai Astăzi                                                                    | {'alegi', 'alege'}                                 | Traian Dorz     | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Al tău e numai Astăzi                                                                    | {'alegi', 'alege'}                                 | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Alte corăbii veniseră                                                                    | {'alegem', 'alege'}                                | Traian Dorz     | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-+------------------------------------------------------------------------------------------+----------------------------------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Alegere using http://localhost:9000...
-Got 448 hits:
-Score: 12.928571
++------------------------------------------------------------------------------------------+-------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                    | Occurrences                         | Author      | Tip                              | Carte                        | Volum   |
++------------------------------------------------------------------------------------------+-------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                            | {'alegere', 'alegeri', 'alegerea'}  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Propovăduirea Evangheliei                                                                | {'alegere', 'alegeri', 'alegerea'}  | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Cel mai frumos Isus                                                             | {'alegere', 'alegerea'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                         | {'alegere', 'alegerea'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Fiul dă viaţă cui vrea                                                                   | {'alegere', 'alegerii'}             | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Păcatul, izvorul răului                                                                  | {'alegere', 'alegerii'}             | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Grăunţele şi rodul                                                                       | {'alegere'}                         | Traian Dorz | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
+| Isus le-a zis: aduceţi din peştii...                                                     | {'alegere'}                         | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)                          | {'alegere'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Pe scaunul de judecător                                                                  | {'alegere', 'alegerea', 'alegeri'}  | Traian Dorz | Hristos - Jertfa noastră         | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                          | {'alegere', 'alegerea', 'Alegerea'} | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                          | {'alegere', 'Alegerea', 'alegerea'} | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                                      | {'alegere', 'alegerea'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Eu le-am dat slava                                                                       | {'alegere', 'alegerii', 'alegerea'} | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                           | {'alegere', 'alegeri', 'alegerea'}  | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                             | {'alegere', 'alegerii'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                                 | {'alegere', 'alegeri'}              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 17 - Ziua a doua                                                                    | {'alegere', 'alegeri'}              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                                             | {'alegere', 'alegerea'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Ce alegem noi?                                                                           | {'alegere', 'alegerea'}             | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica 1-a a Postului Mare                                            | {'alegere', 'alegerea'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                           | {'alegere', 'alegerii'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Rugăciunea şi fiii ei                                                                    | {'alegere', 'alegerea'}             | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Tineretul şi îndrumarea lui                                                              | {'alegere', 'alegerea'}             | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| ... Adevărata Viţă                                                                       | {'alegere'}                         | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| A fi în Hristos                                                                          | {'alegere'}                         | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Acum are loc judecata lumii                                                              | {'alegere'}                         | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Am făcut cunoscut Numele Tău                                                             | {'alegere'}                         | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Are să se facă bine!                                                                     | {'alegere'}                         | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Ascultarea Cuvântului                                                                    | {'alegere'}                         | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                      | {'alegere'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                                        | {'alegere'}                         | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                       | {'alegere'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                                   | {'alegere'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 27 - Pe drumul ales                                                                 | {'alegere'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                                 | {'alegere'}                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 6 - Alte amare adevăruri                                                            | {'alegere'}                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Ce mare taină este Lucrarea Domnului                                                     | {'alegere'}                         | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Căci despărţiţi de Mine nu puteţi face                                                   | {'alegere'}                         | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Dovadă şi credinţă                                                                       | {'alegere'}                         | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| Greutatea de a crede                                                                     | {'alegere'}                         | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Ispita şi trezirea                                                                       | {'alegere'}                         | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Isus a strigat                                                                           | {'alegere'}                         | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                                            | {'alegere'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Lumea nu Te-a cunoscut                                                                   | {'alegere'}                         | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Oamenii lui Dumnezeu                                                                     | {'alegere'}                         | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Purtătorul Cuvântului                                                                    | {'alegere'}                         | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Rugăciune                                                                                | {'alegere'}                         | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Rugăciunea şi ascultarea                                                                 | {'alegere'}                         | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Viaţa din Hristos                                                                        | {'alegere'}                         | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Vrednicia şi nevrednicia                                                                 | {'alegere'}                         | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Şi ai Săi nu L-au primit...                                                              | {'alegere'}                         | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Alegerea şi mărturia                                                                     | {'Alegerea'}                        | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Alegerea Harului Ceresc                                                                  | {'Alegerea'}                        | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Alegerea luptătorilor                                                                    | {'Alegerea'}                        | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cap. 23 - Cuvânt Testamentar                                                             | {'alegerea', 'alegeri'}             | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cum M-ai trimes Tu...                                                                    | {'Alegerea', 'alegerea'}            | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Cap. 3 - Marea cernere                                                                   | {'alegerea', 'alegeri'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cuvântul lui Dumnezeu                                                                    | {'Alegerea', 'alegerea'}            | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| ... Pentru ca lumea să creadă                                                            | {'alegerea'}                        | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                      | {'alegerea', 'alegerii'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Mântuirea lui Dumnezeu                                                                   | {'alegerea'}                        | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Nu pe El - ci pe Baraba                                                                  | {'alegeri', 'alegerea'}             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Primirea şi darea                                                                        | {'alegerii', 'alegeri', 'alegerea'} | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Va veni un altul...                                                            | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                           | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Şi ultimul 2                                                                   | {'alegerea'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 4 - În virtutea frumosului avânt...                                                 | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Apele adânci se limpezesc greu                                                  | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                                 | {'Alegerea', 'alegeri'}             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 7 - Primii paşi spre o rânduială                                                    | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                                 | {'alegeri', 'alegerea'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Iarăşi s-a făcut dezbinare                                                               | {'alegerea'}                        | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 16-a după Rusalii                                            | {'alegerea'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'Alegerea', 'alegerea'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                            | {'Alegerea', 'alegerea'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Primiţi trimişii Domnului                                                                | {'alegerea'}                        | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Toţi cei din cetate au venit la El                                                       | {'alegerea', 'Alegerea'}            | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Vreme bună şi vreme rea                                                                  | {'alegerea'}                        | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| ... V-am făcut cunoscut tot...                                                           | {'alegerea'}                        | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Acum vedem bine...                                                                       | {'alegerii'}                        | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Alergarea stăruitoare                                                                    | {'alegerea'}                        | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Amintirile şi uitarea                                                                    | {'alegerea'}                        | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Apărarea Adevărului                                                                      | {'alegerea'}                        | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Arătarea şi ascunderea                                                                   | {'alegerii'}                        | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Atunci de ce botezi dacă nu eşti?                                                        | {'alegerii'}                        | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Aşteptarea şi sosirea                                                                    | {'alegerea'}                        | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Betania, satul Mariei şi al Martei...                                                    | {'alegerea'}                        | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Bucuria aflării Adevărului                                                               | {'alegerea'}                        | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                 | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Pe drumul Crucii                                                               | {'alegeri'}                         | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                         | {'alegerilor'}                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                   | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                                                       | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 24 - Pânza care se ţese                                                             | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                                 | {'alegerea'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 26 - Limpezirea apelor adânci                                                       | {'alegerea'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 28 - Alte întristări binefăcătoare                                                  | {'alegerea'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 3 - Începutul chemării                                                              | {'alegerii'}                        | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                                                | {'alegerea'}                        | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
++------------------------------------------------------------------------------------------+-------------------------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Alegere using https://api.comori-od.ro...
+Got 165 hits:
+Score: 12.8571415
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
 Type: articol
 Author: Traian Dorz
-Highlight: să ai inima cea mai hotărâtă în această <em>alegere</em>. Este de mai mare nevoie decât în oricare alte alegeri
+Highlight: hotărâtă în această <em>alegere</em>. Este de mai mare nevoie decât în oricare alte <em>alegeri</em> unice în viaţa ta.
 Highlight: lui Dumnezeu să-l călăuzească luminos în această <em>alegere</em>.
-Highlight: Când îţi <em>alegi</em> un prieten, când îţi <em>alegi</em> o meserie, când îţi <em>alegi</em> o casă, <em>alege</em> cu o inimă hotărâtă
-Highlight: fii ajutat şi călăuzit ca să <em>alegi</em> bine şi nu rău. Fiindcă de <em>alegerea</em> pe care o faci atunci poate depinde
-Highlight: Până n-ai o inimă hotărâtă, nu-ţi <em>alege</em> soţia ta, sau pe soţul tău cu care va trebui să
-Highlight: Un om nehotărât niciodată nu va <em>alege</em> ceva care să-l mulţumească. Şi niciodată nu va păstra
+Highlight: Înainte de <em>alegerea</em> oricărui lucru de care îţi alipeşti inima şi de
+Highlight: călăuzit ca să alegi bine şi nu rău. Fiindcă de <em>alegerea</em> pe care o faci atunci poate depinde atât fericirea
+Highlight: Prima condiţie pusă pentru <em>alegerea</em> celor şapte diaconi - slujitori ai primei biserici
 
-Score: 12.874999
+Score: 12.833332
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Propovăduirea Evangheliei
+Type: articol
+Author: Traian Dorz
+Highlight: în această <em>alegere</em>. Este de cea mai mare nevoie aceasta, mai mult decât în orice alte <em>alegeri</em> unice în
+Highlight: lui Dumnezeu să-l călăuzească luminos în această <em>alegere</em>.
+Highlight: 17 - Înainte de <em>alegerea</em> oricărui lucru, de care îţi alipeşti inima şi
+Highlight: Fiindcă de <em>alegerea</em> pe care o faci atunci poate depinde atât fericirea
+
+Score: 12.799999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
@@ -125,36 +135,19 @@ Type: articol
 Author: Traian Dorz
 Highlight: şi durerea celor rămaşi, m-am gândit la marea <em>alegere</em> din Ziua Judecăţii. Când Împăratul Hristos va împărţi
 Highlight: L-au primit sau L-au respins pe Isus. O, ce mare <em>alegere</em> va fi atunci! Între care te vei duce tu, suflete
-Highlight: Hristos Cel Sfânt Îşi <em>alege</em> astfel, Îşi dezleagă şi Îşi curăţeşte pe acei cărora
-Highlight: biata inimă omenească! Ferice însă de acei care se <em>aleg</em> şi care Îl caută pe Domnul Isus nu pentru mâncarea
 Highlight: ape... Ci numai când e tras la mal - şi urmează <em>alegerea</em>, atunci se vede ce rămâne cu adevărat curat şi
-Highlight: noi în toate ipostazele Istoriei Sale, spre a-Şi <em>alege</em> şi dovedi pe toţi cei care vin la El,
+Highlight: celelalte locuri din lume ne este foarte grea <em>alegerea</em> dintre Adevăr şi prieteni. - Numai aici, în cuptor
 
-Score: 12.874999
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
-Type: articol
-Author: Traian Dorz
-Highlight: noastre de a face acum o înţeleaptă şi mântuitoare <em>alegere</em> a uneia din aceste două căi, după Cuvântul Sfânt
-Highlight: totul cu un discernământ clar. Cu o putere de <em>alegere</em> limpede şi hotărâtă a tot ce ni se îmbie sau ni
-Highlight: Eu am ales. <em>Alege</em> şi tu, căci trebuie neapărat să <em>alegi</em>!  5
-Highlight: lumea asta care să scape de această obligaţie de a <em>alege</em>. De fapt, prin chiar condiţia vieţii pe care o are
-Highlight: trăieşte pe pământ, el trebuie să aleagă, el îşi <em>alege</em> neapărat una din aceste două căi: ori calea vieţii
-Highlight: ultimă. Şi trebuie să <em>alegi</em>.  Eu
-
-Score: 12.833332
+Score: 12.749999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 3 - La scadenţa ispăşirilor
 Type: articol
 Author: Traian Dorz
-Highlight: libera voinţă în a <em>alege</em> binele sau răul şi dându-i judecata cu care să facă această <em>alegere</em>, îi respectă fiecăruia
+Highlight: judecata cu care să facă această <em>alegere</em>, îi respectă fiecăruia <em>alegerea</em> pe care o face liber, - dar îl
 Highlight: sări celălalt, odihnit, începând să lovească fără <em>alegere</em>
-Highlight: fiecăruia <em>alegerea</em> pe care o face liber, - dar îl şi înştiinţează de urmările ei - şi de răsplătirea
-Highlight: limpede: Ia bine seama ce faci! Gândeşte-te bine ce <em>alegi</em>! Eram
 
-Score: 12.666666
+Score: 12.749999
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Fiul dă viaţă cui vrea
@@ -162,8 +155,9 @@ Type: articol
 Author: Traian Dorz
 Highlight: Există o <em>alegere</em> datorită harului (
 Highlight: Dar această <em>alegere</em> a venit în urma cunoaşterii
+Highlight: Acesta este singurul criteriu al <em>alegerii</em>.
 
-Score: 12.666666
+Score: 12.749999
 Volume: Cugetări Nemuritoare
 Book: Lumina Iubitului Fiu
 Title: Păcatul, izvorul răului
@@ -171,21 +165,57 @@ Type: articol
 Author: Traian Dorz
 Highlight: 16 - Există o <em>alegere</em> datorită harului (
 Highlight: Dar această <em>alegere</em> a venit în urma cunoaşterii
+Highlight: al <em>alegerii</em>
 
-Score: 9.916667
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Grăunţele şi rodul
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărata <em>alegere</em> desigur că o va face numai Domnul şi Stăpânul care
+Highlight: Această <em>alegere</em> se va face în Marea Zi a Răsplătirii, când Hristos
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Isus le-a zis: aduceţi din peştii...
+Type: articol
+Author: Traian Dorz
+Highlight: Adevărata <em>alegere</em> desigur că o va face numai Domnul şi Stăpânul care
+Highlight: Această <em>alegere</em> se va face în Marea Zi a Răsplătirii, când Hristos
+
+Score: 12.666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a a Postului Mare - (a Floriilor)
+Type: articol
+Author: Traian Dorz
+Highlight: noastre de a face acum o înţeleaptă şi mântuitoare <em>alegere</em> a uneia din aceste două căi, după Cuvântul Sfânt
+Highlight: totul cu un discernământ clar. Cu o putere de <em>alegere</em> limpede şi hotărâtă a tot ce ni se îmbie sau ni
+
+Score: 9.8
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Jertfa noastră
 Title: Pe scaunul de judecător
 Type: articol
 Author: Traian Dorz
 Highlight: este şi pentru tine de o însemnătate veşnică. Ce <em>alegere</em> faci tu? Pe cine condamni şi pe cine achiţi tu
-Highlight: sau pe Hristos? Dacă tu <em>alegi</em> păcatul, Îl osândeşti pe Dumnezeu. Dacă <em>alegi</em> să faci voia lumii, tu dai
-Highlight: la moarte firea ta cea veche şi <em>alegi</em> naşterea din nou. Dacă Îl <em>alegi</em> pe Hristos te răstigneşti pe tine
 Highlight: grea şi cerea pedeapsa cea mai mare. Acum era <em>alegerea</em> cea mai mare.  Pilat
-Highlight: începe să vadă gravitatea situaţiei. Acum nu mai <em>alege</em> chiar aşa de uşor.  Şi
-Highlight: - <em>Alege</em>, dacă îţi mai convine!  Aceasta
+Highlight: Aceasta era <em>alegerea</em> care se impusese acum lui Pilat. La acest hotar
+Highlight: chinuit de presimţiri rele - dar n-are tăria unei <em>alegeri</em> salvatoare. Acum
 
-Score: 9.833333
+Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: când profet nu poate fi decât acela care are o <em>alegere</em> numai de la Dumnezeu.
+Highlight: de la început s-a putut deosebi bine care este <em>alegerea</em> lui Dumnezeu şi care este întâietatea pe care
+Highlight: <em>Alegerea</em> lui s-a făcut în singurătatea unui pustiu şi în
+
+Score: 9.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
@@ -194,55 +224,83 @@ Author: Traian Dorz
 Highlight: i-a oprit spunând: voi puteţi greşi în această <em>alegere</em> pe cine să smulgeţi şi pe cine nu.
 Highlight: <em>Alegerea</em> celor în care să se facă această lucrare, este
 Highlight: multe ori, ucenicii s-au luptat singuri să facă <em>alegerea</em> şi scoaterea neghinei... Astfel au scos de multe
-Highlight: face nici un alt rău, afară poate de acela de a-şi <em>alege</em> dintre fiii ei cei sinceri, pe fiii lor cei prefăcuţi
-Highlight: său ca om, el respectă fiecăruia dreptul de a-şi <em>alege</em> şi a-şi urma încredinţările pe care le are. Şi pentru
 
-Score: 9.833333
+Score: 9.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 7 - Printre leu şi printre urs
 Type: articol
 Author: Traian Dorz
 Highlight: aceea zic, când Sergiu mi-a împărtăşit această <em>alegere</em> a lui, - am fost cu toată inima de aceeaşi părere
-Highlight: deprinsese bine arta de a vorbi îndrăzneţ şi atrăgător. <em>Alegea</em> diferite istorioare şi versete biblice, bine potrivite
-Highlight: voi mai face nimic, până când voi vedea ce se va <em>alege</em> din toată treaba asta! -
 Highlight: binecuvânteze pasul! - am zis eu. Cred şi eu că este <em>alegerea</em> cea mai potrivită! Pe
 Highlight: săptămâni în ajunul şedinţei Sf. Sinod pentru <em>alegerea</em> de episcop la Roman...
 
-Score: 9.8
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Eu le-am dat slava
+Type: articol
+Author: Traian Dorz
+Highlight: - ajung dintr-o dată printr-un har şi printr-o <em>alegere</em> slăvită,
+Highlight: Domnului să înţeleagă cât de mare este taina şi harul <em>alegerii</em> de care au fost învredniciţi ei, Mântuitorul spune
+Highlight: Prin <em>alegerea</em> primită şi prin ascultarea arătată.  Dumnezeu
+
+Score: 9.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)
+Type: articol
+Author: Traian Dorz
+Highlight: aleşi şi primiţi numai pe cei care au astfel de <em>alegere</em>.
+Highlight: acelaşi gând cu Duhul Sfânt în recunoaşterea acestei <em>alegeri</em>.  Oricine
+Highlight: Duhului şi a înţelepciunii, când este vorba de <em>alegerea</em> slujitorilor care angajează Numele Domnului, cinstea
+
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: În lucrarea tainică de <em>alegere</em>, de cioplire, de finisare a acestor
+Highlight: Dumnezeu nici în clin nici în mânecă... Cu prilejul <em>alegerii</em> de episcop la Cluj, domnia sa - ales deputat sinodal
+
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-Highlight: când profet nu poate fi decât acela care are o <em>alegere</em> numai de la Dumnezeu.
-Highlight: recunoştinţa inimilor primitoare ci şi toată ura celor care <em>aleg</em> să-L respingă pe Dumnezeu. Solul
-Highlight: de la început s-a putut deosebi bine care este <em>alegerea</em> lui Dumnezeu şi care este întâietatea pe care
-Highlight: <em>Alegerea</em> lui s-a făcut în singurătatea unui pustiu şi în
+Highlight: de pe fronturile Oastei? Şi iată astfel, prima <em>alegere</em> după statute a arătat cum vine amestecătura şi
+Highlight: spre lucruri trecătoare: statute, regulamente, <em>alegeri</em>, fonduri, clădiri de ziduri, etc. Deci, fraţilor
 
-Score: 9.8
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-Highlight: săptămână şi a unui ceas de rugăciune pe zi, la <em>alegere</em>, unul din cele 24 de ceasuri ale unei nopţi şi
-Highlight: <em>Alege</em> bine drumul pe care vrei să mergi c-apoi
-Highlight: c-apoi mereu mai grabnic pe el ai să <em>alegi</em> şi
-Highlight: primit dispoziţie să-l publice. Mi s-a recomandat să <em>aleg</em> ceea ce s-ar putea publica în condiţiile de azi
-
-Score: 9.8
+Score: 9.666667
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 17 - Ziua a doua
 Type: articol
 Author: Traian Dorz
-Highlight: primiţi cu o mare bucurie şi ospătaţi fără nici o <em>alegere</em>. Stă fiecare unde găseşte loc - şi mănâncă ce i
-Highlight: făcându-şi cu respect şi evlavie semnul Crucii. Se <em>aleg</em> totdeauna vorbitorii cei mai buni, poeziile cele
-Highlight: folosindu-se tot de acest necaz al nostru, vor <em>alege</em> prin pocăinţă iertarea Acelui Hristos, pentru Numele
-Highlight: surorile noastre pe care Domnul nostru Isus îi va mai <em>alege</em> pentru harul de a pătimi pentru El, că la vremea
+Highlight: Dar după ce s-a făcut această <em>alegere</em>, tot
+Highlight: strâmtei <em>alegeri</em>, - precum spune Evanghelia ( Matei
 
-Score: 9.8
+Score: 9.666667
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: Într-o zi din Săptămâna Luminată, după o nouă <em>alegere</em> din curte plecă cu un detaşament şi fratele Cornel
+Highlight: curte între barăci, comisia cu dosarele, pentru <em>alegerea</em> şi formarea altor detaşamente care plecau. Când
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Ce alegem noi?
+Type: articol
+Author: Traian Dorz
+Highlight: încercare a credinţei - nu mai rămâne decât o singură <em>alegere</em>: Soarta lui Hristos.
+Highlight: În <em>alegerea</em> aceasta stă înţelepciunea ta!  5
+
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica 1-a a Postului Mare
@@ -250,84 +308,33 @@ Type: articol
 Author: Traian Dorz
 Highlight: nostru de aur, de care fiind legaţi prin aceeaşi <em>alegere</em> Dumnezeiască, să ne arătăm vrednici ca şi ei, suferind
 Highlight: frumoasă dovadă a adevăratei credinţe este desigur <em>alegerea</em> şi primirea suferinţei împreună cu Domnul Hristos
-Highlight: nu sta niciodată la îndoială când este vorba să <em>alegi</em> între plăcerile de o clipă ale păcatului, şi între
-Highlight: şi Slava Viitoare, pe care ţi-o dă Isus Hristos. <em>Alege</em> acum hotărât să rămâi cu Hristos, să trăieşti şi
 
-Score: 9.8
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)
+Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
 Type: articol
 Author: Traian Dorz
-Highlight: aleşi şi primiţi numai pe cei care au astfel de <em>alegere</em>.
-Highlight: Dacă trebuie să <em>alegi</em>, ia tu partea cea mai slabă.  Dacă
-Highlight: vie de harul pe care i-l dă El unuia pe care Şi-l <em>alege</em> pentru o slujbă a Lui în ea, şi încă de la început
+Highlight: urmaşul său rânduit de Dumnezeu prin tainica Lui <em>alegere</em> la această slujbă, Sfântul Pavel caută să-l pregătească
+Highlight: Hristos şi învrednicit cu semnele vizibile ale <em>alegerii</em> Lui!  Nu
+
+Score: 9.666667
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Rugăciunea şi fiii ei
+Type: articol
+Author: Traian Dorz
+Highlight: aleşi şi primiţi numai pe acei care au o astfel de <em>alegere</em>.
 Highlight: Duhului şi a înţelepciunii, când este vorba de <em>alegerea</em> slujitorilor care angajează Numele Domnului, cinstea
 
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: de pe fronturile Oastei? Şi iată astfel, prima <em>alegere</em> după statute a arătat cum vine amestecătura şi
-Highlight: Se <em>alege</em> apoi o delegaţie de 15 laici care să prezinte această
-Highlight: mitropolitului Nicolae mergând cu ea în audienţă. Se <em>aleg</em> următorii delegaţi: avocat Pavel Maliţa, Victor
-
-Score: 9.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: Într-o zi din Săptămâna Luminată, după o nouă <em>alegere</em> din curte plecă cu un detaşament şi fratele Cornel
-Highlight: - Eu! - sărea fericitul <em>alegător</em>, care încă de pe când sosise pâinea, pusese ochii
-Highlight: curte între barăci, comisia cu dosarele, pentru <em>alegerea</em> şi formarea altor detaşamente care plecau. Când
-
 Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Tineretul şi îndrumarea lui
 Type: articol
 Author: Traian Dorz
-Highlight: Maria, 25 de fraţi şi surori au fost amendaţi fără <em>alegere</em>, fiecare cu câte o mie de lei.
-Highlight: Tot ce se <em>alege</em> sau se leapădă sau se nimiceşte în cuptorul încercărilor
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: năpustiră asupra mea şi mai furioşi, lovind fără <em>alegere</em> şi oprire.
-Highlight: limpede: ia seama ce faci, gândeşte-te bine ce <em>alegi</em>!  Eram
-
-Score: 9.666667
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: Fraţii şi surorile cu toţii erau amendaţi fără <em>alegere</em> cu sume de la cinci sute până la cinci mii de lei
-Highlight: <em>Alege</em> bine ţinta spre care te îndrepţi că
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Eu le-am dat slava
-Type: articol
-Author: Traian Dorz
-Highlight: - ajung dintr-o dată printr-un har şi printr-o <em>alegere</em> slăvită,
-Highlight: Prin <em>alegerea</em> primită şi prin ascultarea arătată.  Dumnezeu
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Lumea nu Te-a cunoscut
-Type: articol
-Author: Traian Dorz
-Highlight: Ce îngrozitoare şi ce cumplită <em>alegere</em>!
-Highlight: <em>Alege</em> viaţa veşnică,
+Highlight: 13 - Cea mai fericită <em>alegere</em> pentru orice om nu este aceea când el este ales
+Highlight: 14 - Deşi <em>alegerea</em> Adevărului nu-ţi poate aduce pe pământ, de cele
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -336,6 +343,22 @@ Title: ... Adevărata Viţă
 Type: articol
 Author: Traian Dorz
 Highlight: după libera şi conştienta noastră <em>alegere</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: A fi în Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: 11 - Ce îngrozitoare şi ce cumplită <em>alegere</em>!
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Acum are loc judecata lumii
+Type: articol
+Author: Traian Dorz
+Highlight: şi fără o <em>alegere</em> precisă (
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -354,20 +377,20 @@ Author: Traian Dorz
 Highlight: încercările acestea îşi vor fi făcut lucrarea de <em>alegere</em> şi de întemeinicire pe adevăr, va veni însănătoşirea
 
 Score: 9.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Ascultarea Cuvântului
 Type: articol
 Author: Traian Dorz
-Highlight: În lucrarea tainică de <em>alegere</em>, de cioplire, de finisare a acestor
+Highlight: rămânând fără o <em>alegere</em> limpede a ascultării de voia Domnului
 
 Score: 9.5
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 17 - Ziua a doua
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
-Highlight: Dar după ce s-a făcut această <em>alegere</em>, tot aşa de sigur aduce Dumnezeu iarăşi vremea
+Highlight: Maria, 25 de fraţi şi surori au fost amendaţi fără <em>alegere</em>, fiecare cu câte o mie de lei.
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -386,12 +409,84 @@ Author: Traian Dorz
 Highlight: la durerea celor rămaşi şi mă gândeam la marea <em>alegere</em> din Ziua Judecăţii Divine... Când se vor citi numele
 
 Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: năpustiră asupra mea şi mai furioşi, lovind fără <em>alegere</em> şi oprire.
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 27 - Pe drumul ales
+Type: articol
+Author: Traian Dorz
+Highlight: săptămână şi a unui ceas de rugăciune pe zi, la <em>alegere</em>, unul din cele 24 de ceasuri ale unei nopţi şi
+
+Score: 9.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: Fraţii şi surorile cu toţii erau amendaţi fără <em>alegere</em> cu sume de la cinci sute până la cinci mii de lei
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: primiţi cu o mare bucurie şi ospătaţi fără nici o <em>alegere</em>. Stă fiecare unde găseşte loc - şi mănâncă ce i
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Ce mare taină este Lucrarea Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: 16 - În lucrarea tainică de <em>alegere</em>, de cioplire, de finisare a acestor “pietre vii”
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: Căci despărţiţi de Mine nu puteţi face
 Type: articol
 Author: Traian Dorz
 Highlight: greu pas, în care trebuie să facă cea mai grea <em>alegere</em> cu putinţă.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Dovadă şi credinţă
+Type: articol
+Author: Traian Dorz
+Highlight: Iarna face o dreaptă <em>alegere</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Greutatea de a crede
+Type: articol
+Author: Traian Dorz
+Highlight: Aceasta este singura <em>alegere</em> după care Dumnezeu a rânduit la osândă şi la slavă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Ispita şi trezirea
+Type: articol
+Author: Traian Dorz
+Highlight: încercările acestea îşi vor fi făcut lucrarea lor de <em>alegere</em> şi întemeinicire pe Adevăr,
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Isus a strigat
+Type: articol
+Author: Traian Dorz
+Highlight: Atunci nu mai rămâne decât o singură <em>alegere</em>: Soarta lui Hristos.
 
 Score: 9.5
 Volume: Hristos - Puterea Apostoliei
@@ -402,12 +497,28 @@ Author: Traian Dorz
 Highlight: Este în această <em>alegere</em> şi un har al lui Dumnezeu pentru ei, dar este şi
 
 Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mijlocitorul nostru
+Title: Lumea nu Te-a cunoscut
 Type: articol
 Author: Traian Dorz
-Highlight: urmaşul său rânduit de Dumnezeu prin tainica Lui <em>alegere</em> la această slujbă, Sfântul Pavel caută să-l pregătească
+Highlight: Ce îngrozitoare şi ce cumplită <em>alegere</em>!
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Oamenii lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: 14 - Este în această <em>alegere</em> a unşilor lui Dumnezeu şi un har al lui Dumnezeu
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Purtătorul Cuvântului
+Type: articol
+Author: Traian Dorz
+Highlight: greu pas, în care trebuie să facă cea mai mare <em>alegere</em> cu neputinţă de pe lume.
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -416,6 +527,22 @@ Title: Rugăciune
 Type: articol
 Author: Traian Dorz
 Highlight: şi ca o necesară <em>alegere</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Rugăciunea şi ascultarea
+Type: articol
+Author: Traian Dorz
+Highlight: şi din fiecare cernere, o nouă <em>alegere</em> fericită a ceva ce este şi mai bine şi mai frumos
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Viaţa din Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: după libera şi conştienta noastră <em>alegere</em>.
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -433,88 +560,43 @@ Type: articol
 Author: Traian Dorz
 Highlight: Ce <em>alegere</em> nefericită! De atunci tâlharii şi ucigaşii i-au
 
-Score: 2.857143
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Tu-ai fi putut s-alegi
-Type: poezie
+Score: 2.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Alegerea şi mărturia
+Type: articol
 Author: Traian Dorz
-Highlight: Tu-ai fi putut s-<em>alegi</em> Isuse
-Highlight: Tu-ai fi putut s-<em>alegi</em> şi Trupul
-Highlight: Tu-ai fi putut s-<em>alegi</em> alt leagăn
-Highlight: Tu-ai fi putut s-<em>alegi</em> şi fraţii
-Highlight: fi putut s-<em>alegi</em> Isuse
-Highlight: <em>alege</em> cel mai potrivit
-Highlight: Tu-ai fi putut s-<em>alegi</em>
+Highlight: 1 - <em>Alegerea</em> noastră între Hristos şi Baraba, între Hristos şi lume, între batjocură şi cinstire, se
+Highlight: <em>Alegerea</em> şi mărturia
 
-Score: 2.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: La urma-urmei se alege
-Type: poezie
+Score: 2.0
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Alegerea Harului Ceresc
+Type: articol
 Author: Traian Dorz
-Highlight: La urma-urmei se <em>alege</em>
-Highlight: cel ce-a ştiut <em>alege</em> bine
-Highlight: cine-a ştiut <em>alege</em> bine
-Highlight: şi-<em>alege</em>-L pe Hristos.
-Highlight: cine-a ştiut <em>alege</em> astăzi
-Highlight: La urma-urmei se <em>alege</em>
+Highlight: <em>Alegerea</em> Harului Ceresc
 
-Score: 2.6666665
+Score: 2.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Alegerea luptătorilor
 Type: poezie
 Author: Traian Dorz
-Highlight: zis: - <em>alege</em>-ţi bine oameni vrednici şi viteji
-Highlight: şi din felul cum beau apă de la râu, tu să-i <em>alegi</em>.
 Highlight: <em>Alegerea</em> luptătorilor
 
-Score: 2.5
+Score: 0.8333333
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cine-şi va alege frate
-Type: poezie
-Author: Traian Dorz
-Highlight: Cine-şi va <em>alege</em> frate pe oricine şi oricum
-Highlight: Cine-şi va <em>alege</em> frate
-
-Score: 2.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Cine-şi va alege frate
-Type: poezie
-Author: Traian Dorz
-Highlight: Cine-şi va <em>alege</em> frate
-Highlight: Cine-şi va <em>alege</em> frate
-
-Score: 0.85714287
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Adevărata credinţă
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
 Type: articol
 Author: Traian Dorz
-Highlight: - Iar tu <em>alegi</em>.
-Highlight: <em>Alegi</em> liber,
-Highlight: <em>alegi</em> zilnic,
-Highlight: <em>alegi</em> conştient,
-Highlight: <em>alegi</em> nesilit,
-Highlight: <em>alegi</em> pe totdeauna
+Highlight: că după <em>alegerea</em> noului patriarh şi-a rezolvării cu celelalte mişcări ce urmează acestei <em>alegeri</em> în cadrul
+Highlight: Dar trebuie ca <em>alegerea</em> şi primirea acestei sarcini să fie făcută cu tot
+Highlight: legământul cerut - ei n-au făcut pasul acestei <em>alegeri</em>. Nici părinţii lor credincioşi şi nici fraţii bătrâni
+Highlight: singurele căi pentru îndepărtarea gunoaielor, pentru <em>alegerea</em> zgurii şi prăpădirea neascultătorilor. Pentru
 
-Score: 0.85714287
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-Highlight: un mijloc prin care sfinţenia lui Dumnezeu Îşi <em>alege</em> şi Îşi curăţă mereu pe acei care - tocmai prin trecerea
-Highlight: va putea cere oricât. Din rândul căreia se vor <em>alege</em> guri care puteau striga orice. Şi condeie care puteau
-Highlight:  şi <em>alegerea</em> potrivită Cuvântului biblic care spune: Se aseamănă
-Highlight: ce s-a umplut, pescarii îl scot la mal, şed jos, <em>aleg</em> în vase ce este bun şi aruncă ce este rău... (
-Highlight: libertate şi vestire, trebuie să fie trecută prin <em>alegerea</em> din vremile de cernere. Tocmai pentru a se dovedi
-Highlight: Acum Duhul Sfânt, Marele Pescar, făcea <em>alegerea</em> cea duhovnicească, cu ajutorul
-
-Score: 0.85714287
+Score: 0.8333333
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Mijlocitorul nostru
 Title: Cum M-ai trimes Tu...
@@ -522,282 +604,31 @@ Type: articol
 Author: Traian Dorz
 Highlight: <em>Alegerea</em> lui Dumnezeu este desigur un har, un mare har
 Highlight: <em>Alegerea</em> lui Hristos este în întregime darul Lui, căci
-Highlight: Şi care pentru împlinirea acestor planuri Îşi <em>alege</em> Singur unealta cu care va lucra. Timpul în care
 Highlight: - nimic n-a putut împiedica planul şi <em>alegerea</em> trimesului lui Dumnezeu.
 Highlight: Pentru <em>alegerea</em> celor dinainte Dumnezeu trimisese pe vreun înger
 Highlight: rugăm să-i faci pe toţi într-adevăr vrednici de <em>alegerea</em> pe care le-ai rânduit-o,
 
-Score: 0.85714287
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Când azi, în faţa ta
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>alegi</em> ce vrei, - dar nu uita.
-Highlight: şi-n locul care ţi-l <em>alegi</em>
-Highlight: <em>alegi</em> ce vrei, - dar nu uita.
-Highlight: <em>alegi</em> ce vrei, - dar nu uita.
-Highlight: <em>alegi</em> ce vrei, - dar nu uita.
-Highlight: <em>alegi</em> ce vrei, - dar nu uita...
-
-Score: 0.85714287
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre înţelepciune
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 3 - Marea cernere
 Type: articol
 Author: Traian Dorz
-Highlight: 19 - Prostul nu <em>alege</em> multe, una-două dă cu parul;
-Highlight: şi <em>aleg</em> mărgăritarul fals, din cel adevărat.
-Highlight: a le şti <em>alege</em> bine, asta-i mintea cea mai mare.
-Highlight: şi s-<em>alegi</em> ce e lumină şi ce-i binecuvântare.
-Highlight: iar nebunul întinează tot ce el nu ştie-<em>alege</em>.
-Highlight: se <em>alege</em> praf de tot.
+Highlight:  şi <em>alegerea</em> potrivită Cuvântului biblic care spune: Se aseamănă
+Highlight: <em>alegeri</em>
+Highlight: libertate şi vestire, trebuie să fie trecută prin <em>alegerea</em> din vremile de cernere. Tocmai pentru a se dovedi
+Highlight: Acum Duhul Sfânt, Marele Pescar, făcea <em>alegerea</em> cea duhovnicească, cu ajutorul
 
-Score: 0.85714287
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Isus a zis: vrei?
-Type: articol
-Author: Traian Dorz
-Highlight: Iar tu <em>alegi</em>. <em>Alegi</em> liber.
-Highlight: <em>Alegi</em> zilnic.
-Highlight: <em>Alegi</em> conştient.
-Highlight: <em>Alegi</em> nesilit.
-Highlight: <em>Alegi</em> pe totdeauna
-
-Score: 0.85714287
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
-Type: articol
-Author: Traian Dorz
-Highlight: cuptorul <em>alege</em> aurul din zgură, suferinţa <em>alege</em> pe cei credincioşi dintre ceilalţi.
-Highlight: Căci Dumnezeu <em>alege</em> şi astăzi, ca totdeauna, lucrurile slabe ale lumii
-Highlight: Dumnezeu Îşi <em>alege</em> pe ai Lui dintre toţi ceilalţi este  cernerea
-Highlight: Cernerea <em>alege</em> grâul
-Highlight: Cuvânt. De ce? Pentru că numai suferinţa i-a putut <em>alege</em> şi prin ea s-au putut dovedi cei cu adevărat credincioşi
-
-Score: 0.85714287
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
-Type: articol
-Author: Traian Dorz
-Highlight: marea întrebare şi în marea grijă de a şti şi de a <em>alege</em> care sarcină să i se ia omului mai întâi - cea trupească
-Highlight: lovituri dureroase, când de-o parte, când de alta. <em>Alegerea</em> trebuie să se facă - şi ea nu se poate face decât
-Highlight: zice: Binecuvântată să fie frământarea care face <em>alegerea</em>. Dumnezeu găseşte că mai este ceva bun în noi
-Highlight: şi fă să cearnă ciurul lui satana, până ce se va <em>alege</em> tot ce e bun şi tot ce e rău.
-Highlight: Binecuvântat să fie Iosif şi Nicodim, care se <em>aleg</em> din mijlocul lor şi vin la Isus
-Highlight: sufletul care, într-o astfel de răscruce a vieţii lui, <em>alege</em> calea şi voia lui Dumnezeu, care este mântuirea
-
-Score: 0.8333333
+Score: 0.8
 Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Ascultare şi părtăşie
+Book: Mărturisirea Strălucită
+Title: Cuvântul lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: minciuna avantajoasă sau adevărul păgubitor, - el va <em>alege</em> totdeauna şi fără părere de rău adevărul,
-Highlight: comoditatea leneviei sau asprimea muncii, el va <em>alege</em> hotărât munca,
-Highlight: tu să <em>alegi</em> totdeauna şi hotărât înfrânarea.
-Highlight: - tu să <em>alegi</em> hotărât ceea ce îţi porunceşte Domnul, mergând curajos
-Highlight: - Veşnicul Hristos, trece alegând pe cei ce-L <em>aleg</em>,
-
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: atunci pe veci de veci va fi târziu a mai <em>alege</em>.
-Highlight: alţii. Dacă fiecare din noi am zice: vreau să-mi <em>aleg</em> 2-3 oameni care n-au cunoştinţă despre Dumnezeu
-Highlight: Binecuvântează acest mult şi minunat tineret al Tău şi <em>alege</em> din mijlocul lor mii şi mii de slujitori credincioşi
-Highlight:  de ostaşi vrednici de Împărăţia şi Oastea Ta. <em>Alege</em>-Ţi scriitori inspiraţi, cântăreţi cu har, poeţi
-Highlight: Te rugăm în chip deosebit <em>alege</em> din mijlocul celor mai înţelepţi, mai inspiraţi
-
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: dată de către un altul dintre noi. Fiecare îşi va <em>alege</em> cum va vrea cuvântul biblic asupra căruia să medităm
-Highlight: după un ceas de vorbărie, - cei ce te ascultă nu se <em>aleg</em> cu nimic şi nu se văd duşi nicăieri,
-Highlight: atunci frumoasele noastre meditaţii. - Şi ce se <em>alegea</em> de tot gândul curat cu care le începusem!
-Highlight: evanghelică în care simţiseră cândva chemarea şi <em>alegerea</em> lui Dumnezeu. Trăiseră şi ei şi luptaseră alături
-Highlight: cuptor până când ori vom arde de tot, ori se va <em>alege</em> ceva curat din noi - dacă mai este ceva curat. Ţine-ne
-
-Score: 0.8333333
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Cuvântul şi Duhul
-Type: articol
-Author: Traian Dorz
-Highlight: prin necredinţa ta faţă de Hristos. <em>Alege</em> viaţa, <em>alege</em> credinţa, <em>alege</em>-L pe Hristos, dragul meu, chiar acum
-Highlight: în întuneric, în slavă sau în nefericire, - ţi-l <em>alegi</em>  tu
-Highlight: - atunci se face dezbinarea, împărţirea, <em>alegerea</em>.
-
-Score: 0.8333333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Călător
-Type: poezie
-Author: Traian Dorz
-Highlight: Prietene, <em>alege</em>! <em>Alege</em>-L pe Hristos
-Highlight: căci n-ai decât odată prilejul să <em>alegi</em>!
-Highlight: <em>Alege</em> astăzi,
-Highlight: - astăzi, <em>alege</em>-L pe Hristos!
-
-Score: 0.8333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Eu le cunosc
-Type: articol
-Author: Traian Dorz
-Highlight: lui Hristos, nu va sta niciodată la îndoială în <em>alegerea</em> drumului pe care trebuie să-l ia, fiindcă el a
-Highlight: minciuna avantajoasă sau adevărul păgubitor, el va <em>alege</em> totdeauna şi fără părere de rău adevărul, mergând
-Highlight: comoditatea, lenevia, sau asprimea muncii, el va <em>alege</em> hotărât munca, fiindcă ştie că aceasta este voia
-Highlight: patimii, sau anevoiosului urcuş al înfrânării, el va <em>alege</em> totdeauna şi hotărât înfrânarea.
-Highlight: luminos, drept şi cunoscut al luptei cinstite, el va <em>alege</em> hotărât ceea ce îi porunceşte Domnul mergând cinstit
-
-Score: 0.8333333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Nu pe El - ci pe Baraba
-Type: articol
-Author: Traian Dorz
-Highlight: Că <em>alegerea</em> a fost făcută.
-Highlight: acolo reprezentând lumea întreagă. Şi strigând îşi <em>alegeau</em> pe un răufăcător în locul Binefăcătorului lor.
-Highlight: Şi în clipa aceasta mare să-L <em>alegem</em> de data asta cu toţii pe Isus, Salvatorul sufletelor
-Highlight: - vino, vino la Hristos. Şi <em>alege</em> viaţa Lui.
-Highlight: Primeşte-mă Isuse Doamne între cei care Te <em>aleg</em> pe Tine ca Domnul şi Mântuitorul lor pe totdeauna
-
-Score: 0.8333333
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Răscoala de la Numeri cap. 14
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: Şi atunci, se vor <em>alege</em> cele două tabere. Unii îşi vor <em>alege</em> o altă căpetenie şi vor pleca
-Highlight: Şi au zis: Să ne <em>alegem</em> o căpetenie şi să ne întoarcem în Egipt  (
-Highlight: Şi au zis unul altuia: Să ne <em>alegem</em> o căpetenie, şi să ne întoarcem în Egipt.  Fraţii
-Highlight:  acum suntem în război cu toată lumea... să ne <em>alegem</em> o altă căpetenie... ne trebuie o conducere nouă
-
-Score: 0.8333333
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Singurul Mântuitor este Hristos
-Type: articol
-Author: Traian Dorz
-Highlight: cunoştinţă despre libertatea şi posibilitatea lui de a <em>alege</em> de a face un lucru şi a nu face,
-Highlight: şi voinţa liberă care să-l facă în stare a <em>alege</em>,
-Highlight: 14 - Prin <em>alegerea</em> pe care omul o face prin aceea ce
-Highlight: şi tot el îşi <em>alege</em> astfel şi urmările faptei sale.
-Highlight: alegând voit să fie fără Dumnezeu aici, voit îşi <em>alege</em> să fie şi în cealaltă existenţă fără El.
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Alipire
-Type: poezie
-Author: Traian Dorz
-Highlight: când <em>alegi</em> şi ce-ţi <em>alegi</em>!
-Highlight: - Suflete, să fii cu grijă când <em>alegi</em>
-Highlight: şi ce-ţi <em>alegi</em>!
-
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-Highlight: acestea ni le îndrumă şi ni le <em>alege</em> conştiinţa. Numai ea ştie <em>alege</em> şi poate îndruma bine. Ea, luminată
-Highlight: în Mâna lui Dumnezeu să-i cearnă El până îi va <em>alege</em> care sunt şi câţi sunt ai Lui... Pentru că în felul
-Highlight: prin frumoasele noastre colinde vechi. Să-l ştim <em>alege</em> şi folosi bine, pentru trăinicia şi frumuseţea creaţiilor
-
-Score: 0.8
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 24 - Înaintea mai-marilor norodului
-Type: articol
-Author: Traian Dorz
-Highlight: Până când voi vedea ce se va <em>alege</em> din toată treaba asta.
-Highlight: săptămâni, în ajunul şedinţei Sfântului Sinod pentru <em>alegerea</em> episcopului de Roman.
-Highlight: acestea - te vor împiedica. Te vor opri şi nu se va <em>alege</em> din tot ce vrei decât rău. Eu am spus la câţiva
-Highlight: la câţi vor vrea să mă asculte. Ştiu că nu se va <em>alege</em> nimic bun de aici ci numai rău.
-
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 7 - Primii paşi spre o rânduială
-Type: articol
-Author: Traian Dorz
-Highlight: tuturor acestora era încă de la început organizarea, <em>alegerea</em> comitetului de conducere, congresele generale
-Highlight: declarat adunarea deschisă şi purcezându-se la <em>alegerea</em> unui preşedinte şi a unui secretar de şedinţă
-Highlight: între cei beţi ca să opresc caii, praf şi cenuşă se <em>alegea</em> de noi şi de oasele noastre. Acum, de câte ori
-Highlight: gândurile bune cu comitetul şi cu statutele - nu se va <em>alege</em> nimic practic. Lucrurile, prin voia lui Dumnezeu
-
-Score: 0.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Cum are omul acesta învăţătură?
-Type: articol
-Author: Traian Dorz
-Highlight: Ba încă uneori <em>alege</em> anume calea aceasta, pentru a I se vedea puterea
-Highlight: Ba Domnul <em>alege</em> chiar mai cu plăcere calea aceasta, şi pe vasele
-Highlight: Tu de multe ori <em>alegi</em> vasele cele mai slabe spre a face de ruşine pe cele tari.
-Highlight: <em>Alegi</em> sufletele simple
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Banatului
-Type: articol
-Author: Traian Dorz
-Highlight: - să-ţi <em>alegi</em> întotdeauna cui îi dai şi cui îi cei’.
-Highlight: şi <em>alege</em> ce e bine, ce e drept şi de folos.
-Highlight: tu mai mult decât cu ochiul, cu urechea ţi-o <em>alege</em>
-Highlight: 247 - Numa-nţelepciunea ştie a <em>alege</em> luminos
-
-Score: 0.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Isus ştia de la început...
-Type: articol
-Author: Traian Dorz
-Highlight: Ştia cine va <em>alege</em> Calea, Adevărul şi Viaţa Lui, deşi El a stăruit
-Highlight: au avut şi mintea şi conştiinţa cu care puteau <em>alege</em>.
-Highlight: de a <em>alege</em>.
-Highlight: <em>Alege</em> să
-
-Score: 0.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
-Type: articol
-Author: Traian Dorz
-Highlight: are o chemare, care are Duhul Sfânt şi care poate <em>alege</em> sărăcia, suferinţele, lacrimile, jertfa şi moartea
-Highlight: cea veşnică din Ziua Judecăţii lui Hristos - şi <em>alege</em> bine!
-Highlight: n-ar trebui să şi-o ia. De la chemarea şi până la <em>alegerea</em> cuiva pentru aceasta este totuşi un drum mai lung
-Highlight: care nu numai el, cel chemat, dar şi cei care îl <em>aleg</em> trebuie să fie cu toată grija asupra alegerii sale
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 150
-Type: poezie
-Author: Traian Dorz
-Highlight: sufletului nostru, ajută-ne să o <em>alegem</em> pe cea a Vieţii, să Te <em>alegem</em> pe Tine.
-Highlight: Înţelepciunii şi Luminii spre a putea înţelege, pătrunde şi <em>alege</em> Calea Vieţii, Binelui şi Mântuirii.  Când
-Highlight: Căci de <em>alegerea</em> pe care o facem acum, depinde toată veşnicia noastră.
-
-Score: 0.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Unii ziceau: este Hristosul
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Alege</em> viaţa, <em>alege</em> credinţa, <em>alege</em> pe Hristos dragul meu, chiar acum
-Highlight: sau în întuneric, în slavă sau nefericire, ţi-l <em>alegi</em> tu singur,  poate
+Highlight: 9 - <em>Alegerea</em> lui Hristos este în întregime darul Lui, căci
+Highlight: - totuşi nimic n-a putut împiedica planul şi <em>alegerea</em> lui Dumnezeu!
+Highlight: Lucrare a Evangheliei Împărăţiei... Şi pentru <em>alegerea</em> fiecărui ucenic.
+Highlight: Pentru <em>alegerea</em> celor dinaintea lor Dumnezeu trimisese pe vreun
 
 Score: 0.75
 Volume: Meditații la Ev. după Ioan
@@ -810,175 +641,135 @@ Highlight: să zădărnicească mântuirea voastră, dar nu şi <em>alegerea</em
 Highlight: şi pe toţi urmaşii lor cărora le-ai rânduit <em>alegerea</em> şi trimiterea Evangheliei mântuitoare.
 
 Score: 0.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
+Type: articol
+Author: Traian Dorz
+Highlight: n-ar trebui să şi-o ia. De la chemarea şi până la <em>alegerea</em> cuiva pentru aceasta este totuşi un drum mai lung
+Highlight: care îl aleg trebuie să fie cu toată grija asupra <em>alegerii</em> sale.
+Highlight: experienţele amare ale celor din trecut. Şi în privinţa <em>alegerii</em> pentru slujba sfântă a celor ce se înghesuie spre
+
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Mântuirea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Dar toate acestea nu vor anula <em>alegerea</em> lor, însă vor schimba soarta voastră spre osândă
+Highlight: să zădărnicească mântuirea voastră, dar nu şi <em>alegerea</em> lor.
+Highlight: atât prin <em>alegerea</em> primită cât şi prin ascultarea arătată.
+
+Score: 0.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Nu pe El - ci pe Baraba
+Type: articol
+Author: Traian Dorz
+Highlight: Acum sosise clipa marii şi hotărâtoarei <em>alegeri</em> a acestui popor.
+Highlight: Că <em>alegerea</em> a fost făcută.
+Highlight: singura mântuire stă în revenirea asupra acestei <em>alegeri</em>.
+
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Primirea şi darea
+Type: articol
+Author: Traian Dorz
+Highlight: voieşti poţi păstra ceea ce ai primit ca urmare a <em>alegerii</em> tale.
+Highlight: răspunderea pentru una sau pentru alta din aceste două <em>alegeri</em> ale voinţei tale, va rămânea numai asupra ta.
+Highlight: Amândouă sunt în Mâna Lui, dar <em>alegerea</em> lor pentru tine, tu trebuie neapărat să o faci
+
+Score: 0.6666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 10 - Va veni un altul...
 Type: articol
 Author: Traian Dorz
 Highlight: iar Tatăl este Neschimbat! Lui nu-I pare rău de <em>alegerea</em> pe care a făcut-o! Şi nici noi nu trebuie să gândim
-Highlight: Deşi mi-aş fi putut <em>alege</em> şi eu un pat de jos unde mi-ar fi fost şi mie mai
 Highlight: se împlinise. Adevărul fusese mărturisit, iar <em>alegerea</em> de partea cui să treacă, o făcuseră cu toţii,
 
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-Highlight: discuţia pe altă faţă, cum făcea de obicei, - ce s-ar <em>alege</em> şi de noi dacă - să zicem - s-ar ivi şi la noi în
-Highlight: să fie Domnul că nu este aşa. Ştii ce s-ar putea <em>alege</em> şi din noi? Ce s-a ales din pârâiaşul cel limpede
-Highlight: fonduri şi bogăţii pământeşti, în curând nu se va mai <em>alege</em> nimic. Pentru că este întemeiată pe nedreptate,
-
-Score: 0.75
+Score: 0.6666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
+Title: Cap. 22 - Peregrinările soliei
 Type: articol
 Author: Traian Dorz
-Highlight: Dar trebuie ca <em>alegerea</em> şi primirea acestei sarcini să fie făcută cu tot
-Highlight: De fapt mi se mai spusese şi înainte că după <em>alegerea</em> noului patriarh şi-a rezolvării cu celelalte mişcări
-Highlight: singurele căi pentru îndepărtarea gunoaielor, pentru <em>alegerea</em> zgurii şi prăpădirea neascultătorilor. Pentru
+Highlight: Şi-a adus aminte de felicitarea mea trimisă la <em>alegerea</em> sa de acum câţiva ani, lucru care m-a surprins
+Highlight: amânat discutarea problemei noastre până după <em>alegerea</em> noului patriarh.
 
-Score: 0.75
+Score: 0.6666666
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 23 - Şi ultimul 2
 Type: articol
 Author: Traian Dorz
 Highlight: Peste <em>alegerea</em> lor a venit însă cu totul altfel, <em>alegerea</em> Domnului, care l-a chemat
-Highlight: este vorba de împlinirea promisiunii, atunci se <em>aleg</em> cei puţini care fac, dintre cei mulţi care  au
 
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-Highlight: urmărim dar desfăşurarea acestei cerneri pentru <em>alegerea</em> sentinţei curate şi lupta pentru limpezirea apelor
-Highlight: asta nu-i greu. Asta este foarte uşor. Când omul <em>alege</em> ambiţia şi ura, împotrivirea şi neascultarea, prăbuşirea
-Highlight: foloseşti spre amăgirea celor naivi şi creduli, îţi <em>alegi</em> numai ce-ţi convine şi ţie şi lor spre a nu incomoda
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-Highlight:  alături de o fiinţă pe care o iubeşti şi ţi-o <em>alegi</em> ca să te împreuni cu ea în totul şi pe totdeauna
-Highlight: <em>Alegerea</em> între aceste două feluri de lucrări şi de lucrători
-Highlight: înainte. Din rândurile acestora, vrăjmaşul îşi va <em>alege</em> în curând alte nefericite unelte prin care va da
-
-Score: 0.75
+Score: 0.6666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 4 - În virtutea frumosului avânt...
 Type: articol
 Author: Traian Dorz
-Highlight: zestrea morală. Mă gândeam în mine: Doamne, ce se va <em>alege</em> de mine şi de truda mea? Sunt bolnav şi s-ar putea
 Highlight: alesul Său. Şi a ne da nouă o netăgăduită dovadă de <em>alegerea</em> şi investitura Sa asupra trimesului Său.
 Highlight: toţi care credem în dreptatea lui Dumnezeu şi în <em>alegerea</em> lui Hristos pentru robul şi apostolul Său cu a
 
-Score: 0.75
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 5 - Apele adânci se limpezesc greu
+Type: articol
+Author: Traian Dorz
+Highlight: răspundere - s-au propus atunci multe soluţii. Pentru <em>alegerea</em> celor mai bune dintre ele s-au ţinut multe consfătuiri
+Highlight: scrisorilor, asigurarea materialului necesar la timp, <em>alegerea</em> şi ajustarea acestui material, clasificarea pe
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight:  ca foaia de propagandă a arhiepiscopiei. <em>Alegerea</em> făcută de Înaltul Ierarh a fost norocoasă căci
+Highlight: 5 scrie despre scaunul diavolului unde se ţin <em>alegeri</em> de preşedinţi şi comitete:
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 7 - Primii paşi spre o rânduială
+Type: articol
+Author: Traian Dorz
+Highlight: tuturor acestora era încă de la început organizarea, <em>alegerea</em> comitetului de conducere, congresele generale
+Highlight: declarat adunarea deschisă şi purcezându-se la <em>alegerea</em> unui preşedinte şi a unui secretar de şedinţă
+
+Score: 0.6666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: că există o lege a liberei voinţe şi a liberei <em>alegeri</em>, - peste care nici Dumnezeu nu vrea să treacă niciodată
+Highlight: omului acest mare dar de a fi liber în voinţa şi în <em>alegerea</em> sa. Acest dar, Dumnezeu nu-l îngrădeşte niciodată
+
+Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Cine Mă urăşte pe Mine...
+Book: Hristos - Păstorul nostru
+Title: Iarăşi s-a făcut dezbinare
 Type: articol
 Author: Traian Dorz
-Highlight: În felul acesta Dumnezeu Însuşi <em>alege</em> pe oricine îl vede El că este vrednic
-Highlight: Aşa se <em>aleg</em> şi se dovedesc cei care iubesc pe Hristos, cu adevărat
-Highlight: şi aşa se <em>aleg</em> şi se dovedesc şi cei care Îl urăsc pe Isus şi se
+Highlight: par curaţi, dar când vine Hristos şi când vine <em>alegerea</em> Lui, atunci se arată că
+Highlight: adică îl descopere pe fiecare aşa cum este şi face <em>alegerea</em> care cum sunt.
 
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Dar unii din ei, s-au dus la farisei
+Score: 0.6666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 16-a după Rusalii
 Type: articol
 Author: Traian Dorz
-Highlight: Iată cele două feluri de oameni care se <em>aleg</em> totdeauna acolo unde se face o mărturisire adevărată
-Highlight: un mare folos duhovnicesc, sunt şi unii care se <em>aleg</em> cu o pagubă veşnică.
-Highlight: prin ajungerea între cei credincioşi, totuşi se <em>aleg</em> şi câte unii care se duc unde nu trebuie,
+Highlight: Ce necunoscut era Saul înainte de <em>alegerea</em> lui pentru Evanghelie, şi ce cunoscut a devenit
+Highlight: de Aur înainte, şi ce cunoscut a devenit după <em>alegerea</em> sa!
 
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bine
-Type: articol
-Author: Traian Dorz
-Highlight: 1 - Fiul meu, <em>alege</em> numai binele adevărat;
-Highlight: tu <em>alege</em> totdeauna binele - cu gând senin!
-Highlight: lasă ce-i plăcut, şi-<em>alege</em> ce e bun
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bunătate
-Type: articol
-Author: Traian Dorz
-Highlight: 58 - Din orice viaţă prăpădită s-<em>alege</em>-un câine cu vreun os,
-Highlight: poate fi amar ori dulce, ori tâlhar ori sfânt - ce-<em>alege</em>;
-Highlight: când ştii ce-<em>alegi</em> şi ce aduni.
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre cinste
-Type: articol
-Author: Traian Dorz
-Highlight: mulţi <em>aleg</em> mai bine moartea decât viaţa de dispreţ.
-Highlight: când cei mai cinstiţi s-<em>aleg</em>.
-Highlight: însă numai drumul cinstei te <em>alege</em> fericit.
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Munteniei
-Type: articol
-Author: Traian Dorz
-Highlight: s-<em>alege</em> fiul om nebun,
-Highlight: - nu te băga în vorbe rele de vrei să nu te-<em>alegi</em> pătat,
-Highlight: s-<em>aleg</em> cu răni şi cu noroi.
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Din străfundul veşniciei
-Type: poezie
-Author: Traian Dorz
-Highlight: ori blestem s-<em>alegi</em>, trecând.
-Highlight: poţi s-<em>alegi</em> ori drumul Morţii
-Highlight: îţi <em>alegi</em> să mergi de-acum?
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Din străfundul veşniciei
-Type: poezie
-Author: Traian Dorz
-Highlight: ori blestem s-<em>alegi</em>, trecând.
-Highlight: poţi s-<em>alegi</em> ori drumul Morţii
-Highlight: îţi <em>alegi</em> să mergi de-acum?
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Fiul lui Simon Iscarioteanul
-Type: articol
-Author: Traian Dorz
-Highlight: Ce se va <em>alege</em> de sufletul care va ajunge soţul sau soţia unui
-Highlight: Ce se va <em>alege</em> de fiii care se vor naşte dintr-o astfel de familie?
-Highlight: Ce se va <em>alege</em> mai departe de
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Judecata stă... în iubirea întunericului
-Type: articol
-Author: Traian Dorz
-Highlight: cunoştinţă despre posibilitatea şi libertatea lui de a <em>alege</em> între a face un lucru şi a nu-l face,
-Highlight: şi voinţa liberă care să-l facă în stare a <em>alege</em>,
-Highlight: prin <em>alegerea</em> pe care o faci între ceea ce
-
-Score: 0.75
+Score: 0.6666666
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)
@@ -986,149 +777,207 @@ Type: articol
 Author: Traian Dorz
 Highlight: <em>Alegerea</em> virtuţii sau a păcatului vine totdeauna în urma
 Highlight: de a se transforma pe sine în condiţia sa, după <em>alegerea</em> pe care şi-a făcut-o.
-Highlight: De ce cei mai mulţi oameni <em>aleg</em> să urmeze nu binele pentru care li s-au dat toate
 
-Score: 0.75
+Score: 0.6666666
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
 Type: articol
 Author: Traian Dorz
-Highlight: daruri ale dragostei Lui, să nu uităm niciodată că <em>alegerea</em> noastră pentru moştenirea acestora ne obligă pe
-Highlight: nou, care iau calea lui Hristos şi jugul Lui. Care <em>aleg</em> soarta lui Isus pentru aici şi veşnicie.
-Highlight: Fericit este orice suflet care <em>alege</em> amarul acum şi verdele din viaţa viitoare. Fericit
+Highlight: lovituri dureroase, când de-o parte, când de alta. <em>Alegerea</em> trebuie să se facă - şi ea nu se poate face decât
+Highlight: zice: Binecuvântată să fie frământarea care face <em>alegerea</em>. Dumnezeu găseşte că mai este ceva bun în noi
 
-Score: 0.75
+Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Libertatea şi robia
+Book: Mărturisirea Strălucită
+Title: Primiţi trimişii Domnului
 Type: articol
 Author: Traian Dorz
-Highlight: Numai Dumnezeu Şi-i <em>alege</em> pe ei!
-Highlight: Căci El <em>alege</em> pe cele smerite pentru a le face de ruşine pe cele tari
-Highlight: şi <em>alege</em> pe cele din urmă
+Highlight: de legi omeneşti şi de piedici de netrecut în <em>alegerea</em> căilor Sale,
+Highlight: Iată, aici în <em>alegerea</em> Sfintei Fecioare Maria ca mijloc al întrupării
 
-Score: 0.75
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Moise, alesul Domnului, a petrecut
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: Însemnaţi-vă bine lucrul acesta: Atotputernicul Dumnezeu <em>alege</em> un rug, un spin în care pogoară şi Se arată lui
-Highlight: altfel de arbori mai mari şi mai frumoşi, dar Domnul <em>alege</em> rugul cel negru şi smerit.
-Highlight: sau într-un stejar puternic, dar Domnul Dumnezeu <em>alege</em> rugul cel negru şi smerit.
-
-Score: 0.75
+Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Să spui, dar nu
-Type: poezie
-Author: Traian Dorz
-Highlight: s-<em>alegi</em> ce spui şi cui vorbeşti
-Highlight: să taci, dar nu oricând, ci-<em>alege</em>
-Highlight: ci-<em>alege</em> ce-i adevărat.
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Să spui, dar nu
-Type: poezie
-Author: Traian Dorz
-Highlight: s-<em>alegi</em> ce spui şi cui vorbeşti
-Highlight: să taci, dar nu oricând, ci-<em>alege</em>
-Highlight: ci-<em>alege</em> ce-i adevărat.
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Toate-ai să le pierzi în viaţă
-Type: poezie
-Author: Traian Dorz
-Highlight: putere a ne lepăda de poftele firii pământeşti şi să <em>alegem</em> calea înţeleaptă a înfrânării ca să nu pierim în
-Highlight: Să <em>alegem</em> calea smereniei în locul deşartei măriri de o clipă de pe pământ
-Highlight: Şi să <em>alegem</em> dragostea
-
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Voinţa
+Book: Hristos - Izvorul nostru
+Title: Toţi cei din cetate au venit la El
 Type: articol
 Author: Traian Dorz
-Highlight: în tot ce voieşti se cere să <em>alegi</em> cu-nţelepciune.
-Highlight: că în cele ce <em>alege</em> să voiască, - se arată
-Highlight: poţi s-<em>alegi</em> ce vrei - urmarea numai singur vei purta
+Highlight: încercări pentru <em>alegerea</em> celor care sunt cu adevărat credincioşi din mulţimea care a venit. <em>Alegerea</em> pentru curăţirea
 
-Score: 0.75
+Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Începutul minunilor mele
+Book: Săgeţile biruitoare
+Title: Vreme bună şi vreme rea
 Type: articol
 Author: Traian Dorz
-Highlight: unică şi veşnică Ţie pentru sufletul pe care Ţi-l <em>alegi</em> Tu şi pe care dintr-o dată îl faci atunci cunoscut
-Highlight: 3 - Ferice de sufletul pe care Ţi-l <em>alegi</em> Tu să-i dăruieşti sămânţa Ta Dumnezeiască pentru
-Highlight: Slavă veşnică Ţie Isuse pentru sufletul pe care îl <em>alegi</em> să-i dai jugul Tău care înseamnă însoţirea lui cu
+Highlight: Dumnezeu în voinţa omului şi în puterea sa. După <em>alegerea</em> sa, şi după dorinţa sa.
+Highlight: 9 - În voinţa noastră stă <em>alegerea</em> pe care dorim să o facem,
 
-Score: 0.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Înţelepciunea
-Type: articol
-Author: Traian Dorz
-Highlight: 8 - Dacă vrei s-<em>alegi</em> din două - între adevăr şi viaţă
-Highlight: tu <em>alege</em> adevărul, orişice ţi-ar sta
-Highlight: 9 - Înţeleptul mai degrabă să-l <em>alegi</em>, ca orice-avere
-
-Score: 0.75
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Şi lumea i-a urât...
+Book: Hristos - Viţa vieţii noastre
+Title: ... V-am făcut cunoscut tot...
 Type: articol
 Author: Traian Dorz
-Highlight: Va trebui să <em>alegi</em> clar, ori una ori alta.
-Highlight: <em>Alege</em>-L frate pe Hristos, oricât de mare
-Highlight: Fii atunci strălucit cu noi şi ajută-ne să <em>alegem</em> partea Ta,
+Highlight: Isus, căutăm neîncetat să sfinţim chemarea şi <em>alegerea</em> noastră, unind şi întărind tot mai frumos şi mai
 
-Score: 0.6666666
+Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: ... În odaia de judecată
+Book: Hristos - Luminătorul nostru
+Title: Acum vedem bine...
 Type: articol
 Author: Traian Dorz
-Highlight: fiecare martor şi fiecare apărător al lui Hristos îşi <em>alege</em> acum cu toată libertatea sa şi cu toată ştiinţa
-Highlight: şi îşi <em>alege</em> şi ceea ce îşi va primi de la El după ceea ce a
+Highlight: Sosise ceasul clarificării şi al <em>alegerii</em>.
 
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: A crezut în El vreunul din cei mari?
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Alergarea stăruitoare
 Type: articol
 Author: Traian Dorz
-Highlight: meargă liber, pe calea pe care şi-o <em>alege</em> singur, poporul totdeauna <em>alege</em> pe Hristos, şi nu rătăceşte.
+Highlight: dintâi lucru care se cere să-l aibă neapărat în <em>alegerea</em> lui un om al lui Dumnezeu: bunătatea.
 
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Al tău e numai Astăzi
-Type: poezie
-Author: Traian Dorz
-Highlight: ţi-<em>alegi</em> un veşnic drum.
-Highlight: e clipa ta, <em>alege</em>-ţi
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Al tău e numai Astăzi
-Type: poezie
-Author: Traian Dorz
-Highlight: ţi-<em>alegi</em> un veşnic drum.
-Highlight: e clipa ta, <em>alege</em>-ţi
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Alte corăbii veniseră
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Amintirile şi uitarea
 Type: articol
 Author: Traian Dorz
-Highlight: Te rugăm ajută-ne să cunoaştem şi să <em>alegem</em> cu toţii mijlocul prin care putem ajunge
-Highlight: Fiul meu, <em>alege</em> numai binele adevărat!
+Highlight: prin <em>alegerea</em> şi lucrarea puterii lui Hristos,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Apărarea Adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: care prin <em>alegerea</em> cea tainică şi înţeleaptă a lui Dumnezeu
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Arătarea şi ascunderea
+Type: articol
+Author: Traian Dorz
+Highlight: şi cel fericit al <em>alegerii</em> tale pentru cer. Hotărârea ta puternică, va fi
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Atunci de ce botezi dacă nu eşti?
+Type: articol
+Author: Traian Dorz
+Highlight: Care are nu numai trăirea vieţii, ci şi harul <em>alegerii</em> acestei isprăvnicii
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Aşteptarea şi sosirea
+Type: articol
+Author: Traian Dorz
+Highlight: Numai <em>alegerea</em> vieţii sau a morţii tale, depinde de vremea aceasta
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Betania, satul Mariei şi al Martei...
+Type: articol
+Author: Traian Dorz
+Highlight: prin <em>alegerea</em> şi harul lui Hristos,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Bucuria aflării Adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: Ce minunat s-a dovedit plină de înţelepciune <em>alegerea</em> lor.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
+Type: articol
+Author: Traian Dorz
+Highlight: Sfântului Sinod care urma să se întâlnească pentru <em>alegerea</em> unui nou episcop la Roman, unde scaunul era vacant
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 10 - Pe drumul Crucii
+Type: articol
+Author: Traian Dorz
+Highlight: Statutele sunt apoi o revărsare de <em>alegeri</em>, grade, funcţii, taxe, fonduri, etc... lucruri
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: tăria politica acestui guvern. Era în preajma <em>alegerilor</em> şi în acest scop foaia
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
+Type: articol
+Author: Traian Dorz
+Highlight: Chiar dacă <em>alegerea</em> lui Dumnezeu este o taină a dragostei şi bunăvoinţei
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight: domeniile. Şi mai ales cerea mult talent şi în <em>alegerea</em> subiectelor şi în tratarea lor. Primele lecţii
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 24 - Pânza care se ţese
+Type: articol
+Author: Traian Dorz
+Highlight: am mai încercat odată la Bucureşti îndată după <em>alegerea</em> noului patriarh Teoctist, care fusese mitropolit
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 24 - Înaintea mai-marilor norodului
+Type: articol
+Author: Traian Dorz
+Highlight: săptămâni, în ajunul şedinţei Sfântului Sinod pentru <em>alegerea</em> episcopului de Roman.
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 26 - Limpezirea apelor adânci
+Type: articol
+Author: Traian Dorz
+Highlight: urmărim dar desfăşurarea acestei cerneri pentru <em>alegerea</em> sentinţei curate şi lupta pentru limpezirea apelor
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 28 - Alte întristări binefăcătoare
+Type: articol
+Author: Traian Dorz
+Highlight: ori cu abaterea în care sunteţi. Aceasta este <em>alegerea</em> clară pe care trebuie chiar acum să o faceţi.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 3 - Începutul chemării
+Type: articol
+Author: Traian Dorz
+Highlight: În ziua <em>alegerii</em> de protopop, toţi cei adunaţi au hotărât, fără
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Dar suferinţele trec iar răsplata lor rămâne. Că <em>alegerea</em> noastră pentru o suferinţă împreună cu Domnul
 

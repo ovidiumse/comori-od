@@ -1,211 +1,205 @@
-+----------------------------------------------------------------------------------------+--------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                  | Occurrences                                      | Author      | Tip                              | Carte                        | Volum   |
-+----------------------------------------------------------------------------------------+--------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Evlavia                                                                                | {'evlavios', 'Evlavia', 'evlavia'}               | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Buna-cuviinţă şi evlavia                                                               | {'evlavios', 'evlavie', 'evlavia'}               | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)          | {'evlavios', 'evlavia', 'evlavioasă', 'evlavie'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 2 - A treia zi istorică                                                           | {'evlavios', 'evlavie', 'evlavioasă'}            | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)        | {'evlavios', 'evlavia', 'evlavioasă'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Aproape de Ierusalim                                                                   | {'evlavios', 'evlavie'}                          | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - Frumosul tineret creştin                                                     | {'evlavios', 'evlavie'}                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Apostolia Femeilor                                                           | {'evlavios', 'evlavie'}                          | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Nu te mira!... Trebuie!                                                                | {'evlavios', 'evlavioasă'}                       | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Zicea astfel pentru că era un hoţ                                                      | {'evlavios', 'Evlaviei'}                         | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... Fiindcă voi aveţi obicei...                                                        | {'evlavios'}                                     | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Cel mai bun misionar                                                         | {'evlavios'}                                     | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                                                  | {'evlavios'}                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Ce vrei să faci, fă repede                                                             | {'evlavios'}                                     | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Cine este fără de păcat, să arunce...                                                  | {'evlavios'}                                     | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| David                                                                                  | {'evlavios'}                                     | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Din pricina lui mulţi credeau                                                          | {'evlavios'}                                     | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Fecioarele înţelepte                                                                   | {'evlavios'}                                     | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Moise şi Aron                                                                          | {'evlavios'}                                     | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Prilejul şi păcatul                                                                    | {'evlavios'}                                     | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Psalmul 50                                                                             | {'evlavios'}                                     | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 18 - Frumoasele noastre Rusalii                                                   | {'evlavioasă', 'evlavie'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Era o sărbătoare...                                                                    | {'evlavia', 'evlavie', 'evlavioasă'}             | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 11 - Semnele Oastei Domnului                                                      | {'evlavia', 'evlavie'}                           | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                        | {'evlavia', 'evlavie', 'evlavioase'}             | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Fiindcă era mare preot... a profeţit                                                   | {'evlavioase', 'evlavia', 'evlavie'}             | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                        | {'evlavioşii', 'evlavie'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)     | {'evlavie', 'evlavia'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Acum vedem bine...                                                                     | {'evlavia', 'evlavie'}                           | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 5 - Binecuvântata muncă grea                                                      | {'evlavia', 'evlavie'}                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                             | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Eu îl voi învia în Ziua de Apoi                                                        | {'evlavia', 'evlavioase'}                        | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)                    | {'evlavia'}                                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                  | {'evlavia', 'evlavie'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)  | {'evlavie'}                                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)                      | {'evlavioase', 'evlavie', 'evlavia'}             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Ucenici geloşi                                                                         | {'evlavioşi', 'Evlavia', 'evlavia'}              | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Voi Mă numiţi... şi bine ziceţi                                                        | {'evlavie', 'evlaviei'}                          | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| ... În odaia de judecată                                                               | {'evlavie', 'evlavii'}                           | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| ... Ştia că la Dumnezeu Se duce                                                        | {'evlavioasă', 'evlaviei'}                       | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Ca voi să vă miraţi                                                                    | {'evlavia', 'evlavie'}                           | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                   | {'evlavia', 'evlavie'}                           | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Pe urmele profetului                                                         | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Un an adânc roditor                                                          | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Vin rândurile noi                                                            | {'evlavioasă', 'evlavia'}                        | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Grâul cel care moare                                                          | {'evlavioasă', 'evlavioasa'}                     | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                           | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 3 - Primii paşi spre Lumină                                                       | {'evlavie', 'evlavia'}                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 7 - A doua Judecată                                                               | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cine nu Mă iubeşte...                                                                  | {'evlavie', 'evlavia'}                           | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Cine trăieşte şi crede, nu va muri! Crezi tu?                                          | {'evlavie', 'evlaviei'}                          | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Conştiinţa şi mustrarea                                                                | {'evlavia', 'evlavie'}                           | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Când a auzit că vine... I-a ieşit înainte                                              | {'evlavie'}                                      | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Căutau pe Isus...                                                                      | {'evlavie', 'evlavia'}                           | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Eu sunt Uşa                                                                            | {'evlavioasă', 'evlavioşi'}                      | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Fericirea de a fi cu Domnul                                                            | {'evlavie'}                                      | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Ioan a mărturisit despre El...                                                         | {'evlavii', 'Evlaviei'}                          | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Isus în Templu învăţa norodul                                                          | {'evlavie'}                                      | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica Sfintei Învieri                                              | {'evlavia', 'evlavioşi'}                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                                          | {'evlaviei', 'evlavioasă'}                       | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                    | {'evlavie'}                                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor) | {'evlavioasă', 'evlaviei'}                       | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                          | {'evlavie', 'evlavia'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum) | {'evlavia', 'evlavie'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                          | {'evlavie'}                                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La picioarele lui Isus                                                                 | {'evlavia', 'evlavie'}                           | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Lumea Mă urăşte, pentru că - mărturisesc                                               | {'evlavie'}                                      | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Mereu prin lupte                                                                       | {'evlavioase'}                                   | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Mulţime şi singurătate                                                                 | {'evlavie'}                                      | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Nişte greci... se suiseră să se închine                                                | {'evlavioasă', 'evlavia'}                        | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Nu judecaţi după înfăţişare!                                                           | {'evlavioase', 'evlavie'}                        | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Paştile... erau aproape                                                                | {'evlavioasă', 'evlavie'}                        | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Părinţii noştri...                                                                     | {'evlavie'}                                      | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Va veni vremea când...                                                                 | {'evlavie'}                                      | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Învăţătorul şi ucenicul                                                                | {'evlavie', 'evlavioase'}                        | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| “Fraţii” Lui                                                                           | {'evlavie'}                                      | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Au rămas la Isus                                                                   | {'evlavia'}                                      | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... Duhul Sfânt nu fusese dat încă...                                                  | {'evlavioase'}                                   | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Nu l-a păstrat pentru sine...                                                      | {'evlavioase'}                                   | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... în Numele Meu, voi face                                                            | {'evlavioasă'}                                   | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| ... Şi Se făcea deopotrivă cu Dumnezeu                                                 | {'evlavia'}                                      | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Adevăr şi înşelare                                                                     | {'evlavie'}                                      | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Alţii s-au ostenit                                                                     | {'evlavioşi'}                                    | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Atunci vom fi fericiţi amândoi                                                         | {'evlavie'}                                      | Traian Dorz | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | articol |
-| Au trebuit 46 de ani...                                                                | {'evlavioasă'}                                   | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Avuţie                                                                                 | {'evlavioasă'}                                   | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Aşa cum cunosc Eu pe Tatăl                                                             | {'evlaviei'}                                     | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Binecuvântare vouă                                                                     | {'evlavioşi'}                                    | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Binefacerea şi recunoştinţa                                                            | {'evlavie'}                                      | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Bucurie şi nefericire                                                                  | {'evlavia'}                                      | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Cap. 1 - Cel mai frumos Isus                                                           | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                        | {'evlaviei'}                                     | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                               | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                       | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                             | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                             | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                         | {'evlavioasă'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                     | {'evlavioasă'}                                   | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                        | {'evlavie'}                                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                            | {'evlavioasă'}                                   | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-+----------------------------------------------------------------------------------------+--------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-Searching Evlavios using http://localhost:9000...
-Got 221 hits:
-Score: 11.947369
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Evlavia
-Type: articol
-Author: Traian Dorz
-Highlight: îndemnul bun îi cere a fi <em>evlavios</em>.
-Highlight: 1 - <em>Evlavia</em>-i respectul şi buna-cuviinţă ce
-Highlight: <em>evlavia</em> nu râde
-Highlight: 2 - <em>Evlavia</em> s-arată în
-Highlight: 3 - <em>Evlavia</em>-i virtutea
-Highlight: 4 - <em>Evlavia</em> în lume atât de rar se vede dar
-Highlight: <em>Evlavia</em>
-
-Score: 11.666667
++---------------------------------------------------------------------------------+------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                           | Occurrences                              | Author      | Tip                              | Carte                        | Volum   |
++---------------------------------------------------------------------------------+------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Lucrarea Domnului Isus                                                          | {'evlavios'}                             | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Un slujitor bun                                                                 | {'evlavios'}                             | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Teama de păcat                                                                  | {'evlavios', 'evlavioşi'}                | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Meditaţie şi trăire                                                             | {'evlavios', 'evlavioasă'}               | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)   | {'evlavios', 'evlavioasă', 'evlavioase'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Nu te mira!... Trebuie!                                                         | {'evlavios', 'neevlavios', 'evlavioasă'} | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Cap. 2 - A treia zi istorică                                                    | {'evlavios', 'evlavioasă'}               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Când a auzit Petru că este Domnul...                                            | {'evlavios', 'evlavioşi'}                | Traian Dorz | Hristos - Slava noastră          | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv) | {'evlavios', 'evlavioasă'}               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Numele biruitorului                                                             | {'evlavios', 'evlavioase'}               | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| ... Fiindcă voi aveţi obicei...                                                 | {'evlavios'}                             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| 2 Regi 5, 1                                                                     | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Adevăratul ucenic al Domnului                                                   | {'evlavios'}                             | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Apostolia sfintelor femei                                                       | {'evlavios'}                             | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Aproape de Ierusalim                                                            | {'evlavios'}                             | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Apropierea lui Dumnezeu                                                         | {'evlavios'}                             | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Buna-cuviinţă şi evlavia                                                        | {'evlavios'}                             | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cap. 11 - Cel mai bun misionar                                                  | {'evlavios'}                             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                                              | {'evlavios'}                             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 14 - Apostolia Femeilor                                                    | {'evlavios'}                             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 18 - Un vânt rău                                                           | {'evlavios'}                             | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Ce vrei să faci, fă repede                                                      | {'evlavios'}                             | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Cercetarea de sine                                                              | {'evlavios'}                             | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Cine Mă vede pe Mine                                                            | {'evlavios'}                             | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cine este fără de păcat, să arunce...                                           | {'evlavios'}                             | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| David                                                                           | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Despre cinstirea Maicii Domnului                                                | {'evlavios'}                             | Traian Dorz | Întâi să fim                     | Cugetări Nemuritoare         | articol |
+| Din pricina lui mulţi credeau                                                   | {'evlavios'}                             | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Dovada învierii noastre                                                         | {'evlavios'}                             | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Evlavia                                                                         | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Exod 33, 7-11                                                                   | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Facerea de bine                                                                 | {'evlavios'}                             | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Fecioarele înţelepte                                                            | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Fraţii şi vrăjmaşii                                                             | {'evlavios'}                             | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Hotărârile frăţeşti                                                             | {'evlavios'}                             | Traian Dorz | Semănaţi Cuvântul Sfânt          | Cugetări Nemuritoare         | articol |
+| Lucrarea Duhului Sfânt                                                          | {'evlavios'}                             | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Matei 4, 1-11                                                                   | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 11      | Cântări Nemuritoare          | poezie  |
+| Mintea şi inima                                                                 | {'evlavios'}                             | Traian Dorz | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| Moise şi Aron                                                                   | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Mâhnire şi nădejde                                                              | {'evlavios'}                             | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Prilejul şi păcatul                                                             | {'evlavios'}                             | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Psalmul 50                                                                      | {'evlavios'}                             | Traian Dorz | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
+| Păcatul şi moartea                                                              | {'evlavios'}                             | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | articol |
+| Uneltele lui Dumnezeu                                                           | {'evlavios'}                             | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Vorbirea şi felul ei                                                            | {'evlavios'}                             | Traian Dorz | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
+| Zicea astfel pentru că era un hoţ                                               | {'evlavios'}                             | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Întocmai cum Mi le-a spus Tatăl                                                 | {'evlavios'}                             | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Rugăciuni vinovate                                                              | {'evlavioase', 'evlavioşi'}              | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Cap. 2 - Grâul cel care moare                                                   | {'evlavioasă', 'evlavioasa'}             | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                 | {'evlavioase'}                           | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Eu sunt Uşa                                                                     | {'evlavioasă', 'evlavioşi'}              | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Mereu prin lupte                                                                | {'evlavioase'}                           | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Să ne învăţăm pe noi înşine                                                     | {'evlavioasă', 'evlavioasa'}             | Traian Dorz | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| ... Duhul Sfânt nu fusese dat încă...                                           | {'evlavioase'}                           | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Nu l-a păstrat pentru sine...                                               | {'evlavioase'}                           | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| ... în Numele Meu, voi face                                                     | {'evlavioasă'}                           | Traian Dorz | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
+| ... Ştia că la Dumnezeu Se duce                                                 | {'evlavioasă'}                           | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| A fi închinător adevărat                                                        | {'evlavioasă'}                           | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| A sosit ceasul să fie proslăvit Fiul                                            | {'evlavioasei'}                          | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Alergarea pentru Domnul                                                         | {'evlavioasă'}                           | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Alţii s-au ostenit                                                              | {'evlavioşi'}                            | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Ascultarea de Dumnezeu                                                          | {'evlavioase'}                           | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Au trebuit 46 de ani...                                                         | {'evlavioasă'}                           | Traian Dorz | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Avuţie                                                                          | {'evlavioasă'}                           | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Biblia şi viaţa                                                                 | {'evlavioşi'}                            | Traian Dorz | Strălucirea Biruinţei            | Cugetări Nemuritoare         | articol |
+| Binecuvântare vouă                                                              | {'evlavioşi'}                            | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Binefacerea şi nerecunoştinţa                                                   | {'evlavioase'}                           | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Bunul slujitor al Domnului                                                      | {'evlavioase'}                           | Traian Dorz | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| Cap. 17 - Vin rândurile noi                                                     | {'evlavioasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                            | {'evlavioasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Al treilea februarie                                                  | {'evlavioasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                              | {'evlavioasă'}                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                     | {'evlavioasă'}                           | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                          | {'evlavioasă'}                           | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                             | {'evlavioşi'}                            | Traian Dorz | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
+| Cap. 5 - Necazuri şi speranţe                                                   | {'evlavioşi'}                            | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cel iubitor - şi cei neiubitori                                                 | {'evlavioasă'}                           | Traian Dorz | Alergarea Stăruitoare            | Cugetări Nemuritoare         | articol |
+| Cheamă pe bărbatul tău...                                                       | {'evlavioasă'}                           | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Când au văzut - au crezut                                                       | {'evlavioasă'}                           | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Cântaţi mame dragi                                                              | {'evlavioşi'}                            | Traian Dorz | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
+| Cât sunt în lume, sunt Lumina lumii                                             | {'evlavioasă'}                           | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Dacă rămâneţi în Mine... cereţi orice                                           | {'evlavioasă'}                           | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
+| Darurile lui Dumnezeu                                                           | {'evlavioasă'}                           | Traian Dorz | Credinţa Încununată              | Cugetări Nemuritoare         | articol |
+| Două mii de ani Isuse...                                                        | {'evlavioasă'}                           | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Dulce şi amar                                                                   | {'evlavioşi'}                            | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| El zicea: eu sunt                                                               | {'evlavioasă'}                           | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Era o sărbătoare...                                                             | {'evlavioasă'}                           | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Eu Îl cunosc... vin de la El                                                    | {'evlavioasă'}                           | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Eu îl voi învia în Ziua de Apoi                                                 | {'evlavioase'}                           | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Faptă şi răsplată                                                               | {'evlavioşi'}                            | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Fericirea lumii întregi                                                         | {'evlavioasă'}                           | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Fiindcă era mare preot... a profeţit                                            | {'evlavioase'}                           | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
+| Fiul dă viaţă cui vrea                                                          | {'evlavioasă'}                           | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Făgăduinţa şi împlinirea                                                        | {'evlavioasă'}                           | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Iată Mielul lui Dumnezeu                                                        | {'evlavioasă'}                           | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Iubirea şi nădejdea                                                             | {'evlavioasă'}                           | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica Sfintei Învieri                                       | {'evlavioşi'}                            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)            | {'evlavioasă'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                 | {'evlavioşii'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                                   | {'evlavioasă'}                           | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
++---------------------------------------------------------------------------------+------------------------------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Evlavios using https://api.comori-od.ro...
+Got 144 hits:
+Score: 14.25
 Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Buna-cuviinţă şi evlavia
+Book: Întâi să fim
+Title: Lucrarea Domnului Isus
 Type: articol
 Author: Traian Dorz
-Highlight: 1 - Omul <em>evlavios</em> şi cinstit răspunde totdeauna cuviincios ori da, ori nu - aşa cum este adevărul cât
-Highlight: 10 - Cine rămâne credincios umblând cu <em>evlavie</em> şi smerenie în temerea Domnului, în Lucrarea Domnului
-Highlight: Buna-cuviinţă şi <em>evlavia</em>
+Highlight: împrejurare să nu ne pierdem chipul <em>evlavios</em>, vocabularul <em>evlavios</em> şi portul <em>evlavios</em> de copii ai lui Dumnezeu -
 
-Score: 9.962963
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Un slujitor bun
+Type: articol
+Author: Traian Dorz
+Highlight: slujitor bun al Domnului va fi un mădular smerit şi <em>evlavios</em> nu numai cu buzele sale şi cu zâmbetul lui, ci
+Highlight: Uneori până şi celui <em>evlavios</em> i se pare că diavolul este atotputernic şi că
+Highlight: atât de uluitoare pentru noi, că chiar şi cel mai <em>evlavios</em> este la o răscruce foarte grea.
+
+Score: 12.888888
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Teama de păcat
+Type: articol
+Author: Traian Dorz
+Highlight: oameni de pe pământ a fiecărui suflet care a fost <em>evlavios</em> şi vrednic, din numărul celor buni, atât de puţini
+Highlight: oricărui om <em>evlavios</em> şi bun de pe lume!
+Highlight: În ceata cea mică şi rară a oamenilor <em>evlavioşi</em>, fiecare plecare
+Highlight: - cu atâta cei <em>evlavioşi</em> care se duc dintre oameni, sunt mai de regretat
+Highlight: 10 - Se duc oamenii <em>evlavioşi</em>...
+Highlight: 11 - Se duc oamenii <em>evlavioşi</em>, care răbdând toată prigonirea celui rău, n-au
+
+Score: 12.799999
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Meditaţie şi trăire
+Type: articol
+Author: Traian Dorz
+Highlight: şi de un cuget smerit şi <em>evlavios</em>, - acela dimpotrivă, cu cât
+Highlight: să-şi primească şi să-şi păstreze totdeauna un <em>evlavios</em> duh al ascultării de Hristos.
+Highlight: înaintea lui Dumnezeu decât ascultarea smerită şi <em>evlavioasă</em> a voii Sale.  Cu
+Highlight: învredniceşte fiul sau robul, sau ucenicul, care arată o <em>evlavioasă</em> ascultare de Dumnezeu, oriunde ar fi el!  Când
+
+Score: 9.8
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
 Type: articol
 Author: Traian Dorz
-Highlight: multă duioşie şi dragoste: Caută să fii <em>evlavios</em>... <em>evlavia</em> este folositoare în orice privinţă, întrucât
+Highlight: său cu multă duioşie şi dragoste: Caută să fii <em>evlavios</em>... evlavia este folositoare în orice privinţă
 Highlight: acela va avea înaintea sa o viaţă <em>evlavioasă</em>... o fiinţă <em>evlavioasă</em>.
-Highlight: dureroasă lipsă de <em>evlavie</em>! Virtutea care ne lipseşte poate cel mai mult este tocmai <em>evlavia</em>. Cei mai mulţi
-Highlight: 12. De altfel, toţi cei ce vor să trăiască cu <em>evlavie</em> în Hristos Isus vor fi prigoniţi. 13
-Highlight: trebuie să fie: Toţi cei ce vor să trăiască cu <em>evlavie</em> în Hristos Isus trebuie să fie prigoniţi ( 2
-Highlight: 12 - Să trăiască cu <em>evlavie</em> Mare
+Highlight: de aceste sentimente, are imaginea unei feţe <em>evlavioase</em>. Şi cine poate întâlni o fiinţă împodobită cu
 
-Score: 9.8
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Nu te mira!... Trebuie!
+Type: articol
+Author: Traian Dorz
+Highlight: dacă este tânăr sau bătrân, <em>evlavios</em> sau <em>neevlavios</em>,
+Highlight: Oricât de <em>evlavioasă</em> şi morală viaţă ai fi dus tu pe pământ
+
+Score: 9.666667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 2 - A treia zi istorică
 Type: articol
 Author: Traian Dorz
 Highlight: se împărtăşească la biserică în chip smerit şi <em>evlavios</em>, după buna şi străbuna noastră rânduială şi după
-Highlight: Să luăm deci cu <em>evlavie</em> şi cu frică de Dumnezeu foarte bine seama la aceste
-Highlight: sfinte pe care le cinsteau şi le respectau cu <em>evlavie</em> şi ei înainte, cum se şi cuvine. Au devenit chiar
 Highlight: atmosferă înaltă şi sfântă, dând un ceresc avânt şi o <em>evlavioasă</em> formă tuturor cuvintelor şi producţiilor noastre
 
-Score: 9.75
+Score: 9.666667
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Când a auzit Petru că este Domnul...
+Type: articol
+Author: Traian Dorz
+Highlight: par acum de-a dreptul rele. Totul trebuie să fie <em>evlavios</em> la noi. Vorbirea serioasă, plină de bunăcuviinţă
+Highlight: Să ne deprindem apoi a fi <em>evlavioşi</em>, adică a întrebuinţa în toată vorbirea noastră
+
+Score: 9.666667
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 11-a după Rusalii - (Pilda datornicului nemilostiv)
 Type: articol
 Author: Traian Dorz
 Highlight:  ci tot timpul ascultaţi totul, stând în chip <em>evlavios</em>.
-Highlight: toţii de toată credinţa şi smerenia, de toată <em>evlavia</em> şi teama sfântă în umblarea cu Domnul pe calea
 Highlight: chipul vostru cuviincios şi toată starea voastră <em>evlavioasă</em>.
 
 Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Aproape de Ierusalim
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Numele biruitorului
 Type: articol
 Author: Traian Dorz
-Highlight: de credinţă, au faţă de cele sfinte un respect <em>evlavios</em> şi o atitudine plină de bună cuviinţă. Ferindu-se
-Highlight: mai cu <em>evlavie</em> de Casa Domnului,  mai
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: totdeauna, fiecare, o atitudine plină de un sfânt şi <em>evlavios</em> respect. Oricât de familiar era el totdeauna cu
-Highlight: acestor tineri statornici dovedită prin fapte de o <em>evlavie</em> şi smerenie pe care numai o viaţă total predată
-
-Score: 9.666667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 14 - Apostolia Femeilor
-Type: articol
-Author: Traian Dorz
-Highlight: Mântuitorului - şi îndemnurile sufletului lor ales şi <em>evlavios</em>. Aşa cum le îndrumau frumoasele învăţături din
-Highlight: femeie văduvă şi trăieşti o viaţă de rugăciune, de <em>evlavie</em> şi de lucru pentru Domnul. Să-ţi ajute Bunul Dumnezeu
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Nu te mira!... Trebuie!
-Type: articol
-Author: Traian Dorz
-Highlight: dacă este tânăr sau bătrân, <em>evlavios</em> sau neevlavios,
-Highlight: Oricât de <em>evlavioasă</em> şi morală viaţă ai fi dus tu pe pământ
-
-Score: 9.666667
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Zicea astfel pentru că era un hoţ
-Type: articol
-Author: Traian Dorz
-Highlight: aceiaşi casă cu Hristos şi trece încă drept un <em>evlavios</em>, un ucenic dintre ai lui Isus.
-Highlight: şi când desfrânează în numele <em>Evlaviei</em>, făcând astfel din Hristos un slujitor al păcatului
+Highlight: 17 - În faţa oamenilor, făţarnicul poate părea <em>evlavios</em>, credincios şi drept, fiindcă satana i-a pus la
+Highlight: Dumnezeu făţarnicule care te împodobeşti cu măşti <em>evlavioase</em> ca să-ţi ascunzi trufia şi ambiţia şi lăcomia
 
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
@@ -216,12 +210,76 @@ Author: Traian Dorz
 Highlight: ci dintr-un obicei <em>evlavios</em> sau prefăcut, de a ne ascunde de trăirea sinceră
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: 2 Regi 5, 1
+Type: poezie
+Author: Traian Dorz
+Highlight: când asculţi pe omul cel <em>evlavios</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Adevăratul ucenic al Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: - Să umbli <em>evlavios</em> cu orice om, să stai numai cât eşti folositor
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Apostolia sfintelor femei
+Type: articol
+Author: Traian Dorz
+Highlight: Mântuitorului - şi îndemnurile sufletului lor ales şi <em>evlavios</em>. Aşa cum le îndruma frumoasele lor învăţături
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Aproape de Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: de credinţă, au faţă de cele sfinte un respect <em>evlavios</em> şi o atitudine plină de bună cuviinţă. Ferindu-se
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Apropierea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: mai <em>evlavios</em>,
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Buna-cuviinţă şi evlavia
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Omul <em>evlavios</em> şi cinstit răspunde totdeauna cuviincios ori da, ori nu - aşa cum este adevărul cât
+
+Score: 9.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 11 - Cel mai bun misionar
 Type: articol
 Author: Traian Dorz
 Highlight: Domnului. Acest fond a fost întemeiat de un cantor <em>evlavios</em> Nicolae Cimpoca din Sadu, jud. Sibiu cu o donaţie
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight: totdeauna, fiecare, o atitudine plină de un sfânt şi <em>evlavios</em> respect. Oricât de familiar era el totdeauna cu
+
+Score: 9.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 14 - Apostolia Femeilor
+Type: articol
+Author: Traian Dorz
+Highlight: Mântuitorului - şi îndemnurile sufletului lor ales şi <em>evlavios</em>. Aşa cum le îndrumau frumoasele învăţături din
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -240,6 +298,22 @@ Author: Traian Dorz
 Highlight: Gândul <em>evlavios</em> al unei purtări totdeauna plăcute înaintea Ta
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Cercetarea de sine
+Type: articol
+Author: Traian Dorz
+Highlight: caracter nobil. A fi serios, a fi respectuos, a fi <em>evlavios</em> şi înfrânat, este dovada unei adevărate superiorităţi
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Cine Mă vede pe Mine
+Type: articol
+Author: Traian Dorz
+Highlight: - Să umbli <em>evlavios</em> cu orice om, să stai numai cât eşti folositor
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: Cine este fără de păcat, să arunce...
@@ -256,12 +330,52 @@ Author: Traian Dorz
 Highlight: sincer şi <em>evlavios</em>
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Despre cinstirea Maicii Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: Şi orice cuget <em>evlavios</em> de creştin adevărat se va uni totdeauna, cu toată
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Împăratul nostru
 Title: Din pricina lui mulţi credeau
 Type: articol
 Author: Traian Dorz
 Highlight: Lazăr, deşi tânăr, era un suflet matur şi <em>evlavios</em>, un om întreg, cu o gândire înţeleaptă şi chibzuinţă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Dovada învierii noastre
+Type: articol
+Author: Traian Dorz
+Highlight: din Betania, deşi tânăr, era un suflet matur şi <em>evlavios</em>. Un om întreg, cu o gândire înţeleaptă şi chibzuită
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Evlavia
+Type: articol
+Author: Traian Dorz
+Highlight: îndemnul bun îi cere a fi <em>evlavios</em>.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Exod 33, 7-11
+Type: poezie
+Author: Traian Dorz
+Highlight: ci-l căutaţi cu suflet drept-<em>evlavios</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Facerea de bine
+Type: articol
+Author: Traian Dorz
+Highlight: Obişnuieşte-te să fii credincios, ascultător şi <em>evlavios</em>.
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -272,12 +386,60 @@ Author: Traian Dorz
 Highlight: lacrimile să vă ardă peste-un chip <em>evlavios</em>
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Fraţii şi vrăjmaşii
+Type: articol
+Author: Traian Dorz
+Highlight: şi trece încă drept un om <em>evlavios</em>, un ucenic dintre ai lui Isus.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Hotărârile frăţeşti
+Type: articol
+Author: Traian Dorz
+Highlight: 9 - Cuvântul Sfânt ne porunceşte: Caută să fii <em>evlavios</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Lucrarea Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: 17 - Respectul <em>evlavios</em> faţă de tot Cuvântul lui Dumnezeu
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Matei 4, 1-11
+Type: poezie
+Author: Traian Dorz
+Highlight: post şi rugăciune, mers <em>evlavios</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Mintea şi inima
+Type: articol
+Author: Traian Dorz
+Highlight: este drept, <em>evlavios</em> şi prietenos.
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Moise şi Aron
 Type: poezie
 Author: Traian Dorz
 Highlight: ascultând <em>evlavios</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Mâhnire şi nădejde
+Type: articol
+Author: Traian Dorz
+Highlight: şi va fi, acel care se supune şi ascultă cu duh <em>evlavios</em> şi blând de pacea şi de unitatea frăţească.
 
 Score: 9.5
 Volume: Cugetări Nemuritoare
@@ -295,245 +457,55 @@ Type: poezie
 Author: Traian Dorz
 Highlight: iar tu Mă vei slăvi cu suflet <em>evlavios</em> şi fericit.
 
-Score: 0.8333333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Păcatul şi moartea
 Type: articol
 Author: Traian Dorz
-Highlight: rugat apoi pe cei prezenţi să fie cu o deplină şi <em>evlavioasă</em> ascultare faţă de tot ce se va rosti aici astăzi
-Highlight: aici. Şi pentru că venind, aţi ascultat cu atâta <em>evlavie</em> şi respect Sfântul Cuvânt al Domnului. El să vă
-Highlight: sfinţilor şi când pomenim numele lor să-l pomenim cu <em>evlavie</em> şi cu dragoste, nu ca nişte nume obişnuite de bunuri
-Highlight: ocroti celelalte morminte, însă ascultând cu atâta <em>evlavie</em> fiecare cuvânt ce se rostea.
-Highlight: a început şi s-a desfăşurat în cea mai adâncă <em>evlavie</em> şi reculegere sufletească. Cântările de răspuns
+Highlight: de credinţă, au faţă de cele sfinte un respect <em>evlavios</em> şi o atitudine plină de bunăcuviinţă. Ferindu-se
 
-Score: 0.8333333
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Uneltele lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: la tot ce e bun şi <em>evlavios</em>, căci ea mereu este gata să ostenească şi să adoarmă
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Vorbirea şi felul ei
+Type: articol
+Author: Traian Dorz
+Highlight: par acum de-a dreptul rele. Totul trebuie să fie <em>evlavios</em> la noi.
+
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Era o sărbătoare...
+Book: Hristos - Împăratul nostru
+Title: Zicea astfel pentru că era un hoţ
 Type: articol
 Author: Traian Dorz
-Highlight: fost rânduite nu numai zile ci şi locuri în care <em>evlavia</em> închinătorilor şi a sufletelor recunoscătoare,
-Highlight: credinţei, adevăraţii ei fii au cinstit şi au ţinut cu <em>evlavie</em> aceste zile şi lăcaşuri, cu înfăţişarea cât mai
-Highlight: sărbătorile erau respectate cu toată dragostea şi <em>evlavia</em>,
-Highlight: atunci despre miezul tuturor acestor taine, însă <em>evlavia</em> înlocuia această lipsă cu teamă şi cinstire.
-Highlight: Te rugăm să ne dăruieşti o inimă <em>evlavioasă</em> şi o trăire creştinească prin care să cinstim
+Highlight: aceiaşi casă cu Hristos şi trece încă drept un <em>evlavios</em>, un ucenic dintre ai lui Isus.
 
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
-Type: articol
-Author: Traian Dorz
-Highlight: de ostaşi credincioşi ai lui Hristos, cu toată <em>evlavia</em> şi de fiecare dată.
-Highlight: trebuie neapărat să fie cinstită şi respectată cu <em>evlavie</em> şi partea cea dinafară.
-Highlight: grăitoare prin ea însăşi, a făcut acest semn cu toată <em>evlavia</em> la fiecare rugăciune a sa. Într-adevăr de fiecare
-Highlight: niciodată nu începea nimic fără a-şi face cu toată <em>evlavia</em> semnul Crucii.
-
-Score: 0.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: poate avea de arme decât blândeţea, bunătatea, <em>evlavia</em>...
-Highlight: unde părintele Fanu, un adevărat preot de o mare <em>evlavie</em> şi râvnă pentru Dumnezeu, sprijineşte cu toată
-Highlight: În locul bunei cuviinţe <em>evlavioase</em>, - grosolănia bârfitoare faţă de convingerile
-Highlight: Din multe suflete de fraţi curate, smerite, <em>evlavioase</em>, iubitoare şi prietenoase când veniseră la Hristos
-
-Score: 0.8
+Score: 9.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Fiindcă era mare preot... a profeţit
+Book: Hristos - Împăratul nostru
+Title: Întocmai cum Mi le-a spus Tatăl
 Type: articol
 Author: Traian Dorz
-Highlight: înţelepciunea unei <em>evlavioase</em> preţuiri faţă de cei care sunt mai marii poporului în ce priveşte <em>evlavia</em> acestei
-Highlight: de către ceilalţi se cuvine preţuită cu multă <em>evlavie</em>.  Dumnezeul
-Highlight: datoriile noastre de pocăinţă, de mulţumire, de <em>evlavie</em> şi de ascultare  (
-
-Score: 0.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
-Type: articol
-Author: Traian Dorz
-Highlight: de Dumnezeu au fost în sufletele lor, bunii şi <em>evlavioşii</em> noştri părinţi duhovniceşti!
-Highlight: Am luat cu <em>evlavie</em> Biblia ruptă şi am sărutat-o cu lacrimi, strângând-o
-Highlight: întotdeauna cu frica lui Dumnezeu, cu dragoste şi cu <em>evlavie</em>, citind-o şi trăind cu toată inima în tot ce cuprinde
-Highlight: duhul ei. Şi feriţi-vă de oricine vorbeşte fără <em>evlavie</em>, umblă fără teamă şi trăieşte fără smerenie cele
-
-Score: 0.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
-Type: articol
-Author: Traian Dorz
-Highlight: neascultători de părinţi, nemulţumitori, fără <em>evlavie</em>, fără dragoste firească, neînduplecaţi, clevetitori
-Highlight: decât iubitori de Dumnezeu; având doar o formă de <em>evlavie</em>, dar tăgăduindu-i puterea...
-Highlight: stricaţi la minte, lipsiţi de adevăr şi care cred că <em>evlavia</em> este un izvor de câştig. Fereşte-te de astfel de
-Highlight: Taine şi tot ce este vrednic de respect şi de <em>evlavie</em>. După întâia şi a doua mustrare, depărtaţi-vă de
+Highlight: Respectul <em>evlavios</em> faţă de
 
 Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Acum vedem bine...
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Rugăciuni vinovate
 Type: articol
 Author: Traian Dorz
-Highlight: fac, cu toată temerea, smerenia şi <em>evlavia</em>.
-Highlight: Şi vor vedea în <em>evlavie</em> numai un mijloc de câştig uşor şi
-Highlight: şi va da dovadă de înfrânare şi <em>evlavie</em>,
-
-Score: 0.75
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 5 - Binecuvântata muncă grea
-Type: articol
-Author: Traian Dorz
-Highlight: cu toată <em>evlavia</em>, cu faţa spre răsărit.
-Highlight: La începutul oricărei munci făceau cu mare <em>evlavie</em> semnul sfintei
-Highlight:  - Rugăciunea plină de <em>evlavie</em> şi de credinţă pe care cu toţii o înălţau către
-
-Score: 0.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 9 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-Highlight: umpluseră cimitirul până departe, ascultând cu <em>evlavie</em> şi cutremur minunatele cuvinte ale lui Dumnezeu
-Highlight: de aceste sfinte datorii? Şi care nu caută cu <em>evlavie</em> când poate, odată pe an, ori odată pe viaţă - să
-Highlight: aprinse în mâini - şi dintr-o stare de profundă <em>evlavie</em>. Ce privelişte unică şi înălţătoare era să vezi
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Eu îl voi învia în Ziua de Apoi
-Type: articol
-Author: Traian Dorz
-Highlight: cu tot respectul, cu toată <em>evlavia</em> şi cu toată credinţa,
-Highlight: Bucuraţi-vă cu toată recunoştinţa şi <em>evlavia</em> şi credeţi cu toată bucuria acest Dumnezeiesc adevăr
-Highlight: dar o împliniţi cu toată căldura inimii voastre <em>evlavioase</em>, crezând-O.
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 2-a după Rusalii - (a Sfinţilor români)
-Type: articol
-Author: Traian Dorz
-Highlight: pentru Domnul), cu răbdarea <em>evlavia</em> (sfinţenia, bunăcuviinţa, bunătatea), cu <em>evlavia</em> dragostea de fraţi (unitatea
-Highlight: starea celui care poate spune cu toată smerenia şi <em>evlavia</em>, dar şi cu toată încredinţarea că tot ceea ce propovăduieşte
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)
-Type: articol
-Author: Traian Dorz
-Highlight: şi murind pentru lume, nu trăieşte cu toată <em>evlavia</em> faţă de Dumnezeu
-Highlight: noi trebuie să ştim să umblăm cu toată teama, <em>evlavia</em> şi seriozitatea.
-Highlight: toată frica de Dumnezeu în dreptate, cumpătare şi <em>evlavie</em>, lucrând neîncetat şi aşteptând fericita noastră
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
-Type: articol
-Author: Traian Dorz
-Highlight: lăudăm cu ea. Să o preţuim şi să o cinstim cu <em>evlavie</em> oriunde, fiindcă în forma ei văzută cinstim forma
-Highlight: Ajută-ne să preţuim cu <em>evlavie</em> şi să iubim Crucea Ta şi semnul ei văzut, neruşinându-ne
-Highlight: Şi ajută-ne să preţuim cu <em>evlavie</em> şi respect pe toţi acei care au primit prin suferinţă
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 9-a după Rusalii - (Umblarea pe mare)
-Type: articol
-Author: Traian Dorz
-Highlight: vieţii noastre ascultătoare, smerite, curate, <em>evlavioase</em> şi iubitoare.
-Highlight: sau sufletul de fân, lăudăros şi gol de <em>evlavie</em>, de binefaceri, de virtuţi şi uscat de lacrimi
-Highlight: ascultării şi a unităţii frăţeşti şi nici de curăţia şi <em>evlavia</em> pe care le ceri Tu în Lucrarea Ta - să-i cercetezi
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Ucenici geloşi
-Type: articol
-Author: Traian Dorz
-Highlight: - altfel, morali, religioşi şi <em>evlavioşi</em>, -
-Highlight: este mai mult decât Morala, decât Religia, decât <em>Evlavia</em>, Hristos e putere, e dinamism, e viaţă biruitoare
-Highlight: Morala e pasivă, religia e statică, <em>evlavia</em> e moale în general.
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Voi Mă numiţi... şi bine ziceţi
-Type: articol
-Author: Traian Dorz
-Highlight: - cu <em>evlavie</em> să-l ascultaţi şi cu drag să-l primiţi.
-Highlight: îngrijiţi-i cu <em>evlavie</em>,
-Highlight: rostesc totdeauna Sfântul Tău Nume cu tot fiorul <em>evlaviei</em> mele recunoscătoare
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: ... În odaia de judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Şi cât de pierzătoare este falsa <em>evlavie</em>.
-Highlight: Îndeplineau cu grijă îndatoririle unei <em>evlavii</em> făţarnice, dar încălcau cu satanică îndrăzneală
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: ... Ştia că la Dumnezeu Se duce
-Type: articol
-Author: Traian Dorz
-Highlight: păcatului. Numai atunci îmbrăcămintea sa va fi <em>evlavioasă</em> şi chipul său va fi curat.
-Highlight: nostru către Tine să ne străduim a dobândi lumina <em>evlaviei</em> Tale, peste toată fiinţa noastră. Şi peste toate
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Ca voi să vă miraţi
-Type: articol
-Author: Traian Dorz
-Highlight: copleşiţi de uimire slăvim pe Domnul cu toată <em>evlavia</em> sau teama cuvenită Numelui Său Celui Sfânt.
-Highlight: de respect şi <em>evlavie</em>,
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: dragostea, ordinea, nobleţea, bunătatea, curăţia, <em>evlavia</em>, smerenia, omenia şi sfinţirea - fără de care nimeni
-Highlight: Credincioşi semnului Oastei, ei purtau nu numai cu <em>evlavie</em> dar şi cu o sfântă mândrie medaliile şi steagurile
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 13 - Pe urmele profetului
-Type: articol
-Author: Traian Dorz
-Highlight: Ne-am apropiat cutremuraţi cu <em>evlavie</em> de bisericuţa din deal unde a ars şi s-a topit
-Highlight: eroului Avram Iancu. Poate. Să zicem şi noi cu <em>evlavie</em>: Dumnezeu să-i ierte şi să-i odihnească pe toţi
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 14 - Un an adânc roditor
-Type: articol
-Author: Traian Dorz
-Highlight: fusese altfel înainte. Un om de o foarte mare <em>evlavie</em> şi credinţă, deşi mai avusese şi în trecut unele
-Highlight: Cu câtă lipsă de cel mai elementar respect de <em>evlavie</em>, de teamă şi de dragoste de Dumnezeu se vorbea
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-Highlight: trebuie să fie smerită, cuviincioasă, solemnă, <em>evlavioasă</em>, demnă. Totdeauna, orice facem să fie în Numele
-Highlight: - Seriozitatea şi <em>evlavia</em> sunt dovada unui caracter nobil, a unui suflet
+Highlight: Nu cu vorbiri <em>evlavioase</em> şi cu cântări despre dragoste, să înşelăm inimile
+Highlight: Şi tot prefăcuţi sunt şi când sunt <em>evlavioşi</em>, bisericoşi, binefăcători, colaboratori,
+Highlight: Dumnezeu, ajunge în frăţietatea sfântă a oamenilor <em>evlavioşi</em>, care sub ascultarea Bisericii (
 
 Score: 0.6666666
 Volume: Istoria unei Jertfe
@@ -546,75 +518,12 @@ Highlight: la un an după naşterea lui Dionisie, buna şi <em>evlavioasa</em> m
 
 Score: 0.6666666
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: câştiguri murdare - ci o slujbă sfântă şi plină de <em>evlavie</em> spre slava lui Dumnezeu şi binele întregii adunări
-Highlight: biserică, nu se împărtăşesc şi nu respectă cu <em>evlavie</em> ceea ce este unanim de respectat.
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 3 - Primii paşi spre Lumină
-Type: articol
-Author: Traian Dorz
-Highlight: aşezăm în bănci, continuam tot în cor cu aceeaşi <em>evlavie</em>, ca pe o a doua rugăciune
-Highlight: Aşa am învăţat eu ordinea şi <em>evlavia</em> în Casa Domnului, din acele zile când pe toate
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 7 - A doua Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Ne apropiem cu <em>evlavie</em> de locul unde apostolii au îngropat pe Preacurata
-Highlight: Mormânt. Un călugăr ne deschide uşa şi intrăm cu <em>evlavie</em> în sf. biserică. Începem îndată a coborî în adânc
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Cine nu Mă iubeşte...
-Type: articol
-Author: Traian Dorz
-Highlight: răstălmăci sau a le călca, ci ascultându-le cu <em>evlavie</em>.
-Highlight: mai mică dorinţă de a păzi ei înşişi, cu toată <em>evlavia</em> şi curăţia, Cuvântul Lui, ci cu toată nesimţirea
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Cine trăieşte şi crede, nu va muri! Crezi tu?
-Type: articol
-Author: Traian Dorz
-Highlight: Te gândeşti tu la el cu <em>evlavie</em>, cu teamă, cu dragoste, cu bucurie, cu tot sufletul
-Highlight: Dar a <em>evlaviei</em>, a iertării şi a dărniciei?
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Conştiinţa şi mustrarea
-Type: articol
-Author: Traian Dorz
-Highlight: fac, cu toată temerea, smerenia şi <em>evlavia</em>.
-Highlight: Şi vor vedea în <em>evlavie</em> numai un mijloc de câştig uşor şi
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Când a auzit că vine... I-a ieşit înainte
-Type: articol
-Author: Traian Dorz
-Highlight: timp, prin umblarea şi trăirea în credinţă şi în <em>evlavie</em>,
-Highlight: Şi printr-o viaţă de <em>evlavie</em> şi de rod duhovnicesc, vreau să fiu gata în orice
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Căutau pe Isus...
-Type: articol
-Author: Traian Dorz
-Highlight: veniseră nu numai spre a-şi împlini o datorie de <em>evlavie</em> rămasă din Vechime şi o formă de închinare moştenită
-Highlight: cu fapta cunoştinţa, apoi înfrânarea, răbdarea, <em>evlavia</em>, dragostea de fraţi şi iubirea de oameni, roadele
+Highlight: În locul bunei cuviinţe <em>evlavioase</em>, - grosolănia bârfitoare faţă de convingerile
+Highlight: Din multe suflete de fraţi curate, smerite, <em>evlavioase</em>, iubitoare şi prietenoase când veniseră la Hristos
 
 Score: 0.6666666
 Volume: Meditații la Ev. după Ioan
@@ -624,114 +533,6 @@ Type: articol
 Author: Traian Dorz
 Highlight: lor o creştere şi o purtare foarte morală şi <em>evlavioasă</em>, în afară de orice bănuieli rele.
 Highlight: pot să fi fost născuţi din părinţi credincioşi, <em>evlavioşi</em>, binefăcători,
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Fericirea de a fi cu Domnul
-Type: articol
-Author: Traian Dorz
-Highlight: Fericiţi sunt - şi vor fi, numai cei care vorbesc cu <em>evlavie</em> şi cu temere despre tot ce este sfinţit de Dumnezeu
-Highlight: - Primele spice de grâu le sărut totdeauna cu <em>evlavie</em> ca pe ceva sfânt.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Ioan a mărturisit despre El...
-Type: articol
-Author: Traian Dorz
-Highlight: oficialităţile omeneşti, duhul oficialist şi rece al unei <em>evlavii</em> formale.
-Highlight: toţi cei care sunt în slujba Bisericii Tale, a <em>Evlaviei</em> şi a Lucrării Tale pe pământ să nu fie nici unii
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Isus în Templu învăţa norodul
-Type: articol
-Author: Traian Dorz
-Highlight: şi ne ducem cu <em>evlavie</em> şi cu bucurie în Casa Tatălui, la rugăciune şi
-Highlight: Ta şi împiedică închinătorii Tăi să meargă cu <em>evlavie</em> în ea să se închine Ţie.
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica Sfintei Învieri
-Type: articol
-Author: Traian Dorz
-Highlight: vorbele noastre pe alţii, dar nu dovedim cu toată <em>evlavia</em>, prin faptele noastre, adevărul şi curăţia ascultării
-Highlight: mai curaţi, mai veghetori, mai rugători, mai <em>evlavioşi</em> şi mai răbdători, da, numai acela poate duce cu
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: a jertfei, dovada cea frumoasă a ascultării, a <em>evlaviei</em>, a smereniei, a curăţiei, a umblării răbdătoare
-Highlight: abaterea de la ascultarea smerită şi de la umblarea <em>evlavioasă</em> în slujba şi Lucrarea lui Dumnezeu.
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
-Type: articol
-Author: Traian Dorz
-Highlight: în veacul de acum cu cumpătare, cu dreptate şi <em>evlavie</em>... Cum scrie la
-Highlight: trăind permanent în conştiinţa sa cu temere şi cu <em>evlavie</em> înaintea lui Dumnezeu, se confruntă necurmat pe
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)
-Type: articol
-Author: Traian Dorz
-Highlight: chipul senin şi binevoitor. În toată înfăţişarea <em>evlavioasă</em> şi liniştită. În aşa fel încât oricine s-o vadă
-Highlight: Din nevegherea asupra rugăciunii, înfrânării, <em>evlaviei</em> şi blândeţii.
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-Highlight: spre a-I sluji cu frică de El, cu credinţă şi cu <em>evlavie</em>, până la moarte, - sau nu?
-Highlight: creştine. Dragostea, mila, smerenia, dărnicia, <em>evlavia</em>, înţelepciunea, blândeţea, înfrânarea - şi toate
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
-Type: articol
-Author: Traian Dorz
-Highlight: care Dumnezeu le-a dat lor. De la ascultarea şi <em>evlavia</em> lor faţă de Hristos Mântuitorul nostru, oricâte
-Highlight: cunoaşte şi de a ne împlini cu credincioşie şi cu <em>evlavie</em> această slujbă, în locul unde ne-ai aşezat Tu.
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
-Type: articol
-Author: Traian Dorz
-Highlight: fior şi de cutremur sufletesc, de teamă şi de <em>evlavie</em>, de tărie şi de frică sfântă, pe care le ai totdeauna
-Highlight: Deci intraţi cu îndrăzneală, cu credinţă şi cu <em>evlavie</em> în templul Domnului! Staţi cinstit acolo! Şi mărturisiţi
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: La picioarele lui Isus
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu, într-o viaţă paşnică şi liniştită cu toată <em>evlavia</em> şi cinstea (
-Highlight: sângerânde pentru mine, le sărut cu lacrimi şi cu <em>evlavie</em>, - acolo doresc să ajung odată, spre a-mi afla
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Lumea Mă urăşte, pentru că - mărturisesc
-Type: articol
-Author: Traian Dorz
-Highlight: o formă de <em>evlavie</em> oarecare, specifică familiuţei tale sau a lor,
-Highlight: trăiască în vremea de acum cu cumpătare, dreptate şi <em>evlavie</em>
 
 Score: 0.6666666
 Volume: Cântări Nemuritoare
@@ -744,83 +545,12 @@ Highlight: pe sub măşti <em>evlavioase</em> şi glas
 
 Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Mulţime şi singurătate
+Book: Garanţia Veşnică
+Title: Să ne învăţăm pe noi înşine
 Type: articol
 Author: Traian Dorz
-Highlight: avea timp să mediteze adâncind cu smerenie, cu <em>evlavie</em> şi cu rugăciune Cuvântul Voii lui Dumnezeu în singurătate
-Highlight: sufletul care merge acolo cu credinţă, ascultă cu <em>evlavie</em> şi participă cu dragoste.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Nişte greci... se suiseră să se închine
-Type: articol
-Author: Traian Dorz
-Highlight: te ridici spre o stare cât mai înaltă şi mai <em>evlavioasă</em>, spre înălţimile duhovniceşti, curate şi sfinte
-Highlight: Ci împodobeşte sufletul meu Doamne cu <em>evlavia</em> şi cu smerenia dorită de Tine,
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Nu judecaţi după înfăţişare!
-Type: articol
-Author: Traian Dorz
-Highlight: <em>evlavioase</em>
-Highlight: cuviincioasă a îndreptării, cu forma îndeplinită şi cu <em>evlavie</em>
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Paştile... erau aproape
-Type: articol
-Author: Traian Dorz
-Highlight: şi o mai <em>evlavioasă</em> purtare
-Highlight: cum să facem totul cu înţelepciune, cu grijă, cu <em>evlavie</em> şi cu folos,
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Părinţii noştri...
-Type: articol
-Author: Traian Dorz
-Highlight: inima aducând în ea lumină, bucurie, dragoste, <em>evlavie</em>, cumpătare şi râvnă în realizarea Binelui, este
-Highlight: iar gândurile stăpânite numai de curăţie şi <em>evlavie</em>.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: Va veni vremea când...
-Type: articol
-Author: Traian Dorz
-Highlight: şi cu făţarnică <em>evlavie</em> exterioară, caută numai dorinţele scârboase ale
-Highlight: Această falsă credinţă şi prefăcută <em>evlavie</em> are osânda orbiei şi călăuzirea cruzimii.
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Învăţătorul şi ucenicul
-Type: articol
-Author: Traian Dorz
-Highlight: şi va da dovadă de înfrânare şi <em>evlavie</em>
-Highlight: în obiceiuri creştineşti şi <em>evlavioase</em>
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: “Fraţii” Lui
-Type: articol
-Author: Traian Dorz
-Highlight: De aceea, cu un gând şi un duh plin de <em>evlavie</em>, să ne ferim totdeauna de tot ce este necuviincios
-Highlight: acelora care se apropie de Adevăr cu respect, cu <em>evlavie</em> şi cu curăţie de inimă.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: ... Au rămas la Isus
-Type: articol
-Author: Traian Dorz
-Highlight: ţine-te de ele până la sfârşit trăindu-le cu toată <em>evlavia</em> şi credinţa,
+Highlight: şapte ani de acasă nici o inimă iubitoare şi <em>evlavioasă</em> care să te îndrepte cu căldură spre dragostea
+Highlight: şi nici <em>evlavioasa</em> umblare a unei ascultări smerite de toată voia
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -848,19 +578,35 @@ Highlight: Tot ce este spre o mai mare şi <em>evlavioasă</em> trăire şi spre
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: ... Şi Se făcea deopotrivă cu Dumnezeu
+Book: Hristos - Modelul nostru
+Title: ... Ştia că la Dumnezeu Se duce
 Type: articol
 Author: Traian Dorz
-Highlight: tuturor cuvintelor Tale, ne închinăm Ţie cu toată <em>evlavia</em> şi adoraţia dragostei noastre smerite şi fierbinţi
+Highlight: păcatului. Numai atunci îmbrăcămintea sa va fi <em>evlavioasă</em> şi chipul său va fi curat.
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Adevăr şi înşelare
+Book: Crucea Mântuitoare
+Title: A fi închinător adevărat
 Type: articol
 Author: Traian Dorz
-Highlight: asculţi până la capăt şi cu atenţie, în rugăciune şi <em>evlavie</em>
+Highlight: te ridici spre o stare cât mai înaltă şi mai <em>evlavioasă</em>, spre înălţimile duhovniceşti, curate şi sfinte
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: A sosit ceasul să fie proslăvit Fiul
+Type: articol
+Author: Traian Dorz
+Highlight: şi mireasma <em>evlavioasei</em> noastre trăiri, după pilda şi după Cuvântul Tău
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Alergarea pentru Domnul
+Type: articol
+Author: Traian Dorz
+Highlight: iar Maria în <em>evlavioasă</em> şi profundă împărtăşire ascultătoare de Hristos
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -872,11 +618,11 @@ Highlight: <em>evlavioşi</em>
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Prietenul Tinereţii mele
-Title: Atunci vom fi fericiţi amândoi
+Book: Crucea Mântuitoare
+Title: Ascultarea de Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: faptele tale pline de rod bun, viaţa ta plină de <em>evlavie</em>, şi sfârşitul tău plin de biruinţă!
+Highlight: decât starea unei sincere, a unei smerite şi <em>evlavioase</em> ascultări, în care credinciosul este una cu Duhul
 
 Score: 0.5
 Volume: Meditații la Ev. după Ioan
@@ -895,12 +641,12 @@ Author: Traian Dorz
 Highlight: inima <em>evlavioasă</em> şi smerită şi curată
 
 Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Aşa cum cunosc Eu pe Tatăl
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Biblia şi viaţa
 Type: articol
 Author: Traian Dorz
-Highlight: şi prin râvna împlinirii <em>evlaviei</em> şi dărniciei, jertfele cele mai plăcute Ţie,
+Highlight: 19 - Să ne deprindem apoi a fi <em>evlavioşi</em>, adică a întrebuinţa în toată vorbirea noastră
 
 Score: 0.5
 Volume: Cântări Nemuritoare
@@ -912,67 +658,35 @@ Highlight: cu genunchi <em>evlavioşi</em>
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Binefacerea şi recunoştinţa
+Book: Crucea Mântuitoare
+Title: Binefacerea şi nerecunoştinţa
 Type: articol
 Author: Traian Dorz
-Highlight: cuvine, atunci şi inima poporului participă cu <em>evlavie</em> la ea.
+Highlight: îmbrăcat cu hainele dăruite de surorile <em>evlavioase</em>, adăpostit, miluit, crescut şi învăţat carte
 
 Score: 0.5
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Bucurie şi nefericire
+Book: Garanţia Veşnică
+Title: Bunul slujitor al Domnului
 Type: articol
 Author: Traian Dorz
-Highlight: Şi cu toată iubirea şi <em>evlavia</em> smereniei noastre, lăudăm Numele Tău, pentru că
+Highlight: ales, cu roadele dulci şi curate ale unei trăiri <em>evlavioase</em> în slujba lui Dumnezeu şi a semenilor săi.
 
 Score: 0.5
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 17 - Vin rândurile noi
 Type: articol
 Author: Traian Dorz
-Highlight: făcute bisericii şi Domnului cu gând curat şi cu <em>evlavie</em>, - ne sunt respinse sau privite cu bănuială şi
+Highlight: trebuie să fie smerită, cuviincioasă, solemnă, <em>evlavioasă</em>, demnă. Totdeauna, orice facem să fie în Numele
 
 Score: 0.5
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
-Highlight: din toate taberele negustoreşti toţi slujbaşii <em>evlaviei</em> făţarnice şi ai comodităţii religioase. Şi uniţi
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: îmbrăcând la început o formă de credinţă, o spoială de <em>evlavie</em>, lucra mai viclean şi cucerea mai uşor inimile
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: până la sfârşit trebuie să ne aducem aminte cu <em>evlavie</em> şi iubire de acest sfânt trimes, care ne-a vestit
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-Highlight: uscaţi şi morţi în nişte forme cu înfăţişare de <em>evlavie</em> dar fără viaţă creştină, fără roadele Duhului Sfânt
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: . E o scrisoare într-adevăr pătrunsă de <em>evlavie</em>, de smerenie şi de un gând hotărât “de a-L urma
+Highlight: rugat apoi pe cei prezenţi să fie cu o deplină şi <em>evlavioasă</em> ascultare faţă de tot ce se va rosti aici astăzi
 
 Score: 0.5
 Volume: Istoria unei Jertfe
@@ -992,17 +706,225 @@ Highlight: lucrând la aceste versificări în singurătatea <em>evlavioasă</em
 
 Score: 0.5
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: toţi cei ce voiesc să trăiască cu <em>evlavie</em> în Hristos Isus, vor fi prigoniţi
-
-Score: 0.5
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
 Highlight: permanentă şi un îndemn neîncetat la o trăire tot mai <em>evlavioasă</em> şi mai vrednică de Numele Domnului, ale cărui
+
+Score: 0.5
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: corespondenţa. Tot ce strânsesem cu o dragoste <em>evlavioasă</em> faţă de cărţi, faţă de artă, faţă de adevăr,
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
+Type: articol
+Author: Traian Dorz
+Highlight: ) pentru că ostaşii sunt <em>evlavioşi</em> şi ascultători şi cu punga.
+
+Score: 0.5
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
+Type: articol
+Author: Traian Dorz
+Highlight: ori şcolile pline de ascultători fericiţi şi <em>evlavioşi</em>.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Cel iubitor - şi cei neiubitori
+Type: articol
+Author: Traian Dorz
+Highlight: abaterea de la ascultarea smerită. Şi de la umblarea <em>evlavioasă</em> în slujba şi Lucrarea lui Dumnezeu.
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Cheamă pe bărbatul tău...
+Type: articol
+Author: Traian Dorz
+Highlight: Sora noastră <em>evlavioasă</em>, ce ai făcut tu până acum,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Când au văzut - au crezut
+Type: articol
+Author: Traian Dorz
+Highlight: - Şi arată mai presus de toate o sfântă şi <em>evlavioasă</em> trăire.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 4
+Title: Cântaţi mame dragi
+Type: poezie
+Author: Traian Dorz
+Highlight: creşteţi fii <em>evlavioşi</em>
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Cât sunt în lume, sunt Lumina lumii
+Type: articol
+Author: Traian Dorz
+Highlight: mai puteţi suferi, cu prezenţa noastră blajină, <em>evlavioasă</em> şi răbdătoare,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Viţa vieţii noastre
+Title: Dacă rămâneţi în Mine... cereţi orice
+Type: articol
+Author: Traian Dorz
+Highlight: inima mea ajută-mă să rămân totdeauna într-o <em>evlavioasă</em> şi sfântă ascultare de tot Cuvântul Tău,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Darurile lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: nostru, acolo trebuie să stăm cu toţii într-o <em>evlavioasă</em> ascultare şi tăcere.
+
+Score: 0.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: Două mii de ani Isuse...
+Type: poezie
+Author: Traian Dorz
+Highlight: şi când predică iubirea cu-o <em>evlavioasă</em> gură
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Dulce şi amar
+Type: articol
+Author: Traian Dorz
+Highlight: cuvintele îngerului sfânt, acei oameni care se cred <em>evlavioşi</em>, dar vorbesc atât de necuviincios despre Mama
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: El zicea: eu sunt
+Type: articol
+Author: Traian Dorz
+Highlight: la Hristos şi îndemnându-i la viaţa sfântă şi <em>evlavioasă</em>, fără să fii totuşi făţarnic sau neruşinat,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Era o sărbătoare...
+Type: articol
+Author: Traian Dorz
+Highlight: Te rugăm să ne dăruieşti o inimă <em>evlavioasă</em> şi o trăire creştinească prin care să cinstim
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: Eu Îl cunosc... vin de la El
+Type: articol
+Author: Traian Dorz
+Highlight: Acest lucru îi va da o <em>evlavioasă</em> smerenie şi o recunoscătoare iubire cu fapta
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Eu îl voi învia în Ziua de Apoi
+Type: articol
+Author: Traian Dorz
+Highlight: dar o împliniţi cu toată căldura inimii voastre <em>evlavioase</em>, crezând-O.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Faptă şi răsplată
+Type: articol
+Author: Traian Dorz
+Highlight: exemplele şi isprăvile oamenilor credincioşi şi <em>evlavioşi</em>, drepţi şi cinstiţi,
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Fericirea lumii întregi
+Type: articol
+Author: Traian Dorz
+Highlight: pătrunsă şi îndrumată în totul de seriozitatea <em>evlavioasă</em>,
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învierea noastră
+Title: Fiindcă era mare preot... a profeţit
+Type: articol
+Author: Traian Dorz
+Highlight: nouă celorlalţi dăruieşte-ne înţelepciunea unei <em>evlavioase</em> preţuiri faţă de cei care sunt mai marii poporului
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Fiul dă viaţă cui vrea
+Type: articol
+Author: Traian Dorz
+Highlight: o viaţă curată, <em>evlavioasă</em> şi rodnică.
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Făgăduinţa şi împlinirea
+Type: articol
+Author: Traian Dorz
+Highlight: este starea cerească plină de o liniştită şi <em>evlavioasă</em> bucurie din care sufletul credincios împlineşte
+
+Score: 0.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Dumnezeul nostru
+Title: Iată Mielul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: prietenia caldă şi apropiată, să avem şi seriozitatea <em>evlavioasă</em>, în care oricine să simtă prezenţa Ta şi felul
+
+Score: 0.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Iubirea şi nădejdea
+Type: articol
+Author: Traian Dorz
+Highlight: Numai atunci îmbrăcămintea sa va fi <em>evlavioasă</em> şi chipul său va fi curat.
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica Sfintei Învieri
+Type: articol
+Author: Traian Dorz
+Highlight: mai curaţi, mai veghetori, mai rugători, mai <em>evlavioşi</em> şi mai răbdători, da, numai acela poate duce cu
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
+Type: articol
+Author: Traian Dorz
+Highlight: iubeşti mult, căci ea este răbdătoare, blândă, <em>evlavioasă</em>, harnică şi ţine atât de mult la tine... Poate
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
+Type: articol
+Author: Traian Dorz
+Highlight: de Dumnezeu au fost în sufletele lor, bunii şi <em>evlavioşii</em> noştri părinţi duhovniceşti!
+
+Score: 0.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 14-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: abaterea de la ascultarea smerită şi de la umblarea <em>evlavioasă</em> în slujba şi Lucrarea lui Dumnezeu.
 

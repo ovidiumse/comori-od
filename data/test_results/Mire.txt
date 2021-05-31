@@ -1,109 +1,121 @@
-+--------------------------------------------------------------------------------+----------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                          | Occurrences                      | Author          | Tip                              | Carte                        | Volum   |
-+--------------------------------------------------------------------------------+----------------------------------+-----------------+----------------------------------+------------------------------+---------+
-| Isuse, Mire-al vieţii mele                                                     | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Isuse, Mire Veşnic                                                             | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cap. 6 - Alte amare adevăruri                                                  | {'mire', 'mirilor'}              | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Mereu morminte noi                                                   | {'mire', 'mirilor', 'Mirele'}    | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Fecioarele înţelepte                                                           | {'Mire', 'mirului'}              | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Cântările din urmă                                                             | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Iată Dimineaţa...                                                              | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| La Nunta Noastră                                                               | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Nu-şi mai aduce aminte de suferinţă                                            | {'Mire'}                         | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Prietenul Mirelui                                                              | {'mire', 'Mirele'}               | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - Pe urmele profetului                                                 | {'Mire', 'miri'}                 | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 15-a după Rusalii                                  | {'mire', 'Mirele'}               | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Râvna pentru Casa Ta...                                                        | {'Mire', 'Miresei'}              | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| În Ziua fără noapte...                                                         | {'Mire', 'Miresei'}              | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Şi nimeni nu va mai răpi bucuria - voastră                                     | {'mire', 'Mirele'}               | Traian Dorz     | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Am aşteptat Isuse                                                              | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Cap. 17 - Vin rândurile noi                                                    | {'Mire'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Ce cununie strălucită                                                          | {'Mire'}                         | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | poezie  |
-| Ce dor adânc                                                                   | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cine mi te-a pus?                                                              | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Crin iubit                                                                     | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Cum M-ai trimes Tu...                                                          | {'mire'}                         | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cântarea Biruinţei                                                             | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Cântând Osana                                                                  | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Cât ai Tu mai mult!                                                            | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Dacă aduceţi multă roadă                                                       | {'mire'}                         | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Din părţile Moldovei                                                           | {'mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Dulce Domnul meu                                                               | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Frumos eşti Drag Isuse                                                         | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Iată, Eu vin curând...                                                         | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie) | {'mire'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Lăcrimele, lăcrimioare                                                         | {'mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Minunat Isuse...                                                               | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Mulţumire-nlăcrimată                                                           | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Mă voi întoarce şi vă voi lua cu Mine                                          | {'Mire'}                         | Traian Dorz     | Hristos - Calea vieţii noastre   | Meditații la Ev. după Ioan   | articol |
-| Nunul a gustat...                                                              | {'mire'}                         | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Preaiubitule nu-i nimeni                                                       | {'mire'}                         | Traian Dorz     | Prietenul Tinereţii mele         | Cugetări Nemuritoare         | poezie  |
-| Preaiubitule, nu-i nimeni                                                      | {'mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Psalmul 19                                                                     | {'mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Slăvit fii Tu, al Bucuriei                                                     | {'Mire'}                         | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Slăvit fii Tu, al Bucuriei                                                     | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Să-I cântăm, să-I cântăm...                                                    | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Tot corul Veşniciei                                                            | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Tu-ai vrut să fim                                                              | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Tu-mi ceri smerit                                                              | {'mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Voi aveţi de tată pe diavolul                                                  | {'mire'}                         | Traian Dorz     | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Împlinirea Voii lui Dumnezeu                                                   | {'Mire'}                         | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| În faţa sufletului meu                                                         | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Începutul semnelor Lui                                                         | {'mire'}                         | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Ştim că vei veni Isuse                                                         | {'Mire'}                         | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Maria a luat un litru de mir                                                   | {'mir', 'mirului', 'mirul'}      | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Maria toarnă mir                                                               | {'mir', 'mirului'}               | Traian Dorz     | Cântări Nemuritoare vol. 4       | Cântări Nemuritoare          | poezie  |
-| Nu te mira!... Trebuie!                                                        | {'mira'}                         | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Ce mir ceresc                                                                  | {'mir'}                          | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Soseşte Mirele Izbăvitor                                                       | {'Mirele'}                       | Pr. Iosif Trifa | Spre Canaan                      | Spre Canaan                  | articol |
-| Rătăcitule, întoarce!                                                          | {'Mirele'}                       | Traian Dorz     | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | poezie  |
-| Rătăcitule, întoarce!                                                          | {'Mirele'}                       | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Dovada supremei iubiri                                               | {'mir', 'mira'}                  | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                   | {'mirese', 'mireselor', 'mirii'} | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 30 - Alte adevăruri noi                                                   | {'mirilor', 'mirii', 'mir'}      | Traian Dorz     | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| De ce nu s-a vândut?                                                           | {'mir', 'mirului'}               | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                  | {'miră'}                         | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| ... Dacă nu se naşte cineva din nou...                                         | {'mira'}                         | Traian Dorz     | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                   | {'Mirele', 'Mirului'}            | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                       | {'mira', 'mir'}                  | Traian Dorz     | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                 | {'miră', 'mira'}                 | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                | {'mir'}                          | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                | {'Mirele', 'mira'}               | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                                       | {'mir', 'Mirele'}                | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Ce minunate sunteţi                                                            | {'mirese'}                       | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Doamne, binecuvântează nunta                                                   | {'mirilor', 'miri'}              | Traian Dorz     | Hristos - Sfinţitorul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Doamne, binecuvântează nunta                                                   | {'mirilor', 'miri'}              | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Fii totdeauna om                                                               | {'mira'}                         | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Iertare şi iubire                                                              | {'mir', 'Mirele'}                | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Iuda a luat ceata... şi a venit                                                | {'mirul', 'mir'}                 | Traian Dorz     | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)           | {'Mirele'}                       | Traian Dorz     | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Lacrimi... - 2                                                                 | {'mir'}                          | Traian Dorz     | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Maria era aceea care...                                                        | {'mir', 'mirul'}                 | Traian Dorz     | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Ne-a nins peste trecut                                                         | {'Mirele'}                       | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| O, floare a frumoasei Lucrări                                                  | {'mir'}                          | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Rugăciune şi mărturisire                                                       | {'Mirele'}                       | Traian Dorz     | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Învăţătorule, cine a păcătuit?                                                 | {'mira'}                         | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Şi lumea i-a urât...                                                           | {'miră', 'mira'}                 | Traian Dorz     | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Căci iudeii hotărâseră                                                     | {'Mirele'}                       | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| ... Nu l-a păstrat pentru sine...                                              | {'mirul'}                        | Traian Dorz     | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| ... Şi l-au dat afară                                                          | {'mira'}                         | Traian Dorz     | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Aceea ce nu se poate ascunde                                                   | {'Mirele'}                       | Traian Dorz     | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Aprinsa Domnului iubire                                                        | {'mir'}                          | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Ascultare şi părtăşie                                                          | {'Mirele'}                       | Traian Dorz     | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Aş vrea mai mult Isuse                                                         | {'mir'}                          | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Biserică slăvită                                                               | {'Mirele'}                       | Traian Dorz     | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Ca un ascuns mărgăritar                                                        | {'mirul'}                        | Traian Dorz     | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | poezie  |
-| Ca un ascuns mărgăritar                                                        | {'mirul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 6       | Cântări Nemuritoare          | poezie  |
-| Cap. 1 - Cânt. Cântărilor                                                      | {'mirul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 2       | Cântări Nemuritoare          | poezie  |
-| Cap. 10 - Va veni un altul...                                                  | {'mir'}                          | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                       | {'mirul'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                         | {'mir'}                          | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                             | {'mir'}                          | Traian Dorz     | Istoria unei Jertfe vol. 1       | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                            | {'Mirele'}                       | Traian Dorz     | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                        | {'Mirele'}                       | Traian Dorz     | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-+--------------------------------------------------------------------------------+----------------------------------+-----------------+----------------------------------+------------------------------+---------+
-Searching Mire using http://localhost:9000...
-Got 233 hits:
++--------------------------------------------------------------------------------+----------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                          | Occurrences                            | Author          | Tip                            | Carte                        | Volum   |
++--------------------------------------------------------------------------------+----------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Un Mire şi un Model                                                            | {'Mire', 'Mirele'}                     | Traian Dorz     | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Isuse, Mire-al vieţii mele                                                     | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Isuse, Mire Veşnic                                                             | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Departe eşti încă...                                                           | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Cap. 6 - Alte amare adevăruri                                                  | {'mire', 'mirat'}                      | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                                   | {'mire', 'mirilor', 'Mirele', 'mirăm'} | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Fecioarele înţelepte                                                           | {'Mire', 'mirului'}                    | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cântările din urmă                                                             | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Iată Dimineaţa...                                                              | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| La Nunta Noastră                                                               | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Nu-şi mai aduce aminte de suferinţă                                            | {'Mire'}                               | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Viitorul întristărilor noastre                                                 | {'Mire', 'mire'}                       | Traian Dorz     | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 15-a după Rusalii                                  | {'mire', 'miraţi', 'Mirele'}           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie) | {'mire', 'miraţi'}                     | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Prietenul Mirelui                                                              | {'mire', 'Mirele'}                     | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Cap. 13 - Pe urmele profetului                                                 | {'Mire', 'miri'}                       | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Lucrarea Domnului Isus                                                         | {'mire', 'Mirele'}                     | Traian Dorz     | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Voi aveţi de tată pe diavolul                                                  | {'miraţi', 'mire'}                     | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| În curând ajungem                                                              | {'Mire', 'Mirele'}                     | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Şi nimeni nu va mai răpi bucuria - voastră                                     | {'mire', 'Mirele'}                     | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| Am aşteptat Isuse                                                              | {'Mire'}                               | Traian Dorz     | Poruncile Iubirii              | Cugetări Nemuritoare         | poezie  |
+| Am aşteptat Isuse                                                              | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Au ieşit şi au plecat                                                          | {'mire'}                               | Traian Dorz     | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Bucurie şi întristare                                                          | {'mire'}                               | Traian Dorz     | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Cap. 17 - Vin rândurile noi                                                    | {'Mire'}                               | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Ce cununie strălucită                                                          | {'Mire'}                               | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
+| Ce dor adânc                                                                   | {'Mire'}                               | Traian Dorz     | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | poezie  |
+| Ce dor adânc                                                                   | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cine mi te-a pus?                                                              | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Crin iubit                                                                     | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Cum M-ai trimes Tu...                                                          | {'mire'}                               | Traian Dorz     | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Cuvântul lui Dumnezeu                                                          | {'mire'}                               | Traian Dorz     | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Cântarea Biruinţei                                                             | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cântând Osana                                                                  | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cântă Maică-n ceasul sfânt                                                     | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Cât ai Tu mai mult!                                                            | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Dacă aduceţi multă roadă                                                       | {'mire'}                               | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Din părţile Moldovei                                                           | {'mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Dulce Domnul meu                                                               | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Dă-mi, Doamne, bucuria                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Frumos eşti Drag Isuse                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Iată, Eu vin curând...                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| La Nunta Lui                                                                   | {'Mire'}                               | Traian Dorz     | Dorim să fim                   | Cugetări Nemuritoare         | poezie  |
+| La Nunta Lui                                                                   | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| La ceasul întâlnirii                                                           | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Lăcrimele, lăcrimioare                                                         | {'mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Minunat Isuse...                                                               | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Mulţumire-nlăcrimată                                                           | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Mă voi întoarce şi vă voi lua cu Mine                                          | {'Mire'}                               | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Nunul a gustat...                                                              | {'mire'}                               | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| O, iată Ţărmul Fericit                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Preaiubitule nu-i nimeni                                                       | {'mire'}                               | Traian Dorz     | Prietenul Tinereţii mele       | Cugetări Nemuritoare         | poezie  |
+| Preaiubitule, nu-i nimeni                                                      | {'mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Psalmul 19                                                                     | {'mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| Râvna pentru Casa Ta...                                                        | {'Mire'}                               | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| S-ascult de Tine                                                               | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Slăvit fii Tu, al Bucuriei                                                     | {'Mire'}                               | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Slăvit fii Tu, al Bucuriei                                                     | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Supărarea şi plecarea                                                          | {'mire'}                               | Traian Dorz     | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Să-I cântăm, să-I cântăm...                                                    | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Tot corul Veşniciei                                                            | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Tu-ai vrut să fim                                                              | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Tu-mi ceri smerit                                                              | {'mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Împlinirea Voii lui Dumnezeu                                                   | {'Mire'}                               | Traian Dorz     | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| În Ziua fără noapte...                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| În faţa sufletului meu                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Începutul semnelor Lui                                                         | {'mire'}                               | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Ştim că vei veni                                                               | {'Mire'}                               | Traian Dorz     | Răsplata Ascultării            | Cugetări Nemuritoare         | poezie  |
+| Ştim că vei veni Isuse                                                         | {'Mire'}                               | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Maria a luat un litru de mir                                                   | {'mir', 'mirului', 'mirul'}            | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Maria toarnă mir                                                               | {'mir', 'mirului'}                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Ucenicii se mirau                                                              | {'mirau', 'miraţi'}                    | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Nu te mira!... Trebuie!                                                        | {'mira'}                               | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Ce mir ceresc                                                                  | {'mir'}                                | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Pe dragii noştri miri                                                          | {'miri'}                               | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Ca voi să vă miraţi                                                            | {'miraţi'}                             | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Soseşte Mirele Izbăvitor                                                       | {'Mirele'}                             | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                | {'mirat', 'mir', 'mirăm'}              | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                  | {'mirat', 'mirăm', 'miraţi'}           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Aici este mirarea                                                              | {'Miraţi', 'miraţi'}                   | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Cap. 22 - Al doilea 2-4-2                                                      | {'miram', 'mirat', 'mirau'}            | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 7 - Aşa ne-au judecat                                                     | {'miraţi', 'miram'}                    | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Rătăcitule, întoarce!                                                          | {'Mirele'}                             | Traian Dorz     | Săgeţile biruitoare            | Cugetări Nemuritoare         | poezie  |
+| Rătăcitule, întoarce!                                                          | {'Mirele'}                             | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| Rătăcitule, întoarce!                                                          | {'Mirele'}                             | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Cap. 12 - Dovada supremei iubiri                                               | {'mir', 'miram', 'mira'}               | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Al treilea februarie                                                 | {'miră', 'miraţi', 'mira', 'mirat'}    | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 25 - Al şaptelea foc                                                      | {'miram', 'miraţi'}                    | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 31 - O altă judecată                                                      | {'miraţi'}                             | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Aur şi zgură                                                                   | {'miraţi'}                             | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                       | {'mira', 'miram', 'mir'}               | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                       | {'mirul', 'mirau', 'mirat'}            | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                          | {'mirat', 'miram'}                     | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 30 - Alte adevăruri noi                                                   | {'mirilor', 'mirii', 'mir'}            | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - În noaptea aceea...                                                   | {'miraţi', 'mirat', 'mirau'}           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                       | {'mir', 'mirat', 'Mirele'}             | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                            | {'miram', 'miraţi', 'mirii'}           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                       | {'mir', 'mirat', 'mirase'}             | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| De ce nu s-a vândut?                                                           | {'mir', 'mirului'}                     | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Dovada primirii Duhului                                                        | {'mirăm'}                              | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
++--------------------------------------------------------------------------------+----------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+Searching Mire using https://api.comori-od.ro...
+Got 418 hits:
+Score: 35.3
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Un Mire şi un Model
+Type: articol
+Author: Traian Dorz
+Highlight: Domnul Isus stă permanent în faţa noastră ca un <em>Mire</em> cu care ne-am logodit prin legământul naşterii din
+Highlight: prin uşile încuiate, venind să ne îmbrăţişeze ca <em>Mire</em>, ca să ne arate cum să iubim dar şi ca un model
+Highlight: În biserică este ca un <em>Mire</em>, în adunare ca un Model.
+Highlight: O, cât de mult trebuie să-L iubim noi pe <em>Mirele</em> şi Modelul nostru Isus.
+Highlight: Un <em>Mire</em> şi un Model
+
 Score: 33.666664
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
@@ -123,7 +135,20 @@ Author: Traian Dorz
 Highlight: Isuse, <em>Mire</em> Veşnic
 Highlight: Isuse, <em>Mire</em> Veşnic
 
-Score: 15.947368
+Score: 16.285713
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Departe eşti încă...
+Type: poezie
+Author: Traian Dorz
+Highlight: şi Dulcele <em>Mire</em>, nu Vine, nu Vine...
+Highlight: - dar Dulcele <em>Mire</em> gândeşte la tine...
+Highlight: iar Dulcele <em>Mire</em> nu Vine, nu Vine...
+Highlight: - dar Dulcele <em>Mire</em> gândeşte la tine.
+Highlight: iar Dulcele <em>Mire</em> nu Vine, nu Vine...
+Highlight: căci Dulcele <em>Mire</em> grăbeşte spre tine...
+
+Score: 15.95
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 6 - Alte amare adevăruri
@@ -134,9 +159,9 @@ Highlight: Mireasă şi <em>mire</em> fiţi bine veniţi
 Highlight: mireasă iubită şi <em>mire</em> iubit
 Highlight: Mireasă şi <em>mire</em> plăcuţi şi curaţi
 Highlight: tu <em>mire</em> iubeşte-ţi mireasa căci ea
-Highlight: duminică după venirea de la slujba şi cununia <em>mirilor</em> de la biserică. Căci nunţile noastre se desfăşurau
+Highlight:  De la început l-am întrebat cu un aer naiv şi <em>mirat</em>: -
 
-Score: 12.799999
+Score: 12.833332
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 19 - Mereu morminte noi
@@ -145,6 +170,7 @@ Author: Traian Dorz
 Highlight: fel încât ele nici să nu ne mai <em>mire</em> niciodată când vin - ci să ne <em>mire</em> când nu vin. Noi trebuie să convieţuim
 Highlight: Stăteam în mijlocul fraţilor, alături de masa <em>mirilor</em> încărcată de flori, pe care strălucea Biblia şi
 Highlight: Veşnică, la care a fost invitat şi dus de Însuşi <em>Mirele</em> nostru Strălucit şi Etern Isus Hristos.  Fratele
+Highlight: drept şi sigur spre ţinta pe care o ai. Să nu ne <em>mirăm</em> când vin. Să nu le înfruntăm cu neplăcere, să nu
 
 Score: 12.749999
 Volume: Cântări Nemuritoare
@@ -192,6 +218,36 @@ Author: Traian Dorz
 Highlight: dragostea pentru Dulcele lor Isus, Strălucitul lor <em>Mire</em> şi Soare.
 Highlight: Doritul şi Aşteptatul nostru Mântuitor şi Soare şi <em>Mire</em> şi Împărat şi Dumnezeu.
 
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Viitorul întristărilor noastre
+Type: articol
+Author: Traian Dorz
+Highlight: dragostea pentru Dulcele lor Isus, Strălucitul lor <em>Mire</em> şi Soare.
+Highlight: ca un <em>mire</em> când se duce să facă pregătirile nunţii pentru mireasa
+
+Score: 9.8
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 15-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: Să nu se <em>mire</em> deci nici un frate ales de Domnul pentru purtarea
+Highlight: Nu vă <em>miraţi</em> deci voi, fraţii şi surorile mele, slujitori aleşi
+Highlight: Nu vă <em>miraţi</em> că sunteţi vorbiţi de rău, priviţi cu duşmănie
+Highlight: strălucitor. Ca o Mireasă frumoasă şi gata pentru <em>Mirele</em> ei... Ca un templu sfânt şi sfinţit, gata pentru
+
+Score: 9.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
+Type: articol
+Author: Traian Dorz
+Highlight: Şi atunci să nu se <em>mire</em> că-l aşteaptă osânda veşnică.
+Highlight: Nu vă <em>miraţi</em> că îngăduinţa fraţilor nu vă mai poate răbda umblarea
+Highlight: umblarea şi purtarea voastră. Ci să vă <em>miraţi</em> cum de vă mai rabdă îngăduinţa lui Dumnezeu cu astfel de
+
 Score: 9.75
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
@@ -212,31 +268,30 @@ Highlight: a fost a noastră <em>Mire</em> Drag
 Highlight: scânduri de brad, s-a desfăşurat nunta tinerilor <em>miri</em> Iosif şi Iuliana. Ce cadru solemn pentru o nuntă
 
 Score: 9.666667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 15-a după Rusalii
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Lucrarea Domnului Isus
 Type: articol
 Author: Traian Dorz
-Highlight: Să nu se <em>mire</em> deci nici un frate ales de Domnul pentru purtarea
-Highlight: strălucitor. Ca o Mireasă frumoasă şi gata pentru <em>Mirele</em> ei... Ca un templu sfânt şi sfinţit, gata pentru
+Highlight: mireasa peste care El Şi-a pus Numele Lui, aşa cum un <em>mire</em> îşi pune numele său peste mireasa iubită. Cum un
+Highlight: Dumnezeu asupra căreia veghează cu gelozie Hristos, <em>Mirele</em> ei, să fim cu foarte mare grijă la felul cum ne
 
 Score: 9.666667
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Râvna pentru Casa Ta...
+Book: Hristos - Luminătorul nostru
+Title: Voi aveţi de tată pe diavolul
 Type: articol
 Author: Traian Dorz
-Highlight: şi Slăvitul <em>Mire</em> al Bisericii,
-Highlight: rugăm veghează Tu Însuţi cu toată grija asupra <em>Miresei</em> Tale iubite, şi nu îngădui vrăjmaşului să o întineze
+Highlight: Atunci să nu vă <em>miraţi</em> şi să nu se <em>mire</em> nimeni că veţi fi şi pedepsiţi la fel ca
 
 Score: 9.666667
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: În Ziua fără noapte...
+Book: Cântări Nemuritoare vol. 10
+Title: În curând ajungem
 Type: poezie
 Author: Traian Dorz
-Highlight: Tu, <em>Mire</em>-al Frumuseţii, din Slava Ta curată
-Highlight: vei da <em>Miresei</em> Tale,
+Highlight: <em>Mire</em> Drag Isus - du-ne până Sus
+Highlight: <em>Mirele</em> Isus!
 
 Score: 9.666667
 Volume: Meditații la Ev. după Ioan
@@ -248,12 +303,36 @@ Highlight: ca un <em>mire</em> când se duce să facă pregătirile nunţii pent
 Highlight: Iată <em>Mirele</em> Dorit şi Scump al sufletelor noastre vine (
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Am aşteptat Isuse
+Type: poezie
+Author: Traian Dorz
+Highlight: - mi-ai dat cu mâini de <em>Mire</em>
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 9
 Title: Am aşteptat Isuse
 Type: poezie
 Author: Traian Dorz
 Highlight: - mi-ai dat cu Mâini de <em>Mire</em>
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Au ieşit şi au plecat
+Type: articol
+Author: Traian Dorz
+Highlight: curioşi merg acolo din toată lumea să vadă şi să se <em>mire</em>.
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Bucurie şi întristare
+Type: articol
+Author: Traian Dorz
+Highlight: şi să se <em>mire</em> de ceva nemaivăzut,
 
 Score: 9.5
 Volume: Istoria unei Jertfe
@@ -270,6 +349,14 @@ Title: Ce cununie strălucită
 Type: poezie
 Author: Traian Dorz
 Highlight: a fost a noastră <em>Mire</em> Drag
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Slava noastră
+Title: Ce dor adânc
+Type: poezie
+Author: Traian Dorz
+Highlight: al vieţii mele <em>Mire</em> Sfânt
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -304,6 +391,14 @@ Author: Traian Dorz
 Highlight: Nici o făgăduinţă să nu te <em>mire</em>.
 
 Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Cuvântul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Nici o promisiune a lumii, să nu te <em>mire</em>, nici să te cumpere.
+
+Score: 9.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Cântarea Biruinţei
@@ -318,6 +413,14 @@ Title: Cântând Osana
 Type: poezie
 Author: Traian Dorz
 Highlight: Preafericitul <em>Mire</em> Scump Isus.
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Cântă Maică-n ceasul sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Domn şi <em>Mire</em> şi-Mpărat
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -353,6 +456,14 @@ Highlight: - <em>Mire</em> Dulce, - fă-mi un semn!
 
 Score: 9.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Dă-mi, Doamne, bucuria
+Type: poezie
+Author: Traian Dorz
+Highlight: Domn şi <em>Mire</em> şi-Mpărat
+
+Score: 9.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: Frumos eşti Drag Isuse
 Type: poezie
@@ -368,12 +479,28 @@ Author: Traian Dorz
 Highlight: <em>Mire</em> Drag, Isus Hristos!...
 
 Score: 9.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: La Nunta Lui
+Type: poezie
 Author: Traian Dorz
-Highlight: Şi atunci să nu se <em>mire</em> că-l aşteaptă osânda veşnică.
+Highlight: priviţi ce <em>Mire</em> Drag ne-aşteaptă
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: La Nunta Lui
+Type: poezie
+Author: Traian Dorz
+Highlight: priviţi ce <em>Mire</em> Drag ne-aşteaptă
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: La ceasul întâlnirii
+Type: poezie
+Author: Traian Dorz
+Highlight: ... O, ceasul întâlnirii cu Tine Dulce <em>Mire</em>
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -416,6 +543,14 @@ Author: Traian Dorz
 Highlight: (slugile însă, care scoseseră apa, ştiau), a chemat pe <em>mire</em>.
 
 Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: O, iată Ţărmul Fericit
+Type: poezie
+Author: Traian Dorz
+Highlight: O <em>Mire</em> Drag, de când mi-ntind
+
+Score: 9.5
 Volume: Cugetări Nemuritoare
 Book: Prietenul Tinereţii mele
 Title: Preaiubitule nu-i nimeni
@@ -442,6 +577,22 @@ Highlight: 5-Ca un <em>mire</em> din odaia
 Score: 9.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
+Title: Râvna pentru Casa Ta...
+Type: articol
+Author: Traian Dorz
+Highlight: şi Slăvitul <em>Mire</em> al Bisericii,
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: S-ascult de Tine
+Type: poezie
+Author: Traian Dorz
+Highlight: Să cânt cu Tine <em>Mire</em> Drag înflăcărând iubirea
+
+Score: 9.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
 Title: Slăvit fii Tu, al Bucuriei
 Type: poezie
 Author: Traian Dorz
@@ -454,6 +605,14 @@ Title: Slăvit fii Tu, al Bucuriei
 Type: poezie
 Author: Traian Dorz
 Highlight: - Slăvit fii Tu, al nostru <em>Mire</em>
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Supărarea şi plecarea
+Type: articol
+Author: Traian Dorz
+Highlight: păcate, dar pe care iarăşi le-a repetat - să nu se <em>mire</em> că ajunge dispreţuit de toţi şi necrezut de nimeni
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -488,20 +647,20 @@ Author: Traian Dorz
 Highlight: Tu-mi ceri să n-am alt <em>mire</em>
 
 Score: 9.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Voi aveţi de tată pe diavolul
-Type: articol
-Author: Traian Dorz
-Highlight: Atunci să nu vă miraţi şi să nu se <em>mire</em> nimeni că veţi fi şi pedepsiţi la fel ca el, căci
-
-Score: 9.5
 Volume: Cugetări Nemuritoare
 Book: Mărgăritarul Ascuns
 Title: Împlinirea Voii lui Dumnezeu
 Type: articol
 Author: Traian Dorz
 Highlight: - Tu, Preaiubitul nostru <em>Mire</em>:
+
+Score: 9.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: În Ziua fără noapte...
+Type: poezie
+Author: Traian Dorz
+Highlight: Tu, <em>Mire</em>-al Frumuseţii, din Slava Ta curată
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -518,6 +677,14 @@ Title: Începutul semnelor Lui
 Type: articol
 Author: Traian Dorz
 Highlight: lucruri nemaipomenite, ca apoi să alerge numai să se <em>mire</em> şi să povestească...
+
+Score: 9.5
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Ştim că vei veni
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Mire</em> Scump Isus
 
 Score: 9.5
 Volume: Cântări Nemuritoare
@@ -552,6 +719,18 @@ Highlight: că de ce se risipeşte acest <em>mir</em> de nard curat
 Highlight: ce <em>mir</em> pregăteşti tu astăzi să-L întâmpini pe Hristos?
 Highlight: Maria toarnă <em>mir</em>
 
+Score: 2.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Ucenicii se mirau
+Type: articol
+Author: Traian Dorz
+Highlight: Atunci au venit ucenicii Lui, şi se <em>mirau</em> că vorbea cu o femeie.
+Highlight: Dumnezeu umblă după mântuirea sufletelor, nu vă <em>miraţi</em> niciodată de ce vorbeşte cu cineva.
+Highlight: Nu vă <em>miraţi</em> nici că îl veţi vedea într-un loc
+Highlight:  cu ochii voştri, nu vă <em>miraţi</em>, nu şoptiţi şi
+Highlight: Ucenicii se <em>mirau</em>
+
 Score: 2.75
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
@@ -572,6 +751,23 @@ Author: Traian Dorz
 Highlight: Ce <em>mir</em> ceresc este iubirea
 Highlight: Ce <em>mir</em> ceresc
 
+Score: 2.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Pe dragii noştri miri
+Type: poezie
+Author: Traian Dorz
+Highlight: Pe dragii noştri <em>miri</em> ce-n Domnul îi unim
+Highlight: Pe dragii noştri <em>miri</em>
+
+Score: 2.0
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Ca voi să vă miraţi
+Type: articol
+Author: Traian Dorz
+Highlight: Ca voi să vă <em>miraţi</em>
+
 Score: 2.0
 Volume: Spre Canaan
 Book: Spre Canaan
@@ -579,6 +775,82 @@ Title: Soseşte Mirele Izbăvitor
 Type: articol
 Author: Pr. Iosif Trifa
 Highlight: Soseşte <em>Mirele</em> Izbăvitor
+
+Score: 0.9090909
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: A rămas <em>mirat</em> I.P.S. Sa din cele ce se întâmplă la Sibiu. În deosebi s-a <em>mirat</em> când i-am spus
+Highlight: Stau <em>mirat</em> şi mă întreb: oare eu un om mic şi bolnav, sunt
+Highlight: sunt cu adevărat atât de tare şi primejdios? Mă <em>mir</em> că nu mi se aduce şi învinuirea că aş fi vrut să fur
+Highlight: Dar chiar dacă s-ar întâmpla aceasta, noi nu ne <em>mirăm</em>. Avem în Scriptură pilda lămurită. De la oameni
+Highlight: ucenicii, adică cei mai de aproape ai Lui, de ce să ne <em>mirăm</em> că unul sau altul din ostaşi s-ar despărţi de Domnul
+Highlight: Dumnezeu, aruncând chiar cu noroi. Nu, nu, noi nu ne <em>mirăm</em> deloc. Noi ne aşteptăm la orice, deoarece calea
+
+Score: 0.9090909
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Type: articol
+Author: Traian Dorz
+Highlight: E de <em>mirat</em> că ne mai <em>mirăm</em> şi noi adeseori, când Dumnezeu îngăduie
+Highlight: şi nu cu foc! Să ne <em>mirăm</em> că se cutremură numai pământul, nu şi cerul! Să ne <em>mirăm</em> că încă este îndurare
+Highlight: neînţelese şi de nedrepte erau aceste măsuri! Cât de <em>mirat</em> trebuie să fi privit şi să fi ascultat orice om
+Highlight: Nu vă <em>miraţi</em> de încercarea de foc ce s-a abătut peste voi -
+Highlight: Dar în unele locuri, nu vă <em>miraţi</em> că vânturile încă bat cu furie şi că cernerile
+Highlight: altora - de ce să ne mai <em>mirăm</em> că a venit focul, vântul, cernerea?  Să
+
+Score: 0.875
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Aici este mirarea
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Miraţi</em>-vă deci şi de ei cei atât de minunaţi, dar şi mai mult vă <em>miraţi</em> că voi nu înţelegeţi
+Highlight: De ce nu vă <em>miraţi</em> voi oare de îngustimea voastră?  De
+Highlight: De ce vă <em>miraţi</em> că opincarii, că dulgherii
+Highlight: De ce vă <em>miraţi</em> că oamenii fără nici o  pregătire
+Highlight: De ce vă <em>miraţi</em> că sufletele merg mai cu plăcere după ei,  ascultând
+Highlight: <em>Miraţi</em>-vă că totul se schimbă în jurul vostru şi numai voi nu vă mai schimbaţi
+
+Score: 0.85714287
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 22 - Al doilea 2-4-2
+Type: articol
+Author: Traian Dorz
+Highlight: despre mine nici nu mă mai întrebam, nici nu mă mai <em>miram</em>. Ştiam bine pentru ce sunt şi ştiam şi mai bine
+Highlight: scuipând noroi pe gură sau pe nas sau prin ochi. Ne <em>miram</em> cum nu murim acolo. O, cât adevăr este în vorba:
+Highlight: nume citite de data asta, era şi numele meu. M-am <em>mirat</em> mult, întrucât nu mă aşteptam decât peste două săptămâni
+Highlight: toate lucrurile şi bagajele asupra noastră? - se <em>mirau</em> când unii când alţii. Nu-i voie să ne ţină peste
+Highlight: iepure. Şi nu se culca până n-o mânca întreagă. Mă <em>miram</em> cum poate mânca atâta. Şi varza mai merge - dar
+Highlight: uitase un timp şi el la bietul om hămesit de foame - <em>mirat</em> şi dispreţuitor. Pe urmă şi-a întors capul spre
+
+Score: 0.8333333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 7 - Aşa ne-au judecat
+Type: articol
+Author: Traian Dorz
+Highlight: care trecusem şi cu alţii!) Nu trebuie să fim nici <em>miraţi</em> şi nici zdrobiţi de toate acestea. Doar ştim Cuvântul
+Highlight: când, măcar, eram tânăr. Vecinii se uitau şi ei <em>miraţi</em> şi neîncrezători de după garduri şi din curţi şi
+Highlight: Toţi ceilalţi se uitau <em>miraţi</em> şi neîncrezători la mine. Eram nu numai singurul
+Highlight: afara categoriei lor. S-au uitat cu toţii şi mai <em>miraţi</em> la mine când au auzit cum îmi vorbise educatorul
+Highlight: refuzat spunându-mi-se: nu mai ai bani la grefă. Mă <em>miram</em>, fiindcă ştiam că am avut, iar în cele două luni
+
+Score: 0.8333333
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Rătăcitule, întoarce!
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Mirele</em> soseşte!
+Highlight: iată <em>Mirele</em> soseşte
+Highlight: <em>Mirele</em>-I la uşă!
+Highlight: - iată <em>Mirele</em> S-arată,
+Highlight: <em>Mirele</em> soseşte!
 
 Score: 0.8333333
 Volume: Meditații la Ev. după Ioan
@@ -604,7 +876,7 @@ Highlight: <em>Mirele</em>-I la uşă!
 Highlight: - iată <em>Mirele</em> S-arată,
 Highlight: <em>Mirele</em> soseşte!
 
-Score: 0.75
+Score: 0.8
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 12 - Dovada supremei iubiri
@@ -612,17 +884,81 @@ Type: articol
 Author: Traian Dorz
 Highlight: această afirmaţie o aud pentru prima dată şi mă <em>mir</em> cum se poate face o atare afirmaţie. La foaie n-am
 Highlight: În privinţa asta eu mă <em>mir</em> cum nu s-a format şi aici o înţelepciune din popor
+Highlight: Mă <em>miram</em> de unde are atâta putere din cât de slăbit era.
 Highlight: De ce atunci să se poată <em>mira</em> cineva că durerea noastră este atât de mare. Şi
+
+Score: 0.8
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 19 - Al treilea februarie
+Type: articol
+Author: Traian Dorz
+Highlight: credincioşi, iată au ajuns o privelişte de care se <em>miră</em> şi vorbesc toţi oamenii! Nu mai înţelegem nimic
+Highlight: rugaţi pentru voi şi pentru ai voştri, nu să vă <em>miraţi</em> de ei şi de ai lor!
+Highlight: Atunci nu vă veţi <em>mira</em> pentru alţii - ci vă veţi îngrozi pentru voi!
+Highlight: cu mult mai grea ca a altora. De aceea nu-i de <em>mirat</em> dacă auzim cum unul astăzi, altul mâine, luptătorii
+
+Score: 0.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 25 - Al şaptelea foc
+Type: articol
+Author: Traian Dorz
+Highlight: mai apropiate. Dar aşa ceva era normal acum şi mă <em>miram</em> de ce se întârzie totuşi atât de mult.
+Highlight: - Noi zâmbeam - spunea omul - <em>miraţi</em> de naivitatea lui - şi i-am zis: Linişteşte-te
+Highlight: Mă <em>miram</em> şi eu cum de l-au luat şi pe colaboratorul de care
+Highlight: ochii mă aşteptam să nu mai văd lumea asta. Mă <em>miram</em> de ce se tot amână atâta. Eram nerăbdător de această
+
+Score: 0.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 31 - O altă judecată
+Type: articol
+Author: Traian Dorz
+Highlight: . Nu trebuie să fim nici <em>miraţi</em> nici zdrobiţi de toate acestea. Doar ştim Cuvântul
+Highlight: nedreptate se face împotriva mea. Vecinii se uitau <em>miraţi</em> şi neîncrezători de după garduri şi din curţi cum
+Highlight: Toţi ceilalţi se uitau <em>miraţi</em> şi neîncrezători la mine. Eram nu numai singurul
+Highlight: dată înafara tuturor. S-au uitat cu toţii şi mai <em>miraţi</em> la mine - şi din ceasul acela au început să-mi
+
+Score: 0.75
+Volume: Cugetări Nemuritoare
+Book: Avuţia Sfântului Moştenitor
+Title: Aur şi zgură
+Type: articol
+Author: Traian Dorz
+Highlight: 19 - De ce nu vă <em>miraţi</em> voi oare de îngustimea voastră?
+Highlight: De ce vă <em>miraţi</em> că
+Highlight: De ce vă <em>miraţi</em> că oamenii fără nici o
 
 Score: 0.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-Highlight:  cum ar fi cea de a “fura” papucii unor surori <em>mirese</em>, la nunţi frăţeşti.
-Highlight: Tot din anturajul tânărului “cu papucii <em>mireselor</em>” mai sunt şi alţi doi care nu mult după aceea
-Highlight: pretind să li se facă nunţi frăţeşti, deşi ei, <em>mirii</em>, ori unul ori amândoi sunt oameni cu totul fireşti
+Highlight: îndreptăţită şi normală încât părintele Iosif se <em>mira</em> cum de nu izbucneşte într-o explozie de bucurie
+Highlight: niciodată nu le mai surprinsesem înainte, încât mă <em>miram</em> cum nici atâta spirit de autocontrol nu poate avea
+Highlight: tuturor oamenilor de bună credinţă şi intenţie. Mă <em>mir</em> că până acum în ţara noastră nu s-a ivit nimeni care
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: Evangheliei... Astfel de nume, printre care Maria cu <em>mirul</em> de nard, Simon Cirineanul, Iosif din Arimatea, Mironosiţele
+Highlight: La început mi-a mers acolo bine cu sănătatea. Se <em>mirau</em> şi doctorii ce bine-mi mergea. Dar când m-am apucat
+Highlight:  se vor fi <em>mirat</em> desigur că, în locul foii noastre dragi, au primit
+
+Score: 0.75
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
+Type: articol
+Author: Traian Dorz
+Highlight: în geam. Femeile ce stăteau lângă patul lui s-au <em>mirat</em> şi l-au întrebat:
+Highlight: are Domnul cu mine. Rândul trecut ştiam şi nu mă <em>miram</em>. Ştiam că trebuie să ispăşesc un păcat pe care l-am
+Highlight: - Cum, zise el <em>mirat</em> - tu mă iubeşti într-adevăr? În felul acesta numai
 
 Score: 0.75
 Volume: Hristos - Marturia mea
@@ -632,6 +968,46 @@ Type: articol
 Author: Traian Dorz
 Highlight: rugăciune a naşilor şi apoi a <em>mirilor</em>. După aceasta toţii nuntaşii, în frunte cu <em>mirii</em> însoţiţi de cântăreţii
 Highlight: sunt obişnuit demult cu toate acestea şi nu mă mai <em>mir</em> de nimic. Mă aştept la orice, nu numai de la aceşti
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: Şi ne întrebam <em>miraţi</em>:
+Highlight: - Cum, - zise el <em>mirat</em>, - d-ta mă iubeşti într-adevăr? În felul acesta
+Highlight: Şi se <em>mirau</em> că tocmai eu căzusem.
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 5 - Întâia judecată
+Type: articol
+Author: Traian Dorz
+Highlight: e o chestiune pur personală, de credinţă - şi mă <em>mir</em> că a putut ajunge ca un punct de acuză.
+Highlight: trebuie să dea, mai întâi această pildă. Şi s-a <em>mirat</em> I.P.S. Sa că totuşi, peste acest cuvânt de iertare
+Highlight: face azi un fel de legământ, un fel de logodire cu <em>Mirele</em> Ceresc, Căruia Îi făgăduieşte viaţa ei întreagă
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 7 - Printre leu şi printre urs
+Type: articol
+Author: Traian Dorz
+Highlight: Acum mă <em>miram</em> totuşi de unde le putea cunoaşte chiar atât de bine
+Highlight: sunteţi nişte dezordonaţi! În cazul acesta să nu vă <em>miraţi</em> că se vor lua împotriva dv. măsurile pe care le
+Highlight: nuntă pentru vremea de atunci, nu numai pentru <em>mirii</em> noştri dragi, ci şi pentru toată familia lor duhovnicească
+
+Score: 0.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: să-i fac împotrivitorului acestuia - zise el. Mă <em>mir</em> cum am putut noi să fim atât de orbi încât să nu-l
+Highlight: M-am <em>mirat</em> de atâta îndrăzneală. Adică se subînţelegea că vinovat
+Highlight: mai bine ca mine şi se aşteptase la asta, - nu se <em>mirase</em> deloc.
 
 Score: 0.75
 Volume: Meditații la Ev. după Ioan
@@ -644,336 +1020,12 @@ Highlight: “De ce nu s-a vândut acest <em>mir</em> cu trei sute de dinari” 
 Highlight: Nici să-i mai dea acestuia banii <em>mirului</em> sfânt, ca el să-i cheltuiască în desfrânările lui
 
 Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
-Type: articol
-Author: Traian Dorz
-Highlight: se <em>miră</em> de ea, dar când se face o vindecare mare, a vreunui Enea cunoscut de toţi, atunci se <em>miră</em> toată
-Highlight: Ierusalimul, toată cetatea lor se pune în mişcare, se <em>miră</em>, se frământă, se întreabă.
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: ... Dacă nu se naşte cineva din nou...
-Type: articol
-Author: Traian Dorz
-Highlight: Nu te <em>mira</em> de cineva că nu vorbeşte cu foc despre Hristos,
-Highlight: din nou. Şi dacă cineva nu se naşte din nou, nu te <em>mira</em>,
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
-Type: articol
-Author: Traian Dorz
-Highlight: Şi după cum în Hristos <em>Mirele</em> Bisericii există două Firi, cea omenească şi cea
-Highlight: - Taina <em>Mirului</em>
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
-Type: articol
-Author: Traian Dorz
-Highlight: îndreptăţită şi normală încât părintele Iosif se <em>mira</em> cum de nu izbucneşte într-o explozie de bucurie
-Highlight: tuturor oamenilor de bună credinţă şi intenţie. Mă <em>mir</em> că până acum în ţara noastră nu s-a ivit nimeni care
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
-Type: articol
-Author: Traian Dorz
-Highlight: credincioşi, iată au ajuns o privelişte de care se <em>miră</em> şi vorbesc toţi oamenii! Nu mai înţelegem nimic
-Highlight: Atunci nu vă veţi <em>mira</em> pentru alţii - ci vă veţi îngrozi pentru voi!
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: sunt cu adevărat atât de tare şi primejdios? Mă <em>mir</em> că nu mi se aduce şi învinuirea că aş fi vrut să
-Highlight: ca moral şi ca intelect de mulţi din preoţii de <em>mir</em> care şi-au înţeles drumul crucii în munca
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: avut şi ea pe pământ exact aceeaşi soartă ca şi <em>Mirele</em> ei ceresc. La fel a fost primită şi tratată şi
-Highlight: Dar poate că unii oameni “duhovniceşti” - se vor <em>mira</em> şi ne vor pune întrebarea: Totuşi, de ce vă tulburaţi
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 5 - Întâia judecată
-Type: articol
-Author: Traian Dorz
-Highlight: e o chestiune pur personală, de credinţă - şi mă <em>mir</em> că a putut ajunge ca un punct de acuză.
-Highlight: face azi un fel de legământ, un fel de logodire cu <em>Mirele</em> Ceresc, Căruia Îi făgăduieşte viaţa ei întreagă
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ce minunate sunteţi
-Type: poezie
-Author: Traian Dorz
-Highlight: voi, dulcile <em>mirese</em>
-Highlight: voi, dulcile <em>mirese</em>
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Doamne, binecuvântează nunta
-Type: poezie
-Author: Traian Dorz
-Highlight: Doamne, binecuvântează nunta <em>mirilor</em> iubiţi
-Highlight: binecuvântaţi să fie dragii noştri <em>miri</em> deplin
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Doamne, binecuvântează nunta
-Type: poezie
-Author: Traian Dorz
-Highlight: Doamne, binecuvântează nunta <em>mirilor</em> iubiţi
-Highlight: binecuvântaţi să fie dragii noştri <em>miri</em> deplin
-
-Score: 0.6666666
 Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Fii totdeauna om
+Book: Lupta cea Bună
+Title: Dovada primirii Duhului
 Type: articol
 Author: Traian Dorz
-Highlight: Nu te <em>mira</em> de cineva că nu vorbeşte cu foc despre Hristos,
-Highlight: şi dacă cineva nu este născut din nou, nu te <em>mira</em>: nu poate!
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Iertare şi iubire
-Type: articol
-Author: Traian Dorz
-Highlight: a crini înrouraţi, a trandafiri sărbătoreşti, a <em>mir</em> de nard curat de mare preţ.
-Highlight: 8 - Isuse Preadulce Domn şi <em>Mirele</em> nostru Ceresc, o ce strălucire şi măreţie înconjoară
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Iuda a luat ceata... şi a venit
-Type: articol
-Author: Traian Dorz
-Highlight: Când Maria I-a turnat <em>mirul</em> ei cel scump, nu s-a mai putut răbda să nu zică:
-Highlight: merita! Cu cât era mai bine să mi se fi dat mie acest <em>mir</em> să-l vând... Eu mă pricep la preţuri şi la vânzări
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 1-a după Rusalii - (a tuturor Sfinţilor)
-Type: articol
-Author: Traian Dorz
-Highlight: întârziem şi acum, când e gata candela să se stingă, <em>Mirele</em> să vină, uşa să se închidă. Când... mulţi fraţi
-Highlight: lucrători, cu Maestrul lor. Toţi fericiţii nuntaşi, cu <em>Mirele</em> lor. De aceeaşi lucrare pe care împreună au făcut-o
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Lacrimi... - 2
-Type: poezie
-Author: Traian Dorz
-Highlight: Lacrimi, - <em>mir</em> sfinţit în rugăciune,
-Highlight: <em>mir</em> sfinţit în rugăciune,
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Maria era aceea care...
-Type: articol
-Author: Traian Dorz
-Highlight: Maria era aceea care a uns pe Domnul cu <em>mir</em>, şi I-a şters picioarele cu părul ei,
-Highlight: să-Ţi torn numai Ţie <em>mirul</em> cel plăcut mirositor.
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Ne-a nins peste trecut
-Type: poezie
-Author: Traian Dorz
-Highlight: vom fi cu <em>Mirele</em> Iubirii.
-Highlight: spre Tine <em>Mirele</em> Credinţei
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: O, floare a frumoasei Lucrări
-Type: poezie
-Author: Traian Dorz
-Highlight: să fii ca alabastrul cu-adânc plăcutul <em>mir</em>
-Highlight: purtând al curăţiei în veci plăcutul <em>mir</em>,
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Rugăciune şi mărturisire
-Type: articol
-Author: Traian Dorz
-Highlight: şi Taina Nunţii Sale Veşnice - când a zis: Iată <em>Mirele</em>!
-Highlight: meargă înaintea Lui spunând: Iată Mielul, iată <em>Mirele</em>!
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Învăţătorule, cine a păcătuit?
-Type: articol
-Author: Traian Dorz
-Highlight: nu te <em>mira</em> că nici Dumnezeu nici Lucrarea Sa şi slujitorii
-Highlight: tu singur nu vrei să te opreşti! Dar atunci nu te <em>mira</em> dacă vei primi chiar şi pe pământ ruşinea şi pedeapsa
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Şi lumea i-a urât...
-Type: articol
-Author: Traian Dorz
-Highlight: Aceste lucruri <em>miră</em>, sau îndurerează, de obicei pe cei începători. Sau
-Highlight: Nu te <em>mira</em> că te urăşte lumea (
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: ... Căci iudeii hotărâseră
-Type: articol
-Author: Traian Dorz
-Highlight: Doamne Isuse Hristoase, <em>Mirele</em> şi Domnul Casei Tale, a Bisericii Tale, al Templului
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: ... Nu l-a păstrat pentru sine...
-Type: articol
-Author: Traian Dorz
-Highlight: Ca numele Mariei cu <em>mirul</em> ei cel scump.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: ... Şi l-au dat afară
-Type: articol
-Author: Traian Dorz
-Highlight: - nu te <em>mira</em> că nu mai ai pace şi nu mai ai bucurie în inima
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Aceea ce nu se poate ascunde
-Type: articol
-Author: Traian Dorz
-Highlight: mine, Preaiubitul meu Scump, Mântuitorul meu şi <em>Mirele</em> meu.
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Aprinsa Domnului iubire
-Type: poezie
-Author: Traian Dorz
-Highlight: alin pe răni şi <em>mir</em> pe glezne
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Ascultare şi părtăşie
-Type: articol
-Author: Traian Dorz
-Highlight: 17 - <em>Mirele</em> va închide uşa numai când ultima fecioară înţeleaptă
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Aş vrea mai mult Isuse
-Type: poezie
-Author: Traian Dorz
-Highlight: şi mări de <em>mir</em> divin,
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Biserică slăvită
-Type: poezie
-Author: Traian Dorz
-Highlight: ţi-e <em>Mirele</em> şi Soţul Iubit pe veşnicie.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Ca un ascuns mărgăritar
-Type: poezie
-Author: Traian Dorz
-Highlight: Ca <em>mirul</em> cel cu bun miros
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Ca un ascuns mărgăritar
-Type: poezie
-Author: Traian Dorz
-Highlight: Ca <em>mirul</em> cel cu bun miros
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 1 - Cânt. Cântărilor
-Type: poezie
-Author: Traian Dorz
-Highlight: ca <em>mirul</em> cel preascump vărsat, mi-e Numele-Ţi Iubite
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu nu m-a lăsat să mă port aşa cu nimeni. Mă <em>mir</em> cum nu te temi tu de Dumnezeu...
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: Evangheliei... Astfel de nume, printre care Maria cu <em>mirul</em> de nard, Simon Cirineanul, Iosif din Arimatea, Mironosiţele
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 12 - Naşterea imnului duhovnicesc
-Type: articol
-Author: Traian Dorz
-Highlight: Mă <em>mir</em> Dumnezeu cum poate
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: lui Dumnezeu mi-a dat această putere de care mă <em>mir</em> şi acum, căci numai eu mă ştiu ce fire slabă aveam
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
-Type: articol
-Author: Traian Dorz
-Highlight: acesteia care va fi în faţa lui Hristos, Împăratul şi <em>Mirele</em> ei.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-Highlight: până în clipa când se va auzi marea strigare: Iată <em>Mirele</em>, ieşiţi întru întâmpinarea Lui. Binecuvântat este
+Highlight: - de ce să ne mai <em>mirăm</em> că a venit focul, vântul, cernerea?
+Highlight: Să ne <em>mirăm</em> că plouă numai cu apă -
+Highlight: Să ne <em>mirăm</em> că se cutremură numai pământul - şi nu şi cerul!
 

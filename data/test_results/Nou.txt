@@ -1,121 +1,135 @@
-+---------------------------------------------------------------------------------------+------------------------+-------------+-------------------------------+------------------------------+---------+
-| Titlu                                                                                 | Occurrences            | Author      | Tip                           | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------+------------------------+-------------+-------------------------------+------------------------------+---------+
-| Cap. 15 - Un An Nou Fericit                                                           | {'nou', 'nouă', 'Nou'} | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| ... Dacă nu se naşte cineva din nou...                                                | {'nou'}                | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Acum din nou...                                                                       | {'nou', 'Nou', 'Nouă'} | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
-| Naşterea din nou                                                                      | {'nou', 'nouă'}        | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Isuse, când din nou                                                                   | {'nou'}                | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
-| De Anul Nou 1936                                                                      | {'Nou'}                | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | poezie  |
-| De Anul Nou 1936                                                                      | {'Nou'}                | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| Naşterea din nou                                                                      | {'nou'}                | Traian Dorz | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
-| Din nou l-au întrebat                                                                 | {'nou'}                | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Doamne, sunt din nou                                                                  | {'nou'}                | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | poezie  |
-| Suflet nou-născut                                                                     | {'nou'}                | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
-| Suind din nou                                                                         | {'nou'}                | Traian Dorz | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | poezie  |
-| Suind din nou                                                                         | {'nou'}                | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Suind din nou                                                                         | {'nou'}                | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
-| Suind din nou...                                                                      | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | poezie  |
-| Şi din nou cobori...                                                                  | {'nou'}                | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| An Nou                                                                                | {'Nou'}                | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
-| O poruncă nouă: să vă iubiţi                                                          | {'nou', 'nouă'}        | Traian Dorz | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Cel mai frumos Isus                                                          | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                   | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                   | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                  | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                              | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 11 - Răscrucea Isus                                                              | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                      | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                               | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                      | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                                  | {'nou', 'Nou', 'nouă'} | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Şi binele trebuie plătit                                                    | {'nou', 'nouă', 'Nou'} | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Înţelegerea lucrurilor duhovniceşti                                                   | {'nouă', 'nou'}        | Traian Dorz | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
-| Cap. 10 - Pe drumul Crucii                                                            | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 6 - Cutremurătorul început                                                       | {'Nou', 'nou', 'nouă'} | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Nu te mira!... Trebuie!                                                               | {'nou'}                | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 13 - Frumosul tineret creştin                                                    | {'nou', 'nouă', 'Nou'} | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                                              | {'Nou', 'nou'}         | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 27 - Întristarea cea binecuvântată                                               | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                              | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                         | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                          | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                              | {'nouă', 'nou'}        | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 24 - Înaintea mai-marilor norodului                                              | {'nou', 'Nou'}         | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                               | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Nicodim I-a zis: cum se poate?                                                        | {'nou'}                | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 8 - A treia Judecată                                                             | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                | {'nou', 'nouă'}        | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                                  | {'nouă', 'nou'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 29 - Anul jubiliar 1988                                                          | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                           | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                       | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                | {'nouă', 'nou'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 18 - Un vânt rău                                                                 | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 15 - Al doilea foc                                                               | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 6 - Alte amare adevăruri                                                         | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                | {'nou'}                | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                         | {'nou', 'nouă'}        | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 17 - Ziua a doua                                                                 | {'Nou', 'nou'}         | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 19 - Al treilea februarie                                                        | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 2-a a Postului Mare                                       | {'nouă', 'nou'}        | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 13 - După luarea lui Moisi...                                                    | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                        | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                          | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 7 - Primii paşi spre o rânduială                                                 | {'nou', 'Nou', 'nouă'} | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                                 | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 7 - Aşa ne-au judecat                                                            | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                              | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 8 - Aşezarea temeliilor veşnice                                                  | {'Nou', 'nou'}         | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| ... Du-te şi să nu mai păcătuieşti                                                    | {'nou'}                | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Cap. 3 - Marea cernere                                                                | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                       | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 17 - Vin rândurile noi                                                           | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 23 - Cuvânt Testamentar                                                          | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                                         | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 14 - Atacul împotriva steagului                                                  | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 18 - Frumosul an 1930                                                            | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Fii totdeauna om                                                                      | {'nou'}                | Traian Dorz | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
-| Cap. 2 - A treia zi istorică                                                          | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'nou', 'nouă'}        | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                   | {'nou', 'nouă', 'Nou'} | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Din Apă şi din Duh                                                                    | {'nou', 'nouă'}        | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica Sfintei Învieri                                             | {'nou'}                | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                              | {'nou'}                | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 9 - Înţelepciunea şi puterea                                                     | {'nou', 'nouă', 'Nou'} | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                              | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 28 - Alte întristări binefăcătoare                                               | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                      | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 30 - Şi acum ultimul cuvânt                                                      | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
-| Cap. 10 - Va veni un altul...                                                         | {'nou'}                | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 11 - Semnele Oastei Domnului                                                     | {'nou', 'nouă'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                            | {'nouă', 'nou'}        | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| Cap. 31 - O altă judecată                                                             | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                         | {'nou'}                | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                    | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)            | {'nou'}                | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Ei nu sunt din lume                                                                   | {'nou'}                | Traian Dorz | Hristos - Mijlocitorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)        | {'nou'}                | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 28-a după Rusalii                                         | {'nouă', 'nou', 'Nou'} | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                     | {'nou', 'Nou'}         | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)    | {'nou'}                | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
-| Cap. 30 - Alte adevăruri noi                                                          | {'nou', 'Nou'}         | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
-+---------------------------------------------------------------------------------------+------------------------+-------------+-------------------------------+------------------------------+---------+
-Searching Nou using http://localhost:9000...
-Got 1057 hits:
-Score: 38.901176
++---------------------------------------------------------------------------------------+------------------------------+-------------+-------------------------------+------------------------------+---------+
+| Titlu                                                                                 | Occurrences                  | Author      | Tip                           | Carte                        | Volum   |
++---------------------------------------------------------------------------------------+------------------------------+-------------+-------------------------------+------------------------------+---------+
+| Oameni noi, neam nou                                                                  | {'nou', 'noi'}               | Traian Dorz | Dorim să fim                  | Cugetări Nemuritoare         | articol |
+| Cap. 15 - Un An Nou Fericit                                                           | {'nou', 'noi', 'Nou'}        | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| ... Dacă nu se naşte cineva din nou...                                                | {'nou'}                      | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Naşterea din nou                                                                      | {'nou', 'Noi', 'noi'}        | Traian Dorz | Răsplata Ascultării           | Cugetări Nemuritoare         | articol |
+| Isuse, când din nou                                                                   | {'nou', 'noi'}               | Traian Dorz | Cântări Nemuritoare vol. 8    | Cântări Nemuritoare          | poezie  |
+| Acum din nou...                                                                       | {'nou', 'Nou'}               | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Naşterea din nou                                                                      | {'nou'}                      | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| De Anul Nou 1936                                                                      | {'Nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | poezie  |
+| De Anul Nou 1936                                                                      | {'Nou', 'noi'}               | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Naşterea din nou                                                                      | {'nou'}                      | Traian Dorz | Lumina Iubitului Fiu          | Cugetări Nemuritoare         | articol |
+| Suind din nou                                                                         | {'nou', 'noi', 'noul'}       | Traian Dorz | Hristos - Izvorul nostru      | Meditații la Ev. după Ioan   | poezie  |
+| Suind din nou                                                                         | {'nou', 'noi', 'noul'}       | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Suind din nou                                                                         | {'nou', 'noi', 'noul'}       | Traian Dorz | Cântări Nemuritoare vol. 6    | Cântări Nemuritoare          | poezie  |
+| Suind din nou...                                                                      | {'nou', 'noi', 'noul'}       | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | poezie  |
+| Înstrăinaţi din nou                                                                   | {'nou', 'noi'}               | Traian Dorz | Credinţa Încununată           | Cugetări Nemuritoare         | poezie  |
+| Înstrăinaţi din nou                                                                   | {'nou', 'noi'}               | Traian Dorz | Cântări Nemuritoare vol. 10   | Cântări Nemuritoare          | poezie  |
+| Din nou l-au întrebat                                                                 | {'nou'}                      | Traian Dorz | Hristos - Vindecătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Doamne, sunt din nou                                                                  | {'nou'}                      | Traian Dorz | Calea Bunului Urmaş           | Cugetări Nemuritoare         | poezie  |
+| Doamne, sunt din nou un tânăr                                                         | {'nou'}                      | Traian Dorz | Întâi să fim                  | Cugetări Nemuritoare         | poezie  |
+| Doamne, sunt din nou un tânăr                                                         | {'nou'}                      | Traian Dorz | Cântări Nemuritoare vol. 9    | Cântări Nemuritoare          | poezie  |
+| Suflet nou-născut                                                                     | {'nou'}                      | Traian Dorz | Cântări Nemuritoare vol. 4    | Cântări Nemuritoare          | poezie  |
+| Şi din nou cobori...                                                                  | {'nou'}                      | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| An Nou                                                                                | {'Nou'}                      | Traian Dorz | Cântări Nemuritoare vol. 1    | Cântări Nemuritoare          | poezie  |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 17 - Vin rândurile noi                                                           | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 1 - Cel mai frumos Isus                                                          | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                   | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 7 - Printre leu şi printre urs                                                   | {'noi', 'nou', 'Noi'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 13 - E poate ultima-ncercare...                                                  | {'noi', 'nou', 'Noi'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 27 - Pe drumul ales                                                              | {'nou', 'Noi'}               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 30 - Alte adevăruri noi                                                          | {'Nou', 'noi', 'nou'}        | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 11 - Răscrucea Isus                                                              | {'nou', 'noi', 'Noi'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                      | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 4 - Aur lămurit, trestii clătinate                                               | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 12 - Dovada supremei iubiri                                                      | {'nou', 'Nou', 'noi'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                  | {'nou', 'Nou', 'noi', 'Noi'} | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Şi binele trebuie plătit                                                    | {'nou', 'noi', 'Nou'}        | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Înţelegerea lucrurilor duhovniceşti                                                   | {'nou'}                      | Traian Dorz | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Pe drumul Crucii                                                            | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 6 - Cutremurătorul început                                                       | {'Nou', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Nu te mira!... Trebuie!                                                               | {'nou'}                      | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 9 - A doua judecată                                                              | {'noi', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                                         | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                              | {'Nou', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 13 - Frumosul tineret creştin                                                    | {'Nou', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 27 - Întristarea cea binecuvântată                                               | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                               | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 5 - În noaptea aceea...                                                          | {'nou', 'Nou', 'noi'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 24 - Înaintea mai-marilor norodului                                              | {'noi', 'nou', 'Noi', 'Nou'} | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 28 - Necazurile din lungul drumului                                              | {'Noi', 'nou'}               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                                | {'noi', 'nou'}               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Condiţia mântuirii                                                                    | {'nou', 'noi'}               | Traian Dorz | Întâi să fim                  | Cugetări Nemuritoare         | articol |
+| Nicodim I-a zis: cum se poate?                                                        | {'nou'}                      | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 20 - Câte feţe ar fi putut avea binele                                           | {'noi', 'Nou', 'nou'}        | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 29 - Anul jubiliar 1988                                                          | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Strâmta cărare mântuitoare                                                  | {'noi', 'nou', 'Nou'}        | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                | {'nou'}                      | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 8 - A treia Judecată                                                             | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                       | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 15 - Al doilea foc                                                               | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 18 - Un vânt rău                                                                 | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                | {'noi', 'nou'}               | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 6 - Alte amare adevăruri                                                         | {'Nou', 'noi', 'nou'}        | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                         | {'nou'}                      | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 17 - Ziua a doua                                                                 | {'Nou', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 8 - Al şaptelea foc                                                              | {'nou', 'noi', 'Noi'}        | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                                 | {'noi', 'nou'}               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 13 - După luarea lui Moisi...                                                    | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                        | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 7 - Aşa ne-au judecat                                                            | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 19 - Al treilea februarie                                                        | {'nou', 'Noi'}               | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 2-a a Postului Mare                                       | {'nou', 'noi'}               | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Cap. 10 - Biserica cea vie şi cea care învie                                          | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 8 - Aşezarea temeliilor veşnice                                                  | {'Nou', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 7 - Primii paşi spre o rânduială                                                 | {'nou', 'Nou', 'noi'}        | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Învierea - şi urmările ei                                                             | {'nou'}                      | Traian Dorz | Întâi să fim                  | Cugetări Nemuritoare         | articol |
+| ... Du-te şi să nu mai păcătuieşti                                                    | {'nou'}                      | Traian Dorz | Hristos - Luminătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Cap. 23 - Cuvânt Testamentar                                                          | {'noi', 'nou'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                       | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                                | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 2    | Istoria unei Jertfe          | articol |
+| Cap. 5 - Necazuri şi speranţe                                                         | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumosul an 1930                                                            | {'nou', 'noi', 'Nou'}        | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 14 - Atacul împotriva steagului                                                  | {'nou', 'noi'}               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| O poruncă nouă: să vă iubiţi                                                          | {'nou'}                      | Traian Dorz | Hristos - Modelul nostru      | Meditații la Ev. după Ioan   | articol |
+| Fii totdeauna om                                                                      | {'nou'}                      | Traian Dorz | Piatra Scumpă                 | Cugetări Nemuritoare         | articol |
+| Cap. 2 - A treia zi istorică                                                          | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                   | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica Sfintei Învieri                                             | {'nou', 'noi'}               | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                              | {'noi', 'nou'}               | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'nou'}                      | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
+| Din Apă şi din Duh                                                                    | {'nou', 'noi'}               | Traian Dorz | Hristos - Înnoitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                              | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 17 - Mereu prin ape tulburi                                                      | {'nou', 'noi'}               | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| Cap. 28 - Alte întristări binefăcătoare                                               | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Cap. 9 - Înţelepciunea şi puterea                                                     | {'nou', 'Nou'}               | Traian Dorz | Istoria unei Jertfe vol. 1    | Istoria unei Jertfe          | articol |
+| Cap. 30 - Şi acum ultimul cuvânt                                                      | {'nou', 'noi'}               | Traian Dorz | Istoria unei Jertfe vol. 4    | Istoria unei Jertfe          | articol |
+| Sămânţa şi rodul                                                                      | {'nou'}                      | Traian Dorz | Alergarea Stăruitoare         | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Va veni un altul...                                                         | {'nou'}                      | Traian Dorz | Istoria unei Jertfe vol. 3    | Istoria unei Jertfe          | articol |
+| Cap. 31 - O altă judecată                                                             | {'nou'}                      | Traian Dorz | Hristos - Marturia mea        | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)            | {'nou', 'noi'}               | Traian Dorz | Hristos - Puterea Apostoliei  | Hristos - Puterea Apostoliei | articol |
++---------------------------------------------------------------------------------------+------------------------------+-------------+-------------------------------+------------------------------+---------+
+Searching Nou using https://api.comori-od.ro...
+Got 3040 hits:
+Score: 39.32832
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Oameni noi, neam nou
+Type: articol
+Author: Traian Dorz
+Highlight: suflet <em>nou</em> născut în Hristos. Până ce va afla el însuşi sprijin în propria sa rugăciune. Un <em>nou</em> născut
+Highlight: 20 - Aşa face un om <em>nou</em>. Şi numai aşa se poate face apoi om cu om, un popor <em>nou</em>, o viaţă nouă, o ţară
+Highlight: 3 - Omul <em>nou</em> se altoieşte ca o mlădiţă nobilă într-un butuc sălbatic
+Highlight: este naşterea din <em>nou</em>!  8
+Highlight: 8 - Cel mai bun sprijinitor şi apărător al unui om născut din <em>nou</em> este rugăciunea
+Highlight: 10 - Hrana unui suflet născut din <em>nou</em> este Mana cea dulce şi gustoasă a Cuvântului Sfânt
+Highlight: Oameni <em>noi</em>, neam <em>nou</em>
+
+Score: 38.928833
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 15 - Un An Nou Fericit
 Type: articol
 Author: Traian Dorz
-Highlight: - un an <em>nou</em>, un început <em>nou</em>, cu o binecuvântare <em>nouă</em> de la Domnul şi Dumnezeul nostru
-Highlight: de aici să începem nu numai un an <em>nou</em>, ci mai ales o iniţiativă <em>nouă</em>, viguroasă, durabilă, ascendentă
+Highlight: - un an <em>nou</em>, un început <em>nou</em>, cu o binecuvântare nouă de la Domnul şi
+Highlight: Revelion, ne aştepta pentru <em>noi</em> o zi, un început şi mai minunat de An <em>Nou</em> Fericit. Cred că această zi
+Highlight: ne-am născut din <em>nou</em> prin Cuvântul şi Duhul Sfânt. Şi trebuie ca fiecare dintre <em>noi</em> să-şi desăvârşească
+Highlight: citească lucrările lor <em>noi</em> - fiecare dintre cei prezenţi. Scurt, frumos, inspirat şi <em>nou</em>. Fiecare cuvânt şi
 Highlight: surorile despărţindu-se numai în zorii zilei de Anul <em>Nou</em>. Cuvântările, poeziile şi cântările Domnului sunt
 Highlight: zguduitoare cuprinde ceasul trecerii din anul vechi în cel <em>nou</em>...  Ce
-Highlight: pentru noi o zi, un început şi mai minunat de An <em>Nou</em> Fericit. Cred că această zi şi noapte care a urmat-o
-Highlight: în locul lui altceva nespus mai bun. Astfel acest <em>nou</em> nespus mai bun l-a introdus acum pe scară tot mai
 Highlight: Cap. 15 - Un An <em>Nou</em> Fericit
 
 Score: 38.816177
@@ -132,31 +146,21 @@ Highlight: Că dacă ar fi născuţi din <em>nou</em>, n-ar mai face asemenea lu
 Highlight: fără a fi născuţi din <em>nou</em>, născuţi de Sus, din Dumnezeu.
 Highlight: ... Dacă nu se naşte cineva din <em>nou</em>...
 
-Score: 35.3
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Acum din nou...
-Type: poezie
-Author: Traian Dorz
-Highlight: Acum din <em>nou</em>, cu Domnul trec pragul casei voastre
-Highlight: trimis cu Anul-Cel-<em>Nou</em>, din slăvi albastre,
-Highlight: E Anul <em>Nou</em>, e vremea şi clipa cea mai bună
-Highlight: inimile voastre s-audă Vestea <em>Nouă</em>,  ce
-Highlight: Acum din <em>nou</em>...
-
-Score: 35.3
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
+Score: 36.916668
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
 Title: Naşterea din nou
-Type: poezie
+Type: articol
 Author: Traian Dorz
-Highlight: Naşterea din <em>nou</em>,
-Highlight: naşterea din <em>nou</em>
-Highlight: adunării lui, în care l-a născut din <em>nou</em> Hristos.
-Highlight: El primeşte nu-o credinţă <em>nouă</em>, ci primeşte-un crez
+Highlight: Aşa este şi cu naşterea din <em>nou</em>.
+Highlight: Aşa este şi cu naşterea din <em>nou</em>.
+Highlight: naşterea din <em>nou</em>, în zadar.
+Highlight: 3 - Fără naşterea din <em>nou</em> eşti ca fără
+Highlight: Fără naşterea din <em>nou</em>, nici în faţa Domnului, nici în faţa fiinţelor duhovniceşti
+Highlight: <em>Noi</em> am cunoscut dragostea lui Hristos pentru <em>noi</em> fiindcă El Şi-a dat Viaţa Lui pentru <em>noi</em>.
 Highlight: Naşterea din <em>nou</em>
 
-Score: 35.25
+Score: 35.333332
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Isuse, când din nou
@@ -165,9 +169,33 @@ Author: Traian Dorz
 Highlight: Isuse, când din <em>nou</em> primim
 Highlight: Isuse, când din <em>nou</em> gustăm
 Highlight: Isuse, când din <em>nou</em> gândim
+Highlight: şi <em>noi</em>, cu dulce-Ţi dăruim cântarea
+Highlight: <em>noi</em> pân-la Tine înălţăm recunoştinţa
 Highlight: Isuse, când din <em>nou</em>
 
-Score: 33.666664
+Score: 35.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Acum din nou...
+Type: poezie
+Author: Traian Dorz
+Highlight: Acum din <em>nou</em>, cu Domnul trec pragul casei voastre
+Highlight: trimis cu Anul-Cel-<em>Nou</em>, din slăvi albastre,
+Highlight: E Anul <em>Nou</em>, e vremea şi clipa cea mai bună
+Highlight: Acum din <em>nou</em>...
+
+Score: 35.25
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Naşterea din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Naşterea din <em>nou</em>,
+Highlight: naşterea din <em>nou</em>
+Highlight: adunării lui, în care l-a născut din <em>nou</em> Hristos.
+Highlight: Naşterea din <em>nou</em>
+
+Score: 33.75
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: De Anul Nou 1936
@@ -175,9 +203,10 @@ Type: poezie
 Author: Traian Dorz
 Highlight: Azi e Anul <em>Nou</em> - şi gândul
 Highlight: ...Anul <em>Nou</em>, Isuse Doamne
+Highlight: aruncând spre <em>noi</em> puternic veninos
 Highlight: De Anul <em>Nou</em> 1936
 
-Score: 33.666664
+Score: 33.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
 Title: De Anul Nou 1936
@@ -185,6 +214,7 @@ Type: poezie
 Author: Traian Dorz
 Highlight: Azi e Anul <em>Nou</em> - şi gândul
 Highlight: ... Anul <em>Nou</em>, Isuse Doamne
+Highlight: aruncând spre <em>noi</em> puternic veninos
 Highlight: De Anul <em>Nou</em> 1936
 
 Score: 33.666664
@@ -196,6 +226,74 @@ Author: Traian Dorz
 Highlight: Aceasta trebuie să fie naşterea din <em>nou</em>. Numai prin ea se intră în turma lui Hristos.
 Highlight: lacrimi, ca prin harul Domnului să se nască din <em>nou</em>.
 Highlight: Naşterea din <em>nou</em>
+
+Score: 30.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Izvorul nostru
+Title: Suind din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Suind din <em>nou</em> un vechi urcuş
+Highlight: port jertfe <em>noi</em> spre-un vechi altar
+Highlight: - cu <em>noi</em> răniri de vechi cătuşi
+Highlight: Isuse, <em>noul</em> legământ!
+Highlight: Suind din <em>nou</em>
+
+Score: 30.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Suind din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Suind din <em>nou</em> un vechi urcuş
+Highlight: port jertfe <em>noi</em> spre-un vechi altar
+Highlight: - cu <em>noi</em> răniri de vechi cătuşi
+Highlight: Isuse, <em>noul</em> legământ!
+Highlight: Suind din <em>nou</em>
+
+Score: 30.8
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: Suind din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Suind din <em>nou</em> un vechi urcuş
+Highlight: port jertfe <em>noi</em> spre-un vechi altar
+Highlight: - cu <em>noi</em> răniri de vechi cătuşi
+Highlight: Isuse, <em>noul</em> legământ!
+Highlight: Suind din <em>nou</em>
+
+Score: 30.8
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Suind din nou...
+Type: poezie
+Author: Traian Dorz
+Highlight: Suind din <em>nou</em> un vechi urcuş,
+Highlight: port jertfe <em>noi</em> spre-un vechi altar
+Highlight: cu <em>noi</em> răniri de vechi cătuşi
+Highlight: Isuse, <em>noul</em> legământ.
+Highlight: Suind din <em>nou</em>...
+
+Score: 30.666666
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Înstrăinaţi din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Înstrăinaţi din <em>nou</em> Isuse
+Highlight: Emaus - numai <em>noi</em>.
+Highlight: Înstrăinaţi din <em>nou</em>
+
+Score: 30.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Înstrăinaţi din nou
+Type: poezie
+Author: Traian Dorz
+Highlight: Înstrăinaţi din <em>nou</em> Isuse
+Highlight: Emaus - numai <em>noi</em>.
+Highlight: Înstrăinaţi din <em>nou</em>
 
 Score: 30.5
 Volume: Meditații la Ev. după Ioan
@@ -216,6 +314,24 @@ Highlight: Doamne, sunt din <em>nou</em> un tânăr
 Highlight: Doamne, sunt din <em>nou</em>
 
 Score: 30.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Doamne, sunt din nou un tânăr
+Type: poezie
+Author: Traian Dorz
+Highlight: Doamne, sunt din <em>nou</em> un tânăr
+Highlight: Doamne, sunt din <em>nou</em> un tânăr
+
+Score: 30.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Doamne, sunt din nou un tânăr
+Type: poezie
+Author: Traian Dorz
+Highlight: Doamne, sunt din <em>nou</em> un tânăr
+Highlight: Doamne, sunt din <em>nou</em> un tânăr
+
+Score: 30.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
 Title: Suflet nou-născut
@@ -223,42 +339,6 @@ Type: poezie
 Author: Traian Dorz
 Highlight: Suflet <em>nou</em> născut pe lume azi ai fost sfinţit
 Highlight: Suflet <em>nou</em>-născut
-
-Score: 30.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Izvorul nostru
-Title: Suind din nou
-Type: poezie
-Author: Traian Dorz
-Highlight: Suind din <em>nou</em> un vechi urcuş
-Highlight: Suind din <em>nou</em>
-
-Score: 30.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Suind din nou
-Type: poezie
-Author: Traian Dorz
-Highlight: Suind din <em>nou</em> un vechi urcuş
-Highlight: Suind din <em>nou</em>
-
-Score: 30.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Suind din nou
-Type: poezie
-Author: Traian Dorz
-Highlight: Suind din <em>nou</em> un vechi urcuş
-Highlight: Suind din <em>nou</em>
-
-Score: 30.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Suind din nou...
-Type: poezie
-Author: Traian Dorz
-Highlight: Suind din <em>nou</em> un vechi urcuş,
-Highlight: Suind din <em>nou</em>...
 
 Score: 30.5
 Volume: Cântări Nemuritoare
@@ -277,73 +357,87 @@ Type: poezie
 Author: Traian Dorz
 Highlight: An <em>Nou</em>
 
-Score: 19.320158
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: O poruncă nouă: să vă iubiţi
+Score: 19.602564
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 12 - Voi nu puteţi veni cu noi...
 Type: articol
 Author: Traian Dorz
-Highlight: unui ziar, el în fiecare zi e <em>nou</em>, apare din <em>nou</em> şi este citit din <em>nou</em>, ca şi cum ar fi cel dintâi.
-Highlight: dragoste dar <em>nouă</em> pentru Isus, astăzi trebuie să facem altceva din <em>nou</em>. Şi altceva <em>nou</em>.
-Highlight: Fiindcă deşi este acelaşi ziar, el este mereu <em>nou</em>, mereu altul.  Şi
-Highlight: trebui să uităm, pentru ca astăzi să începem ca din <em>nou</em>, ca din altă magazie plină, din care să împărţim
-Highlight: noastră ar trebui zilnic să cuprindă ceva <em>nou</em>, ceva reînnoit, ceva proaspăt.
-Highlight: Părtăşia faţă de fraţi ar trebui să ne-o reînnoim zilnic căutându-i mereu din <em>nou</em>.
-Highlight: O poruncă <em>nouă</em>: să vă iubiţi
+Highlight: învăţătură nouă, un duh <em>nou</em>, - când Cuvântul este atât de clar: chiar dacă <em>noi</em> înşine sau un înger din
+Highlight: Cu tot riscul pe care îl prezenta pentru <em>noi</em> începerea din <em>nou</em> a activităţii, - lucrul trebuia făcut cu
+Highlight: de pot cânta şi plânge din <em>nou</em> ca un copil ce
+Highlight: Te binecuvânt Doamne, din <em>nou</em> cu
+Highlight: de acestea este iarăşi ca acela al naşterii din <em>nou</em> şi cred că nu se mai poate gusta în lume decât de
+Highlight: robia firii pământeşti venită prin naşterea din <em>nou</em>. Şi decât a doua mea eliberare din cuptor venită
+Highlight: Cap. 12 - Voi nu puteţi veni cu <em>noi</em>...
 
-Score: 18.542793
+Score: 19.338636
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 17 - Vin rândurile noi
+Type: articol
+Author: Traian Dorz
+Highlight: învierea este naşterea din <em>nou</em>. Primăvara este naşterea, renaşterea din <em>nou</em>. Semănatul şi răsărirea seminţei
+Highlight: naşterea din <em>nou</em>. Nimic nu se dezvoltă, nu creşte nu rodeşte fără începutul naşterii din <em>nou</em>.
+Highlight: fiecare ceva <em>nou</em> şi cât se poate de frumos. A fost o sărbătoare a desfătării sufleteşti pentru <em>noi</em> toţi. Ce
+Highlight: a putea face, fiecare dintre <em>noi</em> în parte şi cu toţii împreună, un <em>nou</em> salt fericit în starea noastră
+Highlight: şi luptă evanghelică şi misionară... Schimbul cel <em>nou</em> plin de putere şi prospeţime, preia frumos din mers
+Highlight:  să vă naşteţi din <em>nou</em>, a spus Domnul Isus. Fără aceasta nu este viaţă, nici rodire, nici cules veşnic
+Highlight: Cap. 17 - Vin rândurile <em>noi</em>
+
+Score: 18.554354
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 1 - Cel mai frumos Isus
 Type: articol
 Author: Traian Dorz
-Highlight: Acolo din <em>nou</em>, apăru lista. Din <em>nou</em> porunca:
+Highlight: principală a Oastei “duhul cel <em>nou</em>” şi “adevărul” cel <em>nou</em>. Nişte fraţi “<em>noi</em>” înflăcăraţi şi “înzestraţi”
+Highlight: Acolo din <em>nou</em>, apăru lista. Din <em>nou</em> porunca: -
 Highlight: stat pe bănci... Şi la ora 8 am fost din <em>nou</em> acolo. Poarta din <em>nou</em> închisă, iar de dincolo de poartă glasul
-Highlight: poarta principală a Oastei “duhul cel <em>nou</em>” şi “adevărul” cel <em>nou</em>. Nişte fraţi “noi” înflăcăraţi şi “înzestraţi”
-Highlight: credinţa vie şi <em>nouă</em> în Domnul Isus Hristos. Începea să înţeleagă şi să dorească naşterea din <em>nou</em>... Părea că
-Highlight: încercărilor de pe pământ, pentru curăţarea lor din <em>nou</em> prin suferinţă. În
-Highlight: încercărilor suferea cu ei, pentru curăţarea lor din <em>nou</em>. Dumnezeu
+Highlight: maşina trecea cu <em>noi</em> parcă peste şanţuri, parcă peste câmpuri... Am simţit că urcăm, că din <em>nou</em> coborâm. Ne-am
+Highlight: La o săptămână după <em>noi</em> mai sosiră un <em>nou</em> transport de la Oradea. Fură şi aceştia
+Highlight: activitate cu Oastea aia a Domnului. Altfel ajungi din <em>nou</em> la <em>noi</em>. Şi atunci nu va mai fi aşa de uşor cum a fost
 
-Score: 18.434938
+Score: 18.448486
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
 Highlight: altul <em>nou</em>, după un scurt răstimp, prigonirile autorităţilor contra noastră au izbucnit din <em>nou</em> cu şi
+Highlight: găsim toată Oastea acum, - şi mai ales <em>noi</em>, - ce s-ar întâmpla din <em>nou</em> cu autorităţile astea! Mai
+Highlight: A venit până la <em>noi</em> din <em>nou</em>, Dorica soţia lui Pop Alexandru. Acum e a treia
 Highlight: Dar din <em>nou</em>, părintele Iosif, cu toată durerea dar şi cu toată
-Highlight: Ar fi din <em>nou</em> şi între toţi fraţii de pretutindeni numai spice
+Highlight: Ar fi din <em>nou</em> şi între toţi fraţii de
 Highlight: când în 12 februarie 1974 am fost luat şi dus din <em>nou</em> sub escorta miliţeanului, - la Securitatea din Oradea
-Highlight: Peste câteva minute eram din <em>nou</em> la Beiuş în biroul şefului miliţiei şi inventariam
-Highlight: acelaşi lucru îi spusesem şi în august când din <em>nou</em> mi le luase pe acestea. De
 
-Score: 18.43129
+Score: 18.446482
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 7 - Printre leu şi printre urs
 Type: articol
 Author: Traian Dorz
+Highlight: “lucrători” <em>noi</em> care dădeau năvală în Oaste, unii fără nici măcar a şti ce este naşterea din <em>nou</em>. Alţii pierzând-o
+Highlight: se pot numi ale Oastei Domnului! <em>Noi</em> nu vrem să mai înfiinţăm din <em>nou</em> ceea ce-am desfiinţat! Dv. trebuie
+Highlight: facă totul ca să se scape de <em>noi</em>, îmbiindu-i cadouri şi promisiuni cu un <em>nou</em> preţ pe casă.
+Highlight: decât să ne aruncaţi din <em>nou</em> cu mâinile legate în groapa cu lei pe toţi. Şi pe <em>noi</em> şi pe voi. Veţi vedea
 Highlight: nevrând să mă întristeze. Dar acum când am ajuns din <em>nou</em> în mijlocul lor am făcut cunoştinţă cu marile şi
 Highlight: Între aceste împrejurări deci am ajuns din <em>nou</em> înapoi în mijlocul fraţilor dintre care plecasem
-Highlight: Îndată ce am fost din <em>nou</em> în mijlocul lor, fraţii m-au înconjurat deci cu dragoste
-Highlight: intelectual şi ceea ce era mai grav, nenăscut din <em>nou</em>, - cei care îl dirijau, urmăreau în primul rând dărâmarea
-Highlight: unii fără nici măcar a şti ce este naşterea din <em>nou</em>. Alţii pierzând-o îndată.
-Highlight: naşterea din <em>nou</em>
 
-Score: 18.41369
+Score: 18.427084
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 13 - E poate ultima-ncercare...
 Type: articol
 Author: Traian Dorz
-Highlight: le vrea Hristos de la noi, - ci vrea naşterea din <em>nou</em>, predarea totală în slujba Lui şi trăirea fiecăruia
+Highlight: devenite tradiţie, le vrea Hristos de la <em>noi</em>, - ci vrea naşterea din <em>nou</em>, predarea totală în slujba Lui şi trăirea
+Highlight: Dar cine ne va mai ajuta pe <em>noi</em> mâine, când din <em>nou</em> s-ar putea să ajungem în vreo nenorocire
+Highlight: <em>Noi</em> însă dorim să avertizăm din <em>nou</em> asupra acestor două mari pericole
 Highlight: mai trebuiesc câteva rânduri, - şi vei merge din <em>nou</em>, acolo de unde ai venit. D-ta eşti un incorigibil
-Highlight: avem altceva de făcut acum decât să te trimitem din <em>nou</em> înapoi. Să nu ne mai tot dai atâta de lucru.
-Highlight: - Bine! Peste trei zile voi veni din <em>nou</em>! Vei vedea atunci d-ta dacă va fi altfel!
-Highlight: Dumnezeu. - Dar îndată ce se vedea scăpat, începea din <em>nou</em>...
-Highlight: În ultimele zile am văzut umblând din <em>nou</em> în jurul meu pe doi necunoscuţi, care uşor puteau
+Highlight: avem altceva de făcut acum decât să te trimitem din <em>nou</em> înapoi. Să nu ne mai tot dai atâta de lucru. -
+Highlight: - Bine! Peste trei zile voi veni din <em>nou</em>! Vei vedea atunci d-ta dacă va fi altfel! Cu
 
-Score: 18.41369
+Score: 18.425451
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 27 - Pe drumul ales
@@ -352,37 +446,51 @@ Author: Traian Dorz
 Highlight: din <em>nou</em>, bate din <em>nou</em>, ucide din <em>nou</em>. Numai Hristos Singur poate transforma pe om făcându-l <em>nou</em>, demn
 Highlight: Îmi aşteptam moartea din <em>nou</em> ca pe o izbăvire. Dar din <em>nou</em> voia Domnului a fost alta.  În
 Highlight: ora 4, după ce trecusem din <em>nou</em> pe la picioarele Domnului meu, eram din <em>nou</em> în faţa învinuitorului meu
+Highlight: poate opera. <em>Noi</em> astă operaţie o propovăduim. E singura adevărată. Asta este naşterea din <em>nou</em> pe care o
 Highlight: treacă, de la aducerea noastră din Delta Dunării din <em>nou</em> la Gherla, până când se va împlini misiunea pe care
 Highlight: trecut şi primăvară lui 1964. Începuse cu un suflu <em>nou</em>. Hrana se îmbunătăţise mult. Începuse o altă perioadă
-Highlight: şi în mijlocul poporului nostru naşterea lui din <em>nou</em>? S-au identificat oare lucrătorii ei tot mai mult
 
-Score: 18.37826
+Score: 18.392857
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 30 - Alte adevăruri noi
+Type: articol
+Author: Traian Dorz
+Highlight: Revelioanele noastre: nopţile de Anul <em>Nou</em>, sunt pentru <em>noi</em> iarăşi un alt prilej fericit de a petrece
+Highlight: după ei până la poartă. În stradă m-a sărutat din <em>nou</em>, apoi s-a urcat în maşină şi au plecat. De atunci
+Highlight: Domnului de unde au luat câteva cărţi. Apoi cel <em>nou</em> mă întrebă:  -
+Highlight: de oameni au fost atraşi la Domnul şi prin acest <em>nou</em> fel creştinesc de a face sărbătorirea nunţii. Domnul
+Highlight:  Dar după aceea, venind superiorul m-a luat din <em>nou</em> la întrebări şi mai pe larg despre toată Istoria
+Highlight: încât parcă doream să vină cât mai repede. Aflam din <em>nou</em> dulcele adevăr că o putere totdeauna mai mare decât
+Highlight: Cap. 30 - Alte adevăruri <em>noi</em>
+
+Score: 18.390291
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
 Highlight: din <em>nou</em> telefonul şi s-a pornit din <em>nou</em> potopul hulelor şi minciunilor. De aceea ridicăm din <em>nou</em> făclia
-Highlight: este indignat că l-am refuzat să mă sărute din <em>nou</em> cu o <em>nouă</em> scrisoare de dragoste. (I s-a refuzat o scrisoare
-Highlight: fraţii cititori: - Pornim din <em>nou</em> la drum cu alte forţe pentru o <em>nouă</em> luptă. Azi
-Highlight: cuţitul şi ferăstrăul doctorului au tăiat din <em>nou</em>, deschizând o <em>nouă</em> rană în corpul acesta plin de rane şi de
+Highlight: asta şi <em>noi</em> vom fi daţi afară din biserică, vom face şi <em>noi</em> ca apostolii Domnului, vom merge din <em>nou</em> şi nu
+Highlight: făcut. Ne strânsesem din <em>nou</em> la sfat şi stabilim punctele principale care credem <em>noi</em> că ar putea aduce refacerea
+Highlight: învrednicit să ne strângem din <em>nou</em> în dragostea Ta. Îţi mulţumim că pe <em>noi</em>, aceşti pierduţi şi păcătoşi
+Highlight: strămoşeşti. <em>Noi</em> vrem să trăim sub această lege, sub orânduirile canonice ale bisericii. A crea un <em>nou</em> statut
 Highlight: tot lucrul Domnului. Venise în Lucrarea Oastei din <em>nou</em> acel demon politic care încercase s-o mai cucerească
-Highlight: După ce s-a întremat puţin s-a reîntors din <em>nou</em> la front... până când cu prilejul unei adunări, a
 
-Score: 18.214285
+Score: 18.239246
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 3 - La scadenţa ispăşirilor
 Type: articol
 Author: Traian Dorz
+Highlight: ajung să Te întâlnesc din <em>nou</em> pe Tine. Cere-mi orice, numai ia dintre <em>noi</em> acest zid despărţitor, după
+Highlight: furăm aleşi o parte din <em>noi</em>, suiţi într-o dubă cu trei laviţe - şi duşi din <em>nou</em> la penitenciar.
 Highlight: Dar dragostea a adus în lume un <em>nou</em> fel de ispăşire. Ispăşirea pe care primeşte să o
-Highlight: Aruncă-mă oriunde, numai să ajung să Te întâlnesc din <em>nou</em> pe Tine. Cere-mi orice, numai ia dintre noi acest
 Highlight: liniştesc ştiind că n-are de ce să-l ţină fiindcă era <em>nou</em> venit, abia de curând la Domnul, n-avuseseră când
-Highlight: întorceam luam puţin ochii din carte, până puneam din <em>nou</em> plugul în brazdă...
+Highlight: întorceam luam puţin ochii din carte, până puneam din <em>nou</em> plugul în brazdă... În
 Highlight: Mă ridicam din <em>nou</em> să mă plimb de la uşă până la perete, cei trei paşi
-Highlight: gardul din faţă. Lăsă plăcinta acolo, apoi plecă din <em>nou</em>. Mai veni cu una... Şi încă cu una... Apoi se aşeză
 
-Score: 18.152405
+Score: 18.170706
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 4 - Aur lămurit, trestii clătinate
@@ -395,72 +503,72 @@ Highlight: am vorbit în capitolul dinainte) - am ajuns din <em>nou</em> afară.
 Highlight: intrat în cea sufletească, cu sufletul. A trebuit din <em>nou</em> să încep drumul şi mai greu acum, al prezentării
 Highlight: şi arzătoare în tot trupul încât mi se păru din <em>nou</em> că mâinile mele sunt îngropate în jăratic aprins
 
-Score: 18.112555
+Score: 18.130953
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 12 - Dovada supremei iubiri
 Type: articol
 Author: Traian Dorz
 Highlight: eram din <em>nou</em> lângă părintele Iosif. Venisem tocmai la timp căci fratele Marini căzuse din <em>nou</em> la pat.
+Highlight: În timpul Sărbătorilor Anului <em>Nou</em> şi Bobotezei veni pe neaşteptate la <em>noi</em> părintele Vladimir... Acest suflet
+Highlight: adus-o sora Liţa, - apoi s-a liniştit din <em>nou</em>. În acest timp, <em>noi</em>, Titus, Marini şi cu mine ne-am sfătuit
 Highlight:  pentru 25 decembrie 1937 - din <em>nou</em>, scrisul dorit şi aşteptat de toţi fraţii. Mult încercatul
-Highlight: În timpul Sărbătorilor Anului <em>Nou</em> şi Bobotezei veni pe neaşteptate la noi părintele
-Highlight: Ce bucuros ar fi sugrumat mitropolitul din <em>nou</em> şi foaia
+Highlight: Ce bucuros ar fi sugrumat mitropolitul din <em>nou</em> şi foaia  Glasul
 Highlight: ostaşi - martor este Domnul - că, începând cu Anul <em>Nou</em> va preda această tipografie (zestre) unui comitet
-Highlight: Declar din <em>nou</em> că n-am cerut niciodată nici un fel de încuviinţare
 
-Score: 18.032223
+Score: 18.046608
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
 Highlight: sunt minunate - dar ele revin din <em>nou</em> în sensul Rusaliilor, în sensul <em>Nou</em>-Testamental. Domnul Isus le spune
-Highlight: Cincizecimii este desigur un hotar <em>nou</em>, un hotar de lume <em>nouă</em>, de viaţă <em>nouă</em>. Cincizecimea a dat pe primii
-Highlight: cei născuţi din <em>nou</em> şi aceştia împreună cu apostolii au format biserica cea vie, cea <em>nouă</em>, cea cu adevărat
-Highlight: Lucrare a Oastei în care ne-am născut şi noi din <em>nou</em> prin Cuvântul şi Duhul Sfânt, de către acest sfânt
+Highlight: sfântă Lucrare a Oastei în care ne-am născut şi <em>noi</em> din <em>nou</em> prin Cuvântul şi Duhul Sfânt, de către acest
+Highlight: lucrat dovedind din <em>nou</em> că a Lui este această Oaste Sfântă şi că focul Lui arde în ea... <em>Noi</em> da, plecăm de
+Highlight: lucrări atât de măreţe şi minunate pentru <em>noi</em>. Sensul <em>Nou</em>-Testamental al sărbătorii de Rusalii este nespus
+Highlight: asta acest legământ al naşterii din <em>nou</em> pentru Dumnezeu. Iar <em>noi</em> ne vom ruga îndată aici cu toţii, însoţind
 Highlight: învăţători şi binefăcători. Căci el ne-a născut din <em>nou</em> pentru o viaţă veşnică şi ne-a dat atâtea învăţături
-Highlight: în vremea noastră. Oastea Domnului nu este ceva <em>nou</em>, ea este opera Cincizecimii şi a ieşit din lucrarea
 
-Score: 18.01417
+Score: 18.03263
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 19 - Şi binele trebuie plătit
 Type: articol
 Author: Traian Dorz
-Highlight: Trecusem nu numai într-un an <em>nou</em> ci într-o eră <em>nouă</em>, într-un ev <em>nou</em>, într-o lume <em>nouă</em>... Simţeam ceva ca atunci
+Highlight: întruna. Trecusem nu numai într-un an <em>nou</em> ci într-o eră nouă, într-un ev <em>nou</em>, într-o lume nouă... Simţeam ceva
+Highlight: a Domnului. Altfel să ştii că vei ajunge din <em>nou</em> la <em>noi</em>. Şi atunci nu va mai fi tot aşa de uşor cum a
+Highlight: Acum pleacă! Peste două zile te prezinţi din <em>nou</em> la <em>noi</em>.
+Highlight: aici la <em>noi</em>. Mâine vei fi dus iarăşi la Oradea. Eşti arestat din <em>nou</em>.
 Highlight: Era atunci noaptea Anului <em>Nou</em> 1948... Trecuseră 25 de ani.  Poate
 Highlight: camera vecină, - nu astăzi poate, căci este Anul <em>Nou</em> şi nu se lucrează nici chiar aici, - dar mâine vor
-Highlight: Într-un târziu uşa se deschise din <em>nou</em> şi gardianul arătând spre mine îmi zise:
-Highlight: poruncise se aşeză înapoia mea şi-mi porunci din <em>nou</em>:
-Highlight: Nu ţinu mult şi din <em>nou</em> alt fluierat scurt. Bătăile covorului încetară şi
 
-Score: 18.007177
+Score: 18.005013
 Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
 Title: Înţelegerea lucrurilor duhovniceşti
 Type: articol
 Author: Traian Dorz
-Highlight: o inimă <em>nouă</em> alcătuiesc omul cel <em>nou</em>.
 Highlight: dragoste şi rămâne cu bucurie în cei născuţi din <em>nou</em>, care s-au alipit de Hristos ajungând un singur duh
-Highlight: 2 - Cine nu-i născut din <em>nou</em>, vede răul bine şi binele rău.  Iar
+Highlight: 2 - Cine nu-i născut din <em>nou</em>, vede răul bine şi binele rău.
 Highlight: Fiindcă oricine nu este născut din <em>nou</em>, nu poate cunoaşte, nu poate primi şi nu poate înţelege
-Highlight: Numai naşterea din <em>nou</em> poate da adevărata lor cunoaştere.  3
-Highlight: 4 - Cum se face naşterea din <em>nou</em>?  -
+Highlight: Numai naşterea din <em>nou</em> poate da adevărata lor cunoaştere.
+Highlight: 4 - Cum se face naşterea din <em>nou</em>?
+Highlight: 6 - Naşterea din <em>nou</em> este o taină, este convertirea, schimbarea vieţii
 
-Score: 17.967743
+Score: 17.980392
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 10 - Pe drumul Crucii
 Type: articol
 Author: Traian Dorz
 Highlight: vinul cel <em>nou</em> care căuta un burduf <em>nou</em>, după spusele Domnului: căci nimeni nu pune vinul cel <em>nou</em> într-un
-Highlight: statute, Oastei trebuia să i se dea un burduf <em>nou</em>, o formă <em>nouă</em>, pentru ca, cum iarăşi zice Mântuitorul: să
 Highlight: dorinţe: aceea de a da ţării şi bisericii un tineret <em>nou</em> şi înflăcărat pentru Hristos. Iar acestui tineret
 Highlight: Curând a căzut din <em>nou</em> la patul zăcerii. A trebuit să se ducă la Braşov
 Highlight: aceea de acolo. Dar părintele Vasile căzu la pat din <em>nou</em>. Necazurile părintelui Iosif şi propriile lui necazuri
 Highlight: După vreo două luni s-a îmbolnăvit din <em>nou</em> atât el cât şi fr. Marini. Şi împreună au fost amândoi
+Highlight: Anul <em>nou</em> 1937 - Eben-Ezerul Oastei.
 
-Score: 17.954546
+Score: 17.962963
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 6 - Cutremurătorul început
@@ -468,10 +576,10 @@ Type: articol
 Author: Traian Dorz
 Highlight: Anul cel <em>Nou</em> cu folos de mântuire sufletească, mă hotărăsc prin aceasta, cu începere de la Anul <em>Nou</em>, să scot
 Highlight: prin gazeta plină de suflul <em>nou</em>, născut odată cu hotărârea din noaptea de An <em>Nou</em> 1923.
-Highlight: redactor <em>nou</em> şi o gazetă <em>nouă</em>. Ci se născuse şi se năştea o cititorime <em>nouă</em>, o societate <em>nouă</em>, o frăţietate
 Highlight: Iată noaptea Anului <em>Nou</em> 1923.  Această
 Highlight: rândurile care vor alcătui primul număr pe Anul <em>Nou</em> 1923 al foii  Lumina
 Highlight: legământ ca din clipa aceasta să ia puternic un <em>nou</em> drum. Un îndemn fericit şi luminos îi străluci poruncitor
+Highlight: el - să facem o intrare creştinească în Anul cel <em>Nou</em>, cu hotărâre şi întovărăşire de luptă împotriva sudalmelor
 
 Score: 17.944445
 Volume: Meditații la Ev. după Ioan
@@ -486,20 +594,33 @@ Highlight: să se nască din <em>nou</em>
 Highlight: Împărăţia lui Dumnezeu, trebuie neapărat să se nască din <em>nou</em>!  Cel
 Highlight: naşte din <em>nou</em>, eşti pierdut.  Soţul
 
-Score: 17.836538
+Score: 17.867367
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
 Type: articol
 Author: Traian Dorz
-Highlight: peste acest <em>nou</em> început. Domnul să ne ajute să ducem la izbândă şi acest început de muncă <em>nouă</em>!”
-Highlight:  de la Anul <em>Nou</em> 1923, - încep să apară pe paginile gazetei L. S.
-Highlight: ţării şi bisericii noastre se ridică un tineret <em>nou</em>, sănătos şi harnic, care începe să tragă brazde tot
-Highlight: nestatorniciei i-au aruncat curând pe mulţi din <em>nou</em> în noroiul pierzării şi în osânda iadului. Sărmanii
-Highlight: - Dimineaţa era din <em>nou</em>, odată cu ceilalţi, la seceriş. Iar în holdă voioasă
-Highlight: Iată ce minunat creşte şi sporeşte acest tineret <em>nou</em>, prin Lucrarea Oastei lui Hristos.  Aici
+Highlight: fiecare din <em>noi</em> ceilalţi pe rând, vom lua cuvântul spre a adăuga ceea ce am mai aflat <em>nou</em>, asupra cuvântului
+Highlight: n-am fi fost atât de mulţi dintre <em>noi</em> - mai ales dintre cei mai <em>nou</em> veniţi în Lucrarea Domnului, - la
+Highlight: S-a mai spus adevărul că pentru creşterea unui <em>nou</em> născut, este neapărat nevoie de trei lucruri: de
+Highlight: întâmplă acelaşi lucru şi cu meditaţia lui Silagy. Din <em>nou</em> urmă un duş rece fiindcă ei doi erau una...
+Highlight: greşi”... Sau numai din a scoate cu orice preţ ceva <em>nou</em>... Asta era boala lor.
+Highlight: tuturor, pentru aceste brutale cuvinte. Din <em>nou</em> însă: nu pot arăta mai limpede ceea ce trebuie arătat - decât
 
-Score: 17.835
+Score: 17.860075
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 20 - După alţi 30 de ani
+Type: articol
+Author: Traian Dorz
+Highlight: Şi iată că acum, din <em>nou</em>, după acei treizeci de ani, ciclul
+Highlight: evenimente dureroase, iarăşi trebuie să se repete. Din <em>nou</em> încep să aibă loc întâmplări dure şi pe scară tot
+Highlight: lucrării acesteia. Iar când va fi gata voi veni din <em>nou</em> să v-o prezint şi să ne îndrumaţi mai departe cum
+Highlight: Întors acasă am alergat din <em>nou</em> cu cele două-trei suflete, pe care Duhul Sfânt le
+Highlight: În ziua de sâmbătă 1 martie eram din <em>nou</em> în Sibiu, cu sacul meu de drum în care aveam gata
+Highlight: alta. Totuşi şi-a făcut timp să stea de vorbă din <em>nou</em> cu mine. Voiam o aprobare pentru tipărirea lucrării
+
+Score: 17.857456
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 5 - Întâia judecată
@@ -512,7 +633,20 @@ Highlight: necredinţă de după război a făcut ca apelul de Anul <em>Nou</em>
 Highlight: intervenţie a unui bărbat politic, să apară din <em>nou</em> la 24 februarie - şi de atunci continuă să apară
 Highlight:  Sa patriarhul Dr. Miron Cristea. Declarând din <em>nou</em>, că înţeleg să rămân până la sfârşit un devotat slujitor
 
-Score: 17.831522
+Score: 17.853724
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight:  de la Anul <em>Nou</em> 1923, - încep să apară pe paginile gazetei L. S.
+Highlight: ţării şi bisericii noastre se ridică un tineret <em>nou</em>, sănătos şi harnic, care începe să tragă brazde tot
+Highlight: nestatorniciei i-au aruncat curând pe mulţi din <em>nou</em> în noroiul pierzării şi în osânda iadului. Sărmanii
+Highlight: - Dimineaţa era din <em>nou</em>, odată cu ceilalţi, la seceriş. Iar în holdă voioasă
+Highlight: Iată ce minunat creşte şi sporeşte acest tineret <em>nou</em>, prin Lucrarea Oastei lui Hristos.
+Highlight: prima dată atunci, despre păcat, despre naşterea din <em>nou</em>, despre Sângele lui Hristos şi despre mântuirea sufletului
+
+Score: 17.846428
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 27 - Întristarea cea binecuvântată
@@ -525,33 +659,20 @@ Highlight: dorim să înregistrăm de fiecare dată un program <em>nou</em>, o �
 Highlight: Marini, unde am cântat, ne-am rugat şi am evocat din <em>nou</em> împreună, cu duioşie şi lacrimi frumoasele noastre
 Highlight: pregătesc cu nişte lucruri pentru drumul la patriarh. Un <em>nou</em> exemplar cu lucrarea pentru Maica Domnului şi câte
 
-Score: 17.827381
+Score: 17.792957
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
 Type: articol
 Author: Traian Dorz
-Highlight: S-a mai spus adevărul că pentru creşterea unui <em>nou</em> născut, este neapărat nevoie de trei lucruri: de
-Highlight: lua cuvântul spre a adăuga ceea ce am mai aflat <em>nou</em>, asupra cuvântului meditat.
-Highlight: atât de mulţi dintre noi - mai ales dintre cei mai <em>nou</em> veniţi în Lucrarea Domnului, - la care să le placă
-Highlight: întâmplă acelaşi lucru şi cu meditaţia lui Silagy. Din <em>nou</em> urmă un duş rece fiindcă ei doi erau una...
-Highlight: greşi”... Sau numai din a scoate cu orice preţ ceva <em>nou</em>... Asta era boala lor.
-Highlight: ruşine tuturor, pentru aceste brutale cuvinte. Din <em>nou</em> însă: nu pot arăta mai limpede ceea ce trebuie arătat
+Highlight: trimise din <em>nou</em> un sol al Său, care să mă înştiinţeze că azi are să se întâmple din <em>nou</em> ceva.
+Highlight: lucruri fuseseră trimise după <em>noi</em>, oriunde am mers. Ele se dădeau din <em>nou</em> omului numai atunci când era
+Highlight: îl simt din <em>nou</em> cum se apropie căutând pe orice cale să-mi facă numai rău. În
+Highlight: În orice loc <em>nou</em> ajung, mă uit
+Highlight: rămas legat pentru totdeauna prin naşterea lor din <em>nou</em>, prin înfrăţirea noastră din Duhul Sfânt... - ai
+Highlight: Ce vom face? - se plângeau cu toţii. Vor veni din <em>nou</em> ai noştri - şi dacă nu-i vor primi, vă închipuiţi
 
-Score: 17.825
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: Şi iată că acum, din <em>nou</em>, după acei treizeci de ani, ciclul acelor evenimente
-Highlight: evenimente dureroase, iarăşi trebuie să se repete. Din <em>nou</em> încep să aibă loc întâmplări dure şi pe scară tot
-Highlight: lucrării acesteia. Iar când va fi gata voi veni din <em>nou</em> să v-o prezint şi să ne îndrumaţi mai departe cum
-Highlight: Întors acasă am alergat din <em>nou</em> cu cele două-trei suflete, pe care Duhul Sfânt le
-Highlight: În ziua de sâmbătă 1 martie eram din <em>nou</em> în Sibiu, cu sacul meu de drum în care aveam gata
-Highlight: alta. Totuşi şi-a făcut timp să stea de vorbă din <em>nou</em> cu mine. Voiam o aprobare pentru tipărirea lucrării
-
-Score: 17.766666
+Score: 17.792753
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 5 - În noaptea aceea...
@@ -559,64 +680,64 @@ Type: articol
 Author: Traian Dorz
 Highlight: Din <em>nou</em> nu mai aveam nici un gând din urmă, nici o părere de rău, nici o dorinţă. Din <em>nou</em> eram mai
 Highlight: - Din <em>nou</em> a apărut masa cu dosarele în curte... Din <em>nou</em> vizită medicală acolo.
+Highlight: parte din acest <em>Nou</em> Testament, - să ne-o coasem în căptuşeala hainei. S-o avem cu <em>noi</em>. Dacă
 Highlight: Ascult din <em>nou</em>... Şi dintr-o dată aud că zgomotul vine din pieptul
 Highlight: Îmi retrăiam din <em>nou</em>, dar în alt fel decât în celelalte rânduri, moartea
 Highlight: totuşi cu totul deosebit, se vede că am adormit din <em>nou</em>... Fiindcă
-Highlight: Să luăm fiecare câte o parte din acest <em>Nou</em> Testament, - să ne-o coasem în căptuşeala hainei
 
-Score: 17.761538
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: obiceiurile tradiţionale, o tinerime <em>nouă</em>, o familie <em>nouă</em>, un mod <em>nou</em> şi sfânt de viaţă nu numai în biserică
-Highlight: de această ocazie. Voi căuta să le înfăţişez din <em>nou</em>, cu toată durerea, situaţia grea în care ne găsim
-Highlight: morală a poporului. Noi însă dorim să avertizăm din <em>nou</em> asupra celor două pericole care ameninţă biserica
-Highlight: nimeni alţii în problema asta. Dacă va trebui din <em>nou</em> să sufăr pentru asta - să sufăr numai eu singur.
-Highlight: februarie - am fost luat şi dus de un miliţean din <em>nou</em> la securitatea din Oradea. Mă gândeam desigur pentru
-Highlight: Mi-am luat din <em>nou</em> traista mea cea permanent gata de zece ani pentru
-
-Score: 17.754545
+Score: 17.788506
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 24 - Înaintea mai-marilor norodului
 Type: articol
 Author: Traian Dorz
-Highlight: potrivnice învăţăturii în care fusesem noi născuţi din <em>nou</em> şi îndrumaţi de la început.
-Highlight: - şi să se înceapă alinierea ordonată iarăşi din <em>nou</em> pe calea cea dreaptă, sănătoasă şi bună, indiferent
-Highlight: care se vor face de sărbătorile Crăciunului, Anului <em>Nou</em> şi Bobotezei în toată ţara.
-Highlight: înţelege. După aceea la plecare îmi vei da telefon din <em>nou</em>, ca să văd ce aţi rezolvat.
+Highlight: încredinţări potrivnice învăţăturii în care fusesem <em>noi</em> născuţi din <em>nou</em> şi îndrumaţi de la început.
+Highlight: iarăşi din <em>nou</em> pe calea cea dreaptă, sănătoasă şi bună, indiferent de atitudinea clerului faţă de <em>noi</em>.
+Highlight: nu se pot numi ale Oastei Domnului. <em>Noi</em> nu mai înfiinţăm din <em>nou</em> ceea ce am desfiinţat.
+Highlight: care se vor face de sărbătorile Crăciunului, Anului <em>Nou</em> şi Bobotezei în toată ţara.  -
+Highlight: înţelege. După aceea la plecare îmi vei da telefon din <em>nou</em>, ca să văd ce aţi rezolvat.  La
 Highlight: scoase pe altă uşă într-un hol, mă îmbrăţişă din <em>nou</em> şi arătându-mă la un călugăr bătrân şi alb, care
-Highlight: La ora anunţată telefonic, eram din <em>nou</em> la ceasul Universităţii. Şeful mă aştepta.
 
-Score: 17.75238
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Score: 17.786486
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
 Type: articol
 Author: Traian Dorz
-Highlight: trimise din <em>nou</em> un sol al Său, care să mă înştiinţeze că azi are să se întâmple din <em>nou</em> ceva.
-Highlight: îl simt din <em>nou</em> cum se apropie căutând pe orice cale să-mi facă numai rău. În
-Highlight: În orice loc <em>nou</em> ajung, mă uit
-Highlight: rămas legat pentru totdeauna prin naşterea lor din <em>nou</em>, prin înfrăţirea noastră din Duhul Sfânt... - ai
-Highlight: Ce vom face? - se plângeau cu toţii. Vor veni din <em>nou</em> ai noştri - şi dacă nu-i vor primi, vă închipuiţi
-Highlight: Eu am rămas din <em>nou</em> între cei care au urcat iarăşi înapoi, cu tot bagajul
+Highlight: de ridicarea morală a poporului. <em>Noi</em> însă dorim să avertizăm din <em>nou</em> asupra celor două pericole care ameninţă
+Highlight: de această ocazie. Voi căuta să le înfăţişez din <em>nou</em>, cu toată durerea, situaţia grea în care ne găsim
+Highlight: nimeni alţii în problema asta. Dacă va trebui din <em>nou</em> să sufăr pentru asta - să sufăr numai eu singur.
+Highlight: tradiţionale, o tinerime nouă, o familie nouă, un mod <em>nou</em> şi sfânt de viaţă nu numai în biserică ci şi în popor
+Highlight: februarie - am fost luat şi dus de un miliţean din <em>nou</em> la securitatea din Oradea. Mă gândeam desigur pentru
+Highlight: Mi-am luat din <em>nou</em> traista mea cea permanent gata de zece ani pentru
 
-Score: 17.744444
+Score: 17.78305
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 20 - Şi iertarea trebuie plătită!
 Type: articol
 Author: Traian Dorz
+Highlight: Spuneţi unde mai sunt. Dacă nu spuneţi, <em>noi</em> vom veni iarăşi din <em>nou</em> şi vai de voi dacă le vom afla.
 Highlight: trecut decât vreo două săptămâni şi m-am pomenit din <em>nou</em> acasă cu Costică, dar nu singur. Venea cu tânăra
 Highlight: oriunde, dar numai să ajung să Te întâlnesc din <em>nou</em> pe Tine. Cere-mi orice şi pedepseşte-mă oricum, dar
-Highlight: - Prinde-l lup! - strigă el din <em>nou</em> mai supărat bătând cu cizma în pământ.
+Highlight: - Prinde-l lup! - strigă el din <em>nou</em> mai supărat bătând cu cizma în pământ.  Dar
 Highlight: Încercai din <em>nou</em> să mă rog, să capăt un semn, o mângâiere, o rază
 Highlight: gardul din faţa mea. Acolo o lăsă şi se duse din <em>nou</em>, venind în gură cu o altă plăcintă. Apoi încă una
-Highlight: iarăşi seara. Solidul care mă luase aseară, apăru din <em>nou</em> la uşă, trase zăvorul - şi îmi zise la fel ca ieri:
 
-Score: 17.741177
+Score: 17.76
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Condiţia mântuirii
+Type: articol
+Author: Traian Dorz
+Highlight: Naşterea din <em>nou</em> - trebuie să repetăm de mii de ori şi tot nu va fi prea mult - naşterea din <em>nou</em> este o transformare
+Highlight: din <em>nou</em>... O, cât de mulţi sunt botezaţi şi totuşi din aceştia cât de puţini au naşterea din <em>nou</em>.
+Highlight: 3 - Dacă <em>noi</em> suntem găsiţi mincinoşi, neascultători, nenăscuţi din <em>nou</em>, străini de legămintele
+Highlight: voia lui Dumnezeu nişte copii ai Lui născuţi din <em>nou</em>, trăind în toată lumina Evangheliei Sale, iar după
+Highlight: - Acesta este şi numai acesta poate fi omul cel <em>nou</em> care apoi umblă numai după lucrurile Duhului, pentru
+Highlight: Pentru că botezul vine de jos, dar naşterea din <em>nou</em>, convertirea, pocăinţa, - vine de Sus.
+
+Score: 17.744444
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
 Title: Nicodim I-a zis: cum se poate?
@@ -629,46 +750,20 @@ Highlight: Domnul, este naşterea din <em>nou</em>.
 Highlight: naştere din <em>nou</em>
 Highlight: Taina naşterii din <em>nou</em> este în administraţia noastră bisericească Taina
 
-Score: 17.679802
+Score: 17.70194
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 20 - Câte feţe ar fi putut avea binele
 Type: articol
 Author: Traian Dorz
-Highlight:  (- în care credea sincer din <em>nou</em> -) părintele Iosif capătă un mai mare temei să nădăjduiască
-Highlight: respingere a sentinţei, consistoriul judecă din <em>nou</em> cauza.
-Highlight:  sare însă din <em>nou</em> asupra noastră şi ne vedem siliţi să ne apărăm.
-Highlight: de trepte, aşa încât zilele acestea am fost din <em>nou</em> bolnav şi trebuie să-mi caut iarăşi pe undeva un
-Highlight: parte cum, contra acestei hotărâri, am înaintat un <em>nou</em> memoriu. Orice ar fi să se întâmple, eu zic: dacă
-Highlight: Peste o săptămână (29 martie 1936) foaia publica din <em>nou</em> următoarele:
+Highlight: la această păgânătate <em>noi</em> ne-am strâns aici ca să petrecem noaptea Anului <em>Nou</em> în rugăciuni şi cântări
+Highlight: devine prin Hristos dintr-odată şi puternic, un om <em>nou</em>.  Din
+Highlight: inima sa înnobilată şi sfinţită prin naşterea din <em>nou</em>.  Astfel
+Highlight: îngăduind păcatul şi neascultarea, au ajuns din <em>nou</em> la ruina şi la pierzarea din care îi izbăvise odată
+Highlight: întuneric de care sunt acoperite acum. Iată un ogor <em>nou</em> şi plin de făgăduinţe ca un Canaan necunoscut. Cine
+Highlight: în comuna Sf. Ilie din jud. Suceava s-a arătat un <em>nou</em> rod frumos al societăţii Oastea Domnului. În această
 
-Score: 17.66883
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-Highlight: Golgotei vestea un cer <em>nou</em> şi un pământ <em>nou</em>, în care se năştea şi se încetăţenea un <em>nou</em> neam de oameni, născuţi
-Highlight: Strălucitei Învieri, ca semn că începe o <em>nouă</em> viaţă, un <em>nou</em> legământ. Un <em>nou</em> fel de relaţii între Dumnezeu şi
-Highlight: fiecare iarnă o <em>nouă</em> primăvară, după fiecare noapte o <em>nouă</em> zi, după fiecare furtună un <em>nou</em> senin - cum a
-Highlight: lucrarea... De acum urma o <em>nouă</em> lume... începea o <em>nouă</em> omenire, se năştea un <em>nou</em> Univers...  Curcubeul
-Highlight: Un frate mai <em>nou</em>, care începuse frumos şi hotărât viaţa lui cea <em>nouă</em> cu Domnul, întâlni odată
-Highlight:  Duhul Sfânt, cu vestea fericită a naşterii din <em>nou</em>, a iertării pe care Dumnezeu o da prin credinţa în
-
-Score: 17.666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 14 - Strâmta cărare mântuitoare
-Type: articol
-Author: Traian Dorz
-Highlight: care ne-a fost vestită <em>nouă</em> întâi - şi prin care am aflat noi naşterea din <em>nou</em> şi Calea mântuirii, - ne
-Highlight: lor de ură împotriva noastră şi acest <em>nou</em> amănunt, această <em>nouă</em> fărădelege. Acum eram vestiţi de ei prin
-Highlight: şi puternică despre naşterea din <em>nou</em> în Hristos. A fost o fiinţă <em>nouă</em>. Era tot aşa de greu şi la Cluj
-Highlight: Din pricina cenzurii care ne punea din <em>nou</em> piedici, hotărârăm să ne luăm nişte pseudonime pentru
-Highlight: Popovici, Eftimiu Florea, Urdea Nicolae - şi mai <em>nou</em> Silviu Hărăguş care la îndemnul fr. Florea, începea
-Highlight: La Praznicul Pogorârii Duhului Sfânt eram din <em>nou</em> la Sibiu. Ne-am regăsit cu mulţi alţi fraţi veniţi
-
-Score: 17.661654
+Score: 17.697044
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 29 - Anul jubiliar 1988
@@ -681,20 +776,46 @@ Highlight: miracol, o lumină a viitorului, un fenomen fericit şi <em>nou</em>.
 Highlight: 1988 s-au împlinit 65 de ani din noaptea de Anul <em>Nou</em> 1923, când printr-o revelaţie cerească, părintele
 Highlight: renaştere totală a fiinţei şi a societăţii noastre din <em>nou</em> la Hristos. Să-L primim pe Hristos fiecare, printr-un
 
-Score: 17.655462
+Score: 17.692547
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 14 - Strâmta cărare mântuitoare
 Type: articol
 Author: Traian Dorz
-Highlight: devine prin Hristos dintr-odată şi puternic, un om <em>nou</em>.
-Highlight: inima sa înnobilată şi sfinţită prin naşterea din <em>nou</em>.
-Highlight: îngăduind păcatul şi neascultarea, au ajuns din <em>nou</em> la ruina şi la pierzarea din care îi izbăvise odată
-Highlight: întuneric de care sunt acoperite acum. Iată un ogor <em>nou</em> şi plin de făgăduinţe ca un Canaan necunoscut. Cine
-Highlight: în comuna Sf. Ilie din jud. Suceava s-a arătat un <em>nou</em> rod frumos al societăţii Oastea Domnului. În această
-Highlight: noastre şi să le părăsim ca să ne putem naşte din <em>nou</em>, ca să ne putem mântui...”
+Highlight: vestită nouă întâi - şi prin care am aflat <em>noi</em> naşterea din <em>nou</em> şi Calea mântuirii, - ne vin în gând numai
+Highlight: judeţul Someş şi că vrem să-l luăm cu <em>noi</em>. Era mi se pare de Anul <em>Nou</em> sau de Bobotează... Zăpadă mare şi
+Highlight: mine însă, faptul că el - un copil abia şi <em>nou</em> venit la <em>noi</em>, - mă cam contrazicea în aceste lucruri, a
+Highlight: la campania lor de ură împotriva noastră şi acest <em>nou</em> amănunt, această nouă fărădelege. Acum eram vestiţi
+Highlight: Din pricina cenzurii care ne punea din <em>nou</em> piedici, hotărârăm să ne luăm nişte pseudonime pentru
+Highlight: Popovici, Eftimiu Florea, Urdea Nicolae - şi mai <em>nou</em> Silviu Hărăguş care la îndemnul fr. Florea, începea
 
-Score: 17.578348
+Score: 17.692062
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
+Type: articol
+Author: Traian Dorz
+Highlight: Învieri, ca semn că începe o nouă viaţă, un <em>nou</em> legământ. Un <em>nou</em> fel de relaţii între Dumnezeu şi oameni
+Highlight: Curcubeul Golgotei vestea un cer <em>nou</em> şi un pământ <em>nou</em>, în care se năştea
+Highlight: fiecare noapte o nouă zi, după fiecare furtună un <em>nou</em> senin - cum a adus după Golgota cea crâncenă, cu
+Highlight: omenire, se năştea un <em>nou</em> Univers...  Curcubeul
+Highlight: năştea şi se încetăţenea un <em>nou</em> neam de oameni, născuţi din Sângele Mielului, din Crucea Lui, din răscumpărarea
+Highlight:  Duhul Sfânt, cu vestea fericită a naşterii din <em>nou</em>, a iertării pe care Dumnezeu o da prin credinţa în
+
+Score: 17.686508
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight:  (- în care credea sincer din <em>nou</em> -) părintele Iosif capătă un mai mare temei să nădăjduiască
+Highlight: respingere a sentinţei, consistoriul judecă din <em>nou</em> cauza.
+Highlight:  sare însă din <em>nou</em> asupra noastră şi ne vedem siliţi să ne apărăm.
+Highlight: de trepte, aşa încât zilele acestea am fost din <em>nou</em> bolnav şi trebuie să-mi caut iarăşi pe undeva un
+Highlight: parte cum, contra acestei hotărâri, am înaintat un <em>nou</em> memoriu. Orice ar fi să se întâmple, eu zic: dacă
+Highlight: Peste o săptămână (29 martie 1936) foaia publica din <em>nou</em> următoarele:
+
+Score: 17.605951
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 2 - Istoria unei Jertfe...
@@ -707,33 +828,7 @@ Highlight: îi chemam pe cititorii mei să intre în anul cel <em>nou</em>, cu h
 Highlight: După Hotărârea şi Apelul din nr. de Anul <em>Nou</em> - nu s-a interesat absolut nimeni despre rostul acestei
 Highlight: avut şi după reîntoarcere va trebui să-mi pun din <em>nou</em> la bătaie sănătatea pentru a salva situaţia.
 
-Score: 17.575384
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 12 - Voi nu puteţi veni cu noi...
-Type: articol
-Author: Traian Dorz
-Highlight: oricine vine şi le aduce o “cale” <em>nouă</em>, o învăţătură <em>nouă</em>, un duh <em>nou</em>, - când Cuvântul este atât de clar:
-Highlight: de pot cânta şi plânge din <em>nou</em> ca un copil ce
-Highlight: Te binecuvânt Doamne, din <em>nou</em> cu
-Highlight: de acestea este iarăşi ca acela al naşterii din <em>nou</em> şi cred că nu se mai poate gusta în lume decât de
-Highlight: robia firii pământeşti venită prin naşterea din <em>nou</em>. Şi decât a doua mea eliberare din cuptor venită
-Highlight: străpungeau din <em>nou</em> coasta adunării, redeschizând rănile vechi şi făcându-le să sângere iarăşi...
-
-Score: 17.55983
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 18 - Un vânt rău
-Type: articol
-Author: Traian Dorz
-Highlight: pătrunsese încă de mai înainte acelaşi duh <em>nou</em>, acel <em>nou</em> fel de evanghelie.
-Highlight: doilea, intervenţia mitropoliei a oprit foaia din <em>nou</em>. La
-Highlight:  din mai 1945, - eu am început să scot din <em>nou</em> la Beiuş o variantă a revistei  Familia
-Highlight: Un alt <em>nou</em> venit era maiorul Gaşpar, cam tot cu astfel de idei. Şi mai erau încă. Aceşti
-Highlight: Aceşti <em>nou</em>-veniţi în
-Highlight: dinadinsul să impună ei, tuturor celorlalţi felul lor <em>nou</em> şi evoluat. Astfel
-
-Score: 17.55656
+Score: 17.601871
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 15 - Al doilea foc
@@ -746,46 +841,59 @@ Highlight: Când, după cinci ani, am mai putut reveni din <em>nou</em> - n-am m
 Highlight: scris şi mai dinainte, lucrurile ajunseseră din <em>nou</em> într-o stare din care nu se mai putea continua mult
 Highlight: Chindriş erau tot mai nemulţumiţi întâi de curentul cel <em>nou</em> evanghelic care prin scrisul nostru se revărsa printre
 
-Score: 17.55656
+Score: 17.6013
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 18 - Un vânt rău
 Type: articol
 Author: Traian Dorz
-Highlight: tot pe neaşteptate, însoţit acum de un altul, unul <em>nou</em>, necunoscut.
-Highlight: Domnului să vadă ce-i şi acolo şi să-l introducă pe cel <em>nou</em> peste tot. Au mers singuri. Au luat şi de acolo ce
-Highlight: numai peretele gol fără perdea. Apoi venind, cel <em>nou</em>, mă întrebă:
-Highlight: diafilme biblice, - până la adunarea tuturor din <em>nou</em> şi la începerea programului duminical. Acest program
-Highlight: După aceea din biserică se întorc din <em>nou</em> la locul nunţii unde se întâlnesc cu cei care fie
-Highlight: La intrarea în cort şi la aşezarea lor din <em>nou</em> în jurul mesei pentru un alt scurt program mai ales
+Highlight: pătrunsese încă de mai înainte acelaşi duh <em>nou</em>, acel <em>nou</em> fel de evanghelie.
+Highlight: care am fost <em>noi</em> născuţi din <em>nou</em>.
+Highlight: mitropoliei a oprit foaia din <em>nou</em>. La
+Highlight:  din mai 1945, - eu am început să scot din <em>nou</em> la Beiuş o variantă a revistei  Familia
+Highlight: Un alt <em>nou</em> venit era maiorul Gaşpar, cam tot cu astfel de idei. Şi mai erau încă. Aceşti
+Highlight: Aceşti <em>nou</em>-veniţi în
 
-Score: 17.55656
+Score: 17.592129
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
 Type: articol
 Author: Traian Dorz
+Highlight: Când <em>noi</em> ne-am predat Domnului şi ne-am născut din <em>nou</em>, atunci în fiinţa noastră
+Highlight: dar Te rugăm ajută-ne ca nu cumva <em>noi</em> înşine să ne mai legăm din <em>nou</em> de vreunul din acele lanţuri cu care
 Highlight: 10. şi v-aţi îmbrăcat cu omul cel <em>nou</em>, care se înnoieşte spre cunoştinţă, după chipul Celui
-Highlight: Când noi ne-am predat Domnului şi ne-am născut din <em>nou</em>, atunci în fiinţa noastră s-a făcut minunea altoirii
 Highlight: eram şi eu acolo, iar cu alte minute voi fi din <em>nou</em>, totuşi acum când mă plimbam pe coridor cu o libertate
 Highlight: faţa lor câte un astfel de lanţ, ei se apucă din <em>nou</em> de el, spunând sau gândind că unul sau altul din
 Highlight: lanţurile diavolului, nu vă mai apucaţi voi din <em>nou</em> de nici unul din aceste lanţuri ale lui satana.
-Highlight: ca mai înainte. Dar oare nu v-aţi apucat voi din <em>nou</em> de acest lanţ?
 
-Score: 17.552885
+Score: 17.590385
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 6 - Alte amare adevăruri
+Type: articol
+Author: Traian Dorz
+Highlight: nopţile Domnului, de Anul <em>Nou</em> ori de sărbătorile cele mari, sunt pentru <em>noi</em> iarăşi alte prilejuri fericite
+Highlight: tot pe neaşteptate, însoţit acum de un altul, unul <em>nou</em>, necunoscut. Era
+Highlight: Domnului să vadă ce-i şi acolo şi să-l introducă pe cel <em>nou</em> peste tot. Au mers singuri. Au luat şi de acolo ce
+Highlight: numai peretele gol fără perdea. Apoi venind, cel <em>nou</em>, mă întrebă: -
+Highlight: diafilme biblice, - până la adunarea tuturor din <em>nou</em> şi la începerea programului duminical. Acest program
+Highlight: După aceea din biserică se întorc din <em>nou</em> la locul nunţii unde se întâlnesc cu cei care fie
+
+Score: 17.584135
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
 Type: articol
 Author: Traian Dorz
 Highlight: - Veniţi din <em>nou</em> şi din <em>nou</em>!
-Highlight: Şi de ce a trebuit să vină acum un <em>nou</em> foc, o <em>nouă</em> ardere şi o <em>nouă</em> cernere? Şi de ce trebuie să bată
-Highlight: viaţa ta şi începe chiar de acum o viaţă <em>nouă</em>, prin naşterea din <em>nou</em> şi prin predarea ta pe totdeauna în slujba
 Highlight:  vestea aceasta şi se va face prin naşterea din <em>nou</em> părtaş la curăţarea şi răscumpărarea aduse de preţul
 Highlight: că erau rele, iar Dumnezeu le cere naşterea din <em>nou</em>, căci altfel vor fi pierduţi.  -
 Highlight: lucruri fără credinţa în El şi fără naşterea din <em>nou</em>, din Cuvântul şi din Duhul Sfânt.  -
+Highlight: Şi de ce a trebuit să vină acum un <em>nou</em> foc, o nouă ardere şi o nouă cernere? Şi de ce trebuie
+Highlight: acelora care doresc mântuirea, dar fără naşterea din <em>nou</em>. Doresc pe Hristos, dar fără cruce, doresc slava
 
-Score: 17.538462
+Score: 17.580902
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 17 - Ziua a doua
@@ -793,38 +901,38 @@ Type: articol
 Author: Traian Dorz
 Highlight: În ajunul Anului <em>Nou</em> a avut loc în Sala Catedralei, Balul de Anul <em>Nou</em>. Începând de la orele 8
 Highlight: Ce fericiţi mergem din <em>nou</em> unii la alţii, când nu mai vedeam pe uliţele noastre
-Highlight: păscut prea multă iarbă liniştit, până când din <em>nou</em> un alt tiran i-a pus altă şa. -
-Highlight: un cântec <em>nou</em> a izbucnit din
+Highlight:  până când din <em>nou</em> un alt tiran i-a pus altă şa. -
+Highlight: un cântec <em>nou</em> a izbucnit
 Highlight: din <em>nou</em> Isus Biruitorul ne-a
 Highlight: să chemi din <em>nou</em> la lupta sfântă norodul
 
-Score: 17.465517
+Score: 17.491304
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 8 - Al şaptelea foc
 Type: articol
 Author: Traian Dorz
-Highlight: jertfă, a trebuit să aducă din <em>nou</em> pe altarul Evangheliei preţul <em>nou</em>, jertfa <em>nouă</em>, a unuia din cei mai buni
-Highlight: soarele din <em>nou</em> răsare -
-Highlight: Duceţi iar din <em>nou</em> fiorul nou
-Highlight: <em>nou</em>, al luptei sfinte, către
-Highlight: Astfel ieşi din <em>nou</em>  Isus
-Highlight: Aici din <em>nou</em> mâna îi alunecă întrerupând şirul scrisului. După
+Highlight: fiind aduşi de la penitenciar din <em>nou</em> la Securitate şi trecând pe la <em>noi</em>, că întâlniseră acolo pe unii dintre
+Highlight: s-a ridicat. <em>Noi</em> am fost înconjuraţi şi scoşi între gardieni înarmaţi şi coborâţi din <em>nou</em> în maşinile
+Highlight: Nu este nimica <em>nou</em> sub soare. Ceea ce se va
+Highlight: scrieri. Apoi am fost suit în maşină - şi dus din <em>nou</em> la Securitatea din Deva, unde mai fusesem cu şase
+Highlight: lucrurile cu care m-au dus, ci a doua zi s-au dus din <em>nou</em>, asuprind pe ai mei şi cerând să le dea şi cei zece
+Highlight: Pune plin, - şopti el din <em>nou</em>, - pune plin. Femeia
 
-Score: 17.460001
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 2-a a Postului Mare
+Score: 17.488235
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 21 - Şi mărturia trebuie plătită
 Type: articol
 Author: Traian Dorz
-Highlight: firea noastră cea <em>nouă</em> şi viaţa noastră cea <em>nouă</em> într-un cer <em>nou</em> şi un pământ <em>nou</em> în care va locui neprihănirea
-Highlight: Bucuria de a înlocui ceva învechit cu ceva <em>nou</em> şi nespus mai bun este pusă de Domnul Dumnezeu şi
-Highlight: lucru vechi spre a nu face în locul lui un altul <em>nou</em> şi mai bun. Dacă strică firea noastră cea veche,
-Highlight: nostru vechi, este numai spre a ne îmbrăca în cel <em>nou</em>, nespus mai fericit. Dacă va arde acest cer şi acest
-Highlight: dimineaţa care este un început. Căci dimineaţa, din <em>nou</em>, trecând printr-o altă seară, pregăteşte un alt început
-Highlight: primeşte naşterea din <em>nou</em> prin Cuvântul lui Dumnezeu şi prin Duhul Sfânt.
+Highlight: Pentru <em>noi</em> cei <em>nou</em> veniţi, nu erau paturi. Dar peste câteva zile
+Highlight: Ajuns din <em>nou</em> acasă, dragostea fraţilor m-a înconjurat repede,
+Highlight: Într-adevăr, nu după multă vreme au început din <em>nou</em> chemările şi vizitele mele pe la securitate, cu toate
+Highlight: la Suceava spre Rădăuţi. Acolo s-au oprit şi din <em>nou</em> l-au luat la bătaie. L-au lovit cu pumnii, cu picioarele
+Highlight: până l-au umplut de sânge şi au obosit. Apoi din <em>nou</em> l-au legat alături de cal şi aşa lovind când în cal
+Highlight: adormit din <em>nou</em>. Cred că era în zorii zilei: 2-4-2... 2-4-2... 2-4-2...  Se
 
-Score: 17.456522
+Score: 17.487343
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 13 - După luarea lui Moisi...
@@ -837,59 +945,20 @@ Highlight: tânăr, am început a învăţa. Lucrul acesta era ceva <em>nou</em>
 Highlight: Mai <em>nou</em>, venise odată în casă, împreună cu Titus şi un preot
 Highlight: neîncăpătoare. Se întâlnesc pentru a treia oară aici din <em>nou</em> fraţii din toată ţara, în număr atât de mare...
 
-Score: 17.456522
+Score: 17.485714
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 23 - La zece ani de Oaste
 Type: articol
 Author: Traian Dorz
 Highlight: atât de nepriceput şi de nepregătit cere din <em>nou</em> şi din <em>nou</em> iertare pentru toate greşelile şi scăpările
-Highlight: vechi şi cel <em>nou</em>. Aceasta este lupta pe care trebuie să o poarte orice creştin născut din <em>nou</em>. În drum spre
+Highlight: lupta ce se dă în <em>noi</em> înşine; este lupta ce se dă între omul nostru cel vechi şi cel <em>nou</em>. Aceasta este lupta
 Highlight: Oaste şi acesta e programul Oastei. Nu e un program <em>nou</em> acesta. L-am aflat gata şi l-am luat gata de la Dumnezeiescul
 Highlight: născuţi din <em>nou</em>
 Highlight:  pe care îi născuse din <em>nou</em> ( Gal
-Highlight: în care ai gustat din pâinea şi apa naşterii din <em>nou</em> - ai intrat în război cu
+Highlight: care trebuie să o poarte orice creştin născut din <em>nou</em>. În drum spre Canaan, Dumnezeu le-a zis israelienilor
 
-Score: 17.45
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
-Type: articol
-Author: Traian Dorz
-Highlight: alarma. Îi alarma acest <em>nou</em> fel de petreceri, aceste noi cântări şi poezii, acest <em>nou</em> fel de predici şi de
-Highlight: Acest răsad <em>nou</em> şi sfânt plin de frumuseţe şi prospeţime duhovnicească aducea aerul <em>nou</em> şi curăţitor
-Highlight: vie capătă un avânt fericit şi o <em>nouă</em> generaţie reînvie aducând un <em>nou</em> suflu de viaţă sfântă sporit cu
-Highlight: ). Fără a se naşte din <em>nou</em> (
-Highlight: <em>nou</em>
-Highlight: de predicatori, acest <em>nou</em> fel de literatură şi de adunări.  Ce
-
-Score: 17.45
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 7 - Primii paşi spre o rânduială
-Type: articol
-Author: Traian Dorz
-Highlight: în toate privinţele. Suflul cel <em>nou</em> şi viu revărsat peste ea la Anul <em>Nou</em>, îi dădea un înalt conţinut duhovnicesc
-Highlight: pe oameni într-o Oaste <em>nouă</em>: în Oastea lui Isus, ca să putem începe un război <em>nou</em>, pe cel împotriva păcatelor
-Highlight: adeziuni, îngroşau rândurile Oastei duhovniceşti <em>nou</em> înfiinţate. Tineri şi bătrâni, din toate straturile
-Highlight: mişcări de renaştere sufletească ce aducea un suflu <em>nou</em> şi plin de nădejde în biserica şi ţara noastră.
-Highlight: . În chipul acesta vom putea cuceri din <em>nou</em> această ţară pentru Isus Hristos şi Evanghelia Lui
-Highlight: veni decât prin Hristos. Prin saltul naşterii din <em>nou</em> şi al vieţuirii în Hristos.  Fireşte
-
-Score: 17.447369
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: Ajuns din <em>nou</em> acasă, dragostea fraţilor m-a înconjurat repede,
-Highlight: Într-adevăr, nu după multă vreme au început din <em>nou</em> chemările şi vizitele mele pe la securitate, cu toate
-Highlight: la Suceava spre Rădăuţi. Acolo s-au oprit şi din <em>nou</em> l-au luat la bătaie. L-au lovit cu pumnii, cu picioarele
-Highlight: până l-au umplut de sânge şi au obosit. Apoi din <em>nou</em> l-au legat alături de cal şi aşa lovind când în cal
-Highlight: adormit din <em>nou</em>. Cred că era în zorii zilei: 2-4-2... 2-4-2... 2-4-2...
-Highlight: Se făcea că eram din <em>nou</em> în camera
-
-Score: 17.447369
+Score: 17.484127
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 7 - Aşa ne-au judecat
@@ -899,23 +968,49 @@ Highlight: lume, vei primi o veşnică strălucire şi un chip <em>nou</em> şi 
 Highlight: după 18 ani iată ce viu şi puternic se trezea din <em>nou</em>, când pătrunsesem iarăşi în împărăţia lui de întuneric
 Highlight: Dumnezeului meu, mulţumindu-I cu lacrimi pentru că din <em>nou</em> m-a învrednicit să am parte de suferinţa asta pentru
 Highlight: cei mai înrăiţi borfaşi. Astfel intram şi eu din <em>nou</em> în numărul celor fărădelege unde voi fi tratat ca
-Highlight: Din <em>nou</em> am mulţumit Domnului şi Dumnezeului meu pentru îngăduinţa
+Highlight: Din <em>nou</em> am mulţumit Domnului
 Highlight: , ce zici de toate astea? - îmi zise din <em>nou</em> mie, după ce le auzisem pe toate. Vezi că are dreptate
 
-Score: 17.4375
+Score: 17.48077
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 19 - Al treilea februarie
 Type: articol
 Author: Traian Dorz
-Highlight: Nu este nimica <em>nou</em> sub soare. Ceea ce se va spune, s-a mai spus. Şi
-Highlight: scrieri. Apoi am fost suit în maşină - şi dus din <em>nou</em> la Securitatea din Deva, unde mai fusesem cu şase
-Highlight: lucrurile cu care m-au dus, ci a doua zi s-au dus din <em>nou</em>, asuprind pe ai mei şi cerând să le dea şi cei zece
-Highlight: Pune plin, - şopti el din <em>nou</em>, - pune plin.
-Highlight: Femeia râse - şi îi zise din <em>nou</em> încet:
-Highlight: Pop fusese luat de la gară. Tocmai se pregătea din <em>nou</em> să meargă undeva prin Banat la o nuntă. Îşi şi cumpărase
+Highlight: jertfă, a trebuit să aducă din <em>nou</em> pe altarul Evangheliei preţul <em>nou</em>, jertfa nouă, a unuia din cei mai
+Highlight: surorile noastre să se prezinte din <em>nou</em> la lucrul Domnului. - <em>Noi</em> ne bucurăm foarte mult când citim în
+Highlight: soarele din <em>nou</em> răsare -
+Highlight: Duceţi iar din <em>nou</em> fiorul nou
+Highlight: <em>nou</em>, al luptei sfinte, către
+Highlight: Astfel ieşi din <em>nou</em>  Isus
 
-Score: 17.4375
+Score: 17.478724
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 2-a a Postului Mare
+Type: articol
+Author: Traian Dorz
+Highlight: nouă şi viaţa noastră cea nouă într-un cer <em>nou</em> şi un pământ <em>nou</em> în care va locui neprihănirea, care vor
+Highlight: minunate realităţi ale lumii <em>noi</em> şi veşnice în care am pătruns prin naşterea din <em>nou</em>, este cunoaşterea duhurilor
+Highlight: Bucuria de a înlocui ceva învechit cu ceva <em>nou</em> şi nespus mai bun este pusă de Domnul Dumnezeu şi
+Highlight: lucru vechi spre a nu face în locul lui un altul <em>nou</em> şi mai bun. Dacă strică firea noastră cea veche,
+Highlight: nostru vechi, este numai spre a ne îmbrăca în cel <em>nou</em>, nespus mai fericit. Dacă va arde acest cer şi acest
+Highlight: dimineaţa care este un început. Căci dimineaţa, din <em>nou</em>, trecând printr-o altă seară, pregăteşte un alt început
+
+Score: 17.47561
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 10 - Biserica cea vie şi cea care învie
+Type: articol
+Author: Traian Dorz
+Highlight: alarma. Îi alarma acest <em>nou</em> fel de petreceri, aceste <em>noi</em> cântări şi poezii, acest <em>nou</em> fel de predici şi de
+Highlight: Acest răsad <em>nou</em> şi sfânt plin de frumuseţe şi prospeţime duhovnicească aducea aerul <em>nou</em> şi curăţitor
+Highlight: ). Fără a se naşte din <em>nou</em> (
+Highlight: avânt fericit şi o nouă generaţie reînvie aducând un <em>nou</em> suflu de viaţă sfântă sporit cu multe lucrări proaspete
+Highlight: <em>nou</em>
+Highlight: de predicatori, acest <em>nou</em> fel de literatură şi de adunări.  Ce
+
+Score: 17.466667
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 8 - Aşezarea temeliilor veşnice
@@ -928,7 +1023,33 @@ Highlight: fel şi taina convertirii sau taina naşterii din <em>nou</em> - este
 Highlight: Dacă un om nu se naşte din <em>nou</em>, nu poate vedea Împărăţia lui Dumnezeu - a spus Mântuitorul
 Highlight:  Desigur, înţelegând pentru această naştere din <em>nou</em> prin Apă - Cuvântul lui Dumnezeu, Sfânta Scriptură
 
-Score: 17.423077
+Score: 17.456522
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 7 - Primii paşi spre o rânduială
+Type: articol
+Author: Traian Dorz
+Highlight: în toate privinţele. Suflul cel <em>nou</em> şi viu revărsat peste ea la Anul <em>Nou</em>, îi dădea un înalt conţinut duhovnicesc
+Highlight: Răspunsuri tot mai dese de <em>noi</em> adeziuni, îngroşau rândurile Oastei duhovniceşti <em>nou</em> înfiinţate. Tineri şi
+Highlight: mişcări de renaştere sufletească ce aducea un suflu <em>nou</em> şi plin de nădejde în biserica şi ţara noastră.
+Highlight: în Oastea lui Isus, ca să putem începe un război <em>nou</em>, pe cel împotriva păcatelor. Chemarea ne-a fost ascultată
+Highlight: . În chipul acesta vom putea cuceri din <em>nou</em> această ţară pentru Isus Hristos şi Evanghelia Lui
+Highlight: veni decât prin Hristos. Prin saltul naşterii din <em>nou</em> şi al vieţuirii în Hristos.  Fireşte
+
+Score: 17.441177
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Învierea - şi urmările ei
+Type: articol
+Author: Traian Dorz
+Highlight: Aşa este naşterea din <em>nou</em>, cu deschiderea unor evenimente de o însemnătate
+Highlight: Iar însămânţarea închipuie naşterea din <em>nou</em>. Fără însămânţare n-ar fi nici fertilizare, nici
+Highlight: Naşterea din <em>nou</em> este începutul tuturor acestora în viaţa noastră duhovnicească.
+Highlight: 3 - Naşterea din <em>nou</em> nu este
+Highlight: de pe pământ, - dar pocăinţa, adică naşterea din <em>nou</em>, este actul care ne înscrie în Cartea Vieţii, în
+Highlight: Numai cei ce se nasc din <em>nou</em>, cei ce împlinesc taina pocăinţei adevărate, - se
+
+Score: 17.433334
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: ... Du-te şi să nu mai păcătuieşti
@@ -939,9 +1060,35 @@ Highlight: loc şi de orice fiinţă care îţi poate trezi din <em>nou</em> pat
 Highlight: care ai păcătuit. Ca să nu te mai încolăcească din <em>nou</em> iarăşi vipera ucigaşă a focului din care abia ai
 Highlight: putea exista vreodată pentru un suflet care din <em>nou</em> păcătuieşte cu voia, după ce odată a primit cunoştinţa
 Highlight: întoarcerea la Dumnezeu şi prin spălarea naşterii din <em>nou</em>, au fost curăţiţi odată de păcatele lor şi au fost
-Highlight: sau venim la Domnul Isus, atunci şi când cădem din <em>nou</em>, împotriva Duhului Sfânt păcătuim.
+Highlight: când cădem din <em>nou</em>, împotriva Duhului Sfânt păcătuim.
 
-Score: 17.316017
+Score: 17.348711
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 23 - Cuvânt Testamentar
+Type: articol
+Author: Traian Dorz
+Highlight: Oastea Domnului din pricina lor. Am dat <em>noi</em> oare greş din <em>nou</em> cu încrederea noastră în fraţi?
+Highlight: lepădat total. La unii nici nu s-a produs naşterea din <em>nou</em> - ci au pătruns în Lucrarea lui Dumnezeu pe căi dosnice
+Highlight: care Duhul Sfânt a inspirat-o prin naşterea din <em>nou</em>, în viaţa Oastei Domnului. Şi anume acele abateri
+Highlight: frăţeşti. Astfel de suflete tinere, fără naşterea din <em>nou</em>, rămaşi în cea mai mare parte nişte oameni fireşti
+Highlight: mult clandestine, nici nu ştiu despre naşterea din <em>nou</em>, practică “botezuri”, vorbiri în limbi, profeţii
+Highlight: se ştie pe unde... Când cineva are naşterea din <em>nou</em> şi un legământ cu Hristos, - cum mai poate îndrăzni
+
+Score: 17.347763
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 2 - O taină a lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: Hristos lui Nicodim - că dacă un om nu se naşte din <em>nou</em>,
+Highlight: oricine recade din această lumină coborându-se din <em>nou</em> în puterea întunericului, (sau nu iese niciodată
+Highlight: Hristos prin altă parte decât prin uşa naşterii din <em>nou</em> - ajung în Lucrarea Evangheliei, fără a fi înnoiţi
+Highlight: mă întrebe, să mă ameninţe - şi apoi să vin din <em>nou</em> peste alte trei zile.
+Highlight: Hristos face minunea naşterii din <em>nou</em>.
+Highlight: În momentul naşterii din <em>nou</em>, omul trece printr-o înnoire totală
+
+Score: 17.339245
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 3 - Marea cernere
@@ -951,49 +1098,10 @@ Highlight: spusese doar demult, în vechime, că nu este nimic <em>nou</em> sub 
 Highlight: Tu ai strigat din <em>nou</em> pe robul Tău, iar robul Tău răspunde: aicea sunt
 Highlight: aceasta. Acum Îţi mulţumim că ne-ai cercetat din <em>nou</em> cu furtuna Ta, ca să ne aduci la acest
 Highlight: Fraţii mei, plecăm din <em>nou</em> la luptă cu acest
-Highlight: . Plecăm din <em>nou</em> la luptă gata de orice
+Highlight: . Plecăm din <em>nou</em> la luptă gata de orice jertfă. Pentru Tine Doamne suntem gata să jertfim
 Highlight: şi preţul cel mic al vieţii noastre. Plecăm din <em>nou</em> la luptă şi nu ne înfricoşăm de nimic. Până când
 
-Score: 17.311005
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: în care el s-a născut din <em>nou</em>, credinciosul simte că a venit într-o lume <em>nouă</em>, în care mai sunt multe şi
-Highlight: Hristos lui Nicodim - că dacă un om nu se naşte din <em>nou</em>,  nu
-Highlight: oricine recade din această lumină coborându-se din <em>nou</em> în puterea întunericului, (sau nu iese niciodată
-Highlight: Hristos prin altă parte decât prin uşa naşterii din <em>nou</em> - ajung în Lucrarea Evangheliei, fără a fi înnoiţi
-Highlight: mă întrebe, să mă ameninţe - şi apoi să vin din <em>nou</em> peste alte trei zile. Uneori
-Highlight: Hristos face minunea naşterii din <em>nou</em>. În
-
-Score: 17.30808
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 17 - Vin rândurile noi
-Type: articol
-Author: Traian Dorz
-Highlight: învierea este naşterea din <em>nou</em>. Primăvara este naşterea, renaşterea din <em>nou</em>. Semănatul şi răsărirea seminţei
-Highlight: naşterea din <em>nou</em>. Nimic nu se dezvoltă, nu creşte nu rodeşte fără începutul naşterii din <em>nou</em>.
-Highlight: trupul îmbrăcat de fiecare dată în cămaşă <em>nouă</em>, ori costum <em>nou</em>, dar pe dinafară prin predica lor ei sunt
-Highlight: şi luptă evanghelică şi misionară... Schimbul cel <em>nou</em> plin de putere şi prospeţime, preia frumos din mers
-Highlight:  să vă naşteţi din <em>nou</em>, a spus Domnul Isus. Fără aceasta nu este viaţă, nici rodire, nici cules veşnic
-Highlight: fiecare dintre tinerii creatori, aducând fiecare ceva <em>nou</em> şi cât se poate de frumos. A fost o sărbătoare a
-
-Score: 17.301136
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 23 - Cuvânt Testamentar
-Type: articol
-Author: Traian Dorz
-Highlight: lepădat total. La unii nici nu s-a produs naşterea din <em>nou</em> - ci au pătruns în Lucrarea lui Dumnezeu pe căi dosnice
-Highlight: care Duhul Sfânt a inspirat-o prin naşterea din <em>nou</em>, în viaţa Oastei Domnului. Şi anume acele abateri
-Highlight: frăţeşti. Astfel de suflete tinere, fără naşterea din <em>nou</em>, rămaşi în cea mai mare parte nişte oameni fireşti
-Highlight: mult clandestine, nici nu ştiu despre naşterea din <em>nou</em>, practică “botezuri”, vorbiri în limbi, profeţii
-Highlight: se ştie pe unde... Când cineva are naşterea din <em>nou</em> şi un legământ cu Hristos, - cum mai poate îndrăzni
-Highlight: pretenţios: “Studiu Biblic”. Fiindcă lucrul acesta nu era <em>nou</em> în Oastea Domnului dar era un început bun în Cluj
-
-Score: 17.296968
+Score: 17.332386
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 5 - Necazuri şi speranţe
@@ -1006,33 +1114,46 @@ Highlight: cumva - toată declaraţia de pocăinţă să nu-i fie un <em>nou</em
 Highlight: Domnului şi a fraţilor. Nu cumva să mă ajungă din <em>nou</em> şi pe mine ceva din urmările faptelor lui acoperite
 Highlight: cam prea grabnic şi din partea mea. Primindu-l din <em>nou</em> în Lucrare mă angajam pe mine ca garant - şi ar urma
 
-Score: 17.292208
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 14 - Atacul împotriva steagului
-Type: articol
-Author: Traian Dorz
-Highlight: poporul nostru şi în biserica noastră acel suflu <em>nou</em> şi viu al Evangheliei trăite. Vântul Ceresc al Duhului
-Highlight: caterisire a părintelui Iosif şi a-l repune din <em>nou</em> în toate drepturile din care a fost scos pe nedrept
-Highlight: care i-a adus-o sora Liţa apoi s-a liniştit din <em>nou</em>. În acel timp, - noi - Titus, Marini şi cu mine,
-Highlight: credinţei noastre la Isus Cel Răstignit... Tăcu din <em>nou</em>.
-Highlight: Scoase din <em>nou</em> mâna şi făcu un semn obosit care părea a spune: -
-Highlight: O luai din <em>nou</em> între mâinile mele. Ce albă şi ce uscată este! Numai
-
-Score: 17.286713
+Score: 17.320158
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 18 - Frumosul an 1930
 Type: articol
 Author: Traian Dorz
 Highlight: adevărată nu poate fi naşterea din <em>nou</em>. Şi fără naşterea din <em>nou</em> nu se poate rămânea în Lucrarea Domnului
+Highlight: .. Opriţi foaia până ce va veni din <em>nou</em> la ea acela pe care <em>noi</em> îl cunoaştem şi de la care ne-am hrănit
 Highlight: Hristos are o singură uşă: uşa naşterii din <em>nou</em>.  Naşterea
 Highlight: Naşterea din <em>nou</em> are un singur semn: pocăinţa.  Iar
-Highlight:  apare din <em>nou</em> redactată numai de preotul I. Trifa.
-Highlight: Se împlinesc la Anul <em>Nou</em> - 10 ani de când a plecat la drum foaia
-Highlight: fost să îngăduie ca suferinţa să-l trântească din <em>nou</em> la pat - fără a mai putea fi în stare luni de zile
+Highlight:  apare din <em>nou</em> redactată numai de preotul I. Trifa. Dar
+Highlight: Se împlinesc la Anul <em>Nou</em> - 10 ani de când a plecat la drum foaia  Lumina
 
-Score: 17.272726
+Score: 17.313637
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 14 - Atacul împotriva steagului
+Type: articol
+Author: Traian Dorz
+Highlight: adus-o sora Liţa apoi s-a liniştit din <em>nou</em>. În acel timp, - <em>noi</em> - Titus, Marini şi cu mine, ne-am sfătuit
+Highlight: poporul nostru şi în biserica noastră acel suflu <em>nou</em> şi viu al Evangheliei trăite. Vântul Ceresc al Duhului
+Highlight: caterisire a părintelui Iosif şi a-l repune din <em>nou</em> în toate drepturile din care a fost scos pe nedrept
+Highlight: credinţei noastre la Isus Cel Răstignit... Tăcu din <em>nou</em>.
+Highlight: Scoase din <em>nou</em> mâna şi făcu un semn obosit care părea a spune: -
+Highlight: O luai din <em>nou</em> între mâinile mele. Ce albă şi ce uscată este! Numai
+
+Score: 17.311005
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: O poruncă nouă: să vă iubiţi
+Type: articol
+Author: Traian Dorz
+Highlight: unui ziar, el în fiecare zi e <em>nou</em>, apare din <em>nou</em> şi este citit din <em>nou</em>, ca şi cum ar fi cel dintâi.
+Highlight: altceva din <em>nou</em>. Şi altceva <em>nou</em>.
+Highlight: Fiindcă deşi este acelaşi ziar, el este mereu <em>nou</em>, mereu altul.  Şi
+Highlight: trebui să uităm, pentru ca astăzi să începem ca din <em>nou</em>, ca din altă magazie plină, din care să împărţim
+Highlight: Rugăciunea noastră ar trebui zilnic să cuprindă ceva <em>nou</em>, ceva reînnoit
+Highlight: trebui să ne-o reînnoim zilnic căutându-i mereu din <em>nou</em>.
+
+Score: 17.292208
 Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
 Title: Fii totdeauna om
@@ -1045,7 +1166,7 @@ Highlight: şi dacă cineva nu este născut din <em>nou</em>, nu te mira: nu poa
 Highlight: dacă ar fi născuţi din <em>nou</em>, ei n-ar face aşa ceva.
 Highlight: 16 - Unde nu este naştere din <em>nou</em> nu poate fi nici ruşine
 
-Score: 17.15238
+Score: 17.184126
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 2 - A treia zi istorică
@@ -1058,137 +1179,150 @@ Highlight: de discuţia cu el la prima întâlnire de la Anul <em>Nou</em> 1940.
 Highlight: În preajma Anului <em>Nou</em> a. c. - precum este ştiut, s-a iscat un dureros conflict
 Highlight: În preajma Anului <em>Nou</em> a. c. precum este ştiut, s-a iscat un dureros conflict
 
-Score: 17.15238
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
-Type: articol
-Author: Traian Dorz
-Highlight: Convertirea, naşterea din <em>nou</em>, ea ne dă făptura cea <em>nouă</em>, viaţa cea <em>nouă</em>, trăirea cea <em>nouă</em>, - după chipul şi
-Highlight: Lui, plăcuţi şi iubiţi ai Lui. Făptura cea <em>nouă</em> - omul cel <em>nou</em>.  Tăierea
-Highlight:  şi anume: făptura cea <em>nouă</em>; omul cel duhovnicesc ieşit din naşterea din <em>nou</em>.  Taina
-Highlight: condiţie a mântuirii este naşterea din <em>nou</em> şi a fi o făptură <em>nouă</em>!
-Highlight: mântuiţi fără adevărata naştere din <em>nou</em>, ci dobândind făptura cea <em>nouă</em>, să vieţuim după îndemnurile Duhului
-Highlight: aceleaşi lucruri, el totdeauna le spune într-un fel <em>nou</em>.  Toţi
-
-Score: 17.144444
+Score: 17.172222
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 22 - Statutele - marea şi permanenta primejdie
 Type: articol
 Author: Traian Dorz
 Highlight: Domnului fără naşterea din <em>nou</em>, fără schimbarea vieţii, n-ajunge nimic. Naşterea din <em>nou</em> este schimbarea cea
-Highlight: , un alt fel de trai. Începe un fel <em>nou</em> de a trăi, o <em>nouă</em> viaţă. Aceasta este cea dintâi cerinţă şi
+Highlight: , un alt fel de trai. Începe un fel <em>nou</em> de a trăi, o nouă viaţă. Aceasta este cea dintâi
 Highlight: să te naşti din <em>nou</em>
 Highlight: să se nască din <em>nou</em>
 Highlight: aluatul cel <em>nou</em>
 Highlight: flacăra cerescului vuiet din noaptea neuitatului An <em>Nou</em>...
 
-Score: 17.1375
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Din Apă şi din Duh
-Type: articol
-Author: Traian Dorz
-Highlight: această naştere din <em>nou</em>, noi devenim apoi oameni duhovniceşti, având viaţă <em>nouă</em>. Şi roade noi, roadele
-Highlight: încă n-aţi gustat lumina şi fiorul naşterii din <em>nou</em>,  -
-Highlight: pricepe adevărul în naşterea cealaltă, în naşterea din <em>nou</em>. Toate
-Highlight: cel <em>nou</em>, omul cel duhovnicesc?  Nu
-Highlight: sentiment <em>nou</em>?  O
-Highlight: Nu în acestea două stă oare duhul cel <em>nou</em>?  Şi
-
-Score: 17.1
+Score: 17.167742
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica Sfintei Învieri
 Type: articol
 Author: Traian Dorz
 Highlight: semănătorii şi ei sunt şi sămânţa cerului <em>nou</em> şi a pământului <em>nou</em>, în care singurul soare va fi Adevărul
+Highlight: preţuieşte El pe fiecare dintre <em>noi</em>, cei cărora ne-a dat un nume <em>nou</em> şi o chemare aleasă şi sfântă în
 Highlight: Doamne, în vremea aceasta ai de gând să aşezi din <em>nou</em> Împărăţia lui Israel?  7
-Highlight: fiecare dintre noi, cei cărora ne-a dat un nume <em>nou</em> şi o chemare aleasă şi sfântă în slujba şi spre slava
 Highlight: sufletului iubit, chemat şi numit pe numele său cel <em>nou</em>. Acest  Teofile
 Highlight: fiecare să se nască din <em>nou</em>
 Highlight:  trebuie să mă nasc din <em>nou</em> Doamne! Teofil
 
-Score: 17.1
+Score: 17.164286
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
 Type: articol
 Author: Traian Dorz
+Highlight: căldura focului? Dar <em>noi</em>, după făgăduinţa Lui, aşteptăm ceruri <em>noi</em> şi un pământ <em>nou</em>, în care va locui neprihănirea
 Highlight: Dacă eşti un suflet mai începător, un ucenic mai <em>nou</em>, un duh mai slab, ispitele sunt mai grosolane şi
-Highlight:  toţi, dar nu se va naşte din <em>nou</em> nimeni.
+Highlight:  toţi, dar nu se va naşte din <em>nou</em> nimeni. Exact
 Highlight: faci? Te întorci pe cealaltă parte şi sforăi din <em>nou</em>, sau te scoli îndurerat şi îngenunchezi cu lacrimi
 Highlight: mergând până la pocăinţă şi până la naşterea lui din <em>nou</em>, prin credinţa şi predarea lui totală în slujba lui
 Highlight: morţii au fost îngropaţi iar molozul curăţat - din <em>nou</em> începe râsul, felicitările, bancurile, laudele şi
-Highlight:  în lacrimi... şi care se scoală de acolo un om <em>nou</em> în Hristos.
 
-Score: 16.928572
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 9 - Înţelepciunea şi puterea
+Score: 17.16
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr)
 Type: articol
 Author: Traian Dorz
-Highlight: Dumnezeiască acest <em>nou</em> apostol ales de Dumnezeu prin care ne-a fost înnoită solia mântuirii <em>nouă</em>, în zilele noastre
-Highlight: istoria bisericii noastre aşa ceva apărea cu totul <em>nou</em>. Chiar şi pentru tânăra conducere a bisericii ardelene
-Highlight: frumoase idealuri şi dornică de a întreprinde ceva <em>nou</em> spre a stăvili răul şi spre a da un imbold mai puternic
-Highlight: gândit, nici n-a dorit. Ar fi vrut să se facă ceva <em>nou</em>, dar nu aşa.  Începutul
-Highlight: scris şi publicat în urma chemării din zorii Anului <em>Nou</em> 1923, este al lui Ioan Buzaş din Jucul Românesc.
-Highlight: Mântuitorul nostru Hristos, ca să ne ajute în anul acesta <em>nou</em>, să mergem înainte cu spor de fapte bune până la
+Highlight: aceleaşi lucruri, el totdeauna le spune într-un fel <em>nou</em>.
+Highlight: - omul cel <em>nou</em>.
+Highlight: naşterea din <em>nou</em>.
+Highlight: Taina şi esenţa creştinismului viu şi adevărat, este şi rămâne naşterea din <em>nou</em>. Renaşterea
+Highlight: poruncă Dumnezeiască: Trebuie să vă naşteţi din <em>nou</em>
+Highlight: asta şi este. Ea este Convertirea, naşterea din <em>nou</em>, ea ne dă făptura cea nouă, viaţa cea nouă, trăirea
 
-Score: 16.923077
+Score: 17.141176
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: Din Apă şi din Duh
+Type: articol
+Author: Traian Dorz
+Highlight: această naştere din <em>nou</em>, <em>noi</em> devenim apoi oameni duhovniceşti, având viaţă nouă. Şi roade <em>noi</em>, roadele Duhului
+Highlight: încă n-aţi gustat lumina şi fiorul naşterii din <em>nou</em>,  -
+Highlight: pricepe adevărul în naşterea cealaltă, în naşterea din <em>nou</em>. Toate
+Highlight: Ce este oare omul cel <em>nou</em>, omul cel duhovnicesc?  Nu
+Highlight: sentiment <em>nou</em>?  O
+Highlight: Nu în acestea două stă oare duhul cel <em>nou</em>?  Şi
+
+Score: 16.98077
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-Highlight: om <em>nou</em> pentru Hristos - şi rămâne cine poate să se menţină şi să crească în această făptură <em>nouă</em> din
-Highlight: ajungeam în condiţia s-o pot face, am făcut-o din <em>nou</em>, indiferent de atitudinea adoptată de ei faţă de
+Highlight: pot face, am făcut-o din <em>nou</em>, indiferent de atitudinea adoptată de ei faţă de <em>noi</em>.
+Highlight: luptă şi în acest scop, <em>noi</em> nu trebuie să descurajăm niciodată, ci să reluăm din <em>nou</em> totul iarăşi şi iarăşi
 Highlight: Mă ridicai şi eu. Dar încercai din <em>nou</em>: -
 Highlight: care urma să se întâlnească pentru alegerea unui <em>nou</em> episcop la Roman, unde scaunul era vacant.  Nu
 Highlight: ochii i se înroşiseră, barba îi tremura. Izbucni din <em>nou</em> şi mai furios: -
 Highlight: - Secretul Evangheliei, - taina naşterii din <em>nou</em> şi a trăirii în Hristos într-un voluntariat sfânt
 
-Score: 16.916668
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 28 - Alte întristări binefăcătoare
-Type: articol
-Author: Traian Dorz
-Highlight: ferească a nu mai păcătui, pentru ca să nu se adune din <em>nou</em> altă grămadă de neascultători şi să vină iarăşi altă
-Highlight: la fraţii din Galaţi dorinţa de a mă revedea din <em>nou</em> şi a discuta împreună asupra problemei Oastei Domnului
-Highlight: În concluzie am fost sfătuit să fac un <em>nou</em> memoriu în care să aduc noi argumente şi să insist
-Highlight: Am stat şi lângă acest <em>nou</em> şi sfânt sicriu, cum mai stătusem şi lângă celelalte
-Highlight: fost mulţi fraţi din multe părţi şi am petrecut din <em>nou</em> acolo împreună, una din acele neuitate şi duioase
-Highlight: Am zăcut apoi acasă din <em>nou</em> grav bolnav alte două săptămâni, după care am plecat
-
-Score: 16.909092
+Score: 16.97436
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 17 - Mereu prin ape tulburi
 Type: articol
 Author: Traian Dorz
+Highlight: înţelegem acum când toţi facem un început <em>nou</em> - atunci <em>noi</em> vom realiza cea mai mare izbândă pentru Evanghelie
 Highlight: Sosit din <em>nou</em> în altă adunare cu fraţii din Comăneşti a fost arestat
 Highlight: Prin 1950 după ce eu fusesem din <em>nou</em> închis pentru propagandă religioasă interzisă - a
-Highlight: celor ce nu-L cunosc pe Domnul şi nu au naşterea din <em>nou</em> prin credinţa vie şi lucrătoare în El.
+Highlight: celor ce nu-L cunosc pe Domnul şi nu au naşterea din <em>nou</em> prin credinţa vie şi lucrătoare în El.  Cel
 Highlight: ca să le propovăduim pe Hristos şi naşterea din <em>nou</em>. Şi toţi avem în faţa Domnului marea datorie şi marea
-Highlight: să ne înţelegem acum când toţi facem un început <em>nou</em> - atunci noi vom realiza cea mai mare izbândă pentru
 Highlight: Am încercat din <em>nou</em> cu foaia la Sibiu. Acum Titus era altul. Tovărăşia
 
-Score: 16.88889
+Score: 16.972223
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 28 - Alte întristări binefăcătoare
+Type: articol
+Author: Traian Dorz
+Highlight: concluzie am fost sfătuit să fac un <em>nou</em> memoriu în care să aduc <em>noi</em> argumente şi să insist pentru mai grabnica
+Highlight: petrecut din <em>nou</em> acolo împreună, una din acele neuitate şi duioase evocări a prezenţei lui între <em>noi</em>.
+Highlight: ferească a nu mai păcătui, pentru ca să nu se adune din <em>nou</em> altă grămadă de neascultători şi să vină iarăşi altă
+Highlight: la fraţii din Galaţi dorinţa de a mă revedea din <em>nou</em> şi a discuta împreună asupra problemei Oastei Domnului
+Highlight: Am stat şi lângă acest <em>nou</em> şi sfânt sicriu, cum mai stătusem şi lângă celelalte
+Highlight: Am zăcut apoi acasă din <em>nou</em> grav bolnav alte două săptămâni, după care am plecat
+
+Score: 16.958334
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 9 - Înţelepciunea şi puterea
+Type: articol
+Author: Traian Dorz
+Highlight: istoria bisericii noastre aşa ceva apărea cu totul <em>nou</em>. Chiar şi pentru tânăra conducere a bisericii ardelene
+Highlight: frumoase idealuri şi dornică de a întreprinde ceva <em>nou</em> spre a stăvili răul şi spre a da un imbold mai puternic
+Highlight: gândit, nici n-a dorit. Ar fi vrut să se facă ceva <em>nou</em>, dar nu aşa.
+Highlight: scris şi publicat în urma chemării din zorii Anului <em>Nou</em> 1923, este al lui Ioan Buzaş din Jucul Românesc.
+Highlight: Mântuitorul nostru Hristos, ca să ne ajute în anul acesta <em>nou</em>, să mergem înainte cu spor de fapte bune până la
+Highlight: 1923, el răspunde lui Victor Stoica din Tohanul <em>Nou</em>:
+
+Score: 16.952381
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 30 - Şi acum ultimul cuvânt
 Type: articol
 Author: Traian Dorz
 Highlight: să mai faci un <em>nou</em> memoriu - îmi zise dânsul privindu-mă în ochi, să le reamintim din <em>nou</em> problema, insistând
+Highlight: rezolva bine, - revin din <em>nou</em>, mai argumentând vechile propuneri şi cu alte <em>noi</em> elemente survenite între
 Highlight: Am pus apoi din <em>nou</em> şi problema cea mare a memoriului din 1986, fiindcă
 Highlight: nu-l mai văzusem de atunci, şi l-am întrebat din <em>nou</em> de ce nu s-a răspuns din partea nimănui la toată
 Highlight: ieşind să mă petreacă până la uşă, am insistat din <em>nou</em> pentru rezolvarea măcar a problemei din Cluj, care
-Highlight: Nica, tot referitor la neapărata trebuinţă a unui <em>nou</em> memoriu...
-Highlight: conjunctură şi ocazie spre a se rezolva bine, - revin din <em>nou</em>, mai argumentând vechile propuneri şi cu alte noi
+Highlight: Nica, tot referitor la neapărata trebuinţă a unui <em>nou</em> memoriu...  Voi
 
-Score: 16.683332
+Score: 16.95
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Sămânţa şi rodul
+Type: articol
+Author: Traian Dorz
+Highlight: Învieri, ca semn că începe o altă viaţă şi un <em>nou</em> legământ. Un <em>nou</em> fel de relaţii între Dumnezeu şi oameni
+Highlight: Curcubeul Golgotei vestea un <em>nou</em> Cer şi un pământ <em>nou</em> în care se năştea
+Highlight: fiecare noapte o nouă zi şi după fiecare furtună un <em>nou</em> senin.  -
+Highlight: se năştea un <em>nou</em> Univers...  Curcubeul
+Highlight: năştea şi se încetăţenea un <em>nou</em> neam de oameni născuţi din Sângele Mielului, din Crucea Lui, din răscumpărarea
+Highlight: este şi istoria şi viaţa celor care se nasc din <em>nou</em>...
+
+Score: 16.737654
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 10 - Va veni un altul...
@@ -1197,37 +1331,11 @@ Author: Traian Dorz
 Highlight: fiecare val de vânt, pădurea Oastei s-a ridicat din <em>nou</em> cu toată fruntea ei spre cer şi cu toate crengile
 Highlight: Oastei nu aducea în învăţătură şi în credinţă nimic <em>nou</em>, nimic altceva, nimic de la el, adică nu venea în
 Highlight: Aşa ceva în Oastea Domnului, era cu totul <em>nou</em>. Nimeni nu fusese aşa înaintea acestora în Oastea
-Highlight: de la începutul lunii lui mai 1960 - se făcu din <em>nou</em> mare zgomot pe sală. Glasuri, uşi, paşi, zgomote
+Highlight: Astfel într-o dimineaţa de la începutul lunii lui mai 1960 - se făcu din <em>nou</em> mare zgomot
 Highlight: acum cu alţi fraţi. Trebuia să începem iarăşi din <em>nou</em> verificarea conştiinţelor noastre. Spre a ne vedea
 Highlight: Dar el izbucni din <em>nou</em> în cuvinte de o nestăpânită furie şi ocări împotriva
 
-Score: 16.678572
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
-Type: articol
-Author: Traian Dorz
-Highlight: închisoare începuse un suflu <em>nou</em>. Hrana se îmbunătăţise mult. Începuse o <em>nouă</em> perioadă de reeducare, - dar
-Highlight: la sfârşitul anului 1962, când ne-am întors din <em>nou</em> la Gherla, după lunga peregrinare prin Delta Dunării
-Highlight: înfăţişat fraţilor ca unul care vreau să duc Oastea din <em>nou</em> la “formalism”. Din “slobozenia” pe care el şi cei
-Highlight: Din <em>nou</em> am fost mutat cu alţii - între care acum nu mai erau
-Highlight: De fiecare dată, în fiecare loc <em>nou</em>, descoperindu-l gândeam: -
-Highlight: atunci pentru totdeauna de la muncă intrând din <em>nou</em> în regimul de celulă. De
-
-Score: 16.678572
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-Highlight: este viu şi lucrător. El are mereu putere <em>nouă</em> şi har <em>nou</em>. El oferă mereu mijloace noi şi metode noi
-Highlight: noi şi ne-a trezit la o viaţă <em>nouă</em>. O Cincizecime ne-a născut din <em>nou</em> cu putere şi ne-a trezit ca pe
-Highlight: Învierea Domnului în legătură cu naşterea din <em>nou</em> şi viaţa cea <em>nouă</em>... În comună fiind câţiva rătăciţi de sectari
-Highlight: Oastea Domnului, mărturisind trezirea naşterii din <em>nou</em> şi trăirea cea vie pentru Hristos - în biserica şi
-Highlight: “...Oastea Domnului nu este ceva <em>nou</em>. Ea este una din frământările mântuirii pe care le
-Highlight: naşterea din <em>nou</em>
-
-Score: 16.673077
+Score: 16.729166
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Cap. 31 - O altă judecată
@@ -1240,120 +1348,16 @@ Highlight: , ce zici de toate astea? - îmi zise din <em>nou</em> mie după ce l
 Highlight: se distrau puţin şi ei pe socoteala mea. Era ceva <em>nou</em> pentru toţi.
 Highlight: şi aşezându-se pe pândă, gata îndată să sară din <em>nou</em>.
 
-Score: 16.666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-Highlight: Am primit o invitaţie din <em>nou</em> din partea unei alte vestite clinici tot din R. F
-Highlight: şi organele bisericii ca dv. să fiţi reprimit din <em>nou</em> în serviciu şi să vi se dea salariul pe care l-aţi
-Highlight: neschimbată faţă de atunci a bolii mele. Am spus din <em>nou</em> că nu pot nicidecum să mă deplasez cei aproape 6
-Highlight: personală nu am - aşa că dacă a intervenit ceva <em>nou</em> în statutul de până atunci, eu sunt gata imediat
-Highlight: lor. Dar asta era cu totul altceva. Se încerca din <em>nou</em> să fiu şi mai legat la un par. În zadar însă, destul
-Highlight: facem adunare... Iar după adunare, târziu o luam din <em>nou</em> pe jos acelaşi drum înapoi spre casă. Nu stătea să
-
-Score: 16.65909
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-Highlight: după lungi vremi de apăsare şi tăcere, a apărut din <em>nou</em>. Mulţumim adânc Bunului nostru Tată Ceresc că ne-a
-Highlight: O mare foamete sufletească se trezise din <em>nou</em>. Din toate părţile soseau invitări pentru adunări
-Highlight: Ţara sufletească era o ţarină din <em>nou</em> plină de lucrători tineri, viguroşi şi harnici, care
-Highlight: în inima lor adevărata schimbare a naşterii din <em>nou</em>.
-Highlight: înaintaşilor noştri şi cu toţii am făcut legământ din <em>nou</em> a le urma credinţa, fără a ne abate nici la dreapta
-Highlight: înfiinţarea Oastei a căror împlinire se apropie cu Anul <em>Nou</em> 1948 - ne gândeam să facem un praznic deosebit.
-
-Score: 16.65909
+Score: 16.72826
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)
 Type: articol
 Author: Traian Dorz
-Highlight: facă pe cei doi să fie în El Însuşi un singur om <em>nou</em>, făcând astfel pace;
-Highlight: Până când cei doi, Israelul cel <em>nou</em> şi neamurile cele noi, vor fi una şi pe totdeauna
+Highlight: Israelul cel <em>nou</em> şi neamurile cele <em>noi</em>, vor fi una şi pe totdeauna în Hristos Isus...
+Highlight: iertare decât cea deschisă pentru <em>noi</em> prin legământul naşterii din <em>nou</em> nu va mai fi.
+Highlight: facă pe cei doi să fie în El Însuşi un singur om <em>nou</em>, făcând astfel pace; 16
 Highlight: lucrare unică, sfântă şi vie, pentru naşterea din <em>nou</em> şi trăirea în chip evanghelic a vieţii duhovniceşti
 Highlight: la păcat, prin solia mântuitoare a naşterii din <em>nou</em>, pe care o aduce Lucrarea Oastei şi pe care o mărturiseşte
 Highlight: Ierusalim, este scris că Sfântul Cuvânt al Legământului <em>nou</em>, cu mult mai cutremurător decât cel de pe Sinai,
-Highlight: desăvârşiţi, de Isus, Mijlocitorul legământului cel <em>nou</em>, şi de Sângele stropirii, care vorbeşte mai bine
-
-Score: 16.625
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Mijlocitorul nostru
-Title: Ei nu sunt din lume
-Type: articol
-Author: Traian Dorz
-Highlight: Prin naşterea din <em>nou</em>, din Cuvântul lui Dumnezeu şi din Duhul lui Dumnezeu
-Highlight: Hristos a intrat prin chiar această naştere din <em>nou</em>, în robia neprihănirii, în ascultarea lui Dumnezeu
-Highlight: că au naşterea din <em>nou</em>,
-Highlight: Credinciosule şi frate, oare nu cumva tu ai ajuns să fii din <em>nou</em>
-Highlight: lepădase de păcat şi se unise cu Hristos, a ajuns din <em>nou</em> să se lepede de Hristos şi să se unească cu păcatul
-Highlight: - şi ai devenit din <em>nou</em> un fiu al întunericului şi moştenitor al osândei
-
-Score: 16.625
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
-Author: Traian Dorz
-Highlight: Şi din ele au început apoi să se pârguiască din <em>nou</em> roadele scumpe şi dulci ale dragostei de Dumnezeu
-Highlight: Aceştia sunt cei care, nefiind născuţi din <em>nou</em>, creează peste tot certuri, zavistii şi dezbinări
-Highlight: mâinile peste ei cu grabă şi i-ai băgat nenăscuţi din <em>nou</em> în Lucrarea Domnului, te-ai făcut şi tu părtaş la
-Highlight: Iar sufletele lesne crezătoare îi primesc din <em>nou</em> şi îi urmează, fiindcă se uită numai la gurile lor
-Highlight: Aceştia vor veni prin uşa naşterii din <em>nou</em> şi nu vor sări peste gard sau nu vor intra pe uşa
-Highlight: în care ne-ai chemat şi în care ne-ai născut din <em>nou</em>, rânduindu-ne să aducem roade - şi roada noastră
-
-Score: 16.361904
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 28-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: desfac - şi o <em>nouă</em> lume, nebănuită şi strălucită se deschide pentru noi. Un <em>nou</em> soare, un <em>nou</em> cer nemărginit
-Highlight: Său, Hristos a început din <em>nou</em> o altă Creaţie... Creaţia cea tainică şi <em>nouă</em> a omului duhovnicesc, a valorilor
-Highlight: Din natura Sa cea <em>nouă</em> şi din Legământul Său cel <em>nou</em>.
-Highlight: Mântuitorul nostru, este puterea legământului celui <em>nou</em> dintre noi şi Dumnezeu ( 1
-Highlight: - Este Sângele Legământului Meu cel <em>Nou</em>, cu atât mai însemnat decât Vechiul Legământ, cu
-Highlight: caldă, când aici va veni iarna, - tot aşa ne este şi <em>nouă</em> de greu acum să ştim despre negrăita frumuseţe a
-
-Score: 16.351648
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: tot nu m-a lăsat de tot. Peste o lună am fost din <em>nou</em> la medic. Reţeta pe care mi-a scris-o medicul atunci
-Highlight:  fraţii de la fronturile Oastei primiră de Anul <em>Nou</em> anunţul că părintele Iosif s-a retras, fără să le
-Highlight: mii de suflete! Desigur că lucrarea naşterii din <em>nou</em> a cuiva, este o lucrare pe care o face Cuvântul şi
-Highlight: primăvara anului 1935, ducându-i la spital cel mai <em>nou</em> număr din foile mitropoliei prin care cei ce se hrăniseră
-Highlight: jurul corpului şi îl iau uşor să-l duc pe scări din <em>nou</em> sus în patul său.
-Highlight: acestei mişcări a venit de Sus într-o noapte de Anul <em>Nou</em> în clipele unei rugăciuni. În aceste clipe Duhul
-
-Score: 16.345238
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
-Type: articol
-Author: Traian Dorz
-Highlight: mine, ci m-am dus în Arabia. Apoi m-am întors din <em>nou</em> la Damasc.
-Highlight: să-L aflăm cu adevărat pe Hristos şi naşterea din <em>nou</em>.
-Highlight: Biblia nu este citită şi adâncită. Acolo naşterea din <em>nou</em> este total necunoscută. Acolo părtăşia personală
-Highlight: Taina naşterii din <em>nou</em> este unică, după cum şi sufletul nostru este unic
-Highlight: cere-I să facă şi în viaţa ta minunea naşterii din <em>nou</em>, fără de care nimeni nu va intra în Împărăţia Lui
-Highlight: Această predare va face în tine naşterea din <em>nou</em> şi te va transforma din om firesc în om duhovnicesc
-
-Score: 16.337662
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 30 - Alte adevăruri noi
-Type: articol
-Author: Traian Dorz
-Highlight: după ei până la poartă. În stradă m-a sărutat din <em>nou</em>, apoi s-a urcat în maşină şi au plecat. De atunci
-Highlight: Domnului de unde au luat câteva cărţi. Apoi cel <em>nou</em> mă întrebă:
-Highlight: de oameni au fost atraşi la Domnul şi prin acest <em>nou</em> fel creştinesc de a face sărbătorirea nunţii. Domnul
-Highlight: Revelioanele noastre: nopţile de Anul <em>Nou</em>, sunt pentru noi iarăşi un alt prilej fericit de
-Highlight:  Dar după aceea, venind superiorul m-a luat din <em>nou</em> la întrebări şi mai pe larg despre toată Istoria
-Highlight: încât parcă doream să vină cât mai repede. Aflam din <em>nou</em> dulcele adevăr că o putere totdeauna mai mare decât
 

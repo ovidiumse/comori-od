@@ -1,109 +1,146 @@
-+---------------------------------------------------------------------------------------+-----------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                 | Occurrences                                   | Author          | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------+-----------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Preadulce înger                                                                       | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Am îngropat un înger...                                                               | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| O, dac-aş fi un înger                                                                 | {'înger'}                                     | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| O, dac-aş fi un înger                                                                 | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Un înger măreţ                                                                        | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | poezie  |
-| Un înger măreţ se ridică                                                              | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Zbori dulce înger                                                                     | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Zbori dulce înger                                                                     | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                         | {'înger'}                                     | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - Al şaptelea foc                                                              | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Un an adânc roditor                                                         | {'înger', 'îngeri'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                    | {'Înger', 'Îngerul'}                          | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                              | {'înger', 'îngeri'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 25 - Al şaptelea foc                                                             | {'înger'}                                     | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 10 - Va veni un altul...                                                         | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Prorocul Ilie alungat                                                                 | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Iubire, îngerul meu dulce                                                             | {'înger', 'îngerul'}                          | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                | {'înger', 'îngerilor', 'îngerul'}             | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cântările Naşterii                                                                    | {'înger', 'îngerul', 'îngerii'}               | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Cap. 11 - Semnele Oastei Domnului                                                     | {'înger', 'îngeri'}                           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'înger', 'îngerii'}                          | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Izbăvirea lui Petru                                                                   | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                        | {'înger'}                                     | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| N-am fost                                                                             | {'înger'}                                     | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | poezie  |
-| N-am fost                                                                             | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| S-a făcut o nuntă în Cana...                                                          | {'înger'}                                     | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Sfârşit de bătălie                                                                    | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cap. 21 - Şi mărturia trebuie plătită                                                 | {'înger', 'îngerii', 'îngeri', 'îngerilor'}   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 19 - Mereu morminte noi                                                          | {'înger', 'îngerii', 'îngerilor', 'îngeresc'} | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                          | {'înger', 'îngerul', 'îngeri', 'îngerii'}     | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Isus l-a găsit şi i-a zis...                                                          | {'înger', 'îngerul', 'îngerului'}             | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Soseşte Mirele Izbăvitor                                                              | {'înger', 'Îngerul', 'îngerul'}               | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
-| Ca un pom                                                                             | {'înger', 'îngeri', 'îngerii'}                | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Cap. 23 - La zece ani de Oaste                                                        | {'înger', 'îngerul', 'Îngerul'}               | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                                         | {'înger', 'îngerilor'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Din pragul înserării                                                                  | {'înger', 'îngerul'}                          | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Dulce şi amar                                                                         | {'înger', 'îngerul', 'îngerului'}             | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                         | {'înger', 'îngeri', 'îngerilor'}              | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Noaptea Naşterii                                                                      | {'înger', 'îngeri', 'îngerii'}                | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cap. 15 - Un An Nou Fericit                                                           | {'înger', 'îngeri'}                           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                     | {'înger', 'îngerul'}                          | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                        | {'înger', 'îngerilor'}                        | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cum a auzit, s-a sculat iute...                                                       | {'înger', 'îngerii'}                          | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| Din părţile Transilvaniei                                                             | {'înger', 'îngerilor'}                        | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Doamne, n-ai cu ce...                                                                 | {'înger', 'îngeri'}                           | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                       | {'înger', 'îngeri'}                           | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)         | {'înger', 'îngerii'}                          | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                  | {'înger', 'îngerilor'}                        | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Mă voi întoarce şi vă voi lua cu Mine                                                 | {'înger', 'îngerul'}                          | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Naşterea lui Ioan Botezătorul                                                         | {'înger', 'îngerul'}                          | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Păcatul şi ispăşirea                                                                  | {'înger', 'îngerii'}                          | Traian Dorz     | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Adevărul                                                                              | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                                | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 16 - Din cetate în cetate...                                                     | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                            | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                                  | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 26 - Limpezirea apelor adânci                                                    | {'înger'}                                     | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 28 - Alte întristări binefăcătoare                                               | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Întâia judecată                                                              | {'Înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Ce greu a fost în noaptea asta                                                        | {'înger'}                                     | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
-| Ce sfânt e-un legământ                                                                | {'înger'}                                     | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Ce sfânt e-un legământ                                                                | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Cine va primi-n Lucrare                                                               | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cum M-ai trimes Tu...                                                                 | {'înger'}                                     | Traian Dorz     | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Când îmi zâmbeşte El                                                                  | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Cânta-voi totdeauna                                                                   | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Căsnicia                                                                              | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| De ce să-ţi muşti?                                                                    | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| De ce-aţi uitat?                                                                      | {'înger'}                                     | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
-| De ce-aţi uitat?                                                                      | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Deschide-mi Doamne ochii                                                              | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Despre bunătate                                                                       | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din părţile Moldovei                                                                  | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Doamne-al Judecăţii                                                                   | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Duhul Adevărului                                                                      | {'înger'}                                     | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| După focul ce-a trecut                                                                | {'înger'}                                     | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| După focul ce-a trecut                                                                | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Fuga în Egipt                                                                         | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Isus, nu mai umbla pe faţă                                                            | {'înger'}                                     | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)           | {'înger'}                                     | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Legământul                                                                            | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Mamă, ştii tu oare mamă?...                                                           | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Mie nu-mi vorbeşti?                                                                   | {'înger'}                                     | Traian Dorz     | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
-| Măgăriţa lui Balaam                                                                   | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Nimica nu-i mai scurt                                                                 | {'înger'}                                     | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
-| Nimica nu-i mai scurt                                                                 | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Omenia                                                                                | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Oricine se cobora se vindeca                                                          | {'înger'}                                     | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Plecăciune ţie                                                                        | {'înger'}                                     | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| Plecăciune ţie                                                                        | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Pot trăi şi făr-de casă                                                               | {'înger'}                                     | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | poezie  |
-| Pot trăi şi făr-de casă                                                               | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Psalmul 34                                                                            | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Părinte, nu-nceta!                                                                    | {'înger'}                                     | Traian Dorz     | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Părinte, nu-nceta!                                                                    | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Revin...                                                                              | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Soare cu apus frumos                                                                  | {'Înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Sutaşul Corneliu                                                                      | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Tu mi-ai umplut                                                                       | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Tu nu mi-ai dat                                                                       | {'înger'}                                     | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-+---------------------------------------------------------------------------------------+-----------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-Searching Inger using http://localhost:9000...
-Got 370 hits:
++---------------------------------------------------------------------------------------+---------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                 | Occurrences                                 | Author          | Tip                            | Carte                        | Volum   |
++---------------------------------------------------------------------------------------+---------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+| Înger şi demon                                                                        | {'înger', 'Înger'}                          | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Înger, dulce îngerel...                                                               | {'Înger', 'înger'}                          | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Vino, dulce înger                                                                     | {'înger', 'îngeri'}                         | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Preadulce înger                                                                       | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Vino dulce înger                                                                      | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Am îngropat un înger...                                                               | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| O, dac-aş fi un înger                                                                 | {'înger'}                                   | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| O, dac-aş fi un înger                                                                 | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Un înger măreţ                                                                        | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | poezie  |
+| Un înger măreţ se ridică                                                              | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Zbori dulce înger                                                                     | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Zbori dulce înger                                                                     | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                         | {'înger'}                                   | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 8 - Al şaptelea foc                                                              | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Un an adânc roditor                                                         | {'înger', 'îngeri'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                    | {'Înger', 'Îngerul'}                        | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Binefacerea şi rugăciunea                                                             | {'înger', 'îngeri'}                         | Traian Dorz     | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Darurile Duhului Sfânt                                                                | {'înger', 'îngeri'}                         | Traian Dorz     | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                              | {'înger', 'îngeri'}                         | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 25 - Al şaptelea foc                                                             | {'înger'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Bucuriile noastre                                                                     | {'înger', 'îngerilor', 'îngeri', 'Îngerul'} | Traian Dorz     | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Va veni un altul...                                                         | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Prorocul Ilie alungat                                                                 | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Iubire, îngerul meu dulce                                                             | {'înger', 'îngerul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                | {'înger', 'îngerilor', 'îngerul'}           | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cântările Naşterii                                                                    | {'înger', 'îngerul', 'îngerii'}             | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Taină-a fost                                                                          | {'înger', 'Îngerul', 'îngerii', 'îngerul'}  | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Cap. 11 - Semnele Oastei Domnului                                                     | {'înger', 'îngeri'}                         | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 22-a după Rusalii - (Bogatul nemilostiv şi săracul Lazăr) | {'înger', 'îngerii'}                        | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Ce mult îmi pare c-am trăit                                                           | {'înger'}                                   | Traian Dorz     | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
+| Ce mult îmi pare c-am trăit                                                           | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Duhul Adevărului şi celelalte duhuri                                                  | {'înger'}                                   | Traian Dorz     | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Izbăvirea lui Petru                                                                   | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                        | {'înger'}                                   | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| N-am fost                                                                             | {'înger'}                                   | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | poezie  |
+| N-am fost                                                                             | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Nu te amăgi crezând                                                                   | {'ÎNGER'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| O, Doamne-al iubirii                                                                  | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| S-a făcut o nuntă în Cana...                                                          | {'înger'}                                   | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Sfârşit de bătălie                                                                    | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Cap. 21 - Şi mărturia trebuie plătită                                                 | {'înger', 'îngerii', 'îngeri', 'îngerilor'} | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - În noaptea aceea...                                                          | {'înger', 'îngerul', 'îngeri', 'îngerii'}   | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Mereu morminte noi                                                          | {'înger', 'îngerii', 'îngerilor'}           | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Isus l-a găsit şi i-a zis...                                                          | {'înger', 'îngerul', 'îngerului'}           | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
+| Curajul şi lucrarea                                                                   | {'înger', 'îngerii', 'îngerul'}             | Traian Dorz     | Dorim să fim                   | Cugetări Nemuritoare         | articol |
+| Soseşte Mirele Izbăvitor                                                              | {'înger', 'Îngerul', 'îngerul'}             | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
+| Ca un pom                                                                             | {'înger', 'îngeri', 'îngerii'}              | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Cap. 23 - La zece ani de Oaste                                                        | {'înger', 'îngerul', 'Îngerul'}             | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Necazuri şi speranţe                                                         | {'înger', 'îngerilor'}                      | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Din pragul înserării                                                                  | {'înger', 'îngerul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Dulce şi amar                                                                         | {'înger', 'îngerul', 'îngerului'}           | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Geneza 32, 24                                                                         | {'înger', 'îngerul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 19-a după Rusalii                                         | {'înger', 'îngeri', 'îngerilor'}            | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Noaptea Naşterii                                                                      | {'înger', 'îngeri', 'îngerii'}              | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Bucuria şi roadele                                                                    | {'înger', 'îngerii'}                        | Traian Dorz     | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Cap. 15 - Un An Nou Fericit                                                           | {'înger', 'îngeri'}                         | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                                     | {'înger', 'îngerul'}                        | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                        | {'înger', 'îngerilor'}                      | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cum a auzit, s-a sculat iute...                                                       | {'înger', 'îngerii'}                        | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| Din părţile Transilvaniei                                                             | {'înger', 'îngerilor'}                      | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Doamne, n-ai cu ce...                                                                 | {'înger', 'îngeri'}                         | Traian Dorz     | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Frumoasă curăţie                                                                      | {'înger', 'îngerii'}                        | Traian Dorz     | Întâi să fim                   | Cugetări Nemuritoare         | poezie  |
+| Frumoasă curăţie                                                                      | {'înger', 'îngerii'}                        | Traian Dorz     | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
+| Frumoasă curăţie                                                                      | {'înger', 'îngerii'}                        | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                       | {'înger', 'îngeri'}                         | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)         | {'înger', 'îngerii'}                        | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 34-a după Rusalii - (a fiului risipitor)                  | {'înger', 'îngerilor'}                      | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Luca 2, 1-15                                                                          | {'înger', 'îngeri'}                         | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Mai arde ceva-n tine?                                                                 | {'înger', 'îngeri'}                         | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Marcu 16, 1-8                                                                         | {'înger', 'îngerul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Mă voi întoarce şi vă voi lua cu Mine                                                 | {'înger', 'îngerul'}                        | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Naşterea lui Ioan Botezătorul                                                         | {'înger', 'îngerul'}                        | Traian Dorz     | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Păcatul şi ispăşirea                                                                  | {'înger', 'îngerii'}                        | Traian Dorz     | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| 2 Regi 19, 1-20                                                                       | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Adevăr şi imitaţie                                                                    | {'înger'}                                   | Traian Dorz     | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Adevărul                                                                              | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Cap. 12 - Naşterea imnului duhovnicesc                                                | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 16 - Din cetate în cetate...                                                     | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                            | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                  | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 26 - Limpezirea apelor adânci                                                    | {'înger'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 28 - Alte întristări binefăcătoare                                               | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 5 - Întâia judecată                                                              | {'Înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Ce este Adevărul?                                                                     | {'înger'}                                   | Traian Dorz     | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Ce greu a fost în noaptea asta                                                        | {'înger'}                                   | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | poezie  |
+| Ce sfânt e-un legământ                                                                | {'înger'}                                   | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Ce sfânt e-un legământ                                                                | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Cine va primi-n Lucrare                                                               | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Cum M-ai trimes Tu...                                                                 | {'înger'}                                   | Traian Dorz     | Hristos - Mijlocitorul nostru  | Meditații la Ev. după Ioan   | articol |
+| Cuvântul lui Dumnezeu                                                                 | {'înger'}                                   | Traian Dorz     | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Când îmi zâmbeşte El                                                                  | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cânta-voi totdeauna                                                                   | {'înger'}                                   | Traian Dorz     | Strălucirea Biruinţei          | Cugetări Nemuritoare         | poezie  |
+| Cânta-voi totdeauna                                                                   | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Căsnicia                                                                              | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Daniel 6, 10-23                                                                       | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| De ce să-ţi muşti?                                                                    | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| De ce-aţi uitat?                                                                      | {'înger'}                                   | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | poezie  |
+| De ce-aţi uitat?                                                                      | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| De unde vii?                                                                          | {'Înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Deschide-mi Doamne ochii                                                              | {'înger'}                                   | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
++---------------------------------------------------------------------------------------+---------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
+Searching Inger using https://api.comori-od.ro...
+Got 573 hits:
+Score: 18.732143
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Înger şi demon
+Type: articol
+Author: Traian Dorz
+Highlight: este un <em>înger</em>.
+Highlight: Cel care apasă pe un neprihănit este un demon, cel care îi ajută este un <em>înger</em>.
+Highlight: Dumnezeu, este un diavol, cel care-l izbăveşte este un <em>înger</em> al Domnului.
+Highlight: când aceasta va depinde de tine, - ca să fii un <em>înger</em>.
+Highlight: Dacă le vei face bine, tu vei fi un <em>înger</em> al lui Dumnezeu şi răsplata ta va fi lumina şi bucuria
+Highlight: - era un trimis ceresc, un <em>înger</em> al Domnului, care venea să ne scoată,
+Highlight: <em>Înger</em> şi demon
+
+Score: 18.2
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Înger, dulce îngerel...
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Înger</em>, dulce îngerel
+Highlight: <em>înger</em> îngerel.
+Highlight: <em>înger</em> îngerel.
+Highlight: <em>înger</em> îngerel!...
+Highlight: <em>Înger</em>, dulce îngerel...
+
+Score: 17.083332
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Vino, dulce înger
+Type: poezie
+Author: Traian Dorz
+Highlight: Vino, dulce <em>înger</em>, care-n mână ţii
+Highlight: Spune-mi, dulce <em>înger</em>, că şi eu voi fi
+Highlight: şi-n lumina-i albă zboară <em>îngeri</em> mii intonându-I
+Highlight: Vino, dulce <em>înger</em>
+
 Score: 17.0
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
@@ -113,6 +150,16 @@ Author: Traian Dorz
 Highlight: Preadulce <em>înger</em> care
 Highlight: - preadulce <em>înger</em> care
 Highlight: Preadulce <em>înger</em>
+
+Score: 17.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Vino dulce înger
+Type: poezie
+Author: Traian Dorz
+Highlight: Vino dulce <em>înger</em> care-n mână ţii
+Highlight: ... Spune-mi dulce <em>înger</em> că şi eu voi fi
+Highlight: Vino dulce <em>înger</em>
 
 Score: 15.5
 Volume: Cântări Nemuritoare
@@ -229,6 +276,30 @@ Highlight: <em>Îngerul</em> Domnului S-a arătat într-o flacără
 Highlight: În mijlocul acestui rug este <em>Îngerul</em> Domnului, este puterea arzătoare a Veşnicului Dumnezeu
 
 Score: 7.2333336
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Binefacerea şi rugăciunea
+Type: articol
+Author: Traian Dorz
+Highlight: 8 - Fiecare biserică are un <em>înger</em>.
+Highlight: Fiecare <em>înger</em> are o credinţă.
+Highlight: este rodul muncii unui <em>înger</em>, al unui Duh(
+Highlight: Fiecărui <em>înger</em> Domnul care l-a făcut şi
+Highlight: să meargă la rugăciune, când a văzut pe cei trei <em>îngeri</em> venind spre el.  Văzându-i
+
+Score: 7.2333336
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Darurile Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: faţă de cei duhovniceşti, diavolul se preface în <em>înger</em> de lumină
+Highlight: cel mai ticălos demon este acela care se preface <em>înger</em>, pentru a-i înşela dacă este cu putinţă chiar şi
+Highlight: 14 - Ce greu este să nu-l crezi un <em>înger</em>, pe cel care cântă aşa de lăudăros despre Dumnezeu
+Highlight: într-adevăr să-l deosebeşti că acela nu este un <em>înger</em> de lumină, ci este un demon ascuns
+Highlight: Şi ajungă cât i-aţi sprijinit crezându-i că sunt <em>îngeri</em>.
+
+Score: 7.2333336
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
@@ -249,6 +320,19 @@ Author: Traian Dorz
 Highlight: un <em>înger</em>, dar m-am convins că este un <em>înger</em> cu aripi de lut..
 Highlight: - Foarte rău că m-a crezut <em>înger</em>. El
 Highlight: El mă consideră deci şi acum tot un <em>înger</em>... Prea mult, se înşală şi acum, nu sunt decât un biet păcătos
+
+Score: 6.888889
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Bucuriile noastre
+Type: articol
+Author: Traian Dorz
+Highlight: trebuia dusă de mesagerul cel mai însemnat. Marele <em>înger</em> Gavril spune el însuşi despre sine: Eu sunt Gavril
+Highlight: de protecţia puternică a unui <em>înger</em> ales.
+Highlight: ) - a fost acela la care poate tot acest măreţ <em>înger</em>, purtătorul celor mai strălucite solii Dumnezeieşti
+Highlight: Asemenea <em>îngerilor</em> trebuie să însoţim şi noi de fiecare dată pe cei
+Highlight: grabă şi cu ce atentă dragoste sunt gata sfinţii <em>îngeri</em> să împlinească toate misiunile pentru care sunt
+Highlight:  scrie: <em>Îngerul</em> Domnului tăbărăşte în jurul celor
 
 Score: 6.75
 Volume: Istoria unei Jertfe
@@ -306,6 +390,18 @@ Highlight: Dacă <em>îngerii</em> plecară de la dânşii iarăşi Sus
 Highlight: înfăşat, culcat în iesle, precum <em>îngerul</em> le-a spus
 Highlight: Cântă <em>îngerii</em> Osanei imnul sfânt
 
+Score: 6.1666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Taină-a fost
+Type: poezie
+Author: Traian Dorz
+Highlight: Eterna Clipă a minunii Bunei Vestiri, când sfântul <em>înger</em> Gavril, trimes de Domnul Dumnezeu, i-a adus Preafericitei
+Highlight: aplecăm şi noi smeriţi, împreună cu strălucitul <em>înger</em> şi binecuvântăm Numele Sfintei Treimi care în marea
+Highlight: <em>Îngerul</em> i-a zis Mariei:  Plecăciune
+Highlight: <em>îngerii</em> din cer îţi cântă,  noi
+Highlight: peste Sfânta Fecioară Maria la Bunavestire când <em>îngerul</em> trimes îi spune:  Puterea
+
 Score: 6.083333
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
@@ -325,6 +421,33 @@ Author: Traian Dorz
 Highlight: aceea şi spune el celor care-l iubeau ca pe un <em>înger</em> al lui Dumnezeu: N-aţi arătat nici un dispreţ, nici
 Highlight: în trupul meu, dimpotrivă, m-aţi primit ca pe un <em>înger</em> al lui Dumnezeu, ca pe Însuşi Hristos Isus... şi
 Highlight: veşnică a iadului pregătit pentru satana şi pentru <em>îngerii</em> lui, după cum este scris?
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Ce mult îmi pare c-am trăit
+Type: poezie
+Author: Traian Dorz
+Highlight: iar dragul <em>înger</em> nu-l mai văd venind să mă-ntărească.
+Highlight: - o vino <em>înger</em> preaiubit întârziat departe
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Ce mult îmi pare c-am trăit
+Type: poezie
+Author: Traian Dorz
+Highlight: iar dragul <em>înger</em> nu-l mai văd venind să mă-ntărească.
+Highlight: - o vino <em>înger</em> preaiubit întârziat departe
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Duhul Adevărului şi celelalte duhuri
+Type: articol
+Author: Traian Dorz
+Highlight: Dumnezeu n-a trimis şi nu trimite niciodată pe nici un <em>înger</em> din cer, ca să lămurească pe acela care nu vrea
+Highlight: Dumnezeu, - acelora le vorbeşte diavolul, prefăcut în <em>înger</em> de lumină,
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
@@ -363,6 +486,24 @@ Highlight: fost <em>înger</em> înţelept cu aripi diafane,
 Highlight: - ci <em>înger</em> cu
 
 Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Nu te amăgi crezând
+Type: poezie
+Author: Traian Dorz
+Highlight: când un <em>ÎNGER</em>, când un DRAC
+Highlight: nu un <em>ÎNGER</em> - ci un DRAC!
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: O, Doamne-al iubirii
+Type: poezie
+Author: Traian Dorz
+Highlight: şi dă-mi pe-acest <em>înger</em> cu luntrea-năier
+Highlight: iar pază mi-e numai un <em>înger</em> mâhnit.
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
 Title: S-a făcut o nuntă în Cana...
@@ -395,19 +536,6 @@ Highlight: Noi rugasem ca Dumnezeu să trimită acolo <em>îngerii</em> Săi - i
 
 Score: 4.857143
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 19 - Mereu morminte noi
-Type: articol
-Author: Traian Dorz
-Highlight: însumi care îl cunoşteam mi se părea că văd un <em>înger</em>. Cred că tuturor celor din sală, care umpluseră
-Highlight: - Doamne, umple-ni-le iarăşi dă-ne <em>îngerii</em> stegari,  strânge
-Highlight:  iar pământul le-a devenit mai străin... Când <em>îngerii</em> le-au devenit mai apropiaţi, iar oamenii mai neprimitori
-Highlight: pregătească o adunare de sărbătoare a tuturor <em>îngerilor</em> noştri, care o să-l primească în bucuria Dulcelui
-Highlight: Prezenţei Domnului nostru Isus Hristos - şi a corului <em>îngerilor</em> Săi. Dar la nici o nuntă n-am avut sufletul atât
-Highlight: l-au primit în ceata lor cerească şi în corul lor <em>îngeresc</em>. Însuşi Domnul nostru îl va fi luat de braţ şi-l
-
-Score: 4.857143
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 5 - În noaptea aceea...
 Type: articol
@@ -420,6 +548,18 @@ Highlight: celor care sufereau şi aşteptau acolo, - nişte <em>îngeri</em> ad
 Highlight: răscumpărătoare... Încât cred că în clipa aceea toţi <em>îngerii</em> din ceruri se bucurau şi cântau ca în Noaptea Naşterii
 
 Score: 4.8333335
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 19 - Mereu morminte noi
+Type: articol
+Author: Traian Dorz
+Highlight: însumi care îl cunoşteam mi se părea că văd un <em>înger</em>. Cred că tuturor celor din sală, care umpluseră
+Highlight: - Doamne, umple-ni-le iarăşi dă-ne <em>îngerii</em> stegari,  strânge
+Highlight:  iar pământul le-a devenit mai străin... Când <em>îngerii</em> le-au devenit mai apropiaţi, iar oamenii mai neprimitori
+Highlight: pregătească o adunare de sărbătoare a tuturor <em>îngerilor</em> noştri, care o să-l primească în bucuria Dulcelui
+Highlight: Prezenţei Domnului nostru Isus Hristos - şi a corului <em>îngerilor</em> Săi. Dar la nici o nuntă n-am avut sufletul atât
+
+Score: 4.8333335
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Isus l-a găsit şi i-a zis...
@@ -430,6 +570,16 @@ Highlight: Cu bucurie şi uşurinţă, <em>îngerul</em> zbura cu toate spre cer
 Highlight: Şi pe măsură ce cădeau sufletele, zborul <em>îngerului</em> devenise tot mai greu şi mai greu...
 Highlight: rămăsese un singur suflet agăţat de bătrână. Iar <em>îngerul</em> de-abia mai putea să urce, trist şi sfârşit de
 Highlight: Când <em>îngerul</em> s-a înfăţişat înaintea Domnului, plin de durere
+
+Score: 4.8
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Curajul şi lucrarea
+Type: articol
+Author: Traian Dorz
+Highlight: ). Când sfântul <em>înger</em> Gavril a rostit prima dată cuvântul Har, el l-a
+Highlight: pustiu când <em>îngerii</em> urcau şi coborau spre el, tot aşa în stările noastre sărbătoreşti, <em>îngerii</em> minunaţi
+Highlight: 13 - Acest dulce arhanghel Gavril pare că este <em>îngerul</em> poeziei şi al cântării pentru că el s-a înfăţişat
 
 Score: 4.8
 Volume: Spre Canaan
@@ -493,6 +643,16 @@ Highlight: 9 - Plecăciune Ţie - îi spune <em>îngerul</em> Dumnezeiesc Maicii
 Highlight: O, dacă ar cugeta măcar puţin la cuvintele <em>îngerului</em> sfânt, acei oameni care se cred evlavioşi, dar
 
 Score: 4.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Geneza 32, 24
+Type: poezie
+Author: Traian Dorz
+Highlight: cu un <em>înger</em> minunat
+Highlight: <em>îngerul</em> fusese Domnul, -
+Highlight: <em>îngerul</em> cel minunat
+
+Score: 4.75
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 19-a după Rusalii
@@ -511,6 +671,15 @@ Author: Traian Dorz
 Highlight: ca pe-o aripă de <em>înger</em> lin răsună trei cuvinte:
 Highlight: se coboară cor de <em>îngeri</em> din ţăriile străine
 Highlight: <em>îngerii</em>,
+
+Score: 4.6666665
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Bucuria şi roadele
+Type: articol
+Author: Traian Dorz
+Highlight: 8 - Suflete dragă, nu aştepta să-ţi vină un <em>înger</em> din cer ca să-ţi spună despre întoarcerea ta în
+Highlight: căci atunci când vor veni <em>îngerii</em>, vor vorbi cu tine în alt fel!
 
 Score: 4.6666665
 Volume: Istoria unei Jertfe
@@ -567,6 +736,33 @@ Highlight: nostru şi vedem mulţimi de vrăjmaşi, dar nici un <em>înger</em>.
 Highlight: Nu se mai iese din temniţă cu chei, ci cu <em>îngeri</em>
 
 Score: 4.6666665
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Frumoasă curăţie
+Type: poezie
+Author: Traian Dorz
+Highlight: când îţi veghea un <em>înger</em> la orice căpătâi
+Highlight: şi <em>îngerii</em> cântării spre tainicul altar
+
+Score: 4.6666665
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Frumoasă curăţie
+Type: poezie
+Author: Traian Dorz
+Highlight: când îţi veghea un <em>înger</em> la orice căpătâi
+Highlight: şi <em>îngerii</em> cântării - spre tainicul altar
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Frumoasă curăţie
+Type: poezie
+Author: Traian Dorz
+Highlight: când îţi veghea un <em>înger</em> la orice căpătâi
+Highlight: şi <em>îngerii</em> cântării - spre tainicul altar
+
+Score: 4.6666665
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
@@ -594,6 +790,32 @@ Highlight: unei astfel de surori te simţi ca în faţa unui <em>înger</em> din
 Highlight: Dreapta Tatălui, slava şi măreţia raiului, bucuria <em>îngerilor</em>, strălucirea adoraţiei puterilor cereşti, desfătările
 
 Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Luca 2, 1-15
+Type: poezie
+Author: Traian Dorz
+Highlight: şi un <em>înger</em> - şi mulţi <em>îngeri</em>
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Mai arde ceva-n tine?
+Type: poezie
+Author: Traian Dorz
+Highlight: erai şi tu un <em>înger</em>
+Highlight: iubeai - şi numai <em>îngeri</em> pe
+
+Score: 4.6666665
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Marcu 16, 1-8
+Type: poezie
+Author: Traian Dorz
+Highlight: le-a întâmpinat un <em>înger</em>
+Highlight: <em>îngerul</em> biruitor
+
+Score: 4.6666665
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Calea vieţii noastre
 Title: Mă voi întoarce şi vă voi lua cu Mine
@@ -619,6 +841,22 @@ Type: articol
 Author: Traian Dorz
 Highlight: nostru şi vedem mulţimi de vrăjmaşi, dar nici un <em>înger</em>. Şi gândim: Doamne, aici vom muri! Tu n-ai cum să
 Highlight: Nu se mai iese din temniţă cu chei, ci cu <em>îngerii</em>
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: 2 Regi 19, 1-20
+Type: poezie
+Author: Traian Dorz
+Highlight: cu un <em>înger</em> într-o noapte
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Adevăr şi imitaţie
+Type: articol
+Author: Traian Dorz
+Highlight: 20 - O femeie înţeleaptă poate face un <em>înger</em> din soţul ei şi un rai din căminul lor.
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -685,6 +923,14 @@ Author: Traian Dorz
 Highlight: <em>Înger</em> de pace credincios şi îndreptător vieţii noastre
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Ce este Adevărul?
+Type: articol
+Author: Traian Dorz
+Highlight: Nici între om şi <em>înger</em>.
+
+Score: 4.5
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
 Title: Ce greu a fost în noaptea asta
@@ -725,12 +971,28 @@ Author: Traian Dorz
 Highlight: alegerea celor dinainte Dumnezeu trimisese pe vreun <em>înger</em>,
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Cuvântul lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: celor dinaintea lor Dumnezeu trimisese pe vreun <em>înger</em> al Său,
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Când îmi zâmbeşte El
 Type: poezie
 Author: Traian Dorz
 Highlight: mi-e parcă- zbor, cum zboară-un <em>înger</em>
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Cânta-voi totdeauna
+Type: poezie
+Author: Traian Dorz
+Highlight: pe-Acel ce mi te dete iubite <em>înger</em> bun.
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -747,6 +1009,14 @@ Title: Căsnicia
 Type: articol
 Author: Traian Dorz
 Highlight: 4 - N-aştepta să-ţi fie soţul <em>înger</em>, fără nici un greş
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Daniel 6, 10-23
+Type: poezie
+Author: Traian Dorz
+Highlight: dar el e păzit de-un <em>înger</em>
 
 Score: 4.5
 Volume: Cântări Nemuritoare
@@ -774,241 +1044,17 @@ Highlight: <em>înger</em>
 
 Score: 4.5
 Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: De unde vii?
+Type: poezie
+Author: Traian Dorz
+Highlight: De unde vii tu <em>Înger</em> al Tainei şi-al Iubirii
+
+Score: 4.5
+Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Deschide-mi Doamne ochii
 Type: poezie
 Author: Traian Dorz
 Highlight: să văd că ea-i un <em>înger</em>
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre bunătate
-Type: articol
-Author: Traian Dorz
-Highlight: că-n fiecare om, şi-un drac şi-un <em>înger</em> locuieşte.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Moldovei
-Type: articol
-Author: Traian Dorz
-Highlight: - lângă cel ce luptă este-un <em>înger</em> pus.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Doamne-al Judecăţii
-Type: poezie
-Author: Traian Dorz
-Highlight: robul îngâmfării <em>înger</em> se preface
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: Duhul Adevărului
-Type: articol
-Author: Traian Dorz
-Highlight: hotar între Materie şi Spirit. Nici între om şi <em>înger</em>: Prezenţa lui Dumnezeu îi luminează totul fericit
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: După focul ce-a trecut
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>înger</em> drag la căpătâi
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: După focul ce-a trecut
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>înger</em> drag la căpătâi
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Fuga în Egipt
-Type: poezie
-Author: Traian Dorz
-Highlight: Iosif i-a-nsoţit şi-un <em>înger</em> i-a păzit tot drumul greu
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: Isus, nu mai umbla pe faţă
-Type: articol
-Author: Traian Dorz
-Highlight: potrivnicilor Tăi, căci ar fi fost de-ajuns un singur <em>înger</em> din miile de mii ca să-i nimicească pe toţi (
-
-Score: 4.5
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)
-Type: articol
-Author: Traian Dorz
-Highlight: Sfântul Pavel spune: Dacă noi înşine sau un <em>înger</em> din cer ar veni să vă aducă altă evanghelie (învăţătură)
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Legământul
-Type: poezie
-Author: Traian Dorz
-Highlight: cu vorbiri de <em>înger</em>, vinovat mijloc...
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Mamă, ştii tu oare mamă?...
-Type: poezie
-Author: Traian Dorz
-Highlight: poţi să creşti din el un <em>înger</em>,
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Jertfa noastră
-Title: Mie nu-mi vorbeşti?
-Type: articol
-Author: Traian Dorz
-Highlight: vede cine este erou şi cine este lichea. Cine este <em>înger</em> şi cine este demon. După roadele lor îi veţi cunoaşte
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Măgăriţa lui Balaam
-Type: poezie
-Author: Traian Dorz
-Highlight: dar un <em>înger</em> stând nainte-i
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Nimica nu-i mai scurt
-Type: poezie
-Author: Traian Dorz
-Highlight: poţi fi ori <em>înger</em> ori un demon
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Nimica nu-i mai scurt
-Type: poezie
-Author: Traian Dorz
-Highlight: poţi fi ori <em>înger</em> ori un demon
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Omenia
-Type: articol
-Author: Traian Dorz
-Highlight: poţi să-i zici şi zeu şi <em>înger</em>
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Oricine se cobora se vindeca
-Type: articol
-Author: Traian Dorz
-Highlight: Căci un <em>înger</em> al Domnului se cobora din când în când în scăldătoare şi tulbura apa. Şi cel dintâi, care
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Plecăciune ţie
-Type: poezie
-Author: Traian Dorz
-Highlight: - cu slăvitul <em>înger</em> îţi cântăm şi noi
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Plecăciune ţie
-Type: poezie
-Author: Traian Dorz
-Highlight: - cu slăvitul <em>înger</em> îţi cântăm şi noi
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Pot trăi şi făr-de casă
-Type: poezie
-Author: Traian Dorz
-Highlight: Pot vorbi cu glas de <em>înger</em> şi cum n-ar fi mai frumos
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Pot trăi şi făr-de casă
-Type: poezie
-Author: Traian Dorz
-Highlight: Pot vorbi cu glas de <em>înger</em> şi cum n-ar fi mai frumos
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 34
-Type: poezie
-Author: Traian Dorz
-Highlight: 7-Al Domnului puternic <em>înger</em> va tăbărî-mprejurul lor
-
-Score: 4.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Părinte, nu-nceta!
-Type: poezie
-Author: Traian Dorz
-Highlight: pe cei ce <em>înger</em> l-au crezut.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Părinte, nu-nceta!
-Type: poezie
-Author: Traian Dorz
-Highlight: pe cei ce <em>înger</em> l-au crezut.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Revin...
-Type: poezie
-Author: Traian Dorz
-Highlight: cum vine-un <em>înger</em> cu aripile rupte
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Soare cu apus frumos
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Înger</em>, îngeraşul meu
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Sutaşul Corneliu
-Type: poezie
-Author: Traian Dorz
-Highlight: şi-a venit la el un <em>înger</em> trimes chiar de Dumnezeu
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Tu mi-ai umplut
-Type: poezie
-Author: Traian Dorz
-Highlight: m-a-mbrăţişat un <em>înger</em> drag.
-
-Score: 4.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Tu nu mi-ai dat
-Type: poezie
-Author: Traian Dorz
-Highlight: Nici n-ai trimis măcar vreun <em>înger</em>
 

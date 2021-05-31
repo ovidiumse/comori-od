@@ -1,109 +1,159 @@
-+------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                              | Occurrences                                                          | Author      | Tip                            | Carte                        | Volum   |
-+------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Începutul semnelor Lui                                                             | {'minuni', 'minune', 'Minune', 'Minunea'}                            | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 6 - Între două judecăţi                                                       | {'Minunea', 'minune'}                                                | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                   | {'minune'}                                                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 22 - Peregrinările soliei                                                     | {'Minune'}                                                           | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Minuni sunt toate                                                                  | {'minune', 'Minune', 'Minuni', 'minuni'}                             | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Cap. 11 - Răscrucea Isus                                                           | {'minunate', 'minune', 'minuni'}                                     | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                            | {'minunat', 'minune'}                                                | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                    | {'minune', 'minuni', 'minunată'}                                     | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'minune', 'minunea', 'minuni'}                                      | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Fiorul şi minunea                                                                  | {'minune', 'minuni', 'minunat', 'minunea', 'Minunile'}               | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Marile noastre răspunderi                                                          | {'minuni', 'minune', 'Minune', 'Minunea', 'minunilor'}               | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Cap. 13 - E poate ultima-ncercare...                                               | {'minune', 'minunea', 'minunate'}                                    | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 1 - Cel mai frumos Isus                                                       | {'minune', 'minunat', 'minunată'}                                    | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                                 | {'minune', 'minunat', 'minunate', 'minunaţi'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 20 - După alţi 30 de ani                                                      | {'Minune', 'minunată', 'minunate', 'minunat'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 21 - Şi mărturia trebuie plătită                                              | {'minune', 'minunat', 'minunată', 'Minunată'}                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 3 - Marea cernere                                                             | {'minune', 'minunate', 'minunat'}                                    | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain) | {'minune', 'minunile', 'minunea', 'minuni', 'minunată'}              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cei care văzuseră                                                                  | {'minune', 'minunea', 'minunile'}                                    | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                 | {'minune', 'minunea', 'minunat', 'minunate', 'minunată'}             | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                | {'minune', 'minunatul', 'minunată', 'minunat'}                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                      | {'minune', 'minunat', 'Minunată', 'minuni'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 5 - În noaptea aceea...                                                       | {'minune', 'minunate', 'minunată', 'minunat'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                   | {'minune', 'minunat', 'Minunatul', 'minunaţi'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                    | {'minune', 'minunea', 'Minunea', 'minunate'}                         | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 28-a după Rusalii                                      | {'minune', 'minuni', 'minunăţii', 'minunat', 'minunate'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 4 - Anul următor                                                              | {'Minune', 'minune', 'minunat', 'minuni', 'minunate'}                | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Aşezarea temeliilor veşnice                                               | {'Minunea', 'minune', 'Minunata', 'minunat', 'minunata', 'minunate'} | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                      | {'minune', 'Minunea', 'minunată', 'minunat', 'minunatele'}           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 17 - Ziua a doua                                                              | {'minune', 'minunatele', 'minunate', 'minunat', 'minunata'}          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 28 - Necazurile din lungul drumului                                           | {'minune', 'minunată', 'minunat', 'minuni'}                          | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                | {'minuni', 'minune', 'minunată', 'Minunată', 'minunat'}              | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)         | {'minune', 'minunea', 'minunată', 'minunat', 'minunate'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)            | {'minune', 'minunată', 'minunata', 'minunat', 'minunate'}            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 10 - Pe drumul Crucii                                                         | {'minune', 'minunat', 'minunată', 'minuni'}                          | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Nu numai pentru Isus ci şi pentru Lazăr                                            | {'minune', 'minuni', 'minunii'}                                      | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Va veni un altul...                                                      | {'minune', 'minunea', 'minunată', 'minunat'}                         | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Marele necaz salvator                                                     | {'minune', 'minunat'}                                                | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| S-a făcut o nuntă în Cana...                                                       | {'minune', 'minunate', 'minunea'}                                    | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| O lucrare am făcut...                                                              | {'minune', 'minunată', 'minunile'}                                   | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Credeţi măcar pentru lucrările acestea                                             | {'minune', 'minuni'}                                                 | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Despre frumuseţe                                                                   | {'minune', 'Minunat'}                                                | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Eu v-am dat o pildă                                                                | {'minune', 'minunea'}                                                | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Unică Lucrare                                                                      | {'minune', 'minunată'}                                               | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| ... Da Doamne, cred!                                                               | {'minune'}                                                           | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| Cap. 9 - Pe drumul crucii mele                                                     | {'minune'}                                                           | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cine crede în Mine, va face şi el                                                  | {'minune'}                                                           | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| Cu ştergarul cu care era încins                                                    | {'Minune', 'minune'}                                                 | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cum să pot uita vreodată?                                                          | {'minune'}                                                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Eu nu-L cunoşteam, dar...                                                          | {'minune'}                                                           | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Osteneala şi lenea                                                                 | {'minune'}                                                           | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Părinţii şi copiii                                                                 | {'minune'}                                                           | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Cap. 11 - Ce minunat lucrează Dumnezeu                                             | {'minune', 'minuni', 'minunată', 'minunate', 'minunat'}              | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Noi cerem minuni                                                                   | {'minune', 'minuni', 'minunată'}                                     | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | poezie  |
-| Minunea cea mare: Golgota                                                          | {'Minune', 'Minunea'}                                                | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Minunile şi credinţa                                                               | {'minune', 'Minunile'}                                               | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 18 - Frumoasele noastre Rusalii                                               | {'minune', 'minunat', 'minunaţi', 'minunată', 'minunatele'}          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                        | {'minune', 'minunat', 'minunată', 'Minunate', 'minunate'}            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                        | {'minune', 'minunate', 'minunaţi', 'minunea', 'minunau'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                           | {'minune', 'minunat', 'minunate', 'minuni'}                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                           | {'minune', 'minunată', 'minunat', 'minunate'}                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 5 - Necazuri şi speranţe                                                      | {'minune', 'minunatul', 'minunau', 'minunata', 'minuni', 'minunat'}  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 10 - Biserica cea vie şi cea care învie                                       | {'minune', 'minunaţi', 'minunate', 'minunat', 'minunată'}            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 13 - După luarea lui Moisi...                                                 | {'minune', 'minunat', 'Minunatul', 'minunată', 'minunate'}           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Apostolia Femeilor                                                       | {'minune', 'minunate', 'minunea', 'minunat'}                         | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Psalmul 78                                                                         | {'minune', 'minunată', 'minunile', 'minuni', 'minunat'}              | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 19 - Al treilea februarie                                                     | {'minune', 'minunată', 'minunate', 'minunat', 'Minunată'}            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 16 - Există un echilibru                                                      | {'minuni', 'minune', 'minunată', 'minunat', 'minunile'}              | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                         | {'minune', 'minunaţi', 'minunat', 'minuni', 'minunate'}              | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 18 - Frumosul an 1930                                                         | {'minune', 'minunata', 'minunaţi', 'minunate', 'minunat'}            | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 27 - Întristarea cea binecuvântată                                            | {'minune', 'minunat', 'minunată', 'minunaţi'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Printre leu şi printre urs                                                | {'minune', 'minunate', 'minunat'}                                    | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Munca şi lupta                                                                     | {'minune', 'minunile', 'minunat', 'minuni', 'minunate', 'minunată'}  | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| ... Ucenicii Lui au crezut în El...                                                | {'minune', 'minunea', 'minuni'}                                      | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 15 - Al doilea foc                                                            | {'minune', 'minunat', 'minunate', 'minunaţi'}                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 16 - Din cetate în cetate...                                                  | {'minune', 'minunatele', 'minunată', 'minunate'}                     | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 21 - După cei 50 de ani                                                       | {'Minune', 'minuni', 'minunate', 'minunat'}                          | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 9 - În vremea aceea...                                                        | {'minune', 'minunatul', 'minunea', 'minunate', 'minunat'}            | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Ce semn faci Tu ca să vedem?                                                       | {'minune', 'minunat', 'minuni', 'minunile'}                          | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cum are omul acesta învăţătură?                                                    | {'minune', 'minunile', 'minunat', 'minuni', 'minunate'}              | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)      | {'minune', 'minunat', 'minunată'}                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Viaţă, moarte şi înviere                                                           | {'minuni', 'minune', 'minunile', 'minunea'}                          | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
-| Înţelegerea lucrurilor duhovniceşti                                                | {'minune', 'minuni', 'minunat'}                                      | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Adevărata credinţă                                                                 | {'minune', 'minunile', 'minuni', 'minunea'}                          | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Cap. 14 - Strâmta cărare mântuitoare                                               | {'minune', 'minunat', 'minunea', 'minunate'}                         | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 17 - Mereu prin ape tulburi                                                   | {'minune', 'minunat', 'minuni'}                                      | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 19 - Mereu morminte noi                                                       | {'minune', 'minunile', 'minunat'}                                    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                  | {'minune', 'minunată', 'minunat'}                                    | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 23 - Şi ultimul 2                                                             | {'minune', 'minunile', 'minunate'}                                   | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 26 - Limpezirea apelor adânci                                                 | {'minune', 'Minunată', 'Minunilor', 'minunea'}                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 33 - Adevărurile mormântului nemuritor                                        | {'minune', 'minunate', 'minunat', 'minunea'}                         | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cum poate... să ne dea Trupul Lui?                                                 | {'Minune', 'Minunea', 'minunea', 'Minunii'}                          | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cum ţi s-au deschis ochii?                                                         | {'minune', 'minunat', 'minuni', 'minunea'}                           | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Al doilea semn                                                                     | {'minune', 'minuni', 'minunile'}                                     | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
-| Cap. 4 - Vrăjmaşul caută viaţa pruncului                                           | {'minune', 'minunat', 'minunile'}                                    | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Despre credinţă                                                                    | {'minune', 'minuni', 'minunea'}                                      | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| După aceea s-a dus şi a chemat                                                     | {'minune', 'minunată', 'minunata'}                                   | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)             | {'minune', 'minunea', 'minuni'}                                      | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)             | {'minune', 'minunat', 'minunate'}                                    | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Mama lui Isus a zis                                                                | {'minune', 'minunate', 'minunată'}                                   | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-+------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Minune using http://localhost:9000...
-Got 1071 hits:
++------------------------------------------------------------------------------------+--------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                              | Occurrences                                            | Author      | Tip                            | Carte                        | Volum   |
++------------------------------------------------------------------------------------+--------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Minune şi Taină                                                                    | {'Minune'}                                             | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Taină şi Minune                                                                    | {'Minune', 'Minunea'}                                  | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Ce dulce minune                                                                    | {'minune'}                                             | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Întâmplarea şi minunea                                                             | {'minune', 'Minuni', 'minunea', 'Minunea'}             | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Începutul semnelor Lui                                                             | {'minuni', 'minune', 'Minune', 'Minunea'}              | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 6 - Între două judecăţi                                                       | {'Minunea', 'minune'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                   | {'minune'}                                             | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Peregrinările soliei                                                     | {'Minune'}                                             | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Minuni sunt toate                                                                  | {'minune', 'Minune', 'Minuni', 'minuni'}               | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| Minuni sunt toate                                                                  | {'minune', 'Minune', 'Minuni', 'minuni'}               | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Minunile şi credinţa                                                               | {'minune', 'minuni', 'minunile', 'Minunile'}           | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | articol |
+| Cap. 11 - Răscrucea Isus                                                           | {'minune', 'minuni'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Semnele şi minunile                                                                | {'minune', 'minuni', 'minunea', 'minunile'}            | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Taină-a fost                                                                       | {'Minune', 'minune'}                                   | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Cap. 20 - Şi iertarea trebuie plătită!                                             | {'minune', 'minunea', 'minuni'}                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                            | {'minune', 'minunile', 'minuni'}                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 2 - Istoria unei Jertfe...                                                    | {'minune', 'minuni', 'minunile'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Fiorul şi minunea                                                                  | {'minune', 'minuni', 'minunea', 'Minunile'}            | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Marile noastre răspunderi                                                          | {'minuni', 'minune', 'Minune', 'Minunea', 'minunilor'} | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| Cap. 13 - E poate ultima-ncercare...                                               | {'minune', 'minunea'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 20 - După alţi 30 de ani                                                      | {'Minune', 'minunea', 'minuni'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cei care văzuseră                                                                  | {'minune', 'minunea', 'minunile'}                      | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain) | {'minune', 'minunile', 'minunea', 'minuni'}            | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 13 - Frumosul tineret creştin                                                 | {'minune', 'minuni', 'minunile'}                       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 1 - Cel mai frumos Isus                                                       | {'minune', 'minunea'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 3 - Marea cernere                                                             | {'minune', 'minunile'}                                 | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 21 - Şi mărturia trebuie plătită                                              | {'minune'}                                             | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Tineretul şi îndrumarea lui                                                        | {'minune'}                                             | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                    | {'minune', 'minunea', 'Minunea'}                       | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 20 - Rugul care nu se mistuie                                                 | {'minune', 'minunea', 'minuni'}                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)                      | {'minune', 'Minunea', 'minunea', 'minunii', 'minuni'}  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Nu numai pentru Isus ci şi pentru Lazăr                                            | {'minune', 'minuni', 'minunii'}                        | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 28 - Necazurile din lungul drumului                                           | {'minune', 'minuni', 'minunea'}                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - În noaptea aceea...                                                       | {'minune', 'minunea'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cinstim în tăcere                                                                  | {'Minune', 'Minunea', 'Minunii'}                       | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| S-a dus şi a vestit                                                                | {'minune', 'minuni', 'minunea'}                        | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| În alt loc, singur                                                                 | {'minune', 'minuni'}                                   | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 29 - Ne apropiem de Ţărm                                                      | {'minune', 'minuni', 'minunea'}                        | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)         | {'minune', 'minunea', 'minuni'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Bunătatea lui Dumnezeu                                                             | {'minune', 'minunea'}                                  | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Cap. 10 - Pe drumul Crucii                                                         | {'minune', 'minuni'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 10 - Va veni un altul...                                                      | {'minune', 'minunea'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                | {'minune', 'minunea'}                                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Cap. 17 - Ziua a doua                                                              | {'minune', 'minunea'}                                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                | {'minuni', 'minune'}                                   | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 4 - Anul următor                                                              | {'Minune', 'minune', 'minuni'}                         | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 8 - Aşezarea temeliilor veşnice                                               | {'Minunea', 'minune'}                                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Credeţi măcar pentru lucrările acestea                                             | {'minune', 'minuni'}                                   | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Dumnezeul meu                                                                      | {'minune', 'minuni'}                                   | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Eu v-am dat o pildă                                                                | {'minune', 'minunea'}                                  | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 28-a după Rusalii                                      | {'minune', 'minuni'}                                   | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| O lucrare am făcut...                                                              | {'minune', 'minunile'}                                 | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Ostaşul Domnului Hristos                                                           | {'Minunea', 'minune'}                                  | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| S-a făcut o nuntă în Cana...                                                       | {'minune', 'minunea'}                                  | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| ... Da Doamne, cred!                                                               | {'minune'}                                             | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| Acum şi atunci                                                                     | {'minune'}                                             | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Dovada supremei iubiri                                                   | {'minune'}                                             | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 8 - Marele necaz salvator                                                     | {'minune'}                                             | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 9 - Pe drumul crucii mele                                                     | {'minune'}                                             | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cine crede în Mine, va face şi el                                                  | {'minune'}                                             | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Cu ştergarul cu care era încins                                                    | {'Minune', 'minune'}                                   | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cum să pot uita vreodată?                                                          | {'minune'}                                             | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Despre frumuseţe                                                                   | {'minune'}                                             | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Eu nu-L cunoşteam, dar...                                                          | {'minune'}                                             | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| Faptul acesta, adeverit                                                            | {'minune'}                                             | Traian Dorz | Hristos - Jertfa noastră       | Meditații la Ev. după Ioan   | articol |
+| Iubirea şi aurul ceresc                                                            | {'minune'}                                             | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)            | {'minune'}                                             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Osteneala şi lenea                                                                 | {'minune'}                                             | Traian Dorz | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
+| Părinţii şi copiii                                                                 | {'minune'}                                             | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Unică Lucrare                                                                      | {'minune'}                                             | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Unire şi suferinţă                                                                 | {'minune', 'Minune'}                                   | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Vol. 11                                                                            | {'Minune'}                                             | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Noi cerem minuni                                                                   | {'minune', 'minuni'}                                   | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | poezie  |
+| Noi cerem minuni                                                                   | {'minune', 'minuni'}                                   | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Minunea cea mare: Golgota                                                          | {'Minune', 'Minunea'}                                  | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Minunile şi credinţa                                                               | {'minune', 'Minunile'}                                 | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
+| Iubirea nemuritoare                                                                | {'minune', 'minuni', 'Minunile'}                       | Traian Dorz | Răsplata Ascultării            | Cugetări Nemuritoare         | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                        | {'minune', 'minunea', 'minunii'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Izbăvirile Domnului                                                                | {'minune', 'minuni', 'minunile'}                       | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Psalmul 78                                                                         | {'minune', 'minunile', 'minuni'}                       | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
+| ... Ucenicii Lui au crezut în El...                                                | {'minune', 'minunea', 'minuni'}                        | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                           | {'minune', 'minuni', 'minunea'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Multe alte semne...                                                                | {'minune', 'minunile', 'minuni', 'minunea'}            | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Viaţă, moarte şi înviere                                                           | {'minuni', 'minune', 'minunile', 'minunea'}            | Traian Dorz | Mărgăritarul Ascuns            | Cugetări Nemuritoare         | articol |
+| Adevărata credinţă                                                                 | {'minune', 'minunile', 'minuni', 'minunea'}            | Traian Dorz | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
+| Cap. 16 - Există un echilibru                                                      | {'minuni', 'minune', 'minunile'}                       | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                               | {'minune', 'minuni', 'minunile'}                       | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Ce semn faci Tu ca să vedem?                                                       | {'minune', 'minuni', 'minunile'}                       | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Cum poate... să ne dea Trupul Lui?                                                 | {'Minune', 'Minunea', 'minunea', 'Minunii'}            | Traian Dorz | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
+| Călăuzirea Duhului Sfânt                                                           | {'minune', 'minunea'}                                  | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Lauda şi încrederea noastră                                                        | {'minune', 'minunile', 'minuni'}                       | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| S-a întors... şi a văzut pe Isus                                                   | {'minune', 'minunile', 'minunea'}                      | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Veghere şi apărare                                                                 | {'minune', 'minunilor', 'minuni'}                      | Traian Dorz | Strălucirea Biruinţei          | Cugetări Nemuritoare         | articol |
+| A crede în Isus Hristos                                                            | {'minune', 'minunea', 'minunile'}                      | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Al doilea semn                                                                     | {'minune', 'minuni', 'minunile'}                       | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cap. 11 - Ce minunat lucrează Dumnezeu                                             | {'minune', 'minuni'}                                   | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 26 - Limpezirea apelor adânci                                                 | {'minune', 'Minunilor', 'minunea'}                     | Traian Dorz | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
+| Cap. 5 - Necazuri şi speranţe                                                      | {'minune', 'minuni', 'minunea'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cum are omul acesta învăţătură?                                                    | {'minune', 'minunile', 'minuni'}                       | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cum ţi s-au deschis ochii?                                                         | {'minune', 'minuni', 'minunea'}                        | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
++------------------------------------------------------------------------------------+--------------------------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Minune using https://api.comori-od.ro...
+Got 776 hits:
+Score: 37.285713
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Minune şi Taină
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Minune</em> şi Taină e viaţa curată
+Highlight: <em>Minune</em> şi Taină şi-Altar,
+Highlight: <em>Minune</em> şi Taină e Sfânta-Ntrupare
+Highlight: <em>Minune</em> şi Taină sunt Fiul şi Mama
+Highlight: <em>Minune</em> şi Taină e Mila Divină
+Highlight: <em>Minune</em> şi Taină, mi-nchin pe vecie
+Highlight: <em>Minune</em> şi Taină
+
+Score: 35.333332
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Taină şi Minune
+Type: poezie
+Author: Traian Dorz
+Highlight: Taină şi <em>Minune</em> e viaţa ta,
+Highlight: Taină şi <em>Minune</em> ce n-o ştie spune
+Highlight: Taină şi <em>Minune</em> eşti şi jos şi Sus
+Highlight: Taina şi <em>Minunea</em> nu ţi-au dezlegat nici
+Highlight: Taina şi <em>Minunea</em> toţi ţi-o tac mereu,  au
+Highlight: Taină şi <em>Minune</em>
+
+Score: 30.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Ce dulce minune
+Type: poezie
+Author: Traian Dorz
+Highlight: Ce dulce <em>minune</em>
+Highlight: Ce dulce <em>minune</em>
+
+Score: 17.3375
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Întâmplarea şi minunea
+Type: articol
+Author: Traian Dorz
+Highlight: 6 - Se întâmplă o nenorocire şi printr-o <em>minune</em> omul scapă - a avut noroc - zice omul. Nu, ci mâna
+Highlight: 18 - Dacă Dumnezeu ne-a salvat printr-o <em>minune</em> - să-I mulţumim cu recunoştinţă, dar să căutăm
+Highlight: fi din nou nevoie de altă <em>minune</em> ca să fim salvaţi.
+Highlight: poate salva decât o <em>minune</em>.
+Highlight: 17 - <em>Minuni</em> se pot întâmpla. Şi noi dacă avem atâta credinţă cât <em>minunea</em> pe care o cerem,
+Highlight: 2 - <em>Minunea</em> la fel, - nu este nici ea o mătuşă bogată care
+Highlight: Întâmplarea şi <em>minunea</em>
+
 Score: 16.984127
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Sfinţitorul nostru
@@ -117,7 +167,7 @@ Highlight: Isus Se găsea în faţa trebuinţei de a face vreo <em>minune</em> �
 Highlight: din pricină că discutau între ei despre ultima <em>minune</em> şi se agitau de nerăbdarea de a vedea o alta, pe
 Highlight: şi chiar poruncea celor cu care se făcuse vreo <em>minune</em>, să nu mai spună nimănui acest lucru ( Matei
 
-Score: 16.706522
+Score: 16.702381
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 6 - Între două judecăţi
@@ -130,7 +180,7 @@ Highlight: Poate se mai afla cineva cu atare <em>minune</em>, dar se anunţă so
 Highlight: <em>minune</em>
 Highlight: <em>minune</em> :
 
-Score: 16.697369
+Score: 16.666666
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 3 - La scadenţa ispăşirilor
@@ -143,7 +193,7 @@ Highlight: O altă <em>minune</em> trăiam.
 Highlight: Încă o <em>minune</em>. Ce este oare asta?
 Highlight: poporul suferinţei. Abia scăpase cu viaţă, ca prin <em>minune</em>, de la un lagăr de exterminare din Germania...
 
-Score: 16.683332
+Score: 16.63889
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 22 - Peregrinările soliei
@@ -155,6 +205,20 @@ Highlight: Taină şi <em>Minune</em>
 Highlight: Taină şi <em>Minune</em>
 Highlight: Taină şi <em>Minune</em>
 Highlight: Taină şi <em>Minune</em>
+
+Score: 16.40909
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Minuni sunt toate
+Type: poezie
+Author: Traian Dorz
+Highlight: Dar nu-i <em>minune</em> mai presus
+Highlight: <em>Minune</em>-i pâinea ce-o mănânci
+Highlight: <em>minune</em> cât iubirea Lui!
+Highlight: <em>Minuni</em> sunt toate câte sunt în
+Highlight: <em>minuni</em> şi jos
+Highlight: jos şi sus, <em>minuni</em>.  Dar
+Highlight: <em>Minuni</em> sunt toate
 
 Score: 16.40909
 Volume: Cântări Nemuritoare
@@ -170,44 +234,58 @@ Highlight: <em>minuni</em> şi jos
 Highlight: jos şi sus, <em>minuni</em>.  Dar
 Highlight: <em>Minuni</em> sunt toate
 
-Score: 16.380953
+Score: 16.375
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Minunile şi credinţa
+Type: articol
+Author: Traian Dorz
+Highlight: 3 - Un credincios, după o astfel de zguduitoare <em>minune</em> petrecută în chip cu totul deosebit şi într-un
+Highlight: 9 - Orice <em>minune</em> are două părţi: partea văzută: întâmplarea zguduitoare
+Highlight: partea nevăzută: puterea cea mare care face această <em>minune</em>.
+Highlight: Dumnezeu face nişte mari <em>minuni</em> chiar cu ei personal.  2
+Highlight: 2 - Noi am auzit despre <em>minunile</em> lui Dumnezeu şi lucrările
+Highlight: 4 - Noi am văzut şi altă dată multe <em>minuni</em> ale Domnului, cu noi ori cu alţii. Dar de la o
+Highlight: <em>Minunile</em> şi credinţa
+
+Score: 16.351648
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 2
 Title: Cap. 11 - Răscrucea Isus
 Type: articol
 Author: Traian Dorz
-Highlight: din cele mai <em>minunate</em> calendare din câte a scos până acum. Nu este aceasta oare o <em>minune</em> şi încă una din
 Highlight: moarte... Iată prin urmare o <em>minune</em> a vremurilor noastre. Şi astăzi se fac <em>minuni</em>, dar ele nu se văd decât
 Highlight: Şi în sfârşit, printr-o adevărată <em>minune</em> - l-am întâlnit după 35 de ani. Venise cu treburi
 Highlight: Omul <em>minune</em>. Oricine
+Highlight: din câte a scos până acum. Nu este aceasta oare o <em>minune</em> şi încă una din cele mai mari! Dumnezeu ni l-a
 Highlight: este. De aceea l-am şi numit, cu drept cuvânt Omul <em>minune</em>. La prima vedere m-am simţit nespus de fericit
 Highlight: îndurărilor i-a redat păr. Iosif - printr-o adevărată <em>minune</em> - atât din sănătatea-i zdruncinată, încât ne poate
 
-Score: 15.3375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Score: 16.333334
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Semnele şi minunile
 Type: articol
 Author: Traian Dorz
-Highlight: văd încă odată ce <em>minunat</em> şi puternic eşti Tu. Să Te pot slăvi pentru încă o <em>minune</em> în faţa fraţilor mei
-Highlight: În gândul meu mă rugam lui Dumnezeu să se facă o <em>minune</em> la poartă. Văzurăm
-Highlight: mult de pachetul acela, cât aveam nevoie de încă o <em>minune</em>, de încă o dovadă din partea Lui, că este cu mine
-Highlight: cunoşteau cu toţii. Dar străinii se uitau ca după o <em>minune</em>...
-Highlight:  În scurta voastră trecere peste faţa acestui <em>minunat</em> şi înşelător pământ, cât bine aţi putut face voi
-Highlight: - şi slăvit să fie Scumpul Său Nume, - cât de <em>minunat</em> a lucrat! Bietul
+Highlight: are nevoie de nici un alt semn. Şi de nici o altă <em>minune</em> afară de Golgota.
+Highlight: O <em>minune</em> a dragostei Lui
+Highlight: strălucită izbândă, ce fericită descoperire, ce negrăită <em>minune</em> - este această transformare şi întrepătrundere
+Highlight: meu drag, când şi în viaţa ta se petrec uimitoare <em>minuni</em>,  când
+Highlight: Doamne Isuse, Te rugăm fă <em>minunea</em> aceasta în fiecare dintre noi.
+Highlight: Semnele şi <em>minunile</em>
 
-Score: 15.3
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
+Score: 16.328571
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Taină-a fost
+Type: poezie
 Author: Traian Dorz
-Highlight: Refăcut în parte - printr-o <em>minune</em> de la Dumnezeu - mă reîntorc la front, după un
-Highlight: Davos. Dar Domnul S-a îndurat de mine. A făcut o <em>minune</em>. M-a ridicat de pe patul morţii. Dar rana cea sufletească
-Highlight: Dar - printr-o adevărată <em>minune</em> - Domnul m-a întors din calea ce ducea la odihna
-Highlight: răsunet (a ajuns la fronturi printr-o adevărată <em>minune</em>, căci dacă s-ar fi simţit la vreme de apariţia
-Highlight: Arhidiecezană are trei maşini. De ce n-a făcut <em>minuni</em> cu ele? Şi de ce poftirea de a se mai alătura şi
-Highlight: O! Dar Domnul S-a folosit pentru această <em>minunată</em> Lucrare în inimile noastre de o unealtă smerită
+Highlight: Taina S-a făcut <em>Minune</em>
+Highlight: unică, din care, într-o zi Unică, prin Taină şi <em>Minune</em>, Te-ai Re-creat pe Tine, într-un fel Unic, pentru
+Highlight: Taină şi <em>Minune</em> e viaţa ta,
+Highlight: că ea a fost aleasă pentru cea mai mare taină şi <em>minune</em> prin care a început lucrarea de mântuire a omenirii
+Highlight: Ce nebănuit de mare Taină şi <em>Minune</em> este aceasta!
+Highlight: <em>Minune</em> şi Taină şi-Altar,
 
 Score: 15.3
 Volume: Hristos - Marturia mea
@@ -222,7 +300,33 @@ Highlight: Încă o <em>minune</em>! Doamne cât de mare este puterea şi dragos
 Highlight: amăgire. A fost aievea. Se petrecea într-adevăr <em>minunea</em>. Bunătatea Domnului meu îmi ascultase suspinul
 Highlight: Dar aceste <em>minuni</em> nu s-au mai repetat. În schimb au fost altele.
 
-Score: 14.90909
+Score: 15.288889
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Type: articol
+Author: Traian Dorz
+Highlight: În gândul meu mă rugam lui Dumnezeu să se facă o <em>minune</em> la poartă.
+Highlight: mult de pachetul acela, cât aveam nevoie de încă o <em>minune</em>, de încă o dovadă din partea Lui, că este cu mine
+Highlight: puternic eşti Tu. Să Te pot slăvi pentru încă o <em>minune</em> în faţa fraţilor mei. Să le pot spune încă odată
+Highlight: cunoşteau cu toţii. Dar străinii se uitau ca după o <em>minune</em>...
+Highlight: <em>minunile</em> lui Dumnezeu vin
+Highlight: Mergând fericit printre aceste <em>minuni</em> sau odihnind pe înălţimea grămezii de paie, am
+
+Score: 15.275
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 2 - Istoria unei Jertfe...
+Type: articol
+Author: Traian Dorz
+Highlight: Refăcut în parte - printr-o <em>minune</em> de la Dumnezeu - mă reîntorc la front, după un
+Highlight: Davos. Dar Domnul S-a îndurat de mine. A făcut o <em>minune</em>. M-a ridicat de pe patul morţii. Dar rana cea sufletească
+Highlight: Dar - printr-o adevărată <em>minune</em> - Domnul m-a întors din calea ce ducea la odihna
+Highlight: răsunet (a ajuns la fronturi printr-o adevărată <em>minune</em>, căci dacă s-ar fi simţit la vreme de apariţia
+Highlight: Arhidiecezană are trei maşini. De ce n-a făcut <em>minuni</em> cu ele? Şi de ce poftirea de a se mai alătura şi
+Highlight: nu se poată apăra. Eu nu sunt în Oaste dar văd <em>minunile</em> ce le-a făcut Oastea şi văd cum acum vreţi s-o
+
+Score: 14.874999
 Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Fiorul şi minunea
@@ -230,10 +334,10 @@ Type: articol
 Author: Traian Dorz
 Highlight: Unde nu-i el, nu apare nici o <em>minune</em>. Dar unde este el, - o, câte <em>minuni</em> se văd!
 Highlight: cele mai neaşteptate căi, - atunci când numai o <em>minune</em> ne-ar mai putea salva,
-Highlight: fiorul inimii le poate face acestea. Dar cât de <em>minunat</em> le face el!  Acesta
 Highlight: primul rând. Fiindcă numai El poate face să vină <em>minunea</em>.  Fără
 Highlight: 3 - <em>Minunile</em> lui Dumnezeu într-adevăr se petrec toate pe neaşteptate
-Highlight: 4 - Ce <em>minunat</em> este slujitorul Domnului care nu se roagă niciodată
+Highlight: duioşie aminte lui Hristos de toată mila arătată prin <em>minuni</em> faţă de ei, mai înainte.
+Highlight: Câte <em>minuni</em> a făcut dragostea Lui pentru noi.
 Highlight: Fiorul şi <em>minunea</em>
 
 Score: 14.467742
@@ -249,7 +353,7 @@ Highlight: vrut să creadă <em>Minunea</em> cea adevărată şi s-o asculte, s�
 Highlight: inima ta şi nu ispiti pe Domnul cerând <em>minuni</em>.  Drumul
 Highlight: Drumul <em>minunilor</em> este un drum foarte primejdios!  Nu
 
-Score: 14.447369
+Score: 14.375
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 13 - E poate ultima-ncercare...
@@ -259,36 +363,10 @@ Highlight: atâtea scumpe jertfe plătită, - era ea însăşi o <em>minune</em>
 Highlight: poate să nu se vadă că însuşi acest lucru era o <em>minune</em>. Dumnezeu Însuşi a vrut să arate prin asta că tot
 Highlight: E o adevărată <em>minune</em> să vezi cum turma de păstori, clerici şi laici
 Highlight: Apariţia acestei Lucrări duhovniceşti, după <em>minunea</em> reîntregirii noastre naţionale - de atâtea veacuri
-Highlight: omoare! - oricâţi copii ai ei, oricâte iniţiative <em>minunate</em> şi orice înnoire fericită adusă de ea, - numai
 Highlight: pe toţi semenii lor, ca mai curând să înţeleagă <em>minunea</em>. Şi mai grăbit s-o aducă între toţi. Unul
+Highlight: în stare să ţină nimic în el, dacă n-ar fi fost <em>minunea</em>. Vasul însuşi a spus-o şi a repetat-o aceasta de
 
-Score: 14.441176
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: A fost o <em>minune</em> de la Dumnezeu îndată după aceea, când într-o zi
-Highlight: putea scăpa cu viaţă decât o <em>minune</em> a lui Dumnezeu.
-Highlight: Atunci se întâmplă o <em>minune</em>: omul dintr-o dată îmblânzit de puterea Numelui
-Highlight: credincioşie strălucită. Dar nici unele n-au fost mai <em>minunat</em> împlinite ca acelea făcute alor Lui pentru vremea
-Highlight: văzut mai strălucită Faţa lui Hristos cea mai <em>minunată</em>. Fiindcă în cuptorul cel de foc credincioşii lui
-Highlight: urâte ale celor care îi împing - şi nu văd Faţa <em>minunată</em> a Celui ce îi atrage. Din
-
-Score: 14.4375
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: Boala mea se uşurase ca prin <em>minune</em>.
-Highlight: nici acum s-o pot înţelege decât privind-o ca pe o <em>minune</em>: - după cum a şi fost.
-Highlight: la o viaţă nouă. Duhul Sfânt poate face această <em>minune</em>. Se cere însă şi de la tine ceva. Duhul Sfânt aşteaptă
-Highlight: Ce <em>minunat</em> e să vezi cum cer să se înscrie în Oastea Domnului
-Highlight: Acestora le urmează mereu alte <em>minunate</em> şi pline de înflăcărare hotărâri. Un val de intrări
-Highlight: Dar ce <em>minunaţi</em> sunt cei puţini care, rămânând credincioşi legământului
-
-Score: 14.433333
+Score: 14.357142
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 20 - După alţi 30 de ani
@@ -297,48 +375,9 @@ Author: Traian Dorz
 Highlight: Taină şi <em>Minune</em>
 Highlight: Taină şi <em>Minune</em>
 Highlight: Taină şi <em>Minune</em>
-Highlight: prin lucrarea <em>minunată</em> a sprijinului sfânt care ne însoţea, - am găsit cele mai <em>minunate</em> reproduceri după
-Highlight: aceasta sfântă care a scris atât de mult şi de <em>minunat</em> spre slava Domnului şi Dumnezeului nostru, - dar
-Highlight: Am mai vorbit multe în ceasul acela făcând <em>minunate</em> planuri. Ce frumos şi fericit ar fi să se poată
-
-Score: 14.433333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 21 - Şi mărturia trebuie plătită
-Type: articol
-Author: Traian Dorz
-Highlight: Testament cu psalmii, care îi rămăsese ca prin <em>minune</em> la toate percheziţiile care i se făcuse până în
-Highlight: speră într-un câştig imediat care trebuie să fie o <em>minune</em>. Ori căpătarea imediată a eliberării din închisoare
-Highlight: interesau de Dumnezeu după ce nu se petrecu nici o <em>minune</em> cu ei.
-Highlight: suferinţe în viaţa mea este atât de <em>minunat</em>... o, atât de <em>minunat</em>!
-Highlight: A fost <em>minunată</em> şi moartea fratelui acestuia. Vom spune câteva
-Highlight: O ce Veste <em>Minunată</em>
-
-Score: 14.416667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 3 - Marea cernere
-Type: articol
-Author: Traian Dorz
-Highlight: aşteptam intrarea în pământ. Dar Tu Doamne, printr-o <em>minune</em> m-ai întors din calea spre cimitir şi m-ai redat
-Highlight: redat iarăşi luptei. Şi tocmai această <em>minune</em> pe mine mă înfricoşează. Ea pare că îmi spune că Tu Doamne
-Highlight: voioşie pe care n-o mai avusese de mulţi ani. Ca prin <em>minune</em> îi reveniră viaţa şi puterea de muncă ce păreau
-Highlight: cuprinsul celor 8 pagini ale lui I. B. nr. 1 pline de <em>minunate</em> învăţături, - nimic despre tot ce se petrecea
-Highlight: desolidarizase de greşeala conducătorilor ei. Şi se unise <em>minunat</em> cu dreptatea omului lui Dumnezeu. Era un moment
-Highlight:  apărea <em>minunat</em> şi puternic ca lumina zilei care mergea mereu crescând
-
-Score: 14.388889
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
-Type: articol
-Author: Traian Dorz
-Highlight: Ea este o <em>minune</em> - şi <em>minunile</em> nu se pot explica, se pot numai vedea sau
-Highlight: Când în viaţa unui om al lui Dumnezeu se petrece o <em>minune</em>, sau vine o chemare sau se descopere un adevăr
-Highlight: fi în stare şi în măsură să-ţi explice această <em>minune</em>. Dacă n-a explicat-o Hristos lui Nicodim, atunci
-Highlight: acum la Hristos şi cere-I să facă şi în viaţa ta <em>minunea</em> naşterii din nou, fără de care nimeni nu va intra
-Highlight: Când în viaţa cuiva se întâmplă fapte mari, <em>minuni</em> mari, dureri mari sau schimbări mari, acel om are
-Highlight: Ce pildă <em>minunată</em> de smerenie ne dă în locul acesta Sfântul Pavel
+Highlight: ei atunci nici noi acum nici un alt drum decât <em>minunea</em> intervenţiei divine. Dumnezeul Cel Puternic şi
+Highlight: de vie şi o dragoste atât de fierbinte cât cere <em>minunea</em> pe care o aşteptăm...
+Highlight: nu se poate ajunge numai prin jertfe, ci şi prin <em>minuni</em>. Şi poate că a sosit acum şi vremea acestora.
 
 Score: 14.357142
 Volume: Meditații la Ev. după Ioan
@@ -353,72 +392,73 @@ Highlight: Oamenii aceia, când au văzut <em>minunea</em>, pe care o făcuse Is
 Highlight: Cei ce văzuseră atunci <em>minunea</em> făcută de Domnul, au cunoscut că El este Cel Trimes
 Highlight: pentru a vedea toate <em>minunile</em> pe care le-ai făcut şi le faci Tu,
 
-Score: 12.956521
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
+Score: 14.357142
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
 Type: articol
 Author: Traian Dorz
-Highlight: băut sodă caustică, dar Domnul m-a scăpat ca prin <em>minune</em> de la moarte. A doua oară m-am aruncat înaintea
-Highlight: căror preţios concurs marea adunare a reuşit de <em>minune</em>.
-Highlight: Dumnezeu <em>minunea</em> rugului care ardea fără să se mistuie - în chip văzut şi totuşi nevăzut - <em>minunea</em> acestui
-Highlight: să fie acest Înger <em>minunat</em> în grija căruia este dat rugul Oastei! Ce daruri <em>minunate</em> i s-au încredinţat
-Highlight: acestui rug exista. Era lucrarea <em>minunată</em> a Harului lui Dumnezeu în lumea aceasta. Şi rugul care ardea fără
-Highlight:  toţi oamenii au putut vedea în mijlocul lor, <em>minunea</em> Prezenţei lui Dumnezeu în acest rug aprins: Lucrarea
+Highlight: Ea este o <em>minune</em> - şi <em>minunile</em> nu se pot explica, se pot numai vedea sau
+Highlight: Când în viaţa unui om al lui Dumnezeu se petrece o <em>minune</em>, sau vine o chemare sau se descopere un adevăr
+Highlight: fi în stare şi în măsură să-ţi explice această <em>minune</em>. Dacă n-a explicat-o Hristos lui Nicodim, atunci
+Highlight: acum la Hristos şi cere-I să facă şi în viaţa ta <em>minunea</em> naşterii din nou, fără de care nimeni nu va intra
+Highlight: Când în viaţa cuiva se întâmplă fapte mari, <em>minuni</em> mari, dureri mari sau schimbări mari, acel om are
 
-Score: 12.944444
+Score: 14.333333
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 13 - Frumosul tineret creştin
+Type: articol
+Author: Traian Dorz
+Highlight: Boala mea se uşurase ca prin <em>minune</em>.
+Highlight: nici acum s-o pot înţelege decât privind-o ca pe o <em>minune</em>: - după cum a şi fost.
+Highlight: la o viaţă nouă. Duhul Sfânt poate face această <em>minune</em>. Se cere însă şi de la tine ceva. Duhul Sfânt aşteaptă
+Highlight: aceste adunări am amintirea uneia din primele mari <em>minuni</em> pe care le-a făcut pentru mine Domnul Isus:  Veneam
+Highlight: început să merg după El. Şi neîncetat voi spune <em>minunile</em> pe care le-a făcut Domnul pentru mine.
+
+Score: 14.3
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 14 - Să ne apropiem de sfârşit
+Title: Cap. 1 - Cel mai frumos Isus
 Type: articol
 Author: Traian Dorz
-Highlight: ştie să schimbe totul în bine - şi va scoate o <em>minune</em> şi de aici!
-Highlight: morţii sale. - Şi cam atât. Am mai aflat ca prin <em>minune</em> de la el câteva scrisori demult...
-Highlight: vin în <em>minunatul</em> circuit duhovnicesc prin care întreţine Duhul lui Dumnezeu această <em>minunată</em> Lucrare
-Highlight: Nicolae Marini, voi care aţi avut un nume aşa de <em>minunat</em> printre fraţii noştri şi în istoria noastră? Ar
-Highlight: morţii sale a muncit cu aceeaşi dragoste şi putere <em>minunată</em> pentru cauza lui Hristos, desăvârşindu-şi mereu
-Highlight: înaintea Domnului astfel de inimi! - Şi ce răsplată <em>minunată</em> vor avea de la Domnul în Ziua aceea, toţi cei
+Highlight: A fost o <em>minune</em> de la Dumnezeu îndată după aceea, când într-o zi
+Highlight: putea scăpa cu viaţă decât o <em>minune</em> a lui Dumnezeu.
+Highlight: Atunci se întâmplă o <em>minune</em>: omul dintr-o dată îmblânzit de puterea Numelui
+Highlight: Şi Dumnezeu a făcut <em>minunea</em>!... Dar după aceea, - o,
 
-Score: 12.933332
+Score: 14.3
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 3 - Marea cernere
+Type: articol
+Author: Traian Dorz
+Highlight: aşteptam intrarea în pământ. Dar Tu Doamne, printr-o <em>minune</em> m-ai întors din calea spre cimitir şi m-ai redat
+Highlight: redat iarăşi luptei. Şi tocmai această <em>minune</em> pe mine mă înfricoşează. Ea pare că îmi spune că Tu Doamne
+Highlight: voioşie pe care n-o mai avusese de mulţi ani. Ca prin <em>minune</em> îi reveniră viaţa şi puterea de muncă ce păreau
+Highlight: multe sunt <em>minunile</em> şi planurile Tale pentru mine
+
+Score: 14.25
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
+Title: Cap. 21 - Şi mărturia trebuie plătită
 Type: articol
 Author: Traian Dorz
-Highlight: Şi Dumnezeu ne-a dăruit-o tot printr-o <em>minune</em>... E o carte unică poate în lumea întreagă. Bogăţia
-Highlight: O <em>minune</em> s-a petrecut îndată ce sufletul ei a trecut la
-Highlight: pentru înaintaşul <em>minunat</em> de la început - şi rugăciune pentru urmaşul şi mai <em>minunat</em> de la sfârşit.
-Highlight: Numai Domnul a întărit-o şi a apărat-o în chip <em>minunat</em>, fiindcă ea s-a ţinut tare lângă Domnul. Dar mai
-Highlight: - Ţara <em>Minunată</em> HRISTOS
-Highlight: fapt, pentru tipărirea lor s-au produs un şir de <em>minuni</em>. O veste care a ajuns până la noi spunea că Domnul
+Highlight: Testament cu psalmii, care îi rămăsese ca prin <em>minune</em> la toate percheziţiile care i se făcuse până în
+Highlight: speră într-un câştig imediat care trebuie să fie o <em>minune</em>. Ori căpătarea imediată a eliberării din închisoare
+Highlight: interesau de Dumnezeu după ce nu se petrecu nici o <em>minune</em> cu ei.
 
-Score: 12.933332
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
+Score: 14.25
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Tineretul şi îndrumarea lui
 Type: articol
 Author: Traian Dorz
-Highlight: fricoşi am aflat un Noul Testament - trecut ca prin <em>minune</em> prin toate percheziţiile până aici. Era ascuns
-Highlight: lui era o <em>minune</em> care mă uimea.
-Highlight: biblică. Să trăim toate evenimentele dureroase şi <em>minunate</em> petrecute atunci în Betleem. Fratele
-Highlight: Ne pregăteam să cântăm: “O ce veste <em>minunată</em>”. În
-Highlight: tinere, iar Lucrarea Domnului din satul lor mergea <em>minunat</em>... Prin
-Highlight: din vremea când nu cunoştea această realitate <em>minunată</em>. Tot
+Highlight: Deschiderea ochilor este cea mai mare <em>minune</em> şi fericire,
+Highlight: 5 - Dacă este o mare <em>minune</em> şi o mare binefacere deschiderea ochilor trupului
+Highlight: desigur este o nespus mai mare <em>minune</em> şi binefacere deschiderea ochilor sufletului, ale
 
-Score: 12.923076
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: ce bucurie vor avea fraţii noştri văzând o nouă <em>minune</em> a dragostei lui Dumnezeu pentru noi. Să facem o
-Highlight: chiar atunci, - văzând că am scăpat ca printr-o <em>minune</em> de ceea ce se putea întâmpla - am răsuflat mai
-Highlight: părintele îndată ce ne văzurăm singuri. Iată ce <em>minunat</em> a lucrat El şi de astă dată. Acum, dragă Dorz,
-Highlight: <em>Minunatul</em> şi durerosul său ideal - tipografia pusă cu totul
-Highlight: s-a făcut prin tipografia asta în aceşti 8 ani <em>minunaţi</em>, cu toate că am suferit atât de mult...
-Highlight: tribunalului l-a afectat mult!... El a avut un atât de <em>minunat</em> gând cu tipografia şi a luptat atât de mult pentru
-
-Score: 12.923076
+Score: 12.8571415
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
@@ -427,50 +467,21 @@ Author: Traian Dorz
 Highlight: Nu este oare <em>minune</em> asta? Şi nu este oare o dovadă că Mielul e mai
 Highlight: Duhul sectei iehoviste se potriveşte de <em>minune</em> cu firea acelor oameni şi cu vorbirea acelor părţi
 Highlight: clipa când se petrece cu el <em>minunea</em> transformării... <em>Minunea</em> prefacerii ca <em>minunea</em> transsubstanţierii, a pâinii
-Highlight: dragostea Duhului Său Sfânt. Dar sunt atât de <em>minunate</em>!  Taină
-Highlight: şi ridicarea noastră. Cine ştie apoi ce planuri <em>minunate</em> mai avea Domnul şi ce lucrări fericite ar fi mai
-Highlight: Isus a trezit interesul lumii. Apoi lucrările Lui <em>minunate</em> au atras curiozitatea ei. Dar
+Highlight: mântuirea Sa, - atunci cu acest suflet Hristos face <em>minunea</em> naşterii din nou.
 
-Score: 12.916666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 28-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: O, ce <em>minune</em> nebănuită este moştenirea sfinţilor în lumină şi
-Highlight: Dar vine o zi, vine o clipă, vine o <em>minune</em> când cojiţa asta în care suntem închişi acum, se
-Highlight: lărgământ nesfârşit, plin de miresme, de culori, de <em>minuni</em>, devin moştenirea noastră liberă şi veşnică.
-Highlight: coaja aceasta, el poate auzi ceva despre aceste <em>minunăţii</em> pregătite şi pentru el, pentru când va veni vremea
-Highlight: de îngeri, cu cât a moştenit un Nume mult mai <em>minunat</em> decât al lor (
-Highlight: slăvite motive, cântările noastre sunt cele mai <em>minunate</em>; descoperirile noastre sunt cele mai înalte; învăţătura
-
-Score: 12.90909
+Score: 12.8571415
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 4 - Anul următor
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 20 - Rugul care nu se mistuie
 Type: articol
 Author: Traian Dorz
-Highlight: ”Biblia Ilustrată şi Versificată”. Un volum “Taină şi <em>Minune</em>” - imnuri, colinzi, cântece şi plângeri cu Maica
-Highlight: ani de zile, iar El ne-a dăruit-o tot printr-o <em>minune</em>. Cei ce s-au oferit să jertfească pentru tipărirea
-Highlight: şi întinderi de pe faţa pământului. O, cât de <em>minunat</em> începea să aducă roade această sămânţă pe care
-Highlight: Am auzit că tipărirea lor a fost urmarea unor <em>minuni</em> şi îndemnuri directe de la Domnul. O veste care
-Highlight: pus la cale printr-o înlănţuire de întâmplări <em>minunate</em>. Le scriu cum le-am aflat că s-au petrecut, din
-Highlight: care urma în caiet, pentru a se îmbina fericit şi <em>minunat</em>. -
+Highlight: băut sodă caustică, dar Domnul m-a scăpat ca prin <em>minune</em> de la moarte. A doua oară m-am aruncat înaintea
+Highlight: căror preţios concurs marea adunare a reuşit de <em>minune</em>.
+Highlight: Dumnezeu <em>minunea</em> rugului care ardea fără să se mistuie - în chip văzut şi totuşi nevăzut - <em>minunea</em> acestui
+Highlight:  toţi oamenii au putut vedea în mijlocul lor, <em>minunea</em> Prezenţei lui Dumnezeu în acest rug aprins: Lucrarea
+Highlight: iarăşi din toată ţara, aducând alte biruinţe şi alte <em>minuni</em> ca aceasta scrisă de fr. Popa Petru din Batiz:
 
-Score: 12.90909
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 8 - Aşezarea temeliilor veşnice
-Type: articol
-Author: Traian Dorz
-Highlight: <em>Minunea</em> descoperirii lui Hristos face în sufletul nostru o altă <em>minune</em>: lucrarea tainică
-Highlight: Această Lucrare e o taină şi o <em>minune</em> Dumnezeiască după cum limpede a spus Mântuitorul:
-Highlight: <em>Minunata</em> Lucrare a lui Dumnezeu propăşea fericit. Îndrumătorul ei văzut, era
-Highlight: puternica Sa lucrare în mijlocul poporului nostru. Ce <em>minunat</em> se vede acum de la depărtarea atâtor zeci de ani
-Highlight: tuturor celor ce o vor primi pentru ei înşişi, <em>minunata</em> mântuire a lui Dumnezeu.  Iar
-Highlight: umbla cu toţii în toată curăţia şi bucuria luminii <em>minunate</em> a lui Dumnezeu.  Astfel
-
-Score: 12.90909
+Score: 12.8571415
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 4-a după Paşti - (a slăbănogului)
@@ -479,87 +490,9 @@ Author: Traian Dorz
 Highlight: pentru, ori contra lui Dumnezeu care face această <em>minune</em> cu acest suflet.
 Highlight: pe pat şi zăcând de o boală incurabilă, nu era o <em>minune</em> mică.
 Highlight: 42. <em>Minunea</em> aceasta a fost cunoscută în toată cetatea Iope
-Highlight: O, ce <em>minunată</em> e vremea de pace, dar ce scurtă este această vreme
-Highlight: Ce <em>minunat</em> se completează unii pe alţii, slujitorii Domnului
-Highlight: Despre <em>minunatele</em> soţii ale lui Avraam, Isaac şi Iacov, despre
-
-Score: 12.888888
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 17 - Ziua a doua
-Type: articol
-Author: Traian Dorz
-Highlight: (se poate spune: s-a încheiat, în afară de vreo <em>minune</em>) - o viaţă în care cândva s-au pus aşa mari şi
-Highlight: istorisire. Şi dacă nu se va mai întâmpla vreo <em>minune</em>, cred că nu voi mai pomeni niciodată acest nume
-Highlight: În <em>minunatele</em> orânduiri ale lui Dumnezeu, ciclurile se repetă
-Highlight: ne gândim la ele nu putem să nu strigăm: Cât de <em>minunate</em> sunt lucrurile Tale Doamne, toate cu înţelepciune
-Highlight: cu Dl. Veştemean şi a treia oară foaia cu nume <em>minunat</em> apărea iarăşi având pe prima pagină un răstimp
-Highlight: Sub acest titlu a publicat el ceva mai târziu <em>minunata</em> sa carte cuprinzând aceste cutremurătoare adevăruri
-
-Score: 12.888888
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 28 - Necazurile din lungul drumului
-Type: articol
-Author: Traian Dorz
-Highlight: Printr-o <em>minune</em> am scăpat.
-Highlight: O, ce <em>minune</em> este asta - şi ce uimire şi mirare ar fi acum,
-Highlight: misionarismul ei laic, cu toată zestrea şi experienţa ei <em>minunată</em>, ar fi un puternic factor de luptă şi de izbândă
-Highlight: sale, el a muncit cu aceeaşi dragoste şi putere <em>minunată</em>, atât cu cuvântul cât şi cu scrisul său pentru
-Highlight: să ridicăm la mormântul părintelui nostru acel <em>minunat</em> monument. Ar fi vrut să fie şi el înmormântat lângă
-Highlight: ... Atâtea <em>minuni</em> de astea s-au dovedit cu sfinţii şi martirii din
-
-Score: 12.874999
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 22 - Statutele - marea şi permanenta primejdie
-Type: articol
-Author: Traian Dorz
-Highlight: Dumnezeu nu mai face azi <em>minuni</em>? Oastea Domnului este de la începutul ei, o <em>minune</em>. N-a avut această mişcare
-Highlight: O, ce <em>minune</em> mare a fost şi cu moara aceasta a Oastei. Acum
-Highlight:  apostolul Pavel are o <em>minunată</em> înfăţişare a creştinului luptător contra ispititorului
-Highlight: <em>Minunată</em> încheiere (este aceasta pentru noi ostaşii Domnului
-Highlight: să se învoiască la uciderea unui viitor atât de <em>minunat</em>! Nu poate să se unească la stingerea Duhului Sfânt
-Highlight: atunci. În moara şi piticul de la ţară eu văd azi o <em>minunată</em> icoană despre rostul meu în mişcarea Oastei Domnului
-
-Score: 12.874999
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)
-Type: articol
-Author: Traian Dorz
-Highlight: O, ce Dumnezeiască <em>minune</em>: Iată salvarea!
-Highlight: Iată, această <em>minune</em> a făcut-o Hristos, Unicul, Scumpul, Dulcele nostru
-Highlight: Mântuitorul nostru Dulce pentru noi! Aceasta este <em>minunea</em> ce s-a petrecut cu noi.  Eram
-Highlight: semnul acesta poruncit de Dumnezeu era puterea Lui <em>minunată</em> care vindeca pe oricine privea cu credinţă spre
-Highlight: Şi, ce <em>minunat</em> şi Dumnezeiesc este acest dar al Său! Câte sute
-Highlight: Câte cântări <em>minunate</em> n-a făcut ea să izvorască din gurile şi din inimile
-
-Score: 12.874999
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)
-Type: articol
-Author: Traian Dorz
-Highlight: Când printr-o <em>minune</em> a ajuns la unul dintre aceşti robi nenorociţi vestea
-Highlight: n-ai nimic de spus şi de mărturisit despre vreo <em>minune</em> pe care să ştii că îndurarea lui Hristos a făcut-o
-Highlight: O, cât de <em>minunată</em> este istoria harului Dumnezeiesc! Şi ce uriaşă
-Highlight: nesfârşitele feluri în care Hristos Şi-a arătat <em>minunata</em> Lui îndurare faţă de mine...  Iată
-Highlight: Pe tine nu te-a izbăvit Dumnezeu oare în chip <em>minunat</em> şi cutremurător din nici o primejdie de moarte
-Highlight: Partea a treia a acestei <em>minunate</em> mântuiri apoi va fi necurmata jertfă a mulţumirii
-
-Score: 12.8571415
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
-Type: articol
-Author: Traian Dorz
-Highlight:  publică un rând de învăţături despre O <em>minune</em> a timpurilor noastre: Gruparea de la Oxford scrise
-Highlight: Oastea era un copil <em>minune</em>, cum i-a zis cineva. În 14 ani crescuse până la
-Highlight: Începutul acesta <em>minunat</em> a continuat frumos lună de lună. În
-Highlight: nesecat izvor de putere şi inspiraţie avea acest <em>minunat</em> om al lui Dumnezeu!... Şi ce învăţături bogate
-Highlight: Această <em>minunată</em> carte ne-o traduce acum preaiubita noastră soră
-Highlight: voluntari, preoţii ostaşi puteau - şi pot - face <em>minuni</em> duhovniceşti în Oastea Domnului.
+Highlight: Şi de aceea a fost cu putinţă <em>minunea</em> în viaţa Tabitei şi în viaţa atâtora dintre surorile
+Highlight: cumpănă unică, de muchie îngustă, de condiţie grea a <em>minunii</em> în care se întâlnesc sau se despart.
+Highlight: care este atunci peste ei, proslăveşte-Te prin <em>minuni</em>, pentru ca toate făpturile mâinilor Tale să fie
 
 Score: 12.8571415
 Volume: Meditații la Ev. după Ioan
@@ -575,6 +508,107 @@ Highlight: - cum de fapt nu-şi zic despre aceste <em>minuni</em> mulţi necredi
 Highlight: după nişte oameni cu adevărat noi. Ca după nişte <em>minuni</em> ale lui Hristos.
 
 Score: 12.833332
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 28 - Necazurile din lungul drumului
+Type: articol
+Author: Traian Dorz
+Highlight: Printr-o <em>minune</em> am scăpat.
+Highlight: O, ce <em>minune</em> este asta - şi ce uimire şi mirare ar fi acum,
+Highlight: ... Atâtea <em>minuni</em> de astea s-au dovedit cu sfinţii şi martirii din
+Highlight:  dacă noi am descoperi şi am vesti <em>minunea</em> asta în ţară şi în lume.
+Highlight: închipuit ce s-ar întâmpla dacă acum noi am dezveli <em>minunea</em> asta şi am începe s-o vestim. Îndată ar veni aici
+
+Score: 12.833332
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 5 - În noaptea aceea...
+Type: articol
+Author: Traian Dorz
+Highlight: fricoşi am aflat un Noul Testament - trecut ca prin <em>minune</em> prin toate percheziţiile până aici. Era ascuns
+Highlight: cu iubirea lui Hristos, încât starea lui era o <em>minune</em> care mă uimea.
+Highlight: Iată aceasta este <em>minunea</em> prin care Dumnezeu ne devine Tată şi Mamă, Făcător
+Highlight: milă de noi de toţi şi lucrează prin puterea Ta <em>minunea</em> care ne depăşeşte pe noi şi puterile noastre, printre
+Highlight: mi se întâmplă totdeauna când îmi repovestesc <em>minunea</em> pe care am trăit-o atunci. I-am
+
+Score: 12.833332
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Cinstim în tăcere
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Minune</em> şi Taină, Fecioară şi Mamă.
+Highlight: Slăvim în tăcere Eterna <em>Minune</em>
+Highlight: Cinstim în tăcere <em>Minunea</em> şi Taina pe
+Highlight: <em>Minunea</em> şi Taina, Fecioara şi Mama,  când
+Highlight: cu toată credinţa se-nchină <em>Minunii</em>.  Gândim
+
+Score: 12.833332
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: S-a dus şi a vestit
+Type: articol
+Author: Traian Dorz
+Highlight: Dar cea mai mare şi unică <em>minune</em> a Dumnezeirii şi a
+Highlight: De nici o <em>minune</em> nu mai avem nici noi nevoie ca să ne convingem
+Highlight: <em>minuni</em> au mai putut săvârşi şi alţii,  -
+Highlight: Adevărat, prin multele <em>minuni</em> şi daruri strălucite.  Dar
+Highlight: faţa Învierii Tale, şi privim cu faţa descoperită <em>minunea</em> care ne-a încredinţat pe veci de puterea şi Dumnezeirea
+
+Score: 12.833332
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: În alt loc, singur
+Type: articol
+Author: Traian Dorz
+Highlight: Păstrarea Sfintelor Scripturi este tot o <em>minune</em>, un şir de <em>minuni</em>. Nici o altă operă scrisă nu s-a putut
+Highlight: E o <em>minune</em> cum a fost salvat şi păstrat acest giulgiu sfânt
+Highlight: biserică din Torino - Italia, păstrat printr-un şir de <em>minuni</em> şi rămas până în ziua de astăzi ca o dovadă materială
+Highlight: Şi tu ai fost salvat prin atâtea <em>minuni</em> de la pieire, numai prin bunătatea şi puterea lui
+
+Score: 12.799999
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 29 - Ne apropiem de Ţărm
+Type: articol
+Author: Traian Dorz
+Highlight: Şi Dumnezeu ne-a dăruit-o tot printr-o <em>minune</em>... E o carte unică poate în lumea întreagă. Bogăţia
+Highlight: O <em>minune</em> s-a petrecut îndată ce sufletul ei a trecut la
+Highlight: fapt, pentru tipărirea lor s-au produs un şir de <em>minuni</em>. O veste care a ajuns până la noi spunea că Domnul
+Highlight: pe Domnul şi Dumnezeul nostru Puternic pentru <em>minunea</em> asta care pare de necrezut. Vorbitorii care se
+
+Score: 12.799999
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)
+Type: articol
+Author: Traian Dorz
+Highlight: O, ce Dumnezeiască <em>minune</em>: Iată salvarea!
+Highlight: Iată, această <em>minune</em> a făcut-o Hristos, Unicul, Scumpul, Dulcele nostru
+Highlight: Mântuitorul nostru Dulce pentru noi! Aceasta este <em>minunea</em> ce s-a petrecut cu noi.  Eram
+Highlight: Nimeni altcineva nu mai putea face aceste <em>minuni</em>, decât El. De la nimeni nu-ţi mai puteau veni aceste
+
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Bunătatea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: nici o scăpare , - numai acela ştie ce înseamnă o <em>minune</em>.
+Highlight: acela poate şti ce strălucită şi ce Dumnezeiască <em>minune</em> este să lumineze atunci peste el salvatoarea Faţă
+Highlight: Dumnezeul nostru poate face <em>minunea</em> aceasta.
+
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 10 - Pe drumul Crucii
+Type: articol
+Author: Traian Dorz
+Highlight:  publică un rând de învăţături despre O <em>minune</em> a timpurilor noastre: Gruparea de la Oxford scrise
+Highlight: Oastea era un copil <em>minune</em>, cum i-a zis cineva. În 14 ani crescuse până la
+Highlight: voluntari, preoţii ostaşi puteau - şi pot - face <em>minuni</em> duhovniceşti în Oastea Domnului.
+
+Score: 12.749999
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 10 - Va veni un altul...
@@ -583,43 +617,54 @@ Author: Traian Dorz
 Highlight: putea veni în orice clipă, prin vreo neaşteptată <em>minune</em> de la Dumnezeu - în om. Aşa am vrut să cred şi
 Highlight: Toate acestea le conveneau de <em>minune</em> atât lor cât şi fratelui Moldoveanu, - care acceptă
 Highlight: aşa am crezut - ca într-o bună zi să se întâmple <em>minunea</em> ca el să se hotărască a o trece. Să vină de dincolo
-Highlight: chiar coarda cea mai <em>minunată</em>
-Highlight: Numele Tatălui, în numele Trecutului sigur şi <em>minunat</em> şi în numele credinţei părinţilor noştri sfinţi
 
-Score: 12.833332
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 8 - Marele necaz salvator
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
-Highlight: întrebându-mă şi cercetându-mă ca pe o păpuşă, ca pe o <em>minune</em>.
-Highlight: noi, toţi se uitau cu mirare după noi ca după o <em>minune</em>. Abia am sărit pe scara vagonului şi trenul a plecat
-Highlight: O, ce <em>minunat</em> spor şi rod rămâne totdeauna după o lucrare sfântă
-Highlight: toate feţele noastre. Era ceva unic de frumos şi <em>minunat</em>. Aria locului se umpluse de tot felul de oameni
-Highlight: portretul în cărbune, arătând astfel ce talent <em>minunat</em> avea. Portretul meu reuşise deplin.
+Highlight: ştie să schimbe totul în bine - şi va scoate o <em>minune</em> şi de aici!
+Highlight: morţii sale. - Şi cam atât. Am mai aflat ca prin <em>minune</em> de la el câteva scrisori demult...
+Highlight: Dar dacă am deschide sicriul şi s-ar vedea <em>minunea</em> asta, - ce ar fi aici!
 
-Score: 12.833332
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: S-a făcut o nuntă în Cana...
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 17 - Ziua a doua
 Type: articol
 Author: Traian Dorz
-Highlight: Prima <em>minune</em> scrisă în Sfânta Evanghelie
-Highlight: a crezut în El mai înainte de a fi făcut nici o <em>minune</em> (
-Highlight: Ce <em>minunate</em> sunt nunţile la care sunt prezenţi astfel de Invitaţi!  Ce
-Highlight: Ce bucurii <em>minunate</em> şi de neuitat
-Highlight: mijlocirea ei, El a făcut aici <em>minunea</em> care a rămas neuitată.  Prima
+Highlight: (se poate spune: s-a încheiat, în afară de vreo <em>minune</em>) - o viaţă în care cândva s-au pus aşa mari şi
+Highlight: istorisire. Şi dacă nu se va mai întâmpla vreo <em>minune</em>, cred că nu voi mai pomeni niciodată acest nume
+Highlight: O, cum aş dori de mult să se întâmple <em>minunea</em> asta!
 
-Score: 12.799999
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: O lucrare am făcut...
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 22 - Statutele - marea şi permanenta primejdie
 Type: articol
 Author: Traian Dorz
-Highlight: să nu fi făcut cel puţin o <em>minune</em>.
-Highlight:  determinat de oameni sau împrejurări - şi nu <em>minune</em>.
-Highlight: printr-o dovadă uimitoare şi <em>minunată</em>.  Dar
-Highlight: cu sufletul uimit de puterea Ta şi de <em>minunile</em> Tale noi ne proşternem la picioarele Tale,
+Highlight: Dumnezeu nu mai face azi <em>minuni</em>? Oastea Domnului este de la începutul ei, o <em>minune</em>. N-a avut această mişcare
+Highlight: O, ce <em>minune</em> mare a fost şi cu moara aceasta a Oastei. Acum
+
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 4 - Anul următor
+Type: articol
+Author: Traian Dorz
+Highlight: ”Biblia Ilustrată şi Versificată”. Un volum “Taină şi <em>Minune</em>” - imnuri, colinzi, cântece şi plângeri cu Maica
+Highlight: ani de zile, iar El ne-a dăruit-o tot printr-o <em>minune</em>. Cei ce s-au oferit să jertfească pentru tipărirea
+Highlight: Am auzit că tipărirea lor a fost urmarea unor <em>minuni</em> şi îndemnuri directe de la Domnul. O veste care
+
+Score: 12.749999
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 8 - Aşezarea temeliilor veşnice
+Type: articol
+Author: Traian Dorz
+Highlight: <em>Minunea</em> descoperirii lui Hristos face în sufletul nostru o altă <em>minune</em>: lucrarea tainică
+Highlight: Această Lucrare e o taină şi o <em>minune</em> Dumnezeiască după cum limpede a spus Mântuitorul:
 
 Score: 12.749999
 Volume: Meditații la Ev. după Ioan
@@ -632,14 +677,14 @@ Highlight: şi cu duhul nostru, fiecare din acestea fiind o <em>minune</em>,
 Highlight: amintirile noastre, care păstrează în ele atât de multe <em>minuni</em> petrecute cu noi înşine, sau în faţa noastră -
 
 Score: 12.749999
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre frumuseţe
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Dumnezeul meu
 Type: articol
 Author: Traian Dorz
-Highlight: 20 - Orişice <em>minune</em> sfântă ce-o vedem e ca un nor
-Highlight: el în orişice <em>minune</em> va vedea pe Cel Frumos.
-Highlight: ni-L arată pe Acela Veşnic Sfânt şi <em>Minunat</em>,  ne
+Highlight: O <em>minune</em> a dragostei Lui
+Highlight: strălucită izbândă, ce fericită descoperire, ce negrăită <em>minune</em> este aceasta!
+Highlight: al meu, când şi în viaţa ta se petrec uimitoare <em>minuni</em>,  când
 
 Score: 12.749999
 Volume: Meditații la Ev. după Ioan
@@ -652,14 +697,43 @@ Highlight: înţelegerea şi la trăirea în adevăr, în taină şi în <em>min
 Highlight: iubire de semeni - spre a putea trăi taina şi <em>minunea</em> Lui.  De
 
 Score: 12.749999
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Unică Lucrare
-Type: poezie
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 28-a după Rusalii
+Type: articol
 Author: Traian Dorz
-Highlight: o, <em>minune</em> rară, unică aici!
-Highlight: tainică <em>minune</em>, eşti destinul meu!
-Highlight: cât de <em>minunată</em> eu te-am cunoscut Dumnezeul
+Highlight: O, ce <em>minune</em> nebănuită este moştenirea sfinţilor în lumină şi
+Highlight: Dar vine o zi, vine o clipă, vine o <em>minune</em> când cojiţa asta în care suntem închişi acum, se
+Highlight: lărgământ nesfârşit, plin de miresme, de culori, de <em>minuni</em>, devin moştenirea noastră liberă şi veşnică.
+
+Score: 12.749999
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Învăţătorul nostru
+Title: O lucrare am făcut...
+Type: articol
+Author: Traian Dorz
+Highlight: să nu fi făcut cel puţin o <em>minune</em>.
+Highlight:  determinat de oameni sau împrejurări - şi nu <em>minune</em>.
+Highlight: cu sufletul uimit de puterea Ta şi de <em>minunile</em> Tale noi ne proşternem la picioarele Tale,
+
+Score: 12.749999
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Ostaşul Domnului Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: 10 - <em>Minunea</em> descoperirii lui Hristos face în sufletul nostru o altă <em>minune</em>: lucrarea tainică
+Highlight: 11 - Această lucrare e o taină şi o <em>minune</em> Dumnezeiască după cum limpede a spus Mântuitorul:
+
+Score: 12.749999
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: S-a făcut o nuntă în Cana...
+Type: articol
+Author: Traian Dorz
+Highlight: Prima <em>minune</em> scrisă în Sfânta Evanghelie
+Highlight: a crezut în El mai înainte de a fi făcut nici o <em>minune</em> (
+Highlight: mijlocirea ei, El a făcut aici <em>minunea</em> care a rămas neuitată.  Prima
 
 Score: 12.666666
 Volume: Meditații la Ev. după Ioan
@@ -669,6 +743,32 @@ Type: articol
 Author: Traian Dorz
 Highlight: o <em>minune</em> Dumnezeiască!
 Highlight: şi după fiecare <em>minune</em> pe care o vezi,
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Acum şi atunci
+Type: articol
+Author: Traian Dorz
+Highlight: cuvânt cu cuvânt şi <em>minune</em> cu <em>minune</em>
+
+Score: 12.666666
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
+Type: articol
+Author: Traian Dorz
+Highlight: ce bucurie vor avea fraţii noştri văzând o nouă <em>minune</em> a dragostei lui Dumnezeu pentru noi. Să facem o
+Highlight: chiar atunci, - văzând că am scăpat ca printr-o <em>minune</em> de ceea ce se putea întâmpla - am răsuflat mai
+
+Score: 12.666666
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 8 - Marele necaz salvator
+Type: articol
+Author: Traian Dorz
+Highlight: întrebându-mă şi cercetându-mă ca pe o păpuşă, ca pe o <em>minune</em>.
+Highlight: noi, toţi se uitau cu mirare după noi ca după o <em>minune</em>. Abia am sărit pe scara vagonului şi trenul a plecat
 
 Score: 12.666666
 Volume: Hristos - Marturia mea
@@ -707,6 +807,15 @@ Highlight: că mi-e numai o <em>minune</em>
 Highlight: că e zilnic o <em>minune</em>
 
 Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre frumuseţe
+Type: articol
+Author: Traian Dorz
+Highlight: 20 - Orişice <em>minune</em> sfântă ce-o vedem e ca un nor
+Highlight: el în orişice <em>minune</em> va vedea pe Cel Frumos.
+
+Score: 12.666666
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: Eu nu-L cunoşteam, dar...
@@ -714,6 +823,32 @@ Type: articol
 Author: Traian Dorz
 Highlight: noastră marea <em>minune</em> a naşterii din nou,
 Highlight: a acelei transformări cereşti care e o <em>minune</em> ca aceea a Facerii
+
+Score: 12.666666
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Jertfa noastră
+Title: Faptul acesta, adeverit
+Type: articol
+Author: Traian Dorz
+Highlight: cu pas, clipă cu clipă, cuvânt cu cuvânt şi <em>minune</em> cu <em>minune</em>, petrecute şi lăsate nouă despre Mântuitorul
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Iubirea şi aurul ceresc
+Type: articol
+Author: Traian Dorz
+Highlight: o singură <em>minune</em>
+Highlight: - şi o ce <em>minune</em> este că tu vezi asta, când sunt atâţia în jurul
+
+Score: 12.666666
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 31-a după Rusalii - (a orbului din Ierihon)
+Type: articol
+Author: Traian Dorz
+Highlight: Când printr-o <em>minune</em> a ajuns la unul dintre aceşti robi nenorociţi vestea
+Highlight: n-ai nimic de spus şi de mărturisit despre vreo <em>minune</em> pe care să ştii că îndurarea lui Hristos a făcut-o
 
 Score: 12.666666
 Volume: Cugetări Nemuritoare
@@ -733,20 +868,34 @@ Author: Traian Dorz
 Highlight: i-a deschis, aceştia văd la fiecare pas câte o <em>minune</em> pe care o face Dumnezeu.
 Highlight: mare de ochi necredincioşi nu văd niciodată nici o <em>minune</em>. Şi de aceea nu-L cunosc pe Hristos.
 
-Score: 11.833333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 11 - Ce minunat lucrează Dumnezeu
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 7
+Title: Unică Lucrare
+Type: poezie
+Author: Traian Dorz
+Highlight: o, <em>minune</em> rară, unică aici!
+Highlight: tainică <em>minune</em>, eşti destinul meu!
+
+Score: 12.666666
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Unire şi suferinţă
 Type: articol
 Author: Traian Dorz
-Highlight: ameninţarea lor... Astfel am scăpat noi printr-o <em>minune</em>, dar cei la care aflaseră ei că vom merge şi care
-Highlight: aşa a şi fost. Nu mult mai târziu aveam să vedem <em>minuni</em> la care nici nu putuserăm gândi, la acel modest
-Highlight: naşterea din nou. Iar deodată cu aceasta, câte <em>minuni</em> au apărut: misionarismul laic, din vremea creştinismului
-Highlight: fi din acestea multe volume la rând. Ce lucrare <em>minunată</em> va fi şi aceasta.
-Highlight: ea. Şi priveşte şi primeşte roadele ei tot mai <em>minunate</em> şi mai multe.
-Highlight: Cap. 11 - Ce <em>minunat</em> lucrează Dumnezeu
+Highlight: Dar ce <em>minune</em> mă aşteaptă când am putut face saltul
+Highlight: Acolo vei afla cea mai mare <em>Minune</em>, Unica Revelaţie din lume.
 
-Score: 11.75
+Score: 12.666666
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Vol. 11
+Type: poezie
+Author: Traian Dorz
+Highlight: <em>Minune</em> şi Taină
+Highlight: Slăvită fii, Taină, - slăvită <em>Minune</em>
+
+Score: 11.666667
 Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Noi cerem minuni
@@ -754,7 +903,16 @@ Type: poezie
 Author: Traian Dorz
 Highlight: cea mai grea <em>minune</em>
 Highlight: Noi cerem <em>minuni</em>, Isuse căci
-Highlight: pază <em>minunată</em>.  Ţie
+Highlight: Noi cerem <em>minuni</em>
+
+Score: 11.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: Noi cerem minuni
+Type: poezie
+Author: Traian Dorz
+Highlight: cea mai grea <em>minune</em>
+Highlight: Noi cerem <em>minuni</em>, Isuse,  căci
 Highlight: Noi cerem <em>minuni</em>
 
 Score: 11.5
@@ -775,224 +933,56 @@ Author: Traian Dorz
 Highlight: şi să nu fi făcut cel puţin o <em>minune</em>...
 Highlight: <em>Minunile</em> şi credinţa
 
-Score: 9.973684
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 18 - Frumoasele noastre Rusalii
+Score: 9.888889
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Iubirea nemuritoare
 Type: articol
 Author: Traian Dorz
-Highlight: mereu. Fiecare dintre noi suntem o realizare, o <em>minune</em>, o multiplicare a luptei, a mărturisirii vieţii
-Highlight: Dumnezeu. Ce trimes smerit şi <em>minunat</em> a fost Moise. Ce trimes smerit şi <em>minunat</em> a fost Ioan Botezătorul..
-Highlight: trimeşi smeriţi şi <em>minunaţi</em> ai lui Dumnezeu El i-a luminat mai întâi cu lumina Lui <em>minunată</em>, apoi i-a trimes
-Highlight: participanţii din localităţi, atraşi şi ei de <em>minunatele</em> şi noile noastre nunţi creştineşti. Bucuria cea
-Highlight: hotărâre cu un ajutor direct care ni l-a dat în chip <em>minunat</em> şi pentru îndepărtarea unor mari piedici, dar şi
-Highlight: în acest mod. Dumnezeu nu ne-a dat acest ajutor <em>minunat</em> doar pentru împlinirea frumoasei noastre datorii
+Highlight: Dar cea mai mare şi unică <em>minune</em> a Dumnezeirii Sale
+Highlight: n-au crezut nici după ce au văzut semne şi <em>minuni</em>.  4
+Highlight: nevoie să cer nici pâine, nici libertate, nici <em>minuni</em>.  Când
+Highlight: <em>minuni</em> au mai putut săvârşi şi alţii,  -
+Highlight: Adevărat, prin multele <em>minuni</em> şi daruri strălucite.  Dar
+Highlight: 19 - <em>Minunile</em> lui Dumnezeu s-au petrecut totdeauna pe neaşteptate
 
-Score: 9.961538
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-Highlight: hrănească din Cuvântul lui Dumnezeu. E o adevărată <em>minune</em> ceea ce se petrece aici prin Lucrarea Oastei Domnului
-Highlight: pentru a-l adăpa din Hristos, - ce <em>minunat</em> tineret vom creşte şi ce <em>minunat</em> viitor va avea acest neam...”
-Highlight: sale în slujba iubirii, adevărului şi binelui. Ce <em>minunat</em> este să vezi cum îl transformă pe om credinţa şi
-Highlight: În esenţa ei, însăşi Oastea Domnului era o <em>minunată</em> iniţiativă ţâşnită ca un fluviu puternic din Stânca
-Highlight: el trupeşte - ci după glasul sufletului său... <em>Minunate</em> schimbări a făcut puterea lui Dumnezeu în casa
-Highlight: O, ce <em>minunate</em> roade are sămânţa Evangheliei. Şi câte astfel
-
-Score: 9.958333
+Score: 9.875
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
 Type: articol
 Author: Traian Dorz
 Highlight: Nu este oare asta o <em>minune</em> a revărsării Duhului Sfânt, după cum ne-a spus
-Highlight: împreună lucrare ies totdeauna roade <em>minunate</em> şi oameni <em>minunaţi</em>.  O
 Highlight: făcut <em>minunea</em> înţelegerii în felurite limbi a Aceluiaşi Cuvânt. Aceasta este totdeauna <em>minunea</em> pe care
-Highlight: 7. Toţi se mirau, se <em>minunau</em>, şi ziceau unii către alţii: “Toţi aceştia care
-Highlight: îi auzim vorbind în limbile noastre lucrurile <em>minunate</em> ale lui Dumnezeu!” 1
 Highlight: aceea când vine îndată cuvântul care lămureşte <em>minunea</em>, acest cuvânt este crezut, este ascultat şi este
+Highlight: mare mulţime de inimi care au fost martore ale <em>minunii</em>.  Aceasta
+Highlight: fi ridicat împreună cu Petru pentru lămurirea <em>minunii</em> şi vestirea mântuirii în Numele Domnului Isus Hristos
+Highlight: Cine a făcut <em>minunea</em> asta, dacă nu darul şi harul Duhului Sfânt?  Care
 
-Score: 9.909091
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
+Score: 9.857142
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Izbăvirile Domnului
 Type: articol
 Author: Traian Dorz
-Highlight: asta dar şi că omeneşte starea lui pare că numai o <em>minune</em> a lui Dumnezeu ar mai putea-o ajuta. Ce tristă
-Highlight: Domnului, - acţiunea aceasta cu gând şi scop atât de <em>minunat</em>, - a fost torpilată tocmai de către o contra-acţiune
-Highlight: - Ce <em>minunat</em> a fost totul atunci prea sfinţite. Dar eu mă întreb
-Highlight: această activitate? Când aveţi atâtea experienţe <em>minunate</em> din propria viaţă în privinţa asta, când activitatea
-Highlight: inerţie a bisericii noastre. Că dacă aceste două <em>minuni</em> nu se vor produce prin Oastea Domnului, atunci
-Highlight: O, ce <em>minunat</em> ar fi dacă toţi cei din aceste locuri cereşti ar
+Highlight: înfăptuit la Dumnezeu. Este ca şi cum nici n-ar fi <em>minune</em>.
+Highlight: trebuie să facă pentru ei <em>minuni</em> spre a-i salva, atunci El face şi <em>minuni</em>.  Totuşi
+Highlight: Dumnezeu când nu poate fi salvat altfel decât prin <em>minuni</em>.  3
+Highlight: 4 - Chiar şi <em>minunile</em> Domnului apar atât de apropiate de ceea ce este
+Highlight: mulţumire veşnică numai Ţie Doamne pentru toate <em>minunile</em> acestea!
 
-Score: 9.909091
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-Highlight: acolo comandantul ne-a comunicat marea, negrăita <em>minune</em>: decretul de amnistie care sosise şi începuse să
-Highlight: până ar fi otrăvit şi ar fi nimicit toată holda <em>minunată</em> a Oastei Domnului. Dar cine mai ştie câţi dintre
-Highlight: cum Dumnezeu le purtase şi lor de grijă în chip <em>minunat</em> deşi ni se confiscase tot ce aveam la Sânicoară
-Highlight: atât de uscate şi de pustii. Acum câte izvoare <em>minunate</em> curgeau pe aici. Tinerii începători de atunci
-Highlight: întâi singur - apoi an de an adăugându-se alte <em>minunate</em> suflete de fraţi şi surori. Mulţi preoţi binecuvântaţi
-Highlight: fraţi şi de surori, care aţi împlinit atât de <em>minunat</em> dorinţa şi Voia Sa, rămaşi afară. Cu cât aţi fost
-
-Score: 9.909091
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-Highlight: O <em>minune</em> s-a petrecut îndată ce sufletul mamei a trecut
-Highlight: fi ajutat şi nu aş fi împiedicat frumosul şi <em>minunatul</em> har care este acum peste toată Lucrarea Oastei
-Highlight: mai frumoasă ca ea. Toţi cei ce priveau la ea se <em>minunau</em>. Toată înfăţişarea durerii şi bătrâneţii dispăruse
-Highlight: nopţi, ierni şi veri, prin bucurii şi primejdii în <em>minunata</em> Lucrare a Oastei Domnului în care el intrase mai
-Highlight: ne puteam mişca până de curând. Iar acum iată ce <em>minuni</em> face Dumnezeu!... Ne putem aduna şi petrece nopţi
-Highlight: Adunările cresc <em>minunat</em>. Multe suflete noi se alipesc puternic de Domnul
-
-Score: 9.9
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 10 - Biserica cea vie şi cea care învie
-Type: articol
-Author: Traian Dorz
-Highlight: vină ziua de 19 ianuarie 1930 ca să văd şi această <em>minune</em> când o companie de stegari ai Domnului au venit
-Highlight: Primii şi cei mai <em>minunaţi</em> împreună-lucrători ai lui Dumnezeu în biserica
-Highlight: viaţă sfântă sporit cu multe lucrări proaspete şi <em>minunate</em> pentru Dumnezeu. Prin aceasta lumea este zguduită
-Highlight: ţară ci şi din străinătate de la mulţi preoţi <em>minunaţi</em> însufleţiţi de o mare credinţă şi dragoste faţă
-Highlight: preoţi priveau ceea ce se făcea prin acest om <em>minunat</em> - o revelaţie cerească, un dar de la Dumnezeu,
-Highlight: prin alţii zeci şi sute ca ei învia o nouă şi <em>minunată</em> generaţie credincioasă din pătura cea mai largă
-
-Score: 9.9
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: Foaia apărea doar printr-o <em>minune</em>. Fiecare număr era cerut şi primit cu lacrimi
-Highlight: când răutatea şi-a atins culmea, el a creat acel <em>minunat</em> curent de întoarcere la Dumnezeu şi de o înţelegere
-Highlight: <em>Minunatul</em> curent de trezire sufletească a adus cu sine cunoştinţa
-Highlight: Evanghelie şi se fac copii ai lui Dumnezeu. Clădirea <em>minunată</em> a Oastei Domnului, se ridică măreaţă şi mântuitoare
-Highlight: Ca un slab înlocuitor al acelei <em>minunate</em> Istorii care ar fi trebuit să apară atunci, -
-Highlight: nostru Mântuitor Isus Hristos care a purtat atât de <em>minunat</em> de grijă ca şi în acele vremuri să avem un mijloc
-
-Score: 9.9
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 14 - Apostolia Femeilor
-Type: articol
-Author: Traian Dorz
-Highlight: Drăgan Nicolescu, viaţa lui s-a schimbat ca prin <em>minune</em>. Suflul Duhului Sfânt a domolit fiara sălbatică
-Highlight: Evanghelii nişte lucruri atât de mişcătoare şi de <em>minunate</em>, scrise despre apostolia acelor sfinte femei care
-Highlight: Cât de <em>minunate</em> sunt cuvintele scrise de el în privinţa asta prin
-Highlight: Suflete <em>minunate</em> de surori încep să apară în Oaste din ce în ce
-Highlight: neuitată va fi pentru noi ostaşii Domnului din Iaşi <em>minunea</em> pocăinţei fratelui nostru Drăgan Nicolescu. Acest
-Highlight: Ce <em>minunat</em> a scris despre aceste lucruri şi păr. Iosif ca
-
-Score: 9.9
+Score: 9.857142
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 2
 Title: Psalmul 78
 Type: poezie
 Author: Traian Dorz
 Highlight: 21-Le-a auzit cârtirea Domnul - şi cu <em>minune</em> mare El
-Highlight: puterea Lui cea <em>minunată</em>, <em>minunile</em> ce le-au lucrat 5-Căci
+Highlight: puterea Lui cea minunată, <em>minunile</em> ce le-au lucrat 5-Căci
 Highlight: uitării-a Lui lucrare, <em>minunile</em> ce El făcea...  12-În
 Highlight: 12-În a părinţilor lor faţă <em>minuni</em> făcut-a Domnu-n van şi-n
-Highlight: 22-fiindcă nu crezură-n Domnul şi-n ajutoru-I <em>minunat</em>
 Highlight: de-a Domnului <em>minuni</em> nespuse s-au îndoit şi n-au crezut
-
-Score: 9.888889
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 19 - Al treilea februarie
-Type: articol
-Author: Traian Dorz
-Highlight: nădejdile - unii altora. Ce greu ar fi fost fără ea. Ce <em>minune</em> că am primit-o chiar acum!
-Highlight: La chemarea <em>minunată</em> azi
-Highlight: inima unei rândunici dorul după o ţară nouă şi <em>minunată</em>, dorul care o face să zboare către ea prin mii
-Highlight: vorbit mereu celor de lângă el despre lucrurile <em>minunate</em> ale Împărăţiei lui Dumnezeu. Ce neuitate au rămas
-Highlight: Să privim la sfârşitul <em>minunat</em> al felului de vieţuire pe care l-a adus alesul
-Highlight: ascultată. Iată-l acum unde a dorit să fie în Ţara <em>Minunată</em> despre care îi plăcea să cânte atât de des...
-
-Score: 9.857142
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 16 - Există un echilibru
-Type: articol
-Author: Traian Dorz
-Highlight: izbăvire continuă. Şi toate multele <em>minuni</em> deveniseră o unică şi mare <em>minune</em>. Trecând prin sute de situaţii
-Highlight: Era o privelişte unică, <em>minunată</em> să vezi cum cei doi boi frumoşi şi curaţi legănau
-Highlight: puterea Domnului Isus m-a izbăvit, uneori făcând <em>minuni</em> izbitor de puternic vizibile pentru asta.  Am
-Highlight: printre ei fusese şi fr. Isaac Feinstein, acel <em>minunat</em> copil al lui Dumnezeu care făcuse atâta de mult
-Highlight: departe pe un pământ străin şi vrăjmaş - numai <em>minunile</em> Bunului Dumnezeu, care mă însoţea necurmat, mi-au
-
-Score: 9.857142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
-Type: articol
-Author: Traian Dorz
-Highlight: această revărsare căci ea s-a întărit prin această <em>minune</em>. Şi nu ne putem închipui că biserica ar putea să
-Highlight: adânc încredinţaţi că mulţi dintre ei sunt nişte <em>minunaţi</em> copii ai lui Dumnezeu care au adus pe calea mântuirii
-Highlight: mântuirea tuturor acelora care o caută, în felul cel <em>minunat</em> pe care l-a vestit sf. ap. Pavel, sf. Ioan Gură
-Highlight: frăţietatea primilor creştini. Nu este ceva mai <em>minunat</em> decât să citeşti prin Faptele Apostolilor viaţa
-Highlight: primilor creştini. Duhul Sfânt a făcut adevărate <em>minuni</em> cu noi. Biserica
-Highlight: li s-au descoperit în somn sau vedenii, lucruri <em>minunate</em>... Asta ar însemna că pe ei Duhul Sfânt i-ar învăţa
-
-Score: 9.857142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: hotărârea mea. Mi-a mai rămas, ca printr-o adevărată <em>minune</em>, numărul de foaie în care printre cei intraţi în
-Highlight: <em>minunata</em> Lucrare a Oastei Domnului
-Highlight: februarie 1937, la numai 33 de ani. Dar ce ani <em>minunaţi</em>! Mai avem încă de vorbit despre el.  Tot
-Highlight:  lui de la Ghencea. Ce înfăptuiri <em>minunate</em> a lucrat acest luptător! Cea mai spaţioasă biserică-catedrală
-Highlight: activau pline de roade duhovniceşti şi de iniţiative <em>minunate</em>, sub îndrumarea unor preoţi şi laici înflăcăraţi
-Highlight: Aşa de <em>minunat</em> mergea Lucrarea Domnului când ispititorul a dezlănţuit
-
-Score: 9.857142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 27 - Întristarea cea binecuvântată
-Type: articol
-Author: Traian Dorz
-Highlight: demult, erau acum bătrâni... A fost pentru ei o <em>minune</em> cerească să vadă atât de vie şi de frumoasă astăzi
-Highlight: cum începusem încă din anii trecuţi sub acelaşi <em>minunat</em> generic care cuprindea în două cuvinte tot rostul
-Highlight: O Dumnezeul nostru binecuvântat, cât de <em>minunată</em> este Lucrarea noastră dată de harul Tău ceresc
-Highlight: revărsat şi îl reverşi mereu peste toţi aceşti <em>minunaţi</em> copii ai Tăi - iar prin ei ni-l reverşi şi nouă
-Highlight: umplând cortul, curtea, grădina unde eram. Ce <em>minunat</em> ne ascultase Dumnezeul nostru rugăciunile noastre
-Highlight: fraţii pe care Domnul i-a folosit şi îi foloseşte <em>minunat</em> în lucrarea de aducere a sufletelor la El sunt
-
-Score: 9.857142
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: tot ce am avut - distrugeri din care doar prin <em>minune</em> s-a mai salvat câte ceva. Dar ştiu că am căutat
-Highlight: Erau cunoscute adunările <em>minunate</em> din părţile Aradului... În
-Highlight: Duhul Domnului face să se nască între toţi acel <em>minunat</em> circuit al dragostei, care face să fie pe drumuri
-Highlight: Ce <em>minunat</em> este acest circuit frăţesc. Este ca sângele într-un
-Highlight: Sora aceasta avea şi un dar <em>minunat</em> de a cânta şi compune melodii. De la ea am reţinut
-Highlight: Ce <em>minunate</em> ni se păreau toate acestea şi ce entuziasmaţi
-
-Score: 9.857142
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Munca şi lupta
-Type: articol
-Author: Traian Dorz
-Highlight: obişnuită, ci de fiecare dată este o <em>minune</em>. De la Dumnezeu <em>minunile</em> acestea nu sunt totuşi prea rare.
-Highlight: oameni, despre câte un credincios simplu, dar <em>minunat</em>.
-Highlight: Noi am văzut, plini de uimire şi de admiraţie şi <em>minuni</em> de acestea.
-Highlight: 16 - Dumnezeu poate da binefacerile Sale <em>minunate</em> în chip tainic oricui vrea El.
-Highlight: părticică de câştig sau de slavă pentru toată lucrarea <em>minunată</em> pe care Dumnezeu Tatăl în Hristos, o desfăşoară
+Highlight: 43-Nici de <em>minunile</em> făcute în Egipt şi în Ţoan
 
 Score: 9.833333
 Volume: Meditații la Ev. după Ioan
@@ -1007,84 +997,27 @@ Highlight: Dragă suflet cititor, oare tu nu ai văzut atâtea <em>minuni</em> a
 
 Score: 9.833333
 Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 15 - Al doilea foc
-Type: articol
-Author: Traian Dorz
-Highlight: fi despărţit fiindcă lucrurile lui îi mergeau de <em>minune</em>. De convins nu ne putea convinge să ne schimbăm
-Highlight: unul protopop. Fratele Marini a vorbit atât de <em>minunat</em> încât i-a impresionat puternic pe toţi... apoi
-Highlight: săptămâni au trecut astfel. Şi tot timpul cât acest <em>minunat</em> om al lui Dumnezeu a stat la noi, nu pot spune
-Highlight: Ce <em>minunate</em> îndemnuri le erau acestea! Ce mângâiere şi întărire
-Highlight: ... Întorsesem astfel ceva tuturor acelor <em>minunaţi</em> evrei, începând cu Primul Evreu Isus, Mântuitorul
-
-Score: 9.833333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 16 - Din cetate în cetate...
-Type: articol
-Author: Traian Dorz
-Highlight: De multe ori am trecut printr-o <em>minune</em> printre cei ce ne urmăreau. Alte dăţi fuseseră
-Highlight: Trăiam <em>minunatele</em> bucurii în necazuri cum spune sfântul apostol
-Highlight:  fericite vremuri ale dragostei fierbinţi, ce <em>minunată</em> mărturie aţi depus voi pentru Numele Cel Sfânt
-Highlight: ieşi ei din închisoare am aflat multe lucruri <em>minunate</em>, ca despre nişte adevăraţi născuţi din nou în
-Highlight: suferinţelor lor pentru Hristos aduseseră astfel de roade <em>minunate</em> - ne umpleau sufletele de bucurie şi ne făceau
-
-Score: 9.833333
-Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 21 - După cei 50 de ani
+Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-Highlight: Taină şi <em>Minune</em>
-Highlight: sprijinul şi înţelegerea ierarhului său, - a realizat <em>minuni</em>. La numai zece ani de apostolat cu
-Highlight: patriei noastre puternice grupări ale acestei <em>minunate</em> mişcări duhovniceşti, schimbând în chip fericit
-Highlight: care se îndestulau cu o mare bucurie cu toţii. Ce <em>minunat</em> se realizau în felul acesta prin Oastea Domnului
-Highlight: Moldovanu, etc., îl însoţeau sporind mereu roadele <em>minunate</em> ale credinţei noastre şi ridicând nivelul spiritual
-
-Score: 9.833333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 9 - În vremea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: Dar, fiecare <em>minune</em> ţine trei zile... După trei zile m-am obişnuit
-Highlight: întâlnirii. Îmi plăcea felul lui hotărât - şi <em>minunatul</em> lui dar de vorbire.
-Highlight: Din birt, - casă de rugăciuni. Aşa s-a petrecut <em>minunea</em> schimbării casei fr. Damian din Ilova, jud. Severin
-Highlight: aceste câteva din miile de fapte şi de biruinţe <em>minunate</em> care se petreceau în vremea aceea pe tot întinsul
-Highlight: ce mare putere se răspândea Cuvântul cel Viu şi <em>minunat</em> al lui Dumnezeu în ţara noastră prin Lucrarea Oastei
+Highlight: asta dar şi că omeneşte starea lui pare că numai o <em>minune</em> a lui Dumnezeu ar mai putea-o ajuta. Ce tristă
+Highlight: inerţie a bisericii noastre. Că dacă aceste două <em>minuni</em> nu se vor produce prin Oastea Domnului, atunci
+Highlight: ar fi cu adevărat nişte slujitori ai cerului. Ce <em>minuni</em> mari s-au realizat acolo şi atunci, când pe scaunul
+Highlight: una cât şi cealaltă, ce opere nemuritoare şi ce <em>minuni</em> mari au fost în stare să realizeze...
+Highlight: Ţie Singur Îţi mai este cu putinţă să mai faci <em>minunea</em> trezirii şi a însufleţirii preoţimii noastre pentru
 
 Score: 9.833333
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Ce semn faci Tu ca să vedem?
+Book: Hristos - Mântuitorul nostru
+Title: Multe alte semne...
 Type: articol
 Author: Traian Dorz
-Highlight: semn la altul, de la o predică la alta, de la o <em>minune</em> până la alta.
-Highlight: toate că ieri văzuseră un semn atât de mare şi <em>minunat</em>, totuşi azi spun:  Ce
-Highlight: trist se adevereau temerile Domnului cu privire la <em>minuni</em>!  Credinţa
-Highlight: dragostea Ta prin care ai lucrat atâtea semne şi <em>minuni</em> înaintea noastră şi între noi.
-Highlight: nu ne laşi să uităm niciodată binefacerile şi <em>minunile</em> Tale faţă de noi, ca să nu cădem în cursa vrăjmaşului
-
-Score: 9.833333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Cum are omul acesta învăţătură?
-Type: articol
-Author: Traian Dorz
-Highlight: obişnuită, ci de fiecare dată este o <em>minune</em>. Dar la Dumnezeu <em>minunile</em> acestea nu sunt totuşi prea mari.
-Highlight: oameni, despre câte un credincios simplu, dar <em>minunat</em>.
-Highlight: Noi am văzut, plini de uimire şi de admiraţie, şi <em>minuni</em> de acestea.
-Highlight: Poate da binefacerile Sale <em>minunate</em> în chip tainic
-
-Score: 9.833333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
-Type: articol
-Author: Traian Dorz
-Highlight: strălucită <em>minune</em> lucrează prin acest suflet fapte şi roade nespus mai mari şi mai durabile. Ce <em>minunat</em> s-a
-Highlight: Domnului Isus. Şi pentru această <em>minunată</em> Lucrare care poartă Numele Său <em>minunat</em> şi care este familia ta cea
-Highlight: prin lucrarea unui curăţitor puternic. Dar cât de <em>minunată</em> strălucire capătă prin această putere o haină
+Highlight: cum El n-ar mai fi făcut niciodată până acum o <em>minune</em> în faţa noastră.
+Highlight: În faţa încercării acesteia uităm <em>minunile</em> de până aci.  -
+Highlight: Tot avem nevoie de alte <em>minuni</em>!
+Highlight: <em>minunea</em>
+Highlight: în viaţa ta Hristos a făcut nenumărate semne şi <em>minuni</em> de acestea şi de altele.
 
 Score: 9.833333
 Volume: Cugetări Nemuritoare
@@ -1096,18 +1029,6 @@ Highlight: aceste <em>minuni</em>. Ferice de oricine Îl primeşte, fiindcă ori
 Highlight: Dar pentru <em>minunile</em> mari este nevoie de oameni mari şi de credinţe
 Highlight: rugăm cel mai fierbinte - şi Dumnezeu va face <em>minunea</em> cea mai mare. Preamăriţi
 Highlight: Cum se fac aceste <em>minuni</em>? - Prin puterea Evangheliei care este Cuvântul
-
-Score: 9.833333
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Înţelegerea lucrurilor duhovniceşti
-Type: articol
-Author: Traian Dorz
-Highlight: Şi asta este o <em>minune</em>.
-Highlight: Ce <em>minuni</em> sunt acestea  şi
-Highlight: Totuşi ele rămân mereu <em>minuni</em> pentru noi, deşi zilnic şi repetat le vedem cu
-Highlight: Dar e aşa de <em>minunat</em> şi de frumos.  4
-Highlight: Dar se face tot atât de <em>minunat</em> şi de frumos cum rodeşte pământul dacă primeşte
 
 Score: 9.8
 Volume: Cugetări Nemuritoare
@@ -1121,81 +1042,36 @@ Highlight: Dumnezeu şi o viaţă de rugăciune, are atât de multe <em>minuni</
 Highlight: 7 - Vai, noi cei mai mulţi uităm aşa de repede <em>minunea</em> pe care Domnul a făcut-o cu noi sau cu ai noştri
 
 Score: 9.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 14 - Strâmta cărare mântuitoare
-Type: articol
-Author: Traian Dorz
-Highlight: târziu prin comuna Olpreţ, unde am scăpat ca prin <em>minune</em> de o cursă pe care ne-o întinseseră nişte jandarmi
-Highlight: Acolo, spunea el, te-am descris cât se poate de <em>minunat</em> sub numele de David Dordea, ca pe un fel de psalmist
-Highlight: ortodocşi cât şi greco-catolici. Acolo s-a putut vedea <em>minunea</em> care s-ar fi putut realiza în dragostea lui Hristos
-Highlight: aflaseră, pentru prima dată de existenţa unei aşa de <em>minunate</em> lucrări de înfrăţire duhovnicească în ţara noastră
-
-Score: 9.8
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 17 - Mereu prin ape tulburi
+Title: Cap. 16 - Există un echilibru
 Type: articol
 Author: Traian Dorz
-Highlight: bucuros şi spunea peste tot cum Domnul Isus a făcut o <em>minune</em> că l-a scăpat, făcând de ruşine pe vrăjmaşul care
-Highlight: Ce <em>minunat</em> moment era acesta pentru o iniţiativă mare şi binecuvântată
-Highlight: răspunsului celor invitaţi - şi făceam la planuri ce <em>minuni</em> se vor putea realiza în ţara noastră prin toate
-Highlight: suflete noi care se predau acum Domnului erau rodul <em>minunat</em> al acestor osteneli făcute pentru Domnul într-un
+Highlight: izbăvire continuă. Şi toate multele <em>minuni</em> deveniseră o unică şi mare <em>minune</em>. Trecând prin sute de situaţii
+Highlight: puterea Domnului Isus m-a izbăvit, uneori făcând <em>minuni</em> izbitor de puternic vizibile pentru asta.  Am
+Highlight: departe pe un pământ străin şi vrăjmaş - numai <em>minunile</em> Bunului Dumnezeu, care mă însoţea necurmat, mi-au
 
 Score: 9.8
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
-Title: Cap. 19 - Mereu morminte noi
+Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
-Highlight: să-l sărute, să-l întrebe, să-l atingă, ca pe o <em>minune</em>. Dar el cu capul plecat, vădit stingherit şi ruşinat
-Highlight: Dar, cu cât cresc mormintele aici, cu atât cresc <em>minunile</em> Acolo. Şi cu cât se sporesc în cer mai mulţi cei
-Highlight: va străluci mai <em>minunat</em> smerit
-Highlight: va străluci mai <em>minunat</em>...  După
+Highlight: mereu. Fiecare dintre noi suntem o realizare, o <em>minune</em>, o multiplicare a luptei, a mărturisirii vieţii
+Highlight: noastră Cuvântul şi Duhul Sfânt au făcut adevărate <em>minuni</em>. Biserica ar trebui să sprijinească cu toată puterea
+Highlight: veşnic şi să-i fim recunoscători totdeauna. Pe când <em>minunile</em> din vieţile celorlalţi sfinţi şi înaintaşi ai
+Highlight: s-au rărit şi s-au împuţinat cu vremea, iată că <em>minunile</em> din viaţa acestui sfânt părinte se înmulţesc mereu
 
 Score: 9.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 19 - Omul trimes de Dumnezeu
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pâinea noastră
+Title: Ce semn faci Tu ca să vedem?
 Type: articol
 Author: Traian Dorz
-Highlight: Nu ştiu prin ce <em>minune</em> însă mi-a mai rămas din el o filă veche. Am găsit
-Highlight: Ce <em>minunată</em> era înţelepciunea dată de Dumnezeu acestui om
-Highlight: când ajunsese să-şi piardă răbdarea - iată ce <em>minunat</em> se împlineau toate dorinţele sale. Sosise în sfârşit
-Highlight: Ce <em>minunat</em> om era. Şi ce inimă mare şi bună avea în el.
-
-Score: 9.8
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 23 - Şi ultimul 2
-Type: articol
-Author: Traian Dorz
-Highlight: s-au complicat şi totul a fost salvat ca printr-o <em>minune</em>. Dar despre asta poate va veni vremea mai târziu
-Highlight: lucrând cu bădiţa Dani şi vorbind cu el despre <em>minunile</em> din artă şi sculptură văzute de el prin Roma şi
-Highlight: stegar corespunzător scopului şi frumuseţii acestei <em>minunate</em> oştiri a lui Hristos.
-Highlight: tulburi în care s-au scufundat, în afara Lucrării <em>minunate</em> a Domnului, care i-au făcut cunoscuţi, dar de
-
-Score: 9.8
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-Highlight: îndreptare pentru unii... Singur Dumnezeu, prin vreo <em>minune</em> dacă îi va mai putea salva din orbia îngâmfată
-Highlight: <em>Minunată</em>-i Noaptea Sfântă
-Highlight: O, Mare şi Puternic Dumnezeu al <em>Minunilor</em>, singura noastră speranţă pentru cei ce nu mai
-Highlight: de nimeni, este numai la Tine. Îndură-Te şi fă <em>minunea</em> transfigurării lor, până nu li se desăvârşeşte
-
-Score: 9.8
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 33 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-Highlight: cu un aer sărbătoresc şi unic. Extraordinar ce <em>minune</em> face Dumnezeu pentru Lucrarea Sa şi pentru alesul
-Highlight: Ce <em>minunate</em> sunt adevărurile şi învăţămintele acestui mormânt
-Highlight: privelişte unică şi înălţătoare! Ce adevăr unic şi <em>minunat</em> ne grăieşte nouă şi tuturor astăzi Duhul Sfânt
-Highlight: dragostei nemuritoare. Mulţumim lui Dumnezeu pentru <em>minunea</em> neobişnuită a sărbătorii şi a adevărului pe care
+Highlight: semn la altul, de la o predică la alta, de la o <em>minune</em> până la alta.
+Highlight: trist se adevereau temerile Domnului cu privire la <em>minuni</em>!  Credinţa
+Highlight: dragostea Ta prin care ai lucrat atâtea semne şi <em>minuni</em> înaintea noastră şi între noi.
+Highlight: nu ne laşi să uităm niciodată binefacerile şi <em>minunile</em> Tale faţă de noi, ca să nu cădem în cursa vrăjmaşului
 
 Score: 9.8
 Volume: Meditații la Ev. după Ioan
@@ -1209,15 +1085,58 @@ Highlight: Pentru cine crede puternic aceste adevăruri, <em>minunea</em> se să
 Highlight: O Dumnezeule Puternic al Iubirii şi <em>Minunii</em>,  dăruieşte-ne
 
 Score: 9.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Cum ţi s-au deschis ochii?
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Călăuzirea Duhului Sfânt
 Type: articol
 Author: Traian Dorz
-Highlight: că s-a petrecut cu vecinul, cu prietenul lor o <em>minune</em>, dar nu înţeleg cum s-a petrecut asta cu el.
-Highlight: O, ce prilej <em>minunat</em> pentru sufletul vindecat de Hristos este atunci
-Highlight: din El, prin El şi pentru El sunt toate aceste <em>minuni</em>.
-Highlight: fii binecuvântat, pentru că toată <em>minunea</em> vindecării noastre se datoreşte numai milei şi
+Highlight: Nu este asta o <em>minune</em> a revărsării Duhului Sfânt, - după cum ne-a spus
+Highlight: făcut <em>minunea</em> înţelegerii în felurite limbi a Aceluiaşi Cuvânt.  Aceasta
+Highlight: Aceasta este totdeauna <em>minunea</em> pe care
+Highlight: 14 - Cine a făcut <em>minunea</em> asta, dacă nu darul şi Harul Duhului Sfânt?  Care
+
+Score: 9.8
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Lauda şi încrederea noastră
+Type: articol
+Author: Traian Dorz
+Highlight: pare ceva foarte normal ca şi cum nu ar avea loc o <em>minune</em> acolo.
+Highlight: - <em>minunile</em> pe care Domnul le face cu ai Săi şi pentru ei
+Highlight: înduioşat şi recunoscător vede omul lui Dumnezeu <em>minunile</em> pe care El le face în viaţa alor Săi şi spre binele
+Highlight: iubirea Domnului care zilnic lucrează pentru el <em>minuni</em>, aranjându-le toate în chipul în care, el însuşi
+
+Score: 9.8
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: S-a întors... şi a văzut pe Isus
+Type: articol
+Author: Traian Dorz
+Highlight: cu o dragoste unică Îţi mulţumesc ca de fiecare <em>minune</em>.
+Highlight: O, când începi să vezi <em>minunile</em> lui Dumnezeu, atunci ele vin nu numai pe neaşteptate
+Highlight: O, cât de adevărată este <em>minunea</em> aceasta!  Cât
+Highlight: Nenumărate au fost şi sunt <em>minunile</em> pe care le-a făcut iubirea lui Hristos, spre a
+
+Score: 9.8
+Volume: Cugetări Nemuritoare
+Book: Strălucirea Biruinţei
+Title: Veghere şi apărare
+Type: articol
+Author: Traian Dorz
+Highlight: şi ca o <em>minune</em> puternică a harului ceresc.
+Highlight: întinsul hotarelor noastre sunt numai semne ale <em>minunilor</em> pe care le-a făcut Dumnezeu cu noi, în cursul
+Highlight: Bisericii Domnului pe pământ, este o înşiruire de <em>minuni</em> făcute de Dumnezeu prin toate veacurile, cu aceeaşi
+Highlight: Hristos o va mai trece încă prin multe <em>minuni</em>, până când tot ceea ce i-a pregătit Dumnezeu să
+
+Score: 9.75
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: A crede în Isus Hristos
+Type: articol
+Author: Traian Dorz
+Highlight: vom putea iubi ca El, fiindcă iubirea e o mare <em>minune</em>.
+Highlight: bine nimănui, - fără o credinţă, atât de mare cât <em>minunea</em> pe care dorim s-o facem sau s-o primim.
+Highlight: Hristos, - în măsura aceasta vom avea şi puterea şi <em>minunile</em>.
 
 Score: 9.75
 Volume: Meditații la Ev. după Ioan
@@ -1230,61 +1149,51 @@ Highlight: de <em>minuni</em> făcute de Domnul în viaţa lor sau a familiei lo
 Highlight: întorc poate niciodată, căci s-au obişnuit cu <em>minunile</em>,
 
 Score: 9.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 11 - Ce minunat lucrează Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: ameninţarea lor... Astfel am scăpat noi printr-o <em>minune</em>, dar cei la care aflaseră ei că vom merge şi care
+Highlight: aşa a şi fost. Nu mult mai târziu aveam să vedem <em>minuni</em> la care nici nu putuserăm gândi, la acel modest
+Highlight: naşterea din nou. Iar deodată cu aceasta, câte <em>minuni</em> au apărut: misionarismul laic, din vremea creştinismului
+
+Score: 9.75
 Volume: Hristos - Marturia mea
 Book: Hristos - Marturia mea
-Title: Cap. 4 - Vrăjmaşul caută viaţa pruncului
+Title: Cap. 26 - Limpezirea apelor adânci
 Type: articol
 Author: Traian Dorz
-Highlight: explica altfel salvarea mea de atunci, decât ca pe o <em>minune</em> pe care Domnul şi Mântuitorul meu a făcut-o pentru
-Highlight: din câte nu le-am văzut!), a intervenit în chip <em>minunat</em> bunătatea şi grija Lui şi m-a salvat de la moarte
-Highlight: Acestea au fost doar câteva din <em>minunile</em> prin care Dumnezeu şi Mântuitorul meu m-a salvat
+Highlight: îndreptare pentru unii... Singur Dumnezeu, prin vreo <em>minune</em> dacă îi va mai putea salva din orbia îngâmfată
+Highlight: O, Mare şi Puternic Dumnezeu al <em>Minunilor</em>, singura noastră speranţă pentru cei ce nu mai
+Highlight: de nimeni, este numai la Tine. Îndură-Te şi fă <em>minunea</em> transfigurării lor, până nu li se desăvârşeşte
 
 Score: 9.75
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre credinţă
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 4
+Title: Cap. 5 - Necazuri şi speranţe
 Type: articol
 Author: Traian Dorz
-Highlight: Cine speră-n vreo <em>minune</em>
-Highlight: 68 - De la Dumnezeu aşteaptă şi <em>minuni</em> când
-Highlight: prin credinţă-ajungi <em>minunea</em>,
-
-Score: 9.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: După aceea s-a dus şi a chemat
-Type: articol
-Author: Traian Dorz
-Highlight: Căci numai această <em>minune</em> poate face pe nişte fiinţe slabe şi nepregătite
-Highlight: Ce <em>minunată</em> slujbă a făcut şi de data aceasta <em>minunata</em> noastră soră Marta!  Ce
-
-Score: 9.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
-Type: articol
-Author: Traian Dorz
-Highlight: E o <em>minune</em> cerească izbăvirea pe care Domnul Isus o dă oricui
-Highlight: născut din nou, atunci în fiinţa noastră s-a făcut <em>minunea</em> altoirii firii celei noi.  Până
-Highlight: Domnul Isus a făcut mereu şi face mereu astfel de <em>minuni</em>, izbăvind pe oricine Îl cheamă cu lacrimi de căinţă
-
-Score: 9.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
-Type: articol
-Author: Traian Dorz
-Highlight: am căzut la picioarele Crucii lui Isus... Şi ce <em>minune</em> s-a produs în noi! Ce schimbare s-a făcut în toată
-Highlight: cu atât vezi mai departe şi mai frumos peisajul <em>minunat</em> în care pătrunde sufletul care intră în această
-Highlight: care ne-o arată tot mersul crescând al acestor <em>minunate</em> versete ale Sfântului Cuvânt. Lumina în care pătrundem
+Highlight: O <em>minune</em> s-a petrecut îndată ce sufletul mamei a trecut
+Highlight: ne puteam mişca până de curând. Iar acum iată ce <em>minuni</em> face Dumnezeu!... Ne putem aduna şi petrece nopţi
+Highlight: slavă Domnului nostru Cel Atotputernic pentru <em>minunea</em> aceasta care pare de necrezut. Vorbitorii se perindă
 
 Score: 9.75
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Mama lui Isus a zis
+Book: Hristos - Învăţătorul nostru
+Title: Cum are omul acesta învăţătură?
 Type: articol
 Author: Traian Dorz
-Highlight: vor putea totuşi fi ajutaţi şi mântuiţi ca prin <em>minune</em>, pe vreo altă uşă, şi nu pe Singura Uşă care este
-Highlight: virtuţilor ei cereşti care sunt atât de rare, de <em>minunate</em> şi de frumoase.  Sufletele
-Highlight: Ce <em>minunată</em> şi sfântă predică sunt aceste cuvinte.  Nici
+Highlight: obişnuită, ci de fiecare dată este o <em>minune</em>. Dar la Dumnezeu <em>minunile</em> acestea nu sunt totuşi prea mari.
+Highlight: Noi am văzut, plini de uimire şi de admiraţie, şi <em>minuni</em> de acestea.
+
+Score: 9.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Vindecătorul nostru
+Title: Cum ţi s-au deschis ochii?
+Type: articol
+Author: Traian Dorz
+Highlight: că s-a petrecut cu vecinul, cu prietenul lor o <em>minune</em>, dar nu înţeleg cum s-a petrecut asta cu el.
+Highlight: din El, prin El şi pentru El sunt toate aceste <em>minuni</em>.
+Highlight: fii binecuvântat, pentru că toată <em>minunea</em> vindecării noastre se datoreşte numai milei şi
 

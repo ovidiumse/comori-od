@@ -1,170 +1,136 @@
-+------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Titlu                                                                                    | Occurrences                                                        | Author      | Tip                              | Carte                        | Volum   |
-+------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-| Neprihănirea şi vinovăţia                                                                | {'osânda', 'osândă', 'osândiţi'}                                   | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Urmarea adevărată a lui Isus                                                             | {'osândă', 'osânda', 'osândi', 'osândiţi'}                         | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)               | {'osânda', 'osândă', 'osândit'}                                    | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                   | {'osânda', 'osândă', 'osândite'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| În ce priveşte păcatul                                                                   | {'osânda', 'osândă', 'osândirea'}                                  | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| Despre carte                                                                             | {'osânda', 'osândă'}                                               | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Pricepere şi teamă                                                                       | {'osânda'}                                                         | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
-| Curajul şi frica                                                                         | {'osânda', 'osândă', 'osândi', 'osândiţi'}                         | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Nici Eu nu te osândesc                                                                   | {'osândă', 'osândesc', 'osândi'}                                   | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Şi au ieşit unul câte unul...                                                        | {'osânda', 'osândeau', 'osândit', 'osândindu'}                     | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                   | {'osânda', 'osândă', 'osândise', 'osânditoare', 'osândi'}          | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - A treia Judecată                                                                | {'osânda', 'osândit'}                                              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 6 - Zile rânduite şi paşi număraţi                                                  | {'osânda', 'osândit'}                                              | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                                 | {'osândă', 'osânda', 'osândirea', 'osândi'}                        | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)                 | {'osândă', 'osânda', 'osândiţi'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                          | {'osânda', 'osândiţi', 'osândă'}                                   | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Pe acela îl veţi primi                                                                   | {'osânda', 'osândă', 'osândiţi'}                                   | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                          | {'osândă', 'osândit'}                                              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Hoţi şi tâlhari                                                                          | {'osânda', 'osândiţi'}                                             | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)             | {'osândă', 'osânda', 'osândea'}                                    | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Ucenicul şi prigonitorul                                                                 | {'osânda', 'osândi'}                                               | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Aprozii s-au întors                                                                      | {'osânda'}                                                         | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 23 - Şi ultimul 2                                                                   | {'osânda'}                                                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 8 - Şi laţul s-a rupt                                                               | {'osândă', 'osânda'}                                               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                    | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Primiţi pe Domnul vostru!                                                                | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Primiţi pe Domnul vostru!                                                                | {'osânda', 'osândă'}                                               | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
-| Să mănânce... şi să nu moară                                                             | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'osândă', 'Osânda', 'osândiţi', 'osândite', 'osândit', 'osândim'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Unde sunt pârâşii tăi?                                                                   | {'osândă', 'osânda', 'osândit', 'osândi', 'osândiţi'}              | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| Acela despre care vorbea Isus                                                            | {'osânda', 'osândite', 'osândă', 'osândiţi', 'osândit'}            | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
-| Măreţia şi cuprinderea                                                                   | {'osândă', 'osânda', 'osândit', 'osândesc'}                        | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Roadele Adevărului şi Dragostei                                                          | {'Osândită', 'osândă', 'osânda', 'osândind', 'osândi', 'osândit'}  | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica a 14-a după Rusalii                                            | {'osândiţi', 'osânda', 'osândi', 'osândit'}                        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)       | {'osânda', 'osândire', 'osândirea', 'osândesc', 'osândiţi'}        | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| ... Mânia lui Dumnezeu rămâne peste el                                                   | {'osândă', 'osânda', 'osândit'}                                    | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| ...Nu va vedea moartea                                                                   | {'osânda', 'osândit'}                                              | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica 1-a a Postului Mare                                            | {'osânda', 'osândit'}                                              | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| În ce priveşte judecata                                                                  | {'Osânda', 'osândă', 'osândind', 'osândit'}                        | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
-| ... Dacă nu se naşte cineva din nou...                                                   | {'osândă', 'osândi'}                                               | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cap. 1 - Cel mai frumos Isus                                                             | {'osândă', 'osânda', 'Oşand'}                                      | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răsplata celor nerăsplătiţi                                                    | {'osândă', 'osânda', 'osândit'}                                    | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 20 - Şi iertarea trebuie plătită!                                                   | {'osândă', 'osânda', 'osândea'}                                    | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 6 - Între două judecăţi                                                             | {'osânda', 'osândă', 'osândiţi'}                                   | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Cap. 9 - A doua judecată                                                                 | {'osândă', 'osânda', 'osândesc'}                                   | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Despre păcat                                                                             | {'osânda', 'osândesc'}                                             | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Transilvaniei                                                                | {'osânda', 'osândit'}                                              | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Fiorul şi minunea                                                                        | {'osândă', 'osânda', 'osândi'}                                     | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Hristos, Stânca noastră                                                                  | {'osândă', 'osânda', 'osândit'}                                    | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Iarăşi în sala de judecată                                                               | {'osândă', 'osândiţi'}                                             | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                                 | {'osânda', 'osândă', 'osândi'}                                     | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)   | {'osândă', 'osânda', 'osândit'}                                    | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)           | {'osânda', 'osândi'}                                               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                            | {'osândă', 'osândi'}                                               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Păcatul, izvorul răului                                                                  | {'osândă', 'osânda', 'osândesc'}                                   | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Toată judecata a dat-o Fiului                                                            | {'osânda', 'osândă', 'osândit'}                                    | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Încercări şi răsplătiri                                                                  | {'osânda', 'osândi'}                                               | Traian Dorz | Mărgăritarul Ascuns              | Cugetări Nemuritoare         | articol |
-| Şi voi de asemenea veţi mărturisi                                                        | {'osândă', 'osânda', 'osândiţi'}                                   | Traian Dorz | Hristos - Viţa vieţii noastre    | Meditații la Ev. după Ioan   | articol |
-| Am aşteptat Isuse                                                                        | {'osânda'}                                                         | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
-| Auzirea şi ascultarea                                                                    | {'osânda'}                                                         | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                 | {'osândă', 'osânda'}                                               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                   | {'osândă', 'osânda'}                                               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                             | {'osânda', 'osândă'}                                               | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 22 - Al doilea 2-4-2                                                                | {'osânda'}                                                         | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
-| Cap. 23 - Cuvânt Testamentar                                                             | {'osânda'}                                                         | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                         | {'osânda', 'Osânda'}                                               | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Cercetaţi Scripturile                                                                    | {'osândă'}                                                         | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cine nu intră pe uşă...                                                                  | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Conştiinţa şi mustrarea                                                                  | {'osânda'}                                                         | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
-| Cuvântul S-a făcut Trup...                                                               | {'osânda'}                                                         | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
-| Când va veni Hristos, ne va spune                                                        | {'osândă'}                                                         | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
-| Dacă aţi fi orbi, n-aţi avea păcat                                                       | {'osânda'}                                                         | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Dar cel plătit lasă oile                                                                 | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
-| Despre alcool                                                                            | {'osânda'}                                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Moldovei                                                                     | {'osânda'}                                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Din părţile Olteniei                                                                     | {'osânda'}                                                         | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                 | {'osândă', 'osânda'}                                               | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului)                | {'osândă'}                                                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 5-a a Postului Mare                                          | {'osândă'}                                                         | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Lumea nu Te-a cunoscut                                                                   | {'osândă', 'osânda'}                                               | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Moartea şi Viaţa                                                                         | {'osânda', 'osândă'}                                               | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
-| Moştenire şi moştenitori                                                                 | {'osândă'}                                                         | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
-| Nu ca să judece                                                                          | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Păcatul                                                                                  | {'osânda', 'osândă'}                                               | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| Scumpul nostru Răscumpărător,                                                            | {'osânda'}                                                         | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| Toţi cei născuţi                                                                         | {'osânda', 'osândă'}                                               | Traian Dorz | Cântări Nemuritoare vol. 8       | Cântări Nemuritoare          | poezie  |
-| Tu ai purtat în locul meu                                                                | {'osânda'}                                                         | Traian Dorz | Cântări Nemuritoare vol. 7       | Cântări Nemuritoare          | poezie  |
-| Vedeţi că nu câştigaţi nimic                                                             | {'osânda', 'osândă'}                                               | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
-| Singurul Mântuitor este Hristos                                                          | {'osânda', 'osândită', 'osândit', 'osândindu'}                     | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Cap. 6 - Alte amare adevăruri                                                            | {'osânda', 'osândit', 'osânditor'}                                 | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
-| Bucuria aflării Domnului                                                                 | {'osânda', 'osândi', 'osândit'}                                    | Traian Dorz | Piatra Scumpă                    | Cugetări Nemuritoare         | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                          | {'osânda', 'osândiţi', 'osândirea'}                                | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
-| Familia                                                                                  | {'osândă', 'osândit', 'osândesc'}                                  | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)              | {'osânda', 'osândiţi'}                                             | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
-| Minunile şi credinţa                                                                     | {'osânda', 'osândi'}                                               | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Mărturia şi crezarea                                                                     | {'osândă', 'osândit', 'osândi'}                                    | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
-| Neamul şi arhiereii...                                                                   | {'osânda', 'osândirea', 'osândit', 'osândi'}                       | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-| ... vor veni romanii...                                                                  | {'osândă', 'osândit', 'osândirea'}                                 | Traian Dorz | Hristos - Învierea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cap. 4 - În virtutea frumosului avânt...                                                 | {'osândă', 'osândit'}                                              | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
-| Ce pâră aduceţi împotriva Omului - Acestuia?                                             | {'osânda', 'osândiţi', 'osândite'}                                 | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
-+------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------+----------------------------------+------------------------------+---------+
-Searching Osanda using http://localhost:9000...
-Got 585 hits:
-Score: 7.3166666
++------------------------------------------------------------------------------------------+---------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Titlu                                                                                    | Occurrences                     | Author      | Tip                              | Carte                        | Volum   |
++------------------------------------------------------------------------------------------+---------------------------------+-------------+----------------------------------+------------------------------+---------+
+| Păcatul şi osânda                                                                        | {'osânda'}                      | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Uşurătatea şi osânda                                                                     | {'osânda'}                      | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Pricepere şi teamă                                                                       | {'osânda', 'osândei'}           | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Despre carte                                                                             | {'osânda', 'osândă'}            | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)               | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                   | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Neprihănirea şi vinovăţia                                                                | {'osânda', 'osândă'}            | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Urmarea adevărată a lui Isus                                                             | {'osândă', 'osânda'}            | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| În ce priveşte păcatul                                                                   | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Pacea noastră          | Meditații la Ev. după Ioan   | articol |
+| Cap. 8 - Al şaptelea foc                                                                 | {'osândă', 'osânda', 'osândei'} | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| ... Şi au ieşit unul câte unul...                                                        | {'osânda'}                      | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Aprozii s-au întors                                                                      | {'osânda'}                      | Traian Dorz | Hristos - Învăţătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| Cap. 1 - Semnul apostoliei şi preţul adevărului                                          | {'osândă'}                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 23 - Şi ultimul 2                                                                   | {'osânda'}                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 6 - Zile rânduite şi paşi număraţi                                                  | {'osânda'}                      | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 8 - A treia Judecată                                                                | {'osânda'}                      | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 8 - Şi laţul s-a rupt                                                               | {'osândă', 'osânda'}            | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Curajul şi frica                                                                         | {'osânda', 'osândă'}            | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Eşti dator!                                                                              | {'osândă'}                      | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Hoţi şi tâlhari                                                                          | {'osânda'}                      | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)                 | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)                          | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 21-a după Rusalii - (Pilda semănătorului)                    | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)                   | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)             | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Pe acela îl veţi primi                                                                   | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Primiţi pe Domnul vostru!                                                                | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Primiţi pe Domnul vostru!                                                                | {'osânda', 'osândă'}            | Traian Dorz | Cântări Nemuritoare vol. 1       | Cântări Nemuritoare          | poezie  |
+| Să mănânce... şi să nu moară                                                             | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Pâinea noastră         | Meditații la Ev. după Ioan   | articol |
+| Ucenicul şi prigonitorul                                                                 | {'osânda'}                      | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Înştiinţarea şi lumina                                                                   | {'osânda', 'osândă'}            | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| ... Mânia lui Dumnezeu rămâne peste el                                                   | {'osândă', 'osânda', 'osândei'} | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)                 | {'osândă', 'osânda', 'osândei'} | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| ... Dacă nu se naşte cineva din nou...                                                   | {'osândă'}                      | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| ...Nu va vedea moartea                                                                   | {'osânda'}                      | Traian Dorz | Hristos - Luminătorul nostru     | Meditații la Ev. după Ioan   | articol |
+| A fi în Hristos                                                                          | {'osânda', 'osândă'}            | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Acela despre care vorbea Isus                                                            | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Modelul nostru         | Meditații la Ev. după Ioan   | articol |
+| Acum are loc judecata lumii                                                              | {'osândă', 'Osânda'}            | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Adevăratul ucenic al Domnului                                                            | {'osânda', 'osândă'}            | Traian Dorz | Lupta cea Bună                   | Cugetări Nemuritoare         | articol |
+| Am aşteptat Isuse                                                                        | {'osânda'}                      | Traian Dorz | Poruncile Iubirii                | Cugetări Nemuritoare         | poezie  |
+| Am aşteptat Isuse                                                                        | {'osânda'}                      | Traian Dorz | Cântări Nemuritoare vol. 9       | Cântări Nemuritoare          | poezie  |
+| Arme şi roade                                                                            | {'osândă', 'osânda'}            | Traian Dorz | Cununile Slăvite                 | Cugetări Nemuritoare         | articol |
+| Ascultarea Cuvântului                                                                    | {'osânda', 'osândă'}            | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Auzirea şi ascultarea                                                                    | {'osânda'}                      | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Cap. 1 - Cel mai frumos Isus                                                             | {'osândă', 'osânda'}            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                 | {'osândă', 'osânda'}            | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răsplata celor nerăsplătiţi                                                    | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                                                   | {'osândă', 'osânda'}            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 2 - A treia zi istorică                                                             | {'osânda', 'osândă'}            | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 20 - Şi iertarea trebuie plătită!                                                   | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 22 - Al doilea 2-4-2                                                                | {'osânda'}                      | Traian Dorz | Hristos - Marturia mea           | Hristos - Marturia mea       | articol |
+| Cap. 23 - Cuvânt Testamentar                                                             | {'osânda'}                      | Traian Dorz | Istoria unei Jertfe vol. 4       | Istoria unei Jertfe          | articol |
+| Cap. 3 - La scadenţa ispăşirilor                                                         | {'osânda', 'Osânda'}            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cap. 6 - Între două judecăţi                                                             | {'osânda', 'osândă'}            | Traian Dorz | Istoria unei Jertfe vol. 2       | Istoria unei Jertfe          | articol |
+| Cap. 9 - A doua judecată                                                                 | {'osândă', 'osânda'}            | Traian Dorz | Istoria unei Jertfe vol. 3       | Istoria unei Jertfe          | articol |
+| Cercetaţi Scripturile                                                                    | {'osândă'}                      | Traian Dorz | Hristos - Binefăcătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Cernerea Lucrării Domnului                                                               | {'osânda', 'osândă'}            | Traian Dorz | Garanţia Veşnică                 | Cugetări Nemuritoare         | articol |
+| Cine crede... să nu rămână în întuneric                                                  | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Împăratul nostru       | Meditații la Ev. după Ioan   | articol |
+| Cine nu intră pe uşă...                                                                  | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Conştiinţa şi mustrarea                                                                  | {'osânda'}                      | Traian Dorz | Avuţia Sfântului Moştenitor      | Cugetări Nemuritoare         | articol |
+| Cutremuraţi-vă şi nu păcătuiţi                                                           | {'osândă'}                      | Traian Dorz | Eterna Iubire                    | Cugetări Nemuritoare         | articol |
+| Cuvântul S-a făcut Trup...                                                               | {'osânda'}                      | Traian Dorz | Hristos - Dumnezeul nostru       | Meditații la Ev. după Ioan   | articol |
+| Când se va striga                                                                        | {'osândă'}                      | Traian Dorz | Cântări Nemuritoare vol. 10      | Cântări Nemuritoare          | poezie  |
+| Când va veni Hristos, ne va spune                                                        | {'osândă'}                      | Traian Dorz | Hristos - Izvorul nostru         | Meditații la Ev. după Ioan   | articol |
+| Dacă aţi fi orbi, n-aţi avea păcat                                                       | {'osânda'}                      | Traian Dorz | Hristos - Vindecătorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Dacă fiecare...                                                                          | {'osânda', 'osândă'}            | Traian Dorz | Şi acum să facem                 | Cugetări Nemuritoare         | articol |
+| Dar cel plătit lasă oile                                                                 | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Păstorul nostru        | Meditații la Ev. după Ioan   | articol |
+| Despre alcool                                                                            | {'osânda'}                      | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Despre păcat                                                                             | {'osânda'}                      | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Moldovei                                                                     | {'osânda'}                      | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Olteniei                                                                     | {'osânda'}                      | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Din părţile Transilvaniei                                                                | {'osânda'}                      | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Dincoace şi dincolo                                                                      | {'osânda', 'osândă'}            | Traian Dorz | Săgeţile biruitoare              | Cugetări Nemuritoare         | articol |
+| Fiorul şi minunea                                                                        | {'osândă', 'osânda'}            | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Fărădelegile şi Dreptatea                                                                | {'osândă'}                      | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Hristos, Stânca noastră                                                                  | {'osândă', 'osânda'}            | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Iarăşi în sala de judecată                                                               | {'osândă'}                      | Traian Dorz | Hristos - Răscumpărătorul nostru | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica 1-a a Postului Mare                                            | {'osânda'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 14-a după Rusalii                                            | {'osânda'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 23-a după Rusalii - (Vindecarea îndrăcitului)                | {'osândă'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina) | {'osândă', 'Osânda'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 5-a a Postului Mare                                          | {'osândă'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 6-a după Paşti - (a orbului)                                 | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)   | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)           | {'osânda'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)       | {'osânda'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                            | {'osândă'}                      | Traian Dorz | Hristos - Puterea Apostoliei     | Hristos - Puterea Apostoliei | articol |
+| Legea Dragostei                                                                          | {'osânda'}                      | Traian Dorz | Porţile Veşniciei                | Cugetări Nemuritoare         | articol |
+| Lucrarea Sfântului Duh                                                                   | {'osânda', 'osândă'}            | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Lumea nu Te-a cunoscut                                                                   | {'osândă', 'osânda'}            | Traian Dorz | Hristos - Mijlocitorul nostru    | Meditații la Ev. după Ioan   | articol |
+| Mila şi dreptatea                                                                        | {'osânda'}                      | Traian Dorz | Numele Biruitorului              | Cugetări Nemuritoare         | articol |
+| Moartea şi Viaţa                                                                         | {'osânda', 'osândă'}            | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
+| Moştenire şi moştenitori                                                                 | {'osândă'}                      | Traian Dorz | Păşunile Dulci                   | Cugetări Nemuritoare         | articol |
+| Mântuirea lui Dumnezeu                                                                   | {'osânda', 'osândă'}            | Traian Dorz | Mărturisirea Strălucită          | Cugetări Nemuritoare         | articol |
+| Măreţia şi cuprinderea                                                                   | {'osândă', 'osânda'}            | Traian Dorz | Calea Bunului Urmaş              | Cugetări Nemuritoare         | articol |
+| Nu ca să judece                                                                          | {'osânda', 'osândă'}            | Traian Dorz | Hristos - Înnoitorul nostru      | Meditații la Ev. după Ioan   | articol |
+| Pe urmele Domnului                                                                       | {'osândă', 'osânda'}            | Traian Dorz | Crucea Mântuitoare               | Cugetări Nemuritoare         | articol |
+| Privirea nevinovăţiei                                                                    | {'osândă'}                      | Traian Dorz | Răsplata Ascultării              | Cugetări Nemuritoare         | articol |
+| Păcatul                                                                                  | {'osânda', 'osândă'}            | Traian Dorz | Cântări Nemuritoare vol. 3       | Cântări Nemuritoare          | articol |
+| Păcatul, izvorul răului                                                                  | {'osândă', 'osânda'}            | Traian Dorz | Lumina Iubitului Fiu             | Cugetări Nemuritoare         | articol |
++------------------------------------------------------------------------------------------+---------------------------------+-------------+----------------------------------+------------------------------+---------+
+Searching Osanda using https://api.comori-od.ro...
+Got 573 hits:
+Score: 11.0
 Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Neprihănirea şi vinovăţia
+Book: Porţile Veşniciei
+Title: Păcatul şi osânda
 Type: articol
 Author: Traian Dorz
-Highlight: pierduţi acoperindu-i, ca să sufere El loviturile şi <em>osânda</em> cuvenită lor.
-Highlight: pentru că le pare rău. Şi pentru că vor să scape de <em>osânda</em> păcatului lor.
-Highlight: pleca rând pe rând spre ocara şi spre <em>osânda</em> veşnică(
-Highlight: care umblă mereu să vă prindă ca să vă ducă la <em>osândă</em> - şi să vă chinuiască
-Highlight: pândiţi pe alţii şi care sunteţi gata întotdeauna să <em>osândiţi</em> şi să-i nimiciţi, - spuneţi voi care din voi este
-Highlight: - voi de ce <em>osândiţi</em> pe alţii?  Temeţi-vă
+Highlight: Păcatul şi <em>osânda</em>
 
-Score: 7.257143
+Score: 11.0
 Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Urmarea adevărată a lui Isus
+Book: Răsplata Ascultării
+Title: Uşurătatea şi osânda
 Type: articol
 Author: Traian Dorz
-Highlight: căci aceasta ar fi pentru tine cea mai apăsătoare <em>osândă</em> şi cea mai amară vinovăţie.
-Highlight: Vina aceasta va atrage după sine toată <em>osânda</em> pe care vor primi-o pentru veşnicie toţi cei judecaţi
-Highlight: Fiindcă nu-i <em>osândă</em> mai mare decât să respingi
-Highlight: Însuşi Dumnezeu îl pedepseşte cu o pierzare şi <em>osândă</em> veşnică.
-Highlight: Dar toate acestea vă vor <em>osândi</em> pe voi şi mai mult în Ziua Judecăţii!  4
-Highlight: oamenii minciuna. Şi să fie <em>osândiţi</em> ( 2
+Highlight: Uşurătatea şi <em>osânda</em>
 
 Score: 7.2333336
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Pricepere şi teamă
 Type: articol
 Author: Traian Dorz
-Highlight: viscolul nu te-a îngropat, flăcările nu te-au cuprins, <em>osânda</em> nu te-a ajuns şi mormântul încă nu s-a deschis
-Highlight: grozăvia pierzării în care zăceam înainte şi la <em>osânda</em> veşnică în care ne-am fi mistuit fără nici o nădejde
-Highlight: sarcina grea a fărădelegilor pentru care te aşteaptă <em>osânda</em> şi pierzarea veşnică.
-Highlight: întorc sub Crucea Iertării lui Isus, va cere o <em>osândă</em> cu atât mai mare, cu cât este mai mare Preţul răscumpărării
-Highlight: Dar atunci cu cât mai <em>osândit</em> este acela care nu numai că luptă contra unităţii
-
-Score: 7.2333336
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
-Type: articol
-Author: Traian Dorz
-Highlight: amare şi otrăvite ale păcatului, spre pedeapsa şi <em>osânda</em> noastră veşnică.
-Highlight: Ce <em>osândă</em> mai îngrozitoare poate fi ca asta?
-Highlight: care erau legaţi odinioară şi ţinuţi în moartea şi <em>osânda</em> diavolului...
-Highlight: Dacă nu vreţi să ajungeţi în focul veşnic şi în <em>osânda</em> morţii din care v-a izbăvit Domnul Isus.
-Highlight: înaintea lui Dumnezeu. Că toate sunt grele şi <em>osândite</em> de Cuvântul Sfânt.  Şi
-
-Score: 7.2333336
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: În ce priveşte păcatul
-Type: articol
-Author: Traian Dorz
-Highlight: Şi îl izbăveşte de <em>osânda</em> Judecăţii dată împotriva oricărui făptaş şi trăitor
-Highlight: Necredinţa este cel dintâi şi cel mai vrednic de <em>osândă</em> dintre toate aceste
-Highlight: să ne scape de sub puterea păcatului şi de sub <em>osânda</em> lui satana...
-Highlight: Ieşi de sub <em>osânda</em> necredinţei inspirată de el
-Highlight: promite Judecata şi <em>osândirea</em> Sa. Necredinţa
+Highlight: şi frica de <em>osânda</em> de care se simte ameninţat mereu.
+Highlight: Dar fuge degeaba, căci <em>osânda</em> lor dreaptă fuge mai repede după ei. Şi totdeauna
+Highlight: Un astfel de om va cădea dintr-o dată sub <em>osânda</em> tuturor acestora.
+Highlight: omul se scufundă mai adânc în întunericul şi în <em>osânda</em> care vine neapărat pentru ele
+Highlight: împotrivirea la mustrare a atras după ea blestemul <em>osândei</em>.  Şi
 
 Score: 7.2000003
 Volume: Cântări Nemuritoare
@@ -178,95 +144,61 @@ Highlight: să nu crezi că scapi de-<em>osândă</em> ocolindu-l
 Highlight: ea arată şi răsplata şi <em>osânda</em> tuturor;
 
 Score: 7.2000003
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Pricepere şi teamă
-Type: articol
-Author: Traian Dorz
-Highlight: şi frica de <em>osânda</em> de care se simte ameninţat mereu.
-Highlight: Dar fuge degeaba, căci <em>osânda</em> lor dreaptă fuge mai repede după ei. Şi totdeauna
-Highlight: Un astfel de om va cădea dintr-o dată sub <em>osânda</em> tuturor acestora.
-Highlight: omul se scufundă mai adânc în întunericul şi în <em>osânda</em> care vine neapărat pentru ele
-
-Score: 6.9
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Curajul şi frica
-Type: articol
-Author: Traian Dorz
-Highlight: veţi duce cu toţii din faţa lui Hristos sigur în <em>osânda</em> veşnică pe care v-o alegeţi acum.
-Highlight: sub orice <em>osândă</em>.
-Highlight: rele care îl stăpânesc mai cumplit şi-l duc la <em>osândă</em> mai grabnic.
-Highlight: singur, mai amar decât l-ar <em>osândi</em> orice judecător, Domnul Isus nu-l va mai <em>osândi</em> niciodată, dar îl va ierta
-Highlight: Pentru că vă <em>osândiţi</em> singuri prin faptele voastre.  Nu
-Highlight: Îndată ce ar <em>osândi</em> pe cineva, n-ar mai putea fi Mijlocitor pentru
-
-Score: 6.9
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Nici Eu nu te osândesc
-Type: articol
-Author: Traian Dorz
-Highlight: de sub orişice <em>osândă</em>,
-Highlight: Nici Eu nu te <em>osândesc</em>. Du-te, şi să nu mai păcătuieşti. Biet
-Highlight: nenorocit, nu deznădăjdui: când toţi oamenii te <em>osândesc</em>, Hristos nu te osândeşte.  Când
-Highlight: osândeşte, fii sigur că El şi mai mult, nu te va <em>osândi</em>.  Hristos
-Highlight: Îndată ce ar <em>osândi</em> pe cineva, n-ar mai putea fi Mijlocitor pentru
-Highlight: cu încredere deplină la El, tu cel pe care te <em>osândesc</em> toţi, numai să fii sincer şi smerit.  Poţi
-Highlight: Nici Eu nu te <em>osândesc</em>
-
-Score: 6.888889
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: ... Şi au ieşit unul câte unul...
-Type: articol
-Author: Traian Dorz
-Highlight: ca să sufere El loviturile şi <em>osânda</em> cuvenită lor.
-Highlight: păcătuit, ci pentru că le pare rău şi vor să scape de <em>osânda</em> păcatului lor.
-Highlight: Vor pleca rând pe rând spre ocara şi <em>osânda</em> veşnică (
-Highlight: Amândoi aceşti drepţi judecători îi <em>osândeau</em>: şi Dumnezeu şi Conştiinţa.  Iar
-Highlight: judecat pe alţii şi au <em>osândit</em> pe alţii.  Vor
-Highlight: nu le-a făcut nici o nedreptate <em>osândindu</em>-i.
-
-Score: 6.875
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
+Title: La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)
 Type: articol
 Author: Traian Dorz
-Highlight: şi răbdarea lui Hristos, însă amară va fi veşnic <em>osânda</em> ce-i aşteaptă la capătul acestei scurte şi amăgitoare
-Highlight: omenirea, ca Singurul Preţ al răscumpărării ei din <em>osânda</em> şi moartea păcatului în întregimea lui - şi fiecare
-Highlight: poate singura ta ocazie pentru viaţă sau pentru <em>osândă</em>!...
-Highlight: Dumnezeiască era împlinită; pedeapsa crâncenă care <em>osândise</em> păcatul omenirii într-unul Singur, în Hristos
-Highlight: Iar judecata <em>osânditoare</em> de la sfârşitul vieţii neascultătoare de Dumnezeu
-Highlight:  lui îl vor <em>osândi</em>.
+Highlight: viscolul nu te-a îngropat, flăcările nu te-au cuprins, <em>osânda</em> nu te-a ajuns şi mormântul încă nu s-a deschis
+Highlight: grozăvia pierzării în care zăceam înainte şi la <em>osânda</em> veşnică în care ne-am fi mistuit fără nici o nădejde
+Highlight: sarcina grea a fărădelegilor pentru care te aşteaptă <em>osânda</em> şi pierzarea veşnică.
+Highlight: întorc sub Crucea Iertării lui Isus, va cere o <em>osândă</em> cu atât mai mare, cu cât este mai mare Preţul răscumpărării
 
-Score: 6.857143
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
+Score: 7.2000003
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
 Type: articol
 Author: Traian Dorz
-Highlight: ai Sfântului Sinod să binevoiţi a mă graţia de <em>osânda</em> caterisirii, eu declarând că îmi recunosc greşeala
-Highlight: aibă legătură cu mine, altcum vor cădea şi ei în <em>osânda</em> afurisirii, rămânând ca toată lumea să mă socotească
-Highlight: legătură cu unii ca aceştia, altfel vor cădea şi ei în <em>osânda</em> afuriseniei. Sinodul patriarhal din Constantinopol
-Highlight: Iată cererea înaintată de acest sfânt <em>osândit</em>: Înalt
-Highlight: abaterile grave ale fostului preot I. Trifa el a fost <em>osândit</em> în două rânduri, atât de consistoriul spiritual
-Highlight: realizare duhovnicească în poporul nostru, - l-au <em>osândit</em> cu toţii.
+Highlight: amare şi otrăvite ale păcatului, spre pedeapsa şi <em>osânda</em> noastră veşnică.
+Highlight: Ce <em>osândă</em> mai îngrozitoare poate fi ca asta?
+Highlight: care erau legaţi odinioară şi ţinuţi în moartea şi <em>osânda</em> diavolului...
+Highlight: Dacă nu vreţi să ajungeţi în focul veşnic şi în <em>osânda</em> morţii din care v-a izbăvit Domnul Isus.
 
-Score: 6.8333335
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Score: 7.2000003
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Neprihănirea şi vinovăţia
 Type: articol
 Author: Traian Dorz
-Highlight: cu care vorbesc în fiecare ceas despre viaţa sau <em>osânda</em> veşnică... Dar în jurul meu îl simt neîncetat şi
-Highlight: sunt încredinţat că acest Voltaire este acum în <em>osânda</em> veşnică - şi dacă ar mai putea, de acolo ar striga
-Highlight: adânceşte acolo în aceeaşi măsură, în focul şi în <em>osânda</em> de care s-a făcut vrednic prin tot ce a făcut şi
-Highlight: fi scos fără vină şi din cuvintele tale vei fi <em>osândit</em>” ( Matei
-Highlight: multe ori m-am îngrozit cu câtă uşurinţă este <em>osândit</em> un om.
+Highlight: pierduţi acoperindu-i, ca să sufere El loviturile şi <em>osânda</em> cuvenită lor.
+Highlight: pentru că le pare rău. Şi pentru că vor să scape de <em>osânda</em> păcatului lor.
+Highlight: Vor pleca rând pe rând spre ocara şi spre <em>osânda</em> veşnică(
+Highlight: care umblă mereu să vă prindă ca să vă ducă la <em>osândă</em> - şi să vă chinuiască
 
-Score: 6.8333335
+Score: 7.2000003
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Urmarea adevărată a lui Isus
+Type: articol
+Author: Traian Dorz
+Highlight: căci aceasta ar fi pentru tine cea mai apăsătoare <em>osândă</em> şi cea mai amară vinovăţie.
+Highlight: Vina aceasta va atrage după sine toată <em>osânda</em> pe care vor primi-o pentru veşnicie toţi cei judecaţi
+Highlight: Fiindcă nu-i <em>osândă</em> mai mare decât să respingi Adevărul ca să rămâi
+Highlight: Însuşi Dumnezeu îl pedepseşte cu o pierzare şi <em>osândă</em> veşnică.
+
+Score: 7.2000003
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Pacea noastră
+Title: În ce priveşte păcatul
+Type: articol
+Author: Traian Dorz
+Highlight: Şi îl izbăveşte de <em>osânda</em> Judecăţii dată împotriva oricărui făptaş şi trăitor
+Highlight: Necredinţa este cel dintâi şi cel mai vrednic de <em>osândă</em> dintre toate aceste păcate.
+Highlight: să ne scape de sub puterea păcatului şi de sub <em>osânda</em> lui satana...
+Highlight: Ieşi de sub <em>osânda</em> necredinţei inspirată de el
+
+Score: 6.8
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 8 - Al şaptelea foc
@@ -275,84 +207,17 @@ Author: Traian Dorz
 Highlight: grea <em>osândă</em> s-a aprins
 Highlight: foloseşte pentru salvarea sufletelor noastre din <em>osândă</em> şi pentru despărţirea noastră de păcat, - este
 Highlight: dovedirii netrebniciei - şi până la aruncarea în <em>osânda</em> veşnică, - acesta este un timp de aşteptare. De
-Highlight: recunoaşterea acestora, pentru ca el să ne poată cere <em>osândirea</em> cât mai grea, iar motivarea lui să fie cât mai
-Highlight: să ne osândească pentru Hristos, ne-ar fi putut <em>osândi</em> foarte comod chiar şi dacă biserica ne-ar fi apărat
+Highlight: comunica sentinţa şi vom avea să ne ducem ispăşirea <em>osândei</em>.
 
-Score: 6.8333335
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
-Type: articol
-Author: Traian Dorz
-Highlight: starea lor. Să vină trezirea înainte de <em>osândă</em>. Să nu vină <em>osânda</em> întâi - şi apoi trezirea!
-Highlight: să întreacă ocările, pentru ca nu cumva să vină <em>osânda</em> peste ei.  Se
-Highlight:  apostolii, oamenii cei mai de pe urmă, nişte <em>osândiţi</em> la moarte; fiindcă am ajuns o privelişte pentru
-Highlight: cum sunt: oamenii cei mai de pe urmă... Nişte <em>osândiţi</em> la moarte... O privelişte pentru pământ şi pentru
-
-Score: 6.8333335
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
-Type: articol
-Author: Traian Dorz
-Highlight: bolile celor bolnavi, vina celor vinovaţi şi <em>osânda</em> celor <em>osândiţi</em>,
-Highlight: şi <em>osândă</em> veşnică pentru cine o nesocoteşte.  V-o
-Highlight: slăvite Morţi, noi suntem izbăviţi, de drept, din <em>osânda</em> în care eram;
-Highlight: Cât de <em>osândiţi</em> eram noi, că n-am putut fi răscumpăraţi şi izbăviţi
-
-Score: 6.8333335
+Score: 6.75
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Pe acela îl veţi primi
+Book: Hristos - Luminătorul nostru
+Title: ... Şi au ieşit unul câte unul...
 Type: articol
 Author: Traian Dorz
-Highlight: Vina aceasta va atrage după sine toată <em>osânda</em> pe care vor primi-o pentru veşnicie toţi cei judecaţi
-Highlight: Fiindcă nu-i <em>osândă</em> mai mare decât să respingi
-Highlight: Însuşi Dumnezeu îl pedepseşte cu o pierzare şi <em>osândă</em> veşnică.
-Highlight: oamenii minciuna. Şi să fie <em>osândiţi</em> ( 2
-Highlight: ca să nu fim <em>osândiţi</em>.
-
-Score: 6.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-Highlight: bun a ajuns pentru om un prilej de moarte şi de <em>osândă</em>. S-a întâmplat tocmai cum spune Sfânta Scriptură
-Highlight: pun uşor stăpânire pe inima omului târându-l în <em>osândă</em> şi în pierzare.
-Highlight: Ce grozavă <em>osândă</em> rosteşte Cuvântul lui Dumnezeu asupra preotului
-Highlight: Patimile şi moartea Domnului nostru Isus Hristos, <em>osândit</em> de duhul preotic sunt cea mai cutremurătoare mărturie
-
-Score: 6.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Hoţi şi tâlhari
-Type: articol
-Author: Traian Dorz
-Highlight: răscumpărat din felul deşart de vieţuire şi de sub <em>osânda</em> păcatului, nu cu aur sau cu argint, ci cu Sângele
-Highlight: atâţia alţii care i-au primit şi i-au ospătat spre <em>osânda</em> şi pierzarea sufletelor lor.
-Highlight: tâlhărie duhovnicească şi cad sub blestemul şi sub <em>osânda</em> Cuvântului Sfânt.
-Highlight: cine îl introduce şi îl ajută la aceasta, sunt <em>osândiţi</em> la fel
-
-Score: 6.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)
-Type: articol
-Author: Traian Dorz
-Highlight: de crud. Iar starea din care ne-a scăpat era o <em>osândă</em> şi o pierzare atât de îngrozitoare.
-Highlight: de fraţi are ca rod stricăciunea, iar ca sfârşit <em>osânda</em> veşnică.
-Highlight: zilelor celui păcătos. Şi nici numai moartea în <em>osânda</em> şi uitarea din existenţa cea veşnică, de după Judecata
-Highlight: acel mare Preţ dat Dreptăţii Dumnezeieşti care ne <em>osândea</em>, dat păcatului care ne robise, dat Legii şi poruncilor
-
-Score: 6.8
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Ucenicul şi prigonitorul
-Type: articol
-Author: Traian Dorz
-Highlight: suportaţi mai bine <em>osânda</em> legii omeneşti, decât <em>osânda</em> conştiinţei voastre şi <em>osânda</em> lui Dumnezeu.
-Highlight: şi v-aţi mântui şi voi crezând în El, nu v-aţi <em>osândi</em>, condamnându-L.
+Highlight: ca să sufere El loviturile şi <em>osânda</em> cuvenită lor.
+Highlight: păcătuit, ci pentru că le pare rău şi vor să scape de <em>osânda</em> păcatului lor.
+Highlight: Vor pleca rând pe rând spre ocara şi <em>osânda</em> veşnică (
 
 Score: 6.75
 Volume: Meditații la Ev. după Ioan
@@ -361,6 +226,16 @@ Title: Aprozii s-au întors
 Type: articol
 Author: Traian Dorz
 Highlight: suportaţi mai bine <em>osânda</em> legii omeneşti, decât <em>osânda</em> conştiinţei voastre şi <em>osânda</em> lui Dumnezeu.
+
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
+Type: articol
+Author: Traian Dorz
+Highlight: bun a ajuns pentru om un prilej de moarte şi de <em>osândă</em>. S-a întâmplat tocmai cum spune Sfânta Scriptură
+Highlight: pun uşor stăpânire pe inima omului târându-l în <em>osândă</em> şi în pierzare.
+Highlight: Ce grozavă <em>osândă</em> rosteşte Cuvântul lui Dumnezeu asupra preotului
 
 Score: 6.75
 Volume: Hristos - Marturia mea
@@ -374,6 +249,26 @@ Highlight: şi sufletul lui în aceeaşi măsură în focul şi în <em>osânda<
 
 Score: 6.75
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 6 - Zile rânduite şi paşi număraţi
+Type: articol
+Author: Traian Dorz
+Highlight: cu care vorbesc în fiecare ceas despre viaţa sau <em>osânda</em> veşnică... Dar în jurul meu îl simt neîncetat şi
+Highlight: sunt încredinţat că acest Voltaire este acum în <em>osânda</em> veşnică - şi dacă ar mai putea, de acolo ar striga
+Highlight: adânceşte acolo în aceeaşi măsură, în focul şi în <em>osânda</em> de care s-a făcut vrednic prin tot ce a făcut şi
+
+Score: 6.75
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 8 - A treia Judecată
+Type: articol
+Author: Traian Dorz
+Highlight: ai Sfântului Sinod să binevoiţi a mă graţia de <em>osânda</em> caterisirii, eu declarând că îmi recunosc greşeala
+Highlight: aibă legătură cu mine, altcum vor cădea şi ei în <em>osânda</em> afurisirii, rămânând ca toată lumea să mă socotească
+Highlight: legătură cu unii ca aceştia, altfel vor cădea şi ei în <em>osânda</em> afuriseniei. Sinodul patriarhal din Constantinopol
+
+Score: 6.75
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 8 - Şi laţul s-a rupt
 Type: articol
@@ -381,6 +276,55 @@ Author: Traian Dorz
 Highlight: Şi să ne mai mirăm apoi de înfricoşata <em>osândă</em> unde vor merge toţi aceştia când se va încheia
 Highlight: spărgătorii dragostei, vor merge şi mai adânc în <em>osânda</em> uitării veşnice.
 Highlight:  să vină Sfârşitul şi <em>osânda</em> veşnică doar pentru diavolul singur, căci el este
+
+Score: 6.75
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Curajul şi frica
+Type: articol
+Author: Traian Dorz
+Highlight: veţi duce cu toţii din faţa lui Hristos sigur în <em>osânda</em> veşnică pe care v-o alegeţi acum.
+Highlight:  de sub orice <em>osândă</em>.
+Highlight: rele care îl stăpânesc mai cumplit şi-l duc la <em>osândă</em> mai grabnic.
+
+Score: 6.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Eşti dator!
+Type: poezie
+Author: Traian Dorz
+Highlight: grea <em>osândă</em> îţi adui.
+Highlight: grea <em>osândă</em> să-ţi aştepţi!
+Highlight: într-o grea <em>osândă</em> eşti!
+
+Score: 6.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Păstorul nostru
+Title: Hoţi şi tâlhari
+Type: articol
+Author: Traian Dorz
+Highlight: răscumpărat din felul deşart de vieţuire şi de sub <em>osânda</em> păcatului, nu cu aur sau cu argint, ci cu Sângele
+Highlight: atâţia alţii care i-au primit şi i-au ospătat spre <em>osânda</em> şi pierzarea sufletelor lor.
+Highlight: tâlhărie duhovnicească şi cad sub blestemul şi sub <em>osânda</em> Cuvântului Sfânt.
+
+Score: 6.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 10-a după Rusalii - (Vindecarea lunaticului)
+Type: articol
+Author: Traian Dorz
+Highlight: starea lor. Să vină trezirea înainte de <em>osândă</em>. Să nu vină <em>osânda</em> întâi - şi apoi trezirea!
+Highlight: să întreacă ocările, pentru ca nu cumva să vină <em>osânda</em> peste ei.  Se
+
+Score: 6.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 12-a după Rusalii - (Tânărul bogat)
+Type: articol
+Author: Traian Dorz
+Highlight: şi <em>osândă</em> veşnică pentru cine o nesocoteşte.
+Highlight: Lui bolile celor bolnavi, vina celor vinovaţi şi <em>osânda</em> celor osândiţi,
+Highlight: slăvite Morţi, noi suntem izbăviţi, de drept, din <em>osânda</em> în care eram;
 
 Score: 6.75
 Volume: Hristos - Puterea Apostoliei
@@ -391,6 +335,36 @@ Author: Traian Dorz
 Highlight: dezbinărilor - pentru ca să fie duşi de către aceştia la <em>osânda</em> veşnică.
 Highlight: - acela niciodată să nu aştepte decât <em>osânda</em>, - iar nu mântuirea de la Dumnezeu!...
 Highlight:  cu prefăcătorie, - să nu ne aşteptăm decât la <em>osândă</em> şi ruşine, atât din partea lui Dumnezeu cât şi
+
+Score: 6.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 3-a după Rusalii - (despre grijile vieţii)
+Type: articol
+Author: Traian Dorz
+Highlight: şi răbdarea lui Hristos, însă amară va fi veşnic <em>osânda</em> ce-i aşteaptă la capătul acestei scurte şi amăgitoare
+Highlight: omenirea, ca Singurul Preţ al răscumpărării ei din <em>osânda</em> şi moartea păcatului în întregimea lui - şi fiecare
+Highlight: poate singura ta ocazie pentru viaţă sau pentru <em>osândă</em>!...
+
+Score: 6.75
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 4-a după Rusalii - (Vindecarea slugii sutaşului)
+Type: articol
+Author: Traian Dorz
+Highlight: de crud. Iar starea din care ne-a scăpat era o <em>osândă</em> şi o pierzare atât de îngrozitoare.
+Highlight: de fraţi are ca rod stricăciunea, iar ca sfârşit <em>osânda</em> veşnică.
+Highlight: zilelor celui păcătos. Şi nici numai moartea în <em>osânda</em> şi uitarea din existenţa cea veşnică, de după Judecata
+
+Score: 6.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Binefăcătorul nostru
+Title: Pe acela îl veţi primi
+Type: articol
+Author: Traian Dorz
+Highlight: Vina aceasta va atrage după sine toată <em>osânda</em> pe care vor primi-o pentru veşnicie toţi cei judecaţi
+Highlight: Fiindcă nu-i <em>osândă</em> mai mare decât să respingi adevărul ca să rămâi
+Highlight: Însuşi Dumnezeu îl pedepseşte cu o pierzare şi <em>osândă</em> veşnică.
 
 Score: 6.75
 Volume: Meditații la Ev. după Ioan
@@ -422,95 +396,25 @@ Highlight: Moarte se numeşte existenţa nefericită în <em>osânda</em> şi î
 Highlight: sau starea de <em>osândă</em> (
 Highlight: ajungem în existenţa de păcat aici şi în cea de <em>osândă</em> în veşnicie.
 
-Score: 6.242424
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)
-Type: articol
-Author: Traian Dorz
-Highlight: pentru toate te va chema Dumnezeu la Judecată şi <em>osândă</em>!
-Highlight: Să nu vă înşelaţi în privinţa asta! <em>Osânda</em> voastră este dreaptă şi limpede: Vai de cel ce
-Highlight: neroditoare ale întunericului, ba încă mai degrabă <em>osândiţi</em>-le. 12
-Highlight: 13. Dar toate aceste lucruri, când sunt <em>osândite</em> de lumină, sunt date la iveală; pentru că ceea
-Highlight: Şi numai el va fi <em>osândit</em> dacă face răul, fiindcă voieşte şi umblă după aceasta
-Highlight: mai degrabă să le <em>osândim</em>.  Dar
-
-Score: 6.222222
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Unde sunt pârâşii tăi?
-Type: articol
-Author: Traian Dorz
-Highlight: care umblă mereu să vă prindă, ca să vă ducă la <em>osândă</em> şi să vă chinuiască,
-Highlight: vă veţi duce cu toţii din faţa lui Hristos, în <em>osânda</em> veşnică pe care v-o alegeţi singuri.
-Highlight: Femeie, unde sunt pârâşii tăi? Nimeni nu te-a <em>osândit</em>? Ce
-Highlight: izbăvire. Nimeni nu te poate apăra ca El, nici <em>osândi</em> când ai apărarea Lui.  Dumnezeu
-Highlight: erau acum decât nişte bieţi vinovaţi, nişte bieţi <em>osândiţi</em>, care plecaseră ispăşind ruşinaţi.  Ea
-Highlight: voi care căutaţi numai să prindeţi şi să <em>osândiţi</em>,  voi
-
-Score: 6.208333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Acela despre care vorbea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: el este izbăvit de <em>osânda</em> lor. Sunt <em>osândite</em> numai ele.
-Highlight: că păcatele sunt rânduite la <em>osândă</em>, iar nu oamenii
-Highlight: - atunci n-am fi niciodată <em>osândiţi</em>, nici unii dintre noi. Ar fi <em>osândit</em> numai păcatul, nu noi. Ar arde
-Highlight: a <em>osândit</em> păcatul acesta grozav şi în mai multe rânduri,
-Highlight: acela va fi <em>osândit</em> împreună cu păcatul său în care s-a prins, în care
-
-Score: 6.208333
+Score: 6.75
 Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
-Title: Măreţia şi cuprinderea
+Title: Ucenicul şi prigonitorul
 Type: articol
 Author: Traian Dorz
-Highlight: întâlnirea sa cu Hristos. Toate celelalte vor avea <em>osândă</em>.
-Highlight: când pentru aceasta trebuie să sufere ocara şi <em>osânda</em> lumii acesteia.
-Highlight: 8 - Tot ce are lumina de <em>osândit</em> în inima şi în viaţa ta, - este rău.  Tot
-Highlight: Ceea ce are Hristos de <em>osândit</em> în tine, - îţi spune clar şi hotărât.  Iar
-Highlight: 12 - Dacă eşti <em>osândit</em> pe nedrept nu trebuie să te superi ci dimpotrivă
-Highlight: dimpotrivă, să te bucuri că acei care te <em>osândesc</em> nu au dreptate.  Căci
+Highlight: suportaţi mai bine <em>osânda</em> legii omeneşti, decât <em>osânda</em> conştiinţei voastre şi <em>osânda</em> lui Dumnezeu.
 
-Score: 6.208333
+Score: 6.75
 Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Roadele Adevărului şi Dragostei
+Book: Săgeţile biruitoare
+Title: Înştiinţarea şi lumina
 Type: articol
 Author: Traian Dorz
-Highlight: <em>Osândită</em> - şi ducând şi pe alţii în <em>osândă</em>.
-Highlight: nici o clipă ci astăzi mântuieşte-ţi viaţa din <em>osânda</em> judecăţii, a morţii şi a iadului veşnic.
-Highlight: Apărând pe Hristos şi <em>osândind</em> păcatul.  5
-Highlight: Hristos prin ei va <em>osândi</em> păcatul - şi Îşi va dovedi dreptatea Sa.  6
-Highlight: mărturisi pe Hristos şi va <em>osândi</em> păcatul oriunde ar fi el.  Aşa
-Highlight: Aşa cum l-a <em>osândit</em> şi Domnul Isus.  7
+Highlight: datoriilor lui - şi nimeni nu-i poate lua nici <em>osânda</em> sau răsplata sa pentru împlinirea sau neîmplinirea
+Highlight: - mai împreunate încă şi de <em>osânda</em> pe care le-o adună Sfinţenia şi Dreptatea lui Dumnezeu
+Highlight: cei din întuneric şi neascultare îi păzeşte spre <em>osândă</em> şi judecată (
 
-Score: 6.190476
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 14-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: nu cumva să ajungem <em>osândiţi</em> de Judecata Ta. Şi să trebuiască să ispăşim <em>osânda</em> păcatului celui mai greu
-Highlight: prin tăcerea lor, se fac părtaşi cu făptaşul ei la <em>osânda</em> lui.  Şi
-Highlight: dovedească, să arate ce spun! Nu <em>osândiţi</em> pe un Nevinovat, căci vă va <em>osândi</em> Dumnezeu!  Dar
-Highlight: În vremea când Mântuitorul era judecat şi <em>osândit</em> la moarte, nu toţi cei care fuseseră de faţă atunci
-
-Score: 6.190476
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
-Type: articol
-Author: Traian Dorz
-Highlight: îl robise şi îl târâse şi pe el mai înainte spre <em>osânda</em> şi pierzarea veşnică.
-Highlight: feriţi-vă de căile lor. Ca să nu vă faceţi părtaşi la <em>osânda</em> care îi aşteaptă
-Highlight: ). Nu este nici o <em>osândire</em> pentru cei ce sunt în Hristos ( Rom
-Highlight: fi găsit vinovat de încălcarea dreptăţii, de <em>osândirea</em> nevinovăţiei şi de chinuirea semenului tău. Simţământul
-Highlight: la judecătorii păgâni, încât spuneau: Decât să <em>osândesc</em> pe un nevinovat, mai bine să scape zece vinovaţi
-Highlight: încât decât să scape un vinovat, mai bine să fie <em>osândiţi</em> zece, sau o sută, sau o mie, sau oricâţi nevinovaţi
-
-Score: 6.133333
+Score: 6.083333
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
 Title: ... Mânia lui Dumnezeu rămâne peste el
@@ -518,10 +422,28 @@ Type: articol
 Author: Traian Dorz
 Highlight: cei ce sunt departe de Tine, căci e cea mai mare <em>osândă</em> o existenţă fără Tine
 Highlight: El te iartă şi te scapă din <em>osânda</em>-n care eşti.
-Highlight: nevoie să mai facă nici un alt păcat, spre a fi <em>osândit</em>. E destul să rămână mai departe aşa necredincios
-Highlight: Hristos! Cine vine la El nu va fi nimicit. Nu va fi <em>osândit</em>. Nu va fi atins de mânia focului.  Dar
+Highlight: ieşirea dintr-un loc peste care apasă ameninţarea <em>osândei</em>.  Şi
 
-Score: 6.133333
+Score: 6.083333
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
+Type: articol
+Author: Traian Dorz
+Highlight: pentru noi, este un păcat vrednic de cea mai grea <em>osândă</em>.
+Highlight: Fereşte-ne pe toţi de <em>osânda</em> şi anatema care aşteaptă pe acei care nu iubesc
+Highlight: toată fapta sa, acela este sortit nimicirii şi <em>osândei</em>, de Însuşi Cuvântul lui Dumnezeu. Acest
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Înnoitorul nostru
+Title: ... Dacă nu se naşte cineva din nou...
+Type: articol
+Author: Traian Dorz
+Highlight: Căci e destulă <em>osândă</em> aceea în care este şi în care va fi (
+Highlight: Şi nu-i mai mare <em>osândă</em> pentru nimeni decât lipsa naşterii de sus, fiindcă
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: ...Nu va vedea moartea
@@ -529,220 +451,51 @@ Type: articol
 Author: Traian Dorz
 Highlight: ori moartea cea sufletească în <em>osânda</em> şi în întunericul veşnic al locuinţei moţilor,
 Highlight: pentru a-şi da cu adevărat seama de blestemul şi <em>osânda</em> în care l-a adus minciuna pe care a iubit-o şi
-Highlight: de ghearele acestui întunecat răpitor, sufletul <em>osândit</em>, nu mai are în veci parte de milă nicăieri şi sub
-Highlight: Trebuie, - ca să fie apoi şi mai <em>osândit</em>... ( Luca
 
-Score: 6.133333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica 1-a a Postului Mare
-Type: articol
-Author: Traian Dorz
-Highlight: Hristos din întunericul cel mai nefericit şi din <em>osânda</em> cea mai adâncă?
-Highlight: spună: Ajunge! Vine moartea şi vine Judecata şi vine <em>osânda</em> veşnică - nu mai fac răul! Mă întorc la Dumnezeu
-Highlight: transformă în cele mai strălucite titluri de glorie. Un <em>osândit</em> al lumii trebuie să umble totdeauna cu capul aplecat
-Highlight: aplecat printre oameni, pe când un <em>osândit</em> al lui Hristos trebuie să umble mereu cu fruntea sus, fiindcă
-
-Score: 6.133333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: În ce priveşte judecata
-Type: articol
-Author: Traian Dorz
-Highlight: acela care este izvorul răului a şi fost judecat. <em>Osânda</em> lui a fost hotărâtă. Sentinţa lui a fost dată.
-Highlight: judecăm şi noi mai bine şi să scăpăm cu toţii de <em>osândă</em>.
-Highlight: Dar dacă judecata ta este dreaptă şi adevărată, <em>osândind</em> păcatul tău şi îndreptăţind Adevărul lui Hristos
-Highlight: că răul este <em>osândit</em> şi
-
-Score: 6.083333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: ... Dacă nu se naşte cineva din nou...
-Type: articol
-Author: Traian Dorz
-Highlight: Căci e destulă <em>osândă</em> aceea în care
-Highlight: Şi nu-i mai mare <em>osândă</em> pentru nimeni decât lipsa naşterii de sus, fiindcă
-Highlight: acesta nu-l <em>osândi</em> înainte de vreme!  (
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: - şi primindu-l, să-I mulţumească. Îngrozit de <em>osândă</em>, sufletul să ceară răscumpărarea lui Hristos, -
-Highlight: n-au putut şi nu vor putea mântui niciodată de <em>osânda</em> şi pierzarea veşnică pe nici unii din “închinătorii”
-Highlight: - Pentru... Feţ Vasile din <em>Oşand</em>! - zise acesta. -
-
-Score: 6.083333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 11 - Răsplata celor nerăsplătiţi
-Type: articol
-Author: Traian Dorz
-Highlight: slăbiciune şi servilism, cu aceeaşi vinovăţie şi <em>osândă</em> ca şi el, în faţa lui Dumnezeu şi a Judecăţii Lui
-Highlight: de bogăţiile lumeşti, peste care apasă totdeauna <em>osânda</em> nedreptăţilor şi scârba necurăţiei prin care trebuie
-Highlight: poate aduna bogăţie. Tocmai de aceea Mântuitorul a <em>osândit</em> pentru totdeauna bogăţia când a spus:  mai
-
-Score: 6.083333
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 20 - Şi iertarea trebuie plătită!
-Type: articol
-Author: Traian Dorz
-Highlight: nevinovaţi erau cu toţii - mă îngrozeam de cumplita <em>osândă</em> pe care o va cere această nedreaptă suferinţă cândva
-Highlight: şi nici nu-şi mai dau seama de grozăvia ei şi de <em>osânda</em> veşnică ce-i aşteaptă.
-Highlight: destul de chinuiţi nenorociţii aceştia aşa cum îi <em>osândea</em> legea şi ai căror prizonieri erau? Nu suferiseră
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 6 - Între două judecăţi
-Type: articol
-Author: Traian Dorz
-Highlight: această spaimă nu va fi spre mântuire, ci spre <em>osânda</em> celor nelegiuiţi. De ce oare această aspră sentinţă
-Highlight: mântui. Chiar spaima şi cutremurul lor el va fi spre <em>osândă</em>, căci au crezut într-o minciună, dar n-au crezut
-Highlight: adevărul, ci au găsit o plăcere în nelegiuire, să fie <em>osândiţi</em> ( 2
-
-Score: 6.083333
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: Nu spre judecată sau spre <em>osândă</em> să-mi fie mie arătarea acestor lucruri, - căci
-Highlight: nici în <em>osânda</em> necredinţei
-Highlight: aceşti trei fraţi ai mei care stau aici şi ne <em>osândesc</em> alături de voi. Ei mă cunosc ceva mai demult ca
-
-Score: 6.083333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre păcat
-Type: articol
-Author: Traian Dorz
-Highlight: El te iartă şi te scapă din <em>osânda</em>-n care eşti.
-Highlight: 64 - Chiar şi-un păcat desparte <em>osânda</em> de răsplată,
-Highlight: 23 - Binele şi Conştiinţa te-<em>osândesc</em> când faci păcat - numai
-
-Score: 6.083333
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din părţile Transilvaniei
-Type: articol
-Author: Traian Dorz
-Highlight: numai <em>osânda</em> şi răsplata
-Highlight: 146 - Mai bine rabdă tu <em>osânda</em>
-Highlight: dacă eşti tiran ori mândru, eşti şi mai de <em>osândit</em>.  47
-
-Score: 6.083333
+Score: 5.9999995
 Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Fiorul şi minunea
+Book: Mărturisirea Strălucită
+Title: A fi în Hristos
 Type: articol
 Author: Traian Dorz
-Highlight: laudă. Celor răi şi cele bune o să le fie spre <em>osândă</em>.
-Highlight: Strigă şi spre judecată, cerându-ţi <em>osânda</em> pentru că le-ai făcut.
-Highlight: şi nu le-au făcut, - ci şi mai puternic îi vor <em>osândi</em> nelegiuirile lor pe care puteau să nu le facă,
+Highlight: Şi oricine va urma neascultarea, va moşteni <em>osânda</em>.
+Highlight: şi câtă <em>osândă</em> şi-a ales!
 
-Score: 6.083333
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Hristos, Stânca noastră
-Type: articol
-Author: Traian Dorz
-Highlight: 16 - Păcatul se transformă în blestem şi în <em>osândă</em> pentru cel care-l face, şi pentru urmaşii lui.
-Highlight: Adică <em>osânda</em> şi blestemul veşnic.
-Highlight: Cuvântului lui Dumnezeu şi te vei simţi lovit şi <em>osândit</em> de vreunul din cuvintele pe care le auzi sau le
-
-Score: 6.083333
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Iarăşi în sala de judecată
+Book: Hristos - Modelul nostru
+Title: Acela despre care vorbea Isus
 Type: articol
 Author: Traian Dorz
-Highlight: ai primit să fii judecat de cei mai vrednici de <em>osândă</em> dintre oameni.
-Highlight: - Şi să primim cu bucurie orice <em>osândă</em> nedreaptă, pentru Tine.
-Highlight: Câţi nevinovaţi au văzut ele <em>osândiţi</em>. Şi câţi tâlhari au văzut ele achitaţi!...  De
+Highlight: că păcatele sunt rânduite la <em>osândă</em>, iar nu oamenii
+Highlight: el este izbăvit de <em>osânda</em> lor. Sunt osândite numai ele.
 
-Score: 6.083333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
-Type: articol
-Author: Traian Dorz
-Highlight: Nu vă faceţi părtaşi la <em>osânda</em> lor!
-Highlight: încă sare şi oţet, ce fel de om poate fi şi ce <em>osândă</em> ar fi ca să n-o merite el de la Dumnezeu?
-Highlight: Nu-i vor <em>osândi</em> oare înaintea Judecăţii lui Hristos, toate rănile
-
-Score: 6.083333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
-Type: articol
-Author: Traian Dorz
-Highlight: ei aşa ca el. Şi apoi împreună cu el, în aceeaşi <em>osândă</em>
-Highlight: Dumnezeu... Şi desigur nu poate avea alt sfârşit decât <em>osânda</em> veşnică...
-Highlight: Nelegiuit este acela care uită aceasta şi <em>osândit</em> va fi acela care va uita. Numai când priveşti dinspre
-
-Score: 6.083333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
-Author: Traian Dorz
-Highlight: Şi atunci să nu se mire că-l aşteaptă <em>osânda</em> veşnică.
-Highlight: părtaş la păcatele lor. Şi vei purta şi tu vina şi <em>osânda</em> alături de ei
-Highlight: În Ziua Judecăţii Domnul te va <em>osândi</em> şi pe tine, cu ei cu tot, pentru că tu ai fost
-
-Score: 6.083333
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
-Type: articol
-Author: Traian Dorz
-Highlight: Cei mai vrednici de <em>osândă</em> nu caută altceva decât să osândească pe alţii -
-Highlight: sunt un singur trup; ceilalţi, care o iau spre <em>osândă</em>, sunt ca şi cum n-ar fi. Voi, dacă sunteţi duhovniceşti
-Highlight: nici spre a apăsa pe un neprihănit, nici pentru a <em>osândi</em> pe un om al lui Dumnezeu, care nu ţi-a făcut nici
-
-Score: 6.083333
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Păcatul, izvorul răului
-Type: articol
-Author: Traian Dorz
-Highlight: pe pământ nimic mai păgubitor şi mai vrednic de <em>osândă</em> ca o fiinţă care nu lucrează, trăind în păcatul
-Highlight: Numai acela trebuie să judece, care cunoaşte <em>osânda</em> nevinovată.
-Highlight: Leneşule, toate câte sunt pe lumea asta te <em>osândesc</em>. Toate fac ceva. Până şi o râmă se mişcă.  Numai
-
-Score: 6.083333
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Toată judecata a dat-o Fiului
+Book: Hristos - Împăratul nostru
+Title: Acum are loc judecata lumii
 Type: articol
 Author: Traian Dorz
-Highlight: Numai acela trebuie să judece, care cunoaşte <em>osânda</em> nevinovat.
-Highlight: vieţi îngropate de tinere în iad, toate cerând <em>osândă</em> aspră asupra acelora care se fac vinovaţi de aceste
-Highlight: suferit din iubire, după ce a fost judecat şi <em>osândit</em> pe nedrept.  Numai
+Highlight: chiar dacă nu doreşti să mergi în <em>osândă</em> cu voia ta,
+Highlight: <em>Osânda</em> îţi va fi cu atât mai amară cu cât ai ştiut şi
 
-Score: 6.083333
+Score: 5.9999995
 Volume: Cugetări Nemuritoare
-Book: Mărgăritarul Ascuns
-Title: Încercări şi răsplătiri
+Book: Lupta cea Bună
+Title: Adevăratul ucenic al Domnului
 Type: articol
 Author: Traian Dorz
-Highlight: moşteni <em>osânda</em>.
-Highlight: 8 - Sufletul celui rău e mai rău decât fapta lui. De aceea şi merită <em>osânda</em> focului veşnic
-Highlight: Nu <em>osândi</em> pe nimeni până ce păcatul omului nu întrece suferinţa
+Highlight: - tot aşa, <em>osânda</em>, păcatul şi moartea existau ca nişte puteri ale
+Highlight: De atunci, singura <em>osândă</em> este neprimirea lui Hristos,
 
-Score: 6.083333
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Şi voi de asemenea veţi mărturisi
-Type: articol
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Am aşteptat Isuse
+Type: poezie
 Author: Traian Dorz
-Highlight: şi pentru sufletul tău nelegiuit o <em>osândă</em> mai meritată decât oricare alta.
-Highlight: este aşa, şi să nu lase pe nimeni în starea şi în <em>osânda</em> asta.
-Highlight: aduce iarăşi vechile roade pentru care să fim <em>osândiţi</em>.
+Highlight: eu mi-aşteptam <em>osânda</em>
+Highlight: <em>osânda</em> alungării
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
@@ -755,6 +508,24 @@ Highlight: <em>osânda</em> alungării
 
 Score: 5.9999995
 Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Arme şi roade
+Type: articol
+Author: Traian Dorz
+Highlight: cum nici n-ar fi moarte şi judecată, răsplată sau <em>osândă</em> veşnică niciodată, - dacă vrem.
+Highlight: şi ne va arunca în <em>osânda</em> Cuvântului Său pe care L-au batjocorit,
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Ascultarea Cuvântului
+Type: articol
+Author: Traian Dorz
+Highlight: facem acum, atrage după sine, binecuvântarea sau <em>osânda</em> veşnică.
+Highlight: şi chiar dacă nu vrei să mergi la <em>osândă</em> cu voia ta,
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
 Book: Calea Bunului Urmaş
 Title: Auzirea şi ascultarea
 Type: articol
@@ -764,12 +535,30 @@ Highlight: Teme-te de <em>osânda</em> satanei, dacă faci faptele lui.
 
 Score: 5.9999995
 Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 1 - Cel mai frumos Isus
+Type: articol
+Author: Traian Dorz
+Highlight: - şi primindu-l, să-I mulţumească. Îngrozit de <em>osândă</em>, sufletul să ceară răscumpărarea lui Hristos, -
+Highlight: n-au putut şi nu vor putea mântui niciodată de <em>osânda</em> şi pierzarea veşnică pe nici unii din “închinătorii”
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
 Highlight: fiii bisericii şi că nu făcusem nimic vrednic de <em>osândă</em>, şi totuşi nici unul n-a ridicat nici măcar un
 Highlight: ce-ar mai putea opri <em>osânda</em> acestui secol blestemat?
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 11 - Răsplata celor nerăsplătiţi
+Type: articol
+Author: Traian Dorz
+Highlight: slăbiciune şi servilism, cu aceeaşi vinovăţie şi <em>osândă</em> ca şi el, în faţa lui Dumnezeu şi a Judecăţii Lui
+Highlight: de bogăţiile lumeşti, peste care apasă totdeauna <em>osânda</em> nedreptăţilor şi scârba necurăţiei prin care trebuie
 
 Score: 5.9999995
 Volume: Istoria unei Jertfe
@@ -788,6 +577,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: adevăr: dacă mântuirea neamului nostru din păcatul şi <em>osânda</em> lui sufletească şi dacă învierea şi trezirea evanghelică
 Highlight: fel la lucrarea lui, se face părtaş la aceeaşi <em>osândă</em> cu el (
+
+Score: 5.9999995
+Volume: Hristos - Marturia mea
+Book: Hristos - Marturia mea
+Title: Cap. 20 - Şi iertarea trebuie plătită!
+Type: articol
+Author: Traian Dorz
+Highlight: nevinovaţi erau cu toţii - mă îngrozeam de cumplita <em>osândă</em> pe care o va cere această nedreaptă suferinţă cândva
+Highlight: şi nici nu-şi mai dau seama de grozăvia ei şi de <em>osânda</em> veşnică ce-i aşteaptă.
 
 Score: 5.9999995
 Volume: Hristos - Marturia mea
@@ -817,6 +615,24 @@ Highlight: crezând că o să iese din el un bine. Desigur că <em>osânda</em> 
 Highlight: unii, care ne vorbesc de rău, că spunem noi. - <em>Osânda</em> acestor oameni este dreaptă (
 
 Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 6 - Între două judecăţi
+Type: articol
+Author: Traian Dorz
+Highlight: această spaimă nu va fi spre mântuire, ci spre <em>osânda</em> celor nelegiuiţi. De ce oare această aspră sentinţă
+Highlight: mântui. Chiar spaima şi cutremurul lor el va fi spre <em>osândă</em>, căci au crezut într-o minciună, dar n-au crezut
+
+Score: 5.9999995
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Cap. 9 - A doua judecată
+Type: articol
+Author: Traian Dorz
+Highlight: Nu spre judecată sau spre <em>osândă</em> să-mi fie mie arătarea acestor lucruri, - căci
+Highlight: nici în <em>osânda</em> necredinţei
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Binefăcătorul nostru
 Title: Cercetaţi Scripturile
@@ -824,6 +640,24 @@ Type: articol
 Author: Traian Dorz
 Highlight: păcatul vostru să fie şi mai odios. Şi mai vrednic de <em>osândă</em>.
 Highlight: dorinţe şi de gânduri nu vor afla în ele decât <em>osândă</em>.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Cernerea Lucrării Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: Şi ce grozav lucru va fi să cazi sub <em>osânda</em> păcatelor împotriva cărora Sângele Cel Sfânt al
+Highlight: Dumnezeu să te ferească de această veşnică vină şi <em>osândă</em>!
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: Cine crede... să nu rămână în întuneric
+Type: articol
+Author: Traian Dorz
+Highlight: tot aşa <em>osânda</em>, păcatul şi moartea existau ca o putere a răului
+Highlight: De atunci, singura <em>osândă</em> este neprihănirea lui Hristos,
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -844,6 +678,15 @@ Highlight: pentru a-şi da cu adevărat seama de blestemul şi <em>osânda</em> 
 Highlight: numai un mijloc de câştig uşor şi ieftin, spre <em>osânda</em> lor - şi a celor ce i-a învăţat aşa.
 
 Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Cutremuraţi-vă şi nu păcătuiţi
+Type: articol
+Author: Traian Dorz
+Highlight: că păcatele sunt rânduite la <em>osândă</em>. Păcatele iar nu oamenii.
+Highlight: - veţi primi o <em>osândă</em> şi mai mare.
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: Cuvântul S-a făcut Trup...
@@ -851,6 +694,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: primirea sarcinii nebănuit de grele de a purta <em>osânda</em> păcatelor noastre
 Highlight: ce mare preţ ai dat pentru a ne putea mântui din <em>osânda</em> în care eram căzuţi.
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Când se va striga
+Type: poezie
+Author: Traian Dorz
+Highlight: ori <em>osândă</em>-n ea?
+Highlight: Doamne, fă să am iertare nu <em>osândă</em>-n ea.
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -869,6 +721,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: aţi fi scăpat de sub stăpânirea păcatului, de sub <em>osânda</em> şi de sub robia lui, pe totdeauna.
 Highlight: cu atât este mai mare şi <em>osânda</em> lor, când ceea ce ştiu şi cunosc n-o aplică ei
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Dacă fiecare...
+Type: articol
+Author: Traian Dorz
+Highlight: numai ura şi certurile, nici mântuirea ci numai <em>osânda</em>.
+Highlight: ruga atunci în zadar de munţi şi la morminte spre <em>osândă</em>, dacă n-au vrut să se roage spre mântuire, când
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -891,6 +752,15 @@ Highlight: şi-o să bea şi el <em>osânda</em> iadului care-l urmează.
 Score: 5.9999995
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
+Title: Despre păcat
+Type: articol
+Author: Traian Dorz
+Highlight: El te iartă şi te scapă din <em>osânda</em>-n care eşti.
+Highlight: 64 - Chiar şi-un păcat desparte <em>osânda</em> de răsplată,
+
+Score: 5.9999995
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Moldovei
 Type: articol
 Author: Traian Dorz
@@ -907,13 +777,76 @@ Highlight: curând îl va ajunge-<em>osânda</em> de care-i veşnic vinovat.
 Highlight:  desparte <em>osânda</em> de răsplată,
 
 Score: 5.9999995
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 13-a după Rusalii - (Pilda lucrătorilor răi)
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Din părţile Transilvaniei
 Type: articol
 Author: Traian Dorz
-Highlight: pentru noi, este un păcat vrednic de cea mai grea <em>osândă</em>.
-Highlight: Fereşte-ne pe toţi de <em>osânda</em> şi anatema care aşteaptă pe acei care nu iubesc
+Highlight: numai <em>osânda</em> şi răsplata
+Highlight: 146 - Mai bine rabdă tu <em>osânda</em>
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Dincoace şi dincolo
+Type: articol
+Author: Traian Dorz
+Highlight: şi <em>osânda</em> le va paşte pe neaşteptate.
+Highlight: devenind un fiu şi un părtaş cu el la păcat şi la <em>osândă</em>.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Păşunile Dulci
+Title: Fiorul şi minunea
+Type: articol
+Author: Traian Dorz
+Highlight: laudă. Celor răi şi cele bune o să le fie spre <em>osândă</em>.
+Highlight: Strigă şi spre judecată, cerându-ţi <em>osânda</em> pentru că le-ai făcut.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Fărădelegile şi Dreptatea
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Cutremurătoarea <em>osândă</em> care îi aşteaptă pe cei care săvârşesc fărădelegea - este potrivită cu înştiinţările
+Highlight: Şi cum să nu fie puşi ei sub aceiaşi <em>osândă</em> cu criminalii şi cu vărsătorii de sânge?
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Lumina Iubitului Fiu
+Title: Hristos, Stânca noastră
+Type: articol
+Author: Traian Dorz
+Highlight: 16 - Păcatul se transformă în blestem şi în <em>osândă</em> pentru cel care-l face, şi pentru urmaşii lui.
+Highlight: Adică <em>osânda</em> şi blestemul veşnic.
+
+Score: 5.9999995
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Răscumpărătorul nostru
+Title: Iarăşi în sala de judecată
+Type: articol
+Author: Traian Dorz
+Highlight: ai primit să fii judecat de cei mai vrednici de <em>osândă</em> dintre oameni.
+Highlight: - Şi să primim cu bucurie orice <em>osândă</em> nedreaptă, pentru Tine.
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica 1-a a Postului Mare
+Type: articol
+Author: Traian Dorz
+Highlight: Hristos din întunericul cel mai nefericit şi din <em>osânda</em> cea mai adâncă?
+Highlight: spună: Ajunge! Vine moartea şi vine Judecata şi vine <em>osânda</em> veşnică - nu mai fac răul! Mă întorc la Dumnezeu
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 14-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: prin tăcerea lor, se fac părtaşi cu făptaşul ei la <em>osânda</em> lui.
+Highlight: osândiţi de Judecata Ta. Şi să trebuiască să ispăşim <em>osânda</em> păcatului celui mai greu, de care ne-am face astfel
 
 Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
@@ -927,11 +860,83 @@ Highlight: rămâne nemântuit, trăieşte în păcat şi moare în <em>osândă
 Score: 5.9999995
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 26- după Rusalii - (Pilda bogatului căruia i-a rodit ţarina)
+Type: articol
+Author: Traian Dorz
+Highlight: pentru toate te va chema Dumnezeu la Judecată şi <em>osândă</em>!
+Highlight: Să nu vă înşelaţi în privinţa asta! <em>Osânda</em> voastră este dreaptă şi limpede: Vai de cel ce
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a a Postului Mare
 Type: articol
 Author: Traian Dorz
 Highlight: şi ascultătoare de El, dar şi de o înfricoşată <em>osândă</em> veşnică pentru păcatele lor, ale celor care dispreţuiesc
 Highlight: suflet ca necruţătoarea, neîndurata şi nebănuita <em>osândă</em> pentru acest nemaipomenit de mare păcat al lepădării
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Paşti - (a orbului)
+Type: articol
+Author: Traian Dorz
+Highlight: Nu vă faceţi părtaşi la <em>osânda</em> lor!
+Highlight: încă sare şi oţet, ce fel de om poate fi şi ce <em>osândă</em> ar fi ca să n-o merite el de la Dumnezeu?
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
+Type: articol
+Author: Traian Dorz
+Highlight: ei aşa ca el. Şi apoi împreună cu el, în aceeaşi <em>osândă</em>
+Highlight: Dumnezeu... Şi desigur nu poate avea alt sfârşit decât <em>osânda</em> veşnică...
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
+Type: articol
+Author: Traian Dorz
+Highlight: Şi atunci să nu se mire că-l aşteaptă <em>osânda</em> veşnică.
+Highlight: părtaş la păcatele lor. Şi vei purta şi tu vina şi <em>osânda</em> alături de ei
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica lăsatului sec de brânză - (a izgonirii lui Adam din Rai)
+Type: articol
+Author: Traian Dorz
+Highlight: îl robise şi îl târâse şi pe el mai înainte spre <em>osânda</em> şi pierzarea veşnică.
+Highlight: feriţi-vă de căile lor. Ca să nu vă faceţi părtaşi la <em>osânda</em> care îi aşteaptă
+
+Score: 5.9999995
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
+Type: articol
+Author: Traian Dorz
+Highlight: Cei mai vrednici de <em>osândă</em> nu caută altceva decât să osândească pe alţii -
+Highlight: sunt un singur trup; ceilalţi, care o iau spre <em>osândă</em>, sunt ca şi cum n-ar fi. Voi, dacă sunteţi duhovniceşti
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Legea Dragostei
+Type: articol
+Author: Traian Dorz
+Highlight: peste sufletul care le-a săvârşit cerând mereu <em>osânda</em> pentru făptuirea lor, de la dreptatea lui Dumnezeu
+Highlight: Căci acestea vor grăbi şi vor mări <em>osânda</em> ta,
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Lucrarea Sfântului Duh
+Type: articol
+Author: Traian Dorz
+Highlight: Şi îl izbăveşte de <em>osânda</em> Judecăţii lui Dumnezeu dată împotriva oricărui
+Highlight: Necredinţa este cel dintâi şi cel mai vrednic de <em>osândă</em> dintre toate aceste păcate.
 
 Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
@@ -941,6 +946,15 @@ Type: articol
 Author: Traian Dorz
 Highlight: Cât har i se îmbia şi câtă <em>osândă</em> şi-a ales!
 Highlight: şi chemi cu milă, pe cei ce stau încă sub <em>osânda</em> pierzării, departe de iertarea Ta
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Mila şi dreptatea
+Type: articol
+Author: Traian Dorz
+Highlight: mulţi, <em>osânda</em> va fi înmulţită cu numărul gemetelor pe care le provoci.
+Highlight: Şi te va ajunge <em>osânda</em> totdeauna
 
 Score: 5.9999995
 Volume: Cugetări Nemuritoare
@@ -961,6 +975,24 @@ Highlight: - la fel, fiecare va moşteni o <em>osândă</em>, pentru neascultare
 Highlight: şi fugi. Dar suferinţa asta este o ruşine şi o <em>osândă</em>.
 
 Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Mântuirea lui Dumnezeu
+Type: articol
+Author: Traian Dorz
+Highlight: vinovaţi de aceasta dintre noi, nu vor scăpa de <em>osânda</em> lui Dumnezeu.
+Highlight: alegerea lor, însă vor schimba soarta voastră spre <em>osândă</em> veşnică.
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Calea Bunului Urmaş
+Title: Măreţia şi cuprinderea
+Type: articol
+Author: Traian Dorz
+Highlight: întâlnirea sa cu Hristos. Toate celelalte vor avea <em>osândă</em>.
+Highlight: când pentru aceasta trebuie să sufere ocara şi <em>osânda</em> lumii acesteia.
+
+Score: 5.9999995
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Înnoitorul nostru
 Title: Nu ca să judece
@@ -968,6 +1000,24 @@ Type: articol
 Author: Traian Dorz
 Highlight: Aduce iertarea, nu <em>osânda</em>.
 Highlight: despre tine. Bine sau rău. Pentru merit sau pentru <em>osândă</em>. Prin roadele care urmează sau prin ruina pe care
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Crucea Mântuitoare
+Title: Pe urmele Domnului
+Type: articol
+Author: Traian Dorz
+Highlight: Poate fi oare o <em>osândă</em> prea mare pentru un astfel de păcat?
+Highlight: Oare numai focul îi va mai putea trezi ajunşi în <em>osânda</em> veşnică?
+
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Răsplata Ascultării
+Title: Privirea nevinovăţiei
+Type: articol
+Author: Traian Dorz
+Highlight: Şi asta va fi cea mai grozavă <em>osândă</em> pentru ei.
+Highlight: Pe cei buni la <em>osândă</em>.
 
 Score: 5.9999995
 Volume: Cântări Nemuritoare
@@ -979,169 +1029,11 @@ Highlight: din <em>osânda</em> lui pe-un suflet numai mântuirea-l scoate
 Highlight: - nu-i <em>osândă</em> să n-o meriţi pentru asta-n veşnicie.
 
 Score: 5.9999995
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Scumpul nostru Răscumpărător,
-Type: articol
-Author: Traian Dorz
-Highlight: sui pentru a plăti părticică cu părticică toată <em>osânda</em> păcatului nostru pentru care s-ar fi cuvenit să
-Highlight: Acolo au săvârşit lucruri care merită <em>osânda</em> şi pedeapsa.
-
-Score: 5.9999995
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Toţi cei născuţi
-Type: poezie
-Author: Traian Dorz
-Highlight: sunt izbăviţi de-<em>osânda</em> şi moartea viitoare,
-Highlight: din veşnica <em>osândă</em>, de veşnicul duşman,
-
-Score: 5.9999995
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Tu ai purtat în locul meu
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>osânda</em> mea-mpovărătoare
-Highlight: <em>osânda</em> Ta mântuitoare!
-
-Score: 5.9999995
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Vedeţi că nu câştigaţi nimic
-Type: articol
-Author: Traian Dorz
-Highlight: numai focul îi va mai putea trezi jos, ajunşi în <em>osânda</em> veşnică?
-Highlight: oriunde poţi, îţi devine sigur un blestem şi o <em>osândă</em> veşnică şi pe pământ şi sub el.
-
-Score: 4.9
 Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Singurul Mântuitor este Hristos
+Book: Lumina Iubitului Fiu
+Title: Păcatul, izvorul răului
 Type: articol
 Author: Traian Dorz
-Highlight: Aduce iertarea şi nu <em>osânda</em>,
-Highlight: Şi ştim că orice judecată pe nedrept, va fi <em>osândită</em> de Dumnezeu.
-Highlight: care a şi fost judecat şi a şi fost <em>osândit</em>.
-Highlight: Judecând şi <em>osândindu</em>-l şi noi pe deasupra,
-Highlight: a fost odată judecat şi <em>osândit</em> după dreptate şi deplin de către Acela care este Negreşit,
-Highlight: Şi ştim că oricine judecă pe nedrept, va fi <em>osândit</em> de Dumnezeu.
-
-Score: 4.8333335
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 6 - Alte amare adevăruri
-Type: articol
-Author: Traian Dorz
-Highlight: Domnul, dacă şi acest necaz al nostru va fi spre <em>osânda</em> veşnică a unora dintre cei ce ne-au vândut ori
-Highlight: de viu, nu-i va mai folosi la nimic, ci va fi <em>osândit</em> pe veci fără nici o cruţare ( 1
-Highlight: lungile noastre încercări de mai nainte când ne-au <em>osândit</em> pe nedrept cei care nu ne-au cunoscut şi nici nu
-Highlight: mare mirare că ne-au judecat pe nedrept ori ne-au <em>osândit</em> chiar nejudecaţi. Acum cineva care ne cunoaşte
-Highlight: pentru câteva clipe mizerabile, cu un preţ atât de <em>osânditor</em> şi veşnic?
-
-Score: 4.8
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Bucuria aflării Domnului
-Type: articol
-Author: Traian Dorz
-Highlight: Mai bine să-ţi primeşti pentru păcatul făcut, <em>osânda</em> meritată aici pe pământ, decât să-l duci cu tine
-Highlight: Acela care este condus de ele, va <em>osândi</em> totdeauna adevărul,
-Highlight: recunoscând cu toţii că El este un Nevinovat, L-au <em>osândit</em> totuşi cu toţii, fie strigând,
-Highlight: Unii L-au <em>osândit</em> cu cuvântul lor,
-
-Score: 4.8
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: ). Şi iată căderea şi <em>osânda</em> acelora care nerămânând statornici în ce au primit
-Highlight: adevăr ci au găsit plăcere în nelegiuire - să fie <em>osândiţi</em>.  Iată
-Highlight: purtători s-au făcut acei fraţi netrebnici şi <em>osândiţi</em>.
-Highlight: . Pentru <em>osândirea</em> acestora nu ne ajunge nici un fel de cuvânt greu
-
-Score: 4.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Familia
-Type: articol
-Author: Traian Dorz
-Highlight: ce <em>osândă</em>-ar fi prea mare pentru el în veşnicie?
-Highlight: este <em>osândit</em> de toată pravila înţelepţească dar
-Highlight: merită-<em>osândit</em> să fie
-Highlight: toţi cei ce-şi uită asta se <em>osândesc</em> şi pier.
-
-Score: 4.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 27-a după Rusalii - (Tămăduirea femeii gârbove)
-Type: articol
-Author: Traian Dorz
-Highlight: să arate în ce fel şi cât vor ţine chinurile şi <em>osânda</em> celor care s-au alipit de diavolul şi l-au slujit
-Highlight: Veşnic vor fi <em>osândiţi</em> să se târască înaintea diavolului toţi cei care
-Highlight: Veşnic vor fi <em>osândiţi</em> să se prăbuşească în întuneric toţi acei care
-Highlight: Şi veşnic vor fi <em>osândiţi</em> să îmbrăţişeze şi să sărute spatele şi urâţenia
-
-Score: 4.8
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Minunile şi credinţa
-Type: articol
-Author: Traian Dorz
-Highlight: Ce mai aştepţi? Nu te îngrozeşti de <em>osânda</em> împietririi inimii tale?
-Highlight: - te vor <em>osândi</em> înaintea Aceluia cu care l-ai încheiat şi pe care
-Highlight: Când judeci după înfăţişare, totdeauna uşor poţi <em>osândi</em> pe un sfânt, şi lăuda pe un prefăcut.
-Highlight: Iar în felul acesta vei <em>osândi</em> totdeauna pe Hristos,
-
-Score: 4.8
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Mărturia şi crezarea
-Type: articol
-Author: Traian Dorz
-Highlight: nenoroceşte este mai vrednic de <em>osândă</em>.
-Highlight: Este <em>osândit</em> şi nu ştie că este <em>osândit</em>.  Merge
-Highlight: Atunci chiar cel vinovat se va <em>osândi</em> el însuşi cel mai întâi. Şi
-
-Score: 4.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Neamul şi arhiereii...
-Type: articol
-Author: Traian Dorz
-Highlight: Nici despre <em>osânda</em> care I se pregătea.
-Highlight: fericit, nu numai că n-au făcut nimic să împiedice <em>osândirea</em> lui Hristos, dar s-au unit şi ei întru totul cu
-Highlight: fericit că l-ai spus sau l-ai apărat, - ori în urmă, <em>osândit</em> că l-ai tăcut!
-Highlight: Şi de nu a <em>osândi</em> nici un nevinovat.
-
-Score: 4.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: ... vor veni romanii...
-Type: articol
-Author: Traian Dorz
-Highlight: mântuitoare spre folosul sufletelor, lăsând în umbră sau <em>osândă</em> pe îngâmfaţii pretenţioşi şi profitori ai afacerismului
-Highlight: faţă motivul adevărat, că Hristos trebuie să fie <em>osândit</em> fiindcă este Bun şi că face binele şi că face o
-Highlight: ... din cauza căreia va veni <em>osândirea</em> Lui şi nenorocirea naţiunii lor.
-
-Score: 4.75
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 4 - În virtutea frumosului avânt...
-Type: articol
-Author: Traian Dorz
-Highlight: mai grele paragrafe... Şi pregăteau cea mai grea <em>osândă</em> pe care o aveau la îndemână. De cuvintele apărării
-Highlight: prototipul făţărniciei, a păcatului celui mai <em>osândit</em>? Nu
-Highlight: însoţea grotesc, supliciul omului lui Dumnezeu <em>osândit</em> de aceeaşi  literă
-
-Score: 4.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Răscumpărătorul nostru
-Title: Ce pâră aduceţi împotriva Omului - Acestuia?
-Type: articol
-Author: Traian Dorz
-Highlight: meargă la moarte spre a te răscumpăra şi pe tine din <em>osânda</em> morţii - şi tu nu te prăbuşeşti plângând cu amar
-Highlight: De ce <em>osândiţi</em> Evanghelia lui Hristos, credinţa lui Hristos,
-Highlight: care nu vreţi să vă lăsaţi, sunt descoperite şi <em>osândite</em> necruţător de Adevărul şi de Dreptatea Lui.  Păcatul
+Highlight: pe pământ nimic mai păgubitor şi mai vrednic de <em>osândă</em> ca o fiinţă care nu lucrează, trăind în păcatul
+Highlight: Numai acela trebuie să judece, care cunoaşte <em>osânda</em> nevinovată.
 

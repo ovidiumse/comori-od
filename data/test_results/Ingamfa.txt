@@ -1,109 +1,40 @@
-+---------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences                                               | Author          | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-| Îngâmfă-te pitic netrebnic                                                                  | {'Îngâmfă'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Îngâmfarea                                                                                  | {'îngâmfă', 'Îngâmfarea', 'Îngâmfatul', 'îngâmfatul'}     | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Cap. 14 - Un an adânc roditor                                                               | {'îngâmfă', 'îngâmfată', 'îngâmfaţi', 'îngâmfarea'}       | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 19-a după Rusalii                                               | {'îngâmfa', 'îngâmf', 'îngâmfe', 'îngâmfat', 'îngâmfaţi'} | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Despre mândrie                                                                              | {'îngâmfa', 'îngâmfatul', 'îngâmfaţi', 'îngâmfare'}       | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| ... Dar fiindcă ziceţi: vedem...                                                            | {'îngâmfa', 'îngâmfaţi'}                                  | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Dacă ştiţi - dacă faceţi                                                                    | {'îngâmfă', 'îngâmfată'}                                  | Traian Dorz     | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
-| Hristos este Totul                                                                          | {'îngâmfă', 'îngâmfaţi'}                                  | Traian Dorz     | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
-| La Apostolul din Duminica Sfintei Învieri                                                   | {'îngâmfă', 'îngâmfaţii'}                                 | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| ... Lucruri şi mai mari decât acestea...                                                    | {'îngâmfă'}                                               | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cap. 12 - Voi nu puteţi veni cu noi...                                                      | {'îngâmfa'}                                               | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Din părţile Olteniei                                                                        | {'îngâmfa'}                                               | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Isus vorbise despre... - dar ei credeau că...                                               | {'îngâmfă'}                                               | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)                        | {'îngâmfă'}                                               | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Rămâi în Hristos                                                                            | {'îngâmfă'}                                               | Traian Dorz     | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Slujire şi răsplată                                                                         | {'îngâmfă'}                                               | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
-| Şi vom locui cu ei                                                                          | {'îngâmfă'}                                               | Traian Dorz     | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'îngâmfaţi', 'îngâmfată'}                                | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Despre smerenie                                                                             | {'îngâmfată', 'îngâmfat', 'îngâmfi'}                      | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| Din alte diferite părţi                                                                     | {'îngâmfatul', 'îngâmfată', 'îngâmfat'}                   | Traian Dorz     | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'îngâmfatul', 'îngâmfatului', 'îngâmfat', 'îngâmfaţi'}   | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Acum vedem bine...                                                                          | {'îngâmfe', 'îngâmfarea', 'îngâmfată'}                    | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Conştiinţa şi mustrarea                                                                     | {'îngâmfată', 'îngâmfe', 'îngâmfarea'}                    | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Este prea de tot...                                                                         | {'îngâmfe', 'îngâmfarea', 'îngâmfare'}                    | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Eu nu umblu după mărturii omeneşti...                                                       | {'îngâmfată', 'îngâmfăm'}                                 | Traian Dorz     | Hristos - Binefăcătorul nostru | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)              | {'îngâmfare', 'îngâmfaţi'}                                | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Nu zice Scriptura?                                                                          | {'îngâmfată', 'îngâmfat', 'îngâmfaţi'}                    | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| ... I-a zis: Învăţătorule, ştim                                                             | {'îngâmfarea', 'îngâmfăm'}                                | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Va veni un altul...                                                               | {'îngâmfată', 'îngâmfaţi'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | {'îngâmfare', 'îngâmfat'}                                 | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                                | {'îngâmfat'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | {'îngâmfare', 'îngâmfate'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 27 - Pe drumul ales                                                                    | {'îngâmfarea', 'îngâmfare'}                               | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 29 - Ne apropiem de Ţărm                                                               | {'îngâmfat'}                                              | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 9 - A doua judecată                                                                    | {'îngâmfat', 'îngâmfarea'}                                | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cum are omul acesta învăţătură?                                                             | {'îngâmfe', 'îngâmfarea'}                                 | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Dezbinarea vine numai                                                                       | {'îngâmfat', 'îngâmfatul'}                                | Traian Dorz     | Păşunile Dulci                 | Cugetări Nemuritoare         | poezie  |
-| Dezbinarea vine numai                                                                       | {'îngâmfat', 'îngâmfatul'}                                | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| Dezbinarea vine numai                                                                       | {'îngâmfat', 'îngâmfatul'}                                | Traian Dorz     | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Isus nu voia să stea în Iudeea                                                              | {'îngâmfare', 'îngâmfaţi'}                                | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)               | {'îngâmfată', 'îngâmfare'}                                | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)      | {'îngâmfat', 'îngâmfe'}                                   | Traian Dorz     | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Moise, alesul Domnului, a petrecut                                                          | {'îngâmfarea'}                                            | Pr. Iosif Trifa | Spre Canaan                    | Spre Canaan                  | articol |
-| Mărturisirea noastră                                                                        | {'îngâmfată', 'îngâmfăm'}                                 | Traian Dorz     | Lumina Iubitului Fiu           | Cugetări Nemuritoare         | articol |
-| Nu s-a mai auzit                                                                            | {'îngâmfarea', 'îngâmfatul'}                              | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Pe când vorbea Isus, mulţi au crezut...                                                     | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Slava şi răsplata                                                                           | {'Îngâmfatul', 'îngâmfată'}                               | Traian Dorz     | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Stricaţi Templul acesta...                                                                  | {'îngâmfarea', 'îngâmfaţi'}                               | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Vorbirea şi harul                                                                           | {'îngâmfate', 'îngâmfare'}                                | Traian Dorz     | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| În Ziua Aceea nu Mă veţi mai întreba                                                        | {'îngâmfat', 'îngâmfaţi'}                                 | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| ... Cercetează bine şi vei vedea...                                                         | {'îngâmfat'}                                              | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| ... Pentru că n-au cunoscut                                                                 | {'îngâmfaţi'}                                             | Traian Dorz     | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| ... Toate acestea, pentru Numele Meu                                                        | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| ... Tu, te vei chema Petru...                                                               | {'îngâmfăm'}                                              | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Ucenicii Lui au crezut în El...                                                         | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| ... vor veni romanii...                                                                     | {'îngâmfaţii'}                                            | Traian Dorz     | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
-| ... Şi a primit învăţătura Lui                                                              | {'îngâmfat'}                                              | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| A cerceta sau nu                                                                            | {'îngâmfare'}                                             | Traian Dorz     | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Aici este mirarea                                                                           | {'îngâmfaţi'}                                             | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Andrei şi Filip                                                                             | {'îngâmfaţi'}                                             | Traian Dorz     | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | articol |
-| Apoi S-a aplecat iarăşi şi scria                                                            | {'îngâmfaţi'}                                             | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Au trebuit 46 de ani...                                                                     | {'îngâmfarea'}                                            | Traian Dorz     | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Bolile şi vindecarea                                                                        | {'îngâmfare'}                                             | Traian Dorz     | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Calea şi urmaşul                                                                            | {'îngâmfaţii'}                                            | Traian Dorz     | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 10 - Uşor e jugul lui Hristos                                                          | {'îngâmfate'}                                             | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 13 - După luarea lui Moisi...                                                          | {'îngâmfată'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 13 - E poate ultima-ncercare...                                                        | {'îngâmfaţilor'}                                          | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Atacul împotriva steagului                                                        | {'îngâmfarea'}                                            | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 14 - Proverbe                                                                          | {'îngâmfat'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 15 - Un An Nou Fericit                                                                 | {'îngâmfaţi'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 17 - Ziua a doua                                                                       | {'îngâmfată'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'îngâmfarea'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 21 - Proverbe                                                                          | {'îngâmfat'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 26 - Limpezirea apelor adânci                                                          | {'îngâmfată'}                                             | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Cap. 3 - La scadenţa ispăşirilor                                                            | {'îngâmfat'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 30 - Proverbe                                                                          | {'îngâmfaţi'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 4 - Aur lămurit, trestii clătinate                                                     | {'îngâmfate'}                                             | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 5 - Necazuri şi speranţe                                                               | {'îngâmfat'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 5 - În noaptea aceea...                                                                | {'îngâmfat'}                                              | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 7 - Ecles                                                                              | {'îngâmfat'}                                              | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 7 - Printre leu şi printre urs                                                         | {'îngâmfarea'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 8 - A treia Judecată                                                                   | {'îngâmfarea'}                                            | Traian Dorz     | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Strigarea Înţelepciunii                                                            | {'îngâmfarea'}                                            | Traian Dorz     | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 9 - Pe drumul crucii mele                                                              | {'îngâmfată'}                                             | Traian Dorz     | Hristos - Marturia mea         | Hristos - Marturia mea       | articol |
-| Carne şi Duh...                                                                             | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Ce păreri de rău                                                                            | {'îngâmfarea'}                                            | Traian Dorz     | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Ce semn faci Tu ca să vedem?                                                                | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Pâinea noastră       | Meditații la Ev. după Ioan   | articol |
-| Cel Unul şi Unicul                                                                          | {'îngâmfaţi'}                                             | Traian Dorz     | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
-| Cel ce M-a trimes, este cu Mine                                                             | {'îngâmfarea'}                                            | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cel ce botează cu Duhul Sfânt...                                                            | {'îngâmfaţi'}                                             | Traian Dorz     | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| Cine Te crezi Tu că eşti?                                                                   | {'îngâmfat'}                                              | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cine crede în Mine                                                                          | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| Cine lucrează după adevăr, - vine la lumină                                                 | {'îngâmfat'}                                              | Traian Dorz     | Hristos - Înnoitorul nostru    | Meditații la Ev. după Ioan   | articol |
-| Cine nu intră pe uşă...                                                                     | {'îngâmfe'}                                               | Traian Dorz     | Hristos - Păstorul nostru      | Meditații la Ev. după Ioan   | articol |
-| Cinste şi ruşine                                                                            | {'îngâmfat'}                                              | Traian Dorz     | Avuţia Sfântului Moştenitor    | Cugetări Nemuritoare         | articol |
-| Credinţă - cea                                                                              | {'îngâmfate'}                                             | Traian Dorz     | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Cât este ziuă, trebuie să lucrezi                                                           | {'îngâmfat'}                                              | Traian Dorz     | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
-| Dacă aduceţi multă roadă                                                                    | {'îngâmfi'}                                               | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Dacă au păzit Cuvântul Meu                                                                  | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Dacă rămâneţi în Cuvântul Meu                                                               | {'îngâmfare'}                                             | Traian Dorz     | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-+---------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------+--------------------------------+------------------------------+---------+
-Searching Ingamfa using http://localhost:9000...
-Got 171 hits:
++----------------------------------------------------------------------+-------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                | Occurrences | Author      | Tip                            | Carte                        | Volum   |
++----------------------------------------------------------------------+-------------+-------------+--------------------------------+------------------------------+---------+
+| Îngâmfă-te pitic netrebnic                                           | {'Îngâmfă'} | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Bunul slujitor al Domnului                                           | {'îngâmfa'} | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| Cap. 14 - Un an adânc roditor                                        | {'îngâmfă'} | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| ... Dar fiindcă ziceţi: vedem...                                     | {'îngâmfa'} | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | articol |
+| ... Lucruri şi mai mari decât acestea...                             | {'îngâmfă'} | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| A zice şi a face                                                     | {'îngâmfă'} | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Binefacerea şi mulţumirea                                            | {'îngâmfă'} | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Cap. 12 - Voi nu puteţi veni cu noi...                               | {'îngâmfa'} | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| Câte binecuvântări avem noi...                                       | {'îngâmfă'} | Traian Dorz | Întâi să fim                   | Cugetări Nemuritoare         | articol |
+| Dacă ştiţi - dacă faceţi                                             | {'îngâmfă'} | Traian Dorz | Hristos - Modelul nostru       | Meditații la Ev. după Ioan   | articol |
+| Despre mândrie                                                       | {'îngâmfa'} | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Din părţile Olteniei                                                 | {'îngâmfa'} | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Hristos este Totul                                                   | {'îngâmfă'} | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Ispita şi trezirea                                                   | {'îngâmfă'} | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | articol |
+| Isus vorbise despre... - dar ei credeau că...                        | {'îngâmfă'} | Traian Dorz | Hristos - Învierea noastră     | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica Sfintei Învieri                            | {'îngâmfă'} | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată) | {'îngâmfă'} | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 19-a după Rusalii                        | {'îngâmfa'} | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Lucrătorul şi lucrarea                                               | {'îngâmfă'} | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Numele biruitorului                                                  | {'îngâmfa'} | Traian Dorz | Numele Biruitorului            | Cugetări Nemuritoare         | articol |
+| Primirea şi darea                                                    | {'îngâmfă'} | Traian Dorz | Săgeţile biruitoare            | Cugetări Nemuritoare         | articol |
+| Rămâi în Hristos                                                     | {'îngâmfă'} | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | articol |
+| Scopul - şi mijloacele lui                                           | {'îngâmfă'} | Traian Dorz | Credinţa Încununată            | Cugetări Nemuritoare         | articol |
+| Slujire şi răsplată                                                  | {'îngâmfă'} | Traian Dorz | Păşunile Dulci                 | Cugetări Nemuritoare         | articol |
+| Să strângem Cuvântul                                                 | {'îngâmfă'} | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Unitatea şi înţelepciunea Duhului                                    | {'îngâmfă'} | Traian Dorz | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Înaintaşi şi urmaşi                                                  | {'îngâmfa'} | Traian Dorz | Cununile Slăvite               | Cugetări Nemuritoare         | articol |
+| Îngâmfarea                                                           | {'îngâmfă'} | Traian Dorz | Cântări Nemuritoare vol. 3     | Cântări Nemuritoare          | articol |
+| Înţelepţii şi nebunii                                                | {'îngâmfa'} | Traian Dorz | Porţile Veşniciei              | Cugetări Nemuritoare         | articol |
+| Şi vom locui cu ei                                                   | {'îngâmfă'} | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | articol |
+| Ştiinţa şi fapta                                                     | {'îngâmfă'} | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
++----------------------------------------------------------------------+-------------+-------------+--------------------------------+------------------------------+---------+
+Searching Ingamfa using https://api.comori-od.ro...
+Got 31 hits:
 Score: 15.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
@@ -113,21 +44,16 @@ Author: Traian Dorz
 Highlight: <em>Îngâmfă</em>-te pitic netrebnic
 Highlight: <em>Îngâmfă</em>-te pitic netrebnic
 
-Score: 6.9473686
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Îngâmfarea
+Score: 5.9999995
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Bunul slujitor al Domnului
 Type: articol
 Author: Traian Dorz
-Highlight: şi oricine se <em>îngâmfă</em> şi n-ascultă în
-Highlight: 1 - <em>Îngâmfarea</em> este semnul celui prost şi vanitos care
-Highlight: 2 - <em>Îngâmfatul</em>, din nimica vrea să pară cel mai mare -
-Highlight: <em>îngâmfatul</em> se cunoaşte prin prostia lui vădită cel
-Highlight: 5 - <em>Îngâmfarea</em> e păcatul cel dintâi la cei mai mulţi ea
-Highlight: 6 - <em>Îngâmfarea</em> e o stare vinovată la oricine tu
-Highlight: <em>Îngâmfarea</em>
+Highlight: inima nu-şi va <em>îngâmfa</em>-o,
+Highlight: Se vor <em>îngâmfa</em> prosteşte şi se vor lăuda cu acestea,
 
-Score: 6.190476
+Score: 5.9999995
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 14 - Un an adânc roditor
@@ -135,70 +61,14 @@ Type: articol
 Author: Traian Dorz
 Highlight: vreo greşeală ori de un fel ori de altul, dacă se <em>îngâmfă</em> s-o ia înainte şi să nu ţină seama de fraţi, sau
 Highlight: un om, ci direct de la Hristos, totuşi el nu se <em>îngâmfă</em>, nici nu se pretinde singurul deţinător al Revelaţiei
-Highlight: un aer profund profetic şi cu un glas plin de <em>îngâmfată</em> siguranţă, el susţinea morţiş şi fără nici o umbră
-Highlight: adus această şoaptă vicleană pe mulţi ambiţioşi, <em>îngâmfaţi</em> şi încrezuţi, care pun la îndoială şi ispitesc
-Highlight: şi vor fi pierduţi pentru totdeauna, fiindcă <em>îngâmfarea</em> în care i-a prăbuşit satana ca ei să se creadă
-Highlight: sinceritatea... Celor smeriţi le dă harul Său, iar celor <em>îngâmfaţi</em> li-l ia. Celor cu inima curată li se arată Dumnezeu
 
-Score: 4.9
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 19-a după Rusalii
-Type: articol
-Author: Traian Dorz
-Highlight: om este de multe ori în marea primejdie de a se <em>îngâmfa</em> din pricina acelor descoperiri.
-Highlight:  ca să mă pălmuiască, şi să mă împiedice să mă <em>îngâmf</em>. 8
-Highlight: şi dacă sunt caractere mai slabe, încep să se <em>îngâmfe</em>, şi în curând nu numai că nu se cercetează niciodată
-Highlight: să mă cerceteze - zicea nu demult un astfel de <em>îngâmfat</em> depăşit de marea importanţă pe care i-o acordaseră
-Highlight: Lucrarea este a Domnului, cei neascultători şi <em>îngâmfaţi</em> pot face ce vreau în ea, fără a putea fi nici
-Highlight: îngăduitor decât Cuvântul lui Dumnezeu faţă de aceşti <em>îngâmfaţi</em> dispreţuitori de fraţi şi călcători de Cuvânt
-
-Score: 4.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre mândrie
-Type: articol
-Author: Traian Dorz
-Highlight: nu te <em>îngâmfa</em> - mai bine
-Highlight: <em>îngâmfatul</em> a lui vină niciodată nu şi-o spune.  14
-Highlight: că-s <em>îngâmfaţi</em>
-Highlight: iar cei ce-s plini de <em>îngâmfare</em>
-
-Score: 4.6666665
+Score: 4.5
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Vindecătorul nostru
 Title: ... Dar fiindcă ziceţi: vedem...
 Type: articol
 Author: Traian Dorz
 Highlight: Nu te <em>îngâmfa</em> şi nu te prea încrede (
-Highlight: După cei <em>îngâmfaţi</em> şi lăudăroşi, rămâne numai păcatul şi nimic altceva.  Iată
-
-Score: 4.6666665
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Modelul nostru
-Title: Dacă ştiţi - dacă faceţi
-Type: articol
-Author: Traian Dorz
-Highlight: Ştiinţa uneori îl <em>îngâmfă</em> pe om şi îl ameţeşte, însă credinţa împlinitoare
-Highlight: a voii lui Dumnezeu, poate înlocui o cultură <em>îngâmfată</em> şi pretenţioasă, chiar biblică dacă ar fi ea.
-
-Score: 4.6666665
-Volume: Cugetări Nemuritoare
-Book: Săgeţile biruitoare
-Title: Hristos este Totul
-Type: articol
-Author: Traian Dorz
-Highlight: fiindcă ei nu se <em>îngâmfă</em> şi nu asupresc pe cei nevinovaţi.
-Highlight: Dar de obicei stau cei <em>îngâmfaţi</em> şi aspri, iar
-
-Score: 4.6666665
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica Sfintei Învieri
-Type: articol
-Author: Traian Dorz
-Highlight: smereşte cu fraţii!... Şi ce mărunt este oricine se <em>îngâmfă</em> contra fraţilor!
-Highlight: Şi ce tristă pildă ne dau astăzi mărunţii şi <em>îngâmfaţii</em> vorbăreţi confesionalişti şi sectarişti!  Ce
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -209,6 +79,22 @@ Author: Traian Dorz
 Highlight: izbăvirile acestea nu <em>îngâmfă</em>,
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: A zice şi a face
+Type: articol
+Author: Traian Dorz
+Highlight: trufiei cu care inima nebună se împodobeşte şi se <em>îngâmfă</em>.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Binefacerea şi mulţumirea
+Type: articol
+Author: Traian Dorz
+Highlight: Care se prea <em>îngâmfă</em> uneori,
+
+Score: 4.5
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 12 - Voi nu puteţi veni cu noi...
@@ -217,12 +103,52 @@ Author: Traian Dorz
 Highlight: devenit pentru aceştia un motiv în plus de a se <em>îngâmfa</em>.
 
 Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Întâi să fim
+Title: Câte binecuvântări avem noi...
+Type: articol
+Author: Traian Dorz
+Highlight: la un loc înalt se trufeşte, nu se apleacă, se <em>îngâmfă</em>, se laudă, se pretinde şi se închipuie.
+
+Score: 4.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Modelul nostru
+Title: Dacă ştiţi - dacă faceţi
+Type: articol
+Author: Traian Dorz
+Highlight: Ştiinţa uneori îl <em>îngâmfă</em> pe om şi îl ameţeşte, însă credinţa împlinitoare
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Despre mândrie
+Type: articol
+Author: Traian Dorz
+Highlight: nu te <em>îngâmfa</em> - mai bine
+
+Score: 4.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 3
 Title: Din părţile Olteniei
 Type: articol
 Author: Traian Dorz
 Highlight: dar lauda vă va <em>îngâmfa</em>.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Hristos este Totul
+Type: articol
+Author: Traian Dorz
+Highlight: ar trebui să stea cei smeriţi, fiindcă ei nu se <em>îngâmfă</em> şi nu asupresc pe cei nevinovaţi.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Ispita şi trezirea
+Type: articol
+Author: Traian Dorz
+Highlight: Nu-l lasă să întrebe şi să se supună! Ci îl <em>îngâmfă</em> să se închipuie atotcunoscător. Şi îl încăpăţânează
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -235,10 +161,50 @@ Highlight: Nu-l lasă să întrebe şi să se supună! Ci îl <em>îngâmfă</em
 Score: 4.5
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica Sfintei Învieri
+Type: articol
+Author: Traian Dorz
+Highlight: smereşte cu fraţii!... Şi ce mărunt este oricine se <em>îngâmfă</em> contra fraţilor!
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 18-a după Rusalii - (Pescuirea minunată)
 Type: articol
 Author: Traian Dorz
 Highlight: care sunt bogaţi în cele trupeşti. Care se prea <em>îngâmfă</em> uneori, care împărţesc fără fraţi... dar care nu
+
+Score: 4.5
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 19-a după Rusalii
+Type: articol
+Author: Traian Dorz
+Highlight: om este de multe ori în marea primejdie de a se <em>îngâmfa</em> din pricina acelor descoperiri.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Lucrătorul şi lucrarea
+Type: articol
+Author: Traian Dorz
+Highlight: adică un cerşetor, - în timp ce ei se laudă şi se <em>îngâmfă</em> cu înţelepciunea, cu avuţia şi cu cinstea lor.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Numele Biruitorului
+Title: Numele biruitorului
+Type: articol
+Author: Traian Dorz
+Highlight: şi nu te <em>îngâmfa</em> împotriva voii lui Dumnezeu
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Săgeţile biruitoare
+Title: Primirea şi darea
+Type: articol
+Author: Traian Dorz
+Highlight: este deplin încredinţat de acest lucru, - el se <em>îngâmfă</em> când îi merge bine,
 
 Score: 4.5
 Volume: Cugetări Nemuritoare
@@ -250,11 +216,59 @@ Highlight: izbânzile acestea nu <em>îngâmfă</em>,
 
 Score: 4.5
 Volume: Cugetări Nemuritoare
+Book: Credinţa Încununată
+Title: Scopul - şi mijloacele lui
+Type: articol
+Author: Traian Dorz
+Highlight: Acela se <em>îngâmfă</em> împotriva lui Dumnezeu şi vorbeşte cu făţărnicie
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
 Book: Păşunile Dulci
 Title: Slujire şi răsplată
 Type: articol
 Author: Traian Dorz
 Highlight: lui Dumnezeu că i-a ajutat să ajungă acolo, se <em>îngâmfă</em> şi pretind celor rămaşi mai jos ca ei, să le aducă
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Să strângem Cuvântul
+Type: articol
+Author: Traian Dorz
+Highlight: - Ba tocmai pentru că este aşa, el se <em>îngâmfă</em> crezându-i pe alţii răi, iar pe el stând bine.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Unitatea şi înţelepciunea Duhului
+Type: articol
+Author: Traian Dorz
+Highlight: şi ce mărunt este oricine se <em>îngâmfă</em> împotriva fraţilor.
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Cununile Slăvite
+Title: Înaintaşi şi urmaşi
+Type: articol
+Author: Traian Dorz
+Highlight: Nu te <em>îngâmfa</em> ca şi cum prin puterea ta sau prin meritele tale
+
+Score: 4.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 3
+Title: Îngâmfarea
+Type: articol
+Author: Traian Dorz
+Highlight: şi oricine se <em>îngâmfă</em> şi n-ascultă în vreun fel
+
+Score: 4.5
+Volume: Cugetări Nemuritoare
+Book: Porţile Veşniciei
+Title: Înţelepţii şi nebunii
+Type: articol
+Author: Traian Dorz
+Highlight: - nu te mai <em>îngâmfa</em> prosteşte niciodată
 
 Score: 4.5
 Volume: Meditații la Ev. după Ioan
@@ -264,714 +278,11 @@ Type: articol
 Author: Traian Dorz
 Highlight: orb şi gol - ba tocmai pentru că este aşa, el se <em>îngâmfă</em> crezându-i pe alţii aşa, iar pe el, stând bine
 
-Score: 0.9
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
-Type: articol
-Author: Traian Dorz
-Highlight: fraţi sfinţiţi pentru iubire şi smerenie, nu vă <em>îngâmfaţi</em>, nu vă socotiţi mai presus ca fraţii voştri, ca
-Highlight: iubitori vor trăi veşnic, dar numele diotrefilor <em>îngâmfaţi</em> vor fi blestemate veşnic.
-Highlight: amestecată, murdară şi prefăcută, vicleană şi lacomă, <em>îngâmfată</em> şi ambiţioasă. Cei care îi primesc pe aceştia
-Highlight: dornică după descoperiri uimitoare şi inima lor <em>îngâmfată</em>, pentru că nu se mulţumesc numai cu ce este scris
-Highlight: ce mari căderi şi nenorociri a dus ea pe mulţi <em>îngâmfaţi</em> şi neascultători care s-au lăsat atraşi în această
-Highlight: Dar când o stârpitură <em>îngâmfată</em> pretinde că i-a vorbit Dumnezeu şi i-a poruncit
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Despre smerenie
-Type: articol
-Author: Traian Dorz
-Highlight: - sărăcia <em>îngâmfată</em> e prostia cea mai mare.
-Highlight: 24 - Omul <em>îngâmfat</em> şi lacom este-n stare de-orice rău,
-Highlight: care tace şi atuncea când îi zici că-i <em>îngâmfat</em>.
-Highlight:  te <em>îngâmfi</em>
-
-Score: 0.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 3
-Title: Din alte diferite părţi
-Type: articol
-Author: Traian Dorz
-Highlight: şi <em>îngâmfatul</em> cel puternic la slabul cel smerit mereu
-Highlight: dar prostia <em>îngâmfată</em>, cu puterea, tot şi-l ţine.
-Highlight: <em>îngâmfat</em>!
-Highlight: 340 - Cum poate bietul om să fie lăudăros şi <em>îngâmfat</em>
-
-Score: 0.8
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
-Type: articol
-Author: Traian Dorz
-Highlight: Dar osândit va fi veşnic <em>îngâmfatul</em> nerecunoscător care urcându-se pe scara înaintaşilor
-Highlight: şi iar predaţi-vă! - repede, de neruşinarea <em>îngâmfatului</em> sau neputinciosului vorbăreţ, se vor stoarce
-Highlight:  <em>îngâmfat</em> a început să dispreţuiască pe fraţii de vază din
-Highlight: cei prefăcuţi, nechibzuiţi, neascultători şi <em>îngâmfaţi</em>.
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Acum vedem bine...
-Type: articol
-Author: Traian Dorz
-Highlight: alţii spre pierzare fiindcă încep să se <em>îngâmfe</em> şi <em>îngâmfarea</em> merge totdeauna numai cu un pas înaintea
-Highlight: Această <em>îngâmfată</em> încredere, i-a dus pe mulţi la căderi, la rătăciri
-
-Score: 0.75
+Score: 4.5
 Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Conştiinţa şi mustrarea
+Book: Eterna Iubire
+Title: Ştiinţa şi fapta
 Type: articol
 Author: Traian Dorz
-Highlight: Această <em>îngâmfată</em> încredere, i-a dus pe mulţi la cădere, şi la rătăciri
-Highlight: alţii spre pierzare, - fiindcă încep să se <em>îngâmfe</em>.
-Highlight: Şi <em>îngâmfarea</em> merge totdeauna numai cu un pas înaintea
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Este prea de tot...
-Type: articol
-Author: Traian Dorz
-Highlight: timp cât este smerit. Îndată ce omul începe să se <em>îngâmfe</em>, harul lui Dumnezeu îl părăseşte. Omul cade din
-Highlight: fereşte-ne de starea nenorocită pe care o dă <em>îngâmfarea</em> şi neascultarea
-Highlight: plini de atâta răutate cât de plini sunt de <em>îngâmfare</em> şi gelozie.
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Binefăcătorul nostru
-Title: Eu nu umblu după mărturii omeneşti...
-Type: articol
-Author: Traian Dorz
-Highlight: pentru a le căpăta bunăvoinţa şi mărturia lor <em>îngâmfată</em> şi pretenţioasă,
-Highlight: aceasta este nu o mărturie despre Domnul ci o <em>îngâmfată</em> mărturie despre mândria din inima noastră.
-Highlight: De aceea să nu ne <em>îngâmfăm</em> nici odată cu nimic, căci chiar dacă am avea ceva
-
-Score: 0.75
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 8-a după Rusalii - (Înmulţirea pâinilor în pustie)
-Type: articol
-Author: Traian Dorz
-Highlight: 3, 3: zavistii, certuri şi dezbinări... Apoi <em>îngâmfare</em>, lăudăroşenie, neascultare...
-Highlight: care se preface a fi Hristos, pentru ca să vă <em>îngâmfaţi</em>, să nu ascultaţi, să dezbinaţi?
-Highlight: niciodată în Lucrarea Domnului. Nu vor fi certăreţi, <em>îngâmfaţi</em>, neascultători şi prefăcuţi, ci vor fi fraţi adevăraţi
-
-Score: 0.75
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Nu zice Scriptura?
-Type: articol
-Author: Traian Dorz
-Highlight: Având mândrie sau interes să apere o părere <em>îngâmfată</em> şi rătăcită, o învăţătură străină şi felurită
-Highlight: şi un duh care este <em>îngâmfat</em>, vor lua acest Cuvânt ca pe un argument pentru
-Highlight: nici turma Ta sfâşiată, de aceşti stricători <em>îngâmfaţi</em>,
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: ... I-a zis: Învăţătorule, ştim
-Type: articol
-Author: Traian Dorz
-Highlight: şi trag concluzii zgomotoase spunând cu toată <em>îngâmfarea</em>, pe care numai adevărata neştiinţă o poate avea:
-Highlight: ca să nu ne <em>îngâmfăm</em> niciodată, ci smeriţi fiind, să ne învrednicim
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 10 - Va veni un altul...
-Type: articol
-Author: Traian Dorz
-Highlight: Dacă am văzut îndărătnicia asta <em>îngâmfată</em> şi vrăjmăşia aceasta directă, cu lupta pe faţă
-Highlight: s-au rătăcit nici unii. Dar uitaţi-vă la cei <em>îngâmfaţi</em> cum s-au rătăcit cu toţii... Cei ascultători au
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: că fiecare dintre aceste coarne se ridică cu <em>îngâmfare</em> împotriva lui Dumnezeu şi a Hristosului Său.
-Highlight: diavol, balaur, apocaliptic, şarpe veninos, lucifer <em>îngâmfat</em>...etc.
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 2 - A treia zi istorică
-Type: articol
-Author: Traian Dorz
-Highlight:  Duhul <em>îngâmfat</em>, ambiţios şi firesc al unora care dinăuntrul Lucrării
-Highlight: ivit îndată după 1945 ridicând glas dezbinător şi <em>îngâmfat</em> a început tot din Sibiu. Oameni netăiaţi împrejur
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 2 - O taină a lui Dumnezeu
-Type: articol
-Author: Traian Dorz
-Highlight: necruţător şi de necuviincios. Vorbeşte cu atâta <em>îngâmfare</em> şi cu atâta duh de minciună încât nu cunoaşte
-Highlight: Hristos, n-au mai rămas decât nişte umflături <em>îngâmfate</em>, amestecate, nerecunoscătoare, mărginite, egoiste
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 27 - Pe drumul ales
-Type: articol
-Author: Traian Dorz
-Highlight: Pentru <em>îngâmfarea</em> lui de acum, milogeala trecutului său este ceva
-Highlight: face oriunde ar fi, slujba mamonei. Unde este <em>îngâmfare</em> şi prefăcătorie, acolo mai sunt şi alte păcate
-
-Score: 0.6666666
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 29 - Ne apropiem de Ţărm
-Type: articol
-Author: Traian Dorz
-Highlight: veni şi poeţi şi scriitori. În locul unui singur <em>îngâmfat</em> care talentul cântării primit de la Domnul în
-Highlight: mai talentaţi şi mult mai frumoşi. Cel bătrân şi <em>îngâmfat</em> s-a înlăturat singur, iar astăzi nu mai naşte
-
-Score: 0.6666666
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 9 - A doua judecată
-Type: articol
-Author: Traian Dorz
-Highlight: (Acest <em>îngâmfat</em> merită acum orice lecţie - gândirăm noi. Să-l
-Highlight: lângă picioarele oricui ştie să ne perie puţin <em>îngâmfarea</em> noastră prostească!...
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Cum are omul acesta învăţătură?
-Type: articol
-Author: Traian Dorz
-Highlight: unei şcoli cu care să se <em>îngâmfe</em>, umbrind slava lui Dumnezeu cu <em>îngâmfarea</em> lor. Ci ei conştienţi de toată
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Păşunile Dulci
-Title: Dezbinarea vine numai
-Type: poezie
-Author: Traian Dorz
-Highlight: el dă falsa-ncredinţare, el dă duhul <em>îngâmfat</em>
-Highlight: căci sub vorba prefăcută, este <em>îngâmfatul</em> gând
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Dezbinarea vine numai
-Type: poezie
-Author: Traian Dorz
-Highlight: el dă falsa-ncredinţare, el dă duhul <em>îngâmfat</em>
-Highlight: căci sub vorba prefăcută, este <em>îngâmfatul</em> gând
-
-Score: 0.6666666
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: Dezbinarea vine numai
-Type: poezie
-Author: Traian Dorz
-Highlight: el dă falsa-ncredinţare, el dă duhul <em>îngâmfat</em>
-Highlight: căci sub vorba prefăcută, este <em>îngâmfatul</em> gând
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Isus nu voia să stea în Iudeea
-Type: articol
-Author: Traian Dorz
-Highlight: care merg ţepeni de mândrie şi răspund plini de <em>îngâmfare</em> şi dispreţ:
-Highlight: Căci cu lăudăroşi şi <em>îngâmfaţi</em>, Domnul nu umblă niciodată.
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 33-a după Rusalii - (a vameşului şi a fariseului)
-Type: articol
-Author: Traian Dorz
-Highlight: În agitaţia <em>îngâmfată</em> şi neascultătoare cu care diavolul împinge şi
-Highlight: ceva mai deosebiţi decât toţi ceilalţi. Cu o <em>îngâmfare</em> satanică pe care nici nu mai încearcă să şi-o
-
-Score: 0.6666666
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
-Type: articol
-Author: Traian Dorz
-Highlight: Ce bine ar fi fost dacă nici unii nu s-a fi <em>îngâmfat</em> din pricina acelor daruri, care nu pentru asta
-Highlight: Însă îndată ce omul începe să se <em>îngâmfe</em>, să se îngraşe, să se încreadă în sine, să se laude
-
-Score: 0.6666666
-Volume: Spre Canaan
-Book: Spre Canaan
-Title: Moise, alesul Domnului, a petrecut
-Type: articol
-Author: Pr. Iosif Trifa
-Highlight: acesta o straşnică predică şi mustrare pentru <em>îngâmfarea</em> şi trufia omenească?
-Highlight: lucru o straşnică predică şi mustrare pentru <em>îngâmfarea</em> şi trufia omenească?
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Lumina Iubitului Fiu
-Title: Mărturisirea noastră
-Type: articol
-Author: Traian Dorz
-Highlight: aceasta este nu o mărturie despre Domnul ci o <em>îngâmfată</em> mărturie despre mândria din inima noastră goală
-Highlight: De aceea să nu ne <em>îngâmfăm</em> niciodată cu nimic, căci chiar dacă noi am avea
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Nu s-a mai auzit
-Type: articol
-Author: Traian Dorz
-Highlight: făcând astfel de ruşine toată <em>îngâmfarea</em> tiraniei vrăjmaşilor Tăi.
-Highlight: noastre a celor dispreţuiţi, pe însuşi satana, <em>îngâmfatul</em> domn al puterii văzduhului şi al tuturor care
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Pe când vorbea Isus, mulţi au crezut...
-Type: articol
-Author: Traian Dorz
-Highlight: Ce <em>îngâmfare</em> vinovată este asta, fiindcă mulţi care poate ar
-Highlight: Nu vorbi cu <em>îngâmfare</em> şi cu închipuiri mari despre tine, căci vei ajunge
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Slava şi răsplata
-Type: articol
-Author: Traian Dorz
-Highlight: 7 - <em>Îngâmfatul</em> va vorbi linguşitor, făţarnic şi amăgitor, oricine
-Highlight:  şi pentru părerea lui <em>îngâmfată</em>, nu este un om adevărat,
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Stricaţi Templul acesta...
-Type: articol
-Author: Traian Dorz
-Highlight: lucru: fiecare gură cu duh rătăcit, plină de <em>îngâmfarea</em> neştiinţei, răspândeşte tot felul de interpretări
-Highlight: şi Adevărul Tău mistificat de toţi îndrăzneţii <em>îngâmfaţi</em> şi lacomi după rău.
-
-Score: 0.6666666
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Vorbirea şi harul
-Type: articol
-Author: Traian Dorz
-Highlight: 7 - Nu folosi cuvinte <em>îngâmfate</em> şi neînţelese şi nici nu avea despre tine închipuiri
-Highlight: minciună şi în dezbinare, în prefăcătorie şi <em>îngâmfare</em>, - nu mai eşti nici în Cuvântul lui Dumnezeu şi
-
-Score: 0.6666666
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: În Ziua Aceea nu Mă veţi mai întreba
-Type: articol
-Author: Traian Dorz
-Highlight: Ajungând în vârful stejarului, vrejul <em>îngâmfat</em> de creşterea sa, a început să-i pună o mulţime
-Highlight: Curând vei primi şi tu şi toţi cei <em>îngâmfaţi</em> un răspuns veşnic. Fii sigur! Fie siguri!
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: ... Cercetează bine şi vei vedea...
-Type: articol
-Author: Traian Dorz
-Highlight: arăta asemenea cât de greu vedea omul interesat şi <em>îngâmfat</em>, lucrurile cele mai luminoase şi mai apropiate
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pacea noastră
-Title: ... Pentru că n-au cunoscut
-Type: articol
-Author: Traian Dorz
-Highlight: bieţii oameni <em>îngâmfaţi</em> şi nesupuşi,
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: ... Toate acestea, pentru Numele Meu
-Type: articol
-Author: Traian Dorz
-Highlight: să rămână în neascultarea lor vinovată şi în <em>îngâmfare</em>.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: ... Tu, te vei chema Petru...
-Type: articol
-Author: Traian Dorz
-Highlight: seamă la gura şi la inima noastră, ca să nu ne <em>îngâmfăm</em> şi să cădem în osânda diavolului (
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: ... Ucenicii Lui au crezut în El...
-Type: articol
-Author: Traian Dorz
-Highlight: ori plin cu <em>îngâmfare</em>, cu rătăciri sau cu fumuri,
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învierea noastră
-Title: ... vor veni romanii...
-Type: articol
-Author: Traian Dorz
-Highlight: folosul sufletelor, lăsând în umbră sau osândă pe <em>îngâmfaţii</em> pretenţioşi şi profitori ai afacerismului de
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: ... Şi a primit învăţătura Lui
-Type: articol
-Author: Traian Dorz
-Highlight: Bisericii, neascultător de fraţi, certăreţ şi <em>îngâmfat</em>, umblând cu prefăcătorii şi vicleşuguri,
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: A cerceta sau nu
-Type: articol
-Author: Traian Dorz
-Highlight: Ce netrebnic este în această <em>îngâmfare</em> neştiutoare.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Aici este mirarea
-Type: articol
-Author: Traian Dorz
-Highlight:  şi <em>îngâmfaţi</em>.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Împăratul nostru
-Title: Andrei şi Filip
-Type: articol
-Author: Traian Dorz
-Highlight: Numai cei <em>îngâmfaţi</em>, cei care sar prin altă parte în staulul Domnului
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Apoi S-a aplecat iarăşi şi scria
-Type: articol
-Author: Traian Dorz
-Highlight: penibil să priveşti prăbuşirea oamenilor mândri şi <em>îngâmfaţi</em>.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: Au trebuit 46 de ani...
-Type: articol
-Author: Traian Dorz
-Highlight: Numai <em>îngâmfarea</em> le este mai mare ca prostia.
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Bolile şi vindecarea
-Type: articol
-Author: Traian Dorz
-Highlight: Ce <em>îngâmfare</em> vinovată şi păgubitoare este asta. Fiindcă mulţi
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Calea şi urmaşul
-Type: articol
-Author: Traian Dorz
-Highlight: 3 - Cu lăudăroşii şi cu <em>îngâmfaţii</em>, Domnul nu umblă niciodată, aceştia nu merg pe
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 10 - Uşor e jugul lui Hristos
-Type: articol
-Author: Traian Dorz
-Highlight: nici minţile lor îndopate cu tot felul de teorii <em>îngâmfate</em>, nu aveau nici un fel de înţelegere pentru învăţătura
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 13 - După luarea lui Moisi...
-Type: articol
-Author: Traian Dorz
-Highlight: Ca un răspuns la această <em>îngâmfată</em> şi mincinoasă pretenţie, publicarăm în nr. 11
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 13 - E poate ultima-ncercare...
-Type: articol
-Author: Traian Dorz
-Highlight: Însă tagma îmbătrâniţilor, a comozilor şi a <em>îngâmfaţilor</em> pe care marele vrăjmaş îi foloseşte totdeauna
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 14 - Atacul împotriva steagului
-Type: articol
-Author: Traian Dorz
-Highlight: nedrepţi sunt oamenii răzbunători şi orbiţi de <em>îngâmfarea</em> ambiţiei în toate judecăţile lor. Şi ce mari
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 14 - Proverbe
-Type: poezie
-Author: Traian Dorz
-Highlight: dar nesocotitul este <em>îngâmfat</em> şi fără frică.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-Highlight: , ajungem nişte <em>îngâmfaţi</em>, mincinoşi, prefăcuţi şi răufăcători ai Lucrării
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 17 - Ziua a doua
-Type: articol
-Author: Traian Dorz
-Highlight: părintelui Iosif - aceasta s-a dovedit doar o vorbă <em>îngâmfată</em>. Ajuns în străinătate a început îndată să caute
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: uităm la noi înşine, la puterile noastre, la <em>îngâmfarea</em> noastră, la
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 21 - Proverbe
-Type: poezie
-Author: Traian Dorz
-Highlight: 24-Omul <em>îngâmfat</em> şi mândru batjocoritor se cheamă
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 26 - Limpezirea apelor adânci
-Type: articol
-Author: Traian Dorz
-Highlight: vreo minune dacă îi va mai putea salva din orbia <em>îngâmfată</em> şi primejdioasă prin care se pierd pe ei înşişi
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 3 - La scadenţa ispăşirilor
-Type: articol
-Author: Traian Dorz
-Highlight: Sărmanul birjar <em>îngâmfat</em> avea să vadă aceasta numai mult prea târziu.
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 30 - Proverbe
-Type: poezie
-Author: Traian Dorz
-Highlight: 13-Este-un neam de oameni care are ochii <em>îngâmfaţi</em>
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-Highlight:  Din partea acestei îngustimi intolerante şi <em>îngâmfate</em> - care nu poate accepta şi înţelege nimic în afară
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 5 - Necazuri şi speranţe
-Type: articol
-Author: Traian Dorz
-Highlight: cântăreţii... În locul unuia singur, care devenise <em>îngâmfat</em> şi ros de gelozie, înlăturând pe toţi cei ce mai
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 5 - În noaptea aceea...
-Type: articol
-Author: Traian Dorz
-Highlight: unul dintre ei, uitându-se crunt spre noi zise <em>îngâmfat</em>:
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 7 - Ecles
-Type: poezie
-Author: Traian Dorz
-Highlight: decât cel <em>îngâmfat</em> şi rău.
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 7 - Printre leu şi printre urs
-Type: articol
-Author: Traian Dorz
-Highlight: să vă faceţi una cu toţi ceilalţi! Ce înseamnă <em>îngâmfarea</em> asta? Vă credeţi mai altfel decât toată lumea
-
-Score: 0.5
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 8 - A treia Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: a ajuns fostul preot I. Trifa. Neascultarea, <em>îngâmfarea</em>, hula şi lipsa de pocăinţă l-au dus la caterisire
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Cap. 8 - Strigarea Înţelepciunii
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>îngâmfarea</em> şi minciuna şi purtarea rea pe lume.
-
-Score: 0.5
-Volume: Hristos - Marturia mea
-Book: Hristos - Marturia mea
-Title: Cap. 9 - Pe drumul crucii mele
-Type: articol
-Author: Traian Dorz
-Highlight: Oficialitatea clericală îngrăşată în lenevie, <em>îngâmfată</em> în păcat şi încremenită în îngustime, s-a dovedit
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Carne şi Duh...
-Type: articol
-Author: Traian Dorz
-Highlight: poată primi Adevărul Tău, fără să dispreţuim cu <em>îngâmfare</em> vinovată nimic din ceea ce ne porunceşte Cuvântul
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 7
-Title: Ce păreri de rău
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>îngâmfarea</em> umilinţei,
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Pâinea noastră
-Title: Ce semn faci Tu ca să vedem?
-Type: articol
-Author: Traian Dorz
-Highlight: mândrie, de duh de ceartă, de vrăjmăşie şi de <em>îngâmfare</em>.
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Piatra Scumpă
-Title: Cel Unul şi Unicul
-Type: articol
-Author: Traian Dorz
-Highlight: Unor astfel de <em>îngâmfaţi</em>, duhul mincinos le dă falsul
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Cel ce M-a trimes, este cu Mine
-Type: articol
-Author: Traian Dorz
-Highlight: legăturile s-au rupt, omul este descoperit şi toată <em>îngâmfarea</em> era zadarnică. El era singur şi descoperit.
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: Cel ce botează cu Duhul Sfânt...
-Type: articol
-Author: Traian Dorz
-Highlight: pe ei înşişi şi faţă de alţii. Unor astfel de <em>îngâmfaţi</em>, duhul mincinos le dă falsul
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Cine Te crezi Tu că eşti?
-Type: articol
-Author: Traian Dorz
-Highlight: pentru ca să nu cădem în ispitele vrăjmaşului <em>îngâmfat</em> şi lăudăros,
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Învăţătorul nostru
-Title: Cine crede în Mine
-Type: articol
-Author: Traian Dorz
-Highlight: nu îngăduim între noi pe cei care se ridică cu <em>îngâmfare</em> împotriva ei,
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Înnoitorul nostru
-Title: Cine lucrează după adevăr, - vine la lumină
-Type: articol
-Author: Traian Dorz
-Highlight: - s-a dovedit că era un vânzător, un lacom, un <em>îngâmfat</em>, un tâlhar, în stare de orice rău... Dar totdeauna
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Păstorul nostru
-Title: Cine nu intră pe uşă...
-Type: articol
-Author: Traian Dorz
-Highlight: Să nu se <em>îngâmfe</em>, să nu cadă în osânda diavolului...
-
-Score: 0.5
-Volume: Cugetări Nemuritoare
-Book: Avuţia Sfântului Moştenitor
-Title: Cinste şi ruşine
-Type: articol
-Author: Traian Dorz
-Highlight: Un astfel de <em>îngâmfat</em> este fiul satanei.
-
-Score: 0.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: Credinţă - cea
-Type: poezie
-Author: Traian Dorz
-Highlight: Iar sufletele <em>îngâmfate</em> şi pline de păcate-ascunse
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Vindecătorul nostru
-Title: Cât este ziuă, trebuie să lucrezi
-Type: articol
-Author: Traian Dorz
-Highlight: Fiindcă diavolul, de la început, este hoţ, lacom, <em>îngâmfat</em>, dezbinător, mincinos, nestatornic, nervos, neascultător
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Dacă aduceţi multă roadă
-Type: articol
-Author: Traian Dorz
-Highlight: , te <em>îngâmfi</em>
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Viţa vieţii noastre
-Title: Dacă au păzit Cuvântul Meu
-Type: articol
-Author: Traian Dorz
-Highlight: partea Domnului, sau nici nu-ţi pasă de ele, ci cu <em>îngâmfare</em> le respingi?
-
-Score: 0.5
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Luminătorul nostru
-Title: Dacă rămâneţi în Cuvântul Meu
-Type: articol
-Author: Traian Dorz
-Highlight: pornind să vorbească cu <em>îngâmfare</em> despre un
+Highlight: 5 - Ştiinţa uneori îl <em>îngâmfă</em> pe om şi îl ameţeşte, însă credinţa împlinitoare
 

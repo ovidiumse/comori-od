@@ -1,110 +1,152 @@
-+---------------------------------------------------------------------------------------------+-------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Titlu                                                                                       | Occurrences                               | Author      | Tip                            | Carte                        | Volum   |
-+---------------------------------------------------------------------------------------------+-------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-| Cel ce botează cu Duhul Sfânt...                                                            | {'Sfânt'}                                 | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
-| ... Duhul Sfânt nu fusese dat încă...                                                       | {'Sfânt'}                                 | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| O, Tată Sfânt, - eu Ţi-am fost                                                              | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Tată Sfânt mulţumiri                                                                        | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Tată Sfânt mulţumiri...                                                                     | {'Sfânt'}                                 | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| E ceasul sfânt                                                                              | {'sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Nu-i loc mai sfânt                                                                          | {'sfânt', 'Sfânt'}                        | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
-| Nu-i loc mai sfânt                                                                          | {'sfânt', 'Sfânt'}                        | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| O Sfânt Colind                                                                              | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| O, Sfânt Cuvânt                                                                             | {'Sfânt', 'sfânt'}                        | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| O, Sfânt Păstor                                                                             | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Sfânt Adevăr...                                                                             | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
-| Tot ce din Tatăl Sfânt                                                                      | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Tot ce din Tatăl Sfânt                                                                      | {'Sfânt', 'sfânt'}                        | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Sfântă Maică, Sfânt Copil                                                                   | {'Sfântă', 'Sfânt', 'sfântă', 'Sfântul'}  | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Sfântă Maică, Sfânt Copil                                                                   | {'Sfântă', 'Sfânt', 'Sfântul'}            | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| În ceasul sfânt al serii                                                                    | {'sfânt', 'Sfânta'}                       | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
-| În ceasul sfânt al serii                                                                    | {'sfânt', 'Sfânta'}                       | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Ce sfânt e-un legământ                                                                      | {'sfânt'}                                 | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
-| Ce sfânt e-un legământ                                                                      | {'sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| O Sfânt Izvor, ce nalt                                                                      | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| O, Sfânt Copil al Jertfei                                                                   | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| O, Sfânt Cântec vino                                                                        | {'Sfânt', 'sfânt'}                        | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Sfânt Adevăr...                                                                             | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| Sfânt Copil Ceresc                                                                          | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Înţelepciune, sfânt trimis                                                                  | {'sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| În templul sfânt al Oastei                                                                  | {'sfânt', 'Sfânt', 'sfântă'}              | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| În templul sfânt al Oastei...                                                               | {'sfânt', 'Sfânt', 'Sfântă'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
-| Cât Tatăl Sfânt lucrează                                                                    | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Nainte de-al Tău Nume Sfânt                                                                 | {'Sfânt'}                                 | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
-| O Tată Sfânt al Zilei                                                                       | {'Sfânt', 'sfântă'}                       | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
-| O Tată Sfânt al Zilei                                                                       | {'Sfânt', 'sfântă'}                       | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| Sfânt Izvor însângerat                                                                      | {'Sfânt', 'Sfântul'}                      | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
-| Biblia, Cuvântul Sfânt                                                                      | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Ce sfânt şi nalt curaj                                                                      | {'sfânt'}                                 | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
-| Ce sfânt şi nalt curaj                                                                      | {'sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
-| O, Domnul meu Sfânt                                                                         | {'Sfânt'}                                 | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
-| O, Nume Sfânt...                                                                            | {'Sfânt'}                                 | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
-| O, Nume Sfânt...                                                                            | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
-| O, Sfânt Izvor ce speli păcatul                                                             | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| În ce loc sfânt?                                                                            | {'sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
-| Îngeraşul meu cel sfânt                                                                     | {'sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
-| Îţi cântăm Tată Sfânt                                                                       | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cap. 18 - Frumoasele noastre Rusalii                                                        | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Carte Sfântă, Mână Sfântă                                                                   | {'Sfânt', 'Sfântă', 'sfântă'}             | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                                 | {'Sfânt', 'Sfântă'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 17 - Lupta cu leul, lupta cu ursul...                                                  | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica Sfintei Învieri                                                   | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'Sfânt', 'sfântă'}                       | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 2 - O taină a lui Dumnezeu                                                             | {'Sfânt', 'sfânt', 'sfântă'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| ... Du-te şi să nu mai păcătuieşti                                                          | {'Sfânt'}                                 | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'Sfânt'}                                 | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'Sfânt'}                                 | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                              | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 23 - Cuvânt Testamentar                                                                | {'Sfânt', 'sfânt', 'sfântă'}              | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 19 - Omul trimes de Dumnezeu                                                           | {'sfânt', 'Sfânt', 'Sfântul', 'sfântă'}   | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Şi voi de asemenea veţi mărturisi                                                           | {'Sfânt', 'Sfântul'}                      | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'sfânt', 'sfântă', 'Sfânt'}              | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Răscrucea Isus                                                                    | {'Sfânt', 'sfânta', 'sfânt'}              | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 12 - Dovada supremei iubiri                                                            | {'sfânt', 'sfântă'}                       | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)          | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | {'sfânt', 'Sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Când va veni El, va dovedi...                                                               | {'Sfânt', 'sfântului'}                    | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
-| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                         | {'Sfânt', 'sfânt', 'sfântă'}              | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 8 - Aşezarea temeliilor veşnice                                                        | {'Sfânt', 'sfântă', 'sfânt'}              | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 23 - La zece ani de Oaste                                                              | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| El va mărturisi despre Mine                                                                 | {'Sfânt'}                                 | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
-| Cap. 15 - Călătoria la Ierusalim                                                            | {'sfânt', 'Sfântului', 'sfântă', 'Sfânt'} | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 14 - Un an adânc roditor                                                               | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 5-a a Postului Mare                                             | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'Sfânt', 'sfântă', 'sfânt'}              | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Rugul care nu se mistuie                                                          | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 8 - Al şaptelea foc                                                                    | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                      | {'Sfânt', 'sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Psalmul 119                                                                                 | {'Sfânt', 'sfânt'}                        | Traian Dorz | Cântări Nemuritoare vol. 2     | Cântări Nemuritoare          | poezie  |
-| Cap. 29 - Anul jubiliar 1988                                                                | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 20 - Câte feţe ar fi putut avea binele                                                 | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 9 - Adevărurile mormântului nemuritor                                                  | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)                               | {'sfânt', 'Sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 12 - Naşterea imnului duhovnicesc                                                      | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 11 - Semnele Oastei Domnului                                                           | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 1 - Semnul apostoliei şi preţul adevărului                                             | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - A treia zi istorică                                                                | {'sfânt', 'Sfânt', 'Sfânta', 'sfântă'}    | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Cap. 7 - A doua Judecată                                                                    | {'Sfânt', 'sfânt', 'sfântă', 'sfântul'}   | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 2 - Istoria unei Jertfe...                                                             | {'sfânt', 'sfântă', 'Sfânt'}              | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)                  | {'Sfânt', 'Sfântul', 'sfânt'}             | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 18 - Frumosul an 1930                                                                  | {'Sfânt'}                                 | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Cap. 15 - Un An Nou Fericit                                                                 | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-| Dragostea şi ura                                                                            | {'Sfânt', 'sfânt'}                        | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| Cap. 10 - Pe drumul Crucii                                                                  | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
-| Cap. 1 - Cel mai frumos Isus                                                                | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)      | {'sfânt', 'Sfânt'}                        | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 6 - Cutremurătorul început                                                             | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)      | {'Sfânt'}                                 | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
-| Cap. 4 - Aur lămurit, trestii clătinate                                                     | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
-| Cap. 13 - Frumosul tineret creştin                                                          | {'Sfânt', 'sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
-| Curajul şi frica                                                                            | {'Sfânt'}                                 | Traian Dorz | Calea Bunului Urmaş            | Cugetări Nemuritoare         | articol |
-| La Tronul Tău de har                                                                        | {'Sfânt'}                                 | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | poezie  |
-| La Tronul Tău de har                                                                        | {'Sfânt'}                                 | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
-| Cap. 20 - După alţi 30 de ani                                                               | {'sfânt', 'Sfânt'}                        | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
-+---------------------------------------------------------------------------------------------+-------------------------------------------+-------------+--------------------------------+------------------------------+---------+
-Searching Sfant using http://localhost:9000...
-Got 2698 hits:
-Score: 19.25641
++---------------------------------------------------------------------------------------------+-------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Titlu                                                                                       | Occurrences                         | Author      | Tip                            | Carte                        | Volum   |
++---------------------------------------------------------------------------------------------+-------------------------------------+-------------+--------------------------------+------------------------------+---------+
+| Lucrarea Duhului Sfânt                                                                      | {'Sfânt'}                           | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Călăuzirea Duhului Sfânt                                                                    | {'Sfânt'}                           | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Duhul şi Cuvântul Sfânt                                                                     | {'Sfânt', 'sfânt'}                  | Traian Dorz | Lupta cea Bună                 | Cugetări Nemuritoare         | articol |
+| Cel ce botează cu Duhul Sfânt...                                                            | {'Sfânt'}                           | Traian Dorz | Hristos - Dumnezeul nostru     | Meditații la Ev. după Ioan   | articol |
+| ... Duhul Sfânt nu fusese dat încă...                                                       | {'Sfânt'}                           | Traian Dorz | Hristos - Învăţătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| O, Tată Sfânt, - eu Ţi-am fost                                                              | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Luaţi Duh Sfânt                                                                             | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | articol |
+| Duhul Sfânt, Mângâietorul                                                                   | {'Sfânt'}                           | Traian Dorz | Eterna Iubire                  | Cugetări Nemuritoare         | articol |
+| Tată Sfânt mulţumiri...                                                                     | {'Sfânt'}                           | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Tată Sfânt mulţumiri                                                                        | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| E ceasul sfânt                                                                              | {'sfânt'}                           | Traian Dorz | Hristos - Mântuitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| E ceasul sfânt                                                                              | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Nu-i loc mai sfânt                                                                          | {'sfânt', 'Sfânt'}                  | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| Nu-i loc mai sfânt                                                                          | {'sfânt', 'Sfânt'}                  | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| O Sfânt Colind                                                                              | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| O, Sfânt Colind                                                                             | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| O, Sfânt Cuvânt                                                                             | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Împăratul nostru     | Meditații la Ev. după Ioan   | poezie  |
+| O, Sfânt Cuvânt                                                                             | {'Sfânt', 'sfânt'}                  | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| O, Sfânt Păstor                                                                             | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Sfânt Adevăr...                                                                             | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| Tot ce din Tatăl Sfânt                                                                      | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Tot ce din Tatăl Sfânt                                                                      | {'Sfânt', 'sfânt'}                  | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Lucrarea Duhului Sfânt                                                                      | {'Sfânt', 'Sfântului'}              | Traian Dorz | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | articol |
+| Ce sfânt e-un legământ                                                                      | {'sfânt'}                           | Traian Dorz | Hristos - Vindecătorul nostru  | Meditații la Ev. după Ioan   | poezie  |
+| Ce sfânt e-un legământ                                                                      | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Duhul Sfânt e Porumbelul                                                                    | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| Libertatea Cuvântului Sfânt                                                                 | {'Sfânt'}                           | Traian Dorz | Garanţia Veşnică               | Cugetări Nemuritoare         | articol |
+| O Sfânt Izvor, ce nalt                                                                      | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| O, Sfânt Copil al Jertfei                                                                   | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| O, Sfânt Cântec vino                                                                        | {'Sfânt', 'sfânt'}                  | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| Sfânt Adevăr...                                                                             | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Sfânt Copil Ceresc                                                                          | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| În ceasul sfânt al serii                                                                    | {'sfânt'}                           | Traian Dorz | Hristos - Calea vieţii noastre | Meditații la Ev. după Ioan   | poezie  |
+| În ceasul sfânt al serii                                                                    | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Înţelepciune, sfânt trimis                                                                  | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Sfântă Maică, Sfânt Copil                                                                   | {'Sfânt', 'Sfântul'}                | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Sfântă Maică, Sfânt Copil                                                                   | {'Sfânt', 'Sfântul'}                | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Sfântă Maică, Sfânt Copil                                                                   | {'Sfânt', 'Sfântul'}                | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Cât Tatăl Sfânt lucrează                                                                    | {'Sfânt'}                           | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | poezie  |
+| Cât Tatăl Sfânt lucrează                                                                    | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Nainte de-al Tău Nume Sfânt                                                                 | {'Sfânt'}                           | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
+| Nainte de-al Tău Nume Sfânt...                                                              | {'Sfânt'}                           | Traian Dorz | Hristos - Slava noastră        | Meditații la Ev. după Ioan   | poezie  |
+| Nainte de-al Tău Nume Sfânt...                                                              | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| Orice sfânt cuvânt                                                                          | {'sfânt'}                           | Traian Dorz | Poruncile Iubirii              | Cugetări Nemuritoare         | poezie  |
+| În templul sfânt al Oastei                                                                  | {'sfânt', 'Sfânt'}                  | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| În templul sfânt al Oastei...                                                               | {'sfânt', 'Sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | poezie  |
+| Sfânt Izvor însângerat                                                                      | {'Sfânt', 'Sfântul'}                | Traian Dorz | Cântări Nemuritoare vol. 7     | Cântări Nemuritoare          | poezie  |
+| În ce loc sfânt?                                                                            | {'sfânt', 'sfântu'}                 | Traian Dorz | Şi acum să facem               | Cugetări Nemuritoare         | poezie  |
+| În ce loc sfânt?                                                                            | {'sfânt', 'sfântu'}                 | Traian Dorz | Cântări Nemuritoare vol. 8     | Cântări Nemuritoare          | poezie  |
+| Biblia, Cuvântul Sfânt                                                                      | {'Sfânt'}                           | Traian Dorz | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | poezie  |
+| Biblia, Cuvântul Sfânt                                                                      | {'Sfânt'}                           | Traian Dorz | Dorim să fim                   | Cugetări Nemuritoare         | poezie  |
+| Biblia, Cuvântul Sfânt                                                                      | {'Sfânt'}                           | Traian Dorz | Eternele Poeme                 | Cugetări Nemuritoare         | poezie  |
+| Biblia, Cuvântul Sfânt                                                                      | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Biblia, Cuvântul Sfânt                                                                      | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Ce sfânt şi nalt curaj                                                                      | {'sfânt'}                           | Traian Dorz | Hristos - Izvorul nostru       | Meditații la Ev. după Ioan   | poezie  |
+| Ce sfânt şi nalt curaj                                                                      | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| Cântă Maică-n ceasul sfânt                                                                  | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 11    | Cântări Nemuritoare          | poezie  |
+| Darurile Duhului Sfânt                                                                      | {'sfânt', 'Sfânt'}                  | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Duhule Sfânt, du-mă                                                                         | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 10    | Cântări Nemuritoare          | poezie  |
+| O Tată Sfânt al Zilei                                                                       | {'Sfânt'}                           | Traian Dorz | Hristos - Sfinţitorul nostru   | Meditații la Ev. după Ioan   | poezie  |
+| O Tată Sfânt al Zilei                                                                       | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 6     | Cântări Nemuritoare          | poezie  |
+| O, Domnul meu Sfânt                                                                         | {'Sfânt'}                           | Traian Dorz | Piatra Scumpă                  | Cugetări Nemuritoare         | poezie  |
+| O, Domnul meu Sfânt                                                                         | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| O, Nume Sfânt...                                                                            | {'Sfânt'}                           | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | poezie  |
+| O, Nume Sfânt...                                                                            | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 9     | Cântări Nemuritoare          | poezie  |
+| O, Sfânt Izvor ce speli păcatul                                                             | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Semănaţi Cuvântul Sfânt                                                                     | {'Sfânt'}                           | Traian Dorz | Semănaţi Cuvântul Sfânt        | Cugetări Nemuritoare         | poezie  |
+| Îngeraşul meu cel sfânt                                                                     | {'sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 4     | Cântări Nemuritoare          | poezie  |
+| Îţi cântăm Tată Sfânt                                                                       | {'Sfânt'}                           | Traian Dorz | Cântări Nemuritoare vol. 1     | Cântări Nemuritoare          | poezie  |
+| Lucrarea Sfântului Duh                                                                      | {'Sfânt', 'sfântului', 'Sfântului'} | Traian Dorz | Mărturisirea Strălucită        | Cugetări Nemuritoare         | articol |
+| Cap. 18 - Frumoasele noastre Rusalii                                                        | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)                                 | {'Sfânt'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 17 - Lupta cu leul, lupta cu ursul...                                                  | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica Sfintei Învieri                                                   | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic) | {'Sfânt'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 2 - O taină a lui Dumnezeu                                                             | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| ... Du-te şi să nu mai păcătuieşti                                                          | {'Sfânt'}                           | Traian Dorz | Hristos - Luminătorul nostru   | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)                               | {'Sfânt'}                           | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 22 - Statutele - marea şi permanenta primejdie                                         | {'Sfânt'}                           | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)                              | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 23 - Cuvânt Testamentar                                                                | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 19 - Omul trimes de Dumnezeu                                                           | {'sfânt', 'Sfânt', 'Sfântul'}       | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Vorba şi împlinirea                                                                         | {'Sfânt'}                           | Traian Dorz | Alergarea Stăruitoare          | Cugetări Nemuritoare         | articol |
+| Şi voi de asemenea veţi mărturisi                                                           | {'Sfânt', 'Sfântul'}                | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Cap. 10 - Cel mai necesar şi cel mai dificil colaborator                                    | {'sfânt', 'Sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)          | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 12 - Dovada supremei iubiri                                                            | {'sfânt'}                           | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Cap. 11 - Răscrucea Isus                                                                    | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 2     | Istoria unei Jertfe          | articol |
+| Când va veni El, va dovedi...                                                               | {'Sfânt', 'sfântului'}              | Traian Dorz | Hristos - Pacea noastră        | Meditații la Ev. după Ioan   | articol |
+| La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)                              | {'sfânt', 'Sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)                         | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 8 - Aşezarea temeliilor veşnice                                                        | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| El va mărturisi despre Mine                                                                 | {'Sfânt'}                           | Traian Dorz | Hristos - Viţa vieţii noastre  | Meditații la Ev. după Ioan   | articol |
+| Cap. 14 - Un an adânc roditor                                                               | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 4     | Istoria unei Jertfe          | articol |
+| Cap. 23 - La zece ani de Oaste                                                              | {'sfânt', 'Sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| Cap. 15 - Călătoria la Ierusalim                                                            | {'sfânt', 'Sfântului', 'Sfânt'}     | Traian Dorz | Istoria unei Jertfe vol. 1     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 5-a a Postului Mare                                             | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 14 - Să ne apropiem de sfârşit                                                         | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
+| La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)                      | {'Sfânt', 'sfânt'}                  | Traian Dorz | Hristos - Puterea Apostoliei   | Hristos - Puterea Apostoliei | articol |
+| Cap. 8 - Al şaptelea foc                                                                    | {'Sfânt', 'sfânt'}                  | Traian Dorz | Istoria unei Jertfe vol. 3     | Istoria unei Jertfe          | articol |
++---------------------------------------------------------------------------------------------+-------------------------------------+-------------+--------------------------------+------------------------------+---------+
+Searching Sfant using https://api.comori-od.ro...
+Got 3044 hits:
+Score: 19.737679
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Lucrarea Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: le-a făgăduit că li-L va trimite pe Duhul <em>Sfânt</em>, ca Sprijinitor, ca Ocrotitor şi Mângâietor, în
+Highlight: Şi iată că oriunde este Duhul <em>Sfânt</em>, aceasta va fi şi Lucrarea Lui: mărturisirea despre
+Highlight: 2 - Da, Lucrarea adevărată a Duhului <em>Sfânt</em> este şi va fi mărturisirea despre Jertfa Domnului
+Highlight: mărturiseşte Duhul <em>Sfânt</em>.
+Highlight: Aceasta este mărturisirea Duhului <em>Sfânt</em>.
+Highlight: 4 - Orice om care se laudă că-L are pe Duhul <em>Sfânt</em>, dar nu-L cunoaşte pe Hristos şi nu-I mărturiseşte
+Highlight: Lucrarea Duhului <em>Sfânt</em>
+
+Score: 19.680952
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Călăuzirea Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: trimis al Duhului <em>Sfânt</em>, vorbeşte pe limba fiecăruia dintre cei ce-l aud. Duhul <em>Sfânt</em> îi dă darul acesta
+Highlight: când tu umbli călăuzit de Duhul <em>Sfânt</em>,  când
+Highlight: când vorbeşti ce-ţi dă Duhul <em>Sfânt</em>,  când
+Highlight: fericit, căci aşa sunt cele pe care le dă Duhul <em>Sfânt</em>.  Şi
+Highlight: dacă nu ai un puternic îndemn din partea Duhului <em>Sfânt</em> şi o aprinsă lumină de la El.  Căci
+Highlight: Ci umple-te mai întâi de Duhul <em>Sfânt</em> prin rugăciune, prin meditaţie, prin smerenie, -
+Highlight: Călăuzirea Duhului <em>Sfânt</em>
+
+Score: 19.608696
+Volume: Cugetări Nemuritoare
+Book: Lupta cea Bună
+Title: Duhul şi Cuvântul Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: Cuvântul <em>Sfânt</em> nu este vorba de acei care se laudă cu toate gurile lor că au botezul cu Duhul <em>Sfânt</em>, ci de
+Highlight: Să fie tot aşa de curat, de <em>sfânt</em> şi de adevărat, şi după ieşirea din mormântul întunecos
+Highlight: - ci un îmbrăcat şi un înnoit în Duhul <em>Sfânt</em>.  12
+Highlight: într-o astfel de stare el poate fi botezat cu Duhul <em>Sfânt</em>,  umplut
+Highlight: botezaţi cu Duhul <em>Sfânt</em>.  Botezul
+Highlight: - cel cu Duhul <em>Sfânt</em> îl face numai Dumnezeu
+Highlight: Duhul şi Cuvântul <em>Sfânt</em>
+
+Score: 19.25
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Dumnezeul nostru
 Title: Cel ce botează cu Duhul Sfânt...
@@ -118,7 +160,7 @@ Highlight: condiţii nimeni n-a primit niciodată botezul cu Duhul <em>Sfânt</e
 Highlight: oricâte stăruinţe ar depune a primi botezul Duhului <em>Sfânt</em>, în zadar. Cine nu le are pe acestea
 Highlight: Cel ce botează cu Duhul <em>Sfânt</em>...
 
-Score: 19.10909
+Score: 19.1
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Învăţătorul nostru
 Title: ... Duhul Sfânt nu fusese dat încă...
@@ -146,6 +188,48 @@ Highlight: O, Rege <em>Sfânt</em>, - eu Ţi-s ostaşul
 Highlight: o, Rege <em>Sfânt</em>.
 Highlight: O, Tată <em>Sfânt</em>, - eu Ţi-am fost
 
+Score: 19.01111
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: Luaţi Duh Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: suflat peste ei, şi le-a zis: Luaţi Duh <em>Sfânt</em>.
+Highlight: Darul Duhului <em>Sfânt</em> este insuflarea Dumnezeiască,
+Highlight: acolo este putere, este dovada prezenţei Duhului <em>Sfânt</em>, este semnul neîndoios al trimiterii lui Dumnezeu
+Highlight: În faţa lui sufletele sunt cuprinse de un <em>sfânt</em> respect.
+Highlight: Isus Domnul nostru se revarsă în orice fel de rod <em>sfânt</em> şi de dovadă cerească şi mântuitoare, numai asupra
+Highlight: : Luaţi Dus <em>Sfânt</em>.
+Highlight: Luaţi Duh <em>Sfânt</em>
+
+Score: 19.0
+Volume: Cugetări Nemuritoare
+Book: Eterna Iubire
+Title: Duhul Sfânt, Mângâietorul
+Type: articol
+Author: Traian Dorz
+Highlight: 1 - Cât de multă mângâiere ne dă nouă Duhul <em>Sfânt</em>, când ne aduce aminte de toate Cuvintele Domnului nostru
+Highlight: - O, ce grijă sfântă are Duhul <em>Sfânt</em>, Domnul nostru de Viaţă Făcătorul, care de la Tatăl
+Highlight: 2 - Duhul <em>Sfânt</em> îi pregăteşte pe lucrătorii şi îndrumătorii vii
+Highlight:  Sfătuitor, Învăţător şi Mângâietor este Duhul <em>Sfânt</em>, pentru noi toţi!
+Highlight: şi de la Fiul acum, ne este dat de către Duhul <em>Sfânt</em>,
+Highlight: Dulcelui nostru Mângâietor şi Ocrotitor, Duhul <em>Sfânt</em>.
+Highlight: Duhul <em>Sfânt</em>, Mângâietorul
+
+Score: 18.88889
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: Tată Sfânt mulţumiri...
+Type: poezie
+Author: Traian Dorz
+Highlight: Tată <em>Sfânt</em> mulţumiri ne-ncetat
+Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
+Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
+Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
+Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
+Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
+Highlight: Tată <em>Sfânt</em> mulţumiri...
+
 Score: 18.875
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 1
@@ -160,21 +244,21 @@ Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
 Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
 Highlight: Tată <em>Sfânt</em> mulţumiri
 
-Score: 18.875
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Tată Sfânt mulţumiri...
+Score: 18.714285
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Mântuitorul nostru
+Title: E ceasul sfânt
 Type: poezie
 Author: Traian Dorz
-Highlight: Tată <em>Sfânt</em> mulţumiri ne-ncetat
-Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
-Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
-Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
-Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
-Highlight: mulţumim, mulţumim Tată <em>Sfânt</em>!
-Highlight: Tată <em>Sfânt</em> mulţumiri...
+Highlight: ceasul <em>sfânt</em>, apleacă-ţi tăcerea-n rugăciune
+Highlight: e ceasul <em>sfânt</em> când
+Highlight: locul <em>sfânt</em>, descalţă-ţi povara de pe gleznă
+Highlight: e locul <em>sfânt</em>... de-atâta
+Highlight: E-ndemnul <em>sfânt</em>, sărută-l cu lacrima fierbinte
+Highlight: e-ndemnul <em>sfânt</em>, îmbracă-i
+Highlight: E ceasul <em>sfânt</em>
 
-Score: 18.746033
+Score: 18.714285
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 7
 Title: E ceasul sfânt
@@ -225,6 +309,30 @@ Highlight: O Praznic <em>Sfânt</em> şi Luminos
 Highlight: O <em>Sfânt</em> Copil Dumnezeiesc
 Highlight: O <em>Sfânt</em> Colind o dalbe flori
 Highlight: O <em>Sfânt</em> Colind
+
+Score: 18.2
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: O, Sfânt Colind
+Type: poezie
+Author: Traian Dorz
+Highlight: O, <em>Sfânt</em> Colind îndepărtat
+Highlight: O, Praznic <em>Sfânt</em> şi Luminos
+Highlight: O, <em>Sfânt</em> Copil Dumnezeiesc
+Highlight: O, <em>Sfânt</em> Colind, o, dalbe flori,
+Highlight: O, <em>Sfânt</em> Colind
+
+Score: 18.2
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Împăratul nostru
+Title: O, Sfânt Cuvânt
+Type: poezie
+Author: Traian Dorz
+Highlight: O, <em>Sfânt</em> Cuvânt al lui Hristos
+Highlight: O, <em>Sfânt</em> Cuvânt, o bun Cuvânt
+Highlight: mai <em>sfânt</em> tot drumul vieţii mele.
+Highlight: - O <em>Sfânt</em> Cuvânt, Tu mi-eşti de-ajuns
+Highlight: O, <em>Sfânt</em> Cuvânt
 
 Score: 18.2
 Volume: Cântări Nemuritoare
@@ -286,53 +394,17 @@ Highlight: Tot ce-i din Duhul <em>Sfânt</em> putere
 Highlight: curat şi <em>sfânt</em> şi luminos
 Highlight: Tot ce din Tatăl <em>Sfânt</em>
 
-Score: 17.833332
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 4
-Title: Sfântă Maică, Sfânt Copil
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Sfântă</em> Maică, <em>Sfânt</em> Copil
-Highlight: şi <em>Sfânt</em>
-Highlight: dulce taină <em>sfântă</em> sufletul
-Highlight: vine <em>Sfântul</em> Copilaş
-Highlight: <em>Sfântă</em> Maică, <em>Sfânt</em> Copil
-
-Score: 17.833332
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: Sfântă Maică, Sfânt Copil
-Type: poezie
-Author: Traian Dorz
-Highlight: <em>Sfântă</em> Maică, <em>Sfânt</em> Copil
-Highlight: Fiu Frumos şi <em>Sfânt</em>
-Highlight: dulce Taină <em>Sfântă</em> sufletul
-Highlight: vine <em>Sfântul</em> Copilaş
-Highlight: <em>Sfântă</em> Maică, <em>Sfânt</em> Copil
-
 Score: 17.8
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Calea vieţii noastre
-Title: În ceasul sfânt al serii
-Type: poezie
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Lucrarea Duhului Sfânt
+Type: articol
 Author: Traian Dorz
-Highlight: În ceasul <em>sfânt</em> al serii
-Highlight: spre-al inimii <em>sfânt</em> Ţel
-Highlight: nălţa mai <em>sfânt</em> spre El.
-Highlight: pe <em>Sfânta</em> Carte lin şi-n
-Highlight: În ceasul <em>sfânt</em> al serii
-
-Score: 17.8
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 9
-Title: În ceasul sfânt al serii
-Type: poezie
-Author: Traian Dorz
-Highlight: În ceasul <em>sfânt</em> al serii
-Highlight: spre-al inimii <em>sfânt</em> Ţel
-Highlight: nălţa mai <em>sfânt</em> spre El.
-Highlight: pe <em>Sfânta</em> Carte lin şi-n
-Highlight: În ceasul <em>sfânt</em> al serii
+Highlight: Dovadă că aceştia toţi sunt călăuziţi de Duhul <em>Sfânt</em> este în primul rând că între ei au încetat pe totdeauna
+Highlight: face şi se continuă o adevărată lucrare a Duhului <em>Sfânt</em>, pe toate feţele se vede voioşia, curăţia, încrederea
+Highlight: cântare divină, prin lucrarea nemuritoare a Duhului <em>Sfânt</em>.
+Highlight: Mântuitorului Hristos şi au fost pecetluiţi cu harul <em>Sfântului</em> Duh, ajung să aibă acelaşi fel de a gândi, de
+Highlight: Lucrarea Duhului <em>Sfânt</em>
 
 Score: 17.75
 Volume: Meditații la Ev. după Ioan
@@ -355,6 +427,28 @@ Highlight: Ce <em>sfânt</em> e-un legământ, căci Însuşi
 Highlight: ce poate fi mai <em>sfânt</em> ca asta
 Highlight: Când pasu-acesta-i <em>sfânt</em> şi unic
 Highlight: Ce <em>sfânt</em> e-un legământ
+
+Score: 17.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Duhul Sfânt e Porumbelul
+Type: poezie
+Author: Traian Dorz
+Highlight: Duhul <em>Sfânt</em> e Porumbelul cu crenguţa de măslin
+Highlight: Duhul <em>Sfânt</em> să le îmbrace în veşmântul Lui divin
+Highlight: Duhul <em>Sfânt</em> să ne aprindă cu-al Său Foc tot mai deplin
+Highlight: Duhul <em>Sfânt</em> e Porumbelul
+
+Score: 17.75
+Volume: Cugetări Nemuritoare
+Book: Garanţia Veşnică
+Title: Libertatea Cuvântului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: libertatea lui Hristos şi a Cuvântului Său Cel <em>Sfânt</em>.
+Highlight: mărturisească spre Slava lui Dumnezeu Tatăl, Numele Cel <em>Sfânt</em> al lui Hristos, Dumnezeu-Fiul...
+Highlight: a tăcea atunci când Numele Cel <em>Sfânt</em> al lui Dumnezeu este batjocorit, iar tu poţi interveni
+Highlight: Libertatea Cuvântului <em>Sfânt</em>
 
 Score: 17.75
 Volume: Cântări Nemuritoare
@@ -412,6 +506,28 @@ Highlight: <em>Sfânt</em> Copil Divin
 Highlight: <em>Sfânt</em> Copil Ceresc
 
 Score: 17.75
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Calea vieţii noastre
+Title: În ceasul sfânt al serii
+Type: poezie
+Author: Traian Dorz
+Highlight: În ceasul <em>sfânt</em> al serii
+Highlight: spre-al inimii <em>sfânt</em> Ţel
+Highlight: nălţa mai <em>sfânt</em> spre El.
+Highlight: În ceasul <em>sfânt</em> al serii
+
+Score: 17.75
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
+Title: În ceasul sfânt al serii
+Type: poezie
+Author: Traian Dorz
+Highlight: În ceasul <em>sfânt</em> al serii
+Highlight: spre-al inimii <em>sfânt</em> Ţel
+Highlight: nălţa mai <em>sfânt</em> spre El.
+Highlight: În ceasul <em>sfânt</em> al serii
+
+Score: 17.75
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 8
 Title: Înţelepciune, sfânt trimis
@@ -424,25 +540,46 @@ Highlight: Înţelepciune, <em>sfânt</em> trimis
 
 Score: 17.083332
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: În templul sfânt al Oastei
+Book: Cântări Nemuritoare vol. 4
+Title: Sfântă Maică, Sfânt Copil
 Type: poezie
 Author: Traian Dorz
-Highlight: În templul <em>sfânt</em> al Oastei Hristos întâi v-a pus
-Highlight: Tot <em>Sfânt</em>-Cuvântul-Veşnic, condamnă ce-aţi făcut!
-Highlight: trădat-aţi cauza <em>sfântă</em> de care-aţi fost legaţi şi
-Highlight: În templul <em>sfânt</em> al Oastei
+Highlight: Maică, <em>Sfânt</em> Copil
+Highlight: Fiu Frumos şi <em>Sfânt</em>
+Highlight: vine <em>Sfântul</em> Copilaş
+Highlight: Sfântă Maică, <em>Sfânt</em> Copil
 
 Score: 17.083332
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: În templul sfânt al Oastei...
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Sfântă Maică, Sfânt Copil
 Type: poezie
 Author: Traian Dorz
-Highlight: În templul <em>sfânt</em> al Oastei Hristos întâi v-a pus
-Highlight: Tot <em>Sfânt</em>-Cuvântul-Veşnic condamnă ce-aţi făcut!
-Highlight: trădat-aţi Cauza <em>Sfântă</em> de care-aţi fost legaţi şi
-Highlight: În templul <em>sfânt</em> al Oastei...
+Highlight: Sfântă Maică, <em>Sfânt</em> Copil,
+Highlight: Frumos şi <em>Sfânt</em>,
+Highlight: vine <em>Sfântul</em> Copilaş
+Highlight: Sfântă Maică, <em>Sfânt</em> Copil
+
+Score: 17.083332
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: Sfântă Maică, Sfânt Copil
+Type: poezie
+Author: Traian Dorz
+Highlight: Maică, <em>Sfânt</em> Copil
+Highlight: Fiu Frumos şi <em>Sfânt</em>
+Highlight: vine <em>Sfântul</em> Copilaş
+Highlight: Sfântă Maică, <em>Sfânt</em> Copil
+
+Score: 17.0
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: Cât Tatăl Sfânt lucrează
+Type: poezie
+Author: Traian Dorz
+Highlight: Cât Tatăl <em>Sfânt</em> lucrează
+Highlight: Cât Duhul <em>Sfânt</em> lucrează
+Highlight: Cât Tatăl <em>Sfânt</em> lucrează
 
 Score: 17.0
 Volume: Cântări Nemuritoare
@@ -464,25 +601,55 @@ Highlight: Nainte de-al Tău Nume <em>Sfânt</em>, nimic n-a fost Isus...
 Highlight: ci Numele Tău <em>Sfânt</em> a fost Isus, primul grai
 Highlight: Nainte de-al Tău Nume <em>Sfânt</em>
 
-Score: 15.666667
+Score: 17.0
 Volume: Meditații la Ev. după Ioan
-Book: Hristos - Sfinţitorul nostru
-Title: O Tată Sfânt al Zilei
+Book: Hristos - Slava noastră
+Title: Nainte de-al Tău Nume Sfânt...
 Type: poezie
 Author: Traian Dorz
-Highlight: O Tată <em>Sfânt</em> al Zilei şi-al Nopţii Făcător
-Highlight: Ci-n Mâna Ta cea <em>sfântă</em> şi-n mare mila Ta
-Highlight: O Tată <em>Sfânt</em> al Zilei
+Highlight: Nainte de-al Tău Nume <em>Sfânt</em>, nimic n-a fost Isus...
+Highlight: ci Numele Tău <em>Sfânt</em> a fost Isuse, primul grai
+Highlight: Nainte de-al Tău Nume <em>Sfânt</em>...
 
-Score: 15.666667
+Score: 17.0
 Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 6
-Title: O Tată Sfânt al Zilei
+Book: Cântări Nemuritoare vol. 9
+Title: Nainte de-al Tău Nume Sfânt...
 Type: poezie
 Author: Traian Dorz
-Highlight: O Tată <em>Sfânt</em> al Zilei şi-al Nopţii Făcător
-Highlight: Ci-n Mâna Ta cea <em>sfântă</em> şi-n mare mila Ta
-Highlight: O Tată <em>Sfânt</em> al Zilei
+Highlight: Nainte de-al Tău Nume <em>Sfânt</em>, nimic n-a fost Isus...
+Highlight: ci Numele Tău <em>Sfânt</em> a fost Isuse, primul grai
+Highlight: Nainte de-al Tău Nume <em>Sfânt</em>...
+
+Score: 17.0
+Volume: Cugetări Nemuritoare
+Book: Poruncile Iubirii
+Title: Orice sfânt cuvânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Orice <em>sfânt</em> cuvânt să ştii
+Highlight: ţi-e avutul cel mai <em>sfânt</em>
+Highlight: Orice <em>sfânt</em> cuvânt
+
+Score: 17.0
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 1
+Title: În templul sfânt al Oastei
+Type: poezie
+Author: Traian Dorz
+Highlight: În templul <em>sfânt</em> al Oastei Hristos întâi v-a pus
+Highlight: Tot <em>Sfânt</em>-Cuvântul-Veşnic, condamnă ce-aţi făcut!
+Highlight: În templul <em>sfânt</em> al Oastei
+
+Score: 17.0
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 3
+Title: În templul sfânt al Oastei...
+Type: poezie
+Author: Traian Dorz
+Highlight: În templul <em>sfânt</em> al Oastei Hristos întâi v-a pus
+Highlight: Tot <em>Sfânt</em>-Cuvântul-Veşnic condamnă ce-aţi făcut!
+Highlight: În templul <em>sfânt</em> al Oastei...
 
 Score: 15.666667
 Volume: Cântări Nemuritoare
@@ -494,6 +661,53 @@ Highlight: <em>Sfânt</em> Izvor însângerat
 Highlight: <em>Sfântul</em> Sângelui Izvor
 Highlight: <em>Sfânt</em> Izvor însângerat
 
+Score: 15.666667
+Volume: Cugetări Nemuritoare
+Book: Şi acum să facem
+Title: În ce loc sfânt?
+Type: poezie
+Author: Traian Dorz
+Highlight: În ce loc <em>sfânt</em> să-Ţi strâng eu oare
+Highlight: necurăţit prin <em>sfântu</em>-i foc.
+Highlight: În ce loc <em>sfânt</em>?
+
+Score: 15.666667
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 8
+Title: În ce loc sfânt?
+Type: poezie
+Author: Traian Dorz
+Highlight: În ce loc <em>sfânt</em> să-Ţi strâng eu oare
+Highlight: necurăţit prin <em>sfântu</em>-i foc.
+Highlight: În ce loc <em>sfânt</em>?
+
+Score: 15.5
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Biblia, Cuvântul Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Biblia, - Cuvântul <em>Sfânt</em>
+Highlight: Biblia, Cuvântul <em>Sfânt</em>
+
+Score: 15.5
+Volume: Cugetări Nemuritoare
+Book: Dorim să fim
+Title: Biblia, Cuvântul Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Biblia, Cuvântul <em>Sfânt</em>
+Highlight: Biblia, Cuvântul <em>Sfânt</em>
+
+Score: 15.5
+Volume: Cugetări Nemuritoare
+Book: Eternele Poeme
+Title: Biblia, Cuvântul Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Biblia, - Cuvântul <em>Sfânt</em>
+Highlight: Biblia, Cuvântul <em>Sfânt</em>
+
 Score: 15.5
 Volume: Cântări Nemuritoare
 Book: Cântări Nemuritoare vol. 4
@@ -501,6 +715,15 @@ Title: Biblia, Cuvântul Sfânt
 Type: poezie
 Author: Traian Dorz
 Highlight: Biblia, Cuvântul <em>Sfânt</em>
+Highlight: Biblia, Cuvântul <em>Sfânt</em>
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Biblia, Cuvântul Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Biblia, - Cuvântul <em>Sfânt</em>
 Highlight: Biblia, Cuvântul <em>Sfânt</em>
 
 Score: 15.5
@@ -522,8 +745,62 @@ Highlight: Ce <em>sfânt</em> şi nalt curaj se cere
 Highlight: Ce <em>sfânt</em> şi nalt curaj
 
 Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 11
+Title: Cântă Maică-n ceasul sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: Cântă Maică-n ceasul <em>sfânt</em>
+Highlight: Cântă Maică-n ceasul <em>sfânt</em>
+
+Score: 15.5
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Darurile Duhului Sfânt
+Type: articol
+Author: Traian Dorz
+Highlight: înainte spre împlinirea gândului bun şi a îndemnului <em>sfânt</em> pe care l-aţi pus pentru Domnul, - oricâţi ispititori
+Highlight: Darurile Duhului <em>Sfânt</em>
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 10
+Title: Duhule Sfânt, du-mă
+Type: poezie
+Author: Traian Dorz
+Highlight: Duhule <em>Sfânt</em>, du-mă pe-acel munte nalt
+Highlight: Duhule <em>Sfânt</em>, du-mă
+
+Score: 15.5
+Volume: Meditații la Ev. după Ioan
+Book: Hristos - Sfinţitorul nostru
+Title: O Tată Sfânt al Zilei
+Type: poezie
+Author: Traian Dorz
+Highlight: O Tată <em>Sfânt</em> al Zilei şi-al Nopţii Făcător
+Highlight: O Tată <em>Sfânt</em> al Zilei
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 6
+Title: O Tată Sfânt al Zilei
+Type: poezie
+Author: Traian Dorz
+Highlight: O Tată <em>Sfânt</em> al Zilei şi-al Nopţii Făcător
+Highlight: O Tată <em>Sfânt</em> al Zilei
+
+Score: 15.5
 Volume: Cugetări Nemuritoare
 Book: Piatra Scumpă
+Title: O, Domnul meu Sfânt
+Type: poezie
+Author: Traian Dorz
+Highlight: O, Domnul meu <em>Sfânt</em>
+Highlight: O, Domnul meu <em>Sfânt</em>
+
+Score: 15.5
+Volume: Cântări Nemuritoare
+Book: Cântări Nemuritoare vol. 9
 Title: O, Domnul meu Sfânt
 Type: poezie
 Author: Traian Dorz
@@ -558,13 +835,13 @@ Highlight: O, <em>Sfânt</em> Izvor ce speli păcatul
 Highlight: O, <em>Sfânt</em> Izvor ce speli păcatul
 
 Score: 15.5
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 8
-Title: În ce loc sfânt?
+Volume: Cugetări Nemuritoare
+Book: Semănaţi Cuvântul Sfânt
+Title: Semănaţi Cuvântul Sfânt
 Type: poezie
 Author: Traian Dorz
-Highlight: În ce loc <em>sfânt</em> să-Ţi strâng eu oare
-Highlight: În ce loc <em>sfânt</em>?
+Highlight: Semănaţi Cuvântul <em>Sfânt</em>
+Highlight: Semănaţi Cuvântul <em>Sfânt</em>
 
 Score: 15.5
 Volume: Cântări Nemuritoare
@@ -584,34 +861,34 @@ Author: Traian Dorz
 Highlight: Îţi cântă Tată <em>Sfânt</em> cu iubire
 Highlight: Îţi cântăm Tată <em>Sfânt</em>
 
-Score: 8.910088
+Score: 10.675926
+Volume: Cugetări Nemuritoare
+Book: Mărturisirea Strălucită
+Title: Lucrarea Sfântului Duh
+Type: articol
+Author: Traian Dorz
+Highlight: neînţelese este semnul Duhului <em>Sfânt</em>, ci întotdeauna semnul şi dovada că Duhul <em>Sfânt</em> face o lucrare prin cineva
+Highlight: 5 - Duhul <em>Sfânt</em> care vorbea în Ziua Pogorârii Sale prin gura <em>sfântului</em> apostol Petru arăta
+Highlight: Lucrarea Duhului <em>Sfânt</em> este acum Călăuza noastră a tuturor spre împlinirea
+Highlight: care ne-o dă El, Ocrotitorul şi Apărătorul nostru <em>Sfânt</em>!  Şi
+Highlight: apărarea sfântă a Dulcelui nostru Mângâietor Duhul <em>Sfânt</em>, - trimes nouă de Isus Hristos, Mântuitorul nostru
+Highlight: 3 - Dovada Prezenţei Duhului <em>Sfânt</em>, este chiar Lucrarea Sa.  Căci
+Highlight: Lucrarea <em>Sfântului</em> Duh
+
+Score: 8.90797
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 18 - Frumoasele noastre Rusalii
 Type: articol
 Author: Traian Dorz
+Highlight: şi noi din nou prin Cuvântul şi Duhul <em>Sfânt</em>, de către acest <em>sfânt</em> părinte care trupeşte odihneşte aici
 Highlight: Fraţii mei scumpi, suntem într-un loc <em>sfânt</em>, suntem lângă un mormânt <em>sfânt</em>. Aceasta este sărbătoarea cea mai
 Highlight: acesta <em>sfânt</em>, vă rugăm încă odată din tot sufletul nostru să aveţi cu toţii un respect <em>sfânt</em> şi faţă
 Highlight: Duhul <em>Sfânt</em> să adauge la numărul nostru, până când tot poporul nostru va fi cuprins în acest <em>sfânt</em> curent
 Highlight: lucrurile Duhului <em>Sfânt</em>. Lucrarea Oastei Domnului în biserica noastră este Lucrarea Duhului <em>Sfânt</em>. Ce bine ar
 Highlight: născuţi din Duhul <em>Sfânt</em> în Oastea Domnului, este numai rodul Jertfei şi Cuvântului <em>Sfânt</em> al lui Isus Hristos
-Highlight: prin Duhul <em>Sfânt</em>. Ceea ce se vede astăzi în locul acesta este opera măreaţă a Duhului <em>Sfânt</em>, făcută în
 
-Score: 8.888888
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: Carte Sfântă, Mână Sfântă
-Type: poezie
-Author: Traian Dorz
-Highlight: ca a Bunului <em>Sfânt</em> Tată.
-Highlight: Şi-azi Cuvântul <em>Sfânt</em> al Vieţii
-Highlight: Carte <em>Sfântă</em> Mână
-Highlight: Mână <em>sfântă</em> te-a adus în a mea cale câte
-Highlight: Carte <em>Sfântă</em> Mână
-Highlight: Mână <em>sfântă</em> mi
-Highlight: Carte <em>Sfântă</em>, Mână <em>Sfântă</em>
-
-Score: 8.849022
+Score: 8.84774
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 8-a după Paşti - (a Rusaliilor)
@@ -620,11 +897,11 @@ Author: Traian Dorz
 Highlight: Duhului <em>Sfânt</em>, vuietul Vântului <em>Sfânt</em> venit dintr-odată din cer... Şi flăcările focului <em>Sfânt</em>, văzute
 Highlight: lucrările, roadele şi virtuţile Duhului <em>Sfânt</em>. Atunci tot ce-i dă Duhul <em>Sfânt</em> este plin de putere, de dulceaţă
 Highlight: când tu umbli călăuzit de Duhul <em>Sfânt</em>, când vorbeşti ce-ţi dă Duhul <em>Sfânt</em>, când mergi unde te trimite El
+Highlight: bucuria Duhului <em>Sfânt</em> - vă rog fierbinte în Numele Domnului, faceţi toate acestea prin Duhul <em>Sfânt</em>! Fiţi totdeauna
 Highlight: trimes al Duhului <em>Sfânt</em>, vorbeşte pe limba fiecăruia dintre cei care-l aud. Duhul <em>Sfânt</em> îi dă darul vorbirii
-Highlight: mâinile tale pentru Casa <em>Sfântă</em>, pentru alinarea suferinţei, pentru bucuria Duhului <em>Sfânt</em> - vă rog fierbinte
 Highlight: 4. Şi toţi s-au umplut de Duh <em>Sfânt</em> şi au început să vorbească în alte limbi, după cum
 
-Score: 8.802614
+Score: 8.800945
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 17 - Lupta cu leul, lupta cu ursul...
@@ -637,7 +914,7 @@ Highlight: despre lucrarea Duhului <em>Sfânt</em>. Aşa numiţii penticostali s
 Highlight:  Duhul <em>Sfânt</em> i-a descoperit ceva ce nu se află în Biblie, acela este un mincinos. Duhul <em>Sfânt</em> nu trece
 Highlight: Duhul <em>Sfânt</em>) va lua din ceea ce este al Meu - şi aceea vă va vesti”. În nici o formă, Duhul <em>Sfânt</em> nu trece
 
-Score: 8.7795925
+Score: 8.778724
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica Sfintei Învieri
@@ -650,7 +927,7 @@ Highlight:  nu după multe zile, veţi fi botezaţi cu Duhul <em>Sfânt</em>. 6
 Highlight: voi veţi primi o putere, când Se va coborî Duhul <em>Sfânt</em> peste voi şi-Mi veţi fi martori în Ierusalim, în
 Highlight: Mântuitorul nostru Isus Hristos spune Cuvântul <em>Sfânt</em> că, după Patima Lui, li S-a înfăţişat viu Apostolilor
 
-Score: 8.752198
+Score: 8.749689
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 7-a după Paşti - (a Sfinţilor Părinţi de la Sinodul 1 Ecumenic)
@@ -658,25 +935,25 @@ Type: articol
 Author: Traian Dorz
 Highlight: iar Cincizecimea era momentul când Duhul <em>Sfânt</em> şi Cuvântul <em>Sfânt</em> al lui Dumnezeu se îmbrăţişau şi dădeau
 Highlight: Duhului <em>Sfânt</em> sunt însă totdeauna potrivite cu Cuvântul Cel scris al Domnului din Biblie. Duhul <em>Sfânt</em> lucrează
-Highlight: cutremurător al trăirii acestui Cuvânt <em>Sfânt</em> unit cu fapta <em>sfântă</em>.  Urmaţi-mă
 Highlight: înşivă şi la toată turma peste care v-a pus Duhul <em>Sfânt</em> episcopi, ca să păstoriţi Biserica Domnului, pe
 Highlight: putinţă, în dimineaţa minunată a sărbătorii Duhului <em>Sfânt</em>, ei să fie acolo împreună cu cei dintâi care avuseseră
 Highlight: născut şi trăieşte din puterea şi revărsarea Duhului <em>Sfânt</em>. La acest praznic veniţi din toate părţile aici
+Highlight: Ierusalim, de unde prima dată s-a auzit vuietul Duhului <em>Sfânt</em>, unde s-a aprins Focul Lui şi de unde a început
 
-Score: 8.748701
+Score: 8.7464285
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 2 - O taină a lui Dumnezeu
 Type: articol
 Author: Traian Dorz
-Highlight: un Duh <em>Sfânt</em> şi un om <em>sfânt</em> prin care Îşi descoperă nu numai Planul Său şi Voia Sa cea <em>sfântă</em>, ci şi
+Highlight: foloseşte pentru această lucrare un Duh <em>Sfânt</em> şi un om <em>sfânt</em> prin care Îşi descoperă nu numai Planul
 Highlight: Tot ce face văzut Duhul <em>Sfânt</em> al lui Dumnezeu prin acest om <em>sfânt</em> al Lui, este însoţit şi însufleţit
 Highlight: capăt, aşa după cum am primit-o de la Duhul <em>Sfânt</em>, prin omul <em>sfânt</em> care a început-o.
-Highlight: cu atâta preţ <em>sfânt</em>, păstrate cu atâta muncă <em>sfântă</em> şi pregătite pentru atâta roadă <em>sfântă</em> - în curând
 Highlight: Împărăţie duhovnicească, biserica Lui, Trupul Său <em>Sfânt</em>, este în primul rând o familie, o unitate şi o frăţietate
 Highlight: esenţa ei, de aceeaşi natură cu El, vine prin Duhul <em>Sfânt</em>. Astfel, oricine vrea să facă parte din acest Trup
+Highlight:  prin lucrarea puterii Cuvântului şi a Duhului <em>Sfânt</em>, într-o fiinţă nouă, duhovnicească şi de natură
 
-Score: 8.722222
+Score: 8.71875
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Luminătorul nostru
 Title: ... Du-te şi să nu mai păcătuieşti
@@ -687,9 +964,9 @@ Highlight: vor ierta, dar oricine va huli împotriva Duhului <em>Sfânt</em> nu 
 Highlight: harului Ceresc, căci Duhul <em>Sfânt</em> i-a adus la Hristos ca să fie iertaţi,  şi
 Highlight: şi Duhul <em>Sfânt</em> a fost Călăuza şi puterea
 Highlight: şi Duhul <em>Sfânt</em> a fost Mijlocitorul pentru ei în rugăciune ( Rom
-Highlight: şi Duhul <em>Sfânt</em> a fost Trezitorul şi Îndrumătorul tuturor celor care au venit sau venim la
+Highlight: şi Duhul <em>Sfânt</em> a fost Trezitorul
 
-Score: 8.709523
+Score: 8.707017
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a după Paşti - (a samaritencei)
@@ -702,7 +979,7 @@ Highlight:  Căci Barnaba era un om de bine, plin de Duhul <em>Sfânt</em> şi d
 Highlight: Când focul Duhului <em>Sfânt</em> este mare şi puternic, vântul ceresc care vine la
 Highlight: Viaţa plină de Duhul <em>Sfânt</em> este o viaţă puternică, lucrătoare şi rodnică. Sufletul
 
-Score: 8.7047615
+Score: 8.701075
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 22 - Statutele - marea şi permanenta primejdie
@@ -715,7 +992,7 @@ Highlight: - Şi iată cum croieşte el, prin lumina Duhului <em>Sfânt</em> dru
 Highlight: toţi. Întrucât în amândouă este Cuvântul şi Duhul <em>Sfânt</em>. Era prima formă a unor îndrumări pe care mai târziu
 Highlight: numai cu dar de Sus, cu darul şi puterea Duhului <em>Sfânt</em>. Când cineva se hotărăşte să intre în Oastea Domnului
 
-Score: 8.693834
+Score: 8.691879
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 3-a după Paşti - (a Mironosiţelor)
@@ -728,7 +1005,7 @@ Highlight: trebui să fie pretutindeni unde S-a pogorât Duhul <em>Sfânt</em> p
 Highlight: câţi vin într-o adunare duhovnicească au Duhul <em>Sfânt</em>.  Şi
 Highlight: aceştia, vorbind o limbă străină de a poporului <em>sfânt</em>, având o fire străină şi o ţintă străină, vor face
 
-Score: 8.654359
+Score: 8.644285
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 23 - Cuvânt Testamentar
@@ -736,12 +1013,12 @@ Type: articol
 Author: Traian Dorz
 Highlight: totdeauna. Puterea Duhului <em>Sfânt</em> care se revarsă peste ei prin acest act <em>sfânt</em>, i-ar ajuta să devină şi
 Highlight: iubitor şi <em>sfânt</em>, ca ei pătrunşi de acest adevăr să facă şi în interiorul lor un salt <em>sfânt</em> spre a merita
-Highlight: neuitat. Atmosfera cerească şi <em>sfântă</em> pe care ne-o crease Duhul <em>Sfânt</em> era cea mai potrivită pentru un
-Highlight: angajament <em>sfânt</em> că pe viitor nu se vor mai repeta nici unele din aceste greşeli şi că vor ţinea o <em>sfântă</em> legătură
-Highlight: împreună cu toţii, în această atmosferă <em>sfântă</em> să depunem un legământ <em>sfânt</em>, că vom ierta şi vom îngropa în această
 Highlight: cuvânt testamentar, după cum mi-a dictat Duhul <em>Sfânt</em> în clipele acelei tensiuni, când fiecare cuvânt
+Highlight: judece şi împreună să găsească prin lumina Duhului <em>Sfânt</em> căile şi mijloacele îndreptării, ori a eliminării
+Highlight: răspunderii în faţa lui Dumnezeu şi a Cuvântului <em>Sfânt</em>. Nu un prilej de slavă deşartă, ori de certuri pentru
+Highlight: abateri de la viaţa evanghelică, pe care Duhul <em>Sfânt</em> a inspirat-o prin naşterea din nou, în viaţa Oastei
 
-Score: 8.636364
+Score: 8.629629
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 19 - Omul trimes de Dumnezeu
@@ -750,11 +1027,24 @@ Author: Traian Dorz
 Highlight: noi acest smerit <em>sfânt</em> al lui Dumnezeu, acest înflăcărat slujitor al Duhului <em>Sfânt</em>!
 Highlight: lângă acest mare <em>sfânt</em> al Lui tocmai eu şi tocmai acum, spre a putea sprijini acest cap <em>sfânt</em> pe umărul meu
 Highlight: sufletul lui. Şi cât de puternic trăia acest om <em>sfânt</em> <em>Sfântul</em> Cuvânt pe care Îl mărturisea cu atâta putere
-Highlight:  era a doua însuşire <em>sfântă</em> a acestui om <em>sfânt</em>. Bucuria de a primi pe oricine, de a îmbrăţişa
 Highlight: pentru Hristos prin dragostea şi puterea Duhului <em>Sfânt</em> ce lucrează prin el - datori suntem să-l urmăm până
 Highlight: Ziua Naşterii mele de Sus, Ziua Venirii Duhului <em>Sfânt</em>.  Aşa
+Highlight: duhovniceşte să mă nasc în Ziua Pogorârii Duhului <em>Sfânt</em>.  Dar
 
-Score: 8.612174
+Score: 8.625
+Volume: Cugetări Nemuritoare
+Book: Alergarea Stăruitoare
+Title: Vorba şi împlinirea
+Type: articol
+Author: Traian Dorz
+Highlight: Duhului <em>Sfânt</em>. Unde nu este această dovadă - nu este Duhul <em>Sfânt</em>.
+Highlight: 4 - Cuvântul <em>Sfânt</em> al lui Dumnezeu ne porunceşte tuturor: rugaţi-vă
+Highlight: În locul acela Duhul <em>Sfânt</em> este totdeauna întristat,  focul
+Highlight: venirea şi rămânerea Duhului <em>Sfânt</em>, - dar toate o cheamă.  Acolo
+Highlight: Acolo, pe Duhul <em>Sfânt</em> Îl cheamă rugăciunea lor
+Highlight: prezenţa lui Dumnezeu, de prezenţa între noi a Duhului <em>Sfânt</em>.  12
+
+Score: 8.610507
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: Şi voi de asemenea veţi mărturisi
@@ -767,46 +1057,20 @@ Highlight: unească mărturisirea lor cu mărturisirea Duhului <em>Sfânt</em>, 
 Highlight: umpluţi de Duhul <em>Sfânt</em>.  Să
 Highlight: Să umble călăuziţi de Duhul <em>Sfânt</em>.  Să
 
-Score: 8.550376
+Score: 8.54191
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 4
 Title: Cap. 10 - Cel mai necesar şi cel mai dificil colaborator
 Type: articol
 Author: Traian Dorz
-Highlight: ar fi un cler <em>sfânt</em> urmat de o oaste <em>sfântă</em>. Şi o Oaste <em>sfântă</em> îndrumată de un cler <em>sfânt</em>! Doar aceste
+Highlight: ar fi un cler <em>sfânt</em> urmat de o oaste sfântă. Şi o Oaste sfântă îndrumată de un cler <em>sfânt</em>! Doar aceste
 Highlight: care iubesc lumea şi urăsc lucrarea vie a Duhului <em>Sfânt</em> şi preoţi duhovniceşti care se ataşează cu bucurie
 Highlight: nu s-au adeverit, - totuşi, împotriva celui mai <em>sfânt</em> adevăr, aceste minciuni şi presupuneri oficiale
 Highlight: simţindu-ne şi noi, prin virtutea legământului nostru <em>sfânt</em> cu Dumnezeu, în aproape aceeaşi măsură datori cu
 Highlight: cu clerul să facem această muncă. Atât Cuvântul <em>Sfânt</em> al lui Hristos cât şi Învăţăturile Sfinţilor Părinţi
 Highlight: obligă la aceasta. Ţinând seama de acest mare şi <em>sfânt</em> adevăr, opoziţia, dispreţul şi chiar vrăjmăşia pe
 
-Score: 8.547697
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 11 - Răscrucea Isus
-Type: articol
-Author: Traian Dorz
-Highlight: pentru Lucrarea şi suflarea Duhului <em>Sfânt</em>: de a face haină Duhului <em>Sfânt</em>. Şi de atunci Domnul m-a stors mereu
-Highlight: revărsarea Duhului <em>Sfânt</em>. Eu am fost numai un vas umil şi slab de care Domnul S-a folosit în <em>sfânta</em> Sa Lucrare
-Highlight: ...În temelia războiului nostru cel <em>sfânt</em>, alături de Jertfa cea Mare şi Scumpă a Scumpului
-Highlight: moarte... Taina fărădelegii pătrunsese până în locul <em>sfânt</em> iar cu păcatul trebuie luptat nu numai până la biserică
-Highlight: ea. Duhul necurat caută să întineze tot ce este <em>sfânt</em> şi să-şi bage spurcăciunile sale până la altar.
-Highlight: Ideea a venit tot dintr-o scânteie a Duhului <em>Sfânt</em> - şi pentru că era adevărată, a prins.  S-a
-
-Score: 8.543233
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 12 - Dovada supremei iubiri
-Type: articol
-Author: Traian Dorz
-Highlight: sfârşitul lui <em>sfânt</em> adeverise că tot ce începuse şi lucrase în viaţa sa era adevărat şi <em>sfânt</em>.
-Highlight: udat cu lacrimi şi răscumpărat cu sânge <em>sfânt</em> şi cu suferinţă <em>sfântă</em> - să nu poată fi nimicit de nimic şi
-Highlight: veninoase împotriva a tot ce era adevărat, drept şi <em>sfânt</em> în Lucrarea Domnului şi în alesul Lui pentru a-i
-Highlight: Aşa am învăţat noi slujba cea grea a scrisului <em>sfânt</em>. Totdeauna
-Highlight: Legea şi cât de tâlhăreşte s-a răpit acest avut <em>sfânt</em>. Sentinţa
-Highlight: Veniră fiecare perindându-se pe lângă patul mortului <em>sfânt</em>, cu plâns şi cu rugăciune: fr. Opriş, sora Liţa
-
-Score: 8.54191
+Score: 8.538947
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 20-a după Rusalii - (Învierea fiului văduvei din Nain)
@@ -819,18 +1083,31 @@ Highlight: comoară adevărată, un mărgăritar de preţ, un adevăr <em>sfânt
 Highlight: pătrunde în inima bietului bolnav, odată cu Cuvântul <em>Sfânt</em>! Iar bietul suflet dă şi el în boala celui care
 Highlight: binecuvântări avem noi pentru viitor de la Duhul <em>Sfânt</em>, câtă revărsare sinceră de lacrimi avem pentru trecutul
 
-Score: 8.521072
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Score: 8.531328
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 12 - Dovada supremei iubiri
 Type: articol
 Author: Traian Dorz
-Highlight: dispreţuitor despre nici un <em>sfânt</em> al lui Dumnezeu! Nu vorbiţi decât cu un <em>sfânt</em> respect despre fiecare vas
-Highlight: Hristos. Cel care îl alesese era Duhul <em>Sfânt</em>, fiindcă Duhul <em>Sfânt</em> îl îndemnase pe Apostolul Pavel şi pe
-Highlight: au numai fiinţele divine. De aceea cuvântul este <em>sfânt</em>, şi orice fiinţă omenească ar trebui să rostească
-Highlight: cuvânt ar trebui să fie numai adevărat, şi numai <em>sfânt</em>, şi numai vrednic de primit.  Dar
-Highlight: privesc tot în acest fel neîncrezător şi Cuvântul Cel <em>Sfânt</em> şi adevărat al lui Dumnezeu. De aceea îşi permit
-Highlight: spus ţie şi lumii, în felul cel mai vrednic şi mai <em>sfânt</em>. Nu spune ce nu poţi face, şi nu face ce nu poţi
+Highlight: sfârşitul lui <em>sfânt</em> adeverise că tot ce începuse şi lucrase în viaţa sa era adevărat şi <em>sfânt</em>.
+Highlight: veninoase împotriva a tot ce era adevărat, drept şi <em>sfânt</em> în Lucrarea Domnului şi în alesul Lui pentru a-i
+Highlight: Aşa am învăţat noi slujba cea grea a scrisului <em>sfânt</em>. Totdeauna
+Highlight: Legea şi cât de tâlhăreşte s-a răpit acest avut <em>sfânt</em>. Sentinţa
+Highlight: Veniră fiecare perindându-se pe lângă patul mortului <em>sfânt</em>, cu plâns şi cu rugăciune: fr. Opriş, sora Liţa
+Highlight: ) şi a luptat până la sânge în războiul cel <em>sfânt</em> al Domnului Isus. S-a
+
+Score: 8.526316
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 2
+Title: Cap. 11 - Răscrucea Isus
+Type: articol
+Author: Traian Dorz
+Highlight: pentru Lucrarea şi suflarea Duhului <em>Sfânt</em>: de a face haină Duhului <em>Sfânt</em>. Şi de atunci Domnul m-a stors mereu
+Highlight: ...În temelia războiului nostru cel <em>sfânt</em>, alături de Jertfa cea Mare şi Scumpă a Scumpului
+Highlight: moarte... Taina fărădelegii pătrunsese până în locul <em>sfânt</em> iar cu păcatul trebuie luptat nu numai până la biserică
+Highlight: ea. Duhul necurat caută să întineze tot ce este <em>sfânt</em> şi să-şi bage spurcăciunile sale până la altar.
+Highlight: Ideea a venit tot dintr-o scânteie a Duhului <em>Sfânt</em> - şi pentru că era adevărată, a prins.  S-a
+Highlight: ştie că dacă până acum n-am putut înăbuşi glasul <em>sfânt</em> al inimii mele, de acum încolo nu mai pot tăcea
 
 Score: 8.519841
 Volume: Meditații la Ev. după Ioan
@@ -845,7 +1122,20 @@ Highlight: De aceea cine batjocoreşte pe Duhul <em>Sfânt</em>, acela nu mai ar
 Highlight: De aceea cine leapădă Lucrarea Duhului <em>Sfânt</em>, acela este pierdut căci n-are cine să mai vină
 Highlight: Întotdeauna, semnul şi dovada că Duhul <em>Sfânt</em> face o lucrare prin cineva şi undeva, va fi că se
 
-Score: 8.519841
+Score: 8.518518
+Volume: Hristos - Puterea Apostoliei
+Book: Hristos - Puterea Apostoliei
+Title: La Apostolul din Duminica a 32-a după Rusalii - (a lui Zacheu)
+Type: articol
+Author: Traian Dorz
+Highlight: dispreţuitor despre nici un <em>sfânt</em> al lui Dumnezeu! Nu vorbiţi decât cu un <em>sfânt</em> respect despre fiecare vas
+Highlight: Hristos. Cel care îl alesese era Duhul <em>Sfânt</em>, fiindcă Duhul <em>Sfânt</em> îl îndemnase pe Apostolul Pavel şi pe
+Highlight: au numai fiinţele divine. De aceea cuvântul este <em>sfânt</em>, şi orice fiinţă omenească ar trebui să rostească
+Highlight: cuvânt ar trebui să fie numai adevărat, şi numai <em>sfânt</em>, şi numai vrednic de primit.  Dar
+Highlight: privesc tot în acest fel neîncrezător şi Cuvântul Cel <em>Sfânt</em> şi adevărat al lui Dumnezeu. De aceea îşi permit
+Highlight: spus ţie şi lumii, în felul cel mai vrednic şi mai <em>sfânt</em>. Nu spune ce nu poţi face, şi nu face ce nu poţi
+
+Score: 8.5079365
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 3-a a Postului Mare - (a Sfintei Cruci)
@@ -853,38 +1143,25 @@ Type: articol
 Author: Traian Dorz
 Highlight: Cuvântului <em>Sfânt</em> mi-l arătase limpede. Ştiam că trebuie să-l osândesc şi să nu-l fac, fiindcă Duhul <em>Sfânt</em> care
 Highlight: adevăr din Cuvântul Cel <em>Sfânt</em> al Domnului, şi anume adevărul despre rostul cel <em>sfânt</em> şi divin al celor două
-Highlight: într-un loc <em>sfânt</em> şi împlineşte o slujbă <em>sfântă</em> îi şi dă acestui om de la sine o stare <em>sfântă</em>! Nu, ci o
-Highlight: o viaţă <em>sfântă</em>, o trăire în sfinţenie îl poate face pe acel cineva <em>sfânt</em>, după cum şi este scris: Nici
 Highlight: mărturisirile sale sunt pline de roade înaintea Duhului <em>Sfânt</em>. O, ce minunată viaţă este viaţa unui astfel de
 Highlight: vine în inima mea gândind la cuvintele acestui <em>sfânt</em> verset. Cea mai mare îndrăzneală în pocăinţa mea
+Highlight: încă această liniştitoare făgăduinţă din Cuvântul <em>Sfânt</em> al lui Dumnezeu. În vremea aceea am fost adeseori
+Highlight: Dar binecuvântat să fie harul şi Duhul <em>Sfânt</em> care mi-au luminat inima şi mi-au strălucit înaintea
 
-Score: 8.517094
+Score: 8.505555
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 1
 Title: Cap. 8 - Aşezarea temeliilor veşnice
 Type: articol
 Author: Traian Dorz
 Highlight: s-o facă, - în viaţa fiecărui om, Duhul <em>Sfânt</em> şi Cuvântul <em>Sfânt</em>.
-Highlight: viaţă mai înaltă, mai <em>sfântă</em>, mai smerită şi mai plină de roadele Duhului <em>Sfânt</em>, - apoi va putea face
 Highlight: îndeaproape de Îndrumătorul ei Cel Nevăzut care era Duhul <em>Sfânt</em>. Pas cu pas, în tot ce a urmat, în toate trebuinţele
 Highlight: păcatului şi pierzării era folosit de Domnul ca un vas <em>sfânt</em> prin care El Însuşi Îşi făcea puternica Sa lucrare
 Highlight: cutremurătoare a acestei griji îndeaproape a Duhului <em>Sfânt</em>, de toate trebuinţele Lucrării Sale. Ce duioasă
 Highlight: La îndemnul şi inspiraţia Duhului <em>Sfânt</em> venise hotărârea din zorii Anului Nou, acest prim
+Highlight: Odată cu planul Lucrării, Duhul <em>Sfânt</em> i-a descoperit păr. Iosif şi temelia pe care să
 
-Score: 8.485933
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 23 - La zece ani de Oaste
-Type: articol
-Author: Traian Dorz
-Highlight: Cu cât privim mai mult chipul acestui mare <em>sfânt</em> al lui Hristos care a trăit într-unul din veacurile
-Highlight: Nu noi i-am primit fulgerul din cer al Duhului <em>Sfânt</em>!
-Highlight: stăruitoare să ne ţii până la sfârşit în acest loc <em>sfânt</em>... să picure peste noi neîncetat Sângele Iertării
-Highlight: slabe şi netrebnice, ai pornit în lume războiul cel <em>sfânt</em>. În mâna noastră cea slabă ai pus steag, în gura
-Highlight: ce place în cărţile Oastei, apoi acel ceva Duhul <em>Sfânt</em> l-a pus acolo prin suferinţă. Suferinţa a fost
-Highlight: limpezime. Atâta putere de revărsare a Duhului <em>Sfânt</em> era peste acest apostol şi rob al lui Hristos).
-
-Score: 8.483957
+Score: 8.481792
 Volume: Meditații la Ev. după Ioan
 Book: Hristos - Viţa vieţii noastre
 Title: El va mărturisi despre Mine
@@ -896,19 +1173,6 @@ Highlight: Şi iată că Lucrarea adevărată a Duhului <em>Sfânt</em> este şi
 Highlight: Duhul <em>Sfânt</em>.
 Highlight: seama de la ei care este voia şi Lucrarea Duhului <em>Sfânt</em>!
 Highlight: mărturisirea înflăcărată a Duhului <em>Sfânt</em> despre Hristos.
-
-Score: 8.474359
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 15 - Călătoria la Ierusalim
-Type: articol
-Author: Traian Dorz
-Highlight: parcă se suie aici în acest loc <em>sfânt</em>... Când am intrat în biserica <em>Sfântului</em> Mormânt eu am simţit înainte
-Highlight: . stau lângă colţul cu ieslea <em>sfântă</em> unde a fost înfăşat Copilul <em>Sfânt</em>. Simţesc ceva ce m-ar ţine mereu
-Highlight: mai ales pentru aceia de care Se va folosi Duhul <em>Sfânt</em> spre câştigarea mântuirii altora. Suferinţa
-Highlight: răgazul sufletesc ce-l cere un astfel de lucru <em>sfânt</em>. La prima vedere a Ierusalimului mi-ar fi plăcut
-Highlight: fierbinţi Celui ce m-a învrednicit de acest dar mare şi <em>sfânt</em>. Vechii evrei, de câte ori se apropiau de Ierusalim
-Highlight: Iosif cu Nicodim şi cu mironosiţele au uns Trupul <em>Sfânt</em> al Mântuitorului după luarea Sa de pe Crucea Golgotei
 
 Score: 8.473856
 Volume: Istoria unei Jertfe
@@ -923,7 +1187,33 @@ Highlight: să faci astfel de profeţii împotriva Cuvântului <em>Sfânt</em> a
 Highlight: spus clar acest lucru, cu un glas care l-am crezut <em>sfânt</em>.
 Highlight: în care se vorbeşte tocmai împotriva Cuvântului <em>Sfânt</em> al lui Dumnezeu. Nu ţi-ai putut da seama că tocmai
 
+Score: 8.470589
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 23 - La zece ani de Oaste
+Type: articol
+Author: Traian Dorz
+Highlight: Cu cât privim mai mult chipul acestui mare <em>sfânt</em> al lui Hristos care a trăit într-unul din veacurile
+Highlight: Nu noi i-am primit fulgerul din cer al Duhului <em>Sfânt</em>!
+Highlight: stăruitoare să ne ţii până la sfârşit în acest loc <em>sfânt</em>... să picure peste noi neîncetat Sângele Iertării
+Highlight: slabe şi netrebnice, ai pornit în lume războiul cel <em>sfânt</em>. În mâna noastră cea slabă ai pus steag, în gura
+Highlight: ce place în cărţile Oastei, apoi acel ceva Duhul <em>Sfânt</em> l-a pus acolo prin suferinţă. Suferinţa a fost
+Highlight: limpezime. Atâta putere de revărsare a Duhului <em>Sfânt</em> era peste acest apostol şi rob al lui Hristos).
+
 Score: 8.462963
+Volume: Istoria unei Jertfe
+Book: Istoria unei Jertfe vol. 1
+Title: Cap. 15 - Călătoria la Ierusalim
+Type: articol
+Author: Traian Dorz
+Highlight: parcă se suie aici în acest loc <em>sfânt</em>... Când am intrat în biserica <em>Sfântului</em> Mormânt eu am simţit înainte
+Highlight: mai ales pentru aceia de care Se va folosi Duhul <em>Sfânt</em> spre câştigarea mântuirii altora. Suferinţa
+Highlight: răgazul sufletesc ce-l cere un astfel de lucru <em>sfânt</em>. La prima vedere a Ierusalimului mi-ar fi plăcut
+Highlight: fierbinţi Celui ce m-a învrednicit de acest dar mare şi <em>sfânt</em>. Vechii evrei, de câte ori se apropiau de Ierusalim
+Highlight: Iosif cu Nicodim şi cu mironosiţele au uns Trupul <em>Sfânt</em> al Mântuitorului după luarea Sa de pe Crucea Golgotei
+Highlight: Naşterii ce răsună în limba românească în faţa locului <em>sfânt</em> unde S-a născut Mântuitorul. Un neam întreg parcă
+
+Score: 8.454545
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 5-a a Postului Mare
@@ -936,46 +1226,20 @@ Highlight: curat şi cu toată fiinţa lui însufleţită de Duhul <em>Sfânt</e
 Highlight: Trupului Său, în care Domnul Isus a trăit desăvârşit, <em>sfânt</em> şi fără de păcat, trup în care El a făcut ispăşirea
 Highlight: Sângele cel <em>Sfânt</em> al Marelui Preot Hristos, pe temeiul căruia El a
 
-Score: 8.461538
+Score: 8.444445
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
 Title: Cap. 14 - Să ne apropiem de sfârşit
 Type: articol
 Author: Traian Dorz
-Highlight: înaintea lui Hristos pentru acest Nume <em>Sfânt</em> şi pentru această Lucrare <em>sfântă</em> - este nespus de grea.
-Highlight: adunărilor şi părtăşia dragostei şi roadele Duhului <em>Sfânt</em> din viaţa voastră. Iată
+Highlight: adunărilor şi părtăşia dragostei şi roadele Duhului <em>Sfânt</em> din viaţa voastră.
 Highlight: Voi toţi cei care încă n-aţi intrat în acest cerc <em>sfânt</em>, intraţi şi rugaţi-vă pentru pacea Ierusalimului
-Highlight: putut abate la dreapta sau la stânga din acest drum <em>sfânt</em>. Pornind
+Highlight: putut abate la dreapta sau la stânga din acest drum <em>sfânt</em>.
 Highlight: fost pus de Hristos, ca la venirea Lui, Stăpânul <em>Sfânt</em> să-l afle tot acolo unde l-a pus la început. Ca
 Highlight: puteţi să mă insultaţi cum vreţi, dar Numele Cel <em>Sfânt</em> al lui Dumnezeu vă rog să nu-L mai înjuraţi. Şi
+Highlight: noastră pe care ne-o porunceşte Însuşi Cuvântul <em>Sfânt</em>?
 
-Score: 8.452381
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 20 - Rugul care nu se mistuie
-Type: articol
-Author: Traian Dorz
-Highlight: mereu în lume, Duhul Puternicului Dumnezeu şi focul <em>Sfânt</em> al Marii Lui Iubiri.
-Highlight: Pe acest loc <em>sfânt</em>, pe care trebuie să umbli descălţat de orice prejudecăţi
-Highlight: fost flacăra care a aprins şi a ţinut aprins focul <em>sfânt</em> al Oastei Domnului este deci singura noastră foaie
-Highlight: Îngerul Oastei, Duhul prin care aţâţase acest Rug <em>sfânt</em> în biserica şi în ţara noastră. Iar acestui Înger
-Highlight: acest adevăr? Oare nu vedeţi voi că numai acest Duh <em>Sfânt</em>, acest Înger curat este binevoitorul şi binefăcătorul
-Highlight: jertfă, de un fel, pentru întreţinerea focului <em>sfânt</em>. Aceasta nu numai pentru Lucrarea - în mare - a
-
-Score: 8.452381
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 8 - Al şaptelea foc
-Type: articol
-Author: Traian Dorz
-Highlight: Doamne <em>Sfânt</em>, Doamne <em>Sfânt</em> şi-ndurat
-Highlight: Duhul <em>Sfânt</em>, Duhul <em>Sfânt</em> S-a-ndurat
-Highlight: Ceresc îi răscumpărase cu Preţul atât de Mare şi <em>Sfânt</em> al Sângelui Crucii de pe Golgota, al Sângelui Scump
-Highlight: rod cu sânge <em>sfânt</em> muncit. Dar
-Highlight: mai viu focul <em>sfânt</em> şi mai tare ci
-Highlight: Iertare îi cerem Cuvântului <em>Sfânt</em> primit
-
-Score: 8.452381
+Score: 8.444445
 Volume: Hristos - Puterea Apostoliei
 Book: Hristos - Puterea Apostoliei
 Title: La Apostolul din Duminica a 29-a după Rusalii - (a celor zece leproşi)
@@ -988,341 +1252,16 @@ Highlight: altoirii noastre, noi am primit prin Duhul şi Cuvântul <em>Sfânt</
 Highlight: aducerea roadelor dulci şi frumoase ale Duhului <em>Sfânt</em>. Şi au ca urmare slava lui Dumnezeu şi împlinirea
 Highlight: Domnul: cu cele ale păcatului sau cu cele ale harului <em>sfânt</em>?  Bagă
 
-Score: 8.437255
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 2
-Title: Psalmul 119
-Type: poezie
-Author: Traian Dorz
-Highlight: pe calea Domnului Cel <em>Sfânt</em>.
-Highlight: Tău <em>Sfânt</em> se va-ndrepta.
-Highlight: şi eu voi cugeta la lucru-Ţi <em>sfânt</em>
-Highlight: Doamne, de-al Tău Nume <em>Sfânt</em>
-Highlight: căci Tu judeci drept şi <em>sfânt</em>
-Highlight: Doamne, numai drept şi <em>sfânt</em>.
-
-Score: 8.429629
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 29 - Anul jubiliar 1988
-Type: articol
-Author: Traian Dorz
-Highlight: trăit un om <em>sfânt</em>, - capătă şi ele din pricina acestui om, un preţ mare şi un respect <em>sfânt</em>... În această
-Highlight: port jertfe noi, spre-un <em>sfânt</em> altar cu
-Highlight: Lucrarea Oastei Sale peste care El i-a pus Numele Său <em>Sfânt</em>. Şi din pricina acestui Nume al Lui, El n-a lăsat-o
-Highlight: Mesajul său a fost binecuvântat de Duhul <em>Sfânt</em> cu un mare răsunet în mii şi mii de inimi, care
-Highlight: dornici să asculte lucrurile minunate despre copilul <em>sfânt</em> care s-a născut acum 100 de ani, aici în casa asta
-Highlight: Prin acest mare om <em>sfânt</em> al lui Hristos am aflat şi noi despre această mântuire
-
-Score: 8.4282055
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 20 - Câte feţe ar fi putut avea binele
-Type: articol
-Author: Traian Dorz
-Highlight: inimă este totdeauna inventivă şi binefăcătoare. Un <em>sfânt</em> neastâmpăr cuprinde sufletul iubitor şi o continuă
-Highlight: începe să audă mereu noile îndemnuri ale Duhului <em>Sfânt</em>, să simtă adâncile chemări ale de-aproapelui căzut
-Highlight: dinăuntru... Dar tu rămâi tare, rămâi în focul cel <em>sfânt</em> care te-a cuprins... în minunata slujbă de vestitoare
-Highlight: despre biruinţa şi schimbarea pe care o face Duhul <em>Sfânt</em> într-un suflet care Îl primeşte pe Domnul... Să
-Highlight: semănând lumină şi ajută răspândirea Cuvântului <em>Sfânt</em> achitându-şi cu stăruinţă şi punctualitate şi datoria
-Highlight: Oastea Domnului este ieşită din Lucrarea Duhului <em>Sfânt</em>, îi cercetez mijloacele de luptă. Căci o luptă ne-a
-
-Score: 8.416667
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 9 - Adevărurile mormântului nemuritor
-Type: articol
-Author: Traian Dorz
-Highlight: mormântul <em>sfânt</em>, - cum i-am promis
-Highlight: ieşeau în lume cu batjocurile lor, - nouă Duhul <em>Sfânt</em> ne revărsa nişte bucurii cereşti.
-Highlight: sărbătoarea Rusaliilor, în ziua Pogorârii Duhului <em>Sfânt</em>, Zi care a fost decretată de părintele Iosif ca
-Highlight: zicea el - Oastea Domnului este răsadul Duhului <em>Sfânt</em>. De aceea el a lăsat ca un testament spiritual ca-n
-Highlight: cântăreţi, însufleţind măreaţa adunare peste care Duhul <em>Sfânt</em> turna din belşug puterea şi harul Său prin cele
-Highlight: februarie 1938 când a fost înmormântat aici acest <em>sfânt</em> al lui Hristos, - n-am mai văzut aici un atât de
-
-Score: 8.416667
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din duminica a 2-a după Paşti - (a Sf. Ap. Toma)
-Type: articol
-Author: Traian Dorz
-Highlight: iarăşi va veni vremea să putem intra în locaşul ei <em>sfânt</em> şi iubit.
-Highlight: fără naşterea din nou, din Cuvântul şi din Duhul <em>Sfânt</em>.
-Highlight: Acolo Duhul <em>Sfânt</em> lucrează neîmpiedicat împreună cu fraţii şi cu surorile
-Highlight: Dumnezeule <em>Sfânt</em> şi Bun, fă să bată vântul Tău, fă să ardă focul
-Highlight: Acestea erau dovezile date de Duhul <em>Sfânt</em> şi care însoţeau mărturisirea Evangheliei Sale şi
-Highlight: Dumnezeu, ei n-au călăuzirea Duhului <em>Sfânt</em>.
-
-Score: 8.414035
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 12 - Naşterea imnului duhovnicesc
-Type: articol
-Author: Traian Dorz
-Highlight: harul şi darul cel <em>sfânt</em>
-Highlight: ai aflat prin darul <em>sfânt</em>
-Highlight: şuvoiului de putere şi de har revărsat de Duhul <em>Sfânt</em> prin ploaia îmbelşugată a Cântării Oastei. A acestei
-Highlight: pe Domnul Cel <em>Sfânt</em> şi chinu-I sporim
-Highlight: Dumnezeu Tatăl, Dumnezeu Fiul şi Dumnezeu Duhul <em>Sfânt</em> ne-au învrednicit - şi ne învrednicesc - pe noi
-Highlight: sufletelor pentru că oamenii erau plini de Duhul <em>Sfânt</em>.
-
-Score: 8.411111
+Score: 8.441176
 Volume: Istoria unei Jertfe
 Book: Istoria unei Jertfe vol. 3
-Title: Cap. 11 - Semnele Oastei Domnului
+Title: Cap. 8 - Al şaptelea foc
 Type: articol
 Author: Traian Dorz
-Highlight: prin care Duhul <em>Sfânt</em> aprinsese focul acesta <em>sfânt</em> pe altarul nostru... Focul acesta <em>sfânt</em> pe care eu, în
-Highlight: ochii săi mângâierea lui Israel. Fiindcă Duhul <em>Sfânt</em> îl înştiinţase că nu va muri înainte ca să vadă
-Highlight: începutul Oastei ca o pecete a ei de către Duhul <em>Sfânt</em>, descoperind aceasta întâiului ostaş dintre noi
-Highlight: mijlocirea falselor interpretări ale Cuvântului <em>Sfânt</em>, duhul fără cruce a căutat să lovească şi să piardă
-Highlight: Vrăjmaşul a pustiit totul în locaşul Tău cel <em>sfânt</em>. Potrivnicii
-Highlight: în lucrul <em>sfânt</em>, cât ar fi trebuit de-aceea
-
-Score: 8.391534
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 1 - Semnul apostoliei şi preţul adevărului
-Type: articol
-Author: Traian Dorz
-Highlight: pentru mărturisirea Cuvântului <em>Sfânt</em>, ci a revărsat Duhul Său Cel <em>Sfânt</em> peste oricine voieşte să devină
-Highlight: Semnul lui Hristos şi pecetea Duhului <em>Sfânt</em> sunt dovedite nu numai de jertfa trimesului lui
-Highlight: , cu Duhul <em>Sfânt</em> şi
-Highlight: Aceasta înseamnă că propovăduire a Adevărului <em>Sfânt</em> este numai aceea care stârneşte împotriva păcatului
-Highlight: Hristos, nici solii Adevărului, nici ostaşii Duhului <em>Sfânt</em>. Cine n-are Duhul lui Hristos nu este al Lui (
-Highlight: stăpân tiran al inimii slujitorului de la altarul <em>sfânt</em>. Iar odată cu lăcomia au năpădit în inima şi în
-
-Score: 8.391534
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 2 - A treia zi istorică
-Type: articol
-Author: Traian Dorz
-Highlight: istoria umblării poporului <em>sfânt</em>, a neamului ales, a adevăraţilor fii ai Duhului <em>Sfânt</em>, - fie luaţi în întregimea
-Highlight: lumina şi călăuzirea Duhului <em>Sfânt</em>, ocrotind şi păzind totul cu <em>Sfânta</em> Lui putere. Aşa cum ne rugasem
-Highlight: noastre, acest lucru <em>sfânt</em> întocmai aşa cum au lucrat ei. Să clădim pe temelia <em>sfântă</em> a lui Isus Cel Răstignit
-Highlight: care merge ea urmând pe Domnul Isus al cărui Nume <em>Sfânt</em> Îl poartă, împărtăşind soarta Lui şi călcând pe
-Highlight: pierzarea tuturor păcatelor cele contra Duhului <em>Sfânt</em>... Cei
-Highlight: fie ocrotit de El şi călăuzit de Duhul Său Cel <em>Sfânt</em>, pentru ca totul să fie potrivit cu voia Lui spre
-
-Score: 8.391534
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 7 - A doua Judecată
-Type: articol
-Author: Traian Dorz
-Highlight: noastră despre Duhul <em>Sfânt</em> (cartea 1 pag. 59) se află o frumoasă predică despre Duhul <em>Sfânt</em> şi biserică. Ostaşii
-Highlight: toate breslele de oameni îşi au câte un <em>sfânt</em> păzitor. Un <em>sfânt</em> patron şi protector. Spre pildă, corăbierii
-Highlight: inspiratul Duhului <em>Sfânt</em> ni l-a comunicat nouă din partea lui Hristos ca pe o poruncă <em>sfântă</em> de urmat întocmai:
-Highlight: e vorba să avem şi noi un <em>sfânt</em> al Oastei, apoi acela, eu zic să fie <em>sfântul</em> şi marele apostol Pavel.
-Highlight: pe aceia care Îi vor duce Solia Sa, prin Duhul <em>Sfânt</em>, mai departe,  până
-Highlight: peste urmaşii Săi, n-a fost numai pecetea Duhului <em>Sfânt</em> şi n-au fost numai minunile care s-au făcut prin
-
-Score: 8.385093
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 2 - Istoria unei Jertfe...
-Type: articol
-Author: Traian Dorz
-Highlight: glasul <em>sfânt</em> al părintelui nostru iubit, care ne-a îndemnat cu atâta dragoste la lupta cea <em>sfântă</em> pentru
-Highlight: Duhul <em>Sfânt</em> lucrează neîncetat să ne ridice privirea la Căpetenia
-Highlight: punctul acesta se dă o luptă de mântuire. Duhul <em>Sfânt</em> ne zice: uitaţi-vă în sus, la  ţinta
-Highlight: Când Duhul <em>Sfânt</em> îl cheamă pe cel păcătos să se uite  ţintă
-Highlight: râvna ta, ci te uită ţintă la harul cel scump şi <em>sfânt</em> care ţi se dă de sus, de pe Crucea Golgotei prin
-Highlight: Biserica şi Duhul <em>Sfânt</em> Un
-
-Score: 8.380952
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 24-a după Rusalii - (Învierea fiicei lui Iair)
-Type: articol
-Author: Traian Dorz
-Highlight: Când S-a pogorât Duhul <em>Sfânt</em> în Ierusalim, este scris că <em>Sfântul</em> Cuvânt al Legământului nou, cu
-Highlight: clădirea, bine închegată, creşte ca să fie un Templu <em>sfânt</em> în Domnul. 22
-Highlight: Crucea Sa mântuitoare pe care a curs Sângele Său <em>Sfânt</em>, răscumpărând sufletele noastre şi înlăturând de
-Highlight: cât şi în semnul ei văzut, ceva mai înalt şi mai <em>sfânt</em> ca orice alt semn de pe lumea asta. În ea este puterea
-Highlight: În Semnul acesta <em>Sfânt</em> al Crucii a rămas mereu şi va rămâne mereu până
-Highlight: ştii că aceasta vine să-ţi bârfească acest semn <em>sfânt</em> numai de la şarpele care o urăşte, fiindcă el a
-
-Score: 8.375939
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 18 - Frumosul an 1930
-Type: articol
-Author: Traian Dorz
-Highlight: celor două puteri ale Duhului <em>Sfânt</em>, prin care se dezlănţuie Focul <em>Sfânt</em> şi lucrează Primăvara înnoitoare
-Highlight: copleşitoare, este slăvită. Focul ei dezlănţuit prin Duhul <em>Sfânt</em> arde tot ce-i făţarnic şi uscat. Şuvoiul ei nimiceşte
-Highlight: prigoniri, dar cele două nebiruite puteri ale Duhului <em>Sfânt</em>: - Adevărul şi Dragostea, până la urmă, o vor duce
-Highlight: solia lui Hristos să răzbească înainte. Şi Duhul <em>Sfânt</em> să-Şi continue Lucrarea Sa de desăvârşire a bisericii
-Highlight: Când vin marile lupte ale lui Dumnezeu, Duhul <em>Sfânt</em> are grijă să pregătească din timp mari viteji pentru
-Highlight: marile trebuinţe ale Lucrării lui Hristos, Duhul <em>Sfânt</em> are grijă să ridice din vreme harnici lucrători
-
-Score: 8.373015
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 15 - Un An Nou Fericit
-Type: articol
-Author: Traian Dorz
-Highlight: steagul <em>sfânt</em> care-l purtaţi
-Highlight: coloanelor luptătoare ale fermenţilor acestui aluat <em>sfânt</em>, este şi trebuie să fie tineretul. Iar în fruntea
-Highlight: îndemnuri, necesare unui mai bun mers al lucrului <em>sfânt</em>. Noi şi în privinţa aceasta, ca şi în celelalte
-Highlight: Domnului Isus şi pentru lumina călăuzitoare a Duhului <em>Sfânt</em>. După un cuvânt de meditaţie şi îndrumare asupra
-Highlight: mult şi nevoie este urgentă, Dumnezeul nostru Cel <em>Sfânt</em> ne-a rânduit un prilej ca acesta pentru ca de aici
-Highlight: Ce înţelept şi fericit a întocmit Duhul <em>Sfânt</em> ordinea celor trei cărţi de poeme ale Bibliei, aşezând
-
-Score: 8.366072
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Dragostea şi ura
-Type: articol
-Author: Traian Dorz
-Highlight: poate altfel, căci Duhul <em>Sfânt</em> este totdeauna viu şi lucrător.
-Highlight: 5 - Omul Duhului <em>Sfânt</em> vorbeşte nu pentru că
-Highlight: are neapărat ceva <em>sfânt</em>
-Highlight: 7 - Omul Duhului <em>Sfânt</em> nu scrie numai pentru că nu-i în stare să lucreze
-Highlight: Fiindcă este mânat şi împins de puterea Duhului <em>Sfânt</em> din el.
-Highlight: 8 - Omul Duhului <em>Sfânt</em> nu va face binele pentru ca să i se facă înapoi
-
-Score: 8.339161
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 2
-Title: Cap. 10 - Pe drumul Crucii
-Type: articol
-Author: Traian Dorz
-Highlight: spunea că Duhul <em>Sfânt</em> îl înştiinţează că va avea necazuri... Această înştiinţare a Duhului <em>Sfânt</em> o vedem prin
-Highlight: moment. Şi părintele Vasile care lupta cu un mare şi <em>sfânt</em> curaj în mlaştina aceea de acolo. Dar părintele
-Highlight: care ni le va da Dascălul nostru Cel Mare: Duhul <em>Sfânt</em>... Ce
-Highlight: această mişcare. O dovadă este şi aceasta că Duhul <em>Sfânt</em> lucrează la fel. Mişcarea
-Highlight: care înrola mereu preoţi şi laici în războiul cel <em>sfânt</em> contra păcatelor. Ori prin felul cum sunt făcute
-Highlight: de la Sibiu a fost şi este un şcolar al Duhului <em>Sfânt</em>, care a lucrat o temă de examen - şi a lucrat-o
-
-Score: 8.336996
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 1 - Cel mai frumos Isus
-Type: articol
-Author: Traian Dorz
-Highlight: grele cu răbdare şi cu încredere pentru Numele Lui <em>Sfânt</em>.
-Highlight: Hristos Cel <em>Sfânt</em> Îşi alege astfel, Îşi dezleagă şi Îşi curăţeşte
-Highlight: în colţul acela de biserică exilată, de cuptor <em>sfânt</em>!
-Highlight: în depărtări. Astfel prin ostenelile lor Duhul <em>Sfânt</em> răspândea Evanghelia şi înviora pe fraţi până în
-Highlight: Ci dragostea şi înţelepciunea Duhului <em>Sfânt</em> a făcut să ajungem în cuptorul cel de foc al suferinţelor
-Highlight: neapărat să le urcăm spre stările şi roadele Duhului <em>Sfânt</em>. Şi spre împlinirea omului nostru duhovnicesc, singurul
-
-Score: 8.331984
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 30-a după Rusalii - (Dregătorul bogat. Păzirea poruncilor)
-Type: articol
-Author: Traian Dorz
-Highlight: patru surori ale ei enumerate la rând de acest <em>sfânt</em> verset: bunătatea, smerenia, blândeţea şi îndelunga
-Highlight: Şi fraţii noştri, ori cei care cunosc Cuvântul <em>Sfânt</em>.
-Highlight: Şi cu legământ <em>sfânt</em> pentru viitor, să nu mai păcătuim.
-Highlight: Când acest sânge <em>sfânt</em> curge prin toate venele bisericii, atunci toate
-Highlight: astfel de pom binecuvântat, la un astfel de trup <em>sfânt</em>!
-Highlight: Pacea lui Hristos este înstăpânirea Duhului <em>Sfânt</em> în noi, prin înfierea noastră de către Tatăl, în
-
-Score: 8.325792
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 6 - Cutremurătorul început
-Type: articol
-Author: Traian Dorz
-Highlight: alerge, scriind cuvintele de foc inspirate de Duhul <em>Sfânt</em>, ale chemării în Numele lui Isus Hristos, adresate
-Highlight: predicilor ce le cuprindea gazeta. Îndemnul acesta <em>sfânt</em> striga cititorilor de peste tot cuprinsul scrierilor
-Highlight: să-şi împlinească toată datoria inspirată de Duhul <em>Sfânt</em> în noaptea hotărâtoare. Ştia că toată taina şi biruinţa
-Highlight: biruinţa stă în puterea şi harul revărsării Duhului <em>Sfânt</em>. Că fără această revărsare câmpia sufletească a
-Highlight: sau neascultare, pentru ca apele vii ale Duhului <em>Sfânt</em> să se poată revărsa prin el, şi prin matca tot mai
-Highlight: Duhul <em>Sfânt</em> îl încredinţa tot mai puternic că învierea şi înnoirea
-
-Score: 8.322115
-Volume: Hristos - Puterea Apostoliei
-Book: Hristos - Puterea Apostoliei
-Title: La Apostolul din Duminica a 6-a după Rusalii - (Vindecarea slăbănogului din Capernaum)
-Type: articol
-Author: Traian Dorz
-Highlight: Isus Hristos, Lucrarea făcută de Dumnezeu Duhul <em>Sfânt</em>, a dat în slujba bisericii Sale felurite daruri
-Highlight: Câtă vreme Lucrarea Duhului <em>Sfânt</em> era vie în viaţa şi în mijlocul primilor creştini
-Highlight: creştini, aceste minunate daruri ale Duhului <em>Sfânt</em> erau văzute, auzite şi simţite pretutindeni, iar minunata
-Highlight: Cu câtă bucurie era gata dragostea Duhului <em>Sfânt</em> să împartă belşugul darurilor Sale tuturor celor
-Highlight: văzut noi oare că dacă omul îl foloseşte rău, Duhul <em>Sfânt</em> Îşi retrage participarea Sa de la lucrarea acelui
-Highlight:  dispreţuind pe fraţi şi neascultându-i, Duhul <em>Sfânt</em> începe să-Şi retragă participarea Sa din lucrarea
-
-Score: 8.317948
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 3
-Title: Cap. 4 - Aur lămurit, trestii clătinate
-Type: articol
-Author: Traian Dorz
-Highlight: privinţele, potrivit Cuvântului <em>Sfânt</em>, - chiar dacă din pricina Numelui <em>Sfânt</em> al lui Hristos ei erau urâţi
-Highlight: Când Mântuitorul nostru <em>Sfânt</em> zicea: Mă sfinţesc Eu Însumi pentru ei ( Ioan
-Highlight: pentru Hristos - ne împrospăta cu putere şi curaj <em>sfânt</em> pe toţi. Ne-am
-Highlight: atunci solia a izbucnit ca o flacără a Duhului <em>Sfânt</em>, iar purtătorii ei au devenit ca nişte aruncătoare
-Highlight: Scripturi: În adevăr, împotriva Robului Tău Celui <em>Sfânt</em> Isus, pe care L-ai uns Tu, s-au însoţit în cetatea
-Highlight: cândva de preţ şi profanau acum tot ce avuseseră <em>sfânt</em> înainte. Din rândurile acestora, vrăjmaşul îşi va
-
-Score: 8.307693
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 1
-Title: Cap. 13 - Frumosul tineret creştin
-Type: articol
-Author: Traian Dorz
-Highlight: sfinţirea făcută de Duhul <em>Sfânt</em>. Fără puterea şi înnoirea sfinţitoare a Duhului <em>Sfânt</em>, toată munca şi osteneala
-Highlight: nouă. Duhul <em>Sfânt</em> poate face această minune. Se cere însă şi de la tine ceva. Duhul <em>Sfânt</em> aşteaptă lacrimile
-Highlight: sufleteşti, o sămânţă nouă şi luminoasă: - Cuvântul <em>Sfânt</em> şi rodnic al lui Dumnezeu. Cu un elan şi cu o voioşie
-Highlight: crescut tot mai luminoşi precum scrie Cuvântul <em>Sfânt</em> despre cărarea cea ca lumina strălucitoare ce merge
-Highlight: avut totdeauna, fiecare, o atitudine plină de un <em>sfânt</em> şi evlavios respect. Oricât de familiar era el totdeauna
-Highlight: genunchi şi suspină după ajutor. Harul Duhului <em>Sfânt</em> îndată te va ridica. Oricât ai fi tu dragă suflete
-
-Score: 8.307693
-Volume: Cugetări Nemuritoare
-Book: Calea Bunului Urmaş
-Title: Curajul şi frica
-Type: articol
-Author: Traian Dorz
-Highlight: 11 - Înainte ca Duhul <em>Sfânt</em> să-Şi înceapă lucrarea Sa Vie şi mântuitoare într-o
-Highlight: Dar după ce Duhul <em>Sfânt</em> a trezit în om cunoştinţa păcatului,
-Highlight: sufletul se află mai departe sub stăpânirea Duhului <em>Sfânt</em> (
-Highlight: nu-L mai întristaţi niciodată pe acest Dulce şi <em>Sfânt</em> Mângâietor al nostru.
-Highlight: Ultima lucrare este a Duhului <em>Sfânt</em>.
-Highlight: 13 - Dacă Duhul <em>Sfânt</em> l-a părăsit din cauza păcatului contra Sa, în care
-
-Score: 8.307693
-Volume: Meditații la Ev. după Ioan
-Book: Hristos - Dumnezeul nostru
-Title: La Tronul Tău de har
-Type: poezie
-Author: Traian Dorz
-Highlight: Tată, Tată <em>Sfânt</em>.
-Highlight: o Tată, Tată <em>Sfânt</em>!
-Highlight: o Tată, Tată <em>Sfânt</em>...
-Highlight: Tată <em>Sfânt</em>.
-Highlight: o Tată, Tată <em>Sfânt</em>!...
-Highlight: Tată, Tată <em>Sfânt</em>.
-
-Score: 8.307693
-Volume: Cântări Nemuritoare
-Book: Cântări Nemuritoare vol. 1
-Title: La Tronul Tău de har
-Type: poezie
-Author: Traian Dorz
-Highlight: Tată, Tată <em>Sfânt</em>.
-Highlight: o Tată, Tată <em>Sfânt</em>!
-Highlight: o Tată, Tată <em>Sfânt</em>...
-Highlight: Tată <em>Sfânt</em>.
-Highlight: o Tată, Tată <em>Sfânt</em>!...
-Highlight: Tată, Tată <em>Sfânt</em>.
-
-Score: 8.287879
-Volume: Istoria unei Jertfe
-Book: Istoria unei Jertfe vol. 4
-Title: Cap. 20 - După alţi 30 de ani
-Type: articol
-Author: Traian Dorz
-Highlight: frică de Dumnezeu, dorind să-şi îndeplinească votul <em>sfânt</em> pe care l-au făcut. Cei mai mulţi erau acuzaţi că
-Highlight: Dumnezeu şi al bisericii ştiu că îl are de la Duhul <em>Sfânt</em> - şi cu vasta sa cunoştinţă pe care şi-a acumulat-o
-Highlight: Urmând acestui îndemn <em>sfânt</em>, în dimineaţa de 9 decembrie soseam la Bucureşti
-Highlight: din nou cu cele două-trei suflete, pe care Duhul <em>Sfânt</em> le însărcinase cu fericita povară a pregătirii acestei
-Highlight: Sibiu. Şi prin lucrarea minunată a sprijinului <em>sfânt</em> care ne însoţea, - am găsit cele mai minunate reproduceri
-Highlight: toţi cei care cad în acele păcate contra Duhului <em>Sfânt</em>, - nu se mai pot salva niciodată din stăpânirea
+Highlight: Doamne <em>Sfânt</em>, Doamne <em>Sfânt</em> şi-ndurat
+Highlight: Duhul <em>Sfânt</em>, Duhul <em>Sfânt</em> S-a-ndurat
+Highlight: Ceresc îi răscumpărase cu Preţul atât de Mare şi <em>Sfânt</em> al Sângelui Crucii de pe Golgota, al Sângelui Scump
+Highlight: rod cu sânge <em>sfânt</em> muncit. Dar
+Highlight: mai viu focul <em>sfânt</em> şi mai tare ci
+Highlight: Iertare îi cerem Cuvântului <em>Sfânt</em> primit
 
