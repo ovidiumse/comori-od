@@ -9,13 +9,13 @@ copy() {
     source=$1
     dest=$2
 
+    echo "Copying $source/*.txt to $dest"
     for file in $source/*.txt; do
-        echo "Copying $file to $dest"
         cp $file $dest
     done
 
+    echo "Copying $source/*.json  to $dest"
     for file in $source/*.json; do
-        echo "Copying $file to $dest"
         cp $file $dest
     done
 }
@@ -30,11 +30,20 @@ prepare_dir() {
 
     copy $dir $dest_new
 
+    old_dir=$CWD
+    cd $dir
+
     echo "Checking out $dir/*.txt from HEAD..."
-    git checkout $dir/*.txt
+    for file in $dir/*.txt; do
+        git restore $(basename $file)
+    done
     
     echo "Checking out $dir/*.json from HEAD..."
-    git checkout $dir/*.json
+    for file in $dir/*.json; do
+        git restore $(basename $file)
+    done
+
+    cd $old_dir
 
     copy $dir $dest_old
     copy $dest_new $dir
@@ -46,5 +55,6 @@ prepare_dir "marturii"
 prepare_dir "ioan"
 prepare_dir "cantari"
 prepare_dir "hristos_puterea"
-prepare_dir "trifa_30_carti"
+prepare_dir "trifa_talcuiri_culese"
+# prepare_dir "trifa_30_carti"
 prepare_dir "test_results"
