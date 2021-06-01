@@ -319,6 +319,7 @@ class BibleRefResolver(object):
 
     def resolve_bible_refs(self, articles):
         for article in articles:
+            print(f"Resolving Bible refs for {article['title']}")
             self.process_article(article)
 
         return articles
