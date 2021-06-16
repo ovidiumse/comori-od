@@ -237,7 +237,7 @@ class Articles(object):
                 "fragment_size": 100,
                 "order": "score"
             },
-            'sort': ['_score', {'title.keyword': 'asc'}],
+            'sort': ['_score', {'title.keyword': 'asc'}, {'book': 'asc'}],
             'size': limit,
             'from': offset
         }
