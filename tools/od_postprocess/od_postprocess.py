@@ -5,8 +5,6 @@ import argparse
 import logging
 import requests
 import simplejson as json
-import time
-import Levenshtein
 from unidecode import unidecode
 from datetime import datetime
 from prettytable import PrettyTable
@@ -175,7 +173,7 @@ def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
                         "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
                         "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
                         "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
-                        "tri", "ultra", "uni", "vice"
+                        "tri", "ultra", "uni", "vice", "nemai"
                         ]
                         prefixFormed = False
                         skipPos = 0
@@ -222,14 +220,25 @@ def post_process_articles(articles, args):
         if 'volume' in article:
             article['volume'] = post_process(0, article['volume'], 'volume', True, True, args)
         new_verses = []
+        lastVerse = []
         for index, verse in enumerate(article['verses']):
             new_verse = []
             for blockIndex, block in enumerate(verse):
                 block['text'] = post_process(index, block['text'], 'verses', blockIndex == 0,
                                              blockIndex == len(verse) - 1, args)
-                new_verse.append(block)
 
-            new_verses.append(new_verse)
+                # Not interested in some blocks may be empty after removing nbsps, removing multiple spaces, trimming, etc.
+                if block['text']:
+                    new_verse.append(block)
+
+            # don't allow consecutive empty verses
+            if new_verse or lastVerse:
+                lastVerse = new_verse
+                new_verses.append(new_verse)
+        
+        # remove last verse if empty
+        if new_verses and not new_verses[-1]:
+            new_verses = new_verses[:-1]
 
         article['verses'] = new_verses
 
@@ -237,30 +246,8 @@ def post_process_articles(articles, args):
 
 
 def isIgnoredBook(book):
-    ignoredBooks = ['in', 'am', 'fac']
-    return unidecode(book).lower() in ignoredBooks
-
-
-def getMostSimilarLookingBibleBook(book, books):
-    if isIgnoredBook(book):
-        return None, len(book)
-
-    minDistance = len(book)
-    mostSimilar = None
-    for b in books:
-        if len(b.split()) != len(book.split()):
-            continue
-
-        distance = Levenshtein.distance(unidecode(book).lower(), b.lower())
-        if distance < minDistance:
-            minDistance = distance
-            mostSimilar = b
-
-    return mostSimilar, minDistance
-
-
-def isSimilar(book, distance):
-    return distance <= len(book) / 3
+    ignoredBooks = ['în', 'am', 'fac']
+    return book.lower() in ignoredBooks
 
 
 class Bible(object):
@@ -288,15 +275,14 @@ class BibleRefResolver(object):
             'book_name': r'(?P<book_name>((\d+\s+)?[^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)',
             'chapter': r'(cap\.\s*)?(?P<chapter>\d+)\s*',
             'verse_start': r'(\s*(:|,)?\s*((v.)|(vers.)|(versetul))?\s*(?P<verse_start>\d+))?',
-            'verse_end': r'(\s*-\s*(?P<verse_end>\d+)\s*,?)?',
+            'verse_end': r'(\s*-\s*(?P<verse_end>\d+)\s*)?',
             'verses': r'(\s*(:|,)?\s*(?P<verses>\s*((\s*,\s*)?\d+)+))?'
         }
 
         self.regex = re.compile(''.join([v for _, v in self.regxGroups.items()]))
         self.continuationRegex = re.compile(''.join(
             [r'(?P<prefix>(\s*(;|(şi))\s*))'] +
-            [v for k, v in self.regxGroups.items() if k != 'book_name'] +
-            [r'(?P<sufix>(\s*(;|\)|(,\s*etc\.?)|(şi))))']))
+            [v for k, v in self.regxGroups.items() if k != 'book_name']))
         self.bibleBooks = set([book.lower() for book in BIBLE.get_books()])
 
         self.bibleCache = {}
@@ -305,6 +291,13 @@ class BibleRefResolver(object):
 
     def extract_book_name(self, bookName):
         return re.sub(r'^\d+\s*', '', bookName)
+
+    def is_book_name(self, suffix):
+        for book in self.bibleBooks:
+            if suffix.lower().startswith(book):
+                return True
+        
+        return False
 
     def blocks_to_text(self, blocks):
         return ' '.join([block['text'] for block in blocks])
@@ -319,7 +312,7 @@ class BibleRefResolver(object):
 
     def resolve_bible_refs(self, articles):
         for article in articles:
-            print(f"Resolving Bible refs for {article['title']}")
+            print(f"Resolving Bible refs for {article['book']} - {article['title']}")
             self.process_article(article)
 
         return articles
@@ -415,12 +408,10 @@ class BibleRefResolver(object):
         contMatch['ref'] = self.build_ref(contMatch)
 
         prefixLen = len(contMatch['prefix'])
-        suffixLen = len(contMatch['sufix'])
 
         contMatch['start'] += prefixLen
-        contMatch['end'] -= suffixLen
 
-        contMatch['text'] = contMatch['text'][prefixLen:-suffixLen]
+        contMatch['text'] = contMatch['text'][prefixLen:]
         while contMatch['text'].endswith(' '):
             contMatch['end'] -= 1
             contMatch['text'] = contMatch['text'][:-1]
@@ -458,6 +449,31 @@ class BibleRefResolver(object):
                     contMatch = self.build_continuation_match(cMatch, lastPos, matchEntry)
                     if not contMatch:
                         break
+                    
+                    # make sure there is no other following normal Bible ref overlapping the continuation match candidate
+                    nextPos = lastPos
+                    skip = False
+                    while True:
+                        chunk = text[nextPos:]
+                        nextMatch = self.regex.search(chunk)
+                        nextMatchRef = None
+                        if not nextMatch:
+                            break
+
+                        nextMatchEntry = self.build_match(nextMatch, nextPos)
+                        nextMatchEntry['ref'] = self.build_ref(nextMatchEntry)
+                        nextMatchRef = processMatch(nextMatchEntry)
+                        if not nextMatchRef:
+                            nextPos = text.find(' ', nextMatchEntry['start'])
+                            continue
+
+                        if nextMatchEntry['start'] < contMatch['end']:
+                            skip = True
+                        
+                        break
+
+                    if skip:
+                        break
 
                     bibleRef = processMatch(contMatch)
                     if bibleRef:
@@ -479,13 +495,6 @@ class BibleRefResolver(object):
         lookup = False
         if unidecode(book).lower() in self.bibleBooks and not isIgnoredBook(self.extract_book_name(book)):
             lookup = True
-        elif False:
-            mostSimilar, distance = getMostSimilarLookingBibleBook(bookName, self.bibleBookNames)
-            if isSimilar(bookName, distance):
-                lookup = True
-
-                logging.info(f"'{match['ref']}' should instead be '{match['ref'].replace(bookName, mostSimilar)}'!")
-                match['ref'] = match['ref'].replace(bookName, mostSimilar)
 
         try:
             if lookup:
