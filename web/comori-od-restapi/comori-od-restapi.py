@@ -10,13 +10,16 @@ import logging.config
 import urllib
 import yaml
 import jwt
+import pytz
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
 from pymongo import MongoClient
+from datetime import datetime
 
 LOGGER_ = None
 ES = None
+UTC = pytz.timezone('UTC')
 
 def buildTermFilter(field, values):
     fieldFilters = []
@@ -293,12 +296,12 @@ class Articles(object):
                 },
                 'fields': {
                     'title': {
-                        "matched_fields": ["title", "title.folded"],
+                        "matched_fields": ["title", "title.folded", "title.stemmed_folded", "title.folded_stemmed"],
                         'type': 'fvh'
                     },
                     'verses.text': {
                         "matched_fields":
-                        ["verses.text", "verses.text.folded"],
+                        ["verses.text", "verses.text.folded", "verses.text.stemmed_folded", "verses.text.folded_stemmed"],
                         'type': 'fvh'
                     }
                 },
@@ -768,6 +771,7 @@ class Favorites(object):
 
             data['_id'] = self.getDocumentId(auth, data['id'])
             data['uid'] = self.getUserId(auth)
+            data['timestamp'] = datetime.utcnow().replace(tzinfo=UTC).isoformat()
 
             self.getCollection(idx_name, 'favorites').insert_one(data)
 
