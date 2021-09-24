@@ -4,6 +4,8 @@ import re
 import falcon
 from falcon_auth import FalconAuthMiddleware
 from falcon_auth.backends import AuthBackend
+from pymongo.client_options import _parse_ssl_options
+from collections import defaultdict
 import simplejson as json
 import logging
 import logging.config
@@ -11,6 +13,8 @@ import urllib
 import yaml
 import jwt
 import pytz
+import pymongo
+from bson.objectid import ObjectId
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
@@ -695,15 +699,8 @@ class Similar(object):
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 
-class Favorites(object):
-    auth = {
-        'auth_disabled': True
-    }
-
+class MongoService(object):
     dbsByIndexName = {}
-
-    def __init__(self):
-        self.public_key = os.environ.get("APPLE_APP_PKEY")
 
     def getClient(self, idx_name):
         LOGGER_.info(f"Creating Mongo db connection for {idx_name}...")
@@ -722,12 +719,34 @@ class Favorites(object):
     def getCollection(self, idx_name, name):
         return self.getDb(idx_name)[name]
 
+    def createIndexes(self, idx_name, db):
+        LOGGER_.info(f"Creating favorites indexes for {idx_name}...")
+
+        db['favorites'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+
+
+class MobileAppService(object):
+    auth = {
+        'auth_disabled': True
+    }
+
+    def __init__(self):
+        self.public_key = os.environ.get("MOBILE_APP_PKEY")
+    
+    def authorize(self, authorization):
+        return jwt.decode(authorization, self.public_key, algorithms='RS256')
+
+    def getUserId(self, auth):
+        return "{}.{}".format(auth['sub'], auth['iss'])
+
+class Favorites(MongoService, MobileAppService):
+
     def on_get(self, req, resp, idx_name):
         try:
             LOGGER_.info(f"Getting favorites from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = jwt.decode(req.get_header("Authorization"), self.public_key, algorithms='RS256')
-            favs = [fav for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
+            auth = self.authorize(req.get_header("Authorization"))            
+            favs = [self.translateId(fav) for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
 
             resp.status = falcon.HTTP_200
             resp.body = json.dumps(favs)
@@ -746,11 +765,15 @@ class Favorites(object):
                 f"Removing favorite from {idx_name} with id {article_id} and req {json.dumps(req.params, indent=2)}"
             )
 
-            auth = jwt.decode(req.get_header("Authorization"), self.public_key, algorithms='RS256')
+            auth = self.authorize(req.get_header("Authorization"))   
             favid = self.getDocumentId(auth, article_id)
 
             LOGGER_.info(f"Attempting to remove favorite {favid} from {idx_name}...")
-            self.getCollection(idx_name, 'favorites').delete_one({'_id': favid})
+            response = self.getCollection(idx_name, 'favorites').delete_one({'_id': favid, 'uid': self.getUserId(auth)})
+            if response.deleted_count < 1: 
+                resp.status = falcon.HTTP_404
+                resp.body = json.dumps({"message": "Favorite not found!"})
+                return
 
             resp.status = falcon.HTTP_200
         except TransportError as ex:
@@ -766,7 +789,7 @@ class Favorites(object):
         try:
             LOGGER_.info(f"Adding favorite to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = jwt.decode(req.get_header("Authorization"), self.public_key, algorithms='RS256')
+            auth = self.authorize(req.get_header("Authorization"))   
             data = json.loads(req.stream.read())
 
             data['_id'] = self.getDocumentId(auth, data['id'])
@@ -776,7 +799,40 @@ class Favorites(object):
             self.getCollection(idx_name, 'favorites').insert_one(data)
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps({"message": "You have saved the article '{}'!".format(data['title'])})
+            resp.body = json.dumps(self.translateId(data))
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+    
+    def translateId(self, item):
+        del item['_id']
+        return item
+
+    def getDocumentId(self, auth, article_id):
+        return "{}.{}.{}".format(auth['sub'], auth['iss'], article_id)
+
+
+class Markups(MongoService, MobileAppService):
+
+    def translateId(self, mkup):
+        mkup["id"] = mkup["_id"]
+        del mkup["id"]
+        return mkup
+
+    def on_get(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Getting markups from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))            
+            mkups = [self.translateId(mkup) for mkup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(mkups)
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
@@ -786,16 +842,114 @@ class Favorites(object):
             resp.body = json.dumps({'exception': str(ex)})
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
-    def createIndexes(self, idx_name, db):
-        LOGGER_.info(f"Creating favorites indexes for {idx_name}...")
+    def on_delete(self, req, resp, idx_name, markup_id):
+        try:
+            LOGGER_.info(
+                f"Removing markup from {idx_name} with id {markup_id} and req {json.dumps(req.params, indent=2)}"
+            )
 
-        db['favorites'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+            auth = self.authorize(req.get_header("Authorization"))   
+            col = self.getCollection(idx_name, 'markups')
 
-    def getUserId(self, auth):
-        return "{}.{}".format(auth['sub'], auth['iss'])
+            LOGGER_.info(f"Attempting to remove markup {markup_id} from {idx_name}...")
+            mkup = col.find_one_and_delete({'_id': markup_id, 'uid': self.getUserId(auth)})
+            if not mkup:
+                resp.status = falcon.HTTP_404
+                resp.body = json.dumps({'message': "Markup not found"})
+            else:
+                resp.status = falcon.HTTP_200
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
-    def getDocumentId(self, auth, article_id):
-        return "{}.{}.{}".format(auth['sub'], auth['iss'], article_id)
+    def on_post(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Adding markup to {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))   
+            data = json.loads(req.stream.read())
+            data["_id"] = str(ObjectId())
+            data['uid'] = self.getUserId(auth)
+            data['timestamp'] = datetime.utcnow().replace(tzinfo=UTC).isoformat()
+
+            self.getCollection(idx_name, 'markups').insert_one(data)
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(self.translateId(data))
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+
+class Tags(MongoService, MobileAppService):
+    def on_get(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Getting tags from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))            
+            mkups = [mkup for mkup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
+            favs = [fav for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
+
+            tagsByFreq = defaultdict(int)
+            def process(items):
+                for item in items:
+                    for tag in item['tags']:
+                        tagsByFreq[tag] += 1
+                
+            process(mkups)
+            process(favs)            
+            
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(tagsByFreq)
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+class Recommended(object):
+    def on_get(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Getting recommended articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            limit = req.params['limit'] if 'limit' in req.params else 1
+
+            articles = ES.search(index=idx_name,
+                            body={
+                                'query': {
+                                    'function_score': {
+                                        'random_score': {}
+                                    }
+                                },
+                                '_source': {
+                                        'excludes': ['verses', 'bible-refs']
+                                },
+                                'size': limit,
+                            })
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(articles)
+
+        except TransportError as ex:
+            resp.status = "{}".format(ex.status_code)
+            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        except Exception as ex:
+            resp.status = falcon.HTTP_500
+            resp.body = json.dumps({'exception': str(ex)})
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 class TotpAuthBackend(AuthBackend):
     def __init__(self):
@@ -864,6 +1018,9 @@ def load_app(cfg_filepath):
     suggester = Suggester()
     similar = Similar()
     favorites = Favorites()
+    markups = Markups()
+    tags = Tags()
+    recommended = Recommended()
 
     app.add_route('/{idx_name}', index)
     app.add_route('/{idx_name}/articles', articles)
@@ -882,5 +1039,9 @@ def load_app(cfg_filepath):
     app.add_route('/{idx_name}/articles/similar', similar)
     app.add_route('/{idx_name}/favorites', favorites)
     app.add_route('/{idx_name}/favorites/{article_id}', favorites)
+    app.add_route('/{idx_name}/markups', markups)
+    app.add_route('/{idx_name}/markups/{markup_id}', markups)
+    app.add_route('/{idx_name}/tags', tags)
+    app.add_route('/{idx_name}/recommended', recommended)
 
     return app

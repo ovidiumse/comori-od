@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-
 COPY requirements.txt .
 
 RUN apt-get update && \
@@ -20,4 +19,4 @@ COPY comori-od-restapi.py .
 COPY cfg.yaml .
 COPY logging.conf .
 
-CMD gunicorn -b 0.0.0.0:9000 --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('cfg.yaml')"
+CMD gunicorn -b 0.0.0.0:$VIRTUAL_PORT --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('cfg.yaml')"
