@@ -298,6 +298,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
             book = p.text
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
             title = p.text
+            subtitle = getSubtitle(p, cfg)
             type = "poezie" if isPoemTitle(p, cfg) else "articol"
             verses = []
             lastTag = ""

@@ -128,6 +128,7 @@ def create_index(idx_name):
                         ["lowercase", "asciifolding", "romanian_keywords"]
                     },
                     "folding_stemmed": {
+
                         'type': 'custom',
                         'tokenizer': 'standard',
                         'filter': ["lowercase", "synonyms", "asciifolding", "romanian_stemmer", "romanian_keywords"]
@@ -167,7 +168,7 @@ def create_index(idx_name):
             'title': {
                 'type': 'text',
                 'term_vector': 'with_positions_offsets',
-                'analyzer': 'standard',
+                'analyzer': 'romanian',
                 'fields': {
                     'keyword': {
                         'type': 'keyword'
@@ -207,7 +208,7 @@ def create_index(idx_name):
                     'text': {
                         'type': 'text',
                         'term_vector': 'with_positions_offsets',
-                        'analyzer': 'standard',
+                        'analyzer': 'romanian',
                         'fields': {
                             'folded': {
                                 'type': 'text',
