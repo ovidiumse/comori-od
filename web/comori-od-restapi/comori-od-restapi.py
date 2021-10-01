@@ -1111,7 +1111,11 @@ class TotpAuthBackend(AuthBackend):
 
 
 def load_app(cfg_filepath, dotenv_filePath = None):
-    logging.config.fileConfig('logging.conf')
+    log_cfg = {}
+    with open('logging.conf', 'r') as log_conf_file:
+        log_cfg = yaml.full_load(log_conf_file)
+
+    logging.config.dictConfig(log_cfg)
 
     global LOGGER_
     LOGGER_ = logging.getLogger(__name__)
