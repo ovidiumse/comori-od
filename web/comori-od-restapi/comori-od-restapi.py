@@ -1,4 +1,5 @@
 #!/usr/bin/pypy3
+from array import array
 import os
 import re
 import falcon
@@ -20,6 +21,7 @@ from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
 from pymongo import MongoClient
 from datetime import datetime
+from dotenv import load_dotenv
 
 LOGGER_ = None
 ES = None
@@ -739,14 +741,22 @@ class MobileAppService(object):
     def getUserId(self, auth):
         return "{}.{}".format(auth['sub'], auth['iss'])
 
+    def getDocumentId(self, auth, id):
+        return "{}.{}".format(self.getUserId(auth), id)
+
 class Favorites(MongoService, MobileAppService):
+
+    def removeInternalFields(self, item):
+        del item['uid']
+        del item['_id']
+        return item
 
     def on_get(self, req, resp, idx_name):
         try:
             LOGGER_.info(f"Getting favorites from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
             auth = self.authorize(req.get_header("Authorization"))            
-            favs = [self.translateId(fav) for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
+            favs = [self.removeInternalFields(fav) for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
 
             resp.status = falcon.HTTP_200
             resp.body = json.dumps(favs)
@@ -771,9 +781,7 @@ class Favorites(MongoService, MobileAppService):
             LOGGER_.info(f"Attempting to remove favorite {favid} from {idx_name}...")
             response = self.getCollection(idx_name, 'favorites').delete_one({'_id': favid, 'uid': self.getUserId(auth)})
             if response.deleted_count < 1: 
-                resp.status = falcon.HTTP_404
-                resp.body = json.dumps({"message": "Favorite not found!"})
-                return
+                raise falcon.HTTPNotFound()
 
             resp.status = falcon.HTTP_200
         except TransportError as ex:
@@ -799,7 +807,7 @@ class Favorites(MongoService, MobileAppService):
             self.getCollection(idx_name, 'favorites').insert_one(data)
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(self.translateId(data))
+            resp.body = json.dumps(self.removeInternalFields(data))
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
@@ -808,28 +816,21 @@ class Favorites(MongoService, MobileAppService):
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-    
-    def translateId(self, item):
-        del item['_id']
-        return item
 
-    def getDocumentId(self, auth, article_id):
-        return "{}.{}.{}".format(auth['sub'], auth['iss'], article_id)
 
 
 class Markups(MongoService, MobileAppService):
 
-    def translateId(self, mkup):
-        mkup["id"] = mkup["_id"]
-        del mkup["id"]
-        return mkup
+    def removeInternalFields(self, markup):
+        del markup['uid']
+        return markup
 
     def on_get(self, req, resp, idx_name):
         try:
             LOGGER_.info(f"Getting markups from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
             auth = self.authorize(req.get_header("Authorization"))            
-            mkups = [self.translateId(mkup) for mkup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
+            mkups = [self.removeInternalFields(markup) for markup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
 
             resp.status = falcon.HTTP_200
             resp.body = json.dumps(mkups)
@@ -852,8 +853,8 @@ class Markups(MongoService, MobileAppService):
             col = self.getCollection(idx_name, 'markups')
 
             LOGGER_.info(f"Attempting to remove markup {markup_id} from {idx_name}...")
-            mkup = col.find_one_and_delete({'_id': markup_id, 'uid': self.getUserId(auth)})
-            if not mkup:
+            result = col.delete_one({'_id': markup_id, 'uid': self.getUserId(auth)})
+            if result.deleted_count == 0:
                 resp.status = falcon.HTTP_404
                 resp.body = json.dumps({'message': "Markup not found"})
             else:
@@ -880,7 +881,7 @@ class Markups(MongoService, MobileAppService):
             self.getCollection(idx_name, 'markups').insert_one(data)
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(self.translateId(data))
+            resp.body = json.dumps(self.removeInternalFields(data))
         except TransportError as ex:
             resp.status = "{}".format(ex.status_code)
             resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
@@ -919,6 +920,130 @@ class Tags(MongoService, MobileAppService):
             resp.status = falcon.HTTP_500
             resp.body = json.dumps({'exception': str(ex)})
             LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+
+class ReadArticles(MongoService, MobileAppService):
+    def removeInternalFields(self, item):
+        del item['_id']
+        del item['uid']
+        return item
+
+    def on_get(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Getting read articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))            
+            readArticles = [self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find({'uid': self.getUserId(auth)})]      
+            
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(readArticles)
+        except Exception as ex:
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            raise
+
+    def on_post(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Adding read article to {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))   
+            data = json.loads(req.stream.read())
+            if not isinstance(data, dict):
+                raise falcon.HTTPInvalidParam("Input should be a dictionary!")
+
+            data["_id"] = self.getDocumentId(auth, data['id'])
+            data['uid'] = self.getUserId(auth)
+
+            self.getCollection(idx_name, 'readArticles').insert_one(data)
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(self.removeInternalFields(data))
+        except Exception as ex:
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            raise
+
+    def on_patch(self, req, resp, idx_name, article_id):
+        try:
+            LOGGER_.info(f"Updating read article {article_id} to {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))   
+            data = json.loads(req.stream.read())
+            if not isinstance(data, dict):
+                raise falcon.HTTPInvalidParam("Input should be a dictionary!")
+
+            _id = self.getDocumentId(auth, article_id)
+            if 'id' in data:
+                del data['id']
+
+            result = self.getCollection(idx_name, 'readArticles').update_one({'_id': _id, 'uid': self.getUserId(auth)}, {'$set': data})
+            if result.modified_count == 0:
+                raise falcon.HTTPNotFound()
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps({"UpdatedCnt": result.modified_count})
+        except Exception as ex:
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            raise
+
+
+class BulkReadArticles(MongoService, MobileAppService):
+    def removeInternalFields(self, item):
+        del item['_id']
+        del item['uid']
+        return item
+
+    def on_post(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Adding read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))   
+            readArticles = json.loads(req.stream.read())
+            if not isinstance(readArticles, list):
+                raise falcon.HTTPInvalidParam("Input should be an array!")
+
+            if not readArticles:
+                raise falcon.HTTPInvalidParam("The list of read articles is empty!")
+
+            for data in readArticles:
+                data["_id"] = self.getDocumentId(auth, data['id'])
+                data['uid'] = self.getUserId(auth)
+
+            result = self.getCollection(idx_name, 'readArticles').insert_many(readArticles)
+            if len(result.inserted_ids) == 0:
+                raise falcon.HTTPInternalServerError("Inserting read articles failed!")
+
+            resp.status = falcon.HTTP_201
+            resp.body = json.dumps({"InsertedCnt": len(result.inserted_ids)})
+        except Exception as ex:
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            raise
+
+    def on_patch(self, req, resp, idx_name):
+        try:
+            LOGGER_.info(f"Updating read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+            auth = self.authorize(req.get_header("Authorization"))   
+            readArticles = json.loads(req.stream.read())
+            if not isinstance(readArticles, list):
+                raise falcon.HTTPInvalidParam("Input should be an array of objects!")
+                
+            if not readArticles:
+                raise falcon.HTTPInvalidParam("The list of read articles is empty!")
+
+            updatedCnt = 0
+            for read in readArticles:   
+                _id = self.getDocumentId(auth, read['id'])
+                del read['id']
+                result = self.getCollection(idx_name, 'readArticles').update_one({'_id': _id, 'uid': self.getUserId(auth)}, {'$set': read})
+
+                updatedCnt += result.modified_count
+
+            if updatedCnt == 0 and len(readArticles) > 0:
+                raise falcon.HTTPNotFound()
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps({"UpdatedCnt": updatedCnt})
+        except Exception as ex:
+            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+            raise
 
 class Recommended(object):
     def on_get(self, req, resp, idx_name):
@@ -985,7 +1110,7 @@ class TotpAuthBackend(AuthBackend):
             auth_header_prefix=self.auth_header_prefix, token=token)
 
 
-def load_app(cfg_filepath):
+def load_app(cfg_filepath, dotenv_filePath = None):
     logging.config.fileConfig('logging.conf')
 
     global LOGGER_
@@ -994,6 +1119,9 @@ def load_app(cfg_filepath):
     cfg = {}
     with open(cfg_filepath, 'r') as cfg_file:
         cfg = yaml.full_load(cfg_file)
+
+    if dotenv_filePath:
+        load_dotenv(dotenv_filePath)
 
     global ES
     ES = Elasticsearch(hosts=[cfg['es']],
@@ -1021,6 +1149,8 @@ def load_app(cfg_filepath):
     markups = Markups()
     tags = Tags()
     recommended = Recommended()
+    readArticles = ReadArticles()
+    bulkReadArticles = BulkReadArticles()
 
     app.add_route('/{idx_name}', index)
     app.add_route('/{idx_name}/articles', articles)
@@ -1043,5 +1173,8 @@ def load_app(cfg_filepath):
     app.add_route('/{idx_name}/markups/{markup_id}', markups)
     app.add_route('/{idx_name}/tags', tags)
     app.add_route('/{idx_name}/recommended', recommended)
+    app.add_route('/{idx_name}/readarticles', readArticles)
+    app.add_route('/{idx_name}/readarticles/{article_id}', readArticles)
+    app.add_route('/{idx_name}/readarticles/bulk', bulkReadArticles)
 
     return app
