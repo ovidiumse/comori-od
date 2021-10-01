@@ -212,6 +212,8 @@ services:
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
       - APPLE_APP_PKEY=${APPLE_APP_PKEY}
+    volumes:
+      - api_logs:/var/log/comori-od-restapi
     depends_on:
       - comori-od-es
       - comori-od-mongo
@@ -247,6 +249,8 @@ volumes:
   mongo_data:
     driver: local
   jupyter_data:
+    driver: local
+  api_logs:
     driver: local
 
 networks:
