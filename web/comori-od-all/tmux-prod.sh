@@ -24,11 +24,11 @@ tmux send-keys -t prod "ssh ubuntu@comori-od.ro" C-m
 
 tmux select-pane -t 4
 tmux send-keys -t prod "ssh ubuntu@comori-od.ro" C-m
-tmux send-keys -t prod "top -i" C-m
+tmux send-keys -t prod "docker stats" C-m
 
 tmux select-pane -t 0
 tmux split -h -t prod
 tmux send-keys -t prod "ssh ubuntu@comori-od.ro" C-m
-tmux send-keys -t prod "docker stats" C-m
+tmux send-keys -t prod "top -i" C-m
 
 tmux attach -t prod
