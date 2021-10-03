@@ -34,10 +34,11 @@ def hasStyleAttribute(tag, attr, value):
     if not tag.has_attr('style'):
         return False
 
+    style = tag['style'].replace('\n', '').replace(': ', ':')
     if value == '*':
-        return "{}: ".format(attr) in tag['style']
+        return "{}:".format(attr) in style
     else:
-        return "{}: {}".format(attr, value) in tag['style']
+        return "{}:{}".format(attr, value) in style
 
 
 def hasClassAttribute(tag, value):
