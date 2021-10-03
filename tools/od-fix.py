@@ -203,7 +203,9 @@ def isFirstParagraphFirstLetter(tag, cfg):
 
 
 def isWhiteText(tag, cfg):
-    return hasStyleAttribute(tag, 'color', '#ffffff') or hasStyleAttribute(tag, 'color', '#FFFFFF')
+    return hasStyleAttribute(tag, 'color', '#ffffff') \
+        or hasStyleAttribute(tag, 'color', '#FFFFFF') \
+        or hasStyleAttribute(tag, 'color', 'white')
 
 
 def isHardPageBreak(tag, cfg):
