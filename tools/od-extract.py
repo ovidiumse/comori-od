@@ -75,7 +75,14 @@ def parseArgs():
 
 
 def hasStyleAttribute(tag, attr, value):
-    return tag.has_attr('style') and "{}:{}".format(attr, value) in tag['style'].replace(' ', '')
+    if not tag.has_attr('style'):
+        return False
+
+    style = tag['style'].replace('\n', '').replace(': ', ':')
+    if value == '*':
+        return "{}:".format(attr) in style
+    else:
+        return "{}:{}".format(attr, value) in style
 
 
 def hasNestedStyleAttribute(tag, attr, value):
