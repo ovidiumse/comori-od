@@ -310,7 +310,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
             verses = []
             lastTag = ""
             lastValue = []
-            for v in p.next_siblings:
+            for v in p.next_elements:
                 if v.name == 'p' and (isPoemTitle(v, cfg) or isArticleTitle(
                         v, cfg) or isBookTitle(v, cfg)
                                       or isVolumeTitle(v, cfg)):
