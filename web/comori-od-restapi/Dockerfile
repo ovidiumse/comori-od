@@ -1,4 +1,5 @@
 FROM ubuntu:latest
+
 COPY requirements.txt .
 
 RUN apt-get update && \
@@ -15,8 +16,10 @@ RUN virtualenv -p pypy3 ve
 RUN . ve/bin/activate
 RUN pypy3 -m pip install -r requirements.txt
 
+ARG LOGGING_CFG
+
 COPY comori-od-restapi.py .
 COPY cfg.yaml .
-COPY logging.conf .
+COPY $LOGGING_CFG ./logging_cfg.yaml
 
 CMD gunicorn -b 0.0.0.0:$VIRTUAL_PORT --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('cfg.yaml')"

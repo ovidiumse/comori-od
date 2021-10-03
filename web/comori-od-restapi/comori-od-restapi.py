@@ -2,7 +2,9 @@
 from array import array
 import os
 import re
+import time
 import falcon
+from falcon.status_codes import HTTP_200
 from falcon_auth import FalconAuthMiddleware
 from falcon_auth.backends import AuthBackend
 from pymongo.client_options import _parse_ssl_options
@@ -21,6 +23,7 @@ from elasticsearch import Elasticsearch, TransportError, helpers
 from falcon.http_status import HTTPStatus
 from pymongo import MongoClient
 from datetime import datetime
+from unidecode import unidecode
 from dotenv import load_dotenv
 
 LOGGER_ = None
@@ -71,6 +74,46 @@ def parseFilters(req):
         }
     }
 
+
+def fmt_duration(nanos):
+    if nanos < 300:
+        return f"{nanos:.2f} ns"
+    elif nanos < 300000:
+        return f"{nanos / 1000:.2f} us"
+    elif nanos < 300000000:
+        return f"{nanos / 1000000:.2f} ms"
+    else:
+        return f"{nanos / 1000000000:.2f} s"
+
+def timeit(operation):
+    def inner(func):
+        def wrapper(*args, **kwargs):
+            start = time.monotonic_ns()
+            result = func(*args, **kwargs)
+            end = time.monotonic_ns()
+            LOGGER_.info(f"{operation} took {fmt_duration(end - start)} ")
+            return result
+        
+        return wrapper
+    return inner
+
+
+def req_handler(operation):
+    def inner(func):
+        @timeit(operation)
+        def wrapper(*args, **kwargs):
+            try:
+                func(*args, **kwargs)
+            except falcon.HTTPError as e:
+                LOGGER_.warn(f"{operation} ended with {e}")
+                raise
+            except Exception as e:
+                LOGGER_.error(f"{operation} failed! Error: {e}", exc_info=True)
+                raise
+        return wrapper
+    return inner
+
+
 class HandleCORS(object):
     def process_request(self, req, resp):
         resp.set_header('Access-Control-Allow-Origin', '*')
@@ -82,64 +125,42 @@ class HandleCORS(object):
 
 
 class Index(object):
+
+    @req_handler("Deleting index")
     def on_delete(self, req, resp, idx_name):
         resp.content_type = 'application/json'
 
-        try:
-            LOGGER_.info(f"Deleting index {idx_name}...")
+        LOGGER_.info(f"Deleting index {idx_name}...")
 
-            ES.indices.delete(index=idx_name)
-            resp.status = falcon.HTTP_200
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Deleting index failed! Error: {}".format(ex), exc_info=True)
+        ES.indices.delete(index=idx_name)
+        resp.status = falcon.HTTP_200
 
+    @req_handler("Getting index settings & mappings")
     def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting data for index {idx_name}...")
+        LOGGER_.info(f"Getting data for index {idx_name}...")
 
-            mapping = ES.indices.get_mapping(index=idx_name)
-            settings = ES.indices.get(index=idx_name)
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps({'settings': settings, 'mapping': mapping})
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Getting index info failed! Error: {}".format(ex), exc_info=True)
+        mapping = ES.indices.get_mapping(index=idx_name)
+        settings = ES.indices.get(index=idx_name)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps({'settings': settings, 'mapping': mapping})
 
+    @req_handler("Creating index")
     def on_post(self, req, resp, idx_name):
         data = json.loads(req.stream.read())
 
-        try:
-            LOGGER_.info(f"Creating index {idx_name} with data {json.dumps(data, indent=1)}")
+        LOGGER_.info(f"Creating index {idx_name} with data {json.dumps(data, indent=1)}")
 
-            if ES.indices.exists(idx_name):
-                ES.indices.delete(index=idx_name)
+        if ES.indices.exists(idx_name):
+            ES.indices.delete(index=idx_name)
 
-            ES.indices.create(index=idx_name, body=data['settings'])
-            ES.indices.put_mapping(index=idx_name, body=data['mappings'])
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps({})
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Creating index failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Creating index failed! Error: {}".format(ex), exc_info=True)
+        ES.indices.create(index=idx_name, body=data['settings'])
+        ES.indices.put_mapping(index=idx_name, body=data['mappings'])
+        resp.status = falcon.HTTP_200
 
 
 class Articles(object):
+
+    @timeit("Indexing article")
     def index(self, idx_name, article):
         try:
             LOGGER_.info(f"Indexing article {article['title']} from {article['book']} into {idx_name}...")
@@ -206,6 +227,7 @@ class Articles(object):
             }
         }
 
+    @timeit("Articles query")
     def query(self, idx_name, req):
         limit = req.params['limit'] if 'limit' in req.params else 100
         offset = req.params['offset'] if 'offset' in req.params else 0
@@ -276,6 +298,7 @@ class Articles(object):
 
         return ES.search(index=idx_name, body=query_body, timeout="1m")
 
+    @timeit("Getting highlighted article by id")
     def getHighlightedById(self, idx_name, req):
         LOGGER_.info(f"Getting highlighted article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
@@ -355,17 +378,20 @@ class Articles(object):
 
         return get_response
 
+    @timeit("Getting article by id")
     def getById(self, idx_name, req):
         LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
         return ES.get(index=idx_name, id=req.params['id'])
 
+    @timeit("Getting article")
     def getArticle(self, idx_name, req):
         if "highlight" in req.params:
             return self.getHighlightedById(idx_name, req)
         else:
             return self.getById(idx_name, req)
 
+    @timeit("Getting random article")
     def getRandomArticle(self, idx_name, req):
         LOGGER_.info(f"Getting random article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
@@ -383,87 +409,63 @@ class Articles(object):
                              'from': offset
                          })
 
+    @req_handler("Handling articles GET")
     def on_get(self, req, resp, idx_name):
-        try:
-            if 'q' in req.params:
-                results = self.query(idx_name, req)
-            elif 'id' in req.params:
-                results = self.getArticle(idx_name, req)
-            else:
-                results = self.getRandomArticle(idx_name, req)
+        if 'q' in req.params:
+            results = self.query(idx_name, req)
+        elif 'id' in req.params:
+            results = self.getArticle(idx_name, req)
+        else:
+            results = self.getRandomArticle(idx_name, req)
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(results)
 
+    @req_handler("Handling articles POST")
     def on_post(self, req, resp, idx_name):
-        try:
-            articles = json.loads(req.stream.read())
-            indexed = 0
+        articles = json.loads(req.stream.read())
+        indexed = 0
 
-            LOGGER_.info(f"Indexing {len(articles)} into {idx_name}...")
+        LOGGER_.info(f"Indexing {len(articles)} into {idx_name}...")
 
-            for a in articles:
-                a['_index'] = idx_name
-            indexed, _ = helpers.bulk(ES, articles, stats_only=True)
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({
-                'total': len(articles),
-                'indexed': indexed,
-                'exception': ex.error,
-                'info': ex.info
-            })
-            LOGGER_.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Posting articles failed! Error: {}".format(ex), exc_info=True)
+        for a in articles:
+            a['_index'] = idx_name
+        indexed, _ = helpers.bulk(ES, articles, stats_only=True)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
 
 
 class ContentHandler(object):
+    @req_handler("Handling content GET")
     def on_get(self, req, resp, idx_name):
+        filters = parseFilters(req)
+        LOGGER_.info(f"Quering contents from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        try:
-            filters = parseFilters(req)
-            LOGGER_.info(f"Quering contents from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        limit = req.params['limit'] if 'limit' in req.params else 10000
+        offset = req.params['offset'] if 'offset' in req.params else 0
 
-            limit = req.params['limit'] if 'limit' in req.params else 10000
-            offset = req.params['offset'] if 'offset' in req.params else 0
+        query_body = {
+            'query': {
+                'bool': {
+                    'filter': filters
+                }
+            },
+            'size': limit,
+            'from': offset,
+            'sort': [{'_insert_ts': {'order': 'asc'}}]
+        }
 
-            query_body = {
-                'query': {
-                    'bool': {
-                        'filter': filters
-                    }
-                },
-                'size': limit,
-                'from': offset,
-                'sort': [{'_insert_ts': {'order': 'asc'}}]
-            }
+        response = ES.search(index=idx_name, body=query_body)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(response)
 
-            response = ES.search(index=idx_name, body=query_body)
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(response)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error(f"Querying contents from {idx_name} failed! Error: {ex}", exc_info=True)
 
 class FieldAggregator(Articles):
     def __init__(self, fieldName, aggs):
         self.fieldName = fieldName
         self.aggs = aggs
 
+    @timeit("Aggregating values")
     def getValues(self, idx_name, req):
         LOGGER_.info(f"Getting {self.fieldName}s from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
@@ -500,216 +502,179 @@ class FieldAggregator(Articles):
 
         return ES.search(index=idx_name, body=query_body, timeout="1m")
 
+    @req_handler("Aggregated fields GET")
     def on_get(self, req, resp, idx_name):
-        try:
-            results = self.getValues(idx_name, req)
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        results = self.getValues(idx_name, req)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(results)
 
+    @req_handler("Deleting content")
     def on_delete(self, req, resp, idx_name, value):
-        try:
-            query = {
-                'query': {
-                    'match': {
-                        self.fieldName: {
-                            'query': value
-                        }
+        LOGGER_.info(f"Deleting content where {self.fieldName} is {unidecode(value)} (unidecoded)...")
+
+        query = {
+            'query': {
+                'match': {
+                    self.fieldName: {
+                        'query': value
                     }
                 }
             }
+        }
 
-            ES.delete_by_query(idx_name, body=query)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        ES.delete_by_query(idx_name, body=query)
+        resp.status = HTTP_200
 
 
 class Titles(object):
+
+    @req_handler("Getting titles")
     def on_get(self, req, resp, idx_name):
-        try:
-            filters = parseFilters(req)
-            LOGGER_.info(f"Quering titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        filters = parseFilters(req)
+        LOGGER_.info(f"Quering titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            limit = req.params['limit'] if 'limit' in req.params else 10000
-            offset = req.params['offset'] if 'offset' in req.params else 0
+        limit = req.params['limit'] if 'limit' in req.params else 10000
+        offset = req.params['offset'] if 'offset' in req.params else 0
 
-            query_body = {
-                'query': {
-                    'bool': {
-                        'filter': filters
-                    }
-                },
-                '_source': {
-                    'excludes': ['verses', 'bible-refs'],
-                },
-                'size': limit,
-                'from': offset,
-                'sort': [{'_insert_idx': {'order': 'asc'}}]
-            }
+        query_body = {
+            'query': {
+                'bool': {
+                    'filter': filters
+                }
+            },
+            '_source': {
+                'excludes': ['verses', 'bible-refs'],
+            },
+            'size': limit,
+            'from': offset,
+            'sort': [{'_insert_idx': {'order': 'asc'}}]
+        }
 
-            # print("Query: {}".format(json.dumps(query_body, indent=2)))
-
-            response = ES.search(index=idx_name, body=query_body)
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(response)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error(f"Querying titles from {idx_name} failed! Error: {ex}", exc_info=True)
-
+        response = ES.search(index=idx_name, body=query_body)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(response)
+ 
 
 class TitlesCompletion(object):
-    def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting title completion from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            results = ES.search(index=idx_name,
-                                body={
-                                    'query': {
-                                        'multi_match': {
-                                            'query': req.params['prefix'],
-                                            'type': 'bool_prefix',
-                                            "fields": [
-                                                "title.completion",
-                                                "title.completion._2gram",
-                                                "title.completion._3gram",
-                                                "title.completion_stemmed_folded",
-                                                "title.completion_stemmed_folded._2gram",
-                                                "title.completion_stemmed_folded._3gram"
-                                                "title.completion_folded_stemmed",
-                                                "title.completion_folded_stemmed._2gram",
-                                                "title.completion_folded_stemmed._3gram"
-                                            ]
-                                        }
-                                    },
-                                    '_source': {
-                                        'excludes': ['verses', 'bible-refs']
-                                    },
-                                })
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+    @req_handler("Getting title completions")
+    def on_get(self, req, resp, idx_name):
+        LOGGER_.info(f"Getting title completion from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+        results = ES.search(index=idx_name,
+                            body={
+                                'query': {
+                                    'multi_match': {
+                                        'query': req.params['prefix'],
+                                        'type': 'bool_prefix',
+                                        "fields": [
+                                            "title.completion",
+                                            "title.completion._2gram",
+                                            "title.completion._3gram",
+                                            "title.completion_stemmed_folded",
+                                            "title.completion_stemmed_folded._2gram",
+                                            "title.completion_stemmed_folded._3gram"
+                                            "title.completion_folded_stemmed",
+                                            "title.completion_folded_stemmed._2gram",
+                                            "title.completion_folded_stemmed._3gram"
+                                        ]
+                                    }
+                                },
+                                '_source': {
+                                    'excludes': ['verses', 'bible-refs']
+                                },
+                            })
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(results)
 
 
 class Suggester(object):
-    def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(
-                f"Getting search suggestions from {idx_name} with req {json.dumps(req.params, indent=2)}"
-            )
 
-            results = ES.search(index=idx_name,
-                                body={
-                                    'suggest': {
-                                        'text': req.params['q'],
-                                        'simple_phrase': {
-                                            'phrase': {
-                                                'field':
-                                                'verses.text.suggesting',
-                                                'size': 1,
-                                                'gram_size': 4,
-                                                'max_errors': 4,
-                                                'direct_generator': [{
-                                                    'field': 'verses.text.suggesting',
-                                                    'suggest_mode': 'popular',
-                                                }],
-                                                'highlight': {
-                                                    'pre_tag': '<em>',
-                                                    'post_tag': '</em>'
-                                                },
-                                                "collate": {
-                                                    "query": {
-                                                        "source": {
-                                                            "match": {
-                                                                "{{field_name}}": "{{suggestion}}"
-                                                            }
+    @req_handler("Getting search suggestions")
+    def on_get(self, req, resp, idx_name):
+        LOGGER_.info(
+            f"Getting search suggestions from {idx_name} with req {json.dumps(req.params, indent=2)}"
+        )
+
+        results = ES.search(index=idx_name,
+                            body={
+                                'suggest': {
+                                    'text': req.params['q'],
+                                    'simple_phrase': {
+                                        'phrase': {
+                                            'field':
+                                            'verses.text.suggesting',
+                                            'size': 1,
+                                            'gram_size': 4,
+                                            'max_errors': 4,
+                                            'direct_generator': [{
+                                                'field': 'verses.text.suggesting',
+                                                'suggest_mode': 'popular',
+                                            }],
+                                            'highlight': {
+                                                'pre_tag': '<em>',
+                                                'post_tag': '</em>'
+                                            },
+                                            "collate": {
+                                                "query": {
+                                                    "source": {
+                                                        "match": {
+                                                            "{{field_name}}": "{{suggestion}}"
                                                         }
-                                                    },
-                                                    "params": {
-                                                        "field_name": "verses.text.folded"
-                                                    },
-                                                    "prune": True
-                                                }
+                                                    }
+                                                },
+                                                "params": {
+                                                    "field_name": "verses.text.folded"
+                                                },
+                                                "prune": True
                                             }
                                         }
                                     }
-                                })
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+                                }
+                            })
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(results)
 
 
 class Similar(object):
-    def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting similar documents from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            results = ES.search(index=idx_name,
-                                body={
-                                    'query': {
-                                        'more_like_this': {
-                                            'fields': ["verses.text", "verses.text.folded"],
-                                            'like': [{
-                                                '_id': req.params['id']
-                                            }],
-                                            'min_term_freq': 3,
-                                            'min_word_length': 4,
-                                            'minimum_should_match': '50%'
-                                        },
+    @req_handler("Getting similar articles")
+    def on_get(self, req, resp, idx_name):
+        LOGGER_.info(f"Getting similar documents from {idx_name} with req {json.dumps(req.params, indent=2)}")
+
+        results = ES.search(index=idx_name,
+                            body={
+                                'query': {
+                                    'more_like_this': {
+                                        'fields': ["verses.text", "verses.text.folded"],
+                                        'like': [{
+                                            '_id': req.params['id']
+                                        }],
+                                        'min_term_freq': 3,
+                                        'min_word_length': 4,
+                                        'minimum_should_match': '50%'
                                     },
-                                    '_source': {
-                                        'excludes': ['verses', 'bible-refs']
-                                    },
-                                    'size': 4
-                                })
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+                                },
+                                '_source': {
+                                    'excludes': ['verses', 'bible-refs']
+                                },
+                                'size': 4
+                            })
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(results)
 
 
 class MongoService(object):
     dbsByIndexName = {}
 
+    @timeit("Connecting to MongoDB")
     def getClient(self, idx_name):
         LOGGER_.info(f"Creating Mongo db connection for {idx_name}...")
         return MongoClient('comori-od-mongo',
                             username=os.environ.get("MONGO_USERNAME"),
                             password=os.environ.get("MONGO_PASSWORD"))
 
+    @timeit("Getting database by index")
     def getDb(self, idx_name):
         if idx_name not in self.dbsByIndexName:
             db = self.dbsByIndexName[idx_name] = self.getClient(idx_name)[f"comori_{idx_name}"]
@@ -718,13 +683,17 @@ class MongoService(object):
 
         return self.dbsByIndexName[idx_name]
 
+    @timeit("Getting collection")
     def getCollection(self, idx_name, name):
         return self.getDb(idx_name)[name]
 
+    @timeit("Creating indexes")
     def createIndexes(self, idx_name, db):
-        LOGGER_.info(f"Creating favorites indexes for {idx_name}...")
+        LOGGER_.info(f"Creating indexes for {idx_name}...")
 
         db['favorites'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+        db['markups'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+        db['readArticles'].create_index([('uid', pymongo.ASCENDING)], unique=False)
 
 
 class MobileAppService(object):
@@ -735,6 +704,7 @@ class MobileAppService(object):
     def __init__(self):
         self.public_key = os.environ.get("MOBILE_APP_PKEY")
     
+    @timeit("Authorizing")
     def authorize(self, authorization):
         return jwt.decode(authorization, self.public_key, algorithms='RS256')
 
@@ -744,6 +714,10 @@ class MobileAppService(object):
     def getDocumentId(self, auth, id):
         return "{}.{}".format(self.getUserId(auth), id)
 
+    def fmtUtcNow(self):
+        return f"{datetime.utcnow().isoformat()}Z"
+
+
 class Favorites(MongoService, MobileAppService):
 
     def removeInternalFields(self, item):
@@ -751,72 +725,49 @@ class Favorites(MongoService, MobileAppService):
         del item['_id']
         return item
 
+    @req_handler("Getting favorites")
     def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting favorites from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Getting favorites from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))            
-            favs = [self.removeInternalFields(fav) for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
+        auth = self.authorize(req.get_header("Authorization"))            
+        favs = [self.removeInternalFields(fav) for fav in self.getCollection(idx_name, 'favorites').find({
+            'uid': self.getUserId(auth)
+        })]
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(favs)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(favs)
 
+    @req_handler("Deleting favorite")
     def on_delete(self, req, resp, idx_name, article_id):
-        try:
-            LOGGER_.info(
-                f"Removing favorite from {idx_name} with id {article_id} and req {json.dumps(req.params, indent=2)}"
-            )
+        LOGGER_.info(
+            f"Removing favorite from {idx_name} with id {article_id} and req {json.dumps(req.params, indent=2)}"
+        )
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            favid = self.getDocumentId(auth, article_id)
+        auth = self.authorize(req.get_header("Authorization"))   
+        favid = self.getDocumentId(auth, article_id)
 
-            LOGGER_.info(f"Attempting to remove favorite {favid} from {idx_name}...")
-            response = self.getCollection(idx_name, 'favorites').delete_one({'_id': favid, 'uid': self.getUserId(auth)})
-            if response.deleted_count < 1: 
-                raise falcon.HTTPNotFound()
+        LOGGER_.info(f"Removing favorite {favid} from {idx_name}...")
+        response = self.getCollection(idx_name, 'favorites').delete_one({'_id': favid, 'uid': self.getUserId(auth)})
+        if response.deleted_count < 1: 
+            raise falcon.HTTPNotFound()
 
-            resp.status = falcon.HTTP_200
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        resp.status = falcon.HTTP_200
 
+    @req_handler("Adding favorite")
     def on_post(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Adding favorite to {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Adding favorite to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            data = json.loads(req.stream.read())
+        auth = self.authorize(req.get_header("Authorization"))   
+        data = json.loads(req.stream.read())
 
-            data['_id'] = self.getDocumentId(auth, data['id'])
-            data['uid'] = self.getUserId(auth)
-            data['timestamp'] = datetime.utcnow().replace(tzinfo=UTC).isoformat()
+        data['_id'] = self.getDocumentId(auth, data['id'])
+        data['uid'] = self.getUserId(auth)
+        data['timestamp'] = self.fmtUtcNow()
 
-            self.getCollection(idx_name, 'favorites').insert_one(data)
+        self.getCollection(idx_name, 'favorites').insert_one(data)
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(self.removeInternalFields(data))
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(self.removeInternalFields(data))
 
 
 class Markups(MongoService, MobileAppService):
@@ -825,101 +776,72 @@ class Markups(MongoService, MobileAppService):
         del markup['uid']
         return markup
 
+    @req_handler("Getting markups")
     def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting markups from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Getting markups from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))            
-            mkups = [self.removeInternalFields(markup) for markup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
+        auth = self.authorize(req.get_header("Authorization"))            
+        mkups = [self.removeInternalFields(markup) for markup in self.getCollection(idx_name, 'markups').find({
+            'uid': self.getUserId(auth)
+        })]
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(mkups)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(mkups)
 
+    @req_handler("Deleting markup")
     def on_delete(self, req, resp, idx_name, markup_id):
-        try:
-            LOGGER_.info(
-                f"Removing markup from {idx_name} with id {markup_id} and req {json.dumps(req.params, indent=2)}"
-            )
+        LOGGER_.info(
+            f"Removing markup from {idx_name} with id {markup_id} and req {json.dumps(req.params, indent=2)}"
+        )
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            col = self.getCollection(idx_name, 'markups')
+        auth = self.authorize(req.get_header("Authorization"))   
+        col = self.getCollection(idx_name, 'markups')
 
-            LOGGER_.info(f"Attempting to remove markup {markup_id} from {idx_name}...")
-            result = col.delete_one({'_id': markup_id, 'uid': self.getUserId(auth)})
-            if result.deleted_count == 0:
-                resp.status = falcon.HTTP_404
-                resp.body = json.dumps({'message': "Markup not found"})
-            else:
-                resp.status = falcon.HTTP_200
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        LOGGER_.info(f"Attempting to remove markup {markup_id} from {idx_name}...")
+        result = col.delete_one({'_id': markup_id, 'uid': self.getUserId(auth)})
+        if result.deleted_count == 0:
+            raise falcon.HTTPNotFound()
+        
+        resp.status = falcon.HTTP_200
 
+    @req_handler("Adding markup")
     def on_post(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Adding markup to {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Adding markup to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            data = json.loads(req.stream.read())
-            data["_id"] = str(ObjectId())
-            data['uid'] = self.getUserId(auth)
-            data['timestamp'] = datetime.utcnow().replace(tzinfo=UTC).isoformat()
+        auth = self.authorize(req.get_header("Authorization"))   
+        data = json.loads(req.stream.read())
+        data["_id"] = str(ObjectId())
+        data['uid'] = self.getUserId(auth)
+        data['timestamp'] = self.fmtUtcNow()
 
-            self.getCollection(idx_name, 'markups').insert_one(data)
+        self.getCollection(idx_name, 'markups').insert_one(data)
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(self.removeInternalFields(data))
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(self.removeInternalFields(data))
 
 
 class Tags(MongoService, MobileAppService):
+
+    @req_handler("Getting tags")
     def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting tags from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Getting tags from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))            
-            mkups = [mkup for mkup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
-            favs = [fav for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
+        auth = self.authorize(req.get_header("Authorization"))            
+        mkups = [mkup for mkup in self.getCollection(idx_name, 'markups').find({'uid': self.getUserId(auth)})]
+        favs = [fav for fav in self.getCollection(idx_name, 'favorites').find({'uid': self.getUserId(auth)})]
 
-            tagsByFreq = defaultdict(int)
-            def process(items):
-                for item in items:
-                    for tag in item['tags']:
-                        tagsByFreq[tag] += 1
-                
-            process(mkups)
-            process(favs)            
+        tagsByFreq = defaultdict(int)
+        def process(items):
+            for item in items:
+                for tag in item['tags']:
+                    tagsByFreq[tag] += 1
             
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(tagsByFreq)
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
+        process(mkups)
+        process(favs)            
+        
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(tagsByFreq)
+
 
 class ReadArticles(MongoService, MobileAppService):
     def removeInternalFields(self, item):
@@ -927,61 +849,58 @@ class ReadArticles(MongoService, MobileAppService):
         del item['uid']
         return item
 
+    @req_handler("Getting read articles")
     def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting read articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Getting read articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))            
-            readArticles = [self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find({'uid': self.getUserId(auth)})]      
-            
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(readArticles)
-        except Exception as ex:
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-            raise
+        auth = self.authorize(req.get_header("Authorization"))            
+        readArticles = [self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find({
+            'uid': self.getUserId(auth)
+        })]      
+        
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(readArticles)
 
+    @req_handler("Adding read article")
     def on_post(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Adding read article to {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Adding read article to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            data = json.loads(req.stream.read())
-            if not isinstance(data, dict):
-                raise falcon.HTTPInvalidParam("Input should be a dictionary!")
+        auth = self.authorize(req.get_header("Authorization"))   
+        data = json.loads(req.stream.read())
+        if not isinstance(data, dict):
+            raise falcon.HTTPInvalidParam("Input should be a dictionary!")
 
-            data["_id"] = self.getDocumentId(auth, data['id'])
-            data['uid'] = self.getUserId(auth)
+        data["_id"] = self.getDocumentId(auth, data['id'])
+        data['uid'] = self.getUserId(auth)
 
-            self.getCollection(idx_name, 'readArticles').insert_one(data)
+        self.getCollection(idx_name, 'readArticles').insert_one(data)
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(self.removeInternalFields(data))
-        except Exception as ex:
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-            raise
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(self.removeInternalFields(data))
 
+    @req_handler("Updating read article")
     def on_patch(self, req, resp, idx_name, article_id):
-        try:
-            LOGGER_.info(f"Updating read article {article_id} to {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Updating read article {article_id} to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            data = json.loads(req.stream.read())
-            if not isinstance(data, dict):
-                raise falcon.HTTPInvalidParam("Input should be a dictionary!")
+        auth = self.authorize(req.get_header("Authorization"))   
+        data = json.loads(req.stream.read())
+        if not isinstance(data, dict):
+            raise falcon.HTTPInvalidParam("Input should be a dictionary!")
 
-            _id = self.getDocumentId(auth, article_id)
-            if 'id' in data:
-                del data['id']
+        _id = self.getDocumentId(auth, article_id)
+        if 'id' in data:
+            del data['id']
 
-            result = self.getCollection(idx_name, 'readArticles').update_one({'_id': _id, 'uid': self.getUserId(auth)}, {'$set': data})
-            if result.modified_count == 0:
-                raise falcon.HTTPNotFound()
+        result = self.getCollection(idx_name, 'readArticles').update_one({
+            '_id': _id, 
+            'uid': self.getUserId(auth)}, 
+            {'$set': data})
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps({"UpdatedCnt": result.modified_count})
-        except Exception as ex:
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-            raise
+        if result.modified_count == 0:
+            raise falcon.HTTPNotFound()
+
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps({"UpdatedCnt": result.modified_count})
 
 
 class BulkReadArticles(MongoService, MobileAppService):
@@ -989,97 +908,88 @@ class BulkReadArticles(MongoService, MobileAppService):
         del item['_id']
         del item['uid']
         return item
-
+        
+    @req_handler("Adding read articles in bulk")
     def on_post(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Adding read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Adding read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            readArticles = json.loads(req.stream.read())
-            if not isinstance(readArticles, list):
-                raise falcon.HTTPInvalidParam("Input should be an array!")
+        auth = self.authorize(req.get_header("Authorization"))   
+        readArticles = json.loads(req.stream.read())
+        if not isinstance(readArticles, list):
+            raise falcon.HTTPInvalidParam("Input should be an array!")
 
-            if not readArticles:
-                raise falcon.HTTPInvalidParam("The list of read articles is empty!")
+        if not readArticles:
+            raise falcon.HTTPInvalidParam("The list of read articles is empty!")
 
-            for data in readArticles:
-                data["_id"] = self.getDocumentId(auth, data['id'])
-                data['uid'] = self.getUserId(auth)
+        for data in readArticles:
+            data["_id"] = self.getDocumentId(auth, data['id'])
+            data['uid'] = self.getUserId(auth)
 
-            result = self.getCollection(idx_name, 'readArticles').insert_many(readArticles)
-            if len(result.inserted_ids) == 0:
-                raise falcon.HTTPInternalServerError("Inserting read articles failed!")
+        result = self.getCollection(idx_name, 'readArticles').insert_many(readArticles)
+        if len(result.inserted_ids) == 0:
+            raise falcon.HTTPInternalServerError("Inserting read articles failed!")
 
-            resp.status = falcon.HTTP_201
-            resp.body = json.dumps({"InsertedCnt": len(result.inserted_ids)})
-        except Exception as ex:
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-            raise
+        resp.status = falcon.HTTP_201
+        resp.body = json.dumps({"InsertedCnt": len(result.inserted_ids)})
 
+    @req_handler("Updating read articles in bulk")
     def on_patch(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Updating read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Updating read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            auth = self.authorize(req.get_header("Authorization"))   
-            readArticles = json.loads(req.stream.read())
-            if not isinstance(readArticles, list):
-                raise falcon.HTTPInvalidParam("Input should be an array of objects!")
-                
-            if not readArticles:
-                raise falcon.HTTPInvalidParam("The list of read articles is empty!")
+        auth = self.authorize(req.get_header("Authorization"))   
+        readArticles = json.loads(req.stream.read())
+        if not isinstance(readArticles, list):
+            raise falcon.HTTPInvalidParam("Input should be an array of objects!")
+            
+        if not readArticles:
+            raise falcon.HTTPInvalidParam("The list of read articles is empty!")
 
-            updatedCnt = 0
-            for read in readArticles:   
-                _id = self.getDocumentId(auth, read['id'])
-                del read['id']
-                result = self.getCollection(idx_name, 'readArticles').update_one({'_id': _id, 'uid': self.getUserId(auth)}, {'$set': read})
+        updatedCnt = 0
+        for read in readArticles:   
+            _id = self.getDocumentId(auth, read['id'])
+            del read['id']
+            result = self.getCollection(idx_name, 'readArticles').update_one({
+                '_id': _id, 
+                'uid': self.getUserId(auth)}, 
+                {'$set': read})
 
-                updatedCnt += result.modified_count
+            updatedCnt += result.modified_count
 
-            if updatedCnt == 0 and len(readArticles) > 0:
-                raise falcon.HTTPNotFound()
+        if updatedCnt == 0 and len(readArticles) > 0:
+            raise falcon.HTTPNotFound()
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps({"UpdatedCnt": updatedCnt})
-        except Exception as ex:
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-            raise
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps({"UpdatedCnt": updatedCnt})
+
 
 class Recommended(object):
+
+    @req_handler("Getting recommended articles")
     def on_get(self, req, resp, idx_name):
-        try:
-            LOGGER_.info(f"Getting recommended articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        LOGGER_.info(f"Getting recommended articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-            limit = req.params['limit'] if 'limit' in req.params else 1
+        limit = req.params['limit'] if 'limit' in req.params else 1
 
-            articles = ES.search(index=idx_name,
-                            body={
-                                'query': {
-                                    'function_score': {
-                                        'random_score': {}
-                                    }
-                                },
-                                '_source': {
-                                        'excludes': ['verses', 'bible-refs']
-                                },
-                                'size': limit,
-                            })
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(articles)
+        articles = ES.search(index=idx_name,
+                        body={
+                            'query': {
+                                'function_score': {
+                                    'random_score': {}
+                                }
+                            },
+                            '_source': {
+                                    'excludes': ['verses', 'bible-refs']
+                            },
+                            'size': limit,
+                        })
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(articles)
 
-        except TransportError as ex:
-            resp.status = "{}".format(ex.status_code)
-            resp.body = json.dumps({'exception': ex.error, 'info': ex.info})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
-        except Exception as ex:
-            resp.status = falcon.HTTP_500
-            resp.body = json.dumps({'exception': str(ex)})
-            LOGGER_.error("Request handling failed! Error: {}".format(ex), exc_info=True)
 
 class TotpAuthBackend(AuthBackend):
     def __init__(self):
         key = os.environ['API_TOTP_KEY'] if os.environ.get('API_TOTP_KEY') else random_base32()
-        logging.info("TOTP key: {}".format(key))
+        LOGGER_.info("TOTP key: {}".format(key))
         self.totp = TOTP(key)
         self.auth_header_prefix = "Token"
 
@@ -1110,9 +1020,10 @@ class TotpAuthBackend(AuthBackend):
             auth_header_prefix=self.auth_header_prefix, token=token)
 
 
+@timeit("Initializing service")
 def load_app(cfg_filepath, dotenv_filePath = None):
     log_cfg = {}
-    with open('logging.conf', 'r') as log_conf_file:
+    with open('logging_cfg.yaml', 'r') as log_conf_file:
         log_cfg = yaml.full_load(log_conf_file)
 
     logging.config.dictConfig(log_cfg)
@@ -1130,9 +1041,10 @@ def load_app(cfg_filepath, dotenv_filePath = None):
     global ES
     ES = Elasticsearch(hosts=[cfg['es']],
                        http_auth=(os.getenv("ELASTIC_USER", "elastic"),
-                                  os.getenv("ELASTIC_PASSWORD", "")))
+                                  os.getenv("ELASTIC_PASSWORD", "")), 
+                       timeout=30)
 
-    logging.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
+    LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 
     totpAuth = TotpAuthBackend()
     authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
