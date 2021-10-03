@@ -197,7 +197,10 @@ services:
     restart: unless-stopped
 
   comori-od-restapi:
-    build: ../comori-od-restapi
+    build: 
+      context: ../comori-od-restapi
+      args:
+        - LOGGING_CFG=logging_cfg_prod.yaml
     container_name: comori-od-restapi
     ports: 
       - 9000:9000

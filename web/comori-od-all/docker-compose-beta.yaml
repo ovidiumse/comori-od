@@ -16,7 +16,7 @@ services:
     networks:
       - proxy
     depends_on:
-      - comori-od-restapi
+      - comori-od-restapi-test
     restart: unless-stopped
 
   comori-od-static-nuxt:
@@ -35,7 +35,7 @@ services:
     networks:
       - proxy
     depends_on:
-      - comori-od-restapi
+      - comori-od-restapi-test
     restart: unless-stopped
 
   comori-od-es:
@@ -201,19 +201,19 @@ services:
       - proxy
     restart: unless-stopped
 
-  comori-od-restapi:
+  comori-od-restapi-test:
     build: 
       context: ../comori-od-restapi
       args:
         - LOGGING_CFG=logging_cfg_beta.yaml
-    container_name: comori-od-restapi
+    container_name: comori-od-restapi-test
     expose: 
-      - "9000"
+      - "9100"
     environment:
       - GEVENT_RESOLVER=ares
-      - VIRTUAL_HOST=api.comori-od.ro
-      - VIRTUAL_PORT=9000
-      - LETSENCRYPT_HOST=api.comori-od.ro
+      - VIRTUAL_HOST=testapi.comori-od.ro
+      - VIRTUAL_PORT=9100
+      - LETSENCRYPT_HOST=testapi.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - API_TOTP_KEY=${API_TOTP_KEY}
       - ELASTIC_USER=${ELASTIC_USER}
@@ -222,7 +222,7 @@ services:
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
       - APPLE_APP_PKEY=${APPLE_APP_PKEY}
     volumes:
-      - api_logs:/var/log/comori-od-restapi
+      - api_logs:/var/log/comori-od-restapi-test
     depends_on:
       - comori-od-es
     networks:
