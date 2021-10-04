@@ -220,7 +220,8 @@ services:
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
-      - APPLE_APP_PKEY=${APPLE_APP_PKEY}
+      - MOBILE_APP_PKEY=${MOBILE_APP_PKEY}
+      - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
     volumes:
       - api_logs:/var/log/comori-od-restapi-test
     depends_on:
