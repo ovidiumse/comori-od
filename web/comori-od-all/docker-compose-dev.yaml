@@ -61,82 +61,6 @@ services:
     networks:
       - proxy
     restart: unless-stopped
-
-  comori-od-kibana:
-    build: ../comori-od-kibana
-    container_name: comori-od-kibana
-    environment:
-      - VIRTUAL_HOST=localhost
-      - VIRTUAL_PORT=5601
-      - HTTPS_METHOD=nohttps
-      - KIBANA_USER=${ELASTIC_USER}
-      - KIBANA_PASSWORD=${ELASTIC_PASSWORD}
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    volumes:
-      - kib_config:/usr/share/kibana/config
-      - kib_logs:/usr/share/kibana/logs
-    ports: 
-      - 5601:5601
-    networks:
-      - proxy
-    depends_on:
-      - comori-od-es
-    restart: unless-stopped
-    
-  comori-od-filebeat:
-    build: ../comori-od-filebeat
-    container_name: comori-od-filebeat
-    environment: 
-      - ELASTIC_USER=${ELASTIC_USER}
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - "ES_JAVA_OPTS=-Xms100m -Xmx500m"
-    volumes:
-      - /var/log:/var/log:ro
-    networks: 
-      - proxy
-    depends_on: 
-      - comori-od-logstash
-      - comori-od-kibana
-    restart: unless-stopped
-  
-  comori-od-logstash:
-    build: ../comori-od-logstash
-    container_name: comori-od-logstash
-    environment: 
-      - LOGSTASH_USER=${ELASTIC_USER}
-      - LOGSTASH_PASSWORD=${ELASTIC_PASSWORD}
-      - GEOIP_ACCOUNTID=${GEOIP_ACCOUNTID}
-      - GEOIP_LICENSEKEY=${GEOIP_LICENSEKEY}
-      - "ES_JAVA_OPTS=-Xms100m -Xmx1g"
-    ports:
-      - 5044:5044
-    networks:
-      - proxy
-    depends_on: 
-      - comori-od-es
-    restart: unless-stopped
-  
-  comori-od-metricbeat:
-    build: ../comori-od-metricbeat
-    user: root
-    container_name: comori-od-metricbeat
-    environment: 
-      - ELASTIC_USER=${ELASTIC_USER}
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
-      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
-      - ENABLE_DASHBOARDS=True
-      - "ES_JAVA_OPTS=-Xms100m -Xmx500m"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro    
-      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
-      - /proc:/hostfs/proc:ro
-      - /:/hostfs:ro
-    networks: 
-      - proxy
-    depends_on: 
-      - comori-od-es
-    restart: unless-stopped
   
   comori-od-mongo:
     build: ../comori-od-mongo
@@ -214,7 +138,8 @@ services:
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
-      - APPLE_APP_PKEY=${APPLE_APP_PKEY}
+      - MOBILE_APP_PKEY=${MOBILE_APP_PKEY}
+      - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
     volumes:
       - api_logs:/var/log/comori-od-restapi
     depends_on:
@@ -244,10 +169,6 @@ volumes:
   es_config: 
     driver: local
   es_logs:
-    driver: local
-  kib_config:
-    driver: local
-  kib_logs:
     driver: local
   mongo_data:
     driver: local
