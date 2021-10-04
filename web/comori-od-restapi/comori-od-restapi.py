@@ -703,10 +703,14 @@ class MobileAppService(object):
 
     def __init__(self):
         self.public_key = os.environ.get("MOBILE_APP_PKEY")
+        self.public_key_ecdsa = os.environ.get("MOBILE_APP_PKEY_ECDSA")
     
     @timeit("Authorizing")
     def authorize(self, authorization):
-        return jwt.decode(authorization, self.public_key, algorithms='RS256')
+        try:
+            return jwt.decode(authorization, self.public_key_ecdsa, algorithms='ES512')
+        except jwt.exceptions.InvalidAlgorithmError:
+            return jwt.decode(authorization, self.public_key, algorithms='RS256')
 
     def getUserId(self, auth):
         return "{}.{}".format(auth['sub'], auth['iss'])
