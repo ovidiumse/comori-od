@@ -76,11 +76,11 @@ def parseFilters(req):
 
 
 def fmt_duration(nanos):
-    if nanos < 300:
+    if nanos < 500:
         return f"{nanos:.2f} ns"
-    elif nanos < 300000:
+    elif nanos < 500000:
         return f"{nanos / 1000:.2f} us"
-    elif nanos < 300000000:
+    elif nanos < 500000000:
         return f"{nanos / 1000000:.2f} ms"
     else:
         return f"{nanos / 1000000000:.2f} s"
