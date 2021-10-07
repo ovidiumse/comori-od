@@ -5,7 +5,7 @@ import argparse
 import yaml
 import time
 from datetime import datetime
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 
 PARSER_ = argparse.ArgumentParser(
     description="OD content fixer script")
@@ -127,17 +127,6 @@ def checkProps(tag, cfg):
     if 'class' in cfg:
         if not hasClassAttribute(tag, cfg['class']):
             return False
-        else:
-            fl = True
-
-    if 'other' in cfg:
-        for p, v in cfg['other'].items():
-            if p == 'letter-spacing':
-                if not hasLetterSpacing(tag.text, v):
-                    return False
-            elif p == 'capitalize':
-                if v != isCapitalized(tag.text):
-                    return False
 
     return True
 
@@ -270,7 +259,7 @@ def merge_multiline_subtitles(soup, cfg):
             print("Mering {} with {}...".format(subtitle.text, next_p.text))
             subtitle.append(" - " + next_p.text)
             next_p.decompose()
-        
+
         subtitle = subtitle.find_next(lambda tag: isArticleSubtitle(tag, cfg))
 
 
@@ -348,6 +337,26 @@ def sanitize_adjacent_titles(soup, cfg):
         lastTitle = p
 
 
+def remove_comments(soup):
+    print("Removing comments...")
+    comments = []
+    ps = soup.find_all('p')
+    for p in ps:
+        for d in p.descendants:
+            if isinstance(d, Comment):
+                comments.append(d)
+
+    for comment in comments:
+        comment.extract()
+
+
+def remove_anchors(soup):
+    print("Removing anchors...")
+    anchors = soup.find_all('a', class_='msocomanchor')
+    for a in anchors:
+        a.extract()
+
+
 def main():
     args = parseArgs()
 
@@ -359,6 +368,8 @@ def main():
         print("Parsing {}...".format(args.html_filepath))
         soup = BeautifulSoup(html_file, 'html.parser')
 
+        remove_comments(soup)
+        remove_anchors(soup)
         sanitize_adjacent_titles(soup, cfg)
 
         if 'preprocessing' in cfg:
