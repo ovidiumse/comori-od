@@ -1,13 +1,10 @@
 #!/usr/bin/pypy3
-from array import array
 import os
 import re
 import time
 import falcon
-from falcon.status_codes import HTTP_200
 from falcon_auth import FalconAuthMiddleware
 from falcon_auth.backends import AuthBackend
-from pymongo.client_options import _parse_ssl_options
 from collections import defaultdict
 import simplejson as json
 import logging
@@ -523,7 +520,7 @@ class FieldAggregator(Articles):
         }
 
         ES.delete_by_query(idx_name, body=query)
-        resp.status = HTTP_200
+        resp.status = falcon.HTTP_200
 
 
 class Titles(object):
@@ -660,6 +657,7 @@ class Similar(object):
                                 },
                                 'size': 4
                             })
+
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(results)
 
@@ -694,6 +692,9 @@ class MongoService(object):
         db['favorites'].create_index([('uid', pymongo.ASCENDING)], unique=False)
         db['markups'].create_index([('uid', pymongo.ASCENDING)], unique=False)
         db['readArticles'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+
+    def fmtUtcNow(self):
+        return f"{datetime.utcnow().isoformat()}Z"
 
 
 class MobileAppService(object):
