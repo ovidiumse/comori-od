@@ -307,10 +307,19 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
             title = p.text
             subtitle = getSubtitle(p, cfg)
             type = "poezie" if isPoemTitle(p, cfg) else "articol"
+
             verses = []
             lastTag = ""
             lastValue = []
-            for v in p.next_elements:
+
+            v = p.next_sibling           
+            while v:
+                while v and v.name not in ['p', 'br']:
+                    v = v.next_element
+                
+                if not v:
+                    break
+
                 if v.name == 'p' and (isPoemTitle(v, cfg) or isArticleTitle(
                         v, cfg) or isBookTitle(v, cfg)
                                       or isVolumeTitle(v, cfg)):
@@ -330,6 +339,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                     verses.append(lastValue)
 
                 lastTag = v.name
+                v = v.next_sibling if v.next_sibling else v.next_element
 
             if verses and not verses[-1]:
                 verses = verses[:-1]
