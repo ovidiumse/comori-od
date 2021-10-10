@@ -1,4 +1,4 @@
-FROM jwilder/nginx-proxy:v0.9.0
+FROM jwilder/nginx-proxy:latest
 RUN apt-get update && apt-get install -y less curl
 COPY comori-od.conf /etc/nginx/vhost.d/localhost
 COPY comori-od.conf /etc/nginx/vhost.d/comori-od.ro
@@ -9,3 +9,4 @@ COPY kibana.comori-od.conf /etc/nginx/vhost.d/
 COPY proxy.conf /etc/nginx/conf.d/proxy.conf
 RUN mkdir /usr/share/nginx/html/.well-known
 COPY apple-app-site-association /usr/share/nginx/html/.well-known/apple-app-site-association
+COPY privacy.html /usr/share/nginx/html/privacy.html
