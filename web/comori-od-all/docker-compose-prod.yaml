@@ -207,7 +207,7 @@ services:
     build: 
       context: ../comori-od-restapi
       args:
-        - LOGGING_CFG=logging_cfg_beta.yaml
+        - LOGGING_CFG=logging_cfg_prod.yaml
     container_name: comori-od-restapi
     expose: 
       - "9000"
