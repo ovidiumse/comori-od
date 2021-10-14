@@ -2,7 +2,7 @@ version: 1
 disable_existing_loggers: true
 formatters:
   brief:
-    format: '%(message)s'
+    format: '%(name)-15s %(message)s'
   precise:
     format: '%(asctime)s %(levelname)-8s %(name)-15s %(message)s'
     datefmt: '%Y-%m-%d %H:%M:%S'
@@ -21,9 +21,32 @@ handlers:
     backupCount: 10
 loggers:
   comori-od-restapi:
-    level: DEBUG
-    handlers: [console, file]
-    propagate: no
+    propagate: yes
+  api_utils:
+    propagate: yes
+  articles_api:
+    propagate: yes
+  content_api:
+    propagate: yes
+  favorites_api:
+    propagate: yes
+  index_api:
+    propagate: yes
+  markups_api:
+    propagate: yes
+  mobileappsvc:
+    propagate: yes
+  mongoclient:
+    propagate: yes
+  readarticles_api:
+    propagate: yes
+  recommended_api:
+    propagate: yes
+  tags_api:
+    propagate: yes
+  titles_api:
+    propagate: yes
+
 root:
   level: DEBUG
-  handlers: [console]
+  handlers: [console, file]

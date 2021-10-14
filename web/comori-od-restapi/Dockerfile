@@ -18,6 +18,19 @@ RUN pypy3 -m pip install -r requirements.txt
 
 ARG LOGGING_CFG
 
+ADD api_utils api_utils
+ADD articles_api articles_api
+ADD content_api content_api
+ADD favorites_api favorites_api
+ADD index_api index_api
+ADD markups_api markups_api
+ADD mobileappsvc mobileappsvc
+ADD mongoclient mongoclient
+ADD readarticles_api readarticles_api
+ADD recommended_api recommended_api
+ADD tags_api tags_api
+ADD titles_api titles_api
+
 COPY comori-od-restapi.py .
 COPY cfg.yaml .
 COPY $LOGGING_CFG ./logging_cfg.yaml
