@@ -111,6 +111,8 @@ services:
     environment:
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
       - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
     volumes:
       - jupyter_data:/home/jupyter
