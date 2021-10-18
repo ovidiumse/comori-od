@@ -20,7 +20,7 @@ from favorites_api import FavoritesHandler
 from markups_api import MarkupsHandler
 from tags_api import TagsHandler
 from recommended_api import RecommendedHandler
-from readarticles_api import ReadArticlesHandler, BulkReadArticlesHandler
+from readarticles_api import ReadArticlesHandler, BulkReadArticlesHandler, TrendingArticlesHandler
 from api_utils import timeit
 
 LOGGER_ = logging.getLogger(__name__)
@@ -117,6 +117,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
     recommended = RecommendedHandler(ES)
     readArticles = ReadArticlesHandler()
     bulkReadArticles = BulkReadArticlesHandler()
+    tendingArticlesHandler = TrendingArticlesHandler()
 
     app.add_route('/{idx_name}', index)
     app.add_route('/{idx_name}/articles', articles)
@@ -142,5 +143,6 @@ def load_app(cfg_filepath, dotenv_filePath = None):
     app.add_route('/{idx_name}/readarticles', readArticles)
     app.add_route('/{idx_name}/readarticles/{article_id}', readArticles)
     app.add_route('/{idx_name}/readarticles/bulk', bulkReadArticles)
+    app.add_route('/{idx_name}/trendingarticles', tendingArticlesHandler)
 
     return app

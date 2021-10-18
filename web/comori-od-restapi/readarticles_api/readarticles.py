@@ -1,6 +1,8 @@
 import logging
 import falcon
 import simplejson as json
+import math
+from datetime import date, datetime, timedelta
 from mongoclient import MongoClient
 from mobileappsvc import MobileAppService
 from api_utils import req_handler
@@ -17,11 +19,11 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
     def on_get(self, req, resp, idx_name):
         LOGGER_.info(f"Getting read articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        auth = self.authorize(req.get_header("Authorization"))            
+        auth = self.authorize(req.get_header("Authorization"))
         readArticles = [self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find({
             'uid': self.getUserId(auth)
-        })]      
-        
+        })]
+
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(readArticles)
 
@@ -29,7 +31,7 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
     def on_post(self, req, resp, idx_name):
         LOGGER_.info(f"Adding read article to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        auth = self.authorize(req.get_header("Authorization"))   
+        auth = self.authorize(req.get_header("Authorization"))
         data = json.loads(req.stream.read())
         if not isinstance(data, dict):
             raise falcon.HTTPInvalidParam("Input should be a dictionary!")
@@ -46,7 +48,7 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
     def on_patch(self, req, resp, idx_name, article_id):
         LOGGER_.info(f"Updating read article {article_id} to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        auth = self.authorize(req.get_header("Authorization"))   
+        auth = self.authorize(req.get_header("Authorization"))
         data = json.loads(req.stream.read())
         if not isinstance(data, dict):
             raise falcon.HTTPInvalidParam("Input should be a dictionary!")
@@ -56,8 +58,8 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
             del data['id']
 
         result = self.getCollection(idx_name, 'readArticles').update_one({
-            '_id': _id, 
-            'uid': self.getUserId(auth)}, 
+            '_id': _id,
+            'uid': self.getUserId(auth)},
             {'$set': data})
 
         if result.modified_count == 0:
@@ -72,12 +74,12 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
         del item['_id']
         del item['uid']
         return item
-        
+
     @req_handler("Adding read articles in bulk", __name__)
     def on_post(self, req, resp, idx_name):
         LOGGER_.info(f"Adding read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        auth = self.authorize(req.get_header("Authorization"))   
+        auth = self.authorize(req.get_header("Authorization"))
         readArticles = json.loads(req.stream.read())
         if not isinstance(readArticles, list):
             raise falcon.HTTPInvalidParam("Input should be an array!")
@@ -100,21 +102,21 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
     def on_patch(self, req, resp, idx_name):
         LOGGER_.info(f"Updating read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        auth = self.authorize(req.get_header("Authorization"))   
+        auth = self.authorize(req.get_header("Authorization"))
         readArticles = json.loads(req.stream.read())
         if not isinstance(readArticles, list):
             raise falcon.HTTPInvalidParam("Input should be an array of objects!")
-            
+
         if not readArticles:
             raise falcon.HTTPInvalidParam("The list of read articles is empty!")
 
         updatedCnt = 0
-        for read in readArticles:   
+        for read in readArticles:
             _id = self.getDocumentId(auth, read['id'])
             del read['id']
             result = self.getCollection(idx_name, 'readArticles').update_one({
-                '_id': _id, 
-                'uid': self.getUserId(auth)}, 
+                '_id': _id,
+                'uid': self.getUserId(auth)},
                 {'$set': read})
 
             updatedCnt += result.modified_count
@@ -124,3 +126,49 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
 
         resp.status = falcon.HTTP_200
         resp.body = json.dumps({"UpdatedCnt": updatedCnt})
+
+class TrendingArticlesHandler(MongoClient, MobileAppService):
+    def removeInternalFields(self, item):
+        del item['_id']
+        del item['uid']
+        return item
+
+    @req_handler("Getting trending articles", __name__)
+    def on_get(self, req, resp, idx_name):
+        LOGGER_.info(f"Getting trending articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
+        limit = int(req.params['limit']) if 'limit' in req.params else 10
+
+        self.authorize(req.get_header("Authorization"))
+        today = datetime.utcnow()
+        last30Days = today - timedelta(days=30)
+        readArticles = [
+            self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find(
+                {'timestamp': {
+                    '$gt': f"{last30Days.isoformat()}Z"
+                }})
+        ]
+
+        readStatsById = {}
+        for read in readArticles:
+            if read['id'] in readStatsById:
+                readStats = readStatsById[read['id']]
+            else:
+                readStats = readStatsById[read['id']] = {'reach': 0, 'views': 0}                
+
+            outputKeys = ['id', 'author', 'book', 'volume', 'title']
+            for key in read:
+                if key not in outputKeys:
+                    continue
+                readStats[key] = read[key]
+
+            readStats['reach'] += 1
+            readStats['views'] += read['count']
+        
+        for _, stats in readStatsById.items():
+            stats['score'] = stats['reach'] + math.sqrt(stats['views'] - stats['reach'])
+
+        trendingArticles = [stats for _, stats in readStatsById.items() if stats['reach'] > 1]
+        trendingArticles = sorted(trendingArticles, key=lambda x: x['score'], reverse=True)[:limit]
+
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(trendingArticles)
