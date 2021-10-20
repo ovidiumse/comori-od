@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:7.15.0
+FROM docker.elastic.co/logstash/logstash:7.15.1
 USER root
 RUN yum -y update && yum -y install less curl vim wget
 
