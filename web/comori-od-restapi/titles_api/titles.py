@@ -1,7 +1,7 @@
 import falcon
 import simplejson as json
 import logging
-from api_utils import req_handler, parseFilters
+from api_utils import req_handler, parseFilters, buildQueryAggregations
 
 ES = None
 LOGGER_ = logging.getLogger(__name__)
@@ -17,8 +17,9 @@ class TitlesHandler(object):
         filters = parseFilters(req)
         LOGGER_.info(f"Quering titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        limit = req.params['limit'] if 'limit' in req.params else 10000
+        limit = req.params['limit'] if 'limit' in req.params else 100
         offset = req.params['offset'] if 'offset' in req.params else 0
+        include_aggs = 'include_aggs' in req.params
 
         query_body = {
             'query': {
@@ -33,6 +34,9 @@ class TitlesHandler(object):
             'from': offset,
             'sort': [{'_insert_idx': {'order': 'asc'}}]
         }
+
+        if include_aggs:
+            query_body['aggs'] = buildQueryAggregations(False)
 
         response = ES.search(index=idx_name, body=query_body)
         resp.status = falcon.HTTP_200

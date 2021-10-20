@@ -5,7 +5,7 @@ import urllib
 import simplejson as json
 from elasticsearch import helpers
 from unidecode import unidecode
-from api_utils import req_handler, timeit, parseFilters
+from api_utils import req_handler, timeit, parseFilters, buildQueryAggregations
 
 LOGGER_ = logging.getLogger(__name__)
 ES = None
@@ -130,25 +130,7 @@ class ArticlesHandler(object):
         }
 
         if include_aggs:
-            for fieldName in ['author', 'type', 'volume', 'book']:
-                if 'aggs' not in query_body:
-                    query_body['aggs'] = {}
-
-                query_body['aggs'][f'{fieldName}s'] =  {
-                    'terms': {
-                        'field': fieldName,
-                        'size': 1000000,
-                        'min_doc_count': 0 if include_unmatched else 1,
-                        'order': {'min_insert_ts': 'asc'}
-                    },
-                    'aggs': {
-                        'min_insert_ts': {
-                            'min': {
-                                'field': '_insert_ts'
-                            }
-                        }
-                    }
-                }
+            query_body['aggs'] = buildQueryAggregations(include_unmatched)
     
         # print("Query: {}".format(json.dumps(query_body, indent=2)))
 

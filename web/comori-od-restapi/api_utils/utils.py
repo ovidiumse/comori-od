@@ -86,3 +86,24 @@ def parseFilters(req):
             'must': filters
         }
     }
+
+def buildQueryAggregations(include_unmatched):
+    aggs = {}
+    for fieldName in ['author', 'type', 'volume', 'book']:
+        aggs[f'{fieldName}s'] =  {
+            'terms': {
+                'field': fieldName,
+                'size': 1000000,
+                'min_doc_count': 0 if include_unmatched else 1,
+                'order': {'min_insert_ts': 'asc'}
+            },
+            'aggs': {
+                'min_insert_ts': {
+                    'min': {
+                        'field': '_insert_ts'
+                    }
+                }
+            }
+        }
+    
+    return aggs
