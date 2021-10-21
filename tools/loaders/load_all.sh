@@ -7,6 +7,8 @@ if [[ -z "${API_TOTP_KEY}" ]]; then
     export API_TOTP_KEY=${API_TOTP_KEY}
 fi
 
+# Metadata
+${CWD}/load_metadata.sh $@
 # Cugetari Nemuritoare
 ${CWD}/load_cugetari_total.sh $@
 
