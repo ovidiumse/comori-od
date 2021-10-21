@@ -4,8 +4,7 @@ import logging
 import urllib
 import simplejson as json
 from elasticsearch import helpers
-from unidecode import unidecode
-from api_utils import req_handler, timeit, parseFilters, buildQueryAggregations
+from api_utils import *
 
 LOGGER_ = logging.getLogger(__name__)
 ES = None
@@ -27,62 +26,6 @@ class ArticlesHandler(object):
             LOGGER_.error("Indexing {} failed!".format(article), exc_info=True)
             return False
 
-    def buildShouldMatch(self, q):
-        if not q:
-            return []
-
-        should_match = []
-
-        fields = [("title", 20), ("title.folded", 18),
-                  ("verses.text", 10),
-                  ("verses.text.folded", 8),
-                  ("title.folded_stemmed", 4),
-                  ("verses.text.folded_stemmed", 1)]
-
-        for field, boost in fields:
-            should_match.append({
-                "intervals": {
-                    field: {
-                        "match": {
-                            "query": q,
-                            "max_gaps": 4,
-                            "ordered": True
-                        },
-                        "boost": boost
-                    }
-                }
-            })
-
-        return should_match
-
-    def buildShouldMatchHighlight(self, q):
-        should_match_highlight = []
-        should_match_highlight.append({
-            "simple_query_string": {
-                "query":
-                "\"{}\"~{}".format(q, 4),
-                "fields": [
-                    "title^20", "title.folded^18",
-                    "verses.text^10", "verses.text.folded^8",
-                    "title.folded_stemmed^4",
-                    "verses.text.folded_stemmed"
-                ],
-                "default_operator":
-                "AND"
-            }
-        })
-
-        return should_match_highlight
-
-    def buildQuery(self, should_match, filters):
-        return {
-            'bool': {
-                'should': should_match,
-                'filter': filters,
-                'minimum_should_match': min(1, len(should_match))
-            }
-        }
-
     @timeit("Articles query", __name__)
     def query(self, idx_name, req):
         limit = req.params['limit'] if 'limit' in req.params else 100
@@ -95,11 +38,11 @@ class ArticlesHandler(object):
         filters = parseFilters(req)
         LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        should_match = self.buildShouldMatch(q)
-        should_match_highlight = self.buildShouldMatchHighlight(q)
+        should_match = buildShouldMatch(q)
+        should_match_highlight = buildShouldMatchHighlight(q)
 
         query_body = {
-            'query': self.buildQuery(should_match, filters),
+            'query': buildQuery(should_match, filters),
             '_source': {
                 'excludes': ['verses', 'bible-refs']
             },
@@ -141,7 +84,7 @@ class ArticlesHandler(object):
         LOGGER_.info(f"Getting highlighted article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
         highlight = req.params["highlight"]
-        should_match_highlight = self.buildShouldMatchHighlight(highlight)
+        should_match_highlight = buildShouldMatchHighlight(highlight)
         query_body = {
             "query": {
                 "bool": {
@@ -264,81 +207,13 @@ class ArticlesHandler(object):
         articles = json.loads(req.stream.read())
         indexed = 0
 
-        LOGGER_.info(f"Indexing {len(articles)} into {idx_name}...")
+        LOGGER_.info(f"Indexing {len(articles)} articles into {idx_name}...")
 
         for a in articles:
             a['_index'] = idx_name
         indexed, _ = helpers.bulk(ES, articles, stats_only=True)
         resp.status = falcon.HTTP_200
         resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
-
-
-class FieldAggregator(ArticlesHandler):
-    def __init__(self, es, fieldName, aggs):
-        super(FieldAggregator, self).__init__(es)
-
-        self.fieldName = fieldName
-        self.aggs = aggs
-
-    @timeit("Aggregating values", __name__)
-    def getValues(self, idx_name, req):
-        LOGGER_.info(f"Getting {self.fieldName}s from {idx_name} with req {json.dumps(req.params, indent=2)}")
-
-        include_unmatched = 'include_unmatched' in req.params
-
-        q = urllib.parse.unquote(req.params['q']) if 'q' in req.params else None
-        filters = parseFilters(req)
-
-        query_body = {
-            'query': self.buildQuery(self.buildShouldMatch(q), filters),
-            'size': 0,
-            'aggs': {
-                f'{self.fieldName}s': {
-                    'terms': {
-                        'field': self.fieldName,
-                        'size': 1000000,
-                        'min_doc_count': 0 if include_unmatched else 1,
-                        'order': {'min_insert_ts': 'asc'}
-                    },
-                    'aggs': {
-                        'min_insert_ts': {
-                            'min': {
-                                'field': '_insert_ts'
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        for agg in self.aggs:
-            aggs_body = query_body['aggs'][f'{self.fieldName}s']['aggs']
-            aggs_body[f'{agg}s'] = {'terms': {'field': agg, 'size': 100}}
-
-        return ES.search(index=idx_name, body=query_body, timeout="1m")
-
-    @req_handler("Aggregated fields GET", __name__)
-    def on_get(self, req, resp, idx_name):
-        results = self.getValues(idx_name, req)
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results)
-
-    @req_handler("Deleting content", __name__)
-    def on_delete(self, req, resp, idx_name, value):
-        LOGGER_.info(f"Deleting content where {self.fieldName} is {unidecode(value)} (unidecoded)...")
-
-        query = {
-            'query': {
-                'match': {
-                    self.fieldName: {
-                        'query': value
-                    }
-                }
-            }
-        }
-
-        ES.delete_by_query(idx_name, body=query)
-        resp.status = falcon.HTTP_200
 
 
 class SearchTermSuggester(object):

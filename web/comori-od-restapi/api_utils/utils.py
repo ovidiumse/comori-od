@@ -3,6 +3,7 @@ import falcon
 import time
 import urllib
 
+
 def fmt_duration(nanos):
     if nanos < 500:
         return f"{nanos:.2f} ns"
@@ -12,6 +13,7 @@ def fmt_duration(nanos):
         return f"{nanos / 1000000:.2f} ms"
     else:
         return f"{nanos / 1000000000:.2f} s"
+
 
 def timeit(operation, loggerName):
     logger = logging.getLogger(loggerName)
@@ -43,6 +45,7 @@ def req_handler(operation, loggerName):
         return wrapper
     return inner
 
+
 def buildTermFilter(field, values):
     fieldFilters = []
 
@@ -61,6 +64,7 @@ def buildTermFilter(field, values):
         }
 
     return fieldFilters
+
 
 def parseFilters(req):
     authors = urllib.parse.unquote(req.params['authors']) if 'authors' in req.params else ""
@@ -86,6 +90,66 @@ def parseFilters(req):
             'must': filters
         }
     }
+
+
+def buildShouldMatch(q):
+    if not q:
+        return []
+
+    should_match = []
+
+    fields = [("title", 20), ("title.folded", 18),
+                ("verses.text", 10),
+                ("verses.text.folded", 8),
+                ("title.folded_stemmed", 4),
+                ("verses.text.folded_stemmed", 1)]
+
+    for field, boost in fields:
+        should_match.append({
+            "intervals": {
+                field: {
+                    "match": {
+                        "query": q,
+                        "max_gaps": 4,
+                        "ordered": True
+                    },
+                    "boost": boost
+                }
+            }
+        })
+
+    return should_match
+
+
+def buildShouldMatchHighlight(q):
+    should_match_highlight = []
+    should_match_highlight.append({
+        "simple_query_string": {
+            "query":
+            "\"{}\"~{}".format(q, 4),
+            "fields": [
+                "title^20", "title.folded^18",
+                "verses.text^10", "verses.text.folded^8",
+                "title.folded_stemmed^4",
+                "verses.text.folded_stemmed"
+            ],
+            "default_operator":
+            "AND"
+        }
+    })
+
+    return should_match_highlight
+
+
+def buildQuery(should_match, filters):
+    return {
+        'bool': {
+            'should': should_match,
+            'filter': filters,
+            'minimum_should_match': min(1, len(should_match))
+        }
+    }
+
 
 def buildQueryAggregations(include_unmatched):
     aggs = {}

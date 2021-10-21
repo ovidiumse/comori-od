@@ -35,3 +35,4 @@ class MongoClient(object):
         db['favorites'].create_index([('uid', pymongo.ASCENDING)], unique=False)
         db['markups'].create_index([('uid', pymongo.ASCENDING)], unique=False)
         db['readArticles'].create_index([('uid', pymongo.ASCENDING)], unique=False)
+        db['authors'].create_index([('name', pymongo.ASCENDING)], unique=True)

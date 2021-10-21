@@ -19,6 +19,8 @@ RUN pypy3 -m pip install -r requirements.txt
 ARG LOGGING_CFG
 
 ADD api_utils api_utils
+ADD aggregates_api aggregates_api
+ADD authors_api authors_api
 ADD articles_api articles_api
 ADD content_api content_api
 ADD favorites_api favorites_api

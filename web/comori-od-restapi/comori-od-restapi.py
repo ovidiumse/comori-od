@@ -13,7 +13,9 @@ from elasticsearch import Elasticsearch
 from falcon.http_status import HTTPStatus
 from dotenv import load_dotenv
 from index_api import IndexHandler
-from articles_api import ArticlesHandler, FieldAggregator, SearchTermSuggester, SimilarArticlesHandler
+from articles_api import ArticlesHandler, SearchTermSuggester, SimilarArticlesHandler
+from authors_api import AuthorsHandler
+from aggregates_api import FieldAggregator
 from content_api import ContentHandler
 from titles_api import TitlesHandler, TitlesCompletionHandler
 from favorites_api import FavoritesHandler
@@ -73,76 +75,80 @@ class TotpAuthBackend(AuthBackend):
 
 @timeit("Initializing service", __name__)
 def load_app(cfg_filepath, dotenv_filePath = None):
-    log_cfg = {}
-    with open('logging_cfg.yaml', 'r') as log_conf_file:
-        log_cfg = yaml.full_load(log_conf_file)
+    try:
+        log_cfg = {}
+        with open('logging_cfg.yaml', 'r') as log_conf_file:
+            log_cfg = yaml.full_load(log_conf_file)
 
-    logging.config.dictConfig(log_cfg)
+        logging.config.dictConfig(log_cfg)
 
-    LOGGER_.info("Initializing svc...")
+        LOGGER_.info("Initializing svc...")
 
-    cfg = {}
-    with open(cfg_filepath, 'r') as cfg_file:
-        cfg = yaml.full_load(cfg_file)
+        cfg = {}
+        with open(cfg_filepath, 'r') as cfg_file:
+            cfg = yaml.full_load(cfg_file)
 
-    if dotenv_filePath:
-        load_dotenv(dotenv_filePath)
+        if dotenv_filePath:
+            load_dotenv(dotenv_filePath)
 
-    global ES
-    ES = Elasticsearch(hosts=[cfg['es']],
-                       http_auth=(os.getenv("ELASTIC_USER", "elastic"),
-                                  os.getenv("ELASTIC_PASSWORD", "")), 
-                       timeout=30)
+        global ES
+        ES = Elasticsearch(hosts=[cfg['es']],
+                        http_auth=(os.getenv("ELASTIC_USER", "elastic"),
+                                    os.getenv("ELASTIC_PASSWORD", "")), 
+                        timeout=30)
 
-    LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
+        LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 
-    totpAuth = TotpAuthBackend()
-    authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
-    app = falcon.API(middleware=[HandleCORS(), authMiddleware])
+        totpAuth = TotpAuthBackend()
+        authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
+        app = falcon.API(middleware=[HandleCORS(), authMiddleware])
 
-    index = IndexHandler(ES)
-    articles = ArticlesHandler(ES)
-    content = ContentHandler(ES)
-    authors = FieldAggregator(ES, 'author', ['type', 'book'])
-    types = FieldAggregator(ES, 'type', [])
-    volumes = FieldAggregator(ES, 'volume', ['author'])
-    books = FieldAggregator(ES, 'book', ['author', 'volume'])
-    titles = TitlesHandler(ES)
-    titlesCompletion = TitlesCompletionHandler(ES)
-    searchTermSuggester = SearchTermSuggester(ES)
-    similar = SimilarArticlesHandler(ES)
-    favorites = FavoritesHandler()
-    markups = MarkupsHandler()
-    tags = TagsHandler()
-    recommended = RecommendedHandler(ES)
-    readArticles = ReadArticlesHandler()
-    bulkReadArticles = BulkReadArticlesHandler()
-    tendingArticlesHandler = TrendingArticlesHandler()
+        index = IndexHandler(ES)
+        articles = ArticlesHandler(ES)
+        content = ContentHandler(ES)
+        authors = AuthorsHandler(ES)
+        types = FieldAggregator(ES, 'type', [])
+        volumes = FieldAggregator(ES, 'volume', ['author'])
+        books = FieldAggregator(ES, 'book', ['author', 'volume'])
+        titles = TitlesHandler(ES)
+        titlesCompletion = TitlesCompletionHandler(ES)
+        searchTermSuggester = SearchTermSuggester(ES)
+        similar = SimilarArticlesHandler(ES)
+        favorites = FavoritesHandler()
+        markups = MarkupsHandler()
+        tags = TagsHandler()
+        recommended = RecommendedHandler(ES)
+        readArticles = ReadArticlesHandler()
+        bulkReadArticles = BulkReadArticlesHandler()
+        tendingArticlesHandler = TrendingArticlesHandler()
 
-    app.add_route('/{idx_name}', index)
-    app.add_route('/{idx_name}/articles', articles)
-    app.add_route('/{idx_name}/authors', authors)
-    app.add_route('/{idx_name}/authors/{value}', authors)
-    app.add_route('/{idx_name}/types', types)
-    app.add_route('/{idx_name}/types/{value}', types)
-    app.add_route('/{idx_name}/volumes', volumes)
-    app.add_route('/{idx_name}/volumes/{value}', volumes)
-    app.add_route('/{idx_name}/books', books)
-    app.add_route('/{idx_name}/books/{value}', books)
-    app.add_route('/{idx_name}/content', content)
-    app.add_route('/{idx_name}/titles', titles)
-    app.add_route('/{idx_name}/titles/completion', titlesCompletion)
-    app.add_route('/{idx_name}/suggest/', searchTermSuggester)
-    app.add_route('/{idx_name}/articles/similar', similar)
-    app.add_route('/{idx_name}/favorites', favorites)
-    app.add_route('/{idx_name}/favorites/{article_id}', favorites)
-    app.add_route('/{idx_name}/markups', markups)
-    app.add_route('/{idx_name}/markups/{markup_id}', markups)
-    app.add_route('/{idx_name}/tags', tags)
-    app.add_route('/{idx_name}/recommended', recommended)
-    app.add_route('/{idx_name}/readarticles', readArticles)
-    app.add_route('/{idx_name}/readarticles/{article_id}', readArticles)
-    app.add_route('/{idx_name}/readarticles/bulk', bulkReadArticles)
-    app.add_route('/{idx_name}/trendingarticles', tendingArticlesHandler)
+        app.add_route('/{idx_name}', index)
+        app.add_route('/{idx_name}/articles', articles)
+        app.add_route('/{idx_name}/authors', authors)
+        app.add_route('/{idx_name}/authors/{value}', authors)
+        app.add_route('/{idx_name}/types', types)
+        app.add_route('/{idx_name}/types/{value}', types)
+        app.add_route('/{idx_name}/volumes', volumes)
+        app.add_route('/{idx_name}/volumes/{value}', volumes)
+        app.add_route('/{idx_name}/books', books)
+        app.add_route('/{idx_name}/books/{value}', books)
+        app.add_route('/{idx_name}/content', content)
+        app.add_route('/{idx_name}/titles', titles)
+        app.add_route('/{idx_name}/titles/completion', titlesCompletion)
+        app.add_route('/{idx_name}/suggest/', searchTermSuggester)
+        app.add_route('/{idx_name}/articles/similar', similar)
+        app.add_route('/{idx_name}/favorites', favorites)
+        app.add_route('/{idx_name}/favorites/{article_id}', favorites)
+        app.add_route('/{idx_name}/markups', markups)
+        app.add_route('/{idx_name}/markups/{markup_id}', markups)
+        app.add_route('/{idx_name}/tags', tags)
+        app.add_route('/{idx_name}/recommended', recommended)
+        app.add_route('/{idx_name}/readarticles', readArticles)
+        app.add_route('/{idx_name}/readarticles/{article_id}', readArticles)
+        app.add_route('/{idx_name}/readarticles/bulk', bulkReadArticles)
+        app.add_route('/{idx_name}/trendingarticles', tendingArticlesHandler)
+    except Exception as e:
+        LOGGER_.error(f"Initializing svc failed! Error: {e}", exc_info=True)
+        raise
 
     return app
