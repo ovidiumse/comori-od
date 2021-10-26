@@ -29,6 +29,7 @@ ADD markups_api markups_api
 ADD mobileappsvc mobileappsvc
 ADD mongoclient mongoclient
 ADD readarticles_api readarticles_api
+ADD recentlyadded_api recentlyadded_api
 ADD recommended_api recommended_api
 ADD tags_api tags_api
 ADD titles_api titles_api

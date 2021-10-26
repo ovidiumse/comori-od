@@ -39,6 +39,11 @@ class FieldAggregator():
                             'min': {
                                 'field': '_insert_ts'
                             }
+                        },
+                        'min_date_added': {
+                            'min': {
+                                'field': 'date_added'
+                            }
                         }
                     }
                 }
