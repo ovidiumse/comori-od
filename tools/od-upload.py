@@ -30,6 +30,13 @@ def parseArgs():
                          action="store",
                          required=True,
                          help="Index name")
+    PARSER_.add_argument("-da",
+                         "--date-added",
+                         dest="date_added",
+                         action="store",
+                         default="",
+                         type=str,
+                         help="Date added")
     PARSER_.add_argument("-d",
                          "--delete-index",
                          dest="delete_index",
@@ -62,7 +69,7 @@ def post(uri, data):
     if response.status_code != requests.codes.ok:
         logging.error("Error: {}".format(response, indent=2))
     response.raise_for_status()
-    return response.json()
+    return response.json() if response.text else {}
 
 
 def delete(uri):
@@ -234,6 +241,9 @@ def create_index(idx_name):
             '_insert_ts': {
                 'type': 'date'
             },
+            'date_added': {
+                'type': 'date'
+            },
             'bible-refs': {
                 'enabled': False
             }
@@ -243,7 +253,7 @@ def create_index(idx_name):
     post(idx_name, {'settings': settings, 'mappings': mappings})
 
 
-def index_all(idx_name, articles):
+def index_all(idx_name, date_added, articles):
     failed = 0
     indexed = 0
 
@@ -256,6 +266,7 @@ def index_all(idx_name, articles):
         article['_index'] = idx_name
         article['_insert_idx'] = idx
         article['_insert_ts'] = datetime.now().isoformat()
+        article['date_added'] = date_added
 
     for bulk in chunk(articles, 10):
         response = post("{}/articles".format(idx_name), bulk)
@@ -292,7 +303,7 @@ def main():
     else:
         API_OTPKEY = getpass("OTP code: ")
         os.environ["API_TOTP_KEY"] = API_OTPKEY
-    
+
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
 
@@ -315,7 +326,7 @@ def main():
         try:
             logging.info("Indexing {} articles from {} to {}...".
                          format(len(articles), args.json_filepath, COMORI_OD_API_HOST))
-            index_all(args.idx_name, articles)
+            index_all(args.idx_name, args.date_added, articles)
             logging.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
                                                                      COMORI_OD_API_HOST))
