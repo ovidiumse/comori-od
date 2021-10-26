@@ -4,6 +4,7 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
+DATE_ADDED="2020-08-05"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -23,4 +24,4 @@ echo "Removing existing Hristos - Marturia mea using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Hristos - Marturia mea" $@
 
 echo "Uploading Hristos - Marturia mea using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/marturii/marturii_processed.json $@
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/marturii/marturii_processed.json $@ --date-added ${DATE_ADDED}

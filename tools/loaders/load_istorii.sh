@@ -4,6 +4,7 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
+DATE_ADDED="2020-08-05"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -38,7 +39,7 @@ echo "Removing existing Istoria unei Jertfe using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Istoria unei Jertfe" $@
 
 echo "Uploading Istoria unei Jertfe using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_1_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_2_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_3_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_4_processed.json $@
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_1_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_2_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_3_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_4_processed.json $@ --date-added ${DATE_ADDED}

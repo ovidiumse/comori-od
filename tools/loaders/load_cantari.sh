@@ -4,6 +4,7 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
+DATE_ADDED="2020-08-05"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -44,13 +45,13 @@ echo "Removing existing Cântări Nemuritoare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Cântări Nemuritoare" $@
 
 echo "Uploading Cantari Nemuritoare using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_1_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_2_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_3_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_4_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_6_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_7_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_8_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_9_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_10_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_11_processed.json $@
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_1_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_2_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_3_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_4_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_6_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_7_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_8_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_9_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_10_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_11_processed.json $@ --date-added ${DATE_ADDED}

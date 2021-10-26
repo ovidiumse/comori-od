@@ -4,6 +4,7 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
+DATE_ADDED="2020-08-05"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -50,10 +51,10 @@ echo "Removing existing Meditații la Ev. după Ioan using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Meditații la Ev. după Ioan" $@
 
 echo "Uploading Meditatii la Ev. dupa Ioan using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_1_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_2_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_3_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_4_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_5_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_6_processed.json $@
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_7_processed.json $@
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_1_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_2_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_3_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_4_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_5_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_6_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_7_processed.json $@ --date-added ${DATE_ADDED}

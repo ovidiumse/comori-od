@@ -4,6 +4,7 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
+DATE_ADDED="2021-05-31"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -23,4 +24,4 @@ echo "Removing existing Trifa - Spre Canaan using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Spre Canaan" $@
 
 echo "Uploading Trifa - 30 de carti..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan_processed.json $@
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan_processed.json $@ --date-added ${DATE_ADDED}
