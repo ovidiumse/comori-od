@@ -282,13 +282,14 @@ class SimilarArticlesHandler(object):
                             body={
                                 'query': {
                                     'more_like_this': {
-                                        'fields': ["verses.text", "verses.text.folded"],
+                                        'fields': ["title", "verses.text", "verses.text.folded"],
                                         'like': [{
                                             '_id': req.params['id']
                                         }],
-                                        'min_term_freq': 3,
+                                        'min_term_freq': 10,
                                         'min_word_length': 4,
-                                        'minimum_should_match': '50%'
+                                        'minimum_should_match': '80%',
+                                        'max_query_terms': 50
                                     },
                                 },
                                 '_source': {
