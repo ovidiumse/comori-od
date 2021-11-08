@@ -28,8 +28,8 @@ class ArticlesHandler(object):
 
     @timeit("Articles query", __name__)
     def query(self, idx_name, req):
-        limit = req.params['limit'] if 'limit' in req.params else 100
-        offset = req.params['offset'] if 'offset' in req.params else 0
+        limit = int(req.params['limit']) if 'limit' in req.params else 100
+        offset = int(req.params['offset']) if 'offset' in req.params else 0
         q = urllib.parse.unquote(req.params['q'])
 
         include_aggs = 'include_aggs' in req.params
@@ -176,8 +176,8 @@ class ArticlesHandler(object):
     def getRandomArticle(self, idx_name, req):
         LOGGER_.info(f"Getting random article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
-        limit = req.params['limit'] if 'limit' in req.params else 1
-        offset = req.params['offset'] if 'offset' in req.params else 0
+        limit = int(req.params['limit']) if 'limit' in req.params else 1
+        offset = int(req.params['offset']) if 'offset' in req.params else 0
 
         return ES.search(index=idx_name,
                          body={

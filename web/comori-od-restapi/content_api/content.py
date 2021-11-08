@@ -16,8 +16,8 @@ class ContentHandler(object):
         filters = parseFilters(req)
         LOGGER_.info(f"Quering contents from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        limit = req.params['limit'] if 'limit' in req.params else 10000
-        offset = req.params['offset'] if 'offset' in req.params else 0
+        limit = int(req.params['limit']) if 'limit' in req.params else 10000
+        offset = int(req.params['offset']) if 'offset' in req.params else 0
 
         query_body = {
             'query': {

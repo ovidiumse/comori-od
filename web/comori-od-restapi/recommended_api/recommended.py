@@ -25,7 +25,7 @@ class RecommendedHandler(MongoClient, MobileAppService):
     def on_get(self, req, resp, idx_name):
         LOGGER_.info(f"Getting recommended articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        limit = req.params['limit'] if 'limit' in req.params else 10
+        limit = int(req.params['limit']) if 'limit' in req.params else 10
 
         auth = self.authorize(req.get_header("Authorization"))
         readArticles = [

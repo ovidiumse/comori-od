@@ -17,8 +17,8 @@ class TitlesHandler(object):
         filters = parseFilters(req)
         LOGGER_.info(f"Quering titles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        limit = req.params['limit'] if 'limit' in req.params else 100
-        offset = req.params['offset'] if 'offset' in req.params else 0
+        limit = int(req.params['limit']) if 'limit' in req.params else 100
+        offset = int(req.params['offset']) if 'offset' in req.params else 0
         include_aggs = 'include_aggs' in req.params
 
         query_body = {
