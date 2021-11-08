@@ -1,12 +1,12 @@
 #!/usr/bin/pypy3
-import sys
 import os
 import re
 import argparse
 import simplejson as json
 import yaml
+from itertools import chain
 from datetime import datetime
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, element
 
 PARSER_ = argparse.ArgumentParser(description="OD content extractor.")
 
@@ -113,17 +113,24 @@ def hasColor(tag, color):
 
 
 def isBold(tag):
-    for p in tag.parents:
-        if p.name == "b" or hasStyleAttribute(p, 'font-weight', 'bold'):
+    def check(tag):
+        return tag.name == "b" or hasStyleAttribute(tag, 'font-weight', 'bold')
+
+    for p in chain(tag.parents, tag.descendants if hasattr(tag, 'descendants') else []):
+        if isinstance(p, element.Tag) and check(p):
             return True
 
     return False
 
 
 def isItalic(tag):
-    for p in tag.parents:
-        if p.name == "i" or hasStyleAttribute(p, 'font-style', 'italic') or hasStyleAttribute(
-                p, 'font-style', 'oblique'):
+    def check(tag):
+        return tag.name == "i" \
+            or hasStyleAttribute(tag, 'font-style', 'italic') \
+            or hasStyleAttribute(tag, 'font-style', 'oblique')
+
+    for p in chain(tag.parents, tag.descendants if hasattr(tag, 'descendants') else []):
+        if isinstance(p, element.Tag) and check(p):
             return True
 
     return False
@@ -172,6 +179,12 @@ def checkProps(tag, cfg):
                     return False
             elif p == 'capitalized':
                 if v != isCapitalized(tag.text):
+                    return False
+            elif p == 'bold':
+                if v != isBold(tag):
+                    return False
+            elif p == 'italic':
+                if v != isItalic(tag):
                     return False
 
     return True
@@ -259,14 +272,24 @@ def printPoemTitles(soup, cfg):
 
 
 def getSubtitle(p, cfg):
-    next_p = p.findNext('p')
-    if not next_p:
-        return None
+    subtitle = []
 
-    if isArticleSubtitle(next_p, cfg):
-        return next_p
-    else:
-        return None
+    next_p = p
+    while next_p:
+        next_p = next_p.findNext('p')
+        if not next_p:
+            break
+        
+        if isArticleSubtitle(next_p, cfg):
+            subtitle.append(sanitize(next_p.text))
+        else:
+            break
+
+    return subtitle
+
+
+def sanitize(text):
+    return text.replace('\n', ' ').replace('  ', ' ').strip()
 
 
 def extractVerse(tag):
@@ -281,14 +304,16 @@ def extractVerse(tag):
         elif isItalic(s):
             style.append('italic')
 
+        text = s.string
+
         if not lastBlock:
-            lastBlock = {'style': style, 'text': s.string }
+            lastBlock = {'style': style, 'text': text }
         elif style != lastBlock['style']:
             verse.append(lastBlock)
             # Prepend space if not the first block of the verse
-            lastBlock = {'style': style, 'text': s.string}
+            lastBlock = {'style': style, 'text': text }
         else:
-            lastBlock['text'] += s.string
+            lastBlock['text'] += text
 
     if lastBlock:
         verse.append(lastBlock)
@@ -302,9 +327,9 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
         subtitle = None
         bibleRef = None
         if isBookTitle(p, cfg):
-            book = p.text
+            book = sanitize(p.text)
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
-            title = p.text
+            title = sanitize(p.text)
             subtitle = getSubtitle(p, cfg)
             type = "poezie" if isPoemTitle(p, cfg) else "articol"
 
@@ -325,7 +350,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                                       or isVolumeTitle(v, cfg)):
                     break
                 elif v.name == 'p' and isArticleSubtitle(v, cfg):
-                    subtitle = v
+                    pass
                 elif v.name == 'p' and isArticleBibleRef(v, cfg):
                     bibleRef = v
                 elif v.name == 'p':
@@ -346,22 +371,20 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
 
             if len(verses) > 1:
                 article =  {
-                    'full_book': full_book if full_book else book.strip(),
-                    'book': book.strip(),
-                    'author': author.strip(),
-                    'title': title.strip(),
+                    'full_book': full_book if full_book else book,
+                    'book': book,
+                    'author': author,
+                    'title': title,
+                    'subtitle': subtitle,
                     'verses': verses,
                     'type': type
                 }
 
                 if volume:
-                    article['volume'] = volume.strip()
+                    article['volume'] = volume
 
-                if subtitle:
-                    article['subtitle'] = subtitle.text.strip()
-                
                 if bibleRef:
-                    article['bible-ref'] = bibleRef.text.strip()
+                    article['bible-ref'] = sanitize(bibleRef.text)
 
                 articles.append(article)
 

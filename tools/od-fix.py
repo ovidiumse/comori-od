@@ -3,9 +3,8 @@ import os
 import re
 import argparse
 import yaml
-import time
-from datetime import datetime
-from bs4 import BeautifulSoup, Comment
+from itertools import chain
+from bs4 import BeautifulSoup, element, Comment
 
 PARSER_ = argparse.ArgumentParser(
     description="OD content fixer script")
@@ -113,6 +112,45 @@ def removeProps(tag, cfg):
             removeStyleAttribute(tag, prop)
 
 
+def hasLetterSpacing(text, spacing):
+    results = re.findall(r'(\w\w)+', text)
+    if spacing == "none" and results:
+        return True
+    elif spacing == 1 and not results:
+        return True
+
+    return False
+
+
+def isCapitalized(text):
+    results = re.findall(r'[a-z]+', text)
+    return not results
+
+
+def isBold(tag):
+    def check(tag):
+        return tag.name == "b" or hasStyleAttribute(tag, 'font-weight', 'bold')
+
+    for p in chain(tag.parents, tag.descendants if hasattr(tag, 'descendants') else []):
+        if isinstance(p, element.Tag) and check(p):
+            return True
+
+    return False
+
+
+def isItalic(tag):
+    def check(tag):
+        return tag.name == "i" \
+            or hasStyleAttribute(tag, 'font-style', 'italic') \
+            or hasStyleAttribute(tag, 'font-style', 'oblique')
+
+    for p in chain(tag.parents, tag.descendants if hasattr(tag, 'descendants') else []):
+        if isinstance(p, element.Tag) and check(p):
+            return True
+
+    return False
+
+
 def checkProps(tag, cfg):
     if 'nested-style' in cfg:
         for p, v in cfg['nested-style'].items():
@@ -127,6 +165,21 @@ def checkProps(tag, cfg):
     if 'class' in cfg:
         if not hasClassAttribute(tag, cfg['class']):
             return False
+    
+    if 'other' in cfg:
+        for p, v in cfg['other'].items():
+            if p == 'letter-spacing':
+                if not hasLetterSpacing(tag.text, v):
+                    return False
+            elif p == 'capitalized':
+                if v != isCapitalized(tag.text):
+                    return False
+            elif p == 'bold':
+                if v != isBold(tag):
+                    return False
+            elif p == 'italic':
+                if v != isItalic(tag):
+                    return False
 
     return True
 
@@ -233,34 +286,6 @@ def sanitize_subtitle(val):
     newval = re.sub(r'^ - ', '', val)
     newval = re.sub(r' - $', '', newval)
     return newval
-
-
-def merge_multiline_titles(soup, cfg):
-    print("Merging multiline titles...")
-
-    title = find_title(soup, cfg)
-    while title:
-        next_p = title.find_next("p")
-        if next_p and isPreArticleTitle(next_p, cfg):
-            print("Merging {} with {}...".format(title.text, next_p.text))
-            title.append(" - " + next_p.text)
-            next_p.decompose()
-
-        title = find_title(soup, cfg, title)
-
-def merge_multiline_subtitles(soup, cfg):
-    print("Merging multiline subtitles...")
-
-    subtitle = soup.find(lambda tag: isArticleSubtitle(tag, cfg))
-    while subtitle:
-        print("Processing {}...".format(subtitle.text))
-        next_p = subtitle.find_next("p")
-        if next_p and isArticleSubtitle(next_p, cfg):
-            print("Mering {} with {}...".format(subtitle.text, next_p.text))
-            subtitle.append(" - " + next_p.text)
-            next_p.decompose()
-
-        subtitle = subtitle.find_next(lambda tag: isArticleSubtitle(tag, cfg))
 
 
 def fix_first_paragraph_first_letters(soup, cfg):
@@ -374,10 +399,6 @@ def main():
 
         if 'preprocessing' in cfg:
             preprocess(soup, cfg)
-
-        merge_multiline_titles(soup, cfg)
-        if 'article-subtitle' in cfg:
-            merge_multiline_subtitles(soup, cfg)
 
         fix_first_paragraph_first_letters(soup, cfg)
         remove_white_text(soup, cfg)
