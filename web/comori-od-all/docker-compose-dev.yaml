@@ -39,10 +39,14 @@ services:
     restart: unless-stopped
 
   comori-od-es:
-    build: ../comori-od-es
+    build:
+      context: ../comori-od-es
+      args:
+        - ES_VERSION=${ES_VERSION}
     container_name: comori-od-es
     environment:
       - discovery.type=single-node
+      - ES_VERSION=${ES_VERSION}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - bootstrap.memory_lock=true

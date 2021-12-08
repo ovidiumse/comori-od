@@ -1,4 +1,6 @@
-FROM docker.elastic.co/kibana/kibana:7.15.1
+ARG ES_VERSION
+
+FROM docker.elastic.co/kibana/kibana:${ES_VERSION}
 USER root
 RUN yum -y update && yum -y install less curl
 USER kibana

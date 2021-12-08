@@ -39,7 +39,10 @@ services:
     restart: unless-stopped
 
   comori-od-es:
-    build: ../comori-od-es
+    build: 
+      context: ../comori-od-es
+      args: 
+        - ES_VERSION=${ES_VERSION}
     container_name: comori-od-es
     environment:
       - discovery.type=single-node
@@ -63,7 +66,10 @@ services:
     restart: unless-stopped
 
   comori-od-kibana:
-    build: ../comori-od-kibana
+    build: 
+      context: ../comori-od-kibana
+      args:
+        - ES_VERSION=${ES_VERSION}
     container_name: comori-od-kibana
     environment:
       - VIRTUAL_HOST=kibana.comori-od.ro
@@ -84,7 +90,10 @@ services:
     restart: unless-stopped
   
   comori-od-filebeat:
-    build: ../comori-od-filebeat
+    build: 
+      context: ../comori-od-filebeat
+      args: 
+        - ES_VERSION=${ES_VERSION}
     container_name: comori-od-filebeat
     environment: 
       - ELASTIC_USER=${ELASTIC_USER}
@@ -99,7 +108,10 @@ services:
     restart: unless-stopped
   
   comori-od-logstash:
-    build: ../comori-od-logstash
+    build: 
+      context: ../comori-od-logstash
+      args:
+        - ES_VERSION=${ES_VERSION}
     container_name: comori-od-logstash
     environment: 
       - LOGSTASH_USER=${ELASTIC_USER}
@@ -115,7 +127,10 @@ services:
     restart: unless-stopped
 
   comori-od-metricbeat:
-    build: ../comori-od-metricbeat
+    build: 
+      context: ../comori-od-metricbeat
+      args:
+        - ES_VERSION=${ES_VERSION}
     user: root
     container_name: comori-od-metricbeat
     environment: 
@@ -225,7 +240,7 @@ services:
       - MOBILE_APP_PKEY=${MOBILE_APP_PKEY}
       - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
     volumes:
-      - api_logs:/var/log/comori-od-restapi-test
+      - /var/log/comori-od-restapi-test:/var/log/comori-od-restapi-test
     depends_on:
       - comori-od-es
     networks:
@@ -260,8 +275,6 @@ volumes:
   mongo_data:
     driver: local
   jupyter_data:
-    driver: local
-  api_logs:
     driver: local
 
 networks:
