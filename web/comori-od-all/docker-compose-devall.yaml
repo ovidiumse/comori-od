@@ -49,6 +49,81 @@ services:
     ports:
       - 9200:9200
     restart: unless-stopped
+
+  comori-od-kibana:
+    build: 
+      context: ../comori-od-kibana
+      args:
+        - ES_VERSION=${ES_VERSION}
+    container_name: comori-od-kibana
+    environment:
+      - KIBANA_USER=${KIBANA_USER}
+      - KIBANA_PASSWORD=${KIBANA_PASSWORD}
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    volumes:
+      - kib_config:/usr/share/kibana/config
+      - kib_logs:/usr/share/kibana/logs
+    ports: 
+      - 5601:5601
+    depends_on:
+      - comori-od-es
+    restart: unless-stopped    
+
+  comori-od-filebeat:
+    build: 
+      context: ../comori-od-filebeat
+      args: 
+        - ES_VERSION=${ES_VERSION}
+    container_name: comori-od-filebeat
+    environment: 
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    volumes:
+      - /var/log:/var/log:ro
+    depends_on: 
+      - comori-od-logstash
+      - comori-od-kibana
+    restart: unless-stopped
+  
+  comori-od-logstash:
+    build: 
+      context: ../comori-od-logstash
+      args:
+        - ES_VERSION=${ES_VERSION}
+    container_name: comori-od-logstash
+    environment: 
+      - LOGSTASH_USER=${ELASTIC_USER}
+      - LOGSTASH_PASSWORD=${ELASTIC_PASSWORD}
+      - GEOIP_ACCOUNTID=${GEOIP_ACCOUNTID}
+      - GEOIP_LICENSEKEY=${GEOIP_LICENSEKEY}
+    ports:
+      - 5044:5044
+    depends_on: 
+      - comori-od-es
+    restart: unless-stopped
+    
+  comori-od-metricbeat:
+    build: 
+      context: ../comori-od-metricbeat
+      args:
+        - ES_VERSION=${ES_VERSION}
+    user: root
+    container_name: comori-od-metricbeat
+    environment: 
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - ENABLE_DASHBOARDS=False
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro    
+      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+      - /proc:/hostfs/proc:ro
+      - /:/hostfs:ro
+    depends_on: 
+      - comori-od-es
+    restart: unless-stopped
   
   comori-od-mongo:
     build: ../comori-od-mongo
@@ -141,6 +216,10 @@ volumes:
   es_config: 
     driver: local
   es_logs:
+    driver: local
+  kib_config:
+    driver: local
+  kib_logs:
     driver: local
   mongo_data:
     driver: local

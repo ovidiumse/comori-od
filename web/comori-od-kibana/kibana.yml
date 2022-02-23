@@ -4,12 +4,14 @@ elasticsearch.hosts: http://comori-od-es:9200
 elasticsearch.username: "${KIBANA_USER}"
 elasticsearch.password: "${KIBANA_PASSWORD}"
 
-xpack.security.enabled: true
+# xpack.security.enabled: true
 
 xpack.security.authc:
    providers:
      basic.basic1: 
       order: 0
+
+data.autocomplete.valueSuggestions.timeout: "10000"
 
 # logging.dest: /usr/share/kibana/logs/kibana.log
 # logging.rotate:

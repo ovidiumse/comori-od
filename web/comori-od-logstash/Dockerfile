@@ -2,15 +2,16 @@ ARG ES_VERSION
 
 FROM docker.elastic.co/logstash/logstash:${ES_VERSION}
 USER root
-RUN yum -y update && yum -y install less curl vim wget
+RUN apt-get -y update && apt-get -y install less curl vim wget
 
 ARG GEOIP_DIR=/usr/share/geoipupdate
-ARG GEOIP_PACKAGE=geoipupdate_4.5.0_linux_amd64.rpm
+ARG GEOIP_VER=4.8.0
+ARG GEOIP_PACKAGE=geoipupdate_${GEOIP_VER}_linux_amd64.deb
 
 RUN mkdir -p ${GEOIP_DIR}
 RUN chown -R logstash ${GEOIP_DIR}
-RUN wget "https://github.com/maxmind/geoipupdate/releases/download/v4.5.0/${GEOIP_PACKAGE}" -P "${GEOIP_DIR}"
-RUN rpm -Uvhi "${GEOIP_DIR}/${GEOIP_PACKAGE}"
+RUN wget "https://github.com/maxmind/geoipupdate/releases/download/v${GEOIP_VER}/${GEOIP_PACKAGE}" -P "${GEOIP_DIR}"
+RUN apt install "${GEOIP_DIR}/${GEOIP_PACKAGE}"
 
 USER logstash
 COPY on-start.sh .

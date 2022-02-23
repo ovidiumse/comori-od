@@ -1,1 +1,1 @@
-NGINX_ACCESS %{IPORHOST:remote_addr} %{IPORHOST:client_addr} - %{USERNAME:remote_user} \[%{HTTPDATE:time_local}\] \"%{DATA:request}\" %{INT:status} %{NUMBER:bytes_sent} \"%{DATA:http_referer}\" \"%{DATA:http_user_agent}\"
+NGINX_ACCESS %{IPORHOST:remote_addr} %{IPORHOST:client_addr} - %{USERNAME:remote_user} \[%{HTTPDATE:time_local}\] %{NUMBER:request_time} %{NUMBER:upstream_response_time} \"%{WORD:method} %{DATA:request}\" %{INT:status} %{NUMBER:bytes_sent} \"%{DATA:http_referer}\" \"%{DATA:http_user_agent}\"

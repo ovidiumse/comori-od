@@ -105,6 +105,9 @@ setup.dashboards.enabled: ${ENABLE_DASHBOARDS}
 setup.kibana.host: "http://comori-od-kibana:5601"
 setup.kibana.username: ${ELASTIC_USER}
 setup.kibana.password: ${ELASTIC_PASSWORD}
+setup.template.enabled: true
+setup.template.name: "metricbeat"
+setup.template.pattern: "metricbeat*"
 
 output.elasticsearch:
     hosts: ["http://comori-od-es:9200"]

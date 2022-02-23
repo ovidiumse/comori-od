@@ -1,9 +1,18 @@
 filebeat.modules:
   - module: nginx
+    access:
+      enabled: true
+      var.paths: ["/var/log/nginx/access.log*"]
+    error:
+      enabled: true
+      var.paths: ["/var/log/nginx/error.log*"]
 
 setup:
   dashboards.enabled: false
   always_kibana: true
+  # template.overwrite: true
+  # template.enabled: false
+  # template.type: legacy
   kibana.host: "http://comori-od-kibana:5601"
   kibana.username: "${ELASTIC_USER}"
   kibana.password: "${ELASTIC_PASSWORD}"

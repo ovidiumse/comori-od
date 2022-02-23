@@ -48,6 +48,7 @@ services:
       - discovery.type=single-node
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+      - ES_VERSION=${ES_VERSION}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     ulimits:
@@ -76,8 +77,10 @@ services:
       - VIRTUAL_PORT=5601
       - LETSENCRYPT_HOST=kibana.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-      - KIBANA_USER=${ELASTIC_USER}
-      - KIBANA_PASSWORD=${ELASTIC_PASSWORD}
+      - KIBANA_USER=${KIBANA_USER}
+      - KIBANA_PASSWORD=${KIBANA_PASSWORD}
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     volumes:
       - kib_config:/usr/share/kibana/config
       - kib_logs:/usr/share/kibana/logs

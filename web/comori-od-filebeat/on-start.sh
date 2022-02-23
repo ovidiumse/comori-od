@@ -5,7 +5,9 @@ until curl -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" 'http://comori-od-es:9200'; d
     sleep 3
 done
 
-curl -XPUT -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" 'http://comori-od-es:9200/_template/filebeat-7.9.3' -H "Content-Type:application/json" -d@filebeat-index-template.json
+curl -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" -XDELETE 'http://comori-od-es:9200/filebeat*'
+curl -XPUT -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" 'http://comori-od-es:9200/_index_template/filebeat' -H "Content-Type:application/json" -d@filebeat-index-template.json
+curl -XPUT -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" 'http://comori-od-es:9200/filebeat' -H "Content-Type:application/json" -d@filebeat-mappings.json
 
 until curl -u"${ELASTIC_USER}:${ELASTIC_PASSWORD}" 'http://comori-od-kibana:5601/api/status'; do
     >&2 echo "Kibana is unavailable, sleeping..."
