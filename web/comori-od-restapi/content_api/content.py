@@ -27,7 +27,7 @@ class ContentHandler(object):
             },
             'size': limit,
             'from': offset,
-            'sort': [{'_insert_ts': {'order': 'asc'}}]
+            'sort': [{'_insert_idx': {'order': 'asc'}}]
         }
 
         response = ES.search(index=idx_name, body=query_body)
