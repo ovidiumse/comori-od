@@ -2,7 +2,7 @@ import logging
 import falcon
 import simplejson as json
 import math
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 from mongoclient import MongoClient
 from mobileappsvc import MobileAppService
 from api_utils import req_handler

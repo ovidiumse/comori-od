@@ -27,7 +27,7 @@ class RecommendedHandler(MongoClient, MobileAppService):
 
         limit = int(req.params['limit']) if 'limit' in req.params else 10
 
-        auth = self.authorize(req.get_header("Authorization"))
+        auth = self.authorize(req.get_header("Authorization", required=True))
         readArticles = [
             self.removeInternalFields(read)
             for read in self.getCollection(idx_name, 'readArticles').find({'uid': self.getUserId(auth)})
