@@ -605,7 +605,7 @@ def main():
     stats_filepath = os.path.splitext(args.input)[0] + "_stats.txt"
     print("Calculating article stats...")
     tbl = PrettyTable()
-    tbl.field_names = ["Titlu", "Autor", "Tip", "Numar versuri", "Numar cuvinte"]
+    tbl.field_names = ["Carte", "Titlu", "Autor", "Tip", "Numar versuri", "Numar cuvinte"]
     tbl.align['Titlu'] = 'l'
     for article in articles:
         versesCount = len(article['verses'])
@@ -613,10 +613,7 @@ def main():
         for verse in article['verses']:
             verse = ''.join([v['text'] for v in verse])
             wordCount += len(verse.split())
-        tbl.add_row([
-            article['title'], article['author'], article['type'], versesCount,
-            wordCount
-        ])
+        tbl.add_row([article['book'], article['title'], article['author'], article['type'], versesCount, wordCount])
 
     print("Writing stats to {}...".format(stats_filepath))
     with open(stats_filepath, 'w', encoding='utf-8') as stats_file:
