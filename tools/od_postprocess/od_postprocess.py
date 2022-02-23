@@ -235,7 +235,7 @@ def post_process_articles(articles, args):
             if new_verse or lastVerse:
                 lastVerse = new_verse
                 new_verses.append(new_verse)
-        
+
         # remove last verse if empty
         if new_verses and not new_verses[-1]:
             new_verses = new_verses[:-1]
@@ -296,7 +296,7 @@ class BibleRefResolver(object):
         for book in self.bibleBooks:
             if suffix.lower().startswith(book):
                 return True
-        
+
         return False
 
     def blocks_to_text(self, blocks):
@@ -449,7 +449,7 @@ class BibleRefResolver(object):
                     contMatch = self.build_continuation_match(cMatch, lastPos, matchEntry)
                     if not contMatch:
                         break
-                    
+
                     # make sure there is no other following normal Bible ref overlapping the continuation match candidate
                     nextPos = lastPos
                     skip = False
@@ -469,7 +469,7 @@ class BibleRefResolver(object):
 
                         if nextMatchEntry['start'] < contMatch['end']:
                             skip = True
-                        
+
                         break
 
                     if skip:

@@ -249,6 +249,14 @@ def isPoemTitle(tag, cfg):
 
     return checkProps(tag, cfg['poem-title'])
 
+def isIgnored(tag, cfg):
+    if 'ignored' not in cfg:
+        return False
+    
+    if tag.name != "p":
+        return False
+    
+    return checkProps(tag, cfg['ignored'])
 
 def printElements(soup, predicate, cfg):
     for p in soup.find_all(lambda tag: predicate(tag, cfg)):
@@ -326,6 +334,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
     for p in soup.find_all('p'):
         subtitle = None
         bibleRef = None
+        
         if isBookTitle(p, cfg):
             book = sanitize(p.text)
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
@@ -353,6 +362,8 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                     pass
                 elif v.name == 'p' and isArticleBibleRef(v, cfg):
                     bibleRef = v
+                elif v.name == 'p' and isIgnored(v, cfg):
+                    pass
                 elif v.name == 'p':
                     verse = extractVerse(v)
 
