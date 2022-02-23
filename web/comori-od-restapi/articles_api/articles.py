@@ -163,7 +163,10 @@ class ArticlesHandler(object):
     def getById(self, idx_name, req):
         LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
-        return ES.get(index=idx_name, id=req.params['id'])
+        resp = ES.get(index=idx_name, id=req.params['id'])
+        resp['_type'] = ""
+        
+        return resp
 
     @timeit("Getting article", __name__)
     def getArticle(self, idx_name, req):
