@@ -30,5 +30,8 @@ ${CWD}/load_hristos_puterea.sh $@
 # Spre Canaan
 ${CWD}/load_trifa_spre_canaan.sh $@
 
+# Talcuiri culese din ziare
+${CWD}/load_trifa_talcuiri_culese.sh $@
+
 ${CWD}/../test_all.sh $@
 ${CWD}/../prepare_diff.sh

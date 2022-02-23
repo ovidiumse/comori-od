@@ -16,7 +16,6 @@ ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_1.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_2.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_3.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_4.htm -c ${CFG_DIR}/ioan.yaml &
-wait
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_5.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_6.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_7.htm -c ${CFG_DIR}/ioan.yaml &
@@ -27,7 +26,6 @@ echo "Extracting Meditatii la Ev. dupa Ioan..."
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_1_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_1.json &
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_2_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_2.json &
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_3_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_3.json &
-wait
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_4_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_4.json &
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_5_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_5.json &
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_6_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_6.json &
@@ -40,7 +38,6 @@ ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_1.json &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_2.json &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_3.json &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_4.json &
-wait
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_5.json &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_6.json &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_7.json &

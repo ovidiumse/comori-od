@@ -15,7 +15,13 @@ echo "Fixing Trifa - Spre Canaan..."
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.htm -c ${CFG_DIR}/trifa_spre_canaan.yaml
 
 echo "Extracting Trifa - Spre Canaan..."
-${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan_fixed.htm -c ${CFG_DIR}/trifa_spre_canaan.yaml -a "Pr. Iosif Trifa" -v "Spre Canaan" -b "Spre Canaan" -e ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.json
+${TOOLS_DIR}/od-extract.py \
+    -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan_fixed.htm \
+    -c ${CFG_DIR}/trifa_spre_canaan.yaml \
+    -a "Pr. Iosif Trifa" \
+    -v "Spre Canaan" \
+    -b "Spre Canaan" \
+    -e ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.json
 
 echo "Post-processing Trifa - Spre Canaan..."
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.json
