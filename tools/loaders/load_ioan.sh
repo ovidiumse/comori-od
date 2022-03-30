@@ -48,10 +48,10 @@ echo "Removing existing Meditații la Ev. după Ioan using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Meditații la Ev. după Ioan" $@
 
 echo "Uploading Meditatii la Ev. dupa Ioan using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_1_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_2_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_3_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_4_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_5_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_6_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_7_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_1_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_2_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_3_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_4_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_5_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_6_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/ioan/ioan_7_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded

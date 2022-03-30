@@ -39,7 +39,7 @@ echo "Removing existing Istoria unei Jertfe using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Istoria unei Jertfe" $@
 
 echo "Uploading Istoria unei Jertfe using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_1_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_2_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_3_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_4_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_1_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_2_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_3_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/istorii/istorii_4_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded

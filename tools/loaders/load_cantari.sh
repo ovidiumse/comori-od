@@ -43,13 +43,13 @@ echo "Removing existing Cântări Nemuritoare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Cântări Nemuritoare" $@
 
 echo "Uploading Cantari Nemuritoare using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_1_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_2_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_3_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_4_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_6_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_7_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_8_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_9_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_10_processed.json $@ --date-added ${DATE_ADDED}
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_11_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_1_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_2_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_3_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_4_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_6_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_7_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_8_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_9_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_10_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_11_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded

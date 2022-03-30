@@ -30,4 +30,8 @@ echo "Removing existing Trifa - Spre Canaan using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Spre Canaan" $@
 
 echo "Uploading Trifa - 30 de carti..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan_processed.json \
+    $@ \
+    --date-added ${DATE_ADDED} \
+    --output-dir ${DATA_DIR}/uploaded

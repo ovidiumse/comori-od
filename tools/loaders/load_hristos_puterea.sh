@@ -24,4 +24,8 @@ echo "Removing existing Hristos - Puterea Apostoliei using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Hristos - Puterea Apostoliei" $@
 
 echo "Uploading Hristos - Puterea Apostoliei using '$@'' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/hristos_puterea/hristos_puterea_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/hristos_puterea/hristos_puterea_processed.json \
+    $@ \
+    --date-added ${DATE_ADDED} \
+    --output-dir ${DATA_DIR}/uploaded

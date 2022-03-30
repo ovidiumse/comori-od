@@ -29,4 +29,8 @@ echo "Removing existing Cugetari Nemuritoare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Cugetări Nemuritoare" $@
 
 echo "Uploading Cugetari Nemuritoare using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cugetari_total/cugetari_total_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/cugetari_total/cugetari_total_processed.json \
+    $@ \
+    --date-added ${DATE_ADDED} \
+    --output-dir ${DATA_DIR}/uploaded

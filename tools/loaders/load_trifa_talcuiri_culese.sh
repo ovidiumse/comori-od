@@ -30,4 +30,8 @@ echo "Removing existing Trifa - Tâlcuiri culese din ziare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --book "Tâlcuiri culese din ziare" $@
 
 echo "Uploading Trifa - Tâlcuiri culese din ziare..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/trifa_talcuiri_culese/trifa_talcuiri_culese_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/trifa_talcuiri_culese/trifa_talcuiri_culese_processed.json \
+    $@ \
+    --date-added ${DATE_ADDED} \
+    --output-dir ${DATA_DIR}/uploaded

@@ -24,4 +24,4 @@ echo "Removing existing Hristos - Marturia mea using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Hristos - Marturia mea" $@
 
 echo "Uploading Hristos - Marturia mea using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/marturii/marturii_processed.json $@ --date-added ${DATE_ADDED}
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/marturii/marturii_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
