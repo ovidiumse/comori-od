@@ -5,6 +5,7 @@ import argparse
 import simplejson as json
 import requests
 import logging
+from collections import defaultdict
 from datetime import datetime
 from unidecode import unidecode
 from getpass import getpass
@@ -34,7 +35,7 @@ def parseArgs():
                          "--date-added",
                          dest="date_added",
                          action="store",
-                         default="",
+                         required=True,
                          type=str,
                          help="Date added")
     PARSER_.add_argument("-d",
@@ -51,6 +52,7 @@ def parseArgs():
                          "--external-host",
                          action="store_true",
                          help="Upload to external host")
+    PARSER_.add_argument("-o", "--output-dir", dest="output_dir", action="store", help="JSON output dir", default=None)
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -333,6 +335,22 @@ def main():
         except Exception as ex:
             logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
+        if args.output_dir:
+            articlesByBook = defaultdict(list)
+            for article in articles:
+                articlesByBook[article['book']].append(article)
+
+            logging.info("Writing books to files...")
+            for book, atcs in articlesByBook.items():
+                filePath = f"{args.output_dir}/{book}.json"
+                with open(filePath, 'w') as book_file:
+                    json.dump(atcs, book_file)
+
+            logging.info("Writting articles to files...")
+            for article in articles:
+                filePath = f"{args.output_dir}/{article['_id']}.json"
+                with open(filePath, 'w') as article_file:
+                    json.dump(article, article_file)
 
 if "__main__" == __name__:
     main()
