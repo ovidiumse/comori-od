@@ -104,7 +104,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
 
         totpAuth = TotpAuthBackend()
         authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
-        app = falcon.API(middleware=[HandleCORS(), authMiddleware])
+        app = falcon.App(middleware=[HandleCORS(), authMiddleware])
 
         index = IndexHandler(ES)
         articles = ArticlesHandler(ES)
