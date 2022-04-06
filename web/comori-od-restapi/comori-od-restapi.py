@@ -8,6 +8,7 @@ import logging
 import logging.config
 import yaml
 import pytz
+from datetime import datetime
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch
 from falcon.http_status import HTTPStatus
@@ -55,7 +56,7 @@ class TotpAuthBackend(AuthBackend):
     def authenticate(self, req, resp, resource):
         try:
             token = self._extract_credentials(req)
-            if not token or not self.totp.verify(token, None, 120):
+            if not token or not self.totp.verify(token, datetime.utcnow(), 120):
                 raise falcon.HTTPUnauthorized(title='401 Unauthorized',
                                             description='Invalid Token',
                                             challenges=None)
