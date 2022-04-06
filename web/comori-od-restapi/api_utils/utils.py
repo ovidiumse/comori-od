@@ -1,4 +1,5 @@
 import logging
+import elasticsearch
 import falcon
 import time
 import urllib
@@ -36,12 +37,24 @@ def req_handler(operation, loggerName):
         def wrapper(*args, **kwargs):
             try:
                 func(*args, **kwargs)
+            except elasticsearch.exceptions.NotFoundError as e:
+                logger.warn(f"{operation} ended with {e}")
+                raise falcon.HTTPNotFound(e.error)
+            except elasticsearch.exceptions.ConflictError as e:
+                logger.warn(f"{operation} ended with {e}")
+                raise falcon.HTTPConflict(e.error)
+            except elasticsearch.exceptions.AuthorizationException as e:
+                logger.warn(f"{operation} ended with {e}")
+                raise falcon.HTTPForbidden(e.error)
+            except elasticsearch.exceptions.AuthenticationException as e:
+                logger.warn(f"{operation} ended with {e}")
+                raise falcon.HTTPUnauthorized(e.error)
             except falcon.HTTPError as e:
                 logger.warn(f"{operation} ended with {e}")
                 raise
             except Exception as e:
                 logger.error(f"{operation} failed! Error: {e}", exc_info=True)
-                raise
+                raise falcon.HTTPError(falcon.HTTP_500, str(e))
         return wrapper
     return inner
 
