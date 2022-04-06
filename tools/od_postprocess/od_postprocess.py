@@ -270,7 +270,7 @@ class Bible(object):
 
 
 class BibleRefResolver(object):
-    def __init__(self):
+    def __init__(self, bible):
         self.regxGroups = {
             'book_name': r'(?P<book_name>((\d+\s+)?[^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)',
             'chapter': r'(cap\.\s*)?(?P<chapter>\d+)\s*',
@@ -283,7 +283,7 @@ class BibleRefResolver(object):
         self.continuationRegex = re.compile(''.join(
             [r'(?P<prefix>(\s*(;|(şi))\s*))'] +
             [v for k, v in self.regxGroups.items() if k != 'book_name']))
-        self.bibleBooks = set([book.lower() for book in BIBLE.get_books()])
+        self.bibleBooks = set([book.lower() for book in bible.get_books()])
 
         self.bibleCache = {}
         self.errors = []
@@ -518,8 +518,8 @@ class BibleRefResolver(object):
         return None
 
 
-def resolve_bible_refs(articles):
-    resolver = BibleRefResolver()
+def resolve_bible_refs(articles, bible):
+    resolver = BibleRefResolver(bible)
     articles = resolver.resolve_bible_refs(articles)
     return articles, resolver.resolvedRefCnt, resolver.errors
 
@@ -546,7 +546,7 @@ def main():
     processing_finish = datetime.now()
     print("Processed {} articles in {}.".format(len(articles), processing_finish - loading_finish))
 
-    articles, refCount, errors = resolve_bible_refs(articles)
+    articles, refCount, errors = resolve_bible_refs(articles, BIBLE)
     resolving_finish = datetime.now()
     print("Resolved {} bible refs for {} articles in {}.".
           format(refCount, len(articles), resolving_finish - processing_finish))

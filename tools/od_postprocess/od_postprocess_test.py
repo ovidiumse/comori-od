@@ -2,14 +2,14 @@
 import re
 import unittest
 import simplejson as json
-from od_postprocess import BIBLE_API_LOCAL, Bible, BibleRefMatcher
+from od_postprocess import BIBLE_API_LOCAL, Bible, BibleRefResolver
 
 
 class TestBibleRefDetection(unittest.TestCase):
     def setUp(self):
         bible = Bible(BIBLE_API_LOCAL)
         self.books_ = bible.get_books()
-        self.matcher_ = BibleRefMatcher()
+        self.matcher_ = BibleRefResolver(bible)
 
     def test_book_should_match(self):
         for book in self.books_:
@@ -62,7 +62,7 @@ class TestBibleRefDetection(unittest.TestCase):
             self.assertEqual(len(matches), 0, info)
 
     def test_bookChapterVerseRangeSeries_should_match(self):
-        refSeries = "(Colos. 2:13; Efes. 2, 1-5; 1 Tim. 5, 6; Apoc. 3, 1)."
+        refSeries = "(Colos. 2:13; Efes. 2, 1-5; 1 Tim. 5, 6; Apoc. 3, 1; 1 Ioan 4)."
         matches = self.matcher_.find_all(refSeries)
         info = "{} -> {}".format(
             refSeries, json.dumps([(m.string[m.start():m.end()], m.groupdict()) for m in matches], indent=2))
