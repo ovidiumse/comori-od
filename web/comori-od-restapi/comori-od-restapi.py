@@ -24,6 +24,7 @@ from tags_api import TagsHandler
 from recommended_api import RecommendedHandler
 from readarticles_api import ReadArticlesHandler, BulkReadArticlesHandler, TrendingArticlesHandler
 from recentlyadded_api import RecentlyAddedBooksHandler
+from users_api import UsersHandler
 from api_utils import timeit
 
 LOGGER_ = logging.getLogger(__name__)
@@ -123,6 +124,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         bulkReadArticles = BulkReadArticlesHandler()
         tendingArticlesHandler = TrendingArticlesHandler()
         recentlyAddedBooks = RecentlyAddedBooksHandler(ES)
+        users = UsersHandler()
 
         app.add_route('/{idx_name}', index)
         app.add_route('/{idx_name}/articles', articles)
@@ -150,6 +152,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         app.add_route('/{idx_name}/readarticles/bulk', bulkReadArticles)
         app.add_route('/{idx_name}/trendingarticles', tendingArticlesHandler)
         app.add_route('/{idx_name}/recentlyaddedbooks', recentlyAddedBooks)
+        app.add_route('/{idx_name}/users', users)
     except Exception as e:
         LOGGER_.error(f"Initializing svc failed! Error: {e}", exc_info=True)
         raise

@@ -33,6 +33,7 @@ ADD recentlyadded_api recentlyadded_api
 ADD recommended_api recommended_api
 ADD tags_api tags_api
 ADD titles_api titles_api
+ADD users_api users_api
 
 COPY comori-od-restapi.py .
 COPY cfg.yaml .
