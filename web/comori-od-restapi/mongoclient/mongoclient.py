@@ -7,9 +7,23 @@ LOGGER_ = logging.getLogger(__name__)
 
 class MongoClient(object):
     dbsByIndexName = {}
+    allowedDbs = ["od", "odbeta"]
+    currentHost = os.getenv("VIRTUAL_HOST")
 
     @timeit("Connecting to MongoDB", __name__)
     def getClient(self, idx_name):
+        allowed = False
+        
+        if not self.currentHost:
+            allowed = idx_name in self.allowedDbs
+        elif self.currentHost == "api.comori-od.ro":
+            allowed = idx_name in self.allowedDbs
+        elif self.currentHost == "testapi.comori-od.ro":
+            allowed = idx_name == "odbeta"
+
+        if not allowed:
+            raise Exception("Database access not allowed!")
+
         LOGGER_.info(f"Creating Mongo db connection for {idx_name}...")
         return pymongo.MongoClient('comori-od-mongo',
                             username=os.environ.get("MONGO_USERNAME"),
