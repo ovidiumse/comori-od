@@ -85,7 +85,6 @@ def main():
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    print("Searching {} using {}...".format(args.query, COMORI_OD_API_HOST))
     search(args.idx_name, args.query, args.fields)
 
 
