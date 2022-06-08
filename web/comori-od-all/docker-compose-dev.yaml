@@ -5,6 +5,7 @@ services:
       context: ../comori-od-static-vue
       args:
         - buildtype=dev_build
+        - NODE_OPTIONS="--openssl-legacy-provider"
     container_name: comori-od-static-vue
     ports:
       - "80:80"

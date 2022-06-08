@@ -17,7 +17,7 @@ tmux send-keys -t prod "ssh ubuntu@comori-od.ro" C-m
 
 tmux select-pane -t 3
 tmux send-keys -t prod "cd projects/comori-od/web/comori-od-all" C-m
-tmux send-keys -t prod "./tail-prod.sh" C-m
+# tmux send-keys -t prod "./tail-prod.sh" C-m
 
 tmux select-pane -t 2
 tmux send-keys -t prod "ssh ubuntu@comori-od.ro" C-m
