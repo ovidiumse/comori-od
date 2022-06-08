@@ -194,16 +194,23 @@ class ArticlesHandler(object):
                          })
 
     @req_handler("Handling articles GET", __name__)
-    def on_get(self, req, resp, idx_name):
+    def on_get(self, req, resp, idx_name, id=None):
         if 'q' in req.params:
-            results = self.query(idx_name, req)
+            response = self.query(idx_name, req)
         elif 'id' in req.params:
-            results = self.getArticle(idx_name, req)
+            response = self.getArticle(idx_name, req)
+        elif id is not None:
+            # this is a replacement for the nginx data files
+            # for localhost testing (where nginx is not used)
+            req.params['id'] = id
+            response = self.getArticle(idx_name, req)
+            response['_source']['_id'] = response['_id']
+            response = response['_source']
         else:
-            results = self.getRandomArticle(idx_name, req)
+            response = self.getRandomArticle(idx_name, req)
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results)
+        resp.body = json.dumps(response)
 
     @req_handler("Handling articles POST", __name__)
     def on_post(self, req, resp, idx_name):

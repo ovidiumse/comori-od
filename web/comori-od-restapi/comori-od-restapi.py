@@ -129,6 +129,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
 
         app.add_route('/{idx_name}', index)
         app.add_route('/{idx_name}/articles', articles)
+        app.add_route('/{idx_name}/data/{id}.json', articles)
         app.add_route('/{idx_name}/authors', authors)
         app.add_route('/{idx_name}/authors/{value}', authors)
         app.add_route('/{idx_name}/types', types)
