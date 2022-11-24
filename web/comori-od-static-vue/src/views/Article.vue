@@ -5,7 +5,7 @@
             <v-layout row>
               <v-col class="d-none d-sm-flex" cols=3 md=2>
                 <v-list-item-avatar width="75" height="80" v-if="article._source.author === 'Traian Dorz'">
-                    <v-img :src="require('../../src/assets/td.png?vuetify-loader')">
+                    <v-img :src="require('../../src/assets/td.png')">
                         <template v-slot:placeholder>
                         <v-layout
                           fill-height
@@ -96,7 +96,7 @@
 import shared from '../components/Shared'
 
 export default {
-    name: "Article",
+    name: "ComoriArticle",
     data() {
         return {
             id: null,

@@ -1,6 +1,6 @@
 <script>
 export default {
-	name: "shared",
+	name: "ComoriShared",
 		base_url: process.env.VUE_APP_BASE_URL,
 		index_name: 'od'
 }

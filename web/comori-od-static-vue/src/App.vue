@@ -54,7 +54,7 @@
                                   append-icon="mdi-magnify">
                                   <template v-slot:item="{item}">
                                     <v-list-item-avatar width="48" height="50" v-if="item.author === 'Traian Dorz'">
-                                      <v-img :src="require('../src/assets/td-50.jpg?vuetify-preload')">
+                                      <v-img :src="require('../src/assets/td-50.jpg')">
                                         <template v-slot:placeholder>
                                               <v-layout
                                                 fill-height

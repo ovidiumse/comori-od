@@ -38,7 +38,7 @@
           >
           <v-list-item class="py-1 py-sm-3 py-md-5 px-3 px-md-5">
               <v-list-item-avatar width="48" height="50" v-if="hit._source.author === 'Traian Dorz'">
-                <v-img :src="require('../../src/assets/td-50.jpg?vuetify-preload')">
+                <v-img :src="require('../../src/assets/td-50.jpg')">
                     <template v-slot:placeholder>
                         <v-layout
                           fill-height
@@ -86,7 +86,7 @@
 import shared from '../components/Shared'
 
 export default {
-    name: "Search",
+    name: "ComoriSearch",
     data() {
         return {
             active: false,
