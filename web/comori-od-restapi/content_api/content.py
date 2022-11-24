@@ -32,4 +32,4 @@ class ContentHandler(object):
 
         response = ES.search(index=idx_name, body=query_body)
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(response)
+        resp.body = json.dumps(response.body)

@@ -28,7 +28,7 @@ class TitlesHandler(object):
                 }
             },
             '_source': {
-                'excludes': ['verses', 'bible-refs'],
+                'excludes': ['verses', 'body', 'bible-refs'],
             },
             'size': limit,
             'from': offset,
@@ -40,7 +40,7 @@ class TitlesHandler(object):
 
         response = ES.search(index=idx_name, body=query_body)
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(response)
+        resp.body = json.dumps(response.body)
 
 
 class TitlesCompletionHandler(object):
@@ -73,8 +73,8 @@ class TitlesCompletionHandler(object):
                                     }
                                 },
                                 '_source': {
-                                    'excludes': ['verses', 'bible-refs']
+                                    'excludes': ['verses', 'body', 'bible-refs']
                                 },
                             })
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results)
+        resp.body = json.dumps(results.body)

@@ -35,7 +35,7 @@ class IndexHandler(object):
 
         LOGGER_.info(f"Creating index {idx_name} with data {json.dumps(data, indent=1)}")
 
-        if ES.indices.exists(idx_name):
+        if ES.indices.exists(index=idx_name):
             ES.indices.delete(index=idx_name)
 
         ES.indices.create(index=idx_name, body=data['settings'])

@@ -59,7 +59,7 @@ class RecommendedHandler(MongoClient, MobileAppService):
                 },
             },
             '_source': {
-                'excludes': ['verses', 'bible-refs']
+                'excludes': ['verses', 'body', 'bible-refs']
             },
             'size': limit + len(readArticles)
         }

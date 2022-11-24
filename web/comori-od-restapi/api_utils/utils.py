@@ -112,10 +112,10 @@ def buildShouldMatch(q):
     should_match = []
 
     fields = [("title", 20), ("title.folded", 18),
-                ("verses.text", 10),
-                ("verses.text.folded", 8),
+                ("body", 10),
+                ("body.folded", 8),
                 ("title.folded_stemmed", 4),
-                ("verses.text.folded_stemmed", 1)]
+                ("body.folded_stemmed", 1)]
 
     for field, boost in fields:
         should_match.append({
@@ -142,8 +142,10 @@ def buildShouldMatchHighlight(q):
             "\"{}\"~{}".format(q, 4),
             "fields": [
                 "title^20", "title.folded^18",
+                "body^10", "body.folded^8",
                 "verses.text^10", "verses.text.folded^8",
                 "title.folded_stemmed^4",
+                "body.folded_stemmed",
                 "verses.text.folded_stemmed"
             ],
             "default_operator":

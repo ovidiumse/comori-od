@@ -95,10 +95,9 @@ def load_app(cfg_filepath, dotenv_filePath = None):
             load_dotenv(dotenv_filePath)
 
         global ES
-        ES = Elasticsearch(hosts=[cfg['es']],
-                            http_auth=(os.getenv("ELASTIC_USER", "elastic"),
-                                        os.getenv("ELASTIC_PASSWORD", "")), 
-                            timeout=30)
+        ES = Elasticsearch(cfg['es']['url'],
+                           http_auth=(os.getenv("ELASTIC_USER", "elastic"), os.getenv("ELASTIC_PASSWORD", "")),
+                           timeout=30)
 
         LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 

@@ -54,7 +54,8 @@ class FieldAggregator():
             aggs_body = query_body['aggs'][f'{self.fieldName}s']['aggs']
             aggs_body[f'{agg}s'] = {'terms': {'field': agg, 'size': 100}}
 
-        return ES.search(index=idx_name, body=query_body, timeout="1m")
+        resp = ES.search(index=idx_name, body=query_body, timeout="1m")
+        return resp.body
 
     @req_handler("Aggregated fields GET", __name__)
     def on_get(self, req, resp, idx_name):
@@ -76,5 +77,5 @@ class FieldAggregator():
             }
         }
 
-        ES.delete_by_query(idx_name, body=query)
+        ES.delete_by_query(index=idx_name, body=query)
         resp.status = falcon.HTTP_200

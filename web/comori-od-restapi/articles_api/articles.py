@@ -4,6 +4,7 @@ import logging
 import urllib
 import simplejson as json
 from elasticsearch import helpers
+from datetime import datetime, timezone
 from api_utils import *
 
 LOGGER_ = logging.getLogger(__name__)
@@ -11,6 +12,8 @@ ES = None
 
 class ArticlesHandler(object):
     def __init__(self, es):
+        self.doc_cnt = None
+
         global ES
         if ES is None:
             ES = es
@@ -44,7 +47,7 @@ class ArticlesHandler(object):
         query_body = {
             'query': buildQuery(should_match, filters),
             '_source': {
-                'excludes': ['verses', 'bible-refs']
+                'excludes': ['verses', 'body', 'bible-refs']
             },
             'highlight': {
                 'highlight_query': {
@@ -61,11 +64,16 @@ class ArticlesHandler(object):
                         "matched_fields":
                         ["verses.text", "verses.text.folded", "verses.text.stemmed_folded", "verses.text.folded_stemmed"],
                         'type': 'fvh'
+                    },
+                    'body': {
+                        "matched_fields": ["body", "body.folded", "body.stemmed_folded", "body.folded_stemmed"],
+                        'type': 'fvh'
                     }
                 },
-                "number_of_fragments": 6,
-                "fragment_size": 100,
-                "order": "score"
+                "boundary_scanner": "chars",
+                "number_of_fragments": 4,
+                "fragment_size": 10000,
+                "order": "none"
             },
             'sort': ['_score', {'title.keyword': 'asc'}, {'book': 'asc'}],
             'size': limit,
@@ -77,7 +85,8 @@ class ArticlesHandler(object):
     
         # print("Query: {}".format(json.dumps(query_body, indent=2)))
 
-        return ES.search(index=idx_name, body=query_body, timeout="1m")
+        resp = ES.search(index=idx_name, body=query_body, timeout="1m")
+        return resp.body
 
     @timeit("Getting highlighted article by id", __name__)
     def getHighlightedById(self, idx_name, req):
@@ -96,7 +105,7 @@ class ArticlesHandler(object):
                 }
             },
             '_source': {
-                'excludes': ['verses', 'bible-refs']
+                'excludes': ['verses', 'body', 'bible-refs']
             },
             'highlight': {
                 'highlight_query': {
@@ -164,9 +173,7 @@ class ArticlesHandler(object):
         LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
         resp = ES.get(index=idx_name, id=req.params['id'])
-        resp['_type'] = ""
-        
-        return resp
+        return resp.body
 
     @timeit("Getting article", __name__)
     def getArticle(self, idx_name, req):
@@ -175,23 +182,54 @@ class ArticlesHandler(object):
         else:
             return self.getById(idx_name, req)
 
-    @timeit("Getting random article", __name__)
-    def getRandomArticle(self, idx_name, req):
-        LOGGER_.info(f"Getting random article from {idx_name} with request {json.dumps(req.params, indent=2)}")
+    @timeit("Getting doc count", __name__)
+    def getDocCnt(self, idx_name):
+        if not self.doc_cnt or idx_name not in self.doc_cnt:
+            LOGGER_.info(f"Getting doc count from {idx_name}")
 
-        limit = int(req.params['limit']) if 'limit' in req.params else 1
-        offset = int(req.params['offset']) if 'offset' in req.params else 0
+            if not self.doc_cnt:
+                self.doc_cnt = {}
 
-        return ES.search(index=idx_name,
+            resp = ES.search(index=idx_name,
                          body={
                              'query': {
-                                 'function_score': {
-                                     'random_score': {}
-                                 }
+                                 'match_all': {}
                              },
+                             "sort": [{"_insert_idx": "asc"}, {"book": "asc"}],
+                             'size': 1,
+                             'from': 0
+                         })
+            
+            self.doc_cnt[idx_name] = resp["hits"]["total"]["value"]
+        
+        return self.doc_cnt[idx_name]
+
+    def getDaysSinceEpoch(self):
+        epoch_date = datetime(1970, 1, 1).date()
+        today = datetime.now(timezone.utc).date()
+        return (today - epoch_date).days
+
+    @timeit("Getting random article", __name__)
+    def getDailyArticle(self, idx_name, req):
+        LOGGER_.info(f"Getting daily article from {idx_name} with request {json.dumps(req.params, indent=2)}")
+
+        daysSinceEpoch = self.getDaysSinceEpoch()
+        docCount = self.getDocCnt(idx_name)
+        LOGGER_.info(f"Days since epoch: {daysSinceEpoch}, doc count: {docCount}, day index: {daysSinceEpoch % docCount}")
+
+        limit = int(req.params['limit']) if 'limit' in req.params else 1
+        offset = int(req.params['offset']) if 'offset' in req.params else daysSinceEpoch % docCount
+
+        resp = ES.search(index=idx_name,
+                         body={
+                             'query': {
+                                 'match_all': {}
+                             },
+                             "sort": [{"_insert_idx": "asc"}, {"book": "asc"}],
                              'size': limit,
                              'from': offset
                          })
+        return resp.body
 
     @req_handler("Handling articles GET", __name__)
     def on_get(self, req, resp, idx_name, id=None):
@@ -207,7 +245,7 @@ class ArticlesHandler(object):
             response['_source']['_id'] = response['_id']
             response = response['_source']
         else:
-            response = self.getRandomArticle(idx_name, req)
+            response = self.getDailyArticle(idx_name, req)
 
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(response)
@@ -245,12 +283,12 @@ class SearchTermSuggester(object):
                                     'simple_phrase': {
                                         'phrase': {
                                             'field':
-                                            'verses.text.suggesting',
+                                            'body.suggesting',
                                             'size': 1,
                                             'gram_size': 4,
                                             'max_errors': 4,
                                             'direct_generator': [{
-                                                'field': 'verses.text.suggesting',
+                                                'field': 'body.suggesting',
                                                 'suggest_mode': 'popular',
                                             }],
                                             'highlight': {
@@ -266,7 +304,7 @@ class SearchTermSuggester(object):
                                                     }
                                                 },
                                                 "params": {
-                                                    "field_name": "verses.text.folded"
+                                                    "field_name": "body.folded"
                                                 },
                                                 "prune": True
                                             }
@@ -275,7 +313,7 @@ class SearchTermSuggester(object):
                                 }
                             })
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results)
+        resp.body = json.dumps(results.body)
 
 
 class SimilarArticlesHandler(object):
@@ -292,7 +330,7 @@ class SimilarArticlesHandler(object):
                             body={
                                 'query': {
                                     'more_like_this': {
-                                        'fields': ["title", "verses.text", "verses.text.folded"],
+                                        'fields': ["title", "body", "body.folded"],
                                         'like': [{
                                             '_id': req.params['id']
                                         }],
@@ -303,10 +341,10 @@ class SimilarArticlesHandler(object):
                                     },
                                 },
                                 '_source': {
-                                    'excludes': ['verses', 'bible-refs']
+                                    'excludes': ['verses', 'body', 'bible-refs']
                                 },
                                 'size': 4
                             })
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results)
+        resp.body = json.dumps(results.body)
