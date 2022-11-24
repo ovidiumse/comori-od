@@ -17,10 +17,11 @@ services:
     build: 
       context: ../comori-od-static-nuxt
       args:
-        - buildtype=build_dev
+        - buildtype=dev_build
+        - NODE_OPTIONS="--openssl-legacy-provider"
     container_name: comori-od-static-nuxt
     ports:
-      - "3000:3000"
+      - "3001:3001"
     depends_on:
       - comori-od-restapi
     restart: unless-stopped

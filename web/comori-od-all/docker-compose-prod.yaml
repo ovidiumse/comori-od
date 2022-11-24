@@ -5,9 +5,10 @@ services:
       context: ../comori-od-static-vue
       args:
         - buildtype=prod_build
+        - NODE_OPTIONS="--openssl-legacy-provider"
     container_name: comori-od-static-vue
     expose:
-      - "80"
+      - 80
     environment:
       - VIRTUAL_HOST=comori-od.ro,www.comori-od.ro
       - VIRTUAL_PORT=80
@@ -23,14 +24,15 @@ services:
     build: 
       context: ../comori-od-static-nuxt
       args:
-        - buildtype=build_prod
+        - buildtype=prod_build
+        - NODE_OPTIONS="--openssl-legacy-provider"
     container_name: comori-od-static-nuxt
     expose:
-      - "3000"
+      - 3001
     environment:
-      - VIRTUAL_HOST=beta.comori-od.ro
-      - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=beta.comori-od.ro
+      - VIRTUAL_HOST=new.comori-od.ro
+      - VIRTUAL_PORT=3001
+      - LETSENCRYPT_HOST=new.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     networks:
       - proxy
@@ -59,7 +61,7 @@ services:
       - es_data:/usr/share/elasticsearch/data
       - es_config:/usr/share/elasticsearch/config
       - es_logs:/usr/share/elasticsearch/logs
-      - ../comori-od-es/hunspell:/usr/share/elasticsearch/config/hunspell
+      - es_hunspell:/usr/share/elasticsearch/config/hunspell
     expose:
       - "9200"
     networks:
@@ -228,7 +230,7 @@ services:
         - LOGGING_CFG=logging_cfg_prod.yaml
     container_name: comori-od-restapi
     expose: 
-      - "9000"
+      - 9000
     environment:
       - GEVENT_RESOLVER=ares
       - VIRTUAL_HOST=api.comori-od.ro
@@ -254,7 +256,7 @@ services:
     build: ../comori-od-bibleapi
     container_name: comori-od-bibleapi
     expose:
-      - "9002"
+      - 9002
     environment:
       - VIRTUAL_HOST=bible-api.comori-od.ro
       - VIRTUAL_PORT=9002
@@ -270,6 +272,8 @@ volumes:
   es_config: 
     driver: local
   es_logs:
+    driver: local
+  es_hunspell:
     driver: local
   kib_config:
     driver: local
