@@ -13,6 +13,7 @@ from getpass import getpass
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
+TEST_HOST = "https://testapi.comori-od.ro"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
@@ -35,7 +36,7 @@ def parseArgs():
                          "--date-added",
                          dest="date_added",
                          action="store",
-                         required=True,
+                         default=None,
                          type=str,
                          help="Date added")
     PARSER_.add_argument("-d",
@@ -52,6 +53,7 @@ def parseArgs():
                          "--external-host",
                          action="store_true",
                          help="Upload to external host")
+    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
     PARSER_.add_argument("-o", "--output-dir", dest="output_dir", action="store", help="JSON output dir", default=None)
     PARSER_.add_argument("-v",
                          "--verbose",
@@ -120,7 +122,9 @@ def create_index(idx_name):
                             "predestinare => predestinație",
                             "predestinație => predestinare",
                             "trimis => trimes",
-                            "trimes => trimis"
+                            "trimes => trimis",
+                            "Isus => Iisus",
+                            "Iisus => Isus"
                         ]
                     }
                 },
@@ -237,6 +241,27 @@ def create_index(idx_name):
                     }
                 }
             },
+            'body': {
+                'type': 'text',
+                'term_vector': 'with_positions_offsets',
+                'analyzer': 'romanian',
+                'fields': {
+                    'folded': {
+                        'type': 'text',
+                        'term_vector': 'with_positions_offsets',
+                        'analyzer': 'folding'
+                    },
+                    'folded_stemmed': {
+                        'type': 'text',
+                        'term_vector': 'with_positions_offsets',
+                        'analyzer': 'folding_stemmed'
+                    },
+                    'suggesting': {
+                        'type': 'text',
+                        'analyzer': 'suggesting'
+                    }
+                }
+            },
             '_insert_idx': {
                 'type': 'integer'
             },
@@ -296,6 +321,8 @@ def main():
 
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
+    elif args.test_host:
+        COMORI_OD_API_HOST = TEST_HOST
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
@@ -328,6 +355,9 @@ def main():
         try:
             logging.info("Indexing {} articles from {} to {}...".
                          format(len(articles), args.json_filepath, COMORI_OD_API_HOST))
+            if not args.date_added:
+                raise Exception("Date-added not provided")
+
             index_all(args.idx_name, args.date_added, articles)
             logging.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,

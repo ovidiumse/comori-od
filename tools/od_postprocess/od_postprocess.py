@@ -10,6 +10,7 @@ from datetime import datetime
 from prettytable import PrettyTable
 
 BIBLE_API_LOCAL = "http://localhost:9002"
+BIBLE_API_TEST  = "http://testbible-api.comori-od.ro"
 BIBLE_API_EXTERNAL = "http://bibleapi.comori-od.ro"
 
 BIBLE = None
@@ -34,13 +35,14 @@ def parseArgs():
                          "--external-host",
                          action="store_true",
                          help="Use external Bible API host")
+    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Use test Bible API host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
                          action="store_true",
                          help="Verbose logging")
 
-    args = PARSER_.parse_args()
+    args, unknown = PARSER_.parse_known_args()
     if not args.output:
         args.output = "{}_processed.json".format(os.path.splitext(args.input)[0])
 
@@ -137,8 +139,10 @@ wordReplacements = {
     'Eşire': 'Exod',
     'Tesal': 'Tes',
     'Eclesiast': 'Ecles',
+    'Apocalips': 'Apoc'
 }
 
+bodySplits = {}
 
 def replace_words(val, field, isFirstBlock, isLastBlock):
     words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
@@ -169,7 +173,7 @@ def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
                     r = w
                     for index, c in enumerate(r):
                         prefixes = [
-                        "anti", "arhi", "atot", "auto", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
+                        "anti", "arhi", "atot", "auto", "bine", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
                         "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
                         "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
                         "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
@@ -240,7 +244,55 @@ def post_process_articles(articles, args):
         if new_verses and not new_verses[-1]:
             new_verses = new_verses[:-1]
 
+        def split(body, delim, keep=""):
+            new_body = []
+            for section in body:
+                splits = re.split(delim, section)
+                if len(splits) > 1:
+                    last_chunk = None
+                    for idx, chunk in enumerate(splits):
+                        if last_chunk and keep=='.':
+                            last_line_splits = [word.strip('\n') for word in last_chunk.split(" ") if word.strip('\n')]
+                            current_line_splits = [word.strip('\n') for word in chunk.split(" ") if word.strip('\n')]
+                            if last_line_splits and current_line_splits and last_line_splits[-1] not in [
+                                    "Dumnezeu.", "Hristos.", "Isus.", "Lui.", "lui.", "lor.", "ei.", "el.", "El.",
+                                    "tine.", "noastră.", "Tine.", "noi.", "așa.", "Ta."
+                            ]:
+                                split = last_line_splits[-1] + " " + current_line_splits[0]
+                                if split in bodySplits:
+                                    splitInfo = bodySplits[split]
+                                else:
+                                    splitInfo = bodySplits[split] = {'count': 0, 'occurrences': []}
+
+                                splitInfo['count'] += 1
+                                splitInfo['occurrences'].append({'title': article['title'], 'split': " ".join(last_line_splits[-6:] + current_line_splits[:6])})
+
+                        # don't append separator after the last chunk
+                        if idx == (len(splits) - 1):
+                            new_body.append(chunk)
+                        else:
+                            new_body.append(chunk + keep)
+                            last_chunk = chunk + keep
+                else:
+                    new_body.append(section)
+
+            return [section.lstrip(' \n') for section in new_body if section.strip(' \n')]
+
+        def split_all(body):
+            dot_exceptions = [
+                "cap", "păr", "pr", "dr", "dl", "sf", "Sf", "ap", "Ap", "1 Tim", "2 Tim", "1 Cor", "2 Cor", "Rom",
+                "Gal", "Efes", "Ef", "Prov", "Apoc"
+            ]
+            dot_regex = r'(?<![A-Z])' + ''.join([f'(?<!{ex})' for ex in dot_exceptions]) + r'\.(?!\.)'
+
+            delims = [(dot_regex, '.'), (r'\!\s*\n', "!"), ('r\?\s*\n', "?"), (r'”\n', "”"), (r'\n\n', "")]
+            for delim, keep in delims:
+                body = split(body, delim, keep)
+            return body
+
         article['verses'] = new_verses
+        article['body'] = split_all(
+            ["\n".join(["".join([chunk['text'] for chunk in verse]) for verse in article['verses']])])
 
     return articles
 
@@ -532,6 +584,8 @@ def main():
     global BIBLE
     if args.external_host:
         BIBLE = Bible(BIBLE_API_EXTERNAL)
+    elif args.test_host:
+        BIBLE = Bible(BIBLE_API_TEST)
     else:
         BIBLE = Bible(BIBLE_API_LOCAL)
 
@@ -601,6 +655,25 @@ def main():
                 item['field'], item['count']
             ])
         print(tbl, file=replacements_file)
+
+    splits = []
+    for split, splitInfo in bodySplits.items():
+        splitInfo['split'] = split
+        splits.append(splitInfo)
+
+    splits_filepath = os.path.splitext(args.input)[0] + "_splits.txt"
+    splits = sorted(splits, key=lambda item: item['count'], reverse=True)
+    print("Writing {} splits to {}...".format(len(bodySplits), splits_filepath))
+    tbl = PrettyTable()
+    tbl.field_names = ["Split", "Număr apariții", "Apariții"]
+    tbl.align["Apariții"] = "l"
+    with open(splits_filepath, 'w', encoding='utf-8') as splits_file:
+        for item in splits:
+            occurrences = "\n\n".join(f"{idx + 1}.\nTitlu: {o['title']}\n{o['split']}" for idx, o in enumerate(item['occurrences']))
+            tbl.add_row([
+                item['split'], item['count'], occurrences
+            ])
+        print(tbl, file=splits_file)
 
     stats_filepath = os.path.splitext(args.input)[0] + "_stats.txt"
     print("Calculating article stats...")

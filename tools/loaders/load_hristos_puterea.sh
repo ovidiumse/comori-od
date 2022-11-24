@@ -18,7 +18,7 @@ echo "Extracting Hristos - Puterea Apostoliei..."
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/hristos_puterea/hristos_puterea_fixed.htm -c ${CFG_DIR}/hristos_puterea.yaml -a "Traian Dorz" -v "Hristos - Puterea Apostoliei" -b "Hristos - Puterea Apostoliei" -e ${DATA_DIR}/hristos_puterea/hristos_puterea.json
 
 echo "Post-processing Hristos - Puterea Apostoliei..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/hristos_puterea/hristos_puterea.json
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/hristos_puterea/hristos_puterea.json $@
 
 echo "Removing existing Hristos - Puterea Apostoliei using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Hristos - Puterea Apostoliei" $@

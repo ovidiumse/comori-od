@@ -18,7 +18,7 @@ echo "Extracting Hristos - Marturia mea..."
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/marturii/marturii_fixed.htm -c ${CFG_DIR}/marturii.yaml -a "Traian Dorz" -v "Hristos - Marturia mea" -b "Hristos - Marturia mea" -e ${DATA_DIR}/marturii/marturii.json
 
 echo "Post-processing Hristos - Marturia mea..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/marturii/marturii.json
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/marturii/marturii.json $@
 
 echo "Removing existing Hristos - Marturia mea using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Hristos - Marturia mea" $@

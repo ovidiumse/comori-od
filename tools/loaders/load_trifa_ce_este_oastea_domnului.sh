@@ -24,7 +24,7 @@ ${TOOLS_DIR}/od-extract.py \
     -e ${DATA_DIR}/trifa_ce_este_oastea_domnului/trifa_ce_este_oastea_domnului.json
 
 echo "Post-processing Trifa - Ce este Oastea Domnului..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_ce_este_oastea_domnului/trifa_ce_este_oastea_domnului.json
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_ce_este_oastea_domnului/trifa_ce_este_oastea_domnului.json $@
 
 echo "Removing existing Trifa - Ce este Oastea Domnului using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --book "Ce este Oastea Domnului" $@

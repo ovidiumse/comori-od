@@ -4,20 +4,30 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
+DATE_ADDED="2022-11-22"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
     export API_TOTP_KEY=${API_TOTP_KEY}
 fi
 
-echo "Extracting Strangeti Faramiturile Vol. 4..."
-${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/strangeti_faramiturile/test.htm -c ${CFG_DIR}/strangeti_faramiturile.yaml -a "Traian Dorz" -v "Strângeți Fărâmiturile" -b "Strângeți Fărâmiturile Vol. 4" -e ${DATA_DIR}/strangeti_faramiturile/test.json
+echo "Fixing Strangeti Faramiturile..."
+${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.htm -c ${CFG_DIR}/strangeti_faramiturile.yaml &
 
-echo "Post-processing Strangeti Faramiturile Vol. 4..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/strangeti_faramiturile/test.json
+wait
+
+echo "Extracting Strangeti Faramiturile..."
+${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1_fixed.htm -c ${CFG_DIR}/strangeti_faramiturile.yaml -v "Strângeți Fărâmiturile" -b "Strângeți Fărâmiturile vol. 1" -e ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json &
+
+wait
+
+echo "Post-processing Strangeti Faramiturile..."
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ &
+
+wait
 
 echo "Removing existing Strângeți Fărâmiturile using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Strângeți Fărâmiturile" $@
 
-echo "Uploading Strangeti Faramiturile Vol. 4..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/strangeti_faramiturile/test_processed.json $@
+echo "Uploading Strangeti Faramiturile using '$@' flags..."
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded

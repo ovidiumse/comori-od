@@ -179,7 +179,7 @@ class Bible(object):
                 }, callback)
             return
 
-        logging.info('Looking for {}...'.format(match.groupdict()))
+        logging.info('Looking for {}...'.format(reference))
 
         book_name = match.group('book_name').strip()
         if match.group('book_number'):

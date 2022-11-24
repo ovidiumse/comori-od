@@ -31,7 +31,7 @@ def parseArgs():
                          dest="author",
                          action="store",
                          type=str,
-                         required=True,
+                         default=None,
                          help="Book author")
     PARSER_.add_argument("-v",
                          "--volume",
@@ -233,12 +233,20 @@ def isArticleSubtitle(tag, cfg):
 def isArticleBibleRef(tag, cfg):
     if 'article-bible-ref' not in cfg:
         return False
+
+    if tag.name != 'p':
+        return False
+
+    return checkProps(tag, cfg['article-bible-ref'])
+
+def isArticleAuthor(tag, cfg):
+    if 'article-author' not in cfg:
+        return False
     
     if tag.name != 'p':
         return False
-    
-    return checkProps(tag, cfg['article-bible-ref'])
 
+    return checkProps(tag, cfg['article-author'])
 
 def isPoemTitle(tag, cfg):
     if 'poem-title' not in cfg:
@@ -252,10 +260,10 @@ def isPoemTitle(tag, cfg):
 def isIgnored(tag, cfg):
     if 'ignored' not in cfg:
         return False
-    
+
     if tag.name != "p":
         return False
-    
+
     return checkProps(tag, cfg['ignored'])
 
 def printElements(soup, predicate, cfg):
@@ -287,7 +295,7 @@ def getSubtitle(p, cfg):
         next_p = next_p.findNext('p')
         if not next_p:
             break
-        
+
         if isArticleSubtitle(next_p, cfg):
             subtitle.append(sanitize(next_p.text))
         else:
@@ -334,7 +342,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
     for p in soup.find_all('p'):
         subtitle = None
         bibleRef = None
-        
+
         if isBookTitle(p, cfg):
             book = sanitize(p.text)
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
@@ -346,22 +354,23 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
             lastTag = ""
             lastValue = []
 
-            v = p.next_sibling           
+            v = p.next_sibling
             while v:
                 while v and v.name not in ['p', 'br']:
                     v = v.next_element
-                
+
                 if not v:
                     break
 
-                if v.name == 'p' and (isPoemTitle(v, cfg) or isArticleTitle(
-                        v, cfg) or isBookTitle(v, cfg)
+                if v.name == 'p' and (isPoemTitle(v, cfg) or isArticleTitle(v, cfg) or isBookTitle(v, cfg)
                                       or isVolumeTitle(v, cfg)):
                     break
                 elif v.name == 'p' and isArticleSubtitle(v, cfg):
                     pass
                 elif v.name == 'p' and isArticleBibleRef(v, cfg):
                     bibleRef = v
+                elif v.name == 'p' and isArticleAuthor(v, cfg):
+                    author = v.text
                 elif v.name == 'p' and isIgnored(v, cfg):
                     pass
                 elif v.name == 'p':

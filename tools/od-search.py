@@ -8,6 +8,7 @@ import logging
 PARSER_ = argparse.ArgumentParser(description="OD content suggester.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
+TEST_HOST = "https://testapi.comori-od.ro"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
@@ -20,6 +21,7 @@ def parseArgs():
                          default="od",
                          help="Index name")
     PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
+    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Query test host")
     PARSER_.add_argument("-f",
                          "--fields",
                          action="store",
@@ -84,6 +86,8 @@ def main():
 
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
+    elif args.test_host:
+        COMORI_OD_API_HOST = TEST_HOST
 
     search(args.idx_name, args.query, args.fields)
 

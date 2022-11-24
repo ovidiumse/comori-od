@@ -24,7 +24,7 @@ ${TOOLS_DIR}/od-extract.py \
     -e ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.json
 
 echo "Post-processing Trifa - Spre Canaan..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.json
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_spre_canaan/trifa_spre_canaan.json $@
 
 echo "Removing existing Trifa - Spre Canaan using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Spre Canaan" $@

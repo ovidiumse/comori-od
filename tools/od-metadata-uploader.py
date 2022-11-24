@@ -10,6 +10,7 @@ from getpass import getpass
 PARSER_ = argparse.ArgumentParser(description="OD metadata uploader.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
+TEST_HOST = "https://testapi.comori-od.ro"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
@@ -32,6 +33,7 @@ def parseArgs():
                          "--external-host",
                          action="store_true",
                          help="Upload to external host")
+    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -58,6 +60,8 @@ def main():
 
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
+    elif args.test_host:
+        COMORI_OD_API_HOST = TEST_HOST
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
