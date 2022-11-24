@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "SERVER_API_URL=http://localhost:9000/ CLIENT_API_URL=http://localhost:9000/ BASE_URL=http://localhost/ INDEX_NAME=od nuxt-ts",
-    "build_dev": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=http://localhost:9000/ BASE_URL=http://localhost/ INDEX_NAME=od nuxt-ts build",
-    "build_prod": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=https://api.comori-od.ro/ BASE_URL=http://comori-od.ro/ INDEX_NAME=odbeta nuxt-ts build",
+    "dev_build": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=http://localhost:9000/ BASE_URL=http://localhost/ INDEX_NAME=od nuxt-ts build",
+    "staging_build": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=https://testapi.comori-od.ro/ BASE_URL=http://testnew.comori-od.ro/ INDEX_NAME=od nuxt-ts build",
+    "prod_build": "SERVER_API_URL=http://comori-od-restapi:9000/ CLIENT_API_URL=https://api.comori-od.ro/ BASE_URL=http://comori-od.ro/ INDEX_NAME=odbeta nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
