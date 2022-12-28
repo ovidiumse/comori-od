@@ -51,9 +51,10 @@ services:
     ports:
       - 9200:9200
     restart: unless-stopped
-  
+
   comori-od-mongo:
-    build: ../comori-od-mongo
+    build: 
+      context: ../comori-od-mongo
     container_name: comori-od-mongo
     environment: 
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
@@ -61,7 +62,7 @@ services:
     volumes:
       - mongo_data:/data/db
     ports:
-      - 27017:27017
+      - 27018:27018
     command: ['--auth']
     restart: unless-stopped
   

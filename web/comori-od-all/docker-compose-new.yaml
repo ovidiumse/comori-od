@@ -10,14 +10,48 @@ services:
     expose:
       - 80
     environment:
-      - VIRTUAL_HOST=comori-od.ro,www.comori-od.ro
+      - VIRTUAL_HOST=new.comori-od.ro,test.comori-od.ro
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_HOST=new.comori-od.ro,test.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     networks:
       - proxy
     depends_on:
       - comori-od-restapi
+    restart: unless-stopped
+
+  comori-od-static-nuxt:
+    build: 
+      context: ../comori-od-static-nuxt
+      args:
+        - buildtype=prod_build
+        - NODE_OPTIONS="--openssl-legacy-provider"
+    container_name: comori-od-static-nuxt
+    expose:
+      - 3001
+    environment:
+      - VIRTUAL_HOST=newnew.comori-od.ro,testnew.comori-od.ro
+      - VIRTUAL_PORT=3001
+      - LETSENCRYPT_HOST=newnew.comori-od.ro,testnew.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+    networks:
+      - proxy
+    depends_on:
+      - comori-od-restapi
+    restart: unless-stopped
+
+  comori-od-meilisearch:
+    build:
+      context: ../comori-od-meilisearch
+    container_name: comori-od-meilisearch
+    environment:
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}    
+    volumes:
+      - meili_data:/meili_data
+    expose:
+      - 7700
+    networks:
+      - proxy
     restart: unless-stopped
 
   comori-od-es:
@@ -55,9 +89,9 @@ services:
         - ES_VERSION=${ES_VERSION}
     container_name: comori-od-kibana
     environment:
-      - VIRTUAL_HOST=kibana.comori-od.ro
+      - VIRTUAL_HOST=newkibana.comori-od.ro,testkibana.comori-od.ro
       - VIRTUAL_PORT=5601
-      - LETSENCRYPT_HOST=kibana.comori-od.ro
+      - LETSENCRYPT_HOST=newkibana.comori-od.ro,testkibana.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - KIBANA_USER=${KIBANA_USER}
       - KIBANA_PASSWORD=${KIBANA_PASSWORD}
@@ -159,9 +193,9 @@ services:
       - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
       - ME_CONFIG_BASICAUTH_USERNAME=${MONGO_ADMIN_USERNAME}
       - ME_CONFIG_BASICAUTH_PASSWORD=${MONGO_ADMIN_PASSWORD}
-      - VIRTUAL_HOST=mongo.comori-od.ro
+      - VIRTUAL_HOST=newmongo.comori-od.ro,testmongo.comori-od.ro
       - VIRTUAL_PORT=8081
-      - LETSENCRYPT_HOST=mongo.comori-od.ro
+      - LETSENCRYPT_HOST=newmongo.comori-od.ro,testmongo.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     expose:
       - 8081
@@ -186,9 +220,9 @@ services:
     build: ../comori-od-jupyter
     container_name: comori-od-jupyter
     environment:
-      - VIRTUAL_HOST=jupyter.comori-od.ro
+      - VIRTUAL_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
       - VIRTUAL_PORT=8088
-      - LETSENCRYPT_HOST=jupyter.comori-od.ro
+      - LETSENCRYPT_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
       - ELASTIC_USER=${ELASTIC_USER}
@@ -213,9 +247,9 @@ services:
       - 9000
     environment:
       - GEVENT_RESOLVER=ares
-      - VIRTUAL_HOST=api.comori-od.ro
+      - VIRTUAL_HOST=newapi.comori-od.ro,testapi.comori-od.ro
       - VIRTUAL_PORT=9000
-      - LETSENCRYPT_HOST=api.comori-od.ro
+      - LETSENCRYPT_HOST=newapi.comori-od.ro,testapi.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - API_TOTP_KEY=${API_TOTP_KEY}
       - ELASTIC_USER=${ELASTIC_USER}
@@ -224,6 +258,7 @@ services:
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
       - MOBILE_APP_PKEY=${MOBILE_APP_PKEY}
       - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
     volumes:
       - /var/log/comori-od-restapi:/var/log/comori-od-restapi
     depends_on:
@@ -239,15 +274,77 @@ services:
     expose:
       - 9002
     environment:
-      - VIRTUAL_HOST=bible-api.comori-od.ro
+      - VIRTUAL_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
       - VIRTUAL_PORT=9002
-      - LETSENCRYPT_HOST=bible-api.comori-od.ro
+      - LETSENCRYPT_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     networks:
       - proxy
     restart: unless-stopped
 
+  grafana:
+    build:
+      context: ../grafana
+    container_name: grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
+    network_mode: host
+    volumes:
+      - grafana_data:/var/lib/grafana
+    restart: unless-stopped
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    restart: unless-stopped
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.rootfs=/rootfs'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+    expose: 
+      - 9100
+    networks:
+      - monitoring
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor
+    container_name: cadvisor
+    expose:
+      - 8080
+    privileged: true
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    command: 
+      - '--housekeeping_interval=15s'
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  prometheus:
+    build:
+      context: ../prometheus
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    networks:
+      - monitoring
+    restart: unless-stopped
+    depends_on:
+      - node-exporter
+      - cadvisor
+
 volumes:
+  meili_data:
+    driver: local
   es_data:
     driver: local
   es_config: 
@@ -264,8 +361,12 @@ volumes:
     driver: local
   jupyter_data:
     driver: local
+  grafana_data:
+    driver: local
 
 networks:
   proxy:
     name: nginx-proxy
+  monitoring:
+
 

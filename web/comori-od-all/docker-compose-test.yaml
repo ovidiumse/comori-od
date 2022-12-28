@@ -40,6 +40,32 @@ services:
       - comori-od-restapi
     restart: unless-stopped
 
+  comori-od-kibana:
+    build: 
+      context: ../comori-od-kibana
+      args:
+        - ES_VERSION=${ES_VERSION}
+    container_name: comori-od-kibana
+    environment:
+      - VIRTUAL_HOST=testkibana.comori-od.ro
+      - VIRTUAL_PORT=5601
+      - LETSENCRYPT_HOST=testkibana.comori-od.ro
+      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+      - KIBANA_USER=${KIBANA_USER}
+      - KIBANA_PASSWORD=${KIBANA_PASSWORD}
+      - ELASTIC_USER=${ELASTIC_USER}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    volumes:
+      - kib_config:/usr/share/kibana/config
+      - kib_logs:/usr/share/kibana/logs
+    expose: 
+      - 5601
+    networks:
+      - proxy
+    depends_on:
+      - comori-od-es
+    restart: unless-stopped
+
   comori-od-es:
     build: 
       context: ../comori-od-es
@@ -67,7 +93,7 @@ services:
     networks:
       - proxy
     restart: unless-stopped
-
+  
   comori-od-mongo:
     build: ../comori-od-mongo
     container_name: comori-od-mongo
@@ -161,6 +187,7 @@ services:
       - /var/log/comori-od-restapi:/var/log/comori-od-restapi
     depends_on:
       - comori-od-es
+      - comori-od-mongo
     networks:
       - proxy
     restart: unless-stopped
@@ -188,6 +215,10 @@ volumes:
     driver: local
   es_hunspell:
     driver: local
+  kib_config:
+    driver: local
+  kib_logs:
+    driver: local
   mongo_data:
     driver: local
   jupyter_data:
@@ -195,5 +226,4 @@ volumes:
     
 networks:
   proxy:
-    external:
-      name: nginx-proxy
+    name: nginx-proxy
