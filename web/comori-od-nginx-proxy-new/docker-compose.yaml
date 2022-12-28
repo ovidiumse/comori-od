@@ -6,8 +6,7 @@ services:
     container_name: nginx-proxy
     ports:
       - "80:80"
-    environment:
-      - HTTPS_METHOD=noredirect
+      - "443:443"
     volumes:
       - conf:/etc/nginx/conf.d
       - vhost:/etc/nginx/vhost.d
@@ -18,6 +17,16 @@ services:
       - /var/log/nginx:/var/log/nginx
     networks:
       - proxy
+    restart: always
+
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: nginx-proxy-le
+    volumes_from:
+      - nginx-proxy
+    volumes:
+      - certs:/etc/nginx/certs:rw
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     restart: always
 
 volumes:
