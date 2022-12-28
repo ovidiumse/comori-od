@@ -11,6 +11,7 @@ PARSER_ = argparse.ArgumentParser(description="OD metadata uploader.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
 TEST_HOST = "https://testapi.comori-od.ro"
+NEW_HOST = "https://newapi.comori-od.ro"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
@@ -34,13 +35,15 @@ def parseArgs():
                          action="store_true",
                          help="Upload to external host")
     PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
+    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Upload to new host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
                          action="store_true",
                          help="Verbose logging")
 
-    return PARSER_.parse_args()
+    args, _ = PARSER_.parse_known_args()
+    return args
 
 def upload(index_name, data, endpoint):
     response = requests.post(f"{COMORI_OD_API_HOST}/{index_name}/{endpoint}",
@@ -49,6 +52,23 @@ def upload(index_name, data, endpoint):
     response.raise_for_status()
     return response.json()
 
+def expand_links(index_name, data):
+    if isinstance(data, dict):
+        for key, entry in data.items():
+            data[key] = expand_links(index_name, entry)
+        return data
+    elif isinstance(data, list):
+        entries = []
+        for entry in data:
+            entries.append(expand_links(index_name, entry))
+        return entries
+    elif isinstance(data, str):
+        if data.startswith('/'):
+            return f"{COMORI_OD_API_HOST}/{index_name}{data}"
+        else:
+            return data
+    else:
+        return data
 
 def main():
     args = parseArgs()
@@ -62,6 +82,8 @@ def main():
         COMORI_OD_API_HOST = EXTERNAL_HOST
     elif args.test_host:
         COMORI_OD_API_HOST = TEST_HOST
+    elif args.new_host:
+        COMORI_OD_API_HOST = NEW_HOST
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
@@ -82,6 +104,7 @@ def main():
     if args.yaml_filepath:
         with open(args.yaml_filepath, 'r') as yaml_file:
             data = yaml.full_load(yaml_file)
+            data = expand_links(args.idx_name, data)
             response = upload(args.idx_name, data, args.endpoint)
             logging.info(f"Response: {json.dumps(response, indent=2)}")
 

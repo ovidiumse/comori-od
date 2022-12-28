@@ -10,10 +10,17 @@ from datetime import datetime
 from prettytable import PrettyTable
 
 BIBLE_API_LOCAL = "http://localhost:9002"
-BIBLE_API_TEST  = "http://testbible-api.comori-od.ro"
-BIBLE_API_EXTERNAL = "http://bibleapi.comori-od.ro"
+BIBLE_API_TEST  = "https://testbible-api.comori-od.ro"
+BIBLE_API_NEW = "https://newbible-api.comori-od.ro"
+BIBLE_API_EXTERNAL = "https://bible-api.comori-od.ro"
+
+COMORI_API_LOCAL = "http://localhost:9000"
+COMORI_API_TEST = "https://testapi.comori-od.ro"
+COMORI_API_NEW = "https://newapi.comori-od.ro"
+COMORI_API_EXTERNAL = "https://api.comori-od.ro"
 
 BIBLE = None
+COMORI_API = None
 
 PARSER_ = argparse.ArgumentParser(description="OD content post-processing.")
 REPLACEMENTS_ = {}
@@ -34,15 +41,16 @@ def parseArgs():
     PARSER_.add_argument("-e",
                          "--external-host",
                          action="store_true",
-                         help="Use external Bible API host")
-    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Use test Bible API host")
+                         help="Use external API host")
+    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Use test API host")
+    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Use the new API host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
                          action="store_true",
                          help="Verbose logging")
 
-    args, unknown = PARSER_.parse_known_args()
+    args, _ = PARSER_.parse_known_args()
     if not args.output:
         args.output = "{}_processed.json".format(os.path.splitext(args.input)[0])
 
@@ -215,10 +223,23 @@ def post_process(index, val, field, isFirstBlock, isLastBlock, args):
     return val
 
 
-def post_process_articles(articles, args):
+def post_process_articles(articles, authors_by_name, args):
     for article in articles:
         article['title'] = post_process(0, article['title'], 'title', True, True, args)
         article['author'] = post_process(0, article['author'], 'author', True, True, args)
+
+        author_data = authors_by_name.get(article['author'])
+        if not author_data:
+            logging.info(f"Could not find author info for {article['author']} in {json.dumps(authors_by_name, indent=2)}")
+
+        url = author_data.get('photo-url-lg') if author_data else None
+        if url:
+            article['author-photo-url-lg'] = url
+
+        url = author_data.get('photo-url-sm') if author_data else None
+        if url:
+            article['author-photo-url-sm'] = url
+
         article['book'] = post_process(0, article['book'], 'book', True, True, args)
         article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True, args)
         if 'volume' in article:
@@ -575,6 +596,17 @@ def resolve_bible_refs(articles, bible):
     articles = resolver.resolve_bible_refs(articles)
     return articles, resolver.resolvedRefCnt, resolver.errors
 
+def get_authors():
+    response = requests.get(f"{COMORI_API}/od/authors")
+    response.raise_for_status()
+    data = response.json()
+
+    authors_by_name = {}
+    for author_bucket in data["aggregations"]["authors"]["buckets"]:
+        authors_by_name[author_bucket["key"]] = author_bucket
+
+    return authors_by_name
+
 def main():
     args = parseArgs()
 
@@ -582,12 +614,23 @@ def main():
     logging.getLogger().setLevel(logging.INFO)
 
     global BIBLE
+    global COMORI_API
     if args.external_host:
         BIBLE = Bible(BIBLE_API_EXTERNAL)
+        COMORI_API = COMORI_API_EXTERNAL
     elif args.test_host:
         BIBLE = Bible(BIBLE_API_TEST)
+        COMORI_API = COMORI_API_TEST
+    elif args.new_host:
+        BIBLE = Bible(BIBLE_API_NEW)
+        COMORI_API = COMORI_API_NEW
     else:
         BIBLE = Bible(BIBLE_API_LOCAL)
+        COMORI_API = COMORI_API_LOCAL
+
+    logging.info(f"Loading authors from {COMORI_API}...")
+    authors_by_name = get_authors()
+    logging.info(f"Found authors: {', '.join([key for key in authors_by_name])}")
 
     start = datetime.now()
     with open(args.input, 'r', encoding='utf-8') as f:
@@ -596,7 +639,7 @@ def main():
 
     print("Loaded {} articles in {}.".format(len(articles), loading_finish - start))
 
-    articles = post_process_articles(articles, args)
+    articles = post_process_articles(articles, authors_by_name, args)
     processing_finish = datetime.now()
     print("Processed {} articles in {}.".format(len(articles), processing_finish - loading_finish))
 

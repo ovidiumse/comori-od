@@ -3,8 +3,27 @@
 CWD=`realpath $(dirname $0)`
 
 DATA_DIR=${CWD}/../../data
+IMG_DIR=${CWD}/../../img
 TOOLS_DIR=${CWD}/../
 NGINX_DATA_DIR=${CWD}/../../web/comori-od-nginx-proxy/data
+
+ARGS=$@
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -i|--index)
+      IDX_NAME="$2"
+      ARGS+=("$1", "$2")
+      shift # past argument
+      shift # past value
+      ;;
+    *)
+      ARGS+=("$1") # save positional arg
+      shift # past argument
+      ;;
+  esac
+done
+
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -12,38 +31,41 @@ if [[ -z "${API_TOTP_KEY}" ]]; then
 fi
 
 # Metadata
-${CWD}/load_metadata.sh $@
+${CWD}/load_metadata.sh ${ARGS}
 
 rm -f ${DATA_DIR}/uploaded/*
 
 # Cugetari Nemuritoare
-${CWD}/load_cugetari_total.sh $@
+${CWD}/load_cugetari_total.sh ${ARGS}
 
 # Istoria unei Jertfe
-${CWD}/load_istorii.sh $@
+${CWD}/load_istorii.sh ${ARGS}
 
 # Hristos - Marturia mea
-${CWD}/load_marturii.sh $@
+${CWD}/load_marturii.sh ${ARGS}
 
 # Meditatii la Evanghelia dupa Ioan
-${CWD}/load_ioan.sh $@
+${CWD}/load_ioan.sh ${ARGS}
 
 # Cantari Nemuritoare
-${CWD}/load_cantari.sh $@
+${CWD}/load_cantari.sh ${ARGS}
 
 # Hristos - Puterea Apostoliei
-${CWD}/load_hristos_puterea.sh $@
+${CWD}/load_hristos_puterea.sh ${ARGS}
 
 # Spre Canaan
-${CWD}/load_trifa_spre_canaan.sh $@
+${CWD}/load_trifa_spre_canaan.sh ${ARGS}
 
 # Talcuiri culese din ziare
-${CWD}/load_trifa_talcuiri_culese.sh $@
+${CWD}/load_trifa_talcuiri_culese.sh ${ARGS}
 
 # Ce este Oastea Domnului
-${CWD}/load_trifa_ce_este_oastea_domnului.sh $@
+${CWD}/load_trifa_ce_este_oastea_domnului.sh ${ARGS}
 
-${CWD}/../test_all.sh $@
+# Strangeti faramiturile
+${CWD}/load_strangeti_faramiturile.sh ${ARGS}
+
+${CWD}/load_static.sh ${ARGS}
+
+${CWD}/../test_all.sh ${ARGS}
 ${CWD}/../prepare_diff.sh
-
-${TOOLS_DIR}/od-static-upload.py --input-dir ${DATA_DIR}/uploaded $@

@@ -23,6 +23,7 @@ def parseArgs():
                          required=True,
                          help="Results folder")
     PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
+    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Query test host")
 
     return PARSER_.parse_args()
 
@@ -46,7 +47,7 @@ def extract_occurrences(highlights):
 
     return set(occurrences)
 
-def run_searches(outdir, external_host):
+def run_searches(outdir, external_host, test_host):
     queries = [
         "Dumnezeu", "Ajutor", "Iertare", "Smerenie", "Indurare", "Suferinta",
         "Vindecare", "Lumina", "Minune", "Jertfa", "Adevar", "Alinare",
@@ -98,7 +99,9 @@ def run_searches(outdir, external_host):
         args = ["./od-search.py", q]
 
         if external_host:
-            args.append("-e")
+            args.append("--external-host")
+        elif test_host:
+            args.append("--test-host")
 
         args += [
             "-f", "hits", "score", "volume", "book", "title", "type", "author",
@@ -152,7 +155,7 @@ def run_searches(outdir, external_host):
 def main():
     args = parseArgs()
 
-    run_searches(args.outdir, args.external_host)
+    run_searches(args.outdir, args.external_host, args.test_host)
 
 if __name__ == "__main__":
     main()

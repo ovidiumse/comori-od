@@ -71,7 +71,8 @@ def parseArgs():
                          action="store",
                          help="Extract filename")
 
-    return PARSER_.parse_args()
+    args, _ = PARSER_.parse_known_args()
+    return args
 
 
 def hasStyleAttribute(tag, attr, value):

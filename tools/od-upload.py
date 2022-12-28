@@ -14,6 +14,7 @@ PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
 TEST_HOST = "https://testapi.comori-od.ro"
+NEW_HOST = "https://newapi.comori-od.ro"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
@@ -54,6 +55,8 @@ def parseArgs():
                          action="store_true",
                          help="Upload to external host")
     PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
+    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Upload to the new host")
+    PARSER_.add_argument("-m", "--meilisearch", action="store_true", help="Upload to meilisearch")
     PARSER_.add_argument("-o", "--output-dir", dest="output_dir", action="store", help="JSON output dir", default=None)
     PARSER_.add_argument("-v",
                          "--verbose",
@@ -61,7 +64,8 @@ def parseArgs():
                          action="store_true",
                          help="Verbose logging")
 
-    return PARSER_.parse_args()
+    args, _ = PARSER_.parse_known_args()
+    return args
 
 
 def post(uri, data):
@@ -279,9 +283,19 @@ def create_index(idx_name):
 
     post(idx_name, {'settings': settings, 'mappings': mappings})
 
+def upload(idx_name, bulk, use_meilisearch=False):
+    url = f"{idx_name}/articles"
+    if use_meilisearch:
+        url += "?meilisearch=true"
 
-def index_all(idx_name, date_added, articles):
-    failed = 0
+    response = post(url, bulk)
+    if response['total'] != response['indexed']:
+        failed = response['total'] - response['indexed']
+        logging.warning("{} articles failed to index!".format(failed))
+
+    return response['indexed']
+
+def index_all(idx_name, date_added, articles, use_meilisearch=False):
     indexed = 0
 
     for idx, article in enumerate(articles):
@@ -296,11 +310,7 @@ def index_all(idx_name, date_added, articles):
         article['date_added'] = date_added
 
     for bulk in chunk(articles, 10):
-        response = post("{}/articles".format(idx_name), bulk)
-        if response['total'] != response['indexed']:
-            failed += response['total'] - response['indexed']
-            logging.warning("So far {} articles failed to index!".format(failed))
-        indexed += response['indexed']
+        indexed += upload(idx_name, bulk, use_meilisearch)
         logging.info("{} / {} indexed!".format(indexed, len(articles)))
 
 
@@ -323,6 +333,8 @@ def main():
         COMORI_OD_API_HOST = EXTERNAL_HOST
     elif args.test_host:
         COMORI_OD_API_HOST = TEST_HOST
+    elif args.new_host:
+        COMORI_OD_API_HOST = NEW_HOST
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
@@ -358,7 +370,7 @@ def main():
             if not args.date_added:
                 raise Exception("Date-added not provided")
 
-            index_all(args.idx_name, args.date_added, articles)
+            index_all(args.idx_name, args.date_added, articles, use_meilisearch=args.meilisearch)
             logging.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
                                                                      COMORI_OD_API_HOST))

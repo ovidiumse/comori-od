@@ -34,13 +34,13 @@ ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_7_fixed.htm -c ${CFG_DIR}/io
 wait
 
 echo "Post-processing Meditatii la Ev. dupa Ioan..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_1.json &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_2.json &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_3.json &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_4.json &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_5.json &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_6.json &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_7.json &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_1.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_2.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_3.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_4.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_5.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_6.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_7.json $@ &
 
 wait
 

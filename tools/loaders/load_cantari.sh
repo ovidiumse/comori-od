@@ -43,7 +43,7 @@ echo "Removing existing Cântări Nemuritoare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Cântări Nemuritoare" $@
 
 echo "Uploading Cantari Nemuritoare using '$@' flags..."
-${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_1_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_1_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded 
 ${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_2_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
 ${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_3_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
 ${TOOLS_DIR}/od-upload.py -i ${DATA_DIR}/cantari/cantari_4_processed.json $@ --date-added ${DATE_ADDED} --output-dir ${DATA_DIR}/uploaded
