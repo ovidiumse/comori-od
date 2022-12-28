@@ -128,6 +128,10 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
         resp.body = json.dumps({"UpdatedCnt": updatedCnt})
 
 class TrendingArticlesHandler(MongoClient, MobileAppService):
+    def __init__(self, authorsByName={}):
+        super(TrendingArticlesHandler, self).__init__()
+        self.authorsByName = authorsByName
+
     def removeInternalFields(self, item):
         del item['_id']
         del item['uid']
@@ -169,6 +173,13 @@ class TrendingArticlesHandler(MongoClient, MobileAppService):
 
         trendingArticles = [stats for _, stats in readStatsById.items() if stats['reach'] > 1]
         trendingArticles = sorted(trendingArticles, key=lambda x: x['score'], reverse=True)[:limit]
+
+        for article in trendingArticles:
+            if article['author'] in self.authorsByName:
+                author_info = self.authorsByName[article['author']]
+                for k, v in author_info.items():
+                    if 'url' in k:
+                        article[f'author-{k}'] = v
 
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(trendingArticles)

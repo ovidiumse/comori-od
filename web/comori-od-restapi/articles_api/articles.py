@@ -3,27 +3,25 @@ import falcon
 import logging
 import urllib
 import simplejson as json
+import meilisearch
 from elasticsearch import helpers
 from datetime import datetime, timezone
 from api_utils import *
 
 LOGGER_ = logging.getLogger(__name__)
-ES = None
 
 class ArticlesHandler(object):
-    def __init__(self, es):
+    def __init__(self, es, msearch: meilisearch.Client):
         self.doc_cnt = None
-
-        global ES
-        if ES is None:
-            ES = es
+        self._es = es
+        self._msearch = msearch
 
     @timeit("Indexing article", __name__)
     def index(self, idx_name, article):
         try:
             LOGGER_.info(f"Indexing article {article['title']} from {article['book']} into {idx_name}...")
 
-            ES.index(index=idx_name, body=json.dumps(article))
+            self._es.index(index=idx_name, body=json.dumps(article))
             return True
         except Exception as ex:
             LOGGER_.error("Indexing {} failed!".format(article), exc_info=True)
@@ -82,10 +80,10 @@ class ArticlesHandler(object):
 
         if include_aggs:
             query_body['aggs'] = buildQueryAggregations(include_unmatched)
-    
+
         # print("Query: {}".format(json.dumps(query_body, indent=2)))
 
-        resp = ES.search(index=idx_name, body=query_body, timeout="1m")
+        resp = self._es.search(index=idx_name, body=query_body, timeout="1m")
         return resp.body
 
     @timeit("Getting highlighted article by id", __name__)
@@ -132,7 +130,7 @@ class ArticlesHandler(object):
         removeHighlightTags = lambda text : re.sub(r'\<\/?em.*?\>', '', text)
 
         get_response = self.getById(idx_name, req)
-        search_response = ES.search(index=idx_name, body=query_body, timeout="1m")
+        search_response = self._es.search(index=idx_name, body=query_body, timeout="1m")
         if search_response["hits"]["total"]["value"] != 1:
             return get_response
 
@@ -172,7 +170,7 @@ class ArticlesHandler(object):
     def getById(self, idx_name, req):
         LOGGER_.info(f"Getting article from {idx_name} with request {json.dumps(req.params, indent=2)}")
 
-        resp = ES.get(index=idx_name, id=req.params['id'])
+        resp = self._es.get(index=idx_name, id=req.params['id'])
         return resp.body
 
     @timeit("Getting article", __name__)
@@ -190,7 +188,7 @@ class ArticlesHandler(object):
             if not self.doc_cnt:
                 self.doc_cnt = {}
 
-            resp = ES.search(index=idx_name,
+            resp = self._es.search(index=idx_name,
                          body={
                              'query': {
                                  'match_all': {}
@@ -199,9 +197,9 @@ class ArticlesHandler(object):
                              'size': 1,
                              'from': 0
                          })
-            
+
             self.doc_cnt[idx_name] = resp["hits"]["total"]["value"]
-        
+
         return self.doc_cnt[idx_name]
 
     def getDaysSinceEpoch(self):
@@ -220,7 +218,7 @@ class ArticlesHandler(object):
         limit = int(req.params['limit']) if 'limit' in req.params else 1
         offset = int(req.params['offset']) if 'offset' in req.params else daysSinceEpoch % docCount
 
-        resp = ES.search(index=idx_name,
+        resp = self._es.search(index=idx_name,
                          body={
                              'query': {
                                  'match_all': {}
@@ -253,22 +251,41 @@ class ArticlesHandler(object):
     @req_handler("Handling articles POST", __name__)
     def on_post(self, req, resp, idx_name):
         articles = json.loads(req.stream.read())
+        use_meilisearch = 'meilisearch' in req.params and req.params['meilisearch'].lower() == 'true'
+
         indexed = 0
 
         LOGGER_.info(f"Indexing {len(articles)} articles into {idx_name}...")
 
         for a in articles:
             a['_index'] = idx_name
-        indexed, _ = helpers.bulk(ES, articles, stats_only=True)
+
+        if use_meilisearch:
+            idx = self._msearch.index(idx_name)
+            idx.update_settings({
+                "searchableAttributes": ["body", "title"],
+            })
+
+            task = idx.add_documents(articles)
+            task = self._msearch.get_task(task.task_uid)
+
+            logging.info(f"Waiting for task {task}...")
+            while task['status'] not in ["failed", "canceled", "succeeded"]:
+                time.sleep(0.01)
+                task = self._msearch.get_task(task['uid'])
+
+            logging.info(f"Task done: {task}")
+            indexed = len(articles)
+        else:
+            indexed, _ = helpers.bulk(self._es, articles, stats_only=True)
+
         resp.status = falcon.HTTP_200
         resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
 
 
 class SearchTermSuggester(object):
     def __init__(self, es):
-        global ES
-        if ES is None:
-            ES = es
+        self._es = es
 
     @req_handler("Getting search suggestions", __name__)
     def on_get(self, req, resp, idx_name):
@@ -276,7 +293,7 @@ class SearchTermSuggester(object):
             f"Getting search suggestions from {idx_name} with req {json.dumps(req.params, indent=2)}"
         )
 
-        results = ES.search(index=idx_name,
+        results = self._es.search(index=idx_name,
                             body={
                                 'suggest': {
                                     'text': req.params['q'],
@@ -318,15 +335,13 @@ class SearchTermSuggester(object):
 
 class SimilarArticlesHandler(object):
     def __init__(self, es):
-        global ES
-        if ES is None:
-            ES = es
+        self._es = es
 
     @req_handler("Getting similar articles", __name__)
     def on_get(self, req, resp, idx_name):
         LOGGER_.info(f"Getting similar documents from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
-        results = ES.search(index=idx_name,
+        results = self._es.search(index=idx_name,
                             body={
                                 'query': {
                                     'more_like_this': {

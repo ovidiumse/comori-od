@@ -13,22 +13,44 @@ class AuthorsHandler(MongoClient, FieldAggregator):
     def __init__(self, es):
         FieldAggregator.__init__(self, es, 'author', ['volume', 'type', 'book'])
 
+        self._authors_by_name = None
+
+    def getAuthorsByName(self, idx_name):
+        if self._authors_by_name:
+            return self._authors_by_name
+        
+        col = self.getCollection(idx_name, 'authors')
+        self._authors_by_name = {}
+        authors = [self.removeInternalFields(a) for a in col.find({})]
+        for a in authors:
+            self._authors_by_name[a['name']] = a
+
+        return self._authors_by_name
+
     @req_handler("Handling authors GET", __name__)
     def on_get(self, req, resp, idx_name):
         results = self.getValues(idx_name, req)
         
-        col = self.getCollection(idx_name, 'authors')
-        authorsByName = {}
-        authors = [self.removeInternalFields(a) for a in col.find({})]
-        for a in authors:
-            authorsByName[a['name']] = a
+        authors_by_name = self.getAuthorsByName(idx_name)
 
         buckets = results['aggregations']['authors']['buckets']
-        for b in buckets:
-            if b['key'] in authorsByName:
-                a = authorsByName[b['key']]
-                for k, v in a.items():
-                    b[k] = v
+
+        authors_added = False
+        for name, data in authors_by_name.items():
+            found = False
+            for bucket in buckets:
+                if bucket['key'] == name:
+                    found = True
+                    for k, v in data.items():
+                        bucket[k] = v
+            if not found:
+                authors_added = True
+                if 'key' not in data:
+                    data['key'] = name
+                buckets.append(data)
+
+        if authors_added:
+            results['aggregations']['authors']['buckets'] = buckets
 
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(results)

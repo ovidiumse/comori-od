@@ -10,11 +10,13 @@ ES = None
 LOGGER_ = logging.getLogger(__name__)
 
 class RecommendedHandler(MongoClient, MobileAppService):
-    def __init__(self,  es):
+    def __init__(self,  es, authorsByName={}):
         MobileAppService.__init__(self)
         
         global ES
         ES = es
+
+        self.authorsByName = authorsByName
 
     def removeInternalFields(self, item):
         del item['_id']
@@ -76,6 +78,12 @@ class RecommendedHandler(MongoClient, MobileAppService):
             source = hit['_source']
             source['_id'] = hit['_id']
             source['_score'] = hit['_score']
+            if source['author'] in self.authorsByName:
+                author_info = self.authorsByName[source['author']]
+                for k, v in author_info.items():
+                    if 'url' in k:
+                        source[f'author-{k}'] = v
+
             sources.append(source)
 
         sources = sources[:limit]

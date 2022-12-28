@@ -29,7 +29,7 @@ from users_api import UsersHandler
 from api_utils import timeit
 
 LOGGER_ = logging.getLogger(__name__)
-ES = None
+DEFAULT_IDX_NAME = 'od'
 UTC = pytz.timezone('UTC')
 
 class HandleCORS(object):
@@ -94,8 +94,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         if dotenv_filePath:
             load_dotenv(dotenv_filePath)
 
-        global ES
-        ES = Elasticsearch(cfg['es']['url'],
+        es = Elasticsearch(cfg['es']['url'],
                            http_auth=(os.getenv("ELASTIC_USER", "elastic"), os.getenv("ELASTIC_PASSWORD", "")),
                            timeout=30)
 
@@ -105,25 +104,28 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
         app = falcon.App(middleware=[HandleCORS(), authMiddleware])
 
-        index = IndexHandler(ES)
-        articles = ArticlesHandler(ES)
-        content = ContentHandler(ES)
-        authors = AuthorsHandler(ES)
-        types = FieldAggregator(ES, 'type', [])
-        volumes = FieldAggregator(ES, 'volume', ['author'])
-        books = FieldAggregator(ES, 'book', ['author', 'volume'])
-        titles = TitlesHandler(ES)
-        titlesCompletion = TitlesCompletionHandler(ES)
-        searchTermSuggester = SearchTermSuggester(ES)
-        similar = SimilarArticlesHandler(ES)
+        index = IndexHandler(es)
+        articles = ArticlesHandler(es, msearch)
+        content = ContentHandler(es)
+        authors = AuthorsHandler(es)
+
+        authorsByName = authors.getAuthorsByName(DEFAULT_IDX_NAME)
+
+        types = FieldAggregator(es, 'type', [])
+        volumes = FieldAggregator(es, 'volume', ['author'], authorsByName)
+        books = FieldAggregator(es, 'book', ['author', 'volume'], authorsByName)
+        titles = TitlesHandler(es)
+        titlesCompletion = TitlesCompletionHandler(es)
+        searchTermSuggester = SearchTermSuggester(es)
+        similar = SimilarArticlesHandler(es)
         favorites = FavoritesHandler()
         markups = MarkupsHandler()
         tags = TagsHandler()
-        recommended = RecommendedHandler(ES)
+        recommended = RecommendedHandler(es, authorsByName)
         readArticles = ReadArticlesHandler()
         bulkReadArticles = BulkReadArticlesHandler()
-        tendingArticlesHandler = TrendingArticlesHandler()
-        recentlyAddedBooks = RecentlyAddedBooksHandler(ES)
+        tendingArticlesHandler = TrendingArticlesHandler(authorsByName)
+        recentlyAddedBooks = RecentlyAddedBooksHandler(es, authorsByName)
         users = UsersHandler()
 
         app.add_route('/{idx_name}', index)
