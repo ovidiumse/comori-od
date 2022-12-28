@@ -8,6 +8,7 @@ import logging
 import logging.config
 import yaml
 import pytz
+import meilisearch
 from datetime import datetime
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch
@@ -97,6 +98,8 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         es = Elasticsearch(cfg['es']['url'],
                            http_auth=(os.getenv("ELASTIC_USER", "elastic"), os.getenv("ELASTIC_PASSWORD", "")),
                            timeout=30)
+
+        msearch = meilisearch.Client(cfg['meilisearch']['url'], os.getenv("MEILI_MASTER_KEY"))
 
         LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 

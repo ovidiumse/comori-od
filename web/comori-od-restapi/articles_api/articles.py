@@ -35,6 +35,17 @@ class ArticlesHandler(object):
 
         include_aggs = 'include_aggs' in req.params
         include_unmatched = 'include_unmatched' in req.params
+        use_meilisearch = 'meilisearch' in req.params and req.params['meilisearch'] == 'true'
+
+        if use_meilisearch:
+            idx = self._msearch.index(idx_name)
+            return idx.search(query=q,
+                       opt_params={
+                           'limit': 10,
+                           'attributesToRetrieve': ['id', 'title', 'author', '_index', '_insert_idx', '_insert_ts'],
+                           # 'attributesToHighlight': ['title', 'body'],
+                           'cropLength': 100
+                       })
 
         filters = parseFilters(req)
         LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
