@@ -4,6 +4,7 @@ import logging
 import urllib
 import simplejson as json
 import meilisearch
+from cachetools import LRUCache
 from elasticsearch import helpers
 from datetime import datetime, timezone
 from api_utils import *
@@ -15,6 +16,7 @@ class ArticlesHandler(object):
         self.doc_cnt = None
         self._es = es
         self._msearch = msearch
+        self.cache_ = LRUCache(10000)
 
     @timeit("Indexing article", __name__)
     def index(self, idx_name, article):
@@ -31,7 +33,7 @@ class ArticlesHandler(object):
     def query(self, idx_name, req):
         limit = int(req.params['limit']) if 'limit' in req.params else 100
         offset = int(req.params['offset']) if 'offset' in req.params else 0
-        q = urllib.parse.unquote(req.params['q'])
+        q = urllib.parse.unquote(req.params['q']).strip()
 
         include_aggs = 'include_aggs' in req.params
         include_unmatched = 'include_unmatched' in req.params
@@ -69,11 +71,6 @@ class ArticlesHandler(object):
                         "matched_fields": ["title", "title.folded", "title.stemmed_folded", "title.folded_stemmed"],
                         'type': 'fvh'
                     },
-                    'verses.text': {
-                        "matched_fields":
-                        ["verses.text", "verses.text.folded", "verses.text.stemmed_folded", "verses.text.folded_stemmed"],
-                        'type': 'fvh'
-                    },
                     'body': {
                         "matched_fields": ["body", "body.folded", "body.stemmed_folded", "body.folded_stemmed"],
                         'type': 'fvh'
@@ -81,7 +78,7 @@ class ArticlesHandler(object):
                 },
                 "boundary_scanner": "chars",
                 "number_of_fragments": 4,
-                "fragment_size": 10000,
+                "fragment_size": 1000,
                 "order": "none"
             },
             'sort': ['_score', {'title.keyword': 'asc'}, {'book': 'asc'}],
@@ -242,22 +239,31 @@ class ArticlesHandler(object):
 
     @req_handler("Handling articles GET", __name__)
     def on_get(self, req, resp, idx_name, id=None):
-        if 'q' in req.params:
-            response = self.query(idx_name, req)
-        elif 'id' in req.params:
-            response = self.getArticle(idx_name, req)
-        elif id is not None:
-            # this is a replacement for the nginx data files
-            # for localhost testing (where nginx is not used)
-            req.params['id'] = id
-            response = self.getArticle(idx_name, req)
-            response['_source']['_id'] = response['_id']
-            response = response['_source']
+        cache_key = req.url
+        cached_response = self.cache_.get(cache_key)
+        if cached_response:
+            resp.status = falcon.HTTP_200
+            resp.body = cached_response
         else:
-            response = self.getDailyArticle(idx_name, req)
+            LOGGER_.info(f"Making articles query for {req.url}")
 
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(response)
+            if 'q' in req.params:
+                response = self.query(idx_name, req)
+            elif 'id' in req.params:
+                response = self.getArticle(idx_name, req)
+            elif id is not None:
+                # this is a replacement for the nginx data files
+                # for localhost testing (where nginx is not used)
+                req.params['id'] = id
+                response = self.getArticle(idx_name, req)
+                response['_source']['_id'] = response['_id']
+                response = response['_source']
+            else:
+                response = self.getDailyArticle(idx_name, req)
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(response)
+            self.cache_[cache_key] = resp.body
 
     @req_handler("Handling articles POST", __name__)
     def on_post(self, req, resp, idx_name):
@@ -307,7 +313,7 @@ class SearchTermSuggester(object):
         results = self._es.search(index=idx_name,
                             body={
                                 'suggest': {
-                                    'text': req.params['q'],
+                                    'text': req.params['q'].strip(),
                                     'simple_phrase': {
                                         'phrase': {
                                             'field':

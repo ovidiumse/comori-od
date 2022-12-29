@@ -16,8 +16,6 @@ RUN virtualenv -p pypy3 ve
 RUN . ve/bin/activate
 RUN pypy3 -m pip install -r requirements.txt
 
-ARG LOGGING_CFG
-
 ADD api_utils api_utils
 ADD aggregates_api aggregates_api
 ADD authors_api authors_api
@@ -37,6 +35,6 @@ ADD users_api users_api
 
 COPY comori-od-restapi.py .
 COPY cfg.yaml .
-COPY $LOGGING_CFG ./logging_cfg.yaml
+COPY logging_cfg.yaml .
 
 CMD gunicorn -b 0.0.0.0:$VIRTUAL_PORT --worker-class=gevent --worker-connections=1000 --workers=1 "comori-od-restapi:load_app('cfg.yaml')"

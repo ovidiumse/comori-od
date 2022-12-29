@@ -2,12 +2,20 @@ import logging
 import falcon
 import simplejson as json
 import math
+from collections import defaultdict
+from cachetools import LRUCache, TTLCache
 from datetime import datetime, timedelta
 from mongoclient import MongoClient
 from mobileappsvc import MobileAppService
 from api_utils import req_handler
+from authors_api import AuthorsHandler
 
 LOGGER_ = logging.getLogger(__name__)
+
+def make_cache():
+    return LRUCache(10)
+
+READ_ARTICLES_CACHE = defaultdict(make_cache)
 
 class ReadArticlesHandler(MongoClient, MobileAppService):
     def removeInternalFields(self, item):
@@ -20,24 +28,40 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
         LOGGER_.info(f"Getting read articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
 
         auth = self.authorize(req.get_header("Authorization"))
-        readArticles = [self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find({
-            'uid': self.getUserId(auth)
-        })]
 
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(readArticles)
+        user_id = self.getUserId(auth)
+        client_cache = READ_ARTICLES_CACHE.get(user_id)
+        cache_key = f"{req.url}"
+        cached_response = client_cache.get(cache_key) if client_cache else None
+        if cached_response:
+            resp.status = falcon.HTTP_200
+            resp.body = cached_response
+        else:
+            readArticles = [
+                self.removeInternalFields(read)
+                for read in self.getCollection(idx_name, 'readArticles').find({'uid': user_id})
+            ]
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(readArticles)
+            READ_ARTICLES_CACHE[user_id][cache_key] = resp.body
 
     @req_handler("Adding read article", __name__)
     def on_post(self, req, resp, idx_name):
         LOGGER_.info(f"Adding read article to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
         auth = self.authorize(req.get_header("Authorization"))
+        user_id = self.getUserId(auth)
+        if user_id in READ_ARTICLES_CACHE:
+            LOGGER_.info(f"Clearing read articles cache for uid {user_id}...")
+            READ_ARTICLES_CACHE[user_id].clear()
+
         data = json.loads(req.stream.read())
         if not isinstance(data, dict):
             raise falcon.HTTPInvalidParam("Input should be a dictionary!")
 
         data["_id"] = self.getDocumentId(auth, data['id'])
-        data['uid'] = self.getUserId(auth)
+        data['uid'] = user_id
 
         self.getCollection(idx_name, 'readArticles').insert_one(data)
 
@@ -49,6 +73,11 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
         LOGGER_.info(f"Updating read article {article_id} to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
         auth = self.authorize(req.get_header("Authorization"))
+        user_id = self.getUserId(auth)
+        if user_id in READ_ARTICLES_CACHE:
+            LOGGER_.info(f"Clearing read articles cache for uid {user_id}...")
+            READ_ARTICLES_CACHE[user_id].clear()
+
         data = json.loads(req.stream.read())
         if not isinstance(data, dict):
             raise falcon.HTTPInvalidParam("Input should be a dictionary!")
@@ -80,6 +109,11 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
         LOGGER_.info(f"Adding read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
         auth = self.authorize(req.get_header("Authorization"))
+        user_id = self.getUserId(auth)
+        if user_id in READ_ARTICLES_CACHE:
+            LOGGER_.info(f"Clearing read articles cache for uid {user_id}...")
+            READ_ARTICLES_CACHE[user_id].clear()
+
         readArticles = json.loads(req.stream.read())
         if not isinstance(readArticles, list):
             raise falcon.HTTPInvalidParam("Input should be an array!")
@@ -89,7 +123,7 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
 
         for data in readArticles:
             data["_id"] = self.getDocumentId(auth, data['id'])
-            data['uid'] = self.getUserId(auth)
+            data['uid'] = user_id
 
         result = self.getCollection(idx_name, 'readArticles').insert_many(readArticles)
         if len(result.inserted_ids) == 0:
@@ -103,6 +137,11 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
         LOGGER_.info(f"Updating read articles in bulk to {idx_name} with req {json.dumps(req.params, indent=2)}")
 
         auth = self.authorize(req.get_header("Authorization"))
+        user_id = self.getUserId(auth)
+        if user_id in READ_ARTICLES_CACHE:
+            LOGGER_.info(f"Clearing read articles cache for uid {user_id}...")
+            READ_ARTICLES_CACHE[user_id].clear()
+
         readArticles = json.loads(req.stream.read())
         if not isinstance(readArticles, list):
             raise falcon.HTTPInvalidParam("Input should be an array of objects!")
@@ -116,7 +155,7 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
             del read['id']
             result = self.getCollection(idx_name, 'readArticles').update_one({
                 '_id': _id,
-                'uid': self.getUserId(auth)},
+                'uid': user_id},
                 {'$set': read})
 
             updatedCnt += result.modified_count
@@ -128,9 +167,11 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
         resp.body = json.dumps({"UpdatedCnt": updatedCnt})
 
 class TrendingArticlesHandler(MongoClient, MobileAppService):
-    def __init__(self, authorsByName={}):
+    def __init__(self, authorsHandler: AuthorsHandler):
         super(TrendingArticlesHandler, self).__init__()
-        self.authorsByName = authorsByName
+
+        self.authorsHandler_ = authorsHandler
+        self.cache_ = TTLCache(10, ttl=3600)
 
     def removeInternalFields(self, item):
         del item['_id']
@@ -143,43 +184,54 @@ class TrendingArticlesHandler(MongoClient, MobileAppService):
         limit = int(req.params['limit']) if 'limit' in req.params else 10
 
         self.authorize(req.get_header("Authorization"))
-        today = datetime.utcnow()
-        last30Days = today - timedelta(days=30)
-        readArticles = [
-            self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find(
-                {'timestamp': {
-                    '$gt': f"{last30Days.isoformat()}Z"
-                }})
-        ]
 
-        readStatsById = {}
-        for read in readArticles:
-            if read['id'] in readStatsById:
-                readStats = readStatsById[read['id']]
-            else:
-                readStats = readStatsById[read['id']] = {'reach': 0, 'views': 0}                
+        cache_key = req.url
+        cached_response = self.cache_.get(cache_key)
+        if cached_response:
+            resp.status = falcon.HTTP_200
+            resp.body = cached_response
+        else:
+            LOGGER_.info("Computing treding articles...")
 
-            outputKeys = ['id', 'author', 'book', 'volume', 'title']
-            for key in read:
-                if key not in outputKeys:
-                    continue
-                readStats[key] = read[key]
+            today = datetime.utcnow()
+            last30Days = today - timedelta(days=30)
+            readArticles = [
+                self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find(
+                    {'timestamp': {
+                        '$gt': f"{last30Days.isoformat()}Z"
+                    }})
+            ]
 
-            readStats['reach'] += 1
-            readStats['views'] += read['count']
-        
-        for _, stats in readStatsById.items():
-            stats['score'] = stats['reach'] + math.sqrt(stats['views'] - stats['reach'])
+            readStatsById = {}
+            for read in readArticles:
+                if read['id'] in readStatsById:
+                    readStats = readStatsById[read['id']]
+                else:
+                    readStats = readStatsById[read['id']] = {'reach': 0, 'views': 0}
 
-        trendingArticles = [stats for _, stats in readStatsById.items() if stats['reach'] > 1]
-        trendingArticles = sorted(trendingArticles, key=lambda x: x['score'], reverse=True)[:limit]
+                outputKeys = ['id', 'author', 'book', 'volume', 'title']
+                for key in read:
+                    if key not in outputKeys:
+                        continue
+                    readStats[key] = read[key]
 
-        for article in trendingArticles:
-            if article['author'] in self.authorsByName:
-                author_info = self.authorsByName[article['author']]
-                for k, v in author_info.items():
-                    if 'url' in k:
-                        article[f'author-{k}'] = v
+                readStats['reach'] += 1
+                readStats['views'] += read['count']
 
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(trendingArticles)
+            for _, stats in readStatsById.items():
+                stats['score'] = stats['reach'] + math.sqrt(stats['views'] - stats['reach'])
+
+            trendingArticles = [stats for _, stats in readStatsById.items() if stats['reach'] > 1]
+            trendingArticles = sorted(trendingArticles, key=lambda x: x['score'], reverse=True)[:limit]
+
+            authorsByName = self.authorsHandler_.getAuthorsByName(idx_name)
+            for article in trendingArticles:
+                if article['author'] in authorsByName:
+                    author_info = authorsByName[article['author']]
+                    for k, v in author_info.items():
+                        if 'url' in k:
+                            article[f'author-{k}'] = v
+
+            resp.status = falcon.HTTP_200
+            resp.body = json.dumps(trendingArticles)
+            self.cache_[cache_key] = resp.body

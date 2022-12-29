@@ -30,7 +30,6 @@ from users_api import UsersHandler
 from api_utils import timeit
 
 LOGGER_ = logging.getLogger(__name__)
-DEFAULT_IDX_NAME = 'od'
 UTC = pytz.timezone('UTC')
 
 class HandleCORS(object):
@@ -112,11 +111,9 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         content = ContentHandler(es)
         authors = AuthorsHandler(es)
 
-        authorsByName = authors.getAuthorsByName(DEFAULT_IDX_NAME)
-
         types = FieldAggregator(es, 'type', [])
-        volumes = FieldAggregator(es, 'volume', ['author'], authorsByName)
-        books = FieldAggregator(es, 'book', ['author', 'volume'], authorsByName)
+        volumes = FieldAggregator(es, 'volume', ['author'], authors)
+        books = FieldAggregator(es, 'book', ['author', 'volume'], authors)
         titles = TitlesHandler(es)
         titlesCompletion = TitlesCompletionHandler(es)
         searchTermSuggester = SearchTermSuggester(es)
@@ -124,11 +121,11 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         favorites = FavoritesHandler()
         markups = MarkupsHandler()
         tags = TagsHandler()
-        recommended = RecommendedHandler(es, authorsByName)
+        recommended = RecommendedHandler(es)
         readArticles = ReadArticlesHandler()
         bulkReadArticles = BulkReadArticlesHandler()
-        tendingArticlesHandler = TrendingArticlesHandler(authorsByName)
-        recentlyAddedBooks = RecentlyAddedBooksHandler(es, authorsByName)
+        tendingArticlesHandler = TrendingArticlesHandler(authors)
+        recentlyAddedBooks = RecentlyAddedBooksHandler(es, authors)
         users = UsersHandler()
 
         app.add_route('/{idx_name}', index)
