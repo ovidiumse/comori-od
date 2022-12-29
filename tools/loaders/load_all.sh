@@ -17,6 +17,21 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       shift # past value
       ;;
+    -e|--external-host)
+      DOCKER_HOST=ssh://comori-od
+      ARGS+=("$1")
+      shift # past argument
+      ;;
+    -t|--test-host)
+      DOCKER_HOST=ssh://ubuntu-home
+      ARGS+=("$1")
+      shift # past argument
+      ;;
+    -n|--new-host)
+      DOCKER_HOST=ssh://ubuntu-prod
+      ARGS+=("$1")
+      shift # past argument
+      ;;
     *)
       ARGS+=("$1") # save positional arg
       shift # past argument
@@ -66,6 +81,11 @@ ${CWD}/load_trifa_ce_este_oastea_domnului.sh ${ARGS}
 ${CWD}/load_strangeti_faramiturile.sh ${ARGS}
 
 ${CWD}/load_static.sh ${ARGS}
+
+echo "Restarting comori-od-restapi on ${DOCKER_HOST} to clear caches..."
+DOCKER_HOST=${DOCKER_HOST} docker restart comori-od-restapi
+echo "Waiting 10 seconds for the service to wake up..."
+sleep 10
 
 ${CWD}/../test_all.sh ${ARGS}
 ${CWD}/../prepare_diff.sh
