@@ -111,30 +111,6 @@ services:
       - comori-od-es
     restart: unless-stopped
 
-  comori-od-metricbeat:
-    build: 
-      context: ../comori-od-metricbeat
-      args:
-        - ES_VERSION=${ES_VERSION}
-    user: root
-    container_name: comori-od-metricbeat
-    environment: 
-      - ELASTIC_USER=${ELASTIC_USER}
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
-      - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
-      - ENABLE_DASHBOARDS=False
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro    
-      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
-      - /proc:/hostfs/proc:ro
-      - /:/hostfs:ro
-    networks: 
-      - proxy
-    depends_on: 
-      - comori-od-es
-    restart: unless-stopped
-
   comori-od-mongo:
     build: ../comori-od-mongo
     container_name: comori-od-mongo
@@ -206,8 +182,6 @@ services:
   comori-od-restapi:
     build: 
       context: ../comori-od-restapi
-      args:
-        - LOGGING_CFG=logging_cfg_prod.yaml
     container_name: comori-od-restapi
     expose: 
       - 9000
@@ -222,7 +196,6 @@ services:
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
-      - MOBILE_APP_PKEY=${MOBILE_APP_PKEY}
       - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
     volumes:
       - /var/log/comori-od-restapi:/var/log/comori-od-restapi

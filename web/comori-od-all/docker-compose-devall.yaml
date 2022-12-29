@@ -182,8 +182,6 @@ services:
   comori-od-restapi:
     build: 
       context: ../comori-od-restapi
-      args:
-        - LOGGING_CFG=logging_cfg_prod.yaml
     container_name: comori-od-restapi
     ports: 
       - 9000:9000
@@ -195,7 +193,6 @@ services:
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
-      - MOBILE_APP_PKEY=${MOBILE_APP_PKEY}
       - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
     volumes:
       - api_logs:/var/log/comori-od-restapi
