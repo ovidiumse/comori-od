@@ -231,14 +231,19 @@ def post_process_articles(articles, authors_by_name, args):
         author_data = authors_by_name.get(article['author'])
         if not author_data:
             logging.info(f"Could not find author info for {article['author']} in {json.dumps(authors_by_name, indent=2)}")
+            continue
 
-        url = author_data.get('photo-url-lg') if author_data else None
+        url = author_data.get('photo-url-lg')
         if url:
             article['author-photo-url-lg'] = url
 
-        url = author_data.get('photo-url-sm') if author_data else None
+        url = author_data.get('photo-url-sm') 
         if url:
             article['author-photo-url-sm'] = url
+        
+        author_position = author_data.get('position')
+        if author_position:
+            article['author-position'] = author_position
 
         article['book'] = post_process(0, article['book'], 'book', True, True, args)
         article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True, args)
