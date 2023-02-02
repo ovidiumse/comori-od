@@ -33,6 +33,10 @@ while [[ $# -gt 0 ]]; do
       ARGS+=("$1")
       shift # past argument
       ;;
+    -r|--rebuild)
+      REBUILD=1
+      shift # past argument
+      ;;
     *)
       ARGS+=("$1") # save positional arg
       shift # past argument
@@ -50,6 +54,12 @@ echo "Preparing local APIs..."
 cd ${MAIN_DIR}
 make -f Makefile.local bible-up
 cd ${CWD}
+
+if [ $REBUILD -eq 1 ]
+then
+  echo "Removing all md5 files..."
+  find ${DATA_DIR} -name "*.md5" | xargs rm
+fi
 
 # Metadata
 ${CWD}/load_metadata.sh ${ARGS}
