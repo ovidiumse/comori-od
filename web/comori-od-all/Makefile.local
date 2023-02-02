@@ -1,0 +1,18 @@
+build:
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev build
+
+up:
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev up -d --remove-orphans
+
+bible-up:
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev build comori-od-bibleapi
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev up -d --remove-orphans comori-od-bibleapi
+
+down:
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev down
+
+remove:
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev down -v
+
+logs:
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev logs --follow --tail 250

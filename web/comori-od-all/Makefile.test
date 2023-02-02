@@ -1,0 +1,11 @@
+build:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.test.yaml -f docker-compose.nginxtest.yaml --env-file .env-dev build
+
+up:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.test.yaml -f docker-compose.nginxtest.yaml --env-file .env-dev up -d --remove-orphans
+
+remove:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.test.yaml -f docker-compose.nginxtest.yaml --env-file .env-dev down -v
+
+logs:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.test.yaml -f docker-compose.nginxtest.yaml --env-file .env-dev logs --follow --tail 250

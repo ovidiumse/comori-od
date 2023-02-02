@@ -1,0 +1,40 @@
+version: '3.0'
+services:
+  comori-od-static-vue:
+    build: 
+      args:
+        - buildtype=staging_build
+    environment:
+      - VIRTUAL_HOST=test.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-es:
+    networks:
+      - proxy
+
+  comori-od-mongo:
+    networks:
+      - proxy
+
+  comori-od-mongoexpress:
+    environment:
+      - VIRTUAL_HOST=testmongo.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-restapi:
+    environment:
+      - VIRTUAL_HOST=testapi.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-bibleapi:
+    environment:
+      - VIRTUAL_HOST=testbible-api.comori-od.ro
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    name: nginx-proxy

@@ -1,0 +1,48 @@
+version: '3.0'
+services:
+  comori-od-static-vue:
+    environment:
+      - VIRTUAL_HOST=new.comori-od.ro,test.comori-od.ro
+      - LETSENCRYPT_HOST=new.comori-od.ro,test.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-es:
+    networks:
+      - proxy
+
+  comori-od-mongo:
+    networks:
+      - proxy
+
+  comori-od-mongoexpress:
+    environment:
+      - VIRTUAL_HOST=newmongo.comori-od.ro,testmongo.comori-od.ro
+      - LETSENCRYPT_HOST=newmongo.comori-od.ro,testmongo.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-jupyter:
+    environment:
+      - VIRTUAL_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
+      - LETSENCRYPT_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-restapi:
+    environment:
+      - VIRTUAL_HOST=newapi.comori-od.ro,testapi.comori-od.ro
+      - LETSENCRYPT_HOST=newapi.comori-od.ro,testapi.comori-od.ro
+    networks:
+      - proxy
+
+  comori-od-bibleapi:
+    environment:
+      - VIRTUAL_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
+      - LETSENCRYPT_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    name: nginx-proxy

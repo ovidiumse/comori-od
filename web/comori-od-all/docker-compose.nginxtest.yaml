@@ -1,0 +1,32 @@
+version: '3.0'
+
+services:
+  nginx-proxy:
+    build: ../comori-od-nginx-proxy-test
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+    environment:
+      - HTTPS_METHOD=noredirect
+    volumes:
+      - conf:/etc/nginx/conf.d
+      - vhost:/etc/nginx/vhost.d
+      - dhparam:/etc/nginx/dhparam
+      - html:/usr/share/nginx/html
+      - certs:/etc/nginx/certs:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro    
+      - /var/log/nginx:/var/log/nginx
+    networks:
+      - proxy
+    restart: always
+
+volumes:
+  conf:
+  vhost:
+  dhparam:
+  html:
+  certs:
+
+networks:
+  proxy:
+    name: nginx-proxy
