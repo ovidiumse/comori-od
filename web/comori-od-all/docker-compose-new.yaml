@@ -40,20 +40,6 @@ services:
       - comori-od-restapi
     restart: unless-stopped
 
-  comori-od-meilisearch:
-    build:
-      context: ../comori-od-meilisearch
-    container_name: comori-od-meilisearch
-    environment:
-      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}    
-    volumes:
-      - meili_data:/meili_data
-    expose:
-      - 7700
-    networks:
-      - proxy
-    restart: unless-stopped
-
   comori-od-es:
     build: 
       context: ../comori-od-es
@@ -231,7 +217,6 @@ services:
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
       - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
-      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
     volumes:
       - /var/log/comori-od-restapi:/var/log/comori-od-restapi
     depends_on:
@@ -316,8 +301,6 @@ services:
       - cadvisor
 
 volumes:
-  meili_data:
-    driver: local
   es_data:
     driver: local
   es_config: 
