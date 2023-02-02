@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:latest
 
 COPY requirements.txt .
 

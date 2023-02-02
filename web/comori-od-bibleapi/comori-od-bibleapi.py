@@ -11,7 +11,7 @@ RAW_BIBLE_DATA = None
 BIBLE = {}
 
 BIBLE_ALIASES = {
-    'Geneza': ['Gen', 'Gen.', 'Facerea', 'Fac', 'Fac.'],
+    'Geneza': ['Gen', 'Gen.', 'Facerea', 'Facere', 'Fac', 'Fac.'],
     'Exodul': ['Exod', 'Exod.', 'Ex', 'Ex.', 'Iesirea', 'Iesire', 'Ies', 'Ies.'],
     'Leviticul': ['Levitic', 'Levitic.', 'Lev', 'Lev.'],
     'Numeri': ['Num', 'Num.'],
@@ -31,7 +31,7 @@ BIBLE_ALIASES = {
     'Iov': [],
     'Psalmii': ['Psalm', 'Psalmi', 'Psalmul', 'Ps', 'Ps.'],
     'Proverbele': ['Proverbe', 'Prov', 'Prov.'],
-    'Eclesiastul': ['Ecles', 'Ecles.', 'Ecl', 'Ecl.'],
+    'Eclesiastul': ['Eclesiast', 'Ecles', 'Ecles.', 'Ecl', 'Ecl.'],
     'Cantarea Cantarilor': ['Cantarea Cant', 'Cantarea Cant.', 'Cant Cant', 'Cant. Cant.'],
     'Isaia': ['Is', 'Is.'],
     'Ieremia': ['Ierem', 'Ierem.', 'Ier', 'Ier.'],
