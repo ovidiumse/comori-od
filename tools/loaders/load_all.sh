@@ -3,6 +3,7 @@
 CWD=`realpath $(dirname $0)`
 
 DATA_DIR=${CWD}/../../data
+MAIN_DIR=${CWD}/../../web/comori-od-all
 IMG_DIR=${CWD}/../../img
 TOOLS_DIR=${CWD}/../
 NGINX_DATA_DIR=${CWD}/../../web/comori-od-nginx-proxy/data
@@ -23,7 +24,7 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       ;;
     -t|--test-host)
-      DOCKER_HOST=ssh://ubuntu-home
+      DOCKER_HOST=ssh://ubuntu-dev
       ARGS+=("$1")
       shift # past argument
       ;;
@@ -44,6 +45,11 @@ if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
     export API_TOTP_KEY=${API_TOTP_KEY}
 fi
+
+echo "Preparing local APIs..."
+cd ${MAIN_DIR}
+make -f Makefile.local bible-up
+cd ${CWD}
 
 # Metadata
 ${CWD}/load_metadata.sh ${ARGS}

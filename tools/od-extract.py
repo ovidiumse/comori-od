@@ -4,6 +4,7 @@ import re
 import argparse
 import simplejson as json
 import yaml
+import hashlib
 from itertools import chain
 from datetime import datetime
 from bs4 import BeautifulSoup, element
@@ -412,14 +413,50 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
     return articles
 
 
+def compute_md5(filepath):
+    print(f"Computing md5 for {os.path.basename(filepath)}...")
+    with open(filepath, 'rb') as file:
+        return hashlib.md5(file.read()).hexdigest()
+
+
+def get_md5(filepath):
+    md5_filepath = os.path.splitext(filepath)[0] + ".md5"
+    print(f"Looking for {os.path.basename(filepath)} md5 into {os.path.basename(md5_filepath)}...")
+    
+    if not os.path.exists(md5_filepath):
+        return None
+    else:
+        with open(md5_filepath, 'r') as file:
+            return file.readline()
+
+
+def write_md5(filepath, md5):
+    md5_filepath = os.path.splitext(filepath)[0] + ".md5"
+    print(f"Writing md5 {md5} for {os.path.basename(filepath)} into {os.path.basename(md5_filepath)}...")
+    with open(md5_filepath, 'w') as file:
+        file.write(md5)
+
+
 def main():
     args = parseArgs()
+
+    print(f"Started od-extract.py on {os.path.basename(args.html_filepath)}")
+
+    current_md5 = compute_md5(args.html_filepath)
+    previous_md5 = get_md5(args.html_filepath)
+    if current_md5 == previous_md5:
+        print(f"File {os.path.basename(args.html_filepath)} did not change, skipping...\n")
+        return
+    else:
+        print(f"Got {current_md5} vs {previous_md5}")
+
+    write_md5(args.html_filepath, current_md5)
 
     cfg = {}
     with open(args.cfg, 'r') as cfg_file:
         cfg = yaml.full_load(cfg_file)
 
-    with open(args.html_filepath, 'r', encoding='utf-8') as html_file:
+    with open(args.html_filepath, 'r', encoding='utf-16') as html_file:
         start = datetime.now()
         print("Parsing {}...".format(args.html_filepath))
         soup = BeautifulSoup(html_file, 'html.parser')
@@ -475,7 +512,7 @@ def main():
                     print("", file=text_file)
 
         finish = datetime.now()
-        print("All done in {}.".format(finish - start))
+        print("All done in {}.\n".format(finish - start))
 
 
 if "__main__" == __name__:

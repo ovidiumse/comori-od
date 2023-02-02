@@ -14,6 +14,11 @@ copy() {
         cp $file $dest
     done
 
+    echo "Copying $source/*.md5 to $dest"
+    for file in $source/*.md5; do
+        cp $file $dest
+    done
+
     echo "Copying $source/*.json  to $dest"
     for file in $source/*.json; do
         cp $file $dest
@@ -37,6 +42,11 @@ prepare_dir() {
     for file in $dir/*.txt; do
         git restore $(basename $file)
     done
+
+    echo "Checking out $dir/*.md5 from HEAD..."
+    for file in $dir/*.md5; do
+        git restore $(basename $file)
+    done
     
     echo "Checking out $dir/*.json from HEAD..."
     for file in $dir/*.json; do
@@ -55,8 +65,9 @@ prepare_dir "marturii"
 prepare_dir "ioan"
 prepare_dir "cantari"
 prepare_dir "hristos_puterea"
-prepare_dir "trifa_talcuiri_culese"
 prepare_dir "trifa_spre_canaan"
+prepare_dir "trifa_talcuiri_culese"
 prepare_dir "trifa_ce_este_oastea_domnului"
+prepare_dir "strangeti_faramiturile"
 # prepare_dir "trifa_30_carti"
 prepare_dir "test_results"

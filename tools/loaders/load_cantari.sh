@@ -26,16 +26,16 @@ ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/cantari/cantari_11.htm -c ${CFG_DIR}/c
 wait
 
 echo "Post-processing Cantari Nemuritoare..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_1.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_2.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_3.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_4.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_6.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_7.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_8.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_9.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_10.json $@ &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_11.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_1.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_2.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_3.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_4.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_6.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_7.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_8.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_9.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_10.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_11.json $@
 
 wait 
 

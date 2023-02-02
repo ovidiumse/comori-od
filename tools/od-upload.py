@@ -20,6 +20,8 @@ LOCAL_HOST = "http://localhost:9000"
 COMORI_OD_API_HOST = LOCAL_HOST
 API_OTPKEY = ""
 
+MAX_BULK_SIZE = 100
+MAX_BULK_CONTENT_SIZE = 1000000
 
 def parseArgs():
     PARSER_.add_argument("-i",
@@ -56,7 +58,6 @@ def parseArgs():
                          help="Upload to external host")
     PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
     PARSER_.add_argument("-n", "--new-host", action="store_true", help="Upload to the new host")
-    PARSER_.add_argument("-m", "--meilisearch", action="store_true", help="Upload to meilisearch")
     PARSER_.add_argument("-o", "--output-dir", dest="output_dir", action="store", help="JSON output dir", default=None)
     PARSER_.add_argument("-v",
                          "--verbose",
@@ -283,10 +284,8 @@ def create_index(idx_name):
 
     post(idx_name, {'settings': settings, 'mappings': mappings})
 
-def upload(idx_name, bulk, use_meilisearch=False):
+def upload(idx_name, bulk):
     url = f"{idx_name}/articles"
-    if use_meilisearch:
-        url += "?meilisearch=true"
 
     response = post(url, bulk)
     if response['total'] != response['indexed']:
@@ -295,7 +294,21 @@ def upload(idx_name, bulk, use_meilisearch=False):
 
     return response['indexed']
 
-def index_all(idx_name, date_added, articles, use_meilisearch=False):
+def calculate_maxsize(bulks):
+    max_size = 0
+    for bulk in bulks:
+        bulk_size = 0
+        for article in bulk:
+            for line in article["body"]:
+                bulk_size += len(line)
+
+        if bulk_size > max_size:
+            max_size = bulk_size
+
+    return max_size
+
+
+def index_all(idx_name, date_added, articles):
     indexed = 0
 
     for idx, article in enumerate(articles):
@@ -309,9 +322,25 @@ def index_all(idx_name, date_added, articles, use_meilisearch=False):
         article['_insert_ts'] = datetime.now().isoformat()
         article['date_added'] = date_added
 
-    for bulk in chunk(articles, 10):
-        indexed += upload(idx_name, bulk, use_meilisearch)
-        logging.info("{} / {} indexed!".format(indexed, len(articles)))
+    for bulk in chunk(articles, MAX_BULK_SIZE):
+        bulks = [bulk]
+        bulk_size = MAX_BULK_SIZE
+        while bulk_size > 1:
+            bulk_content_size = calculate_maxsize(bulks)
+            if bulk_content_size <= MAX_BULK_CONTENT_SIZE:
+                break
+
+            new_bulks = []
+            for b in bulks:
+                new_bulks.append(b[:bulk_size])
+                new_bulks.append(b[bulk_size:])
+                
+            bulks = [b for b in new_bulks if b]
+            bulk_size = int(bulk_size / 2)
+
+        for b in bulks:
+            indexed += upload(idx_name, b)
+            logging.info("{} / {} indexed!".format(indexed, len(articles)))
 
 
 def delete_index(idx_name):
@@ -323,6 +352,8 @@ def delete_index(idx_name):
 
 def main():
     args = parseArgs()
+
+    print(f"Started od-postprocess.py on {os.path.basename(args.json_filepath)}")
 
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
@@ -370,7 +401,7 @@ def main():
             if not args.date_added:
                 raise Exception("Date-added not provided")
 
-            index_all(args.idx_name, args.date_added, articles, use_meilisearch=args.meilisearch)
+            index_all(args.idx_name, args.date_added, articles)
             logging.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
                                                                      COMORI_OD_API_HOST))
@@ -393,6 +424,8 @@ def main():
                 filePath = f"{args.output_dir}/{article['_id']}.json"
                 with open(filePath, 'w') as article_file:
                     json.dump(article, article_file)
+
+    print("Done\n")
 
 if "__main__" == __name__:
     main()

@@ -53,7 +53,7 @@ def main():
     if args.external_host:
         docker_host = "ssh://ubuntu@comori-od.ro"
     elif args.test_host:
-        docker_host = "ssh://ubuntu-home"
+        docker_host = "ssh://ubuntu-dev"
     elif args.new_host:
         docker_host = "ssh://ubuntu-prod"
 

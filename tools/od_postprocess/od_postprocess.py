@@ -5,14 +5,13 @@ import argparse
 import logging
 import requests
 import simplejson as json
+import multiprocessing
+import hashlib
 from unidecode import unidecode
 from datetime import datetime
 from prettytable import PrettyTable
 
-BIBLE_API_LOCAL = "http://localhost:9002"
-BIBLE_API_TEST  = "https://testbible-api.comori-od.ro"
-BIBLE_API_NEW = "https://newbible-api.comori-od.ro"
-BIBLE_API_EXTERNAL = "https://bible-api.comori-od.ro"
+BIBLE_API = "http://localhost:9002"
 
 COMORI_API_LOCAL = "http://localhost:9000"
 COMORI_API_TEST = "https://testapi.comori-od.ro"
@@ -23,8 +22,6 @@ BIBLE = None
 COMORI_API = None
 
 PARSER_ = argparse.ArgumentParser(description="OD content post-processing.")
-REPLACEMENTS_ = {}
-
 
 def parseArgs():
     PARSER_.add_argument("-i",
@@ -73,34 +70,13 @@ def shorten(val):
 
     return val
 
-
-def process_replacement(rule_name, original, replacement, field):
-    if original != replacement:
-        original = shorten(original)
-        replacement = shorten(replacement)
-
-        if original in REPLACEMENTS_ and rule_name in REPLACEMENTS_[
-                original] and field in REPLACEMENTS_[original][rule_name]:
-            REPLACEMENTS_[original][rule_name][field]['count'] += 1
-        else:
-            if original not in REPLACEMENTS_:
-                REPLACEMENTS_[original] = {rule_name: {}}
-            elif rule_name not in REPLACEMENTS_[original]:
-                REPLACEMENTS_[original][rule_name] = {}
-
-            REPLACEMENTS_[original][rule_name][
-                field] = make_replacement_info(rule_name, original, replacement, field)
-
-
 def replace_nbsp(val, field, isFirstBlock, isLastBlock):
     newval = val.replace(u'\xa0', ' ')
-    process_replacement('replace_nbsp', val, newval, field)
     return newval
 
 
 def replace_newlines_with_spaces(val, field, isFirstBlock, isLastBlock):
     newval = val.replace('\n', ' ')
-    process_replacement('replace_newlines_with_spaces', val, newval, field)
     return newval
 
 
@@ -109,13 +85,11 @@ def strip_spaces(val, field, isFirstBlock, isLastBlock):
         return val
 
     newval = val.lstrip() if isFirstBlock else val.rstrip()
-    process_replacement('strip_spaces', val, newval, field)
     return newval
 
 
 def replace_multiple_spaces_with_single_one(val, field, isFirstBlock, isLastBlock):
     newval = re.sub('[ \t]+', ' ', val)
-    process_replacement('replace_multiple_spaces_with_single_one', val, newval, field)
     return newval
 
 
@@ -124,14 +98,12 @@ def remove_verse_numbers(val, field, isFirstBlock, isLastBlock):
         return val
 
     newval = re.sub(r'^\d+ - ', '', val)
-    process_replacement('remove_verse_numbers', val, newval, field)
     return newval
 
 
 def remove_invalid_verses(val, field, isFirstBlock, isLastBlock):
     invalid_verses = ['T-']
     newval = '' if val in invalid_verses else val
-    process_replacement('remove_invalid_verses', val, newval, field)
     return newval
 
 
@@ -142,15 +114,9 @@ wordReplacements = {
     'Sînt': 'Sunt',
     'Sîntem': 'Suntem',
     'Sînteţi': 'Sunteţi',
-    'Facere': 'Facerea',
-    'Genesa': 'Geneza',
-    'Eşire': 'Exod',
-    'Tesal': 'Tes',
-    'Eclesiast': 'Ecles',
-    'Apocalips': 'Apoc'
+    'Isus': 'Iisus',
+    'ISUS': 'IISUS'
 }
-
-bodySplits = {}
 
 def replace_words(val, field, isFirstBlock, isLastBlock):
     words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
@@ -162,7 +128,6 @@ def replace_words(val, field, isFirstBlock, isLastBlock):
 
                 if r != w:
                     val = val.replace(w, r)
-                    process_replacement('replace_words', w, r, field)
                 else:
                     logging.warn("Word {} has identical replacement!".format(w))
 
@@ -204,12 +169,11 @@ def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
 
                 if r != w:
                     val = val.replace(w, r)
-                    process_replacement('normalize_diacritics', w, r, field)
 
     return val
 
 
-def post_process(index, val, field, isFirstBlock, isLastBlock, args):
+def post_process(index, val, field, isFirstBlock, isLastBlock):
     pipeline = [
         replace_nbsp, replace_newlines_with_spaces, strip_spaces,
         replace_multiple_spaces_with_single_one,
@@ -221,111 +185,6 @@ def post_process(index, val, field, isFirstBlock, isLastBlock, args):
         val = p(val, field, isFirstBlock, isLastBlock)
 
     return val
-
-
-def post_process_articles(articles, authors_by_name, args):
-    for article in articles:
-        article['title'] = post_process(0, article['title'], 'title', True, True, args)
-        article['author'] = post_process(0, article['author'], 'author', True, True, args)
-
-        author_data = authors_by_name.get(article['author'])
-        if not author_data:
-            logging.info(f"Could not find author info for {article['author']} in {json.dumps(authors_by_name, indent=2)}")
-            continue
-
-        url = author_data.get('photo-url-lg')
-        if url:
-            article['author-photo-url-lg'] = url
-
-        url = author_data.get('photo-url-sm') 
-        if url:
-            article['author-photo-url-sm'] = url
-        
-        author_position = author_data.get('position')
-        if author_position:
-            article['author-position'] = author_position
-
-        article['book'] = post_process(0, article['book'], 'book', True, True, args)
-        article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True, args)
-        if 'volume' in article:
-            article['volume'] = post_process(0, article['volume'], 'volume', True, True, args)
-        new_verses = []
-        lastVerse = []
-        for index, verse in enumerate(article['verses']):
-            new_verse = []
-            for blockIndex, block in enumerate(verse):
-                block['text'] = post_process(index, block['text'], 'verses', blockIndex == 0,
-                                             blockIndex == len(verse) - 1, args)
-
-                # Not interested in some blocks may be empty after removing nbsps, removing multiple spaces, trimming, etc.
-                if block['text']:
-                    new_verse.append(block)
-
-            # don't allow consecutive empty verses
-            if new_verse or lastVerse:
-                lastVerse = new_verse
-                new_verses.append(new_verse)
-
-        # remove last verse if empty
-        if new_verses and not new_verses[-1]:
-            new_verses = new_verses[:-1]
-
-        def split(body, delim, keep=""):
-            new_body = []
-            for section in body:
-                splits = re.split(delim, section)
-                if len(splits) > 1:
-                    last_chunk = None
-                    for idx, chunk in enumerate(splits):
-                        if last_chunk and keep=='.':
-                            last_line_splits = [word.strip('\n') for word in last_chunk.split(" ") if word.strip('\n')]
-                            current_line_splits = [word.strip('\n') for word in chunk.split(" ") if word.strip('\n')]
-                            if last_line_splits and current_line_splits and last_line_splits[-1] not in [
-                                    "Dumnezeu.", "Hristos.", "Isus.", "Lui.", "lui.", "lor.", "ei.", "el.", "El.",
-                                    "tine.", "noastră.", "Tine.", "noi.", "așa.", "Ta."
-                            ]:
-                                split = last_line_splits[-1] + " " + current_line_splits[0]
-                                if split in bodySplits:
-                                    splitInfo = bodySplits[split]
-                                else:
-                                    splitInfo = bodySplits[split] = {'count': 0, 'occurrences': []}
-
-                                splitInfo['count'] += 1
-                                splitInfo['occurrences'].append({'title': article['title'], 'split': " ".join(last_line_splits[-6:] + current_line_splits[:6])})
-
-                        # don't append separator after the last chunk
-                        if idx == (len(splits) - 1):
-                            new_body.append(chunk)
-                        else:
-                            new_body.append(chunk + keep)
-                            last_chunk = chunk + keep
-                else:
-                    new_body.append(section)
-
-            return [section.lstrip(' \n') for section in new_body if section.strip(' \n')]
-
-        def split_all(body):
-            dot_exceptions = [
-                "cap", "păr", "pr", "dr", "dl", "sf", "Sf", "ap", "Ap", "1 Tim", "2 Tim", "1 Cor", "2 Cor", "Rom",
-                "Gal", "Efes", "Ef", "Prov", "Apoc"
-            ]
-            dot_regex = r'(?<![A-Z])' + ''.join([f'(?<!{ex})' for ex in dot_exceptions]) + r'\.(?!\.)'
-
-            delims = [(dot_regex, '.'), (r'\!\s*\n', "!"), ('r\?\s*\n', "?"), (r'”\n', "”"), (r'\n\n', "")]
-            for delim, keep in delims:
-                body = split(body, delim, keep)
-            return body
-
-        article['verses'] = new_verses
-        article['body'] = split_all(
-            ["\n".join(["".join([chunk['text'] for chunk in verse]) for verse in article['verses']])])
-
-    return articles
-
-
-def isIgnoredBook(book):
-    ignoredBooks = ['în', 'am', 'fac']
-    return book.lower() in ignoredBooks
 
 
 class Bible(object):
@@ -388,13 +247,6 @@ class BibleRefResolver(object):
 
         return text
 
-    def resolve_bible_refs(self, articles):
-        for article in articles:
-            print(f"Resolving Bible refs for {article['book']} - {article['title']}")
-            self.process_article(article)
-
-        return articles
-
     def process_article(self, article):
         bibleRefs = {}
         new_verses = []
@@ -411,6 +263,7 @@ class BibleRefResolver(object):
 
         article['verses'] = new_verses
         article['bible-refs'] = bibleRefs
+        return article
 
     def process_verse(self, verse, article, bibleRefs, lastVerses):
         new_verse = []
@@ -596,10 +449,124 @@ class BibleRefResolver(object):
         return None
 
 
-def resolve_bible_refs(articles, bible):
+def resolve_article_bible_refs(article, resolver: BibleRefResolver):
+    resolver.process_article(article)
+    return resolver.resolvedRefCnt, resolver.errors
+
+
+def post_process_article(article, authors_by_name):
+    article['title'] = post_process(0, article['title'], 'title', True, True)
+    article['author'] = post_process(0, article['author'], 'author', True, True)
+
+    author_data = authors_by_name.get(article['author'])
+    if not author_data:
+        logging.info(f"Could not find author info for {article['author']} in {json.dumps(authors_by_name, indent=2)}")
+        return
+
+    url = author_data.get('photo-url-lg')
+    if url:
+        article['author-photo-url-lg'] = url
+
+    url = author_data.get('photo-url-sm') 
+    if url:
+        article['author-photo-url-sm'] = url
+    
+    author_position = author_data.get('position')
+    if author_position:
+        article['author-position'] = author_position
+
+    article['book'] = post_process(0, article['book'], 'book', True, True)
+    article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True)
+    if 'volume' in article:
+        article['volume'] = post_process(0, article['volume'], 'volume', True, True)
+    new_verses = []
+    lastVerse = []
+    for index, verse in enumerate(article['verses']):
+        new_verse = []
+        for blockIndex, block in enumerate(verse):
+            block['text'] = post_process(index, block['text'], 'verses', blockIndex == 0,
+                                            blockIndex == len(verse) - 1)
+
+            # Not interested in some blocks may be empty after removing nbsps, removing multiple spaces, trimming, etc.
+            if block['text']:
+                new_verse.append(block)
+
+        # don't allow consecutive empty verses
+        if new_verse or lastVerse:
+            lastVerse = new_verse
+            new_verses.append(new_verse)
+
+    # remove last verse if empty
+    if new_verses and not new_verses[-1]:
+        new_verses = new_verses[:-1]
+
+    def split(body, delim, keep=""):
+        new_body = []
+        for section in body:
+            splits = re.split(delim, section)
+            if len(splits) > 1:
+                for idx, chunk in enumerate(splits):
+                    # don't append separator after the last chunk
+                    if idx == (len(splits) - 1):
+                        new_body.append(chunk)
+                    else:
+                        new_body.append(chunk + keep)
+            else:
+                new_body.append(section)
+
+        return [section.lstrip(' \n') for section in new_body if section.strip(' \n')]
+
+    def split_all(body):
+        dot_exceptions = [
+            "cap", "păr", "pr", "dr", "dl", "sf", "Sf", "ap", "Ap", "1 Tim", "2 Tim", "1 Cor", "2 Cor", "Rom",
+            "Gal", "Efes", "Ef", "Prov", "Apoc"
+        ]
+        dot_regex = r'(?<![A-Z])' + ''.join([f'(?<!{ex})' for ex in dot_exceptions]) + r'\.(?!\.)'
+
+        delims = [(dot_regex, '.'), (r'\!\s*\n', "!"), ('r\?\s*\n', "?"), (r'”\n', "”"), (r'\n\n', "")]
+        for delim, keep in delims:
+            body = split(body, delim, keep)
+        return body
+
+    article['verses'] = new_verses
+    article['body'] = split_all(
+        ["\n".join(["".join([chunk['text'] for chunk in verse]) for verse in article['verses']])])
+
+def process_article(article, authors_by_name, resolver: BibleRefResolver):
+    print(f"Post-processing {article['book']} - {article['title']}")
+
+    post_process_article(article, authors_by_name)
+    resolvedRefCnt, resolvingErrors = resolve_article_bible_refs(article, resolver)
+
+    return article, resolvedRefCnt, resolvingErrors
+    
+
+def post_process_articles(articles, authors_by_name, bible):
     resolver = BibleRefResolver(bible)
-    articles = resolver.resolve_bible_refs(articles)
-    return articles, resolver.resolvedRefCnt, resolver.errors
+    pool = multiprocessing.Pool()
+
+    results = [pool.apply_async(process_article, args=(a, authors_by_name, resolver)) for a in articles]
+    results = [result.get() for result in results]
+    
+    articles = []
+    resolvedRefCnt = 0
+    resolvingErrors = []
+    for result in results:
+        article, articleResolvedRefCnt, articleResolvingErrors = result
+        articles.append(article)
+        resolvedRefCnt += articleResolvedRefCnt
+        resolvingErrors += articleResolvingErrors
+
+    pool.close()
+    pool.join()
+
+    return articles, resolvedRefCnt, resolvingErrors
+
+
+def isIgnoredBook(book):
+    ignoredBooks = ['în', 'am', 'fac']
+    return book.lower() in ignoredBooks
+
 
 def get_authors():
     response = requests.get(f"{COMORI_API}/od/authors")
@@ -612,25 +579,61 @@ def get_authors():
 
     return authors_by_name
 
+
+def compute_md5(filepath):
+    print(f"Computing md5 for {os.path.basename(filepath)}...")
+    with open(filepath, 'rb') as file:
+        return hashlib.md5(file.read()).hexdigest()
+
+
+def get_md5(filepath):
+    md5_filepath = os.path.splitext(filepath)[0] + "_json.md5"
+    print(f"Looking for {os.path.basename(filepath)} md5 into {os.path.basename(md5_filepath)}...")
+    
+    if not os.path.exists(md5_filepath):
+        return None
+    else:
+        with open(md5_filepath, 'r') as file:
+            return file.readline()
+
+
+def write_md5(filepath, md5):
+    md5_filepath = os.path.splitext(filepath)[0] + "_json.md5"
+    print(f"Writing md5 {md5} for {os.path.basename(filepath)} into {os.path.basename(md5_filepath)}...")
+    with open(md5_filepath, 'w') as file:
+        file.write(md5)
+
+
 def main():
     args = parseArgs()
+
+    print(f"Started od-postprocess.py on {os.path.basename(args.input)}")
+
+    current_md5 = compute_md5(args.input)
+    previous_md5 = get_md5(args.input)
+    if current_md5 == previous_md5:
+        print(f"File {os.path.basename(args.input)} did not change, skipping...\n")
+        return
+    else:
+        print(f"Got {current_md5} vs {previous_md5}")
+
+    write_md5(args.input, current_md5)
 
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
 
     global BIBLE
     global COMORI_API
+
+    BIBLE = Bible(BIBLE_API)
+
     if args.external_host:
-        BIBLE = Bible(BIBLE_API_EXTERNAL)
         COMORI_API = COMORI_API_EXTERNAL
     elif args.test_host:
-        BIBLE = Bible(BIBLE_API_TEST)
         COMORI_API = COMORI_API_TEST
     elif args.new_host:
-        BIBLE = Bible(BIBLE_API_NEW)
         COMORI_API = COMORI_API_NEW
     else:
-        BIBLE = Bible(BIBLE_API_LOCAL)
         COMORI_API = COMORI_API_LOCAL
 
     logging.info(f"Loading authors from {COMORI_API}...")
@@ -644,14 +647,10 @@ def main():
 
     print("Loaded {} articles in {}.".format(len(articles), loading_finish - start))
 
-    articles = post_process_articles(articles, authors_by_name, args)
+    articles, refCount, errors = post_process_articles(articles, authors_by_name, BIBLE)
     processing_finish = datetime.now()
     print("Processed {} articles in {}.".format(len(articles), processing_finish - loading_finish))
-
-    articles, refCount, errors = resolve_bible_refs(articles, BIBLE)
-    resolving_finish = datetime.now()
-    print("Resolved {} bible refs for {} articles in {}.".
-          format(refCount, len(articles), resolving_finish - processing_finish))
+    print("Resolved {} bible refs for {} articles.".format(refCount, len(articles)))
 
     with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(articles, f, indent=2)
@@ -682,47 +681,6 @@ def main():
 
             print("", file=text_file)
 
-    replacements = []
-    for w, wordReplacements in REPLACEMENTS_.items():
-        for rule, ruleReplacements in wordReplacements.items():
-            for field, fieldReplacements in ruleReplacements.items():
-                replacements.append(fieldReplacements)
-
-    replacements_filepath = os.path.splitext(args.input)[0] + "_replacements.txt"
-    replacements = sorted(replacements,
-                   key=lambda item: (item['count'], item['rule'], item['field']),
-                   reverse=True)
-
-    print("Writing {} replacements to {}...".format(len(REPLACEMENTS_), replacements_filepath))
-    tbl = PrettyTable()
-    tbl.field_names = ["Cuvânt inițial", "Cuvânt înlocuitor", "Regulă", "Câmp", "Număr procesări"]
-    with open(replacements_filepath, 'w', encoding='utf-8') as replacements_file:
-        for item in replacements:
-            tbl.add_row([
-                "'{}'".format(item['original']), "'{}'".format(item['replacement']), item['rule'],
-                item['field'], item['count']
-            ])
-        print(tbl, file=replacements_file)
-
-    splits = []
-    for split, splitInfo in bodySplits.items():
-        splitInfo['split'] = split
-        splits.append(splitInfo)
-
-    splits_filepath = os.path.splitext(args.input)[0] + "_splits.txt"
-    splits = sorted(splits, key=lambda item: item['count'], reverse=True)
-    print("Writing {} splits to {}...".format(len(bodySplits), splits_filepath))
-    tbl = PrettyTable()
-    tbl.field_names = ["Split", "Număr apariții", "Apariții"]
-    tbl.align["Apariții"] = "l"
-    with open(splits_filepath, 'w', encoding='utf-8') as splits_file:
-        for item in splits:
-            occurrences = "\n\n".join(f"{idx + 1}.\nTitlu: {o['title']}\n{o['split']}" for idx, o in enumerate(item['occurrences']))
-            tbl.add_row([
-                item['split'], item['count'], occurrences
-            ])
-        print(tbl, file=splits_file)
-
     stats_filepath = os.path.splitext(args.input)[0] + "_stats.txt"
     print("Calculating article stats...")
     tbl = PrettyTable()
@@ -742,7 +700,7 @@ def main():
         print(tbl, file=stats_file)
 
     finish = datetime.now()
-    print("All done in {}.".format(finish - start))
+    print("All done in {}.\n".format(finish - start))
 
 
 if "__main__" == __name__:
