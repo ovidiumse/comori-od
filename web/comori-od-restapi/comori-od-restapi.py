@@ -8,7 +8,6 @@ import logging
 import logging.config
 import yaml
 import pytz
-import meilisearch
 from datetime import datetime
 from pyotp import TOTP, random_base32
 from elasticsearch import Elasticsearch
@@ -98,8 +97,6 @@ def load_app(cfg_filepath, dotenv_filePath = None):
                            http_auth=(os.getenv("ELASTIC_USER", "elastic"), os.getenv("ELASTIC_PASSWORD", "")),
                            timeout=30)
 
-        msearch = meilisearch.Client(cfg['meilisearch']['url'], os.getenv("MEILI_MASTER_KEY"))
-
         LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
 
         totpAuth = TotpAuthBackend()
@@ -107,7 +104,7 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         app = falcon.App(middleware=[HandleCORS(), authMiddleware])
 
         index = IndexHandler(es)
-        articles = ArticlesHandler(es, msearch)
+        articles = ArticlesHandler(es)
         content = ContentHandler(es)
         authors = AuthorsHandler(es)
 

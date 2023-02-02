@@ -3,7 +3,6 @@ import falcon
 import logging
 import urllib
 import simplejson as json
-import meilisearch
 from cachetools import LRUCache
 from elasticsearch import helpers
 from datetime import datetime, timezone
@@ -12,10 +11,9 @@ from api_utils import *
 LOGGER_ = logging.getLogger(__name__)
 
 class ArticlesHandler(object):
-    def __init__(self, es, msearch: meilisearch.Client):
+    def __init__(self, es):
         self.doc_cnt = None
         self._es = es
-        self._msearch = msearch
         self.cache_ = LRUCache(10000)
 
     @timeit("Indexing article", __name__)
@@ -37,17 +35,6 @@ class ArticlesHandler(object):
 
         include_aggs = 'include_aggs' in req.params
         include_unmatched = 'include_unmatched' in req.params
-        use_meilisearch = 'meilisearch' in req.params and req.params['meilisearch'] == 'true'
-
-        if use_meilisearch:
-            idx = self._msearch.index(idx_name)
-            return idx.search(query=q,
-                       opt_params={
-                           'limit': 10,
-                           'attributesToRetrieve': ['id', 'title', 'author', '_index', '_insert_idx', '_insert_ts'],
-                           # 'attributesToHighlight': ['title', 'body'],
-                           'cropLength': 100
-                       })
 
         filters = parseFilters(req)
         LOGGER_.info(f"Quering {idx_name} with req {json.dumps(req.params, indent=2)}")
@@ -268,7 +255,6 @@ class ArticlesHandler(object):
     @req_handler("Handling articles POST", __name__)
     def on_post(self, req, resp, idx_name):
         articles = json.loads(req.stream.read())
-        use_meilisearch = 'meilisearch' in req.params and req.params['meilisearch'].lower() == 'true'
 
         indexed = 0
 
@@ -277,24 +263,7 @@ class ArticlesHandler(object):
         for a in articles:
             a['_index'] = idx_name
 
-        if use_meilisearch:
-            idx = self._msearch.index(idx_name)
-            idx.update_settings({
-                "searchableAttributes": ["body", "title"],
-            })
-
-            task = idx.add_documents(articles)
-            task = self._msearch.get_task(task.task_uid)
-
-            logging.info(f"Waiting for task {task}...")
-            while task['status'] not in ["failed", "canceled", "succeeded"]:
-                time.sleep(0.01)
-                task = self._msearch.get_task(task['uid'])
-
-            logging.info(f"Task done: {task}")
-            indexed = len(articles)
-        else:
-            indexed, _ = helpers.bulk(self._es, articles, stats_only=True)
+        indexed, _ = helpers.bulk(self._es, articles, stats_only=True)
 
         resp.status = falcon.HTTP_200
         resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
