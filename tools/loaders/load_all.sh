@@ -64,6 +64,8 @@ fi
 # Metadata
 ${CWD}/load_metadata.sh ${ARGS}
 
+# Preparing uploaded folder
+mkdir -p ${DATA_DIR}/uploaded
 rm -f ${DATA_DIR}/uploaded/*
 
 # Cugetari Nemuritoare

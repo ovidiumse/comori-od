@@ -456,7 +456,7 @@ def main():
     with open(args.cfg, 'r') as cfg_file:
         cfg = yaml.full_load(cfg_file)
 
-    with open(args.html_filepath, 'r', encoding='utf-16') as html_file:
+    with open(args.html_filepath, 'r', encoding='utf-8') as html_file:
         start = datetime.now()
         print("Parsing {}...".format(args.html_filepath))
         soup = BeautifulSoup(html_file, 'html.parser')
@@ -489,7 +489,7 @@ def main():
                                                         extract_finish - parse_finish))
 
             print("Writing {} articles to {}...".format(len(articles), args.extract_filename))
-            with open(args.extract_filename, 'w') as articles_file:
+            with open(args.extract_filename, 'w', encoding='utf-8') as articles_file:
                 json.dump(articles, articles_file, encoding=None, ensure_ascii=True, indent=2)
 
             text_filename = os.path.splitext(args.extract_filename)[0] + ".txt"
