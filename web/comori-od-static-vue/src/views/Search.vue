@@ -66,8 +66,8 @@
               </v-list-item-content>
             </v-list-item>
             <v-card-text class="pt-0 pb-1 pb-sm-3 pb-md5 px-3 px-md-5">
-                <template v-if="hit.highlight && hit.highlight['verses.text']">
-                  <p v-for="(line, index) in hit.highlight['verses.text']" :key="index" v-html="line" class="mb-2"/>
+                <template v-if="hit.highlight && hit.highlight['body']">
+                  <p v-for="(line, index) in hit.highlight['body']" :key="index" v-html="line" class="mb-2"/>
                 </template>
             </v-card-text>
         </v-card>
