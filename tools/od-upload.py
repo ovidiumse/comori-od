@@ -5,6 +5,7 @@ import argparse
 import simplejson as json
 import requests
 import logging
+import hashlib
 from collections import defaultdict
 from datetime import datetime
 from unidecode import unidecode
@@ -350,6 +351,30 @@ def delete_index(idx_name):
         logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
 
+def compute_md5(filepath):
+    print(f"Computing md5 for {os.path.basename(filepath)}...")
+    with open(filepath, 'rb') as file:
+        return hashlib.md5(file.read()).hexdigest()
+
+
+def get_md5(filepath):
+    md5_filepath = os.path.splitext(filepath)[0] + ".md5"
+    print(f"Looking for {os.path.basename(filepath)} md5 into {os.path.basename(md5_filepath)}...")
+    
+    if not os.path.exists(md5_filepath):
+        return None
+    else:
+        with open(md5_filepath, 'r') as file:
+            return file.readline()
+
+
+def write_md5(filepath, md5):
+    md5_filepath = os.path.splitext(filepath)[0] + ".md5"
+    print(f"Writing md5 {md5} for {os.path.basename(filepath)} into {os.path.basename(md5_filepath)}...")
+    with open(md5_filepath, 'w') as file:
+        file.write(md5)
+
+
 def main():
     args = parseArgs()
 
@@ -368,6 +393,16 @@ def main():
         COMORI_OD_API_HOST = NEW_HOST
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
+
+    current_md5 = f"{compute_md5(args.json_filepath)}_{COMORI_OD_API_HOST}"
+    previous_md5 = get_md5(args.json_filepath)
+    if current_md5 == previous_md5:
+        print(f"File {os.path.basename(args.json_filepath)} did not change, skipping...\n")
+        return
+    else:
+        print(f"Got {current_md5} vs {previous_md5}")
+
+    write_md5(args.json_filepath, current_md5)
 
     global API_OTPKEY
     if "API_TOTP_KEY" in os.environ:
@@ -392,7 +427,7 @@ def main():
         create_index(args.idx_name)
 
     if args.json_filepath:
-        with open(args.json_filepath, 'r') as json_file:
+        with open(args.json_filepath, 'r', encoding='utf-8') as json_file:
             articles = json.load(json_file)
 
         try:

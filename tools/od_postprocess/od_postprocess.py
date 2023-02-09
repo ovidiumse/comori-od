@@ -7,6 +7,7 @@ import requests
 import simplejson as json
 import multiprocessing
 import hashlib
+import time
 from unidecode import unidecode
 from datetime import datetime
 from prettytable import PrettyTable
@@ -41,6 +42,7 @@ def parseArgs():
                          help="Use external API host")
     PARSER_.add_argument("-t", "--test-host", action="store_true", help="Use test API host")
     PARSER_.add_argument("-n", "--new-host", action="store_true", help="Use the new API host")
+    PARSER_.add_argument("-s", "--single-threaded", action="store_true", help="Use single-threaded post-processing (useful for debugging)")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -106,74 +108,99 @@ def remove_invalid_verses(val, field, isFirstBlock, isLastBlock):
     newval = '' if val in invalid_verses else val
     return newval
 
+class WordReplacer(object):
+    def __init__(self):
+        self.wordReplacements = {
+            'sînt': 'sunt',
+            'sîntem': 'suntem',
+            'sînteţi': 'sunteţi',
+            'Sînt': 'Sunt',
+            'Sîntem': 'Suntem',
+            'Sînteţi': 'Sunteţi',
+            'Isus': 'Iisus',
+            'ISUS': 'IISUS'
+        }
 
-wordReplacements = {
-    'sînt': 'sunt',
-    'sîntem': 'suntem',
-    'sînteţi': 'sunteţi',
-    'Sînt': 'Sunt',
-    'Sîntem': 'Suntem',
-    'Sînteţi': 'Sunteţi',
-    'Isus': 'Iisus',
-    'ISUS': 'IISUS'
-}
+        self.wordPrefixes = [
+            "anti", "arhi", "atot", "auto", "bine", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
+            "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
+            "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
+            "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
+            "tri", "ultra", "uni", "vice", "nemai"
+        ]
 
-def replace_words(val, field, isFirstBlock, isLastBlock):
-    words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
-    words = set(words)
-    if words:
-        for w in words:
-            if w in wordReplacements:
-                r = wordReplacements[w]
+    def replace_words(self, val, field, isFirstBlock, isLastBlock):
+        words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
+        words = set(words)
 
-                if r != w:
-                    val = val.replace(w, r)
-                else:
-                    logging.warn("Word {} has identical replacement!".format(w))
+        replacements = []
+        if words:
+            for w in words:
+                if w in self.wordReplacements:
+                    r = self.wordReplacements[w]
 
-    return val
+                    if r != w:
+                        replacements.append((w, r))
+                    else:
+                        logging.warn("Word {} has identical replacement!".format(w))
+
+        if replacements:
+            replacements = sorted(replacements, key=lambda t: len(t[0]), reverse=True)
+            for w, r in replacements:
+                val = val.replace(w, r)
+
+        return val
 
 
-def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
-    words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
-    words = set(words)
-    if words:
-        for w in words:
-            if 'î' in w.lower():
-                if w in wordReplacements:
-                    r = wordReplacements[w]
-                else:
-                    r = w
-                    for index, c in enumerate(r):
-                        prefixes = [
-                        "anti", "arhi", "atot", "auto", "bine", "contra", "des", "extra", "hiper", "hipo", "infra", "inter",
-                        "intra", "între", "macro", "mega", "meta", "micro", "mini", "mono", "multi", "ne", "neo", "non",
-                        "omni", "orto", "para", "pluri", "poli", "politico", "post", "pre", "prea", "proto", "pseudo",
-                        "radio", "răs", "re", "semi", "stră", "sub", "super", "supra", "tehno", "tele", "termo", "trans",
-                        "tri", "ultra", "uni", "vice", "nemai"
-                        ]
-                        prefixFormed = False
-                        skipPos = 0
-                        for p in prefixes:
-                            if r.lower().startswith("{}î".format(p)):
-                                prefixFormed = True
-                                skipPos = len(p)
-                                break
+    def normalize_diacritics(self, val, field, isFirstBlock, isLastBlock):
+        words = [w.strip() for w in re.findall(r'\w+', val) if w.strip()]
+        words = set(words)
 
-                        if index > 0 and index < len(r) - 1 and c.lower() == 'î' and not (prefixFormed and index == skipPos):
+        replacements = []
+        if words:
+            for w in words:
+                if 'î' in w.lower():
+                    if w in self.wordReplacements:
+                        r = self.wordReplacements[w]
+                    else:
+                        r = w
+                        for index, c in enumerate(r):
+                            if index == 0 or index == len(r) - 1 or c.lower() != 'î':
+                                continue
+                            elif r[:index].lower() in self.wordPrefixes:
+                                continue
+
                             rch = 'Â' if c == 'Î' else 'â'
                             r = r[:index] + rch + r[index + 1:]
 
+                        if r != w:
+                            self.wordReplacements[w] = r
+
                     if r != w:
-                        wordReplacements[w] = r
+                        replacements.append((w, r))
 
-                if r != w:
-                    val = val.replace(w, r)
+        if replacements:
+            replacements = sorted(replacements, key=lambda t: len(t[0]), reverse=True)
+            for w, r in replacements:
+                val = val.replace(w, r)
 
-    return val
+        return val
 
 
-def post_process(index, val, field, isFirstBlock, isLastBlock):
+def replace_words(index, val, field, isFirstBlock, isLastBlock, replacer: WordReplacer):
+    replacer.replace_words(val, field, isFirstBlock, isLastBlock)
+
+
+def normalize_diacritics(index, val, field, isFirstBlock, isLastBlock, replacer: WordReplacer):
+    replacer.normalize_diacritics(val, field, isFirstBlock, isLastBlock)
+
+def post_process(index, val, field, isFirstBlock, isLastBlock, replacer: WordReplacer):
+    def replace_words(val, field, isFirstBlock, isLastBlock):
+        return replacer.replace_words(val, field, isFirstBlock, isLastBlock)
+
+    def normalize_diacritics(val, field, isFirstBlock, isLastBlock):
+        return replacer.normalize_diacritics(val, field, isFirstBlock, isLastBlock)
+
     pipeline = [
         replace_nbsp, replace_newlines_with_spaces, strip_spaces,
         replace_multiple_spaces_with_single_one,
@@ -455,8 +482,10 @@ def resolve_article_bible_refs(article, resolver: BibleRefResolver):
 
 
 def post_process_article(article, authors_by_name):
-    article['title'] = post_process(0, article['title'], 'title', True, True)
-    article['author'] = post_process(0, article['author'], 'author', True, True)
+    replacer = WordReplacer()
+
+    article['title'] = post_process(0, article['title'], 'title', True, True, replacer)
+    article['author'] = post_process(0, article['author'], 'author', True, True, replacer)
 
     author_data = authors_by_name.get(article['author'])
     if not author_data:
@@ -475,17 +504,16 @@ def post_process_article(article, authors_by_name):
     if author_position:
         article['author-position'] = author_position
 
-    article['book'] = post_process(0, article['book'], 'book', True, True)
-    article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True)
+    article['book'] = post_process(0, article['book'], 'book', True, True, replacer)
+    article['full_book'] = post_process(0, article['full_book'], 'full_book', True, True, replacer)
     if 'volume' in article:
-        article['volume'] = post_process(0, article['volume'], 'volume', True, True)
+        article['volume'] = post_process(0, article['volume'], 'volume', True, True, replacer)
     new_verses = []
     lastVerse = []
     for index, verse in enumerate(article['verses']):
         new_verse = []
         for blockIndex, block in enumerate(verse):
-            block['text'] = post_process(index, block['text'], 'verses', blockIndex == 0,
-                                            blockIndex == len(verse) - 1)
+            block['text'] = post_process(index, block['text'], 'verses', blockIndex == 0, blockIndex == len(verse) - 1, replacer)
 
             # Not interested in some blocks may be empty after removing nbsps, removing multiple spaces, trimming, etc.
             if block['text']:
@@ -541,12 +569,19 @@ def process_article(article, authors_by_name, resolver: BibleRefResolver):
     return article, resolvedRefCnt, resolvingErrors
     
 
-def post_process_articles(articles, authors_by_name, bible):
+def post_process_articles(articles, authors_by_name, bible, args):
     resolver = BibleRefResolver(bible)
-    pool = multiprocessing.Pool()
 
-    results = [pool.apply_async(process_article, args=(a, authors_by_name, resolver)) for a in articles]
-    results = [result.get() for result in results]
+    if args.single_threaded:
+        results = [process_article(a, authors_by_name, resolver) for a in articles]
+    else:
+        pool = multiprocessing.Pool(max(1, os.cpu_count() - 1))
+
+        results = [pool.apply_async(process_article, args=(a, authors_by_name, resolver)) for a in articles]
+        results = [result.get() for result in results]
+
+        pool.close()
+        pool.join()
     
     articles = []
     resolvedRefCnt = 0
@@ -556,9 +591,6 @@ def post_process_articles(articles, authors_by_name, bible):
         articles.append(article)
         resolvedRefCnt += articleResolvedRefCnt
         resolvingErrors += articleResolvingErrors
-
-    pool.close()
-    pool.join()
 
     return articles, resolvedRefCnt, resolvingErrors
 
@@ -609,16 +641,6 @@ def main():
 
     print(f"Started od-postprocess.py on {os.path.basename(args.input)}")
 
-    current_md5 = compute_md5(args.input)
-    previous_md5 = get_md5(args.input)
-    if current_md5 == previous_md5:
-        print(f"File {os.path.basename(args.input)} did not change, skipping...\n")
-        return
-    else:
-        print(f"Got {current_md5} vs {previous_md5}")
-
-    write_md5(args.input, current_md5)
-
     logging.basicConfig()
     logging.getLogger().setLevel(logging.INFO)
 
@@ -636,6 +658,16 @@ def main():
     else:
         COMORI_API = COMORI_API_LOCAL
 
+    current_md5 = f"{compute_md5(args.input)}_{COMORI_API}"
+    previous_md5 = get_md5(args.input)
+    if current_md5 == previous_md5:
+        print(f"File {os.path.basename(args.input)} did not change, skipping...\n")
+        return
+    else:
+        print(f"Got {current_md5} vs {previous_md5}")
+
+    write_md5(args.input, current_md5)
+
     logging.info(f"Loading authors from {COMORI_API}...")
     authors_by_name = get_authors()
     logging.info(f"Found authors: {', '.join([key for key in authors_by_name])}")
@@ -647,7 +679,7 @@ def main():
 
     print("Loaded {} articles in {}.".format(len(articles), loading_finish - start))
 
-    articles, refCount, errors = post_process_articles(articles, authors_by_name, BIBLE)
+    articles, refCount, errors = post_process_articles(articles, authors_by_name, BIBLE, args)
     processing_finish = datetime.now()
     print("Processed {} articles in {}.".format(len(articles), processing_finish - loading_finish))
     print("Resolved {} bible refs for {} articles.".format(refCount, len(articles)))

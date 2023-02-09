@@ -426,7 +426,7 @@ def main():
     with open(args.cfg, 'r') as cfg_file:
         cfg = yaml.full_load(cfg_file)
 
-    with open(args.html_filepath, 'r', encoding='utf-16') as html_file:
+    with open(args.html_filepath, 'r', encoding='utf-8') as html_file:
         print("Parsing {}...".format(args.html_filepath))
         soup = BeautifulSoup(html_file, 'html.parser')
 
@@ -444,7 +444,7 @@ def main():
         path, ext = os.path.splitext(args.html_filepath)
         fixed_filepath = "{}_fixed{}".format(path, ext)
         print("Saving results into {}...".format(fixed_filepath))
-        with open(fixed_filepath, 'w', encoding='utf-16') as fixed_file:
+        with open(fixed_filepath, 'w', encoding='utf-8') as fixed_file:
             print(soup, file=fixed_file)
 
     print("Done!\n")
