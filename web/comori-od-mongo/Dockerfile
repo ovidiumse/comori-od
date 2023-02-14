@@ -1,1 +1,1 @@
-FROM mongo:latest
+FROM mongo:focal

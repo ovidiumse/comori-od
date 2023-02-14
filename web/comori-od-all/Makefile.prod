@@ -1,0 +1,17 @@
+build:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.prod.yaml -f docker-compose.nginxprod.yaml --env-file .env-prod build comori-od-static-vue
+
+rebuild:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.prod.yaml -f docker-compose.nginxprod.yaml --env-file .env-prod build --no-cache
+
+up:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.prod.yaml -f docker-compose.nginxprod.yaml --env-file .env-prod up -d --remove-orphans
+
+nginx:
+	../comori-od-nginx-proxy/deploy-conf.sh
+
+remove:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.prod.yaml -f docker-compose.nginxprod.yaml --env-file .env-prod down -v
+
+logs:
+	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.prod.yaml -f docker-compose.nginxprod.yaml --env-file .env-prod logs --follow --tail 250
