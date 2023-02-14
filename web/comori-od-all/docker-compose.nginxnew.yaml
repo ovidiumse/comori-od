@@ -4,6 +4,13 @@ services:
   nginx-proxy:
     build: ../comori-od-nginx-proxy-new
     container_name: nginx-proxy
+    environment:
+      - NGINX_MOD_ENABLE=ngx_http_geoip2_module
+      - GEOIP2_ENABLE=GeoLite2-City
+      - GEOIPUPDATE_ACCOUNT_ID=${GEOIP_ACCOUNTID}
+      - GEOIPUPDATE_LICENSE_KEY=${GEOIP_LICENSEKEY}
+      - ACME_CA_URI=https://acme-staging-v02.api.letsencrypt.org/directory
+      - LOG_FORMAT=influxdb
     ports:
       - "80:80"
       - "443:443"
@@ -20,14 +27,30 @@ services:
     restart: always
 
   letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion
+    image: nginxproxy/acme-companion
     container_name: nginx-proxy-le
+    environment:
+      - NGINX_DOCKER_GEN_CONTAINER=nginx-proxy
     volumes_from:
       - nginx-proxy
     volumes:
       - certs:/etc/nginx/certs:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - nginx-proxy
     restart: always
+
+  telegraf-comori:
+    build:
+      context: ../telegraf
+      args:
+        - CFG=telegraf-nginx.conf
+    container_name: telegraf-comori
+    volumes_from:
+      - nginx-proxy
+    networks:
+      - proxy
+    restart: unless-stopped
 
 volumes:
   conf:

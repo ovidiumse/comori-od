@@ -1,14 +1,14 @@
 build:
-	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod build
+	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod build
 
 up:
-	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod up -d --remove-orphans
+	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod up -d --remove-orphans
 
 nginx:
-	../comori-od-nginx-proxy-new/deploy-conf.sh
+	DOCKER_HOST=ssh://ubuntu-prod ../comori-od-nginx-proxy-new/deploy-conf.sh
 
 remove:
-	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod down -v
+	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod down -v
 
 logs:
-	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod logs --follow --tail 250
+	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod logs --follow --tail 250

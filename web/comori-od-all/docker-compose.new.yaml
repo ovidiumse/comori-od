@@ -43,6 +43,10 @@ services:
     networks:
       - proxy
 
+  comori-od-logprocessor:
+    networks:
+      - proxy
+
 networks:
   proxy:
     name: nginx-proxy
