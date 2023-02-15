@@ -1,1 +1,2 @@
-FROM mongo:focal
+ARG tag
+FROM mongo:${tag}
