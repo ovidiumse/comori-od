@@ -29,6 +29,17 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     restart: always
 
+  telegraf:
+    build:
+      context: ../telegraf
+      args:
+        - CFG=telegraf-nginx.conf
+    container_name: telegraf-comori
+    volumes_from:
+      - nginx-proxy
+    networks:
+      - proxy
+
 volumes:
   conf:
   vhost:

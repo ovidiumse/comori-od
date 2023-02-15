@@ -1,4 +1,5 @@
-FROM ubuntu:focal
+ARG tag
+FROM ubuntu:${tag}
 
 COPY requirements.txt .
 

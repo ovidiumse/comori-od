@@ -1,0 +1,28 @@
+version: 1
+disable_existing_loggers: true
+formatters:
+  brief:
+    format: '%(name)-15s %(message)s'
+  precise:
+    format: '%(asctime)s,%(msecs)3d [%(thread)d] %(levelname)-8s %(name)-15s %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+handlers:
+  console:
+    class : logging.StreamHandler
+    formatter: precise
+    level   : INFO
+    stream  : ext://sys.stdout
+  file:
+    class : logging.handlers.RotatingFileHandler
+    formatter: precise
+    level: INFO
+    filename: /var/log/comori-od-logprocessor/api.log
+    maxBytes: 8000000
+    backupCount: 10
+loggers:
+  comori-od-logprocessor:
+    propagate: yes
+
+root:
+  level: DEBUG
+  handlers: [console, file]
