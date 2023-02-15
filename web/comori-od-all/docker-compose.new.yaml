@@ -12,6 +12,9 @@ services:
       - proxy
 
   comori-od-mongo:
+    build: 
+      args:
+        - tag=latest
     networks:
       - proxy
 
@@ -23,6 +26,9 @@ services:
       - proxy
 
   comori-od-jupyter:
+    build: 
+      args:
+        - tag=latest
     environment:
       - VIRTUAL_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
       - LETSENCRYPT_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
@@ -30,6 +36,9 @@ services:
       - proxy
 
   comori-od-restapi:
+    build: 
+      args:
+        - tag=latest
     environment:
       - VIRTUAL_HOST=newapi.comori-od.ro,testapi.comori-od.ro
       - LETSENCRYPT_HOST=newapi.comori-od.ro,testapi.comori-od.ro
@@ -37,12 +46,19 @@ services:
       - proxy
 
   comori-od-bibleapi:
+    build: 
+      args:
+        - tag=latest
     environment:
       - VIRTUAL_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
       - LETSENCRYPT_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
     networks:
       - proxy
 
+  maxmind-update:
+    networks:
+      - proxy
+      
   comori-od-logprocessor:
     networks:
       - proxy

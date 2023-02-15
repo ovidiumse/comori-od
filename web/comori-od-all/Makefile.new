@@ -1,8 +1,14 @@
 build:
 	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod build
 
+rebuild:
+	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod build --no-cache
+
 up:
 	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod up -d --remove-orphans
+
+down:
+	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod down
 
 nginx:
 	DOCKER_HOST=ssh://ubuntu-prod ../comori-od-nginx-proxy-new/deploy-conf.sh
