@@ -118,7 +118,10 @@ class WordReplacer(object):
             'Sîntem': 'Suntem',
             'Sînteţi': 'Sunteţi',
             'Isus': 'Iisus',
-            'ISUS': 'IISUS'
+            'Isuse': 'Iisuse',
+            'Isusul': 'Iisusul',
+            'ISUS': 'IISUS',
+            'ISUSE': 'IISUSE'
         }
 
         self.wordPrefixes = [
