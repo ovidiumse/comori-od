@@ -56,10 +56,29 @@ services:
       - proxy
 
   maxmind-update:
+    build: ../maxmind-update
+    container_name: maxmind-update
+    environment:
+      - GEOIPUPDATE_ACCOUNT_ID=${GEOIP_ACCOUNTID}
+      - GEOIPUPDATE_LICENSE_KEY=${GEOIP_LICENSEKEY}
+      - GEOIPUPDATE_EDITION_IDS=GeoLite2-City
+      - GEOIPUPDATE_FREQUENCY=24
+    volumes:
+      - /usr/share/maxmind:/usr/share/GeoIP
+    restart: unless-stopped
     networks:
       - proxy
-      
+
   comori-od-logprocessor:
+    build: ../comori-od-logprocessor
+    container_name: comori-od-logprocessor
+    expose:
+      - 9003
+    volumes_from:
+      - maxmind-update
+    volumes:
+      - /var/log/comori-od-logprocessor:/var/log/comori-od-logprocessor
+    restart: unless-stopped
     networks:
       - proxy
 

@@ -11,7 +11,7 @@ down:
 	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod down
 
 nginx:
-	DOCKER_HOST=ssh://ubuntu-prod ../comori-od-nginx-proxy-new/deploy-conf.sh
+	cd ../comori-od-nginx-proxy-new; DOCKER_HOST=ssh://ubuntu-prod ./deploy-conf.sh
 
 remove:
 	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod down -v

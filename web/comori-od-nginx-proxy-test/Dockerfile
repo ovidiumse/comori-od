@@ -1,4 +1,4 @@
-FROM bugficks/nginx-proxy:latest
+FROM jwilder/nginx-proxy:latest
 
 RUN apt-get update && apt-get install -y less curl vim
 COPY nginx.tmpl .

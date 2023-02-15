@@ -14,6 +14,9 @@ services:
       - proxy
 
   comori-od-mongo:
+    build: 
+      args:
+        - tag=latest
     networks:
       - proxy
 
@@ -23,13 +26,29 @@ services:
     networks:
       - proxy
 
+  comori-od-jupyter:
+    build: 
+      args:
+        - tag=latest
+    environment:
+      - VIRTUAL_HOST=testjupyter.comori-od.ro
+      - LETSENCRYPT_HOST=testjupyter.comori-od.ro
+    networks:
+      - proxy
+ 
   comori-od-restapi:
+    build: 
+      args:
+        - tag=latest
     environment:
       - VIRTUAL_HOST=testapi.comori-od.ro
     networks:
       - proxy
 
   comori-od-bibleapi:
+    build: 
+      args:
+        - tag=latest
     environment:
       - VIRTUAL_HOST=testbible-api.comori-od.ro
     networks:
