@@ -9,17 +9,22 @@ services:
       - 8081:8081
 
   comori-od-jupyter:
+    build: 
+      args:
+        - tag=latest
     ports:
       - 8088:8088
 
   comori-od-restapi:
+    build: 
+      args:
+        - tag=latest
     ports: 
       - 9000:9000
 
   comori-od-bibleapi:
+    build: 
+      args:
+        - tag=latest
     ports:
       - 9002:9002
-
-  comori-od-logprocessor:
-    ports:
-      - 9003:9003

@@ -16,3 +16,7 @@ remove:
 
 logs:
 	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev logs --follow --tail 250
+
+data:
+	API_TOTP_KEY=${API_TOTP} ../../tools/od-upload.py -c --index od
+	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_all.sh --index od
