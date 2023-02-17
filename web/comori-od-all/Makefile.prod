@@ -15,3 +15,7 @@ remove:
 
 logs:
 	DOCKER_HOST=${DOCKER_HOST} docker compose -f docker-compose.yaml -f docker-compose.prod.yaml -f docker-compose.nginxprod.yaml --env-file .env-prod logs --follow --tail 250
+
+data:
+	API_TOTP_KEY=${API_TOTP} ../../tools/od-upload.py -c --index od --external-host
+	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_all.sh --index od --external-host
