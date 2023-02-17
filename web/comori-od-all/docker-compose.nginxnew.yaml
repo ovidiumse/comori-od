@@ -35,6 +35,8 @@ services:
       args:
         - CFG=telegraf-nginx.conf
     container_name: telegraf-comori
+    environment:
+      - hostname=ubuntu-prod
     volumes_from:
       - nginx-proxy
     networks:

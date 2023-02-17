@@ -28,6 +28,9 @@ def make_logline(metric):
 
     return result
 
+def extract_timestamp(metric):
+    return datetime.strptime(metric["fields"]["time_local"], "%d/%b/%Y:%H:%M:%S +0000")
+
 async def send_to_loki(data):
 
     try:
@@ -69,6 +72,7 @@ async def send_to_influx(data):
         try:
             p = Point(metric["name"])
             for tag, value in metric['tags'].items():
+                p.tag(tag, value)
                 p.field(tag, value)
 
             for field, value in metric['fields'].items():
@@ -76,6 +80,8 @@ async def send_to_influx(data):
                     p.field(field, float(value))
                 else:
                     p.field(field, value)
+
+            p.time(extract_timestamp(metric))
 
             InfluxDb.write(bucket=CFG['influx']['bucket'], record=p)
         except Exception as e:

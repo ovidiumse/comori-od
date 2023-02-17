@@ -14,4 +14,5 @@ docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/test.comori-od.ro
 docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/testapi.comori-od.ro
 docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/testbible-api.comori-od.ro
 docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/testjupyter.comori-od.ro
+docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/testmongo.comori-od.ro
 docker restart nginx-proxy
