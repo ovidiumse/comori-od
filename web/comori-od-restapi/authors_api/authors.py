@@ -101,7 +101,7 @@ class AuthorsHandler(MongoClient, FieldAggregator):
 
     @timeit("Sorting authors", __name__)
     def sortAuthors(self, response):
-        response['aggregations']['authors']['buckets'] = sorted(response['aggregations']['authors']['buckets'], key=lambda item: item['position'])
+        response['aggregations']['authors']['buckets'] = sorted(response['aggregations']['authors']['buckets'], key=lambda item: (item['position'], item.get('doc_count', 0)))
 
     @req_handler("Handling authors GET", __name__)
     def on_get(self, req, resp, idx_name):

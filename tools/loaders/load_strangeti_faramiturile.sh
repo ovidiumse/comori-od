@@ -4,7 +4,6 @@ CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
 CFG_DIR=${CWD}/../../cfg
-DATE_ADDED="2022-12-22"
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -42,7 +41,7 @@ ${TOOLS_DIR}/od-extract.py \
     -e ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json &
 
 ${TOOLS_DIR}/od-extract.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_fixed.htm \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7_fixed.htm \
     -c ${CFG_DIR}/strangeti_faramiturile_6.yaml \
     -v "Strângeți Fărâmiturile" \
     -b "Strângeți Fărâmiturile vol. 7" \
@@ -52,13 +51,13 @@ wait
 
 echo "Post-processing Strangeti Faramiturile..."
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@ &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7.json $@ &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7.json $@
 
 wait
 
@@ -68,15 +67,15 @@ ${TOOLS_DIR}/od-remove.py --volume "Strângeți Fărâmiturile" $@
 echo "Uploading Strangeti Faramiturile using '$@' flags..."
 ${TOOLS_DIR}/od-upload.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1_processed.json $@ \
-    --date-added ${DATE_ADDED} \
+    --date-added "2022-12-22" \
     --output-dir ${DATA_DIR}/uploaded
 
 ${TOOLS_DIR}/od-upload.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_processed.json $@ \
-    --date-added ${DATE_ADDED} \
+    --date-added "2023-02-19" \
     --output-dir ${DATA_DIR}/uploaded
 
 ${TOOLS_DIR}/od-upload.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7_processed.json $@ \
-    --date-added ${DATE_ADDED} \
+    --date-added "2023-02-19" \
     --output-dir ${DATA_DIR}/uploaded

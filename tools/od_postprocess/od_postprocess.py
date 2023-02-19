@@ -492,7 +492,7 @@ def post_process_article(article, authors_by_name):
 
     author_data = authors_by_name.get(article['author'])
     if not author_data:
-        logging.info(f"Could not find author info for {article['author']} in {json.dumps(authors_by_name, indent=2)}")
+        logging.info(f"Could not find author info for {article['author']} in {', '.join(authors_by_name.keys())}")
         return
 
     url = author_data.get('photo-url-lg')

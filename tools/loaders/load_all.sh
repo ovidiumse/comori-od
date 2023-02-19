@@ -67,7 +67,7 @@ ${CWD}/load_metadata.sh ${ARGS}
 
 # Preparing uploaded folder
 mkdir -p ${DATA_DIR}/uploaded
-rm -f ${DATA_DIR}/uploaded/*
+rm -f "${DATA_DIR}/uploaded/*"
 
 # Cugetari Nemuritoare
 ${CWD}/load_cugetari_total.sh ${ARGS}
