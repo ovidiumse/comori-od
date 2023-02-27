@@ -19,6 +19,14 @@ remove:
 logs:
 	DOCKER_HOST=ssh://ubuntu-prod docker compose -f docker-compose.yaml -f docker-compose.new.yaml -f docker-compose.nginxnew.yaml --env-file .env-prod logs --follow --tail 250
 
+hunspell:
+	cd ../comori-od-es; DOCKER_HOST=ssh://ubuntu-prod ./deploy-hunspell.sh
+
+metadata: 
+	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_metadata.sh --index od --new-host
+
 data:
 	API_TOTP_KEY=${API_TOTP} ../../tools/od-upload.py -c --index od --new-host
 	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_all.sh --index od --new-host
+
+init: hunspell metadata data

@@ -4,6 +4,11 @@ services:
     ports:
       - 80:80
 
+  comori-od-mongo:
+    build:
+      args:
+        - tag=latest
+
   comori-od-mongoexpress:
     ports:
       - 8081:8081
