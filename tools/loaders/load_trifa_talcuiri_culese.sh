@@ -24,7 +24,7 @@ ${TOOLS_DIR}/od-extract.py \
     -e ${DATA_DIR}/trifa_talcuiri_culese/trifa_talcuiri_culese.json
 
 echo "Post-processing Trifa - Tâlcuiri culese din ziare..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_talcuiri_culese/trifa_talcuiri_culese.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/trifa_talcuiri_culese/trifa_talcuiri_culese.json $@ -s
 
 echo "Removing existing Trifa - Tâlcuiri culese din ziare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --book "Tâlcuiri culese din ziare" $@

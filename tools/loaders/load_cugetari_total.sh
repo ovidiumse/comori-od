@@ -23,7 +23,7 @@ ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/cugetari_total/cugetari_total_fixed.ht
     -e ${DATA_DIR}/cugetari_total/cugetari_total.json
 
 echo "Post-processing Cugetari Nemuritoare..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cugetari_total/cugetari_total.json $@
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cugetari_total/cugetari_total.json $@ -s
 
 echo "Removing existing Cugetari Nemuritoare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Cugetări Nemuritoare" $@
