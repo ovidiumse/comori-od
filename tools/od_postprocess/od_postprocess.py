@@ -233,23 +233,37 @@ class Bible(object):
 
 class BibleRefResolver(object):
     def __init__(self, bible):
+        self.bibleBooks = set([book.lower() for book in bible.get_books()])
+
+        aliases_data = bible.get_aliases()
+        book_name_variations = []
+        for book, aliases in aliases_data.items():
+            book_name_variations.append(book)
+            book_name_variations += aliases
+
+        self.book_names_candidates_regex = '(?P<book_name>(' + '|'.join(book_name_variations).lower() + ')\s*)'
+        self.book_names_regex = r'(?P<book_name>((\d+\s+)?[^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)'
+
         self.regxGroups = {
-            'book_name': r'(?P<book_name>((\d+\s+)?[^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)',
             'chapter': r'(cap\.\s*)?(?P<chapter>\d+)\s*',
             'verse_start': r'(\s*(:|,)?\s*((v.)|(vers.)|(versetul))?\s*(?P<verse_start>\d+))?',
             'verse_end': r'(\s*-\s*(?P<verse_end>\d+)\s*)?',
             'verses': r'(\s*(:|,)?\s*(?P<verses>\s*((\s*,\s*)?\d+)+))?'
         }
 
-        self.regex = re.compile(''.join([v for _, v in self.regxGroups.items()]))
+        self.regex = re.compile(self.book_names_regex + ''.join([v for _, v in self.regxGroups.items()]))
+        self.candidates_regex = re.compile(self.book_names_candidates_regex + ''.join([v for _, v in self.regxGroups.items()]))
+
         self.continuationRegex = re.compile(''.join(
             [r'(?P<prefix>(\s*(;|(şi))\s*))'] +
             [v for k, v in self.regxGroups.items() if k != 'book_name']))
-        self.bibleBooks = set([book.lower() for book in bible.get_books()])
-
+        
         self.bibleCache = {}
         self.errors = []
         self.resolvedRefCnt = 0
+
+    def has_bible_ref_candidate(self, chunk):
+        return None != self.candidates_regex.search(unidecode(chunk).lower())
 
     def extract_book_name(self, bookName):
         return re.sub(r'^\d+\s*', '', bookName)
@@ -382,6 +396,9 @@ class BibleRefResolver(object):
         resolvedRefs = []
         while True:
             chunk = text[lastPos:]
+            if not self.has_bible_ref_candidate(chunk):
+                break
+
             match = self.regex.search(chunk)
             if not match:
                 break
