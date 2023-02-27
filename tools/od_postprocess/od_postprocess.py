@@ -16,7 +16,7 @@ BIBLE_API = "http://localhost:9002"
 
 COMORI_API_LOCAL = "http://localhost:9000"
 COMORI_API_TEST = "https://testapi.comori-od.ro"
-COMORI_API_NEW = "https://newapi.comori-od.ro"
+COMORI_API_NEW = "https://api.comori-od.ro"
 COMORI_API_EXTERNAL = "https://api.comori-od.ro"
 
 BIBLE = None
@@ -116,12 +116,7 @@ class WordReplacer(object):
             'sînteţi': 'sunteţi',
             'Sînt': 'Sunt',
             'Sîntem': 'Suntem',
-            'Sînteţi': 'Sunteţi',
-            'Isus': 'Iisus',
-            'Isuse': 'Iisuse',
-            'Isusul': 'Iisusul',
-            'ISUS': 'IISUS',
-            'ISUSE': 'IISUSE'
+            'Sînteţi': 'Sunteţi'
         }
 
         self.wordPrefixes = [

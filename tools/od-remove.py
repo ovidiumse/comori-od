@@ -9,7 +9,7 @@ PARSER_ = argparse.ArgumentParser(description="OD content remover.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
 TEST_HOST = "https://testapi.comori-od.ro"
-NEW_HOST = "https://newapi.comori-od.ro"
+NEW_HOST = "https://api.comori-od.ro"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST

@@ -40,8 +40,8 @@ services:
       args:
         - tag=latest
     environment:
-      - VIRTUAL_HOST=testapi.comori-od.ro,api.comori-od.ro
-      - LETSENCRYPT_HOST=testapi.comori-od.ro,api.comori-od.ro
+      - VIRTUAL_HOST=api.comori-od.ro,testapi.comori-od.ro
+      - LETSENCRYPT_HOST=api.comori-od.ro,testapi.comori-od.ro
     networks:
       - proxy
 
