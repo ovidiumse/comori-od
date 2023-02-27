@@ -6,6 +6,3 @@ test:
 
 new:
 	make -f Makefile.new build up
-
-prod:
-	make -f Makefile.prod build up

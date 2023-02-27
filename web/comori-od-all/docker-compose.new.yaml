@@ -2,8 +2,8 @@ version: '3.0'
 services:
   comori-od-static-vue:
     environment:
-      - VIRTUAL_HOST=new.comori-od.ro,test.comori-od.ro
-      - LETSENCRYPT_HOST=new.comori-od.ro,test.comori-od.ro
+      - VIRTUAL_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - LETSENCRYPT_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro
     networks:
       - proxy
 
@@ -20,8 +20,8 @@ services:
 
   comori-od-mongoexpress:
     environment:
-      - VIRTUAL_HOST=newmongo.comori-od.ro,testmongo.comori-od.ro
-      - LETSENCRYPT_HOST=newmongo.comori-od.ro,testmongo.comori-od.ro
+      - VIRTUAL_HOST=testmongo.comori-od.ro,mongo.comori-od.ro
+      - LETSENCRYPT_HOST=testmongo.comori-od.ro,mongo.comori-od.ro
     networks:
       - proxy
 
@@ -30,8 +30,8 @@ services:
       args:
         - tag=latest
     environment:
-      - VIRTUAL_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
-      - LETSENCRYPT_HOST=newjupyter.comori-od.ro,testjupyter.comori-od.ro
+      - VIRTUAL_HOST=testjupyter.comori-od.ro,jupyter.comori-od.ro
+      - LETSENCRYPT_HOST=testjupyter.comori-od.ro,jupyter.comori-od.ro
     networks:
       - proxy
 
@@ -40,8 +40,8 @@ services:
       args:
         - tag=latest
     environment:
-      - VIRTUAL_HOST=newapi.comori-od.ro,testapi.comori-od.ro
-      - LETSENCRYPT_HOST=newapi.comori-od.ro,testapi.comori-od.ro
+      - VIRTUAL_HOST=testapi.comori-od.ro,api.comori-od.ro
+      - LETSENCRYPT_HOST=testapi.comori-od.ro,api.comori-od.ro
     networks:
       - proxy
 
@@ -50,8 +50,8 @@ services:
       args:
         - tag=latest
     environment:
-      - VIRTUAL_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
-      - LETSENCRYPT_HOST=newbible-api.comori-od.ro,testbible-api.comori-od.ro
+      - VIRTUAL_HOST=testbible-api.comori-od.ro,bible-api.comori-od.ro
+      - LETSENCRYPT_HOST=testbible-api.comori-od.ro,bible-api.comori-od.ro
     networks:
       - proxy
 
