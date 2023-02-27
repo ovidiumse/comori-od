@@ -133,15 +133,27 @@ class AuthorsHandler(MongoClient, FieldAggregator):
 
         authors = json.loads(req.stream.read())
 
+        author_names = set()
+        for a in authors:
+            author_names.add(a['name'])
+
         LOGGER_.info(f"Indexing {len(authors)} authors into {idx_name}...")
 
         modifiedCnt = 0
         upsertedCnt = 0
+        deletedCnt = 0
+
         col = self.getCollection(idx_name, 'authors')
+        db_authors = [a for a in col.find({})]
+        for a in db_authors:
+            if a['name'] not in author_names:
+                response = col.delete_one({'_id': a['_id']})
+                deletedCnt += response.deleted_count
+        
         for a in authors:
             result = col.update_one({'name': a['name']}, {'$set': a}, upsert=True)
             modifiedCnt += result.modified_count
             upsertedCnt += 1 if result.upserted_id else 0
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps({'modifiedCnt': modifiedCnt, 'upsertedCnt': upsertedCnt})
+        resp.body = json.dumps({'modifiedCnt': modifiedCnt, 'upsertedCnt': upsertedCnt, 'deletedCnt': deletedCnt})
