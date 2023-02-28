@@ -51,13 +51,13 @@ wait
 
 echo "Post-processing Strangeti Faramiturile..."
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ -s &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ &
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@ -s &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@ &
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7.json $@ -s &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7.json $@ &
 
 wait
 
