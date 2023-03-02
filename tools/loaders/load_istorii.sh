@@ -28,10 +28,10 @@ ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/istorii/istorii_4_fixed.htm -c ${CFG_D
 wait
 
 echo "Post-processing Istoria unei Jertfe..."
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_1.json $@ -s &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_2.json $@ -s &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_3.json $@ -s &
-${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_4.json $@ -s &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_1.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_2.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_3.json $@ &
+${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/istorii/istorii_4.json $@ &
 
 wait
 

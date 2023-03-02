@@ -5,7 +5,6 @@ import argparse
 import logging
 import requests
 import simplejson as json
-import multiprocessing
 import hashlib
 import time
 from unidecode import unidecode
@@ -42,7 +41,6 @@ def parseArgs():
                          help="Use external API host")
     PARSER_.add_argument("-t", "--test-host", action="store_true", help="Use test API host")
     PARSER_.add_argument("-n", "--new-host", action="store_true", help="Use the new API host")
-    PARSER_.add_argument("-s", "--single-threaded", action="store_true", help="Use single-threaded post-processing (useful for debugging)")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -241,6 +239,7 @@ class BibleRefResolver(object):
             book_name_variations.append(book)
             book_name_variations += aliases
 
+        book_name_variations = sorted(book_name_variations, key=lambda b: len(b), reverse=True)
         self.book_names_candidates_regex = '(?P<book_name>(' + '|'.join(book_name_variations).lower() + ')\s*)'
         self.book_names_regex = r'(?P<book_name>((\d+\s+)?[^\d\s!"\$%&\'()*+,\-.\/:;=#@?\[\\\]^_`{|}~]+\.?\s*){1,3}?)'
 
@@ -491,11 +490,6 @@ class BibleRefResolver(object):
         return None
 
 
-def resolve_article_bible_refs(article, resolver: BibleRefResolver):
-    resolver.process_article(article)
-    return resolver.resolvedRefCnt, resolver.errors
-
-
 def post_process_article(article, authors_by_name):
     replacer = WordReplacer()
 
@@ -579,35 +573,15 @@ def process_article(article, authors_by_name, resolver: BibleRefResolver):
     print(f"Post-processing {article['book']} - {article['title']}")
 
     post_process_article(article, authors_by_name)
-    resolvedRefCnt, resolvingErrors = resolve_article_bible_refs(article, resolver)
+    resolver.process_article(article)
 
-    return article, resolvedRefCnt, resolvingErrors
+    return article
     
 
 def post_process_articles(articles, authors_by_name, bible, args):
     resolver = BibleRefResolver(bible)
-
-    if args.single_threaded:
-        results = [process_article(a, authors_by_name, resolver) for a in articles]
-    else:
-        pool = multiprocessing.Pool(max(1, os.cpu_count() - 1))
-
-        results = [pool.apply_async(process_article, args=(a, authors_by_name, resolver)) for a in articles]
-        results = [result.get() for result in results]
-
-        pool.close()
-        pool.join()
-    
-    articles = []
-    resolvedRefCnt = 0
-    resolvingErrors = []
-    for result in results:
-        article, articleResolvedRefCnt, articleResolvingErrors = result
-        articles.append(article)
-        resolvedRefCnt += articleResolvedRefCnt
-        resolvingErrors += articleResolvingErrors
-
-    return articles, resolvedRefCnt, resolvingErrors
+    results = [process_article(a, authors_by_name, resolver) for a in articles]
+    return results, resolver.resolvedRefCnt, resolver.errors
 
 
 def isIgnoredBook(book):

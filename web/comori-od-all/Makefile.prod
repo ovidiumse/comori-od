@@ -28,5 +28,6 @@ metadata:
 data:
 	API_TOTP_KEY=${API_TOTP} ../../tools/od-upload.py -c --index od --new-host
 	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_all.sh --index od --new-host
+	../../tools/prepare_diff.sh
 
 init: hunspell metadata data

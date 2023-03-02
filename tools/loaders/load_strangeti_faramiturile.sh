@@ -51,13 +51,13 @@ wait
 
 echo "Post-processing Strangeti Faramiturile..."
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ -s &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ &
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@ -s &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@ &
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7.json $@ -s &
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7.json $@ &
 
 wait
 
@@ -70,12 +70,12 @@ ${TOOLS_DIR}/od-upload.py \
     --date-added "2022-12-22" \
     --output-dir ${DATA_DIR}/uploaded
 
-${TOOLS_DIR}/od-upload.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_processed.json $@ \
-    --date-added "2023-02-19" \
-    --output-dir ${DATA_DIR}/uploaded
+# ${TOOLS_DIR}/od-upload.py \
+  #  -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_processed.json $@ \
+   # --date-added "2023-02-19" \
+    #--output-dir ${DATA_DIR}/uploaded
 
-${TOOLS_DIR}/od-upload.py \
-    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7_processed.json $@ \
-    --date-added "2023-02-19" \
-    --output-dir ${DATA_DIR}/uploaded
+# ${TOOLS_DIR}/od-upload.py \
+  #  -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7_processed.json $@ \
+   # --date-added "2023-02-19" \
+    #--output-dir ${DATA_DIR}/uploaded
