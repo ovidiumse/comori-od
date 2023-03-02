@@ -2,8 +2,8 @@ version: '3.0'
 services:
   comori-od-static-vue:
     environment:
-      - VIRTUAL_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro
-      - LETSENCRYPT_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro
+      - VIRTUAL_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro,yakis.cloud
+      - LETSENCRYPT_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro,yakis.cloud
     networks:
       - proxy
 
