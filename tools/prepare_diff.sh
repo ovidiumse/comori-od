@@ -11,18 +11,15 @@ copy() {
 
     echo "Copying $source/*.txt to $dest"
     for file in $source/*.txt; do
-        cp $file $dest
-    done
-
-    echo "Copying $source/*.md5 to $dest"
-    for file in $source/*.md5; do
-        cp $file $dest
+        cp $file $dest &
     done
 
     echo "Copying $source/*.json  to $dest"
     for file in $source/*.json; do
-        cp $file $dest
+        cp $file $dest &
     done
+
+    wait
 }
 
 prepare_dir() {
@@ -43,11 +40,6 @@ prepare_dir() {
         git restore $(basename $file)
     done
 
-    echo "Checking out $dir/*.md5 from HEAD..."
-    for file in $dir/*.md5; do
-        git restore $(basename $file)
-    done
-    
     echo "Checking out $dir/*.json from HEAD..."
     for file in $dir/*.json; do
         git restore $(basename $file)
@@ -57,6 +49,18 @@ prepare_dir() {
 
     copy $dir $dest_old
     copy $dest_new $dir
+
+    for file in $dest_old/*.json; do
+        echo "Replacing things in $file..."
+        sed -i 's/.*api.comori-od.ro/api.comori-od.ro/g' $file &
+    done
+
+    for file in $dest_new/*.json; do
+        echo "Replacing things in $file..."
+        sed -i 's/.*api.comori-od.ro/api.comori-od.ro/g' $file &
+    done
+
+    wait
 }
 
 prepare_dir "cugetari_total"

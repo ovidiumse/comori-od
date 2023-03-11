@@ -1,4 +1,4 @@
-#!/usr/bin/pypy3
+#!/usr/bin/python3.11
 import os
 import re
 import argparse
@@ -601,30 +601,6 @@ def get_authors():
     return authors_by_name
 
 
-def compute_md5(filepath):
-    print(f"Computing md5 for {os.path.basename(filepath)}...")
-    with open(filepath, 'rb') as file:
-        return hashlib.md5(file.read()).hexdigest()
-
-
-def get_md5(filepath):
-    md5_filepath = os.path.splitext(filepath)[0] + "_json.md5"
-    print(f"Looking for {os.path.basename(filepath)} md5 into {os.path.basename(md5_filepath)}...")
-    
-    if not os.path.exists(md5_filepath):
-        return None
-    else:
-        with open(md5_filepath, 'r') as file:
-            return file.readline()
-
-
-def write_md5(filepath, md5):
-    md5_filepath = os.path.splitext(filepath)[0] + "_json.md5"
-    print(f"Writing md5 {md5} for {os.path.basename(filepath)} into {os.path.basename(md5_filepath)}...")
-    with open(md5_filepath, 'w') as file:
-        file.write(md5)
-
-
 def main():
     args = parseArgs()
 
@@ -646,16 +622,6 @@ def main():
         COMORI_API = COMORI_API_NEW
     else:
         COMORI_API = COMORI_API_LOCAL
-
-    current_md5 = f"{compute_md5(args.input)}_{COMORI_API}"
-    previous_md5 = get_md5(args.input)
-    if current_md5 == previous_md5:
-        print(f"File {os.path.basename(args.input)} did not change, skipping...\n")
-        return
-    else:
-        print(f"Got {current_md5} vs {previous_md5}")
-
-    write_md5(args.input, current_md5)
 
     logging.info(f"Loading authors from {COMORI_API}...")
     authors_by_name = get_authors()

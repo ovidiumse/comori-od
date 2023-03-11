@@ -17,11 +17,10 @@ hunspell:
 	cd ../comori-od-es; DOCKER_HOST=ssh://ubuntu-dev ./deploy-hunspell.sh
 
 metadata: 
-	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_metadata.sh --index od --test-host
+	../../tools/loaders/load_metadata.sh --index od --test-host
 
 data:
-	API_TOTP_KEY=${API_TOTP} ../../tools/od-upload.py -c --index od --test-host
-	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_all.sh --index od --test-host
+	../../tools/loaders/load_all.sh --index od --test-host
 	../../tools/prepare_diff.sh
 
 init: hunspell metadata data
