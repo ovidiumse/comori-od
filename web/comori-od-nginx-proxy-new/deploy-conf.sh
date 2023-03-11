@@ -7,10 +7,7 @@ docker cp api.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/api.comori-od.ro
 docker cp bible-api.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/bible-api.comori-od.ro
 docker cp mongo.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/mongo.comori-od.ro
 docker cp new.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/new.comori-od.ro
-<<<<<<< Updated upstream
 docker cp yakis.cloud.conf nginx-proxy:/etc/nginx/vhost.d/yakis.cloud
-=======
->>>>>>> Stashed changes
 docker cp proxy.conf nginx-proxy:/etc/nginx/conf.d/
 docker cp nginx.tmpl nginx-proxy:/app/
 
