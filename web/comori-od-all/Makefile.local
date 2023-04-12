@@ -21,11 +21,10 @@ hunspell:
 	cd ../comori-od-es; ./deploy-hunspell.sh
 
 metadata: 
-	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_metadata.sh --index od
+	../../tools/loaders/load_metadata.sh --index od
 
 data:
-	API_TOTP_KEY=${API_TOTP} ../../tools/od-upload.py -c --index od
-	API_TOTP_KEY=${API_TOTP} ../../tools/loaders/load_all.sh --index od
+	../../tools/loaders/load_all.sh --index od
 	../../tools/prepare_diff.sh
 
 init: hunspell metadata data

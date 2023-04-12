@@ -16,6 +16,10 @@ ${TOOLS_DIR}/od-fix.py \
     -c ${CFG_DIR}/strangeti_faramiturile.yaml &
 
 ${TOOLS_DIR}/od-fix.py \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_2.htm \
+    -c ${CFG_DIR}/strangeti_faramiturile.yaml &
+
+${TOOLS_DIR}/od-fix.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.htm \
     -c ${CFG_DIR}/strangeti_faramiturile_6.yaml &
 
@@ -32,6 +36,13 @@ ${TOOLS_DIR}/od-extract.py \
     -v "Strângeți Fărâmiturile" \
     -b "Strângeți Fărâmiturile vol. 1" \
     -e ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json &
+
+${TOOLS_DIR}/od-extract.py \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_2_fixed.htm \
+    -c ${CFG_DIR}/strangeti_faramiturile.yaml \
+    -v "Strângeți Fărâmiturile" \
+    -b "Strângeți Fărâmiturile vol. 2" \
+    -e ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_2.json &
 
 ${TOOLS_DIR}/od-extract.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_fixed.htm \
@@ -54,6 +65,9 @@ ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_1.json $@ &
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_2.json $@ &
+
+${TOOLS_DIR}/od_postprocess/od_postprocess.py \
     -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6.json $@ &
 
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py \
@@ -70,12 +84,17 @@ ${TOOLS_DIR}/od-upload.py \
     --date-added "2022-12-22" \
     --output-dir ${DATA_DIR}/uploaded
 
-# ${TOOLS_DIR}/od-upload.py \
-  #  -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_processed.json $@ \
-   # --date-added "2023-02-19" \
-    #--output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_2_processed.json $@ \
+    --date-added "2023-03-06" \
+    --output-dir ${DATA_DIR}/uploaded
 
-# ${TOOLS_DIR}/od-upload.py \
-  #  -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7_processed.json $@ \
-   # --date-added "2023-02-19" \
-    #--output-dir ${DATA_DIR}/uploaded
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_6_processed.json $@ \
+    --date-added "2023-02-19" \
+    --output-dir ${DATA_DIR}/uploaded
+
+${TOOLS_DIR}/od-upload.py \
+    -i ${DATA_DIR}/strangeti_faramiturile/strangeti_faramiturile_7_processed.json $@ \
+    --date-added "2023-02-19" \
+    --output-dir ${DATA_DIR}/uploaded

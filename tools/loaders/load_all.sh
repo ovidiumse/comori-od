@@ -7,7 +7,6 @@ MAIN_DIR=${CWD}/../../web/comori-od-all
 IMG_DIR=${CWD}/../../img
 TOOLS_DIR=${CWD}/../
 NGINX_DATA_DIR=${CWD}/../../web/comori-od-nginx-proxy/data
-REBUILD=0
 
 ARGS=$@
 
@@ -56,18 +55,14 @@ cd ${MAIN_DIR}
 make -f Makefile.local bible-up
 cd ${CWD}
 
-if [ $REBUILD -eq 1 ]
-then
-  echo "Removing all md5 files..."
-  find ${DATA_DIR} -name "*.md5" | xargs rm
-fi
-
 # Metadata
 ${CWD}/load_metadata.sh ${ARGS}
 
 # Preparing uploaded folder
 mkdir -p ${DATA_DIR}/uploaded
 rm -f "${DATA_DIR}/uploaded/*"
+
+${TOOLS_DIR}/od-upload.py -c ${ARGS}
 
 # Cugetari Nemuritoare
 ${CWD}/load_cugetari_total.sh ${ARGS}
