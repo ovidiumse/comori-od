@@ -1,3 +1,4 @@
+import os
 import uvicorn
 import logging
 import ujson
@@ -6,6 +7,7 @@ import user_agents
 import geoip2.database
 import requests
 import time
+import pyodbc
 
 from datetime import datetime
 from flatten_json import flatten
@@ -85,7 +87,77 @@ async def send_to_influx(data):
 
             InfluxDb.write(bucket=CFG['influx']['bucket'], record=p)
         except Exception as e:
-            logging.error(f"Sending log metrics failed! Error: {e}")
+            logging.error(f"Sending log metrics to influxdb failed! Error: {e}")
+
+
+async def send_to_sqlserver(data):
+    conn = pyodbc.connect("Driver={ODBC Driver 18 for SQL Server};"
+                          f"Server={CFG['sqlserver']['url']};"
+                          "Database=comori;"
+                          f"UID={CFG['sqlserver']['user']};"
+                          f"PWD={CFG['sqlserver']['pass']};"
+                          "Encrypt=Optional;")
+    
+    cursor = conn.cursor()
+    cursor.fast_executemany = True
+
+    pts = []
+    for metric in data["metrics"]:
+        try:
+            data = {}
+
+            for field, value in metric["fields"].items():
+                data[field] = value
+            
+            for tag, value in metric["tags"].items():
+                data[tag] = value
+
+            data["created"] = extract_timestamp(metric)
+
+            cursor.execute("""INSERT INTO nginx_logs 
+                VALUES
+                (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                data["created"], 
+                data["time_local"],
+                data.get("bytes_sent"),
+                data.get("client_addr"), 
+                data.get("geoip_city"), 
+                data.get("geoip_continent"), 
+                data.get("geoip_continent_code"),
+                data.get("geoip_country"),
+                data.get("geoip_country_code"),
+                data.get("geoip_location_latitude"),
+                data.get("geoip_location_longitude"),
+                data.get("geoip_location_time_zone"),
+                data.get("geoip_region"),
+                data.get("geoip_region_code"),
+                data.get("host"),
+                data.get("http_referer"),
+                data.get("method"),
+                data.get("path"),
+                data.get("remote_addr"),
+                data.get("request"),
+                data.get("request_time"),
+                data.get("upstream_response_time"),
+                data.get("status"),
+                data.get("user_agent_app"),
+                data.get("user_agent_app_version"),
+                data.get("user_agent_browser_family"),
+                data.get("user_agent_browser_version"),
+                data.get("user_agent_device_brand"),
+                data.get("user_agent_device_family"),
+                data.get("user_agent_device_model"),
+                data.get("user_agent_is_mobile"),
+                data.get("user_agent_os_family"),
+                data.get("user_agent_os_version"),
+                data.get("http_user_agent"))
+        except Exception as e:
+            logging.error(f"Sending log metrics to mongo failed! Error: {e}", exc_info=True)
+
+    cursor.commit()
+    cursor.close()
+    conn.close()
 
 
 @app.post("/nginx_log")
@@ -97,49 +169,63 @@ async def nginx_log(request: Request):
             tags_dict = metric["tags"]
             
             with geoip2.database.Reader('/usr/share/GeoIP/GeoLite2-City.mmdb') as reader:
-                response = reader.city(tags_dict['client_addr'])
-                tags_dict["geoip"] = {
-                    "city": response.city.name,
-                    "continent": response.continent.name,
-                    "continent_code": response.continent.code,
-                    "country": response.country.name,
-                    "country_code": response.country.iso_code,
-                    "location": {
-                        "time_zone": response.location.time_zone
-                    },
-                    "region": response.subdivisions.most_specific.name,
-                    "region_code": response.subdivisions.most_specific.iso_code
-                }
-
-                fields_dict["geoip"] = {
-                    "location": {
-                        "latitude": response.location.latitude,
-                        "longitude": response.location.longitude
+                try:
+                    response = reader.city(tags_dict['client_addr'])
+                    tags_dict["geoip"] = {
+                        "city": response.city.name,
+                        "continent": response.continent.name,
+                        "continent_code": response.continent.code,
+                        "country": response.country.name,
+                        "country_code": response.country.iso_code,
+                        "location": {
+                            "time_zone": response.location.time_zone
+                        },
+                        "region": response.subdivisions.most_specific.name,
+                        "region_code": response.subdivisions.most_specific.iso_code
                     }
-                }
 
-            user_agent = user_agents.parse(fields_dict["http_user_agent"])
-            tags_dict["user_agent"] = {
-                "browser_family": user_agent.browser.family, 
-                "browser_version": user_agent.browser.version_string, 
-                "os_family": user_agent.os.family, 
-                "os_version": user_agent.os.version_string,
-                "device_family": user_agent.device.family,
-                "device_brand": user_agent.device.brand,
-                "device_model": user_agent.device.model,
-                "is_mobile": user_agent.is_mobile,
-                "is_bot": user_agent.is_bot,
-                "is_pc": user_agent.is_pc,
-                "is_tablet": user_agent.is_tablet
-            }
+                    fields_dict["geoip"] = {
+                        "location": {
+                            "latitude": response.location.latitude,
+                            "longitude": response.location.longitude
+                        }
+                    }
+                except Exception as e:
+                    logging.error(f"Looking up IP failed! Error: {e}")
+
+            app_str = fields_dict["http_user_agent"].split(" ")[0]
+            app_parts = app_str.split("/")
+            if len(app_parts) == 2:
+                app, version = (app_parts[0], app_parts[1])
+            elif app_parts:
+                app = app_parts[0]
+                version = "-"
+
+            try:
+                user_agent = user_agents.parse(fields_dict["http_user_agent"])
+                tags_dict["user_agent"] = {
+                    "browser_family": user_agent.browser.family, 
+                    "browser_version": user_agent.browser.version_string, 
+                    "os_family": user_agent.os.family, 
+                    "os_version": user_agent.os.version_string,
+                    "device_family": user_agent.device.family,
+                    "device_brand": user_agent.device.brand,
+                    "device_model": user_agent.device.model,
+                    "is_mobile": user_agent.is_mobile,
+                    "app": app,
+                    "app_version": version
+                }
+            except Exception as e:
+                logging.error(f"Parsing HTTP user agent failed! Error: {e}")
 
             metric["fields"] = flatten(metric["fields"])
             metric["tags"] = flatten(metric["tags"])
 
         await send_to_loki(data)
         await send_to_influx(data)
+        await send_to_sqlserver(data)
     except Exception as e:
-        logging.error(f"Failed to transform! Error: {e}")
+        logging.error(f"Failed to transform! Error: {e}", exc_info=True)
         raise
 
 
