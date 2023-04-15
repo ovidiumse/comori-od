@@ -1,6 +1,5 @@
 #!/usr/bin/sh
 
-export $(cat ../comori-od-all/.env-test | xargs)
 docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/test.comori-od.ro
 docker cp test.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/localhost
 docker cp testapi.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/testapi.comori-od.ro
