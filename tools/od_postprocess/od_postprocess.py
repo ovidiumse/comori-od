@@ -7,6 +7,7 @@ import requests
 import simplejson as json
 import hashlib
 import time
+import readtime
 from unidecode import unidecode
 from datetime import datetime
 from prettytable import PrettyTable
@@ -490,6 +491,14 @@ class BibleRefResolver(object):
         return None
 
 
+def calculate_read_time(article):
+    total_seconds = 0
+    for line in article['body']:
+        total_seconds += readtime.of_text(line).seconds
+
+    return total_seconds
+
+
 def post_process_article(article, authors_by_name):
     replacer = WordReplacer()
 
@@ -568,6 +577,8 @@ def post_process_article(article, authors_by_name):
     article['verses'] = new_verses
     article['body'] = split_all(
         ["\n".join(["".join([chunk['text'] for chunk in verse]) for verse in article['verses']])])
+    
+    article['read_time'] = calculate_read_time(article)
 
 def process_article(article, authors_by_name, resolver: BibleRefResolver):
     print(f"Post-processing {article['book']} - {article['title']}")
