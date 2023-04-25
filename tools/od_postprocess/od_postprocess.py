@@ -492,11 +492,8 @@ class BibleRefResolver(object):
 
 
 def calculate_read_time(article):
-    total_seconds = 0
-    for line in article['body']:
-        total_seconds += readtime.of_text(line).seconds
-
-    return total_seconds
+    body = "\n".join(article['body'])
+    return readtime.of_text(body).seconds
 
 
 def post_process_article(article, authors_by_name):
