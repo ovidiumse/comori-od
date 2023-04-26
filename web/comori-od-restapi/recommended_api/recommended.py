@@ -27,12 +27,15 @@ class RecommendedHandler(MongoClient, MobileAppService):
         limit = int(req.params['limit']) if 'limit' in req.params else 10
 
         auth = self.authorize(req.get_header("Authorization", required=True))
+        uid = self.getUserId(auth)
+
         readArticles = [
             self.removeInternalFields(read)
-            for read in self.getCollection(idx_name, 'readArticles').find({'uid': self.getUserId(auth)})
+            for read in self.getCollection(idx_name, 'readArticles').find({'uid': uid})
         ]
 
         if not readArticles:
+            LOGGER_.info(f"No read articles for user {uid}!")
             resp.status = falcon.HTTP_200
             resp.body = json.dumps([])
             return
@@ -42,19 +45,19 @@ class RecommendedHandler(MongoClient, MobileAppService):
         aWeekBeforeLastRead = lastReadTimestamp - timedelta(days=7)
         maxReadArticleCandidatesCnt = 5
         readArticles = [read for read in readArticles
-                        if read['timestamp'] > f"{aWeekBeforeLastRead.isoformat()}Z"][:maxReadArticleCandidatesCnt]
-
+                        if read['timestamp'] > f"{aWeekBeforeLastRead.isoformat()}Z"]
+        
         readIds = [read['id'] for read in readArticles]
-        likes = [{'_id': id} for id in readIds]
+        likes = [{'_id': id} for id in readIds][:maxReadArticleCandidatesCnt]
         query_body = {
             'query': {
                 'more_like_this': {
-                    'fields': ["title", "verses.text", "verses.text.folded"],
+                    'fields': ["body", "body.folded"],
                     'like': likes,
-                    'min_term_freq': 10,
+                    'min_term_freq': 2,
                     'min_word_length': 4,
                     'minimum_should_match': '80%',
-                    'max_query_terms': 50
+                    'max_query_terms': 20
                 },
             },
             '_source': {
@@ -65,6 +68,7 @@ class RecommendedHandler(MongoClient, MobileAppService):
 
         response = self.es_.search(index=idx_name, body=query_body)
         hits = response['hits']['hits']
+        LOGGER_.info(f"User {uid} has {len(hits)} recommended articles")
 
         # filter out already read articles
         sources = []
