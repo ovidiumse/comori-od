@@ -59,10 +59,10 @@ def req_handler(operation, loggerName):
     return inner
 
 
-def buildTermFilter(field, values):
+def buildTermFilter(field, sep, values):
     fieldFilters = []
 
-    for value in values.split(','):
+    for value in values.split(sep):
         if value:
             fieldFilters.append({'term': {field: value}})
 
@@ -80,6 +80,7 @@ def buildTermFilter(field, values):
 
 
 def parseFilters(req):
+    sep = urllib.parse.unquote(req.params['sep']) if 'sep' in req.params else ","
     authors = urllib.parse.unquote(req.params['authors']) if 'authors' in req.params else ""
     types = urllib.parse.unquote(req.params['types']) if 'types' in req.params else ""
     volumes = urllib.parse.unquote(req.params['volumes']) if 'volumes' in req.params else ""
@@ -88,10 +89,10 @@ def parseFilters(req):
     filters = []
 
     fieldFilters = [
-        buildTermFilter('author', authors),
-        buildTermFilter('type', types),
-        buildTermFilter('volume', volumes),
-        buildTermFilter('book', books)
+        buildTermFilter('author', sep, authors),
+        buildTermFilter('type', sep, types),
+        buildTermFilter('volume', sep, volumes),
+        buildTermFilter('book', sep, books)
     ]
 
     for fieldFilter in fieldFilters:

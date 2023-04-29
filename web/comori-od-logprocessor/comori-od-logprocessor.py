@@ -36,6 +36,8 @@ def extract_timestamp(metric):
 async def send_to_loki(data):
 
     try:
+        logging.info(f"Sending to Loki...")
+
         response = requests.get(f"{CFG['loki']['url']}/ready")
         while response.status_code != 200:
             logging.info("Waiting for Loki to become ready...")
@@ -68,6 +70,8 @@ async def send_to_loki(data):
         logging.error(f"Sending log failed! Error: {e}")
 
 async def send_to_influx(data):
+    logging.info(f"Sending to InfluxDb...")
+
     float_fields = ["request_time", "upstream_response_time", "geoip_location_latitude", "geoip_location_longitude"]
 
     for metric in data["metrics"]:
@@ -91,6 +95,8 @@ async def send_to_influx(data):
 
 
 async def send_to_sqlserver(data):
+    logging.info(f"Sending to SqlServer...")
+
     conn = pyodbc.connect("Driver={ODBC Driver 18 for SQL Server};"
                           f"Server={CFG['sqlserver']['url']};"
                           "Database=comori;"
@@ -101,7 +107,6 @@ async def send_to_sqlserver(data):
     cursor = conn.cursor()
     cursor.fast_executemany = True
 
-    pts = []
     for metric in data["metrics"]:
         try:
             data = {}
@@ -155,9 +160,11 @@ async def send_to_sqlserver(data):
         except Exception as e:
             logging.error(f"Sending log metrics to mongo failed! Error: {e}", exc_info=True)
 
+    logging.info("Committing...")
     cursor.commit()
     cursor.close()
     conn.close()
+    logging.info("Done!")
 
 
 @app.post("/nginx_log")
@@ -222,7 +229,7 @@ async def nginx_log(request: Request):
             metric["tags"] = flatten(metric["tags"])
 
         await send_to_loki(data)
-        await send_to_influx(data)
+        # await send_to_influx(data)
         await send_to_sqlserver(data)
     except Exception as e:
         logging.error(f"Failed to transform! Error: {e}", exc_info=True)
