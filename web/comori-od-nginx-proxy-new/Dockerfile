@@ -5,6 +5,7 @@ COPY nginx.tmpl .
 # Apple
 RUN mkdir /usr/share/nginx/html/.well-known
 COPY apple-app-site-association /usr/share/nginx/html/.well-known/apple-app-site-association
+COPY assetlinks.json /usr/share/nginx/html/.well-known/assetlinks.json
 
 # Privacy
 COPY privacy.html /usr/share/nginx/html/privacy.html
