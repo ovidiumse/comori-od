@@ -39,12 +39,12 @@ services:
     networks:
       - proxy
 
-  comori-od-talk:
+  comori-od-nextcloud:
     build:  ../comori-od-dummy
-    container_name: comori-od-talk
+    container_name: comori-od-nextcloud
     environment:
-      - VIRTUAL_HOST=talk.comori-od.ro
-      - LETSENCRYPT_HOST=talk.comori-od.ro
+      - VIRTUAL_HOST=nextcloud.comori-od.ro
+      - LETSENCRYPT_HOST=nextcloud.comori-od.ro
       - VIRTUAL_PORT=8082
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     expose:
