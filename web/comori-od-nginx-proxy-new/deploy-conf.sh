@@ -12,6 +12,10 @@ docker cp matrix.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/matrix.comori-od.
 docker cp turn.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/turn.comori-od.ro
 docker cp new.comori-od.conf nginx-proxy:/etc/nginx/vhost.d/
 
+docker cp apple-app-site-association nginx-proxy:/usr/share/nginx/html/.well-known/apple-app-site-association
+docker cp assetlinks.json nginx-proxy:/usr/share/nginx/html/.well-known/assetlinks.json
+docker cp privacy.html nginx-proxy:/usr/share/nginx/html/privacy.html
+
 docker cp proxy.conf nginx-proxy:/etc/nginx/conf.d/
 docker cp nginx.tmpl nginx-proxy:/app/
 

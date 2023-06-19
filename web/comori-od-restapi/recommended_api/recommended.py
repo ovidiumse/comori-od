@@ -41,47 +41,52 @@ class RecommendedHandler(MongoClient, MobileAppService):
             return
 
         readArticles = sorted(readArticles, key=lambda a: a['timestamp'], reverse=True)
-        lastReadTimestamp = datetime.strptime(readArticles[0]['timestamp'], '%Y-%m-%dT%H:%M:%S.%fZ')
-        aWeekBeforeLastRead = lastReadTimestamp - timedelta(days=7)
-        maxReadArticleCandidatesCnt = 5
-        readArticles = [read for read in readArticles
-                        if read['timestamp'] > f"{aWeekBeforeLastRead.isoformat()}Z"]
-        
         readIds = [read['id'] for read in readArticles]
-        likes = [{'_id': id} for id in readIds][:maxReadArticleCandidatesCnt]
-        query_body = {
-            'query': {
-                'more_like_this': {
-                    'fields': ["body", "body.folded"],
-                    'like': likes,
-                    'min_term_freq': 2,
-                    'min_word_length': 4,
-                    'minimum_should_match': '80%',
-                    'max_query_terms': 20
+        
+        def filterAlreadyRead(hits):
+            sources = []
+            for hit in hits:
+                if hit['_id'] in readIds:
+                    continue
+
+                source = hit['_source']
+                source['_id'] = hit['_id']
+                source['_score'] = hit['_score']
+                sources.append(source)
+
+            return sources
+            
+        recommended_by_id = {}
+        recommended = []
+        for read in readArticles:
+            query_body = {
+                'query': {
+                    'more_like_this': {
+                        'fields': ["body", "body.folded"],
+                        'like': [{'_id': read['id']}],
+                        'min_term_freq': 1,
+                        'min_word_length': 4,
+                        'minimum_should_match': '80%',
+                        'max_query_terms': 20
+                    },
                 },
-            },
-            '_source': {
-                'excludes': ['verses', 'body', 'bible-refs']
-            },
-            'size': limit + len(readArticles)
-        }
+                '_source': {
+                    'excludes': ['verses', 'body', 'bible-refs']
+                },
+                'size': limit + len(readArticles)
+            }
 
-        response = self.es_.search(index=idx_name, body=query_body)
-        hits = response['hits']['hits']
-        LOGGER_.info(f"User {uid} has {len(hits)} recommended articles")
+            response = self.es_.search(index=idx_name, body=query_body)
+            hits = response['hits']['hits']
+            unread_hits = filterAlreadyRead(hits)
 
-        # filter out already read articles
-        sources = []
-        for hit in hits:
-            if hit['_id'] in readIds:
-                continue
+            recommended_by_id[read['id']] = {'recommended': len(hits), 'read': len(hits) - len(unread_hits)}
+            recommended += unread_hits
 
-            source = hit['_source']
-            source['_id'] = hit['_id']
-            source['_score'] = hit['_score']
-            sources.append(source)
+            if len(recommended) >= limit:
+                recommended = recommended[:limit]
+                break
 
-        sources = sources[:limit]
-
+        LOGGER_.info(f"User {uid} has {len(recommended)} recommended articles: \n{json.dumps(recommended_by_id, indent=2)}")
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(sources)
+        resp.body = json.dumps(recommended)
