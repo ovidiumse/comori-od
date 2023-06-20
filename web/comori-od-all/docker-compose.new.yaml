@@ -152,6 +152,20 @@ services:
     networks:
       - proxy
 
+  telegraf:
+    build:
+      context: ../telegraf
+      args:
+        - CFG=telegraf-nginx.conf
+    container_name: telegraf-comori
+    volumes:
+      - /home/docker/nginx-proxy-manager/data/:/data
+    environment:
+      - hostname=ubuntu-prod
+    networks:
+      - proxy
+    restart: unless-stopped
+
 networks:
   proxy:
     name: nginx-proxy
