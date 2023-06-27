@@ -26,7 +26,21 @@ def remove(docker_host, dest_dir):
     if docker_host:
         cmd += [f"DOCKER_HOST={docker_host}"]
 
-    cmd += ["docker ", "exec", "-i", "nginx-proxy", "bash", "-c", f"\"rm -f /usr/share/nginx/{dest_dir}/*\""]
+    cmd += ["docker ", "exec", "nginx-proxy-manager", "bash", "-c", f"\"rm -f /static/comori-od-restapi/{dest_dir}/*\""]
+    cmd = " ".join(cmd)
+
+    print(f"Executing '{cmd}'...")
+    os.system(cmd)
+
+def create(docker_host, dest_dir):
+    if dest_dir.endswith("/"):
+        dest_dir = dest_dir[:-1]
+
+    cmd = []
+    if docker_host:
+        cmd += [f"DOCKER_HOST={docker_host}"]
+
+    cmd += ["docker", "exec", "nginx-proxy-manager", "bash", "-c", f"\"mkdir -p /static/comori-od-restapi/{dest_dir}\""]
     cmd = " ".join(cmd)
 
     print(f"Executing '{cmd}'...")
@@ -40,7 +54,7 @@ def upload(docker_host, input_dir, dest_dir):
     if docker_host:
         cmd += [f"DOCKER_HOST={docker_host}"]
 
-    cmd += ["docker", "cp", f"{input_dir}/.", f"nginx-proxy:/usr/share/nginx/{dest_dir}"]
+    cmd += ["docker", "cp", f"{input_dir}/.", f"nginx-proxy-manager:/static/comori-od-restapi/{dest_dir}"]
     cmd = " ".join(cmd)
 
     print(f"Executing '{cmd}'...")
@@ -61,6 +75,7 @@ def main():
         raise Exception(f"Docker host {docker_host} is not valid!")
 
     remove(docker_host, args.dest_dir)
+    create(docker_host, args.dest_dir)
     upload(docker_host, args.input_dir, args.dest_dir)
 
 if "__main__" == __name__:

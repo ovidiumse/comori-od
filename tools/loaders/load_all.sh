@@ -6,7 +6,6 @@ DATA_DIR=${CWD}/../../data
 MAIN_DIR=${CWD}/../../web/comori-od-all
 IMG_DIR=${CWD}/../../img
 TOOLS_DIR=${CWD}/../
-NGINX_DATA_DIR=${CWD}/../../web/comori-od-nginx-proxy/data
 
 ARGS=$@
 
