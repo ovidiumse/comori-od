@@ -167,6 +167,78 @@ async def send_to_sqlserver(data):
     logging.info("Done!")
 
 
+async def send_to_postgres(data):
+    logging.info(f"Sending to Postgres...")
+
+    conn = pyodbc.connect("Driver={PostgreSQL Unicode};"
+                          f"Server={CFG['postgres']['url']};"
+                          "Database=comori;"
+                          f"UID={CFG['postgres']['user']};"
+                          f"PWD={CFG['postgres']['pass']};")
+    
+    cursor = conn.cursor()
+    cursor.fast_executemany = True
+
+    for metric in data["metrics"]:
+        try:
+            data = {}
+
+            for field, value in metric["fields"].items():
+                data[field] = value
+            
+            for tag, value in metric["tags"].items():
+                data[tag] = value
+
+            data["created"] = extract_timestamp(metric)
+
+            cursor.execute("""INSERT INTO nginx_logs 
+                VALUES
+                (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                data["created"], 
+                data["time_local"],
+                data.get("bytes_sent"),
+                data.get("client_addr"), 
+                data.get("geoip_city"), 
+                data.get("geoip_continent"), 
+                data.get("geoip_continent_code"),
+                data.get("geoip_country"),
+                data.get("geoip_country_code"),
+                data.get("geoip_location_latitude"),
+                data.get("geoip_location_longitude"),
+                data.get("geoip_location_time_zone"),
+                data.get("geoip_region"),
+                data.get("geoip_region_code"),
+                data.get("host"),
+                data.get("http_referer"),
+                data.get("method"),
+                data.get("path"),
+                data.get("remote_addr"),
+                data.get("request"),
+                data.get("request_time"),
+                data.get("upstream_response_time"),
+                data.get("status"),
+                data.get("user_agent_app"),
+                data.get("user_agent_app_version"),
+                data.get("user_agent_browser_family"),
+                data.get("user_agent_browser_version"),
+                data.get("user_agent_device_brand"),
+                data.get("user_agent_device_family"),
+                data.get("user_agent_device_model"),
+                data.get("user_agent_is_mobile"),
+                data.get("user_agent_os_family"),
+                data.get("user_agent_os_version"),
+                data.get("http_user_agent"))
+        except Exception as e:
+            logging.error(f"Sending log metrics to mongo failed! Error: {e}", exc_info=True)
+
+    logging.info("Committing...")
+    cursor.commit()
+    cursor.close()
+    conn.close()
+    logging.info("Done!")
+
+
 @app.post("/nginx_log")
 async def nginx_log(request: Request):
     try:
@@ -230,7 +302,8 @@ async def nginx_log(request: Request):
 
         await send_to_loki(data)
         # await send_to_influx(data)
-        await send_to_sqlserver(data)
+        # await send_to_sqlserver(data)
+        await send_to_postgres(data)
     except Exception as e:
         logging.error(f"Failed to transform! Error: {e}", exc_info=True)
         raise

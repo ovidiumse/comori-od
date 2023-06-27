@@ -6,7 +6,7 @@ RUN apt-get update && \
 	apt-get -y install apt-utils software-properties-common
 RUN add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
-	apt-get -y install python3 python3-venv wget less curl build-essential python3-dev libssl-dev libev-dev unixodbc-dev
+	apt-get -y install python3 python3-venv wget less curl build-essential python3-dev libssl-dev libev-dev unixodbc-dev odbc-postgresql
 
 # install odbc driver
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
