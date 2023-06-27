@@ -19,79 +19,6 @@ services:
       - proxy
 
   comori-od-mongoexpress:
-    environment:
-      - VIRTUAL_HOST=testmongo.comori-od.ro,mongo.comori-od.ro
-      - LETSENCRYPT_HOST=testmongo.comori-od.ro,mongo.comori-od.ro
-    networks:
-      - proxy
-
-  comori-od-meet:
-    build:  ../comori-od-dummy
-    container_name: comori-od-meet
-    environment:
-      - VIRTUAL_HOST=meet.comori-od.ro
-      - LETSENCRYPT_HOST=meet.comori-od.ro
-      - VIRTUAL_PORT=8081
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-    expose:
-      - 8081
-    restart: unless-stopped
-    networks:
-      - proxy
-
-  comori-od-nextcloud:
-    build:  ../comori-od-dummy
-    container_name: comori-od-nextcloud
-    environment:
-      - VIRTUAL_HOST=nextcloud.comori-od.ro
-      - LETSENCRYPT_HOST=nextcloud.comori-od.ro
-      - VIRTUAL_PORT=8082
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-    expose:
-      - 8082
-    restart: unless-stopped
-    networks:
-      - proxy
-
-  comori-od-element:
-    build:  ../comori-od-dummy
-    container_name: comori-od-element
-    environment:
-      - VIRTUAL_HOST=element.comori-od.ro
-      - LETSENCRYPT_HOST=element.comori-od.ro
-      - VIRTUAL_PORT=8010
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-    expose:
-      - 8010
-    restart: unless-stopped
-    networks:
-      - proxy
-
-  comori-od-matrix:
-    build:  ../comori-od-dummy
-    container_name: comori-od-matrix
-    environment:
-      - VIRTUAL_HOST=matrix.comori-od.ro
-      - LETSENCRYPT_HOST=matrix.comori-od.ro
-      - VIRTUAL_PORT=8008
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-    expose:
-      - 8008
-    restart: unless-stopped
-    networks:
-      - proxy
-
-  comori-od-turn:
-    build:  ../comori-od-dummy
-    container_name: comori-od-turn
-    environment:
-      - VIRTUAL_HOST=turn.comori-od.ro
-      - LETSENCRYPT_HOST=turn.comori-od.ro
-      - VIRTUAL_PORT=3478
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-    expose:
-      - 3478
-    restart: unless-stopped
     networks:
       - proxy
 
@@ -99,9 +26,6 @@ services:
     build: 
       args:
         - tag=latest
-    environment:
-      - VIRTUAL_HOST=testjupyter.comori-od.ro,jupyter.comori-od.ro
-      - LETSENCRYPT_HOST=testjupyter.comori-od.ro,jupyter.comori-od.ro
     networks:
       - proxy
 
@@ -109,9 +33,6 @@ services:
     build: 
       args:
         - tag=latest
-    environment:
-      - VIRTUAL_HOST=api.comori-od.ro,testapi.comori-od.ro
-      - LETSENCRYPT_HOST=api.comori-od.ro,testapi.comori-od.ro
     networks:
       - proxy
 
@@ -119,9 +40,6 @@ services:
     build: 
       args:
         - tag=latest
-    environment:
-      - VIRTUAL_HOST=testbible-api.comori-od.ro,bible-api.comori-od.ro
-      - LETSENCRYPT_HOST=testbible-api.comori-od.ro,bible-api.comori-od.ro
     networks:
       - proxy
 
@@ -134,7 +52,7 @@ services:
       - GEOIPUPDATE_EDITION_IDS=GeoLite2-City
       - GEOIPUPDATE_FREQUENCY=24
     volumes:
-      - /usr/share/maxmind:/usr/share/GeoIP
+      - /home/docker/comori-od/maxmind-update/data:/usr/share/GeoIP
     restart: unless-stopped
     networks:
       - proxy
@@ -147,7 +65,7 @@ services:
     volumes_from:
       - maxmind-update
     volumes:
-      - /var/log/comori-od-logprocessor:/var/log/comori-od-logprocessor
+      - /home/docker/comori-od/comori-od-logprocessor/logs:/var/log/comori-od-logprocessor
     restart: unless-stopped
     networks:
       - proxy

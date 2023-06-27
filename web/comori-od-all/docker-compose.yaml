@@ -7,11 +7,8 @@ services:
         - buildtype=prod_build
         - NODE_OPTIONS="--openssl-legacy-provider"
     container_name: comori-od-static-vue
-    expose:
-      - 80
-    environment:
-      - VIRTUAL_PORT=80
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
+    ports:
+      - 1080:80
     depends_on:
       - comori-od-restapi
     restart: unless-stopped
@@ -34,10 +31,10 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - es_data:/usr/share/elasticsearch/data
-      - es_config:/usr/share/elasticsearch/config
-      - es_logs:/usr/share/elasticsearch/logs
-      - es_hunspell:/usr/share/elasticsearch/config/hunspell
+      - /home/docker/comori-od/comori-od-es/data/:/usr/share/elasticsearch/data
+      - /home/docker/comori-od/comori-od-es/config/:/usr/share/elasticsearch/config
+      - /home/docker/comori-od/comori-od-es/logs/:/usr/share/elasticsearch/logs
+      - /home/docker/comori-od/comori-od-es/hunspell/:/usr/share/elasticsearch/config/hunspell
     expose:
       - "9200"
     restart: unless-stopped
@@ -49,7 +46,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
     volumes:
-      - mongo_data:/data/db
+      - /home/docker/comori-od/comori-od-mongo/data/:/data/db
     expose:
       - 27017
     command: ['--auth']
@@ -64,10 +61,8 @@ services:
       - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
       - ME_CONFIG_BASICAUTH_USERNAME=${MONGO_ADMIN_USERNAME}
       - ME_CONFIG_BASICAUTH_PASSWORD=${MONGO_ADMIN_PASSWORD}
-      - VIRTUAL_PORT=8081
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
-    expose:
-      - 8081
+    ports:
+      - 8081:8081
     depends_on: 
       - comori-od-mongo
     restart: unless-stopped
@@ -76,29 +71,25 @@ services:
     build: ../comori-od-jupyter
     container_name: comori-od-jupyter
     environment:
-      - VIRTUAL_PORT=8088
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - MONGO_USERNAME=${MONGO_ROOT_USERNAME}
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
     volumes:
-      - jupyter_data:/home/jupyter
-    expose:
-      - 8088
+      - /home/docker/comori-od/comori-od-jupyter/data:/home/jupyter
+    ports:
+      - 8088:8088
     restart: unless-stopped
 
   comori-od-restapi:
     build: 
       context: ../comori-od-restapi
     container_name: comori-od-restapi
-    expose: 
-      - 9000
+    ports: 
+      - 9000:9000
     environment:
       - GEVENT_RESOLVER=ares
-      - VIRTUAL_PORT=9000
-      - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
       - API_TOTP_KEY=${API_TOTP_KEY}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
@@ -106,7 +97,7 @@ services:
       - MONGO_PASSWORD=${MONGO_ROOT_PASSWORD}
       - MOBILE_APP_PKEY_ECDSA=${MOBILE_APP_PKEY_ECDSA}
     volumes:
-      - /var/log/comori-od-restapi:/var/log/comori-od-restapi
+      - /home/docker/comori-od/comori-od-restapi/logs:/var/log/comori-od-restapi
     depends_on:
       - comori-od-es
       - comori-od-mongo
@@ -122,20 +113,6 @@ services:
       - VIRTUAL_PORT=9002
       - LETSENCRYPT_EMAIL=moscaliuc_ovidiu@yahoo.com
     restart: unless-stopped
-
-volumes:
-  es_data:
-    driver: local
-  es_config: 
-    driver: local
-  es_logs:
-    driver: local
-  es_hunspell:
-    driver: local
-  mongo_data:
-    driver: local
-  jupyter_data:
-    driver: local
 
 networks:
   proxy:
