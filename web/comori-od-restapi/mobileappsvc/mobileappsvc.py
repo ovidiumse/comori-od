@@ -1,6 +1,6 @@
 import os
 import jwt
-from datetime import datetime
+from datetime import datetime, timedelta
 from api_utils import timeit
 import logging
 
@@ -16,7 +16,7 @@ class MobileAppService(object):
     
     @timeit("Authorizing", __name__)
     def authorize(self, authorization):
-        return jwt.decode(authorization, self.public_key_ecdsa, algorithms='ES512', options={"verify_exp": True})
+        return jwt.decode(authorization, self.public_key_ecdsa, algorithms='ES512', options={"verify_exp": True}, leeway=timedelta(seconds=10))
 
     def getUserId(self, auth):
         return "{}.{}".format(auth['sub'], auth['iss'])
