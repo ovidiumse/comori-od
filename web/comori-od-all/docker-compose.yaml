@@ -32,7 +32,7 @@ services:
         hard: -1
     volumes:
       - /home/docker/comori-od/comori-od-es/data/:/usr/share/elasticsearch/data
-      - /home/docker/comori-od/comori-od-es/config/:/usr/share/elasticsearch/config
+      - /home/docker/comori-od/comori-od-es/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - /home/docker/comori-od/comori-od-es/logs/:/usr/share/elasticsearch/logs
       - /home/docker/comori-od/comori-od-es/hunspell/:/usr/share/elasticsearch/config/hunspell
     expose:
