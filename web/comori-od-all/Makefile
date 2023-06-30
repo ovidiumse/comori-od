@@ -33,3 +33,6 @@ prod_init:
 
 import_books:
 	cd ../../tools/ ; ./import_books.sh
+
+solarmon:
+	make -f Makefile.solarmon build up

@@ -1,26 +1,26 @@
 build:
-	DOCKER_HOST=tcp://ubuntu-dev:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build
+	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build
 
 up:
-	DOCKER_HOST=tcp://ubuntu-dev:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev up -d --remove-orphans
+	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev up -d --remove-orphans
+
+down:
+	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down
 
 remove:
-	DOCKER_HOST=tcp://ubuntu-dev:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down -v
-
-nginx:
-	cd ../comori-od-nginx-proxy-test ; DOCKER_HOST=ssh://ubuntu-dev ./deploy-conf.sh
+	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down -v
 
 logs:
-	DOCKER_HOST=tcp://ubuntu-dev:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev logs --follow --tail 250
+	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev logs --follow --tail 250
 
 hunspell:
-	cd ../comori-od-es; DOCKER_HOST=ssh://ubuntu-dev ./deploy-hunspell.sh
+	cd ../comori-od-es; DOCKER_HOST=tcp://comori-od-test:2375 ./deploy-hunspell.sh
 
 metadata: 
-	../../tools/loaders/load_metadata.sh --index od --test-host
+	COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_metadata.sh --index od
 
 data:
-	../../tools/loaders/load_all.sh --index od --test-host
+	DOCKER_HOST=tcp://comori-od-test:2375 COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_all.sh --index od
 	../../tools/prepare_diff.sh
 
 init: hunspell metadata data

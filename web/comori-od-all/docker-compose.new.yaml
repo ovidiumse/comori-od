@@ -1,48 +1,5 @@
 version: '3.0'
 services:
-  comori-od-static-vue:
-    environment:
-      - VIRTUAL_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro
-      - LETSENCRYPT_HOST=test.comori-od.ro,comori-od.ro,www.comori-od.ro
-    networks:
-      - proxy
-
-  comori-od-es:
-    networks:
-      - proxy
-
-  comori-od-mongo:
-    build: 
-      args:
-        - tag=latest
-    networks:
-      - proxy
-
-  comori-od-mongoexpress:
-    networks:
-      - proxy
-
-  comori-od-jupyter:
-    build: 
-      args:
-        - tag=latest
-    networks:
-      - proxy
-
-  comori-od-restapi:
-    build: 
-      args:
-        - tag=latest
-    networks:
-      - proxy
-
-  comori-od-bibleapi:
-    build: 
-      args:
-        - tag=latest
-    networks:
-      - proxy
-
   maxmind-update:
     build: ../maxmind-update
     container_name: maxmind-update
@@ -54,8 +11,6 @@ services:
     volumes:
       - /home/docker/comori-od/maxmind-update/data:/usr/share/GeoIP
     restart: unless-stopped
-    networks:
-      - proxy
 
   comori-od-logprocessor:
     build: ../comori-od-logprocessor
@@ -67,8 +22,6 @@ services:
     volumes:
       - /home/docker/comori-od/comori-od-logprocessor/logs:/var/log/comori-od-logprocessor
     restart: unless-stopped
-    networks:
-      - proxy
 
   telegraf:
     build:
@@ -80,10 +33,4 @@ services:
       - /home/docker/nginx-proxy-manager/data/:/data
     environment:
       - hostname=ubuntu-prod
-    networks:
-      - proxy
     restart: unless-stopped
-
-networks:
-  proxy:
-    name: nginx-proxy

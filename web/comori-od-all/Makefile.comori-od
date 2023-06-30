@@ -1,0 +1,31 @@
+all: build up
+
+build:
+	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod build
+
+rebuild:
+	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod build --no-cache
+
+up:
+	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod up -d --remove-orphans
+
+down:
+	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod down
+
+remove:
+	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod down -v
+
+logs:
+	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod logs --follow --tail 250
+
+hunspell:
+	cd ../comori-od-es; DOCKER_HOST=ssh://ubuntu-prod ./deploy-hunspell.sh
+
+metadata: 
+	COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_metadata.sh --index od
+
+data:
+	COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_all.sh --index od
+	../../tools/prepare_diff.sh
+
+init: hunspell metadata data
