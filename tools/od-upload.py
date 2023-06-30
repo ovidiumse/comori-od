@@ -13,12 +13,7 @@ from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
 
-EXTERNAL_HOST = "https://api.comori-od.ro"
-TEST_HOST = "https://testapi.comori-od.ro"
-NEW_HOST = "https://api.comori-od.ro"
-LOCAL_HOST = "http://localhost:9000"
-
-COMORI_OD_API_HOST = LOCAL_HOST
+COMORI_OD_API_HOST = ""
 API_OTPKEY = ""
 
 MAX_BULK_SIZE = 100
@@ -53,12 +48,6 @@ def parseArgs():
                          dest="create_index",
                          action="store_true",
                          help="Create the index")
-    PARSER_.add_argument("-e",
-                         "--external-host",
-                         action="store_true",
-                         help="Upload to external host")
-    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
-    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Upload to the new host")
     PARSER_.add_argument("-o", "--output-dir", dest="output_dir", action="store", help="JSON output dir", default=None)
     PARSER_.add_argument("-v",
                          "--verbose",
@@ -358,13 +347,7 @@ def main():
     logging.getLogger().setLevel(logging.INFO)
 
     global COMORI_OD_API_HOST
-
-    if args.external_host:
-        COMORI_OD_API_HOST = EXTERNAL_HOST
-    elif args.test_host:
-        COMORI_OD_API_HOST = TEST_HOST
-    elif args.new_host:
-        COMORI_OD_API_HOST = NEW_HOST
+    COMORI_OD_API_HOST = os.getenv("COMORI_OD_API_HOST", "http://localhost:9000")
 
     if args.json_filepath:
         print(f"Started od-upload.py on {os.path.basename(args.json_filepath)} and {COMORI_OD_API_HOST}")

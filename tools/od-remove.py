@@ -7,20 +7,12 @@ from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD content remover.")
 
-EXTERNAL_HOST = "https://api.comori-od.ro"
-TEST_HOST = "https://testapi.comori-od.ro"
-NEW_HOST = "https://api.comori-od.ro"
-LOCAL_HOST = "http://localhost:9000"
-
-COMORI_OD_API_HOST = LOCAL_HOST
+COMORI_OD_API_HOST = ""
 API_OTPKEY = ""
 
 
 def parseArgs():
     PARSER_.add_argument("-i", "--index", dest="idx_name", action="store", required=True, help="Index name")
-    PARSER_.add_argument("-e", "--external-host", action="store_true", help="Remove content from external host")
-    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Remove content from the test host")
-    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Remove content from the new host")
     group = PARSER_.add_mutually_exclusive_group(required=True)
     group.add_argument("--volume", dest="volume", action="store", type=str, help="Volume to remove")
     group.add_argument("--book", dest="book", action="store", type=str, help="Book to remove")
@@ -59,12 +51,7 @@ def main():
     logging.getLogger().setLevel(logging.INFO)
 
     global COMORI_OD_API_HOST
-    if args.external_host:
-        COMORI_OD_API_HOST = EXTERNAL_HOST
-    elif args.test_host:
-        COMORI_OD_API_HOST = TEST_HOST
-    elif args.new_host:
-        COMORI_OD_API_HOST = NEW_HOST
+    COMORI_OD_API_HOST = os.getenv("COMORI_OD_API_HOST", "http://localhost:9000")
 
     print(f"API HOST: {COMORI_OD_API_HOST}")
 

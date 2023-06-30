@@ -14,11 +14,6 @@ from prettytable import PrettyTable
 
 BIBLE_API = "http://localhost:9002"
 
-COMORI_API_LOCAL = "http://localhost:9000"
-COMORI_API_TEST = "https://testapi.comori-od.ro"
-COMORI_API_NEW = "https://api.comori-od.ro"
-COMORI_API_EXTERNAL = "https://api.comori-od.ro"
-
 BIBLE = None
 COMORI_API = None
 
@@ -36,12 +31,6 @@ def parseArgs():
                          action="store",
                          default=None,
                          help="Output JSON file [default <input>_processed.json]")
-    PARSER_.add_argument("-e",
-                         "--external-host",
-                         action="store_true",
-                         help="Use external API host")
-    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Use test API host")
-    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Use the new API host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -622,14 +611,7 @@ def main():
 
     BIBLE = Bible(BIBLE_API)
 
-    if args.external_host:
-        COMORI_API = COMORI_API_EXTERNAL
-    elif args.test_host:
-        COMORI_API = COMORI_API_TEST
-    elif args.new_host:
-        COMORI_API = COMORI_API_NEW
-    else:
-        COMORI_API = COMORI_API_LOCAL
+    COMORI_API = os.getenv("COMORI_OD_API_HOST", "http://localhost:9000")
 
     logging.info(f"Loading authors from {COMORI_API}...")
     authors_by_name = get_authors()

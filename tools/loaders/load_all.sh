@@ -17,25 +17,6 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       shift # past value
       ;;
-    -e|--external-host)
-      DOCKER_HOST=ssh://comori-od
-      ARGS+=("$1")
-      shift # past argument
-      ;;
-    -t|--test-host)
-      DOCKER_HOST=ssh://ubuntu-dev
-      ARGS+=("$1")
-      shift # past argument
-      ;;
-    -n|--new-host)
-      DOCKER_HOST=ssh://ubuntu-prod
-      ARGS+=("$1")
-      shift # past argument
-      ;;
-    -r|--rebuild)
-      REBUILD=1
-      shift # past argument
-      ;;
     *)
       ARGS+=("$1") # save positional arg
       shift # past argument

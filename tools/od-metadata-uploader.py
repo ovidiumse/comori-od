@@ -9,12 +9,7 @@ from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD metadata uploader.")
 
-EXTERNAL_HOST = "https://api.comori-od.ro"
-TEST_HOST = "https://testapi.comori-od.ro"
-NEW_HOST = "https://api.comori-od.ro"
-LOCAL_HOST = "http://localhost:9000"
-
-COMORI_OD_API_HOST = LOCAL_HOST
+COMORI_OD_API_HOST = ""
 API_OTPKEY = ""
 
 def parseArgs():
@@ -30,12 +25,6 @@ def parseArgs():
                          action="store",
                          required=True,
                          help="Index name")
-    PARSER_.add_argument("-e",
-                         "--external-host",
-                         action="store_true",
-                         help="Upload to external host")
-    PARSER_.add_argument("-t", "--test-host", action="store_true", help="Upload to test host")
-    PARSER_.add_argument("-n", "--new-host", action="store_true", help="Upload to new host")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -77,14 +66,7 @@ def main():
     logging.getLogger().setLevel(logging.INFO)
 
     global COMORI_OD_API_HOST
-
-    if args.external_host:
-        COMORI_OD_API_HOST = EXTERNAL_HOST
-    elif args.test_host:
-        COMORI_OD_API_HOST = TEST_HOST
-    elif args.new_host:
-        COMORI_OD_API_HOST = NEW_HOST
-
+    COMORI_OD_API_HOST = os.getenv("COMORI_OD_API_HOST", "http://localhost:9000")
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
     global API_OTPKEY

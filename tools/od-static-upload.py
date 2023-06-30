@@ -5,13 +5,6 @@ import argparse
 PARSER_ = argparse.ArgumentParser(description="OD content static uploader.")
 
 def parseArgs():
-    PARSER_.add_argument("-e",
-                         "--external-host",
-                         action="store_true",
-                         default=False,
-                         help="Upload content to the external host")
-    PARSER_.add_argument("-t", "--test-host", action="store_true", default=False, help="Upload content to the test host")
-    PARSER_.add_argument("-n", "--new-host", action="store_true", default=False, help="Upload content to the new host")
     PARSER_.add_argument("--input-dir", action="store", dest="input_dir", required=True, help="Input directory")
     PARSER_.add_argument("--dest-dir", action="store", dest="dest_dir", required=True, help="Destination directory (in /usr/share/nginx/)")
 
@@ -63,14 +56,7 @@ def upload(docker_host, input_dir, dest_dir):
 def main():
     args = parseArgs()
 
-    docker_host = None
-    if args.external_host:
-        docker_host = "ssh://comori-od"
-    elif args.test_host:
-        docker_host = "ssh://ubuntu-dev"
-    elif args.new_host:
-        docker_host = "ssh://ubuntu-prod"
-
+    docker_host = os.getenv("DOCKER_HOST", None)
     if not docker_host:
         raise Exception(f"Docker host {docker_host} is not valid!")
 
