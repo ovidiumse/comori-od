@@ -1,5 +1,4 @@
-ARG tag
-FROM ubuntu:${tag}
+FROM ubuntu:latest
 
 COPY requirements.txt .
 

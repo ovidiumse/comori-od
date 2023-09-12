@@ -1,2 +1,1 @@
-ARG tag
-FROM mongo:${tag}
+FROM mongo:latest
