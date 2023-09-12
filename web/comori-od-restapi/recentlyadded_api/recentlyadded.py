@@ -22,6 +22,8 @@ class RecentlyAddedBooksHandler(FieldAggregator):
         since = datetime.strptime(req.params['since'], '%Y-%m-%d').date() if 'since' in req.params else lastMonth
         limit = int(req.params['limit']) if 'limit' in req.params else 10
 
+        LOGGER_.info(f"Getting {limit} recently added books since {since}")
+
         cache_key = f'recentlyaddedbooks_{since}_{limit}'
         response = self.cache_.get(cache_key)
         if response:

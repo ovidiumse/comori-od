@@ -171,7 +171,6 @@ class TrendingArticlesHandler(MongoClient, MobileAppService):
         super(TrendingArticlesHandler, self).__init__()
 
         self.authorsHandler_ = authorsHandler
-        self.cache_ = TTLCache(10, ttl=3600)
 
     def removeInternalFields(self, item):
         del item['_id']
@@ -183,55 +182,71 @@ class TrendingArticlesHandler(MongoClient, MobileAppService):
         LOGGER_.info(f"Getting trending articles from {idx_name} with req {json.dumps(req.params, indent=2)}")
         limit = int(req.params['limit']) if 'limit' in req.params else 10
 
-        self.authorize(req.get_header("Authorization"))
+        auth = self.authorize(req.get_header("Authorization", required=True))
+        uid = self.getUserId(auth)
 
-        cache_key = req.url
-        cached_response = self.cache_.get(cache_key)
-        if cached_response:
-            resp.status = falcon.HTTP_200
-            resp.body = cached_response
-        else:
-            LOGGER_.info("Computing treding articles...")
+        LOGGER_.info("Computing treding articles...")
 
-            today = datetime.utcnow()
-            last30Days = today - timedelta(days=30)
-            readArticles = [
-                self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find(
-                    {'timestamp': {
-                        '$gt': f"{last30Days.isoformat()}Z"
-                    }})
-            ]
+        today = datetime.utcnow()
+        last30Days = today - timedelta(days=30)
+        readArticles = [
+            self.removeInternalFields(read) for read in self.getCollection(idx_name, 'readArticles').find(
+                {'timestamp': {
+                    '$gt': f"{last30Days.isoformat()}Z"
+                }})
+        ]
 
-            readStatsById = {}
-            for read in readArticles:
-                if read['id'] in readStatsById:
-                    readStats = readStatsById[read['id']]
-                else:
-                    readStats = readStatsById[read['id']] = {'reach': 0, 'views': 0}
+        userReadArticles = [
+            self.removeInternalFields(read)
+            for read in self.getCollection(idx_name, 'readArticles').find({'uid': uid})
+        ]
 
-                outputKeys = ['id', 'author', 'book', 'volume', 'title']
-                for key in read:
-                    if key not in outputKeys:
-                        continue
-                    readStats[key] = read[key]
+        userReadIds = [read['id'] for read in userReadArticles]
 
-                readStats['reach'] += 1
-                readStats['views'] += read['count']
+        def filterAlreadyRead(articles):
+            unreadArticles = []
+            for article in articles:
+                if article['id'] in userReadIds:
+                    continue
 
-            for _, stats in readStatsById.items():
-                stats['score'] = stats['reach'] + math.sqrt(stats['views'] - stats['reach'])
+                unreadArticles.append(article)
 
-            trendingArticles = [stats for _, stats in readStatsById.items() if stats['reach'] > 1]
-            trendingArticles = sorted(trendingArticles, key=lambda x: x['score'], reverse=True)[:limit]
+            return unreadArticles
 
-            authorsByName = self.authorsHandler_.getAuthorsByName(idx_name)
-            for article in trendingArticles:
-                if article['author'] in authorsByName:
-                    author_info = authorsByName[article['author']]
-                    for k, v in author_info.items():
-                        if 'url' in k:
-                            article[f'author-{k}'] = v
+        readStatsById = {}
+        for read in readArticles:
+            if read['id'] in readStatsById:
+                readStats = readStatsById[read['id']]
+            else:
+                readStats = readStatsById[read['id']] = {'reach': 0, 'views': 0}
 
-            resp.status = falcon.HTTP_200
-            resp.body = json.dumps(trendingArticles)
-            self.cache_[cache_key] = resp.body
+            outputKeys = ['id', 'author', 'book', 'volume', 'title']
+            for key in read:
+                if key not in outputKeys:
+                    continue
+                readStats[key] = read[key]
+
+            readStats['reach'] += 1
+            readStats['views'] += read['count']
+
+        for _, stats in readStatsById.items():
+            stats['score'] = stats['reach'] + math.sqrt(stats['views'] - stats['reach'])
+
+        trendingArticles = [stats for _, stats in readStatsById.items() if stats['reach'] > 1]
+        trendingArticles = sorted(trendingArticles, key=lambda x: x['score'], reverse=True)
+        trendingArticles = filterAlreadyRead(trendingArticles)
+
+        LOGGER_.info(f"User {uid} has {len(trendingArticles)} unread trending articles: \n{json.dumps(trendingArticles[:limit], indent=2)}")
+
+        trendingArticles = trendingArticles[:limit]
+
+        authorsByName = self.authorsHandler_.getAuthorsByName(idx_name)
+        for article in trendingArticles:
+            if article['author'] in authorsByName:
+                author_info = authorsByName[article['author']]
+                for k, v in author_info.items():
+                    if 'url' in k:
+                        article[f'author-{k}'] = v
+
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(trendingArticles)

@@ -63,11 +63,7 @@ class RecommendedHandler(MongoClient, MobileAppService):
                 'query': {
                     'more_like_this': {
                         'fields': ["body", "body.folded"],
-                        'like': [{'_id': read['id']}],
-                        'min_term_freq': 1,
-                        'min_word_length': 4,
-                        'minimum_should_match': '80%',
-                        'max_query_terms': 20
+                        'like': [{'_id': read['id']}]
                     },
                 },
                 '_source': {
@@ -80,8 +76,12 @@ class RecommendedHandler(MongoClient, MobileAppService):
             hits = response['hits']['hits']
             unread_hits = filterAlreadyRead(hits)
 
-            recommended_by_id[read['id']] = {'recommended': len(hits), 'read': len(hits) - len(unread_hits)}
-            recommended += unread_hits
+            recommended_by_id[read['id']] = {
+                'unread_recommended_cnt': len(unread_hits), 
+                'unread_recommended': [unread['_id'] for unread in unread_hits][:limit]
+            }
+
+            recommended += unread_hits 
 
             if len(recommended) >= limit:
                 recommended = recommended[:limit]
