@@ -20,16 +20,16 @@ test_init:
 	make -f Makefile.test init
 
 prod:
-	make -f Makefile.prod build up
+	make -f Makefile.comori-od build up
 
 prod_nginx:
-	make -f Makefile.prod nginx
+	make -f Makefile.comori-od nginx
 
 prod_data: import_books
-	make -f Makefile.prod data
+	make -f Makefile.comori-od data
 
 prod_init:
-	make -f Makefile.prod init
+	make -f Makefile.comori-od init
 
 import_books:
 	cd ../../tools/ ; ./import_books.sh

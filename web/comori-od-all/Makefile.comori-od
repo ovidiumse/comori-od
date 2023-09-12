@@ -18,14 +18,17 @@ remove:
 logs:
 	DOCKER_HOST=ssh://comori-od docker compose -f docker-compose.comori-od.yaml --env-file .env-prod logs --follow --tail 250
 
+nginx:
+	cd ../comori-od-nginx; DOCKER_HOST=ssh://nginx ./deploy-conf.sh
+
 hunspell:
-	cd ../comori-od-es; DOCKER_HOST=ssh://ubuntu-prod ./deploy-hunspell.sh
+	cd ../comori-od-es; DOCKER_HOST=ssh://comori-od ./deploy-hunspell.sh
 
 metadata: 
-	COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_metadata.sh --index od
+	COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_metadata.sh
 
 data:
-	COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_all.sh --index od
+	DOCKER_HOST=ssh://comori-od NGINX_HOST=ssh://nginx COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_all.sh
 	../../tools/prepare_diff.sh
 
 init: hunspell metadata data

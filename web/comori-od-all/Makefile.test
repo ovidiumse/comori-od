@@ -1,6 +1,9 @@
 build:
 	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build
 
+rebuild:
+	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build --no-cache
+
 up:
 	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev up -d --remove-orphans
 
@@ -16,11 +19,14 @@ logs:
 hunspell:
 	cd ../comori-od-es; DOCKER_HOST=tcp://comori-od-test:2375 ./deploy-hunspell.sh
 
+es-config:
+	cd ../comori-od-es; DOCKER_HOST=tcp://comori-od-test:2375 ./deploy-config.sh
+
 metadata: 
-	COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_metadata.sh --index od
+	COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_metadata.sh
 
 data:
-	DOCKER_HOST=tcp://comori-od-test:2375 COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_all.sh --index od
+	DOCKER_HOST=tcp://comori-od-test:2375 COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_all.sh
 	../../tools/prepare_diff.sh
 
 init: hunspell metadata data
