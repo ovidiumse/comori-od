@@ -54,10 +54,12 @@ prepare_dir() {
     echo "Replacing links for $dir..."
     for file in $dest_old/*.json; do
         sed -i 's/.*api.comori-od.ro/api.comori-od.ro/g' $file &
+        sed -i 's/.*localhost:9000/api.comori-od.ro/g' $file &
     done
 
     for file in $dest_new/*.json; do
         sed -i 's/.*api.comori-od.ro/api.comori-od.ro/g' $file &
+        sed -i 's/.*localhost:9000/api.comori-od.ro/g' $file &
     done
 
     wait
@@ -75,4 +77,8 @@ prepare_dir "trifa_ce_este_oastea_domnului"
 prepare_dir "strangeti_faramiturile"
 prepare_dir "trifa_600_istorioare"
 prepare_dir "trifa_citiri_si_talcuiri_din_biblie"
+prepare_dir "trifa_traim_vremuri_biblice"
+prepare_dir "trifa_oglinda_inimii_omului"
+prepare_dir "trifa_duhul_sfant"
+prepare_dir "trifa_corabia_lui_noe"
 prepare_dir "test_results"

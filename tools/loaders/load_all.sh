@@ -67,6 +67,18 @@ ${CWD}/load_trifa_600_istorioare.sh ${ARGS}
 # Citiri si talcuiri din Biblie
 ${CWD}/load_trifa_citiri_si_talcuiri_din_biblie.sh ${ARGS}
 
+# Traim vremuri biblice
+${CWD}/load_trifa_traim_vremuri_biblice.sh ${ARGS}
+
+# Oglinda inimii omului
+${CWD}/load_trifa_oglinda_inimii_omului.sh ${ARGS}
+
+# Duhul Sfant
+${CWD}/load_trifa_duhul_sfant.sh ${ARGS}
+
+# Corabia lui Noe
+${CWD}/load_trifa_corabia_lui_noe.sh ${ARGS}
+
 if [ -n "${NGINX_HOST}" ]; then
   DOCKER_HOST=${NGINX_HOST} ${CWD}/load_static.sh ${ARGS}
 fi

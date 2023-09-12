@@ -1,10 +1,12 @@
 #!/usr/bin/pypy3
 
 import os
+import sys
 import argparse
 import subprocess
 from prettytable import PrettyTable
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
 PARSER_ = argparse.ArgumentParser(description="OD search test.")
 
 def parseArgs():
@@ -89,7 +91,7 @@ def run_searches(outdir, external_host, test_host):
         lines = []
         articles = []
         article = {}
-        args = ["./od-search.py", q]
+        args = [f"{SCRIPT_DIR}/od-search.py", q]
 
         if external_host:
             args.append("--external-host")
