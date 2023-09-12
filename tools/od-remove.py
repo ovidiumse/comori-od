@@ -12,7 +12,6 @@ API_OTPKEY = ""
 
 
 def parseArgs():
-    PARSER_.add_argument("-i", "--index", dest="idx_name", action="store", required=True, help="Index name")
     group = PARSER_.add_mutually_exclusive_group(required=True)
     group.add_argument("--volume", dest="volume", action="store", type=str, help="Volume to remove")
     group.add_argument("--book", dest="book", action="store", type=str, help="Book to remove")
@@ -30,16 +29,16 @@ def delete(uri):
     response.raise_for_status()
 
 
-def remove_volume(idx_name, volume):
+def remove_volume(volume):
     try:
-        delete(f"{idx_name}/volumes/{volume}")
+        delete(f"od/volumes/{volume}")
     except Exception as ex:
         logging.error(f"Removing volume {volume} failed! Error: {ex}", exc_info=True)
 
 
-def remove_book(idx_name, book):
+def remove_book(book):
     try:
-        delete(f"{idx_name}/books/{book}")
+        delete(f"od/books/{book}")
     except Exception as ex:
         logging.error(f"Removing book {book} failed! Error: {ex}", exc_info=True)
 
@@ -70,9 +69,9 @@ def main():
         requests_log.propagate = True
 
     if args.volume:
-        remove_volume(args.idx_name, args.volume)
+        remove_volume(args.volume)
     elif args.book:
-        remove_book(args.idx_name, args.book)
+        remove_book(args.book)
 
 if "__main__" == __name__:
     main()

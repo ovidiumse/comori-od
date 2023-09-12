@@ -8,6 +8,7 @@ import simplejson as json
 import hashlib
 import time
 import readtime
+from collections import defaultdict
 from unidecode import unidecode
 from datetime import datetime
 from prettytable import PrettyTable
@@ -629,8 +630,15 @@ def main():
     print("Processed {} articles in {}.".format(len(articles), processing_finish - loading_finish))
     print("Resolved {} bible refs for {} articles.".format(refCount, len(articles)))
 
-    with open(args.output, 'w', encoding='utf-8') as f:
-        json.dump(articles, f, indent=2)
+    titles_by_books = defaultdict(set)
+    for a in articles:
+        if a['title'] in titles_by_books[a['book']]:
+            raise Exception(f"{a['title']} already exist in {a['book']}!")
+        
+        titles_by_books[a['book']].add(a['title'])
+
+    with open(args.output, 'w') as f:
+        json.dump(articles, f, ensure_ascii=False, indent=2)
 
     errors_filename = os.path.splitext(args.output)[0] + "_errors.txt"
     with open(errors_filename, 'w', encoding='utf-8') as errors_file:
@@ -653,8 +661,33 @@ def main():
             print("Type: {}".format(article['type']), file=text_file)
             print("", file=text_file)
             for verse in article['verses']:
-                verse = ''.join([v['text'] for v in verse])
-                print(verse, file=text_file)
+                text_verse = ''.join([v['text'] for v in verse])
+                print(text_verse, file=text_file)
+
+            print("", file=text_file)
+
+    textblocks_filepath = os.path.splitext(args.output)[0] + "_blocks.txt"
+    with open(textblocks_filepath, 'w', encoding='utf-8') as text_file:
+        for article in articles:
+            print(article['title'], file=text_file)
+            if 'subtitle' in article:
+                print("Subtitle: {}".format(article['subtitle']), file=text_file)
+            print("Author: {}".format(article['author']), file=text_file)
+            print("Book: {}".format(article['book']), file=text_file)
+            print("Full book: {}".format(article['full_book']), file=text_file)
+            if 'volume' in article:
+                print("Volume: {}".format(article['volume']), file=text_file)
+            print("Type: {}".format(article['type']), file=text_file)
+            print("", file=text_file)
+
+            text_verses = []
+            for verse in article['verses']:
+                text_verse = ''.join([v['text'] for v in verse])
+                if text_verse:
+                    text_verses.append(text_verse)
+
+            if text_verses:
+                print(" ".join(text_verses), file=text_file)
 
             print("", file=text_file)
 

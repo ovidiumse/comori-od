@@ -8,13 +8,6 @@ from prettytable import PrettyTable
 PARSER_ = argparse.ArgumentParser(description="OD search test.")
 
 def parseArgs():
-    PARSER_.add_argument("-i",
-                         "--index-name",
-                         action="store",
-                         dest="idx_name",
-                         default="od",
-                         help="Index name")
-
     PARSER_.add_argument("-o",
                          "--output",
                          dest="outdir",

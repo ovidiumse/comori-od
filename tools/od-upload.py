@@ -26,11 +26,6 @@ def parseArgs():
                          action="store",
                          type=str,
                          help="Input JSON file")
-    PARSER_.add_argument("--index",
-                         dest="idx_name",
-                         action="store",
-                         required=True,
-                         help="Index name")
     PARSER_.add_argument("-da",
                          "--date-added",
                          dest="date_added",
@@ -84,7 +79,7 @@ def chunk(data, n):
         yield data[i:i + n]
 
 
-def create_index(idx_name):
+def create_index():
     settings = {
         "settings": {
             "number_of_shards": 1,
@@ -272,10 +267,10 @@ def create_index(idx_name):
         }
     }
 
-    post(idx_name, {'settings': settings, 'mappings': mappings})
+    post("od", {'settings': settings, 'mappings': mappings})
 
-def upload(idx_name, bulk):
-    url = f"{idx_name}/articles"
+def upload(bulk):
+    url = "od/articles"
 
     response = post(url, bulk)
     if response['total'] != response['indexed']:
@@ -298,7 +293,7 @@ def calculate_maxsize(bulks):
     return max_size
 
 
-def index_all(idx_name, date_added, articles):
+def index_all(date_added, articles):
     indexed = 0
 
     for idx, article in enumerate(articles):
@@ -307,7 +302,6 @@ def index_all(idx_name, date_added, articles):
         id = re.sub('[\.\,\!\(\)\[\] ]+', '-', id)
         id = re.sub('(\-)+', '-', id)
         article['_id'] = id
-        article['_index'] = idx_name
         article['_insert_idx'] = idx
         article['_insert_ts'] = datetime.now().isoformat()
         article['date_added'] = date_added
@@ -329,13 +323,13 @@ def index_all(idx_name, date_added, articles):
             bulk_size = int(bulk_size / 2)
 
         for b in bulks:
-            indexed += upload(idx_name, b)
+            indexed += upload(b)
             logging.info("{} / {} indexed!".format(indexed, len(articles)))
 
 
-def delete_index(idx_name):
+def delete_index():
     try:
-        delete(idx_name)
+        delete()
     except Exception as ex:
         logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
@@ -372,11 +366,11 @@ def main():
 
     if args.delete_index:
         logging.info("Deleting index from {}...".format(COMORI_OD_API_HOST))
-        delete_index(args.idx_name)
+        delete_index()
 
     if args.create_index:
         logging.info("Creating index from {}...".format(COMORI_OD_API_HOST))
-        create_index(args.idx_name)
+        create_index()
 
     if args.json_filepath:
         with open(args.json_filepath, 'r', encoding='utf-8') as json_file:
@@ -388,7 +382,7 @@ def main():
             if not args.date_added:
                 raise Exception("Date-added not provided")
 
-            index_all(args.idx_name, args.date_added, articles)
+            index_all(args.date_added, articles)
             logging.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
                                                                      COMORI_OD_API_HOST))
@@ -404,13 +398,13 @@ def main():
             for book, atcs in articlesByBook.items():
                 filePath = f"{args.output_dir}/{book}.json"
                 with open(filePath, 'w') as book_file:
-                    json.dump(atcs, book_file)
+                    json.dump(atcs, book_file, ensure_ascii=False)
 
             logging.info("Writting articles to files...")
             for article in articles:
                 filePath = f"{args.output_dir}/{article['_id']}.json"
                 with open(filePath, 'w') as article_file:
-                    json.dump(article, article_file)
+                    json.dump(article, article_file, ensure_ascii=False)
 
     print("Done\n")
 

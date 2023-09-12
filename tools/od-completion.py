@@ -14,7 +14,6 @@ COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
 
 
 def parseArgs():
-    PARSER_.add_argument("-i", "--index-name", action="store", dest="idx_name", help="Index name")
     PARSER_.add_argument("-l", "--localhost", action="store_true", help="Query localhost")
     PARSER_.add_argument("term", action="store", help="Query term")
 
@@ -29,8 +28,8 @@ def get(uri):
     return response.json()
 
 
-def suggest(idx_name, term):
-    results = get("{}/titles/completion?prefix={}".format(idx_name, term))
+def suggest(term):
+    results = get("od/titles/completion?prefix={}".format(term))
     print("Found {} results in {}ms:".format(results['hits']['total']['value'], results['took']))
     hits = results['hits']['hits']
     for hit in hits:
@@ -52,7 +51,7 @@ def main():
     else:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    suggest(args.idx_name, args.term)
+    suggest(args.term)
 
 
 if "__main__" == __name__:

@@ -225,16 +225,6 @@ def isPrePoemTitle(tag, cfg):
     return checkProps(tag, cfg['poem-title'])
 
 
-def isArticleSubtitle(tag, cfg):
-    if 'article-subtitle' not in cfg:
-        return False
-
-    if tag.name != "p":
-        return False
-
-    return checkProps(tag, cfg['article-subtitle'])
-
-
 def isFirstParagraphFirstLetter(tag, cfg):
     if 'pre-paragraph-first-letter' not in cfg:
         return False

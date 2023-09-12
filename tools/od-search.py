@@ -14,12 +14,6 @@ LOCAL_HOST = "http://localhost:9000"
 COMORI_OD_API_HOST = LOCAL_HOST
 
 def parseArgs():
-    PARSER_.add_argument("-i",
-                         "--index-name",
-                         action="store",
-                         dest="idx_name",
-                         default="od",
-                         help="Index name")
     PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
     PARSER_.add_argument("-t", "--test-host", action="store_true", help="Query test host")
     PARSER_.add_argument("-f",
@@ -43,8 +37,8 @@ def get(uri):
     return response.json()
 
 
-def search(idx_name, query, fields):
-    results = get("{}/articles?q={}".format(idx_name, query))
+def search(query, fields):
+    results = get("od/articles?q={}".format(query))
     if "hits" in fields:
         print("Got {} hits:".format(results['hits']['total']['value']))
 
@@ -89,7 +83,7 @@ def main():
     elif args.test_host:
         COMORI_OD_API_HOST = TEST_HOST
 
-    search(args.idx_name, args.query, args.fields)
+    search(args.query, args.fields)
 
 
 if "__main__" == __name__:

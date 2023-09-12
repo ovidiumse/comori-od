@@ -15,12 +15,6 @@ COMORI_OD_API_BASEURL = "http://{}".format(COMORI_OD_API_HOST)
 
 
 def parseArgs():
-    PARSER_.add_argument("-i",
-                         "--index-name",
-                         action="store",
-                         dest="idx_name",
-                         default="od",
-                         help="Index name")
     PARSER_.add_argument("-e", "--external-host", action="store_true", help="Query external host")
     PARSER_.add_argument("query", action="store", help="Query")
 
@@ -35,8 +29,8 @@ def get(uri):
     return response.json()
 
 
-def suggest(idx_name, query):
-    results = get("{}/suggest?q={}".format(idx_name, query))
+def suggest(query):
+    results = get("od/suggest?q={}".format(query))
     options = results['suggest']['simple_phrase'][0]['options']
     print("Got {} suggestions in {}ms:".format(len(options), results['took']))
     for option in options:
@@ -55,7 +49,7 @@ def main():
     if args.external_host:
         COMORI_OD_API_HOST = EXTERNAL_HOST
 
-    suggest(args.idx_name, args.query)
+    suggest(args.query)
 
 
 if "__main__" == __name__:

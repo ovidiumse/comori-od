@@ -20,11 +20,6 @@ def parseArgs():
                          type=str,
                          help="Input YAML file")
     PARSER_.add_argument("--endpoint", dest="endpoint", type=str, help="API endpoint", required=True)
-    PARSER_.add_argument("--index",
-                         dest="idx_name",
-                         action="store",
-                         required=True,
-                         help="Index name")
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -34,26 +29,26 @@ def parseArgs():
     args, _ = PARSER_.parse_known_args()
     return args
 
-def upload(index_name, data, endpoint):
-    response = requests.post(f"{COMORI_OD_API_HOST}/{index_name}/{endpoint}",
+def upload(data, endpoint):
+    response = requests.post(f"{COMORI_OD_API_HOST}/od/{endpoint}",
                              headers={'Authorization': f'Token {API_OTPKEY}'},
                              json=data)
     response.raise_for_status()
     return response.json()
 
-def expand_links(index_name, data):
+def expand_links(data):
     if isinstance(data, dict):
         for key, entry in data.items():
-            data[key] = expand_links(index_name, entry)
+            data[key] = expand_links(entry)
         return data
     elif isinstance(data, list):
         entries = []
         for entry in data:
-            entries.append(expand_links(index_name, entry))
+            entries.append(expand_links(entry))
         return entries
     elif isinstance(data, str):
         if data.startswith('/'):
-            return f"{COMORI_OD_API_HOST}/{index_name}{data}"
+            return f"{COMORI_OD_API_HOST}/od{data}"
         else:
             return data
     else:
@@ -86,8 +81,8 @@ def main():
     if args.yaml_filepath:
         with open(args.yaml_filepath, 'r') as yaml_file:
             data = yaml.full_load(yaml_file)
-            data = expand_links(args.idx_name, data)
-            response = upload(args.idx_name, data, args.endpoint)
+            data = expand_links(data)
+            response = upload(data, args.endpoint)
             logging.info(f"Response: {json.dumps(response, indent=2)}")
 
 if "__main__" == __name__:

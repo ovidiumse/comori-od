@@ -232,6 +232,16 @@ def isArticleSubtitle(tag, cfg):
     return checkProps(tag, cfg['article-subtitle'])
 
 
+def isArticleTag(tag, cfg):
+    if 'article-tag' not in cfg:
+        return False
+    
+    if tag.name != "p":
+        return False
+    
+    return checkProps(tag, cfg['article-tag'])
+
+
 def isArticleBibleRef(tag, cfg):
     if 'article-bible-ref' not in cfg:
         return False
@@ -289,23 +299,6 @@ def printPoemTitles(soup, cfg):
     printElements(soup, isPoemTitle, cfg)
 
 
-def getSubtitle(p, cfg):
-    subtitle = []
-
-    next_p = p
-    while next_p:
-        next_p = next_p.findNext('p')
-        if not next_p:
-            break
-
-        if isArticleSubtitle(next_p, cfg):
-            subtitle.append(sanitize(next_p.text))
-        else:
-            break
-
-    return subtitle
-
-
 def sanitize(text):
     return text.replace('\n', ' ').replace('  ', ' ').strip()
 
@@ -342,14 +335,14 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
     articles = []
 
     for p in soup.find_all('p'):
-        subtitle = None
+        subtitle = []
+        tags = []
         bibleRef = None
 
         if isBookTitle(p, cfg):
             book = sanitize(p.text)
         elif isArticleTitle(p, cfg) or isPoemTitle(p, cfg):
             title = sanitize(p.text)
-            subtitle = getSubtitle(p, cfg)
             type = "poezie" if isPoemTitle(p, cfg) else "articol"
 
             verses = []
@@ -368,7 +361,9 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                                       or isVolumeTitle(v, cfg)):
                     break
                 elif v.name == 'p' and isArticleSubtitle(v, cfg):
-                    pass
+                    subtitle.append(sanitize(v.text))
+                elif v.name == 'p' and isArticleTag(v, cfg):
+                    tags += [tag.strip() for tag in sanitize(v.text).split(',')]
                 elif v.name == 'p' and isArticleBibleRef(v, cfg):
                     bibleRef = v
                 elif v.name == 'p' and isArticleAuthor(v, cfg):
@@ -398,6 +393,7 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                     'author': author,
                     'title': title,
                     'subtitle': subtitle,
+                    'tags': tags,
                     'verses': verses,
                     'type': type
                 }
@@ -455,8 +451,8 @@ def main():
                                                         extract_finish - parse_finish))
 
             print("Writing {} articles to {}...".format(len(articles), args.extract_filename))
-            with open(args.extract_filename, 'w', encoding='utf-8') as articles_file:
-                json.dump(articles, articles_file, encoding=None, ensure_ascii=True, indent=2)
+            with open(args.extract_filename, 'w') as articles_file:
+                json.dump(articles, articles_file, ensure_ascii=False, indent=2)
 
             text_filename = os.path.splitext(args.extract_filename)[0] + ".txt"
             with open(text_filename, 'w', encoding='utf-8') as text_file:

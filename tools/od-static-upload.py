@@ -19,7 +19,7 @@ def remove(docker_host, dest_dir):
     if docker_host:
         cmd += [f"DOCKER_HOST={docker_host}"]
 
-    cmd += ["docker ", "exec", "nginx-proxy-manager", "bash", "-c", f"\"rm -f /static/comori-od-restapi/{dest_dir}/*\""]
+    cmd += ["docker ", "exec", "nginx-proxy-manager", "bash", "-c", f"\"rm -rf /static/comori-od-restapi/{dest_dir}/\""]
     cmd = " ".join(cmd)
 
     print(f"Executing '{cmd}'...")
