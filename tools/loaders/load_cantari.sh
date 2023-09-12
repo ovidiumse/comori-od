@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# terminate script if any command failed
+set -e
+
 CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
@@ -23,7 +26,10 @@ ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/cantari/cantari_9.htm -c ${CFG_DIR}/ca
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/cantari/cantari_10.htm -c ${CFG_DIR}/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -e ${DATA_DIR}/cantari/cantari_10.json &
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/cantari/cantari_11.htm -c ${CFG_DIR}/cantari.yaml -a "Traian Dorz" -v "Cântări Nemuritoare" -e ${DATA_DIR}/cantari/cantari_11.json &
 
-wait
+for job in `jobs -p`
+do
+    wait $job
+done
 
 echo "Post-processing Cantari Nemuritoare..."
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_1.json $@ & 
@@ -37,7 +43,10 @@ ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_9.j
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_10.json $@ &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/cantari/cantari_11.json $@ &
 
-wait 
+for job in `jobs -p`
+do
+    wait $job
+done
 
 echo "Removing existing Cântări Nemuritoare using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Cântări Nemuritoare" $@

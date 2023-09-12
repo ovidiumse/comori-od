@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# terminate script if any command failed
+set -e
+
 CWD=`realpath $(dirname $0)`
 
 DATA_DIR=${CWD}/../../data
@@ -8,22 +11,6 @@ IMG_DIR=${CWD}/../../img
 TOOLS_DIR=${CWD}/../
 
 ARGS=$@
-
-while [[ $# -gt 0 ]]; do
-  case $1 in
-    -i|--index)
-      IDX_NAME="$2"
-      ARGS+=("$1", "$2")
-      shift # past argument
-      shift # past value
-      ;;
-    *)
-      ARGS+=("$1") # save positional arg
-      shift # past argument
-      ;;
-  esac
-done
-
 
 if [[ -z "${API_TOTP_KEY}" ]]; then
     read -sp "Please enter API_TOTP_KEY: " API_TOTP_KEY
@@ -74,12 +61,23 @@ ${CWD}/load_trifa_ce_este_oastea_domnului.sh ${ARGS}
 # Strangeti faramiturile
 ${CWD}/load_strangeti_faramiturile.sh ${ARGS}
 
-${CWD}/load_static.sh ${ARGS}
+# 600 de istorioare
+${CWD}/load_trifa_600_istorioare.sh ${ARGS}
+
+# Citiri si talcuiri din Biblie
+${CWD}/load_trifa_citiri_si_talcuiri_din_biblie.sh ${ARGS}
+
+if [ -n "${NGINX_HOST}" ]; then
+  DOCKER_HOST=${NGINX_HOST} ${CWD}/load_static.sh ${ARGS}
+fi
 
 echo "Restarting comori-od-restapi on ${DOCKER_HOST} to clear caches..."
 DOCKER_HOST=${DOCKER_HOST} docker restart comori-od-restapi
 echo "Waiting 10 seconds for the service to wake up..."
 sleep 10
 
-${CWD}/../test_all.sh ${ARGS}
+if [ "${COMORI_OD_API_HOST}" == "https://testapi.comori-od.ro" ]; then
+  ${CWD}/../test_all.sh ${ARGS}
+fi
+
 ${CWD}/../prepare_diff.sh

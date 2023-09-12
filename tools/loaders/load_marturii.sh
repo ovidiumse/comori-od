@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# terminate script if any command failed
+set -e
+
 CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data

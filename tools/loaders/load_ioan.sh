@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# terminate script if any command failed
+set -e
+
 CWD=`realpath $(dirname $0)`
 TOOLS_DIR=${CWD}/../
 DATA_DIR=${CWD}/../../data
@@ -20,7 +23,10 @@ ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_5.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_6.htm -c ${CFG_DIR}/ioan.yaml &
 ${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/ioan/ioan_7.htm -c ${CFG_DIR}/ioan.yaml &
 
-wait
+for job in `jobs -p`
+do
+    wait $job
+done
 
 echo "Extracting Meditatii la Ev. dupa Ioan..."
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_1_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_1.json $@ &
@@ -31,7 +37,10 @@ ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_5_fixed.htm -c ${CFG_DIR}/io
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_6_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_6.json $@ &
 ${TOOLS_DIR}/od-extract.py -i ${DATA_DIR}/ioan/ioan_7_fixed.htm -c ${CFG_DIR}/ioan.yaml  -a "Traian Dorz" -v "Meditații la Ev. după Ioan" -e ${DATA_DIR}/ioan/ioan_7.json $@ &
 
-wait
+for job in `jobs -p`
+do
+    wait $job
+done
 
 echo "Post-processing Meditatii la Ev. dupa Ioan..."
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_1.json $@ &
@@ -42,7 +51,10 @@ ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_5.json $@
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_6.json $@ &
 ${TOOLS_DIR}/od_postprocess/od_postprocess.py -i ${DATA_DIR}/ioan/ioan_7.json $@ &
 
-wait
+for job in `jobs -p`
+do
+    wait $job
+done
 
 echo "Removing existing Meditații la Ev. după Ioan using '$@' flags..."
 ${TOOLS_DIR}/od-remove.py --volume "Meditații la Ev. după Ioan" $@
