@@ -53,13 +53,13 @@ prepare_dir() {
 
     echo "Replacing links for $dir..."
     for file in $dest_old/*.json; do
-        sed -i 's/.*api.comori-od.ro/api.comori-od.ro/g' $file &
-        sed -i 's/.*localhost:9000/api.comori-od.ro/g' $file &
+        sed -i 's/testapi.comori-od.ro/api.comori-od.ro/g' $file
+        sed -i 's/localhost:9000/api.comori-od.ro/g' $file
     done
 
     for file in $dest_new/*.json; do
-        sed -i 's/.*api.comori-od.ro/api.comori-od.ro/g' $file &
-        sed -i 's/.*localhost:9000/api.comori-od.ro/g' $file &
+        sed -i 's/testapi.comori-od.ro/api.comori-od.ro/g' $file
+        sed -i 's/localhost:9000/api.comori-od.ro/g' $file
     done
 
     wait
