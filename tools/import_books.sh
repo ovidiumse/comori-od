@@ -21,3 +21,4 @@ cp ${SRC_DIR}/trifa_traim_vremuri_biblice.* ${DATA_DIR}/trifa_traim_vremuri_bibl
 cp ${SRC_DIR}/trifa_oglinda_inimii_omului.* ${DATA_DIR}/trifa_oglinda_inimii_omului/
 cp ${SRC_DIR}/trifa_duhul_sfant.* ${DATA_DIR}/trifa_duhul_sfant/
 cp ${SRC_DIR}/trifa_corabia_lui_noe.* ${DATA_DIR}/trifa_corabia_lui_noe/
+cp ${SRC_DIR}/trifa_pe_urmele_mantuitorului.* ${DATA_DIR}/trifa_pe_urmele_mantuitorului/
