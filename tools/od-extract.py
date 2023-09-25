@@ -333,6 +333,7 @@ def extractVerse(tag):
 
 def extractArticles(soup, volume, full_book, book, author, cfg):
     articles = []
+    original_author = author
 
     for p in soup.find_all('p'):
         subtitle = []
@@ -361,7 +362,9 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                                       or isVolumeTitle(v, cfg)):
                     break
                 elif v.name == 'p' and isArticleSubtitle(v, cfg):
-                    subtitle.append(sanitize(v.text))
+                    line = sanitize(v.text)
+                    if line:
+                        subtitle.append(line)
                 elif v.name == 'p' and isArticleTag(v, cfg):
                     tags += [tag.strip() for tag in sanitize(v.text).split(',')]
                 elif v.name == 'p' and isArticleBibleRef(v, cfg):
@@ -387,6 +390,9 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                 verses = verses[:-1]
 
             if len(verses) > 1:
+                if not author:
+                    raise Exception(f"Author not found for '{title}, {book}'!")
+                
                 article =  {
                     'full_book': full_book if full_book else book,
                     'book': book,
@@ -405,6 +411,9 @@ def extractArticles(soup, volume, full_book, book, author, cfg):
                     article['bible-ref'] = sanitize(bibleRef.text)
 
                 articles.append(article)
+
+                # reset author to the original one, in case there are errors
+                author = original_author
 
     return articles
 
