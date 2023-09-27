@@ -82,6 +82,9 @@ ${CWD}/load_trifa_corabia_lui_noe.sh ${ARGS}
 # Pe urmele Mântuitorului
 ${CWD}/load_trifa_pe_urmele_mantuitorului.sh ${ARGS}
 
+# Zacheu
+${CWD}/load_trifa_zacheu.sh ${ARGS}
+
 if [ -n "${NGINX_HOST}" ]; then
   DOCKER_HOST=${NGINX_HOST} ${CWD}/load_static.sh ${ARGS}
 fi
