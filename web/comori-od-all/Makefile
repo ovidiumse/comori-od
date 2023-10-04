@@ -31,7 +31,10 @@ prod_data: import_books
 prod_init:
 	make -f Makefile.comori-od init
 
-import_books:
+convert_books:
+	cd ../../tools/ ; ./convert_books.sh
+
+import_books: convert_books
 	cd ../../tools/ ; ./import_books.sh
 
 solarmon:
