@@ -1,12 +1,11 @@
-#!/usr/bin/python3.11
+#!/usr/bin/python3
 import os
 import re
+import sys
 import argparse
 import logging
 import requests
 import simplejson as json
-import hashlib
-import time
 import readtime
 from collections import defaultdict
 from unidecode import unidecode
@@ -604,7 +603,7 @@ def main():
 
     print(f"Started od-postprocess.py on {os.path.basename(args.input)}")
 
-    logging.basicConfig()
+    logging.basicConfig(stream=sys.stdout)
     logging.getLogger().setLevel(logging.INFO)
 
     global BIBLE

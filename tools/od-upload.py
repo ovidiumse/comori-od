@@ -1,6 +1,7 @@
 #!/usr/bin/pypy3
 import os
 import re
+import sys
 import argparse
 import simplejson as json
 import requests
@@ -12,6 +13,7 @@ from unidecode import unidecode
 from getpass import getpass
 
 PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
+LOGGER_ = logging.getLogger(__name__)
 
 COMORI_OD_API_HOST = ""
 API_OTPKEY = ""
@@ -61,7 +63,7 @@ def post(uri, data):
         json=data)
 
     if response.status_code != requests.codes.ok:
-        logging.error("Error: {}".format(response, indent=2))
+        LOGGER_.error("Error: {}".format(response, indent=2))
     response.raise_for_status()
     return response.json() if response.text else {}
 
@@ -275,7 +277,7 @@ def upload(bulk):
     response = post(url, bulk)
     if response['total'] != response['indexed']:
         failed = response['total'] - response['indexed']
-        logging.warning("{} articles failed to index!".format(failed))
+        LOGGER_.warning("{} articles failed to index!".format(failed))
 
     return response['indexed']
 
@@ -324,21 +326,20 @@ def index_all(date_added, articles):
 
         for b in bulks:
             indexed += upload(b)
-            logging.info("{} / {} indexed!".format(indexed, len(articles)))
+            LOGGER_.info("{} / {} indexed!".format(indexed, len(articles)))
 
 
 def delete_index():
     try:
         delete()
     except Exception as ex:
-        logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
+        LOGGER_.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
 
 def main():
     args = parseArgs()
 
-    logging.basicConfig()
-    logging.getLogger().setLevel(logging.INFO)
+    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
     global COMORI_OD_API_HOST
     COMORI_OD_API_HOST = os.getenv("COMORI_OD_API_HOST", "http://localhost:9000")
@@ -358,6 +359,7 @@ def main():
         os.environ["API_TOTP_KEY"] = API_OTPKEY
 
     if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
         logging.getLogger().setLevel(logging.DEBUG)
 
         requests_log = logging.getLogger("requests.packages.urllib3")
@@ -365,11 +367,11 @@ def main():
         requests_log.propagate = True
 
     if args.delete_index:
-        logging.info("Deleting index from {}...".format(COMORI_OD_API_HOST))
+        LOGGER_.info("Deleting index from {}...".format(COMORI_OD_API_HOST))
         delete_index()
 
     if args.create_index:
-        logging.info("Creating index from {}...".format(COMORI_OD_API_HOST))
+        LOGGER_.info("Creating index from {}...".format(COMORI_OD_API_HOST))
         create_index()
 
     if args.json_filepath:
@@ -377,30 +379,34 @@ def main():
             articles = json.load(json_file)
 
         try:
-            logging.info("Indexing {} articles from {} to {}...".
+            LOGGER_.info("Indexing {} articles from {} to {}...".
                          format(len(articles), args.json_filepath, COMORI_OD_API_HOST))
             if not args.date_added:
                 raise Exception("Date-added not provided")
 
             index_all(args.date_added, articles)
-            logging.info("Indexed {} articles from {} to {}!".format(len(articles),
+            LOGGER_.info("Indexed {} articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
                                                                      COMORI_OD_API_HOST))
         except Exception as ex:
-            logging.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
+            LOGGER_.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
         if args.output_dir:
             articlesByBook = defaultdict(list)
             for article in articles:
                 articlesByBook[article['book']].append(article)
 
-            logging.info("Writing books to files...")
+            filePath = f"{args.output_dir}/env.json"
+            with open(filePath, 'w') as env_file:
+                json.dump({k: v for (k, v) in os.environ.items()}, env_file, ensure_ascii=False)
+
+            LOGGER_.info("Writing books to files...")
             for book, atcs in articlesByBook.items():
                 filePath = f"{args.output_dir}/{book}.json"
                 with open(filePath, 'w') as book_file:
                     json.dump(atcs, book_file, ensure_ascii=False)
 
-            logging.info("Writting articles to files...")
+            LOGGER_.info("Writting articles to files...")
             for article in articles:
                 filePath = f"{args.output_dir}/{article['_id']}.json"
                 with open(filePath, 'w') as article_file:

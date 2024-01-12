@@ -4,10 +4,12 @@ import os
 import sys
 import argparse
 import subprocess
+import logging
 from prettytable import PrettyTable
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
 PARSER_ = argparse.ArgumentParser(description="OD search test.")
+LOGGER_ = logging.getLogger(__name__)
 
 def parseArgs():
     PARSER_.add_argument("-o",
@@ -87,7 +89,7 @@ def run_searches(outdir, external_host, test_host):
 
     for q in sorted(queries):
         filename = "{}.txt".format(os.path.join(outdir, q.replace(" ", "_")))
-        print("Searching for '{}'".format(q))
+        LOGGER_.info("Searching for '{}'".format(q))
         lines = []
         articles = []
         article = {}
@@ -148,6 +150,8 @@ def run_searches(outdir, external_host, test_host):
 
 
 def main():
+    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+
     args = parseArgs()
 
     run_searches(args.outdir, args.external_host, args.test_host)

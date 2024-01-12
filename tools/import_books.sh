@@ -23,3 +23,4 @@ cp ${SRC_DIR}/trifa_duhul_sfant.* ${DATA_DIR}/trifa_duhul_sfant/
 cp ${SRC_DIR}/trifa_corabia_lui_noe.* ${DATA_DIR}/trifa_corabia_lui_noe/
 cp ${SRC_DIR}/trifa_pe_urmele_mantuitorului.* ${DATA_DIR}/trifa_pe_urmele_mantuitorului/
 cp ${SRC_DIR}/trifa_zacheu.* ${DATA_DIR}/trifa_zacheu/
+cp ${SRC_DIR}/ioan_marini_hrana_pentru_familia_crestina.* ${DATA_DIR}/ioan_marini_hrana_pentru_familia_crestina/

@@ -19,7 +19,7 @@ fi
 
 echo "Preparing local APIs..."
 cd ${MAIN_DIR}
-make -f Makefile.local bible-up
+DOCKER_HOST= make -f Makefile.local bible-up
 cd ${CWD}
 
 # Metadata
@@ -84,6 +84,9 @@ ${CWD}/load_trifa_pe_urmele_mantuitorului.sh ${ARGS}
 
 # Zacheu
 ${CWD}/load_trifa_zacheu.sh ${ARGS}
+
+# Hrană pentru familia creștină
+${CWD}/load_ioan_marini_hrana_pentru_familia_crestina.sh ${ARGS}
 
 if [ -n "${NGINX_HOST}" ]; then
   DOCKER_HOST=${NGINX_HOST} ${CWD}/load_static.sh ${ARGS}
