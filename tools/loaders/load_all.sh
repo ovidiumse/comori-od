@@ -85,6 +85,60 @@ ${CWD}/load_trifa_pe_urmele_mantuitorului.sh ${ARGS}
 # Zacheu
 ${CWD}/load_trifa_zacheu.sh ${ARGS}
 
+# Vântul cel ceresc
+${CWD}/load_trifa_vantul_cel_ceresc.sh ${ARGS}
+
+# Povestiri religioase
+${CWD}/load_trifa_povestiri_religioase.sh ${ARGS}
+
+# Tâlcuirea Evangheliilor
+${CWD}/load_trifa_talcuirea_evangheliilor.sh ${ARGS}
+
+# Munca și lenea
+${CWD}/load_trifa_munca_si_lenea.sh ${ARGS}
+
+# Mai lângă Domnul meu
+${CWD}/load_trifa_mai_langa_domnul_meu.sh ${ARGS}
+
+# La Învierea Domnului
+${CWD}/load_trifa_la_invierea_domnului.sh ${ARGS}
+
+# Ia-ți crucea ta
+${CWD}/load_trifa_ia-ti_crucea_ta.sh ${ARGS}
+
+# Fricoșii
+${CWD}/load_trifa_fricosii.sh ${ARGS}
+
+# Focul cel Ceresc
+${CWD}/load_trifa_focul_cel_ceresc.sh ${ARGS}
+
+# Fiul cel pierdut
+${CWD}/load_trifa_fiul_cel_pierdut.sh ${ARGS}
+
+# Examenul lui Iov
+${CWD}/load_trifa_examenul_lui_iov.sh ${ARGS}
+
+# Din pildele Mântuitorului
+${CWD}/load_trifa_din_pildele_mantuitorului.sh ${ARGS}
+
+# Căutați la păsările cerului
+${CWD}/load_trifa_cautati_la_pasarile_cerului.sh ${ARGS}
+
+# Ca o oaie fără glas
+${CWD}/load_trifa_ca_o_oaie_fara_glas.sh ${ARGS}
+
+# Biblia - Cartea Vieții
+${CWD}/load_trifa_biblia_cartea_vietii.sh ${ARGS}
+
+# Ascultarea
+${CWD}/load_trifa_ascultarea.sh ${ARGS}
+
+# Alcoolul - Duhul diavolului
+${CWD}/load_trifa_alcoolul_duhul_diavolului.sh ${ARGS}
+
+# Adânciri în Evanghelia Mântuitorului
+${CWD}/load_trifa_adanciri_in_evanghelia_mantuitorului.sh ${ARGS}
+
 # Hrană pentru familia creștină
 ${CWD}/load_ioan_marini_hrana_pentru_familia_crestina.sh ${ARGS}
 
