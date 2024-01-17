@@ -1,0 +1,5 @@
+build:
+	docker compose -f docker-compose.yaml --env-file .env-dev --profile admin build comori-od-admin comori-od-adminsvc
+
+up:
+	docker compose -f docker-compose.yaml --env-file .env-dev --profile admin up -d --remove-orphans comori-od-admin comori-od-adminsvc

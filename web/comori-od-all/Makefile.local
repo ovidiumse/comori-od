@@ -8,8 +8,8 @@ up:
 	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev up -d --remove-orphans
 
 bible-up:
-	DOCKER_HOST=tcp://localhost:2375 docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev build comori-od-bibleapi
-	DOCKER_HOST=tcp://localhost:2375 docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev up -d --remove-orphans comori-od-bibleapi
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev build comori-od-bibleapi
+	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev up -d --remove-orphans comori-od-bibleapi
 
 down:
 	docker compose -f docker-compose.yaml -f docker-compose.local.yaml --env-file .env-dev down

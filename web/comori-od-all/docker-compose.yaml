@@ -111,6 +111,30 @@ services:
       - 9002
     restart: unless-stopped
 
+  comori-od-adminsvc:
+    build:
+      context: ../comori-od-adminsvc
+    container_name: comori-od-adminsvc
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../../../comori-od:/comori-od:rw
+      - /mnt/backup/comori-od:/mnt/backup/comori-od
+    restart: unless-stopped
+    profiles:
+      - admin
+  
+  comori-od-admin:
+    build:
+      context: ../comori-od-admin
+      args:
+        - NODE_OPTIONS="--openssl-legacy-provider"
+    network_mode: host
+    container_name: comori-od-admin
+    restart: unless-stopped
+    profiles:
+      - admin
+
   portainer-agent:
     image: portainer/agent:latest
     container_name: portainer-agent

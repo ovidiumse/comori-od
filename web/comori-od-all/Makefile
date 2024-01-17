@@ -19,6 +19,9 @@ test_data: import_books
 test_init:
 	make -f Makefile.test init
 
+admin:
+	make -f Makefile.admin build up
+
 prod:
 	make -f Makefile.comori-od build up
 
@@ -34,7 +37,7 @@ prod_init:
 convert_books:
 	cd ../../tools/ ; ./convert_books.sh
 
-import_books: convert_books
+import_books:
 	cd ../../tools/ ; ./import_books.sh
 
 solarmon:

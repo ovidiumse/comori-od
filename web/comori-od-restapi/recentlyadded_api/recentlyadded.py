@@ -20,7 +20,7 @@ class RecentlyAddedBooksHandler(FieldAggregator):
     def on_get(self, req, resp, idx_name):
         lastMonth = (datetime.utcnow() - timedelta(days=30)).date()
         since = datetime.strptime(req.params['since'], '%Y-%m-%d').date() if 'since' in req.params else lastMonth
-        limit = int(req.params['limit']) if 'limit' in req.params else 10
+        limit = int(req.params['limit']) if 'limit' in req.params else 20
 
         LOGGER_.info(f"Getting {limit} recently added books since {since}")
 
