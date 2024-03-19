@@ -1,20 +1,30 @@
-local:
+prepare_bible:
+	mkdir -p ../comori-od-restapi/data
+	cp ../../data/bible/*.json ../comori-od-restapi/data/
+
+local: prepare_bible
 	make -f Makefile.local build up
 
 local_data: import_books
 	make -f Makefile.local data
 
+local_bible: 
+	make -f Makefile.local bible
+
 local_init:
 	make -f Makefile.local init
 
-test:
+test: prepare_bible
 	make -f Makefile.test build up
 
 test_nginx:
-	make -f Makefile.text nginx
+	make -f Makefile.test nginx
 
 test_data: import_books
 	make -f Makefile.test data
+
+test_bible: 
+	make -f Makefile.test bible
 
 test_init:
 	make -f Makefile.test init
@@ -22,7 +32,7 @@ test_init:
 admin:
 	make -f Makefile.admin build up
 
-prod:
+prod: prepare_bible
 	make -f Makefile.comori-od build up
 
 prod_nginx:
@@ -30,6 +40,9 @@ prod_nginx:
 
 prod_data: import_books
 	make -f Makefile.comori-od data
+
+prod_bible: 
+	make -f Makefile.comori-od bible
 
 prod_init:
 	make -f Makefile.comori-od init

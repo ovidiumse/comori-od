@@ -1,32 +1,34 @@
 build:
-	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build
+	DOCKER_HOST=ssh://comori-od-test docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build
 
 rebuild:
-	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build --no-cache
+	DOCKER_HOST=ssh://comori-od-test docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev build --no-cache
 
 up:
-	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev up -d --remove-orphans
+	DOCKER_HOST=ssh://comori-od-test docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev up -d --remove-orphans
 
 down:
-	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down
+	DOCKER_HOST=ssh://comori-od-test docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down
 
 remove:
-	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down -v
+	DOCKER_HOST=ssh://comori-od-test docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev down -v
 
 logs:
-	DOCKER_HOST=tcp://comori-od-test:2375 docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev logs --follow --tail 250
+	DOCKER_HOST=ssh://comori-od-test docker compose -f docker-compose.yaml -f docker-compose.test.yaml --env-file .env-dev logs --follow --tail 250
 
 hunspell:
-	cd ../comori-od-es; DOCKER_HOST=tcp://comori-od-test:2375 ./deploy-hunspell.sh
+	cd ../comori-od-es; DOCKER_HOST=ssh://comori-od-test ./deploy-hunspell.sh
 
 es-config:
-	cd ../comori-od-es; DOCKER_HOST=tcp://comori-od-test:2375 ./deploy-config.sh
+	cd ../comori-od-es; DOCKER_HOST=ssh://comori-od-test ./deploy-config.sh
 
 metadata: 
 	COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_metadata.sh
 
 data:
-	DOCKER_HOST=tcp://comori-od-test:2375 COMORI_OD_API_HOST=https://testapi.comori-od.ro ../../tools/loaders/load_all.sh
-	../../tools/prepare_diff.sh
+	DOCKER_HOST=ssh://comori-od-test COMORI_OD_API_HOST=http://comori-od-test:9000 COMORI_OD_ES_HOST=comori-od-test ../../tools/loaders/load_all.sh
+
+bible: 
+	COMORI_OD_API_HOST=http://comori-od-test:9000 BIBLE_API=http://localhost:9002 ../../tools/loaders/load_bible.sh	
 
 init: hunspell metadata data

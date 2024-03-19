@@ -35,8 +35,8 @@ services:
       - /home/docker/comori-od/comori-od-es/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - /home/docker/comori-od/comori-od-es/logs/:/usr/share/elasticsearch/logs
       - /home/docker/comori-od/comori-od-es/hunspell/:/usr/share/elasticsearch/config/hunspell
-    expose:
-      - "9200"
+    ports:
+      - 9200:9200
     restart: unless-stopped
 
   comori-od-mongo:
@@ -89,7 +89,7 @@ services:
     ports: 
       - 9000:9000
     environment:
-      - GEVENT_RESOLVER=ares
+     # - GEVENT_RESOLVER=ares  # not needed anymore, when enabled causes connection timeouts with ES
       - API_TOTP_KEY=${API_TOTP_KEY}
       - ELASTIC_USER=${ELASTIC_USER}
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
@@ -101,14 +101,15 @@ services:
     depends_on:
       - comori-od-es
       - comori-od-mongo
+      - comori-od-bibleapi
     restart: unless-stopped
 
   comori-od-bibleapi:
     build: 
       context: ../comori-od-bibleapi
     container_name: comori-od-bibleapi
-    expose:
-      - 9002
+    ports:
+      - 9002:9002
     restart: unless-stopped
 
   comori-od-adminsvc:
