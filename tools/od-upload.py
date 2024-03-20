@@ -301,7 +301,7 @@ def index_all(date_added, articles):
     for idx, article in enumerate(articles):
         id = "{} {} {}".format(article['title'], article['book'], article['author'])
         id = unidecode(id).lower()
-        id = re.sub('[\.\,\!\(\)\[\] ]+', '-', id)
+        id = re.sub('[\.\,\!\(\)\[\]\"\'\? ]+', '-', id)
         id = re.sub('(\-)+', '-', id)
         article['_id'] = id
         article['_insert_idx'] = idx

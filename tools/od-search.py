@@ -8,7 +8,7 @@ import logging
 PARSER_ = argparse.ArgumentParser(description="OD content suggester.")
 
 EXTERNAL_HOST = "https://api.comori-od.ro"
-TEST_HOST = "https://testapi.comori-od.ro"
+TEST_HOST = "http://comori-od-test:9000"
 LOCAL_HOST = "http://localhost:9000"
 
 COMORI_OD_API_HOST = LOCAL_HOST
