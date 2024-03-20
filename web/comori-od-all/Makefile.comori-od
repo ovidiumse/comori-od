@@ -25,10 +25,10 @@ hunspell:
 	cd ../comori-od-es; DOCKER_HOST=ssh://comori-od ./deploy-hunspell.sh
 
 metadata: 
-	COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_metadata.sh
+	COMORI_OD_API_HOST=http://comori-od:9000 ../../tools/loaders/load_metadata.sh
 
 data:
-	DOCKER_HOST=ssh://comori-od NGINX_HOST=ssh://nginx COMORI_OD_API_HOST=https://api.comori-od.ro ../../tools/loaders/load_all.sh
+	DOCKER_HOST=ssh://comori-od NGINX_HOST=ssh://nginx COMORI_OD_API_HOST=http://comori-od:9000 ../../tools/loaders/load_all.sh
 	../../tools/prepare_diff.sh
 
 init: hunspell metadata data

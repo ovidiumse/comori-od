@@ -35,8 +35,8 @@ services:
       - /home/docker/comori-od/comori-od-es/config/:/usr/share/elasticsearch/config
       - /home/docker/comori-od/comori-od-es/logs/:/usr/share/elasticsearch/logs
       - /home/docker/comori-od/comori-od-es/hunspell/:/usr/share/elasticsearch/config/hunspell
-    expose:
-      - "9200"
+    ports:
+      - 9200:9200
     restart: unless-stopped
 
   comori-od-mongo:
@@ -47,8 +47,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
     volumes:
       - /home/docker/comori-od/comori-od-mongo/data/:/data/db
-    expose:
-      - 27017
+    ports:
+      - 27017:27017
     command: ['--auth']
     restart: unless-stopped
 
