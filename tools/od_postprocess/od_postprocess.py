@@ -65,6 +65,11 @@ def replace_nbsp(val, field, isFirstBlock, isLastBlock):
     return newval
 
 
+def replace_soft_hyphen(val, field, isFirstBlock, isLastBlock):
+    newval = val.replace(u'\xad', '-')
+    return newval
+
+
 def replace_newlines_with_spaces(val, field, isFirstBlock, isLastBlock):
     newval = val.replace('\n', ' ')
     return newval
@@ -188,7 +193,7 @@ def post_process(index, val, field, isFirstBlock, isLastBlock, replacer: WordRep
         return replacer.normalize_diacritics(val, field, isFirstBlock, isLastBlock)
 
     pipeline = [
-        replace_nbsp, replace_newlines_with_spaces, strip_spaces,
+        replace_nbsp, replace_soft_hyphen, replace_newlines_with_spaces, strip_spaces,
         replace_multiple_spaces_with_single_one,
         remove_verse_numbers, remove_invalid_verses,
         replace_words, normalize_diacritics
