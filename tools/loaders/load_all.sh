@@ -151,7 +151,7 @@ DOCKER_HOST=${DOCKER_HOST} docker restart comori-od-restapi
 echo "Waiting 10 seconds for the service to wake up..."
 sleep 10
 
-if [ "${COMORI_OD_API_HOST}" == "https://testapi.comori-od.ro" ]; then
+if [ "${COMORI_OD_API_HOST}" == "http://comori-od-test:9000" ]; then
   ${CWD}/../test_all.sh ${ARGS}
 fi
 
