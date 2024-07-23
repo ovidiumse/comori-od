@@ -13,75 +13,77 @@ BIBLE = {}
 BIBLE_ALIASES = {
     'Geneza': ['Gen', 'Gen.', 'Facerea', 'Facere', 'Fac', 'Fac.'],
     'Exodul': ['Exod', 'Exod.', 'Ex', 'Ex.', 'Iesirea', 'Iesire', 'Ies', 'Ies.'],
-    'Leviticul': ['Levitic', 'Levitic.', 'Lev', 'Lev.'],
+    'Leviticul': ['Lev', 'Levitic', 'Levitic.', 'Lev.'],
     'Numeri': ['Num', 'Num.'],
-    'Deuteronomul': ['Deuteronom', 'Deuteronom.', 'Deut', 'Deut.'],
+    'Deuteronomul': ['Deut', 'Deuteronom', 'Deuteronom.', 'Deut.'],
     'Iosua': ['Ios', 'Ios.'],
-    'Judecatorii': ['Judecatori', 'Judec', 'Judec.', 'Jud', 'Jud.'],
-    'Rut': [],
+    'Judecatorii': ['Jud', 'Judecatori', 'Judec', 'Judec.', 'Jud', 'Jud.'],
+    'Rut': ['Rut'],
     '1 Samuel': ['1 Sam', '1 Sam.'],
     '2 Samuel': ['2 Sam', '2 Sam.'],
-    '1 Imparati': ['1 Impar', '1 Impar.', '1 Imp', '1 Imp.', '1 Regi'],
-    '2 Imparati': ['2 Impar', '2 Impar.', '2 Imp', '2 Imp.', '2 Regi'],
+    '1 Imparati': ['1 Imp', '1 Impar', '1 Impar.', '1 Imp.', '1 Regi'],
+    '2 Imparati': ['2 Imp', '2 Impar', '2 Impar.', '2 Imp.', '2 Regi'],
     '1 Cronici': ['1 Cron', '1 Cron.'],
     '2 Cronici': ['2 Cron', '2 Cron.'],
-    'Ezra': ['Ezr', 'Ezr.'],
+    'Ezra': ['Ezra', 'Ezr', 'Ezr.'],
     'Neemia': ['Neem', 'Neem.'],
-    'Estera': ['Est', 'Est.'],
-    'Iov': [],
-    'Psalmii': ['Psalm', 'Psalmi', 'Psalmul', 'Ps', 'Ps.'],
-    'Proverbele': ['Proverbe', 'Prov', 'Prov.'],
-    'Eclesiastul': ['Eclesiast', 'Ecles', 'Ecles.', 'Ecl', 'Ecl.'],
-    'Cantarea Cantarilor': ['Cantarea Cant', 'Cantarea Cant.', 'Cant Cant', 'Cant. Cant.'],
-    'Isaia': ['Is', 'Is.'],
-    'Ieremia': ['Ierem', 'Ierem.', 'Ier', 'Ier.'],
+    'Estera': ['Estera', 'Est', 'Est.'],
+    'Iov': ['Iov'],
+    'Psalmii': ['Ps', 'Psalm', 'Psalmi', 'Psalmul', 'Ps.'],
+    'Proverbele': ['Prov', 'Proverbe', 'Prov.'],
+    'Eclesiastul': ['Ecl', 'Eclesiast', 'Ecles', 'Ecles.', 'Ecl.'],
+    'Cantarea Cantarilor': ['Cant', 'Cant.', 'Cantarea Cant', 'Cantarea Cant.', 'Cant Cant', 'Cant. Cant.'],
+    'Isaia': ['Isa', 'Isa.', 'Is', 'Is.'],
+    'Ieremia': ['Ier', 'Ierem', 'Ierem.', 'Ier.'],
     'Plangerile Lui Ieremia': [
+        'Plang',
         'Plangerile Lui Ierem', 'Plangerile Lui Ierem.', 'Plang Ierem', 'Plang. Ierem.', 'Plangeri',
-        'Plang', 'Plang.'
+        'Plang.'
     ],
     'Ezechiel': ['Ezec', 'Ezec.'],
     'Daniel': ['Dan', 'Dan.'],
-    'Osea': ['Os', 'Os.'],
-    'Ioel': [],
-    'Amos': ['Am', 'Am.'],
+    'Osea': ['Osea', 'Os', 'Os.'],
+    'Ioel': ['Ioel'],
+    'Amos': ['Amos', 'Am', 'Am.'],
     'Obadia': ['Obad', 'Obad.'],
-    'Iona': [],
-    'Mica': ['Mic', 'Mic.'],
-    'Naum': [],
-    'Habacuc': ['Habac', 'Habac.', 'Hab', 'Hab.'],
-    'Tefania': ['Tefan', 'Tefan.', 'Tef', 'Tef.'],
+    'Iona': ['Iona'],
+    'Mica': ['Mica', 'Mic', 'Mic.'],
+    'Naum': ['Naum'],
+    'Habacuc': ['Hab', 'Habac', 'Habac.', 'Hab.'],
+    'Tefania': ['Tef', 'Tefan', 'Tefan.', 'Tef.'],
     'Hagai': ['Hag', 'Hag.'],
-    'Zaharia': ['Zahar', 'Zahar.', 'Zah', 'Zah.'],
-    'Maleahi': ['Maleah', 'Maleah.', 'Mal', 'Mal.'],
+    'Zaharia': ['Zah', 'Zahar', 'Zahar.', 'Zah.'],
+    'Maleahi': ['Mal', 'Maleah', 'Maleah.', 'Mal.'],
     'Matei': ['Mat', 'Mat.', 'Mt', 'Mt.'],
-    'Marcu': ['Mc', 'Mc.'],
-    'Luca': ['Luc', 'Luc.', 'Lc', 'Lc.'],
-    'Ioan': ['In', 'In.'],
+    'Marcu': ['Marc', 'Marc.', 'Mc', 'Mc.'],
+    'Luca': ['Luca', 'Luc', 'Luc.', 'Lc', 'Lc.'],
+    'Ioan': ['Ioan', 'In', 'In.'],
     'Faptele Apostolilor': [
-        'Faptele Apost.', 'Fapte', 'Fapt Ap', 'Fapt. Ap.', 'Fap Ap', 'Fap. Ap.', 'Fapt', 'Fapt.',
+        'Fapte',
+        'Faptele Apost.', 'Fapt Ap', 'Fapt. Ap.', 'Fap Ap', 'Fap. Ap.', 'Fapt', 'Fapt.',
         'Fap', 'Fap.'
     ],
     'Romani': ['Rom', 'Rom.'],
-    '1 Corinteni': ['1 Corint', '1 Corint.', '1 Cor', '1 Cor.'],
-    '2 Corinteni': ['2 Corint', '2 Corint.', '2 Cor', '2 Cor.'],
-    'Galateni': ['Galat', 'Galat.', 'Gal', 'Gal.'],
+    '1 Corinteni': ['1 Cor', '1 Corint', '1 Corint.', '1 Cor.'],
+    '2 Corinteni': ['2 Cor', '2 Corint', '2 Corint.', '2 Cor.'],
+    'Galateni': ['Gal', 'Galat', 'Galat.', 'Gal.'],
     'Efeseni': ['Efes', 'Efes.'],
-    'Filipeni': ['Filip', 'Filip.'],
-    'Coloseni': ['Colos', 'Colos.', 'Col', 'Col.'],
+    'Filipeni': ['Fil', 'Fil.', 'Filip', 'Filip.'],
+    'Coloseni': ['Col', 'Colos', 'Colos.', 'Col.'],
     '1 Tesaloniceni': ['1 Tes', '1 Tes.'],
     '2 Tesaloniceni': ['2 Tes', '2 Tes.'],
     '1 Timotei': ['1 Tim', '1 Tim.'],
     '2 Timotei': ['2 Tim', '2 Tim.'],
-    'Tit': [],
+    'Tit': ['Tit'],
     'Filimon': ['Filim', 'Filim.'],
     'Evrei': ['Evr', 'Evr.', 'Ev', 'Ev.'],
     'Iacov': ['Iac', 'Iac.', 'Ic', 'Ic.'],
     '1 Petru': ['1 Pet', '1 Pet.', '1 Pt', '1 Pt.'],
     '2 Petru': ['2 Pet', '2 Pet.', '2 Pt', '2 Pt.'],
-    '1 Ioan': ['1 In', '1 In.'],
-    '2 Ioan': ['2 In', '2 In.'],
-    '3 Ioan': ['3 In', '3 In.'],
-    'Iuda': [],
+    '1 Ioan': ['1 Ioan', '1 In', '1 In.'],
+    '2 Ioan': ['2 Ioan', '2 In', '2 In.'],
+    '3 Ioan': ['3 Ioan', '3 In', '3 In.'],
+    'Iuda': ['Iuda'],
     'Apocalipsa': ['Apoc', 'Apoc.']
 }
 
@@ -172,7 +174,7 @@ class Bible(object):
         match = REFERENCE_REGEX.match(reference)
         if not match:
             resp.status = falcon.HTTP_404
-            resp.body, resp.content_type = self.make_response(
+            resp.text, resp.content_type = self.make_response(
                 {
                     'message':
                     "The given reference doesn't match the <book_name> <chapter>[:<verse>[-<verseEnd>]][verse n, verse n + 1...] schema."
@@ -187,7 +189,7 @@ class Bible(object):
 
         if book_name not in BIBLE:
             resp.status = falcon.HTTP_404
-            resp.body, resp.content_type = self.make_response(
+            resp.text, resp.content_type = self.make_response(
                 {'message': "Book {} doesn't exist in the Bible!".format(book_name)}, callback)
             return
 
@@ -199,7 +201,7 @@ class Bible(object):
         verse_end = int(match.group('verse_end')) if match.group('verse_end') else None
         if verse_start and verse_end and verse_end < verse_start:
             resp.status = falcon.HTTP_400
-            resp.body, resp.content_type = self.make_response(
+            resp.text, resp.content_type = self.make_response(
                 {'message': 'Invalid verse range: {}-{}'.format(verse_start, verse_end)}, callback)
             return
 
@@ -218,7 +220,7 @@ class Bible(object):
         
         if chapter_nr > len(book['chapters']):
             resp.status = falcon.HTTP_404
-            resp.body, resp.content_type = self.make_response(
+            resp.text, resp.content_type = self.make_response(
                 {'message': "Chapter {} doesn't exist in {}!".format(chapter_nr, book_name)},
                 callback)
             return
@@ -228,29 +230,29 @@ class Bible(object):
         response = self.makeChapter(book['name'], chapter, verse_start, verse_end, verses, include_titles)
         if not response['verses']:
             resp.status = falcon.HTTP_404
-            resp.body, resp.content_type = self.make_response(
+            resp.text, resp.content_type = self.make_response(
                 {'message': "Verse {} doesn't exist in {}!".format(verse_start, chapter['name'])},
                 callback)
             return
 
         resp.status = falcon.HTTP_200
-        resp.body, resp.content_type = self.make_response(response, callback)
+        resp.text, resp.content_type = self.make_response(response, callback)
 
 
 class Books(object):
     def on_get(self, req, resp):
         results = [book for book in BIBLE]
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results)
+        resp.text = json.dumps(results)
 
 
 class Aliases(object):
     def on_get(self, req, resp, book_name=None):
         resp.status = falcon.HTTP_200
         if book_name:
-            resp.body = json.dumps(BIBLE_ALIASES[book_name])
+            resp.text = json.dumps(BIBLE_ALIASES[book_name])
         else:
-            resp.body = json.dumps(BIBLE_ALIASES)
+            resp.text = json.dumps(BIBLE_ALIASES)
 
 
 def load_app(bible_filepath):
