@@ -36,7 +36,7 @@ class FavoritesHandler(MongoClient, MobileAppService):
         cached_response = user_cache.get(cache_key) if user_cache else None
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             LOGGER_.info(f"Looking up favorites for uid {user_id}")
 
@@ -46,8 +46,8 @@ class FavoritesHandler(MongoClient, MobileAppService):
             ]
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(favs)
-            self.cache_[user_id][cache_key] = resp.body
+            resp.text = json.dumps(favs)
+            self.cache_[user_id][cache_key] = resp.text
 
     @req_handler("Deleting favorite", __name__)
     def on_delete(self, req, resp, idx_name, article_id):
@@ -91,4 +91,4 @@ class FavoritesHandler(MongoClient, MobileAppService):
         self.getCollection(idx_name, 'favorites').insert_one(data)
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(self.removeInternalFields(data))
+        resp.text = json.dumps(self.removeInternalFields(data))

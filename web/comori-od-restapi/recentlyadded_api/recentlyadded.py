@@ -28,7 +28,7 @@ class RecentlyAddedBooksHandler(FieldAggregator):
         response = self.cache_.get(cache_key)
         if response:
             resp.status = falcon.HTTP_200
-            resp.body = response
+            resp.text = response
         else:
             LOGGER_.info("Computing recently added books...")
 
@@ -73,6 +73,6 @@ class RecentlyAddedBooksHandler(FieldAggregator):
             books = sorted(books, key=lambda b: b['date_added'], reverse=True)[:limit]
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(books)
+            resp.text = json.dumps(books)
 
-            self.cache_[cache_key] = resp.body
+            self.cache_[cache_key] = resp.text

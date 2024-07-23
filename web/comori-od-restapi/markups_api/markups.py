@@ -36,7 +36,7 @@ class MarkupsHandler(MongoClient, MobileAppService):
         cached_response = user_cache.get(cache_key) if user_cache else None
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             LOGGER_.info(f"Looking up markups for uid {user_id}...")
             mkups = [
@@ -45,8 +45,8 @@ class MarkupsHandler(MongoClient, MobileAppService):
             ]
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(mkups)
-            self.cache_[user_id][cache_key] = resp.body
+            resp.text = json.dumps(mkups)
+            self.cache_[user_id][cache_key] = resp.text
 
     @req_handler("Deleting markup", __name__)
     def on_delete(self, req, resp, idx_name, markup_id):
@@ -90,4 +90,4 @@ class MarkupsHandler(MongoClient, MobileAppService):
         self.getCollection(idx_name, 'markups').insert_one(data)
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(self.removeInternalFields(data))
+        resp.text = json.dumps(self.removeInternalFields(data))

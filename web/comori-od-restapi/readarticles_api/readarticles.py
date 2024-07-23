@@ -35,7 +35,7 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
         cached_response = client_cache.get(cache_key) if client_cache else None
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             readArticles = [
                 self.removeInternalFields(read)
@@ -43,8 +43,8 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
             ]
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(readArticles)
-            READ_ARTICLES_CACHE[user_id][cache_key] = resp.body
+            resp.text = json.dumps(readArticles)
+            READ_ARTICLES_CACHE[user_id][cache_key] = resp.text
 
     @req_handler("Adding read article", __name__)
     def on_post(self, req, resp, idx_name):
@@ -66,7 +66,7 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
         self.getCollection(idx_name, 'readArticles').insert_one(data)
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(self.removeInternalFields(data))
+        resp.text = json.dumps(self.removeInternalFields(data))
 
     @req_handler("Updating read article", __name__)
     def on_patch(self, req, resp, idx_name, article_id):
@@ -95,7 +95,7 @@ class ReadArticlesHandler(MongoClient, MobileAppService):
             raise falcon.HTTPNotFound()
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps({"UpdatedCnt": result.modified_count})
+        resp.text = json.dumps({"UpdatedCnt": result.modified_count})
 
 
 class BulkReadArticlesHandler(MongoClient, MobileAppService):
@@ -130,7 +130,7 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
             raise falcon.HTTPInternalServerError("Inserting read articles failed!")
 
         resp.status = falcon.HTTP_201
-        resp.body = json.dumps({"InsertedCnt": len(result.inserted_ids)})
+        resp.text = json.dumps({"InsertedCnt": len(result.inserted_ids)})
 
     @req_handler("Updating read articles in bulk", __name__)
     def on_patch(self, req, resp, idx_name):
@@ -164,7 +164,7 @@ class BulkReadArticlesHandler(MongoClient, MobileAppService):
             raise falcon.HTTPNotFound()
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps({"UpdatedCnt": updatedCnt})
+        resp.text = json.dumps({"UpdatedCnt": updatedCnt})
 
 class TrendingArticlesHandler(MongoClient, MobileAppService):
     def __init__(self, authorsHandler: AuthorsHandler):
@@ -249,4 +249,4 @@ class TrendingArticlesHandler(MongoClient, MobileAppService):
                         article[f'author-{k}'] = v
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(trendingArticles)
+        resp.text = json.dumps(trendingArticles)

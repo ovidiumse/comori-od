@@ -126,10 +126,11 @@ class ArticlesHandler(object):
 
         get_response = self.getById(idx_name, req)
         search_response = self._es.search(index=idx_name, body=query_body, timeout="1m")
-        if search_response["hits"]["total"]["value"] != 1:
+        data = search_response.body
+        if data["hits"]["total"]["value"] != 1:
             return get_response
 
-        hit = search_response["hits"]["hits"][0]
+        hit = data["hits"]["hits"][0]
         if "highlight" not in hit:
             return get_response
 
@@ -222,7 +223,7 @@ class ArticlesHandler(object):
                              'size': limit,
                              'from': offset
                          })
-        return resp.body
+        return resp
 
     @req_handler("Handling articles GET", __name__)
     def on_get(self, req, resp, idx_name, id=None):
@@ -230,7 +231,7 @@ class ArticlesHandler(object):
         cached_response = self.cache_.get(cache_key)
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             LOGGER_.info(f"Making articles query for {req.url}")
 
@@ -249,8 +250,8 @@ class ArticlesHandler(object):
                 response = self.getDailyArticle(idx_name, req)
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(response)
-            self.cache_[cache_key] = resp.body
+            resp.text = json.dumps(response)
+            self.cache_[cache_key] = resp.text
 
     @req_handler("Handling articles POST", __name__)
     def on_post(self, req, resp, idx_name):
@@ -266,7 +267,7 @@ class ArticlesHandler(object):
         indexed, _ = helpers.bulk(self._es, articles, stats_only=True)
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps({'total': len(articles), 'indexed': indexed})
+        resp.text = json.dumps({'total': len(articles), 'indexed': indexed})
 
 
 class SearchTermSuggester(object):
@@ -316,7 +317,7 @@ class SearchTermSuggester(object):
                                 }
                             })
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results.body)
+        resp.text = json.dumps(results)
 
 
 class SimilarArticlesHandler(object):
@@ -348,4 +349,4 @@ class SimilarArticlesHandler(object):
                             })
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(results.body)
+        resp.text = json.dumps(results)

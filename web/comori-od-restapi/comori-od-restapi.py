@@ -26,6 +26,8 @@ from recommended_api import RecommendedHandler
 from readarticles_api import ReadArticlesHandler, BulkReadArticlesHandler, TrendingArticlesHandler
 from recentlyadded_api import RecentlyAddedBooksHandler
 from users_api import UsersHandler
+from odrefs_api import OdRefsHandler
+from bible_api import BibleArticlesHandler, BibleBookHandler, BibleChapterHandler
 from api_utils import timeit
 
 LOGGER_ = logging.getLogger(__name__)
@@ -77,6 +79,7 @@ class TotpAuthBackend(AuthBackend):
 
 @timeit("Initializing service", __name__)
 def load_app(cfg_filepath, dotenv_filePath = None):
+    
     try:
         log_cfg = {}
         with open('logging_cfg.yaml', 'r') as log_conf_file:
@@ -90,15 +93,15 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         with open(cfg_filepath, 'r') as cfg_file:
             cfg = yaml.full_load(cfg_file)
 
+        LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
+
         if dotenv_filePath:
             load_dotenv(dotenv_filePath)
 
         es = Elasticsearch(cfg['es']['url'],
-                           http_auth=(os.getenv("ELASTIC_USER", "elastic"), os.getenv("ELASTIC_PASSWORD", "")),
+                           basic_auth=(os.getenv("ELASTIC_USER", "elastic"), os.getenv("ELASTIC_PASSWORD", "")),
                            timeout=30)
-
-        LOGGER_.info("Cfg: {}".format(json.dumps(cfg, indent=2)))
-
+        
         totpAuth = TotpAuthBackend()
         authMiddleware = FalconAuthMiddleware(totpAuth, None, ["OPTIONS", "GET"])
         app = falcon.App(middleware=[HandleCORS(), authMiddleware])
@@ -124,6 +127,10 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         tendingArticlesHandler = TrendingArticlesHandler(authors)
         recentlyAddedBooks = RecentlyAddedBooksHandler(es, authors)
         users = UsersHandler()
+        odRefs = OdRefsHandler()
+        bibleArticles = BibleArticlesHandler(es)
+        bibleBooks = BibleBookHandler()
+        bibleChapters = BibleChapterHandler(es, odRefs)
 
         app.add_route('/{idx_name}', index)
         app.add_route('/{idx_name}/articles', articles)
@@ -153,6 +160,10 @@ def load_app(cfg_filepath, dotenv_filePath = None):
         app.add_route('/{idx_name}/trendingarticles', tendingArticlesHandler)
         app.add_route('/{idx_name}/recentlyaddedbooks', recentlyAddedBooks)
         app.add_route('/{idx_name}/users', users)
+        app.add_route('/{idx_name}/od-refs', odRefs)
+        app.add_route('/bible/articles', bibleArticles)
+        app.add_route('/bible/books', bibleBooks)
+        app.add_route('/bible/chapters', bibleChapters)
     except Exception as e:
         LOGGER_.error(f"Initializing svc failed! Error: {e}", exc_info=True)
         raise

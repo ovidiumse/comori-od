@@ -27,7 +27,7 @@ class IndexHandler(object):
         mapping = ES.indices.get_mapping(index=idx_name)
         settings = ES.indices.get(index=idx_name)
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps({'settings': settings, 'mapping': mapping})
+        resp.text = json.dumps({'settings': settings, 'mapping': mapping})
 
     @req_handler("Creating index", __name__)
     def on_post(self, req, resp, idx_name):

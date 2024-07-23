@@ -28,4 +28,4 @@ class TagsHandler(MongoClient, MobileAppService):
         process(favs)            
         
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(tagsByFreq)
+        resp.text = json.dumps(tagsByFreq)

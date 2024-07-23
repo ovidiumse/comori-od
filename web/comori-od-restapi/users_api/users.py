@@ -30,4 +30,4 @@ class UsersHandler(MongoClient, MobileAppService):
         response['removed_read_articles_cnt'] = r.deleted_count
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(response)
+        resp.text = json.dumps(response)

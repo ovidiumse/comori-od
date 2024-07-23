@@ -20,7 +20,7 @@ class TitlesHandler(object):
         cached_response = self.cache_.get(cache_key)
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             LOGGER_.info(f"Looking up titles for {req.url}")
             limit = int(req.params['limit']) if 'limit' in req.params else 100
@@ -46,8 +46,8 @@ class TitlesHandler(object):
 
             response = self.es_.search(index=idx_name, body=query_body)
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(response.body)
-            self.cache_[cache_key] = resp.body
+            resp.text = json.dumps(response.body)
+            self.cache_[cache_key] = resp.text
 
 
 class TitlesCompletionHandler(object):
@@ -63,7 +63,7 @@ class TitlesCompletionHandler(object):
         cached_response = self.cache_.get(cache_key)
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             results = self.es_.search(index=idx_name,
                                 body={
@@ -90,5 +90,5 @@ class TitlesCompletionHandler(object):
                                     'sort': [{'_insert_idx': {'order': 'asc'}}]
                                 })
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results.body)
-            self.cache_[cache_key] = resp.body
+            resp.text = json.dumps(results.body)
+            self.cache_[cache_key] = resp.text

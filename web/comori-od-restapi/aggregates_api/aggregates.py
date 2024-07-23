@@ -56,10 +56,11 @@ class FieldAggregator():
             aggs_body[f'{agg}s'] = {'terms': {'field': agg, 'size': 100}}
 
         resp = self.es_.search(index=idx_name, body=query_body, timeout="1m")
+        data = resp.body
         authorsByName = self.authorsHandler_.getAuthorsByName(idx_name) if self.authorsHandler_ else None
 
         if authorsByName:
-            for bucket in resp['aggregations'][f'{self.fieldName}s']['buckets']:
+            for bucket in data['aggregations'][f'{self.fieldName}s']['buckets']:
                 if 'authors' in bucket:
                     for author_bucket in bucket['authors']['buckets']:
                         if author_bucket['key'] in authorsByName:
@@ -68,7 +69,7 @@ class FieldAggregator():
                                 if 'url' in k:
                                     author_bucket[k] = v
 
-        return resp.body
+        return data
 
     @req_handler("Aggregated fields GET", __name__)
     def on_get(self, req, resp, idx_name):
@@ -76,13 +77,13 @@ class FieldAggregator():
         cached_response = self.cache_.get(cache_key)
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             LOGGER_.info(f"Computing aggregated values for {req.url}")
             results = self.getValues(idx_name, req, order={'min_insert_ts': 'asc'})
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(results)
-            self.cache_[cache_key] = resp.body
+            resp.text = json.dumps(results)
+            self.cache_[cache_key] = resp.text
 
     @req_handler("Deleting content", __name__)
     def on_delete(self, req, resp, idx_name, value):

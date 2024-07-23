@@ -16,6 +16,7 @@ RUN ${PYPY3} get-pip.py
 RUN ${PYPY3} -m pip install --upgrade pip
 RUN ${PYPY3} -m pip install -r requirements.txt
 
+ADD data data
 ADD api_utils api_utils
 ADD aggregates_api aggregates_api
 ADD authors_api authors_api
@@ -32,6 +33,8 @@ ADD recommended_api recommended_api
 ADD tags_api tags_api
 ADD titles_api titles_api
 ADD users_api users_api
+ADD odrefs_api odrefs_api
+ADD bible_api bible_api
 
 COPY comori-od-restapi.py .
 COPY cfg.yaml .

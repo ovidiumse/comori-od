@@ -109,7 +109,7 @@ class AuthorsHandler(MongoClient, FieldAggregator):
         cached_response = self.cache_.get(cache_key)
         if cached_response:
             resp.status = falcon.HTTP_200
-            resp.body = cached_response
+            resp.text = cached_response
         else:
             response = self.getValues(idx_name, req)
 
@@ -119,8 +119,8 @@ class AuthorsHandler(MongoClient, FieldAggregator):
             self.sortAuthors(response)        
 
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps(response)
-            self.cache_[cache_key] = resp.body
+            resp.text = json.dumps(response)
+            self.cache_[cache_key] = resp.text
     
     @req_handler("Handling authors POST", __name__)
     def on_post(self, req, resp, idx_name):
@@ -156,4 +156,4 @@ class AuthorsHandler(MongoClient, FieldAggregator):
             upsertedCnt += 1 if result.upserted_id else 0
 
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps({'modifiedCnt': modifiedCnt, 'upsertedCnt': upsertedCnt, 'deletedCnt': deletedCnt})
+        resp.text = json.dumps({'modifiedCnt': modifiedCnt, 'upsertedCnt': upsertedCnt, 'deletedCnt': deletedCnt})

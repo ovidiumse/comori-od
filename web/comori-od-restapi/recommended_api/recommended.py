@@ -37,7 +37,7 @@ class RecommendedHandler(MongoClient, MobileAppService):
         if not readArticles:
             LOGGER_.info(f"No read articles for user {uid}!")
             resp.status = falcon.HTTP_200
-            resp.body = json.dumps([])
+            resp.text = json.dumps([])
             return
 
         readArticles = sorted(readArticles, key=lambda a: a['timestamp'], reverse=True)
@@ -72,8 +72,9 @@ class RecommendedHandler(MongoClient, MobileAppService):
                 'size': limit + len(readArticles)
             }
 
-            response = self.es_.search(index=idx_name, body=query_body)
-            hits = response['hits']['hits']
+            resp = self.es_.search(index=idx_name, body=query_body)
+            data = resp.body
+            hits = data['hits']['hits']
             unread_hits = filterAlreadyRead(hits)
 
             recommended_by_id[read['id']] = {
@@ -89,4 +90,4 @@ class RecommendedHandler(MongoClient, MobileAppService):
 
         LOGGER_.info(f"User {uid} has {len(recommended)} recommended articles: \n{json.dumps(recommended_by_id, indent=2)}")
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(recommended)
+        resp.text = json.dumps(recommended)
