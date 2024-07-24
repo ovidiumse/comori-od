@@ -15,12 +15,12 @@ if [[ -z "${API_TOTP_KEY}" ]]; then
 fi
 
 echo "Fixing Trifa - Ce este Oastea Domnului..."
-${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/trifa_ce_este_oastea_domnului/trifa_ce_este_oastea_domnului.htm -c ${CFG_DIR}/trifa_ce_este_oastea_domnului.yaml
+${TOOLS_DIR}/od-fix.py -i ${DATA_DIR}/trifa_ce_este_oastea_domnului/trifa_ce_este_oastea_domnului.htm -c ${CFG_DIR}/trifa_default.yaml
 
 echo "Extracting Trifa - Ce este Oastea Domnului..."
 ${TOOLS_DIR}/od-extract.py \
     -i ${DATA_DIR}/trifa_ce_este_oastea_domnului/trifa_ce_este_oastea_domnului_fixed.htm \
-    -c ${CFG_DIR}/trifa_ce_este_oastea_domnului.yaml \
+    -c ${CFG_DIR}/trifa_default.yaml \
     -a "Pr. Iosif Trifa" \
     -v "Ce este Oastea Domnului" \
     -b "Ce este Oastea Domnului" \

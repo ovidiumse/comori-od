@@ -12,7 +12,7 @@ from datetime import datetime
 from unidecode import unidecode
 from getpass import getpass
 
-PARSER_ = argparse.ArgumentParser(description="OD content uploader.")
+PARSER_ = argparse.ArgumentParser(description="Bible content uploader.")
 LOGGER_ = logging.getLogger(__name__)
 
 COMORI_OD_API_HOST = ""
@@ -28,13 +28,6 @@ def parseArgs():
                          action="store",
                          type=str,
                          help="Input JSON file")
-    PARSER_.add_argument("-da",
-                         "--date-added",
-                         dest="date_added",
-                         action="store",
-                         default=None,
-                         type=str,
-                         help="Date added")
     PARSER_.add_argument("-d",
                          "--delete-index",
                          dest="delete_index",
@@ -45,7 +38,6 @@ def parseArgs():
                          dest="create_index",
                          action="store_true",
                          help="Create the index")
-    PARSER_.add_argument("-o", "--output-dir", dest="output_dir", action="store", help="JSON output dir", default=None)
     PARSER_.add_argument("-v",
                          "--verbose",
                          dest="verbose",
@@ -161,13 +153,7 @@ def create_index():
     mappings = {
         'dynamic': False,
         'properties': {
-            'volume': {
-                'type': 'keyword',
-            },
             'book': {
-                'type': 'keyword',
-            },
-            'author': {
                 'type': 'keyword',
             },
             'title': {
@@ -202,32 +188,27 @@ def create_index():
                     }
                 }
             },
-            'type': {
-                'type': 'keyword'
+            'chapter': {
+                'type': 'integer',
+            },
+            'chapter_link': {
+                'type': 'text'
             },
             'verses': {
                 "properties": {
                     'type': {
                         'type': 'keyword'
                     },
-                    'text': {
-                        'type': 'text',
-                        'term_vector': 'with_positions_offsets',
-                        'analyzer': 'romanian',
-                        'fields': {
-                            'folded': {
-                                'type': 'text',
-                                'term_vector': 'with_positions_offsets',
-                                'analyzer': 'folding',
+                    'name': {
+                        'type': 'keyword'
+                    },
+                    'content': {
+                        'properties': {
+                            'type': {
+                                'type': 'keyword'
                             },
-                            'folded_stemmed': {
-                                'type': 'text',
-                                'term_vector': 'with_positions_offsets',
-                                'analyzer': 'folding_stemmed',
-                            },
-                            'suggesting': {
-                                'type': 'text',
-                                'analyzer': 'suggesting'
+                            'text': {
+                                'type': 'text'
                             }
                         }
                     }
@@ -260,24 +241,21 @@ def create_index():
             '_insert_ts': {
                 'type': 'date'
             },
-            'date_added': {
-                'type': 'date'
-            },
-            'bible-refs': {
+            'references': {
                 'enabled': False
             }
         }
     }
 
-    post("od", {'settings': settings, 'mappings': mappings})
+    post("bible", {'settings': settings, 'mappings': mappings})
 
 def upload(bulk):
-    url = "od/articles"
+    url = "bible/articles"
 
     response = post(url, bulk)
     if response['total'] != response['indexed']:
         failed = response['total'] - response['indexed']
-        LOGGER_.warning("{} articles failed to index!".format(failed))
+        LOGGER_.warning("{} Bible titles failed to index!".format(failed))
 
     return response['indexed']
 
@@ -295,18 +273,17 @@ def calculate_maxsize(bulks):
     return max_size
 
 
-def index_all(date_added, articles):
+def index_all(articles):
     indexed = 0
 
     for idx, article in enumerate(articles):
-        id = "{} {} {}".format(article['title'], article['book'], article['author'])
+        id = "{} {} {}".format(article['book'], article['chapter'], article['title'])
         id = unidecode(id).lower()
         id = re.sub('[\.\,\!\(\)\[\] ]+', '-', id)
         id = re.sub('(\-)+', '-', id)
         article['_id'] = id
         article['_insert_idx'] = idx
         article['_insert_ts'] = datetime.now().isoformat()
-        article['date_added'] = date_added
 
     for bulk in chunk(articles, MAX_BULK_SIZE):
         bulks = [bulk]
@@ -331,7 +308,7 @@ def index_all(date_added, articles):
 
 def delete_index():
     try:
-        delete("od")
+        delete("bible")
     except Exception as ex:
         LOGGER_.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
 
@@ -345,9 +322,9 @@ def main():
     COMORI_OD_API_HOST = os.getenv("COMORI_OD_API_HOST", "http://localhost:9000")
 
     if args.json_filepath:
-        print(f"Started od-upload.py on {os.path.basename(args.json_filepath)} and {COMORI_OD_API_HOST}")
+        print(f"Started bible-upload.py on {os.path.basename(args.json_filepath)} and {COMORI_OD_API_HOST}")
     else:
-        print(f"Started od-upload.py on {COMORI_OD_API_HOST}")
+        print(f"Started bible-upload.py on {COMORI_OD_API_HOST}")
 
     print("API HOST: {}".format(COMORI_OD_API_HOST))
 
@@ -381,36 +358,13 @@ def main():
         try:
             LOGGER_.info("Indexing {} articles from {} to {}...".
                          format(len(articles), args.json_filepath, COMORI_OD_API_HOST))
-            if not args.date_added:
-                raise Exception("Date-added not provided")
 
-            index_all(args.date_added, articles)
-            LOGGER_.info("Indexed {} articles from {} to {}!".format(len(articles),
+            index_all(articles)
+            LOGGER_.info("Indexed {} Bible articles from {} to {}!".format(len(articles),
                                                                      args.json_filepath,
                                                                      COMORI_OD_API_HOST))
         except Exception as ex:
             LOGGER_.error('Indexing failed! Error: {}'.format(ex), exc_info=True)
-
-        if args.output_dir:
-            articlesByBook = defaultdict(list)
-            for article in articles:
-                articlesByBook[article['book']].append(article)
-
-            filePath = f"{args.output_dir}/env.json"
-            with open(filePath, 'w') as env_file:
-                json.dump({k: v for (k, v) in os.environ.items()}, env_file, ensure_ascii=False)
-
-            LOGGER_.info("Writing books to files...")
-            for book, atcs in articlesByBook.items():
-                filePath = f"{args.output_dir}/{book}.json"
-                with open(filePath, 'w') as book_file:
-                    json.dump(atcs, book_file, ensure_ascii=False)
-
-            LOGGER_.info("Writting articles to files...")
-            for article in articles:
-                filePath = f"{args.output_dir}/{article['_id']}.json"
-                with open(filePath, 'w') as article_file:
-                    json.dump(article, article_file, ensure_ascii=False)
 
     print("Done\n")
 

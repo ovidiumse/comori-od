@@ -146,12 +146,15 @@ if [ -n "${NGINX_HOST}" ]; then
   DOCKER_HOST=${NGINX_HOST} ${CWD}/load_static.sh ${ARGS}
 fi
 
+${TOOLS_DIR}/bible-upload.py -c ${ARGS}
+BIBLE_API=http://localhost:9002 ${TOOLS_DIR}/loaders/load_bible.sh ${ARGS}
+
 echo "Restarting comori-od-restapi on ${DOCKER_HOST} to clear caches..."
 DOCKER_HOST=${DOCKER_HOST} docker restart comori-od-restapi
 echo "Waiting 10 seconds for the service to wake up..."
 sleep 10
 
-if [ "${COMORI_OD_API_HOST}" == "https://testapi.comori-od.ro" ]; then
+if [ "${COMORI_OD_API_HOST}" == "http://comori-od-test:9000" ]; then
   ${CWD}/../test_all.sh ${ARGS}
 fi
 
